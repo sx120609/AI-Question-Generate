@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-07-10T10:16:40.328Z",
+  "mode": "direct-read-only-hash-verification",
+  "ok": true,
+  "errors": [],
+  "rowCount": 22,
+  "receiptPath": "outputs/auto_runs/rewrite_managed_human_voice_20260710/feishu/release_gate_receipt.json",
+  "releaseGateId": "combined-release-gate-v1",
+  "policyId": "l2-human-grounded-diversity-v3",
+  "policyVersion": 3,
+  "candidateHash": "39d1c98bbfbf607b739c3a10b7b339f34ab4178b14c64faa21ba06ca80d12e9f",
+  "naturalnessStatus": "REVIEW",
+  "naturalnessAuthorization": "INDEPENDENT_REVIEW",
+  "structureStatus": "REVIEW",
+  "structureAuthorization": "INDEPENDENT_REVIEW"
+}

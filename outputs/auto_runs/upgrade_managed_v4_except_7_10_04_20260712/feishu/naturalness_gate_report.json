@@ -1,0 +1,3669 @@
+{
+  "schemaVersion": 1,
+  "kind": "naturalness-gate-report",
+  "gateId": "naturalness-gate-v5",
+  "metricsVersion": "naturalness-metrics-v5",
+  "questionLanguagePolicyId": "corpus-calibrated-intent-punctuation-v4",
+  "generatedAt": "2026-07-11T18:37:13.182Z",
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\drafts\\l2_questions_v4.tsv",
+  "candidateHash": "34d375a8d3d63a57612b5a53fe246eb2b079206f82c23dda711356f0172a8895",
+  "baselinePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\config\\naturalness_benchmark_v2.json",
+  "baselineHash": "b97d5f54c5f63304c3485ce67f4f663a01258dcf0cf9bfab101cf775d5ff0fa6",
+  "baselineId": "naturalness-benchmark-v2",
+  "baselineSampleCount": 30,
+  "effectiveThresholds": {
+    "row": {
+      "disclaimerSentenceDensity": {
+        "metric": "disclaimerSentenceDensity",
+        "direction": "upper",
+        "review": 0.225,
+        "fail": 0.342,
+        "source": {
+          "type": "benchmark-quantile",
+          "baselineId": "naturalness-benchmark-v2",
+          "sampleCount": 30,
+          "reviewQuantile": 0.9,
+          "failQuantile": 0.98
+        }
+      },
+      "disclaimerSentenceCount": {
+        "metric": "disclaimerSentenceCount",
+        "direction": "upper",
+        "review": 2.1,
+        "fail": 3.84,
+        "source": {
+          "type": "benchmark-quantile",
+          "baselineId": "naturalness-benchmark-v2",
+          "sampleCount": 30,
+          "reviewQuantile": 0.9,
+          "failQuantile": 0.98
+        }
+      },
+      "concreteFactsPer100Chars": {
+        "metric": "concreteFactsPer100Chars",
+        "direction": "lower",
+        "review": 0,
+        "source": {
+          "type": "benchmark-quantile",
+          "baselineId": "naturalness-benchmark-v2",
+          "sampleCount": 30,
+          "reviewQuantile": 0.1
+        }
+      },
+      "templateMarkerCount": {
+        "metric": "templateMarkerCount",
+        "direction": "upper",
+        "review": 3,
+        "source": {
+          "type": "benchmark-quantile",
+          "baselineId": "naturalness-benchmark-v2",
+          "sampleCount": 30,
+          "reviewQuantile": 0.9
+        }
+      },
+      "minimumDisclaimerSentencesForFail": {
+        "value": 2,
+        "source": {
+          "type": "row-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "minimumDisclaimerSentencesForFail",
+          "rationale": "One matched sentence may be legitimate evidence hygiene and cannot cause a hard fail by itself."
+        }
+      },
+      "requireDirectRequest": {
+        "value": false,
+        "source": {
+          "type": "row-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "requireDirectRequest",
+          "rationale": "Direct second-person requests are a corpus feature, not a universal requirement; actionable work-order phrasing is also valid."
+        }
+      },
+      "shortOpeningMaxCharacters": {
+        "value": 30,
+        "source": {
+          "type": "row-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "shortOpeningMaxCharacters"
+        }
+      },
+      "structuralPunctuationReviewCount": {
+        "value": 4,
+        "source": {
+          "type": "row-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "structuralPunctuationReviewCount"
+        }
+      },
+      "maximumTerminalSentenceCharacters": {
+        "value": 240,
+        "source": {
+          "type": "row-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "maximumTerminalSentenceCharacters"
+        }
+      }
+    },
+    "batch": {
+      "discourseSkeletonDominantShare": {
+        "metric": "discourseSkeletonDominantShare",
+        "direction": "upper",
+        "review": 0.2255,
+        "fail": 0.2934,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "naturalness-benchmark-v2",
+          "sampleCount": 30,
+          "observedCount": 3,
+          "observedShare": 0.1,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "fixedWordExcelTailShare": {
+        "metric": "fixedWordExcelTailShare",
+        "direction": "upper",
+        "review": 0.613,
+        "fail": 0.6668,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "naturalness-benchmark-v2",
+          "sampleCount": 30,
+          "observedCount": 14,
+          "observedShare": 0.4667,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "finalStepSelfCheckShare": {
+        "metric": "finalStepSelfCheckShare",
+        "direction": "upper",
+        "review": 0.8427,
+        "fail": 0.8742,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "naturalness-benchmark-v2",
+          "sampleCount": 30,
+          "observedCount": 22,
+          "observedShare": 0.7333,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "stepCountModeShare": {
+        "metric": "stepCountModeShare",
+        "direction": "upper",
+        "review": 0.4146,
+        "fail": 0.4788,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "naturalness-benchmark-v2",
+          "sampleCount": 30,
+          "observedCount": 8,
+          "observedShare": 0.2667,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "weakScheduleShare": {
+        "metric": "weakScheduleShare",
+        "direction": "upper",
+        "review": 0.3425,
+        "fail": 0.4088,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "naturalness-benchmark-v2",
+          "sampleCount": 30,
+          "observedCount": 6,
+          "observedShare": 0.2,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "weakScheduleDominantShare": {
+        "metric": "weakScheduleDominantShare",
+        "direction": "upper",
+        "review": 0.266,
+        "fail": 0.3336,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "naturalness-benchmark-v2",
+          "sampleCount": 30,
+          "observedCount": 4,
+          "observedShare": 0.1333,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "minimumRows": {
+        "value": 8,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "minimumRows"
+        }
+      },
+      "reviewLevelTemplateSignalsForFail": {
+        "value": 2,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "reviewLevelTemplateSignalsForFail",
+          "rationale": "Several moderate batch-level repetitions together constitute template concentration."
+        }
+      },
+      "requestFrameDominantShare": {
+        "metric": "requestFrameDominantShare",
+        "direction": "upper",
+        "review": 0.8,
+        "fail": 0.95,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "requestFrameDominantShareReview",
+          "failParameter": "requestFrameDominantShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "shortOpeningShare": {
+        "metric": "shortOpeningShare",
+        "direction": "upper",
+        "review": 0.25,
+        "fail": 0.5,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "shortOpeningShareReview",
+          "failParameter": "shortOpeningShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "firstPunctuationTerminalShare": {
+        "metric": "firstPunctuationTerminalShare",
+        "direction": "upper",
+        "review": 0.25,
+        "fail": 0.5,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "firstPunctuationTerminalShareReview",
+          "failParameter": "firstPunctuationTerminalShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "firstSentenceCommaShare": {
+        "metric": "firstSentenceCommaShare",
+        "direction": "lower",
+        "review": 0.6,
+        "fail": 0.4,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "firstSentenceCommaShareReview",
+          "failParameter": "firstSentenceCommaShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "commaToPeriodRatio": {
+        "metric": "commaToPeriodRatio",
+        "direction": "lower",
+        "review": 1.1,
+        "fail": 0.8,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "commaToPeriodRatioReview",
+          "failParameter": "commaToPeriodRatioFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "enumerationCommasPer100Chars": {
+        "metric": "enumerationCommasPer100Chars",
+        "direction": "upper",
+        "review": 2.8,
+        "fail": 4,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "enumerationCommasPer100CharsReview",
+          "failParameter": "enumerationCommasPer100CharsFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "earlyStructuralPunctuationShare": {
+        "metric": "earlyStructuralPunctuationShare",
+        "direction": "upper",
+        "review": 0.2,
+        "fail": 0.4,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "earlyStructuralPunctuationShareReview",
+          "failParameter": "earlyStructuralPunctuationShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "semicolonRowShare": {
+        "metric": "semicolonRowShare",
+        "direction": "upper",
+        "review": 0.6,
+        "fail": 0.8,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "semicolonRowShareReview",
+          "failParameter": "semicolonRowShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "longSentenceShare": {
+        "metric": "longSentenceShare",
+        "direction": "upper",
+        "review": 0.1,
+        "fail": 0.25,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "longSentenceShareReview",
+          "failParameter": "longSentenceShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      }
+    }
+  },
+  "status": "PASS",
+  "ok": true,
+  "reviewRequired": false,
+  "blocked": false,
+  "summary": {
+    "rowCount": 21,
+    "rowStatusCounts": {
+      "PASS": 21
+    },
+    "batchStatus": "PASS",
+    "findingCounts": {}
+  },
+  "rows": [
+    {
+      "uid": "沈礼_7.9_01",
+      "dataRow": 2,
+      "questionLength": 928,
+      "paragraphCount": 4,
+      "sentenceCount": 18,
+      "disclaimerSentenceCount": 3,
+      "disclaimerSentenceDensity": 0.1667,
+      "missingMaterialSentenceCount": 3,
+      "evidenceBoundarySentenceCount": 0,
+      "disclaimerSignalCount": 4,
+      "concreteFactAnchorCount": 7,
+      "concreteFactsPer100Chars": 0.7543,
+      "firstPersonPresent": true,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "decision",
+        "boundary",
+        "evidence",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "decision": 2,
+          "evidence": 2,
+          "boundary": 1,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "quality": 0
+        },
+        {
+          "boundary": 3,
+          "decision": 2,
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "quality": 0
+        },
+        {
+          "evidence": 2,
+          "quality": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 5,
+          "boundary": 5,
+          "decision": 2,
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "quality": 0
+        }
+      ],
+      "discourseSkeleton": "decision>boundary>evidence>deliverable",
+      "compressedDiscourseSkeleton": "decision>boundary>evidence>deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 10,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "relative-meeting",
+      "weakScheduleDevice": true,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 2,
+      "explicitRequestPresent": true,
+      "requestFrame": "help-me",
+      "requestPositionRatio": 0.7959,
+      "requestMarker": "帮我把",
+      "requestDeliverableMarker": "PPT",
+      "missingDeliverableFormats": [],
+      "firstSentenceLength": 101,
+      "firstSentenceCommaCount": 2,
+      "firstPunctuationIsTerminal": false,
+      "commaCount": 39,
+      "periodCount": 18,
+      "colonCount": 0,
+      "semicolonCount": 0,
+      "enumerationCommaCount": 10,
+      "commaToPeriodRatio": 2.1667,
+      "enumerationCommasPer100Chars": 1.0776,
+      "structuralPunctuationCount": 0,
+      "structuralPunctuationPer100Chars": 0,
+      "earlyStructuralPunctuation": false,
+      "containsSemicolon": false,
+      "maximumTerminalSentenceLength": 101,
+      "evidence": {
+        "disclaimerSentences": [
+          "产品准备把生成式客服助手先开放给两家付费客户，评审材料明确写着“客户会话不用于训练（目前只是评审材料中的产品说法）”“客户后台保留人工转接（包括触发条件、值班覆盖和失败留痕）”，但没有对应配置和流程说明。",
+          "这一版先把沿一通客户会话整理生成式客服助手灰度会的规则边界和产品说法和材料追问，开放范围留待会议决定里的已知事实、待补环节等内容说明白，判断只写到材料能够支撑的位置。",
+          "收尾时再看来源、日期等基础信息，尚未补齐的配置等材料继续留在待办中。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quoted-detail",
+            "value": "“客户会话不用于训练（目前只是评审材料中的产品说法）”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“客户后台保留人工转接（包括触发条件、值班覆盖和失败留痕）”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“产品说法”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“项目证据”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“不拿客户会话训练模型”"
+          },
+          {
+            "kind": "named-source",
+            "value": "《生成式客服助手对外灰度前安全汇报稿》"
+          },
+          {
+            "kind": "named-source",
+            "value": "《生成式客服助手对外灰度前安全工作台》"
+          }
+        ],
+        "finalParagraph": "所以这次帮我把前面的判断整理成PPT《生成式客服助手对外灰度前安全汇报稿》以及HTML网页《生成式客服助手对外灰度前安全工作台》，交给实际经办人继续处理。这一版先把沿一通客户会话整理生成式客服助手灰度会的规则边界和产品说法和材料追问，开放范围留待会议决定里的已知事实、待补环节等内容说明白，判断只写到材料能够支撑的位置。收尾时再看来源、日期等基础信息，尚未补齐的配置等材料继续留在待办中。",
+        "finalStep": "交稿前拿一次包含投诉内容并最终转人工的会话做回查，从对应交付物里的追问能落到对应交付物对应环节，也能反向找到产品说法和现有材料和仍待确认的配置。",
+        "request": {
+          "clear": true,
+          "frame": "help-me",
+          "requestMarker": "帮我把",
+          "requestIndex": 741,
+          "requestSentenceIndex": 15,
+          "deliverableMarker": "PPT",
+          "deliverableIndex": 752
+        },
+        "punctuation": {
+          "visibleCharacters": 928,
+          "firstSentence": "产品准备把生成式客服助手先开放给两家付费客户，评审材料明确写着“客户会话不用于训练（目前只是评审材料中的产品说法）”“客户后台保留人工转接（包括触发条件、值班覆盖和失败留痕）”，但没有对应配置和流程说明。",
+          "firstSentenceLength": 101,
+          "firstSentenceCommaCount": 2,
+          "firstPunctuation": "，",
+          "firstPunctuationIndex": 22,
+          "firstPunctuationIsTerminal": false,
+          "commaCount": 39,
+          "periodCount": 18,
+          "colonCount": 0,
+          "semicolonCount": 0,
+          "enumerationCommaCount": 10,
+          "structuralPunctuationCount": 0,
+          "commaToPeriodRatio": 2.1667,
+          "enumerationCommasPer100Chars": 1.0776,
+          "structuralPunctuationPer100Chars": 0,
+          "earlyStructuralPunctuation": false,
+          "containsSemicolon": false,
+          "maximumTerminalSentenceLength": 101
+        }
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "沈礼_7.9_02",
+      "dataRow": 3,
+      "questionLength": 1006,
+      "paragraphCount": 4,
+      "sentenceCount": 18,
+      "disclaimerSentenceCount": 2,
+      "disclaimerSentenceDensity": 0.1111,
+      "missingMaterialSentenceCount": 1,
+      "evidenceBoundarySentenceCount": 1,
+      "disclaimerSignalCount": 3,
+      "concreteFactAnchorCount": 4,
+      "concreteFactsPer100Chars": 0.3976,
+      "firstPersonPresent": true,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "boundary",
+        "boundary",
+        "boundary",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "boundary": 3,
+          "evidence": 2,
+          "scene": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "quality": 0,
+          "instruction": 0
+        },
+        {
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "boundary": 3,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "deliverable": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 5,
+          "boundary": 4,
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "decision": 0,
+          "quality": 0
+        }
+      ],
+      "discourseSkeleton": "boundary>boundary>boundary>deliverable",
+      "compressedDiscourseSkeleton": "boundary>deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 12,
+      "finalStepSelfCheck": true,
+      "scheduleAuthenticityTag": "relative-meeting",
+      "weakScheduleDevice": true,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 3,
+      "explicitRequestPresent": true,
+      "requestFrame": "give-me",
+      "requestPositionRatio": 0.779,
+      "requestMarker": "你给我做",
+      "requestDeliverableMarker": "Excel",
+      "missingDeliverableFormats": [],
+      "firstSentenceLength": 70,
+      "firstSentenceCommaCount": 3,
+      "firstPunctuationIsTerminal": false,
+      "commaCount": 43,
+      "periodCount": 18,
+      "colonCount": 0,
+      "semicolonCount": 0,
+      "enumerationCommaCount": 8,
+      "commaToPeriodRatio": 2.3889,
+      "enumerationCommasPer100Chars": 0.7952,
+      "structuralPunctuationCount": 0,
+      "structuralPunctuationPer100Chars": 0,
+      "earlyStructuralPunctuation": false,
+      "containsSemicolon": false,
+      "maximumTerminalSentenceLength": 118,
+      "evidence": {
+        "disclaimerSentences": [
+          "2025年旧车换新政策（范围只含活动与回收咨询）只处理居民关于活动，回收和安全治理的咨询，不能拿来证明某个充电点具备改造条件。",
+          "交稿前核一遍出处、版本等内容，暂时没有的证明等资料仍写成待补。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quoted-detail",
+            "value": "“正在勘查”"
+          },
+          {
+            "kind": "named-source",
+            "value": "《老旧小区电动自行车充停整改与以旧换新沟通跟踪表》"
+          },
+          {
+            "kind": "named-source",
+            "value": "《老旧小区电动自行车充停整改与以旧换新沟通工作台》"
+          },
+          {
+            "kind": "named-source",
+            "value": "《老旧小区电动自行车充停整改与以旧换新沟通定稿》"
+          }
+        ],
+        "finalParagraph": "这些问题理顺以后，你给我做成Excel《老旧小区电动自行车充停整改与以旧换新沟通跟踪表》、HTML网页《老旧小区电动自行车充停整改与以旧换新沟通工作台》以及PDF《老旧小区电动自行车充停整改与以旧换新沟通定稿》，后面的确认就沿着它往下走。经办人最需要分清把电动自行车禁停治理和集中充电勘查和以旧换新咨询分开，供物业经理在周四业委会上按点位答复涉及的已确认项、未确认项等区别，每个结论旁边都要能找到出处。交稿前核一遍出处、版本等内容，暂时没有的证明等资料仍写成待补。",
+        "finalStep": "答疑稿和跟踪表完成后做一次点位自检：各抽一个禁停点位和现有充电区和拟勘查空间，把照片事实和当下动作和所缺材料和责任人逐项对回。",
+        "request": {
+          "clear": true,
+          "frame": "give-me",
+          "requestMarker": "你给我做",
+          "requestIndex": 786,
+          "requestSentenceIndex": 15,
+          "deliverableMarker": "Excel",
+          "deliverableIndex": 791
+        },
+        "punctuation": {
+          "visibleCharacters": 1006,
+          "firstSentence": "周四业委会讨论电动自行车整改，巡查照片（只证明拍到位置的停放事实）已经拍到门厅，楼梯口和疏散通道附近仍有车辆，这些位置可以先谈清理和临时管控。",
+          "firstSentenceLength": 70,
+          "firstSentenceCommaCount": 3,
+          "firstPunctuation": "，",
+          "firstPunctuationIndex": 14,
+          "firstPunctuationIsTerminal": false,
+          "commaCount": 43,
+          "periodCount": 18,
+          "colonCount": 0,
+          "semicolonCount": 0,
+          "enumerationCommaCount": 8,
+          "structuralPunctuationCount": 0,
+          "commaToPeriodRatio": 2.3889,
+          "enumerationCommasPer100Chars": 0.7952,
+          "structuralPunctuationPer100Chars": 0,
+          "earlyStructuralPunctuation": false,
+          "containsSemicolon": false,
+          "maximumTerminalSentenceLength": 118
+        }
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "沈礼_7.9_03",
+      "dataRow": 4,
+      "questionLength": 844,
+      "paragraphCount": 6,
+      "sentenceCount": 13,
+      "disclaimerSentenceCount": 2,
+      "disclaimerSentenceDensity": 0.1538,
+      "missingMaterialSentenceCount": 1,
+      "evidenceBoundarySentenceCount": 1,
+      "disclaimerSignalCount": 3,
+      "concreteFactAnchorCount": 3,
+      "concreteFactsPer100Chars": 0.4785,
+      "firstPersonPresent": true,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "evidence",
+        "boundary",
+        "detail",
+        "boundary",
+        "quality",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "evidence": 2,
+          "boundary": 1,
+          "scene": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "quality": 0,
+          "instruction": 0
+        },
+        {
+          "boundary": 3,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "deliverable": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "boundary": 3,
+          "scene": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "instruction": 0
+        },
+        {
+          "quality": 2,
+          "scene": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 5,
+          "boundary": 4,
+          "evidence": 2,
+          "instruction": 1,
+          "decision": 0,
+          "quality": 0,
+          "scene": 0
+        }
+      ],
+      "discourseSkeleton": "evidence>boundary>detail>boundary>quality>deliverable",
+      "compressedDiscourseSkeleton": "evidence>boundary>detail>boundary>quality>deliverable",
+      "fixedWordExcelTail": true,
+      "stepCount": 12,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "relative-time-only",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 2,
+      "explicitRequestPresent": true,
+      "requestFrame": "want-you",
+      "requestPositionRatio": 0.7479,
+      "requestMarker": "我想让你整理",
+      "requestDeliverableMarker": "Word",
+      "missingDeliverableFormats": [],
+      "firstSentenceLength": 67,
+      "firstSentenceCommaCount": 1,
+      "firstPunctuationIsTerminal": false,
+      "commaCount": 35,
+      "periodCount": 13,
+      "colonCount": 0,
+      "semicolonCount": 0,
+      "enumerationCommaCount": 9,
+      "commaToPeriodRatio": 2.6923,
+      "enumerationCommasPer100Chars": 1.0664,
+      "structuralPunctuationCount": 0,
+      "structuralPunctuationPer100Chars": 0,
+      "earlyStructuralPunctuation": false,
+      "containsSemicolon": false,
+      "maximumTerminalSentenceLength": 106,
+      "evidence": {
+        "disclaimerSentences": [
+          "现有资料没有配方检测报告，包装标签原件、店铺页面截图，达人合作关系和广告审查材料，能直接处理的只有三句原话及其计划投放位置。",
+          "最后从原始记录、附件等位置反查一次，不能确认的参数等信息不要补写。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quoted-detail",
+            "value": "“控糖”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“饭前一杯少吃主食”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“饱腹不长胖”"
+          }
+        ],
+        "finalParagraph": "到这里我想让你整理Word《低糖高蛋白代餐食品直播素材与标签合规说明稿》、Excel《低糖高蛋白代餐食品直播素材与标签合规跟踪表》以及PDF《低糖高蛋白代餐食品直播素材与标签合规定稿》，相关同事会拿它处理后续问题。围绕围绕月底直播排期，逐条处理代餐粉话术和包装展示和达人内容，把规则风险与产品补证分开，现有依据、剩余缺口等情况分别摆出来，能够继续的动作随材料状态说明。最后从原始记录、附件等位置反查一次，不能确认的参数等信息不要补写。",
+        "finalStep": "把已具备处理条件的素材交回月底排期，其余项目按补证明或暂缓状态留在改稿表。",
+        "request": {
+          "clear": true,
+          "frame": "want-you",
+          "requestMarker": "我想让你整理",
+          "requestIndex": 635,
+          "requestSentenceIndex": 10,
+          "deliverableMarker": "Word",
+          "deliverableIndex": 641
+        },
+        "punctuation": {
+          "visibleCharacters": 844,
+          "firstSentence": "低糖高蛋白代餐粉月底要排直播，运营最想留下的三句话（即控糖、饭前一杯少吃主食和饱腹不长胖）是“控糖”“饭前一杯少吃主食”“饱腹不长胖”。",
+          "firstSentenceLength": 67,
+          "firstSentenceCommaCount": 1,
+          "firstPunctuation": "，",
+          "firstPunctuationIndex": 14,
+          "firstPunctuationIsTerminal": false,
+          "commaCount": 35,
+          "periodCount": 13,
+          "colonCount": 0,
+          "semicolonCount": 0,
+          "enumerationCommaCount": 9,
+          "structuralPunctuationCount": 0,
+          "commaToPeriodRatio": 2.6923,
+          "enumerationCommasPer100Chars": 1.0664,
+          "structuralPunctuationPer100Chars": 0,
+          "earlyStructuralPunctuation": false,
+          "containsSemicolon": false,
+          "maximumTerminalSentenceLength": 106
+        }
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "沈礼_7.9_04",
+      "dataRow": 5,
+      "questionLength": 874,
+      "paragraphCount": 6,
+      "sentenceCount": 16,
+      "disclaimerSentenceCount": 2,
+      "disclaimerSentenceDensity": 0.125,
+      "missingMaterialSentenceCount": 2,
+      "evidenceBoundarySentenceCount": 0,
+      "disclaimerSignalCount": 2,
+      "concreteFactAnchorCount": 0,
+      "concreteFactsPer100Chars": 0,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "evidence",
+        "boundary",
+        "boundary",
+        "decision",
+        "evidence",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "evidence": 2,
+          "boundary": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "boundary": 3,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "instruction": 0
+        },
+        {
+          "boundary": 3,
+          "decision": 2,
+          "evidence": 2,
+          "deliverable": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0
+        },
+        {
+          "evidence": 2,
+          "quality": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 5,
+          "evidence": 2,
+          "quality": 2,
+          "boundary": 1,
+          "scene": 1,
+          "instruction": 1,
+          "decision": 0
+        }
+      ],
+      "discourseSkeleton": "evidence>boundary>boundary>decision>evidence>deliverable",
+      "compressedDiscourseSkeleton": "evidence>boundary>decision>evidence>deliverable",
+      "fixedWordExcelTail": true,
+      "stepCount": 10,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "relative-time-only",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 2,
+      "explicitRequestPresent": true,
+      "requestFrame": "you-take-it",
+      "requestPositionRatio": 0.7747,
+      "requestMarker": "这部分你来整理",
+      "requestDeliverableMarker": "Word",
+      "missingDeliverableFormats": [],
+      "firstSentenceLength": 50,
+      "firstSentenceCommaCount": 1,
+      "firstPunctuationIsTerminal": false,
+      "commaCount": 33,
+      "periodCount": 16,
+      "colonCount": 1,
+      "semicolonCount": 0,
+      "enumerationCommaCount": 11,
+      "commaToPeriodRatio": 2.0625,
+      "enumerationCommasPer100Chars": 1.2586,
+      "structuralPunctuationCount": 1,
+      "structuralPunctuationPer100Chars": 0.1144,
+      "earlyStructuralPunctuation": false,
+      "containsSemicolon": false,
+      "maximumTerminalSentenceLength": 99,
+      "evidence": {
+        "disclaimerSentences": [
+          "注册环节只有一份笼统的用户协议，现阶段也没有外包合同，授权记录、发送日志，退订回执和注销处理结果。",
+          "整理为酒店淡季短信召回逐字段整理用途和外包接触范围和授权留痕问题，供周一法务先过口径时要把事实来源、尚待核对的地方等信息带上，材料没有写的内容保持空缺。"
+        ],
+        "concreteFactAnchors": [],
+        "finalParagraph": "前面的边界说清楚后，这部分你来整理成Word《酒店会员短信营销隐私合规说明稿》、Excel《酒店会员短信营销隐私合规跟踪表》以及HTML网页《酒店会员短信营销隐私合规工作台》，让经办人可以直接接着用。整理为酒店淡季短信召回逐字段整理用途和外包接触范围和授权留痕问题，供周一法务先过口径时要把事实来源、尚待核对的地方等信息带上，材料没有写的内容保持空缺。完成后沿时间、来源等线索回看结论，仍缺的批复等文件继续标明状态。",
+        "finalStep": "收尾时沿一条会员记录走完导出和外包发送和退订和注销，两份文件对字段用途和授权依据与停止处理节点要能相互追溯。",
+        "request": {
+          "clear": true,
+          "frame": "you-take-it",
+          "requestMarker": "这部分你来整理",
+          "requestIndex": 681,
+          "requestSentenceIndex": 13,
+          "deliverableMarker": "Word",
+          "deliverableIndex": 689
+        },
+        "punctuation": {
+          "visibleCharacters": 874,
+          "firstSentence": "现阶段先弄明白酒店准备在淡季做一轮会员短信召回（本、拟从会员库导出手机号等要点，后面的处理才不会走偏。",
+          "firstSentenceLength": 50,
+          "firstSentenceCommaCount": 1,
+          "firstPunctuation": "、",
+          "firstPunctuationIndex": 25,
+          "firstPunctuationIsTerminal": false,
+          "commaCount": 33,
+          "periodCount": 16,
+          "colonCount": 1,
+          "semicolonCount": 0,
+          "enumerationCommaCount": 11,
+          "structuralPunctuationCount": 1,
+          "commaToPeriodRatio": 2.0625,
+          "enumerationCommasPer100Chars": 1.2586,
+          "structuralPunctuationPer100Chars": 0.1144,
+          "earlyStructuralPunctuation": false,
+          "containsSemicolon": false,
+          "maximumTerminalSentenceLength": 99
+        }
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "沈礼_7.9_05",
+      "dataRow": 6,
+      "questionLength": 873,
+      "paragraphCount": 4,
+      "sentenceCount": 17,
+      "disclaimerSentenceCount": 2,
+      "disclaimerSentenceDensity": 0.1176,
+      "missingMaterialSentenceCount": 2,
+      "evidenceBoundarySentenceCount": 0,
+      "disclaimerSignalCount": 4,
+      "concreteFactAnchorCount": 6,
+      "concreteFactsPer100Chars": 0.6873,
+      "firstPersonPresent": true,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "boundary",
+        "boundary",
+        "decision",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0
+        },
+        {
+          "boundary": 3,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0
+        },
+        {
+          "decision": 2,
+          "evidence": 2,
+          "scene": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "quality": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 5,
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "instruction": 1,
+          "scene": 0
+        }
+      ],
+      "discourseSkeleton": "boundary>boundary>decision>deliverable",
+      "compressedDiscourseSkeleton": "boundary>decision>deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 11,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "no-schedule-device",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 1,
+      "explicitRequestPresent": true,
+      "requestFrame": "need-one",
+      "requestPositionRatio": 0.7888,
+      "requestMarker": "我得有一套",
+      "requestDeliverableMarker": "PPT",
+      "missingDeliverableFormats": [],
+      "firstSentenceLength": 68,
+      "firstSentenceCommaCount": 2,
+      "firstPunctuationIsTerminal": false,
+      "commaCount": 31,
+      "periodCount": 17,
+      "colonCount": 0,
+      "semicolonCount": 0,
+      "enumerationCommaCount": 8,
+      "commaToPeriodRatio": 1.8235,
+      "enumerationCommasPer100Chars": 0.9164,
+      "structuralPunctuationCount": 0,
+      "structuralPunctuationPer100Chars": 0,
+      "earlyStructuralPunctuation": false,
+      "containsSemicolon": false,
+      "maximumTerminalSentenceLength": 107,
+      "evidence": {
+        "disclaimerSentences": [
+          "问题在于运营还提到主播口播，详情页卖点、达人前后对比图（还要核图片来源和条件和授权），客服承诺和购物车标题，却没有把完整原文，蓝帽或批准信息和广告审查凭证，图片授权及平台沟通记录交过来，不能把没有看过的素材一起改掉。",
+          "经办人拿到材料前还要复核对象、口径等信息，没有原件的合同等内容只保留问题。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quoted-detail",
+            "value": "“吃完瘦”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“不反弹”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“安全不伤身”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“更安全”"
+          },
+          {
+            "kind": "named-source",
+            "value": "《保健食品直播宣传合规汇报稿》"
+          },
+          {
+            "kind": "named-source",
+            "value": "《保健食品直播宣传合规定稿》"
+          }
+        ],
+        "finalParagraph": "这轮我得有一套PPT《保健食品直播宣传合规汇报稿》以及PDF《保健食品直播宣传合规定稿》，已经确认和仍待补的部分分开写。这份交付围绕先处理左旋肉碱直播素材中三句已知高风险表达，同时为口播和页面和达人图片和客服承诺和购物车标题建立收件与后续审改路径展开，已知情况、后续待办等部分要让接手的人一眼分得开。经办人拿到材料前还要复核对象、口径等信息，没有原件的合同等内容只保留问题。",
+        "finalStep": "交付前用三句已知话术和一处尚未收到原文的素材分别试跑，确保已知风险有明确处理，未知素材只留下收件和复核位置。",
+        "request": {
+          "clear": true,
+          "frame": "need-one",
+          "requestMarker": "我得有一套",
+          "requestIndex": 691,
+          "requestSentenceIndex": 14,
+          "deliverableMarker": "PPT",
+          "deliverableIndex": 696
+        },
+        "punctuation": {
+          "visibleCharacters": 873,
+          "firstSentence": "上一版左旋肉碱类保健食品直播脚本被平台打回（现阶段只确认已知原话），运营正在重排素材，能确认的原话只有“吃完瘦”“不反弹”“安全不伤身”。",
+          "firstSentenceLength": 68,
+          "firstSentenceCommaCount": 2,
+          "firstPunctuation": "，",
+          "firstPunctuationIndex": 33,
+          "firstPunctuationIsTerminal": false,
+          "commaCount": 31,
+          "periodCount": 17,
+          "colonCount": 0,
+          "semicolonCount": 0,
+          "enumerationCommaCount": 8,
+          "structuralPunctuationCount": 0,
+          "commaToPeriodRatio": 1.8235,
+          "enumerationCommasPer100Chars": 0.9164,
+          "structuralPunctuationPer100Chars": 0,
+          "earlyStructuralPunctuation": false,
+          "containsSemicolon": false,
+          "maximumTerminalSentenceLength": 107
+        }
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "沈礼_7.9_06",
+      "dataRow": 7,
+      "questionLength": 804,
+      "paragraphCount": 4,
+      "sentenceCount": 14,
+      "disclaimerSentenceCount": 1,
+      "disclaimerSentenceDensity": 0.0714,
+      "missingMaterialSentenceCount": 1,
+      "evidenceBoundarySentenceCount": 0,
+      "disclaimerSignalCount": 2,
+      "concreteFactAnchorCount": 1,
+      "concreteFactsPer100Chars": 0.1244,
+      "firstPersonPresent": true,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "decision",
+        "decision",
+        "evidence",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "decision": 2,
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "quality": 0
+        },
+        {
+          "decision": 2,
+          "evidence": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "evidence": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 5,
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "scene": 1,
+          "quality": 0,
+          "instruction": 0
+        }
+      ],
+      "discourseSkeleton": "decision>decision>evidence>deliverable",
+      "compressedDiscourseSkeleton": "decision>evidence>deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 14,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "relative-time-only",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 1,
+      "explicitRequestPresent": true,
+      "requestFrame": "give-me",
+      "requestPositionRatio": 0.8092,
+      "requestMarker": "你给我整理",
+      "requestDeliverableMarker": "Excel",
+      "missingDeliverableFormats": [],
+      "firstSentenceLength": 53,
+      "firstSentenceCommaCount": 1,
+      "firstPunctuationIsTerminal": false,
+      "commaCount": 36,
+      "periodCount": 14,
+      "colonCount": 0,
+      "semicolonCount": 0,
+      "enumerationCommaCount": 8,
+      "commaToPeriodRatio": 2.5714,
+      "enumerationCommasPer100Chars": 0.995,
+      "structuralPunctuationCount": 0,
+      "structuralPunctuationPer100Chars": 0,
+      "earlyStructuralPunctuation": false,
+      "containsSemicolon": false,
+      "maximumTerminalSentenceLength": 101,
+      "evidence": {
+        "disclaimerSentences": [
+          "做把养老助餐公开政策和社会组织已有条件和街道待确认事项分开，供理事会周三前决定是否继续沟通不能只写结论，原始记录、缺失材料等来龙去脉也要跟着保留下来。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "named-source",
+            "value": "《养老助餐点服务目录与补贴边界跟踪表》"
+          }
+        ],
+        "finalParagraph": "为了让后续动作接得上，你给我整理Excel《养老助餐点服务目录与补贴边界跟踪表》，使用的人可以顺着材料继续判断。做把养老助餐公开政策和社会组织已有条件和街道待确认事项分开，供理事会周三前决定是否继续沟通不能只写结论，原始记录、缺失材料等来龙去脉也要跟着保留下来。交付前从事实、规则等两头各查一次，未收到的记录等材料不改变现有判断。",
+        "finalStep": "理事会材料交付前逐项核对堂食和送餐和补贴结算，确认异地政策没有写成本地条件，未到手的项目文件也没有写成组织现有能力。",
+        "request": {
+          "clear": true,
+          "frame": "give-me",
+          "requestMarker": "你给我整理",
+          "requestIndex": 653,
+          "requestSentenceIndex": 11,
+          "deliverableMarker": "Excel",
+          "deliverableIndex": 658
+        },
+        "punctuation": {
+          "visibleCharacters": 804,
+          "firstSentence": "街道给一家社会组织提了养老助餐点运营机会，理事会周三前只需要判断是否值得继续沟通（不是在本轮直接决定投标）。",
+          "firstSentenceLength": 53,
+          "firstSentenceCommaCount": 1,
+          "firstPunctuation": "，",
+          "firstPunctuationIndex": 20,
+          "firstPunctuationIsTerminal": false,
+          "commaCount": 36,
+          "periodCount": 14,
+          "colonCount": 0,
+          "semicolonCount": 0,
+          "enumerationCommaCount": 8,
+          "structuralPunctuationCount": 0,
+          "commaToPeriodRatio": 2.5714,
+          "enumerationCommasPer100Chars": 0.995,
+          "structuralPunctuationPer100Chars": 0,
+          "earlyStructuralPunctuation": false,
+          "containsSemicolon": false,
+          "maximumTerminalSentenceLength": 101
+        }
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "沈礼_7.9_07",
+      "dataRow": 8,
+      "questionLength": 805,
+      "paragraphCount": 6,
+      "sentenceCount": 15,
+      "disclaimerSentenceCount": 2,
+      "disclaimerSentenceDensity": 0.1333,
+      "missingMaterialSentenceCount": 0,
+      "evidenceBoundarySentenceCount": 2,
+      "disclaimerSignalCount": 2,
+      "concreteFactAnchorCount": 3,
+      "concreteFactsPer100Chars": 0.3727,
+      "firstPersonPresent": true,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "decision",
+        "evidence",
+        "decision",
+        "boundary",
+        "scene",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "boundary": 1,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0
+        },
+        {
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "quality": 0
+        },
+        {
+          "decision": 2,
+          "evidence": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "boundary": 3,
+          "decision": 2,
+          "quality": 2,
+          "deliverable": 0,
+          "evidence": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "scene": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 5,
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "quality": 0
+        }
+      ],
+      "discourseSkeleton": "decision>evidence>decision>boundary>scene>deliverable",
+      "compressedDiscourseSkeleton": "decision>evidence>decision>boundary>scene>deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 9,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "relative-time-only",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 1,
+      "explicitRequestPresent": true,
+      "requestFrame": "help-me",
+      "requestPositionRatio": 0.7728,
+      "requestMarker": "帮我做",
+      "requestDeliverableMarker": "Word",
+      "missingDeliverableFormats": [],
+      "firstSentenceLength": 71,
+      "firstSentenceCommaCount": 2,
+      "firstPunctuationIsTerminal": false,
+      "commaCount": 27,
+      "periodCount": 15,
+      "colonCount": 0,
+      "semicolonCount": 0,
+      "enumerationCommaCount": 8,
+      "commaToPeriodRatio": 1.8,
+      "enumerationCommasPer100Chars": 0.9938,
+      "structuralPunctuationCount": 0,
+      "structuralPunctuationPer100Chars": 0,
+      "earlyStructuralPunctuation": false,
+      "containsSemicolon": false,
+      "maximumTerminalSentenceLength": 93,
+      "evidence": {
+        "disclaimerSentences": [
+          "物业安排清掏雨水井和隔油池（是否构成有限空间仍看现场结构与进入方式），外包队目前只发来营业执照，报价单和两张工人身份证（只能说明人员基础信息）。",
+          "最后挑一项结论回到来源、时间等位置核验，尚待确认的权限等事项留给后续处理。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quoted-detail",
+            "value": "“清掏”"
+          },
+          {
+            "kind": "named-source",
+            "value": "《园区有限空间外包作业准入说明稿》"
+          },
+          {
+            "kind": "named-source",
+            "value": "《园区有限空间外包作业准入定稿》"
+          }
+        ],
+        "finalParagraph": "到这里能不能帮我做成Word《园区有限空间外包作业准入说明稿》以及PDF《园区有限空间外包作业准入定稿》，经办人拿到后可以直接继续处理。后面的人会按围绕周五雨水井和隔油池清掏，把外包队的基础资料和有限空间准入条件和现场安全动作拆开，形成能否进场的判断继续处理，因此现有事实、暂存问题等内容都要落到对应环节。最后挑一项结论回到来源、时间等位置核验，尚待确认的权限等事项留给后续处理。",
+        "finalStep": "完成后拿雨水井和隔油池各走一遍准入流程，书面材料和现场检测和监护动作和最终进场状态必须能在两份文件之间逐项对回。",
+        "request": {
+          "clear": true,
+          "frame": "help-me",
+          "requestMarker": "帮我做",
+          "requestIndex": 626,
+          "requestSentenceIndex": 12,
+          "deliverableMarker": "Word",
+          "deliverableIndex": 630
+        },
+        "punctuation": {
+          "visibleCharacters": 805,
+          "firstSentence": "物业安排清掏雨水井和隔油池（是否构成有限空间仍看现场结构与进入方式），外包队目前只发来营业执照，报价单和两张工人身份证（只能说明人员基础信息）。",
+          "firstSentenceLength": 71,
+          "firstSentenceCommaCount": 2,
+          "firstPunctuation": "，",
+          "firstPunctuationIndex": 34,
+          "firstPunctuationIsTerminal": false,
+          "commaCount": 27,
+          "periodCount": 15,
+          "colonCount": 0,
+          "semicolonCount": 0,
+          "enumerationCommaCount": 8,
+          "structuralPunctuationCount": 0,
+          "commaToPeriodRatio": 1.8,
+          "enumerationCommasPer100Chars": 0.9938,
+          "structuralPunctuationPer100Chars": 0,
+          "earlyStructuralPunctuation": false,
+          "containsSemicolon": false,
+          "maximumTerminalSentenceLength": 93
+        }
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "沈礼_7.9_08",
+      "dataRow": 9,
+      "questionLength": 834,
+      "paragraphCount": 6,
+      "sentenceCount": 15,
+      "disclaimerSentenceCount": 2,
+      "disclaimerSentenceDensity": 0.1333,
+      "missingMaterialSentenceCount": 2,
+      "evidenceBoundarySentenceCount": 0,
+      "disclaimerSignalCount": 4,
+      "concreteFactAnchorCount": 3,
+      "concreteFactsPer100Chars": 0.3597,
+      "firstPersonPresent": true,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "boundary",
+        "boundary",
+        "boundary",
+        "decision",
+        "decision",
+        "boundary"
+      ],
+      "paragraphActionScores": [
+        {
+          "boundary": 4,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0
+        },
+        {
+          "boundary": 3,
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "quality": 0
+        },
+        {
+          "boundary": 3,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0
+        },
+        {
+          "decision": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0
+        },
+        {
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0
+        }
+      ],
+      "discourseSkeleton": "boundary>boundary>boundary>decision>decision>boundary",
+      "compressedDiscourseSkeleton": "boundary>decision>boundary",
+      "fixedWordExcelTail": false,
+      "stepCount": 11,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "relative-time-only",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": false,
+      "templateMarkerCount": 0,
+      "explicitRequestPresent": true,
+      "requestFrame": "need-you",
+      "requestPositionRatio": 0.7723,
+      "requestMarker": "我需要你做",
+      "requestDeliverableMarker": "网页",
+      "missingDeliverableFormats": [],
+      "firstSentenceLength": 75,
+      "firstSentenceCommaCount": 3,
+      "firstPunctuationIsTerminal": false,
+      "commaCount": 39,
+      "periodCount": 15,
+      "colonCount": 0,
+      "semicolonCount": 0,
+      "enumerationCommaCount": 7,
+      "commaToPeriodRatio": 2.6,
+      "enumerationCommasPer100Chars": 0.8393,
+      "structuralPunctuationCount": 0,
+      "structuralPunctuationPer100Chars": 0,
+      "earlyStructuralPunctuation": false,
+      "containsSemicolon": false,
+      "maximumTerminalSentenceLength": 101,
+      "evidence": {
+        "disclaimerSentences": [
+          "食品留样、陪餐安排，从业人员健康证，食品安全日管控周排查月调度和供货商资质及承包合同履约材料没有完整对应，单靠现有四类材料不能直接得出菜单可以上线。",
+          "材料定下来以前要检查主体、范围等信息，缺少的截图等资料继续挂在对应环节。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quoted-detail",
+            "value": "“待整改”"
+          },
+          {
+            "kind": "named-source",
+            "value": "《学校食堂外包供餐留样与陪餐整改工作台》"
+          },
+          {
+            "kind": "named-source",
+            "value": "《学校食堂外包供餐留样与陪餐整改定稿》"
+          }
+        ],
+        "finalParagraph": "前面的事实已经能够对上，我需要你做一套HTML网页《学校食堂外包供餐留样与陪餐整改工作台》以及PDF《学校食堂外包供餐留样与陪餐整改定稿》，接手的人按现状继续核对。把从菜单和采购和贮存到留样陪餐和投诉处理逐段核对换季供餐安排，为下周一是否启用新菜单提供校方可执行的整改依据说清时，手头证据、仍然卡住的事项等信息要和可执行动作接在一起。材料定下来以前要检查主体、范围等信息，缺少的截图等资料继续挂在对应环节。",
+        "finalStep": "由后勤主任依据启用判断和跟进表向家委会说明校方与承包商各自的动作。",
+        "request": {
+          "clear": true,
+          "frame": "need-you",
+          "requestMarker": "我需要你做",
+          "requestIndex": 648,
+          "requestSentenceIndex": 12,
+          "deliverableMarker": "网页",
+          "deliverableIndex": 659
+        },
+        "punctuation": {
+          "visibleCharacters": 834,
+          "firstSentence": "换季菜单（计划下周一启用）准备下周一启用，校方手里已有菜单，供货商名单，冷柜照片（只记录拍摄时的设备状态）和家长投诉截图（仍要回到原始投诉和处理记录）。",
+          "firstSentenceLength": 75,
+          "firstSentenceCommaCount": 3,
+          "firstPunctuation": "，",
+          "firstPunctuationIndex": 20,
+          "firstPunctuationIsTerminal": false,
+          "commaCount": 39,
+          "periodCount": 15,
+          "colonCount": 0,
+          "semicolonCount": 0,
+          "enumerationCommaCount": 7,
+          "structuralPunctuationCount": 0,
+          "commaToPeriodRatio": 2.6,
+          "enumerationCommasPer100Chars": 0.8393,
+          "structuralPunctuationPer100Chars": 0,
+          "earlyStructuralPunctuation": false,
+          "containsSemicolon": false,
+          "maximumTerminalSentenceLength": 101
+        }
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "沈礼_7.9_09",
+      "dataRow": 10,
+      "questionLength": 901,
+      "paragraphCount": 3,
+      "sentenceCount": 17,
+      "disclaimerSentenceCount": 2,
+      "disclaimerSentenceDensity": 0.1176,
+      "missingMaterialSentenceCount": 0,
+      "evidenceBoundarySentenceCount": 2,
+      "disclaimerSignalCount": 2,
+      "concreteFactAnchorCount": 3,
+      "concreteFactsPer100Chars": 0.333,
+      "firstPersonPresent": true,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "boundary",
+        "boundary",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0
+        },
+        {
+          "boundary": 3,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "deliverable": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 5,
+          "boundary": 4,
+          "evidence": 2,
+          "quality": 2,
+          "decision": 0,
+          "scene": 0,
+          "instruction": 0
+        }
+      ],
+      "discourseSkeleton": "boundary>boundary>deliverable",
+      "compressedDiscourseSkeleton": "boundary>deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 10,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "no-schedule-device",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 1,
+      "explicitRequestPresent": true,
+      "requestFrame": "give-me",
+      "requestPositionRatio": 0.7863,
+      "requestMarker": "你给我整理",
+      "requestDeliverableMarker": "Excel",
+      "missingDeliverableFormats": [],
+      "firstSentenceLength": 52,
+      "firstSentenceCommaCount": 1,
+      "firstPunctuationIsTerminal": false,
+      "commaCount": 42,
+      "periodCount": 17,
+      "colonCount": 0,
+      "semicolonCount": 0,
+      "enumerationCommaCount": 8,
+      "commaToPeriodRatio": 2.4706,
+      "enumerationCommasPer100Chars": 0.8879,
+      "structuralPunctuationCount": 0,
+      "structuralPunctuationPer100Chars": 0,
+      "earlyStructuralPunctuation": false,
+      "containsSemicolon": false,
+      "maximumTerminalSentenceLength": 100,
+      "evidence": {
+        "disclaimerSentences": [
+          "老会员身份（不能替代处方条件）本身不能替代任何处方条件。",
+          "这里主要处理沿处方上传和药师审核和复购展示和配送流程检查慢病入口，把网售禁限和处方留痕和促销页面及所需材料落实到功能处理建议，其中确认过的内容、不能确认的部分等边界都要写得让外行看懂。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quoted-detail",
+            "value": "“复购”"
+          },
+          {
+            "kind": "named-source",
+            "value": "《药店小程序处方药网络销售跟踪表》"
+          },
+          {
+            "kind": "named-source",
+            "value": "《药店小程序处方药网络销售工作台》"
+          }
+        ],
+        "finalParagraph": "这件事还要往下办理，你给我整理Excel《药店小程序处方药网络销售跟踪表》以及HTML网页《药店小程序处方药网络销售工作台》，后续每一步都能找到对应材料。这里主要处理沿处方上传和药师审核和复购展示和配送流程检查慢病入口，把网售禁限和处方留痕和促销页面及所需材料落实到功能处理建议，其中确认过的内容、不能确认的部分等边界都要写得让外行看懂。收口时按问题、依据等顺序反查，拿不到原始数据的指标等内容保持未确认。",
+        "finalStep": "最后用一笔老会员处方药复购从上传处方走到配送和复购提醒，页面处理和药师动作和材料缺口与灰度意见要前后一致。",
+        "request": {
+          "clear": true,
+          "frame": "give-me",
+          "requestMarker": "你给我整理",
+          "requestIndex": 710,
+          "requestSentenceIndex": 14,
+          "deliverableMarker": "Excel",
+          "deliverableIndex": 715
+        },
+        "punctuation": {
+          "visibleCharacters": 901,
+          "firstSentence": "眼下围绕药店小程序想给老会员增加慢病处方药复、设想是上传处方等情况继续往前推，重点已经从背景转到实际阻碍。",
+          "firstSentenceLength": 52,
+          "firstSentenceCommaCount": 1,
+          "firstPunctuation": "、",
+          "firstPunctuationIndex": 22,
+          "firstPunctuationIsTerminal": false,
+          "commaCount": 42,
+          "periodCount": 17,
+          "colonCount": 0,
+          "semicolonCount": 0,
+          "enumerationCommaCount": 8,
+          "structuralPunctuationCount": 0,
+          "commaToPeriodRatio": 2.4706,
+          "enumerationCommasPer100Chars": 0.8879,
+          "structuralPunctuationPer100Chars": 0,
+          "earlyStructuralPunctuation": false,
+          "containsSemicolon": false,
+          "maximumTerminalSentenceLength": 100
+        }
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "沈礼_7.9_10",
+      "dataRow": 11,
+      "questionLength": 801,
+      "paragraphCount": 5,
+      "sentenceCount": 16,
+      "disclaimerSentenceCount": 1,
+      "disclaimerSentenceDensity": 0.0625,
+      "missingMaterialSentenceCount": 1,
+      "evidenceBoundarySentenceCount": 0,
+      "disclaimerSignalCount": 1,
+      "concreteFactAnchorCount": 2,
+      "concreteFactsPer100Chars": 0.2497,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "evidence",
+        "decision",
+        "evidence",
+        "decision",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "quality": 0
+        },
+        {
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "scene": 0
+        },
+        {
+          "evidence": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "decision": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "evidence": 0
+        },
+        {
+          "deliverable": 5,
+          "boundary": 4,
+          "evidence": 2,
+          "instruction": 1,
+          "decision": 0,
+          "quality": 0,
+          "scene": 0
+        }
+      ],
+      "discourseSkeleton": "evidence>decision>evidence>decision>deliverable",
+      "compressedDiscourseSkeleton": "evidence>decision>evidence>decision>deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 12,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "no-schedule-device",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 1,
+      "explicitRequestPresent": true,
+      "requestFrame": "trouble-you",
+      "requestPositionRatio": 0.7677,
+      "requestMarker": "麻烦你把",
+      "requestDeliverableMarker": "Word",
+      "missingDeliverableFormats": [],
+      "firstSentenceLength": 53,
+      "firstSentenceCommaCount": 2,
+      "firstPunctuationIsTerminal": false,
+      "commaCount": 31,
+      "periodCount": 16,
+      "colonCount": 1,
+      "semicolonCount": 0,
+      "enumerationCommaCount": 6,
+      "commaToPeriodRatio": 1.9375,
+      "enumerationCommasPer100Chars": 0.7491,
+      "structuralPunctuationCount": 1,
+      "structuralPunctuationPer100Chars": 0.1248,
+      "earlyStructuralPunctuation": false,
+      "containsSemicolon": false,
+      "maximumTerminalSentenceLength": 102,
+      "evidence": {
+        "disclaimerSentences": [
+          "交给同事以前再对照名称、日期等细节，仍未到齐的授权等文件单独留下。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "named-source",
+            "value": "《社区诊所医保定点申请材料预审说明稿》"
+          },
+          {
+            "kind": "named-source",
+            "value": "《社区诊所医保定点申请材料预审定稿》"
+          }
+        ],
+        "finalParagraph": "问题现在落到了具体环节，麻烦你把它收进Word《社区诊所医保定点申请材料预审说明稿》以及PDF《社区诊所医保定点申请材料预审定稿》，相关人员拿到后就能跟进。考虑到材料还会更新，根据社区诊所现有证照和自查表和定点规则作条件性预审，区分可先准备和证据到件后推进及先改系统或制度的事项中的当前状态、补件位置等信息需要能被后续人员接着维护。交给同事以前再对照名称、日期等细节，仍未到齐的授权等文件单独留下。",
+        "finalStep": "把预审意见交给老板和诊所负责人安排下一轮补件，材料状态变化后更新本月递交判断。",
+        "request": {
+          "clear": true,
+          "frame": "trouble-you",
+          "requestMarker": "麻烦你把",
+          "requestIndex": 618,
+          "requestSentenceIndex": 13,
+          "deliverableMarker": "Word",
+          "deliverableIndex": 625
+        },
+        "punctuation": {
+          "visibleCharacters": 801,
+          "firstSentence": "社区诊所准备在本月递交医保定点申，现有文件是营业执照，医疗机构执业许可证和一份自查表（勾选项尚无运行证据）。",
+          "firstSentenceLength": 53,
+          "firstSentenceCommaCount": 2,
+          "firstPunctuation": "，",
+          "firstPunctuationIndex": 16,
+          "firstPunctuationIsTerminal": false,
+          "commaCount": 31,
+          "periodCount": 16,
+          "colonCount": 1,
+          "semicolonCount": 0,
+          "enumerationCommaCount": 6,
+          "structuralPunctuationCount": 1,
+          "commaToPeriodRatio": 1.9375,
+          "enumerationCommasPer100Chars": 0.7491,
+          "structuralPunctuationPer100Chars": 0.1248,
+          "earlyStructuralPunctuation": false,
+          "containsSemicolon": false,
+          "maximumTerminalSentenceLength": 102
+        }
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "沈礼_7.9_11",
+      "dataRow": 12,
+      "questionLength": 893,
+      "paragraphCount": 5,
+      "sentenceCount": 14,
+      "disclaimerSentenceCount": 3,
+      "disclaimerSentenceDensity": 0.2143,
+      "missingMaterialSentenceCount": 1,
+      "evidenceBoundarySentenceCount": 3,
+      "disclaimerSignalCount": 4,
+      "concreteFactAnchorCount": 5,
+      "concreteFactsPer100Chars": 0.5599,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "boundary",
+        "evidence",
+        "boundary",
+        "boundary",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "boundary": 3,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "deliverable": 0,
+          "instruction": 0
+        },
+        {
+          "evidence": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "boundary": 3,
+          "evidence": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "deliverable": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 5,
+          "boundary": 5,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1
+        }
+      ],
+      "discourseSkeleton": "boundary>evidence>boundary>boundary>deliverable",
+      "compressedDiscourseSkeleton": "boundary>evidence>boundary>deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 11,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "no-schedule-device",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 1,
+      "explicitRequestPresent": true,
+      "requestFrame": "you-take-it",
+      "requestPositionRatio": 0.7848,
+      "requestMarker": "这件事交给你整理",
+      "requestDeliverableMarker": "Excel",
+      "missingDeliverableFormats": [],
+      "firstSentenceLength": 113,
+      "firstSentenceCommaCount": 3,
+      "firstPunctuationIsTerminal": false,
+      "commaCount": 36,
+      "periodCount": 14,
+      "colonCount": 0,
+      "semicolonCount": 0,
+      "enumerationCommaCount": 9,
+      "commaToPeriodRatio": 2.5714,
+      "enumerationCommasPer100Chars": 1.0078,
+      "structuralPunctuationCount": 0,
+      "structuralPunctuationPer100Chars": 0,
+      "earlyStructuralPunctuation": false,
+      "containsSemicolon": false,
+      "maximumTerminalSentenceLength": 113,
+      "evidence": {
+        "disclaimerSentences": [
+          "各抽一笔四种类型的记录试填，不能用同一个“可开票”状态同时代替扣除判断和材料核对。",
+          "关于为公益项目财务建立按捐赠类型核对票据和税前扣除材料的办法，让后台记录在资料到齐后能够逐笔分流，先沿真实流程放好记录、问题等内容，避免把暂时判断写成最终结论。",
+          "最后用一个真实环节核验来源、状态等记录，缺少的签字等内容不能被结论代替。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quoted-detail",
+            "value": "“公益合作款（后台备注不能直接决定票据性质）”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“公益合作款”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“可开票”"
+          },
+          {
+            "kind": "named-source",
+            "value": "《公益项目捐赠票据开具与税前扣除材料跟踪表》"
+          },
+          {
+            "kind": "named-source",
+            "value": "《公益项目捐赠票据开具与税前扣除材料定稿》"
+          }
+        ],
+        "finalParagraph": "为了避免再次从头翻材料，这件事交给你整理成Excel《公益项目捐赠票据开具与税前扣除材料跟踪表》以及PDF《公益项目捐赠票据开具与税前扣除材料定稿》，把这轮判断自然接到后续工作。关于为公益项目财务建立按捐赠类型核对票据和税前扣除材料的办法，让后台记录在资料到齐后能够逐笔分流，先沿真实流程放好记录、问题等内容，避免把暂时判断写成最终结论。最后用一个真实环节核验来源、状态等记录，缺少的签字等内容不能被结论代替。",
+        "finalStep": "完成后各抽一笔企业捐款和员工配捐和物资折价和公益合作款，票据动作和扣除提示与待核材料不能被同一个状态笼统带过。",
+        "request": {
+          "clear": true,
+          "frame": "you-take-it",
+          "requestMarker": "这件事交给你整理",
+          "requestIndex": 704,
+          "requestSentenceIndex": 11,
+          "deliverableMarker": "Excel",
+          "deliverableIndex": 713
+        },
+        "punctuation": {
+          "visibleCharacters": 893,
+          "firstSentence": "公益项目后台把企业捐款（还要和员工配捐、物资折价分开核对），员工配捐，物资折价和几笔备注为“公益合作款（后台备注不能直接决定票据性质）”的记录放在了一起，捐赠人又在催公益事业捐赠票据和税前扣除（还要另核受赠主体资格和材料）材料。",
+          "firstSentenceLength": 113,
+          "firstSentenceCommaCount": 3,
+          "firstPunctuation": "、",
+          "firstPunctuationIndex": 19,
+          "firstPunctuationIsTerminal": false,
+          "commaCount": 36,
+          "periodCount": 14,
+          "colonCount": 0,
+          "semicolonCount": 0,
+          "enumerationCommaCount": 9,
+          "structuralPunctuationCount": 0,
+          "commaToPeriodRatio": 2.5714,
+          "enumerationCommasPer100Chars": 1.0078,
+          "structuralPunctuationPer100Chars": 0,
+          "earlyStructuralPunctuation": false,
+          "containsSemicolon": false,
+          "maximumTerminalSentenceLength": 113
+        }
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "裴硬_7.9_01",
+      "dataRow": 13,
+      "questionLength": 906,
+      "paragraphCount": 6,
+      "sentenceCount": 15,
+      "disclaimerSentenceCount": 2,
+      "disclaimerSentenceDensity": 0.1333,
+      "missingMaterialSentenceCount": 2,
+      "evidenceBoundarySentenceCount": 1,
+      "disclaimerSignalCount": 5,
+      "concreteFactAnchorCount": 6,
+      "concreteFactsPer100Chars": 0.6623,
+      "firstPersonPresent": true,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "boundary",
+        "boundary",
+        "boundary",
+        "decision",
+        "scene",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "boundary": 3,
+          "decision": 2,
+          "evidence": 2,
+          "scene": 1,
+          "deliverable": 0,
+          "quality": 0,
+          "instruction": 0
+        },
+        {
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "scene": 0
+        },
+        {
+          "boundary": 3,
+          "decision": 2,
+          "evidence": 2,
+          "deliverable": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "decision": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0
+        },
+        {
+          "deliverable": 5,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "boundary": 1,
+          "scene": 1,
+          "instruction": 1
+        }
+      ],
+      "discourseSkeleton": "boundary>boundary>boundary>decision>scene>deliverable",
+      "compressedDiscourseSkeleton": "boundary>decision>scene>deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 13,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "relative-deadline",
+      "weakScheduleDevice": true,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 2,
+      "explicitRequestPresent": true,
+      "requestFrame": "want-artifact",
+      "requestPositionRatio": 0.7947,
+      "requestMarker": "我想要一套",
+      "requestDeliverableMarker": "Excel",
+      "missingDeliverableFormats": [],
+      "firstSentenceLength": 47,
+      "firstSentenceCommaCount": 1,
+      "firstPunctuationIsTerminal": false,
+      "commaCount": 35,
+      "periodCount": 15,
+      "colonCount": 0,
+      "semicolonCount": 0,
+      "enumerationCommaCount": 8,
+      "commaToPeriodRatio": 2.3333,
+      "enumerationCommasPer100Chars": 0.883,
+      "structuralPunctuationCount": 0,
+      "structuralPunctuationPer100Chars": 0,
+      "earlyStructuralPunctuation": false,
+      "containsSemicolon": false,
+      "maximumTerminalSentenceLength": 97,
+      "evidence": {
+        "disclaimerSentences": [
+          "目前产品备案页，功效评价摘要、达人合同，对比图来源和后台投放数据均未提供，所以规则能够给出改稿方向，却不能证明具体功效已经成立。",
+          "发出前再核对象、版本等基础项，没有明确出处的数字等信息继续退回确认。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quoted-detail",
+            "value": "“敏感肌急救精华”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“三天退红”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“医美级维稳”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“修护屏障”"
+          },
+          {
+            "kind": "named-source",
+            "value": "《化妆品功效宣称与达人短视频跟踪表》"
+          },
+          {
+            "kind": "named-source",
+            "value": "《化妆品功效宣称与达人短视频汇报稿》"
+          }
+        ],
+        "finalParagraph": "目前的卡点已经说清，我想要一套Excel《化妆品功效宣称与达人短视频跟踪表》以及PPT《化妆品功效宣称与达人短视频汇报稿》，让下一位经办人知道从哪里继续。接手的人需要据此推进逐点审改敏感肌精华的三段达人口播和详情页和对比图，让功效表达和达人披露与购买入口在周五定稿前使用同一判断，所以事实依据、受阻原因等关键信息要能逐项回查。发出前再核对象、版本等基础项，没有明确出处的数字等信息继续退回确认。",
+        "finalStep": "将已经完成审改的点位交回内容运营和法务和投放继续定稿。",
+        "request": {
+          "clear": true,
+          "frame": "want-artifact",
+          "requestMarker": "我想要一套",
+          "requestIndex": 724,
+          "requestSentenceIndex": 12,
+          "deliverableMarker": "Excel",
+          "deliverableIndex": 729
+        },
+        "punctuation": {
+          "visibleCharacters": 906,
+          "firstSentence": "“敏感肌急救精华”的投放素材正在定稿，运营集中问“三天退红”“医美级维稳”“修护屏障”怎么处理。",
+          "firstSentenceLength": 47,
+          "firstSentenceCommaCount": 1,
+          "firstPunctuation": "，",
+          "firstPunctuationIndex": 18,
+          "firstPunctuationIsTerminal": false,
+          "commaCount": 35,
+          "periodCount": 15,
+          "colonCount": 0,
+          "semicolonCount": 0,
+          "enumerationCommaCount": 8,
+          "structuralPunctuationCount": 0,
+          "commaToPeriodRatio": 2.3333,
+          "enumerationCommasPer100Chars": 0.883,
+          "structuralPunctuationPer100Chars": 0,
+          "earlyStructuralPunctuation": false,
+          "containsSemicolon": false,
+          "maximumTerminalSentenceLength": 97
+        }
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "裴硬_7.9_02",
+      "dataRow": 14,
+      "questionLength": 800,
+      "paragraphCount": 3,
+      "sentenceCount": 14,
+      "disclaimerSentenceCount": 2,
+      "disclaimerSentenceDensity": 0.1429,
+      "missingMaterialSentenceCount": 1,
+      "evidenceBoundarySentenceCount": 1,
+      "disclaimerSignalCount": 3,
+      "concreteFactAnchorCount": 2,
+      "concreteFactsPer100Chars": 0.25,
+      "firstPersonPresent": true,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "deliverable",
+        "boundary",
+        "decision"
+      ],
+      "paragraphActionScores": [
+        {
+          "deliverable": 5,
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "quality": 0
+        },
+        {
+          "boundary": 3,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0
+        },
+        {
+          "decision": 2,
+          "quality": 2,
+          "boundary": 1,
+          "scene": 1,
+          "deliverable": 0,
+          "evidence": 0,
+          "instruction": 0
+        }
+      ],
+      "discourseSkeleton": "deliverable>boundary>decision",
+      "compressedDiscourseSkeleton": "deliverable>boundary>decision",
+      "fixedWordExcelTail": false,
+      "stepCount": 9,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "relative-time-only",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": false,
+      "templateMarkerCount": 0,
+      "explicitRequestPresent": true,
+      "requestFrame": "give-me",
+      "requestPositionRatio": 0.7968,
+      "requestMarker": "你给我搭建",
+      "requestDeliverableMarker": "网页",
+      "missingDeliverableFormats": [],
+      "firstSentenceLength": 130,
+      "firstSentenceCommaCount": 6,
+      "firstPunctuationIsTerminal": false,
+      "commaCount": 33,
+      "periodCount": 14,
+      "colonCount": 0,
+      "semicolonCount": 0,
+      "enumerationCommaCount": 7,
+      "commaToPeriodRatio": 2.3571,
+      "enumerationCommasPer100Chars": 0.875,
+      "structuralPunctuationCount": 0,
+      "structuralPunctuationPer100Chars": 0,
+      "earlyStructuralPunctuation": false,
+      "containsSemicolon": false,
+      "maximumTerminalSentenceLength": 130,
+      "evidence": {
+        "disclaimerSentences": [
+          "现有资料只有供应商标准合同和一页“全球合规”说明，没有正式CRM合同、境外接收方安全材料，三类入口的授权记录，历史导出日志及完整字段字典。",
+          "这一轮只收束把三类营销线索和六个拟同步字段逐项拆开，为海外CRM少字段试点形成销售可用和法务可继续复核的初筛结果，现有材料、待确认事项等内容各自落位，不再扩成新的任务。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quoted-detail",
+            "value": "“全球合规”"
+          },
+          {
+            "kind": "named-source",
+            "value": "《海外CRM试用线索跨境传输工作台》"
+          }
+        ],
+        "finalParagraph": "后面还要根据补件更新，你给我搭建HTML网页《海外CRM试用线索跨境传输工作台》，现有结论和待确认处分别保留。这一轮只收束把三类营销线索和六个拟同步字段逐项拆开，为海外CRM少字段试点形成销售可用和法务可继续复核的初筛结果，现有材料、待确认事项等内容各自落位，不再扩成新的任务。收尾时从使用者、场景等角度检查一遍，仍缺的流程等材料留在下一步动作里。",
+        "finalStep": "最后从三个获客渠道各抽一个字段，确认少字段试点说明与初筛表对取得方式和使用目的和境外接收和待补材料的说法一致。",
+        "request": {
+          "clear": true,
+          "frame": "give-me",
+          "requestMarker": "你给我搭建",
+          "requestIndex": 639,
+          "requestSentenceIndex": 11,
+          "deliverableMarker": "网页",
+          "deliverableIndex": 648
+        },
+        "punctuation": {
+          "visibleCharacters": 800,
+          "firstSentence": "官网预约试用，展会扫码和公众号留资是三条不同的营销线索入口（官网、展会和公众号分别留痕），销售准备把它们接入海外CRM（先讨论少字段试用范围），字段清单（目前把不同入口误当成同一组数据）却把姓名，手机号和公司邮箱，职位，采购预算和跟进备注默认成同一组可同步数据。",
+          "firstSentenceLength": 130,
+          "firstSentenceCommaCount": 6,
+          "firstPunctuation": "，",
+          "firstPunctuationIndex": 6,
+          "firstPunctuationIsTerminal": false,
+          "commaCount": 33,
+          "periodCount": 14,
+          "colonCount": 0,
+          "semicolonCount": 0,
+          "enumerationCommaCount": 7,
+          "structuralPunctuationCount": 0,
+          "commaToPeriodRatio": 2.3571,
+          "enumerationCommasPer100Chars": 0.875,
+          "structuralPunctuationPer100Chars": 0,
+          "earlyStructuralPunctuation": false,
+          "containsSemicolon": false,
+          "maximumTerminalSentenceLength": 130
+        }
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "裴硬_7.9_03",
+      "dataRow": 15,
+      "questionLength": 831,
+      "paragraphCount": 4,
+      "sentenceCount": 16,
+      "disclaimerSentenceCount": 1,
+      "disclaimerSentenceDensity": 0.0625,
+      "missingMaterialSentenceCount": 0,
+      "evidenceBoundarySentenceCount": 1,
+      "disclaimerSignalCount": 1,
+      "concreteFactAnchorCount": 3,
+      "concreteFactsPer100Chars": 0.361,
+      "firstPersonPresent": true,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "decision",
+        "boundary",
+        "evidence",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "decision": 2,
+          "evidence": 2,
+          "scene": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "quality": 0,
+          "instruction": 0
+        },
+        {
+          "boundary": 3,
+          "evidence": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "quality": 0
+        },
+        {
+          "deliverable": 5,
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "quality": 0
+        }
+      ],
+      "discourseSkeleton": "decision>boundary>evidence>deliverable",
+      "compressedDiscourseSkeleton": "decision>boundary>evidence>deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 14,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "relative-meeting",
+      "weakScheduleDevice": true,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 2,
+      "explicitRequestPresent": true,
+      "requestFrame": "need-one",
+      "requestPositionRatio": 0.807,
+      "requestMarker": "我这边要做一套",
+      "requestDeliverableMarker": "PPT",
+      "missingDeliverableFormats": [],
+      "firstSentenceLength": 124,
+      "firstSentenceCommaCount": 7,
+      "firstPunctuationIsTerminal": false,
+      "commaCount": 40,
+      "periodCount": 16,
+      "colonCount": 0,
+      "semicolonCount": 0,
+      "enumerationCommaCount": 10,
+      "commaToPeriodRatio": 2.5,
+      "enumerationCommasPer100Chars": 1.2034,
+      "structuralPunctuationCount": 0,
+      "structuralPunctuationPer100Chars": 0,
+      "earlyStructuralPunctuation": false,
+      "containsSemicolon": false,
+      "maximumTerminalSentenceLength": 124,
+      "evidence": {
+        "disclaimerSentences": [
+          "完成后再对照原文、附件等材料，无法确认的责任等判断不写成确定结论。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quantity",
+            "value": "18万元"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“18万元够不够修电梯”"
+          },
+          {
+            "kind": "named-source",
+            "value": "《小区公共收益公开与维修资金动用汇报稿》"
+          }
+        ],
+        "finalParagraph": "这次处理到材料允许的位置，我这边要做一套PPT《小区公共收益公开与维修资金动用汇报稿》，后续收到新信息再接着补。为了让把电梯广告18万元和物业保洁维保说法和三台电梯大修分成独立资金线，为下周协调会准备可核材料与程序问题能真正使用，正文要解释发生了什么，表内再留来源、状态等可查信息。完成后再对照原文、附件等材料，无法确认的责任等判断不写成确定结论。",
+        "finalStep": "把协调会尚未解决的问题交回相应合同和流水和报价或表决程序继续办理。",
+        "request": {
+          "clear": true,
+          "frame": "need-one",
+          "requestMarker": "我这边要做一套",
+          "requestIndex": 673,
+          "requestSentenceIndex": 13,
+          "deliverableMarker": "PPT",
+          "deliverableIndex": 680
+        },
+        "punctuation": {
+          "visibleCharacters": 831,
+          "firstSentence": "小区协调会同时出现三笔容易混淆的钱（广告收益、物业费用和维修资金），电梯广告一年18万元，物业称其抵了保洁和维保，业主代表要求查看广告合同，入账流水和分摊明细，另一边，三台电梯大修报价已经送来，物业希望动用住宅专项维修资金（另走适用范围和决定程序）。",
+          "firstSentenceLength": 124,
+          "firstSentenceCommaCount": 7,
+          "firstPunctuation": "、",
+          "firstPunctuationIndex": 22,
+          "firstPunctuationIsTerminal": false,
+          "commaCount": 40,
+          "periodCount": 16,
+          "colonCount": 0,
+          "semicolonCount": 0,
+          "enumerationCommaCount": 10,
+          "structuralPunctuationCount": 0,
+          "commaToPeriodRatio": 2.5,
+          "enumerationCommasPer100Chars": 1.2034,
+          "structuralPunctuationPer100Chars": 0,
+          "earlyStructuralPunctuation": false,
+          "containsSemicolon": false,
+          "maximumTerminalSentenceLength": 124
+        }
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "裴硬_7.9_04",
+      "dataRow": 16,
+      "questionLength": 839,
+      "paragraphCount": 6,
+      "sentenceCount": 14,
+      "disclaimerSentenceCount": 2,
+      "disclaimerSentenceDensity": 0.1429,
+      "missingMaterialSentenceCount": 2,
+      "evidenceBoundarySentenceCount": 0,
+      "disclaimerSignalCount": 2,
+      "concreteFactAnchorCount": 3,
+      "concreteFactsPer100Chars": 0.3576,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "decision",
+        "decision",
+        "boundary",
+        "decision",
+        "instruction",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "decision": 2,
+          "evidence": 2,
+          "boundary": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0
+        },
+        {
+          "boundary": 3,
+          "decision": 2,
+          "evidence": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "deliverable": 5,
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "instruction": 1,
+          "scene": 0
+        }
+      ],
+      "discourseSkeleton": "decision>decision>boundary>decision>instruction>deliverable",
+      "compressedDiscourseSkeleton": "decision>boundary>decision>instruction>deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 10,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "anchored-time",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 1,
+      "explicitRequestPresent": true,
+      "requestFrame": "can-you",
+      "requestPositionRatio": 0.7784,
+      "requestMarker": "能不能制作",
+      "requestDeliverableMarker": "Word",
+      "missingDeliverableFormats": [],
+      "firstSentenceLength": 63,
+      "firstSentenceCommaCount": 3,
+      "firstPunctuationIsTerminal": false,
+      "commaCount": 36,
+      "periodCount": 14,
+      "colonCount": 0,
+      "semicolonCount": 0,
+      "enumerationCommaCount": 9,
+      "commaToPeriodRatio": 2.5714,
+      "enumerationCommasPer100Chars": 1.0727,
+      "structuralPunctuationCount": 0,
+      "structuralPunctuationPer100Chars": 0,
+      "earlyStructuralPunctuation": false,
+      "containsSemicolon": false,
+      "maximumTerminalSentenceLength": 105,
+      "evidence": {
+        "disclaimerSentences": [
+          "样式稿没有说明三档（当前只有后台样式稿）只是排序提示，还是会影响HR看到简历和候选人进入后续流程，候选人在投递页能看到什么、HR能否查看全部档位，人工调整（还要保留操作与理由记录）怎样留痕，也没有相应页面或日志。",
+          "正式使用前检查时间、主体等口径，尚未取得的凭证等材料继续显示为缺口。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "date-time",
+            "value": "2026年7"
+          },
+          {
+            "kind": "named-source",
+            "value": "《AI简历筛选候选人告知与规则说明稿》"
+          },
+          {
+            "kind": "named-source",
+            "value": "《AI简历筛选候选人告知与规则工作台》"
+          }
+        ],
+        "finalParagraph": "考虑到使用者要直接拿来判断，能不能制作Word《AI简历筛选候选人告知与规则说明稿》以及HTML网页《AI简历筛选候选人告知与规则工作台》，把事实和下一步动作连在一起。处理从简历投递到HR查看逐段核对AI分档设计，明确候选人告知和后台操作和人工复核怎样影响2026年7月灰度时要还原事情经过，材料出处、未决问题等内容跟着放到对应位置。正式使用前检查时间、主体等口径，尚未取得的凭证等材料继续显示为缺口。",
+        "finalStep": "完成后用一份被分到C档的简历回查，从候选人投递告知和系统分档到HR查看和人工调整，每个节点都要有对应记录。",
+        "request": {
+          "clear": true,
+          "frame": "can-you",
+          "requestMarker": "能不能制作",
+          "requestIndex": 657,
+          "requestSentenceIndex": 11,
+          "deliverableMarker": "Word",
+          "deliverableIndex": 662
+        },
+        "punctuation": {
+          "visibleCharacters": 839,
+          "firstSentence": "招聘小程序计划在2026年7月灰度AI初筛，产品已经画出A档优先展示（需要确认是否影响后续流程），B档抽看，C档沉底的后台样式。",
+          "firstSentenceLength": 63,
+          "firstSentenceCommaCount": 3,
+          "firstPunctuation": "，",
+          "firstPunctuationIndex": 21,
+          "firstPunctuationIsTerminal": false,
+          "commaCount": 36,
+          "periodCount": 14,
+          "colonCount": 0,
+          "semicolonCount": 0,
+          "enumerationCommaCount": 9,
+          "structuralPunctuationCount": 0,
+          "commaToPeriodRatio": 2.5714,
+          "enumerationCommasPer100Chars": 1.0727,
+          "structuralPunctuationPer100Chars": 0,
+          "earlyStructuralPunctuation": false,
+          "containsSemicolon": false,
+          "maximumTerminalSentenceLength": 105
+        }
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "裴硬_7.9_05",
+      "dataRow": 17,
+      "questionLength": 845,
+      "paragraphCount": 6,
+      "sentenceCount": 14,
+      "disclaimerSentenceCount": 1,
+      "disclaimerSentenceDensity": 0.0714,
+      "missingMaterialSentenceCount": 1,
+      "evidenceBoundarySentenceCount": 0,
+      "disclaimerSignalCount": 1,
+      "concreteFactAnchorCount": 6,
+      "concreteFactsPer100Chars": 0.7101,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "boundary",
+        "evidence",
+        "boundary",
+        "boundary",
+        "boundary",
+        "boundary"
+      ],
+      "paragraphActionScores": [
+        {
+          "boundary": 4,
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "quality": 0
+        },
+        {
+          "evidence": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "boundary": 3,
+          "decision": 2,
+          "evidence": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "boundary": 3,
+          "evidence": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "boundary": 3,
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "quality": 0
+        },
+        {
+          "boundary": 3,
+          "decision": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "evidence": 0,
+          "quality": 0
+        }
+      ],
+      "discourseSkeleton": "boundary>evidence>boundary>boundary>boundary>boundary",
+      "compressedDiscourseSkeleton": "boundary>evidence>boundary",
+      "fixedWordExcelTail": false,
+      "stepCount": 10,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "no-schedule-device",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": false,
+      "templateMarkerCount": 0,
+      "explicitRequestPresent": true,
+      "requestFrame": "trouble-you",
+      "requestPositionRatio": 0.8224,
+      "requestMarker": "麻烦你整理",
+      "requestDeliverableMarker": "PDF",
+      "missingDeliverableFormats": [],
+      "firstSentenceLength": 63,
+      "firstSentenceCommaCount": 1,
+      "firstPunctuationIsTerminal": false,
+      "commaCount": 40,
+      "periodCount": 14,
+      "colonCount": 1,
+      "semicolonCount": 0,
+      "enumerationCommaCount": 8,
+      "commaToPeriodRatio": 2.8571,
+      "enumerationCommasPer100Chars": 0.9467,
+      "structuralPunctuationCount": 1,
+      "structuralPunctuationPer100Chars": 0.1183,
+      "earlyStructuralPunctuation": false,
+      "containsSemicolon": false,
+      "maximumTerminalSentenceLength": 101,
+      "evidence": {
+        "disclaimerSentences": [
+          "围绕本地生活平台准备做“城市周末民宿”专、招商交来的30套房源（目前仍是证照和等线索再走一遍，事实与待补材料之间的界线会更直观。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quantity",
+            "value": "30套"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“城市周末民宿”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“页面准备完成（不能等同于房源已经可上架）”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“房源已经可上架”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“证照齐全”"
+          },
+          {
+            "kind": "named-source",
+            "value": "《民宿房源上架治安消防与交易信息定稿》"
+          }
+        ],
+        "finalParagraph": "事情不能停在口头说明上，麻烦你整理成PDF《民宿房源上架治安消防与交易信息定稿》，交接时能看懂为什么这样处理。这次围绕按30套散件民宿逐房源收件与分流，同时划清专题页准备工作和具体房源上架的界限给出可以直接接手的结果，事实、缺口等信息都跟着实际流程往下走。最后沿着事实、处理动作等位置回查，仍没收到的回复等信息留给经办人跟进。",
+        "finalStep": "把达到相应条件的房源信息交给运营进入后续上架环节。",
+        "request": {
+          "clear": true,
+          "frame": "trouble-you",
+          "requestMarker": "麻烦你整理",
+          "requestIndex": 699,
+          "requestSentenceIndex": 11,
+          "deliverableMarker": "PDF",
+          "deliverableIndex": 705
+        },
+        "punctuation": {
+          "visibleCharacters": 845,
+          "firstSentence": "围绕本地生活平台准备做“城市周末民宿”专、招商交来的30套房源（目前仍是证照和等线索再走一遍，事实与待补材料之间的界线会更直观。",
+          "firstSentenceLength": 63,
+          "firstSentenceCommaCount": 1,
+          "firstPunctuation": "、",
+          "firstPunctuationIndex": 20,
+          "firstPunctuationIsTerminal": false,
+          "commaCount": 40,
+          "periodCount": 14,
+          "colonCount": 1,
+          "semicolonCount": 0,
+          "enumerationCommaCount": 8,
+          "structuralPunctuationCount": 1,
+          "commaToPeriodRatio": 2.8571,
+          "enumerationCommasPer100Chars": 0.9467,
+          "structuralPunctuationPer100Chars": 0.1183,
+          "earlyStructuralPunctuation": false,
+          "containsSemicolon": false,
+          "maximumTerminalSentenceLength": 101
+        }
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "沈礼_7.10_01",
+      "dataRow": 18,
+      "questionLength": 973,
+      "paragraphCount": 3,
+      "sentenceCount": 15,
+      "disclaimerSentenceCount": 2,
+      "disclaimerSentenceDensity": 0.1333,
+      "missingMaterialSentenceCount": 1,
+      "evidenceBoundarySentenceCount": 1,
+      "disclaimerSignalCount": 2,
+      "concreteFactAnchorCount": 7,
+      "concreteFactsPer100Chars": 0.7194,
+      "firstPersonPresent": true,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "boundary",
+        "boundary",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "scene": 0
+        },
+        {
+          "boundary": 3,
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "quality": 0
+        },
+        {
+          "deliverable": 5,
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "instruction": 1,
+          "scene": 0
+        }
+      ],
+      "discourseSkeleton": "boundary>boundary>deliverable",
+      "compressedDiscourseSkeleton": "boundary>deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 9,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "relative-time-only",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 1,
+      "explicitRequestPresent": true,
+      "requestFrame": "give-me",
+      "requestPositionRatio": 0.8051,
+      "requestMarker": "你给我准备",
+      "requestDeliverableMarker": "Excel",
+      "missingDeliverableFormats": [],
+      "firstSentenceLength": 101,
+      "firstSentenceCommaCount": 3,
+      "firstPunctuationIsTerminal": false,
+      "commaCount": 44,
+      "periodCount": 15,
+      "colonCount": 0,
+      "semicolonCount": 0,
+      "enumerationCommaCount": 10,
+      "commaToPeriodRatio": 2.9333,
+      "enumerationCommasPer100Chars": 1.0277,
+      "structuralPunctuationCount": 0,
+      "structuralPunctuationPer100Chars": 0,
+      "earlyStructuralPunctuation": false,
+      "containsSemicolon": false,
+      "maximumTerminalSentenceLength": 136,
+      "evidence": {
+        "disclaimerSentences": [
+          "会员字段逐项说明用途、原有告知和退出推送后的处理，参加活动与接受营销推送不能互相代替。",
+          "后续动作取决于复核新品会员日弹窗中的券包和抽奖和生日权益和分层推送，把今晚能够修改的规则与仍待补充的活动记录分开是否说清，因此已核内容、仍需追问的地方等信息不能混在一起。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quantity",
+            "value": "9.9元"
+          },
+          {
+            "kind": "quantity",
+            "value": "7天"
+          },
+          {
+            "kind": "quantity",
+            "value": "30天"
+          },
+          {
+            "kind": "identifier",
+            "value": "9.9"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“连喝7天抽免单”"
+          },
+          {
+            "kind": "named-source",
+            "value": "《茶饮小程序积分抽奖与优惠券规则跟踪表》"
+          },
+          {
+            "kind": "named-source",
+            "value": "《茶饮小程序积分抽奖与优惠券规则工作台》"
+          }
+        ],
+        "finalParagraph": "现在需要把零散信息落到工作流里，你给我准备Excel《茶饮小程序积分抽奖与优惠券规则跟踪表》以及HTML网页《茶饮小程序积分抽奖与优惠券规则工作台》，让办理过程可以连续推进。后续动作取决于复核新品会员日弹窗中的券包和抽奖和生日权益和分层推送，把今晚能够修改的规则与仍待补充的活动记录分开是否说清，因此已核内容、仍需追问的地方等信息不能混在一起。交付之前再核来源、适用范围等内容，暂缺的说明等材料不能悄悄补成事实。",
+        "finalStep": "最后用券包退款和积分抽奖和分层推送各跑一个场景，页面意见和后台字段和客服口径与台账状态不能互相打架。",
+        "request": {
+          "clear": true,
+          "frame": "give-me",
+          "requestMarker": "你给我准备",
+          "requestIndex": 785,
+          "requestSentenceIndex": 12,
+          "deliverableMarker": "Excel",
+          "deliverableIndex": 790
+        },
+        "punctuation": {
+          "visibleCharacters": 973,
+          "firstSentence": "新品会员日页面这次要进小程序测试，弹窗把9.9元券包（需说明购买后实际取得的权益），积分抽奖（需交代参与方式、奖品和概率），生日月加赠和“连喝7天抽免单”和会员分层推送（另核字段来源与退出处理）挤在一起。",
+          "firstSentenceLength": 101,
+          "firstSentenceCommaCount": 3,
+          "firstPunctuation": "，",
+          "firstPunctuationIndex": 16,
+          "firstPunctuationIsTerminal": false,
+          "commaCount": 44,
+          "periodCount": 15,
+          "colonCount": 0,
+          "semicolonCount": 0,
+          "enumerationCommaCount": 10,
+          "structuralPunctuationCount": 0,
+          "commaToPeriodRatio": 2.9333,
+          "enumerationCommasPer100Chars": 1.0277,
+          "structuralPunctuationPer100Chars": 0,
+          "earlyStructuralPunctuation": false,
+          "containsSemicolon": false,
+          "maximumTerminalSentenceLength": 136
+        }
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "沈礼_7.10_02",
+      "dataRow": 19,
+      "questionLength": 872,
+      "paragraphCount": 4,
+      "sentenceCount": 15,
+      "disclaimerSentenceCount": 2,
+      "disclaimerSentenceDensity": 0.1333,
+      "missingMaterialSentenceCount": 2,
+      "evidenceBoundarySentenceCount": 0,
+      "disclaimerSignalCount": 3,
+      "concreteFactAnchorCount": 2,
+      "concreteFactsPer100Chars": 0.2294,
+      "firstPersonPresent": true,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "evidence",
+        "boundary",
+        "quality",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "evidence": 2,
+          "quality": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "scene": 0
+        },
+        {
+          "boundary": 3,
+          "evidence": 2,
+          "quality": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "scene": 0
+        },
+        {
+          "quality": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 5,
+          "boundary": 5,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "instruction": 1,
+          "scene": 0
+        }
+      ],
+      "discourseSkeleton": "evidence>boundary>quality>deliverable",
+      "compressedDiscourseSkeleton": "evidence>boundary>quality>deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 10,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "relative-meeting",
+      "weakScheduleDevice": true,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 2,
+      "explicitRequestPresent": true,
+      "requestFrame": "need-you",
+      "requestPositionRatio": 0.7771,
+      "requestMarker": "我需要你制作",
+      "requestDeliverableMarker": "PPT",
+      "missingDeliverableFormats": [],
+      "firstSentenceLength": 96,
+      "firstSentenceCommaCount": 4,
+      "firstPunctuationIsTerminal": false,
+      "commaCount": 37,
+      "periodCount": 15,
+      "colonCount": 1,
+      "semicolonCount": 0,
+      "enumerationCommaCount": 11,
+      "commaToPeriodRatio": 2.4667,
+      "enumerationCommasPer100Chars": 1.2615,
+      "structuralPunctuationCount": 1,
+      "structuralPunctuationPer100Chars": 0.1147,
+      "earlyStructuralPunctuation": false,
+      "containsSemicolon": false,
+      "maximumTerminalSentenceLength": 98,
+      "evidence": {
+        "disclaimerSentences": [
+          "前后关系核清以后，我需要你制作PPT《儿童智能终端定位与监护人授权汇报稿》以及PDF《儿童智能终端定位与监护人授权定稿》，没有材料的地方继续明确留空。",
+          "材料最终要服务为两个班的儿童智能手表试用逐功能核对定位和录音和打卡和迟到统计和家长端查看，形成园方与家委会可讨论的授权及配置问题，每个判断都要连回来源，缺少的批复、记录等内容继续标成待办。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "named-source",
+            "value": "《儿童智能终端定位与监护人授权汇报稿》"
+          },
+          {
+            "kind": "named-source",
+            "value": "《儿童智能终端定位与监护人授权定稿》"
+          }
+        ],
+        "finalParagraph": "前后关系核清以后，我需要你制作PPT《儿童智能终端定位与监护人授权汇报稿》以及PDF《儿童智能终端定位与监护人授权定稿》，没有材料的地方继续明确留空。材料最终要服务为两个班的儿童智能手表试用逐功能核对定位和录音和打卡和迟到统计和家长端查看，形成园方与家委会可讨论的授权及配置问题，每个判断都要连回来源，缺少的批复、记录等内容继续标成待办。材料交出去前看一遍记录、结论等对应关系，尚无依据的状态等内容继续空着。",
+        "finalStep": "完成后分别模拟家长同意和撤回同意和不同意戴表三种情况，功能开关和可见角色和保存处理与替代安排要能从两份文件中连续读下来。",
+        "request": {
+          "clear": true,
+          "frame": "need-you",
+          "requestMarker": "我需要你制作",
+          "requestIndex": 680,
+          "requestSentenceIndex": 12,
+          "deliverableMarker": "PPT",
+          "deliverableIndex": 686
+        },
+        "punctuation": {
+          "visibleCharacters": 872,
+          "firstSentence": "幼儿园准备9月先在两个班（本轮试用范围仅限园内场景）试用儿童智能手表，功能清单包括进出园自动打卡，离园围栏提醒，SOS一键录音（与定位和迟到统计分开处理）、家长端查看位置，迟到次数同步给班主任。",
+          "firstSentenceLength": 96,
+          "firstSentenceCommaCount": 4,
+          "firstPunctuation": "，",
+          "firstPunctuationIndex": 34,
+          "firstPunctuationIsTerminal": false,
+          "commaCount": 37,
+          "periodCount": 15,
+          "colonCount": 1,
+          "semicolonCount": 0,
+          "enumerationCommaCount": 11,
+          "structuralPunctuationCount": 1,
+          "commaToPeriodRatio": 2.4667,
+          "enumerationCommasPer100Chars": 1.2615,
+          "structuralPunctuationPer100Chars": 0.1147,
+          "earlyStructuralPunctuation": false,
+          "containsSemicolon": false,
+          "maximumTerminalSentenceLength": 98
+        }
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "沈礼_7.10_03",
+      "dataRow": 20,
+      "questionLength": 947,
+      "paragraphCount": 5,
+      "sentenceCount": 16,
+      "disclaimerSentenceCount": 1,
+      "disclaimerSentenceDensity": 0.0625,
+      "missingMaterialSentenceCount": 0,
+      "evidenceBoundarySentenceCount": 1,
+      "disclaimerSignalCount": 1,
+      "concreteFactAnchorCount": 3,
+      "concreteFactsPer100Chars": 0.3168,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "evidence",
+        "evidence",
+        "boundary",
+        "boundary",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "evidence": 2,
+          "quality": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "scene": 0
+        },
+        {
+          "evidence": 2,
+          "boundary": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "boundary": 3,
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "quality": 0
+        },
+        {
+          "boundary": 3,
+          "evidence": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "deliverable": 5,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "boundary": 0
+        }
+      ],
+      "discourseSkeleton": "evidence>evidence>boundary>boundary>deliverable",
+      "compressedDiscourseSkeleton": "evidence>boundary>deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 10,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "relative-deadline",
+      "weakScheduleDevice": true,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 2,
+      "explicitRequestPresent": true,
+      "requestFrame": "you-take-it",
+      "requestPositionRatio": 0.7802,
+      "requestMarker": "这件事交给你整理",
+      "requestDeliverableMarker": "PPT",
+      "missingDeliverableFormats": [],
+      "firstSentenceLength": 94,
+      "firstSentenceCommaCount": 4,
+      "firstPunctuationIsTerminal": false,
+      "commaCount": 43,
+      "periodCount": 16,
+      "colonCount": 0,
+      "semicolonCount": 0,
+      "enumerationCommaCount": 11,
+      "commaToPeriodRatio": 2.6875,
+      "enumerationCommasPer100Chars": 1.1616,
+      "structuralPunctuationCount": 0,
+      "structuralPunctuationPer100Chars": 0,
+      "earlyStructuralPunctuation": false,
+      "containsSemicolon": false,
+      "maximumTerminalSentenceLength": 94,
+      "evidence": {
+        "disclaimerSentences": [
+          "两个文件用于和主办方，产品及客服逐条过，不提前给出最终上线结论，也不把风控标签写成当然成立的限制。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quantity",
+            "value": "48小时"
+          },
+          {
+            "kind": "named-source",
+            "value": "《大型营业性演出票务实名退票与规则公示汇报稿》"
+          },
+          {
+            "kind": "named-source",
+            "value": "《大型营业性演出票务实名退票与规则公示工作台》"
+          }
+        ],
+        "finalParagraph": "接下来会有人按这套口径执行，这件事交给你整理成PPT《大型营业性演出票务实名退票与规则公示汇报稿》以及HTML网页《大型营业性演出票务实名退票与规则公示工作台》，让他们能从事实直接走到动作。整理过程中以复核体育场演唱会的实名限购和退票梯次和转赠限制和异常账号拦截，供票务产品在周一前整理主办方及主管部门确认事项为主线，现状与依据、卡点等信息共同说明下一步为什么这样处理。最后拿一个关键判断回到时间、原文等位置核验，未确认的账号等事项仍留在问题中。",
+        "finalStep": "把后续收到的主办方或主管部门材料写回具体条款，更新公示文字和客服口径。",
+        "request": {
+          "clear": true,
+          "frame": "you-take-it",
+          "requestMarker": "这件事交给你整理",
+          "requestIndex": 742,
+          "requestSentenceIndex": 13,
+          "deliverableMarker": "PPT",
+          "deliverableIndex": 751
+        },
+        "punctuation": {
+          "visibleCharacters": 947,
+          "firstSentence": "体育场演唱会的购票规则要交主办方确认，草案目前写了身份证限购一张，实名入场，开票后48小时（需要明确从哪个时点起算）内免费退、临演前梯次收手续费（各档位要对应具体时间区间），电子票不可转赠。",
+          "firstSentenceLength": 94,
+          "firstSentenceCommaCount": 4,
+          "firstPunctuation": "，",
+          "firstPunctuationIndex": 18,
+          "firstPunctuationIsTerminal": false,
+          "commaCount": 43,
+          "periodCount": 16,
+          "colonCount": 0,
+          "semicolonCount": 0,
+          "enumerationCommaCount": 11,
+          "structuralPunctuationCount": 0,
+          "commaToPeriodRatio": 2.6875,
+          "enumerationCommasPer100Chars": 1.1616,
+          "structuralPunctuationPer100Chars": 0,
+          "earlyStructuralPunctuation": false,
+          "containsSemicolon": false,
+          "maximumTerminalSentenceLength": 94
+        }
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "沈礼_7.10_05",
+      "dataRow": 21,
+      "questionLength": 899,
+      "paragraphCount": 6,
+      "sentenceCount": 16,
+      "disclaimerSentenceCount": 2,
+      "disclaimerSentenceDensity": 0.125,
+      "missingMaterialSentenceCount": 1,
+      "evidenceBoundarySentenceCount": 1,
+      "disclaimerSignalCount": 3,
+      "concreteFactAnchorCount": 7,
+      "concreteFactsPer100Chars": 1.0029,
+      "firstPersonPresent": true,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "decision",
+        "boundary",
+        "boundary",
+        "boundary",
+        "boundary",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "decision": 2,
+          "evidence": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "boundary": 4,
+          "decision": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "boundary": 3,
+          "decision": 2,
+          "deliverable": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "boundary": 3,
+          "evidence": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "boundary": 3,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "deliverable": 5,
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "instruction": 1,
+          "scene": 0
+        }
+      ],
+      "discourseSkeleton": "decision>boundary>boundary>boundary>boundary>deliverable",
+      "compressedDiscourseSkeleton": "decision>boundary>deliverable",
+      "fixedWordExcelTail": true,
+      "stepCount": 13,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "anchored-time",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 2,
+      "explicitRequestPresent": true,
+      "requestFrame": "give-me",
+      "requestPositionRatio": 0.7909,
+      "requestMarker": "你给我做",
+      "requestDeliverableMarker": "Word",
+      "missingDeliverableFormats": [],
+      "firstSentenceLength": 96,
+      "firstSentenceCommaCount": 3,
+      "firstPunctuationIsTerminal": false,
+      "commaCount": 36,
+      "periodCount": 16,
+      "colonCount": 0,
+      "semicolonCount": 0,
+      "enumerationCommaCount": 8,
+      "commaToPeriodRatio": 2.25,
+      "enumerationCommasPer100Chars": 0.8899,
+      "structuralPunctuationCount": 0,
+      "structuralPunctuationPer100Chars": 0,
+      "earlyStructuralPunctuation": false,
+      "containsSemicolon": false,
+      "maximumTerminalSentenceLength": 96,
+      "evidence": {
+        "disclaimerSentences": [
+          "国内铁路资料用于梳理测试、鉴定，包装，申报和安全承诺和应急措施，国际联运资料中的未投产原型路径可以作为询问承运人的方向，但不能写成B3已经符合条件。",
+          "发给使用者以前复核型号、文件等信息，缺少的测试等材料继续阻断对应动作。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "date-time",
+            "value": "2026年2月3日"
+          },
+          {
+            "kind": "quantity",
+            "value": "24台"
+          },
+          {
+            "kind": "quantity",
+            "value": "4个"
+          },
+          {
+            "kind": "quantity",
+            "value": "3日"
+          },
+          {
+            "kind": "identifier",
+            "value": "B3"
+          },
+          {
+            "kind": "identifier",
+            "value": "UN38"
+          },
+          {
+            "kind": "identifier",
+            "value": "B2"
+          }
+        ],
+        "finalParagraph": "为了让这轮处理真正落地，你给我做一份Word《锂电池原型样机铁路订舱与出运资料说明稿》以及Excel《锂电池原型样机铁路订舱与出运资料跟踪表》，后面复核时也能按来源反查。使用者会根据梳理B3工程样机和备用锂电池的型号和包件及路线接受缺口，判断现有草单能否交代理并安排后续补件继续跟进，已有结论、尚无材料的部分等内容必须保留清楚边界。发给使用者以前复核型号、文件等信息，缺少的测试等材料继续阻断对应动作。",
+        "finalStep": "根据B3型号文件和包件路径和路线参与方书面回复，更新草单可交代理或继续暂停的状态。",
+        "request": {
+          "clear": true,
+          "frame": "give-me",
+          "requestMarker": "你给我做",
+          "requestIndex": 715,
+          "requestSentenceIndex": 13,
+          "deliverableMarker": "Word",
+          "deliverableIndex": 721
+        },
+        "punctuation": {
+          "visibleCharacters": 899,
+          "firstSentence": "苏州到华沙的班列订舱草单把整票货写成普通电子产品，实际货物是24台B3工程样机（每台内装一块98Wh电池），每台内装1块98Wh锂离子电池，另有8块同型号备用电池（与内装电池分开判断包装路径）。",
+          "firstSentenceLength": 96,
+          "firstSentenceCommaCount": 3,
+          "firstPunctuation": "，",
+          "firstPunctuationIndex": 24,
+          "firstPunctuationIsTerminal": false,
+          "commaCount": 36,
+          "periodCount": 16,
+          "colonCount": 0,
+          "semicolonCount": 0,
+          "enumerationCommaCount": 8,
+          "structuralPunctuationCount": 0,
+          "commaToPeriodRatio": 2.25,
+          "enumerationCommasPer100Chars": 0.8899,
+          "structuralPunctuationPer100Chars": 0,
+          "earlyStructuralPunctuation": false,
+          "containsSemicolon": false,
+          "maximumTerminalSentenceLength": 96
+        }
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "沈礼_7.10_06",
+      "dataRow": 22,
+      "questionLength": 813,
+      "paragraphCount": 4,
+      "sentenceCount": 15,
+      "disclaimerSentenceCount": 2,
+      "disclaimerSentenceDensity": 0.1333,
+      "missingMaterialSentenceCount": 2,
+      "evidenceBoundarySentenceCount": 0,
+      "disclaimerSignalCount": 3,
+      "concreteFactAnchorCount": 3,
+      "concreteFactsPer100Chars": 0.369,
+      "firstPersonPresent": true,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "boundary",
+        "deliverable",
+        "decision",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "boundary": 4,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0
+        },
+        {
+          "deliverable": 5,
+          "boundary": 3,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 0
+        },
+        {
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 5,
+          "decision": 2,
+          "quality": 2,
+          "boundary": 1,
+          "instruction": 1,
+          "evidence": 0,
+          "scene": 0
+        }
+      ],
+      "discourseSkeleton": "boundary>deliverable>decision>deliverable",
+      "compressedDiscourseSkeleton": "boundary>deliverable>decision>deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 11,
+      "finalStepSelfCheck": true,
+      "scheduleAuthenticityTag": "no-schedule-device",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 2,
+      "explicitRequestPresent": true,
+      "requestFrame": "want-artifact",
+      "requestPositionRatio": 0.7659,
+      "requestMarker": "我想要一套",
+      "requestDeliverableMarker": "Excel",
+      "missingDeliverableFormats": [],
+      "firstSentenceLength": 53,
+      "firstSentenceCommaCount": 1,
+      "firstPunctuationIsTerminal": false,
+      "commaCount": 28,
+      "periodCount": 15,
+      "colonCount": 0,
+      "semicolonCount": 0,
+      "enumerationCommaCount": 9,
+      "commaToPeriodRatio": 1.8667,
+      "enumerationCommasPer100Chars": 1.107,
+      "structuralPunctuationCount": 0,
+      "structuralPunctuationPer100Chars": 0,
+      "earlyStructuralPunctuation": false,
+      "containsSemicolon": false,
+      "maximumTerminalSentenceLength": 85,
+      "evidence": {
+        "disclaimerSentences": [
+          "中心手里目前只有箱数照片和安装日期（只能支持当前到货事实），合同正文及技术附件，供应商响应文件、装箱单，序列号清单和质量证明书尚未归档。",
+          "收口时再看基线、实测等信息能否对应，没有签章的验收等事项继续停在原阶段。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "identifier",
+            "value": "LC-20A"
+          },
+          {
+            "kind": "named-source",
+            "value": "《高效液相色谱仪到货验收与付款前技术跟踪表》"
+          },
+          {
+            "kind": "named-source",
+            "value": "《高效液相色谱仪到货验收与付款前技术定稿》"
+          }
+        ],
+        "finalParagraph": "目前只差把判断变成可用材料，我想要一套Excel《高效液相色谱仪到货验收与付款前技术跟踪表》以及PDF《高效液相色谱仪到货验收与付款前技术定稿》，并给后续更新留出清楚位置。这份结果只回答把LC-20A到货和开箱和安装和性能测试和正式验收和尾款条件拆开，判断中心当前能够签署到哪一阶段，能够确认的事实、需要补齐的证据等内容都按实际进度呈现。收口时再看基线、实测等信息能否对应，没有签章的验收等事项继续停在原阶段。",
+        "finalStep": "由中心主任依据各阶段证据选择可开箱点验和可安排安装和待技术验收或暂缓验收及付款。",
+        "request": {
+          "clear": true,
+          "frame": "want-artifact",
+          "requestMarker": "我想要一套",
+          "requestIndex": 625,
+          "requestSentenceIndex": 12,
+          "deliverableMarker": "Excel",
+          "deliverableIndex": 630
+        },
+        "punctuation": {
+          "visibleCharacters": 813,
+          "firstSentence": "接下来沿岛津LC-20A已经送到实验楼、供货商准备这一轮开箱等事实收束范围，避免处理过程中又长出另一条主线。",
+          "firstSentenceLength": 53,
+          "firstSentenceCommaCount": 1,
+          "firstPunctuation": "、",
+          "firstPunctuationIndex": 19,
+          "firstPunctuationIsTerminal": false,
+          "commaCount": 28,
+          "periodCount": 15,
+          "colonCount": 0,
+          "semicolonCount": 0,
+          "enumerationCommaCount": 9,
+          "structuralPunctuationCount": 0,
+          "commaToPeriodRatio": 1.8667,
+          "enumerationCommasPer100Chars": 1.107,
+          "structuralPunctuationPer100Chars": 0,
+          "earlyStructuralPunctuation": false,
+          "containsSemicolon": false,
+          "maximumTerminalSentenceLength": 85
+        }
+      },
+      "status": "PASS",
+      "findings": []
+    }
+  ],
+  "batch": {
+    "status": "PASS",
+    "metrics": {
+      "rowCount": 21,
+      "firstPersonShare": 0.7143,
+      "firstPersonOpeningShare": 0,
+      "discourseSkeletonDominantShare": 0.1429,
+      "discourseSkeletonDominant": "boundary>deliverable",
+      "discourseSkeletonCounts": {
+        "decision>boundary>evidence>deliverable": 2,
+        "boundary>deliverable": 3,
+        "evidence>boundary>detail>boundary>quality>deliverable": 1,
+        "evidence>boundary>decision>evidence>deliverable": 1,
+        "boundary>decision>deliverable": 1,
+        "decision>evidence>deliverable": 1,
+        "decision>evidence>decision>boundary>scene>deliverable": 1,
+        "boundary>decision>boundary": 1,
+        "evidence>decision>evidence>decision>deliverable": 1,
+        "boundary>evidence>boundary>deliverable": 1,
+        "boundary>decision>scene>deliverable": 1,
+        "deliverable>boundary>decision": 1,
+        "decision>boundary>decision>instruction>deliverable": 1,
+        "boundary>evidence>boundary": 1,
+        "evidence>boundary>quality>deliverable": 1,
+        "evidence>boundary>deliverable": 1,
+        "decision>boundary>deliverable": 1,
+        "boundary>deliverable>decision>deliverable": 1
+      },
+      "fixedWordExcelTailShare": 0.1429,
+      "finalStepSelfCheckShare": 0.0952,
+      "stepCountModeShare": 0.3333,
+      "stepCountMode": 10,
+      "stepCountCounts": {
+        "9": 3,
+        "10": 7,
+        "11": 4,
+        "12": 3,
+        "13": 2,
+        "14": 2
+      },
+      "weakScheduleShare": 0.2857,
+      "weakScheduleDominantShare": 0.1905,
+      "weakScheduleDominantTag": "relative-meeting",
+      "scheduleTagCounts": {
+        "relative-meeting": 4,
+        "relative-time-only": 7,
+        "no-schedule-device": 6,
+        "relative-deadline": 2,
+        "anchored-time": 2
+      },
+      "disclaimerHeavyShare": 0,
+      "lowConcreteFactShare": 0,
+      "explicitRequestShare": 1,
+      "requestFrameDominantShare": 0.2857,
+      "requestFrameDominant": "give-me",
+      "requestFrameCounts": {
+        "help-me": 2,
+        "give-me": 6,
+        "want-you": 1,
+        "you-take-it": 3,
+        "need-one": 2,
+        "need-you": 2,
+        "trouble-you": 2,
+        "want-artifact": 2,
+        "can-you": 1
+      },
+      "shortOpeningShare": 0,
+      "firstPunctuationTerminalShare": 0,
+      "firstSentenceCommaShare": 1,
+      "commaToPeriodRatio": 2.3653,
+      "enumerationCommasPer100Chars": 1.0007,
+      "earlyStructuralPunctuationShare": 0,
+      "semicolonRowShare": 0,
+      "longSentenceShare": 0
+    },
+    "findings": []
+  }
+}

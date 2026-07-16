@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "status": "PASS",
+  "generatedAt": "2026-07-10T04:17:36.417Z",
+  "policyId": "l2-natural-diversity-v2",
+  "policyVersion": 2,
+  "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_peiying_natural_reset_20260710\\qa\\structure_gate_report.json",
+  "reportHash": "b34580b49105e836f3329620fa914c23cea1027c7f3b2cc3b05f951d73b74b20",
+  "batchHash": "506e55eeb744482bbadd52de309675f7361abcc807edeeaca234d73b38bdc317",
+  "rowHashes": [
+    {
+      "index": 0,
+      "uid": "",
+      "sheetRow": 145,
+      "hash": "11fd7d643a38567875f10d7d34e7fae76b44089b5ff445c0ceb852ef7506db01"
+    },
+    {
+      "index": 1,
+      "uid": "",
+      "sheetRow": 146,
+      "hash": "c6cec4bf7daf3cbed46e16063a11dcaa5a3108ba0898f943078fb80c6afe2120"
+    },
+    {
+      "index": 2,
+      "uid": "",
+      "sheetRow": 147,
+      "hash": "f9a885b6187678e615b15dfabba2b4b24342a5dbcc3aa35c8296c1814dca2dac"
+    },
+    {
+      "index": 3,
+      "uid": "",
+      "sheetRow": 148,
+      "hash": "fd9806c17b2e3ed07ee9f760e9a7e491d255288dddae2aed26b06af27510cd4e"
+    },
+    {
+      "index": 4,
+      "uid": "",
+      "sheetRow": 149,
+      "hash": "c8daeaa6c51f0a78d42328a5f297c7987c8870a953f91fafbb3f055302deade4"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "status": "PASS",
+  "generatedAt": "2026-07-09T23:09:39.435Z",
+  "policyId": "l2-structural-diversity-v1",
+  "policyVersion": 1,
+  "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_peiying_all_20260709T215207Z_75bdf9\\qa\\structure_gate_report.json",
+  "reportHash": "dc6e1b2fbde8cfdebd362ba8bbd6816f05d0ce75b461660b25456d480bb02f0e",
+  "batchHash": "767238bd3334cc974b8c442e1a37a27105d0de4feab5c1a6fa9a2f2792f26413",
+  "rowHashes": [
+    {
+      "index": 0,
+      "uid": "裴硬_7.9_03",
+      "sheetRow": 147,
+      "hash": "0dbbd54a9e5703f089a18418eb6edf89c7a5a1ea219245fe7290257c7051bca5"
+    },
+    {
+      "index": 1,
+      "uid": "裴硬_7.9_04",
+      "sheetRow": 148,
+      "hash": "ae690a17dd318598456274dc79c1f8e03c9660e0799949623bbc8e5d94c5c74a"
+    },
+    {
+      "index": 2,
+      "uid": "裴硬_7.9_02",
+      "sheetRow": 146,
+      "hash": "6e5bc9b84c49d9b248e256f38575fd5798f43087e9522b13f6e3552b406dd778"
+    },
+    {
+      "index": 3,
+      "uid": "裴硬_7.9_01",
+      "sheetRow": 145,
+      "hash": "905b6c54ef95ae84d6c31a3dc917f3f43109fb63029258946fdd69ee28feb608"
+    },
+    {
+      "index": 4,
+      "uid": "裴硬_7.9_05",
+      "sheetRow": 149,
+      "hash": "0f06a581123ff04c2c862047f6e00fe510d543977bb007f00e96372de18efe7d"
+    }
+  ]
+}

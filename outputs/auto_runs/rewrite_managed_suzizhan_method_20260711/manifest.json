@@ -1,0 +1,65 @@
+{
+  "runId": "rewrite_managed_suzizhan_method_20260711",
+  "generatedAt": "2026-07-11T09:45:16.651Z",
+  "objective": "按7.08作业表苏子瞻人工直通方法全面重写沈礼17条与裴硬5条系统记录",
+  "status": "submitted-verified",
+  "submittedAt": "2026-07-11T09:48:34.963Z",
+  "submission": {
+    "valueRangeCount": 88,
+    "verifiedCellCount": 88,
+    "failedCellCount": 0,
+    "finalSheetRevision": 5755,
+    "releaseGateId": "combined-release-gate-v2",
+    "naturalnessStatus": "PASS",
+    "roleConsistencyStatus": "PASS",
+    "structureStatus": "PASS",
+    "llmQaPassedRows": 22
+  },
+  "count": 22,
+  "generatedAnnotators": [
+    "沈礼",
+    "裴硬"
+  ],
+  "sourceSnapshot": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\audits\\managed_before_suzizhan_rewrite_20260711\\all.json",
+  "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+  "sheetId": "49e351",
+  "sheetRows": [
+    121,
+    122,
+    123,
+    134,
+    135,
+    136,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    172,
+    173,
+    174,
+    178,
+    179,
+    180
+  ],
+  "writableFields": [
+    "题目",
+    "任务概括",
+    "产物内容",
+    "做题关键步骤"
+  ],
+  "preservedFields": [
+    "相关附件",
+    "附件格式",
+    "附件内容",
+    "产物格式",
+    "UID",
+    "标注专家姓名"
+  ],
+  "questionPresentation": "human-approved-natural-paragraphs-v3"
+}

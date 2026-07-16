@@ -1,0 +1,3855 @@
+{
+  "kind": "scene-card-gate-report",
+  "gateId": "scene-card-role-consistency-v1",
+  "protocolId": "situated-requester-v1",
+  "schemaVersion": 1,
+  "status": "PASS",
+  "ok": true,
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_managed_suzizhan_method_20260711\\drafts\\l2_questions_suzizhan_method.tsv",
+  "candidateHash": "586a6d3d4ad9f57230f7f3953b88112b51c7096a82e56dc1f0f5f4a61822a9d7",
+  "sceneCardPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_managed_suzizhan_method_20260711\\sources\\scene_cards.json",
+  "sceneCardFileHash": "a5d993cc9d51eb9fb2362ffb34f02416678234ada281be0647766a4d380a77af",
+  "sceneCardBundleHash": "30e9ebf9441dd0bcc366901053bf7651cec2d80f7c917795f1ce166479b66544",
+  "sceneCardSetHash": "d921ee8ac281ed995c8dab6e4e7c905cdea5176091ab8ab25c02c96a04069530",
+  "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_managed_suzizhan_method_20260711\\sources\\fact_ledger.json",
+  "factLedgerHash": "88b6db7fa212f25110410d903bd7d4a40dae4880b40599236c1ffa4221ef6bdb",
+  "summary": {
+    "candidateRowCount": 22,
+    "sceneCardCount": 22,
+    "passedRowCount": 22,
+    "failedRowCount": 0,
+    "globalErrorCount": 0,
+    "batchCollisionCount": 0
+  },
+  "rows": [
+    {
+      "uid": "沈礼_7.9_01",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "911c4b8a93bc31e3c6537c40c665e60eef2537d8c688c6f1c8a36ac76bb09e1e",
+      "cardHash": "429b5540817e450ab26ed5622e7777b175b954beebd0df932445f7191009b58d",
+      "roleConsistencyHash": "f1b384992d022f0f898336d1f2c57f17cee6d06e9c247d4d792ef0e064a3f8dd",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "help-me",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "mFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "现在真正卡住的是产品那两句承诺还没有配置能对上，供应商模型备案号、客户授权文本、日志留存配置、人工审核排班和应急处置流程也没拿到。",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "",
+            "occurrences": 0
+          },
+          "downstreamUseSpan": {
+            "span": "我会拿着它们和产品、客户成功逐段过一遍",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "9ab471b5994bb82a8dc8459d19da53a0a742d291b300412243edbd6d5102485f"
+      }
+    },
+    {
+      "uid": "沈礼_7.9_02",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "4b257b109c2b6f232c1b20c9d4ada37aefd4524d42684bb81a751e84945d2e70",
+      "cardHash": "e5ec9027a438234842c1d59e9c880b8cc6f7bfc26409157a8802c6dbaeab6707",
+      "roleConsistencyHash": "6c8de44b90053751e14fc39930bb9b6e4d0510a5e1a1c3b28c10570f43c599f7",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "want-you",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "mFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "工程部还提了扩建集中充电区，架空层和地下非机动车库也会被问到，但点位照片没有交齐，建筑平面图、报价、居民表决和消防书面意见都缺着，现有照片只能证明拍到的停放情况，不能替代建筑条件和改造条件。",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "周四业委会要谈电动自行车整改",
+            "occurrences": 1
+          },
+          "downstreamUseSpan": {
+            "span": "周四我就按这两份材料跟业委会逐个位置谈",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [
+            "2025年"
+          ],
+          "quotedClaims": [],
+          "timeMarkers": [
+            "周四",
+            "会前"
+          ]
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "bab8d63821128f6899f8fd96da356b04c60960c380ba76259b89d446331b54ee"
+      }
+    },
+    {
+      "uid": "沈礼_7.9_03",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "154b627c613fadc595d82cf30146ce335ad0fa360acff9dfa2c20d9835679310",
+      "cardHash": "5d85cbbf46df6bd1f280f839439b2c765af8b117a38cb6b048caa24cc6f54ac1",
+      "roleConsistencyHash": "4e6d9a9b9232d69c9a797c0d91b6cc7f53f8d7f40019ce70874cf925f9c33e81",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "trouble-you",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "mFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "眼下只有这些说法和投放位置，没有配方检测报告、包装标签原件、店铺页面截图、达人合作关系和广告审查材料，所以我现在没法替其他素材写改稿，也不能先给出使用结论。",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "月底直播排期快锁了",
+            "occurrences": 1
+          },
+          "downstreamUseSpan": {
+            "span": "Word给运营看月底排期会受哪些问题影响，Excel留给他们按素材位置继续补原文和证明",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [],
+          "quotedClaims": [
+            "控糖",
+            "饭前一杯少吃主食",
+            "饱腹不长胖"
+          ],
+          "timeMarkers": [
+            "月底"
+          ]
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "abbab7925d3d76cd0a95afcef2ca66a0622818560880bc283b9371ffbb46445c"
+      }
+    },
+    {
+      "uid": "沈礼_7.9_04",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "4185cce1ef0f6153e07ef48d9847c85606ca09ec6772813806a6e88edeccaa46",
+      "cardHash": "a4773222d296ae41955fe030d3c18fdfc28eb1153e810cdc65afc135028241f1",
+      "roleConsistencyHash": "f3eceb062086d11471c96bf23a110535953f2c6f9432fc6d0b199985968ec21b",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "need-you",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "mFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "现在卡住的是短信外包平台合同、授权记录、发送日志、退订回执和注销处理结果都没拿到，法规只能告诉我们处理规则，不能替酒店后台补出授权、权限和处理记录。",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "周一上午就要和法务过口径",
+            "occurrences": 1
+          },
+          "downstreamUseSpan": {
+            "span": "周一法务的反馈还要能回填到Excel对应字段，后面的活动审批直接沿这张表往下走",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [],
+          "quotedClaims": [
+            "商务客/亲子客"
+          ],
+          "timeMarkers": [
+            "今天",
+            "周一",
+            "上午"
+          ]
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "9e5fb27ca01369dc06ff6abeb9d8e73fa76a7925ea4c23666707ba87eeefabe6"
+      }
+    },
+    {
+      "uid": "沈礼_7.9_05",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "7b0482de9979030b6dd44b210da924cfbb277c2fa9517d5dfcbdc8dba6168be6",
+      "cardHash": "c6fd0b8ae12b1f05bf77814d3f54771af018c369710699b14dee28a1fc20bfff",
+      "roleConsistencyHash": "eeef88fae35b71d5ebc5a330b0fb16f2b39ac39326d23f59487466fff0535da9",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "you-take-it",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "mFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "手上能确认的只有三句原话，以及它们可能出现在主播口播，详情页卖点，达人前后对比图，客服承诺和购物车标题，完整原文，蓝帽或批准信息，广告审查凭证，图片授权，客服承诺依据和平台沟通记录都还在运营那边。",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "周五运营要重新排素材",
+            "occurrences": 1
+          },
+          "downstreamUseSpan": {
+            "span": "Word给运营先撤下明确有问题的三句话，Excel让经办人看到每一处还缺什么",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [],
+          "quotedClaims": [
+            "吃完瘦",
+            "不反弹",
+            "安全不伤身"
+          ],
+          "timeMarkers": [
+            "周五"
+          ]
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "3f9b4ba22e2db099d0b4253e58bed6bf519b3cc352a3a2519db0e8708e397ed0"
+      }
+    },
+    {
+      "uid": "沈礼_7.9_06",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "9c1f53aa0bbcd9f569fb08903175132428dab3a189752639a3d4ce32c15f598e",
+      "cardHash": "5fe1e0b0eaf8080df0484a179fe4e88d56810184488c8a7fa3400841bc88c114",
+      "roleConsistencyHash": "b94bc63bab66330de3e0be4806b6188fe00ca857a09fa9ccadb7f949e540bbb1",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "can-you",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "mFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "真正影响后面沟通的街道招标文件、厨房资质、食品经营许可、成本测算、送餐合同、志愿者排班和补贴对象名单现在都没来，光靠公开政策没法做投标判断。",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "理事会要在周三前决定这件事值不值得继续聊",
+            "occurrences": 1
+          },
+          "downstreamUseSpan": {
+            "span": "后面如果继续聊，这两份材料就是下一轮和街道核实的底稿",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": [
+            "周三"
+          ]
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "71f817005764b48d3c0d22fa6fae4a404b00188d39d58e05d86eb4f27dc0e7ba"
+      }
+    },
+    {
+      "uid": "沈礼_7.9_07",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "a09bef2b7b1ecf94de82abc789a2a84e1081b86fcf42a092fb1bf0edf6a35956",
+      "cardHash": "746ed7b730427d683a051770019fa2cfecd2cebd08a836654f80e40d6e4795b0",
+      "roleConsistencyHash": "e40c0fcccdbf2441d0a1b99b239adb599b5d175b3948b071520979ea16b88284",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "help-me",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "mFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "现在真正卡住的是审批，监护，检测，培训，装备和安全协议一项都没有",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "",
+            "occurrences": 0
+          },
+          "downstreamUseSpan": {
+            "span": "完成后拿雨水井和隔油池各走一遍准入流程，书面材料、现场检测、监护动作和最终进场状态必须能在两份文件之间逐项对回。",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": [
+            "周五"
+          ]
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "82a7e3f095ff04630c13df2b29da48e37072f990366cb8ff857207c65ee2cc8f"
+      }
+    },
+    {
+      "uid": "沈礼_7.9_08",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "3e6b0b68a59554102bb3ca529c0623d00415f828e0f273a4b8300f6176ded28c",
+      "cardHash": "d7f5b58e28d4aeb33489a80aabfb5517828ea9ae2b50ddab1b92bb70c8cd2545",
+      "roleConsistencyHash": "56070255f1b402688f1c0025b30d1f2884528f6005fbc650f5324ff48732ffe8",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "you-take-it",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "mFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "食品留样记录、陪餐安排、从业人员健康证、日管控周排查月调度还没对上，供货商资质、承包合同履约材料和投诉原件也不在手里",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "下午见家委会时得把校方已经掌握的情况和承包商还要补的东西分开",
+            "occurrences": 1
+          },
+          "downstreamUseSpan": {
+            "span": "后勤主任拿Word向家委会说明启用判断和双方责任，校方，承包商与食品安全员沿Excel继续更新",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": [
+            "下周",
+            "周一",
+            "下午"
+          ]
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "a1267caa0b93c524430d353da8f262440e546c1b1ddc6599096d8dd39aca880c"
+      }
+    },
+    {
+      "uid": "沈礼_7.9_09",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "65fef5719e149571ef78ade0dbeac197ac7384cc4b7ae3be823df501ebe88dc9",
+      "cardHash": "60e4a48a262c8b994f5cceb1254dc262bac41515fcf9db42e23b97eec996d193",
+      "roleConsistencyHash": "5df869081dba0b0c74ed58b01f964b295c3ef9cff5bbce7e734f4324b959d4eb",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "give-me",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "mFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "眼下缺的是处方样本，药师资质排班，审核日志，配送协议，用户授权记录和促销活动审批材料",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "产品经理本周想做灰度",
+            "occurrences": 1
+          },
+          "downstreamUseSpan": {
+            "span": "产品和法务拿Word讨论本周灰度边界，产品同事沿Excel逐项补证",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [],
+          "quotedClaims": [
+            "买二送一",
+            "复购立减"
+          ],
+          "timeMarkers": [
+            "本周"
+          ]
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "ad5abd1a2117c748f67c24ca9f91c45ca3c8cc2d5d70812f1224e9e93c417e98"
+      }
+    },
+    {
+      "uid": "沈礼_7.9_10",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "c51322bf2434e52cc03d783fa58a821af189b1264bc9244fb5b6c8984f39a86b",
+      "cardHash": "f0aa48b2b85620665ef7b99ce144f000a0db5843a91edd76ffb3ac5b63e93f3d",
+      "roleConsistencyHash": "2d3dbf3488aff4728bd18d91a6f7b0f8a421689c5f197434ef60defedcf9a58c",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "for-me",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "mFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "当前会卡住本月递交的是人员，系统，价格，追溯和基金内控都没有原件或运行记录承接",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "社区诊所想赶在这个月递交医保定点申请",
+            "occurrences": 1
+          },
+          "downstreamUseSpan": {
+            "span": "老板看Word安排本月能推进到哪一步，诊所经办人照Excel组织下一轮收件",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "d1074d6714354cbc6294c80e640fa3fddc8873794aab5e277fe698dccf112cb1"
+      }
+    },
+    {
+      "uid": "沈礼_7.9_11",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "23ea903e253d5ce705555479cbbda0a6c3b6ad6d896fd5ac7e8e5bc92b056ab1",
+      "cardHash": "d55d4f4075d8a8928be2aac4680bfd0bcd3af3729a40df2c3ba45435a2a5934b",
+      "roleConsistencyHash": "5d707f95be61a268f1409090eac14ed83e202c4a20dfa651477542e559003b62",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "you-take-it",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "mFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "手上还缺后台捐赠明细，收款凭证，捐赠协议，物资评估材料，受助对象清单，票据开具记录和税前扣除资格证明",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "捐赠人又在催公益事业捐赠票据和税前扣除材料",
+            "occurrences": 1
+          },
+          "downstreamUseSpan": {
+            "span": "财务拿Excel逐笔分流，项目组照着补原始资料，Word留给经办人查每一栏怎么填",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [],
+          "quotedClaims": [
+            "公益合作款"
+          ],
+          "timeMarkers": []
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "aeb7807f8cf17327afdf50ad989dcc80dccb7baeb6b3e5afda0b30fe10a1b410"
+      }
+    },
+    {
+      "uid": "裴硬_7.9_01",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "0d29e866e66bda7de2da02ec62fede62ed7e7461b5e1e4843bf69fbd809b8402",
+      "cardHash": "e76333a3e8a4ed18b8558f3f0c87b8735c848ad930b9167e5b13524d03f709b1",
+      "roleConsistencyHash": "993ce2aa8ee8f6a688c72975b4178c236149c442667457c26108a1993d520398",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "give-me",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "mFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "现在真正卡住的是产品备案页、功效评价摘要、达人合同、对比图来源和后台投放数据都没交过来，现有附件只能给出判断尺度。",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "",
+            "occurrences": 0
+          },
+          "downstreamUseSpan": {
+            "span": "我拿去和运营、法务一起定稿",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [],
+          "quotedClaims": [
+            "敏感肌急救精华",
+            "三天退红",
+            "医美级维稳",
+            "修护屏障"
+          ],
+          "timeMarkers": []
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "6cce6ec75a591181895a547e26ba3d7d5d13c8230e3e18b107e98527640dcd9e"
+      }
+    },
+    {
+      "uid": "裴硬_7.9_02",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "c2989e2da5071baf4486ed860e9f7d32874bca7e73db89e87cbb4b683d0c4470",
+      "cardHash": "6085820d0395f3f6071c02825f36f0338206c2857660a9f461efb6fac955c3d2",
+      "roleConsistencyHash": "ae24972e403a30c22832a8dd18a08f07c6dc654885a99e148e4a837f8018d84d",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "for-me",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "mFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "当前的阻断点是正式CRM合同、境外接收方安全材料、用户授权记录和历史导出日志都没有拿到，字段字典也只能从现有清单起步。",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "销售明天要向客户解释海外CRM试用",
+            "occurrences": 1
+          },
+          "downstreamUseSpan": {
+            "span": "销售明天拿着它跟客户谈",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [],
+          "quotedClaims": [
+            "全球合规"
+          ],
+          "timeMarkers": [
+            "明天"
+          ]
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "8f04a82734556eb8ebaa41df533cf2bf664995a632700f76d520f8fbed4af8f8"
+      }
+    },
+    {
+      "uid": "裴硬_7.9_03",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "9b7f838be6b24163724a7b277ef7236d6753857a25f69144bbc99c43026abe4f",
+      "cardHash": "64c045fd1b7cc4ec873154e718489bb76ea4066189d7924ace1912d13d92188a",
+      "roleConsistencyHash": "95f62acb3652fea77c4c09dbcfd05563a2d0e1e3c336bdfe20326000dedbcefa",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "help-me",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "mFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "现阶段卡在广告合同、银行流水、业主表决票、工程报价原件和主管部门备案记录都没交齐，附件只能支持收益归属、共同决定和维修资金程序的一般说明。",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "下周协调会绕不开电梯广告一年18万元去了哪里",
+            "occurrences": 1
+          },
+          "downstreamUseSpan": {
+            "span": "我下周就按这三条线跟物业和业主代表对材料",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [
+            "18万元"
+          ],
+          "quotedClaims": [],
+          "timeMarkers": [
+            "下周"
+          ]
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "369dc57c4ea61b6d7d911a33cd86cb5472940f825e4be7dcb6b45cce7f924133"
+      }
+    },
+    {
+      "uid": "裴硬_7.9_04",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "c5406caf69ea5efc9587e32aa2f36177d66b9345953d5adcd20a79f2cd95867d",
+      "cardHash": "2d9e30adf7f642dc5a62f613030b361c7ea859d33e3ceb55bd24b355f2d41135",
+      "roleConsistencyHash": "83332f8d52ee44272e8f69ebc59d7e79c23a61443818870252e52f4cf2a4c1be",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "need-you",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "mFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "现在影响评审的是算法参数、训练数据来源、候选人授权记录、岗位真实性证明和人工复核日志都不在现有材料里，四份规则只能帮助判断招聘真实性、个人信息、自动化决策、算法提示和训练数据问题。",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "招聘小程序准备在2026年7月灰度“AI初筛”",
+            "occurrences": 1
+          },
+          "downstreamUseSpan": {
+            "span": "会上就沿候选人投递到结果通知的路径逐段定",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [
+            "2026年",
+            "7月"
+          ],
+          "quotedClaims": [
+            "AI初筛"
+          ],
+          "timeMarkers": []
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "d00bb98df0bf78a64b9a78d3c3053d8496ecda76514022f4633cb02c4dfcaa26"
+      }
+    },
+    {
+      "uid": "裴硬_7.9_05",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "f861c8e085bbb5e47a715dcaa48c09733e59c6d8384fa09ef88700aa969b4b70",
+      "cardHash": "d355409243488ebdaa841b18a0533f6eaba4f579993b6833f21d455aca79a909",
+      "roleConsistencyHash": "94b8b1f491c3b158ab194d458ae4d8d9436fa5eb124424a92aee5494c72dc26c",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "you-take-it",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "mFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "眼前最大的缺口是30套房源的证照真实性、现场消防、公安报备、权属、住宿登记接入和履约情况都没有逐套证据，消防承诺书也不能当成现场已经合格。",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "我负责的本地生活平台想把“城市周末民宿”专题排进下周首页",
+            "occurrences": 1
+          },
+          "downstreamUseSpan": {
+            "span": "招商拿表继续收件，风控逐套登记，运营只把达到相应条件的房源交进后续上架",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [
+            "30"
+          ],
+          "quotedClaims": [
+            "城市周末民宿"
+          ],
+          "timeMarkers": [
+            "下周"
+          ]
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "8e0da1c0c9b623ef97ee62a97abbed1543edad0542f95686f62b2277be46ebca"
+      }
+    },
+    {
+      "uid": "沈礼_7.10_01",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "189cf357a22bb63f4560a8e9ac6413c6330da2634ae92cc34b51f22922579b04",
+      "cardHash": "f4e7185c9c02f97560217cb9a201bb415bdae8ebae9ee19c25c3490919030bff",
+      "roleConsistencyHash": "46693503ba37b32ac54330f2becbdbf47a5591ee6101a18ac6a39b6a7efe7149",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "help-me",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "mFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "活动规则和会员字段现在混在一张弹窗里",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "会员日页面今晚要进小程序测试",
+            "occurrences": 1
+          },
+          "downstreamUseSpan": {
+            "span": "我好拿着它跟小程序产品、客服和门店一起过",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [
+            "9.9元",
+            "7天",
+            "30天"
+          ],
+          "quotedClaims": [],
+          "timeMarkers": [
+            "今晚"
+          ]
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [
+          {
+            "category": "artificial-urgency",
+            "marker": "今晚要",
+            "path": "question"
+          }
+        ],
+        "envelopeValidationHash": "354543168afe8c40ece275a430d4e9ae42d5616a23ad98fc481611c94ddf63fd"
+      }
+    },
+    {
+      "uid": "沈礼_7.10_02",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "f40d5f33f3454d95b131f16d264e18fa1fbf3316abf7caedf933d0da6bf55500",
+      "cardHash": "ea6198dac2b80b6bdd19429045c89fac3a56e5747964599224e455d3f58ef37e",
+      "roleConsistencyHash": "aa928884e57c7b3b5792ae03a79a43d2ddb8eed8e23257fd803d791578bef048",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "want-you",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "mFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "现有功能清单就接不上了",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "9月先在两个班试儿童智能手表",
+            "occurrences": 1
+          },
+          "downstreamUseSpan": {
+            "span": "家委会讨论时能直接沿着功能往下问",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [
+            "9月"
+          ],
+          "quotedClaims": [],
+          "timeMarkers": [
+            "早会"
+          ]
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "6211212cee44ff6cfe0c9cc0dc6ac76fbbe5d7e21d6afcb6fc370d859152e3b0"
+      }
+    },
+    {
+      "uid": "沈礼_7.10_03",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "f744f234c94ed7d2fe6ee736d47ed77cb95adcd904ee53b38e5f914188a2ce8c",
+      "cardHash": "aeda3a7a2a15e7964d431b2d6f9520a80f6ae4313288bb6b784bb8d102361f16",
+      "roleConsistencyHash": "fb152b7edc0af369ffb1b4230af9e0d9a4ef01c6181992f327af71e262b2b1a6",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "you-take-it",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "mFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "异常账号的完整判定规则还没给",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "新版购票规则周一前要交主办方确认",
+            "occurrences": 1
+          },
+          "downstreamUseSpan": {
+            "span": "我会拿这两份文件跟主办方，产品和客服逐条对",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [
+            "48小时"
+          ],
+          "quotedClaims": [],
+          "timeMarkers": [
+            "周一"
+          ]
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "3cdd0a3ba81869aeebaa2212d7588696aac5dac101f6200426f4a00e61599956"
+      }
+    },
+    {
+      "uid": "沈礼_7.10_04",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "4b0bbb6ffc629ab12564a4586e55615b28290a484237312f47ce6a3047e40a27",
+      "cardHash": "ccb753e7ed5630bf01ff522726bada12858dac2d068798cab61dfb9e26b8bdcb",
+      "roleConsistencyHash": "8dd0a1b9225acfd30eb38aac2aa24130c1e45511ea9c59b2d647aae78bb0dda3",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "help-me",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "mFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "大家现在争的不是2025年有没有盈利，而是这次盈利到底有多少现金支撑",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "投委会下周要决定寒武纪是转进重点研究池还是继续观察",
+            "occurrences": 1
+          },
+          "downstreamUseSpan": {
+            "span": "投委会翻到任何一个数字都能找到出处",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [
+            "2025年",
+            "2024年",
+            "3月",
+            "64.97亿元",
+            "20.59亿元",
+            "-4.98亿元",
+            "6.71亿元",
+            "49.44亿元",
+            "88.66%",
+            "2026年",
+            "8.34亿元",
+            "12.19亿元",
+            "18.97亿元"
+          ],
+          "quotedClaims": [],
+          "timeMarkers": [
+            "下周"
+          ]
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "cee1a5bc903479630b4472152714161cfac66ebc3c7e28be8dbeeea048dd2776"
+      }
+    },
+    {
+      "uid": "沈礼_7.10_05",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "a60463d74a5c76197365915b45c028667509d97ada904e14fd25aa3e8280ecd0",
+      "cardHash": "d0fea6692fb9420a1e001668ac645bc6f3afab06462e6cb172c96d0758f7c355",
+      "roleConsistencyHash": "3ddd9f09ecc93411dcdb8e0e4fdd53df4b7d2dd539d7ff61b03ee604eb94fd00",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "need-you",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "mFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "现有UN38.3报告和试验简介对应量产的B2电池，B3仍在试验",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "研发还想按次日锁苏州到华沙的班列舱位",
+            "occurrences": 1
+          },
+          "downstreamUseSpan": {
+            "span": "让货代、研发和业务能在锁舱前对着同一套信息说话",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [
+            "24台",
+            "3",
+            "1块",
+            "98Wh",
+            "8块",
+            "4箱",
+            "100Wh",
+            "38.3",
+            "2",
+            "2023",
+            "26",
+            "2023年10月11日",
+            "2022年",
+            "24",
+            "2022年12月1日",
+            "2026年",
+            "2026年2月3日",
+            "2026年5月1日",
+            "2025年"
+          ],
+          "quotedClaims": [
+            "有效"
+          ],
+          "timeMarkers": [
+            "次日"
+          ]
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "b4b4f2fd01164ca919c2e653ed7f607a200a1e64f159b13df9d21f42f0887655"
+      }
+    },
+    {
+      "uid": "沈礼_7.10_06",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "ef1def5325b6a85b423c41d118a9e326abd49a9433379f91b96d1f815d136f6a",
+      "cardHash": "1600b2c0d5fa8fb6b77854017a7d0b23ab25a8e274ef3c7c3d7caed5b1e1bec2",
+      "roleConsistencyHash": "4a4c41acdcad9549ea6ca91d020cd91b377f08949daf7c8bf522cc48ac74e159",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "can-you",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "mFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "我手里现在只有箱数照片和安装日期",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "岛津LC-20A已经送到实验楼",
+            "occurrences": 1
+          },
+          "downstreamUseSpan": {
+            "span": "先让资产，实验室和采购把各自能签什么对齐",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [
+            "-20",
+            "20",
+            "4",
+            "35",
+            "220"
+          ],
+          "quotedClaims": [],
+          "timeMarkers": [
+            "本周",
+            "下周"
+          ]
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "7f9022750b4a0a06fe8ad8abdc421bc055b997c8f165bfaba8886162fa8169ee"
+      }
+    }
+  ],
+  "batch": {
+    "ok": true,
+    "status": "PASS",
+    "thresholds": {
+      "highMaskedTrigramSimilarity": 0.72,
+      "sharedMaskedFragmentLength": 18
+    },
+    "comparisons": [
+      {
+        "leftUid": "沈礼_7.9_01",
+        "rightUid": "沈礼_7.9_02",
+        "leftMaskedHash": "e4e8f6396ed1988716d10105949357c6720c7a7c0033fdcf7e84df860225743d",
+        "rightMaskedHash": "27f88976a4d7f699140a0eebff327f35e82d1ee97aa402cd7b43de30841876ec",
+        "trigramSimilarity": 0.0018,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "的顺序",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_01",
+        "rightUid": "沈礼_7.9_03",
+        "leftMaskedHash": "e4e8f6396ed1988716d10105949357c6720c7a7c0033fdcf7e84df860225743d",
+        "rightMaskedHash": "24cf5a2618d1a7da4b7b50b2614bcbd31fa6af6ef0b4f435c5f39fb235f34958",
+        "trigramSimilarity": 0.0073,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "我现在",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_01",
+        "rightUid": "沈礼_7.9_04",
+        "leftMaskedHash": "e4e8f6396ed1988716d10105949357c6720c7a7c0033fdcf7e84df860225743d",
+        "rightMaskedHash": "b9c72409a90356edeec8d7a5f3ed82441ec00843655e261ee8139514c57aa835",
+        "trigramSimilarity": 0.0089,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_01",
+        "rightUid": "沈礼_7.9_05",
+        "leftMaskedHash": "e4e8f6396ed1988716d10105949357c6720c7a7c0033fdcf7e84df860225743d",
+        "rightMaskedHash": "15b7f0820369f272223ee8b8e5b9db468690d50d45ec370ffab065e0145f9497",
+        "trigramSimilarity": 0.0071,
+        "longestSharedFragmentLength": 8,
+        "longestSharedFragment": "置这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_01",
+        "rightUid": "沈礼_7.9_06",
+        "leftMaskedHash": "e4e8f6396ed1988716d10105949357c6720c7a7c0033fdcf7e84df860225743d",
+        "rightMaskedHash": "77c6364469e32d5b149767bd479e5ce85ae8ecafaf7531f4c50d9926b429cb99",
+        "trigramSimilarity": 0.0102,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "上能直接",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_01",
+        "rightUid": "沈礼_7.9_07",
+        "leftMaskedHash": "e4e8f6396ed1988716d10105949357c6720c7a7c0033fdcf7e84df860225743d",
+        "rightMaskedHash": "cc40c489cb822a2f63d5135ea682b082563d30a419ae777305be570a7980df2c",
+        "trigramSimilarity": 0.0217,
+        "longestSharedFragmentLength": 8,
+        "longestSharedFragment": "现在真正卡住的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_01",
+        "rightUid": "沈礼_7.9_08",
+        "leftMaskedHash": "e4e8f6396ed1988716d10105949357c6720c7a7c0033fdcf7e84df860225743d",
+        "rightMaskedHash": "cbd778aa10649379f76603da2a1fff2d534f3a3d305fce077fc2fe644992cc05",
+        "trigramSimilarity": 0.0107,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_01",
+        "rightUid": "沈礼_7.9_09",
+        "leftMaskedHash": "e4e8f6396ed1988716d10105949357c6720c7a7c0033fdcf7e84df860225743d",
+        "rightMaskedHash": "ca1d9318b8a9cc242b4ec2908102da46872e6610087e0ac82ce2836b029d5275",
+        "trigramSimilarity": 0.0171,
+        "longestSharedFragmentLength": 8,
+        "longestSharedFragment": "这次最重要的是沿",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_01",
+        "rightUid": "沈礼_7.9_10",
+        "leftMaskedHash": "e4e8f6396ed1988716d10105949357c6720c7a7c0033fdcf7e84df860225743d",
+        "rightMaskedHash": "0ea10a17d62a385aeaa2aaf54a47bafa002d0a394a7058db568ef5dfb9fdf8bf",
+        "trigramSimilarity": 0.0037,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "卡住的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_01",
+        "rightUid": "沈礼_7.9_11",
+        "leftMaskedHash": "e4e8f6396ed1988716d10105949357c6720c7a7c0033fdcf7e84df860225743d",
+        "rightMaskedHash": "f762795c8d8590329c48859d1f2105ea024142c6f556fd20e7de7aff8dd6242a",
+        "trigramSimilarity": 0.0055,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "现有材料",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_01",
+        "rightUid": "裴硬_7.9_01",
+        "leftMaskedHash": "e4e8f6396ed1988716d10105949357c6720c7a7c0033fdcf7e84df860225743d",
+        "rightMaskedHash": "2e01f80eea8cd34734a2a3ac2a73b85d2b70b5b1373a17e9d989be72f0c4b84b",
+        "trigramSimilarity": 0.0195,
+        "longestSharedFragmentLength": 10,
+        "longestSharedFragment": "现在真正卡住的是产品",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_01",
+        "rightUid": "裴硬_7.9_02",
+        "leftMaskedHash": "e4e8f6396ed1988716d10105949357c6720c7a7c0033fdcf7e84df860225743d",
+        "rightMaskedHash": "5a304f32fc1125581388c01fa648e1dcd03fb19fda0f40a2537bab7bd90c0049",
+        "trigramSimilarity": 0.0106,
+        "longestSharedFragmentLength": 6,
+        "longestSharedFragment": "个人信息保护",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_01",
+        "rightUid": "裴硬_7.9_03",
+        "leftMaskedHash": "e4e8f6396ed1988716d10105949357c6720c7a7c0033fdcf7e84df860225743d",
+        "rightMaskedHash": "398f91b4b6f59b2618b9f138241f48e6779e9d6c09d7fc1263e07a117262732b",
+        "trigramSimilarity": 0.009,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_01",
+        "rightUid": "裴硬_7.9_04",
+        "leftMaskedHash": "e4e8f6396ed1988716d10105949357c6720c7a7c0033fdcf7e84df860225743d",
+        "rightMaskedHash": "8fb052e81f75cf9212ceb098c1afb8a5e3a293ed20981101ee527f6583366420",
+        "trigramSimilarity": 0.0131,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_01",
+        "rightUid": "裴硬_7.9_05",
+        "leftMaskedHash": "e4e8f6396ed1988716d10105949357c6720c7a7c0033fdcf7e84df860225743d",
+        "rightMaskedHash": "0b5ce4840f4ae267e58c1d49b6690249ee9b1f6bbfd5d7b89ab438a416e96a58",
+        "trigramSimilarity": 0.0052,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "规则落到",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_01",
+        "rightUid": "沈礼_7.10_01",
+        "leftMaskedHash": "e4e8f6396ed1988716d10105949357c6720c7a7c0033fdcf7e84df860225743d",
+        "rightMaskedHash": "1a75a5f7805d8e78f4b4b525b61972b8eca141b27c0554393f5a940a43da0ab7",
+        "trigramSimilarity": 0.0177,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_01",
+        "rightUid": "沈礼_7.10_02",
+        "leftMaskedHash": "e4e8f6396ed1988716d10105949357c6720c7a7c0033fdcf7e84df860225743d",
+        "rightMaskedHash": "77849871d6e872422a4aefd74b4497346f25d40fc4e23a88f203ec16de23cc09",
+        "trigramSimilarity": 0.0239,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_01",
+        "rightUid": "沈礼_7.10_03",
+        "leftMaskedHash": "e4e8f6396ed1988716d10105949357c6720c7a7c0033fdcf7e84df860225743d",
+        "rightMaskedHash": "210cd59bc7cd319c6ddd8cd1d7ff103141c32fd41cc68ec545cf1b05cc16cc49",
+        "trigramSimilarity": 0.0098,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "问的问题",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_01",
+        "rightUid": "沈礼_7.10_04",
+        "leftMaskedHash": "e4e8f6396ed1988716d10105949357c6720c7a7c0033fdcf7e84df860225743d",
+        "rightMaskedHash": "0f183e151ff49205c98f1fdb0bcb841df52732bfbfbd2ecc5ad1fb7fa2d2f56d",
+        "trigramSimilarity": 0.0023,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_01",
+        "rightUid": "沈礼_7.10_05",
+        "leftMaskedHash": "e4e8f6396ed1988716d10105949357c6720c7a7c0033fdcf7e84df860225743d",
+        "rightMaskedHash": "bc788489421eb93a0da156e9bba42d520eaef74f98f64ff2e70415937cd32b61",
+        "trigramSimilarity": 0.0045,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_01",
+        "rightUid": "沈礼_7.10_06",
+        "leftMaskedHash": "e4e8f6396ed1988716d10105949357c6720c7a7c0033fdcf7e84df860225743d",
+        "rightMaskedHash": "3506ebc38d04af61671fde04c196626b1e3f46c56ceaab78155f88221fd7d8d5",
+        "trigramSimilarity": 0.0051,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "现在只有",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_02",
+        "rightUid": "沈礼_7.9_03",
+        "leftMaskedHash": "27f88976a4d7f699140a0eebff327f35e82d1ee97aa402cd7b43de30841876ec",
+        "rightMaskedHash": "24cf5a2618d1a7da4b7b50b2614bcbd31fa6af6ef0b4f435c5f39fb235f34958",
+        "trigramSimilarity": 0.0075,
+        "longestSharedFragmentLength": 6,
+        "longestSharedFragment": "你整理成一份",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_02",
+        "rightUid": "沈礼_7.9_04",
+        "leftMaskedHash": "27f88976a4d7f699140a0eebff327f35e82d1ee97aa402cd7b43de30841876ec",
+        "rightMaskedHash": "b9c72409a90356edeec8d7a5f3ed82441ec00843655e261ee8139514c57aa835",
+        "trigramSimilarity": 0.0054,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "两份文件对",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_02",
+        "rightUid": "沈礼_7.9_05",
+        "leftMaskedHash": "27f88976a4d7f699140a0eebff327f35e82d1ee97aa402cd7b43de30841876ec",
+        "rightMaskedHash": "15b7f0820369f272223ee8b8e5b9db468690d50d45ec370ffab065e0145f9497",
+        "trigramSimilarity": 0.0063,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "为什么",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_02",
+        "rightUid": "沈礼_7.9_06",
+        "leftMaskedHash": "dcb7a99b1012da40da38bc26dd5d76c1e5240de433c134f6fb49b8865b5ccb83",
+        "rightMaskedHash": "77c6364469e32d5b149767bd479e5ce85ae8ecafaf7531f4c50d9926b429cb99",
+        "trigramSimilarity": 0.0075,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "这两份材料",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_02",
+        "rightUid": "沈礼_7.9_07",
+        "leftMaskedHash": "27f88976a4d7f699140a0eebff327f35e82d1ee97aa402cd7b43de30841876ec",
+        "rightMaskedHash": "913ec034ca1475e4dbfe6c4111cd5bcf39bf44cf22b62f6f4ef6a13955b6542f",
+        "trigramSimilarity": 0.0091,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "不能替代",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_02",
+        "rightUid": "沈礼_7.9_08",
+        "leftMaskedHash": "27f88976a4d7f699140a0eebff327f35e82d1ee97aa402cd7b43de30841876ec",
+        "rightMaskedHash": "cbd778aa10649379f76603da2a1fff2d534f3a3d305fce077fc2fe644992cc05",
+        "trigramSimilarity": 0.0082,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "整理成一份",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_02",
+        "rightUid": "沈礼_7.9_09",
+        "leftMaskedHash": "27f88976a4d7f699140a0eebff327f35e82d1ee97aa402cd7b43de30841876ec",
+        "rightMaskedHash": "ca1d9318b8a9cc242b4ec2908102da46872e6610087e0ac82ce2836b029d5275",
+        "trigramSimilarity": 0.0027,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "不能替代",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_02",
+        "rightUid": "沈礼_7.9_10",
+        "leftMaskedHash": "27f88976a4d7f699140a0eebff327f35e82d1ee97aa402cd7b43de30841876ec",
+        "rightMaskedHash": "0ea10a17d62a385aeaa2aaf54a47bafa002d0a394a7058db568ef5dfb9fdf8bf",
+        "trigramSimilarity": 0.0037,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "责任人和",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_02",
+        "rightUid": "沈礼_7.9_11",
+        "leftMaskedHash": "27f88976a4d7f699140a0eebff327f35e82d1ee97aa402cd7b43de30841876ec",
+        "rightMaskedHash": "f762795c8d8590329c48859d1f2105ea024142c6f556fd20e7de7aff8dd6242a",
+        "trigramSimilarity": 0.0009,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "想让你",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_02",
+        "rightUid": "裴硬_7.9_01",
+        "leftMaskedHash": "27f88976a4d7f699140a0eebff327f35e82d1ee97aa402cd7b43de30841876ec",
+        "rightMaskedHash": "2e01f80eea8cd34734a2a3ac2a73b85d2b70b5b1373a17e9d989be72f0c4b84b",
+        "trigramSimilarity": 0.0036,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "每个位置",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_02",
+        "rightUid": "裴硬_7.9_02",
+        "leftMaskedHash": "27f88976a4d7f699140a0eebff327f35e82d1ee97aa402cd7b43de30841876ec",
+        "rightMaskedHash": "5a304f32fc1125581388c01fa648e1dcd03fb19fda0f40a2537bab7bd90c0049",
+        "trigramSimilarity": 0.0027,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "条件和",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_02",
+        "rightUid": "裴硬_7.9_03",
+        "leftMaskedHash": "27f88976a4d7f699140a0eebff327f35e82d1ee97aa402cd7b43de30841876ec",
+        "rightMaskedHash": "398f91b4b6f59b2618b9f138241f48e6779e9d6c09d7fc1263e07a117262732b",
+        "trigramSimilarity": 0.0082,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "整理成一份",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_02",
+        "rightUid": "裴硬_7.9_04",
+        "leftMaskedHash": "27f88976a4d7f699140a0eebff327f35e82d1ee97aa402cd7b43de30841876ec",
+        "rightMaskedHash": "8fb052e81f75cf9212ceb098c1afb8a5e3a293ed20981101ee527f6583366420",
+        "trigramSimilarity": 0.0009,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "202",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_02",
+        "rightUid": "裴硬_7.9_05",
+        "leftMaskedHash": "27f88976a4d7f699140a0eebff327f35e82d1ee97aa402cd7b43de30841876ec",
+        "rightMaskedHash": "0b5ce4840f4ae267e58c1d49b6690249ee9b1f6bbfd5d7b89ab438a416e96a58",
+        "trigramSimilarity": 0.0044,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "疏散通道",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_02",
+        "rightUid": "沈礼_7.10_01",
+        "leftMaskedHash": "27f88976a4d7f699140a0eebff327f35e82d1ee97aa402cd7b43de30841876ec",
+        "rightMaskedHash": "1a75a5f7805d8e78f4b4b525b61972b8eca141b27c0554393f5a940a43da0ab7",
+        "trigramSimilarity": 0.0089,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "每个位置",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_02",
+        "rightUid": "沈礼_7.10_02",
+        "leftMaskedHash": "27f88976a4d7f699140a0eebff327f35e82d1ee97aa402cd7b43de30841876ec",
+        "rightMaskedHash": "77849871d6e872422a4aefd74b4497346f25d40fc4e23a88f203ec16de23cc09",
+        "trigramSimilarity": 0.0089,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "我想让你",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_02",
+        "rightUid": "沈礼_7.10_03",
+        "leftMaskedHash": "27f88976a4d7f699140a0eebff327f35e82d1ee97aa402cd7b43de30841876ec",
+        "rightMaskedHash": "210cd59bc7cd319c6ddd8cd1d7ff103141c32fd41cc68ec545cf1b05cc16cc49",
+        "trigramSimilarity": 0.0054,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "条件最后",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_02",
+        "rightUid": "沈礼_7.10_04",
+        "leftMaskedHash": "27f88976a4d7f699140a0eebff327f35e82d1ee97aa402cd7b43de30841876ec",
+        "rightMaskedHash": "0f183e151ff49205c98f1fdb0bcb841df52732bfbfbd2ecc5ad1fb7fa2d2f56d",
+        "trigramSimilarity": 0.0056,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "2025年",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_02",
+        "rightUid": "沈礼_7.10_05",
+        "leftMaskedHash": "27f88976a4d7f699140a0eebff327f35e82d1ee97aa402cd7b43de30841876ec",
+        "rightMaskedHash": "bc788489421eb93a0da156e9bba42d520eaef74f98f64ff2e70415937cd32b61",
+        "trigramSimilarity": 0.0076,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "2025年",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_02",
+        "rightUid": "沈礼_7.10_06",
+        "leftMaskedHash": "27f88976a4d7f699140a0eebff327f35e82d1ee97aa402cd7b43de30841876ec",
+        "rightMaskedHash": "3506ebc38d04af61671fde04c196626b1e3f46c56ceaab78155f88221fd7d8d5",
+        "trigramSimilarity": 0.0074,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "两份文件",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_03",
+        "rightUid": "沈礼_7.9_04",
+        "leftMaskedHash": "24cf5a2618d1a7da4b7b50b2614bcbd31fa6af6ef0b4f435c5f39fb235f34958",
+        "rightMaskedHash": "b9c72409a90356edeec8d7a5f3ed82441ec00843655e261ee8139514c57aa835",
+        "trigramSimilarity": 0.0009,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "后再看",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_03",
+        "rightUid": "沈礼_7.9_05",
+        "leftMaskedHash": "24cf5a2618d1a7da4b7b50b2614bcbd31fa6af6ef0b4f435c5f39fb235f34958",
+        "rightMaskedHash": "15b7f0820369f272223ee8b8e5b9db468690d50d45ec370ffab065e0145f9497",
+        "trigramSimilarity": 0.0251,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "改成客观描述补",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_03",
+        "rightUid": "沈礼_7.9_06",
+        "leftMaskedHash": "24cf5a2618d1a7da4b7b50b2614bcbd31fa6af6ef0b4f435c5f39fb235f34958",
+        "rightMaskedHash": "77c6364469e32d5b149767bd479e5ce85ae8ecafaf7531f4c50d9926b429cb99",
+        "trigramSimilarity": 0.0057,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "现有附件",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_03",
+        "rightUid": "沈礼_7.9_07",
+        "leftMaskedHash": "24cf5a2618d1a7da4b7b50b2614bcbd31fa6af6ef0b4f435c5f39fb235f34958",
+        "rightMaskedHash": "cc40c489cb822a2f63d5135ea682b082563d30a419ae777305be570a7980df2c",
+        "trigramSimilarity": 0.0149,
+        "longestSharedFragmentLength": 6,
+        "longestSharedFragment": "补到哪一项就",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_03",
+        "rightUid": "沈礼_7.9_08",
+        "leftMaskedHash": "24cf5a2618d1a7da4b7b50b2614bcbd31fa6af6ef0b4f435c5f39fb235f34958",
+        "rightMaskedHash": "cbd778aa10649379f76603da2a1fff2d534f3a3d305fce077fc2fe644992cc05",
+        "trigramSimilarity": 0.0055,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "整理成一份",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_03",
+        "rightUid": "沈礼_7.9_09",
+        "leftMaskedHash": "24cf5a2618d1a7da4b7b50b2614bcbd31fa6af6ef0b4f435c5f39fb235f34958",
+        "rightMaskedHash": "ca1d9318b8a9cc242b4ec2908102da46872e6610087e0ac82ce2836b029d5275",
+        "trigramSimilarity": 0.0093,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "意见和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_03",
+        "rightUid": "沈礼_7.9_10",
+        "leftMaskedHash": "24cf5a2618d1a7da4b7b50b2614bcbd31fa6af6ef0b4f435c5f39fb235f34958",
+        "rightMaskedHash": "0ea10a17d62a385aeaa2aaf54a47bafa002d0a394a7058db568ef5dfb9fdf8bf",
+        "trigramSimilarity": 0.0048,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "能不能",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_03",
+        "rightUid": "沈礼_7.9_11",
+        "leftMaskedHash": "24cf5a2618d1a7da4b7b50b2614bcbd31fa6af6ef0b4f435c5f39fb235f34958",
+        "rightMaskedHash": "f762795c8d8590329c48859d1f2105ea024142c6f556fd20e7de7aff8dd6242a",
+        "trigramSimilarity": 0.0095,
+        "longestSharedFragmentLength": 6,
+        "longestSharedFragment": "完成后各抽一",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_03",
+        "rightUid": "裴硬_7.9_01",
+        "leftMaskedHash": "24cf5a2618d1a7da4b7b50b2614bcbd31fa6af6ef0b4f435c5f39fb235f34958",
+        "rightMaskedHash": "2e01f80eea8cd34734a2a3ac2a73b85d2b70b5b1373a17e9d989be72f0c4b84b",
+        "trigramSimilarity": 0.0365,
+        "longestSharedFragmentLength": 6,
+        "longestSharedFragment": "要等对应材料",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_03",
+        "rightUid": "裴硬_7.9_02",
+        "leftMaskedHash": "24cf5a2618d1a7da4b7b50b2614bcbd31fa6af6ef0b4f435c5f39fb235f34958",
+        "rightMaskedHash": "5a304f32fc1125581388c01fa648e1dcd03fb19fda0f40a2537bab7bd90c0049",
+        "trigramSimilarity": 0.0073,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "不能只",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_03",
+        "rightUid": "裴硬_7.9_03",
+        "leftMaskedHash": "24cf5a2618d1a7da4b7b50b2614bcbd31fa6af6ef0b4f435c5f39fb235f34958",
+        "rightMaskedHash": "398f91b4b6f59b2618b9f138241f48e6779e9d6c09d7fc1263e07a117262732b",
+        "trigramSimilarity": 0.0084,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "整理成一份",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_03",
+        "rightUid": "裴硬_7.9_04",
+        "leftMaskedHash": "24cf5a2618d1a7da4b7b50b2614bcbd31fa6af6ef0b4f435c5f39fb235f34958",
+        "rightMaskedHash": "8fb052e81f75cf9212ceb098c1afb8a5e3a293ed20981101ee527f6583366420",
+        "trigramSimilarity": 0.0054,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "意见和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_03",
+        "rightUid": "裴硬_7.9_05",
+        "leftMaskedHash": "24cf5a2618d1a7da4b7b50b2614bcbd31fa6af6ef0b4f435c5f39fb235f34958",
+        "rightMaskedHash": "0b5ce4840f4ae267e58c1d49b6690249ee9b1f6bbfd5d7b89ab438a416e96a58",
+        "trigramSimilarity": 0.0063,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "暂缓上线",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_03",
+        "rightUid": "沈礼_7.10_01",
+        "leftMaskedHash": "24cf5a2618d1a7da4b7b50b2614bcbd31fa6af6ef0b4f435c5f39fb235f34958",
+        "rightMaskedHash": "1a75a5f7805d8e78f4b4b525b61972b8eca141b27c0554393f5a940a43da0ab7",
+        "trigramSimilarity": 0.0082,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "意见和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_03",
+        "rightUid": "沈礼_7.10_02",
+        "leftMaskedHash": "24cf5a2618d1a7da4b7b50b2614bcbd31fa6af6ef0b4f435c5f39fb235f34958",
+        "rightMaskedHash": "77849871d6e872422a4aefd74b4497346f25d40fc4e23a88f203ec16de23cc09",
+        "trigramSimilarity": 0.0099,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "意见和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_03",
+        "rightUid": "沈礼_7.10_03",
+        "leftMaskedHash": "24cf5a2618d1a7da4b7b50b2614bcbd31fa6af6ef0b4f435c5f39fb235f34958",
+        "rightMaskedHash": "210cd59bc7cd319c6ddd8cd1d7ff103141c32fd41cc68ec545cf1b05cc16cc49",
+        "trigramSimilarity": 0.0064,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "意见和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_03",
+        "rightUid": "沈礼_7.10_04",
+        "leftMaskedHash": "24cf5a2618d1a7da4b7b50b2614bcbd31fa6af6ef0b4f435c5f39fb235f34958",
+        "rightMaskedHash": "0f183e151ff49205c98f1fdb0bcb841df52732bfbfbd2ecc5ad1fb7fa2d2f56d",
+        "trigramSimilarity": 0.004,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "放在一起",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_03",
+        "rightUid": "沈礼_7.10_05",
+        "leftMaskedHash": "24cf5a2618d1a7da4b7b50b2614bcbd31fa6af6ef0b4f435c5f39fb235f34958",
+        "rightMaskedHash": "bc788489421eb93a0da156e9bba42d520eaef74f98f64ff2e70415937cd32b61",
+        "trigramSimilarity": 0.007,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "包装和",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_03",
+        "rightUid": "沈礼_7.10_06",
+        "leftMaskedHash": "24cf5a2618d1a7da4b7b50b2614bcbd31fa6af6ef0b4f435c5f39fb235f34958",
+        "rightMaskedHash": "3506ebc38d04af61671fde04c196626b1e3f46c56ceaab78155f88221fd7d8d5",
+        "trigramSimilarity": 0.0068,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "意见和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_04",
+        "rightUid": "沈礼_7.9_05",
+        "leftMaskedHash": "b9c72409a90356edeec8d7a5f3ed82441ec00843655e261ee8139514c57aa835",
+        "rightMaskedHash": "15b7f0820369f272223ee8b8e5b9db468690d50d45ec370ffab065e0145f9497",
+        "trigramSimilarity": 0.0089,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_04",
+        "rightUid": "沈礼_7.9_06",
+        "leftMaskedHash": "b9c72409a90356edeec8d7a5f3ed82441ec00843655e261ee8139514c57aa835",
+        "rightMaskedHash": "77c6364469e32d5b149767bd479e5ce85ae8ecafaf7531f4c50d9926b429cb99",
+        "trigramSimilarity": 0.0018,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "与补件",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_04",
+        "rightUid": "沈礼_7.9_07",
+        "leftMaskedHash": "b9c72409a90356edeec8d7a5f3ed82441ec00843655e261ee8139514c57aa835",
+        "rightMaskedHash": "cc40c489cb822a2f63d5135ea682b082563d30a419ae777305be570a7980df2c",
+        "trigramSimilarity": 0.0099,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_04",
+        "rightUid": "沈礼_7.9_08",
+        "leftMaskedHash": "b9c72409a90356edeec8d7a5f3ed82441ec00843655e261ee8139514c57aa835",
+        "rightMaskedHash": "cbd778aa10649379f76603da2a1fff2d534f3a3d305fce077fc2fe644992cc05",
+        "trigramSimilarity": 0.0099,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_04",
+        "rightUid": "沈礼_7.9_09",
+        "leftMaskedHash": "b9c72409a90356edeec8d7a5f3ed82441ec00843655e261ee8139514c57aa835",
+        "rightMaskedHash": "ca1d9318b8a9cc242b4ec2908102da46872e6610087e0ac82ce2836b029d5275",
+        "trigramSimilarity": 0.0136,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_04",
+        "rightUid": "沈礼_7.9_10",
+        "leftMaskedHash": "b9c72409a90356edeec8d7a5f3ed82441ec00843655e261ee8139514c57aa835",
+        "rightMaskedHash": "0ea10a17d62a385aeaa2aaf54a47bafa002d0a394a7058db568ef5dfb9fdf8bf",
+        "trigramSimilarity": 0.0056,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "卡住的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_04",
+        "rightUid": "沈礼_7.9_11",
+        "leftMaskedHash": "b9c72409a90356edeec8d7a5f3ed82441ec00843655e261ee8139514c57aa835",
+        "rightMaskedHash": "f762795c8d8590329c48859d1f2105ea024142c6f556fd20e7de7aff8dd6242a",
+        "trigramSimilarity": 0.0074,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "规则说明",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_04",
+        "rightUid": "裴硬_7.9_01",
+        "leftMaskedHash": "b9c72409a90356edeec8d7a5f3ed82441ec00843655e261ee8139514c57aa835",
+        "rightMaskedHash": "2e01f80eea8cd34734a2a3ac2a73b85d2b70b5b1373a17e9d989be72f0c4b84b",
+        "trigramSimilarity": 0.0088,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_04",
+        "rightUid": "裴硬_7.9_02",
+        "leftMaskedHash": "b9c72409a90356edeec8d7a5f3ed82441ec00843655e261ee8139514c57aa835",
+        "rightMaskedHash": "5a304f32fc1125581388c01fa648e1dcd03fb19fda0f40a2537bab7bd90c0049",
+        "trigramSimilarity": 0.0089,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "授权记录",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_04",
+        "rightUid": "裴硬_7.9_03",
+        "leftMaskedHash": "b9c72409a90356edeec8d7a5f3ed82441ec00843655e261ee8139514c57aa835",
+        "rightMaskedHash": "398f91b4b6f59b2618b9f138241f48e6779e9d6c09d7fc1263e07a117262732b",
+        "trigramSimilarity": 0.0081,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_04",
+        "rightUid": "裴硬_7.9_04",
+        "leftMaskedHash": "b9c72409a90356edeec8d7a5f3ed82441ec00843655e261ee8139514c57aa835",
+        "rightMaskedHash": "8fb052e81f75cf9212ceb098c1afb8a5e3a293ed20981101ee527f6583366420",
+        "trigramSimilarity": 0.0123,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_04",
+        "rightUid": "裴硬_7.9_05",
+        "leftMaskedHash": "b9c72409a90356edeec8d7a5f3ed82441ec00843655e261ee8139514c57aa835",
+        "rightMaskedHash": "0b5ce4840f4ae267e58c1d49b6690249ee9b1f6bbfd5d7b89ab438a416e96a58",
+        "trigramSimilarity": 0.0009,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "核什么",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_04",
+        "rightUid": "沈礼_7.10_01",
+        "leftMaskedHash": "b9c72409a90356edeec8d7a5f3ed82441ec00843655e261ee8139514c57aa835",
+        "rightMaskedHash": "1a75a5f7805d8e78f4b4b525b61972b8eca141b27c0554393f5a940a43da0ab7",
+        "trigramSimilarity": 0.0142,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_04",
+        "rightUid": "沈礼_7.10_02",
+        "leftMaskedHash": "b9c72409a90356edeec8d7a5f3ed82441ec00843655e261ee8139514c57aa835",
+        "rightMaskedHash": "77849871d6e872422a4aefd74b4497346f25d40fc4e23a88f203ec16de23cc09",
+        "trigramSimilarity": 0.0114,
+        "longestSharedFragmentLength": 8,
+        "longestSharedFragment": "这次最重要的是为",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_04",
+        "rightUid": "沈礼_7.10_03",
+        "leftMaskedHash": "b9c72409a90356edeec8d7a5f3ed82441ec00843655e261ee8139514c57aa835",
+        "rightMaskedHash": "210cd59bc7cd319c6ddd8cd1d7ff103141c32fd41cc68ec545cf1b05cc16cc49",
+        "trigramSimilarity": 0.0054,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "两份文件",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_04",
+        "rightUid": "沈礼_7.10_04",
+        "leftMaskedHash": "b9c72409a90356edeec8d7a5f3ed82441ec00843655e261ee8139514c57aa835",
+        "rightMaskedHash": "0f183e151ff49205c98f1fdb0bcb841df52732bfbfbd2ecc5ad1fb7fa2d2f56d",
+        "trigramSimilarity": 0.0016,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "为什么",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_04",
+        "rightUid": "沈礼_7.10_05",
+        "leftMaskedHash": "b9c72409a90356edeec8d7a5f3ed82441ec00843655e261ee8139514c57aa835",
+        "rightMaskedHash": "bc788489421eb93a0da156e9bba42d520eaef74f98f64ff2e70415937cd32b61",
+        "trigramSimilarity": 0.0053,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "两份文件对",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_04",
+        "rightUid": "沈礼_7.10_06",
+        "leftMaskedHash": "b9c72409a90356edeec8d7a5f3ed82441ec00843655e261ee8139514c57aa835",
+        "rightMaskedHash": "3506ebc38d04af61671fde04c196626b1e3f46c56ceaab78155f88221fd7d8d5",
+        "trigramSimilarity": 0.0022,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "两份文件",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_05",
+        "rightUid": "沈礼_7.9_06",
+        "leftMaskedHash": "15b7f0820369f272223ee8b8e5b9db468690d50d45ec370ffab065e0145f9497",
+        "rightMaskedHash": "77c6364469e32d5b149767bd479e5ce85ae8ecafaf7531f4c50d9926b429cb99",
+        "trigramSimilarity": 0.0046,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "能不能",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_05",
+        "rightUid": "沈礼_7.9_07",
+        "leftMaskedHash": "15b7f0820369f272223ee8b8e5b9db468690d50d45ec370ffab065e0145f9497",
+        "rightMaskedHash": "cc40c489cb822a2f63d5135ea682b082563d30a419ae777305be570a7980df2c",
+        "trigramSimilarity": 0.0125,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_05",
+        "rightUid": "沈礼_7.9_08",
+        "leftMaskedHash": "15b7f0820369f272223ee8b8e5b9db468690d50d45ec370ffab065e0145f9497",
+        "rightMaskedHash": "cbd778aa10649379f76603da2a1fff2d534f3a3d305fce077fc2fe644992cc05",
+        "trigramSimilarity": 0.0062,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_05",
+        "rightUid": "沈礼_7.9_09",
+        "leftMaskedHash": "15b7f0820369f272223ee8b8e5b9db468690d50d45ec370ffab065e0145f9497",
+        "rightMaskedHash": "ca1d9318b8a9cc242b4ec2908102da46872e6610087e0ac82ce2836b029d5275",
+        "trigramSimilarity": 0.0098,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_05",
+        "rightUid": "沈礼_7.9_10",
+        "leftMaskedHash": "15b7f0820369f272223ee8b8e5b9db468690d50d45ec370ffab065e0145f9497",
+        "rightMaskedHash": "0ea10a17d62a385aeaa2aaf54a47bafa002d0a394a7058db568ef5dfb9fdf8bf",
+        "trigramSimilarity": 0.0083,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "再做一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_05",
+        "rightUid": "沈礼_7.9_11",
+        "leftMaskedHash": "15b7f0820369f272223ee8b8e5b9db468690d50d45ec370ffab065e0145f9497",
+        "rightMaskedHash": "f762795c8d8590329c48859d1f2105ea024142c6f556fd20e7de7aff8dd6242a",
+        "trigramSimilarity": 0.0055,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "和复核状态",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_05",
+        "rightUid": "裴硬_7.9_01",
+        "leftMaskedHash": "15b7f0820369f272223ee8b8e5b9db468690d50d45ec370ffab065e0145f9497",
+        "rightMaskedHash": "2e01f80eea8cd34734a2a3ac2a73b85d2b70b5b1373a17e9d989be72f0c4b84b",
+        "trigramSimilarity": 0.0304,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_05",
+        "rightUid": "裴硬_7.9_02",
+        "leftMaskedHash": "15b7f0820369f272223ee8b8e5b9db468690d50d45ec370ffab065e0145f9497",
+        "rightMaskedHash": "5a304f32fc1125581388c01fa648e1dcd03fb19fda0f40a2537bab7bd90c0049",
+        "trigramSimilarity": 0.0053,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "补材料后",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_05",
+        "rightUid": "裴硬_7.9_03",
+        "leftMaskedHash": "15b7f0820369f272223ee8b8e5b9db468690d50d45ec370ffab065e0145f9497",
+        "rightMaskedHash": "398f91b4b6f59b2618b9f138241f48e6779e9d6c09d7fc1263e07a117262732b",
+        "trigramSimilarity": 0.0071,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_05",
+        "rightUid": "裴硬_7.9_04",
+        "leftMaskedHash": "15b7f0820369f272223ee8b8e5b9db468690d50d45ec370ffab065e0145f9497",
+        "rightMaskedHash": "8fb052e81f75cf9212ceb098c1afb8a5e3a293ed20981101ee527f6583366420",
+        "trigramSimilarity": 0.0069,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_05",
+        "rightUid": "裴硬_7.9_05",
+        "leftMaskedHash": "15b7f0820369f272223ee8b8e5b9db468690d50d45ec370ffab065e0145f9497",
+        "rightMaskedHash": "0b5ce4840f4ae267e58c1d49b6690249ee9b1f6bbfd5d7b89ab438a416e96a58",
+        "trigramSimilarity": 0.0043,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "规则和",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_05",
+        "rightUid": "沈礼_7.10_01",
+        "leftMaskedHash": "15b7f0820369f272223ee8b8e5b9db468690d50d45ec370ffab065e0145f9497",
+        "rightMaskedHash": "1a75a5f7805d8e78f4b4b525b61972b8eca141b27c0554393f5a940a43da0ab7",
+        "trigramSimilarity": 0.0149,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_05",
+        "rightUid": "沈礼_7.10_02",
+        "leftMaskedHash": "15b7f0820369f272223ee8b8e5b9db468690d50d45ec370ffab065e0145f9497",
+        "rightMaskedHash": "77849871d6e872422a4aefd74b4497346f25d40fc4e23a88f203ec16de23cc09",
+        "trigramSimilarity": 0.0061,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_05",
+        "rightUid": "沈礼_7.10_03",
+        "leftMaskedHash": "15b7f0820369f272223ee8b8e5b9db468690d50d45ec370ffab065e0145f9497",
+        "rightMaskedHash": "210cd59bc7cd319c6ddd8cd1d7ff103141c32fd41cc68ec545cf1b05cc16cc49",
+        "trigramSimilarity": 0.0071,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "在同一条",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_05",
+        "rightUid": "沈礼_7.10_04",
+        "leftMaskedHash": "15b7f0820369f272223ee8b8e5b9db468690d50d45ec370ffab065e0145f9497",
+        "rightMaskedHash": "0f183e151ff49205c98f1fdb0bcb841df52732bfbfbd2ecc5ad1fb7fa2d2f56d",
+        "trigramSimilarity": 0.0008,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "为什么",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_05",
+        "rightUid": "沈礼_7.10_05",
+        "leftMaskedHash": "15b7f0820369f272223ee8b8e5b9db468690d50d45ec370ffab065e0145f9497",
+        "rightMaskedHash": "bc788489421eb93a0da156e9bba42d520eaef74f98f64ff2e70415937cd32b61",
+        "trigramSimilarity": 0.0022,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "确认的",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_05",
+        "rightUid": "沈礼_7.10_06",
+        "leftMaskedHash": "15b7f0820369f272223ee8b8e5b9db468690d50d45ec370ffab065e0145f9497",
+        "rightMaskedHash": "3506ebc38d04af61671fde04c196626b1e3f46c56ceaab78155f88221fd7d8d5",
+        "trigramSimilarity": 0.0029,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "还缺什么",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_06",
+        "rightUid": "沈礼_7.9_07",
+        "leftMaskedHash": "77c6364469e32d5b149767bd479e5ce85ae8ecafaf7531f4c50d9926b429cb99",
+        "rightMaskedHash": "cc40c489cb822a2f63d5135ea682b082563d30a419ae777305be570a7980df2c",
+        "trigramSimilarity": 0.0065,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "有材料",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_06",
+        "rightUid": "沈礼_7.9_08",
+        "leftMaskedHash": "77c6364469e32d5b149767bd479e5ce85ae8ecafaf7531f4c50d9926b429cb99",
+        "rightMaskedHash": "cbd778aa10649379f76603da2a1fff2d534f3a3d305fce077fc2fe644992cc05",
+        "trigramSimilarity": 0.0009,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "能直接",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_06",
+        "rightUid": "沈礼_7.9_09",
+        "leftMaskedHash": "77c6364469e32d5b149767bd479e5ce85ae8ecafaf7531f4c50d9926b429cb99",
+        "rightMaskedHash": "ca1d9318b8a9cc242b4ec2908102da46872e6610087e0ac82ce2836b029d5275",
+        "trigramSimilarity": 0.0037,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "安全和",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_06",
+        "rightUid": "沈礼_7.9_10",
+        "leftMaskedHash": "77c6364469e32d5b149767bd479e5ce85ae8ecafaf7531f4c50d9926b429cb99",
+        "rightMaskedHash": "0ea10a17d62a385aeaa2aaf54a47bafa002d0a394a7058db568ef5dfb9fdf8bf",
+        "trigramSimilarity": 0.0038,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "这件事",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_06",
+        "rightUid": "沈礼_7.9_11",
+        "leftMaskedHash": "77c6364469e32d5b149767bd479e5ce85ae8ecafaf7531f4c50d9926b429cb99",
+        "rightMaskedHash": "f762795c8d8590329c48859d1f2105ea024142c6f556fd20e7de7aff8dd6242a",
+        "trigramSimilarity": 0.0009,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "有材料",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_06",
+        "rightUid": "裴硬_7.9_01",
+        "leftMaskedHash": "77c6364469e32d5b149767bd479e5ce85ae8ecafaf7531f4c50d9926b429cb99",
+        "rightMaskedHash": "2e01f80eea8cd34734a2a3ac2a73b85d2b70b5b1373a17e9d989be72f0c4b84b",
+        "trigramSimilarity": 0.0045,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "现有附件",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_06",
+        "rightUid": "裴硬_7.9_02",
+        "leftMaskedHash": "77c6364469e32d5b149767bd479e5ce85ae8ecafaf7531f4c50d9926b429cb99",
+        "rightMaskedHash": "5a304f32fc1125581388c01fa648e1dcd03fb19fda0f40a2537bab7bd90c0049",
+        "trigramSimilarity": 0.0046,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "有材料",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_06",
+        "rightUid": "裴硬_7.9_03",
+        "leftMaskedHash": "77c6364469e32d5b149767bd479e5ce85ae8ecafaf7531f4c50d9926b429cb99",
+        "rightMaskedHash": "398f91b4b6f59b2618b9f138241f48e6779e9d6c09d7fc1263e07a117262732b",
+        "trigramSimilarity": 0.0019,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "就按这",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_06",
+        "rightUid": "裴硬_7.9_04",
+        "leftMaskedHash": "77c6364469e32d5b149767bd479e5ce85ae8ecafaf7531f4c50d9926b429cb99",
+        "rightMaskedHash": "8fb052e81f75cf9212ceb098c1afb8a5e3a293ed20981101ee527f6583366420",
+        "trigramSimilarity": 0.0045,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "机会要",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_06",
+        "rightUid": "裴硬_7.9_05",
+        "leftMaskedHash": "77c6364469e32d5b149767bd479e5ce85ae8ecafaf7531f4c50d9926b429cb99",
+        "rightMaskedHash": "0b5ce4840f4ae267e58c1d49b6690249ee9b1f6bbfd5d7b89ab438a416e96a58",
+        "trigramSimilarity": 0.0036,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "也不能当成",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_06",
+        "rightUid": "沈礼_7.10_01",
+        "leftMaskedHash": "77c6364469e32d5b149767bd479e5ce85ae8ecafaf7531f4c50d9926b429cb99",
+        "rightMaskedHash": "1a75a5f7805d8e78f4b4b525b61972b8eca141b27c0554393f5a940a43da0ab7",
+        "trigramSimilarity": 0.0036,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "条件和",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_06",
+        "rightUid": "沈礼_7.10_02",
+        "leftMaskedHash": "77c6364469e32d5b149767bd479e5ce85ae8ecafaf7531f4c50d9926b429cb99",
+        "rightMaskedHash": "77849871d6e872422a4aefd74b4497346f25d40fc4e23a88f203ec16de23cc09",
+        "trigramSimilarity": 0.0054,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "有材料",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_06",
+        "rightUid": "沈礼_7.10_03",
+        "leftMaskedHash": "77c6364469e32d5b149767bd479e5ce85ae8ecafaf7531f4c50d9926b429cb99",
+        "rightMaskedHash": "210cd59bc7cd319c6ddd8cd1d7ff103141c32fd41cc68ec545cf1b05cc16cc49",
+        "trigramSimilarity": 0.0028,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "能不能",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_06",
+        "rightUid": "沈礼_7.10_04",
+        "leftMaskedHash": "77c6364469e32d5b149767bd479e5ce85ae8ecafaf7531f4c50d9926b429cb99",
+        "rightMaskedHash": "0f183e151ff49205c98f1fdb0bcb841df52732bfbfbd2ecc5ad1fb7fa2d2f56d",
+        "trigramSimilarity": 0.0016,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "也没有",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_06",
+        "rightUid": "沈礼_7.10_05",
+        "leftMaskedHash": "77c6364469e32d5b149767bd479e5ce85ae8ecafaf7531f4c50d9926b429cb99",
+        "rightMaskedHash": "bc788489421eb93a0da156e9bba42d520eaef74f98f64ff2e70415937cd32b61",
+        "trigramSimilarity": 0.0023,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_06",
+        "rightUid": "沈礼_7.10_06",
+        "leftMaskedHash": "77c6364469e32d5b149767bd479e5ce85ae8ecafaf7531f4c50d9926b429cb99",
+        "rightMaskedHash": "3506ebc38d04af61671fde04c196626b1e3f46c56ceaab78155f88221fd7d8d5",
+        "trigramSimilarity": 0.0053,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "框架本",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_07",
+        "rightUid": "沈礼_7.9_08",
+        "leftMaskedHash": "cc40c489cb822a2f63d5135ea682b082563d30a419ae777305be570a7980df2c",
+        "rightMaskedHash": "cbd778aa10649379f76603da2a1fff2d534f3a3d305fce077fc2fe644992cc05",
+        "trigramSimilarity": 0.0063,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_07",
+        "rightUid": "沈礼_7.9_09",
+        "leftMaskedHash": "cc40c489cb822a2f63d5135ea682b082563d30a419ae777305be570a7980df2c",
+        "rightMaskedHash": "ca1d9318b8a9cc242b4ec2908102da46872e6610087e0ac82ce2836b029d5275",
+        "trigramSimilarity": 0.0135,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_07",
+        "rightUid": "沈礼_7.9_10",
+        "leftMaskedHash": "cc40c489cb822a2f63d5135ea682b082563d30a419ae777305be570a7980df2c",
+        "rightMaskedHash": "0ea10a17d62a385aeaa2aaf54a47bafa002d0a394a7058db568ef5dfb9fdf8bf",
+        "trigramSimilarity": 0.0121,
+        "longestSharedFragmentLength": 6,
+        "longestSharedFragment": "只有营业执照",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_07",
+        "rightUid": "沈礼_7.9_11",
+        "leftMaskedHash": "cc40c489cb822a2f63d5135ea682b082563d30a419ae777305be570a7980df2c",
+        "rightMaskedHash": "f762795c8d8590329c48859d1f2105ea024142c6f556fd20e7de7aff8dd6242a",
+        "trigramSimilarity": 0.0055,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "现有材料",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_07",
+        "rightUid": "裴硬_7.9_01",
+        "leftMaskedHash": "cc40c489cb822a2f63d5135ea682b082563d30a419ae777305be570a7980df2c",
+        "rightMaskedHash": "2e01f80eea8cd34734a2a3ac2a73b85d2b70b5b1373a17e9d989be72f0c4b84b",
+        "trigramSimilarity": 0.0169,
+        "longestSharedFragmentLength": 8,
+        "longestSharedFragment": "现在真正卡住的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_07",
+        "rightUid": "裴硬_7.9_02",
+        "leftMaskedHash": "cc40c489cb822a2f63d5135ea682b082563d30a419ae777305be570a7980df2c",
+        "rightMaskedHash": "5a304f32fc1125581388c01fa648e1dcd03fb19fda0f40a2537bab7bd90c0049",
+        "trigramSimilarity": 0.0071,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "现有材料",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_07",
+        "rightUid": "裴硬_7.9_03",
+        "leftMaskedHash": "cc40c489cb822a2f63d5135ea682b082563d30a419ae777305be570a7980df2c",
+        "rightMaskedHash": "398f91b4b6f59b2618b9f138241f48e6779e9d6c09d7fc1263e07a117262732b",
+        "trigramSimilarity": 0.0109,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_07",
+        "rightUid": "裴硬_7.9_04",
+        "leftMaskedHash": "cc40c489cb822a2f63d5135ea682b082563d30a419ae777305be570a7980df2c",
+        "rightMaskedHash": "8fb052e81f75cf9212ceb098c1afb8a5e3a293ed20981101ee527f6583366420",
+        "trigramSimilarity": 0.0123,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_07",
+        "rightUid": "裴硬_7.9_05",
+        "leftMaskedHash": "cc40c489cb822a2f63d5135ea682b082563d30a419ae777305be570a7980df2c",
+        "rightMaskedHash": "0b5ce4840f4ae267e58c1d49b6690249ee9b1f6bbfd5d7b89ab438a416e96a58",
+        "trigramSimilarity": 0.0097,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "继续收件",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_07",
+        "rightUid": "沈礼_7.10_01",
+        "leftMaskedHash": "cc40c489cb822a2f63d5135ea682b082563d30a419ae777305be570a7980df2c",
+        "rightMaskedHash": "1a75a5f7805d8e78f4b4b525b61972b8eca141b27c0554393f5a940a43da0ab7",
+        "trigramSimilarity": 0.0115,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_07",
+        "rightUid": "沈礼_7.10_02",
+        "leftMaskedHash": "cc40c489cb822a2f63d5135ea682b082563d30a419ae777305be570a7980df2c",
+        "rightMaskedHash": "77849871d6e872422a4aefd74b4497346f25d40fc4e23a88f203ec16de23cc09",
+        "trigramSimilarity": 0.015,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_07",
+        "rightUid": "沈礼_7.10_03",
+        "leftMaskedHash": "cc40c489cb822a2f63d5135ea682b082563d30a419ae777305be570a7980df2c",
+        "rightMaskedHash": "210cd59bc7cd319c6ddd8cd1d7ff103141c32fd41cc68ec545cf1b05cc16cc49",
+        "trigramSimilarity": 0.0089,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "意见和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_07",
+        "rightUid": "沈礼_7.10_04",
+        "leftMaskedHash": "cc40c489cb822a2f63d5135ea682b082563d30a419ae777305be570a7980df2c",
+        "rightMaskedHash": "0f183e151ff49205c98f1fdb0bcb841df52732bfbfbd2ecc5ad1fb7fa2d2f56d",
+        "trigramSimilarity": 0.0031,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "份有限",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_07",
+        "rightUid": "沈礼_7.10_05",
+        "leftMaskedHash": "cc40c489cb822a2f63d5135ea682b082563d30a419ae777305be570a7980df2c",
+        "rightMaskedHash": "bc788489421eb93a0da156e9bba42d520eaef74f98f64ff2e70415937cd32b61",
+        "trigramSimilarity": 0.0068,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "当前状态",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_07",
+        "rightUid": "沈礼_7.10_06",
+        "leftMaskedHash": "cc40c489cb822a2f63d5135ea682b082563d30a419ae777305be570a7980df2c",
+        "rightMaskedHash": "3506ebc38d04af61671fde04c196626b1e3f46c56ceaab78155f88221fd7d8d5",
+        "trigramSimilarity": 0.0088,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "意见和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_08",
+        "rightUid": "沈礼_7.9_09",
+        "leftMaskedHash": "cbd778aa10649379f76603da2a1fff2d534f3a3d305fce077fc2fe644992cc05",
+        "rightMaskedHash": "ca1d9318b8a9cc242b4ec2908102da46872e6610087e0ac82ce2836b029d5275",
+        "trigramSimilarity": 0.0126,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_08",
+        "rightUid": "沈礼_7.9_10",
+        "leftMaskedHash": "cbd778aa10649379f76603da2a1fff2d534f3a3d305fce077fc2fe644992cc05",
+        "rightMaskedHash": "0ea10a17d62a385aeaa2aaf54a47bafa002d0a394a7058db568ef5dfb9fdf8bf",
+        "trigramSimilarity": 0.0056,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "材料状态",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_08",
+        "rightUid": "沈礼_7.9_11",
+        "leftMaskedHash": "cbd778aa10649379f76603da2a1fff2d534f3a3d305fce077fc2fe644992cc05",
+        "rightMaskedHash": "f762795c8d8590329c48859d1f2105ea024142c6f556fd20e7de7aff8dd6242a",
+        "trigramSimilarity": 0.0027,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "材料和",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_08",
+        "rightUid": "裴硬_7.9_01",
+        "leftMaskedHash": "cbd778aa10649379f76603da2a1fff2d534f3a3d305fce077fc2fe644992cc05",
+        "rightMaskedHash": "2e01f80eea8cd34734a2a3ac2a73b85d2b70b5b1373a17e9d989be72f0c4b84b",
+        "trigramSimilarity": 0.0079,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_08",
+        "rightUid": "裴硬_7.9_02",
+        "leftMaskedHash": "cbd778aa10649379f76603da2a1fff2d534f3a3d305fce077fc2fe644992cc05",
+        "rightMaskedHash": "5a304f32fc1125581388c01fa648e1dcd03fb19fda0f40a2537bab7bd90c0049",
+        "trigramSimilarity": 0.0018,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "责任人",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_08",
+        "rightUid": "裴硬_7.9_03",
+        "leftMaskedHash": "cbd778aa10649379f76603da2a1fff2d534f3a3d305fce077fc2fe644992cc05",
+        "rightMaskedHash": "398f91b4b6f59b2618b9f138241f48e6779e9d6c09d7fc1263e07a117262732b",
+        "trigramSimilarity": 0.0099,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_08",
+        "rightUid": "裴硬_7.9_04",
+        "leftMaskedHash": "cbd778aa10649379f76603da2a1fff2d534f3a3d305fce077fc2fe644992cc05",
+        "rightMaskedHash": "8fb052e81f75cf9212ceb098c1afb8a5e3a293ed20981101ee527f6583366420",
+        "trigramSimilarity": 0.0123,
+        "longestSharedFragmentLength": 8,
+        "longestSharedFragment": "这次最重要的是从",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_08",
+        "rightUid": "裴硬_7.9_05",
+        "leftMaskedHash": "cbd778aa10649379f76603da2a1fff2d534f3a3d305fce077fc2fe644992cc05",
+        "rightMaskedHash": "0b5ce4840f4ae267e58c1d49b6690249ee9b1f6bbfd5d7b89ab438a416e96a58",
+        "trigramSimilarity": 0.0017,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "在哪里每",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_08",
+        "rightUid": "沈礼_7.10_01",
+        "leftMaskedHash": "cbd778aa10649379f76603da2a1fff2d534f3a3d305fce077fc2fe644992cc05",
+        "rightMaskedHash": "1a75a5f7805d8e78f4b4b525b61972b8eca141b27c0554393f5a940a43da0ab7",
+        "trigramSimilarity": 0.0079,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_08",
+        "rightUid": "沈礼_7.10_02",
+        "leftMaskedHash": "cbd778aa10649379f76603da2a1fff2d534f3a3d305fce077fc2fe644992cc05",
+        "rightMaskedHash": "77849871d6e872422a4aefd74b4497346f25d40fc4e23a88f203ec16de23cc09",
+        "trigramSimilarity": 0.0114,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_08",
+        "rightUid": "沈礼_7.10_03",
+        "leftMaskedHash": "cbd778aa10649379f76603da2a1fff2d534f3a3d305fce077fc2fe644992cc05",
+        "rightMaskedHash": "210cd59bc7cd319c6ddd8cd1d7ff103141c32fd41cc68ec545cf1b05cc16cc49",
+        "trigramSimilarity": 0.0053,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "交稿前用一",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_08",
+        "rightUid": "沈礼_7.10_04",
+        "leftMaskedHash": "cbd778aa10649379f76603da2a1fff2d534f3a3d305fce077fc2fe644992cc05",
+        "rightMaskedHash": "0f183e151ff49205c98f1fdb0bcb841df52732bfbfbd2ecc5ad1fb7fa2d2f56d",
+        "trigramSimilarity": 0.0008,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "成一份",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_08",
+        "rightUid": "沈礼_7.10_05",
+        "leftMaskedHash": "cbd778aa10649379f76603da2a1fff2d534f3a3d305fce077fc2fe644992cc05",
+        "rightMaskedHash": "bc788489421eb93a0da156e9bba42d520eaef74f98f64ff2e70415937cd32b61",
+        "trigramSimilarity": 0.0015,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "材料和",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_08",
+        "rightUid": "沈礼_7.10_06",
+        "leftMaskedHash": "878d39c6f8cba29b91d9b178083d573f9454768abf212be534d785164c95c7e7",
+        "rightMaskedHash": "3506ebc38d04af61671fde04c196626b1e3f46c56ceaab78155f88221fd7d8d5",
+        "trigramSimilarity": 0.0029,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "件判断",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_09",
+        "rightUid": "沈礼_7.9_10",
+        "leftMaskedHash": "ca1d9318b8a9cc242b4ec2908102da46872e6610087e0ac82ce2836b029d5275",
+        "rightMaskedHash": "0ea10a17d62a385aeaa2aaf54a47bafa002d0a394a7058db568ef5dfb9fdf8bf",
+        "trigramSimilarity": 0.0065,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "材料状态",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_09",
+        "rightUid": "沈礼_7.9_11",
+        "leftMaskedHash": "ca1d9318b8a9cc242b4ec2908102da46872e6610087e0ac82ce2836b029d5275",
+        "rightMaskedHash": "f762795c8d8590329c48859d1f2105ea024142c6f556fd20e7de7aff8dd6242a",
+        "trigramSimilarity": 0.0046,
+        "longestSharedFragmentLength": 6,
+        "longestSharedFragment": "办法用来核对",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_09",
+        "rightUid": "裴硬_7.9_01",
+        "leftMaskedHash": "ca1d9318b8a9cc242b4ec2908102da46872e6610087e0ac82ce2836b029d5275",
+        "rightMaskedHash": "2e01f80eea8cd34734a2a3ac2a73b85d2b70b5b1373a17e9d989be72f0c4b84b",
+        "trigramSimilarity": 0.0151,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_09",
+        "rightUid": "裴硬_7.9_02",
+        "leftMaskedHash": "ca1d9318b8a9cc242b4ec2908102da46872e6610087e0ac82ce2836b029d5275",
+        "rightMaskedHash": "5a304f32fc1125581388c01fa648e1dcd03fb19fda0f40a2537bab7bd90c0049",
+        "trigramSimilarity": 0.0116,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "用户授权记录和",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_09",
+        "rightUid": "裴硬_7.9_03",
+        "leftMaskedHash": "ca1d9318b8a9cc242b4ec2908102da46872e6610087e0ac82ce2836b029d5275",
+        "rightMaskedHash": "398f91b4b6f59b2618b9f138241f48e6779e9d6c09d7fc1263e07a117262732b",
+        "trigramSimilarity": 0.0072,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_09",
+        "rightUid": "裴硬_7.9_04",
+        "leftMaskedHash": "ca1d9318b8a9cc242b4ec2908102da46872e6610087e0ac82ce2836b029d5275",
+        "rightMaskedHash": "8fb052e81f75cf9212ceb098c1afb8a5e3a293ed20981101ee527f6583366420",
+        "trigramSimilarity": 0.0222,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "复核意见和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_09",
+        "rightUid": "裴硬_7.9_05",
+        "leftMaskedHash": "ca1d9318b8a9cc242b4ec2908102da46872e6610087e0ac82ce2836b029d5275",
+        "rightMaskedHash": "0b5ce4840f4ae267e58c1d49b6690249ee9b1f6bbfd5d7b89ab438a416e96a58",
+        "trigramSimilarity": 0.0062,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "规则落到",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_09",
+        "rightUid": "沈礼_7.10_01",
+        "leftMaskedHash": "ca1d9318b8a9cc242b4ec2908102da46872e6610087e0ac82ce2836b029d5275",
+        "rightMaskedHash": "1a75a5f7805d8e78f4b4b525b61972b8eca141b27c0554393f5a940a43da0ab7",
+        "trigramSimilarity": 0.0151,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_09",
+        "rightUid": "沈礼_7.10_02",
+        "leftMaskedHash": "ca1d9318b8a9cc242b4ec2908102da46872e6610087e0ac82ce2836b029d5275",
+        "rightMaskedHash": "77849871d6e872422a4aefd74b4497346f25d40fc4e23a88f203ec16de23cc09",
+        "trigramSimilarity": 0.0168,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "复核意见和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_09",
+        "rightUid": "沈礼_7.10_03",
+        "leftMaskedHash": "ca1d9318b8a9cc242b4ec2908102da46872e6610087e0ac82ce2836b029d5275",
+        "rightMaskedHash": "210cd59bc7cd319c6ddd8cd1d7ff103141c32fd41cc68ec545cf1b05cc16cc49",
+        "trigramSimilarity": 0.0126,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "复核意见和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_09",
+        "rightUid": "沈礼_7.10_04",
+        "leftMaskedHash": "ca1d9318b8a9cc242b4ec2908102da46872e6610087e0ac82ce2836b029d5275",
+        "rightMaskedHash": "0f183e151ff49205c98f1fdb0bcb841df52732bfbfbd2ecc5ad1fb7fa2d2f56d",
+        "trigramSimilarity": 0.0008,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_09",
+        "rightUid": "沈礼_7.10_05",
+        "leftMaskedHash": "ca1d9318b8a9cc242b4ec2908102da46872e6610087e0ac82ce2836b029d5275",
+        "rightMaskedHash": "bc788489421eb93a0da156e9bba42d520eaef74f98f64ff2e70415937cd32b61",
+        "trigramSimilarity": 0.0008,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_09",
+        "rightUid": "沈礼_7.10_06",
+        "leftMaskedHash": "ca1d9318b8a9cc242b4ec2908102da46872e6610087e0ac82ce2836b029d5275",
+        "rightMaskedHash": "3506ebc38d04af61671fde04c196626b1e3f46c56ceaab78155f88221fd7d8d5",
+        "trigramSimilarity": 0.0044,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "意见和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_10",
+        "rightUid": "沈礼_7.9_11",
+        "leftMaskedHash": "0ea10a17d62a385aeaa2aaf54a47bafa002d0a394a7058db568ef5dfb9fdf8bf",
+        "rightMaskedHash": "f762795c8d8590329c48859d1f2105ea024142c6f556fd20e7de7aff8dd6242a",
+        "trigramSimilarity": 0.0096,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "用来核对",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_10",
+        "rightUid": "裴硬_7.9_01",
+        "leftMaskedHash": "0ea10a17d62a385aeaa2aaf54a47bafa002d0a394a7058db568ef5dfb9fdf8bf",
+        "rightMaskedHash": "2e01f80eea8cd34734a2a3ac2a73b85d2b70b5b1373a17e9d989be72f0c4b84b",
+        "trigramSimilarity": 0.0073,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "卡住的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_10",
+        "rightUid": "裴硬_7.9_02",
+        "leftMaskedHash": "0ea10a17d62a385aeaa2aaf54a47bafa002d0a394a7058db568ef5dfb9fdf8bf",
+        "rightMaskedHash": "5a304f32fc1125581388c01fa648e1dcd03fb19fda0f40a2537bab7bd90c0049",
+        "trigramSimilarity": 0.0111,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "你替我整理一份",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_10",
+        "rightUid": "裴硬_7.9_03",
+        "leftMaskedHash": "0ea10a17d62a385aeaa2aaf54a47bafa002d0a394a7058db568ef5dfb9fdf8bf",
+        "rightMaskedHash": "398f91b4b6f59b2618b9f138241f48e6779e9d6c09d7fc1263e07a117262732b",
+        "trigramSimilarity": 0.0019,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "我整理",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_10",
+        "rightUid": "裴硬_7.9_04",
+        "leftMaskedHash": "0ea10a17d62a385aeaa2aaf54a47bafa002d0a394a7058db568ef5dfb9fdf8bf",
+        "rightMaskedHash": "8fb052e81f75cf9212ceb098c1afb8a5e3a293ed20981101ee527f6583366420",
+        "trigramSimilarity": 0,
+        "longestSharedFragmentLength": 2,
+        "longestSharedFragment": "和一",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_10",
+        "rightUid": "裴硬_7.9_05",
+        "leftMaskedHash": "0ea10a17d62a385aeaa2aaf54a47bafa002d0a394a7058db568ef5dfb9fdf8bf",
+        "rightMaskedHash": "0b5ce4840f4ae267e58c1d49b6690249ee9b1f6bbfd5d7b89ab438a416e96a58",
+        "trigramSimilarity": 0.0073,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "价格和",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_10",
+        "rightUid": "沈礼_7.10_01",
+        "leftMaskedHash": "0ea10a17d62a385aeaa2aaf54a47bafa002d0a394a7058db568ef5dfb9fdf8bf",
+        "rightMaskedHash": "1a75a5f7805d8e78f4b4b525b61972b8eca141b27c0554393f5a940a43da0ab7",
+        "trigramSimilarity": 0.0055,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "人和复核",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_10",
+        "rightUid": "沈礼_7.10_02",
+        "leftMaskedHash": "0ea10a17d62a385aeaa2aaf54a47bafa002d0a394a7058db568ef5dfb9fdf8bf",
+        "rightMaskedHash": "77849871d6e872422a4aefd74b4497346f25d40fc4e23a88f203ec16de23cc09",
+        "trigramSimilarity": 0.0045,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "则用于检查",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_10",
+        "rightUid": "沈礼_7.10_03",
+        "leftMaskedHash": "0ea10a17d62a385aeaa2aaf54a47bafa002d0a394a7058db568ef5dfb9fdf8bf",
+        "rightMaskedHash": "210cd59bc7cd319c6ddd8cd1d7ff103141c32fd41cc68ec545cf1b05cc16cc49",
+        "trigramSimilarity": 0.0028,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "用来核对",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_10",
+        "rightUid": "沈礼_7.10_04",
+        "leftMaskedHash": "0ea10a17d62a385aeaa2aaf54a47bafa002d0a394a7058db568ef5dfb9fdf8bf",
+        "rightMaskedHash": "0f183e151ff49205c98f1fdb0bcb841df52732bfbfbd2ecc5ad1fb7fa2d2f56d",
+        "trigramSimilarity": 0.0032,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "交叉核对",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_10",
+        "rightUid": "沈礼_7.10_05",
+        "leftMaskedHash": "0ea10a17d62a385aeaa2aaf54a47bafa002d0a394a7058db568ef5dfb9fdf8bf",
+        "rightMaskedHash": "bc788489421eb93a0da156e9bba42d520eaef74f98f64ff2e70415937cd32b61",
+        "trigramSimilarity": 0.0055,
+        "longestSharedFragmentLength": 6,
+        "longestSharedFragment": "记现有文件缺",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_10",
+        "rightUid": "沈礼_7.10_06",
+        "leftMaskedHash": "0ea10a17d62a385aeaa2aaf54a47bafa002d0a394a7058db568ef5dfb9fdf8bf",
+        "rightMaskedHash": "3506ebc38d04af61671fde04c196626b1e3f46c56ceaab78155f88221fd7d8d5",
+        "trigramSimilarity": 0.0068,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "从预审意见回到",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_11",
+        "rightUid": "裴硬_7.9_01",
+        "leftMaskedHash": "f762795c8d8590329c48859d1f2105ea024142c6f556fd20e7de7aff8dd6242a",
+        "rightMaskedHash": "2e01f80eea8cd34734a2a3ac2a73b85d2b70b5b1373a17e9d989be72f0c4b84b",
+        "trigramSimilarity": 0.0118,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "办法用来核",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_11",
+        "rightUid": "裴硬_7.9_02",
+        "leftMaskedHash": "f762795c8d8590329c48859d1f2105ea024142c6f556fd20e7de7aff8dd6242a",
+        "rightMaskedHash": "5a304f32fc1125581388c01fa648e1dcd03fb19fda0f40a2537bab7bd90c0049",
+        "trigramSimilarity": 0.0082,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "现有材料",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_11",
+        "rightUid": "裴硬_7.9_03",
+        "leftMaskedHash": "f762795c8d8590329c48859d1f2105ea024142c6f556fd20e7de7aff8dd6242a",
+        "rightMaskedHash": "398f91b4b6f59b2618b9f138241f48e6779e9d6c09d7fc1263e07a117262732b",
+        "trigramSimilarity": 0.0046,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "实际收",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_11",
+        "rightUid": "裴硬_7.9_04",
+        "leftMaskedHash": "f762795c8d8590329c48859d1f2105ea024142c6f556fd20e7de7aff8dd6242a",
+        "rightMaskedHash": "8fb052e81f75cf9212ceb098c1afb8a5e3a293ed20981101ee527f6583366420",
+        "trigramSimilarity": 0.0072,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "现有材料",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_11",
+        "rightUid": "裴硬_7.9_05",
+        "leftMaskedHash": "f762795c8d8590329c48859d1f2105ea024142c6f556fd20e7de7aff8dd6242a",
+        "rightMaskedHash": "0b5ce4840f4ae267e58c1d49b6690249ee9b1f6bbfd5d7b89ab438a416e96a58",
+        "trigramSimilarity": 0.0036,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "材料先",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_11",
+        "rightUid": "沈礼_7.10_01",
+        "leftMaskedHash": "f762795c8d8590329c48859d1f2105ea024142c6f556fd20e7de7aff8dd6242a",
+        "rightMaskedHash": "1a75a5f7805d8e78f4b4b525b61972b8eca141b27c0554393f5a940a43da0ab7",
+        "trigramSimilarity": 0.0081,
+        "longestSharedFragmentLength": 8,
+        "longestSharedFragment": "经办人和复核状态",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_11",
+        "rightUid": "沈礼_7.10_02",
+        "leftMaskedHash": "f762795c8d8590329c48859d1f2105ea024142c6f556fd20e7de7aff8dd6242a",
+        "rightMaskedHash": "77849871d6e872422a4aefd74b4497346f25d40fc4e23a88f203ec16de23cc09",
+        "trigramSimilarity": 0.0063,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "现有材料",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_11",
+        "rightUid": "沈礼_7.10_03",
+        "leftMaskedHash": "f762795c8d8590329c48859d1f2105ea024142c6f556fd20e7de7aff8dd6242a",
+        "rightMaskedHash": "210cd59bc7cd319c6ddd8cd1d7ff103141c32fd41cc68ec545cf1b05cc16cc49",
+        "trigramSimilarity": 0.0064,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "用来核对",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_11",
+        "rightUid": "沈礼_7.10_04",
+        "leftMaskedHash": "f762795c8d8590329c48859d1f2105ea024142c6f556fd20e7de7aff8dd6242a",
+        "rightMaskedHash": "0f183e151ff49205c98f1fdb0bcb841df52732bfbfbd2ecc5ad1fb7fa2d2f56d",
+        "trigramSimilarity": 0.0032,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "不能只看",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_11",
+        "rightUid": "沈礼_7.10_05",
+        "leftMaskedHash": "f762795c8d8590329c48859d1f2105ea024142c6f556fd20e7de7aff8dd6242a",
+        "rightMaskedHash": "bc788489421eb93a0da156e9bba42d520eaef74f98f64ff2e70415937cd32b61",
+        "trigramSimilarity": 0.0023,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "清单和",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.9_11",
+        "rightUid": "沈礼_7.10_06",
+        "leftMaskedHash": "f762795c8d8590329c48859d1f2105ea024142c6f556fd20e7de7aff8dd6242a",
+        "rightMaskedHash": "3506ebc38d04af61671fde04c196626b1e3f46c56ceaab78155f88221fd7d8d5",
+        "trigramSimilarity": 0.0015,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "不能把",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_01",
+        "rightUid": "裴硬_7.9_02",
+        "leftMaskedHash": "2e01f80eea8cd34734a2a3ac2a73b85d2b70b5b1373a17e9d989be72f0c4b84b",
+        "rightMaskedHash": "5a304f32fc1125581388c01fa648e1dcd03fb19fda0f40a2537bab7bd90c0049",
+        "trigramSimilarity": 0.0096,
+        "longestSharedFragmentLength": 6,
+        "longestSharedFragment": "或补材料后再",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_01",
+        "rightUid": "裴硬_7.9_03",
+        "leftMaskedHash": "2e01f80eea8cd34734a2a3ac2a73b85d2b70b5b1373a17e9d989be72f0c4b84b",
+        "rightMaskedHash": "398f91b4b6f59b2618b9f138241f48e6779e9d6c09d7fc1263e07a117262732b",
+        "trigramSimilarity": 0.0098,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_01",
+        "rightUid": "裴硬_7.9_04",
+        "leftMaskedHash": "2e01f80eea8cd34734a2a3ac2a73b85d2b70b5b1373a17e9d989be72f0c4b84b",
+        "rightMaskedHash": "8fb052e81f75cf9212ceb098c1afb8a5e3a293ed20981101ee527f6583366420",
+        "trigramSimilarity": 0.0121,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_01",
+        "rightUid": "裴硬_7.9_05",
+        "leftMaskedHash": "2e01f80eea8cd34734a2a3ac2a73b85d2b70b5b1373a17e9d989be72f0c4b84b",
+        "rightMaskedHash": "0b5ce4840f4ae267e58c1d49b6690249ee9b1f6bbfd5d7b89ab438a416e96a58",
+        "trigramSimilarity": 0.0069,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "页面展示和",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_01",
+        "rightUid": "沈礼_7.10_01",
+        "leftMaskedHash": "2e01f80eea8cd34734a2a3ac2a73b85d2b70b5b1373a17e9d989be72f0c4b84b",
+        "rightMaskedHash": "1a75a5f7805d8e78f4b4b525b61972b8eca141b27c0554393f5a940a43da0ab7",
+        "trigramSimilarity": 0.0256,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "审改意见和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_01",
+        "rightUid": "沈礼_7.10_02",
+        "leftMaskedHash": "2e01f80eea8cd34734a2a3ac2a73b85d2b70b5b1373a17e9d989be72f0c4b84b",
+        "rightMaskedHash": "77849871d6e872422a4aefd74b4497346f25d40fc4e23a88f203ec16de23cc09",
+        "trigramSimilarity": 0.0104,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_01",
+        "rightUid": "沈礼_7.10_03",
+        "leftMaskedHash": "2e01f80eea8cd34734a2a3ac2a73b85d2b70b5b1373a17e9d989be72f0c4b84b",
+        "rightMaskedHash": "210cd59bc7cd319c6ddd8cd1d7ff103141c32fd41cc68ec545cf1b05cc16cc49",
+        "trigramSimilarity": 0.007,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "意见和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_01",
+        "rightUid": "沈礼_7.10_04",
+        "leftMaskedHash": "2e01f80eea8cd34734a2a3ac2a73b85d2b70b5b1373a17e9d989be72f0c4b84b",
+        "rightMaskedHash": "0f183e151ff49205c98f1fdb0bcb841df52732bfbfbd2ecc5ad1fb7fa2d2f56d",
+        "trigramSimilarity": 0.0015,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_01",
+        "rightUid": "沈礼_7.10_05",
+        "leftMaskedHash": "2e01f80eea8cd34734a2a3ac2a73b85d2b70b5b1373a17e9d989be72f0c4b84b",
+        "rightMaskedHash": "bc788489421eb93a0da156e9bba42d520eaef74f98f64ff2e70415937cd32b61",
+        "trigramSimilarity": 0.0045,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "来源不",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_01",
+        "rightUid": "沈礼_7.10_06",
+        "leftMaskedHash": "2e01f80eea8cd34734a2a3ac2a73b85d2b70b5b1373a17e9d989be72f0c4b84b",
+        "rightMaskedHash": "3506ebc38d04af61671fde04c196626b1e3f46c56ceaab78155f88221fd7d8d5",
+        "trigramSimilarity": 0.0072,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "意见和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_02",
+        "rightUid": "裴硬_7.9_03",
+        "leftMaskedHash": "5a304f32fc1125581388c01fa648e1dcd03fb19fda0f40a2537bab7bd90c0049",
+        "rightMaskedHash": "398f91b4b6f59b2618b9f138241f48e6779e9d6c09d7fc1263e07a117262732b",
+        "trigramSimilarity": 0.0054,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "说明和一",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_02",
+        "rightUid": "裴硬_7.9_04",
+        "leftMaskedHash": "5a304f32fc1125581388c01fa648e1dcd03fb19fda0f40a2537bab7bd90c0049",
+        "rightMaskedHash": "8fb052e81f75cf9212ceb098c1afb8a5e3a293ed20981101ee527f6583366420",
+        "trigramSimilarity": 0.0078,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "个人信息",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_02",
+        "rightUid": "裴硬_7.9_05",
+        "leftMaskedHash": "5a304f32fc1125581388c01fa648e1dcd03fb19fda0f40a2537bab7bd90c0049",
+        "rightMaskedHash": "0b5ce4840f4ae267e58c1d49b6690249ee9b1f6bbfd5d7b89ab438a416e96a58",
+        "trigramSimilarity": 0.0105,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "规则用来核",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_02",
+        "rightUid": "沈礼_7.10_01",
+        "leftMaskedHash": "5a304f32fc1125581388c01fa648e1dcd03fb19fda0f40a2537bab7bd90c0049",
+        "rightMaskedHash": "1a75a5f7805d8e78f4b4b525b61972b8eca141b27c0554393f5a940a43da0ab7",
+        "trigramSimilarity": 0.0114,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "拿着它跟客",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_02",
+        "rightUid": "沈礼_7.10_02",
+        "leftMaskedHash": "5a304f32fc1125581388c01fa648e1dcd03fb19fda0f40a2537bab7bd90c0049",
+        "rightMaskedHash": "77849871d6e872422a4aefd74b4497346f25d40fc4e23a88f203ec16de23cc09",
+        "trigramSimilarity": 0.0131,
+        "longestSharedFragmentLength": 6,
+        "longestSharedFragment": "个人信息保护",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_02",
+        "rightUid": "沈礼_7.10_03",
+        "leftMaskedHash": "5a304f32fc1125581388c01fa648e1dcd03fb19fda0f40a2537bab7bd90c0049",
+        "rightMaskedHash": "210cd59bc7cd319c6ddd8cd1d7ff103141c32fd41cc68ec545cf1b05cc16cc49",
+        "trigramSimilarity": 0.0071,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "个人信息",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_02",
+        "rightUid": "沈礼_7.10_04",
+        "leftMaskedHash": "5a304f32fc1125581388c01fa648e1dcd03fb19fda0f40a2537bab7bd90c0049",
+        "rightMaskedHash": "0f183e151ff49205c98f1fdb0bcb841df52732bfbfbd2ecc5ad1fb7fa2d2f56d",
+        "trigramSimilarity": 0.0023,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "不能只",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_02",
+        "rightUid": "沈礼_7.10_05",
+        "leftMaskedHash": "5a304f32fc1125581388c01fa648e1dcd03fb19fda0f40a2537bab7bd90c0049",
+        "rightMaskedHash": "bc788489421eb93a0da156e9bba42d520eaef74f98f64ff2e70415937cd32b61",
+        "trigramSimilarity": 0.0045,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "说明和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_02",
+        "rightUid": "沈礼_7.10_06",
+        "leftMaskedHash": "5a304f32fc1125581388c01fa648e1dcd03fb19fda0f40a2537bab7bd90c0049",
+        "rightMaskedHash": "3506ebc38d04af61671fde04c196626b1e3f46c56ceaab78155f88221fd7d8d5",
+        "trigramSimilarity": 0.0073,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "分别对应",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_03",
+        "rightUid": "裴硬_7.9_04",
+        "leftMaskedHash": "398f91b4b6f59b2618b9f138241f48e6779e9d6c09d7fc1263e07a117262732b",
+        "rightMaskedHash": "8fb052e81f75cf9212ceb098c1afb8a5e3a293ed20981101ee527f6583366420",
+        "trigramSimilarity": 0.007,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_03",
+        "rightUid": "裴硬_7.9_05",
+        "leftMaskedHash": "398f91b4b6f59b2618b9f138241f48e6779e9d6c09d7fc1263e07a117262732b",
+        "rightMaskedHash": "0b5ce4840f4ae267e58c1d49b6690249ee9b1f6bbfd5d7b89ab438a416e96a58",
+        "trigramSimilarity": 0.0026,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "规则只",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_03",
+        "rightUid": "沈礼_7.10_01",
+        "leftMaskedHash": "398f91b4b6f59b2618b9f138241f48e6779e9d6c09d7fc1263e07a117262732b",
+        "rightMaskedHash": "1a75a5f7805d8e78f4b4b525b61972b8eca141b27c0554393f5a940a43da0ab7",
+        "trigramSimilarity": 0.0062,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_03",
+        "rightUid": "沈礼_7.10_02",
+        "leftMaskedHash": "398f91b4b6f59b2618b9f138241f48e6779e9d6c09d7fc1263e07a117262732b",
+        "rightMaskedHash": "77849871d6e872422a4aefd74b4497346f25d40fc4e23a88f203ec16de23cc09",
+        "trigramSimilarity": 0.0133,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_03",
+        "rightUid": "沈礼_7.10_03",
+        "leftMaskedHash": "398f91b4b6f59b2618b9f138241f48e6779e9d6c09d7fc1263e07a117262732b",
+        "rightMaskedHash": "210cd59bc7cd319c6ddd8cd1d7ff103141c32fd41cc68ec545cf1b05cc16cc49",
+        "trigramSimilarity": 0.0054,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "问的问题",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_03",
+        "rightUid": "沈礼_7.10_04",
+        "leftMaskedHash": "398f91b4b6f59b2618b9f138241f48e6779e9d6c09d7fc1263e07a117262732b",
+        "rightMaskedHash": "0f183e151ff49205c98f1fdb0bcb841df52732bfbfbd2ecc5ad1fb7fa2d2f56d",
+        "trigramSimilarity": 0.0024,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "你帮我",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_03",
+        "rightUid": "沈礼_7.10_05",
+        "leftMaskedHash": "398f91b4b6f59b2618b9f138241f48e6779e9d6c09d7fc1263e07a117262732b",
+        "rightMaskedHash": "bc788489421eb93a0da156e9bba42d520eaef74f98f64ff2e70415937cd32b61",
+        "trigramSimilarity": 0.0053,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "说明和一",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_03",
+        "rightUid": "沈礼_7.10_06",
+        "leftMaskedHash": "398f91b4b6f59b2618b9f138241f48e6779e9d6c09d7fc1263e07a117262732b",
+        "rightMaskedHash": "3506ebc38d04af61671fde04c196626b1e3f46c56ceaab78155f88221fd7d8d5",
+        "trigramSimilarity": 0.0037,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "两份文件",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_04",
+        "rightUid": "裴硬_7.9_05",
+        "leftMaskedHash": "8fb052e81f75cf9212ceb098c1afb8a5e3a293ed20981101ee527f6583366420",
+        "rightMaskedHash": "0b5ce4840f4ae267e58c1d49b6690249ee9b1f6bbfd5d7b89ab438a416e96a58",
+        "trigramSimilarity": 0.0034,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_04",
+        "rightUid": "沈礼_7.10_01",
+        "leftMaskedHash": "8fb052e81f75cf9212ceb098c1afb8a5e3a293ed20981101ee527f6583366420",
+        "rightMaskedHash": "1a75a5f7805d8e78f4b4b525b61972b8eca141b27c0554393f5a940a43da0ab7",
+        "trigramSimilarity": 0.0138,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_04",
+        "rightUid": "沈礼_7.10_02",
+        "leftMaskedHash": "8fb052e81f75cf9212ceb098c1afb8a5e3a293ed20981101ee527f6583366420",
+        "rightMaskedHash": "77849871d6e872422a4aefd74b4497346f25d40fc4e23a88f203ec16de23cc09",
+        "trigramSimilarity": 0.0172,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "复核意见和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_04",
+        "rightUid": "沈礼_7.10_03",
+        "leftMaskedHash": "8fb052e81f75cf9212ceb098c1afb8a5e3a293ed20981101ee527f6583366420",
+        "rightMaskedHash": "210cd59bc7cd319c6ddd8cd1d7ff103141c32fd41cc68ec545cf1b05cc16cc49",
+        "trigramSimilarity": 0.0114,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "复核意见和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_04",
+        "rightUid": "沈礼_7.10_04",
+        "leftMaskedHash": "8fb052e81f75cf9212ceb098c1afb8a5e3a293ed20981101ee527f6583366420",
+        "rightMaskedHash": "0f183e151ff49205c98f1fdb0bcb841df52732bfbfbd2ecc5ad1fb7fa2d2f56d",
+        "trigramSimilarity": 0.0038,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "2026年",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_04",
+        "rightUid": "沈礼_7.10_05",
+        "leftMaskedHash": "8fb052e81f75cf9212ceb098c1afb8a5e3a293ed20981101ee527f6583366420",
+        "rightMaskedHash": "bc788489421eb93a0da156e9bba42d520eaef74f98f64ff2e70415937cd32b61",
+        "trigramSimilarity": 0.0082,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "2026年",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_04",
+        "rightUid": "沈礼_7.10_06",
+        "leftMaskedHash": "8fb052e81f75cf9212ceb098c1afb8a5e3a293ed20981101ee527f6583366420",
+        "rightMaskedHash": "3506ebc38d04af61671fde04c196626b1e3f46c56ceaab78155f88221fd7d8d5",
+        "trigramSimilarity": 0.0036,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "意见和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_05",
+        "rightUid": "沈礼_7.10_01",
+        "leftMaskedHash": "0b5ce4840f4ae267e58c1d49b6690249ee9b1f6bbfd5d7b89ab438a416e96a58",
+        "rightMaskedHash": "1a75a5f7805d8e78f4b4b525b61972b8eca141b27c0554393f5a940a43da0ab7",
+        "trigramSimilarity": 0.0052,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "网络交易",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_05",
+        "rightUid": "沈礼_7.10_02",
+        "leftMaskedHash": "0b5ce4840f4ae267e58c1d49b6690249ee9b1f6bbfd5d7b89ab438a416e96a58",
+        "rightMaskedHash": "77849871d6e872422a4aefd74b4497346f25d40fc4e23a88f203ec16de23cc09",
+        "trigramSimilarity": 0.0034,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "规则用于",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_05",
+        "rightUid": "沈礼_7.10_03",
+        "leftMaskedHash": "0b5ce4840f4ae267e58c1d49b6690249ee9b1f6bbfd5d7b89ab438a416e96a58",
+        "rightMaskedHash": "210cd59bc7cd319c6ddd8cd1d7ff103141c32fd41cc68ec545cf1b05cc16cc49",
+        "trigramSimilarity": 0.007,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "交易规则",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_05",
+        "rightUid": "沈礼_7.10_04",
+        "leftMaskedHash": "0b5ce4840f4ae267e58c1d49b6690249ee9b1f6bbfd5d7b89ab438a416e96a58",
+        "rightMaskedHash": "0f183e151ff49205c98f1fdb0bcb841df52732bfbfbd2ecc5ad1fb7fa2d2f56d",
+        "trigramSimilarity": 0.0015,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_05",
+        "rightUid": "沈礼_7.10_05",
+        "leftMaskedHash": "0b5ce4840f4ae267e58c1d49b6690249ee9b1f6bbfd5d7b89ab438a416e96a58",
+        "rightMaskedHash": "bc788489421eb93a0da156e9bba42d520eaef74f98f64ff2e70415937cd32b61",
+        "trigramSimilarity": 0.0037,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "四种状态",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "裴硬_7.9_05",
+        "rightUid": "沈礼_7.10_06",
+        "leftMaskedHash": "0b5ce4840f4ae267e58c1d49b6690249ee9b1f6bbfd5d7b89ab438a416e96a58",
+        "rightMaskedHash": "3506ebc38d04af61671fde04c196626b1e3f46c56ceaab78155f88221fd7d8d5",
+        "trigramSimilarity": 0.0029,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "框架但",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.10_01",
+        "rightUid": "沈礼_7.10_02",
+        "leftMaskedHash": "1a75a5f7805d8e78f4b4b525b61972b8eca141b27c0554393f5a940a43da0ab7",
+        "rightMaskedHash": "77849871d6e872422a4aefd74b4497346f25d40fc4e23a88f203ec16de23cc09",
+        "trigramSimilarity": 0.0156,
+        "longestSharedFragmentLength": 7,
+        "longestSharedFragment": "这次最重要的是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.10_01",
+        "rightUid": "沈礼_7.10_03",
+        "leftMaskedHash": "1a75a5f7805d8e78f4b4b525b61972b8eca141b27c0554393f5a940a43da0ab7",
+        "rightMaskedHash": "210cd59bc7cd319c6ddd8cd1d7ff103141c32fd41cc68ec545cf1b05cc16cc49",
+        "trigramSimilarity": 0.0168,
+        "longestSharedFragmentLength": 9,
+        "longestSharedFragment": "网络交易和个人信息",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.10_01",
+        "rightUid": "沈礼_7.10_04",
+        "leftMaskedHash": "1a75a5f7805d8e78f4b4b525b61972b8eca141b27c0554393f5a940a43da0ab7",
+        "rightMaskedHash": "0f183e151ff49205c98f1fdb0bcb841df52732bfbfbd2ecc5ad1fb7fa2d2f56d",
+        "trigramSimilarity": 0.0039,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "附件里的",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.10_01",
+        "rightUid": "沈礼_7.10_05",
+        "leftMaskedHash": "1a75a5f7805d8e78f4b4b525b61972b8eca141b27c0554393f5a940a43da0ab7",
+        "rightMaskedHash": "bc788489421eb93a0da156e9bba42d520eaef74f98f64ff2e70415937cd32b61",
+        "trigramSimilarity": 0.0052,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "状态不能",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.10_01",
+        "rightUid": "沈礼_7.10_06",
+        "leftMaskedHash": "1a75a5f7805d8e78f4b4b525b61972b8eca141b27c0554393f5a940a43da0ab7",
+        "rightMaskedHash": "3506ebc38d04af61671fde04c196626b1e3f46c56ceaab78155f88221fd7d8d5",
+        "trigramSimilarity": 0.0065,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "意见和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.10_02",
+        "rightUid": "沈礼_7.10_03",
+        "leftMaskedHash": "77849871d6e872422a4aefd74b4497346f25d40fc4e23a88f203ec16de23cc09",
+        "rightMaskedHash": "210cd59bc7cd319c6ddd8cd1d7ff103141c32fd41cc68ec545cf1b05cc16cc49",
+        "trigramSimilarity": 0.0123,
+        "longestSharedFragmentLength": 9,
+        "longestSharedFragment": "一份复核意见和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.10_02",
+        "rightUid": "沈礼_7.10_04",
+        "leftMaskedHash": "77849871d6e872422a4aefd74b4497346f25d40fc4e23a88f203ec16de23cc09",
+        "rightMaskedHash": "0f183e151ff49205c98f1fdb0bcb841df52732bfbfbd2ecc5ad1fb7fa2d2f56d",
+        "trigramSimilarity": 0.0031,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "成一份",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.10_02",
+        "rightUid": "沈礼_7.10_05",
+        "leftMaskedHash": "77849871d6e872422a4aefd74b4497346f25d40fc4e23a88f203ec16de23cc09",
+        "rightMaskedHash": "bc788489421eb93a0da156e9bba42d520eaef74f98f64ff2e70415937cd32b61",
+        "trigramSimilarity": 0.0067,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "能直接沿",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.10_02",
+        "rightUid": "沈礼_7.10_06",
+        "leftMaskedHash": "77849871d6e872422a4aefd74b4497346f25d40fc4e23a88f203ec16de23cc09",
+        "rightMaskedHash": "3506ebc38d04af61671fde04c196626b1e3f46c56ceaab78155f88221fd7d8d5",
+        "trigramSimilarity": 0.0072,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "意见和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.10_03",
+        "rightUid": "沈礼_7.10_04",
+        "leftMaskedHash": "210cd59bc7cd319c6ddd8cd1d7ff103141c32fd41cc68ec545cf1b05cc16cc49",
+        "rightMaskedHash": "0f183e151ff49205c98f1fdb0bcb841df52732bfbfbd2ecc5ad1fb7fa2d2f56d",
+        "trigramSimilarity": 0.0031,
+        "longestSharedFragmentLength": 3,
+        "longestSharedFragment": "的不是",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.10_03",
+        "rightUid": "沈礼_7.10_05",
+        "leftMaskedHash": "210cd59bc7cd319c6ddd8cd1d7ff103141c32fd41cc68ec545cf1b05cc16cc49",
+        "rightMaskedHash": "bc788489421eb93a0da156e9bba42d520eaef74f98f64ff2e70415937cd32b61",
+        "trigramSimilarity": 0.0038,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "两份文件",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.10_03",
+        "rightUid": "沈礼_7.10_06",
+        "leftMaskedHash": "210cd59bc7cd319c6ddd8cd1d7ff103141c32fd41cc68ec545cf1b05cc16cc49",
+        "rightMaskedHash": "3506ebc38d04af61671fde04c196626b1e3f46c56ceaab78155f88221fd7d8d5",
+        "trigramSimilarity": 0.0066,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "意见和一张",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.10_04",
+        "rightUid": "沈礼_7.10_05",
+        "leftMaskedHash": "0f183e151ff49205c98f1fdb0bcb841df52732bfbfbd2ecc5ad1fb7fa2d2f56d",
+        "rightMaskedHash": "bc788489421eb93a0da156e9bba42d520eaef74f98f64ff2e70415937cd32b61",
+        "trigramSimilarity": 0.0061,
+        "longestSharedFragmentLength": 5,
+        "longestSharedFragment": "2025年",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.10_04",
+        "rightUid": "沈礼_7.10_06",
+        "leftMaskedHash": "503db9acf2af0573ae3cad22fab73ef300627a9664711f949248bfc4812b328c",
+        "rightMaskedHash": "3506ebc38d04af61671fde04c196626b1e3f46c56ceaab78155f88221fd7d8d5",
+        "trigramSimilarity": 0.0059,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "核对建立",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      },
+      {
+        "leftUid": "沈礼_7.10_05",
+        "rightUid": "沈礼_7.10_06",
+        "leftMaskedHash": "bc788489421eb93a0da156e9bba42d520eaef74f98f64ff2e70415937cd32b61",
+        "rightMaskedHash": "3506ebc38d04af61671fde04c196626b1e3f46c56ceaab78155f88221fd7d8d5",
+        "trigramSimilarity": 0.0057,
+        "longestSharedFragmentLength": 4,
+        "longestSharedFragment": "资料清单",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      }
+    ],
+    "errors": []
+  },
+  "errors": [],
+  "evaluationHash": "fc6708a854ffac85b415b3c2ee74c6b8f5840ccea7658f6555e819c1b26f9527"
+}

@@ -1,0 +1,91 @@
+{
+  "generatedAt": "2026-07-09T22:37:02.573Z",
+  "apply": true,
+  "transport": "lark-cli",
+  "target": {
+    "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+    "sheetId": "49e351",
+    "wikiNode": null,
+    "meta": null
+  },
+  "planPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_shenli_all_20260709T215202Z_63bf72\\feishu\\feishu_fill_plan_rewrite.json",
+  "rows": [
+    144
+  ],
+  "valueRangeCount": 1,
+  "skipped": [
+    {
+      "address": "A144",
+      "reason": "not-included"
+    },
+    {
+      "address": "B144",
+      "reason": "not-included"
+    },
+    {
+      "address": "C144",
+      "reason": "not-included"
+    },
+    {
+      "address": "D144",
+      "reason": "not-included"
+    },
+    {
+      "address": "E144",
+      "reason": "not-included"
+    },
+    {
+      "address": "F144",
+      "reason": "not-included"
+    },
+    {
+      "address": "G144",
+      "reason": "not-included"
+    },
+    {
+      "address": "H144",
+      "reason": "not-included"
+    },
+    {
+      "address": "I144",
+      "reason": "not-included"
+    },
+    {
+      "address": "J144",
+      "reason": "not-included"
+    },
+    {
+      "address": "K144",
+      "reason": "not-included"
+    },
+    {
+      "address": "M144",
+      "reason": "not-included"
+    },
+    {
+      "address": "N144",
+      "reason": "not-included"
+    },
+    {
+      "address": "O144",
+      "reason": "not-included"
+    },
+    {
+      "address": "P144",
+      "reason": "not-included"
+    }
+  ],
+  "valueRanges": [
+    {
+      "range": "49e351!L144:L144",
+      "values": [
+        [
+          "每份规则都只回答一个票据或扣除问题，先建立问题索引：\n核对问题1附件四：《公益性捐赠税前扣除事项公告》。来源：https://fgk.chinatax.gov.cn/zcfgk/c102416/c5202214/content.html。用于核对公益性捐赠税前扣除资格、票据和材料要求。\n\n核对问题2附件三：《公益事业捐赠票据使用管理办法》。来源：https://www.qzlc.gov.cn/zwgk/qzbm/czj/ggl/202405/P020240520340291167612.pdf。用于整理票据开具、电子票据、使用范围、核销和监督管理。\n\n核对问题3附件二：《中华人民共和国公益事业捐赠法》。来源：https://www.gqb.gov.cn/node2/node3/node5/node9/userobject7ai1270.html。用于确认捐赠人、受赠人、捐赠财产、公益用途和受赠管理责任。\n\n核对问题4附件一：《中华人民共和国慈善法》。来源：https://xxgk.yczf.gov.cn/xzf/ycmzj/fdzdgknr/fgwj_41995/202404/t20240408_1960201.shtml。用于核对慈善活动、慈善组织、慈善捐赠、慈善财产和信息公开要求。\n总边界：规则与模板不能证明后台任何一笔款项的协议性质、公益用途、物资价值、受助对象或扣除资格。"
+        ]
+      ],
+      "address": "L144",
+      "field": "附件内容",
+      "chars": 599
+    }
+  ]
+}

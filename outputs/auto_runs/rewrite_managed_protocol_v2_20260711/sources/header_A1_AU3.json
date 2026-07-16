@@ -1,0 +1,641 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-11T13:59:24.811Z",
+  "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+  "sheetId": "49e351",
+  "requestedRange": "49e351!A1:AU3",
+  "targetRows": [],
+  "returnedRange": "49e351!A1:AU3",
+  "revision": 5985,
+  "values": [
+    [
+      "uid",
+      [
+        {
+          "text": "题目（新增规则：",
+          "type": "text"
+        },
+        {
+          "link": "https://xcnhc87xvcni.feishu.cn/wiki/F2ZqwOpzKiST4PkNtDOcHdgSnCc?from=from_copylink",
+          "mentionNotify": false,
+          "mentionType": 22,
+          "text": "垂域高难度题目项目--二期新增要求",
+          "token": "F2ZqwOpzKiST4PkNtDOcHdgSnCc",
+          "type": "mention"
+        },
+        {
+          "text": "研判项目核心理解（所有人必看）: ",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://meeting.tencent.com/crm/l6J6pAOP0b",
+          "text": "https://meeting.tencent.com/crm/l6J6pAOP0b",
+          "type": "url"
+        }
+      ],
+      "任务类型（题目内也需要明确表示类型）",
+      "题目领域一级目录",
+      "题目领域二级目录",
+      "题目领域三级目录",
+      "任务概括",
+      [
+        {
+          "segmentStyle": {
+            "bold": true,
+            "fontSize": 10,
+            "foreColor": "rgb(0, 0, 0)",
+            "italic": false,
+            "strikeThrough": false,
+            "underline": false
+          },
+          "text": "出题人的工作年限",
+          "type": "text"
+        },
+        {
+          "segmentStyle": {
+            "bold": false,
+            "fontSize": 10,
+            "foreColor": "rgb(0, 0, 0)",
+            "italic": false,
+            "strikeThrough": false,
+            "underline": false
+          },
+          "text": "（未工作的可以写最高学历）",
+          "type": "text"
+        }
+      ],
+      "人类所需完成时间",
+      "相关附件",
+      [
+        {
+          "segmentStyle": {
+            "bold": true,
+            "fontSize": 10,
+            "foreColor": "rgb(0, 0, 0)",
+            "italic": false,
+            "strikeThrough": false,
+            "underline": false
+          },
+          "text": "附件格式",
+          "type": "text"
+        },
+        {
+          "segmentStyle": {
+            "bold": false,
+            "fontSize": 10,
+            "foreColor": "rgb(0, 0, 0)",
+            "italic": false,
+            "strikeThrough": false,
+            "underline": false
+          },
+          "text": "标签",
+          "type": "text"
+        }
+      ],
+      [
+        {
+          "segmentStyle": {
+            "bold": true,
+            "fontSize": 10,
+            "foreColor": "rgb(0, 0, 0)",
+            "italic": false,
+            "strikeThrough": false,
+            "underline": false
+          },
+          "text": "附件内容",
+          "type": "text"
+        },
+        {
+          "segmentStyle": {
+            "bold": false,
+            "fontSize": 10,
+            "foreColor": "rgb(0, 0, 0)",
+            "italic": false,
+            "strikeThrough": false,
+            "underline": false
+          },
+          "text": "（总结概括）",
+          "type": "text"
+        }
+      ],
+      "产物格式标签",
+      "产物内容（总结概括）",
+      [
+        {
+          "segmentStyle": {
+            "bold": false,
+            "fontSize": 10,
+            "foreColor": "rgb(0, 0, 0)",
+            "italic": false,
+            "strikeThrough": false,
+            "underline": false
+          },
+          "text": "做题关键步骤（",
+          "type": "text"
+        },
+        {
+          "segmentStyle": {
+            "bold": false,
+            "fontSize": 10,
+            "foreColor": "#f54a45",
+            "italic": false,
+            "strikeThrough": false,
+            "underline": false
+          },
+          "text": "必填，分点说明",
+          "type": "text"
+        },
+        {
+          "segmentStyle": {
+            "bold": false,
+            "fontSize": 10,
+            "foreColor": "rgb(0, 0, 0)",
+            "italic": false,
+            "strikeThrough": false,
+            "underline": false
+          },
+          "text": "）",
+          "type": "text"
+        }
+      ],
+      "标注专家姓名",
+      "内部质检",
+      "原因",
+      "质检员",
+      "是否修改",
+      "是否提交",
+      "日期",
+      [
+        {
+          "text": "标注人员旧版注意事项：",
+          "type": "text"
+        },
+        {
+          "link": "https://mcn59agnjgqe.feishu.cn/wiki/XVRxwgxR2i55wFkfAAucpWCKnZg?from=from_copylink",
+          "mentionNotify": false,
+          "mentionType": 22,
+          "text": "作业人员重点注意事项",
+          "token": "XVRxwgxR2i55wFkfAAucpWCKnZg",
+          "type": "mention"
+        },
+        {
+          "text": " ",
+          "type": "text"
+        }
+      ],
+      null,
+      null,
+      null,
+      null,
+      "LLM初步质检状态",
+      "LLM初步质检状态",
+      "LLM初步质检意见",
+      null,
+      null,
+      "",
+      "",
+      "",
+      "",
+      null,
+      null,
+      "",
+      "",
+      null,
+      "点击质检",
+      "批量质检该同学",
+      "选择质检",
+      "执行选择质检",
+      "LLM初步质检状态",
+      "LLM初步质检意见"
+    ],
+    [
+      "肖育东-7.8-1",
+      "周一早上，店长把社区预售的小程序页面发到群里，让大家看看能不能下周开始试卖。页面上已经放了面包、蛋糕卷、三明治和几款冷藏甜品，顾客当天晚上付款，第二天下午到店自提，也可以由骑手送到附近小区。老板觉得最近门店客流不太稳定，想先用这种方式试试能不能把老客户和小区群里的订单带起来。\n页面发出来以后，群里很快有人提出问题。普通面包是当天现做，蛋糕卷有些是前一晚备好，三明治和冷藏甜品还涉及冷藏保存；但现在小程序页面基本只写了口味和价格，没有写清配料、保存方式、建议食用时间和过敏原。社群里也经常有人问，孩子能不能吃，临时取消能不能退，配送晚了怎么办，蛋糕被压坏了算谁的。\n老板不想等正式开卖以后再一个个处理投诉，所以这次试运营前要把容易出问题的地方先理清楚。重点不是写一套空泛的食品安全制度，而是围绕这次社区预售会真正碰到的环节来看：哪些产品页面要补信息，哪些商品不适合远距离配送，门店备货和骑手交接怎么记录，顾客临时取消、收到破损产品或者反馈食品不新鲜时该怎么处理。\n这次材料要以附件里的食品安全规定和经营要求为依据，重点落到具体产品和具体页面上。比如蛋糕卷、三明治、冷藏甜品分别需要补哪些保存提示；小程序页面的配料、过敏原、食用时间应该放在哪个位置；骑手取货时要不要拍照或签收；顾客改时间、自提超时、配送破损、食品变质这几类情况分别怎么处理。附件里判断不了的内容，要单独标出来，后面再问门店、骑手或小程序外包。\n下周试运营会要用两份可编辑材料：一份Word版《社区预售食品试运营前检查说明》，一份Excel版《社区预售问题跟进表》。Word说明给老板、门店店长和小程序外包看，用来判断哪些产品可以按计划上架，哪些产品先不上，哪些页面和配送流程要改完再试。Excel表用来跟进具体问题，需要列清产品名称、问题位置、涉及页面或配送环节、问题原因、需要补充的材料、材料应补到哪个字段、修改建议、负责人和处理状态。\n整理时重点核对这几个地方：每个问题能不能对应到具体产品、页面或配送环节；Excel里有没有写清缺什么材料、找谁补、补到哪个字段；Word说明里提到的处理办法，Excel表里有没有对应修改项。涉及冷藏甜品、过敏原、退款、配送破损和骑手交接的地方，不能只写“注意食品安全”，要写明为什么有问题、现在缺什么信息、下一步由谁确认。",
+      "L2 流程型",
+      "投资战略、专业服务与企业经营",
+      "食品经营与门店运营",
+      "社区预售食品流程检查",
+      "烘焙店准备做社区预售和次日配送，在正式开卖前核对产品标签、下单页面、冷藏配送、退换规则和门店分工，整理试运营前的修改清单。",
+      "硕士",
+      "14h",
+      [
+        {
+          "fileToken": "YdoYbClcAoVhCXxFlQBcwQAOnod",
+          "mimeType": "text/html",
+          "size": 131556,
+          "text": "附件一中华人民共和国食品安全法（主席令第二十一号） _法律_中国政府网.html",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "LsZobFkQdoSo2CxQgXlcQ2Jjnje",
+          "mimeType": "text/html",
+          "size": 73660,
+          "text": "附件二餐饮服务食品安全操作规范 （最新版）.html",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "AvVFbM7AxoVAsNxOmLPcBmqun3e",
+          "mimeType": "text/html",
+          "size": 62438,
+          "text": "附件三企业落实食品安全主体责任监督管理规定.html",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "YvMGbj9Wzo4KdcxYqHkcNOKpnHc",
+          "mimeType": "text/html",
+          "size": 91990,
+          "text": "附件四食品经营许可和备案管理办法.html",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "LYe1bJBLWo24xwx2Tw2caqzEnZJ",
+          "mimeType": "application/pdf",
+          "size": 217865,
+          "text": "附件五GB 7718 食品安全国家标准 预包装食品标签通则.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "Aw5mblfESoy85ExDYARcHaGXnHb",
+          "mimeType": "application/pdf",
+          "size": 1442354,
+          "text": "附件六GB 31654 食品安全国家标准 餐饮服务通用卫生规范.pdf",
+          "type": "attachment"
+        }
+      ],
+      "PDF、html",
+      [
+        {
+          "text": "《附件一—中华人民共和国食品安全法.html》：文件规定食品生产经营、食品标签、食品安全责任和消费者权益保护相关要求。用于判断烘焙店预售食品、标签展示和售后处理的基本边界。来源：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://www.gov.cn/zhengce/2015-04/25/content_2853643.htm",
+          "text": "https://www.gov.cn/zhengce/2015-04/25/content_2853643.htm",
+          "type": "url"
+        },
+        {
+          "text": " \n",
+          "type": "text"
+        },
+        {
+          "text": "《附件二—餐饮服务食品安全操作规范.html》：文件包含餐饮加工、贮存、配送、清洁消毒和人员管理要求。用于检查门店制作、冷藏保存、自提和短途配送环节。来源：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "http://scjgj.wuhai.gov.cn/scjdglj/zcfg98/1166914/index.html",
+          "text": "http://scjgj.wuhai.gov.cn/scjdglj/zcfg98/1166914/index.html",
+          "type": "url"
+        },
+        {
+          "text": " \n",
+          "type": "text"
+        },
+        {
+          "text": "《附件三—企业落实食品安全主体责任监督管理规定.html》：文件规定食品安全负责人、风险排查和日常管理责任。用于安排门店店长、运营和配送人员在试运营中的分工。来源：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202305/t20230508_478304.html",
+          "text": "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202305/t20230508_478304.html",
+          "type": "url"
+        },
+        {
+          "text": " \n",
+          "type": "text"
+        },
+        {
+          "text": "《附件四—食品经营许可和备案管理办法.html》：文件规定食品经营许可、备案、经营项目和经营场所管理要求。用于确认门店现有经营范围是否覆盖社区预售、自提和短途配送。来源：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202309/t20230912_486129.html",
+          "text": "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202309/t20230912_486129.html",
+          "type": "url"
+        },
+        {
+          "text": " \n",
+          "type": "text"
+        },
+        {
+          "text": "《附件五—GB 7718 食品安全国家标准 预包装食品标签通则.pdf》：文件规定食品名称、配料表、净含量、生产日期、保质期、贮存条件和生产者信息等标签要求。用于核对小程序页面是否需要补充配料、保存方式和食用提示。来源：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://www.nhc.gov.cn/zwgk/cybz/201106/53c53d99b71940c7a74830f86b46f8db/files/e84256474d1445919246b4a41a87f172.pdf",
+          "text": "https://www.nhc.gov.cn/zwgk/cybz/201106/53c53d99b71940c7a74830f86b46f8db/files/e84256474d1445919246b4a41a87f172.pdf",
+          "type": "url"
+        },
+        {
+          "text": " \n",
+          "type": "text"
+        },
+        {
+          "text": "《附件六—GB 31654 食品安全国家标准 餐饮服务通用卫生规范.pdf》：文件包含餐饮服务场所、加工制作、食品贮存、配送、清洁消毒和人员卫生要求。用于细化冷藏甜品、三明治和现制食品的保存、交接和配送检查。来源：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://www.fzmq.gov.cn/xjwz/zwgk/zfxxgkzdgz/spypaq/spaqbz/202103/t20210322_4057241.htm",
+          "text": "https://www.fzmq.gov.cn/xjwz/zwgk/zfxxgkzdgz/spypaq/spaqbz/202103/t20210322_4057241.htm",
+          "type": "url"
+        }
+      ],
+      "Word、Excel",
+      "一份Word版《社区预售食品试运营前检查说明》：说明这次预售涉及哪些产品、哪些页面和配送环节需要调整，并给出产品信息、保存提示、退款话术和门店交接的修改建议。\n一份Excel版《社区预售问题跟进表》：按产品和环节列出问题位置、影响范围、修改建议、负责人、完成时间和处理状态，方便门店和小程序外包逐项修改。",
+      "1. 先把准备预售的产品分成普通面包、常温点心、冷藏甜品和三明治几类，分别判断保存和配送要求。\n2. 查看小程序页面和社群文案，记录是否写清产品名称、配料、口味、保存方式、食用时间和过敏原提示。\n3. 对照食品安全相关要求，判断冷藏蛋糕卷、三明治这类产品是否适合做次日配送，配送时间和交接方式是否需要限制。\n4. 梳理门店备货流程，确认谁负责制作、谁负责打包、谁负责核对订单，避免第二天自提和配送时混单。\n5. 检查退款和售后规则，区分顾客临时取消、配送延迟、产品破损、口味不符和食品变质几种情况。\n6. 对照食品经营许可和备案要求，确认门店现有许可是否覆盖预售产品和配送方式，不确定的地方单独标出来。\n7. 把问题按“上线前必须改、试运营中观察、暂时不上架”分层，避免所有产品一起开卖。\n8. 整理Word说明，让老板能看懂为什么某些产品能先上，某些产品要等流程改完再上。\n9. 整理Excel跟进表，把每个问题写到具体产品、页面或交接环节，方便门店和外包改。\n10. 最后检查售后话术和页面提示是否能直接给顾客看，不能只写给内部人员看。",
+      "肖育东",
+      "通过",
+      null,
+      "凡",
+      null,
+      "已提交",
+      46214,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "",
+      "",
+      "",
+      "",
+      null,
+      null,
+      null,
+      null,
+      null,
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=2&qa_result_col=AT&qa_note_col=AU&action=recheck_row&qa_row_id=49e351_2_309ae6e8&row_fingerprint=309ae6e8388e",
+          "text": "点我质检",
+          "type": "url"
+        }
+      ],
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&student_row=2&student_field=P&async=1&qa_result_col=AT&qa_note_col=AU&action=enqueue_batch&qa_row_id=49e351_2_309ae6e8&row_fingerprint=309ae6e8388e",
+          "text": "点我批量质检",
+          "type": "url"
+        }
+      ],
+      "",
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&selected_col=AR&async=1&qa_result_col=AT&qa_note_col=AU&action=enqueue_selected",
+          "text": "执行选择质检",
+          "type": "url"
+        }
+      ],
+      "✅通过",
+      "已完成大模型质检，未发现问题"
+    ],
+    [
+      "肖育东-7.8-2",
+      "周一上午，学校对接老师突然打电话过来，说三年级秋游研学想让我们旅行社承接，时间暂定在下个月中旬，一天往返。学校的初步想法是上午去自然博物馆，下午去城市湿地公园，预计180名孩子、10名随队老师参加。对接老师希望这周先看到线路方案和报价，下周家长会还要拿出来说明，所以这件事留给我们准备的时间不多。\n这类活动我们以前做过几次，真正容易出问题的往往不是景点，而是出发前没有把细节问清楚。180名孩子要几辆车，每辆车配几名随队老师和工作人员；午餐是统一订餐还是自带；自然博物馆到湿地公园的转场时间够不够；如果当天突然下雨，下午的湿地行程要不要调整；有孩子晕车、走散、身体不舒服时，现场谁先处理，谁联系学校和家长。这些内容如果现在没说清楚，家长会上一问就会很被动。\n费用这块也要提前拆清楚，不能只给学校一个总价。学校大概率会追问车辆、门票、餐费、保险、工作人员和物料分别多少钱，哪些费用会随人数变化，哪些费用即使人数调整也要保留。车队现在只给了一个大概报价，还没把车辆数量、座位数、驾驶员信息和保险材料发全；学校这边也还没给最终名单、特殊体质孩子信息和老师分组安排。现在要先把这些缺口列出来，不能等方案发出去以后再回头补材料。\n这次材料要依据附件里的旅游、研学、安全管理和消费者权益相关资料来整理，重点落到这条线路本身。线路时间是否合理，车辆和保险材料还缺哪些，学校、旅行社、车队分别负责什么，家长会需要提前说明哪些事项，费用表里哪些项目要拆开列，哪些信息还需要学校或车队补充，都要在材料里说清楚。\n这周提交前需要形成三份可编辑材料：一份Word版《小学秋游研学活动执行说明》，一份Excel版《研学活动费用测算表》，一份Word版《家长会注意事项》。Word说明给学校和旅行社内部确认线路、车辆、人员分工和应急安排；Excel表要拆清车辆、门票、餐费、保险、工作人员、物料和备用费用；家长会注意事项要写得家长能听懂，学校可以直接用来说明出发时间、携带物品、联系方式和退改规则。\n最后整理时重点看几个地方：行程时间和转场安排不能前后冲突；Excel表里的费用不能漏掉车辆、餐费、保险、工作人员和备用支出；学校还没提供的名单、特殊体质信息、老师分组和家长确认事项，要写清楚缺什么、找谁补、补到费用表或执行说明的哪个字段。涉及天气变化、孩子走散、身体不适和临时改线路的地方，不能只写“注意安全”，要写明现场谁负责、怎么联系、什么情况下调整行程。",
+      "L2 流程型",
+      "投资战略、专业服务与企业经营",
+      "文旅服务与活动运营",
+      "研学活动出行准备检查",
+      "旅行社承接学校秋游研学活动，在报价和签约前核对线路安排、车辆资质、安全告知、家长材料和应急安排。",
+      "硕士",
+      "16h",
+      [
+        {
+          "fileToken": "He29bo1O7o9CV1xRugscnvOmngb",
+          "mimeType": "text/html",
+          "size": 92361,
+          "text": "附件一中华人民共和国旅游法.html",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "T5mdbFzfToJW5txSms5cSUrVnmf",
+          "mimeType": "text/html",
+          "size": 87444,
+          "text": "附件二旅行社条例.html",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "ZDJmbpYWloWl27xbI65ckQCPnLc",
+          "mimeType": "text/html",
+          "size": 26631,
+          "text": "附件三教育部等11部门关于推进中小学生研学旅行的意见 - 中华人民共和国教育部政府门户网站.html",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "WJUUbk3QJoMygWxZguWcZlEonvd",
+          "mimeType": "text/html",
+          "size": 38530,
+          "text": "附件四旅游安全管理办法.html",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "QPwrbPb2oooJC9xagEhcEMN3nyd",
+          "mimeType": "text/html",
+          "size": 65601,
+          "text": "附件五道路旅客运输及客运站管理规定.html",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "G5eoba1GooYcBRxJP34ctBOrnGd",
+          "mimeType": "text/html",
+          "size": 35836,
+          "text": "附件六中华人民共和国消费者权益保护法-.html",
+          "type": "attachment"
+        }
+      ],
+      "html",
+      [
+        {
+          "text": "《附件一—中华人民共和国旅游法.html》：文件规定旅游经营者、旅游合同、安全保障、旅游者权益保护和旅游服务要求。用于判断旅行社承接学校研学活动时的基本责任、服务边界和安全义务。来源：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://zwgk.mct.gov.cn/zfxxgkml/zcfg/fl/202105/t20210526_924763.html",
+          "text": "https://zwgk.mct.gov.cn/zfxxgkml/zcfg/fl/202105/t20210526_924763.html",
+          "type": "url"
+        },
+        {
+          "text": " \n",
+          "type": "text"
+        },
+        {
+          "text": "《附件二—旅行社条例.html》：文件规定旅行社经营、旅游服务、合同签订、委托安排和安全管理要求。用于核对旅行社承接学校秋游研学活动、安排车辆和提供服务时需要注意的事项。来源：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://zwgk.mct.gov.cn/zfxxgkml/zcfg/xzfg/202012/t20201204_905508.html",
+          "text": "https://zwgk.mct.gov.cn/zfxxgkml/zcfg/xzfg/202012/t20201204_905508.html",
+          "type": "url"
+        },
+        {
+          "text": " \n",
+          "type": "text"
+        },
+        {
+          "text": "《附件三—教育部等11部门关于推进中小学生研学旅行的意见.html》：文件介绍中小学生研学旅行的组织原则、责任分工、安全要求和学校配合事项。用于判断学校、旅行社、老师和家长在本次研学活动中的分工。来源：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "http://www.moe.gov.cn/srcsite/A06/s3325/201612/t20161219_292354.html",
+          "text": "http://www.moe.gov.cn/srcsite/A06/s3325/201612/t20161219_292354.html",
+          "type": "url"
+        },
+        {
+          "text": " \n",
+          "type": "text"
+        },
+        {
+          "text": "《附件四—旅游安全管理办法.html》：文件规定旅游经营者的安全说明、风险提示、应急处置和事故报告要求。用于设计学生走散、身体不适、天气变化、临时改线路等情况的处理流程。来源：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://zwgk.mct.gov.cn/zfxxgkml/zcfg/bmgz/202012/t20201204_905328.html",
+          "text": "https://zwgk.mct.gov.cn/zfxxgkml/zcfg/bmgz/202012/t20201204_905328.html",
+          "type": "url"
+        },
+        {
+          "text": " \n",
+          "type": "text"
+        },
+        {
+          "text": "《附件五—道路旅客运输及客运站管理规定.html》：文件规定道路客运经营、车辆、驾驶员、客运服务和运输安全相关要求。用于核对研学活动用车资质、车辆数量、驾驶员信息和车队材料。来源：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://xxgk.mot.gov.cn/2020/gz/202312/t20231208_3964373.html",
+          "text": "https://xxgk.mot.gov.cn/2020/gz/202312/t20231208_3964373.html",
+          "type": "url"
+        },
+        {
+          "text": " \n",
+          "type": "text"
+        },
+        {
+          "text": "《附件六—中华人民共和国消费者权益保护法.html》：文件规定经营者义务、消费者知情权、公平交易、费用说明和争议处理要求。用于核对活动报价、退改规则、服务说明和家长知情事项。来源：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://www.gjxfj.gov.cn/gjxfj/fgwj/flfg/webinfo/2014/05/1601761496745758.htm",
+          "text": "https://www.gjxfj.gov.cn/gjxfj/fgwj/flfg/webinfo/2014/05/1601761496745758.htm",
+          "type": "url"
+        }
+      ],
+      "Word、Excel",
+      "一份Word版《小学秋游研学活动执行说明》：说明线路安排、车辆安排、人员分工、家长告知、应急处理和学校配合事项，方便旅行社和学校开会确认。\n\n一份Excel版《研学活动费用测算表》：拆分车辆、门票、餐费、保险、工作人员、物料和备用费用，按学生人数变化测算总价和人均价。\n\n一份《家长会注意事项》：用简明的话说明出发时间、携带物品、餐食安排、联系方式、退改规则和安全提醒。",
+      "1. 先把一天的行程按时间拆开，写清集合、上车、参观、午餐、转场、返校几个节点。\n2. 根据180名学生和10名老师的规模，估算车辆数量、工作人员数量和随队分组方式。\n3. 按照旅游和研学相关要求，整理学校、旅行社、车队和家长分别需要配合的事项。\n4. 核对车辆材料，包括车队资质、车辆信息、驾驶员信息、座位数和保险情况。\n5. 梳理学生安全事项，重点考虑走散、晕车、身体不适、天气变化、临时改线路和提前返校。\n6. 拆分报价项目，把车辆、门票、餐费、保险、工作人员、物料和备用费用分别列出来。\n7. 整理家长会说明，避免使用过多专业词，重点讲清时间安排、要带什么、不能带什么、谁来联系。\n8. 把需要学校确认的问题单独列出，比如学生名单、特殊体质学生、老师分组和家长授权。\n9. 检查活动执行说明和费用表是否一致，不能方案里写了某项服务，报价里没有对应费用。\n10. 最后根据材料判断这条线路能不能按原计划做，哪些地方需要提前调整。",
+      "肖育东",
+      "通过",
+      null,
+      "凡",
+      null,
+      "已提交",
+      46214,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "",
+      "",
+      "",
+      "",
+      null,
+      null,
+      null,
+      null,
+      null,
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=3&qa_result_col=AT&qa_note_col=AU&action=recheck_row&qa_row_id=49e351_3_31577e3e&row_fingerprint=31577e3e11b2",
+          "text": "点我质检",
+          "type": "url"
+        }
+      ],
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&student_row=3&student_field=P&async=1&qa_result_col=AT&qa_note_col=AU&action=enqueue_batch&qa_row_id=49e351_3_31577e3e&row_fingerprint=31577e3e11b2",
+          "text": "点我批量质检",
+          "type": "url"
+        }
+      ],
+      "",
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&selected_col=AR&async=1&qa_result_col=AT&qa_note_col=AU&action=enqueue_selected",
+          "text": "执行选择质检",
+          "type": "url"
+        }
+      ],
+      "✅通过",
+      "已完成大模型质检，未发现问题"
+    ]
+  ]
+}

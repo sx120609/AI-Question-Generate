@@ -1,0 +1,148 @@
+{
+  "runId": "l2_peiying_20260709_20260709T115842Z_3d19c2",
+  "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+  "sheetId": "49e351",
+  "reservation": {
+    "id": "l2_peiying_20260709_20260709T115842Z_3d19c2_145_149",
+    "runId": "l2_peiying_20260709_20260709T115842Z_3d19c2",
+    "startRow": 145,
+    "endRow": 149,
+    "count": 5,
+    "status": "uid_written",
+    "createdAt": "2026-07-09T12:18:28.319Z",
+    "rows": [
+      145,
+      146,
+      147,
+      148,
+      149
+    ],
+    "uids": [
+      "裴硬_7.9_01",
+      "裴硬_7.9_02",
+      "裴硬_7.9_03",
+      "裴硬_7.9_04",
+      "裴硬_7.9_05"
+    ],
+    "updatedAt": "2026-07-09T12:21:53.548Z",
+    "correctedUidNumberingAt": "2026-07-09T12:21:53.545Z",
+    "correctionReason": "裴硬为新马甲，UID 编号从 01 开始。"
+  },
+  "uids": [
+    "裴硬_7.9_01",
+    "裴硬_7.9_02",
+    "裴硬_7.9_03",
+    "裴硬_7.9_04",
+    "裴硬_7.9_05"
+  ],
+  "valueRanges": [
+    {
+      "range": "49e351!A145:A145",
+      "values": [
+        [
+          "裴硬_7.9_01"
+        ]
+      ]
+    },
+    {
+      "range": "49e351!A146:A146",
+      "values": [
+        [
+          "裴硬_7.9_02"
+        ]
+      ]
+    },
+    {
+      "range": "49e351!A147:A147",
+      "values": [
+        [
+          "裴硬_7.9_03"
+        ]
+      ]
+    },
+    {
+      "range": "49e351!A148:A148",
+      "values": [
+        [
+          "裴硬_7.9_04"
+        ]
+      ]
+    },
+    {
+      "range": "49e351!A149:A149",
+      "values": [
+        [
+          "裴硬_7.9_05"
+        ]
+      ]
+    }
+  ],
+  "writeResult": {
+    "code": 0,
+    "data": {
+      "responses": [
+        {
+          "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+          "updatedCells": 1,
+          "updatedColumns": 1,
+          "updatedRange": "49e351!A145:A145",
+          "updatedRows": 1
+        },
+        {
+          "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+          "updatedCells": 1,
+          "updatedColumns": 1,
+          "updatedRange": "49e351!A146:A146",
+          "updatedRows": 1
+        },
+        {
+          "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+          "updatedCells": 1,
+          "updatedColumns": 1,
+          "updatedRange": "49e351!A147:A147",
+          "updatedRows": 1
+        },
+        {
+          "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+          "updatedCells": 1,
+          "updatedColumns": 1,
+          "updatedRange": "49e351!A148:A148",
+          "updatedRows": 1
+        },
+        {
+          "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+          "updatedCells": 1,
+          "updatedColumns": 1,
+          "updatedRange": "49e351!A149:A149",
+          "updatedRows": 1
+        }
+      ],
+      "revision": 3021,
+      "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc"
+    }
+  },
+  "readback": {
+    "majorDimension": "ROWS",
+    "range": "49e351!A145:A149",
+    "revision": 3021,
+    "values": [
+      [
+        "裴硬_7.9_01"
+      ],
+      [
+        "裴硬_7.9_02"
+      ],
+      [
+        "裴硬_7.9_03"
+      ],
+      [
+        "裴硬_7.9_04"
+      ],
+      [
+        "裴硬_7.9_05"
+      ]
+    ]
+  },
+  "correctionReason": "裴硬为新马甲，UID 编号从 01 开始。",
+  "generatedAt": "2026-07-09T12:21:53.551Z"
+}

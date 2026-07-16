@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-11T12:09:15.218Z",
+  "status": "PASS",
+  "source": {
+    "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+    "sheetId": "49e351",
+    "requestedRange": "49e351!A121:P180",
+    "revision": 5967
+  },
+  "targetRows": [
+    121,
+    122,
+    123,
+    134,
+    135,
+    136,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    172,
+    173,
+    174,
+    178,
+    179,
+    180
+  ],
+  "rowCount": 22,
+  "writtenFields": [
+    "题目",
+    "任务概括",
+    "附件内容",
+    "产物内容",
+    "做题关键步骤"
+  ],
+  "preservedFields": [
+    "UID",
+    "任务类型",
+    "一级目录",
+    "二级目录",
+    "三级目录",
+    "标注专家工作年限",
+    "人类完成时间",
+    "相关附件",
+    "附件格式",
+    "产物格式",
+    "标注专家姓名"
+  ],
+  "attachmentObjectCount": 104,
+  "failures": []
+}

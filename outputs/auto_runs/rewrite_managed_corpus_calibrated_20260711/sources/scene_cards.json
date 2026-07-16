@@ -1,0 +1,2351 @@
+{
+  "kind": "scene-card-bundle",
+  "protocolId": "situated-requester-v1",
+  "schemaVersion": 1,
+  "factLedgerPath": "fact_ledger.json",
+  "factLedgerHash": "90a750fa4b3bdaf8047c343cbbc76a3f884d89034d45406cdcaf54b1d9f23d80",
+  "cards": [
+    {
+      "recordUid": "沈礼_7.9_01",
+      "sceneCard": {
+        "schemaVersion": 1,
+        "policyId": "situated-requester-v1",
+        "topicId": "topic-row-121",
+        "personaId": "persona-row-121-沈礼_7.9_01",
+        "requester": {
+          "functionalRole": "生成式客服助手灰度前的法务核对经办人",
+          "organizationType": "准备向付费客户开放生成式客服助手的科技产品团队",
+          "department": "",
+          "responsibility": "把产品说法、会话流程、适用规则和材料缺口整理成会前可核对的问题",
+          "authorityBoundary": "只能整理边界和追问，不能替产品团队或会议决定灰度是否开放及开放范围",
+          "recipientRelation": "把零散产品说明交给熟悉文档和表格整理的协作者做成会前材料"
+        },
+        "scene": {
+          "workflowStage": "明天下午灰度会前的材料准备",
+          "trigger": "生成式客服助手计划下周先向两家付费客户开放",
+          "currentBlockage": "产品承诺缺少对应配置，供应商备案、客户授权、日志、人工审核和应急材料尚未拿到",
+          "mainDecision": "会议决定是否灰度以及开放到哪一段",
+          "downstreamUse": "产品、客户成功和法务在灰度会上沿会话流程逐段核对"
+        },
+        "informationBoundary": {
+          "knownFactIds": [
+            "fact-row-121"
+          ],
+          "availableMaterialIds": [
+            "material-row-121"
+          ],
+          "unknowns": [
+            "第121行事项最后由有权人员作出的结论"
+          ],
+          "forbiddenInferences": [
+            "不能补写现有材料没有给出的审批结果、检测结果或责任结论"
+          ]
+        },
+        "voice": {
+          "channel": "即时工作消息",
+          "formality": "熟悉协作者之间的具体工作交代，保留岗位自己的说话重心",
+          "domainVocabulary": [
+            "灰度",
+            "人工转接",
+            "知识库",
+            "工单摘要",
+            "日志留存"
+          ],
+          "avoidVocabulary": [
+            "证据闭环",
+            "合规赋能",
+            "全景视图",
+            "一站式"
+          ]
+        },
+        "maskTerms": [
+          "生成式客服助手",
+          "付费客户",
+          "企业知识库",
+          "客户成功",
+          "灰度会"
+        ],
+        "evidenceBindings": [
+          {
+            "claim": "生成式客服助手计划下周先向两家付费客户开放",
+            "factIds": [
+              "fact-row-121"
+            ]
+          },
+          {
+            "claim": "产品承诺缺少对应配置，供应商备案、客户授权、日志、人工审核和应急材料尚未拿到",
+            "factIds": [
+              "fact-row-121"
+            ]
+          },
+          {
+            "claim": "会议决定是否灰度以及开放到哪一段",
+            "factIds": [
+              "fact-row-121"
+            ]
+          }
+        ]
+      },
+      "requestContract": {
+        "requestSpan": "把这次评审整理成一份Word《灰度会边界与追问稿》和一张Excel《客服助手灰度会问题表》，产品、客户成功和法务会拿着它们逐段确认。",
+        "action": "整理成",
+        "outputs": [
+          {
+            "format": "docx",
+            "humanName": "Word",
+            "purpose": "Excel《客服助手灰度会问题表》按知识库检索、回复生成、工单摘要、人工转接、日志留存和后台开关记录数据流、产品说法、现有材料及待问事项。Word《灰度会边界与追问稿》沿客户会话顺序整理法务核对点，不预写开放建议。"
+          },
+          {
+            "format": "xlsx",
+            "humanName": "Excel",
+            "purpose": "Excel《客服助手灰度会问题表》按知识库检索、回复生成、工单摘要、人工转接、日志留存和后台开关记录数据流、产品说法、现有材料及待问事项。Word《灰度会边界与追问稿》沿客户会话顺序整理法务核对点，不预写开放建议。"
+          }
+        ]
+      },
+      "roleTrace": {
+        "blockageSpan": "产品准备把生成式客服助手先开放给两家付费客户，评审材料明确写着“客户会话不用于训练”“客户后台保留人工转接”，但没有对应配置和流程说明。",
+        "motivationSpan": "",
+        "downstreamUseSpan": "把这次评审整理成一份Word《灰度会边界与追问稿》和一张Excel《客服助手灰度会问题表》，产品、客户成功和法务会拿着它们逐段确认。"
+      },
+      "usedFactIds": [
+        "fact-row-121"
+      ],
+      "deliberatelyOmitted": []
+    },
+    {
+      "recordUid": "沈礼_7.9_02",
+      "sceneCard": {
+        "schemaVersion": 1,
+        "policyId": "situated-requester-v1",
+        "topicId": "topic-row-122",
+        "personaId": "persona-row-122-沈礼_7.9_02",
+        "requester": {
+          "functionalRole": "住宅小区电动自行车整改的物业经理",
+          "organizationType": "住宅小区物业服务方",
+          "department": "",
+          "responsibility": "把禁停清理、充电区核查、后续勘查和居民咨询按具体点位分开说明",
+          "authorityBoundary": "能安排物业即时清理和临时管控，不能在缺少图纸、居民程序及消防意见时承诺改造施工",
+          "recipientRelation": "需要协作者把照片、处理动作和待确认事项整理成会上可直接查用的答疑稿与跟踪表"
+        },
+        "scene": {
+          "workflowStage": "周四业委会前的整改答疑准备",
+          "trigger": "巡查照片发现禁停位置，工程部同时提出扩建集中充电区",
+          "currentBlockage": "点位照片不全，建筑平面图、报价、居民表决和消防书面意见缺失",
+          "mainDecision": "区分物业可以立即处理的点位与只能进入勘查和外部确认的点位",
+          "downstreamUse": "在周四业委会上按位置回应居民并继续更新整改状态"
+        },
+        "informationBoundary": {
+          "knownFactIds": [
+            "fact-row-122"
+          ],
+          "availableMaterialIds": [
+            "material-row-122"
+          ],
+          "unknowns": [
+            "第122行事项最后由有权人员作出的结论"
+          ],
+          "forbiddenInferences": [
+            "不能补写现有材料没有给出的审批结果、检测结果或责任结论"
+          ]
+        },
+        "voice": {
+          "channel": "即时工作消息",
+          "formality": "熟悉协作者之间的具体工作交代，保留岗位自己的说话重心",
+          "domainVocabulary": [
+            "禁停",
+            "临时管控",
+            "集中充电区",
+            "架空层",
+            "点位照片"
+          ],
+          "avoidVocabulary": [
+            "闭环管理",
+            "治理抓手",
+            "一体推进",
+            "全面赋能"
+          ]
+        },
+        "maskTerms": [
+          "业委会",
+          "电动自行车整改",
+          "集中充电区",
+          "地下非机动车库",
+          "物业经理"
+        ],
+        "evidenceBindings": [
+          {
+            "claim": "巡查照片发现禁停位置，工程部同时提出扩建集中充电区",
+            "factIds": [
+              "fact-row-122"
+            ]
+          },
+          {
+            "claim": "点位照片不全，建筑平面图、报价、居民表决和消防书面意见缺失",
+            "factIds": [
+              "fact-row-122"
+            ]
+          },
+          {
+            "claim": "区分物业可以立即处理的点位与只能进入勘查和外部确认的点位",
+            "factIds": [
+              "fact-row-122"
+            ]
+          }
+        ]
+      },
+      "requestContract": {
+        "requestSpan": "现有情况整理成Word《电动自行车整改会前答疑稿》和Excel《充停整改问题跟踪表》，物业经理用前者回答居民，用后者逐点更新照片、当前动作，经办人，所缺图纸或意见以及沟通状态。",
+        "action": "整理成",
+        "outputs": [
+          {
+            "format": "docx",
+            "humanName": "Word",
+            "purpose": "Excel《充停整改问题跟踪表》逐点登记照片现状、适用规则、处理动作、材料缺口、责任人和沟通状态。Word《电动自行车整改会前答疑稿》按居民问题说明立即清理、临时管控、现场勘查及外部确认事项。"
+          },
+          {
+            "format": "xlsx",
+            "humanName": "Excel",
+            "purpose": "Excel《充停整改问题跟踪表》逐点登记照片现状、适用规则、处理动作、材料缺口、责任人和沟通状态。Word《电动自行车整改会前答疑稿》按居民问题说明立即清理、临时管控、现场勘查及外部确认事项。"
+          }
+        ]
+      },
+      "roleTrace": {
+        "blockageSpan": "周四业委会讨论电动自行车整改，巡查照片已经拍到门厅，楼梯口和疏散通道附近仍有车辆，这些位置可以先谈清理和临时管控。",
+        "motivationSpan": "",
+        "downstreamUseSpan": "现有情况整理成Word《电动自行车整改会前答疑稿》和Excel《充停整改问题跟踪表》，物业经理用前者回答居民，用后者逐点更新照片、当前动作，经办人，所缺图纸或意见以及沟通状态。"
+      },
+      "usedFactIds": [
+        "fact-row-122"
+      ],
+      "deliberatelyOmitted": []
+    },
+    {
+      "recordUid": "沈礼_7.9_03",
+      "sceneCard": {
+        "schemaVersion": 1,
+        "policyId": "situated-requester-v1",
+        "topicId": "topic-row-123",
+        "personaId": "persona-row-123-沈礼_7.9_03",
+        "requester": {
+          "functionalRole": "代餐粉直播素材的法务审查经办人",
+          "organizationType": "经营低糖高蛋白代餐粉的电商内容团队",
+          "department": "",
+          "responsibility": "逐素材判断营销表达、广告识别和标签问题，并把缺少的产品与合作材料挂回具体位置",
+          "authorityBoundary": "只能对已有原文和位置给出当前处理，不能替缺少原文或证明的素材写改稿和使用结论",
+          "recipientRelation": "把已知话术和素材位置交给能同步整理审查文档与改稿表的协作者"
+        },
+        "scene": {
+          "workflowStage": "月底直播排期确定前的素材审查",
+          "trigger": "运营希望在脚本中保留三句代餐粉营销表达",
+          "currentBlockage": "缺少配方检测、包装标签原件、店铺截图、达人合作关系和广告审查材料",
+          "mainDecision": "逐条区分可保留、改成客观描述、补证明后复核和暂缓上线",
+          "downstreamUse": "运营据Word安排月底排期，并在Excel中按素材位置补原文和证明"
+        },
+        "informationBoundary": {
+          "knownFactIds": [
+            "fact-row-123"
+          ],
+          "availableMaterialIds": [
+            "material-row-123"
+          ],
+          "unknowns": [
+            "第123行事项最后由有权人员作出的结论"
+          ],
+          "forbiddenInferences": [
+            "不能补写现有材料没有给出的审批结果、检测结果或责任结论"
+          ]
+        },
+        "voice": {
+          "channel": "即时工作消息",
+          "formality": "熟悉协作者之间的具体工作交代，保留岗位自己的说话重心",
+          "domainVocabulary": [
+            "直播口播",
+            "达人短视频",
+            "广告识别",
+            "包装标签",
+            "素材位置"
+          ],
+          "avoidVocabulary": [
+            "红线闭环",
+            "品牌赋能",
+            "全链路",
+            "方法论沉淀"
+          ]
+        },
+        "maskTerms": [
+          "低糖高蛋白代餐粉",
+          "控糖",
+          "饭前一杯少吃主食",
+          "饱腹不长胖",
+          "月底直播排期"
+        ],
+        "evidenceBindings": [
+          {
+            "claim": "运营希望在脚本中保留三句代餐粉营销表达",
+            "factIds": [
+              "fact-row-123"
+            ]
+          },
+          {
+            "claim": "缺少配方检测、包装标签原件、店铺截图、达人合作关系和广告审查材料",
+            "factIds": [
+              "fact-row-123"
+            ]
+          },
+          {
+            "claim": "逐条区分可保留、改成客观描述、补证明后复核和暂缓上线",
+            "factIds": [
+              "fact-row-123"
+            ]
+          }
+        ]
+      },
+      "requestContract": {
+        "requestSpan": "运营需要一份Word《代餐粉投放审查意见》和一张Excel《代餐粉素材改稿表》。",
+        "action": "需要",
+        "outputs": [
+          {
+            "format": "docx",
+            "humanName": "Word",
+            "purpose": "Excel《代餐粉素材改稿表》保留素材位置、原文、上下文、规则风险、建议动作和所缺材料，作为运营排期记录。Word《代餐粉投放审查意见》汇总普通食品边界、广告识别、标签问题及本轮处理结果。"
+          },
+          {
+            "format": "xlsx",
+            "humanName": "Excel",
+            "purpose": "Excel《代餐粉素材改稿表》保留素材位置、原文、上下文、规则风险、建议动作和所缺材料，作为运营排期记录。Word《代餐粉投放审查意见》汇总普通食品边界、广告识别、标签问题及本轮处理结果。"
+          }
+        ]
+      },
+      "roleTrace": {
+        "blockageSpan": "低糖高蛋白代餐粉月底要排直播，运营最想留下的三句话是“控糖”“饭前一杯少吃主食”“饱腹不长胖”。",
+        "motivationSpan": "",
+        "downstreamUseSpan": "运营需要一份Word《代餐粉投放审查意见》和一张Excel《代餐粉素材改稿表》。"
+      },
+      "usedFactIds": [
+        "fact-row-123"
+      ],
+      "deliberatelyOmitted": []
+    },
+    {
+      "recordUid": "沈礼_7.9_04",
+      "sceneCard": {
+        "schemaVersion": 1,
+        "policyId": "situated-requester-v1",
+        "topicId": "topic-row-134",
+        "personaId": "persona-row-134-沈礼_7.9_04",
+        "requester": {
+          "functionalRole": "酒店会员短信召回的法务核对经办人",
+          "organizationType": "开展会员运营的酒店经营方",
+          "department": "",
+          "responsibility": "逐字段核对短信召回中的用途、必要性、外包接触范围、授权和会员权利流程",
+          "authorityBoundary": "能形成字段级法务讨论意见，不能在授权、合同和日志缺失时替整场活动作上线决定",
+          "recipientRelation": "需要协作者把会员名单和外包流程整理成可回填的字段底表与讨论框架"
+        },
+        "scene": {
+          "workflowStage": "周一法务过短信召回口径前",
+          "trigger": "会员运营提交酒店淡季短信召回需求",
+          "currentBlockage": "外包合同、授权记录、发送日志、退订回执和注销处理结果均未取得",
+          "mainDecision": "逐字段区分暂时保留、暂停、脱敏处理或等待授权材料",
+          "downstreamUse": "法务反馈回填字段底表，后续活动审批继续沿表推进"
+        },
+        "informationBoundary": {
+          "knownFactIds": [
+            "fact-row-134"
+          ],
+          "availableMaterialIds": [
+            "material-row-134"
+          ],
+          "unknowns": [
+            "第134行事项最后由有权人员作出的结论"
+          ],
+          "forbiddenInferences": [
+            "不能补写现有材料没有给出的审批结果、检测结果或责任结论"
+          ]
+        },
+        "voice": {
+          "channel": "即时工作消息",
+          "formality": "熟悉协作者之间的具体工作交代，保留岗位自己的说话重心",
+          "domainVocabulary": [
+            "分群打标",
+            "短信外包平台",
+            "退订回执",
+            "注销处理",
+            "字段用途"
+          ],
+          "avoidVocabulary": [
+            "数据资产盘活",
+            "营销赋能",
+            "闭环运营",
+            "用户全景"
+          ]
+        },
+        "maskTerms": [
+          "酒店淡季短信召回",
+          "商务客／亲子客",
+          "会员库",
+          "短信外包平台",
+          "会员运营"
+        ],
+        "evidenceBindings": [
+          {
+            "claim": "会员运营提交酒店淡季短信召回需求",
+            "factIds": [
+              "fact-row-134"
+            ]
+          },
+          {
+            "claim": "外包合同、授权记录、发送日志、退订回执和注销处理结果均未取得",
+            "factIds": [
+              "fact-row-134"
+            ]
+          },
+          {
+            "claim": "逐字段区分暂时保留、暂停、脱敏处理或等待授权材料",
+            "factIds": [
+              "fact-row-134"
+            ]
+          }
+        ]
+      },
+      "requestContract": {
+        "requestSpan": "形成Excel《会员短信字段与补件底表》和Word《短信召回法务讨论框架》，周一法务先用这两份材料定字段和流程口径。",
+        "action": "形成",
+        "outputs": [
+          {
+            "format": "docx",
+            "humanName": "Word",
+            "purpose": "Word《短信召回法务讨论框架》集中说明用户协议、外包约束、发送留痕和会员权利问题，供后续活动审批引用。Excel《会员短信字段与补件底表》沿名单导出、外包发送、退订和注销流程逐字段记录用途、处理意见、授权状态及材料缺口。"
+          },
+          {
+            "format": "xlsx",
+            "humanName": "Excel",
+            "purpose": "Word《短信召回法务讨论框架》集中说明用户协议、外包约束、发送留痕和会员权利问题，供后续活动审批引用。Excel《会员短信字段与补件底表》沿名单导出、外包发送、退订和注销流程逐字段记录用途、处理意见、授权状态及材料缺口。"
+          }
+        ]
+      },
+      "roleTrace": {
+        "blockageSpan": "酒店准备在淡季做一轮会员短信召回，拟从会员库导出手机号，身份证后四位，入住城市、消费频次，生日月份和“商务客／亲子客”标签，再交给短信外包平台发送。",
+        "motivationSpan": "",
+        "downstreamUseSpan": "形成Excel《会员短信字段与补件底表》和Word《短信召回法务讨论框架》，周一法务先用这两份材料定字段和流程口径。"
+      },
+      "usedFactIds": [
+        "fact-row-134"
+      ],
+      "deliberatelyOmitted": []
+    },
+    {
+      "recordUid": "沈礼_7.9_05",
+      "sceneCard": {
+        "schemaVersion": 1,
+        "policyId": "situated-requester-v1",
+        "topicId": "topic-row-135",
+        "personaId": "persona-row-135-沈礼_7.9_05",
+        "requester": {
+          "functionalRole": "保健食品直播素材的内容合规经办人",
+          "organizationType": "安排保健食品直播投放的运营团队",
+          "department": "",
+          "responsibility": "先处理三句已知表达，并为其他口播，页面，达人图片和客服承诺建立收件与复核路径",
+          "authorityBoundary": "能要求已知高风险表达先停用，不能为没有原文和证明的其他素材代写或预判可用",
+          "recipientRelation": "需要协作者先完成可判断部分，再把后续材料接入同一张改稿表"
+        },
+        "scene": {
+          "workflowStage": "周五重新安排直播素材前",
+          "trigger": "上一版直播脚本被平台退回",
+          "currentBlockage": "只有三句原话及投放位置，完整素材和批准，审查，授权，客服依据及平台沟通记录未到",
+          "mainDecision": "三句已知表达先停用，其他素材待原文和证明到齐后逐条判断",
+          "downstreamUse": "运营先撤下已知问题表达，经办人继续按素材行补件和复核"
+        },
+        "informationBoundary": {
+          "knownFactIds": [
+            "fact-row-135"
+          ],
+          "availableMaterialIds": [
+            "material-row-135"
+          ],
+          "unknowns": [
+            "第135行事项最后由有权人员作出的结论"
+          ],
+          "forbiddenInferences": [
+            "不能补写现有材料没有给出的审批结果、检测结果或责任结论"
+          ]
+        },
+        "voice": {
+          "channel": "即时工作消息",
+          "formality": "熟悉协作者之间的具体工作交代，保留岗位自己的说话重心",
+          "domainVocabulary": [
+            "蓝帽",
+            "广告审查凭证",
+            "主播口播",
+            "达人图片",
+            "购物车标题"
+          ],
+          "avoidVocabulary": [
+            "内容抓手",
+            "合规闭环",
+            "矩阵打法",
+            "品牌心智"
+          ]
+        },
+        "maskTerms": [
+          "左旋肉碱类保健食品",
+          "吃完瘦",
+          "不反弹",
+          "安全不伤身",
+          "直播脚本"
+        ],
+        "evidenceBindings": [
+          {
+            "claim": "上一版直播脚本被平台退回",
+            "factIds": [
+              "fact-row-135"
+            ]
+          },
+          {
+            "claim": "只有三句原话及投放位置，完整素材和批准，审查，授权，客服依据及平台沟通记录未到",
+            "factIds": [
+              "fact-row-135"
+            ]
+          },
+          {
+            "claim": "三句已知表达先停用，其他素材待原文和证明到齐后逐条判断",
+            "factIds": [
+              "fact-row-135"
+            ]
+          }
+        ]
+      },
+      "requestContract": {
+        "requestSpan": "先交付Word《左旋肉碱直播话术红线说明》和Excel《直播素材收件与改稿表》。",
+        "action": "交付",
+        "outputs": [
+          {
+            "format": "docx",
+            "humanName": "Word",
+            "purpose": "Word《左旋肉碱直播话术红线说明》聚焦“吃完瘦”“不反弹”“安全不伤身”的风险来源与当前处理。Excel《直播素材收件与改稿表》按素材点位登记原文、材料位置、批准或授权证明、缺项、处理动作及复核状态，材料到件后继续用于逐条审改。"
+          },
+          {
+            "format": "xlsx",
+            "humanName": "Excel",
+            "purpose": "Word《左旋肉碱直播话术红线说明》聚焦“吃完瘦”“不反弹”“安全不伤身”的风险来源与当前处理。Excel《直播素材收件与改稿表》按素材点位登记原文、材料位置、批准或授权证明、缺项、处理动作及复核状态，材料到件后继续用于逐条审改。"
+          }
+        ]
+      },
+      "roleTrace": {
+        "blockageSpan": "上一版左旋肉碱类保健食品直播脚本被平台打回，运营正在重排素材，能确认的原话只有“吃完瘦”“不反弹”“安全不伤身”。",
+        "motivationSpan": "",
+        "downstreamUseSpan": "先交付Word《左旋肉碱直播话术红线说明》和Excel《直播素材收件与改稿表》。"
+      },
+      "usedFactIds": [
+        "fact-row-135"
+      ],
+      "deliberatelyOmitted": []
+    },
+    {
+      "recordUid": "沈礼_7.9_06",
+      "sceneCard": {
+        "schemaVersion": 1,
+        "policyId": "situated-requester-v1",
+        "topicId": "topic-row-136",
+        "personaId": "persona-row-136-沈礼_7.9_06",
+        "requester": {
+          "functionalRole": "养老助餐机会的社会组织项目经办人",
+          "organizationType": "拥有社区厨房合作方和志愿者队伍的社会组织",
+          "department": "",
+          "responsibility": "把公开政策、组织已有条件、材料缺口和需向街道确认的问题分开整理",
+          "authorityBoundary": "只能准备理事会讨论材料，不能用异地政策替代本街道文件或提前作投标判断",
+          "recipientRelation": "需要协作者把不同地区的公开政策和组织现状整理成一次是否继续沟通的判断材料"
+        },
+        "scene": {
+          "workflowStage": "理事会周三讨论养老助餐机会前",
+          "trigger": "街道临时提出养老助餐点运营机会",
+          "currentBlockage": "街道招标文件、厨房与食品经营材料、成本测算、送餐合同、志愿者排班和补贴对象名单未到",
+          "mainDecision": "理事会只决定是否继续与街道沟通",
+          "downstreamUse": "若继续沟通，两份材料作为下一轮向街道核实的底稿"
+        },
+        "informationBoundary": {
+          "knownFactIds": [
+            "fact-row-136"
+          ],
+          "availableMaterialIds": [
+            "material-row-136"
+          ],
+          "unknowns": [
+            "第136行事项最后由有权人员作出的结论"
+          ],
+          "forbiddenInferences": [
+            "不能补写现有材料没有给出的审批结果、检测结果或责任结论"
+          ]
+        },
+        "voice": {
+          "channel": "即时工作消息",
+          "formality": "熟悉协作者之间的具体工作交代，保留岗位自己的说话重心",
+          "domainVocabulary": [
+            "堂食助餐",
+            "送餐",
+            "补贴结算",
+            "政府购买服务",
+            "基本养老服务清单"
+          ],
+          "avoidVocabulary": [
+            "资源撬动",
+            "项目赋能",
+            "协同闭环",
+            "模式复制"
+          ]
+        },
+        "maskTerms": [
+          "养老助餐点",
+          "社区厨房合作方",
+          "志愿者队伍",
+          "理事会",
+          "街道"
+        ],
+        "evidenceBindings": [
+          {
+            "claim": "街道临时提出养老助餐点运营机会",
+            "factIds": [
+              "fact-row-136"
+            ]
+          },
+          {
+            "claim": "街道招标文件、厨房与食品经营材料、成本测算、送餐合同、志愿者排班和补贴对象名单未到",
+            "factIds": [
+              "fact-row-136"
+            ]
+          },
+          {
+            "claim": "理事会只决定是否继续与街道沟通",
+            "factIds": [
+              "fact-row-136"
+            ]
+          }
+        ]
+      },
+      "requestContract": {
+        "requestSpan": "理事会材料由一份Word《养老助餐机会讨论要点》和一张Excel《养老助餐能力与补件表》组成。",
+        "action": "材料由",
+        "outputs": [
+          {
+            "format": "docx",
+            "humanName": "Word",
+            "purpose": "Word《养老助餐机会会前讨论要点》供理事会判断是否继续沟通，不承担投标判断。Excel《养老助餐能力与补件表》按堂食、送餐、补贴结算、食品安全、志愿服务和政府购买服务登记政策地域、已有条件、材料缺口及街道问题。"
+          },
+          {
+            "format": "xlsx",
+            "humanName": "Excel",
+            "purpose": "Word《养老助餐机会会前讨论要点》供理事会判断是否继续沟通，不承担投标判断。Excel《养老助餐能力与补件表》按堂食、送餐、补贴结算、食品安全、志愿服务和政府购买服务登记政策地域、已有条件、材料缺口及街道问题。"
+          }
+        ]
+      },
+      "roleTrace": {
+        "blockageSpan": "街道给一家社会组织提了养老助餐点运营机会，理事会周三前只需要判断是否值得继续沟通。",
+        "motivationSpan": "",
+        "downstreamUseSpan": "理事会材料由一份Word《养老助餐机会讨论要点》和一张Excel《养老助餐能力与补件表》组成。"
+      },
+      "usedFactIds": [
+        "fact-row-136"
+      ],
+      "deliberatelyOmitted": []
+    },
+    {
+      "recordUid": "沈礼_7.9_07",
+      "sceneCard": {
+        "schemaVersion": 1,
+        "policyId": "situated-requester-v1",
+        "topicId": "topic-row-140",
+        "personaId": "persona-row-140-沈礼_7.9_07",
+        "requester": {
+          "functionalRole": "物业工程外包作业准入经办人",
+          "organizationType": "负责园区设施维护与外包协调的物业单位",
+          "department": "",
+          "responsibility": "核对清掏外包资料、有限空间准入条件与现场安全动作，整理周五能否进场的判断依据",
+          "authorityBoundary": "能整理材料并提出条件性准入意见，不能用口头承诺或单件装备替代审批、检测和现场签认，也不能代物业经理作最终放行决定",
+          "recipientRelation": "把外包队现有资料交给熟悉安全文档和核对表的协作者整理"
+        },
+        "scene": {
+          "workflowStage": "周五雨水井和隔油池清掏排期前的准入复核",
+          "trigger": "清掏已排进物业工程群，但外包队只交了基础身份和报价资料",
+          "currentBlockage": "作业审批、监护、通风检测、培训、应急装备与外包安全协议均未到件",
+          "mainDecision": "物业经理判断周五能否允许外包人员进场以及哪些缺口会阻断作业",
+          "downstreamUse": "工程经办人按清单继续收件并记录现场结果，物业经理据此复核准入条件"
+        },
+        "informationBoundary": {
+          "knownFactIds": [
+            "fact-row-140"
+          ],
+          "availableMaterialIds": [
+            "material-row-140"
+          ],
+          "unknowns": [
+            "第140行事项最后由有权人员作出的结论"
+          ],
+          "forbiddenInferences": [
+            "不能补写现有材料没有给出的审批结果、检测结果或责任结论"
+          ]
+        },
+        "voice": {
+          "channel": "即时工作消息",
+          "formality": "熟悉协作者之间的具体工作交代，保留岗位自己的说话重心",
+          "domainVocabulary": [
+            "有限空间",
+            "作业审批",
+            "通风检测",
+            "现场监护",
+            "应急救援装备"
+          ],
+          "avoidVocabulary": [
+            "闭环赋能",
+            "全景治理",
+            "一站式",
+            "抓手矩阵"
+          ]
+        },
+        "maskTerms": [
+          "雨水井",
+          "隔油池",
+          "物业工程群",
+          "外包作业准入",
+          "周五清掏"
+        ],
+        "evidenceBindings": [
+          {
+            "claim": "清掏已排进物业工程群，但外包队只交了基础身份和报价资料",
+            "factIds": [
+              "fact-row-140"
+            ]
+          },
+          {
+            "claim": "作业审批、监护、通风检测、培训、应急装备与外包安全协议均未到件",
+            "factIds": [
+              "fact-row-140"
+            ]
+          },
+          {
+            "claim": "物业经理判断周五能否允许外包人员进场以及哪些缺口会阻断作业",
+            "factIds": [
+              "fact-row-140"
+            ]
+          }
+        ]
+      },
+      "requestContract": {
+        "requestSpan": "这批材料整理为Word《有限空间外包作业准入意见》和Excel《外包材料与现场核对清单》，供物业经理决定当前可以走到哪一步，也让工程经办人继续收件。",
+        "action": "整理为",
+        "outputs": [
+          {
+            "format": "docx",
+            "humanName": "Word",
+            "purpose": "Word《有限空间外包作业准入意见》直接呈现周五能否进场、阻断原因、补齐条件和双方责任。Excel《外包材料与现场核对清单》把书面收件、人员装备、进入前检测、作业监护和现场签认分栏记录。"
+          },
+          {
+            "format": "xlsx",
+            "humanName": "Excel",
+            "purpose": "Word《有限空间外包作业准入意见》直接呈现周五能否进场、阻断原因、补齐条件和双方责任。Excel《外包材料与现场核对清单》把书面收件、人员装备、进入前检测、作业监护和现场签认分栏记录。"
+          }
+        ]
+      },
+      "roleTrace": {
+        "blockageSpan": "物业安排清掏雨水井和隔油池，外包队目前只发来营业执照，报价单和两张工人身份证。",
+        "motivationSpan": "",
+        "downstreamUseSpan": "这批材料整理为Word《有限空间外包作业准入意见》和Excel《外包材料与现场核对清单》，供物业经理决定当前可以走到哪一步，也让工程经办人继续收件。"
+      },
+      "usedFactIds": [
+        "fact-row-140"
+      ],
+      "deliberatelyOmitted": []
+    },
+    {
+      "recordUid": "沈礼_7.9_08",
+      "sceneCard": {
+        "schemaVersion": 1,
+        "policyId": "situated-requester-v1",
+        "topicId": "topic-row-141",
+        "personaId": "persona-row-141-沈礼_7.9_08",
+        "requester": {
+          "functionalRole": "学校后勤供餐复核经办人",
+          "organizationType": "准备启用换季菜单并涉及承包供餐的学校",
+          "department": "",
+          "responsibility": "沿供餐流程核对菜单、供货、贮存、留样、陪餐和投诉材料，区分校方动作与承包商补件",
+          "authorityBoundary": "能整理启用条件和整改依据，不能用菜单、名单、照片或投诉截图替代健康证、连续记录、合同履约材料及现场核查",
+          "recipientRelation": "把后勤主任转来的零散材料交给熟悉供餐文档和跟进表的协作者整理"
+        },
+        "scene": {
+          "workflowStage": "下午向家委会说明情况前的新菜单启用复核",
+          "trigger": "后勤主任转来换季菜单、供货商名单、冷柜照片和家长投诉截图",
+          "currentBlockage": "留样、陪餐、健康证、日周月管控记录、供货资质、合同履约材料与投诉原件尚未对齐",
+          "mainDecision": "判断新菜单是否具备下周一启用条件以及哪些问题需要整改、补件或现场查看",
+          "downstreamUse": "后勤主任向家委会说明校方与承包商各自的动作，相关责任方继续更新材料状态"
+        },
+        "informationBoundary": {
+          "knownFactIds": [
+            "fact-row-141"
+          ],
+          "availableMaterialIds": [
+            "material-row-141"
+          ],
+          "unknowns": [
+            "第141行事项最后由有权人员作出的结论"
+          ],
+          "forbiddenInferences": [
+            "不能补写现有材料没有给出的审批结果、检测结果或责任结论"
+          ]
+        },
+        "voice": {
+          "channel": "即时工作消息",
+          "formality": "熟悉协作者之间的具体工作交代，保留岗位自己的说话重心",
+          "domainVocabulary": [
+            "进货查验",
+            "食品留样",
+            "陪餐",
+            "日管控周排查月调度",
+            "校外供餐"
+          ],
+          "avoidVocabulary": [
+            "全链路闭环",
+            "治理抓手",
+            "一体化赋能",
+            "颗粒度拉齐"
+          ]
+        },
+        "maskTerms": [
+          "换季菜单",
+          "家委会",
+          "冷柜照片",
+          "食品安全员",
+          "下周一启用"
+        ],
+        "evidenceBindings": [
+          {
+            "claim": "后勤主任转来换季菜单、供货商名单、冷柜照片和家长投诉截图",
+            "factIds": [
+              "fact-row-141"
+            ]
+          },
+          {
+            "claim": "留样、陪餐、健康证、日周月管控记录、供货资质、合同履约材料与投诉原件尚未对齐",
+            "factIds": [
+              "fact-row-141"
+            ]
+          },
+          {
+            "claim": "判断新菜单是否具备下周一启用条件以及哪些问题需要整改、补件或现场查看",
+            "factIds": [
+              "fact-row-141"
+            ]
+          }
+        ]
+      },
+      "requestContract": {
+        "requestSpan": "后勤主任需要Word《换季菜单上线复核意见》和Excel《换季菜单整改与材料跟进表》，前者用于向家委会说明启用判断和校方、承包商各自承担的事项，后者按供餐环节记录已有资料，责任方，现场查看、材料状态和复核结果。",
+        "action": "需要",
+        "outputs": [
+          {
+            "format": "docx",
+            "humanName": "Word",
+            "purpose": "Word《换季菜单上线复核意见》供后勤主任向家委会说明启用判断、整改动作及双方责任。Excel《换季菜单整改与材料跟进表》按供餐环节分配承包商补件、校方检查和现场核验，并保留处理结果。"
+          },
+          {
+            "format": "xlsx",
+            "humanName": "Excel",
+            "purpose": "Word《换季菜单上线复核意见》供后勤主任向家委会说明启用判断、整改动作及双方责任。Excel《换季菜单整改与材料跟进表》按供餐环节分配承包商补件、校方检查和现场核验，并保留处理结果。"
+          }
+        ]
+      },
+      "roleTrace": {
+        "blockageSpan": "换季菜单准备下周一启用，校方手里已有菜单，供货商名单，冷柜照片和家长投诉截图。",
+        "motivationSpan": "",
+        "downstreamUseSpan": "后勤主任需要Word《换季菜单上线复核意见》和Excel《换季菜单整改与材料跟进表》，前者用于向家委会说明启用判断和校方、承包商各自承担的事项，后者按供餐环节记录已有资料，责任方，现场查看、材料状态和复核结果。"
+      },
+      "usedFactIds": [
+        "fact-row-141"
+      ],
+      "deliberatelyOmitted": []
+    },
+    {
+      "recordUid": "沈礼_7.9_09",
+      "sceneCard": {
+        "schemaVersion": 1,
+        "policyId": "situated-requester-v1",
+        "topicId": "topic-row-142",
+        "personaId": "persona-row-142-沈礼_7.9_09",
+        "requester": {
+          "functionalRole": "药房小程序慢病复购功能的合规复核经办人",
+          "organizationType": "经营药品网络销售与配送服务的药房",
+          "department": "",
+          "responsibility": "沿处方上传、药师审核、药品匹配、配送和复购展示核对网售范围、处方留痕及材料状态",
+          "authorityBoundary": "能提出页面调整和条件性灰度意见，不能用会员身份代替处方审核，也不能在处方、药师、配送、授权或活动审批材料缺失时批准相应功能",
+          "recipientRelation": "把产品设想和法规附件交给熟悉流程文档与功能核对表的协作者整理"
+        },
+        "scene": {
+          "workflowStage": "产品经理准备本周灰度前的功能与页面复核",
+          "trigger": "慢病老会员复购入口已有处方上传、药师审核、配送和促销设想",
+          "currentBlockage": "处方样本、药师资质排班、审核日志、配送协议、用户授权及促销审批材料尚未取得",
+          "mainDecision": "确定本周灰度可包含的功能、需调整的页面与必须等待真实材料的节点",
+          "downstreamUse": "产品和法务讨论灰度边界，产品同事按节点继续补齐证据"
+        },
+        "informationBoundary": {
+          "knownFactIds": [
+            "fact-row-142"
+          ],
+          "availableMaterialIds": [
+            "material-row-142"
+          ],
+          "unknowns": [
+            "第142行事项最后由有权人员作出的结论"
+          ],
+          "forbiddenInferences": [
+            "不能补写现有材料没有给出的审批结果、检测结果或责任结论"
+          ]
+        },
+        "voice": {
+          "channel": "即时工作消息",
+          "formality": "熟悉协作者之间的具体工作交代，保留岗位自己的说话重心",
+          "domainVocabulary": [
+            "禁售清单",
+            "处方审核",
+            "长期处方",
+            "交易信息留存",
+            "复购提醒"
+          ],
+          "avoidVocabulary": [
+            "全域增长",
+            "闭环转化",
+            "赋能抓手",
+            "一站式合规"
+          ]
+        },
+        "maskTerms": [
+          "慢病复购入口",
+          "买二送一",
+          "复购立减",
+          "药师审核",
+          "本周灰度"
+        ],
+        "evidenceBindings": [
+          {
+            "claim": "慢病老会员复购入口已有处方上传、药师审核、配送和促销设想",
+            "factIds": [
+              "fact-row-142"
+            ]
+          },
+          {
+            "claim": "处方样本、药师资质排班、审核日志、配送协议、用户授权及促销审批材料尚未取得",
+            "factIds": [
+              "fact-row-142"
+            ]
+          },
+          {
+            "claim": "确定本周灰度可包含的功能、需调整的页面与必须等待真实材料的节点",
+            "factIds": [
+              "fact-row-142"
+            ]
+          }
+        ]
+      },
+      "requestContract": {
+        "requestSpan": "本周灰度讨论使用Word《慢病复购入口法规复核意见》和Excel《处方药复购功能核对表》。",
+        "action": "使用",
+        "outputs": [
+          {
+            "format": "docx",
+            "humanName": "Word",
+            "purpose": "Word《慢病复购入口法规复核意见》按用户操作顺序说明可保留功能、页面调整和暂缓事项。Excel《处方药复购功能核对表》逐节点记录药品或数据、系统动作、药师动作、规则依据、材料状态及处理建议。"
+          },
+          {
+            "format": "xlsx",
+            "humanName": "Excel",
+            "purpose": "Word《慢病复购入口法规复核意见》按用户操作顺序说明可保留功能、页面调整和暂缓事项。Excel《处方药复购功能核对表》逐节点记录药品或数据、系统动作、药师动作、规则依据、材料状态及处理建议。"
+          }
+        ]
+      },
+      "roleTrace": {
+        "blockageSpan": "药店小程序想给老会员增加慢病处方药复购入口，设想是上传处方，药师审核，匹配药品、配送到家，页面还预留“买二送一”和“复购立减”。",
+        "motivationSpan": "",
+        "downstreamUseSpan": "本周灰度讨论使用Word《慢病复购入口法规复核意见》和Excel《处方药复购功能核对表》。"
+      },
+      "usedFactIds": [
+        "fact-row-142"
+      ],
+      "deliberatelyOmitted": []
+    },
+    {
+      "recordUid": "沈礼_7.9_10",
+      "sceneCard": {
+        "schemaVersion": 1,
+        "policyId": "situated-requester-v1",
+        "topicId": "topic-row-143",
+        "personaId": "persona-row-143-沈礼_7.9_10",
+        "requester": {
+          "functionalRole": "社区诊所医保定点申报经办人",
+          "organizationType": "准备申请医保定点的社区诊所",
+          "department": "",
+          "responsibility": "核对现有证照、自查表与定点规则，按办理环节组织人员、系统、价格、追溯和基金内控补件",
+          "authorityBoundary": "能作条件性预审并安排收件，不能用自查结论代替原件、系统画面、人员证书、价格记录、制度全文或运行痕迹，也不能预判已具备定点条件",
+          "recipientRelation": "把现有证照和自查表交给熟悉申报文档与补件表的协作者整理"
+        },
+        "scene": {
+          "workflowStage": "本月医保定点申请递交前的材料预审",
+          "trigger": "老板希望本月递交申请，但现有材料只有两项证照和一份自查表",
+          "currentBlockage": "人员、系统、价格、追溯和基金内控均缺原件或运行记录",
+          "mainDecision": "判断本月能够准备和推进到哪个办理环节以及哪些事项会阻断递交",
+          "downstreamUse": "老板安排申报进度，诊所经办人按影响环节继续收件并更新判断"
+        },
+        "informationBoundary": {
+          "knownFactIds": [
+            "fact-row-143"
+          ],
+          "availableMaterialIds": [
+            "material-row-143"
+          ],
+          "unknowns": [
+            "第143行事项最后由有权人员作出的结论"
+          ],
+          "forbiddenInferences": [
+            "不能补写现有材料没有给出的审批结果、检测结果或责任结论"
+          ]
+        },
+        "voice": {
+          "channel": "即时工作消息",
+          "formality": "熟悉协作者之间的具体工作交代，保留岗位自己的说话重心",
+          "domainVocabulary": [
+            "专业评估",
+            "协议管理",
+            "追溯码",
+            "基金使用内控",
+            "系统接口"
+          ],
+          "avoidVocabulary": [
+            "申报闭环",
+            "全盘拉通",
+            "治理中台",
+            "赋能提效"
+          ]
+        },
+        "maskTerms": [
+          "社区诊所",
+          "医保定点申请",
+          "影像结果上传",
+          "药品耗材追溯码",
+          "本月递交"
+        ],
+        "evidenceBindings": [
+          {
+            "claim": "老板希望本月递交申请，但现有材料只有两项证照和一份自查表",
+            "factIds": [
+              "fact-row-143"
+            ]
+          },
+          {
+            "claim": "人员、系统、价格、追溯和基金内控均缺原件或运行记录",
+            "factIds": [
+              "fact-row-143"
+            ]
+          },
+          {
+            "claim": "判断本月能够准备和推进到哪个办理环节以及哪些事项会阻断递交",
+            "factIds": [
+              "fact-row-143"
+            ]
+          }
+        ]
+      },
+      "requestContract": {
+        "requestSpan": "月内准备工作整理成Word《社区诊所定点申报预审意见》和Excel《医保定点申报材料补件表》。",
+        "action": "准备",
+        "outputs": [
+          {
+            "format": "docx",
+            "humanName": "Word",
+            "purpose": "Word《社区诊所定点申报预审意见》区分可先准备、等待正式证明和先改系统或制度三类状态，说明本月递交的阻断事项。Excel《医保定点申报材料补件表》按入口条件、服务能力、人员、价格、追溯、基金内控和系统接口记录现有材料、影响环节、补件先后与复核条件。"
+          },
+          {
+            "format": "xlsx",
+            "humanName": "Excel",
+            "purpose": "Word《社区诊所定点申报预审意见》区分可先准备、等待正式证明和先改系统或制度三类状态，说明本月递交的阻断事项。Excel《医保定点申报材料补件表》按入口条件、服务能力、人员、价格、追溯、基金内控和系统接口记录现有材料、影响环节、补件先后与复核条件。"
+          }
+        ]
+      },
+      "roleTrace": {
+        "blockageSpan": "社区诊所准备在本月递交医保定点申请，现有文件是营业执照，医疗机构执业许可证和一份自查表。",
+        "motivationSpan": "",
+        "downstreamUseSpan": "月内准备工作整理成Word《社区诊所定点申报预审意见》和Excel《医保定点申报材料补件表》。"
+      },
+      "usedFactIds": [
+        "fact-row-143"
+      ],
+      "deliberatelyOmitted": []
+    },
+    {
+      "recordUid": "沈礼_7.9_11",
+      "sceneCard": {
+        "schemaVersion": 1,
+        "policyId": "situated-requester-v1",
+        "topicId": "topic-row-144",
+        "personaId": "persona-row-144-沈礼_7.9_11",
+        "requester": {
+          "functionalRole": "公益项目捐赠票据复核的财务经办人",
+          "organizationType": "接收现金与物资捐赠并处理票据的公益项目",
+          "department": "",
+          "responsibility": "按捐赠类型核对后台记录、收款、协议、物资资料、票据动作与税前扣除材料",
+          "authorityBoundary": "能建立逐笔分流和复核办法，不能仅凭后台备注确定记录性质，不能把开票等同于税前扣除成立，也不能在原始材料缺失时预填金额或批次结论",
+          "recipientRelation": "把后台记录与规则附件交给熟悉财务文档和批次核对表的协作者整理"
+        },
+        "scene": {
+          "workflowStage": "项目组补齐原始材料前的捐赠记录分流准备",
+          "trigger": "捐赠人催要公益事业捐赠票据与税前扣除材料",
+          "currentBlockage": "后台明细、收款凭证、捐赠协议、物资评估、受助对象、开票记录和税前扣除资格证明尚未取得",
+          "mainDecision": "确定每笔记录何时进入开票复核、何时补材料以及税前扣除询问应提示哪些条件",
+          "downstreamUse": "财务逐笔分流记录，项目组按记录类型补齐原始资料，经办人据规则说明继续复核"
+        },
+        "informationBoundary": {
+          "knownFactIds": [
+            "fact-row-144"
+          ],
+          "availableMaterialIds": [
+            "material-row-144"
+          ],
+          "unknowns": [
+            "第144行事项最后由有权人员作出的结论"
+          ],
+          "forbiddenInferences": [
+            "不能补写现有材料没有给出的审批结果、检测结果或责任结论"
+          ]
+        },
+        "voice": {
+          "channel": "即时工作消息",
+          "formality": "熟悉协作者之间的具体工作交代，保留岗位自己的说话重心",
+          "domainVocabulary": [
+            "员工配捐",
+            "物资折价",
+            "电子票据",
+            "票据核销",
+            "税前扣除资格"
+          ],
+          "avoidVocabulary": [
+            "财务闭环",
+            "全景台账",
+            "一站式分流",
+            "价值赋能"
+          ]
+        },
+        "maskTerms": [
+          "公益合作款",
+          "公益事业捐赠票据",
+          "企业捐款",
+          "物资评估材料",
+          "税前扣除"
+        ],
+        "evidenceBindings": [
+          {
+            "claim": "捐赠人催要公益事业捐赠票据与税前扣除材料",
+            "factIds": [
+              "fact-row-144"
+            ]
+          },
+          {
+            "claim": "后台明细、收款凭证、捐赠协议、物资评估、受助对象、开票记录和税前扣除资格证明尚未取得",
+            "factIds": [
+              "fact-row-144"
+            ]
+          },
+          {
+            "claim": "确定每笔记录何时进入开票复核、何时补材料以及税前扣除询问应提示哪些条件",
+            "factIds": [
+              "fact-row-144"
+            ]
+          }
+        ]
+      },
+      "requestContract": {
+        "requestSpan": "财务以Excel《公益捐赠批次核对模板》逐笔分流，Word《捐赠票据与扣除材料规则说明》解释各栏条件。",
+        "action": "以",
+        "outputs": [
+          {
+            "format": "docx",
+            "humanName": "Word",
+            "purpose": "Excel《公益捐赠批次核对模板》逐笔记录捐赠类型、现有材料、票据动作、税前扣除提示、经办人和复核状态，批次结论随原始材料核对后填写。Word《捐赠票据与扣除材料规则说明》解释各类记录的分流条件、电子票据使用和核销留痕。"
+          },
+          {
+            "format": "xlsx",
+            "humanName": "Excel",
+            "purpose": "Excel《公益捐赠批次核对模板》逐笔记录捐赠类型、现有材料、票据动作、税前扣除提示、经办人和复核状态，批次结论随原始材料核对后填写。Word《捐赠票据与扣除材料规则说明》解释各类记录的分流条件、电子票据使用和核销留痕。"
+          }
+        ]
+      },
+      "roleTrace": {
+        "blockageSpan": "公益项目后台把企业捐款，员工配捐，物资折价和几笔备注为“公益合作款”的记录放在了一起，捐赠人又在催公益事业捐赠票据和税前扣除材料。",
+        "motivationSpan": "",
+        "downstreamUseSpan": "财务以Excel《公益捐赠批次核对模板》逐笔分流，Word《捐赠票据与扣除材料规则说明》解释各栏条件。"
+      },
+      "usedFactIds": [
+        "fact-row-144"
+      ],
+      "deliberatelyOmitted": []
+    },
+    {
+      "recordUid": "裴硬_7.9_01",
+      "sceneCard": {
+        "schemaVersion": 1,
+        "policyId": "situated-requester-v1",
+        "topicId": "topic-row-145",
+        "personaId": "persona-row-145-裴硬_7.9_01",
+        "requester": {
+          "functionalRole": "敏感肌精华达人投放的内容合规经办人",
+          "organizationType": "准备投放化妆品达人素材的电商运营团队",
+          "department": "",
+          "responsibility": "把口播、页面和对比图逐点整理给运营与法务定稿",
+          "authorityBoundary": "能推动已知素材改稿，不能在备案、评价摘要和授权材料缺失时认定功效已有证明",
+          "recipientRelation": "把零散素材交给熟悉合规文档和改稿台账的协作者"
+        },
+        "scene": {
+          "workflowStage": "周五投放定稿前的素材审改",
+          "trigger": "三段口播、详情页首屏和前后对比图需要一起定稿",
+          "currentBlockage": "产品备案页、功效评价摘要、达人合同、对比图来源和后台投放数据尚未提供",
+          "mainDecision": "逐素材确定保留、改写、暂缓或补材料后再看",
+          "downstreamUse": "运营和法务依据审改意见与台账完成本轮定稿"
+        },
+        "informationBoundary": {
+          "knownFactIds": [
+            "fact-row-145"
+          ],
+          "availableMaterialIds": [
+            "material-row-145"
+          ],
+          "unknowns": [
+            "第145行事项最后由有权人员作出的结论"
+          ],
+          "forbiddenInferences": [
+            "不能补写现有材料没有给出的审批结果、检测结果或责任结论"
+          ]
+        },
+        "voice": {
+          "channel": "即时工作消息",
+          "formality": "熟悉协作者之间的具体工作交代，保留岗位自己的说话重心",
+          "domainVocabulary": [
+            "达人口播",
+            "功效宣称",
+            "广告标识",
+            "前后对比图",
+            "改稿台账"
+          ],
+          "avoidVocabulary": [
+            "品牌赋能",
+            "全链路",
+            "合规闭环",
+            "内容抓手"
+          ]
+        },
+        "maskTerms": [
+          "敏感肌急救精华",
+          "三天退红",
+          "医美级维稳",
+          "修护屏障",
+          "达人素材"
+        ],
+        "evidenceBindings": [
+          {
+            "claim": "三段口播、详情页首屏和前后对比图需要一起定稿",
+            "factIds": [
+              "fact-row-145"
+            ]
+          },
+          {
+            "claim": "产品备案页、功效评价摘要、达人合同、对比图来源和后台投放数据尚未提供",
+            "factIds": [
+              "fact-row-145"
+            ]
+          },
+          {
+            "claim": "逐素材确定保留、改写、暂缓或补材料后再看",
+            "factIds": [
+              "fact-row-145"
+            ]
+          }
+        ]
+      },
+      "requestContract": {
+        "requestSpan": "本轮定稿要形成Word《敏感肌精华素材审改意见》和Excel《达人素材改稿台账》，运营与法务据此逐点确认。",
+        "action": "形成",
+        "outputs": [
+          {
+            "format": "docx",
+            "humanName": "Word",
+            "purpose": "Excel《达人投放改稿台账》保存原句或图片位置、法规点、处理动作、待补材料、修改人和复核状态。Word《敏感肌精华投放素材审改意见》按素材位置给出处理结论、理由及贴近原卖点的改写方向。"
+          },
+          {
+            "format": "xlsx",
+            "humanName": "Excel",
+            "purpose": "Excel《达人投放改稿台账》保存原句或图片位置、法规点、处理动作、待补材料、修改人和复核状态。Word《敏感肌精华投放素材审改意见》按素材位置给出处理结论、理由及贴近原卖点的改写方向。"
+          }
+        ]
+      },
+      "roleTrace": {
+        "blockageSpan": "“敏感肌急救精华”的投放素材正在定稿，运营集中问“三天退红”“医美级维稳”“修护屏障”怎么处理。",
+        "motivationSpan": "",
+        "downstreamUseSpan": "本轮定稿要形成Word《敏感肌精华素材审改意见》和Excel《达人素材改稿台账》，运营与法务据此逐点确认。"
+      },
+      "usedFactIds": [
+        "fact-row-145"
+      ],
+      "deliberatelyOmitted": []
+    },
+    {
+      "recordUid": "裴硬_7.9_02",
+      "sceneCard": {
+        "schemaVersion": 1,
+        "policyId": "situated-requester-v1",
+        "topicId": "topic-row-146",
+        "personaId": "persona-row-146-裴硬_7.9_02",
+        "requester": {
+          "functionalRole": "海外CRM试用的销售运营接口人",
+          "organizationType": "准备评估海外CRM的企业销售团队",
+          "department": "",
+          "responsibility": "把不同获客渠道和拟同步字段整理成客户周会可用的初筛口径",
+          "authorityBoundary": "能说明少字段试点的讨论范围，不能在合同、授权和接收方材料缺失时批准数据出境",
+          "recipientRelation": "需要协作者把字段、规则和补件状态整理成销售能带上桌的材料"
+        },
+        "scene": {
+          "workflowStage": "明天客户周会前的CRM试用初筛",
+          "trigger": "销售需要回答三类线索能否接入海外CRM",
+          "currentBlockage": "正式合同、接收方安全材料、授权记录和历史导出日志未取得",
+          "mainDecision": "区分少字段试点、境内暂存、脱敏处理、暂缓同步和补件后再议",
+          "downstreamUse": "销售向客户解释当前可讨论范围和正式评审前提"
+        },
+        "informationBoundary": {
+          "knownFactIds": [
+            "fact-row-146"
+          ],
+          "availableMaterialIds": [
+            "material-row-146"
+          ],
+          "unknowns": [
+            "第146行事项最后由有权人员作出的结论"
+          ],
+          "forbiddenInferences": [
+            "不能补写现有材料没有给出的审批结果、检测结果或责任结论"
+          ]
+        },
+        "voice": {
+          "channel": "即时工作消息",
+          "formality": "熟悉协作者之间的具体工作交代，保留岗位自己的说话重心",
+          "domainVocabulary": [
+            "海外CRM",
+            "少字段试点",
+            "境内暂存",
+            "接收方",
+            "导出日志"
+          ],
+          "avoidVocabulary": [
+            "全球化赋能",
+            "数据飞轮",
+            "一站式",
+            "全景洞察"
+          ]
+        },
+        "maskTerms": [
+          "官网预约试用",
+          "展会扫码",
+          "公众号留资",
+          "全球合规",
+          "客户周会"
+        ],
+        "evidenceBindings": [
+          {
+            "claim": "销售需要回答三类线索能否接入海外CRM",
+            "factIds": [
+              "fact-row-146"
+            ]
+          },
+          {
+            "claim": "正式合同、接收方安全材料、授权记录和历史导出日志未取得",
+            "factIds": [
+              "fact-row-146"
+            ]
+          },
+          {
+            "claim": "区分少字段试点、境内暂存、脱敏处理、暂缓同步和补件后再议",
+            "factIds": [
+              "fact-row-146"
+            ]
+          }
+        ]
+      },
+      "requestContract": {
+        "requestSpan": "这轮初筛输出Excel《海外CRM线索字段初筛表》和Word《海外CRM少字段试点说明》。",
+        "action": "输出",
+        "outputs": [
+          {
+            "format": "docx",
+            "humanName": "Word",
+            "purpose": "Excel《海外CRM线索字段初筛表》按渠道和字段记录来源、用途、个人信息属性、建议处理及补件责任。Word《海外CRM少字段试点说明》供销售在客户周会上解释可讨论范围、境内暂存项和正式评审前提。"
+          },
+          {
+            "format": "xlsx",
+            "humanName": "Excel",
+            "purpose": "Excel《海外CRM线索字段初筛表》按渠道和字段记录来源、用途、个人信息属性、建议处理及补件责任。Word《海外CRM少字段试点说明》供销售在客户周会上解释可讨论范围、境内暂存项和正式评审前提。"
+          }
+        ]
+      },
+      "roleTrace": {
+        "blockageSpan": "官网预约试用，展会扫码和公众号留资是三条不同的营销线索入口，销售准备把它们接入海外CRM，字段清单却把姓名，手机号、公司邮箱，职位，采购预算和跟进备注默认成同一组可同步数据。",
+        "motivationSpan": "",
+        "downstreamUseSpan": "这轮初筛输出Excel《海外CRM线索字段初筛表》和Word《海外CRM少字段试点说明》。"
+      },
+      "usedFactIds": [
+        "fact-row-146"
+      ],
+      "deliberatelyOmitted": []
+    },
+    {
+      "recordUid": "裴硬_7.9_03",
+      "sceneCard": {
+        "schemaVersion": 1,
+        "policyId": "situated-requester-v1",
+        "topicId": "topic-row-147",
+        "personaId": "persona-row-147-裴硬_7.9_03",
+        "requester": {
+          "functionalRole": "小区公共收益争议的社区协调经办人",
+          "organizationType": "负责协调业主、业委会和物业矛盾的社区工作机构",
+          "department": "",
+          "responsibility": "把公共收益、物业服务费用和维修资金拆成可核对的三条线",
+          "authorityBoundary": "能解释一般规则和组织协调，不能替缺失的合同、流水、报价或表决材料下事实结论",
+          "recipientRelation": "需要协作者把争议问题整理成主持会议时能逐项查用的问答和流程表"
+        },
+        "scene": {
+          "workflowStage": "下周社区协调会前的材料准备",
+          "trigger": "业主追问18万元广告收益，物业同时提出电梯大修和维修资金安排",
+          "currentBlockage": "广告合同、银行流水、表决票、工程报价原件和备案记录未交齐",
+          "mainDecision": "明确现场可解释事项、物业补件事项和需要业主共同决定的节点",
+          "downstreamUse": "社区在下周协调会上按三条资金线与物业和业主代表核对材料"
+        },
+        "informationBoundary": {
+          "knownFactIds": [
+            "fact-row-147"
+          ],
+          "availableMaterialIds": [
+            "material-row-147"
+          ],
+          "unknowns": [
+            "第147行事项最后由有权人员作出的结论"
+          ],
+          "forbiddenInferences": [
+            "不能补写现有材料没有给出的审批结果、检测结果或责任结论"
+          ]
+        },
+        "voice": {
+          "channel": "即时工作消息",
+          "formality": "熟悉协作者之间的具体工作交代，保留岗位自己的说话重心",
+          "domainVocabulary": [
+            "公共收益",
+            "物业服务费",
+            "住宅专项维修资金",
+            "业主表决",
+            "入账流水"
+          ],
+          "avoidVocabulary": [
+            "基层治理赋能",
+            "协同抓手",
+            "闭环处置",
+            "一盘棋"
+          ]
+        },
+        "maskTerms": [
+          "电梯广告",
+          "18万元",
+          "三台电梯",
+          "保洁和维保",
+          "业委会群"
+        ],
+        "evidenceBindings": [
+          {
+            "claim": "业主追问18万元广告收益，物业同时提出电梯大修和维修资金安排",
+            "factIds": [
+              "fact-row-147"
+            ]
+          },
+          {
+            "claim": "广告合同、银行流水、表决票、工程报价原件和备案记录未交齐",
+            "factIds": [
+              "fact-row-147"
+            ]
+          },
+          {
+            "claim": "明确现场可解释事项、物业补件事项和需要业主共同决定的节点",
+            "factIds": [
+              "fact-row-147"
+            ]
+          }
+        ]
+      },
+      "requestContract": {
+        "requestSpan": "协调会使用Word《公共收益与维修资金协调会问答》和Excel《公共收益证据与维修资金流程表》。",
+        "action": "使用",
+        "outputs": [
+          {
+            "format": "docx",
+            "humanName": "Word",
+            "purpose": "Excel《公共收益证据与维修资金流程表》分别跟踪合同流水、物业支出、工程报价、共同决定及处理状态。Word《公共收益与维修资金协调会问答》按三条资金线回答可现场解释的规则和需要物业补充的事实。"
+          },
+          {
+            "format": "xlsx",
+            "humanName": "Excel",
+            "purpose": "Excel《公共收益证据与维修资金流程表》分别跟踪合同流水、物业支出、工程报价、共同决定及处理状态。Word《公共收益与维修资金协调会问答》按三条资金线回答可现场解释的规则和需要物业补充的事实。"
+          }
+        ]
+      },
+      "roleTrace": {
+        "blockageSpan": "小区协调会同时出现三笔容易混淆的钱，电梯广告一年18万元，物业称其抵了保洁和维保，业主代表要求查看广告合同，入账流水和分摊明细，另一边，三台电梯大修报价已经送来，物业希望动用住宅专项维修资金。",
+        "motivationSpan": "",
+        "downstreamUseSpan": "协调会使用Word《公共收益与维修资金协调会问答》和Excel《公共收益证据与维修资金流程表》。"
+      },
+      "usedFactIds": [
+        "fact-row-147"
+      ],
+      "deliberatelyOmitted": []
+    },
+    {
+      "recordUid": "裴硬_7.9_04",
+      "sceneCard": {
+        "schemaVersion": 1,
+        "policyId": "situated-requester-v1",
+        "topicId": "topic-row-148",
+        "personaId": "persona-row-148-裴硬_7.9_04",
+        "requester": {
+          "functionalRole": "招聘小程序AI初筛灰度的项目协调人",
+          "organizationType": "准备上线招聘自动化功能的互联网产品团队",
+          "department": "",
+          "responsibility": "把候选人端、系统分档、HR后台和人工复核放进同一条评审流程",
+          "authorityBoundary": "能组织三方确定灰度条件，不能把样式标签解释为已经核验的淘汰规则",
+          "recipientRelation": "需要协作者把产品设计和规则材料整理成三方可逐段决策的文档与表格"
+        },
+        "scene": {
+          "workflowStage": "2026年7月AI初筛灰度前的上线评审",
+          "trigger": "A档优先展示、B档抽看、C档沉底的后台样式已经完成",
+          "currentBlockage": "算法参数、训练数据、候选人授权、岗位真实性证明和人工复核日志缺失",
+          "mainDecision": "保留三档设计、调整后台动作或暂缓相关自动判断",
+          "downstreamUse": "产品、HR和法务在上线评审会上逐节点确定灰度设计与补件"
+        },
+        "informationBoundary": {
+          "knownFactIds": [
+            "fact-row-148"
+          ],
+          "availableMaterialIds": [
+            "material-row-148"
+          ],
+          "unknowns": [
+            "第148行事项最后由有权人员作出的结论"
+          ],
+          "forbiddenInferences": [
+            "不能补写现有材料没有给出的审批结果、检测结果或责任结论"
+          ]
+        },
+        "voice": {
+          "channel": "即时工作消息",
+          "formality": "熟悉协作者之间的具体工作交代，保留岗位自己的说话重心",
+          "domainVocabulary": [
+            "简历解析",
+            "AI分档",
+            "人工复核",
+            "投递页",
+            "灰度"
+          ],
+          "avoidVocabulary": [
+            "人才画像",
+            "智能赋能",
+            "算法飞轮",
+            "降本增效闭环"
+          ]
+        },
+        "maskTerms": [
+          "AI初筛",
+          "A档优先展示",
+          "B档抽看",
+          "C档沉底",
+          "招聘小程序"
+        ],
+        "evidenceBindings": [
+          {
+            "claim": "A档优先展示、B档抽看、C档沉底的后台样式已经完成",
+            "factIds": [
+              "fact-row-148"
+            ]
+          },
+          {
+            "claim": "算法参数、训练数据、候选人授权、岗位真实性证明和人工复核日志缺失",
+            "factIds": [
+              "fact-row-148"
+            ]
+          },
+          {
+            "claim": "保留三档设计、调整后台动作或暂缓相关自动判断",
+            "factIds": [
+              "fact-row-148"
+            ]
+          }
+        ]
+      },
+      "requestContract": {
+        "requestSpan": "灰度评审需要Word《AI简历初筛上线复核意见》和Excel《招聘AI规则与告知核对表》。",
+        "action": "需要",
+        "outputs": [
+          {
+            "format": "docx",
+            "humanName": "Word",
+            "purpose": "Word《AI简历初筛上线复核意见》说明三档设计的当前处理方式、候选人告知、HR人工动作和灰度条件。Excel《招聘AI规则与告知核对表》沿投递、解析、分档、查看和通知记录字段、页面提示、人工复核及留痕材料。"
+          },
+          {
+            "format": "xlsx",
+            "humanName": "Excel",
+            "purpose": "Word《AI简历初筛上线复核意见》说明三档设计的当前处理方式、候选人告知、HR人工动作和灰度条件。Excel《招聘AI规则与告知核对表》沿投递、解析、分档、查看和通知记录字段、页面提示、人工复核及留痕材料。"
+          }
+        ]
+      },
+      "roleTrace": {
+        "blockageSpan": "招聘小程序计划在2026年7月灰度AI初筛，产品已经画出A档优先展示，B档抽看，C档沉底的后台样式。",
+        "motivationSpan": "",
+        "downstreamUseSpan": "灰度评审需要Word《AI简历初筛上线复核意见》和Excel《招聘AI规则与告知核对表》。"
+      },
+      "usedFactIds": [
+        "fact-row-148"
+      ],
+      "deliberatelyOmitted": []
+    },
+    {
+      "recordUid": "裴硬_7.9_05",
+      "sceneCard": {
+        "schemaVersion": 1,
+        "policyId": "situated-requester-v1",
+        "topicId": "topic-row-149",
+        "personaId": "persona-row-149-裴硬_7.9_05",
+        "requester": {
+          "functionalRole": "民宿专题的平台招商运营负责人",
+          "organizationType": "经营本地生活住宿专题的平台团队",
+          "department": "",
+          "responsibility": "先建立30套房源的逐套收件目录和上架分流方法",
+          "authorityBoundary": "能安排专题页框架和招商收件，不能在逐套证据缺失时批准具体房源上线",
+          "recipientRelation": "需要协作者把散件归集规则与房源补件字段搭成运营、招商和风控共用的材料"
+        },
+        "scene": {
+          "workflowStage": "下周首页专题排期前的房源收件设计",
+          "trigger": "招商交来30套房源散件，运营希望先准备专题页",
+          "currentBlockage": "证照、消防、公安报备、权属、住宿登记和履约情况缺少逐套证据",
+          "mainDecision": "逐房源分到可暂存、补证后上架、现场核验或暂缓上线",
+          "downstreamUse": "招商继续收件，风控逐套登记，运营只接收达到条件的房源"
+        },
+        "informationBoundary": {
+          "knownFactIds": [
+            "fact-row-149"
+          ],
+          "availableMaterialIds": [
+            "material-row-149"
+          ],
+          "unknowns": [
+            "第149行事项最后由有权人员作出的结论"
+          ],
+          "forbiddenInferences": [
+            "不能补写现有材料没有给出的审批结果、检测结果或责任结论"
+          ]
+        },
+        "voice": {
+          "channel": "即时工作消息",
+          "formality": "熟悉协作者之间的具体工作交代，保留岗位自己的说话重心",
+          "domainVocabulary": [
+            "逐房源收件",
+            "旅馆业备案",
+            "住宿登记",
+            "现场核验",
+            "房源分流"
+          ],
+          "avoidVocabulary": [
+            "供给赋能",
+            "增长抓手",
+            "全链路治理",
+            "生态闭环"
+          ]
+        },
+        "maskTerms": [
+          "城市周末民宿",
+          "30套房源",
+          "消防承诺书",
+          "专题页",
+          "本地生活平台"
+        ],
+        "evidenceBindings": [
+          {
+            "claim": "招商交来30套房源散件，运营希望先准备专题页",
+            "factIds": [
+              "fact-row-149"
+            ]
+          },
+          {
+            "claim": "证照、消防、公安报备、权属、住宿登记和履约情况缺少逐套证据",
+            "factIds": [
+              "fact-row-149"
+            ]
+          },
+          {
+            "claim": "逐房源分到可暂存、补证后上架、现场核验或暂缓上线",
+            "factIds": [
+              "fact-row-149"
+            ]
+          }
+        ]
+      },
+      "requestContract": {
+        "requestSpan": "工作成果为Excel《民宿房源补件与分流模板》和Word《民宿专题上架前复核规则》，招商、风控和运营各自沿同一套房号继续处理。",
+        "action": "工作成果为",
+        "outputs": [
+          {
+            "format": "docx",
+            "humanName": "Word",
+            "purpose": "Word《民宿专题上架前复核规则》说明散件归集、逐套核对及可暂存、补证后上架、现场核验、暂缓上线的使用方式。Excel《民宿房源补件与分流模板》按房源记录证照、住宿登记、消防、主体权属、平台信息、履约材料和处理状态。"
+          },
+          {
+            "format": "xlsx",
+            "humanName": "Excel",
+            "purpose": "Word《民宿专题上架前复核规则》说明散件归集、逐套核对及可暂存、补证后上架、现场核验、暂缓上线的使用方式。Excel《民宿房源补件与分流模板》按房源记录证照、住宿登记、消防、主体权属、平台信息、履约材料和处理状态。"
+          }
+        ]
+      },
+      "roleTrace": {
+        "blockageSpan": "本地生活平台准备做“城市周末民宿”专题，招商交来的30套房源还是一批散件，包括证照照片，房屋图，消防承诺书和价格表，房源明细目前是一张空表，部分照片与具体房号的对应关系也要由招商认领。",
+        "motivationSpan": "",
+        "downstreamUseSpan": "工作成果为Excel《民宿房源补件与分流模板》和Word《民宿专题上架前复核规则》，招商、风控和运营各自沿同一套房号继续处理。"
+      },
+      "usedFactIds": [
+        "fact-row-149"
+      ],
+      "deliberatelyOmitted": []
+    },
+    {
+      "recordUid": "沈礼_7.10_01",
+      "sceneCard": {
+        "schemaVersion": 1,
+        "policyId": "situated-requester-v1",
+        "topicId": "topic-row-172",
+        "personaId": "persona-row-172-沈礼_7.10_01",
+        "requester": {
+          "functionalRole": "会员运营负责人",
+          "organizationType": "连锁茶饮企业",
+          "department": "",
+          "responsibility": "把会员日活动规则、页面文案和分层推送字段交给产品、客服与门店共同确认",
+          "authorityBoundary": "只能依据现有弹窗、后台字段和公开规则提出修改与补件问题，不能替产品确认尚未提供的配置",
+          "recipientRelation": "把审改底稿交给熟悉活动规则整理和表格编制的协作者"
+        },
+        "scene": {
+          "workflowStage": "新品会员日进入小程序测试前的联审",
+          "trigger": "会员日页面今晚要进小程序测试",
+          "currentBlockage": "活动规则和会员字段现在混在一张弹窗里",
+          "mainDecision": "哪些活动规则和字段用法可以进入测试",
+          "downstreamUse": "跟小程序产品、客服和门店一起过"
+        },
+        "informationBoundary": {
+          "knownFactIds": [
+            "fact-row-172"
+          ],
+          "availableMaterialIds": [
+            "material-row-172"
+          ],
+          "unknowns": [
+            "第172行事项最后由有权人员作出的结论"
+          ],
+          "forbiddenInferences": [
+            "不能补写现有材料没有给出的审批结果、检测结果或责任结论"
+          ]
+        },
+        "voice": {
+          "channel": "即时工作消息",
+          "formality": "熟悉协作者之间的具体工作交代，保留岗位自己的说话重心",
+          "domainVocabulary": [
+            "券包",
+            "积分抽奖",
+            "分层推送",
+            "退款"
+          ],
+          "avoidVocabulary": [
+            "证据闭环",
+            "制度矩阵",
+            "合规赋能"
+          ]
+        },
+        "maskTerms": [
+          "会员日",
+          "茶饮",
+          "券包",
+          "积分抽奖",
+          "小程序产品"
+        ],
+        "evidenceBindings": [
+          {
+            "claim": "会员日页面今晚要进小程序测试",
+            "factIds": [
+              "fact-row-172"
+            ]
+          },
+          {
+            "claim": "活动规则和会员字段现在混在一张弹窗里",
+            "factIds": [
+              "fact-row-172"
+            ]
+          },
+          {
+            "claim": "哪些活动规则和字段用法可以进入测试",
+            "factIds": [
+              "fact-row-172"
+            ]
+          }
+        ]
+      },
+      "requestContract": {
+        "requestSpan": "小程序产品、客服和门店将共同使用Word《新品会员日弹窗审改意见》和Excel《活动规则与会员字段台账》，据此决定哪些内容进入测试。",
+        "action": "使用",
+        "outputs": [
+          {
+            "format": "docx",
+            "humanName": "Word",
+            "purpose": "Word《新品会员日弹窗审改意见》沿会员操作顺序标注券包、抽奖、生日加赠、“连喝7天抽免单”和分层推送的当前处理。Excel《活动规则与会员字段台账》逐行记录原规则、权益或字段、依据、处理动作、缺失材料、经办人和复核状态。"
+          },
+          {
+            "format": "xlsx",
+            "humanName": "Excel",
+            "purpose": "Word《新品会员日弹窗审改意见》沿会员操作顺序标注券包、抽奖、生日加赠、“连喝7天抽免单”和分层推送的当前处理。Excel《活动规则与会员字段台账》逐行记录原规则、权益或字段、依据、处理动作、缺失材料、经办人和复核状态。"
+          }
+        ]
+      },
+      "roleTrace": {
+        "blockageSpan": "新品会员日页面今晚要进小程序测试，弹窗把9.9元券包，积分抽奖，生日月加赠、“连喝7天抽免单”和会员分层推送挤在一起。",
+        "motivationSpan": "",
+        "downstreamUseSpan": "小程序产品、客服和门店将共同使用Word《新品会员日弹窗审改意见》和Excel《活动规则与会员字段台账》，据此决定哪些内容进入测试。"
+      },
+      "usedFactIds": [
+        "fact-row-172"
+      ],
+      "deliberatelyOmitted": []
+    },
+    {
+      "recordUid": "沈礼_7.10_02",
+      "sceneCard": {
+        "schemaVersion": 1,
+        "policyId": "situated-requester-v1",
+        "topicId": "topic-row-173",
+        "personaId": "persona-row-173-沈礼_7.10_02",
+        "requester": {
+          "functionalRole": "幼儿园信息化项目经办人",
+          "organizationType": "幼儿园",
+          "department": "",
+          "responsibility": "把儿童智能手表试用功能，数据流向和监护人选择整理成家委会可讨论的材料",
+          "authorityBoundary": "只能汇总园方已提出的功能和现有规则，不能替园长，家委会或监护人决定最终试用范围",
+          "recipientRelation": "请熟悉数据流程和文档整理的协作者准备会前底稿"
+        },
+        "scene": {
+          "workflowStage": "两个班试用方案提交家委会讨论前",
+          "trigger": "9月先在两个班试儿童智能手表",
+          "currentBlockage": "现有功能清单就接不上了",
+          "mainDecision": "试用能开到哪一步",
+          "downstreamUse": "家委会讨论时能直接沿着功能往下问"
+        },
+        "informationBoundary": {
+          "knownFactIds": [
+            "fact-row-173"
+          ],
+          "availableMaterialIds": [
+            "material-row-173"
+          ],
+          "unknowns": [
+            "第173行事项最后由有权人员作出的结论"
+          ],
+          "forbiddenInferences": [
+            "不能补写现有材料没有给出的审批结果、检测结果或责任结论"
+          ]
+        },
+        "voice": {
+          "channel": "即时工作消息",
+          "formality": "熟悉协作者之间的具体工作交代，保留岗位自己的说话重心",
+          "domainVocabulary": [
+            "围栏提醒",
+            "SOS录音",
+            "监护人授权",
+            "替代安排"
+          ],
+          "avoidVocabulary": [
+            "全链路",
+            "风险闭环",
+            "儿童数据治理矩阵"
+          ]
+        },
+        "maskTerms": [
+          "幼儿园",
+          "儿童智能手表",
+          "家委会",
+          "园长",
+          "两个班"
+        ],
+        "evidenceBindings": [
+          {
+            "claim": "9月先在两个班试儿童智能手表",
+            "factIds": [
+              "fact-row-173"
+            ]
+          },
+          {
+            "claim": "现有功能清单就接不上了",
+            "factIds": [
+              "fact-row-173"
+            ]
+          },
+          {
+            "claim": "试用能开到哪一步",
+            "factIds": [
+              "fact-row-173"
+            ]
+          }
+        ]
+      },
+      "requestContract": {
+        "requestSpan": "园长，家委会和供应商将使用Word《两个班智能手表试用复核意见》和Excel《儿童手表功能，数据与授权核对表》决定试用边界。",
+        "action": "使用",
+        "outputs": [
+          {
+            "format": "docx",
+            "humanName": "Word",
+            "purpose": "Word《两个班智能手表试用复核意见》供园长、家委会和供应商讨论试用范围、监护人选择、替代安排和配置问题。Excel《儿童手表功能、数据与授权核对表》按打卡、围栏、SOS录音、位置查看、迟到统计和班主任查看记录数据、角色、授权、保存及补件。"
+          },
+          {
+            "format": "xlsx",
+            "humanName": "Excel",
+            "purpose": "Word《两个班智能手表试用复核意见》供园长、家委会和供应商讨论试用范围、监护人选择、替代安排和配置问题。Excel《儿童手表功能、数据与授权核对表》按打卡、围栏、SOS录音、位置查看、迟到统计和班主任查看记录数据、角色、授权、保存及补件。"
+          }
+        ]
+      },
+      "roleTrace": {
+        "blockageSpan": "幼儿园准备9月先在两个班试用儿童智能手表，功能清单包括进出园自动打卡，离园围栏提醒，SOS一键录音、家长端查看位置，迟到次数同步给班主任。",
+        "motivationSpan": "",
+        "downstreamUseSpan": "园长，家委会和供应商将使用Word《两个班智能手表试用复核意见》和Excel《儿童手表功能，数据与授权核对表》决定试用边界。"
+      },
+      "usedFactIds": [
+        "fact-row-173"
+      ],
+      "deliberatelyOmitted": []
+    },
+    {
+      "recordUid": "沈礼_7.10_03",
+      "sceneCard": {
+        "schemaVersion": 1,
+        "policyId": "situated-requester-v1",
+        "topicId": "topic-row-174",
+        "personaId": "persona-row-174-沈礼_7.10_03",
+        "requester": {
+          "functionalRole": "票务产品运营",
+          "organizationType": "演出票务平台",
+          "department": "",
+          "responsibility": "把购票，退票，风控和申诉规则整理成主办方与客服能逐条确认的版本",
+          "authorityBoundary": "只能指出草案与现有材料中的问题，不能替主办方或平台批准规则上线",
+          "recipientRelation": "把复核工作交给能同时处理规则文稿和问题台账的协作者"
+        },
+        "scene": {
+          "workflowStage": "新版购票规则交主办方确认前",
+          "trigger": "新版购票规则周一前要交主办方确认",
+          "currentBlockage": "异常账号的完整判定规则还没给",
+          "mainDecision": "规则是否具备提交主办方确认的条件",
+          "downstreamUse": "跟主办方，产品和客服逐条对"
+        },
+        "informationBoundary": {
+          "knownFactIds": [
+            "fact-row-174"
+          ],
+          "availableMaterialIds": [
+            "material-row-174"
+          ],
+          "unknowns": [
+            "第174行事项最后由有权人员作出的结论"
+          ],
+          "forbiddenInferences": [
+            "不能补写现有材料没有给出的审批结果、检测结果或责任结论"
+          ]
+        },
+        "voice": {
+          "channel": "即时工作消息",
+          "formality": "熟悉协作者之间的具体工作交代，保留岗位自己的说话重心",
+          "domainVocabulary": [
+            "实名购票",
+            "梯次退票",
+            "异常账号",
+            "申诉"
+          ],
+          "avoidVocabulary": [
+            "全流程闭环",
+            "红线清单",
+            "合规抓手"
+          ]
+        },
+        "maskTerms": [
+          "票务",
+          "主办方",
+          "演唱会",
+          "实名入场",
+          "购票规则"
+        ],
+        "evidenceBindings": [
+          {
+            "claim": "新版购票规则周一前要交主办方确认",
+            "factIds": [
+              "fact-row-174"
+            ]
+          },
+          {
+            "claim": "异常账号的完整判定规则还没给",
+            "factIds": [
+              "fact-row-174"
+            ]
+          },
+          {
+            "claim": "规则是否具备提交主办方确认的条件",
+            "factIds": [
+              "fact-row-174"
+            ]
+          }
+        ]
+      },
+      "requestContract": {
+        "requestSpan": "后续整理为Word《体育场演唱会购票规则复核意见》和Excel《票务规则与证据缺口表》。",
+        "action": "整理为",
+        "outputs": [
+          {
+            "format": "docx",
+            "humanName": "Word",
+            "purpose": "Word《体育场演唱会购票规则复核意见》沿用户购票至申诉的过程说明条款修改和确认事项。Excel《票务规则与证据缺口表》逐条记录规则、用户影响、依据、当前材料、确认主体、客服口径和更新状态。"
+          },
+          {
+            "format": "xlsx",
+            "humanName": "Excel",
+            "purpose": "Word《体育场演唱会购票规则复核意见》沿用户购票至申诉的过程说明条款修改和确认事项。Excel《票务规则与证据缺口表》逐条记录规则、用户影响、依据、当前材料、确认主体、客服口径和更新状态。"
+          }
+        ]
+      },
+      "roleTrace": {
+        "blockageSpan": "体育场演唱会的购票规则要交主办方确认，草案目前写了身份证限购一张，实名入场，开票后48小时内免费退、临演前梯次收手续费，电子票不可转赠。",
+        "motivationSpan": "",
+        "downstreamUseSpan": "后续整理为Word《体育场演唱会购票规则复核意见》和Excel《票务规则与证据缺口表》。"
+      },
+      "usedFactIds": [
+        "fact-row-174"
+      ],
+      "deliberatelyOmitted": []
+    },
+    {
+      "recordUid": "沈礼_7.10_04",
+      "sceneCard": {
+        "schemaVersion": 1,
+        "policyId": "situated-requester-v1",
+        "topicId": "topic-row-178",
+        "personaId": "persona-row-178-沈礼_7.10_04",
+        "requester": {
+          "functionalRole": "买方研究员",
+          "organizationType": "投资机构",
+          "department": "",
+          "responsibility": "为投委会核对盈利质量、营运资金变化和研究池分档建议",
+          "authorityBoundary": "只能依据公开披露形成研究建议，不能补写公司未披露的客户回款或经营原因",
+          "recipientRelation": "把数据底表和决策备忘录交给研究助理协同完成"
+        },
+        "scene": {
+          "workflowStage": "投委会研究池分档前",
+          "trigger": "投委会下周要决定寒武纪是转进重点研究池还是继续观察",
+          "currentBlockage": "大家现在争的不是2025年有没有盈利，而是这次盈利到底有多少现金支撑",
+          "mainDecision": "寒武纪是转进重点研究池还是继续观察",
+          "downstreamUse": "投委会翻到任何一个数字都能找到出处"
+        },
+        "informationBoundary": {
+          "knownFactIds": [
+            "fact-row-178"
+          ],
+          "availableMaterialIds": [
+            "material-row-178"
+          ],
+          "unknowns": [
+            "第178行事项最后由有权人员作出的结论"
+          ],
+          "forbiddenInferences": [
+            "不能补写现有材料没有给出的审批结果、检测结果或责任结论"
+          ]
+        },
+        "voice": {
+          "channel": "即时工作消息",
+          "formality": "熟悉协作者之间的具体工作交代，保留岗位自己的说话重心",
+          "domainVocabulary": [
+            "经营现金流",
+            "营运资金",
+            "客户集中度",
+            "研究池"
+          ],
+          "avoidVocabulary": [
+            "价值重估",
+            "戴维斯双击",
+            "证据闭环"
+          ]
+        },
+        "maskTerms": [
+          "寒武纪",
+          "投委会",
+          "研究池",
+          "年报",
+          "一季报"
+        ],
+        "evidenceBindings": [
+          {
+            "claim": "投委会下周要决定寒武纪是转进重点研究池还是继续观察",
+            "factIds": [
+              "fact-row-178"
+            ]
+          },
+          {
+            "claim": "大家现在争的不是2025年有没有盈利，而是这次盈利到底有多少现金支撑",
+            "factIds": [
+              "fact-row-178"
+            ]
+          },
+          {
+            "claim": "寒武纪是转进重点研究池还是继续观察",
+            "factIds": [
+              "fact-row-178"
+            ]
+          }
+        ]
+      },
+      "requestContract": {
+        "requestSpan": "形成Excel《寒武纪盈利质量与季度跟踪底表》和Word《寒武纪研究池决策备忘录》。",
+        "action": "形成",
+        "outputs": [
+          {
+            "format": "docx",
+            "humanName": "Word",
+            "purpose": "Word《寒武纪研究池决策备忘录》归纳支持信息、反向信号、公开信息空白及三档中的一档建议。Excel《寒武纪盈利质量与季度跟踪底表》保存来源页码、原始数据、口径勾稽、现金含量、年度现金流桥、营运资金、集中度和未来观察值。"
+          },
+          {
+            "format": "xlsx",
+            "humanName": "Excel",
+            "purpose": "Word《寒武纪研究池决策备忘录》归纳支持信息、反向信号、公开信息空白及三档中的一档建议。Excel《寒武纪盈利质量与季度跟踪底表》保存来源页码、原始数据、口径勾稽、现金含量、年度现金流桥、营运资金、集中度和未来观察值。"
+          }
+        ]
+      },
+      "roleTrace": {
+        "blockageSpan": "投委会要决定寒武纪进入重点研究池，事件跟踪还是继续观察，争议不在2025年是否实现盈利，而在盈利的现金含量和后续可持续性。",
+        "motivationSpan": "",
+        "downstreamUseSpan": "形成Excel《寒武纪盈利质量与季度跟踪底表》和Word《寒武纪研究池决策备忘录》。"
+      },
+      "usedFactIds": [
+        "fact-row-178"
+      ],
+      "deliberatelyOmitted": []
+    },
+    {
+      "recordUid": "沈礼_7.10_05",
+      "sceneCard": {
+        "schemaVersion": 1,
+        "policyId": "situated-requester-v1",
+        "topicId": "topic-row-179",
+        "personaId": "persona-row-179-沈礼_7.10_05",
+        "requester": {
+          "functionalRole": "国际物流经办人",
+          "organizationType": "硬件研发企业",
+          "department": "",
+          "responsibility": "在锁定班列舱位前核对样机电池型号、包件和承运资料",
+          "authorityBoundary": "只能整理货物与规则材料并向承运人提出确认，不能替承运人放行或认定B3已经完成测试",
+          "recipientRelation": "把出运说明和逐箱台账交给熟悉危险货物资料梳理的协作者"
+        },
+        "scene": {
+          "workflowStage": "中欧班列锁舱前的订舱资料复核",
+          "trigger": "研发还想按次日锁苏州到华沙的班列舱位",
+          "currentBlockage": "现有UN38.3报告和试验简介对应量产的B2电池，B3仍在试验",
+          "mainDecision": "当前能否锁定班列舱位并按什么路径申报",
+          "downstreamUse": "让货代、研发和业务能在锁舱前对着同一套信息说话"
+        },
+        "informationBoundary": {
+          "knownFactIds": [
+            "fact-row-179"
+          ],
+          "availableMaterialIds": [
+            "material-row-179"
+          ],
+          "unknowns": [
+            "第179行事项最后由有权人员作出的结论"
+          ],
+          "forbiddenInferences": [
+            "不能补写现有材料没有给出的审批结果、检测结果或责任结论"
+          ]
+        },
+        "voice": {
+          "channel": "即时工作消息",
+          "formality": "熟悉协作者之间的具体工作交代，保留岗位自己的说话重心",
+          "domainVocabulary": [
+            "UN38.3",
+            "包件",
+            "运输条件鉴定",
+            "锁舱"
+          ],
+          "avoidVocabulary": [
+            "一票否决",
+            "合规闭环",
+            "全链路"
+          ]
+        },
+        "maskTerms": [
+          "B3",
+          "锂电池",
+          "中欧班列",
+          "货代",
+          "苏州到华沙"
+        ],
+        "evidenceBindings": [
+          {
+            "claim": "研发还想按次日锁苏州到华沙的班列舱位",
+            "factIds": [
+              "fact-row-179"
+            ]
+          },
+          {
+            "claim": "现有UN38.3报告和试验简介对应量产的B2电池，B3仍在试验",
+            "factIds": [
+              "fact-row-179"
+            ]
+          },
+          {
+            "claim": "当前能否锁定班列舱位并按什么路径申报",
+            "factIds": [
+              "fact-row-179"
+            ]
+          }
+        ]
+      },
+      "requestContract": {
+        "requestSpan": "货代，研发和业务需要Excel《B3样机订舱与包件台账》和Word《B3样机订舱缺件与路径说明》。",
+        "action": "需要",
+        "outputs": [
+          {
+            "format": "docx",
+            "humanName": "Word",
+            "purpose": "Excel《B3样机订舱与包件台账》分开记录24台内装电池样机、8块备用电池和4箱货物的型号、文件、包装、标记、缺件及承运回复。Word《B3样机订舱缺件与路径说明》交代普通电子产品草单、国内外规则路径、当前阻断项和四种处理状态。"
+          },
+          {
+            "format": "xlsx",
+            "humanName": "Excel",
+            "purpose": "Excel《B3样机订舱与包件台账》分开记录24台内装电池样机、8块备用电池和4箱货物的型号、文件、包装、标记、缺件及承运回复。Word《B3样机订舱缺件与路径说明》交代普通电子产品草单、国内外规则路径、当前阻断项和四种处理状态。"
+          }
+        ]
+      },
+      "roleTrace": {
+        "blockageSpan": "苏州到华沙的班列订舱草单把整票货写成普通电子产品，实际货物是24台B3工程样机，每台内装1块98Wh锂离子电池，另有8块同型号备用电池。",
+        "motivationSpan": "",
+        "downstreamUseSpan": "货代，研发和业务需要Excel《B3样机订舱与包件台账》和Word《B3样机订舱缺件与路径说明》。"
+      },
+      "usedFactIds": [
+        "fact-row-179"
+      ],
+      "deliberatelyOmitted": []
+    },
+    {
+      "recordUid": "沈礼_7.10_06",
+      "sceneCard": {
+        "schemaVersion": 1,
+        "policyId": "situated-requester-v1",
+        "topicId": "topic-row-180",
+        "personaId": "persona-row-180-沈礼_7.10_06",
+        "requester": {
+          "functionalRole": "高校资产管理员",
+          "organizationType": "高校分析测试中心",
+          "department": "",
+          "responsibility": "区分设备到货，点验，安装，技术验收和付款所需的材料与签字范围",
+          "authorityBoundary": "只能记录已经看到的设备和材料，不能替技术负责人确认性能验收或替采购认定尾款条件已经满足",
+          "recipientRelation": "把付款前预审和参数台账交给能整理验收文件的协作者"
+        },
+        "scene": {
+          "workflowStage": "设备到货后，开箱和安装前",
+          "trigger": "岛津LC-20A已经送到实验楼",
+          "currentBlockage": "我手里现在只有箱数照片和安装日期",
+          "mainDecision": "这周到底能签到哪一步",
+          "downstreamUse": "先让资产，实验室和采购把各自能签什么对齐"
+        },
+        "informationBoundary": {
+          "knownFactIds": [
+            "fact-row-180"
+          ],
+          "availableMaterialIds": [
+            "material-row-180"
+          ],
+          "unknowns": [
+            "第180行事项最后由有权人员作出的结论"
+          ],
+          "forbiddenInferences": [
+            "不能补写现有材料没有给出的审批结果、检测结果或责任结论"
+          ]
+        },
+        "voice": {
+          "channel": "即时工作消息",
+          "formality": "熟悉协作者之间的具体工作交代，保留岗位自己的说话重心",
+          "domainVocabulary": [
+            "开箱点验",
+            "技术验收",
+            "系统适用性",
+            "尾款"
+          ],
+          "avoidVocabulary": [
+            "全生命周期",
+            "闭环管理",
+            "赋能验收"
+          ]
+        },
+        "maskTerms": [
+          "LC-20A",
+          "实验楼",
+          "供货商",
+          "资产",
+          "技术验收"
+        ],
+        "evidenceBindings": [
+          {
+            "claim": "岛津LC-20A已经送到实验楼",
+            "factIds": [
+              "fact-row-180"
+            ]
+          },
+          {
+            "claim": "我手里现在只有箱数照片和安装日期",
+            "factIds": [
+              "fact-row-180"
+            ]
+          },
+          {
+            "claim": "这周到底能签到哪一步",
+            "factIds": [
+              "fact-row-180"
+            ]
+          }
+        ]
+      },
+      "requestContract": {
+        "requestSpan": "资产，实验室和采购将共同使用Excel《LC-20A参数与证据台账》和Word《LC-20A付款前验收预审意见》。",
+        "action": "使用",
+        "outputs": [
+          {
+            "format": "docx",
+            "humanName": "Word",
+            "purpose": "Excel《LC-20A参数与证据台账》分列合同基线、公开参考、检查或测试方法、原始记录、实测值、证据等级、缺项、负责人和阶段状态。Word《LC-20A付款前验收预审意见》逐阶段说明当前可签范围、阻断材料、下一动作和付款影响。"
+          },
+          {
+            "format": "xlsx",
+            "humanName": "Excel",
+            "purpose": "Excel《LC-20A参数与证据台账》分列合同基线、公开参考、检查或测试方法、原始记录、实测值、证据等级、缺项、负责人和阶段状态。Word《LC-20A付款前验收预审意见》逐阶段说明当前可签范围、阻断材料、下一动作和付款影响。"
+          }
+        ]
+      },
+      "roleTrace": {
+        "blockageSpan": "岛津LC-20A已经送到实验楼，供货商准备本周开箱，下周安装，并口头提出验收签字后办理尾款。",
+        "motivationSpan": "",
+        "downstreamUseSpan": "资产，实验室和采购将共同使用Excel《LC-20A参数与证据台账》和Word《LC-20A付款前验收预审意见》。"
+      },
+      "usedFactIds": [
+        "fact-row-180"
+      ],
+      "deliberatelyOmitted": []
+    }
+  ]
+}

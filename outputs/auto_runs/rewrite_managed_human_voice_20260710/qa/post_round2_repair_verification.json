@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-10T09:40:30.765Z",
+  "mode": "post",
+  "annotator": "",
+  "baselinePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_managed_human_voice_20260710\\sources\\live_before_round2_repair.json",
+  "targetPaths": [
+    "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_managed_human_voice_20260710\\drafts\\l2_questions_human_voice.tsv"
+  ],
+  "status": "PASS",
+  "count": 22,
+  "immutableFields": [
+    "UID",
+    "任务类型",
+    "一级目录",
+    "二级目录",
+    "三级目录",
+    "标注专家工作年限",
+    "人类完成时间",
+    "相关附件",
+    "附件格式",
+    "产物格式",
+    "标注专家姓名"
+  ],
+  "narrativeFields": [
+    "题目",
+    "任务概括",
+    "附件内容",
+    "产物内容",
+    "做题关键步骤"
+  ],
+  "mismatches": []
+}

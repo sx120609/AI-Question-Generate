@@ -1,0 +1,234 @@
+{
+  "runId": "rewrite_managed_protocol_v2_20260711",
+  "objective": "按二期要求、独立抽样和双质检流程优化已提交的沈礼与裴硬记录",
+  "status": "submitted-readback-verified",
+  "count": 22,
+  "generatedAnnotators": [
+    "沈礼",
+    "裴硬"
+  ],
+  "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+  "sheetId": "49e351",
+  "sourceRevision": 5984,
+  "submittedRevision": 5985,
+  "submission": {
+    "submittedAt": "2026-07-11T13:58:57.931Z",
+    "writtenCellCount": 110,
+    "verifiedCellCount": 110,
+    "readbackFailures": 0,
+    "attachmentObjectsPreserved": 104,
+    "writtenColumns": [
+      "B",
+      "G",
+      "L",
+      "N",
+      "O"
+    ]
+  },
+  "externalQa": {
+    "attempted": true,
+    "rerunCompleted": false,
+    "failure": "正式质检服务 qa.251104.xyz 在命令行、内置浏览器和 Chrome 中均关闭连接，未把旧状态冒充为本次重跑结果",
+    "currentVisiblePassCount": 22,
+    "currentVisiblePassStatusSource": "提交后正式表 AT/AU 只读回查"
+  },
+  "sheetRows": [
+    121,
+    122,
+    123,
+    134,
+    135,
+    136,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    172,
+    173,
+    174,
+    178,
+    179,
+    180
+  ],
+  "writableFields": [
+    "题目",
+    "任务概括",
+    "附件内容",
+    "产物内容",
+    "做题关键步骤"
+  ],
+  "preservedFields": [
+    "UID",
+    "相关附件对象",
+    "附件格式",
+    "产物格式",
+    "标注专家姓名"
+  ],
+  "productionProtocol": {
+    "packetPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_managed_protocol_v2_20260711\\sources\\production_input_packet.json",
+    "tracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_managed_protocol_v2_20260711\\qa\\production_trace.json",
+    "promptVersion": "sampled-two-gate-prompts-v1",
+    "sampledReferences": [
+      {
+        "questionIndex": 1,
+        "sheet": "Sheet1",
+        "row": 792,
+        "questionHash": "84bb220da8076597eb2555fbf693a37c1aa77ee2b0ac940c928b2a499048ee84",
+        "attachmentSummaryHash": "d71c701362d9e2c13f999e5592d549f1d66b8e709fee1675f85ee9dece48a8b7"
+      },
+      {
+        "questionIndex": 2,
+        "sheet": "Sheet1",
+        "row": 1118,
+        "questionHash": "c80ac5f41b788926fca1e0ab6bd242f67497a0fb44c05997646e94a0d4b284c8",
+        "attachmentSummaryHash": "53a9ccf1f97011d3c37760a92547bacbc5a03df686267e79d4418b31a0dead2e"
+      },
+      {
+        "questionIndex": 3,
+        "sheet": "Sheet1",
+        "row": 826,
+        "questionHash": "8c4c4cae571ad5a2caff569155985f21d2893ecfad4cf9f9177654ecb2a88735",
+        "attachmentSummaryHash": "59d5124a5293ec4995dc832a0cadebc61335bad5f11b2aa52f2d4d3b15b9f384"
+      },
+      {
+        "questionIndex": 4,
+        "sheet": "Sheet1",
+        "row": 1191,
+        "questionHash": "6fbd91fd26a757fb6b806c19997762b9258638e196369b943f3fb987a8891fbe",
+        "attachmentSummaryHash": "aba9720126ab200165f910b778a6b4b4ddab555683e9783906a02d7ed498c074"
+      },
+      {
+        "questionIndex": 5,
+        "sheet": "Sheet1",
+        "row": 897,
+        "questionHash": "25b7f2ec63e49fe4aa766a8eb1aec4e0d16c8a1fe149e11728dcd4c4c0e5f80c",
+        "attachmentSummaryHash": "e09e0a8a1f54e7e0d713b15f47e0514fb78a7872ef7f9628d7c208731bcb64aa"
+      },
+      {
+        "questionIndex": 6,
+        "sheet": "Sheet1",
+        "row": 467,
+        "questionHash": "53c763e801d83a1d56e7d291785b61880cc4ee4b168ab6611a6dacefb9a2faef",
+        "attachmentSummaryHash": "d8076450e1e6740c3ab8a69c02e36085a150029ffa60f4d82fce8d1a8e5acec8"
+      },
+      {
+        "questionIndex": 7,
+        "sheet": "Sheet1",
+        "row": 1057,
+        "questionHash": "0ceedf80cbee54311818612a5d6005a9010ab7bc4f584f1478d01260499a4a1f",
+        "attachmentSummaryHash": "b457c760a73541536be8a3c4c199f523ccc2e551a67c2a37fd5ae0b4a8acb0cb"
+      },
+      {
+        "questionIndex": 8,
+        "sheet": "Sheet1",
+        "row": 2,
+        "questionHash": "bd596b6fdf30edc693df277bf7214da1a6ee145f1ef2509fdbbd6b17edfb4ed5",
+        "attachmentSummaryHash": "3892dbafb156aeeb8ab95346d2549fddb39c07caf99155bf3012fc7be16e808c"
+      },
+      {
+        "questionIndex": 9,
+        "sheet": "Sheet1",
+        "row": 67,
+        "questionHash": "677f484be5a287a4e05690151a5617a846c9cb7897afc7dc96cbda9f5ea8668e",
+        "attachmentSummaryHash": "815831e1e3b535f5dc34ff1309850e59659617ac9c81a87cee0ad86b737c9827"
+      },
+      {
+        "questionIndex": 10,
+        "sheet": "Sheet1",
+        "row": 471,
+        "questionHash": "500df3375cfeace63c78dc6adaa9714a02932103a5951e131aa78f95a2fcb66b",
+        "attachmentSummaryHash": "6149b76e344cf0d3488a30bb7cf10245497872a9629168371b03fa2f87552978"
+      },
+      {
+        "questionIndex": 11,
+        "sheet": "Sheet1",
+        "row": 735,
+        "questionHash": "c76519e5bb6334b52486ed988b379f8990a8f873d4517222dd8cc9ec277e6a6c",
+        "attachmentSummaryHash": "bb18d90cbc9956104f4b0b827392f9438b197601eaf473c0d8700fc5f1292fe8"
+      },
+      {
+        "questionIndex": 12,
+        "sheet": "Sheet1",
+        "row": 241,
+        "questionHash": "956b5d5271da47256e9a18cf9a7b57489ffa86fb22943a67d7beaadded59ed21",
+        "attachmentSummaryHash": "45f80450cdbb406455d3a86a52b456bc7a8de07937d7b34a0f4445cb836e49e6"
+      },
+      {
+        "questionIndex": 13,
+        "sheet": "Sheet1",
+        "row": 545,
+        "questionHash": "87afc1a66de58f35bd0ffb7453d8afd8ec879130a97c10aa4a9346b33566aab0",
+        "attachmentSummaryHash": "ed47b456c13d9cbd654584ef787d9bae5b57e8d4c222f5ef435ba0d7e97b3360"
+      },
+      {
+        "questionIndex": 14,
+        "sheet": "Sheet1",
+        "row": 615,
+        "questionHash": "6e2bfbbcb9143e989fa28fffca2d80caee93cf546a557d64d7ecbf59d0df1fe5",
+        "attachmentSummaryHash": "51487ef2b0b224e502f87cf6f84edae6f74ef1788bd14d49659697402c6f3b66"
+      },
+      {
+        "questionIndex": 15,
+        "sheet": "Sheet1",
+        "row": 1094,
+        "questionHash": "03db779884d14d54457c2bb1ab06e8b819042d2fb2845096909abc588a02a3bd",
+        "attachmentSummaryHash": "8c032b989457d0bd46460460b0b213e041abeef814ee24d27c419566cb275dd3"
+      },
+      {
+        "questionIndex": 16,
+        "sheet": "Sheet1",
+        "row": 714,
+        "questionHash": "006871dd0b0b7ad6c0dbdf94339d184c16e040a5926a9a13b69549a371c96cd6",
+        "attachmentSummaryHash": "e316ee9b047875774873b5ca1377955bc8c204a077edbe11e673af33b9cefcbf"
+      },
+      {
+        "questionIndex": 17,
+        "sheet": "Sheet1",
+        "row": 60,
+        "questionHash": "17bd54b9d5aea61680a6fb583e5f64412a94a34268ac6ec71f9946f65a848845",
+        "attachmentSummaryHash": "85a7b69a160aa22528720797c7342d0148c00821889743555daf94285aacd8ab"
+      },
+      {
+        "questionIndex": 18,
+        "sheet": "Sheet1",
+        "row": 153,
+        "questionHash": "e591d9f5e060a69239736d038e790aa782415767d093fafe1ac28ec9117c44a1",
+        "attachmentSummaryHash": "cb23caa93c634939732fb3d809e98dc8eb31f6a747e95e38299fd5587e9643e9"
+      },
+      {
+        "questionIndex": 19,
+        "sheet": "Sheet1",
+        "row": 757,
+        "questionHash": "d33b352c5e8b6ee2f6a942d27b6474df9fa86956f65223edddf80d4ae3e59356",
+        "attachmentSummaryHash": "68c06b5655b29e5882a572f44d8d679642fc773ecc1da2852c201ce4cbdedc18"
+      },
+      {
+        "questionIndex": 20,
+        "sheet": "Sheet1",
+        "row": 270,
+        "questionHash": "b49e1490e8c32e66390bec58680a7fda950056d6d04424a4be708e181135f49f",
+        "attachmentSummaryHash": "a170ec4dfef89adc01bb52cb2536207c5dff44e01cfa838d57cc6219e1d7007f"
+      },
+      {
+        "questionIndex": 21,
+        "sheet": "Sheet1",
+        "row": 1139,
+        "questionHash": "8760956b84c7dd563413861f32d57da75a3af3692891e42659158ad4bb25e80a",
+        "attachmentSummaryHash": "fa2563f8ce49e63f427ca19ff6413ce1007ce3dbba2f479fb3a413e7381f3649"
+      },
+      {
+        "questionIndex": 22,
+        "sheet": "Sheet1",
+        "row": 690,
+        "questionHash": "650014515508cb72b0ead7034c3b3e8ca4256ea264f8b7bfde72388c0ba0089f",
+        "attachmentSummaryHash": "05fc0d9d662e37a3ac345498cb226b4ea415c2efa26a61b997d9f45315034182"
+      }
+    ]
+  }
+}

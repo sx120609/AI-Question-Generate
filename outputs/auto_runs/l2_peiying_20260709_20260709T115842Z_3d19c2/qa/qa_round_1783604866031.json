@@ -1,0 +1,28 @@
+[
+  {
+    "row": 121,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=121&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783604789380_121",
+    "checkedAt": "2026-07-09T13:46:46.306Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "客户成功刚问我：生成式客服助手下周能不能先给两家付费客户开灰度？产品说只接企业知识库、FAQ和工单，不训练新模型，可客服会话里会出现联系人、订单号、投诉内容，系",
+    "note": "信息支撑不足：缺少公司内部关键信息（供应商备案号、客户授权文本、日志留存配置、人工审核排班等），请补充公司自身情况或明确这些信息由用户后续提供，但当前题面需至少给出部分关键条件。 产物要求生硬：指定Word和Excel格式显得刻意。建议改为自然表述，如“帮我整理一份会前说明和风险补件表”，让模型自行决定格式。补充时要写清数据来源、覆盖范围、地区年份、统计口径或附件位置，确保后续答案能基于真实材料。",
+    "categories": [
+      "scene_naturalness"
+    ]
+  },
+  {
+    "row": 122,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=122&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783604806309_122",
+    "checkedAt": "2026-07-09T13:47:46.030Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "业委会周四晚上要谈电动自行车整改，物业巡查照片里还有车停在门厅、楼梯口和疏散通道附近。工程部想扩建集中充电区，居民代表又追问架空层、地下非机动车库能不能改，旧车",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  }
+]

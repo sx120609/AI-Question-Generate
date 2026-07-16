@@ -1,0 +1,54 @@
+[
+  {
+    "row": 141,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=141&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783657179329_141",
+    "checkedAt": "2026-07-10T04:19:59.047Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "学校食堂准备下周一换季菜单，后勤主任下午还要向家委会说明新菜单能不能按期上线。承包商已经发来菜单、供货商名单和几张冷柜照片，家长投诉截图也在校内流转，但食品留样",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 142,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=142&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783657199050_142",
+    "checkedAt": "2026-07-10T04:20:23.665Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "产品、运营和法务下午要决定，药店小程序里的处方药复购功能能不能进入本周灰度。设想流程包括患者上传处方、药师审核、常用处方药配送到家，页面还准备展示“买二送一”和",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 144,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=144&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783657223666_144",
+    "checkedAt": "2026-07-10T04:20:57.287Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "我是这个公益项目的财务经办人，捐赠人已经在催问票据和税前扣除材料。我和项目组需要先把“什么样的记录能够进入票据复核”说清楚。后台目前显示企业捐款、员工配捐、物资",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 172,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=172&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783657257290_172",
+    "checkedAt": "2026-07-10T04:21:05.715Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "截至2026年7月10日晚，新品会员日仍在策划阶段。会员运营设想把9.9元券包、积分抽奖、生日月加赠和“连喝7天抽免单”放在同一弹窗，后台还准备按手机号、生日月",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  }
+]

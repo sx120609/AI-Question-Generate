@@ -1,0 +1,54 @@
+[
+  {
+    "row": 174,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=174&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783675011594_174",
+    "checkedAt": "2026-07-10T09:17:54.480Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "票务产品经理准备在周一前把2026年8月体育场演唱会的新版购票规则交给主办方确认。草案已经写了每个身份证限购一张、实名入场、开票后48小时内免费退、临演前按梯次",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 178,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=178&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783675074483_178",
+    "checkedAt": "2026-07-10T09:18:42.253Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "投委会下周要决定，寒武纪在2025年首次实现年度盈利后，是从事件跟踪转入重点研究池，还是继续观察。2025年营业收入64.97亿元、归母净利润20.59亿元，经",
+    "note": "关键步骤问题：末尾需加入产物自检或交付前核对。请按真实完成顺序保留关键动作，删除过细或无关步骤。请按任务真实完成顺序整理关键动作，L1保持4-8条，L2保持8-15条，保留必要流程节点，合并过细或重复动作。具体可改为：加入产物自检或交付前核对步骤。修改后应让审核人一眼看出问题原因、需要补充的材料、应补到哪个字段，以及出题人可以直接执行的调整方向，并减少来回追问；不要只写笼统描述或模糊来源。",
+    "categories": [
+      "step_count"
+    ]
+  },
+  {
+    "row": 179,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=179&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783675122254_179",
+    "checkedAt": "2026-07-10T09:20:15.781Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "截至2026年7月10日，研发负责人想在次日锁定一班苏州到华沙的中欧班列舱位。货物是24台运动相机B3工程样机，每台内装1块98Wh锂离子电池，另有8块同型号备",
+    "note": "附件支撑不足：附件六仅为题设事实整理，无证明作用；附件一至五为通用法规，未提供B3电池具体测试状态、鉴定报告、包装检验报告、安全承诺和应急措施，也未提供国际联运各段承运人书面接受条件。请补充B3电池相关测试报告、鉴定报告、包装检验报告、安全承诺和应急措施，以及班列平台、过境国、境外铁路的书面接受条件。 信息支撑不足：缺少B3电池UN38.3测试报告、运输条件鉴定、包装检验、安全承诺和应急措施；国。",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 180,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=180&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783675215782_180",
+    "checkedAt": "2026-07-10T09:20:37.814Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "分析测试中心新购的岛津LC-20A高效液相色谱系统已经运到实验楼。供货商希望本周开箱、下周安装，并口头表示验收签字后可以办理尾款；资产管理员手里却只有箱数照片和",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  }
+]

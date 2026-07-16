@@ -1,0 +1,864 @@
+{
+  "schemaVersion": 1,
+  "kind": "naturalness-gate-report",
+  "gateId": "naturalness-gate-v1",
+  "metricsVersion": "naturalness-metrics-v1",
+  "generatedAt": "2026-07-10T08:33:27.442Z",
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_peiying_natural_reset_20260710\\drafts\\l2_questions_natural_reset.tsv",
+  "candidateHash": "8e7fa31495c8fd3d76cec540817903aeaa88f659b4732b2f0db1c4c8e6970339",
+  "baselinePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\config\\naturalness_benchmark.json",
+  "baselineHash": "f7357bc2781c481fa92cd67f9d11dd2ae8c7a484fd08167ad9f3b1c3fa79d49e",
+  "baselineId": "naturalness-benchmark-v1",
+  "baselineSampleCount": 14,
+  "effectiveThresholds": {
+    "row": {
+      "disclaimerSentenceDensity": {
+        "metric": "disclaimerSentenceDensity",
+        "direction": "upper",
+        "review": 0.2125,
+        "fail": 0.3425,
+        "source": {
+          "type": "benchmark-quantile",
+          "baselineId": "naturalness-benchmark-v1",
+          "sampleCount": 14,
+          "reviewQuantile": 0.9,
+          "failQuantile": 0.98
+        }
+      },
+      "disclaimerSentenceCount": {
+        "metric": "disclaimerSentenceCount",
+        "direction": "upper",
+        "review": 2.7,
+        "fail": 5.22,
+        "source": {
+          "type": "benchmark-quantile",
+          "baselineId": "naturalness-benchmark-v1",
+          "sampleCount": 14,
+          "reviewQuantile": 0.9,
+          "failQuantile": 0.98
+        }
+      },
+      "concreteFactsPer100Chars": {
+        "metric": "concreteFactsPer100Chars",
+        "direction": "lower",
+        "review": 0.0938,
+        "source": {
+          "type": "benchmark-quantile",
+          "baselineId": "naturalness-benchmark-v1",
+          "sampleCount": 14,
+          "reviewQuantile": 0.1
+        }
+      },
+      "templateMarkerCount": {
+        "metric": "templateMarkerCount",
+        "direction": "upper",
+        "review": 3,
+        "source": {
+          "type": "benchmark-quantile",
+          "baselineId": "naturalness-benchmark-v1",
+          "sampleCount": 14,
+          "reviewQuantile": 0.9
+        }
+      },
+      "minimumDisclaimerSentencesForFail": {
+        "value": 2,
+        "source": {
+          "type": "row-policy-cap",
+          "profileId": "approved-corpus-quantiles-v1",
+          "parameter": "minimumDisclaimerSentencesForFail",
+          "rationale": "One matched sentence may be legitimate evidence hygiene and cannot cause a hard fail by itself."
+        }
+      }
+    },
+    "batch": {
+      "discourseSkeletonDominantShare": {
+        "metric": "discourseSkeletonDominantShare",
+        "direction": "upper",
+        "review": 0.2656,
+        "fail": 0.3719,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "naturalness-benchmark-v1",
+          "sampleCount": 14,
+          "observedCount": 1,
+          "observedShare": 0.0714,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "fixedWordExcelTailShare": {
+        "metric": "fixedWordExcelTailShare",
+        "direction": "upper",
+        "review": 0.7594,
+        "fail": 0.8135,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "naturalness-benchmark-v1",
+          "sampleCount": 14,
+          "observedCount": 8,
+          "observedShare": 0.5714,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "finalStepSelfCheckShare": {
+        "metric": "finalStepSelfCheckShare",
+        "direction": "upper",
+        "review": 0.8139,
+        "fail": 0.8591,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "naturalness-benchmark-v1",
+          "sampleCount": 14,
+          "observedCount": 9,
+          "observedShare": 0.6429,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "stepCountModeShare": {
+        "metric": "stepCountModeShare",
+        "direction": "upper",
+        "review": 0.5055,
+        "fail": 0.5913,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "naturalness-benchmark-v1",
+          "sampleCount": 14,
+          "observedCount": 4,
+          "observedShare": 0.2857,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "weakScheduleShare": {
+        "metric": "weakScheduleShare",
+        "direction": "upper",
+        "review": 0.5055,
+        "fail": 0.5913,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "naturalness-benchmark-v1",
+          "sampleCount": 14,
+          "observedCount": 4,
+          "observedShare": 0.2857,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "weakScheduleDominantShare": {
+        "metric": "weakScheduleDominantShare",
+        "direction": "upper",
+        "review": 0.353,
+        "fail": 0.4523,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "naturalness-benchmark-v1",
+          "sampleCount": 14,
+          "observedCount": 2,
+          "observedShare": 0.1429,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "minimumRows": {
+        "value": 5,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-quantiles-v1",
+          "parameter": "minimumRows"
+        }
+      },
+      "reviewLevelTemplateSignalsForFail": {
+        "value": 2,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-quantiles-v1",
+          "parameter": "reviewLevelTemplateSignalsForFail",
+          "rationale": "Several moderate batch-level repetitions together constitute template concentration."
+        }
+      }
+    }
+  },
+  "status": "FAIL",
+  "ok": false,
+  "reviewRequired": false,
+  "blocked": true,
+  "summary": {
+    "rowCount": 5,
+    "rowStatusCounts": {
+      "REVIEW": 1,
+      "PASS": 4
+    },
+    "batchStatus": "FAIL",
+    "findingCounts": {
+      "REVIEW:disclaimer_missing_material_density": 1,
+      "REVIEW:fixed_word_excel_tail_concentration": 1,
+      "FAIL:step_count_mode_concentration": 1,
+      "REVIEW:time_meeting_authenticity_tag_concentration": 1,
+      "FAIL:batch_template_concentration": 1
+    }
+  },
+  "rows": [
+    {
+      "uid": "裴硬_7.9_01",
+      "dataRow": 2,
+      "questionLength": 692,
+      "paragraphCount": 5,
+      "sentenceCount": 15,
+      "disclaimerSentenceCount": 4,
+      "disclaimerSentenceDensity": 0.2667,
+      "missingMaterialSentenceCount": 2,
+      "evidenceBoundarySentenceCount": 2,
+      "disclaimerSignalCount": 6,
+      "concreteFactAnchorCount": 4,
+      "concreteFactsPer100Chars": 0.7435,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "evidence",
+        "boundary",
+        "boundary",
+        "boundary",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "quality": 0
+        },
+        {
+          "boundary": 3,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "scene": 0
+        },
+        {
+          "boundary": 5,
+          "decision": 2,
+          "evidence": 2,
+          "deliverable": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0
+        },
+        {
+          "deliverable": 5,
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1
+        }
+      ],
+      "discourseSkeleton": "evidence>boundary>boundary>boundary>deliverable",
+      "compressedDiscourseSkeleton": "evidence>boundary>deliverable",
+      "fixedWordExcelTail": true,
+      "stepCount": 10,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "relative-meeting",
+      "weakScheduleDevice": true,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 3,
+      "evidence": {
+        "disclaimerSentences": [
+          "产品备案页、功效评价摘要、达人合同、前后对比图来源和后台投放数据目前没有交来。",
+          "涉及备案内容、功效试验、达人合作关系或投放效果的判断都要标明材料状态，素材本身不能证明这些文件已经存在。",
+          "对比图、达人体验和效果时间等无法从现有资料确认的内容，明确需要谁补什么，再安排复核。",
+          "Excel改稿台账用于逐条跟踪原文或图片位置、风险点、修改动作、附件依据、待补材料、负责人和复核状态。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quoted-detail",
+            "value": "“敏感肌急救精华”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“三天退红”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“医美级维稳”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“修护屏障”"
+          }
+        ],
+        "finalParagraph": "会前形成一份Word版素材审改意见，按口播、详情页、对比图和购买入口说明处理结论及理由，供运营、设计和法务统一改稿口径；Excel改稿台账用于逐条跟踪原文或图片位置、风险点、修改动作、附件依据、待补材料、负责人和复核状态。最终检查三段口播与详情页是否使用同一功效口径，也要确认每一条替换建议都有对应素材位置。",
+        "finalStep": "逐句回查三段口播、详情页和对比图，确认同一功效没有相互冲突的承诺，每条结论也能追溯到具体位置和附件依据。"
+      },
+      "status": "REVIEW",
+      "findings": [
+        {
+          "rule": "disclaimer_missing_material_density",
+          "severity": "REVIEW",
+          "message": "Missing-material or evidence-boundary sentences occupy too much of the question relative to the approved benchmark.",
+          "evidence": {
+            "sentenceCount": 15,
+            "taggedSentenceCount": 4,
+            "density": 0.2667,
+            "signalCount": 6
+          },
+          "threshold": {
+            "density": {
+              "metric": "disclaimerSentenceDensity",
+              "direction": "upper",
+              "review": 0.2125,
+              "fail": 0.3425,
+              "source": {
+                "type": "benchmark-quantile",
+                "baselineId": "naturalness-benchmark-v1",
+                "sampleCount": 14,
+                "reviewQuantile": 0.9,
+                "failQuantile": 0.98
+              }
+            },
+            "count": {
+              "metric": "disclaimerSentenceCount",
+              "direction": "upper",
+              "review": 2.7,
+              "fail": 5.22,
+              "source": {
+                "type": "benchmark-quantile",
+                "baselineId": "naturalness-benchmark-v1",
+                "sampleCount": 14,
+                "reviewQuantile": 0.9,
+                "failQuantile": 0.98
+              }
+            },
+            "minimumSentencesForFail": {
+              "value": 2,
+              "source": {
+                "type": "row-policy-cap",
+                "profileId": "approved-corpus-quantiles-v1",
+                "parameter": "minimumDisclaimerSentencesForFail",
+                "rationale": "One matched sentence may be legitimate evidence hygiene and cannot cause a hard fail by itself."
+              }
+            },
+            "combination": "Both density and sentence count must cross the same review/fail band; a single word cannot trigger this rule."
+          }
+        }
+      ]
+    },
+    {
+      "uid": "裴硬_7.9_02",
+      "dataRow": 3,
+      "questionLength": 706,
+      "paragraphCount": 4,
+      "sentenceCount": 13,
+      "disclaimerSentenceCount": 2,
+      "disclaimerSentenceDensity": 0.1538,
+      "missingMaterialSentenceCount": 2,
+      "evidenceBoundarySentenceCount": 2,
+      "disclaimerSignalCount": 5,
+      "concreteFactAnchorCount": 3,
+      "concreteFactsPer100Chars": 0.5882,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "decision",
+        "boundary",
+        "decision",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "decision": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "evidence": 0,
+          "quality": 0
+        },
+        {
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0
+        },
+        {
+          "decision": 2,
+          "evidence": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "deliverable": 5,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "boundary": 1,
+          "instruction": 1,
+          "scene": 0
+        }
+      ],
+      "discourseSkeleton": "decision>boundary>decision>deliverable",
+      "compressedDiscourseSkeleton": "decision>boundary>decision>deliverable",
+      "fixedWordExcelTail": true,
+      "stepCount": 10,
+      "finalStepSelfCheck": true,
+      "scheduleAuthenticityTag": "anchored-meeting",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 3,
+      "evidence": {
+        "disclaimerSentences": [
+          "正式CRM合同、完整字段字典、境外接收方及其安全措施说明、用户授权记录和历史导出日志都没有随材料提供，因此供应商宣传不能替代正式约定，也无法据此确认过去是否已经发生过数据导出。",
+          "交付前按三条线索渠道重新走一遍，确认同一字段没有因来源不同而漏掉告知授权问题，也不把标准合同模板或“全球合规”说明写成已经签署和验证的安全证明。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "date-time",
+            "value": "2026年7月10日"
+          },
+          {
+            "kind": "quantity",
+            "value": "10日"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“全球合规”"
+          }
+        ],
+        "finalParagraph": "销售周会使用一份Word版初筛说明，内容包括当前能讲到哪一步、少字段试点的前置条件、暂缓同步的字段、需要供应商或业务补充的材料和后续审批动作。Excel字段核对表逐行记录字段、来源渠道、业务用途、现有材料、建议处理、附件依据、补件责任人和复核状态。交付前按三条线索渠道重新走一遍，确认同一字段没有因来源不同而漏掉告知授权问题，也不把标准合同模板或“全球合规”说明写成已经签署和验证的安全证明。",
+        "finalStep": "按三条线索渠道重新演练一次，确认同一字段的告知授权、处理建议和材料状态前后一致，标准合同模板也没有被写成已签署合同。"
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "裴硬_7.9_03",
+      "dataRow": 4,
+      "questionLength": 659,
+      "paragraphCount": 4,
+      "sentenceCount": 17,
+      "disclaimerSentenceCount": 3,
+      "disclaimerSentenceDensity": 0.1765,
+      "missingMaterialSentenceCount": 1,
+      "evidenceBoundarySentenceCount": 2,
+      "disclaimerSignalCount": 3,
+      "concreteFactAnchorCount": 1,
+      "concreteFactsPer100Chars": 0.1517,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "decision",
+        "boundary",
+        "boundary",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "decision": 2,
+          "evidence": 2,
+          "boundary": 1,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "quality": 0
+        },
+        {
+          "boundary": 3,
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "quality": 0
+        },
+        {
+          "boundary": 5,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0
+        },
+        {
+          "deliverable": 5,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "instruction": 1,
+          "boundary": 0,
+          "scene": 0
+        }
+      ],
+      "discourseSkeleton": "decision>boundary>boundary>deliverable",
+      "compressedDiscourseSkeleton": "decision>boundary>deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 10,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "relative-meeting",
+      "weakScheduleDevice": true,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 2,
+      "evidence": {
+        "disclaimerSentences": [
+          "现有附件只能说明共有收益公开、业主共同决定、物业管理和维修资金的一般程序。",
+          "广告合同、银行流水、支出票据、业主表决材料和大修报价原件目前都没有归档。",
+          "物业汇总数不能代替流水和合同，业主质疑也不能直接写成资金被挪用。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quantity",
+            "value": "18万元"
+          }
+        ],
+        "finalParagraph": "Word文稿供社区主持会议，包含开场说明、向物业和业委会分别提出的问题、目前可以确认的程序事项及会后安排；Excel表按三条资金线登记期间、金额来源、资金性质、应交材料、提供方、收件日期、核对结果和未衔接余额，会议纪要也沿用三条资金线的编号。会后答复以原始材料为准，社区不代替物业、业委会或维修资金管理主体作实体判断。",
+        "finalStep": "会前逐项检查18万元及后续数字的出处，确认任何资金用途、抵扣关系和紧急程序都没有在原始材料到达前被写成既定事实。"
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "裴硬_7.9_04",
+      "dataRow": 5,
+      "questionLength": 676,
+      "paragraphCount": 4,
+      "sentenceCount": 14,
+      "disclaimerSentenceCount": 1,
+      "disclaimerSentenceDensity": 0.0714,
+      "missingMaterialSentenceCount": 1,
+      "evidenceBoundarySentenceCount": 0,
+      "disclaimerSignalCount": 1,
+      "concreteFactAnchorCount": 3,
+      "concreteFactsPer100Chars": 0.5639,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "decision",
+        "scene",
+        "boundary",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "decision": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "evidence": 0,
+          "quality": 0
+        },
+        {
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0
+        },
+        {
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "scene": 0
+        },
+        {
+          "deliverable": 5,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "boundary": 0,
+          "instruction": 0
+        }
+      ],
+      "discourseSkeleton": "decision>scene>boundary>deliverable",
+      "compressedDiscourseSkeleton": "decision>scene>boundary>deliverable",
+      "fixedWordExcelTail": true,
+      "stepCount": 9,
+      "finalStepSelfCheck": true,
+      "scheduleAuthenticityTag": "anchored-meeting",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 3,
+      "evidence": {
+        "disclaimerSentences": [
+          "算法参数、训练数据来源、候选人告知或授权记录、人工复核日志尚未提供，因此准确率、公平性和实际复核覆盖率都没有事实基础。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "date-time",
+            "value": "2026年7月10日"
+          },
+          {
+            "kind": "quantity",
+            "value": "10日"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“辅助筛选”"
+          }
+        ],
+        "finalParagraph": "会议靠后使用一份Word评审意见，直接写推荐做法、页面和后台要改的地方、HR人工动作、候选人补救方式及启动条件；Excel表按投递、解析、分档、查看、复核和通知记录使用字段、系统动作、候选人提示、负责人及验证结果。页面草图保留为设计输入，未取得的算法、训练数据、授权和复核记录维持未核验。",
+        "finalStep": "完成评审意见和流程表后，从一名被误分的候选人视角走查可见性、纠错、旧标签处理和责任人。"
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "裴硬_7.9_05",
+      "dataRow": 6,
+      "questionLength": 723,
+      "paragraphCount": 4,
+      "sentenceCount": 17,
+      "disclaimerSentenceCount": 1,
+      "disclaimerSentenceDensity": 0.0588,
+      "missingMaterialSentenceCount": 0,
+      "evidenceBoundarySentenceCount": 1,
+      "disclaimerSignalCount": 1,
+      "concreteFactAnchorCount": 2,
+      "concreteFactsPer100Chars": 0.4175,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "evidence",
+        "boundary",
+        "decision",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "instruction": 0
+        },
+        {
+          "boundary": 3,
+          "evidence": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 5,
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1
+        }
+      ],
+      "discourseSkeleton": "evidence>boundary>decision>deliverable",
+      "compressedDiscourseSkeleton": "evidence>boundary>decision>deliverable",
+      "fixedWordExcelTail": true,
+      "stepCount": 9,
+      "finalStepSelfCheck": true,
+      "scheduleAuthenticityTag": "relative-time-only",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 3,
+      "evidence": {
+        "disclaimerSentences": [
+          "模板保持空白，不预填30套房源的放行结论。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quantity",
+            "value": "30套"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“城市周末民宿”"
+          }
+        ],
+        "finalParagraph": "交付的一份Word操作说明写清散件收取、逐户核对、专题与房源页面的分工，以及资料补齐、安排现场查看或暂缓展示时分别怎样处理。Excel模板按房源编号保留多次收件和复核记录，字段覆盖现有资料、治安登记、住宿接入、消防、主体与权属、价格展示、履约情况、处理意见和更新时间。同一房源重新交证照、改价格或补现场照片时新增记录，不覆盖上一次退回原因；专题页调用的状态和复核日期也要能追到房源行。运营会用一套空白记录演练专题页取数，确认页面不会绕过房源状态。模板保持空白，不预填30套房源的放行结论。",
+        "finalStep": "用一套空白房源演练收件到复核的全过程，确认模板没有预填事实且旧记录不会被新材料覆盖。"
+      },
+      "status": "PASS",
+      "findings": []
+    }
+  ],
+  "batch": {
+    "status": "FAIL",
+    "metrics": {
+      "rowCount": 5,
+      "firstPersonShare": 0,
+      "firstPersonOpeningShare": 0,
+      "discourseSkeletonDominantShare": 0.2,
+      "discourseSkeletonDominant": "decision>boundary>decision>deliverable",
+      "discourseSkeletonCounts": {
+        "evidence>boundary>deliverable": 1,
+        "decision>boundary>decision>deliverable": 1,
+        "decision>boundary>deliverable": 1,
+        "decision>scene>boundary>deliverable": 1,
+        "evidence>boundary>decision>deliverable": 1
+      },
+      "fixedWordExcelTailShare": 0.8,
+      "finalStepSelfCheckShare": 0.6,
+      "stepCountModeShare": 0.6,
+      "stepCountMode": 10,
+      "stepCountCounts": {
+        "9": 2,
+        "10": 3
+      },
+      "weakScheduleShare": 0.4,
+      "weakScheduleDominantShare": 0.4,
+      "weakScheduleDominantTag": "relative-meeting",
+      "scheduleTagCounts": {
+        "relative-meeting": 2,
+        "anchored-meeting": 2,
+        "relative-time-only": 1
+      },
+      "disclaimerHeavyShare": 0.2,
+      "lowConcreteFactShare": 0
+    },
+    "findings": [
+      {
+        "rule": "fixed_word_excel_tail_concentration",
+        "severity": "REVIEW",
+        "message": "Batch fixedWordExcelTailShare exceeds the approved-corpus concentration bound.",
+        "evidence": {
+          "value": 0.8
+        },
+        "threshold": {
+          "metric": "fixedWordExcelTailShare",
+          "direction": "upper",
+          "review": 0.7594,
+          "fail": 0.8135,
+          "source": {
+            "type": "benchmark-rate-upper-bound",
+            "baselineId": "naturalness-benchmark-v1",
+            "sampleCount": 14,
+            "observedCount": 8,
+            "observedShare": 0.5714,
+            "reviewZ": 1.645,
+            "failZ": 2.326
+          }
+        }
+      },
+      {
+        "rule": "step_count_mode_concentration",
+        "severity": "FAIL",
+        "message": "Batch stepCountModeShare exceeds the approved-corpus concentration bound.",
+        "evidence": {
+          "value": 0.6,
+          "mode": 10
+        },
+        "threshold": {
+          "metric": "stepCountModeShare",
+          "direction": "upper",
+          "review": 0.5055,
+          "fail": 0.5913,
+          "source": {
+            "type": "benchmark-rate-upper-bound",
+            "baselineId": "naturalness-benchmark-v1",
+            "sampleCount": 14,
+            "observedCount": 4,
+            "observedShare": 0.2857,
+            "reviewZ": 1.645,
+            "failZ": 2.326
+          }
+        }
+      },
+      {
+        "rule": "time_meeting_authenticity_tag_concentration",
+        "severity": "REVIEW",
+        "message": "Batch weakScheduleDominantShare exceeds the approved-corpus concentration bound.",
+        "evidence": {
+          "value": 0.4,
+          "dominantTag": "relative-meeting"
+        },
+        "threshold": {
+          "metric": "weakScheduleDominantShare",
+          "direction": "upper",
+          "review": 0.353,
+          "fail": 0.4523,
+          "source": {
+            "type": "benchmark-rate-upper-bound",
+            "baselineId": "naturalness-benchmark-v1",
+            "sampleCount": 14,
+            "observedCount": 2,
+            "observedShare": 0.1429,
+            "reviewZ": 1.645,
+            "failZ": 2.326
+          }
+        }
+      },
+      {
+        "rule": "batch_template_concentration",
+        "severity": "FAIL",
+        "message": "Multiple independent discourse features concentrate in the same batch; the batch is template-derived even if no single feature crosses its fail bound.",
+        "evidence": {
+          "signalCount": 3,
+          "signals": [
+            {
+              "metricName": "fixedWordExcelTailShare",
+              "level": "REVIEW",
+              "value": 0.8
+            },
+            {
+              "metricName": "stepCountModeShare",
+              "level": "FAIL",
+              "value": 0.6
+            },
+            {
+              "metricName": "weakScheduleDominantShare",
+              "level": "REVIEW",
+              "value": 0.4
+            }
+          ]
+        },
+        "threshold": {
+          "value": 2,
+          "source": {
+            "type": "batch-policy-cap",
+            "profileId": "approved-corpus-quantiles-v1",
+            "parameter": "reviewLevelTemplateSignalsForFail",
+            "rationale": "Several moderate batch-level repetitions together constitute template concentration."
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 2,
+  "ok": true,
+  "status": "PASS",
+  "generatedAt": "2026-07-10T09:38:58.372Z",
+  "policyId": "l2-human-grounded-diversity-v3",
+  "policyVersion": 3,
+  "gateStatus": "REVIEW",
+  "authorizationMode": "INDEPENDENT_REVIEW",
+  "reviewAuthorization": {
+    "status": "APPROVED",
+    "decision": "APPROVE",
+    "verified": true,
+    "requestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_managed_human_voice_20260710\\qa\\structure_review_request.json",
+    "requestHash": "0b2ef8ce6c604e2c03bfeb218b893b87c66149ec47a9eb87432ae98099164b7f",
+    "signoffPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_managed_human_voice_20260710\\qa\\structure_review_signoff_round2.json",
+    "signoffHash": "91aabaeaffa56b571508f8466337f5f54d99e0d0ca88c1f5323fae772865f698",
+    "requestId": "structure_086a1cbf352a267ee9ce74fb",
+    "bindingHash": "086a1cbf352a267ee9ce74fb58fa3aec7f6104e2ddb79e58cacd23caeb6f89b2",
+    "evaluationHash": "540fce972c697f472a480a1b120dde2e32a1d4c8e9306afff4b7bd03e3c12efd",
+    "requestedBy": "structure-gate-automation",
+    "reviewer": "independent-model-reviewer-round2-structure",
+    "reviewedAt": "2026-07-10T09:35:31.3097246Z",
+    "rationaleHash": "318c5909d4bf586c6939b5999e50a222e83842ffd80573002162735c2bcb1dae"
+  },
+  "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_managed_human_voice_20260710\\qa\\structure_gate_report.json",
+  "reportHash": "4ab2e4dd89056f89360b1db43643a91e8949301407972725a3b04c3ade35e909",
+  "batchHash": "82e9d86aeddc97f49d47cf0e6d7dadbf5e1a0cd2fa89216ea53ec575c0702869",
+  "rowHashes": [
+    {
+      "index": 0,
+      "uid": "",
+      "sheetRow": 121,
+      "hash": "cba54c733f112f6c6547ba256555f33c336525c208748b4acaa5ac495041fc74"
+    },
+    {
+      "index": 1,
+      "uid": "",
+      "sheetRow": 122,
+      "hash": "c8b2f93c07e04ff41509554f95bce67a5bce610d4e306a55428fb8f2dc047c72"
+    },
+    {
+      "index": 2,
+      "uid": "",
+      "sheetRow": 123,
+      "hash": "7b38d17478582faf35ce6df0b0bd9f83d1a6312ea7e36f20a3e9b9161f56217c"
+    },
+    {
+      "index": 3,
+      "uid": "",
+      "sheetRow": 134,
+      "hash": "fe7bc72693b2c0be5ba70c694a5a45b3dc441a3b9236621349f81507cd5bfd3d"
+    },
+    {
+      "index": 4,
+      "uid": "",
+      "sheetRow": 135,
+      "hash": "f74d3421d6bb7d185aac9b6c0c3a8b0caba2bfcc69cdb42d4b8ca5c834e99a09"
+    },
+    {
+      "index": 5,
+      "uid": "",
+      "sheetRow": 136,
+      "hash": "ee7c296ef0051faebef4390090b4189e26ca9c1b51518a251b4eb9915115d82c"
+    },
+    {
+      "index": 6,
+      "uid": "",
+      "sheetRow": 140,
+      "hash": "05dd17d7d576889b89ab9b6f9b50838de2ec9f383faec4448b35114847e0eb5a"
+    },
+    {
+      "index": 7,
+      "uid": "",
+      "sheetRow": 141,
+      "hash": "9bce9bf7e2c8ec0b79f2139ffd6a32e4e2e9e719daf830c396ef35287b44a2cc"
+    },
+    {
+      "index": 8,
+      "uid": "",
+      "sheetRow": 142,
+      "hash": "6ca852fc00e745ff57894e1b912de04f2cd64dcf4ee6d6178667edfcfc7e8e10"
+    },
+    {
+      "index": 9,
+      "uid": "",
+      "sheetRow": 143,
+      "hash": "291ef39872c36f904e27bd86661ce8aeec071a73bbb575a4a67b97a7d3700c00"
+    },
+    {
+      "index": 10,
+      "uid": "",
+      "sheetRow": 144,
+      "hash": "05393b2e6b8beff21bb67d154f90bf37b4380c4a82bab378998d5d06926983dc"
+    },
+    {
+      "index": 11,
+      "uid": "",
+      "sheetRow": 145,
+      "hash": "f52274c5b52cebc8d573070bdf4fa6e7e3d71c44239c78ee9f76cdfaffff5a2b"
+    },
+    {
+      "index": 12,
+      "uid": "",
+      "sheetRow": 146,
+      "hash": "eaacc67a79efad27c527091a34c04f4fffd59851e7c5c01a60f1d0f213a2954e"
+    },
+    {
+      "index": 13,
+      "uid": "",
+      "sheetRow": 147,
+      "hash": "5141fe76e22995417dd2a8e727cafee12094b12d2b85aa0e80a0f361307af063"
+    },
+    {
+      "index": 14,
+      "uid": "",
+      "sheetRow": 148,
+      "hash": "b9db24e5fb77b9f01fbc0ab5e7a7800d17d4a3bf6aa71260889df6a9e664af63"
+    },
+    {
+      "index": 15,
+      "uid": "",
+      "sheetRow": 149,
+      "hash": "8f060cc174554e5837605b9884c52c46eacee8f10fac1c3026ab6bb0d76802ed"
+    },
+    {
+      "index": 16,
+      "uid": "",
+      "sheetRow": 172,
+      "hash": "1d3908cbd07f14009127ef94e1333c00416f35524cef3caccb6e9246f09c646d"
+    },
+    {
+      "index": 17,
+      "uid": "",
+      "sheetRow": 173,
+      "hash": "8f9adfbd3c86653cd154b335c71cb5e8c58044db69221e817b9e86c1222e2e80"
+    },
+    {
+      "index": 18,
+      "uid": "",
+      "sheetRow": 174,
+      "hash": "ab087617a62f3e67b5eb8c3995d930965b2d8e99f712e7677e3ad3955e76a67d"
+    },
+    {
+      "index": 19,
+      "uid": "",
+      "sheetRow": 178,
+      "hash": "f908b19e535e8392f82bf795355042a8e58fdc94080be7b7658eb93cb73ddb73"
+    },
+    {
+      "index": 20,
+      "uid": "",
+      "sheetRow": 179,
+      "hash": "49aab324cc945de7b409be922501256884082e3a41f361982ce4281907b33f8f"
+    },
+    {
+      "index": 21,
+      "uid": "",
+      "sheetRow": 180,
+      "hash": "e152b2695a8dc72731b313b9d4810fcaeb5b1d0b96ed2e7f9c8c24fc60ece318"
+    }
+  ],
+  "kind": "release-gate-receipt",
+  "releaseSchemaVersion": 1,
+  "releaseGateId": "combined-release-gate-v1",
+  "structure": {
+    "receiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_managed_human_voice_20260710\\qa\\structure_gate_receipt.json",
+    "receiptHash": "85c6903dd8bc683ca111646f0040b8c7b8f9c49fd162558e08ef452f03057a20",
+    "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_managed_human_voice_20260710\\qa\\structure_gate_report.json",
+    "reportHash": "4ab2e4dd89056f89360b1db43643a91e8949301407972725a3b04c3ade35e909",
+    "gateStatus": "REVIEW",
+    "authorizationMode": "INDEPENDENT_REVIEW"
+  },
+  "naturalness": {
+    "gateId": "naturalness-gate-v1",
+    "metricsVersion": "naturalness-metrics-v1",
+    "status": "REVIEW",
+    "authorizationMode": "INDEPENDENT_REVIEW",
+    "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_managed_human_voice_20260710\\qa\\naturalness_gate_report.json",
+    "reportHash": "2e80dca92d87aac01935c2c75d6978edffaf96daa0f7fee2a79770723d7ec53e",
+    "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_managed_human_voice_20260710\\drafts\\l2_questions_human_voice.tsv",
+    "candidateHash": "968ddf5ca454c2270ee572e9ca9f6a251e32cc0bbb33e93bfa966a11c4824cb0",
+    "baselinePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\config\\naturalness_benchmark.json",
+    "baselineHash": "f7357bc2781c481fa92cd67f9d11dd2ae8c7a484fd08167ad9f3b1c3fa79d49e",
+    "reviewAuthorization": {
+      "status": "APPROVED",
+      "decision": "APPROVE",
+      "verified": true,
+      "requestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_managed_human_voice_20260710\\qa\\naturalness_review_request.json",
+      "requestHash": "0a460bf45406173b71f194f90842f122c2aeacf59fb961d15b01acf9ef4587d8",
+      "signoffPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_managed_human_voice_20260710\\qa\\naturalness_review_signoff_round2.json",
+      "signoffHash": "ff6e00eeab9fbf867a976ee77dc6d2bdc623066919bb227939e495466f44f629",
+      "requestId": "naturalness_ca999cbfe5846eedd0a05693",
+      "bindingHash": "ca999cbfe5846eedd0a05693d8c50a763c155bd1020885fe7c0127517d77f5a5",
+      "requestedBy": "naturalness-gate-automation",
+      "reviewer": "independent-model-reviewer-round2",
+      "reviewedAt": "2026-07-10T09:38:14.332Z",
+      "rationaleHash": "46ac1c522c83bc2350b92b80713797330cd851a7fc1c4d910ac585613944b336"
+    }
+  }
+}

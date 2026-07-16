@@ -1,0 +1,15 @@
+[
+  {
+    "row": 149,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=149&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783601012583_149",
+    "checkedAt": "2026-07-09T12:43:57.313Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "本地生活平台准备上线“城市周末民宿”专题，招商已收集30套房源的证照照片、房屋照片、消防承诺书和价格表，但房源明细表还在汇总，部分房源是否完成旅馆业备案、住宿登",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  }
+]

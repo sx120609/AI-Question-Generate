@@ -1,0 +1,17 @@
+{
+  "runId": "rewrite_peiying_human_voice_20260710",
+  "sourceRunId": "rewrite_peiying_all_20260709T215207Z_75bdf9",
+  "objective": "基于原始记录事实重写裴硬全部系统生成题，去除批量模板与补写情节",
+  "generatedAnnotator": "裴硬",
+  "count": 5,
+  "status": "drafted-not-submitted",
+  "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+  "sheetId": "49e351",
+  "writableFields": [
+    "题目",
+    "任务概括",
+    "附件内容",
+    "产物内容",
+    "做题关键步骤"
+  ]
+}

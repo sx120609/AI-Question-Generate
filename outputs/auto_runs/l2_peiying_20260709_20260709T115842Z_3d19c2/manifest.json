@@ -1,0 +1,38 @@
+{
+  "runId": "l2_peiying_20260709_20260709T115842Z_3d19c2",
+  "objective": "换马甲裴硬生产5条L2并提交飞书",
+  "operator": "codex",
+  "count": 5,
+  "status": "created",
+  "createdAt": "2026-07-09T11:58:42.437Z",
+  "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+  "sheetId": "49e351",
+  "dirs": {
+    "root": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2",
+    "sources": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\sources",
+    "attachments": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\attachments",
+    "drafts": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\drafts",
+    "feishu": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\feishu",
+    "qa": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\qa",
+    "logs": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\logs",
+    "tmp": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\tmp"
+  },
+  "boundaries": {
+    "writableRoots": [
+      "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2"
+    ],
+    "sharedWritesRequireLocks": [
+      "outputs/l2_questions.tsv",
+      "outputs/feishu_fill_plan_*.json",
+      "Feishu sheet rows"
+    ],
+    "noTouch": [
+      "Rows not reserved by this run",
+      "Other runs under outputs/auto_runs",
+      "Existing attachments outside this run unless explicitly imported"
+    ]
+  },
+  "generatedAnnotator": "裴硬",
+  "uidPrefix": "裴硬_",
+  "managedBySystem": true
+}

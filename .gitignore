@@ -1,0 +1,7 @@
+outputs/secrets/
+outputs/tmp/
+.codex/
+node_modules/
+.env
+.env.*
+*.local

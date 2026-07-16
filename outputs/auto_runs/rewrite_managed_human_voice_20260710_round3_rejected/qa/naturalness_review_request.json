@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "kind": "naturalness-review-request",
+  "status": "PENDING_REVIEW",
+  "requestId": "naturalness_535da87dce2d311aa9fad3e8",
+  "generatedAt": "2026-07-10T09:48:56.432Z",
+  "gateId": "naturalness-gate-v1",
+  "metricsVersion": "naturalness-metrics-v1",
+  "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_managed_human_voice_20260710\\qa\\naturalness_gate_report.json",
+  "reportHash": "9c4e752d79325ded8bfbd357124bc7cd6775f4ecfc0da151ef9d53d01e37c008",
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_managed_human_voice_20260710\\drafts\\l2_questions_human_voice.tsv",
+  "candidateHash": "804c4cf5412d100baf0b7e2cad95c78d89fdabeb7c5724da6de4d19701611f9e",
+  "baselinePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\config\\naturalness_benchmark.json",
+  "baselineHash": "f7357bc2781c481fa92cd67f9d11dd2ae8c7a484fd08167ad9f3b1c3fa79d49e",
+  "requestedBy": "naturalness-gate-automation",
+  "bindingHash": "535da87dce2d311aa9fad3e82ec99651d7b3944f4f15963772cbc229b97c61c6",
+  "reviewFindings": [
+    {
+      "uid": "沈礼_7.9_02",
+      "rule": "low_concrete_fact_density"
+    },
+    {
+      "uid": "沈礼_7.9_06",
+      "rule": "low_concrete_fact_density"
+    },
+    {
+      "uid": "沈礼_7.9_07",
+      "rule": "low_concrete_fact_density"
+    },
+    {
+      "uid": "沈礼_7.9_08",
+      "rule": "low_concrete_fact_density"
+    },
+    {
+      "uid": "沈礼_7.9_10",
+      "rule": "disclaimer_missing_material_density"
+    },
+    {
+      "uid": "沈礼_7.9_10",
+      "rule": "low_concrete_fact_density"
+    },
+    {
+      "uid": "沈礼_7.10_02",
+      "rule": "low_concrete_fact_density"
+    }
+  ],
+  "signoff": null,
+  "note": "This is a hash-bound review request, not an approval. A separate explicit signoff is required before downstream receipt generation."
+}

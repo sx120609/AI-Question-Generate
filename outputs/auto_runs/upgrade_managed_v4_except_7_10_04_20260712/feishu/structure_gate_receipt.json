@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 2,
+  "ok": true,
+  "status": "PASS",
+  "generatedAt": "2026-07-11T18:37:13.423Z",
+  "policyId": "l2-corpus-calibrated-source-driven-v5",
+  "policyVersion": 5,
+  "gateStatus": "PASS",
+  "authorizationMode": "DIRECT_PASS",
+  "reviewAuthorization": null,
+  "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\feishu\\structure_gate_report.json",
+  "reportHash": "5cb1a8d1bf255aa1af26d2c3edf10586d8ba4667297f50e13ff6e8db10d2a43c",
+  "batchHash": "c0d241641b84cc374ed20cb64230de00f9ef03b2af9473c61674e07f691e14df",
+  "rowHashes": [
+    {
+      "index": 0,
+      "uid": "",
+      "sheetRow": 121,
+      "hash": "b30252f10cbe3a64fa0f8e5587e1e64a37c0a9912d0cb2cb177717a89b1f480e"
+    },
+    {
+      "index": 1,
+      "uid": "",
+      "sheetRow": 122,
+      "hash": "16fb8cc49683e5a81ca3fa5340f8625419ca1863cf88c254f95d543b8f1d29dc"
+    },
+    {
+      "index": 2,
+      "uid": "",
+      "sheetRow": 123,
+      "hash": "02667295259e10139e97f081417a4fa1d4c092a675b8a39cfeafcbbd105fb556"
+    },
+    {
+      "index": 3,
+      "uid": "",
+      "sheetRow": 134,
+      "hash": "980ce9f5e37f732ac95992ef366512ee87fed40e00e07b4acba0591c80c75ed5"
+    },
+    {
+      "index": 4,
+      "uid": "",
+      "sheetRow": 135,
+      "hash": "483d05e6e482f4523f34ddf57ed6e6795f2cc1574f1358f06b94573a6eb507e8"
+    },
+    {
+      "index": 5,
+      "uid": "",
+      "sheetRow": 136,
+      "hash": "964e63e6d7df7c0255f7359c37b16a89f65dc4ddd76bc7b94bd0edae13916746"
+    },
+    {
+      "index": 6,
+      "uid": "",
+      "sheetRow": 140,
+      "hash": "9a8b4ebf0c7813189135cf13bdc7a046c4684cde1878cc8f664cf133adc104af"
+    },
+    {
+      "index": 7,
+      "uid": "",
+      "sheetRow": 141,
+      "hash": "8534f1f7f8fefd1bc8b493c682efc345a1d0f538b2be5736ac4031ef5e2a508b"
+    },
+    {
+      "index": 8,
+      "uid": "",
+      "sheetRow": 142,
+      "hash": "4ee429c8ea95ce6f391eb8c8e7b8392116f7fe9687e8c6bb64a7621f8f9994fe"
+    },
+    {
+      "index": 9,
+      "uid": "",
+      "sheetRow": 143,
+      "hash": "14946e51477192f485871e15f5a1cc449b5154c13c3689f3e0b8a9e05ef49120"
+    },
+    {
+      "index": 10,
+      "uid": "",
+      "sheetRow": 144,
+      "hash": "45355d9d87c1670a9e964c6ab21997542f61b2891fb413311101605259e1154d"
+    },
+    {
+      "index": 11,
+      "uid": "",
+      "sheetRow": 145,
+      "hash": "5296cf799c5a743d24b5787fab6963915effba42b19056f008a550b8485c4990"
+    },
+    {
+      "index": 12,
+      "uid": "",
+      "sheetRow": 146,
+      "hash": "13a254190e4d0661237b6224c957dda2ee8a5dc857b9d0d77cb9b2a37bfedddc"
+    },
+    {
+      "index": 13,
+      "uid": "",
+      "sheetRow": 147,
+      "hash": "516b4b81da659819712e49593637cdb7a5a16343958a51d22730666872395b8f"
+    },
+    {
+      "index": 14,
+      "uid": "",
+      "sheetRow": 148,
+      "hash": "982d053b45237902bc73537ef06a06ade0b7a247a317f0e7869a99fb6d16bb8f"
+    },
+    {
+      "index": 15,
+      "uid": "",
+      "sheetRow": 149,
+      "hash": "6dbdd10e493d8186af67259e3737a402a6579897dcf26ce640f570d98cc26b4a"
+    },
+    {
+      "index": 16,
+      "uid": "",
+      "sheetRow": 172,
+      "hash": "0fe59d3daabb3ceb30ea22f9d10b4366f3a4a0a16cbbce9e84617883b48841e5"
+    },
+    {
+      "index": 17,
+      "uid": "",
+      "sheetRow": 173,
+      "hash": "df356968c40a29688d894ff9fe3878e67068a7a6c8dec59bc8d5a56f8b9b10dc"
+    },
+    {
+      "index": 18,
+      "uid": "",
+      "sheetRow": 174,
+      "hash": "bd7da38da4e8e49f83c0409a2ab265bb992833e3f1e17817c18f62a5dc45b6fe"
+    },
+    {
+      "index": 19,
+      "uid": "",
+      "sheetRow": 179,
+      "hash": "f8c3860b3f6bb60e4462040eafe9b166c851383340dce45298df23e32427638b"
+    },
+    {
+      "index": 20,
+      "uid": "",
+      "sheetRow": 180,
+      "hash": "02b9f5d946d45b8c1e6baa379691964a2ac2ce0813821c3d7f08ae8f8b72167a"
+    }
+  ]
+}

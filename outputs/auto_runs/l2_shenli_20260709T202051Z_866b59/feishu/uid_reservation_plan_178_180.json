@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "generatedAt": "2026-07-09T20:21:21.810Z",
+  "sourcePath": "uid-reservation",
+  "startRow": 178,
+  "count": 3,
+  "rows": [
+    {
+      "dataRow": 2,
+      "sheetRow": 178,
+      "title": "UID reservation",
+      "updates": [
+        {
+          "address": "A178",
+          "column": "A",
+          "field": "UID",
+          "value": "沈礼_7.10_04",
+          "chars": 10,
+          "hasNewlines": false,
+          "preview": "沈礼_7.10_04"
+        }
+      ]
+    },
+    {
+      "dataRow": 3,
+      "sheetRow": 179,
+      "title": "UID reservation",
+      "updates": [
+        {
+          "address": "A179",
+          "column": "A",
+          "field": "UID",
+          "value": "沈礼_7.10_05",
+          "chars": 10,
+          "hasNewlines": false,
+          "preview": "沈礼_7.10_05"
+        }
+      ]
+    },
+    {
+      "dataRow": 4,
+      "sheetRow": 180,
+      "title": "UID reservation",
+      "updates": [
+        {
+          "address": "A180",
+          "column": "A",
+          "field": "UID",
+          "value": "沈礼_7.10_06",
+          "chars": 10,
+          "hasNewlines": false,
+          "preview": "沈礼_7.10_06"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "row": 143,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=143&qa_result_col=AC&qa_note_col=AD&action=recheck_row&_=1783694203006_143",
+    "checkedAt": "2026-07-10T14:36:54.159Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "社区诊所想赶在这个月递交医保定点申请，老板手里只有营业执照、医疗机构执业许可证和一份自查表，自查表提到药品耗材追溯码、影像结果上传、医技人员资质、价格执行和基金",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 144,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=144&qa_result_col=AC&qa_note_col=AD&action=recheck_row&_=1783694214162_144",
+    "checkedAt": "2026-07-10T14:37:36.954Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "公益项目后台把企业捐款、员工配捐、物资折价和几笔备注为“公益合作款”的记录混在了一起，捐赠人又在催公益事业捐赠票据和税前扣除材料，财务现在不能只看后台备注就决定",
+    "note": "信息支撑不足：题目明确缺少后台明细、收款凭证、协议等核心数据，模板。请补充至少部分示例数据或具体记录样例，或明确数据来源。补充时要写清数据来源、覆盖范围、地区年份、统计口径或附件位置，确保后续答案能基于真实材料给出具体判断。具体可改为：补充至少一组示例数据（如企业捐款、员工配捐、物资折价、公益合作款的记录样例），或明确数据可从附件中获取（但当前附件为法规，无数据）。",
+    "categories": [
+      "prompt_style"
+    ]
+  },
+  {
+    "row": 148,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=148&qa_result_col=AC&qa_note_col=AD&action=recheck_row&_=1783694256955_148",
+    "checkedAt": "2026-07-10T14:37:50.842Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "招聘小程序准备在2026年7月灰度“AI初筛”，产品已经画好A档优先展示、B档抽看、C档沉底的后台样式，但这张图没有说明三档会不会影响HR看到简历，也没有说明候",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 173,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=173&qa_result_col=AC&qa_note_col=AD&action=recheck_row&_=1783694270845_173",
+    "checkedAt": "2026-07-10T14:38:04.676Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "园长早会上定了方向，9月先在两个班试儿童智能手表，可家委会一问到位置谁能看，SOS录音存多久，家长不同意怎么办，现有功能清单就接不上了。进出园自动打卡，离园围栏",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  }
+]

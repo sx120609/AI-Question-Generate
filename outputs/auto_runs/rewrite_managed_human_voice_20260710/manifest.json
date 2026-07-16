@@ -1,0 +1,27 @@
+{
+  "runId": "rewrite_managed_human_voice_20260710",
+  "generatedAt": "2026-07-10T09:54:22.897Z",
+  "objective": "沈礼17条与裴硬5条的事实保真、低模板整批重写及统一提交",
+  "count": 22,
+  "generatedAnnotators": [
+    "沈礼",
+    "裴硬"
+  ],
+  "status": "submitted-qa-passed",
+  "submittedAt": "2026-07-10T10:00:09.101Z",
+  "qaPassedRows": 22,
+  "questionPresentation": "legacy-paragraphs-user-approved",
+  "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+  "sheetId": "49e351",
+  "writableFields": [
+    "题目",
+    "任务概括",
+    "附件内容",
+    "产物内容",
+    "做题关键步骤"
+  ],
+  "componentRuns": [
+    "rewrite_shenli_human_voice_20260710",
+    "rewrite_peiying_human_voice_20260710"
+  ]
+}

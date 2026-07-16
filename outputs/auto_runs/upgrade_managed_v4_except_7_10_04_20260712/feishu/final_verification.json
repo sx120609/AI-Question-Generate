@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "runId": "upgrade_managed_v4_except_7_10_04_20260712",
+  "verifiedAt": "2026-07-12T02:43:36+08:00",
+  "sourceRevision": 6124,
+  "finalRevision": 6125,
+  "checkedCells": 126,
+  "mismatches": [],
+  "attachmentObjectCount": 99,
+  "attachmentChangedRows": [],
+  "excludedUid": "沈礼_7.10_04",
+  "excludedWholeRowUnchanged": true,
+  "existingQaPassRows": 21,
+  "qaFailures": []
+}

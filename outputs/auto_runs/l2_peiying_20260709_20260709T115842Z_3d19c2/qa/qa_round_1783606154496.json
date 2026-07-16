@@ -1,0 +1,15 @@
+[
+  {
+    "row": 142,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=142&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783606087628_142",
+    "checkedAt": "2026-07-09T14:09:14.494Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "连锁药房慢病复购入口这周要灰度：老会员拍处方，药师审核后系统把常用处方药配送到家，运营还排了“买二送一”“复购立减”的位置。法务这次集中追处方真实性、禁售药品拦",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  }
+]

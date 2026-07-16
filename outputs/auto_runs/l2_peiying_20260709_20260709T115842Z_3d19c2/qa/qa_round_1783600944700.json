@@ -1,0 +1,41 @@
+[
+  {
+    "row": 146,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=146&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783600784029_146",
+    "checkedAt": "2026-07-09T12:40:26.473Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "销售团队要在明天客户周会前判断三类线索能否同步到海外CRM：官网预约试用、展会扫码、公众号留资。待同步字段有姓名、手机号、公司邮箱、职位、采购预算和跟进备注，供",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 148,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=148&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783600826476_148",
+    "checkedAt": "2026-07-09T12:40:45.892Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "招聘小程序计划在2026年7月灰度上线“AI初筛”入口，候选人投递后系统按简历关键词、过往行业、学历和薪资期望给推荐等级，HR只看A档和部分B档。产品想尽快上线",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 149,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=149&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783600845893_149",
+    "checkedAt": "2026-07-09T12:42:24.699Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "本地生活平台准备上线“城市周末民宿”专题，招商已收集30套房源的证照照片、房屋照片、消防承诺书和价格表，但房源明细表还在汇总，部分房源是否完成旅馆业备案、住宿登",
+    "note": "附件读取失败：题目依赖附件或来源链接，但来源链接读取失败或附件原文不可用；请更换可访问链接、上传附件原文，或在附件内容列补充足够正文摘录/数据口径后重新质检。请更换可访问链接、上传附件原文，或在附件内容列补充足够正文摘录和数据口径，避免在缺少真实材料时误判通过。具体可改为：请更换可访问链接、上传附件原文，或在附件内容列补充足够的正文摘录/数据口径后重新质检。",
+    "categories": [
+      "attachment_read_failed"
+    ]
+  }
+]

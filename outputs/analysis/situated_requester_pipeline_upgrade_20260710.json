@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-07-10",
+  "objective": "Replace one-shot TSV authoring with a finite-view requester simulation that is verifiable before Feishu narrative writes.",
+  "status": "implemented_and_verified",
+  "pipeline": [
+    "fact_ledger",
+    "scene_card",
+    "three_requester_candidates",
+    "out_of_character_and_masked_author_review",
+    "candidate_selection",
+    "frozen_question_field_compilation",
+    "scene_card_gate",
+    "naturalness_gate",
+    "structure_gate",
+    "combined_release_gate_v2",
+    "physical_write_reverification"
+  ],
+  "policies": {
+    "situatedGeneration": "situated-requester-v1",
+    "situatedPromptVersion": "situated-requester-prompts-v1",
+    "sceneCardGate": "scene-card-role-consistency-v1",
+    "naturalnessGate": "naturalness-gate-v3",
+    "naturalnessMetrics": "naturalness-metrics-v3",
+    "questionLanguage": "situated-request-punctuation-v2",
+    "releaseGate": "combined-release-gate-v2",
+    "releaseSchemaVersion": 2,
+    "questionPresentation": "single-paragraph-clear-request-v2"
+  },
+  "guarantees": [
+    "Shen Li and Pei Ying remain system annotation identities and cannot be used as topic protagonists.",
+    "Every final row has one hidden requester persona and an evidence-bound finite work scene.",
+    "The request span, action, output names, blockage, motivation, and downstream-use spans must occur exactly in the question.",
+    "Known facts must be accounted for as used or deliberately omitted, and the fact ledger is SHA-256 bound.",
+    "Unsupported numbers, dates, quotations, dramatic urgency, role-card leakage, and masked same-author collisions fail the scene-card gate.",
+    "The field compiler cannot modify the selected B question.",
+    "Role consistency must be a direct PASS and has no review override.",
+    "OpenAPI and browser writes to B/G/L/N/O require a v2 receipt and exact address, field, and value matches; M-only maintenance is exempt."
+  ],
+  "verification": {
+    "syntaxCheckedMjsFiles": 59,
+    "tests": 111,
+    "passed": 111,
+    "failed": 0,
+    "remoteWritesPerformed": false
+  },
+  "primaryFiles": [
+    "build/automation/situated_generation.mjs",
+    "build/automation/scene_card.mjs",
+    "build/automation/release_gate.mjs",
+    "build/automation/run_context.mjs",
+    "build/automation/feishu_openapi_client.mjs",
+    "build/automation/feishu_sheet_submit.mjs",
+    "build/manual_review/feishu_browser_fill.mjs",
+    "docs/agent/L2_PROMPTS.md",
+    "docs/agent/AUTO_PRODUCTION_WORKFLOW.md"
+  ]
+}

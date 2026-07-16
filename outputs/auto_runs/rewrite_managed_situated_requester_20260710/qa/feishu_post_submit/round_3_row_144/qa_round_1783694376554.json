@@ -1,0 +1,15 @@
+[
+  {
+    "row": 144,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=144&qa_result_col=AC&qa_note_col=AD&action=recheck_row&_=1783694317399_144",
+    "checkedAt": "2026-07-10T14:39:36.551Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "公益项目后台把企业捐款、员工配捐、物资折价和几笔备注为“公益合作款”的记录混在了一起，捐赠人又在催公益事业捐赠票据和税前扣除材料，财务现在不能只看后台备注就决定",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  }
+]

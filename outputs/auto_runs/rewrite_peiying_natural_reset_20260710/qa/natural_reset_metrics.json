@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "policy": {
+    "hardMinimum": 620,
+    "naturalRange": [
+      650,
+      1150
+    ],
+    "warnAbove": 1250,
+    "hardMaximum": 1600
+  },
+  "rows": [
+    {
+      "uid": "裴硬_7.9_01",
+      "sheetRow": 145,
+      "questionVisibleCharacters": 692
+    },
+    {
+      "uid": "裴硬_7.9_02",
+      "sheetRow": 146,
+      "questionVisibleCharacters": 706
+    },
+    {
+      "uid": "裴硬_7.9_03",
+      "sheetRow": 147,
+      "questionVisibleCharacters": 659
+    },
+    {
+      "uid": "裴硬_7.9_04",
+      "sheetRow": 148,
+      "questionVisibleCharacters": 676
+    },
+    {
+      "uid": "裴硬_7.9_05",
+      "sheetRow": 149,
+      "questionVisibleCharacters": 723
+    }
+  ]
+}

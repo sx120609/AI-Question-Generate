@@ -1,0 +1,214 @@
+[
+  {
+    "row": 121,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=121&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783604192588_121",
+    "checkedAt": "2026-07-09T13:36:49.032Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "下周客户成功想把生成式客服助手灰度给两家付费客户，老板只问一句：能不能先开。产品的版本说明写得很轻，说只是接企业知识库、FAQ和工单，不训练新模型；但真实客服会",
+    "note": "场景表达不自然：灰度上线决策更自然的表达是直接询问能否上线及需要补齐的材料，而非要求正式报告。请调整题目表述，使其更贴近真实业务对话。 产物要求生硬：直接要求生成Word和Excel报告，但缺少真实任务需求驱动。请先明确用户要解决的问题和决策目标，再自然引出产物。请把报告式、材料式说法改成真实用户会提出的决策、比较、整理、建议需求，保留预算、偏好、限制和实际用途。",
+    "categories": [
+      "scene_naturalness",
+      "prompt_style"
+    ]
+  },
+  {
+    "row": 122,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=122&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783604209034_122",
+    "checkedAt": "2026-07-09T13:37:08.060Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "业委会周四晚上要谈电动自行车整改，物业巡查照片里还有车停在门厅、楼梯口和疏散通道附近。工程部想扩建集中充电区，居民代表又追问架空层、地下非机动车库能不能改，旧车",
+    "note": "附件条数问题：L2 当前附件约3条，要求4-8条；请按核心任务补齐必要附件，或合并/删除非核心材料，避免附件数量与任务层级不匹配。请按任务层级调整附件数量，L1保持0-3条，L2保持4-8条；优先保留能直接支撑核心任务的材料。具体可改为：将L2附件调整为4-8条；不足时补充支撑材料，过多时合并或删除非核心附件。修改后应让审核人一眼看出问题原因、需要补充的材料、应补到哪个字段，以及出题人可以直接执。",
+    "categories": [
+      "attachment_count"
+    ]
+  },
+  {
+    "row": 123,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=123&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783604228061_123",
+    "checkedAt": "2026-07-09T13:37:30.646Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "直播排期已经卡到月底，低糖高蛋白代餐粉的主播脚本还在反复改：运营想保留“控糖”“饭前一杯少吃主食”“饱腹不长胖”，店铺页还要放包装背面、营养成分表和达人短视频。",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 134,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=134&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783604250646_134",
+    "checkedAt": "2026-07-09T13:37:46.281Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "我这边刚收到会员运营的淡季短信召回需求，周一会前要先给法务看口径。名单里有手机号、身份证后四位、入住城市、消费频次、生日月份，还有“商务客/亲子客”标签；注册时",
+    "note": "缺少核心材料：真实授权记录、外包合同、发送日志、退订回执和注销处理结果均未提供，仅凭四份法规无法完成具体的合规检查。请补充上述材料或调整任务为法规框架梳理。 开头表述略显模板化，建议改为更自然的业务沟通方式，如“会员运营提出了淡季短信召回需求，需要法务审核口径”。补充时要写清数据来源、覆盖范围、地区年份、统计口径或附件位置，确保后续答案能基于真实材料给出具体判断。",
+    "categories": [
+      "prompt_style"
+    ]
+  },
+  {
+    "row": 135,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=135&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783604266282_135",
+    "checkedAt": "2026-07-09T13:38:05.832Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "直播间周五想把左旋肉碱类保健食品重新上架，上一版被平台退回后运营很急。素材包里有主播口播、详情页卖点、达人前后对比图、客服承诺和购物车标题，“吃完瘦”“不反弹”",
+    "note": "附件缺少产品批准文件、广告审查材料、达人图片来源、客服承诺依据和平台退回记录，无法支撑具体产品合规判断；请补充或调整任务范围。 附件条数问题：L2 当前附件约3条，要求4-8条；请按核心任务补齐必要附件，或合并/删除非核心材料，避免附件数量与任务层级不匹配。请补充能直接支持核心任务的数据、案例、原型、截图、政策原文、调研材料或业务记录，避免只给同领域泛材料。",
+    "categories": [
+      "attachment_count"
+    ]
+  },
+  {
+    "row": 136,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=136&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783604285833_136",
+    "checkedAt": "2026-07-09T13:39:36.389Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "街道抛来一个养老助餐点运营机会，理事会周三前要决定要不要投。我们有社区厨房合作方和志愿者队伍，但还没承接过政府购买服务；助餐、送餐、食品安全、补贴对象、基本养老",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 140,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=140&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783604376390_140",
+    "checkedAt": "2026-07-09T13:40:00.491Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "物业工程群把雨水井和隔油池清掏排期排到周五，外包队只发了营业执照、报价单和两张工人身份证。有限空间作业审批表、监护人安排、通风检测记录、应急装备、培训记录和外包",
+    "note": "题目表达过于正式和结构化，像任务指令而非真实用户表达。建议改为更自然的语气，如“外包队资料不全，周五能进场吗？帮我列个清单和准入意见”。 附件条数问题：L2 当前附件约1条，要求4-8条；请按核心任务补齐必要附件，或合并/删除非核心材料，避免附件数量与任务层级不匹配。请把报告式、材料式说法改成真实用户会提出的决策、比较、整理、建议需求，保留预算、偏好、限制和实际用途。",
+    "categories": [
+      "attachment_count",
+      "scene_naturalness",
+      "prompt_style"
+    ]
+  },
+  {
+    "row": 141,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=141&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783604400492_141",
+    "checkedAt": "2026-07-09T13:40:15.679Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "我早上收到后勤主任发来的食堂承包商换季菜单和家长投诉截图，下周一就想换新菜单，下午还要面对家委会追问。承包商只给了菜单、供货商名单和几张冷柜照片，食品留样记录、",
+    "note": "附件条数问题：L2 当前附件约3条，要求4-8条；请按核心任务补齐必要附件，或合并/删除非核心材料，避免附件数量与任务层级不匹配。请按任务层级调整附件数量，L1保持0-3条，L2保持4-8条；优先保留能直接支撑核心任务的材料。具体可改为：将L2附件调整为4-8条；不足时补充支撑材料，过多时合并或删除非核心附件。修改后应让审核人一眼看出问题原因、需要补充的材料、应补到哪个字段，以及出题人可以直接执。",
+    "categories": [
+      "attachment_count"
+    ]
+  },
+  {
+    "row": 142,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=142&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783604415680_142",
+    "checkedAt": "2026-07-09T13:41:33.588Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "连锁药房慢病复购入口这周要灰度：老会员拍处方，药师审核后系统把常用处方药配送到家，运营还排了“买二送一”“复购立减”的位置。法务这次集中追处方真实性、禁售药品拦",
+    "note": "缺少连锁药房自身业务数据、系统流程、药师排班、配送协议等具体信息，仅凭法规无法完成灰度评估。请补充药房内部材料或明确假设条件。 附件条数问题：L2 当前附件约2条，要求4-8条；请按核心任务补齐必要附件，或合并/删除非核心材料，避免附件数量与任务层级不匹配。补充时要写清数据来源、覆盖范围、地区年份、统计口径或附件位置，确保后续答案能基于真实材料给出具体判断。",
+    "categories": [
+      "attachment_count"
+    ]
+  },
+  {
+    "row": 143,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=143&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783604493589_143",
+    "checkedAt": "2026-07-09T13:42:01.083Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "合作的一家社区诊所想这个月递交医保定点申请，负责人先发了营业执照、医疗机构执业许可证和一份自查表，但药品耗材追溯码、影像结果上传、医技人员资质、价格执行、基金使",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 144,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=144&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783604521084_144",
+    "checkedAt": "2026-07-09T13:42:40.432Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "财务把公益项目后台捐赠名单导出来，里面有企业捐款、员工配捐、物资折价和几笔备注含糊的“公益合作款”。捐赠人催着要公益事业捐赠票据和税前扣除材料，但项目组只零散留",
+    "note": "附件三PDF未提取到正文，请检查附件是否可读或补充可读取的版本。 附件条数问题：L2 当前附件约3条，要求4-8条；请按核心任务补齐必要附件，或合并/删除非核心材料，避免附件数量与任务层级不匹配。请更换可访问链接、上传附件原文，或在附件内容列补充足够正文摘录和数据口径，避免在缺少真实材料时误判通过。修改时请优先处理会影响数据接收和答案落地的问题，确保出题人能直接照着改。",
+    "categories": [
+      "attachment_read_failed",
+      "attachment_count"
+    ]
+  },
+  {
+    "row": 145,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=145&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783604560434_145",
+    "checkedAt": "2026-07-09T13:43:38.058Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "周五前要定达人脚本，运营把“敏感肌急救精华”的三段短视频口播、详情页首屏文案和前后对比图都放进排期表，投放链接已经约好达人账号。现在最难定的是“三天退红”“医美",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 146,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=146&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783604618059_146",
+    "checkedAt": "2026-07-09T13:43:46.756Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "明天客户周会要给销售一个能上桌的口径：官网预约试用、展会扫码、公众号留资这三路线索，是否能先接入海外CRM，哪些字段先留在境内。现有材料只有字段清单、供应商标准",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 147,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=147&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783604626757_147",
+    "checkedAt": "2026-07-09T13:44:34.098Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "社区工作人员让我准备下周协调会材料，业委会群里已经吵了两晚：电梯广告一年18万元到底进了哪里，物业说抵了保洁和维保，业主代表要求看合同、入账流水和分摊明细。偏偏",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 148,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=148&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783604674099_148",
+    "checkedAt": "2026-07-09T13:44:45.383Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "招聘小程序的“AI初筛”计划在2026年7月灰度，现在产品已经把A档优先展示、B档抽看、C档沉底的后台样式画好了。麻烦在上线评审前把候选人会看到什么、HR后台能",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 149,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=149&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783604685384_149",
+    "checkedAt": "2026-07-09T13:45:13.881Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "我这边负责的本地生活平台想把“城市周末民宿”专题排进下周首页，但招商给来的30套房源还只是散资料：证照照片、房屋图、消防承诺书、价格表各有一些，完整房源明细表还",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "row": 121,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=121&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783636800511_121",
+    "checkedAt": "2026-07-09T22:41:23.913Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "两家付费客户会先承受这次灰度的真实影响：生成式客服助手准备下周开放，产品说明它会接企业知识库、FAQ 和工单，自动生成回复与摘要，客户后台保留人工转接，并称不会",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 122,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=122&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783636883917_122",
+    "checkedAt": "2026-07-09T22:41:37.909Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "物业经理把业委会追问清单转给我，会议安排在周四，资料包仍只有消防禁停规定、集中充电设置解读和2025年以旧换新政策。巡查照片显示有电动自行车停在门厅、楼梯口和疏",
+    "note": "场景表达不自然：物业经理的日常治理工作被包装成双轨推进的复杂流程，要求交付正式操作指引和矩阵，更像咨询项目而非真实业务需求。建议简化表达，直接描述要解决的问题和期望的辅助材料。请把报告式、材料式说法改成真实用户会提出的决策、比较、整理、建议需求，保留预算、偏好、限制和实际用途。具体可改为：改为：物业经理需要准备周四会议材料，请根据现有资料整理一份现场清理和后续勘查的行动清单，并说明哪些事项需要居。",
+    "categories": [
+      "scene_naturalness",
+      "prompt_style"
+    ]
+  },
+  {
+    "row": 123,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=123&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783636897910_123",
+    "checkedAt": "2026-07-09T22:41:45.643Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "退回件数和改稿次数在月底排期前不断上升，低糖高蛋白代餐粉却还同时流转着直播脚本、详情页草稿、包装背面图和达人短视频等多个版本。“控糖”“饭前一杯少吃主食”“饱腹",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 134,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=134&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783636905646_134",
+    "checkedAt": "2026-07-09T22:41:57.930Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "周一上午法务要看淡季短信召回方案，今天必须先决定六类名单字段怎么处理。手机号、身份证后四位、入住城市、消费频次、生日月份和“商务客/亲子客”标签已经出现在业务底",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 135,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=135&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783636917932_135",
+    "checkedAt": "2026-07-09T22:42:08.607Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "违规件数和退回原因突然成为周五改稿会的焦点：上一版左旋肉碱类保健食品直播脚本已被平台打回，但运营群里仍在反复试探“吃完瘦”“不反弹”“安全不伤身”。主播口播、详",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  }
+]

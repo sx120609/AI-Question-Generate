@@ -1,0 +1,28 @@
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>质检完成</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background:#f6f7fb; padding:24px; color:#111827; }
+    .card { max-width:720px; margin:0 auto; background:white; border-radius:16px; padding:24px; box-shadow:0 8px 28px rgba(0,0,0,.08); }
+    h1 { margin:0 0 12px; font-size:24px; }
+    .ok { color:#16a34a; } .bad { color:#dc2626; }
+    .meta { color:#6b7280; margin-bottom:16px; }
+    .box { background:#f9fafb; border:1px solid #e5e7eb; border-radius:12px; padding:14px; line-height:1.7; }
+    .tip { margin-top:18px; color:#374151; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>✅ 质检完成</h1>
+    <div class="meta">工作表：7.08 L2作业表 ｜ 行号：140 ｜ 已写入 AT / AU 列</div>
+    <p><b>题目：</b>进场审批卡住了：物业工程群已经排好周五清掏雨水井和隔油池，外包队却只发来营业执照、报价单和两张工人身份证。物业经理需要在放行前判断这些基础资料能否支撑有限空间作</p>
+    <p><b>质检状态：</b><span class="bad">❌不通过</span></p>
+    <div class="box"><b>质检意见：</b><br>场景表达不自然：物业经理日常审批决策更自然的诉求是直接询问能否放行、需要补充哪些材料，而非要求生成正式会议简报和情景模型。请调整表达方式，使其更贴近真实业务对话。 产物要求生硬：核心任务是判断能否放行，但题目硬性要求生成docx会议简报和xlsx情景模型，显得不自然。请让产物自然服务于决策，例如直接给出放行建议和所需材料清单。</div>
+    <p class="tip">现在可以关闭这个页面，回到飞书表格查看「质检状态」和「质检意见」。</p>
+  </div>
+</body>
+</html>

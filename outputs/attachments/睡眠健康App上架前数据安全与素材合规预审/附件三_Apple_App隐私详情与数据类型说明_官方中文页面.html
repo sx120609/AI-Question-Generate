@@ -1,0 +1,1845 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+	<meta charset="utf-8" />
+<meta name="Author" content="Apple Inc." />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="icon" href="/favicon.ico" />
+<link rel="mask-icon" href="/apple-logo.svg" color="#333333">
+
+<link rel="stylesheet" href="/assets/styles/global.dist.css?34212621148" type="text/css" />
+<link rel="stylesheet" href="/assets/styles/dark-mode.css?34212621148" type="text/css" media="(prefers-color-scheme: dark)" data-color-scheme="dark" />
+<link rel="stylesheet" href="/assets/styles/localization.css?34212621148" type="text/css" />
+
+<script src="/assets/scripts/lib/jquery/jquery-3.6.0.min.js?35212621148"></script>
+<script src="/assets/scripts/settings.js?35212621148"></script>
+<script src="/assets/scripts/language-locales.js?35212621148"></script>
+<script src="/assets/scripts/DeveloperBreadcrumbs.js?35212621148"></script>
+<script src="/assets/metrics/scripts/analytics-module.js?35212621148"></script>
+
+<script async src="/assets/scripts/retinate.js?35212621148"></script>
+<script src="/assets/scripts/global-logout.js?35212621148"></script>
+
+<script async crossorigin src="https://sfss.cdn-apple.com/2.0.0-beta.2/sf-symbol.js?15222612148"></script>
+<link rel="stylesheet" href="https://sf-saas.cdn-apple.com/2.4.0-beta.0/animations/all.css" type="text/css" />
+
+
+
+<template id="account-menu-authenticated-template">
+  <div
+    class="account-menu-user-header"
+    role="banner"
+    aria-label="User information"
+    data-aria-label="userInformation"
+  >
+    <div
+      class="account-menu-avatar"
+      data-slot="initial"
+      aria-hidden="true"
+    ></div>
+    <div class="account-menu-user-info">
+      <div class="account-menu-user-name" data-slot="name"></div>
+      <div class="account-menu-user-email" data-slot="email"></div>
+    </div>
+  </div>
+  <hr class="account-menu-divider" role="separator" />
+  <nav aria-label="Account actions" data-aria-label="accountActions">
+    <a href="/account" class="account-menu-link">
+      <span class="account-menu-link-icon-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117.045 70.459" focusable="false" class="account-menu-link-icon" aria-hidden="true" style="width: 1.17045em; overflow: visible;">
+        <path fill="currentColor" d="M58.496 84.972C85.999 84.972 108.321 62.701 108.321 35.198C108.321 7.695 85.999-14.575 58.496-14.575C31.045-14.575 8.723 7.695 8.723 35.198C8.723 62.701 31.045 84.972 58.496 84.972ZM58.496 76.704C35.551 76.704 17.031 58.143 17.031 35.198C17.031 12.254 35.551-6.308 58.496-6.308C81.441-6.308 100.002 12.254 100.002 35.198C100.002 58.143 81.441 76.704 58.496 76.704ZM91.931 67.386L91.775 66.837C89.342 59.663 76.437 51.8 58.496 51.8C40.576 51.8 27.723 59.652 25.269 66.805L25.113 67.386C33.938 76.078 49.004 81.148 58.507 81.148C68.082 81.148 83.032 76.12 91.931 67.386ZM58.496 43.534C67.894 43.637 75.255 35.61 75.255 25.113C75.255 15.238 67.862 7.065 58.496 7.065C49.182 7.065 41.727 15.238 41.789 25.113C41.841 35.61 49.099 43.43 58.496 43.534Z"/>
+        </svg>
+      </span>
+      <span data-slot="accountOverview"><!-- Account --></span>
+    </a>
+    <a href="https://appstoreconnect.apple.com" class="account-menu-link">
+      <span class="account-menu-link-icon-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114.927 70.459" focusable="false" class="account-menu-link-icon" aria-hidden="true" style="width: 1.14927em; overflow: visible;">
+        <defs>
+          <mask id="sf-app-badge-mask-0">
+            <rect x="-25" y="-25" width="164.927" height="120.459" fill="white"/>
+            <path d="M94.508 21.908C107.427 21.908 118.135 11.252 118.135-1.719C118.135-14.637 107.427-25.294 94.508-25.294C81.59-25.294 70.933-14.637 70.933-1.719C70.933 11.252 81.59 21.908 94.508 21.908Z" fill="black"/>
+          </mask>
+        </defs>
+        <path fill="currentColor" mask="url(#sf-app-badge-mask-0)" d="M39.031 80.204L75.902 80.204C84.459 80.204 91.145 77.713 95.537 73.321C100.084 68.877 102.472 62.18 102.472 53.633L102.472 16.825C102.472 8.279 100.095 1.592 95.537-2.862C91.083-7.316 84.459-9.745 75.902-9.745L39.031-9.745C30.475-9.745 23.736-7.254 19.344-2.862C14.849 1.582 12.461 8.279 12.461 16.825L12.461 53.633C12.461 62.18 14.838 68.867 19.344 73.321C23.757 77.734 30.475 80.204 39.031 80.204ZM39.031 72.35C32.941 72.35 28.223 70.626 25.125 67.591C21.987 64.442 20.314 59.776 20.314 53.633L20.314 16.825C20.314 10.683 21.987 6.017 25.125 2.868C28.171-0.115 32.941-1.891 39.031-1.891L75.902-1.891C81.941-1.891 86.7-0.167 89.797 2.868C92.946 6.017 94.619 10.683 94.619 16.825L94.619 53.633C94.619 59.776 92.946 64.442 89.797 67.591C86.752 70.574 81.941 72.35 75.902 72.35Z"/>
+        <path fill="currentColor" d="M94.508 15.282C103.767 15.282 111.458 7.643 111.458-1.667C111.458-10.936 103.767-18.565 94.508-18.565C85.25-18.565 77.61-10.936 77.61-1.667C77.61 7.643 85.25 15.282 94.508 15.282Z"/>
+        </svg>
+      </span>
+      <span data-slot="appStoreConnect"><!-- App Store Connect --></span>
+    </a>
+    <a href="/account/resources/" class="account-menu-link">
+      <span class="account-menu-link-icon-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128.282 70.459" focusable="false" class="account-menu-link-icon" aria-hidden="true" style="width: 1.28282em; overflow: visible;">
+        <path fill="currentColor" d="M34.577 77.349L45.175 77.349C46.163 77.349 46.88 77.608 47.607 78.336L55.151 85.817C61.313 92.021 66.975 91.969 73.137 85.817L80.681 78.336C81.409 77.608 82.126 77.349 83.165 77.349L93.712 77.349C102.405 77.349 106.47 73.325 106.47 64.59L106.47 53.991C106.47 53.004 106.792 52.287 107.509 51.549L114.939 44.015C121.142 37.853 121.091 32.192 114.939 25.967L107.509 18.486C106.792 17.758 106.47 16.989 106.47 15.991L106.47 5.455C106.47-3.239 102.457-7.366 93.712-7.366L83.165-7.366C82.126-7.366 81.409-7.626 80.681-8.353L73.137-15.772C66.965-21.997 61.313-22.007 55.141-15.772L47.607-8.353C46.89-7.636 46.163-7.366 45.175-7.366L34.577-7.366C25.831-7.366 21.818-3.342 21.818 5.455L21.818 15.991C21.818 16.989 21.548 17.758 20.831 18.486L13.349 25.967C7.146 32.192 7.198 37.853 13.349 44.015L20.831 51.549C21.548 52.287 21.818 53.004 21.818 53.991L21.818 64.59C21.818 73.284 25.831 77.349 34.577 77.349ZM34.577 69.599C30.256 69.599 29.568 68.911 29.568 64.59L29.568 51.431C29.568 49.926 29.091 48.795 28.063 47.768L18.81 38.555C15.745 35.45 15.745 34.585 18.81 31.427L28.063 22.277C29.091 21.198 29.568 20.056 29.568 18.603L29.568 5.455C29.568 1.009 30.193 0.436 34.577 0.436L47.725 0.436C49.23 0.436 50.371 0.01 51.399-1.121L60.601-10.323C63.707-13.428 64.582-13.428 67.688-10.323L76.889-1.121C77.969 0.01 79.11 0.436 80.564 0.436L93.712 0.436C98.033 0.436 98.731 1.071 98.731 5.455L98.731 18.603C98.731 20.056 99.208 21.198 100.277 22.277L109.489 31.427C112.595 34.585 112.595 35.45 109.489 38.555L100.277 47.768C99.208 48.795 98.731 49.926 98.731 51.431L98.731 64.59C98.731 68.911 98.033 69.599 93.712 69.599L80.564 69.599C79.11 69.599 77.969 70.024 76.889 71.103L67.688 80.357C64.582 83.411 63.707 83.411 60.601 80.357L51.399 71.103C50.371 70.024 49.23 69.599 47.725 69.599Z"/>
+        <path fill="currentColor" d="M58.849 58.158C60.475 58.158 61.832 57.391 62.776 55.89L85.125 20.782C85.653 19.819 86.296 18.721 86.296 17.643C86.296 15.478 84.337 14.079 82.317 14.079C81.063 14.079 79.799 14.805 78.918 16.265L58.631 48.77L49.02 36.306C47.881 34.742 46.793 34.348 45.466 34.348C43.301 34.348 41.695 36.036 41.695 38.223C41.695 39.269 42.089 40.316 42.804 41.259L54.663 55.89C55.917 57.505 57.201 58.158 58.849 58.158Z"/>
+        </svg>
+      </span>
+      <span data-slot="certificatesIDsProfiles"
+        ><!-- Certificates, IDs & Profiles --></span
+      >
+    </a>
+    <a href="/events/view/my-events" class="account-menu-link">
+      <span class="account-menu-link-icon-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 107.046 70.459" focusable="false" class="account-menu-link-icon" aria-hidden="true" style="width: 1.07046em; overflow: visible;">
+        <path fill="currentColor" d="M27.572 87.552L79.423 87.552C89.479 87.552 94.586 82.415 94.586 72.234L94.586-1.796C94.586-12.028 89.51-17.113 79.423-17.113L64.916-17.113C63.29-17.113 62.15-15.963 62.15-14.171C62.15-9.111 58.679-5.566 53.523-5.566C48.327-5.566 44.793-9.111 44.793-14.171C44.793-15.963 43.705-17.113 42.027-17.113L27.572-17.113C17.495-17.113 12.461-12.028 12.461-1.796L12.461 72.234C12.461 82.415 17.516 87.552 27.572 87.552ZM28.007 79.699C22.924 79.699 20.314 76.944 20.314 72.11L20.314-1.671C20.314-6.547 22.924-9.26 28.007-9.26L41.902-9.26L37.353-12.068C38.234-3.494 44.566 2.08 53.523 2.08C62.439 2.08 68.813-3.494 69.693-12.068L65.093-9.26L79.04-9.26C84.071-9.26 86.691-6.547 86.691-1.671L86.691 72.11C86.691 76.944 84.071 79.699 79.04 79.699Z"/>
+        <path fill="currentColor" d="M35.043 19.226L72.065 19.226C73.786 19.226 75.061 17.91 75.061 16.179C75.061 14.5 73.786 13.225 72.065 13.225L35.043 13.225C33.271 13.225 31.986 14.5 31.986 16.179C31.986 17.91 33.271 19.226 35.043 19.226Z"/>
+        <path fill="currentColor" d="M35.043 36.582L52.571 36.582C54.302 36.582 55.587 35.245 55.587 33.587C55.587 31.866 54.302 30.54 52.571 30.54L35.043 30.54C33.271 30.54 31.986 31.866 31.986 33.587C31.986 35.245 33.271 36.582 35.043 36.582Z"/>
+        </svg>
+      </span>
+      <span data-slot="viewEvents"><!-- Events --></span>
+    </a>
+    <a href="https://feedbackassistant.apple.com" class="account-menu-link">
+      <span class="account-menu-link-icon-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132.507 70.459" focusable="false" class="account-menu-link-icon" aria-hidden="true" style="width: 1.32507em; overflow: visible;">
+        <path fill="currentColor" d="M42.493 88.831C44.907 88.831 46.565 87.566 49.465 84.946L66.353 69.961L97.694 69.961C112.219 69.961 120.056 61.896 120.056 47.599L120.056 10.188C120.056-4.109 112.219-12.174 97.694-12.174L34.823-12.174C20.298-12.174 12.461-4.13 12.461 10.188L12.461 47.599C12.461 61.917 20.298 69.961 34.823 69.961L37.126 69.961L37.126 82.645C37.126 86.427 39.064 88.831 42.493 88.831ZM44.492 79.91L44.492 65.776C44.492 63.103 43.497 62.108 40.824 62.108L34.844 62.108C24.95 62.108 20.314 57.099 20.314 47.578L20.314 10.209C20.314 0.729 24.95-4.269 34.844-4.269L97.673-4.269C107.524-4.269 112.202 0.729 112.202 10.209L112.202 47.578C112.202 57.099 107.524 62.108 97.673 62.108L66.034 62.108C63.349 62.108 61.95 62.512 60.104 64.43Z"/>
+        <path fill="currentColor" d="M66.232 37.704C68.595 37.704 69.943 36.398 69.994 33.827L70.709 8.082C70.709 5.615 68.792 3.739 66.181 3.739C63.558 3.739 61.693 5.563 61.745 8.03L62.419 33.827C62.47 36.346 63.808 37.704 66.232 37.704ZM66.232 53.574C69.053 53.574 71.511 51.365 71.511 48.503C71.511 45.641 69.105 43.432 66.232 43.432C63.401 43.432 60.995 45.693 60.995 48.503C60.995 51.313 63.453 53.574 66.232 53.574Z"/>
+        </svg>
+      </span>
+      <span data-slot="feedbackAssistant"><!-- Feedback Assistant --></span>
+    </a>
+    <a href="/forums/" class="account-menu-link">
+      <span class="account-menu-link-icon-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 165.127 70.459" focusable="false" class="account-menu-link-icon" aria-hidden="true" style="width: 1.65127em; overflow: visible;">
+        <defs>
+          <mask id="sf-bubble-left-and-bubble-right-mask-0">
+            <rect x="-25" y="-25" width="215.127" height="120.459" fill="white"/>
+            <path d="M85.887 73.343L101.693 73.343L117.981 87.274C120.963 89.832 122.58 91.127 124.952 91.127C128.308 91.127 130.225 88.734 130.225 85.046L130.225 73.343L131.212 73.343C145.253 73.343 152.669 65.782 152.669 51.948L152.669 25.538C152.669 11.693 145.253 4.122 131.212 4.122L85.887 4.122C71.835 4.122 64.471 11.693 64.471 25.538L64.471 51.969C64.471 65.803 71.835 73.343 85.887 73.343Z" fill="black"/>
+          </mask>
+        </defs>
+        <path fill="currentColor" mask="url(#sf-bubble-left-and-bubble-right-mask-0)" d="M34.823 61.571L37.126 61.571L37.126 74.317C37.126 78.036 39.064 80.451 42.493 80.451C44.907 80.451 46.565 79.176 49.465 76.556L66.353 61.571L97.694 61.571C112.219 61.571 120.056 53.506 120.056 39.209L120.056 1.86C120.056-12.448 112.219-20.502 97.694-20.502L34.823-20.502C20.298-20.502 12.461-12.521 12.461 1.86L12.461 39.209C12.461 53.579 20.298 61.571 34.823 61.571ZM34.844 53.717C24.95 53.717 20.314 48.719 20.314 39.188L20.314 1.881C20.314-7.651 24.95-12.659 34.844-12.659L97.673-12.659C107.524-12.659 112.202-7.651 112.202 1.881L112.202 39.188C112.202 48.719 107.524 53.717 97.673 53.717L66.034 53.717C63.349 53.717 61.95 54.122 60.104 56.05L44.492 71.52L44.492 57.385C44.492 54.712 43.497 53.717 40.824 53.717Z"/>
+        <path fill="currentColor" d="M85.887 73.343L101.693 73.343L117.981 87.274C120.963 89.832 122.58 91.127 124.952 91.127C128.308 91.127 130.225 88.734 130.225 85.046L130.225 73.343L131.212 73.343C145.253 73.343 152.669 65.782 152.669 51.948L152.669 25.538C152.669 11.693 145.253 4.122 131.212 4.122L85.887 4.122C71.835 4.122 64.471 11.693 64.471 25.538L64.471 51.969C64.471 65.803 71.835 73.343 85.887 73.343ZM86.023 65.489C76.477 65.489 72.324 61.006 72.324 51.822L72.335 25.622C72.335 16.49 76.477 11.975 86.023 11.975L131.117 11.975C140.675 11.975 144.764 16.49 144.764 25.622L144.764 51.79C144.764 60.934 140.664 65.489 131.117 65.489L126.671 65.489C124.548 65.489 122.859 66.743 122.859 69.509L122.859 82.278L106.39 67.532C104.72 65.987 103.373 65.489 101.392 65.489Z"/>
+        </svg>
+      </span>
+      <span data-slot="forums"><!-- Forums --></span>
+    </a>
+  </nav>
+  <hr class="account-menu-divider" role="separator" />
+  <nav aria-label="Sign out" data-aria-label="signOut">
+    <a href="/logout/" class="account-menu-link">
+      <span class="account-menu-link-icon-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138.282 70.459" focusable="false" class="account-menu-link-icon" aria-hidden="true" style="width: 1.38282em; overflow: visible;">
+        <defs>
+          <mask id="sf-rectangle-portrait-and-arrow-right-mask-0">
+            <rect x="-25" y="-25" width="188.282" height="120.459" fill="white"/>
+            <path d="M58.186 48.243L120.556 48.243C127.658 48.243 133.497 42.353 133.497 35.198C133.497 28.043 127.658 22.154 120.556 22.154L58.186 22.154C51.083 22.154 45.193 28.043 45.193 35.198C45.193 42.353 51.083 48.243 58.186 48.243Z" fill="black"/>
+          </mask>
+        </defs>
+        <path fill="currentColor" mask="url(#sf-rectangle-portrait-and-arrow-right-mask-0)" d="M32.893 87.552L74.164 87.552C87.266 87.552 94.586 80.285 94.586 67.12L94.586 3.318C94.586-9.794 87.266-17.113 74.164-17.113L32.893-17.113C19.791-17.113 12.461-9.794 12.461 3.318L12.461 67.12C12.461 80.285 19.791 87.552 32.893 87.552ZM32.882 79.699C24.847 79.699 20.314 75.156 20.314 67.12L20.314 3.308C20.314-4.717 24.847-9.26 32.882-9.26L74.175-9.26C82.2-9.26 86.691-4.717 86.691 3.308L86.691 67.12C86.691 75.156 82.2 79.699 74.175 79.699Z"/>
+        <path fill="currentColor" d="M54.363 35.198C54.363 37.271 56.103 39.073 58.186 39.073L107.808 39.073L120.98 38.494C122.783 38.39 124.275 37.001 124.275 35.198C124.275 33.396 122.783 32.007 120.98 31.903L107.808 31.323L58.186 31.323C56.103 31.323 54.363 33.126 54.363 35.198ZM102.999 18.645C102.999 19.578 103.393 20.614 104.159 21.329L112.206 28.858L118.971 35.198L112.206 41.528L104.159 49.057C103.393 49.772 102.999 50.756 102.999 51.689C102.999 53.74 104.439 55.284 106.46 55.284C107.485 55.284 108.252 54.849 109.019 54.082L124.515 38.027C125.489 37.053 125.821 36.183 125.821 35.198C125.821 34.214 125.489 33.344 124.515 32.37L109.019 16.304C108.252 15.537 107.485 15.102 106.46 15.102C104.439 15.102 102.999 16.584 102.999 18.645Z"/>
+        </svg>
+      </span>
+      <span data-slot="signOut"><!-- Sign out --></span>
+    </a>
+  </nav>
+</template>
+
+<link rel="stylesheet" href="/assets/includes/global-session-nav/session.css" type="text/css" />
+
+<script>
+  // Synchronously disables the account link before first paint so the user
+  // cannot navigate away before session.js registers its click listener.
+  (function () {
+    var accountLink = document.querySelector(".globalnav-link-account");
+
+    if (accountLink) {
+      var href = accountLink.getAttribute("href");
+
+      if (href) {
+        accountLink.dataset.pendingHref = href;
+        accountLink.removeAttribute("href");
+        accountLink.style.cursor = "default";
+      }
+    }
+  })();
+</script>
+
+<script type="module" src="/assets/includes/global-session-nav/session.js"></script>
+
+
+	<link rel="stylesheet" href="https://www.apple.com/wss/fonts?families=SF+Pro+SC,v1|SF+Pro,v3|SF+Pro+Icons,v3">
+<link rel="stylesheet" href="https://www.apple.com/wss/fonts?family=SF+Mono&v=2" type="text/css" />
+<link rel="stylesheet" href="https://www.apple.com/wss/fonts?family=Apple+Icons&amp;v=1" type="text/css" />
+	<title>App 隐私保护的详细说明 - App Store - Apple Developer</title>
+	<meta name="omni_page" content="App Privacy Details - App Store - (Chinese)" />
+	<meta name="Description" content="了解如何在 App Store Connect 中提供 App 隐私保护做法的详细信息，以便在 App Store 产品页面上显示。"  />
+
+	<meta property="og:locale" content="zh-CN" />
+	<meta property="og:site_name" content="Apple Developer" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://developer.apple.com/news/images/og/app-store-og.png" />
+	<meta property="og:title" content="App 隐私保护的详细说明 - App Store - Apple Developer"  />
+	<meta property="og:description" content="了解如何在 App Store Connect 中提供 App 隐私保护做法的详细信息，以便在 App Store 产品页面上显示。"  />
+	<meta property="og:url" content="https://developer.apple.com/cn/app-store/app-privacy-details/" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content="https://developer.apple.com/news/images/og/app-store-og-twitter.png" />
+	<meta name="twitter:description" content="了解如何在 App Store Connect 中提供 App 隐私保护做法的详细信息，以便在 App Store 产品页面上显示。"  />
+	<meta name="twitter:title" content="App 隐私保护的详细说明 - App Store - Apple Developer"  />
+	<meta name="twitter:url" content="https://developer.apple.com/cn/app-store/app-privacy-details/">
+
+	<link rel="alternate" href="https://developer.apple.com/kr/app-store/app-privacy-details/" hreflang="ko-KR" />
+	<link rel="alternate" href="https://developer.apple.com/jp/app-store/app-privacy-details/" hreflang="ja-JP" />
+	<link rel="alternate" href="https://developer.apple.com/cn/app-store/app-privacy-details/" hreflang="zh-CN" />
+	<link rel="alternate" href="https://developer.apple.com/app-store/app-privacy-details/" hreflang="en" />
+	<link rel="canonical" href="https://developer.apple.com/cn/app-store/app-privacy-details/" />
+
+	<link rel="stylesheet" href="/app-store/styles/app-store.css" type="text/css">
+	<link rel="stylesheet" href="/app-store/app-privacy-details/styles/app-privacy-details.css?1" type="text/css">
+</head>
+
+<body id="app-privacy-details" class="app-store">
+	<script>
+	// Execute immediately to avoid UI flash
+	(function () {
+		// Prevent React dev mode from running this multiple times
+		if (window.__didRunColorThemeScript) {
+			return;
+		}
+		window.__didRunColorThemeScript = true;
+
+		const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+		const body = document.body;
+
+		// If theme-dark or theme-light is already applied, do nothing and lock it
+		if (body.classList.contains("theme-dark") || body.classList.contains("theme-light")) {
+
+			// Set the data-color-scheme attribute based on the existing theme
+			body.setAttribute('data-color-scheme', body.classList.contains("theme-dark") ? "dark" : "light");
+
+			// Prevent future modifications
+			window.__disableColorScheme = true;
+
+			// Hide the color picker immediately
+			const style = document.createElement('style');
+			style.textContent = '.color-scheme-toggle { display: none !important; }';
+			document.head.appendChild(style);
+
+			return;
+		}
+
+		// Otherwise, set theme normally based on user settings or system preference
+		if (window.Settings && window.Settings.preferredColorScheme) {
+			const colorTheme = (window.Settings.preferredColorScheme === 'auto') && !prefersDark ? 'light'
+				: (window.Settings.preferredColorScheme === 'light') ? 'light' : 'dark';
+			body.setAttribute('data-color-scheme', colorTheme);
+			colorTheme === "dark" ? body.classList.add("theme-dark") : body.classList.add("theme-light");
+		} else {
+			const colorTheme = prefersDark ? 'dark' : 'light';
+			body.setAttribute('data-color-scheme', colorTheme);
+			prefersDark ? body.classList.add("theme-dark") : body.classList.add("theme-light");
+		}
+	})();
+</script>
+
+
+<link rel="stylesheet" href="/assets/styles/suggest-lang.css?34212621148" type="text/css" />
+<div id="suggest-lang" class="ribbon hide" lang="en">
+	<div class="ribbon-content-wrapper">
+		<div class="ribbon-content row">
+			<div class="column large-12 large-centered">
+				<p><a href="#" id="suggest-link" class="ribbon-link more">View in English</a></p>
+				<button id="suggest-closer" class="icon icon-after icon-reset" aria-label="Dismiss language suggestion" tabindex="0"></button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="/assets/scripts/suggest-lang.js?35212621148"></script>
+<link rel="stylesheet" href="/assets/styles/globalnav.css?34212621148" type="text/css" />
+<nav id="globalnav" lang="zh-CN" dir="ltr" aria-label="全部网页" class="globalnav js   " style="--r-globalnav-text-zoom-scale: 1;">
+	<div class="globalnav-content">
+		<div class="globalnav-item globalnav-menuback"><button aria-label="主菜单" class="globalnav-menuback-button"><span class="globalnav-chevron-icon"><svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+						<path d="m1.5618 24.0621 6.5581-6.4238c.2368-.2319.2407-.6118.0088-.8486-.2324-.2373-.6123-.2407-.8486-.0088l-7 6.8569c-.1157.1138-.1807.2695-.1802.4316.001.1621.0674.3174.1846.4297l7 6.7241c.1162.1118.2661.1675.4155.1675.1577 0 .3149-.062.4326-.1846.2295-.2388.2222-.6187-.0171-.8481z"></path>
+					</svg></span></button></div>
+		<ul id="globalnav-list" class="globalnav-list">
+			<li class="
+	globalnav-item
+	globalnav-item-apple
+	ac-gn-item
+	ac-gn-apple
+">
+				<a href="/cn/" aria-label="Apple 开发者" class="globalnav-link globalnav-link-apple ac-gn-link ac-gn-link-apple-developer" id="ac-gn-firstfocus-small">
+					<span class="ac-gn-link-text globalnav-link-text">Apple 开发者</span>
+				</a>
+			</li>
+			<li class="globalnav-item globalnav-menu">
+				<div class="globalnav-flyout" style="--r-globalnav-flyout-item-total: 0; --r-globalnav-flyout-group-number: 0;">
+					<div class="globalnav-menu-list" style="--r-globalnav-flyout-item-total: 7;">
+						<div class="
+    globalnav-item
+    globalnav-item-getting-started
+    globalnav-item-menu
+    globalnav-item-submenu
+" style="--r-globalnav-flyout-item-number: 0;">
+							<ul class="globalnav-submenu-trigger-group">
+								<li class="globalnav-submenu-trigger-item">
+									<a href="/cn/get-started/" data-topnav-flyout-trigger-compact="true" aria-label="入门汇总" class="globalnav-link globalnav-submenu-trigger-link globalnav-link-getting-started">
+										<span class="globalnav-link-text-container">
+											<span class="globalnav-link-text">入门汇总</span>
+										</span>
+										<span class="globalnav-link-chevron">
+											<svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+												<path d="m8.1155 30.358a.6.6 0 1 1 -.831.8653l-7-6.7242a.6.6 0 0 1 -.0045-.8613l7-6.8569a.6.6 0 1 1 .84.8574l-6.5582 6.4238z"></path>
+											</svg>
+										</span>
+									</a>
+								</li>
+								<li class="globalnav-submenu-trigger-item">
+									<button id="globalnav-menubutton-link-getting-started" class="globalnav-submenu-trigger-button" aria-expanded="false" aria-controls="globalnav-submenu-link-getting-started" aria-label="“入门汇总”菜单" data-topnav-flyout-trigger-regular="true">
+										<span class="globalnav-image-regular globalnav-submenu-button-icon">
+											<svg height="10" viewBox="0 0 10 10" width="10" xmlns="http://www.w3.org/2000/svg">
+												<path d="m4.6725 6.635-2.655-2.667a.445.445 0 0 1 -.123-.304.4331.4331 0 0 1 .427-.439h.006a.447.447 0 0 1 .316.135l2.357 2.365 2.356-2.365a.458.458 0 0 1 .316-.135.433.433 0 0 1 .433.433v.006a.4189.4189 0 0 1 -.123.3l-2.655 2.671a.4451.4451 0 0 1 -.327.14.464.464 0 0 1 -.328-.14z"></path>
+											</svg>
+										</span>
+										<span class="globalnav-image-compact globalnav-submenu-button-icon">
+											<svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+												<path d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"></path>
+											</svg>
+										</span>
+									</button>
+								</li>
+							</ul>
+							<div id="globalnav-submenu-link-getting-started" class="globalnav-flyout globalnav-submenu" aria-labelledby="globalnav-menubutton-link-getting-started" style="--r-globalnav-flyout-item-total: 0; --r-globalnav-flyout-group-number: 0; --r-globalnav-flyout-height: auto; --r-globalnav-flyout-rate: 240ms;">
+								<div class="globalnav-flyout-scroll-container">
+									<div class="globalnav-flyout-content globalnav-submenu-content" style="--r-globalnav-flyout-elevated-group-count: 1; --r-globalnav-flyout-group-total: 2; --r-globalnav-flyout-item-total: 4;">
+										<div class="globalnav-submenu-group globalnav-submenu-group-elevated" style="--r-globalnav-flyout-group-number: 0;">
+
+											<h2 class="globalnav-submenu-header" id="apple-getting-started-heading" style="--r-globalnav-flyout-item-number: 1;">探索“入门汇总”</h2>
+											<ul class="globalnav-submenu-list" aria-labelledby="apple-getting-started-heading">
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 2;"><a href="/cn/get-started/" class="globalnav-submenu-link">概览</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 3;"><a href="/cn/learn/" class="globalnav-submenu-link">学习</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 4;"><a href="/cn/programs/" class="globalnav-submenu-link">Apple Developer Program</a></li>
+											</ul>
+										</div>
+										<div class="globalnav-submenu-group" style="--r-globalnav-flyout-group-number: 1;">
+
+											<h2 class="globalnav-submenu-header" id="apple-learn-heading" style="--r-globalnav-flyout-item-number: 1;">及时了解最新动态</h2>
+											<ul class="globalnav-submenu-list" aria-labelledby="apple-learn-heading">
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 2;"><a href="/cn/news/" class="globalnav-submenu-link">最新动态</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 3;"><a href="/cn/hello/" class="globalnav-submenu-link">开发者你好</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="
+  globalnav-item
+  globalnav-item-platforms
+  globalnav-item-menu
+  globalnav-item-submenu
+" style="--r-globalnav-flyout-item-number: 1;">
+							<ul class="globalnav-submenu-trigger-group">
+								<li class="globalnav-submenu-trigger-item">
+									<a href="/cn/platforms/" aria-label="平台" class="globalnav-link globalnav-submenu-trigger-link globalnav-link-platforms">
+										<span class="globalnav-link-text-container">
+											<span class="globalnav-link-text">平台</span>
+										</span>
+										<span class="globalnav-link-chevron">
+											<svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+												<path d="m8.1155 30.358a.6.6 0 1 1 -.831.8653l-7-6.7242a.6.6 0 0 1 -.0045-.8613l7-6.8569a.6.6 0 1 1 .84.8574l-6.5582 6.4238z"></path>
+											</svg>
+										</span>
+									</a>
+								</li>
+								<li class="globalnav-submenu-trigger-item">
+									<button id="globalnav-menubutton-link-platforms" class="globalnav-submenu-trigger-button" aria-expanded="false" aria-controls="globalnav-submenu-link-platforms" aria-label="“平台”菜单">
+										<span class="globalnav-image-regular globalnav-submenu-button-icon">
+											<svg height="10" viewBox="0 0 10 10" width="10" xmlns="http://www.w3.org/2000/svg">
+												<path d="m4.6725 6.635-2.655-2.667a.445.445 0 0 1 -.123-.304.4331.4331 0 0 1 .427-.439h.006a.447.447 0 0 1 .316.135l2.357 2.365 2.356-2.365a.458.458 0 0 1 .316-.135.433.433 0 0 1 .433.433v.006a.4189.4189 0 0 1 -.123.3l-2.655 2.671a.4451.4451 0 0 1 -.327.14.464.464 0 0 1 -.328-.14z"></path>
+											</svg>
+										</span>
+										<span class="globalnav-image-compact globalnav-submenu-button-icon">
+											<svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+												<path d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"></path>
+											</svg>
+										</span>
+									</button>
+								</li>
+							</ul>
+							<div id="globalnav-submenu-link-platforms" class="globalnav-flyout globalnav-submenu" aria-labelledby="globalnav-menubutton-link-platforms" style="--r-globalnav-flyout-item-total: 0; --r-globalnav-flyout-group-number: 0; --r-globalnav-flyout-height: auto; --r-globalnav-flyout-rate: 240ms;">
+								<div class="globalnav-flyout-scroll-container">
+									<div class="globalnav-flyout-content globalnav-submenu-content" style="--r-globalnav-flyout-elevated-group-count: 1; --r-globalnav-flyout-group-total: 2; --r-globalnav-flyout-item-total: 9;">
+										<!-- Explore -->
+										<div class="globalnav-submenu-group globalnav-submenu-group-elevated" style="--r-globalnav-flyout-group-number: 0;">
+
+											<h2 class="globalnav-submenu-header" id="platforms-apple-heading" style="--r-globalnav-flyout-item-number: 1;">探索“平台”</h2>
+											<ul class="globalnav-submenu-list" aria-labelledby="platforms-apple-heading">
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 2;"><a href="/cn/platforms/" class="globalnav-submenu-link">Apple 平台</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 3;"><a href="/cn/ios/" class="globalnav-submenu-link">iOS</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 4;"><a href="/cn/ipados/" class="globalnav-submenu-link">iPadOS</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 5;"><a href="/cn/macos/" class="globalnav-submenu-link">macOS</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 6;"><a href="/cn/tvos/" class="globalnav-submenu-link">Apple tvOS</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 7;"><a href="/cn/visionos/" class="globalnav-submenu-link">visionOS</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 8;"><a href="/cn/watchos/" class="globalnav-submenu-link">watchOS</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 9;"><a href="/cn/app-store/" class="globalnav-submenu-link">App Store</a></li>
+											</ul>
+										</div>
+										<!--  Featured -->
+										<div class="globalnav-submenu-group" style="--r-globalnav-flyout-group-number: 1;">
+
+											<h2 class="globalnav-submenu-header" id="platforms-learn-heading" style="--r-globalnav-flyout-item-number: 1;">精选</h2>
+											<ul class="globalnav-submenu-list" aria-labelledby="platforms-learn-heading">
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 2;"><a href="/cn/design/" class="globalnav-submenu-link">设计</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 3;"><a href="/cn/distribute/" class="globalnav-submenu-link">分发</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 4;"><a href="/cn/games/" class="globalnav-submenu-link">游戏</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 5;"><a href="/cn/accessories/" class="globalnav-submenu-link">配件</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 6;"><a href="/safari/" class="globalnav-submenu-link">网页<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 7;"><a href="/cn/apple-home/" class="globalnav-submenu-link">Home</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 8;"><a href="/cn/carplay/" class="globalnav-submenu-link">CarPlay 车载</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="
+  globalnav-item
+  globalnav-item-technologies
+  globalnav-item-menu
+  globalnav-item-submenu
+" style="--r-globalnav-flyout-item-number: 2;">
+							<ul class="globalnav-submenu-trigger-group">
+								<li class="globalnav-submenu-trigger-item">
+									<a href="/cn/technologies/" aria-label="技术" class="globalnav-link globalnav-submenu-trigger-link globalnav-link-technologies">
+										<span class="globalnav-link-text-container">
+											<span class="globalnav-link-text">技术</span>
+										</span>
+										<span class="globalnav-link-chevron">
+											<svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+												<path d="m8.1155 30.358a.6.6 0 1 1 -.831.8653l-7-6.7242a.6.6 0 0 1 -.0045-.8613l7-6.8569a.6.6 0 1 1 .84.8574l-6.5582 6.4238z"></path>
+											</svg>
+										</span>
+									</a>
+								</li>
+								<li class="globalnav-submenu-trigger-item">
+									<button id="globalnav-menubutton-link-technologies" class="globalnav-submenu-trigger-button" aria-expanded="false" aria-controls="globalnav-submenu-link-technologies" aria-label="“技术”菜单">
+										<span class="globalnav-image-regular globalnav-submenu-button-icon">
+											<svg height="10" viewBox="0 0 10 10" width="10" xmlns="http://www.w3.org/2000/svg">
+												<path d="m4.6725 6.635-2.655-2.667a.445.445 0 0 1 -.123-.304.4331.4331 0 0 1 .427-.439h.006a.447.447 0 0 1 .316.135l2.357 2.365 2.356-2.365a.458.458 0 0 1 .316-.135.433.433 0 0 1 .433.433v.006a.4189.4189 0 0 1 -.123.3l-2.655 2.671a.4451.4451 0 0 1 -.327.14.464.464 0 0 1 -.328-.14z"></path>
+											</svg>
+										</span>
+										<span class="globalnav-image-compact globalnav-submenu-button-icon">
+											<svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+												<path d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"></path>
+											</svg>
+										</span>
+									</button>
+								</li>
+							</ul>
+							<div id="globalnav-submenu-link-technologies" class="globalnav-flyout globalnav-submenu" aria-labelledby="globalnav-menubutton-link-technologies" style="--r-globalnav-flyout-item-total: 0; --r-globalnav-flyout-group-number: 0; --r-globalnav-flyout-height: auto; --r-globalnav-flyout-rate: 254ms;">
+								<div class="globalnav-flyout-scroll-container">
+									<div class="globalnav-flyout-content globalnav-submenu-content" style="--r-globalnav-flyout-elevated-group-count: 1; --r-globalnav-flyout-group-total: 2; --r-globalnav-flyout-item-total: 8;">
+										<!-- Explore -->
+										<div class="globalnav-submenu-group globalnav-submenu-group-elevated" style="--r-globalnav-flyout-group-number: 0;">
+
+											<h2 class="globalnav-submenu-header" id="technologies-learn-heading" style="--r-globalnav-flyout-item-number: 1;">探索“技术”</h2>
+											<ul class="globalnav-submenu-list" aria-labelledby="technologies-learn-heading">
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 2;"><a href="/cn/technologies/" class="globalnav-submenu-link">概览</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 3;"><a href="/cn/xcode/" class="globalnav-submenu-link">Xcode</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 4;"><a href="/cn/swift/" class="globalnav-submenu-link">Swift</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 5;"><a href="/cn/swiftui/" class="globalnav-submenu-link">SwiftUI</a></li>
+											</ul>
+										</div>
+										<!--  Featured -->
+										<div class="globalnav-submenu-group" style="--r-globalnav-flyout-group-number: 1;">
+
+											<h2 class="globalnav-submenu-header" id="technologies-featured-heading" style="--r-globalnav-flyout-item-number: 1;">精选</h2>
+											<ul class="globalnav-submenu-list" aria-labelledby="technologies-featured-heading">
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 2;"><a href="/documentation/accessibility" class="globalnav-submenu-link">辅助功能<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 3;"><a href="/documentation/appintents" class="globalnav-submenu-link">App Intents<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 4;"><a href="/cn/apple-intelligence/" class="globalnav-submenu-link">Apple 智能</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 5;"><a href="/cn/games/" class="globalnav-submenu-link">游戏</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 6;"><a href="/cn/machine-learning/" class="globalnav-submenu-link">机器学习与 AI</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 7;"><a href="/cn/security/" class="globalnav-submenu-link">安全性</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 8;"><a href="/cn/xcode-cloud/" class="globalnav-submenu-link">Xcode Cloud</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="
+  globalnav-item
+  globalnav-item-community
+  globalnav-item-menu
+  globalnav-item-submenu
+" style="--r-globalnav-flyout-item-number: 3;">
+							<ul class="globalnav-submenu-trigger-group">
+								<li class="globalnav-submenu-trigger-item">
+									<a href="/cn/community/" aria-label="社区" class="globalnav-link globalnav-submenu-trigger-link globalnav-link-community">
+										<span class="globalnav-link-text-container">
+											<span class="globalnav-link-text">社区</span>
+										</span>
+										<span class="globalnav-link-chevron">
+											<svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+												<path d="m8.1155 30.358a.6.6 0 1 1 -.831.8653l-7-6.7242a.6.6 0 0 1 -.0045-.8613l7-6.8569a.6.6 0 1 1 .84.8574l-6.5582 6.4238z"></path>
+											</svg>
+										</span>
+									</a>
+								</li>
+								<li class="globalnav-submenu-trigger-item">
+									<button id="globalnav-menubutton-link-community" class="globalnav-submenu-trigger-button" aria-expanded="false" aria-controls="globalnav-submenu-link-community" aria-label="“社区”菜单">
+										<span class="globalnav-image-regular globalnav-submenu-button-icon">
+											<svg height="10" viewBox="0 0 10 10" width="10" xmlns="http://www.w3.org/2000/svg">
+												<path d="m4.6725 6.635-2.655-2.667a.445.445 0 0 1 -.123-.304.4331.4331 0 0 1 .427-.439h.006a.447.447 0 0 1 .316.135l2.357 2.365 2.356-2.365a.458.458 0 0 1 .316-.135.433.433 0 0 1 .433.433v.006a.4189.4189 0 0 1 -.123.3l-2.655 2.671a.4451.4451 0 0 1 -.327.14.464.464 0 0 1 -.328-.14z"></path>
+											</svg>
+										</span>
+										<span class="globalnav-image-compact globalnav-submenu-button-icon">
+											<svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+												<path d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"></path>
+											</svg>
+										</span>
+									</button>
+								</li>
+							</ul>
+							<div id="globalnav-submenu-link-community" class="globalnav-flyout globalnav-submenu" aria-labelledby="globalnav-menubutton-link-community" style="--r-globalnav-flyout-item-total: 0; --r-globalnav-flyout-group-number: 0; --r-globalnav-flyout-height: auto; --r-globalnav-flyout-rate: 240ms;">
+								<div class="globalnav-flyout-scroll-container">
+									<div class="globalnav-flyout-content globalnav-submenu-content" style="--r-globalnav-flyout-elevated-group-count: 1; --r-globalnav-flyout-group-total: 2; --r-globalnav-flyout-item-total: 7;">
+										<!-- Explore -->
+										<div class="globalnav-submenu-group globalnav-submenu-group-elevated" style="--r-globalnav-flyout-group-number: 0;">
+
+											<h2 class="globalnav-submenu-header" id="community-engage-heading" style="--r-globalnav-flyout-item-number: 1;">探索“社区”</h2>
+											<ul class="globalnav-submenu-list" aria-labelledby="community-engage-heading">
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 2;"><a href="/cn/community/" class="globalnav-submenu-link">概览</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 3;"><a href="/cn/events/" class="globalnav-submenu-link">“与 Apple 会面交流”活动</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 4;"><a href="/community/events/" class="globalnav-submenu-link">社区主导的活动<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 5;"><a href="/forums/" class="globalnav-submenu-link">开发者论坛<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 6;"><a href="https://opensource.apple.com" class="globalnav-submenu-link">开源<span class="loc-en-only"></span></a></li>
+											</ul>
+										</div>
+										<!-- Featured -->
+										<div class="globalnav-submenu-group" style="--r-globalnav-flyout-group-number: 1;">
+
+											<h2 class="globalnav-submenu-header" id="community-contribute-heading" style="--r-globalnav-flyout-item-number: 1;">精选</h2>
+											<ul class="globalnav-submenu-list" aria-labelledby="community-contribute-heading">
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 2;"><a href="/cn/wwdc/" class="globalnav-submenu-link">WWDC</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 3;"><a href="/cn/swift-student-challenge/" class="globalnav-submenu-link">Swift Student Challenge</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 4;"><a href="/developer-stories/" class="globalnav-submenu-link">开发者故事</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 5;"><a href="/app-store/app-store-awards/" class="globalnav-submenu-link">App Store 大奖<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 6;"><a href="/cn/design/awards/" class="globalnav-submenu-link">Apple 设计大奖</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 7;"><a href="/cn/events/developer-centers/" class="globalnav-submenu-link">Apple Developer Centers</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="
+							    globalnav-item
+							    globalnav-item-documentation
+							    globalnav-item-menu
+							    globalnav-item-submenu
+							" style="--r-globalnav-flyout-item-number: 4;">
+							<ul class="globalnav-submenu-trigger-group">
+								<li class="globalnav-submenu-trigger-item">
+									<a href="/documentation/" aria-label="文档" class="globalnav-link globalnav-submenu-trigger-link globalnav-link-documentation">
+										<span class="globalnav-link-text-container">
+											<span class="globalnav-link-text">文档<span class="loc-en-only"></span></span>
+										</span>
+										<span class="globalnav-link-chevron">
+											<svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+												<path d="m8.1155 30.358a.6.6 0 1 1 -.831.8653l-7-6.7242a.6.6 0 0 1 -.0045-.8613l7-6.8569a.6.6 0 1 1 .84.8574l-6.5582 6.4238z"></path>
+											</svg>
+										</span>
+									</a>
+								</li>
+								<li class="globalnav-submenu-trigger-item">
+									<button id="globalnav-menubutton-link-documentation" class="globalnav-submenu-trigger-button" aria-expanded="false" aria-controls="globalnav-submenu-link-documentation" aria-label="“文档”菜单">
+										<span class="globalnav-image-regular globalnav-submenu-button-icon">
+											<svg height="10" viewBox="0 0 10 10" width="10" xmlns="http://www.w3.org/2000/svg">
+												<path d="m4.6725 6.635-2.655-2.667a.445.445 0 0 1 -.123-.304.4331.4331 0 0 1 .427-.439h.006a.447.447 0 0 1 .316.135l2.357 2.365 2.356-2.365a.458.458 0 0 1 .316-.135.433.433 0 0 1 .433.433v.006a.4189.4189 0 0 1 -.123.3l-2.655 2.671a.4451.4451 0 0 1 -.327.14.464.464 0 0 1 -.328-.14z"></path>
+											</svg>
+										</span>
+										<span class="globalnav-image-compact globalnav-submenu-button-icon">
+											<svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+												<path d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"></path>
+											</svg>
+										</span>
+									</button>
+								</li>
+							</ul>
+							<div id="globalnav-submenu-link-documentation" class="globalnav-flyout globalnav-submenu" aria-labelledby="globalnav-menubutton-link-documentation" style="--r-globalnav-flyout-item-total: 0; --r-globalnav-flyout-group-number: 0; --r-globalnav-flyout-height: auto; --r-globalnav-flyout-rate: 240ms;">
+								<div class="globalnav-flyout-scroll-container">
+									<div class="globalnav-flyout-content globalnav-submenu-content" style="--r-globalnav-flyout-elevated-group-count: 1; --r-globalnav-flyout-group-total: 2; --r-globalnav-flyout-item-total: 9;">
+										<!-- Explore -->
+										<div class="globalnav-submenu-group globalnav-submenu-group-elevated" style="--r-globalnav-flyout-group-number: 0;">
+
+											<h2 class="globalnav-submenu-header" id="docs-explore" style="--r-globalnav-flyout-item-number: 1;">探索“文档”</h2>
+											<ul class="globalnav-submenu-list" aria-labelledby="docs-explore">
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 2;"><a href="/documentation/" class="globalnav-submenu-link">文档库<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 3;"><a href="/documentation/TechnologyOverviews" class="globalnav-submenu-link">技术概述<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 4;"><a href="/documentation/SampleCode" class="globalnav-submenu-link">示例代码<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 5;"><a href="/cn/design/human-interface-guidelines/" class="globalnav-submenu-link">《人机界面指南》</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 6;"><a href="/cn/videos/" class="globalnav-submenu-link">视频</a></li>
+											</ul>
+										</div>
+										<!-- Release Notes -->
+										<div class="globalnav-submenu-group" style="--r-globalnav-flyout-group-number: 1;">
+
+											<h2 class="globalnav-submenu-header" id="docs-release-notes" style="--r-globalnav-flyout-item-number: 1;">发布说明</h2>
+											<ul class="globalnav-submenu-list" aria-labelledby="docs-release-notes">
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 2;"><a href="/documentation/Updates" class="globalnav-submenu-link">精选更新<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 3;"><a href="/documentation/ios-ipados-release-notes" class="globalnav-submenu-link">iOS<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 4;"><a href="/documentation/ios-ipados-release-notes" class="globalnav-submenu-link">iPadOS<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 5;"><a href="/documentation/macos-release-notes" class="globalnav-submenu-link">macOS<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 6;"><a href="/documentation/watchos-release-notes" class="globalnav-submenu-link">watchOS<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 7;"><a href="/documentation/visionos-release-notes/" class="globalnav-submenu-link">visionOS<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 8;"><a href="/documentation/tvos-release-notes" class="globalnav-submenu-link">Apple tvOS<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 9;"><a href="/documentation/Updates/xcode" class="globalnav-submenu-link">Xcode<span class="loc-en-only"></span></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="
+  globalnav-item
+  globalnav-item-downloads
+  globalnav-item-menu
+  globalnav-item-submenu
+" style="--r-globalnav-flyout-item-number: 5;">
+							<ul class="globalnav-submenu-trigger-group">
+								<li class="globalnav-submenu-trigger-item">
+									<a href="/cn/download/" aria-label="下载" class="globalnav-link globalnav-submenu-trigger-link globalnav-link-downloads">
+										<span class="globalnav-link-text-container">
+											<span class="globalnav-link-text">下载</span>
+										</span>
+										<span class="globalnav-link-chevron">
+											<svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+												<path d="m8.1155 30.358a.6.6 0 1 1 -.831.8653l-7-6.7242a.6.6 0 0 1 -.0045-.8613l7-6.8569a.6.6 0 1 1 .84.8574l-6.5582 6.4238z"></path>
+											</svg>
+										</span>
+									</a>
+								</li>
+								<li class="globalnav-submenu-trigger-item">
+									<button id="globalnav-menubutton-link-downloads" class="globalnav-submenu-trigger-button" aria-expanded="false" aria-controls="globalnav-submenu-link-downloads" aria-label="“下载”菜单">
+										<span class="globalnav-image-regular globalnav-submenu-button-icon">
+											<svg height="10" viewBox="0 0 10 10" width="10" xmlns="http://www.w3.org/2000/svg">
+												<path d="m4.6725 6.635-2.655-2.667a.445.445 0 0 1 -.123-.304.4331.4331 0 0 1 .427-.439h.006a.447.447 0 0 1 .316.135l2.357 2.365 2.356-2.365a.458.458 0 0 1 .316-.135.433.433 0 0 1 .433.433v.006a.4189.4189 0 0 1 -.123.3l-2.655 2.671a.4451.4451 0 0 1 -.327.14.464.464 0 0 1 -.328-.14z"></path>
+											</svg>
+										</span>
+										<span class="globalnav-image-compact globalnav-submenu-button-icon">
+											<svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+												<path d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"></path>
+											</svg>
+										</span>
+									</button>
+								</li>
+							</ul>
+							<div id="globalnav-submenu-link-downloads" class="globalnav-flyout globalnav-submenu" aria-labelledby="globalnav-menubutton-link-downloads" style="--r-globalnav-flyout-item-total: 0; --r-globalnav-flyout-group-number: 0; --r-globalnav-flyout-height: auto; --r-globalnav-flyout-rate: 240ms;">
+								<div class="globalnav-flyout-scroll-container">
+									<div class="globalnav-flyout-content globalnav-submenu-content" style="--r-globalnav-flyout-elevated-group-count: 1; --r-globalnav-flyout-group-total: 2; --r-globalnav-flyout-item-total: 6;">
+										<!-- Explore -->
+										<div class="globalnav-submenu-group globalnav-submenu-group-elevated" style="--r-globalnav-flyout-group-number: 0;">
+
+											<h2 class="globalnav-submenu-header" id="downloads-explore-heading" style="--r-globalnav-flyout-item-number: 1;">探索“下载”</h2>
+											<ul class="globalnav-submenu-list" aria-labelledby="downloads-explore-heading">
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 2;"><a href="/cn/download/" class="globalnav-submenu-link">所有下载</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 3;"><a href="/download/os/" class="globalnav-submenu-link">操作系统<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 4;"><a href="/download/applications/" class="globalnav-submenu-link">应用程序<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 5;"><a href="/cn/design/resources/" class="globalnav-submenu-link">设计资源</a></li>
+											</ul>
+										</div>
+										<!-- Featured -->
+										<div class="globalnav-submenu-group" style="--r-globalnav-flyout-group-number: 1;">
+
+											<h2 class="globalnav-submenu-header" id="downloads-featured-heading" style="--r-globalnav-flyout-item-number: 1;">精选</h2>
+											<ul class="globalnav-submenu-list" aria-labelledby="downloads-featured-heading">
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 2;"><a href="/cn/xcode/" class="globalnav-submenu-link">Xcode</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 3;"><a href="/cn/testflight/" class="globalnav-submenu-link">TestFlight</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 4;"><a href="/cn/fonts/" class="globalnav-submenu-link">字体</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 5;"><a href="/cn/sf-symbols/" class="globalnav-submenu-link">SF Symbols</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 6;"><a href="/cn/icon-composer/" class="globalnav-submenu-link">Icon Composer</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="
+  globalnav-item
+  globalnav-item-support
+  globalnav-item-menu
+  globalnav-item-submenu
+" style="--r-globalnav-flyout-item-number: 6;">
+							<ul class="globalnav-submenu-trigger-group">
+								<li class="globalnav-submenu-trigger-item">
+									<a href="/cn/support/" aria-label="支持" class="globalnav-link globalnav-submenu-trigger-link globalnav-link-support">
+										<span class="globalnav-link-text-container">
+											<span class="globalnav-link-text">支持</span>
+										</span>
+										<span class="globalnav-link-chevron">
+											<svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+												<path d="m8.1155 30.358a.6.6 0 1 1 -.831.8653l-7-6.7242a.6.6 0 0 1 -.0045-.8613l7-6.8569a.6.6 0 1 1 .84.8574l-6.5582 6.4238z"></path>
+											</svg>
+										</span>
+									</a>
+								</li>
+								<li class="globalnav-submenu-trigger-item">
+									<button id="globalnav-menubutton-link-support" class="globalnav-submenu-trigger-button" aria-expanded="false" aria-controls="globalnav-submenu-link-support" aria-label="“支持”菜单">
+										<span class="globalnav-image-regular globalnav-submenu-button-icon">
+											<svg height="10" viewBox="0 0 10 10" width="10" xmlns="http://www.w3.org/2000/svg">
+												<path d="m4.6725 6.635-2.655-2.667a.445.445 0 0 1 -.123-.304.4331.4331 0 0 1 .427-.439h.006a.447.447 0 0 1 .316.135l2.357 2.365 2.356-2.365a.458.458 0 0 1 .316-.135.433.433 0 0 1 .433.433v.006a.4189.4189 0 0 1 -.123.3l-2.655 2.671a.4451.4451 0 0 1 -.327.14.464.464 0 0 1 -.328-.14z"></path>
+											</svg>
+										</span>
+										<span class="globalnav-image-compact globalnav-submenu-button-icon">
+											<svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+												<path d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"></path>
+											</svg>
+										</span>
+									</button>
+								</li>
+							</ul>
+							<div id="globalnav-submenu-link-support" class="globalnav-flyout globalnav-submenu" aria-labelledby="globalnav-menubutton-link-support" style="--r-globalnav-flyout-item-total: 0; --r-globalnav-flyout-group-number: 0; --r-globalnav-flyout-height: auto; --r-globalnav-flyout-rate: 240ms;">
+								<div class="globalnav-flyout-scroll-container">
+									<div class="globalnav-flyout-content globalnav-submenu-content" style="--r-globalnav-flyout-elevated-group-count: 1; --r-globalnav-flyout-group-total: 2; --r-globalnav-flyout-item-total: 7;">
+										<!-- Explore -->
+										<div class="globalnav-submenu-group globalnav-submenu-group-elevated" style="--r-globalnav-flyout-group-number: 0;">
+
+											<h2 class="globalnav-submenu-header" id="explore-support" style="--r-globalnav-flyout-item-number: 1;">探索“支持”</h2>
+											<ul class="globalnav-submenu-list" aria-labelledby="explore-support">
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 2;"><a href="/cn/support/" class="globalnav-submenu-link">概览</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 3;"><a href="/cn/help/" class="globalnav-submenu-link">帮助指南</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 4;"><a href="/forums/" class="globalnav-submenu-link">开发者论坛<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 5;"><a href="/cn/feedback-assistant/" class="globalnav-submenu-link">“反馈助理”</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 6;"><a href="/contact/" class="globalnav-submenu-link">联系我们</a></li>
+											</ul>
+										</div>
+										<!-- Featured -->
+										<div class="globalnav-submenu-group" style="--r-globalnav-flyout-group-number: 1;">
+
+											<h2 class="globalnav-submenu-header" id="support-help" style="--r-globalnav-flyout-item-number: 1;">精选</h2>
+											<ul class="globalnav-submenu-list" aria-labelledby="support-help">
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 2;"><a href="/cn/help/account/" class="globalnav-submenu-link">《开发者账户帮助》</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 3;"><a href="/cn/app-store/review/guidelines/" class="globalnav-submenu-link">《App 审核指南》</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 4;"><a href="/cn/help/app-store-connect/" class="globalnav-submenu-link">《App Store Connect 帮助》</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 5;"><a href="/cn/news/upcoming-requirements/" class="globalnav-submenu-link">即将实行的要求</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 6;"><a href="/cn/support/terms/" class="globalnav-submenu-link">协议和准则</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 7;"><a href="/system-status/" class="globalnav-submenu-link">系统状态<span class="loc-en-only"></span></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<!-- Search -->
+			<li data-topnav-flyout-label="Search" class="globalnav-item globalnav-search shift-0-1" data-globalnav-iconflyout-enabled="true">
+				<a role="button" id="globalnav-menubutton-link-search" href="/search/" data-topnav-flyout-trigger-regular="true" data-topnav-flyout-trigger-compact="true" aria-label="搜索" class="globalnav-link globalnav-link-search">
+					<span class="globalnav-image-regular">
+						<svg xmlns="http://www.w3.org/2000/svg" width="15px" height="44px" viewBox="0 0 15 44">
+							<path d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z"></path>
+						</svg>
+					</span>
+					<span class="globalnav-image-compact">
+						<svg height="48" viewBox="0 0 17 48" width="17" xmlns="http://www.w3.org/2000/svg">
+							<path d="m16.2294 29.9556-4.1755-4.0821a6.4711 6.4711 0 1 0 -1.2839 1.2625l4.2005 4.1066a.9.9 0 1 0 1.2588-1.287zm-14.5294-8.0017a5.2455 5.2455 0 1 1 5.2455 5.2527 5.2549 5.2549 0 0 1 -5.2455-5.2527z"></path>
+						</svg>
+					</span>
+				</a>
+				<div id="globalnav-submenu-search" aria-labelledby="globalnav-menubutton-link-search" class="globalnav-flyout globalnav-submenu" style="--r-globalnav-flyout-item-total: 0; --r-globalnav-flyout-group-number: 0; --r-globalnav-flyout-height: 388px; --r-globalnav-flyout-rate: 240ms;">
+					<div class="globalnav-flyout-scroll-container">
+						<div class="globalnav-flyout-content globalnav-submenu-content">
+							<form action="/search/" method="get" class="globalnav-searchfield">
+								<div class="globalnav-searchfield-wrapper">
+									<input placeholder="搜索" name="q" aria-label="搜索" autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false" class="globalnav-searchfield-input">
+									<input id="globalnav-searchfield-src" type="hidden" name="src" value="globalnav">
+									<button aria-label="清除搜索" tabindex="-1" type="button" class="globalnav-searchfield-reset" disabled="" aria-hidden="true">
+										<span class="globalnav-image-regular">
+											<svg height="14" viewBox="0 0 14 14" width="14" xmlns="http://www.w3.org/2000/svg">
+												<path d="m7 .0339a6.9661 6.9661 0 1 0 6.9661 6.9661 6.9661 6.9661 0 0 0 -6.9661-6.9661zm2.798 8.9867a.55.55 0 0 1 -.778.7774l-2.02-2.02-2.02 2.02a.55.55 0 0 1 -.7784-.7774l2.0206-2.0206-2.0204-2.02a.55.55 0 0 1 .7782-.7778l2.02 2.02 2.02-2.02a.55.55 0 0 1 .778.7778l-2.0203 2.02z"></path>
+											</svg>
+										</span>
+										<span class="globalnav-image-compact">
+											<svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+												<path d="m0 8a8.0474 8.0474 0 0 1 7.9922-8 8.0609 8.0609 0 0 1 8.0078 8 8.0541 8.0541 0 0 1 -8 8 8.0541 8.0541 0 0 1 -8-8zm5.6549 3.2863 2.3373-2.353 2.3451 2.353a.6935.6935 0 0 0 .4627.1961.6662.6662 0 0 0 .6667-.6667.6777.6777 0 0 0 -.1961-.4706l-2.3451-2.3373 2.3529-2.3607a.5943.5943 0 0 0 .1961-.4549.66.66 0 0 0 -.6667-.6589.6142.6142 0 0 0 -.447.1961l-2.3686 2.3606-2.353-2.3527a.6152.6152 0 0 0 -.447-.1883.6529.6529 0 0 0 -.6667.651.6264.6264 0 0 0 .1961.4549l2.3451 2.3529-2.3451 2.353a.61.61 0 0 0 -.1961.4549.6661.6661 0 0 0 .6667.6667.6589.6589 0 0 0 .4627-.1961z"></path>
+											</svg>
+										</span>
+									</button>
+									<button aria-label="提交搜索" tabindex="-1" aria-hidden="true" type="submit" class="globalnav-searchfield-submit" disabled="">
+										<span class="globalnav-image-regular">
+											<svg height="32" viewBox="0 0 30 32" width="30" xmlns="http://www.w3.org/2000/svg">
+												<path d="m23.3291 23.3066-4.35-4.35c-.0105-.0105-.0247-.0136-.0355-.0235a6.8714 6.8714 0 1 0 -1.5736 1.4969c.0214.0256.03.0575.0542.0815l4.35 4.35a1.1 1.1 0 1 0 1.5557-1.5547zm-15.4507-8.582a5.6031 5.6031 0 1 1 5.603 5.61 5.613 5.613 0 0 1 -5.603-5.61z"></path>
+											</svg>
+										</span>
+										<span class="globalnav-image-compact">
+											<svg width="38" height="40" viewBox="0 0 38 40" xmlns="http://www.w3.org/2000/svg">
+												<path d="m28.6724 27.8633-5.07-5.07c-.0095-.0095-.0224-.0122-.032-.0213a7.9967 7.9967 0 1 0 -1.8711 1.7625c.0254.03.0357.0681.0642.0967l5.07 5.07a1.3 1.3 0 0 0 1.8389-1.8379zm-18.0035-10.0033a6.5447 6.5447 0 1 1 6.545 6.5449 6.5518 6.5518 0 0 1 -6.545-6.5449z"></path>
+											</svg>
+										</span>
+									</button>
+								</div>
+							</form>
+							<div class="globalnav-searchresults">
+								<div class="globalnav-searchresults-current">
+									<div class="globalnav-searchresults-container" style="--r-globalnav-flyout-group-number: 0;">
+
+										<h2 class="globalnav-searchresults-header" style="--r-globalnav-flyout-item-number: 0;">快速链接</h2>
+										<ul class="globalnav-searchresults-list" role="list">
+											<li class="globalnav-searchresults-list-item" role="listitem" style="--r-globalnav-flyout-item-number: 1;">
+												<a class="globalnav-searchresults-list-link" href="/cn/events/" data-query="no keyword" data-section="quicklinks" data-items="5" data-index="0" data-label="活动">
+													<span class="globalnav-searchresults-list-icon">
+														<span class="globalnav-image-regular globalnav-link-image">
+															<svg height="16" viewBox="0 0 9 16" width="9" xmlns="http://www.w3.org/2000/svg">
+																<path d="m8.6124 8.1035-2.99 2.99a.5.5 0 0 1 -.7071-.7071l2.1366-2.1364h-6.316a.5.5 0 0 1 0-1h6.316l-2.1368-2.1367a.5.5 0 0 1 .7071-.7071l2.99 2.99a.5.5 0 0 1 .0002.7073z"></path>
+															</svg>
+														</span>
+														<span class="globalnav-image-compact globalnav-link-image">
+															<svg height="25" viewBox="0 0 13 25" width="13" xmlns="http://www.w3.org/2000/svg">
+																<path d="m12.3577 13.4238-4.4444 4.4444a.6.6 0 0 1 -.8486-.8477l3.37-3.37h-9.3231a.65.65 0 0 1 0-1.3008h9.3232l-3.37-3.37a.6.6 0 0 1 .8486-.8477l4.4444 4.4444a.5989.5989 0 0 1 -.0001.8474z"></path>
+															</svg>
+														</span>
+													</span>
+													<span class="globalnav-searchresults-list-text">活动</span>
+												</a>
+											</li>
+											<li class="globalnav-searchresults-list-item" role="listitem" style="--r-globalnav-flyout-item-number: 2;">
+												<a class="globalnav-searchresults-list-link" href="/cn/news/" data-query="no keyword" data-section="quicklinks" data-items="5" data-index="1" data-label="新闻">
+													<span class="globalnav-searchresults-list-icon">
+														<span class="globalnav-image-regular globalnav-link-image">
+															<svg height="16" viewBox="0 0 9 16" width="9" xmlns="http://www.w3.org/2000/svg">
+																<path d="m8.6124 8.1035-2.99 2.99a.5.5 0 0 1 -.7071-.7071l2.1366-2.1364h-6.316a.5.5 0 0 1 0-1h6.316l-2.1368-2.1367a.5.5 0 0 1 .7071-.7071l2.99 2.99a.5.5 0 0 1 .0002.7073z"></path>
+															</svg>
+														</span>
+														<span class="globalnav-image-compact globalnav-link-image">
+															<svg height="25" viewBox="0 0 13 25" width="13" xmlns="http://www.w3.org/2000/svg">
+																<path d="m12.3577 13.4238-4.4444 4.4444a.6.6 0 0 1 -.8486-.8477l3.37-3.37h-9.3231a.65.65 0 0 1 0-1.3008h9.3232l-3.37-3.37a.6.6 0 0 1 .8486-.8477l4.4444 4.4444a.5989.5989 0 0 1 -.0001.8474z"></path>
+															</svg>
+														</span>
+													</span>
+													<span class="globalnav-searchresults-list-text">新闻</span>
+												</a>
+											</li>
+											<li class="globalnav-searchresults-list-item" role="listitem" style="--r-globalnav-flyout-item-number: 3;">
+												<a class="globalnav-searchresults-list-link" href="/forums/" data-query="no keyword" data-section="quicklinks" data-items="5" data-index="2" data-label="论坛">
+													<span class="globalnav-searchresults-list-icon">
+														<span class="globalnav-image-regular globalnav-link-image">
+															<svg height="16" viewBox="0 0 9 16" width="9" xmlns="http://www.w3.org/2000/svg">
+																<path d="m8.6124 8.1035-2.99 2.99a.5.5 0 0 1 -.7071-.7071l2.1366-2.1364h-6.316a.5.5 0 0 1 0-1h6.316l-2.1368-2.1367a.5.5 0 0 1 .7071-.7071l2.99 2.99a.5.5 0 0 1 .0002.7073z"></path>
+															</svg>
+														</span>
+														<span class="globalnav-image-compact globalnav-link-image">
+															<svg height="25" viewBox="0 0 13 25" width="13" xmlns="http://www.w3.org/2000/svg">
+																<path d="m12.3577 13.4238-4.4444 4.4444a.6.6 0 0 1 -.8486-.8477l3.37-3.37h-9.3231a.65.65 0 0 1 0-1.3008h9.3232l-3.37-3.37a.6.6 0 0 1 .8486-.8477l4.4444 4.4444a.5989.5989 0 0 1 -.0001.8474z"></path>
+															</svg>
+														</span>
+													</span>
+													<span class="globalnav-searchresults-list-text">论坛<span class="loc-en-only"></span></span>
+												</a>
+											</li>
+											<li class="globalnav-searchresults-list-item" role="listitem" style="--r-globalnav-flyout-item-number: 4;">
+												<a class="globalnav-searchresults-list-link" href="/documentation/samplecode/" data-query="no keyword" data-section="quicklinks" data-items="5" data-index="3" data-label="示例代码">
+													<span class="globalnav-searchresults-list-icon">
+														<span class="globalnav-image-regular globalnav-link-image">
+															<svg height="16" viewBox="0 0 9 16" width="9" xmlns="http://www.w3.org/2000/svg">
+																<path d="m8.6124 8.1035-2.99 2.99a.5.5 0 0 1 -.7071-.7071l2.1366-2.1364h-6.316a.5.5 0 0 1 0-1h6.316l-2.1368-2.1367a.5.5 0 0 1 .7071-.7071l2.99 2.99a.5.5 0 0 1 .0002.7073z"></path>
+															</svg>
+														</span>
+														<span class="globalnav-image-compact globalnav-link-image">
+															<svg height="25" viewBox="0 0 13 25" width="13" xmlns="http://www.w3.org/2000/svg">
+																<path d="m12.3577 13.4238-4.4444 4.4444a.6.6 0 0 1 -.8486-.8477l3.37-3.37h-9.3231a.65.65 0 0 1 0-1.3008h9.3232l-3.37-3.37a.6.6 0 0 1 .8486-.8477l4.4444 4.4444a.5989.5989 0 0 1 -.0001.8474z"></path>
+															</svg>
+														</span>
+													</span>
+													<span class="globalnav-searchresults-list-text">示例代码<span class="loc-en-only"></span></span>
+												</a>
+											</li>
+											<li class="globalnav-searchresults-list-item" role="listitem" style="--r-globalnav-flyout-item-number: 5;">
+												<a class="globalnav-searchresults-list-link" href="/cn/videos/" data-query="no keyword" data-section="quicklinks" data-items="5" data-index="4" data-label="视频">
+													<span class="globalnav-searchresults-list-icon">
+														<span class="globalnav-image-regular globalnav-link-image">
+															<svg height="16" viewBox="0 0 9 16" width="9" xmlns="http://www.w3.org/2000/svg">
+																<path d="m8.6124 8.1035-2.99 2.99a.5.5 0 0 1 -.7071-.7071l2.1366-2.1364h-6.316a.5.5 0 0 1 0-1h6.316l-2.1368-2.1367a.5.5 0 0 1 .7071-.7071l2.99 2.99a.5.5 0 0 1 .0002.7073z"></path>
+															</svg>
+														</span>
+														<span class="globalnav-image-compact globalnav-link-image">
+															<svg height="25" viewBox="0 0 13 25" width="13" xmlns="http://www.w3.org/2000/svg">
+																<path d="m12.3577 13.4238-4.4444 4.4444a.6.6 0 0 1 -.8486-.8477l3.37-3.37h-9.3231a.65.65 0 0 1 0-1.3008h9.3232l-3.37-3.37a.6.6 0 0 1 .8486-.8477l4.4444 4.4444a.5989.5989 0 0 1 -.0001.8474z"></path>
+															</svg>
+														</span>
+													</span>
+													<span class="globalnav-searchresults-list-text">视频</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<!-- Account -->
+			<li id="globalnav-account" class="globalnav-item globalnav-account">
+				<div class="globalnav-account-wrapper">
+					<a href="/account/" aria-label="账户" class="globalnav-link globalnav-link-account">
+						<span class="globalnav-image-regular globalnav-link-image" aria-hidden="true">
+							<svg width="17" height="47" viewBox="0 0 117.045 120" xmlns="http://www.w3.org/2000/svg" focusable="false" preserveAspectRatio="xMidYMid meet">
+								<path fill="currentColor" d="M58.496,109.742c27.503,0 49.825,-22.271 49.825,-49.774c0,-27.503 -22.322,-49.773 -49.825,-49.773c-27.451,0 -49.773,22.27 -49.773,49.773c0,27.503 22.322,49.774 49.773,49.774zM58.496,101.474c-22.945,0 -41.465,-18.561 -41.465,-41.506c0,-22.944 18.52,-41.506 41.465,-41.506c22.945,0 41.506,18.562 41.506,41.506c0,22.945 -18.561,41.506 -41.506,41.506zM91.931,92.156l-0.156,-0.549c-2.433,-7.174 -15.338,-15.037 -33.279,-15.037c-17.92,0 -30.773,7.852 -33.227,15.005l-0.156,0.581c8.825,8.692 23.891,13.762 33.394,13.762c9.575,0 24.525,-5.028 33.424,-13.762zM58.496,68.304c9.398,0.103 16.759,-7.924 16.759,-18.421c0,-9.875 -7.393,-18.048 -16.759,-18.048c-9.314,0 -16.769,8.173 -16.707,18.048c0.052,10.497 7.31,18.317 16.707,18.421z" />
+							</svg>
+						</span>
+						<span class="globalnav-image-compact globalnav-link-image" aria-hidden="true">
+							<svg width="20" height="51" viewBox="0 0 117.045 120" xmlns="http://www.w3.org/2000/svg" focusable="false" preserveAspectRatio="xMidYMid meet">
+								<path fill="currentColor" d="M58.496,109.742c27.503,0 49.825,-22.271 49.825,-49.774c0,-27.503 -22.322,-49.773 -49.825,-49.773c-27.451,0 -49.773,22.27 -49.773,49.773c0,27.503 22.322,49.774 49.773,49.774zM58.496,101.474c-22.945,0 -41.465,-18.561 -41.465,-41.506c0,-22.944 18.52,-41.506 41.465,-41.506c22.945,0 41.506,18.562 41.506,41.506c0,22.945 -18.561,41.506 -41.506,41.506zM91.931,92.156l-0.156,-0.549c-2.433,-7.174 -15.338,-15.037 -33.279,-15.037c-17.92,0 -30.773,7.852 -33.227,15.005l-0.156,0.581c8.825,8.692 23.891,13.762 33.394,13.762c9.575,0 24.525,-5.028 33.424,-13.762zM58.496,68.304c9.398,0.103 16.759,-7.924 16.759,-18.421c0,-9.875 -7.393,-18.048 -16.759,-18.048c-9.314,0 -16.769,8.173 -16.707,18.048c0.052,10.497 7.31,18.317 16.707,18.421z" />
+							</svg>
+						</span>
+					</a>
+				</div>
+			</li>
+		</ul>
+		<div class="globalnav-menutrigger">
+			<button id="globalnav-menutrigger-button" aria-controls="globalnav-list" aria-label="菜单" class="globalnav-menutrigger-button"><svg width="18" height="18" viewBox="0 0 18 18">
+					<polyline id="globalnav-menutrigger-bread-bottom" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" points="2 12, 16 12" class="globalnav-menutrigger-bread globalnav-menutrigger-bread-bottom">
+						<animate id="globalnav-anim-menutrigger-bread-bottom-open" attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 2 12, 16 12; 2 9, 16 9; 3.5 15, 15 3.5"></animate>
+						<animate id="globalnav-anim-menutrigger-bread-bottom-close" attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 3.5 15, 15 3.5; 2 9, 16 9; 2 12, 16 12"></animate>
+					</polyline>
+					<polyline id="globalnav-menutrigger-bread-top" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" points="2 5, 16 5" class="globalnav-menutrigger-bread globalnav-menutrigger-bread-top">
+						<animate id="globalnav-anim-menutrigger-bread-top-open" attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 2 5, 16 5; 2 9, 16 9; 3.5 3.5, 15 15"></animate>
+						<animate id="globalnav-anim-menutrigger-bread-top-close" attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 3.5 3.5, 15 15; 2 9, 16 9; 2 5, 16 5"></animate>
+					</polyline>
+				</svg>
+			</button>
+		</div>
+	</div>
+	<span style="visibility: hidden; position: absolute; top: 0px; z-index: -1;"> </span>
+</nav>
+<!-- <div class="globalnav-placeholder"></div> -->
+<script src="/assets/scripts/ac-globalnav.built.js?35212621148"></script>
+	<!-- metrics -->
+<script>
+	/* RSID: */
+	var s_account="awdappledeveloper"
+</script>	
+<script src="/assets/metrics/scripts/analytics.js"></script>
+<script>
+	s_sections = [
+		{
+			"pattern": "^/documentation",
+			"channel": "www.documentation.developer"
+		},
+		{
+			"pattern": "^/library",
+			"channel": "www.documentation.developer"
+		},
+		{
+			"pattern": "^/tutorials",
+			"channel": "www.documentation.developer"
+		},	
+		{
+			"pattern": "human\\-interface\\-guidelines",
+			"channel": "www.hig.developer"
+		},
+		{
+			"pattern": "/testflight/",
+			"channel": "www.appstoreconnect.developer"
+		},
+		{
+			"pattern": "/app\\-store\\-connect/",
+			"channel": "www.appstoreconnect.developer"
+		},
+		{
+			"pattern": "/support/app\\-store\\-connect/",
+			"channel": "www.appstoreconnect.developer"
+		},
+		{
+			"pattern": "/help/app\\-store\\-connect/",
+			"channel": "www.appstoreconnect.developer"
+		},
+		{
+			"pattern": "/wwdc/",
+			"channel": "www.wwdc.developer"
+		},
+		{
+			"pattern": "/wwdc\\d{2}/",
+			"channel": "www.wwdc.developer"
+		},
+		{
+			"pattern": "/videos/",
+			"channel": "www.videos.developer"
+		},
+		{
+			"pattern": "^/account",
+			"channel": "www.account.developer"
+		},
+		{
+			"pattern": "downloads?",
+			"channel": "www.download.developer"
+		},
+		{
+			"pattern": "/localization/",
+			"channel": "www.appstore.developer"
+		},	
+		{
+			"pattern": "/app\\-store/",
+			"channel": "www.appstore.developer"
+		},
+		{
+			"pattern": "/in\\-app\\-purchase/",
+			"channel": "www.appstore.developer"
+		},
+		{
+			"pattern": "/cn/",
+			"channel": "www.cn.developer"
+		},
+		{
+			"pattern": "/jp/",
+			"channel": "www.jp.developer"
+		},
+		{
+			"pattern": "/kr/",
+			"channel": "www.kr.developer"
+		},
+		{
+			"pattern": "/de/",
+			"channel": "www.de.developer"
+		},
+		{
+			"pattern": "/la/",
+			"channel": "www.la.developer"
+		},
+		{
+			"pattern": "/fr/",
+			"channel": "www.fr.developer"
+		},
+		{
+			"pattern": "/it/",
+			"channel": "www.it.developer"
+		},
+		{
+			"pattern": "/br/",
+			"channel": "www.br.developer"
+		}
+	];
+	
+	s.pageName= AC && AC.Tracking && AC.Tracking.pageName();
+	s.channel="www.en.developer";
+	
+	s_sections.forEach((s_section) => {
+		var regex = new RegExp(s_section.pattern);
+		
+		if(location.pathname.search(regex) !== -1) {
+			s.channel=s_section.channel;
+		}
+	});
+	
+	/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+	var s_code=s.t();if(s_code)document.write(s_code)
+</script>
+<!-- /metrics -->
+	<link rel="stylesheet" property="stylesheet" href="/assets/styles/localnav.css" type="text/css" />
+<input type="checkbox" id="localnav-menustate" class="localnav-menustate"/>
+<nav id="localnav" class="localnav localnav-scrim" data-sticky role="navigation">
+	<div class="localnav-wrapper">
+		<div class="localnav-background"></div>
+		<div class="localnav-content">
+			<h2 class="localnav-title">
+				<a href="/cn/app-store/">App Store</a>
+			</h2>
+
+			<div class="localnav-menu">
+				<a href="#localnav-menustate" class="localnav-menucta-anchor localnav-menucta-anchor-open" id="localnav-menustate-open">
+					<span class="localnav-menucta-anchor-label">打开菜单</span>
+				</a>
+				<a href="#" class="localnav-menucta-anchor localnav-menucta-anchor-close" id="localnav-menustate-close">
+					<span class="localnav-menucta-anchor-label">关闭菜单</span>
+				</a>
+				<div class="localnav-menu-tray">
+					<ul class="localnav-menu-items">
+						<li class="localnav-menu-item">
+							<a href="/cn/app-store/" class="localnav-menu-link">概览</a>
+						</li>
+						<li class="localnav-menu-item">
+							<a href="/cn/app-store/whats-new/" class="localnav-menu-link">新功能指南</a>
+						</li>
+						<li class="localnav-menu-item">
+							<a href="/cn/app-store/get-started/" class="localnav-menu-link">入门汇总</a>
+						</li>
+						<li class="localnav-menu-item">
+							<a href="/cn/app-store/resources/" class="localnav-menu-link">资源</a>
+						</li>
+					</ul>
+				</div>
+				<div class="localnav-actions localnav-actions">
+					<div class="localnav-action localnav-action-menucta" aria-hidden="true">
+						<label for="localnav-menustate" class="localnav-menucta">
+							<span class="localnav-menucta-chevron"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+<label id="localnav-curtain" for="localnav-menustate"></label>
+<script src="/assets/scripts/ac-localnav.built.js"></script>
+<script type="text/javascript" src="/assets/scripts/localnav.js"></script>
+
+	<main id="main" class="main" role="main">
+		<div class="ribbon ribbon-blue">
+			<div class="ribbon-drop-wrapper">
+				<div class="ribbon-content-wrapper">
+					<div class="ribbon-content row">
+						<div class="column large-centered large-12">
+							<p>
+								<a href="/cn/videos/privacy-security" class="ribbon-link">观看有关隐私保护的最新视频<span class="nowrap icon icon-after icon-playcircle"><span class="loc-partial-sub"></span></span></a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<article>
+
+			<section class="section section-hero bg-grad-up overflow">
+				<div class="section-content">
+					<div class="row">
+						<div class="column large-centered large-11 small-12 text-center">
+
+							<h1 class="typography-headline">App&nbsp;Store 上 App 隐私保护的详细说明</h1>
+							<p class="typography-intro">人们在任何 Apple 平台下载 App 之前，App&nbsp;Store 都会先帮助他们更好地了解相关 App 的隐私保护做法。在每款 App 的产品页面上，用户能了解到该 App 可能收集的某些数据类型，以及该数据是否会关联到他们或对其进行追踪。你需要在 App&nbsp;Store&nbsp;Connect 中提供 App 隐私保护做法的相关信息，如果你的 App 中整合了第三方合作伙伴的代码，还需要说明其如何使用用户的隐私信息。提交至 App&nbsp;Store 的新 App 和 App&nbsp;更新都需要包含此信息。</p>
+						</div>
+						<picture>
+							<source srcset="/app-store/app-privacy-details/images/lockup-26-hero-large_2x.webp" type="image/webp" />
+							<img src="/app-store/app-privacy-details/images/lockup-26-hero-large_2x.png" width="100%" alt="" />
+						</picture>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section-app-privacy-content">
+				<div class="section-content">
+					<div class="row-flex">
+						<div class="column-flex large-3 small-12">
+							<ul class="sidenav-container"></ul>
+<script src="/assets/scripts/sidenav.built.js?35212621148"></script>
+						</div>
+						<div class="column-flex large-9 small-12">
+
+							<h2 id="whats-new" data-sidenav><span class="eyebrow"><sf-symbol name="sparkles" weight="light" scale="small" mode="monochrome" style="font-size:72px;"></sf-symbol></span>新功能</h2>
+							<p>将 App 提交至 App&nbsp;Store 时，说明你的 App 如何处理用户数据是非常重要的一环。新增的两项更新让你可以更轻松地准确提供隐私标签，并改进软件供应链的完整性：第三方 SDK 和隐私清单。此外，我们将添加更多数据类型选项，以供你在隐私标签中使用以描述 App 收集哪些类型的数据。</p>
+							<ul class="links-stacked">
+								<li><a href="/cn/news/?id=av1nevon" class="more">了解更多</a></li>
+								<li><a class="icon icon-after icon-playcircle nowrap" href="/cn/videos/privacy-security">观看最新视频</a></li>
+							</ul>
+
+							<h2 id="answering-questions" data-sidenav="回答问题">回答 App 隐私保护问题</h2>
+							<p>当你准备从 App&nbsp;Store&nbsp;Connect 提供的选项里选择答案时，请你留意以下事项：</p>
+							<ul class="compound-item-list">
+								<li>你需要明确说明你或第三方合作伙伴收集的所有数据，除非这些数据符合下列所有的选择性披露条件。</li>
+								<li>你 App 的隐私保护做法应该遵循《App&nbsp;审核指南》及所有适用的法律。</li>
+								<li>你有责任确保提供准确且最新的回应。如果你的数据收集和使用情况发生变化，请前往 App&nbsp;Store&nbsp;Connect 更新你的回答。你可以随时更新你的回答，且无需为此提交 App 更新。</li>
+							</ul>
+							<p>作为账户持有人、管理和 App 管理的成员可进一步了解如何在 App&nbsp;Store&nbsp;Connect 中<a href="/cn/help/app-store-connect/manage-app-information/manage-app-privacy/">输入相关回答</a>。</p>
+
+							<h2 id="data-collection" data-sidenav>数据收集</h2>
+							<p>该标签可帮助顾客了解你的 App 会收集哪些数据，以及这些数据将被如何使用。要提供相关信息，在回答 App&nbsp;Store&nbsp;Connect 中的问题前，你需要了解你和/或第三方合作伙伴从你的 App 收集的数据类型。请记住，即使你是出于分析或广告投放之外的其他原因收集数据，也仍需加以声明。例如，如果你收集数据只是为了让 App 正常工作，请在标签上声明相关数据，并说明这些数据只用于这一目的。</p>
+							<p>“收集”是指从设备传出数据的过程中允许你和/或你的第三方合作伙伴访问这些数据，并且访问时间超出为所传输的请求实时提供服务的必要时间。</p>
+							<p>“第三方合作伙伴”指的是分析工具、广告网络、第三方 SDK 或在你的 App 中添加了其代码的其他外部供应商。</p>
+
+							<h2 id="optional-disclosure" data-sidenav>选择性披露</h2>
+							<p>对于符合以下所有条件的数据类型，你可以自行选择是否进行披露：</p>
+							<ul class="compound-item-list">
+								<li>数据并非用于追踪目的，即数据未与第三方数据关联以用于广告或广告监测目的，也未与任何数据代理共享。如需了解详情，请参阅“<a href="#user-tracking">追踪</a>”部分。</li>
+								<li>数据并非用于第三方广告、你自己的广告或营销目的，或者用于其他目的 (上述相关术语定义可参阅“<a href="#user-tracking">追踪</a>”部分)。</li>
+								<li>仅在不牵涉 App 的主要功能，且用户对此具有选择权的少数情况下进行数据收集。</li>
+								<li>数据由用户在 App 的界面中提供；用户很清楚收集了哪些数据；用户的姓名或账户名称与其他要提交的数据元素会一并在提交表中突出显示；且用户每次都确认提供所收集的数据。</li>
+							</ul>
+							<p>数据类型必须符合上述所有条件，你才可以自行选择是否进行披露。如果 App 收集的数据类型只满足上述部分条件而非所有条件，则必须在 App&nbsp;Store&nbsp;Connect 中予以披露。</p>
+							<p>例如，与该 App 主要用途无关且符合上述其他条件的可选反馈表或客户服务请求中收集的数据属于可能不需要披露的数据。</p>
+							<p>为清楚起见，请务必披露在首次提出许可请求之后持续收集的数据。</p>
+
+							<h4 id="regulated-disclosure" data-sidenav>受监管金融服务披露</h4>
+							<p>如果收集数据的 App 是用于受监管的金融服务，并且收集的数据符合以下所有条件，你可以选择是否对相应的数据类型进行披露：</p>
+							<ul class="compound-item-list">
+								<li>在适用的金融服务或数据保护法律法规 (例如 GDPR 或 GLBA) 下，受监管数据已依据相关法律要求，进行隐私声明以及相关收集。</li>
+								<li>仅在不牵涉 App 的主要功能，且用户对此具有选择权的情况下，才会通过 App 进行数据收集。</li>
+								<li>这类声明规定，数据不得与非关联第三方共享来营销其他产品和服务。</li>
+								<li>这类数据不得出于营销目的与第三方数据关联；不得与数据代理商共享 (除非是出于检测或预防欺诈的目的，或是安全目的)；亦不得出于信用报告目的与消费者报告机构共享.</li>
+							</ul>
+							<p>数据类型必须符合上述所有条件，你才可以自行选择是否进行披露。如果 App 收集的数据类型只满足上述部分条件而非所有条件，则必须在隐私部分中予以披露。</p>
+
+							<h4 id="health-research-disclosure" data-sidenav>健康研究披露</h4>
+							<p>如果收集的数据类型是用于健康研究，且收集的数据符合以下所有条件，你可以选择是否进行披露：</p>
+							<ul class="compound-item-list">
+								<li>数据将在用户已签署知情同意书 (ICF) 的情况下，由从事健康研究的实体进行收集，相关数据将用于一项已通过机构审查委员会或道德审查委员会的审查和批准的健康研究。</li>
+								<li>所有这类数据收集都必须遵循相关的 App&nbsp;Store 准则，且数据不得用于追踪目的。</li>
+							</ul>
+							<p>如果 App 收集的数据类型只满足上述部分条件而非所有条件，则必须在隐私部分中予以披露。</p>
+
+							<h2 id="data-type" data-sidenav>数据类型</h2>
+							<p>请参考下面的数据类型列表来对照你 App 中收集的数据类型。</p>
+
+							<table>
+
+								<tbody class="typography-subbody">
+
+									<tr>
+										<th colspan="2">
+											<figure class="category-icon icon-contact-info"></figure>联系信息
+										</th>
+									</tr>
+
+									<tr>
+										<td>姓名</td>
+										<td>例如名字或姓氏</td>
+									</tr>
+
+									<tr>
+										<td>电子邮件地址</td>
+										<td>包括但不限于哈希电子邮件地址</td>
+									</tr>
+
+									<tr>
+										<td>电话号码</td>
+										<td>包括但不限于哈希电话号码</td>
+									</tr>
+
+									<tr>
+										<td>实际地址</td>
+										<td>例如家庭地址、实际地址或邮寄地址</td>
+									</tr>
+
+									<tr>
+										<td>其他用户联系信息</td>
+										<td>任何其他可用于在 App 之外与用户联系的信息</td>
+									</tr>
+
+									<tr>
+										<th colspan="2">
+											<figure class="category-icon icon-health-info"></figure>健康健美
+										</th>
+									</tr>
+
+									<tr>
+										<td>健康</td>
+										<td>健康和医疗数据，包括但不限于来自 Clinical Health Records API、HealthKit API、Movement Disorder API 的数据、与健康有关的人体试验的数据，或用户提供的任何其他健康或医疗数据</td>
+									</tr>
+
+									<tr>
+										<td>健身</td>
+										<td>健身和锻炼数据，包括但不限于 Motion and Fitness API</td>
+									</tr>
+
+									<tr>
+										<th colspan="2">
+											<figure class="category-icon icon-financial-info"></figure>财务信息
+										</th>
+									</tr>
+
+									<tr>
+										<td>付款信息</td>
+										<td>例如付款方式、付款卡号或银行账号. 如果你 App 使用的付款服务要求用户在 App 外输入付款信息，并不会被作为开发者的你访问相关信息，那么这些信息就不会被收集而无需披露。</td>
+									</tr>
+
+									<tr>
+										<td>信用信息</td>
+										<td>例如信用评分</td>
+									</tr>
+
+									<tr>
+										<td>其他财务信息</td>
+										<td>例如薪资、收入、资产、债务或任何其他财务信息</td>
+									</tr>
+
+									<tr>
+										<th colspan="2">
+											<figure class="category-icon icon-location"></figure>位置
+										</th>
+									</tr>
+
+									<tr>
+										<td>精确位置</td>
+										<td>描述用户位置或设备位置的信息，位置分辨率高于或等于三个或以上小数的经纬度</td>
+									</tr>
+
+									<tr>
+										<td>粗略位置</td>
+										<td>描述用户位置或设备位置的信息，位置分辨率低于三个或以上小数的经纬度，例如“大致定位服务”</td>
+									</tr>
+
+									<tr>
+										<th colspan="2">
+											<figure class="category-icon icon-sensitive-info"></figure>敏感信息
+										</th>
+									</tr>
+
+									<tr>
+										<td>敏感信息</td>
+										<td>例如人种或民族数据、性取向、怀孕或分娩信息、残疾、宗教或哲学信仰、工会会员身份、政治见解、基因信息或生物特征数据</td>
+									</tr>
+
+									<tr>
+										<th colspan="2">
+											<figure class="category-icon icon-contacts"></figure>联系人
+										</th>
+									</tr>
+
+									<tr>
+										<td>联系人</td>
+										<td>例如用户的电话、地址簿或社交图谱中的联系人列表</td>
+									</tr>
+
+									<tr>
+										<th colspan="2">
+											<figure class="category-icon icon-user-content"></figure>用户内容
+										</th>
+									</tr>
+
+									<tr>
+										<td>电子邮件或短信</td>
+										<td>包括主题行、发件人、收件人以及电子邮件或信息的内容</td>
+									</tr>
+
+									<tr>
+										<td>照片或视频</td>
+										<td>用户的照片或视频</td>
+									</tr>
+
+									<tr>
+										<td>音频数据</td>
+										<td>用户的语音或声音录音</td>
+									</tr>
+
+									<tr>
+										<td>游戏内容</td>
+										<td>例如，游戏存档、多玩家匹配或游戏逻辑，或者用户生成的游戏中内容</td>
+									</tr>
+
+									<tr>
+										<td>客户支持</td>
+										<td>用户在请求客户支持期间生成的数据</td>
+									</tr>
+
+									<tr>
+										<td>其他用户内容</td>
+										<td>用户生成的任何其他内容</td>
+									</tr>
+
+									<tr>
+										<th colspan="2">
+											<figure class="category-icon icon-browsing-history"></figure>浏览历史记录
+										</th>
+									</tr>
+
+									<tr>
+										<td>浏览历史记录</td>
+										<td>与用户查看的不属于 App 的内容 (例如网站) 有关的信息</td>
+									</tr>
+
+									<tr>
+										<th colspan="2">
+											<figure class="category-icon icon-search-history"></figure>搜索历史记录
+										</th>
+									</tr>
+
+									<tr>
+										<td>搜索历史记录</td>
+										<td>与 App 中执行的搜索有关的信息</td>
+									</tr>
+
+									<tr>
+										<th colspan="2">
+											<figure class="category-icon icon-identifiers"></figure>标识符
+										</th>
+									</tr>
+
+									<tr>
+										<td>用户 ID</td>
+										<td>例如用户名、句柄、账户 ID、分配的用户 ID、客户编号、或其他可用于识别特定用户或账户的用户级或账户级 ID</td>
+									</tr>
+
+									<tr>
+										<td>设备 ID</td>
+										<td>例如设备的广告标识符或其他设备级 ID</td>
+									</tr>
+
+									<tr>
+										<th colspan="2">
+											<figure class="category-icon icon-purchase-history"></figure>购买项目
+										</th>
+									</tr>
+
+									<tr>
+										<td>购买历史记录</td>
+										<td>账户或个人的购买项目或购买倾向</td>
+									</tr>
+
+									<tr>
+										<th colspan="2">
+											<figure class="category-icon icon-usage-data"></figure>使用数据
+										</th>
+									</tr>
+
+									<tr>
+										<td>产品交互</td>
+										<td>例如 App 启动、轻点、点按、滚动信息、音乐收听数据、视频观看数据、游戏中存储的位置、视频或歌曲，或其他有关用户与 App 交互的信息</td>
+									</tr>
+
+									<tr>
+										<td>广告数据</td>
+										<td>例如与用户看过的广告有关的信息</td>
+									</tr>
+
+									<tr>
+										<td>其他使用数据</td>
+										<td>与 App 中的用户活动有关的任何其他数据</td>
+									</tr>
+
+									<tr>
+										<th colspan="2">
+											<figure class="category-icon icon-diagnostics"></figure>诊断
+										</th>
+									</tr>
+
+									<tr>
+										<td>崩溃数据</td>
+										<td>例如崩溃日志</td>
+									</tr>
+
+									<tr>
+										<td>性能数据</td>
+										<td>例如启动时间、挂起率或能耗</td>
+									</tr>
+
+									<tr>
+										<td>其他诊断数据</td>
+										<td>出于衡量与 App 相关的技术诊断目的而收集的任何其他数据</td>
+									</tr>
+
+									<tr>
+										<th colspan="2">
+											<figure class="category-icon icon-surroundings"></figure>周围环境
+										</th>
+									</tr>
+
+									<tr>
+										<td>环境扫描</td>
+										<td>例如网格、平面、场景分类和/或用户周围环境的图像检测</td>
+									</tr>
+
+									<tr>
+										<th colspan="2">
+											<figure class="category-icon icon-body"></figure>人体
+										</th>
+									</tr>
+
+									<tr>
+										<td>手部</td>
+										<td>用户的手部结构和手部动作</td>
+									</tr>
+
+									<tr>
+										<td>头部</td>
+										<td>用户的头部运动</td>
+									</tr>
+
+									<tr>
+										<th colspan="2">
+											<figure class="category-icon icon-other-data"></figure>其他数据
+										</th>
+									</tr>
+
+									<tr>
+										<td>其他数据类型</td>
+										<td>未提及的任何其他数据类型</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<h2 id="data-type-usage" data-sidenav>数据用途</h2>
+							<p>你应清楚了解你和你的第三方合作伙伴如何使用每种数据类型。</p>
+							<p>例如，如果你在 App 中收集电子邮件地址并用它来验证用户身份和打造个性化的用户体验，这会涉及到“App 功能”和“产品个性化”。</p>
+
+							<table>
+
+								<tbody class="typography-subbody">
+
+									<tr>
+										<th class="header">用途</th>
+										<th>定义</th>
+									</tr>
+
+									<tr>
+										<td>第三方广告</td>
+										<td>例如，在你的 App 中显示第三方广告，或与显示第三方广告的主体共享数据</td>
+									</tr>
+
+									<tr>
+										<td>开发者的广告或营销</td>
+										<td>例如，在你的 App 中显示第一方广告，直接向用户发送营销宣传材料，或者与展示你广告的合作方共享数据</td>
+									</tr>
+
+									<tr>
+										<td>分析</td>
+										<td>使用数据评估用户行为，包括了解现有产品功能的效果、规划新功能或衡量受众规模或特征</td>
+									</tr>
+
+									<tr>
+										<td>产品个性化</td>
+										<td>自定用户看到的内容，例如包含推荐产品、帖子或建议的列表</td>
+									</tr>
+
+									<tr>
+										<td>App 功能</td>
+										<td>例如，认证用户身份、启用功能、防止欺诈、实现安全措施、确保服务器正常运行时间、最大限度减少 app 崩溃、提升可扩展性和性能，或执行客户支持</td>
+									</tr>
+
+									<tr>
+										<td>其他用途</td>
+										<td>任何未列出的其他用途</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<h2 id="linked-data" data-sidenav>与用户关联的数据</h2>
+							<p>对于你和/或第三方合作伙伴收集的每个数据类型，你都需要说明其是否会关联到用户的身份 (通过他们的账户、设备或其他详情)。从 App 中收集的数据通常会与用户的身份关联，除非在收集数据前已采取特定的隐私保护措施来对数据进行去标识化或匿名处理，例如：</p>
+							<ul class="compound-item-list">
+								<li>在收集数据前去除所有直接标识符，例如用户 ID 或姓名。</li>
+								<li>通过对数据的处理，断开与真实身份的关联并防止再次关联。</li>
+							</ul>
+							<p>此外，为了不使数据关联到特定的用户身份，在收集数据后你必须避免某些活动：</p>
+							<ul class="compound-item-list">
+								<li>你不得尝试将数据再次关联到用户的身份。</li>
+								<li>你的数据不能绑定那些能使其关联到特定用户身份的其他数据。</li>
+							</ul>
+							<p>注：根据相关隐私法的定义，“个人信息”和“个人数据”应视为与用户关联。</p>
+
+							<h2 id="user-tracking" data-sidenav>追踪</h2>
+							<p>你需要了解你和/或第三方合作伙伴是否会使用从 App 中收集到的数据来追踪用户；如果会，哪些数据将用于此用途。</p>
+							<p>“追踪”是指将从你的 App 中收集的有关特定终端用户或设备的数据 (例如用户 ID、设备 ID 或描述文件) 与第三方数据相关联，用于定向广告或广告评估目的；或者与数据代理商共享从你的 App 中收集的有关特定终端用户或设备的数据。</p>
+							<p>“第三方合作伙伴数据”是指任何从那些不归你所有的 App、网站或离线属性文件中收集的有关特定终端用户或设备的数据。</p>
+							<p>追踪示例包括：</p>
+							<ul class="compound-item-list">
+								<li>根据从其他公司的 App 和网站收集的用户数据，在你的 App 中显示定向广告。</li>
+								<li>与数据代理商共享设备位置数据或电子邮件列表。</li>
+								<li>与第三方广告网络共享电子邮件、广告 ID 或其他 ID 的列表，该第三方广告网络使用上述信息在其他开发者的 App 中重新定位这些用户或查找类似的用户。</li>
+								<li>在你的 App 中放置一个第三方 SDK，它会将你 App 中的用户数据与其他开发者 App 中的用户数据结合起来，用于投放定向广告或衡量广告效果 (即使你没有将该 SDK 用于这些目的)。例如，你所使用的登录 SDK 会利用从你的 App 中收集的数据，在其他开发者的 App 中启用定向广告。</li>
+							</ul>
+							<p>以下情况不属于追踪：</p>
+							<ul class="compound-item-list">
+								<li>数据仅关联在终端用户的设备上，且不会以可识别终端用户或设备的方式从设备中发送出去。</li>
+								<li>数据代理商将你与其共享的数据仅用于欺诈检测、欺诈防范或安全防护的用途。</li>
+								<li>数据代理商是消费者报告机构，且你与其共享的数据仅用于以下目的：(1) 提供消费者的信誉度报告，或 (2) 出于信用评估目的而获取关于消费者信誉度的信息。</li>
+							</ul>
+							<p><a href="/cn/app-store/user-privacy-and-data-use/">进一步了解追踪</a>。</p>
+
+							<h2 id="privacy-links" data-sidenav>隐私链接</h2>
+							<p>通过在你的产品页面上添加以下链接，帮助用户轻松访问你 App 的隐私政策并在你的 App 中管理他们的数据。</p>
+							<p><strong>隐私政策 (必选)：</strong>可公开访问的隐私政策 URL。</p>
+							<p><strong>隐私选择 (可选)：</strong>可公开访问的 URL，用户可在此处进一步了解他们在使用你的 App 时可做出哪些隐私选择，以及如何管理它们。例如，让用户可以对其数据进行访问、请求删除和进行变更的一个网页。</p>
+
+							<h2 id="additional-guidance" data-sidenav>其他注意事项</h2>
+
+							<h4 class="typography-headline-body margin-top-small">你的 App 具有网页视图。</h4>
+							<p>通过网络流量收集的数据必须予以声明，除非你让用户能够浏览开放的网络。</p>
+
+							<h4 class="typography-headline-body">你收集并储存用户的 IP 地址。</h4>
+							<p>根据你使用 IP 地址的方式来声明相关的数据类型 ，例如用于获取精确位置、粗略位置、设备 ID 或诊断信息。</p>
+
+							<h4 class="typography-headline-body">你在 App 内为用户提供互发私信的功能，而不是短信功能。</h4>
+							<p>在你的标签上声明电子邮件或文本消息。文本消息既包括短信消息，也包括非短信消息。</p>
+
+							<h4 class="typography-headline-body">你的 App 包括游戏存档、多玩家匹配或游戏逻辑。</h4>
+							<p>在标签上声明游戏内容。</p>
+
+							<h4 class="typography-headline-body">根据用户是否为儿童、免费或付费用户、是否主动选择接收营销内容、用户所在地，或者出于其他原因，你会收集不同类型的用户数据。 </h4>
+							<p>请披露从 App 中收集的所有数据，除非这些数据符合“选择性披露”部分列出的所有条件。你可以使用“隐私选择”或“隐私政策”链接来提供更多详细信息，说明你的数据收集做法可能存在的差异。</p>
+
+							<h4 class="typography-headline-body">你使用 Apple 框架或服务 (例如 MapKit、CloudKit 或 App&nbsp;分析)。</h4>
+							<p>如果你从 Apple 框架或服务中收集有关 App 的数据，应指明你收集了哪些数据以及你使用这些数据的方式。但你无需负责披露由 Apple 收集的数据。</p>
+
+							<h4 class="typography-headline-body">你使用位置、设备标识符和其他敏感数据，但只是在设备上使用，而且数据从未发送到某个服务器。</h4>
+							<p>只在设备上处理的数据不属于“收集”的数据，不需要在你的回答中披露。如果你从这些数据中衍生出任何内容并会将其发送到设备之外，则产生的数据应单独予以考虑。</p>
+
+							<h4 class="typography-headline-body">你收集精确的位置，但在储存之前会立即对其去标识化和粗略化。</h4>
+							<p>请说明你将收集“粗略位置”，因为精确位置不会被储存，且相关数据会立即被粗略化处理。</p>
+
+							<h4 class="typography-headline-body">你的 App 提供了可以自由输入的文本栏或录音功能，并且用户可以通过这些途径存储他们所需要的任何类型的信息，包括姓名和健康数据。</h4>
+							<p>对于可以自由输入的文本栏，请标记“其他用户内容”；对于录音功能，请标记“音频数据”。你无需负责披露用户在 App 中通过可以自由输入的文本栏或录音功能手动输入的所有可能的数据。但是，如果你要求用户在文本栏中输入特定类型的数据 (例如他们的姓名或电子邮件地址)，或者如果你有某个功能可以让用户上传特定类型的媒体 (例如照片或视频)，那么你就需要披露具体的数据类型。</p>
+
+							<h4 class="typography-headline-body">你收集数据以便为某个请求提供服务，但在对该请求提供服务之后并不保留这些数据。</h4>
+							<p>“收集”是指从设备传出数据并以可读的形式储存数据，且储存期超过你或你的第三方合作伙伴为请求提供服务所需要的时间。例如，如果在服务器调用时发送了认证令牌或 IP 地址，但这些信息并未保留；或者，如果数据发送到了你的服务器，然后在为请求提供服务之后即被删除，则不需要在 App&nbsp;Store&nbsp;Connect 的回答中予以披露。</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</article>
+	</main>
+		<link rel="stylesheet" property="stylesheet" href="/assets/styles/router-strip.css" type="text/css" />
+	<aside class="section developer-router-links">
+		<div class="section-content">
+			<div class="row">
+				<div class="column large-3 medium-6 small-12">
+					<a href="/cn/app-store/submitting/" class="block text-center">
+						<figure class="router-icon router-icon-submit"></figure>
+						<p><strong>提交</strong></p>
+						<p class="typography-subbody">准备好你的 App 和元数据，以提交至 <span class="nowrap">App Store。</span></p>
+						<p class="typography-subbody">
+							<span class="block-link more">进一步了解</span>
+						</p>
+					</a>
+				</div>
+				<div class="column large-3 medium-6 small-12">
+					<a href="/cn/app-store-connect/" class="block text-center">
+						<figure class="router-icon router-icon-manage"></figure>
+						<p><strong>管理</strong></p>
+						<p class="typography-subbody">管理 App、分析、销售报告、商务信息，以及更多。</p>
+						<p class="typography-subbody">
+							<span class="block-link more">进一步了解</span>
+						</p>
+					</a>
+				</div>
+				<div class="column large-3 medium-6 small-12">
+					<a href="/cn/app-store/promote/" class="block text-center">
+						<figure class="router-icon router-icon-promote"></figure>
+						<p><strong>推广</strong></p>
+						<p class="typography-subbody">获取营销指南和工具，以助你在 <span class="nowrap">App Store</span> 上推广你的 App。</p>
+						<p class="typography-subbody">
+							<span class="block-link more">进一步了解</span>
+						</p>
+					</a>
+				</div>
+				<div class="column large-3 medium-6 small-12">
+					<a href="/cn/support/app-store/" class="block text-center">
+						<figure class="router-icon router-icon-help"></figure>
+						<p><strong>支持</strong></p>
+						<p class="typography-subbody">有任何疑问或请求？查看指南和文章获取帮助，或联系我们。</p>
+						<p class="typography-subbody">
+							<span class="block-link more">进一步了解</span>
+						</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</aside>
+	<link rel="stylesheet" href="/assets/styles/footer.dist.css">
+<footer id="footer" class="footer" role="contentinfo" aria-labelledby="footer-label">
+    <div class="footer-content">
+        <h2 class="footer-label" id="footer-label">Developer Footer</h2>
+
+	<developer-breadcrumbs>
+		<li><a href="/cn/app-store/">App Store</a></li>
+		<li>App 隐私保护的详细说明</li>
+	</developer-breadcrumbs>
+	        <nav class="footer-directory" aria-label="Apple Developer 目录" role="navigation" lang="zh-CN">
+	<!--googleoff: all-->
+	<div class="footer-directory-column">
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-platform" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-platform">
+
+				<h3 class="footer-directory-column-section-title">平台</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-platform" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">打开菜单</span> </a> <a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">关闭菜单</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/ios/">iOS</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/ipados/">iPadOS</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/macos/">macOS</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/tvos/">Apple tvOS</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/visionos/">visionOS</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/watchos/">watchOS</a></li>
+			</ul>
+		</div>
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-tools" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-tools">
+
+				<h3 class="footer-directory-column-section-title">工具</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-tools" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">打开菜单</span> </a>
+			<a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">关闭菜单</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/swift/">Swift</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/swiftui/">SwiftUI</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/swift-playground/">Swift Playground</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/testflight/">TestFlight</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/xcode/">Xcode</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/xcode-cloud/">Xcode Cloud</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/sf-symbols/">SF Symbols</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer-directory-column">
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-topics" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-topics">
+
+				<h3 class="footer-directory-column-section-title">主题和技术</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-topics" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">打开菜单</span> </a> <a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">关闭菜单</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/accessibility/">辅助功能</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/accessories/">配件</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/apple-intelligence/">Apple 智能</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/app-extensions/">App 扩展</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/app-store/">App Store</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/audio/">音频与视频 (英文)</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/augmented-reality/">增强现实</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/design/">设计</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/distribute/">分发</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/education/">教育</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/fonts/">字体 (英文)</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/games/">游戏</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/health-fitness/">健康与健身</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/in-app-purchase/">App 内购买项目</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/localization/">本地化</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/maps/">地图与位置</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/machine-learning/">机器学习与 AI</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://opensource.apple.com">开源资源 (英文)</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/security/">安全性</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/safari/">Safari 浏览器与网页 (英文)</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer-directory-column">
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-resources" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-resources">
+
+				<h3 class="footer-directory-column-section-title">资源和支持</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-resources" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">打开菜单</span> </a> <a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">关闭菜单</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/documentation/">完整文档 (英文)</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/documentation/">部分主题文档 (简体中文)</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/learn/">教程</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/download/">下载</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/forums/">论坛 (英文)</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/videos/">视频</a></li>
+			</ul>
+		</div>
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-support" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-support">
+
+				<h3 class="footer-directory-column-section-title">支持</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-support" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">打开菜单</span> </a>
+			<a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">关闭菜单</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/support/articles/">支持文档</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/contact/">联系我们</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/bug-reporting/">错误报告</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/system-status/">系统状态 (英文)</a></li>
+			</ul>
+		</div>
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-account" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-account">
+
+				<h3 class="footer-directory-column-section-title">账户</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-account" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">打开菜单</span> </a> <a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">关闭菜单</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/account/">Apple 开发者</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://appstoreconnect.apple.com/">App Store Connect</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/account/ios/certificate/">证书、标识符和描述文件 (英文)</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://feedbackassistant.apple.com/">反馈助理</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer-directory-column">
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-programs" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-programs">
+
+				<h3 class="footer-directory-column-section-title">计划和活动</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-programs" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">打开菜单</span> </a> <a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">关闭菜单</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/programs/">Apple Developer Program</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/programs/enterprise/">Apple Developer Enterprise Program</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/app-store/small-business-program/">App Store Small Business Program</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://mfi.apple.com/">MFi Program (英文)</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/programs/mini-apps-partner/">Mini Apps Partner Program</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/programs/news-partner/">News Partner Program (英文)</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/programs/video-partner/">Video Partner Program (英文)</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/security-bounty/">安全赏金计划 (英文)</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link nowrap" href="/programs/security-research-device/">Security Research Device Program (英文)</a></li>
+			</ul>
+		</div>
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-events" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-events">
+
+				<h3 class="footer-directory-column-section-title">活动</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-events" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">打开菜单</span> </a>
+			<a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">关闭菜单</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/events/">与 Apple 会面交流</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/events/developer-centers/">Apple Developer Center</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/app-store/app-store-awards/">App Store 大奖 (英文)</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/design/awards/">Apple 设计大奖</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/academies/">Apple Developer Academies (英文)</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/wwdc24/">WWDC</a></li>
+			</ul>
+		</div>
+	</div>
+	<!--googleon: all-->
+</nav>
+        <section class="footer-mini" vocab="http://schema.org/" typeof="Organization" lang="zh-CN">
+	<div class="footer-mini-news">
+		<div class="copy">
+			<div class="footer-mini-legal-link">阅读<a href="/cn/news/">最近新闻</a>。</div> 获取 <a href="https://apps.apple.com/cn/app/apple-developer/id640199958">Apple Developer App</a>。
+		</div>
+		<div class="content">
+			<div class="color-scheme-toggle"
+				role="radiogroup"
+				tabindex="0"
+				aria-label="Select a color scheme preference">
+
+				<label data-color-scheme-option="light">
+
+					<input type="radio" value="light" autocomplete="off"
+						onchange="window.setPreferredColorScheme(event.target.value)" />
+
+					<div class="text">Light</div>
+
+				</label>
+
+				<label data-color-scheme-option="dark">
+
+					<input type="radio" value="dark" autocomplete="off"
+						onchange="window.setPreferredColorScheme(event.target.value)" />
+
+					<div class="text">Dark</div>
+
+				</label>
+
+				<label data-color-scheme-option="auto">
+
+					<input type="radio" value="auto" autocomplete="off"
+						onchange="window.setPreferredColorScheme(event.target.value)" />
+
+					<div class="text">Auto</div>
+
+				</label>
+
+			</div>
+			<script async src="/assets/scripts/color-scheme-toggle.js"></script>
+		</div>
+	</div>
+	<link rel="stylesheet" href="/assets/styles/language-dropdown.css?35212621148">
+	<div class="language-dropdown dropdown-container legacy-form hidden">
+		<select class="dropdown" aria-label="Language Dropdown"></select>
+		<span class="dropdown-icon icon icon-chevrondown" aria-hidden="true"></span>
+	</div>
+	<script src="/assets/scripts/language-dropdown.js?35212621148"></script>
+	<div class="footer-mini-legal">
+		<div class="footer-mini-legal-copyright">版权所有 ©  2026 <a href="https://www.apple.com/cn/">Apple Inc.</a> 保留所有权利。</div>
+		<div class="footer-mini-legal-links">
+			<a class="footer-mini-legal-link" href="https://www.apple.com/cn/legal/internet-services/terms/site.html" class="first">使用条款</a>
+			<a class="footer-mini-legal-link" href="https://www.apple.com.cn/legal/privacy/">隐私政策</a>
+			<a class="footer-mini-legal-link" href="/cn/support/terms/">协议和准则</a>
+		</div>
+	</div>
+</section>
+    </div>
+</footer>
+</body>
+</html>

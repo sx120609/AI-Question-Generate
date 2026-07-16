@@ -1,0 +1,53 @@
+{
+  "runId": "rewrite_managed_no_blank_lines_fix_20260711",
+  "generatedAt": "2026-07-11T10:04:28.172Z",
+  "objective": "修复沈礼与裴硬22条题目连续空行，保留自然分段并将段间双换行改为单换行",
+  "status": "submitted-verified",
+  "submittedAt": "2026-07-11T10:06:15.856Z",
+  "submission": {
+    "valueRangeCount": 22,
+    "verifiedCellCount": 22,
+    "failedCellCount": 0,
+    "blankLineRows": 0,
+    "releaseGateId": "combined-release-gate-v2",
+    "naturalnessStatus": "PASS",
+    "roleConsistencyStatus": "PASS",
+    "structureStatus": "PASS"
+  },
+  "count": 22,
+  "generatedAnnotators": [
+    "沈礼",
+    "裴硬"
+  ],
+  "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+  "sheetId": "49e351",
+  "sheetRows": [
+    121,
+    122,
+    123,
+    134,
+    135,
+    136,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    172,
+    173,
+    174,
+    178,
+    179,
+    180
+  ],
+  "writableFields": [
+    "题目"
+  ],
+  "questionPresentation": "natural-paragraphs-no-blank-lines-v4",
+  "sourceRunId": "rewrite_managed_suzizhan_method_20260711"
+}

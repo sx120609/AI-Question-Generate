@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "policy": {
+    "hardMinimum": 620,
+    "naturalRange": [
+      650,
+      1150
+    ],
+    "warnAbove": 1250,
+    "hardMaximum": 1600
+  },
+  "rows": [
+    {
+      "uid": "沈礼_7.9_01",
+      "sheetRow": 121,
+      "questionVisibleCharacters": 724
+    },
+    {
+      "uid": "沈礼_7.9_02",
+      "sheetRow": 122,
+      "questionVisibleCharacters": 655
+    },
+    {
+      "uid": "沈礼_7.9_03",
+      "sheetRow": 123,
+      "questionVisibleCharacters": 665
+    },
+    {
+      "uid": "沈礼_7.9_04",
+      "sheetRow": 134,
+      "questionVisibleCharacters": 654
+    },
+    {
+      "uid": "沈礼_7.9_05",
+      "sheetRow": 135,
+      "questionVisibleCharacters": 751
+    },
+    {
+      "uid": "沈礼_7.9_06",
+      "sheetRow": 136,
+      "questionVisibleCharacters": 650
+    },
+    {
+      "uid": "沈礼_7.9_07",
+      "sheetRow": 140,
+      "questionVisibleCharacters": 661
+    },
+    {
+      "uid": "沈礼_7.9_08",
+      "sheetRow": 141,
+      "questionVisibleCharacters": 707
+    },
+    {
+      "uid": "沈礼_7.9_09",
+      "sheetRow": 142,
+      "questionVisibleCharacters": 726
+    },
+    {
+      "uid": "沈礼_7.9_10",
+      "sheetRow": 143,
+      "questionVisibleCharacters": 728
+    },
+    {
+      "uid": "沈礼_7.9_11",
+      "sheetRow": 144,
+      "questionVisibleCharacters": 683
+    },
+    {
+      "uid": "沈礼_7.10_01",
+      "sheetRow": 172,
+      "questionVisibleCharacters": 666
+    },
+    {
+      "uid": "沈礼_7.10_02",
+      "sheetRow": 173,
+      "questionVisibleCharacters": 722
+    },
+    {
+      "uid": "沈礼_7.10_03",
+      "sheetRow": 174,
+      "questionVisibleCharacters": 814
+    },
+    {
+      "uid": "沈礼_7.10_04",
+      "sheetRow": 178,
+      "questionVisibleCharacters": 836
+    },
+    {
+      "uid": "沈礼_7.10_05",
+      "sheetRow": 179,
+      "questionVisibleCharacters": 837
+    },
+    {
+      "uid": "沈礼_7.10_06",
+      "sheetRow": 180,
+      "questionVisibleCharacters": 882
+    }
+  ]
+}

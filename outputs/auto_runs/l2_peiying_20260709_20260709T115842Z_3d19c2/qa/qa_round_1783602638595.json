@@ -1,0 +1,15 @@
+[
+  {
+    "row": 146,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=146&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783602632288_146",
+    "checkedAt": "2026-07-09T13:10:38.591Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "明天客户周会前，销售团队想让法务给一个“海外CRM能否先接、哪些字段先别同步”的会议口径。拟接入线索来自官网预约试用、展会扫码和公众号留资，字段只有姓名、手机号",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  }
+]

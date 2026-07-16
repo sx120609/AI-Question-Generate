@@ -1,0 +1,149 @@
+{
+  "version": 5,
+  "policyId": "l2-corpus-calibrated-source-driven-v5",
+  "questionLength": {
+    "hardMinimumVisibleCharacters": 700,
+    "minimumCoreSceneCharacters": 300,
+    "recommendedMinimumVisibleCharacters": 800,
+    "recommendedMaximumVisibleCharacters": 1400,
+    "warningMaximumVisibleCharacters": 1450,
+    "hardMaximumVisibleCharacters": 1500,
+    "planningBands": []
+  },
+  "informationCoverage": {
+    "minimumDetectedUnits": 4,
+    "requiredGroups": [
+      ["actor", "audience"],
+      ["facts", "evidence"],
+      ["decision"]
+    ]
+  },
+  "similarity": {
+    "batchThreshold": 0.72,
+    "historyThreshold": 0.82,
+    "highDimensionThreshold": 0.72,
+    "minimumHighDimensions": 3,
+    "minimumCoreHighDimensions": 2,
+    "coreDimensions": [
+      "informationOrder",
+      "evidenceTopology",
+      "artifactTopology",
+      "stepActions",
+      "flowTopology"
+    ],
+    "weights": {
+      "openingMode": 0.04,
+      "informationOrder": 0.08,
+      "decisionForm": 0.06,
+      "evidenceTopology": 0.06,
+      "artifactTopology": 0.1,
+      "stepActions": 0.12,
+      "flowTopology": 0.08,
+      "sentenceRhythm": 0.05,
+      "lexicalSkeleton": 0.25,
+      "narrativeLexical": 0.16
+    }
+  },
+  "lexicalDuplication": {
+    "questionHardThreshold": 0.68,
+    "narrativeHardThreshold": 0.76,
+    "stepContextQuestionThreshold": 0.42,
+    "stepContextNarrativeThreshold": 0.55,
+    "sharedPhraseReviewMinimumCharacters": 16,
+    "sharedPhraseHardMinimumCharacters": 24
+  },
+  "passport": {
+    "assignmentMode": "disabled-source-derived",
+    "openingModes": [
+      "clock-pressure",
+      "incident-led",
+      "conflict-first",
+      "decision-fork",
+      "evidence-discovery",
+      "handoff-led",
+      "user-impact",
+      "metric-anomaly"
+    ],
+    "decisionForms": [
+      "binary-gate",
+      "multi-option",
+      "threshold-gate",
+      "ranked-priority",
+      "exception-routing",
+      "conditional-recommendation",
+      "scenario-choice"
+    ],
+    "evidenceTopologies": [
+      "multi-period-numeric",
+      "conflicting-versions",
+      "rules-plus-case-data",
+      "incomplete-evidence-pack",
+      "cross-jurisdiction",
+      "technical-acceptance",
+      "records-and-templates",
+      "mixed-primary-sources"
+    ],
+    "flowTopologies": [
+      "stage-gated",
+      "branching",
+      "exception-routing",
+      "iterative-loop",
+      "parallel-workstreams",
+      "evidence-trace"
+    ],
+    "productTopologies": [
+      {
+        "id": "decision-memo__evidence-ledger",
+        "document": ["decision-memo"],
+        "workbook": ["evidence-ledger"],
+        "linkage": "claim-to-source"
+      },
+      {
+        "id": "review-opinion__exception-log",
+        "document": ["review-opinion"],
+        "workbook": ["exception-log"],
+        "linkage": "issue-to-owner"
+      },
+      {
+        "id": "operating-playbook__stage-gate-matrix",
+        "document": ["operating-playbook"],
+        "workbook": ["stage-gate-matrix"],
+        "linkage": "gate-to-evidence"
+      },
+      {
+        "id": "meeting-brief__scenario-model",
+        "document": ["meeting-brief"],
+        "workbook": ["scenario-model"],
+        "linkage": "scenario-to-decision"
+      },
+      {
+        "id": "audit-report__remediation-tracker",
+        "document": ["audit-report"],
+        "workbook": ["remediation-tracker"],
+        "linkage": "finding-to-remediation"
+      },
+      {
+        "id": "approval-note__calculation-model",
+        "document": ["approval-note"],
+        "workbook": ["calculation-model"],
+        "linkage": "assumption-to-result"
+      },
+      {
+        "id": "negotiation-brief__clause-matrix",
+        "document": ["negotiation-brief"],
+        "workbook": ["clause-matrix"],
+        "linkage": "position-to-clause"
+      },
+      {
+        "id": "diagnostic-report__monitoring-board",
+        "document": ["diagnostic-report"],
+        "workbook": ["monitoring-board"],
+        "linkage": "signal-to-threshold"
+      }
+    ]
+  },
+  "receipt": {
+    "algorithm": "sha256",
+    "schemaVersion": 2
+  }
+}

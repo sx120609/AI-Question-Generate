@@ -1,0 +1,41 @@
+[
+  {
+    "row": 178,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=178&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783630365174_178",
+    "checkedAt": "2026-07-09T20:52:53.575Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "投委会下周要决定，寒武纪在2025年首次实现年度盈利后，是从事件跟踪转入重点研究池，还是先保留观察。现在争议不在利润有没有转正，而在利润有没有变成现金：2025",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 179,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=179&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783630373578_179",
+    "checkedAt": "2026-07-09T20:54:19.331Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "截至2026年7月10日，研发负责人想在次日锁一班苏州到华沙的中欧班列舱位：货物是24台运动相机B3工程样机，每台装有1块98Wh锂离子电池，另有8块同型号备用",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 180,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=180&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783630459332_180",
+    "checkedAt": "2026-07-09T20:54:27.295Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "分析测试中心新购的一套岛津 LC-20A 高效液相色谱系统已经运到实验楼，供货商希望本周开箱、下周安装，并口头说验收签字后就能申请尾款。资产管理员目前只收到箱数",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  }
+]

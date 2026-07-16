@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "1.0",
+  "asOfDate": "2026-07-10",
+  "documentType": "题设业务事实与证据状态结构化底表",
+  "purpose": "供订舱前预审时区分题设已知事实、业务方口头主张、已引用但未提交的文件、待补证据和需外部书面确认事项。",
+  "sourceDeclaration": {
+    "businessFacts": "以下货物、路线、型号、数量、额定能量、包装草图状态和资料状态均由本题题设提供，并非从外部真实企业档案取得。",
+    "fieldFrameworkReference": "字段框架参考国家铁路局等发布的《消费型锂电池货物铁路运输指导意见》托运前资料清单。",
+    "frameworkUrl": "https://www.nra.gov.cn/jglz/ysjg/fgys/202311/t20231102_343599.shtml",
+    "evidenceBoundary": "本文件是题设信息的机器可读整理，不是UN38.3报告、试验简介、运输条件鉴定、包装检验结论、承运人回复或主管机关批准；不得据此认定B3已经测试合格或获准承运。"
+  },
+  "shipment": {
+    "origin": "苏州",
+    "destination": "华沙",
+    "plannedMode": "中欧班列国际铁路联运",
+    "plannedBookingTime": "2026-07-11（题设中的“明早”）",
+    "draftDeclaration": "普通电子产品",
+    "draftDeclarationStatus": "业务草单，尚未获合规复核或承运人确认",
+    "packageCount": 4,
+    "mixedPackingSketchAvailable": true,
+    "packageLevelAllocationKnown": false,
+    "routeCarrierAcceptanceProvided": false
+  },
+  "cargoLines": [
+    {
+      "lineId": "B3-CAMERA-01",
+      "description": "运动相机B3工程样机，电池装在设备中",
+      "deviceCount": 24,
+      "batteryChemistry": "锂离子",
+      "batteryModel": "B3",
+      "batteryCount": 24,
+      "ratedEnergyWhEach": 98,
+      "commercialStatus": "工程样机，仍在试验，尚未量产",
+      "batteryConfiguration": "装在设备中",
+      "un38_3ReportForSameModelProvided": false,
+      "testSummaryForSameModelProvided": false,
+      "packagingPathConfirmed": false,
+      "provisionalDecision": "不得仅凭98Wh阈值按普通电子产品提交；需核对原型品规则、测试适用性、包装路径和承运接受条件"
+    },
+    {
+      "lineId": "B3-SPARE-01",
+      "description": "B3同型号备用锂离子电池，单独运输",
+      "deviceCount": 0,
+      "batteryChemistry": "锂离子",
+      "batteryModel": "B3",
+      "batteryCount": 8,
+      "ratedEnergyWhEach": 98,
+      "commercialStatus": "与工程样机配套，仍在试验",
+      "batteryConfiguration": "单独备用电池",
+      "un38_3ReportForSameModelProvided": false,
+      "testSummaryForSameModelProvided": false,
+      "packagingPathConfirmed": false,
+      "provisionalDecision": "与装在设备中的电池分开判断；确认原型品专项路径、包装规范及包件标记"
+    }
+  ],
+  "evidenceStatus": [
+    {
+      "evidence": "B2量产电池UN38.3报告",
+      "status": "业务方称现有，但未作为本题附件提交",
+      "modelMatch": "不匹配：B2并非B3",
+      "reviewAction": "索取原件并核对是否存在覆盖B3的同一型号或技术等同性依据；不得自行外推"
+    },
+    {
+      "evidence": "B2量产电池试验简介",
+      "status": "业务方称现有，但未作为本题附件提交",
+      "modelMatch": "不匹配：B2并非B3",
+      "reviewAction": "索取B3对应文件或原型运输适用路径的书面说明"
+    },
+    {
+      "evidence": "B3产品安全性测试报告或原型品测试依据",
+      "status": "未提供",
+      "reviewAction": "由研发和电池供应商补充"
+    },
+    {
+      "evidence": "铁路运输条件鉴定报告",
+      "status": "未提供",
+      "reviewAction": "由物流合规或委托检测机构补充"
+    },
+    {
+      "evidence": "铁路运输包装检验报告或适用包装结论",
+      "status": "未提供",
+      "reviewAction": "按样机内装电池与单独备用电池分别补充"
+    },
+    {
+      "evidence": "安全承诺和应急处置措施",
+      "status": "未提供",
+      "reviewAction": "由托运主体按真实货物状态编制并签署"
+    },
+    {
+      "evidence": "4箱包件级明细",
+      "status": "仅有混装草图，未给出逐箱分配、重量、短路防护、误启动防护、内外包装和标记",
+      "reviewAction": "供应链逐箱补齐并由合规复核"
+    },
+    {
+      "evidence": "2026年7月当前班列平台、境内外承运人、过境国或主管机关书面接受条件",
+      "status": "未提供",
+      "reviewAction": "订舱前按路线逐方书面确认；本底表不能替代其批准"
+    }
+  ],
+  "allowedDecisionLabels": [
+    "可按现方案提交",
+    "补件后再提交",
+    "改走危货/原型品路径",
+    "暂停出货并确认"
+  ],
+  "currentEvidenceConclusion": "截至2026-07-10，题设证据不足以支持将整票按普通电子产品提交订舱；应先完成B3型号证据、两类货物包装路径和路线参与方书面确认。"
+}

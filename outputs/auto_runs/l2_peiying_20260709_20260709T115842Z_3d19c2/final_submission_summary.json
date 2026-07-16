@@ -1,0 +1,72 @@
+{
+  "generatedAt": "2026-07-09T13:11:30.850Z",
+  "runId": "l2_peiying_20260709_20260709T115842Z_3d19c2",
+  "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+  "sheetId": "49e351",
+  "sheetRows": [
+    145,
+    146,
+    147,
+    148,
+    149
+  ],
+  "annotator": "裴硬",
+  "uidPolicy": "new alias numbering starts at 01",
+  "localChecks": {
+    "tsvRows": 5,
+    "tsvColumns": 16,
+    "attachmentFiles": 20,
+    "attachmentDirs": 5,
+    "lint": "PASS"
+  },
+  "finalRows": [
+    {
+      "row": 145,
+      "uid": "裴硬_7.9_01",
+      "topicId": "peiying_0709_12_cosmetics_claims",
+      "title": "敏感肌精华达人素材功效宣称与标签复核",
+      "attachmentObjects": 4,
+      "qa": "✅通过",
+      "qaNote": "已完成大模型质检，未发现问题"
+    },
+    {
+      "row": 146,
+      "uid": "裴硬_7.9_02",
+      "topicId": "peiying_0709_13_saas_crossborder",
+      "title": "海外CRM试用前销售线索数据出境复核",
+      "attachmentObjects": 4,
+      "qa": "✅通过",
+      "qaNote": "已完成大模型质检，未发现问题"
+    },
+    {
+      "row": 147,
+      "uid": "裴硬_7.9_03",
+      "topicId": "peiying_0709_14_property_public_revenue",
+      "title": "小区电梯广告公共收益公开与维修资金动用复核",
+      "attachmentObjects": 4,
+      "qa": "✅通过",
+      "qaNote": "已完成大模型质检，未发现问题"
+    },
+    {
+      "row": 148,
+      "uid": "裴硬_7.9_04",
+      "topicId": "peiying_0709_15_ai_recruiting",
+      "title": "招聘小程序AI简历筛选与候选人告知复核",
+      "attachmentObjects": 4,
+      "qa": "✅通过",
+      "qaNote": "已完成大模型质检，未发现问题"
+    },
+    {
+      "row": 149,
+      "uid": "裴硬_7.9_05",
+      "topicId": "peiying_0709_16_homestay_listing",
+      "title": "民宿平台房源上架前治安消防与交易信息复核",
+      "attachmentObjects": 4,
+      "qa": "✅通过",
+      "qaNote": "已完成大模型质检，未发现问题"
+    }
+  ],
+  "sourceCards": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\sources\\source_cards.md",
+  "finalReadback": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\feishu\\final_readback_145_149.json",
+  "finalQa": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\qa\\qa_round9_full_final_results.json"
+}

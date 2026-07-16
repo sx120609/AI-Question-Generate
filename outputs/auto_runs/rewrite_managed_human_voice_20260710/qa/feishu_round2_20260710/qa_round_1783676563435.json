@@ -1,0 +1,54 @@
+[
+  {
+    "row": 122,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=122&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783676443651_122",
+    "checkedAt": "2026-07-10T09:41:00.128Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "周四业委会谈电动自行车整改，巡查照片里已经出现的问题摆在物业经理面前：门厅、楼梯口和疏散通道附近还有车辆停放。哪些位置要马上清理，清理以后怎么巡查和告知居民，这",
+    "note": "关键步骤问题：末尾需加入产物自检或交付前核对。请按真实完成顺序保留关键动作，删除过细或无关步骤。请按任务真实完成顺序整理关键动作，L1保持4-8条，L2保持8-15条，保留必要流程节点，合并过细或重复动作。具体可改为：加入产物自检或交付前核对步骤。修改后应让审核人一眼看出问题原因、需要补充的材料、应补到哪个字段，以及出题人可以直接执行的调整方向，并减少来回追问；不要只写笼统描述或模糊来源。",
+    "categories": [
+      "step_count"
+    ]
+  },
+  {
+    "row": 134,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=134&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783676460130_134",
+    "checkedAt": "2026-07-10T09:41:07.966Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "会员运营今天把酒店淡季短信召回需求交过来，周一上午先给法务过口径。名单里已经放了手机号、身份证后四位、入住城市、消费频次、生日月份以及“商务客／亲子客”标签，注",
+    "note": "关键步骤问题：末尾需加入产物自检或交付前核对。请按真实完成顺序保留关键动作，删除过细或无关步骤。请按任务真实完成顺序整理关键动作，L1保持4-8条，L2保持8-15条，保留必要流程节点，合并过细或重复动作。具体可改为：加入产物自检或交付前核对步骤。修改后应让审核人一眼看出问题原因、需要补充的材料、应补到哪个字段，以及出题人可以直接执行的调整方向，并减少来回追问；不要只写笼统描述或模糊来源。",
+    "categories": [
+      "step_count"
+    ]
+  },
+  {
+    "row": 135,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=135&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783676467967_135",
+    "checkedAt": "2026-07-10T09:41:14.708Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "周五运营要重新排一组左旋肉碱类保健食品直播素材。上一版脚本被平台打回，群里最急的三个问题是“吃完瘦”“不反弹”“安全不伤身”还能不能留。现在能看到的只有这三句话",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 136,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=136&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783676474711_136",
+    "checkedAt": "2026-07-10T09:42:43.433Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "街道临时抛来一个养老助餐点运营机会，理事会周三前先要弄明白这件事值不值得继续聊。我们有社区厨房合作方和志愿者队伍，却没有承接政府购买服务的经历；堂食助餐、送餐、",
+    "note": "关键步骤问题：末尾需加入产物自检或交付前核对。请按真实完成顺序保留关键动作，删除过细或无关步骤。请按任务真实完成顺序整理关键动作，L1保持4-8条，L2保持8-15条，保留必要流程节点，合并过细或重复动作。具体可改为：加入产物自检或交付前核对步骤。修改后应让审核人一眼看出问题原因、需要补充的材料、应补到哪个字段，以及出题人可以直接执行的调整方向，并减少来回追问；不要只写笼统描述或模糊来源。",
+    "categories": [
+      "step_count"
+    ]
+  }
+]

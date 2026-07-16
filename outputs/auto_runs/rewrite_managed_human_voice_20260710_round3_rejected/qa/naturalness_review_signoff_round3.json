@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "kind": "naturalness-review-signoff",
+  "requestId": "naturalness_535da87dce2d311aa9fad3e8",
+  "bindingHash": "535da87dce2d311aa9fad3e82ec99651d7b3944f4f15963772cbc229b97c61c6",
+  "requestHash": "229c07c1a2cbda4664b2bb6071f3b7e5342708a3e6f2ba586ba27f7eeade3c12",
+  "decision": "REJECT",
+  "reviewer": "independent-model-reviewer-round3",
+  "reviewerType": "model",
+  "rationale": "Independent model review accepts the four explicit closing checks as task-native rather than one substantive template: they respectively trace photographed locations, connect send/opt-out/cancellation records, test whether regional policy was misapplied, and trace investment claims back to formulas, disclosures and pages. Their short self-check wrappers overlap, but the operations and evidence objects differ, the batch self-check share is 4/22, and the batch has no concentration finding. The six low numeric-anchor findings also remain explainable by source-derived Chinese-language facts rather than vague scenes. I am rejecting round3 because 沈礼_7.9_10 was narrowed past the source task into a defensive non-answer. The source explicitly asks for an application pre-review and a judgment about what can be prepared now and what should not yet be submitted; the candidate instead says that it does not judge whether to submit this month and postpones pre-review until the real materials arrive. That reverses the user's decision need rather than merely limiting the conclusion. The final paragraph also stacks four flagged boundary sentences in 15 sentences (0.2667 versus the 0.2125 review threshold), including both '材料到齐后再进入申报预审' and a second license/rules non-proof warning. This makes the narrowing sound like model refusal and increases disclaimer density from round2. A natural repair should preserve a conditional preliminary judgment from the currently documented gaps: state which preparation can start, which missing evidence blocks submission, and which next materials unlock re-review, without claiming final approval and without repeating the same non-proof boundary at the end. Rejection is by an independent model reviewer, not a human reviewer.",
+  "reviewedAt": "2026-07-10T09:50:36.803Z"
+}

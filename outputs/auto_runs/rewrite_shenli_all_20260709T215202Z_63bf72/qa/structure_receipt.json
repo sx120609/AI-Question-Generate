@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "status": "PASS",
+  "generatedAt": "2026-07-09T23:09:39.482Z",
+  "policyId": "l2-structural-diversity-v1",
+  "policyVersion": 1,
+  "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_shenli_all_20260709T215202Z_63bf72\\qa\\structure_gate_report.json",
+  "reportHash": "e8ff62ce7904d48be386ebaf08f985d751fcb1685feded2751112465abd4f6ca",
+  "batchHash": "fee5b23e28b5dc558a2e7452972077e2be10881c08c2e614012faff132afb093",
+  "rowHashes": [
+    {
+      "index": 0,
+      "uid": "沈礼_7.10_06",
+      "sheetRow": 180,
+      "hash": "499e8a7003736e13afd334ef5fd6eec396cc8ca7d43b78fd83ef6c5f13fd405d"
+    },
+    {
+      "index": 1,
+      "uid": "沈礼_7.9_10",
+      "sheetRow": 143,
+      "hash": "28790e27843e2b964858cdce30bb4e478feff4cbfcb3a2b19bdbd9a1a7c68460"
+    },
+    {
+      "index": 2,
+      "uid": "沈礼_7.9_08",
+      "sheetRow": 141,
+      "hash": "a8d55fe9aec054e7d08064fa60fa6ac11ce332db4e66e4921dbc8da48b6afdd0"
+    },
+    {
+      "index": 3,
+      "uid": "沈礼_7.9_05",
+      "sheetRow": 135,
+      "hash": "2e15263c7cde2871fa51cf34a240991efed6310869e7796a9a7b6370259e3abb"
+    },
+    {
+      "index": 4,
+      "uid": "沈礼_7.10_05",
+      "sheetRow": 179,
+      "hash": "dfbf332f433586e9d84cbdee095131233def7560761a6c5831391889886c2411"
+    },
+    {
+      "index": 5,
+      "uid": "沈礼_7.9_01",
+      "sheetRow": 121,
+      "hash": "2cc8c224ebb1dc62dbb43f6deea6382e4382b20ab307f55e1b9c15d4d7bddf0a"
+    },
+    {
+      "index": 6,
+      "uid": "沈礼_7.9_02",
+      "sheetRow": 122,
+      "hash": "7f9f684bde79c1e136dd66130a9b794e01cb1c4be0284585722949c1b0cab8f4"
+    },
+    {
+      "index": 7,
+      "uid": "沈礼_7.10_01",
+      "sheetRow": 172,
+      "hash": "f5a6c850adf2a9ea146da228ebf7562e4a19680ab6390d3c1c2e30457add4fd4"
+    },
+    {
+      "index": 8,
+      "uid": "沈礼_7.9_07",
+      "sheetRow": 140,
+      "hash": "b59d115bd08d46aa7d84b7e5bbcfc673ea0f35e2383c2cb2881c8e23a47bffe4"
+    },
+    {
+      "index": 9,
+      "uid": "沈礼_7.10_04",
+      "sheetRow": 178,
+      "hash": "3b4589e79616e814a33d905cfedd602e1d80cc615eeb94842a6ef17cffcd76c0"
+    },
+    {
+      "index": 10,
+      "uid": "沈礼_7.9_11",
+      "sheetRow": 144,
+      "hash": "a04392699195ff79d1a9d53d4392fc36fc27ecca0c5db04efc7ca1a5d9432582"
+    },
+    {
+      "index": 11,
+      "uid": "沈礼_7.9_03",
+      "sheetRow": 123,
+      "hash": "7e5c6d3cfb9cdf637d9fb5db45c1a1309a0daed8998691a9afceaedbf57ea4cc"
+    },
+    {
+      "index": 12,
+      "uid": "沈礼_7.9_06",
+      "sheetRow": 136,
+      "hash": "315d7494ebc2d9d31ad10e1b5a872c45dfdc35f0cfc94d4ec68b29cbaae6721a"
+    },
+    {
+      "index": 13,
+      "uid": "沈礼_7.9_09",
+      "sheetRow": 142,
+      "hash": "995ca7e1d618277632a87bc578c110d840584d1920cfdb16553623c8d350626f"
+    },
+    {
+      "index": 14,
+      "uid": "沈礼_7.10_03",
+      "sheetRow": 174,
+      "hash": "32571321bbbeafad9de6b7674a6d80397908c037808003566b533c1802bc1767"
+    },
+    {
+      "index": 15,
+      "uid": "沈礼_7.9_04",
+      "sheetRow": 134,
+      "hash": "1b3b9cbcdefc30e6fbea9513be99c7a8a9e0fbc6b332e97e420ebbc5e7c39039"
+    },
+    {
+      "index": 16,
+      "uid": "沈礼_7.10_02",
+      "sheetRow": 173,
+      "hash": "928a239e327dcab6de0505d109b01761d578e484538cdec6072b0a2f6ec1da4a"
+    }
+  ]
+}

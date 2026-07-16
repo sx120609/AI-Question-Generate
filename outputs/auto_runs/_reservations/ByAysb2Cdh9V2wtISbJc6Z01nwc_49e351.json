@@ -1,0 +1,147 @@
+{
+  "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+  "sheetId": "49e351",
+  "nextRow": 181,
+  "reservations": [
+    {
+      "id": "l2_20260709_new_20260709T085431Z_7105d4_134_136",
+      "runId": "l2_20260709_new_20260709T085431Z_7105d4",
+      "startRow": 134,
+      "endRow": 136,
+      "count": 3,
+      "status": "reserved",
+      "createdAt": "2026-07-09T09:15:52.235Z",
+      "generatedAnnotator": "沈礼",
+      "managedBySystem": true
+    },
+    {
+      "id": "l2_20260709_batch5_20260709T111803Z_9246fb_140_144",
+      "runId": "l2_20260709_batch5_20260709T111803Z_9246fb",
+      "startRow": 140,
+      "endRow": 144,
+      "count": 5,
+      "status": "reserved",
+      "createdAt": "2026-07-09T11:18:22.956Z",
+      "generatedAnnotator": "沈礼",
+      "managedBySystem": true
+    },
+    {
+      "id": "l2_peiying_20260709_20260709T115842Z_3d19c2_145_149",
+      "runId": "l2_peiying_20260709_20260709T115842Z_3d19c2",
+      "startRow": 145,
+      "endRow": 149,
+      "count": 5,
+      "status": "uid_written",
+      "createdAt": "2026-07-09T12:18:28.319Z",
+      "rows": [
+        145,
+        146,
+        147,
+        148,
+        149
+      ],
+      "uids": [
+        "裴硬_7.9_01",
+        "裴硬_7.9_02",
+        "裴硬_7.9_03",
+        "裴硬_7.9_04",
+        "裴硬_7.9_05"
+      ],
+      "updatedAt": "2026-07-09T12:21:53.548Z",
+      "correctedUidNumberingAt": "2026-07-09T12:21:53.545Z",
+      "correctionReason": "裴硬为新马甲，UID 编号从 01 开始。",
+      "generatedAnnotator": "裴硬",
+      "managedBySystem": true
+    },
+    {
+      "id": "l2_20260709T172539Z_b3f5d2_167_169",
+      "runId": "l2_20260709T172539Z_b3f5d2",
+      "startRow": 167,
+      "endRow": 169,
+      "count": 3,
+      "status": "aborted",
+      "createdAt": "2026-07-09T17:26:18.158Z",
+      "reason": "Rows 168-171 have existing B:P content; A-only scan was unsafe.",
+      "updatedAt": "2026-07-09T17:37:42.603Z",
+      "generatedAnnotator": "沈礼",
+      "managedBySystem": true
+    },
+    {
+      "id": "l2_20260709T172539Z_b3f5d2_172_174",
+      "runId": "l2_20260709T172539Z_b3f5d2",
+      "startRow": 172,
+      "endRow": 174,
+      "count": 3,
+      "status": "accepted",
+      "createdAt": "2026-07-09T17:37:42.607Z",
+      "rows": [
+        172,
+        173,
+        174
+      ],
+      "uids": [
+        "沈礼_7.10_01",
+        "沈礼_7.10_02",
+        "沈礼_7.10_03"
+      ],
+      "updatedAt": "2026-07-09T17:55:07.594Z",
+      "qa": {
+        "resultColumn": "AT",
+        "noteColumn": "AU",
+        "status": "passed",
+        "rows": [
+          172,
+          173,
+          174
+        ]
+      },
+      "completedAt": "2026-07-09T17:55:07.588Z",
+      "generatedAnnotator": "沈礼",
+      "managedBySystem": true
+    },
+    {
+      "id": "l2_shenli_20260709T202051Z_866b59_178_180",
+      "runId": "l2_shenli_20260709T202051Z_866b59",
+      "startRow": 178,
+      "endRow": 180,
+      "count": 3,
+      "status": "accepted",
+      "generatedAnnotator": "沈礼",
+      "managedBySystem": true,
+      "createdAt": "2026-07-09T20:21:21.807Z",
+      "rows": [
+        178,
+        179,
+        180
+      ],
+      "uids": [
+        "沈礼_7.10_04",
+        "沈礼_7.10_05",
+        "沈礼_7.10_06"
+      ],
+      "updatedAt": "2026-07-09T20:56:09.348Z",
+      "completedUids": [
+        "沈礼_7.10_04",
+        "沈礼_7.10_05",
+        "沈礼_7.10_06"
+      ],
+      "qa": {
+        "resultColumn": "AT",
+        "noteColumn": "AU",
+        "status": "passed",
+        "rows": [
+          178,
+          179,
+          180
+        ]
+      },
+      "attachmentCounts": [
+        5,
+        6,
+        6
+      ],
+      "completedAt": "2026-07-09T20:56:09.328Z"
+    }
+  ],
+  "updatedAt": "2026-07-09T20:56:09.348Z"
+}

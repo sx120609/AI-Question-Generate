@@ -1,0 +1,28 @@
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>质检完成</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background:#f6f7fb; padding:24px; color:#111827; }
+    .card { max-width:720px; margin:0 auto; background:white; border-radius:16px; padding:24px; box-shadow:0 8px 28px rgba(0,0,0,.08); }
+    h1 { margin:0 0 12px; font-size:24px; }
+    .ok { color:#16a34a; } .bad { color:#dc2626; }
+    .meta { color:#6b7280; margin-bottom:16px; }
+    .box { background:#f9fafb; border:1px solid #e5e7eb; border-radius:12px; padding:14px; line-height:1.7; }
+    .tip { margin-top:18px; color:#374151; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>✅ 质检完成</h1>
+    <div class="meta">工作表：7.08 L2作业表 ｜ 行号：121 ｜ 已写入 AT / AU 列</div>
+    <p><b>题目：</b>下周客户成功想把生成式客服助手灰度给两家付费客户，老板只问一句：能不能先开。产品的版本说明写得很轻，说只是接企业知识库、FAQ和工单，不训练新模型；但真实客服会</p>
+    <p><b>质检状态：</b><span class="bad">❌不通过</span></p>
+    <div class="box"><b>质检意见：</b><br>场景表达不自然：灰度上线决策更自然的表达是直接询问能否上线及需要补齐的材料，而非要求正式报告。请调整题目表述，使其更贴近真实业务对话。 产物要求生硬：直接要求生成Word和Excel报告，但缺少真实任务需求驱动。请先明确用户要解决的问题和决策目标，再自然引出产物。请把报告式、材料式说法改成真实用户会提出的决策、比较、整理、建议需求，保留预算、偏好、限制和实际用途。</div>
+    <p class="tip">现在可以关闭这个页面，回到飞书表格查看「质检状态」和「质检意见」。</p>
+  </div>
+</body>
+</html>

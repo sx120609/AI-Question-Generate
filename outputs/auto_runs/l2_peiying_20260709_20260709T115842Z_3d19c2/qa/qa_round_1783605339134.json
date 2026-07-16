@@ -1,0 +1,41 @@
+[
+  {
+    "row": 136,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=136&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783605143966_136",
+    "checkedAt": "2026-07-09T13:54:53.517Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "街道抛来一个养老助餐点运营机会，理事会周三前要决定要不要投。我们有社区厨房合作方和志愿者队伍，但还没承接过政府购买服务；助餐、送餐、食品安全、补贴对象、基本养老",
+    "note": "缺少街道招标文件、厨房资质、成本测算、送餐合同、志愿者排班和补贴对象名单等关键材料，仅靠宏观政策无法判断具体运营可行性和风险，请补充或明确这些材料由用户提供。 投标决策场景缺少街道招标文件、项目具体要求等关键事实，仅凭宏观政策无法做出真实决策，请补充或明确这些材料由用户提供。补充时要写清数据来源、覆盖范围、地区年份、统计口径或附件位置，确保后续答案能基于真实材料给出具体判断。",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 140,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=140&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783605293520_140",
+    "checkedAt": "2026-07-09T13:55:16.843Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "外包队资料不全，周五还能不能进场？物业工程群把雨水井和隔油池清掏排期排好了，对方只发营业执照、报价单和两张工人身份证；有限空间作业审批表、监护人安排、通风检测记",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 141,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=141&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783605316845_141",
+    "checkedAt": "2026-07-09T13:55:39.133Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "我早上收到后勤主任发来的食堂承包商换季菜单和家长投诉截图，下周一就想换新菜单，下午还要面对家委会追问。承包商只给了菜单、供货商名单和几张冷柜照片，食品留样记录、",
+    "note": "附件支撑不足：附件仅提供通用法规，缺少承包商实际材料（如菜单、供货商名单、冷柜照片、留样记录、健康证等），无法支撑对承包商具体情况的复核和补件清单生成。请补充承包商实际材料或调整任务为仅基于法规提供检查框架。 场景表达不自然：紧急场景下（下周一换菜单，下午面对家委会），用户更可能先要求快速分析风险、给出沟通要点和补件清单，而不是直接生成正式Word报告和Excel表格。请调整产物为更贴合紧急场景。",
+    "categories": [
+      "scene_naturalness"
+    ]
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "row": 145,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=145&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783600443144_145",
+    "checkedAt": "2026-07-09T12:34:44.459Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "美妆线这周要把一支“敏感肌急救精华”交给达人拍短视频，运营稿里写了“三天退红、修护屏障、医美级维稳”，详情页还准备放用户前后对比图和购买链接。合规同事担心功效依",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 146,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=146&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783600484461_146",
+    "checkedAt": "2026-07-09T12:35:05.143Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "销售团队想把官网预约试用、展会扫码和公众号留资统一倒进一套海外CRM，老板问明天客户周会上能不能拍板。现在卡点在字段很多：姓名、手机号、公司邮箱、职位、采购预算",
+    "note": "背景描述过于冗长，核心任务不突出，建议精简背景，直接说明业务场景、待解决问题和交付物要求，避免故事化叙述。请把报告式、材料式说法改成真实用户会提出的决策、比较、整理、建议需求，保留预算、偏好、限制和实际用途。具体可改为：精简背景，直接说明：销售团队需将三类线索数据同步至海外CRM，法务需在会议前出具数据出境复核意见（Word）和字段路径清单（Excel），明确待确认项。",
+    "categories": [
+      "scene_naturalness",
+      "prompt_style"
+    ]
+  },
+  {
+    "row": 147,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=147&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783600505144_147",
+    "checkedAt": "2026-07-09T12:36:09.124Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "业委会群里这两天吵得很厉害：电梯广告一年收了18万元，物业说已经抵扣保洁和电梯维保费用，几个业主却要求公开合同、流水和分摊明细。偏偏同一周又有3台电梯大修报价出",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 148,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=148&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783600569126_148",
+    "checkedAt": "2026-07-09T12:36:40.004Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "招聘产品经理想在小程序里上线一个“AI初筛”入口，候选人投递后系统会根据简历关键词、过往行业、学历和薪资期望给出推荐等级，HR只看A档和部分B档。运营觉得这样能",
+    "note": "缺少时间锚点：题目提到“下周灰度”，但未给出具体年份或日期，无法确定适用的法规版本。请补充灰度上线年份或截止日期，例如“2025年6月灰度”。请补充年份、截止日期、数据周期、政策生效时间或适用版本；普通题不强制加时间，只补会影响结论的时间口径。具体可改为：在题目中补充灰度上线年份或截止日期，例如“2025年6月灰度上线前”。",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 149,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=149&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783600600005_149",
+    "checkedAt": "2026-07-09T12:37:53.708Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "本地生活平台这周要上一个“城市周末民宿”专题，招商同事已经收了30套房源资料，里面有房东身份证照片、房屋照片、消防承诺书和价格表，但有些房源没有旅馆业相关备案，",
+    "note": "缺少30套房源的具体资料清单，无法逐房源判断四类分流。请补充每套房源现有资料和缺失情况，或提供房源明细表作为附件。补充时要写清数据来源、覆盖范围、地区年份、统计口径或附件位置，确保后续答案能基于真实材料给出具体判断。具体可改为：在题面或附件中提供30套房源的明细表，包含每套房源的房东证照、房屋照片、消防承诺书、价格表、备案状态、住宿登记接入情况等字段。",
+    "categories": [
+      "other"
+    ]
+  }
+]

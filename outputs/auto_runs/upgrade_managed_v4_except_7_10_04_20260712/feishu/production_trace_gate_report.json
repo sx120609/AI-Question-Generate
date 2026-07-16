@@ -1,0 +1,1122 @@
+{
+  "schemaVersion": 1,
+  "kind": "l2-production-trace-gate-report",
+  "gateId": "l2-production-trace-gate-v4",
+  "status": "PASS",
+  "generatedAt": "2026-07-11T18:37:10.912Z",
+  "packetPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\sources\\production_input_packet.json",
+  "packetHash": "e140e31f64e6dfdb75e302ba2df36d8668b1586c30b4540de7b8dacd59c78d6d",
+  "tracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\qa\\production_trace.json",
+  "traceHash": "f5614342d4842eed6f10737ce6d58aa711c8d209c7e558631bc2ab4aa7b75694",
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\drafts\\l2_questions_v4.tsv",
+  "candidateHash": "34d375a8d3d63a57612b5a53fe246eb2b079206f82c23dda711356f0172a8895",
+  "fillPlanPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\feishu\\feishu_fill_plan.json",
+  "fillPlanHash": "96e04dfa4ffd96b2e6c88881ea57f109c50d7f87b841419016b0dd7acca8f2d7",
+  "rowCount": 21,
+  "attachmentRoot": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments",
+  "attachmentBindings": [
+    {
+      "uid": "沈礼_7.9_01",
+      "name": "附件一_生成式人工智能服务管理暂行办法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_01\\附件一_生成式人工智能服务管理暂行办法.html",
+      "sha256": "7fae988c064dde72c95e96e5727bf9abee4b3a5a1ea817606a9ca1f97ffac54b",
+      "bytes": 29431
+    },
+    {
+      "uid": "沈礼_7.9_01",
+      "name": "附件二_互联网信息服务深度合成管理规定.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_01\\附件二_互联网信息服务深度合成管理规定.html",
+      "sha256": "92e2f7b5478f9b32247276c456df0adaafa149f8f9dd8bbc6068f89e9952c0e0",
+      "bytes": 29675
+    },
+    {
+      "uid": "沈礼_7.9_01",
+      "name": "附件三_中华人民共和国个人信息保护法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_01\\附件三_中华人民共和国个人信息保护法.html",
+      "sha256": "50b62bb9868648fe0417d8757a8cff62641eba6d879403f363d771f8c6d3acff",
+      "bytes": 60221
+    },
+    {
+      "uid": "沈礼_7.9_01",
+      "name": "附件四_生成式人工智能服务安全基本要求_GBT45654_2025.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_01\\附件四_生成式人工智能服务安全基本要求_GBT45654_2025.pdf",
+      "sha256": "dcaed877c417f57f339a0a50de62a623d810cb2328adea08482b36d157ca361a",
+      "bytes": 567265
+    },
+    {
+      "uid": "沈礼_7.9_01",
+      "name": "附件五_生成式人工智能服务已备案信息公告.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_01\\附件五_生成式人工智能服务已备案信息公告.html",
+      "sha256": "af79a9e07bd3e92e67469534a704153cdb29406decfc0810053e8139b5609d55",
+      "bytes": 20544
+    },
+    {
+      "uid": "沈礼_7.9_02",
+      "name": "附件一_高层民用建筑消防安全管理规定.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_02\\附件一_高层民用建筑消防安全管理规定.pdf",
+      "sha256": "102f01e7f4819ca603b91974134b47113fd4c21522ea0bcf5bbfc6d37c1fb3e6",
+      "bytes": 168935
+    },
+    {
+      "uid": "沈礼_7.9_02",
+      "name": "附件二_高层民用建筑消防安全管理规定页面.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_02\\附件二_高层民用建筑消防安全管理规定页面.html",
+      "sha256": "37d807c4ffae7287a94dce0592bb6c18406b60e70a1c9ffc6a18c079c2949b86",
+      "bytes": 286484
+    },
+    {
+      "uid": "沈礼_7.9_02",
+      "name": "附件三_高层民用建筑消防安全管理规定政策解读.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_02\\附件三_高层民用建筑消防安全管理规定政策解读.html",
+      "sha256": "6a495fd01ba2c9f678fbfe6ea9cf7d8b0af32ed0ab9680050c16b61a0b83c53a",
+      "bytes": 60608
+    },
+    {
+      "uid": "沈礼_7.9_02",
+      "name": "附件四_2025年度电动自行车以旧换新工作通知.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_02\\附件四_2025年度电动自行车以旧换新工作通知.html",
+      "sha256": "52ed1b91b92c83d5c202782421447bd4647d9a081dfc2ebed37fe60109cd7b8a",
+      "bytes": 15252
+    },
+    {
+      "uid": "沈礼_7.9_02",
+      "name": "附件五_电动自行车以旧换新政策解读.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_02\\附件五_电动自行车以旧换新政策解读.html",
+      "sha256": "9c68a38fbb8a44cd10d8690c150df751613a0eba99e5bb9073179fe86976bd82",
+      "bytes": 23348
+    },
+    {
+      "uid": "沈礼_7.9_03",
+      "name": "附件一_互联网广告管理办法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_03\\附件一_互联网广告管理办法.html",
+      "sha256": "9dde70f02524195d549150563abb8d24dda3a42a90c2aadfd4d7c4f2abd492cd",
+      "bytes": 28691
+    },
+    {
+      "uid": "沈礼_7.9_03",
+      "name": "附件二_互联网广告可识别性执法指南.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_03\\附件二_互联网广告可识别性执法指南.html",
+      "sha256": "866eafde1185da8dc06ce470fb017adaf24eeabbed18486c55954da32df4e2e8",
+      "bytes": 41997
+    },
+    {
+      "uid": "沈礼_7.9_03",
+      "name": "附件三_预包装食品标签通则_GB7718_2011.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_03\\附件三_预包装食品标签通则_GB7718_2011.pdf",
+      "sha256": "1518746449379575738703de14e0dae148372427d1322c3e70a20047a600e366",
+      "bytes": 217865
+    },
+    {
+      "uid": "沈礼_7.9_03",
+      "name": "附件四_特殊食品广告审查管理暂行办法.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_03\\附件四_特殊食品广告审查管理暂行办法.pdf",
+      "sha256": "365b504c8779fb354dc1d5f8d6e2e470887c05ecc46661919d45a4352655c952",
+      "bytes": 186928
+    },
+    {
+      "uid": "沈礼_7.9_03",
+      "name": "附件五_网络食品安全违法行为查处办法.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_03\\附件五_网络食品安全违法行为查处办法.pdf",
+      "sha256": "767fdbc82d46518a530cbe2110437c540204cadf046e27325b03f1bbe94120c5",
+      "bytes": 197172
+    },
+    {
+      "uid": "沈礼_7.9_03",
+      "name": "附件六_中华人民共和国食品安全法.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_03\\附件六_中华人民共和国食品安全法.pdf",
+      "sha256": "d5df817425af145336a505f690e97c58f2cd18b2487adf798b540c4d71cb275d",
+      "bytes": 266488
+    },
+    {
+      "uid": "沈礼_7.9_04",
+      "name": "附件一_中华人民共和国个人信息保护法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_04\\附件一_中华人民共和国个人信息保护法.html",
+      "sha256": "50b62bb9868648fe0417d8757a8cff62641eba6d879403f363d771f8c6d3acff",
+      "bytes": 60221
+    },
+    {
+      "uid": "沈礼_7.9_04",
+      "name": "附件二_中华人民共和国数据安全法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_04\\附件二_中华人民共和国数据安全法.html",
+      "sha256": "8eb14247c4b7fae5f499e5a5bcb5b7d58ad91c9585d819c42d5a3b5bab133f4b",
+      "bytes": 32994
+    },
+    {
+      "uid": "沈礼_7.9_04",
+      "name": "附件三_中华人民共和国网络安全法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_04\\附件三_中华人民共和国网络安全法.html",
+      "sha256": "a3344d37a9cd88d3b1ea350607d70c5eb92fa7022b00a8e59cdc6dc5b3d37a5c",
+      "bytes": 19799
+    },
+    {
+      "uid": "沈礼_7.9_04",
+      "name": "附件四_信息安全技术个人信息安全规范国家标准信息.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_04\\附件四_信息安全技术个人信息安全规范国家标准信息.html",
+      "sha256": "6d803bb50c592fb43b5806ec33acde482579c26f9015712fb52b78b2545e36b1",
+      "bytes": 87663
+    },
+    {
+      "uid": "沈礼_7.9_05",
+      "name": "附件一_互联网广告管理办法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_05\\附件一_互联网广告管理办法.html",
+      "sha256": "77afdca02cd0c68cc099f87f6f69d0d36274c9b416d2888c67dd291b913d216d",
+      "bytes": 45017
+    },
+    {
+      "uid": "沈礼_7.9_05",
+      "name": "附件二_中华人民共和国广告法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_05\\附件二_中华人民共和国广告法.html",
+      "sha256": "6e8f61b2674282f86fb9b4a6a3155de35322295dba60444a122c512fd7e8be31",
+      "bytes": 67989
+    },
+    {
+      "uid": "沈礼_7.9_05",
+      "name": "附件三_广告审查管理暂行办法.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_05\\附件三_广告审查管理暂行办法.pdf",
+      "sha256": "365b504c8779fb354dc1d5f8d6e2e470887c05ecc46661919d45a4352655c952",
+      "bytes": 186928
+    },
+    {
+      "uid": "沈礼_7.9_05",
+      "name": "附件四_网络直播营销管理办法发布说明.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_05\\附件四_网络直播营销管理办法发布说明.html",
+      "sha256": "8f9b41290895a1b8aab37b26ae52521dbc2184264ec548bae5ac2c9eda9c6bcc",
+      "bytes": 13781
+    },
+    {
+      "uid": "沈礼_7.9_05",
+      "name": "附件五_福建省2025年虚假违法广告典型案例.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_05\\附件五_福建省2025年虚假违法广告典型案例.html",
+      "sha256": "3a1b15e51a7e64da61d856247c57541f6b902b272acaa30043d8e5469c9e388c",
+      "bytes": 64503
+    },
+    {
+      "uid": "沈礼_7.9_05",
+      "name": "附件六_市场监管总局直播电商典型案例.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_05\\附件六_市场监管总局直播电商典型案例.html",
+      "sha256": "b37679cb2163e74b51316043de1dbb8f5d0830077d1184c66ee91e4fe9c0d7e9",
+      "bytes": 46263
+    },
+    {
+      "uid": "沈礼_7.9_06",
+      "name": "附件一_民政部积极发展老年助餐服务行动方案.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_06\\附件一_民政部积极发展老年助餐服务行动方案.html",
+      "sha256": "e1a6428c93560ccf0d8058e059b3d82256ca6d42ec0051dddb0eb0b42774cf16",
+      "bytes": 58117
+    },
+    {
+      "uid": "沈礼_7.9_06",
+      "name": "附件二_浙江省发展老年助餐服务行动实施方案.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_06\\附件二_浙江省发展老年助餐服务行动实施方案.pdf",
+      "sha256": "3c223f85cfd09961198b1f38b802f62ea69808125f5be664b9559e138cd8db64",
+      "bytes": 2155522
+    },
+    {
+      "uid": "沈礼_7.9_06",
+      "name": "附件三_浙江省政府向社会力量购买服务指导性目录2024.xlsx",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_06\\附件三_浙江省政府向社会力量购买服务指导性目录2024.xlsx",
+      "sha256": "5e8efbebf3aecb3c437e7ba85b9fd077b1988f5eb6d650eda0256bc4787796df",
+      "bytes": 27829
+    },
+    {
+      "uid": "沈礼_7.9_06",
+      "name": "附件四_广州市基本养老服务清单2024.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_06\\附件四_广州市基本养老服务清单2024.html",
+      "sha256": "cf31f9b29d30a055dbb177e2ef7c415d84c963fd209e99274ba8f7cd0761b350",
+      "bytes": 178262
+    },
+    {
+      "uid": "沈礼_7.9_07",
+      "name": "附件一_中华人民共和国安全生产法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_07\\附件一_中华人民共和国安全生产法.html",
+      "sha256": "1e40a594b8ac8ec9a59db883d29186af53295bbe4af8f2c1fd897ed0bf957c0f",
+      "bytes": 158867
+    },
+    {
+      "uid": "沈礼_7.9_07",
+      "name": "附件二_工贸企业有限空间作业安全规定.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_07\\附件二_工贸企业有限空间作业安全规定.pdf",
+      "sha256": "5a49163c7d3f1b4362f77c965b8a6736c5cee79801d63c7d8c5038de2380e6b3",
+      "bytes": 130745
+    },
+    {
+      "uid": "沈礼_7.9_07",
+      "name": "附件三_工贸企业有限空间作业安全规定解读.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_07\\附件三_工贸企业有限空间作业安全规定解读.html",
+      "sha256": "0805da8b4df7119e16637533cc566c8a5f6111dd6e7ab66e61290064760d8250",
+      "bytes": 44378
+    },
+    {
+      "uid": "沈礼_7.9_07",
+      "name": "附件四_工贸企业重大事故隐患判定标准.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_07\\附件四_工贸企业重大事故隐患判定标准.html",
+      "sha256": "295a80da1781be43aa0ea2e0ca376a215718e2ef04906f5336ab98d525e3af02",
+      "bytes": 125664
+    },
+    {
+      "uid": "沈礼_7.9_08",
+      "name": "附件一_学校食品安全与营养健康管理规定.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_08\\附件一_学校食品安全与营养健康管理规定.html",
+      "sha256": "2c9a35a3836e28b2e66f2bb07b9ec7ae6b4f6579fc4e189093f56a2c0a91f5c3",
+      "bytes": 44284
+    },
+    {
+      "uid": "沈礼_7.9_08",
+      "name": "附件二_加强学校校外供餐管理工作通知.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_08\\附件二_加强学校校外供餐管理工作通知.html",
+      "sha256": "feafbf5a54ddd84589684693de990ed5444962ce63be258d5707294b09475dbf",
+      "bytes": 21323
+    },
+    {
+      "uid": "沈礼_7.9_08",
+      "name": "附件三_中华人民共和国食品安全法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_08\\附件三_中华人民共和国食品安全法.html",
+      "sha256": "7ec8dfc749ebfa30b82a2badb404e5a3ea8cc343b9fc1fce911c33c780ea7875",
+      "bytes": 74128
+    },
+    {
+      "uid": "沈礼_7.9_08",
+      "name": "附件四_食品生产经营企业落实食品安全主体责任规定.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_08\\附件四_食品生产经营企业落实食品安全主体责任规定.html",
+      "sha256": "a282d9195834ff5b1b30632503e7dd1eb6ab1e38f1e427c3efec7b0b3f510b43",
+      "bytes": 51284
+    },
+    {
+      "uid": "沈礼_7.9_09",
+      "name": "附件一_药品网络销售监督管理办法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_09\\附件一_药品网络销售监督管理办法.html",
+      "sha256": "ded09e82ec19cd036208d4f8f65c40a809874ba23219289b2ef5ee95a472a258",
+      "bytes": 43810
+    },
+    {
+      "uid": "沈礼_7.9_09",
+      "name": "附件二_药品网络销售禁止清单第一版公告.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_09\\附件二_药品网络销售禁止清单第一版公告.html",
+      "sha256": "3d2d630bde412eaf080503fdd298a6a40e093bb713996fdc925105e0cd32beec",
+      "bytes": 10334
+    },
+    {
+      "uid": "沈礼_7.9_09",
+      "name": "附件三_处方管理办法.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_09\\附件三_处方管理办法.pdf",
+      "sha256": "3fb9482f344712ea1d87cfc799d8f55a803df0b98faea9fa7971186f4f6ac17e",
+      "bytes": 239999
+    },
+    {
+      "uid": "沈礼_7.9_09",
+      "name": "附件四_长期处方管理规范试行.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_09\\附件四_长期处方管理规范试行.html",
+      "sha256": "17949776999a69e67f910140a8876f53b38be7e4426927d348c667dd065e773a",
+      "bytes": 25764
+    },
+    {
+      "uid": "沈礼_7.9_10",
+      "name": "附件一_医疗机构医疗保障定点管理暂行办法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_10\\附件一_医疗机构医疗保障定点管理暂行办法.html",
+      "sha256": "0553e52277955aa9078a1dc488c3d28f2dc73e9e4f657b98f3049df408793c62",
+      "bytes": 43900
+    },
+    {
+      "uid": "沈礼_7.9_10",
+      "name": "附件二_医疗机构医疗保障定点管理暂行办法.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_10\\附件二_医疗机构医疗保障定点管理暂行办法.pdf",
+      "sha256": "f6be7972e674305dd97dc2dfd7bcdbad51dd7571da8f18eea2f2f846f50ea212",
+      "bytes": 203638
+    },
+    {
+      "uid": "沈礼_7.9_10",
+      "name": "附件三_进一步加强医疗保障定点医疗机构管理通知.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_10\\附件三_进一步加强医疗保障定点医疗机构管理通知.html",
+      "sha256": "b3691f69e80ad58f504f6e7f1a611dabe3b6225cd13c7171b6762ba7eeb8656d",
+      "bytes": 11753
+    },
+    {
+      "uid": "沈礼_7.9_10",
+      "name": "附件四_医疗保障基金使用监督管理条例实施细则.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_10\\附件四_医疗保障基金使用监督管理条例实施细则.html",
+      "sha256": "9650a4080e0ca9679adceee2ad9731cc1116aff12fc0b16be943c58c251df4a1",
+      "bytes": 35741
+    },
+    {
+      "uid": "沈礼_7.9_11",
+      "name": "附件一_中华人民共和国慈善法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_11\\附件一_中华人民共和国慈善法.html",
+      "sha256": "554d82cb0e7d728cf96a47df849485ff1ff7aa3ce240d04f76d3c266be8fdf50",
+      "bytes": 232220
+    },
+    {
+      "uid": "沈礼_7.9_11",
+      "name": "附件二_中华人民共和国公益事业捐赠法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_11\\附件二_中华人民共和国公益事业捐赠法.html",
+      "sha256": "dc81287f6ae977ed9d04da17f339237fd744782c8414a12938b67bc67355c00b",
+      "bytes": 31125
+    },
+    {
+      "uid": "沈礼_7.9_11",
+      "name": "附件三_公益事业捐赠票据使用管理办法.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_11\\附件三_公益事业捐赠票据使用管理办法.pdf",
+      "sha256": "18d112cc0dc7a76726324d74b7cdc46041624e244ac95a9009073a901c7a3a3c",
+      "bytes": 2586364
+    },
+    {
+      "uid": "沈礼_7.9_11",
+      "name": "附件四_公益性捐赠税前扣除事项公告.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.9_11\\附件四_公益性捐赠税前扣除事项公告.html",
+      "sha256": "b3c22c6bccab38575f91e265e24ce3d2015fc520bc602450f1fcc03dc827ead4",
+      "bytes": 48925
+    },
+    {
+      "uid": "裴硬_7.9_01",
+      "name": "附件一_化妆品监督管理条例.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\裴硬_7.9_01\\附件一_化妆品监督管理条例.pdf",
+      "sha256": "b86461636eaf48d39e867fbee9a75c3602052e666702c8247bebd9907ae76412",
+      "bytes": 559755
+    },
+    {
+      "uid": "裴硬_7.9_01",
+      "name": "附件二_化妆品网络经营监督管理办法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\裴硬_7.9_01\\附件二_化妆品网络经营监督管理办法.html",
+      "sha256": "60164ab16393eacb472f7ca71b63a091bb22c56f847bce361dfebef3e9a9c573",
+      "bytes": 133948
+    },
+    {
+      "uid": "裴硬_7.9_01",
+      "name": "附件三_化妆品功效宣称评价规范.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\裴硬_7.9_01\\附件三_化妆品功效宣称评价规范.html",
+      "sha256": "7d3dfcceba7afdf1409ad9dcf81df948b60a3419f58419331cd25e678f16487d",
+      "bytes": 262432
+    },
+    {
+      "uid": "裴硬_7.9_01",
+      "name": "附件四_互联网广告管理办法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\裴硬_7.9_01\\附件四_互联网广告管理办法.html",
+      "sha256": "b6cae7f41b7e903f03becc94699ec5997008a7691f04c3fa0a09b1bed0f9286f",
+      "bytes": 70714
+    },
+    {
+      "uid": "裴硬_7.9_02",
+      "name": "附件一_个人信息保护法_数据出境规则.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\裴硬_7.9_02\\附件一_个人信息保护法_数据出境规则.html",
+      "sha256": "50b62bb9868648fe0417d8757a8cff62641eba6d879403f363d771f8c6d3acff",
+      "bytes": 60221
+    },
+    {
+      "uid": "裴硬_7.9_02",
+      "name": "附件二_中华人民共和国数据安全法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\裴硬_7.9_02\\附件二_中华人民共和国数据安全法.html",
+      "sha256": "8eb14247c4b7fae5f499e5a5bcb5b7d58ad91c9585d819c42d5a3b5bab133f4b",
+      "bytes": 32994
+    },
+    {
+      "uid": "裴硬_7.9_02",
+      "name": "附件三_数据出境安全评估办法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\裴硬_7.9_02\\附件三_数据出境安全评估办法.html",
+      "sha256": "39cbb310de87ccbe183dd1c1d6abcd102d651fc22911f40f1dc3ebdfdad9f413",
+      "bytes": 14660
+    },
+    {
+      "uid": "裴硬_7.9_02",
+      "name": "附件四_促进和规范数据跨境流动规定.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\裴硬_7.9_02\\附件四_促进和规范数据跨境流动规定.html",
+      "sha256": "d03e303a9e6c32694a0b9d64ba6bdb5fb63b55fc91469ee195ad3ecfb8f59238",
+      "bytes": 20978
+    },
+    {
+      "uid": "裴硬_7.9_03",
+      "name": "附件一_民法典物权编业主共有与维修资金条款.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\裴硬_7.9_03\\附件一_民法典物权编业主共有与维修资金条款.html",
+      "sha256": "076b7d2520f7208648de577d2d4c83cd9721242d53ced7a8c48b09026f63e486",
+      "bytes": 113466
+    },
+    {
+      "uid": "裴硬_7.9_03",
+      "name": "附件二_物业管理条例.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\裴硬_7.9_03\\附件二_物业管理条例.pdf",
+      "sha256": "add8befbd025ce86161b6428c3b06facbe9a55ef2778e242a673e62769c414fd",
+      "bytes": 266566
+    },
+    {
+      "uid": "裴硬_7.9_03",
+      "name": "附件三_住宅专项维修资金管理办法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\裴硬_7.9_03\\附件三_住宅专项维修资金管理办法.html",
+      "sha256": "258451550bd6c342dc0016f10eabbacc2ab167845af7982edf7ea501bbceb9a7",
+      "bytes": 74916
+    },
+    {
+      "uid": "裴硬_7.9_03",
+      "name": "附件四_业主大会和业主委员会指导规则.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\裴硬_7.9_03\\附件四_业主大会和业主委员会指导规则.pdf",
+      "sha256": "1204f197627196c0a850b116fdd597a2505ef9474ed413ae04322e8e71a721e9",
+      "bytes": 155248
+    },
+    {
+      "uid": "裴硬_7.9_04",
+      "name": "附件一_网络招聘服务管理规定.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\裴硬_7.9_04\\附件一_网络招聘服务管理规定.html",
+      "sha256": "be542549b4140e5146342ada52bcb3703e8abe674494f4210dab041cc45caa3d",
+      "bytes": 67324
+    },
+    {
+      "uid": "裴硬_7.9_04",
+      "name": "附件二_个人信息保护法_招聘候选人信息处理.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\裴硬_7.9_04\\附件二_个人信息保护法_招聘候选人信息处理.html",
+      "sha256": "50b62bb9868648fe0417d8757a8cff62641eba6d879403f363d771f8c6d3acff",
+      "bytes": 60221
+    },
+    {
+      "uid": "裴硬_7.9_04",
+      "name": "附件三_互联网信息服务算法推荐管理规定.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\裴硬_7.9_04\\附件三_互联网信息服务算法推荐管理规定.html",
+      "sha256": "89aa514b53377b1cda3742f74addddbbc9f44bb2927c9eaf65793f55ce19eda9",
+      "bytes": 31231
+    },
+    {
+      "uid": "裴硬_7.9_04",
+      "name": "附件四_生成式人工智能服务管理暂行办法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\裴硬_7.9_04\\附件四_生成式人工智能服务管理暂行办法.html",
+      "sha256": "7fae988c064dde72c95e96e5727bf9abee4b3a5a1ea817606a9ca1f97ffac54b",
+      "bytes": 29431
+    },
+    {
+      "uid": "裴硬_7.9_05",
+      "name": "附件一_旅馆业治安管理办法.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\裴硬_7.9_05\\附件一_旅馆业治安管理办法.pdf",
+      "sha256": "cb488b50da4e285ff1f9b3578ef22ccd0dfdca52c75e074f9d7c9fea38b17682",
+      "bytes": 200166
+    },
+    {
+      "uid": "裴硬_7.9_05",
+      "name": "附件二_中华人民共和国消防法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\裴硬_7.9_05\\附件二_中华人民共和国消防法.html",
+      "sha256": "6b2135a3698f30083cd705fcb6408fb542ee055d5c432853c68881bba9bd32c2",
+      "bytes": 1820
+    },
+    {
+      "uid": "裴硬_7.9_05",
+      "name": "附件三_网络交易监督管理办法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\裴硬_7.9_05\\附件三_网络交易监督管理办法.html",
+      "sha256": "4dcb649dbb8b727aae5ca87cdab546e5d883602b066f93c796d79ff024acdff6",
+      "bytes": 77930
+    },
+    {
+      "uid": "裴硬_7.9_05",
+      "name": "附件四_中华人民共和国电子商务法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\裴硬_7.9_05\\附件四_中华人民共和国电子商务法.html",
+      "sha256": "3e36c392fec75a632ae21906b39a17f6255b8829ad78f18eb33f12b1c8b7e108",
+      "bytes": 29256
+    },
+    {
+      "uid": "沈礼_7.10_01",
+      "name": "附件一_茶饮促销行为暂行规定.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.10_01\\附件一_茶饮促销行为暂行规定.html",
+      "sha256": "85279d74e7a766dcbf8566944db06cbe49860cb76a2fe986f8b7f291a90385b3",
+      "bytes": 60627
+    },
+    {
+      "uid": "沈礼_7.10_01",
+      "name": "附件二_茶饮消费者权益保护法实施条例.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.10_01\\附件二_茶饮消费者权益保护法实施条例.html",
+      "sha256": "4643613f58d71829b3c4d5864b8ca7f1ce546dab5dfb1ad561d3d38c07ecfe77",
+      "bytes": 65252
+    },
+    {
+      "uid": "沈礼_7.10_01",
+      "name": "附件三_茶饮互联网广告管理办法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.10_01\\附件三_茶饮互联网广告管理办法.html",
+      "sha256": "b6cae7f41b7e903f03becc94699ec5997008a7691f04c3fa0a09b1bed0f9286f",
+      "bytes": 70714
+    },
+    {
+      "uid": "沈礼_7.10_01",
+      "name": "附件四_茶饮网络交易监督管理办法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.10_01\\附件四_茶饮网络交易监督管理办法.html",
+      "sha256": "4dcb649dbb8b727aae5ca87cdab546e5d883602b066f93c796d79ff024acdff6",
+      "bytes": 77930
+    },
+    {
+      "uid": "沈礼_7.10_01",
+      "name": "附件五_茶饮会员个人信息保护法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.10_01\\附件五_茶饮会员个人信息保护法.html",
+      "sha256": "50b62bb9868648fe0417d8757a8cff62641eba6d879403f363d771f8c6d3acff",
+      "bytes": 60221
+    },
+    {
+      "uid": "沈礼_7.10_02",
+      "name": "附件一_儿童手表儿童个人信息网络保护规定.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.10_02\\附件一_儿童手表儿童个人信息网络保护规定.html",
+      "sha256": "cd31dd4c427fbda06353a43fde89364d1b986fde00298ceb4285af4468130b63",
+      "bytes": 22216
+    },
+    {
+      "uid": "沈礼_7.10_02",
+      "name": "附件二_儿童手表未成年人网络保护条例.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.10_02\\附件二_儿童手表未成年人网络保护条例.html",
+      "sha256": "791429cfa11b21775d5a774202cbd25b3d2ec5782d67154bf83fcc37423b3a19",
+      "bytes": 50111
+    },
+    {
+      "uid": "沈礼_7.10_02",
+      "name": "附件三_儿童手表个人信息保护法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.10_02\\附件三_儿童手表个人信息保护法.html",
+      "sha256": "50b62bb9868648fe0417d8757a8cff62641eba6d879403f363d771f8c6d3acff",
+      "bytes": 60221
+    },
+    {
+      "uid": "沈礼_7.10_02",
+      "name": "附件四_儿童手表网络数据安全管理条例.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.10_02\\附件四_儿童手表网络数据安全管理条例.html",
+      "sha256": "cc042f70f1fde42ff59e68c63733569ca99246ec0447274ce5a2a511f37ac775",
+      "bytes": 59055
+    },
+    {
+      "uid": "沈礼_7.10_02",
+      "name": "附件五_儿童手表App违法违规收集个人信息认定方法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.10_02\\附件五_儿童手表App违法违规收集个人信息认定方法.html",
+      "sha256": "c1c44c6bc16b111de65446183380e6a5977b1c8f67873fc57c10757079707b9e",
+      "bytes": 19061
+    },
+    {
+      "uid": "沈礼_7.10_03",
+      "name": "附件一_票务大型营业性演出规范管理通知.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.10_03\\附件一_票务大型营业性演出规范管理通知.html",
+      "sha256": "cc732cd6bd56ccb97298eedc6f3cb54407db7c52b9219b335c174fe62a6748b2",
+      "bytes": 35455
+    },
+    {
+      "uid": "沈礼_7.10_03",
+      "name": "附件二_票务营业性演出管理条例.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.10_03\\附件二_票务营业性演出管理条例.pdf",
+      "sha256": "1651dc457b27ba626d0380b939d53a57aa27fe9e5cb232a90a6993a72faa3a17",
+      "bytes": 296552
+    },
+    {
+      "uid": "沈礼_7.10_03",
+      "name": "附件三_票务营业性演出管理条例实施细则.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.10_03\\附件三_票务营业性演出管理条例实施细则.pdf",
+      "sha256": "83b790db9bd4164f361b468f53a5c9dac29c92ee2d3bbf115dd3c603f5164038",
+      "bytes": 164130
+    },
+    {
+      "uid": "沈礼_7.10_03",
+      "name": "附件四_票务大型群众性活动安全管理条例.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.10_03\\附件四_票务大型群众性活动安全管理条例.html",
+      "sha256": "74518955877d8784083ebbb8265708ad3e861126502f7c4bd5e218d069fd574e",
+      "bytes": 63072
+    },
+    {
+      "uid": "沈礼_7.10_03",
+      "name": "附件五_票务网络交易平台规则监督管理办法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.10_03\\附件五_票务网络交易平台规则监督管理办法.html",
+      "sha256": "25b58fb5eb69124b4af552c7b094d4c2b49625b987a07408ae87e5b1eea54020",
+      "bytes": 40355
+    },
+    {
+      "uid": "沈礼_7.10_03",
+      "name": "附件六_票务个人信息保护法.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.10_03\\附件六_票务个人信息保护法.html",
+      "sha256": "50b62bb9868648fe0417d8757a8cff62641eba6d879403f363d771f8c6d3acff",
+      "bytes": 60221
+    },
+    {
+      "uid": "沈礼_7.10_03",
+      "name": "附件七_票务消费者权益保护法实施条例.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.10_03\\附件七_票务消费者权益保护法实施条例.html",
+      "sha256": "4643613f58d71829b3c4d5864b8ca7f1ce546dab5dfb1ad561d3d38c07ecfe77",
+      "bytes": 65252
+    },
+    {
+      "uid": "沈礼_7.10_05",
+      "name": "附件一_消费型锂电池货物铁路运输指导意见.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.10_05\\附件一_消费型锂电池货物铁路运输指导意见.html",
+      "sha256": "b6a4712ed28a1c223f7cf407e0c1ee093bf35ccae18a51b97c9281379774324f",
+      "bytes": 57848
+    },
+    {
+      "uid": "沈礼_7.10_05",
+      "name": "附件二_铁路危险货物运输安全监督管理规定.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.10_05\\附件二_铁路危险货物运输安全监督管理规定.html",
+      "sha256": "de352ab387fda1d18d97e1dea96e8567cdb24121b9b8d1f451cf4eceb1a1c536",
+      "bytes": 102928
+    },
+    {
+      "uid": "沈礼_7.10_05",
+      "name": "附件三_铁路货物运输规则_2026.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.10_05\\附件三_铁路货物运输规则_2026.pdf",
+      "sha256": "79eb3d7ec4839e2e327aad285b395e850a2510ff5a58381253be33b40586f6b6",
+      "bytes": 339815
+    },
+    {
+      "uid": "沈礼_7.10_05",
+      "name": "附件四_国际货协危险货物规则2025修改通知.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.10_05\\附件四_国际货协危险货物规则2025修改通知.html",
+      "sha256": "dda0477da325f9f66cb85cc4ae04a44fb4469f7b0484e5f78565d95027e0a024",
+      "bytes": 47005
+    },
+    {
+      "uid": "沈礼_7.10_05",
+      "name": "附件五_国际货协危险货物规则2025修改事项.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.10_05\\附件五_国际货协危险货物规则2025修改事项.pdf",
+      "sha256": "ef5af4a280f01da2fcad9df1aa6c94e2fbb11dc27530f438bf608b833d39f202",
+      "bytes": 592757
+    },
+    {
+      "uid": "沈礼_7.10_05",
+      "name": "附件六_B3原型样机订舱事实与缺件清单_截至2026-07-10.json",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.10_05\\附件六_B3原型样机订舱事实与缺件清单_截至2026-07-10.json",
+      "sha256": "7cb6d7d57136d4bac5eef448882982459919a1c9ca07ca06b5ddd51bd590284a",
+      "bytes": 5006
+    },
+    {
+      "uid": "沈礼_7.10_06",
+      "name": "附件一_华东理工大学LC20A采购技术参数公示.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.10_06\\附件一_华东理工大学LC20A采购技术参数公示.html",
+      "sha256": "5220debb43d386a378d5769e3d66de43cd0a2541d9bf086ab215bbe392ed6b51",
+      "bytes": 50872
+    },
+    {
+      "uid": "沈礼_7.10_06",
+      "name": "附件二_岛津LC20A安装准备条件.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.10_06\\附件二_岛津LC20A安装准备条件.pdf",
+      "sha256": "b9043c28906c83277d82204f39de10f9ee8970da6dc78e4d1e1683800955eb7f",
+      "bytes": 301277
+    },
+    {
+      "uid": "沈礼_7.10_06",
+      "name": "附件三_中国地质大学大型仪器设备验收工作流程.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.10_06\\附件三_中国地质大学大型仪器设备验收工作流程.pdf",
+      "sha256": "6d376734b5a08d8e8b667273b30d626dca7bdb37d56dc2c7a563f1dd224b99f2",
+      "bytes": 288127
+    },
+    {
+      "uid": "沈礼_7.10_06",
+      "name": "附件四_中国传媒大学项目到货验收申请表.xlsx",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.10_06\\附件四_中国传媒大学项目到货验收申请表.xlsx",
+      "sha256": "f60c4966e0a5ed73f7c124411c8e9c662bfc1b8ebbfb60c38ae97f018135e538",
+      "bytes": 11214
+    },
+    {
+      "uid": "沈礼_7.10_06",
+      "name": "附件五_华南理工大学仪器设备开箱与点验货记录.docx",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.10_06\\附件五_华南理工大学仪器设备开箱与点验货记录.docx",
+      "sha256": "4ab58a62b2ae793d713825ed23f8b225cf24e997a9339a75a0cc1d97c2fdfcab",
+      "bytes": 42496
+    },
+    {
+      "uid": "沈礼_7.10_06",
+      "name": "附件六_华南理工大学进口仪器设备购置合同模板.docx",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\upgrade_managed_v4_except_7_10_04_20260712\\attachments\\沈礼_7.10_06\\附件六_华南理工大学进口仪器设备购置合同模板.docx",
+      "sha256": "013ef4caf7b741141b8fb5128bcf93efbe0748885c31fad4233437633043b558",
+      "bytes": 30239
+    }
+  ],
+  "productFormatDiversity": {
+    "policyId": "office-deliverable-diversity-v1",
+    "status": "PASS",
+    "rowCount": 21,
+    "combinations": {
+      "pptx, html": 2,
+      "xlsx, html, pdf": 1,
+      "docx, xlsx, pdf": 1,
+      "docx, xlsx, html": 1,
+      "pptx, pdf": 2,
+      "xlsx": 1,
+      "docx, pdf": 2,
+      "html, pdf": 1,
+      "xlsx, html": 2,
+      "xlsx, pdf": 2,
+      "xlsx, pptx": 1,
+      "html": 1,
+      "pptx": 1,
+      "docx, html": 1,
+      "pdf": 1,
+      "docx, xlsx": 1
+    },
+    "prevalence": {
+      "pptx": 6,
+      "html": 9,
+      "xlsx": 10,
+      "pdf": 10,
+      "docx": 6
+    },
+    "rowResults": [
+      {
+        "uid": "沈礼_7.9_01",
+        "analysis": {
+          "source": "pptx, html",
+          "rawTags": [
+            "pptx",
+            "html"
+          ],
+          "formats": [
+            "pptx",
+            "html"
+          ],
+          "unknown": [],
+          "canonical": "pptx, html",
+          "isCanonical": true
+        },
+        "findings": []
+      },
+      {
+        "uid": "沈礼_7.9_02",
+        "analysis": {
+          "source": "xlsx, html, pdf",
+          "rawTags": [
+            "xlsx",
+            "html",
+            "pdf"
+          ],
+          "formats": [
+            "xlsx",
+            "html",
+            "pdf"
+          ],
+          "unknown": [],
+          "canonical": "xlsx, html, pdf",
+          "isCanonical": true
+        },
+        "findings": []
+      },
+      {
+        "uid": "沈礼_7.9_03",
+        "analysis": {
+          "source": "docx, xlsx, pdf",
+          "rawTags": [
+            "docx",
+            "xlsx",
+            "pdf"
+          ],
+          "formats": [
+            "docx",
+            "xlsx",
+            "pdf"
+          ],
+          "unknown": [],
+          "canonical": "docx, xlsx, pdf",
+          "isCanonical": true
+        },
+        "findings": []
+      },
+      {
+        "uid": "沈礼_7.9_04",
+        "analysis": {
+          "source": "docx, xlsx, html",
+          "rawTags": [
+            "docx",
+            "xlsx",
+            "html"
+          ],
+          "formats": [
+            "docx",
+            "xlsx",
+            "html"
+          ],
+          "unknown": [],
+          "canonical": "docx, xlsx, html",
+          "isCanonical": true
+        },
+        "findings": []
+      },
+      {
+        "uid": "沈礼_7.9_05",
+        "analysis": {
+          "source": "pptx, pdf",
+          "rawTags": [
+            "pptx",
+            "pdf"
+          ],
+          "formats": [
+            "pptx",
+            "pdf"
+          ],
+          "unknown": [],
+          "canonical": "pptx, pdf",
+          "isCanonical": true
+        },
+        "findings": []
+      },
+      {
+        "uid": "沈礼_7.9_06",
+        "analysis": {
+          "source": "xlsx",
+          "rawTags": [
+            "xlsx"
+          ],
+          "formats": [
+            "xlsx"
+          ],
+          "unknown": [],
+          "canonical": "xlsx",
+          "isCanonical": true
+        },
+        "findings": []
+      },
+      {
+        "uid": "沈礼_7.9_07",
+        "analysis": {
+          "source": "docx, pdf",
+          "rawTags": [
+            "docx",
+            "pdf"
+          ],
+          "formats": [
+            "docx",
+            "pdf"
+          ],
+          "unknown": [],
+          "canonical": "docx, pdf",
+          "isCanonical": true
+        },
+        "findings": []
+      },
+      {
+        "uid": "沈礼_7.9_08",
+        "analysis": {
+          "source": "html, pdf",
+          "rawTags": [
+            "html",
+            "pdf"
+          ],
+          "formats": [
+            "html",
+            "pdf"
+          ],
+          "unknown": [],
+          "canonical": "html, pdf",
+          "isCanonical": true
+        },
+        "findings": []
+      },
+      {
+        "uid": "沈礼_7.9_09",
+        "analysis": {
+          "source": "xlsx, html",
+          "rawTags": [
+            "xlsx",
+            "html"
+          ],
+          "formats": [
+            "xlsx",
+            "html"
+          ],
+          "unknown": [],
+          "canonical": "xlsx, html",
+          "isCanonical": true
+        },
+        "findings": []
+      },
+      {
+        "uid": "沈礼_7.9_10",
+        "analysis": {
+          "source": "docx, pdf",
+          "rawTags": [
+            "docx",
+            "pdf"
+          ],
+          "formats": [
+            "docx",
+            "pdf"
+          ],
+          "unknown": [],
+          "canonical": "docx, pdf",
+          "isCanonical": true
+        },
+        "findings": []
+      },
+      {
+        "uid": "沈礼_7.9_11",
+        "analysis": {
+          "source": "xlsx, pdf",
+          "rawTags": [
+            "xlsx",
+            "pdf"
+          ],
+          "formats": [
+            "xlsx",
+            "pdf"
+          ],
+          "unknown": [],
+          "canonical": "xlsx, pdf",
+          "isCanonical": true
+        },
+        "findings": []
+      },
+      {
+        "uid": "裴硬_7.9_01",
+        "analysis": {
+          "source": "xlsx, pptx",
+          "rawTags": [
+            "xlsx",
+            "pptx"
+          ],
+          "formats": [
+            "xlsx",
+            "pptx"
+          ],
+          "unknown": [],
+          "canonical": "xlsx, pptx",
+          "isCanonical": true
+        },
+        "findings": []
+      },
+      {
+        "uid": "裴硬_7.9_02",
+        "analysis": {
+          "source": "html",
+          "rawTags": [
+            "html"
+          ],
+          "formats": [
+            "html"
+          ],
+          "unknown": [],
+          "canonical": "html",
+          "isCanonical": true
+        },
+        "findings": []
+      },
+      {
+        "uid": "裴硬_7.9_03",
+        "analysis": {
+          "source": "pptx",
+          "rawTags": [
+            "pptx"
+          ],
+          "formats": [
+            "pptx"
+          ],
+          "unknown": [],
+          "canonical": "pptx",
+          "isCanonical": true
+        },
+        "findings": []
+      },
+      {
+        "uid": "裴硬_7.9_04",
+        "analysis": {
+          "source": "docx, html",
+          "rawTags": [
+            "docx",
+            "html"
+          ],
+          "formats": [
+            "docx",
+            "html"
+          ],
+          "unknown": [],
+          "canonical": "docx, html",
+          "isCanonical": true
+        },
+        "findings": []
+      },
+      {
+        "uid": "裴硬_7.9_05",
+        "analysis": {
+          "source": "pdf",
+          "rawTags": [
+            "pdf"
+          ],
+          "formats": [
+            "pdf"
+          ],
+          "unknown": [],
+          "canonical": "pdf",
+          "isCanonical": true
+        },
+        "findings": []
+      },
+      {
+        "uid": "沈礼_7.10_01",
+        "analysis": {
+          "source": "xlsx, html",
+          "rawTags": [
+            "xlsx",
+            "html"
+          ],
+          "formats": [
+            "xlsx",
+            "html"
+          ],
+          "unknown": [],
+          "canonical": "xlsx, html",
+          "isCanonical": true
+        },
+        "findings": []
+      },
+      {
+        "uid": "沈礼_7.10_02",
+        "analysis": {
+          "source": "pptx, pdf",
+          "rawTags": [
+            "pptx",
+            "pdf"
+          ],
+          "formats": [
+            "pptx",
+            "pdf"
+          ],
+          "unknown": [],
+          "canonical": "pptx, pdf",
+          "isCanonical": true
+        },
+        "findings": []
+      },
+      {
+        "uid": "沈礼_7.10_03",
+        "analysis": {
+          "source": "pptx, html",
+          "rawTags": [
+            "pptx",
+            "html"
+          ],
+          "formats": [
+            "pptx",
+            "html"
+          ],
+          "unknown": [],
+          "canonical": "pptx, html",
+          "isCanonical": true
+        },
+        "findings": []
+      },
+      {
+        "uid": "沈礼_7.10_05",
+        "analysis": {
+          "source": "docx, xlsx",
+          "rawTags": [
+            "docx",
+            "xlsx"
+          ],
+          "formats": [
+            "docx",
+            "xlsx"
+          ],
+          "unknown": [],
+          "canonical": "docx, xlsx",
+          "isCanonical": true
+        },
+        "findings": []
+      },
+      {
+        "uid": "沈礼_7.10_06",
+        "analysis": {
+          "source": "xlsx, pdf",
+          "rawTags": [
+            "xlsx",
+            "pdf"
+          ],
+          "formats": [
+            "xlsx",
+            "pdf"
+          ],
+          "unknown": [],
+          "canonical": "xlsx, pdf",
+          "isCanonical": true
+        },
+        "findings": []
+      }
+    ],
+    "findings": []
+  },
+  "findings": []
+}

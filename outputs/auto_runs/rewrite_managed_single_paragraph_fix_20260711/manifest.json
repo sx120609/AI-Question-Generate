@@ -1,0 +1,42 @@
+{
+  "runId": "rewrite_managed_single_paragraph_fix_20260711",
+  "generatedAt": "2026-07-11T09:57:04.877Z",
+  "objective": "修复沈礼与裴硬22条题目因自然段提交产生的空行，统一改为单段连写",
+  "status": "drafted-not-submitted",
+  "count": 22,
+  "generatedAnnotators": [
+    "沈礼",
+    "裴硬"
+  ],
+  "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+  "sheetId": "49e351",
+  "sheetRows": [
+    121,
+    122,
+    123,
+    134,
+    135,
+    136,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    172,
+    173,
+    174,
+    178,
+    179,
+    180
+  ],
+  "writableFields": [
+    "题目"
+  ],
+  "questionPresentation": "single-paragraph-user-required-v4",
+  "sourceRunId": "rewrite_managed_suzizhan_method_20260711"
+}

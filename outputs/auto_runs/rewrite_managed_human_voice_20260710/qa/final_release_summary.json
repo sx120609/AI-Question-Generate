@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-10T10:16:40.328Z",
+  "runId": "rewrite_managed_human_voice_20260710",
+  "status": "PASS",
+  "scope": {
+    "rows": 22,
+    "annotators": {
+      "沈礼": 17,
+      "裴硬": 5
+    },
+    "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+    "sheetId": "49e351",
+    "finalRevision": 5286
+  },
+  "liveQa": {
+    "passed": 22,
+    "failed": 0,
+    "note": "已完成大模型质检，未发现问题",
+    "nonQaDriftCells": 0,
+    "immutableFieldMismatches": 0,
+    "formatCellsExact": 22,
+    "formatValue": "docx, xlsx",
+    "attachmentObjects": 104
+  },
+  "releaseGate": {
+    "status": "PASS",
+    "receiptReverifiedReadOnly": true,
+    "receiptReverificationMode": "direct-read-only-hash-verification",
+    "candidateSha256": "39d1c98bbfbf607b739c3a10b7b339f34ab4178b14c64faa21ba06ca80d12e9f",
+    "fillPlanSha256": "57a31a603e9981127d5ebdbf2ea487adca6610b3b1524e991af2b64bfb831ae0",
+    "naturalness": {
+      "gateStatus": "REVIEW",
+      "independentModelDecision": "APPROVE"
+    },
+    "structure": {
+      "gateStatus": "REVIEW",
+      "independentModelDecision": "APPROVE"
+    },
+    "reviewWasBlocking": true,
+    "archivedRejectedRound": "rewrite_managed_human_voice_20260710_round3_rejected"
+  },
+  "naturalnessBatch": {
+    "status": "PASS",
+    "dominantCompressedSkeletonShare": 0.1818,
+    "fixedWordExcelTailShare": 0.0455,
+    "finalStepSelfCheckShare": 0.1818,
+    "stepCountModeShare": 0.2273,
+    "disclaimerHeavyShare": 0
+  },
+  "questionPresentation": {
+    "currentRun": "legacy-paragraphs-user-approved",
+    "futureRuns": "single-paragraph-v1",
+    "futureRule": "B列题面生成落盘前移除全部换行；O列编号步骤保留逐行换行。",
+    "legacyWriteBypassAllowed": false,
+    "enforcement": [
+      "language_style generator formatter and assertion",
+      "Feishu fill-plan assertion without silent mutation",
+      "OpenAPI submission rejection",
+      "physical OpenAPI batch-write rejection",
+      "physical browser-cell write rejection"
+    ],
+    "regressionTests": {
+      "passed": 80,
+      "failed": 0
+    }
+  },
+  "evidence": {
+    "finalRawSnapshot": "sources/raw_final_after_qa_A_AU.json",
+    "finalNormalizedSnapshot": "sources/live_final_after_qa.json",
+    "finalLiveVerification": "qa/final_live_verification.json",
+    "releaseReceipt": "feishu/release_gate_receipt.json",
+    "receiptReverification": "qa/final_receipt_verification.json"
+  }
+}

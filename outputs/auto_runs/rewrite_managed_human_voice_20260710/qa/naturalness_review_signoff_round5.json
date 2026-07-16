@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "kind": "naturalness-review-signoff",
+  "requestId": "naturalness_db6fa8ed1247a2deb284ff28",
+  "bindingHash": "db6fa8ed1247a2deb284ff280e64368e9289ce2bdb30452bdfacc0f3cf79d1d5",
+  "requestHash": "43f1b6bfffcf5d11e9124b2a3314a09846beae46882e038572d515036f9a6400",
+  "decision": "APPROVE",
+  "reviewer": "independent-model-reviewer-round5",
+  "reviewerType": "model",
+  "rationale": "Independent model review compared the six low numeric-anchor rows with the bound source snapshot. Their scenes contain source-derived actors, locations, named materials, Chinese number words, relative deadlines, functions and process states; the detector's zero Arabic-style numeric anchors does not make them vague, and adding invented numbers would reduce fidelity. 沈礼_7.9_10 now preserves the source's conditional application pre-review: it identifies what can enter preparation, what evidence blocks submission this month, and what material changes trigger re-review. Its disclaimer signal is 2/15 sentences (0.1333), below the 0.2125 review threshold. Both tagged sentences carry business content from the source—the actual missing records and the resulting submission blocker—while the rest of the row is positive evidence mapping, state assignment and handoff, so warnings do not displace the task. The four explicit closing checks remain task-specific: point-location trace, send/opt-out/cancellation chain, regional-policy applicability check, and formula/disclosure/page trace. Their evidence objects and operations differ despite short self-check wrappers; batch self-check share is 4/22, disclaimer-heavy share is zero, and the batch has no concentration finding. Approval is by an independent model reviewer, not a human reviewer.",
+  "reviewedAt": "2026-07-10T09:55:19.696Z"
+}

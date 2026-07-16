@@ -1,0 +1,38 @@
+{
+  "runId": "l2_20260709_batch5_20260709T111803Z_9246fb",
+  "objective": "继续生产5条L2并提交飞书正式表",
+  "operator": "codex",
+  "count": 5,
+  "status": "created",
+  "createdAt": "2026-07-09T11:18:03.590Z",
+  "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+  "sheetId": "49e351",
+  "dirs": {
+    "root": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260709_batch5_20260709T111803Z_9246fb",
+    "sources": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260709_batch5_20260709T111803Z_9246fb\\sources",
+    "attachments": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260709_batch5_20260709T111803Z_9246fb\\attachments",
+    "drafts": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260709_batch5_20260709T111803Z_9246fb\\drafts",
+    "feishu": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260709_batch5_20260709T111803Z_9246fb\\feishu",
+    "qa": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260709_batch5_20260709T111803Z_9246fb\\qa",
+    "logs": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260709_batch5_20260709T111803Z_9246fb\\logs",
+    "tmp": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260709_batch5_20260709T111803Z_9246fb\\tmp"
+  },
+  "boundaries": {
+    "writableRoots": [
+      "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260709_batch5_20260709T111803Z_9246fb"
+    ],
+    "sharedWritesRequireLocks": [
+      "outputs/l2_questions.tsv",
+      "outputs/feishu_fill_plan_*.json",
+      "Feishu sheet rows"
+    ],
+    "noTouch": [
+      "Rows not reserved by this run",
+      "Other runs under outputs/auto_runs",
+      "Existing attachments outside this run unless explicitly imported"
+    ]
+  },
+  "generatedAnnotator": "沈礼",
+  "uidPrefix": "沈礼_",
+  "managedBySystem": true
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "row": 140,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=140&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783611128205_140",
+    "checkedAt": "2026-07-09T15:32:50.030Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "外包队资料不全，周五还能不能进场？物业工程群把雨水井和隔油池清掏排期排好了，对方只发营业执照、报价单和两张工人身份证；有限空间作业审批表、监护人安排、通风检测记",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 141,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=141&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783611170032_141",
+    "checkedAt": "2026-07-09T15:33:11.261Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "我早上收到后勤主任发来的食堂承包商换季菜单和家长投诉截图，下周一就想换新菜单，下午还要面对家委会追问。承包商只给了菜单、供货商名单和几张冷柜照片，食品留样记录、",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 142,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=142&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783611191263_142",
+    "checkedAt": "2026-07-09T15:33:31.036Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "连锁药房慢病复购入口这周要灰度：老会员拍处方，药师审核后系统把常用处方药配送到家，运营还排了“买二送一”“复购立减”的位置。法务这次集中追处方真实性、禁售药品拦",
+    "note": "题目开头“连锁药房慢病复购入口这周要灰度”等表述像内部会议纪要，建议改为更自然的任务描述，例如“请根据以下法规附件，对连锁药房慢病复购功能进行合规检查，输出复核意见和核对表”。请把报告式、材料式说法改成真实用户会提出的决策、比较、整理、建议需求，保留预算、偏好、限制和实际用途。具体可改为：将开头改为更自然的任务描述，例如“请根据以下法规附件，对连锁药房慢病复购功能进行合规检查，输出Word复核意。",
+    "categories": [
+      "scene_naturalness",
+      "prompt_style"
+    ]
+  },
+  {
+    "row": 143,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=143&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783611211037_143",
+    "checkedAt": "2026-07-09T15:33:42.946Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "合作的一家社区诊所想这个月递交医保定点申请，负责人先发了营业执照、医疗机构执业许可证和一份自查表，但药品耗材追溯码、影像结果上传、医技人员资质、价格执行、基金使",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 144,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=144&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783611222946_144",
+    "checkedAt": "2026-07-09T15:34:17.105Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "我这边收到财务同事的求助：公益项目后台里有企业捐款、员工配捐、物资折价和几笔备注含糊的“公益合作款”，捐赠人已经在催公益事业捐赠票据和税前扣除材料。但后台名单、",
+    "note": "缺少后台捐赠明细、收款凭证、协议、物资评估、受助对象清单等核心材料，模板。请补充至少一批真实或模拟的捐赠数据（含金额、类型、备注、凭证状态等），或明确要求仅输出模板框架。补充时要写清数据来源、覆盖范围、地区年份、统计口径或附件位置，确保后续答案能基于真实材料给出具体判断。具体可改为：补充至少一批真实或模拟的捐赠数据（含金额、类型、备注、凭证状态等），或明确要求仅输出模板框架，不要求对具体批次做判。",
+    "categories": [
+      "prompt_style"
+    ]
+  }
+]

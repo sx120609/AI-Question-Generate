@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "kind": "structure-review-request",
+  "status": "PENDING_REVIEW",
+  "requestId": "structure_2edf5ebf5891de1d96ee2361",
+  "generatedAt": "2026-07-10T08:56:57.311Z",
+  "gateId": "structure-review-gate-v1",
+  "policyId": "l2-human-grounded-diversity-v3",
+  "policyVersion": 3,
+  "requestedBy": "structure-gate-automation",
+  "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_managed_human_voice_20260710\\qa\\structure_gate_report.json",
+  "reportSubjectHash": "030a5e6bd7f27dddaedeb31dbefce0726e928c8ddaabb8aa30b42c4c74cf29fc",
+  "evaluationHash": "ab3839aad22c3025c25cc20604d90b7cfb7af12163a78a4dd0386ef7620cdaaa",
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_managed_human_voice_20260710\\drafts\\l2_questions_human_voice.tsv",
+  "candidateHash": "93e800399f0c45505f33e37405642d4ad9a2c35950d76a09e1cd0b24aeac7035",
+  "passportPath": "",
+  "passportHash": "",
+  "fillPlanPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_managed_human_voice_20260710\\feishu\\feishu_fill_plan_human_voice.json",
+  "fillPlanHash": "2d55aa2fb733daf91d0672671bfd6397b84fcffa7df5e7168c34046fb06f7939",
+  "bindingHash": "2edf5ebf5891de1d96ee236108da51fe43663f3e0900140859a27885a529e371",
+  "reviewFindings": [
+    {
+      "uid": "沈礼_7.9_11",
+      "index": 10,
+      "rule": "batch-exact-structure-signature"
+    },
+    {
+      "uid": "裴硬_7.9_05",
+      "index": 15,
+      "rule": "batch-exact-structure-signature"
+    }
+  ],
+  "signoff": null,
+  "note": "This hash-bound request is not an approval. A separately authored independent signoff file is required."
+}

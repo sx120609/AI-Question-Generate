@@ -1,0 +1,234 @@
+{
+  "generatedAt": "2026-07-09T08:31:22.037Z",
+  "apply": false,
+  "target": {
+    "spreadsheetToken": "",
+    "sheetId": "49e351",
+    "wikiUrl": "",
+    "sheetTitle": ""
+  },
+  "planPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\formal_runs\\formal_20260709_115_117\\feishu_fill_plan_121_123.json",
+  "rows": [
+    121,
+    122,
+    123
+  ],
+  "valueRangeCount": 3,
+  "skipped": [
+    {
+      "address": "B121",
+      "reason": "not-included"
+    },
+    {
+      "address": "C121",
+      "reason": "not-included"
+    },
+    {
+      "address": "D121",
+      "reason": "not-included"
+    },
+    {
+      "address": "E121",
+      "reason": "not-included"
+    },
+    {
+      "address": "F121",
+      "reason": "not-included"
+    },
+    {
+      "address": "G121",
+      "reason": "not-included"
+    },
+    {
+      "address": "H121",
+      "reason": "not-included"
+    },
+    {
+      "address": "I121",
+      "reason": "not-included"
+    },
+    {
+      "address": "J121",
+      "reason": "not-included"
+    },
+    {
+      "address": "K121",
+      "reason": "not-included"
+    },
+    {
+      "address": "L121",
+      "reason": "not-included"
+    },
+    {
+      "address": "M121",
+      "reason": "not-included"
+    },
+    {
+      "address": "N121",
+      "reason": "not-included"
+    },
+    {
+      "address": "O121",
+      "reason": "not-included"
+    },
+    {
+      "address": "P121",
+      "reason": "not-included"
+    },
+    {
+      "address": "B122",
+      "reason": "not-included"
+    },
+    {
+      "address": "C122",
+      "reason": "not-included"
+    },
+    {
+      "address": "D122",
+      "reason": "not-included"
+    },
+    {
+      "address": "E122",
+      "reason": "not-included"
+    },
+    {
+      "address": "F122",
+      "reason": "not-included"
+    },
+    {
+      "address": "G122",
+      "reason": "not-included"
+    },
+    {
+      "address": "H122",
+      "reason": "not-included"
+    },
+    {
+      "address": "I122",
+      "reason": "not-included"
+    },
+    {
+      "address": "J122",
+      "reason": "not-included"
+    },
+    {
+      "address": "K122",
+      "reason": "not-included"
+    },
+    {
+      "address": "L122",
+      "reason": "not-included"
+    },
+    {
+      "address": "M122",
+      "reason": "not-included"
+    },
+    {
+      "address": "N122",
+      "reason": "not-included"
+    },
+    {
+      "address": "O122",
+      "reason": "not-included"
+    },
+    {
+      "address": "P122",
+      "reason": "not-included"
+    },
+    {
+      "address": "B123",
+      "reason": "not-included"
+    },
+    {
+      "address": "C123",
+      "reason": "not-included"
+    },
+    {
+      "address": "D123",
+      "reason": "not-included"
+    },
+    {
+      "address": "E123",
+      "reason": "not-included"
+    },
+    {
+      "address": "F123",
+      "reason": "not-included"
+    },
+    {
+      "address": "G123",
+      "reason": "not-included"
+    },
+    {
+      "address": "H123",
+      "reason": "not-included"
+    },
+    {
+      "address": "I123",
+      "reason": "not-included"
+    },
+    {
+      "address": "J123",
+      "reason": "not-included"
+    },
+    {
+      "address": "K123",
+      "reason": "not-included"
+    },
+    {
+      "address": "L123",
+      "reason": "not-included"
+    },
+    {
+      "address": "M123",
+      "reason": "not-included"
+    },
+    {
+      "address": "N123",
+      "reason": "not-included"
+    },
+    {
+      "address": "O123",
+      "reason": "not-included"
+    },
+    {
+      "address": "P123",
+      "reason": "not-included"
+    }
+  ],
+  "valueRanges": [
+    {
+      "range": "49e351!A121:A121",
+      "values": [
+        [
+          "沈礼_7.9_01"
+        ]
+      ],
+      "address": "A121",
+      "field": "UID",
+      "chars": 9
+    },
+    {
+      "range": "49e351!A122:A122",
+      "values": [
+        [
+          "沈礼_7.9_02"
+        ]
+      ],
+      "address": "A122",
+      "field": "UID",
+      "chars": 9
+    },
+    {
+      "range": "49e351!A123:A123",
+      "values": [
+        [
+          "沈礼_7.9_03"
+        ]
+      ],
+      "address": "A123",
+      "field": "UID",
+      "chars": 9
+    }
+  ]
+}

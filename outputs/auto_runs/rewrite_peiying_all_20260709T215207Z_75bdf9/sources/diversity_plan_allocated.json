@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "policyId": "l2-structural-diversity-v1",
+  "policyVersion": 1,
+  "runId": "rewrite_peiying_all_20260709T215207Z_75bdf9",
+  "generatedAt": "2026-07-09T21:52:07.540Z",
+  "expiresAt": "2026-07-10T21:52:07.540Z",
+  "profiles": [
+    {
+      "slot": 1,
+      "index": 0,
+      "profileId": "rewrite_peiying_all_20260709T215207Z_75bdf9_structure_01",
+      "lengthBand": "focused-520",
+      "openingMode": "decision-fork",
+      "informationOrder": [
+        "conflict",
+        "actor",
+        "facts",
+        "evidence",
+        "decision",
+        "gap",
+        "deliverable",
+        "acceptance"
+      ],
+      "decisionForm": "scenario-choice",
+      "evidenceTopology": "multi-period-numeric",
+      "flowTopology": "branching",
+      "productTopology": "negotiation-brief__clause-matrix"
+    },
+    {
+      "slot": 2,
+      "index": 1,
+      "profileId": "rewrite_peiying_all_20260709T215207Z_75bdf9_structure_02",
+      "lengthBand": "evidence-700",
+      "openingMode": "metric-anomaly",
+      "informationOrder": [
+        "facts",
+        "conflict",
+        "trigger",
+        "decision",
+        "evidence",
+        "gap",
+        "deliverable",
+        "audience"
+      ],
+      "decisionForm": "multi-option",
+      "evidenceTopology": "conflicting-versions",
+      "flowTopology": "parallel-workstreams",
+      "productTopology": "diagnostic-report__monitoring-board"
+    },
+    {
+      "slot": 3,
+      "index": 2,
+      "profileId": "rewrite_peiying_all_20260709T215207Z_75bdf9_structure_03",
+      "lengthBand": "extended-800",
+      "openingMode": "conflict-first",
+      "informationOrder": [
+        "actor",
+        "trigger",
+        "decision",
+        "facts",
+        "evidence",
+        "conflict",
+        "deliverable",
+        "gap"
+      ],
+      "decisionForm": "ranked-priority",
+      "evidenceTopology": "cross-jurisdiction",
+      "flowTopology": "stage-gated",
+      "productTopology": "decision-memo__evidence-ledger"
+    },
+    {
+      "slot": 4,
+      "index": 3,
+      "profileId": "rewrite_peiying_all_20260709T215207Z_75bdf9_structure_04",
+      "lengthBand": "layered-610",
+      "openingMode": "evidence-discovery",
+      "informationOrder": [
+        "gap",
+        "trigger",
+        "evidence",
+        "facts",
+        "decision",
+        "deliverable",
+        "acceptance",
+        "audience"
+      ],
+      "decisionForm": "threshold-gate",
+      "evidenceTopology": "technical-acceptance",
+      "flowTopology": "iterative-loop",
+      "productTopology": "review-opinion__exception-log"
+    },
+    {
+      "slot": 5,
+      "index": 4,
+      "profileId": "rewrite_peiying_all_20260709T215207Z_75bdf9_structure_05",
+      "lengthBand": "focused-520",
+      "openingMode": "incident-led",
+      "informationOrder": [
+        "decision",
+        "conflict",
+        "facts",
+        "evidence",
+        "gap",
+        "audience",
+        "deliverable",
+        "acceptance"
+      ],
+      "decisionForm": "exception-routing",
+      "evidenceTopology": "records-and-templates",
+      "flowTopology": "evidence-trace",
+      "productTopology": "operating-playbook__stage-gate-matrix"
+    }
+  ],
+  "note": "Generate at least two cheap task-spec candidates per slot, then choose the candidate maximizing minimum structural distance before researching attachments."
+}

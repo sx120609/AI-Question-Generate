@@ -1,0 +1,697 @@
+{
+  "schemaVersion": 1,
+  "runId": "rewrite_shenli_all_20260709T215202Z_63bf72",
+  "reconciledAt": "2026-07-09T23:09:20.132Z",
+  "policyId": "l2-structural-diversity-v1",
+  "status": "PASS",
+  "candidateCount": 17,
+  "batchAndHistoryGate": "PASS",
+  "assignedGate": "PASS",
+  "changes": [
+    {
+      "slot": 1,
+      "uid": "沈礼_7.10_06",
+      "allocated": {
+        "lengthBand": "layered-610",
+        "openingMode": "incident-led",
+        "informationOrder": [
+          "audience",
+          "facts",
+          "trigger",
+          "conflict",
+          "evidence",
+          "decision",
+          "deliverable",
+          "gap"
+        ],
+        "decisionForm": "scenario-choice",
+        "evidenceTopology": "technical-acceptance",
+        "flowTopology": "parallel-workstreams",
+        "productTopology": "meeting-brief__scenario-model"
+      },
+      "final": {
+        "lengthBand": "layered-610",
+        "openingMode": "incident-led",
+        "informationOrder": [
+          "conflict",
+          "facts",
+          "acceptance",
+          "trigger",
+          "evidence",
+          "actor",
+          "audience",
+          "deliverable"
+        ],
+        "decisionForm": "scenario-choice",
+        "evidenceTopology": "technical-acceptance",
+        "flowTopology": "parallel-workstreams",
+        "productTopology": "meeting-brief__scenario-model"
+      }
+    },
+    {
+      "slot": 2,
+      "uid": "沈礼_7.9_10",
+      "allocated": {
+        "lengthBand": "evidence-700",
+        "openingMode": "conflict-first",
+        "informationOrder": [
+          "trigger",
+          "facts",
+          "conflict",
+          "evidence",
+          "gap",
+          "decision",
+          "audience",
+          "deliverable",
+          "acceptance"
+        ],
+        "decisionForm": "multi-option",
+        "evidenceTopology": "multi-period-numeric",
+        "flowTopology": "branching",
+        "productTopology": "audit-report__remediation-tracker"
+      },
+      "final": {
+        "lengthBand": "evidence-700",
+        "openingMode": "clock-pressure",
+        "informationOrder": [
+          "trigger",
+          "facts",
+          "conflict",
+          "actor",
+          "evidence",
+          "deliverable",
+          "decision",
+          "audience",
+          "acceptance"
+        ],
+        "decisionForm": "multi-option",
+        "evidenceTopology": "multi-period-numeric",
+        "flowTopology": "branching",
+        "productTopology": "audit-report__remediation-tracker"
+      }
+    },
+    {
+      "slot": 3,
+      "uid": "沈礼_7.9_08",
+      "allocated": {
+        "lengthBand": "extended-800",
+        "openingMode": "decision-fork",
+        "informationOrder": [
+          "evidence",
+          "facts",
+          "gap",
+          "conflict",
+          "decision",
+          "deliverable",
+          "audience",
+          "acceptance"
+        ],
+        "decisionForm": "ranked-priority",
+        "evidenceTopology": "records-and-templates",
+        "flowTopology": "stage-gated",
+        "productTopology": "negotiation-brief__clause-matrix"
+      },
+      "final": {
+        "lengthBand": "extended-800",
+        "openingMode": "decision-fork",
+        "informationOrder": [
+          "decision",
+          "trigger",
+          "evidence",
+          "facts",
+          "gap",
+          "deliverable",
+          "conflict",
+          "audience"
+        ],
+        "decisionForm": "ranked-priority",
+        "evidenceTopology": "records-and-templates",
+        "flowTopology": "stage-gated",
+        "productTopology": "negotiation-brief__clause-matrix"
+      }
+    },
+    {
+      "slot": 4,
+      "uid": "沈礼_7.9_05",
+      "allocated": {
+        "lengthBand": "focused-520",
+        "openingMode": "metric-anomaly",
+        "informationOrder": [
+          "conflict",
+          "actor",
+          "facts",
+          "evidence",
+          "decision",
+          "gap",
+          "deliverable",
+          "acceptance"
+        ],
+        "decisionForm": "threshold-gate",
+        "evidenceTopology": "conflicting-versions",
+        "flowTopology": "iterative-loop",
+        "productTopology": "diagnostic-report__monitoring-board"
+      },
+      "final": {
+        "lengthBand": "focused-520",
+        "openingMode": "metric-anomaly",
+        "informationOrder": [
+          "conflict",
+          "actor",
+          "facts",
+          "gap",
+          "evidence",
+          "decision",
+          "deliverable"
+        ],
+        "decisionForm": "threshold-gate",
+        "evidenceTopology": "conflicting-versions",
+        "flowTopology": "iterative-loop",
+        "productTopology": "diagnostic-report__monitoring-board"
+      }
+    },
+    {
+      "slot": 5,
+      "uid": "沈礼_7.10_05",
+      "allocated": {
+        "lengthBand": "layered-610",
+        "openingMode": "evidence-discovery",
+        "informationOrder": [
+          "facts",
+          "conflict",
+          "trigger",
+          "decision",
+          "evidence",
+          "gap",
+          "deliverable",
+          "audience"
+        ],
+        "decisionForm": "exception-routing",
+        "evidenceTopology": "cross-jurisdiction",
+        "flowTopology": "evidence-trace",
+        "productTopology": "decision-memo__evidence-ledger"
+      },
+      "final": {
+        "lengthBand": "layered-610",
+        "openingMode": "evidence-discovery",
+        "informationOrder": [
+          "evidence",
+          "facts",
+          "decision",
+          "deliverable",
+          "actor",
+          "conflict",
+          "gap",
+          "acceptance"
+        ],
+        "decisionForm": "exception-routing",
+        "evidenceTopology": "cross-jurisdiction",
+        "flowTopology": "evidence-trace",
+        "productTopology": "decision-memo__evidence-ledger"
+      }
+    },
+    {
+      "slot": 6,
+      "uid": "沈礼_7.9_01",
+      "allocated": {
+        "lengthBand": "evidence-700",
+        "openingMode": "user-impact",
+        "informationOrder": [
+          "actor",
+          "trigger",
+          "decision",
+          "facts",
+          "evidence",
+          "conflict",
+          "deliverable",
+          "gap"
+        ],
+        "decisionForm": "conditional-recommendation",
+        "evidenceTopology": "incomplete-evidence-pack",
+        "flowTopology": "exception-routing",
+        "productTopology": "review-opinion__exception-log"
+      },
+      "final": {
+        "lengthBand": "evidence-700",
+        "openingMode": "user-impact",
+        "informationOrder": [
+          "actor",
+          "trigger",
+          "decision",
+          "facts",
+          "evidence",
+          "gap",
+          "deliverable"
+        ],
+        "decisionForm": "exception-routing",
+        "evidenceTopology": "incomplete-evidence-pack",
+        "flowTopology": "stage-gated",
+        "productTopology": "review-opinion__exception-log"
+      }
+    },
+    {
+      "slot": 7,
+      "uid": "沈礼_7.9_02",
+      "allocated": {
+        "lengthBand": "extended-800",
+        "openingMode": "handoff-led",
+        "informationOrder": [
+          "gap",
+          "trigger",
+          "evidence",
+          "facts",
+          "decision",
+          "deliverable",
+          "acceptance",
+          "audience"
+        ],
+        "decisionForm": "binary-gate",
+        "evidenceTopology": "mixed-primary-sources",
+        "flowTopology": "parallel-workstreams",
+        "productTopology": "operating-playbook__stage-gate-matrix"
+      },
+      "final": {
+        "lengthBand": "focused-520",
+        "openingMode": "clock-pressure",
+        "informationOrder": [
+          "conflict",
+          "evidence",
+          "facts",
+          "audience",
+          "trigger",
+          "deliverable",
+          "decision"
+        ],
+        "decisionForm": "conditional-recommendation",
+        "evidenceTopology": "rules-plus-case-data",
+        "flowTopology": "evidence-trace",
+        "productTopology": "meeting-brief__remediation-tracker"
+      }
+    },
+    {
+      "slot": 8,
+      "uid": "沈礼_7.10_01",
+      "allocated": {
+        "lengthBand": "focused-520",
+        "openingMode": "clock-pressure",
+        "informationOrder": [
+          "decision",
+          "conflict",
+          "facts",
+          "evidence",
+          "gap",
+          "audience",
+          "deliverable",
+          "acceptance"
+        ],
+        "decisionForm": "scenario-choice",
+        "evidenceTopology": "rules-plus-case-data",
+        "flowTopology": "branching",
+        "productTopology": "approval-note__calculation-model"
+      },
+      "final": {
+        "lengthBand": "outside-plan",
+        "openingMode": "clock-pressure",
+        "informationOrder": [
+          "trigger",
+          "facts",
+          "actor",
+          "evidence",
+          "conflict",
+          "gap",
+          "decision",
+          "deliverable"
+        ],
+        "decisionForm": "conditional-recommendation",
+        "evidenceTopology": "rules-plus-case-data",
+        "flowTopology": "branching",
+        "productTopology": "decision-memo__evidence-ledger"
+      }
+    },
+    {
+      "slot": 9,
+      "uid": "沈礼_7.9_07",
+      "allocated": {
+        "lengthBand": "layered-610",
+        "openingMode": "incident-led",
+        "informationOrder": [
+          "audience",
+          "facts",
+          "trigger",
+          "conflict",
+          "evidence",
+          "decision",
+          "deliverable",
+          "gap"
+        ],
+        "decisionForm": "multi-option",
+        "evidenceTopology": "technical-acceptance",
+        "flowTopology": "stage-gated",
+        "productTopology": "meeting-brief__scenario-model"
+      },
+      "final": {
+        "lengthBand": "layered-610",
+        "openingMode": "clock-pressure",
+        "informationOrder": [
+          "evidence",
+          "facts",
+          "gap",
+          "decision",
+          "conflict",
+          "trigger",
+          "deliverable",
+          "actor"
+        ],
+        "decisionForm": "multi-option",
+        "evidenceTopology": "technical-acceptance",
+        "flowTopology": "iterative-loop",
+        "productTopology": "decision-memo__exception-log"
+      }
+    },
+    {
+      "slot": 10,
+      "uid": "沈礼_7.10_04",
+      "allocated": {
+        "lengthBand": "evidence-700",
+        "openingMode": "conflict-first",
+        "informationOrder": [
+          "trigger",
+          "facts",
+          "conflict",
+          "evidence",
+          "gap",
+          "decision",
+          "audience",
+          "deliverable",
+          "acceptance"
+        ],
+        "decisionForm": "ranked-priority",
+        "evidenceTopology": "multi-period-numeric",
+        "flowTopology": "iterative-loop",
+        "productTopology": "audit-report__remediation-tracker"
+      },
+      "final": {
+        "lengthBand": "extended-800",
+        "openingMode": "conflict-first",
+        "informationOrder": [
+          "audience",
+          "conflict",
+          "facts",
+          "decision",
+          "gap",
+          "actor",
+          "evidence",
+          "deliverable",
+          "trigger",
+          "acceptance"
+        ],
+        "decisionForm": "ranked-priority",
+        "evidenceTopology": "multi-period-numeric",
+        "flowTopology": "iterative-loop",
+        "productTopology": "audit-report__calculation-model"
+      }
+    },
+    {
+      "slot": 11,
+      "uid": "沈礼_7.9_11",
+      "allocated": {
+        "lengthBand": "extended-800",
+        "openingMode": "decision-fork",
+        "informationOrder": [
+          "evidence",
+          "facts",
+          "gap",
+          "conflict",
+          "decision",
+          "deliverable",
+          "audience",
+          "acceptance"
+        ],
+        "decisionForm": "threshold-gate",
+        "evidenceTopology": "records-and-templates",
+        "flowTopology": "evidence-trace",
+        "productTopology": "negotiation-brief__clause-matrix"
+      },
+      "final": {
+        "lengthBand": "extended-800",
+        "openingMode": "decision-fork",
+        "informationOrder": [
+          "decision",
+          "actor",
+          "trigger",
+          "conflict",
+          "evidence",
+          "facts",
+          "gap",
+          "acceptance",
+          "deliverable"
+        ],
+        "decisionForm": "threshold-gate",
+        "evidenceTopology": "records-and-templates",
+        "flowTopology": "exception-routing",
+        "productTopology": "negotiation-brief__clause-matrix"
+      }
+    },
+    {
+      "slot": 12,
+      "uid": "沈礼_7.9_03",
+      "allocated": {
+        "lengthBand": "focused-520",
+        "openingMode": "metric-anomaly",
+        "informationOrder": [
+          "conflict",
+          "actor",
+          "facts",
+          "evidence",
+          "decision",
+          "gap",
+          "deliverable",
+          "acceptance"
+        ],
+        "decisionForm": "exception-routing",
+        "evidenceTopology": "conflicting-versions",
+        "flowTopology": "exception-routing",
+        "productTopology": "diagnostic-report__monitoring-board"
+      },
+      "final": {
+        "lengthBand": "focused-520",
+        "openingMode": "metric-anomaly",
+        "informationOrder": [
+          "conflict",
+          "facts",
+          "actor",
+          "evidence",
+          "gap",
+          "decision",
+          "trigger",
+          "deliverable"
+        ],
+        "decisionForm": "ranked-priority",
+        "evidenceTopology": "conflicting-versions",
+        "flowTopology": "exception-routing",
+        "productTopology": "diagnostic-report__monitoring-board"
+      }
+    },
+    {
+      "slot": 13,
+      "uid": "沈礼_7.9_06",
+      "allocated": {
+        "lengthBand": "layered-610",
+        "openingMode": "evidence-discovery",
+        "informationOrder": [
+          "facts",
+          "conflict",
+          "trigger",
+          "decision",
+          "evidence",
+          "gap",
+          "deliverable",
+          "audience"
+        ],
+        "decisionForm": "conditional-recommendation",
+        "evidenceTopology": "cross-jurisdiction",
+        "flowTopology": "parallel-workstreams",
+        "productTopology": "decision-memo__evidence-ledger"
+      },
+      "final": {
+        "lengthBand": "layered-610",
+        "openingMode": "evidence-discovery",
+        "informationOrder": [
+          "evidence",
+          "actor",
+          "decision",
+          "acceptance",
+          "conflict",
+          "gap",
+          "deliverable",
+          "facts",
+          "audience"
+        ],
+        "decisionForm": "conditional-recommendation",
+        "evidenceTopology": "cross-jurisdiction",
+        "flowTopology": "parallel-workstreams",
+        "productTopology": "decision-memo__evidence-ledger"
+      }
+    },
+    {
+      "slot": 14,
+      "uid": "沈礼_7.9_09",
+      "allocated": {
+        "lengthBand": "evidence-700",
+        "openingMode": "user-impact",
+        "informationOrder": [
+          "actor",
+          "trigger",
+          "decision",
+          "facts",
+          "evidence",
+          "conflict",
+          "deliverable",
+          "gap"
+        ],
+        "decisionForm": "binary-gate",
+        "evidenceTopology": "incomplete-evidence-pack",
+        "flowTopology": "branching",
+        "productTopology": "review-opinion__exception-log"
+      },
+      "final": {
+        "lengthBand": "evidence-700",
+        "openingMode": "decision-fork",
+        "informationOrder": [
+          "actor",
+          "decision",
+          "trigger",
+          "evidence",
+          "facts",
+          "gap",
+          "conflict",
+          "deliverable"
+        ],
+        "decisionForm": "conditional-recommendation",
+        "evidenceTopology": "incomplete-evidence-pack",
+        "flowTopology": "iterative-loop",
+        "productTopology": "decision-memo__remediation-tracker"
+      }
+    },
+    {
+      "slot": 15,
+      "uid": "沈礼_7.10_03",
+      "allocated": {
+        "lengthBand": "extended-800",
+        "openingMode": "handoff-led",
+        "informationOrder": [
+          "gap",
+          "trigger",
+          "evidence",
+          "facts",
+          "decision",
+          "deliverable",
+          "acceptance",
+          "audience"
+        ],
+        "decisionForm": "scenario-choice",
+        "evidenceTopology": "mixed-primary-sources",
+        "flowTopology": "stage-gated",
+        "productTopology": "operating-playbook__stage-gate-matrix"
+      },
+      "final": {
+        "lengthBand": "extended-800",
+        "openingMode": "handoff-led",
+        "informationOrder": [
+          "facts",
+          "actor",
+          "conflict",
+          "trigger",
+          "evidence",
+          "audience",
+          "deliverable",
+          "acceptance",
+          "decision"
+        ],
+        "decisionForm": "scenario-choice",
+        "evidenceTopology": "technical-acceptance",
+        "flowTopology": "stage-gated",
+        "productTopology": "operating-playbook__stage-gate-matrix"
+      }
+    },
+    {
+      "slot": 16,
+      "uid": "沈礼_7.9_04",
+      "allocated": {
+        "lengthBand": "focused-520",
+        "openingMode": "clock-pressure",
+        "informationOrder": [
+          "decision",
+          "conflict",
+          "facts",
+          "evidence",
+          "gap",
+          "audience",
+          "deliverable",
+          "acceptance"
+        ],
+        "decisionForm": "multi-option",
+        "evidenceTopology": "rules-plus-case-data",
+        "flowTopology": "iterative-loop",
+        "productTopology": "approval-note__calculation-model"
+      },
+      "final": {
+        "lengthBand": "focused-520",
+        "openingMode": "clock-pressure",
+        "informationOrder": [
+          "actor",
+          "trigger",
+          "decision",
+          "evidence",
+          "conflict",
+          "facts",
+          "deliverable",
+          "acceptance"
+        ],
+        "decisionForm": "multi-option",
+        "evidenceTopology": "rules-plus-case-data",
+        "flowTopology": "iterative-loop",
+        "productTopology": "approval-note__calculation-model"
+      }
+    },
+    {
+      "slot": 17,
+      "uid": "沈礼_7.10_02",
+      "allocated": {
+        "lengthBand": "layered-610",
+        "openingMode": "incident-led",
+        "informationOrder": [
+          "audience",
+          "facts",
+          "trigger",
+          "conflict",
+          "evidence",
+          "decision",
+          "deliverable",
+          "gap"
+        ],
+        "decisionForm": "ranked-priority",
+        "evidenceTopology": "technical-acceptance",
+        "flowTopology": "evidence-trace",
+        "productTopology": "meeting-brief__scenario-model"
+      },
+      "final": {
+        "lengthBand": "evidence-700",
+        "openingMode": "user-impact",
+        "informationOrder": [
+          "conflict",
+          "trigger",
+          "decision",
+          "facts",
+          "actor",
+          "gap",
+          "evidence",
+          "deliverable"
+        ],
+        "decisionForm": "threshold-gate",
+        "evidenceTopology": "incomplete-evidence-pack",
+        "flowTopology": "parallel-workstreams",
+        "productTopology": "meeting-brief__evidence-ledger"
+      }
+    }
+  ]
+}

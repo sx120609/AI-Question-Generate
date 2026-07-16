@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "protocolId": "l2-sample-attachments-two-gates-trace-v1",
+  "enabled": true,
+  "inputs": {
+    "requirementsPreferred": "docs/rules/02-垂域高难度题目生产-二期要求.md",
+    "requirementsRemoteSource": "https://xcnhc87xvcni.feishu.cn/wiki/F2ZqwOpzKiST4PkNtDOcHdgSnCc?from=from_copylink",
+    "referenceWorkbook": "inputs/production/可仿题面.xlsx",
+    "firstQaPrompt": "inputs/production/L2题面第一道质检提示词_增强覆盖版.txt",
+    "secondQaPrompt": "inputs/production/第二道质检_增强覆盖版.txt"
+  },
+  "referenceColumns": {
+    "questionHeaderPrefix": "题目",
+    "questionAlias": "题面",
+    "attachmentSummaryHeader": "附件内容（总结概括）"
+  },
+  "sampling": {
+    "oneReferencePerQuestion": true,
+    "useOnlyConfiguredColumns": true,
+    "withoutReplacementWithinBatch": true
+  },
+  "qualityOrder": [
+    "reference-sample",
+    "structure-breakdown",
+    "attachment-build",
+    "first-quality-gate",
+    "second-language-gate",
+    "final-output"
+  ],
+  "submissionRequiresProcessReceipt": true
+}

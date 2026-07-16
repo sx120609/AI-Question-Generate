@@ -1,0 +1,133 @@
+{
+  "runId": "l2_20260709_batch5_20260709T111803Z_9246fb",
+  "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+  "sheetId": "49e351",
+  "rows": [
+    {
+      "row": 140,
+      "uid": "沈礼_7.9_07",
+      "topic": "园区有限空间外包作业准入复核",
+      "summary": "复核园区有限空间外包作业进场条件，梳理阻断项、现场确认项和外包商补件清单。",
+      "humanTime": "12h",
+      "attachmentObjects": 4,
+      "uploadedVisible": true,
+      "qaStatus": "✅通过",
+      "qaNote": "已完成大模型质检，未发现问题"
+    },
+    {
+      "row": 141,
+      "uid": "沈礼_7.9_08",
+      "topic": "学校食堂外包供餐留样与陪餐整改复核",
+      "summary": "复核学校食堂承包商换季菜单上线前的食品安全制度、留样陪餐和台账缺口。",
+      "humanTime": "12h",
+      "attachmentObjects": 4,
+      "uploadedVisible": true,
+      "qaStatus": "✅通过",
+      "qaNote": "已完成大模型质检，未发现问题"
+    },
+    {
+      "row": 142,
+      "uid": "沈礼_7.9_09",
+      "topic": "药店小程序处方药网络销售复核",
+      "summary": "复核药店小程序处方药复购入口上线前的网售范围、处方审核、禁售清单和留痕要求。",
+      "humanTime": "14h",
+      "attachmentObjects": 4,
+      "uploadedVisible": true,
+      "qaStatus": "✅通过",
+      "qaNote": "已完成大模型质检，未发现问题"
+    },
+    {
+      "row": 143,
+      "uid": "沈礼_7.9_10",
+      "topic": "社区诊所医保定点申请材料预审",
+      "summary": "预审社区诊所医保定点申请材料，梳理入口条件、协议管理、基金监管和补件风险。",
+      "humanTime": "14h",
+      "attachmentObjects": 4,
+      "uploadedVisible": true,
+      "qaStatus": "✅通过",
+      "qaNote": "已完成大模型质检，未发现问题"
+    },
+    {
+      "row": 144,
+      "uid": "沈礼_7.9_11",
+      "topic": "公益项目捐赠票据开具与税前扣除材料核对",
+      "summary": "核对公益项目捐赠票据开具、电子票据管理、核销和税前扣除材料边界。",
+      "humanTime": "12h",
+      "attachmentObjects": 4,
+      "uploadedVisible": true,
+      "qaStatus": "✅通过",
+      "qaNote": "已完成大模型质检，未发现问题"
+    }
+  ],
+  "qaRounds": {
+    "round1": [
+      {
+        "row": 140,
+        "status": "通过",
+        "note": "已完成大模型质检，未发现问题"
+      },
+      {
+        "row": 141,
+        "status": "通过",
+        "note": "已完成大模型质检，未发现问题"
+      },
+      {
+        "row": 142,
+        "status": "不通过",
+        "note": "场景表达不自然：产品经理日常合规复核，更自然的问法是直接列出具体问题（如促销话术、处方留痕）让AI分析，而非要求生成正式合规意见和检查表。建议改为：先描述具体场景和疑问，再自然引出产物。 产物要求生硬：合规意见和检查表是合理产物，但应基于具体问题自然引出，而非直接要求。建议先写清要解决的问题，再说明需要整理成文档和表格。"
+      },
+      {
+        "row": 143,
+        "status": "通过",
+        "note": "已完成大模型质检，未发现问题"
+      },
+      {
+        "row": 144,
+        "status": "通过",
+        "note": "已完成大模型质检，未发现问题"
+      }
+    ],
+    "round2": [
+      {
+        "row": 142,
+        "status": "通过",
+        "note": "已完成大模型质检，未发现问题"
+      }
+    ],
+    "round3": [
+      {
+        "row": 140,
+        "status": "通过",
+        "note": "已完成大模型质检，未发现问题"
+      },
+      {
+        "row": 141,
+        "status": "通过",
+        "note": "已完成大模型质检，未发现问题"
+      },
+      {
+        "row": 142,
+        "status": "通过",
+        "note": "已完成大模型质检，未发现问题"
+      },
+      {
+        "row": 143,
+        "status": "通过",
+        "note": "已完成大模型质检，未发现问题"
+      },
+      {
+        "row": 144,
+        "status": "通过",
+        "note": "已完成大模型质检，未发现问题"
+      }
+    ]
+  },
+  "ruleUpdates": [
+    "docs/agent/QA_FEEDBACK_LEARNINGS.md",
+    "docs/agent/L2_PROMPTS.md",
+    "docs/agent/AUTO_PRODUCTION_WORKFLOW.md",
+    "docs/agent/L2_PRODUCER_AGENT.md",
+    "build/manual_review/lint_ai_style.mjs"
+  ],
+  "generatedAt": "2026-07-09T11:45:16.414Z"
+}

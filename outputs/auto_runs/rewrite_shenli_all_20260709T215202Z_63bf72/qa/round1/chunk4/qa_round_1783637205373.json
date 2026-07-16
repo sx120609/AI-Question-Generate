@@ -1,0 +1,28 @@
+[
+  {
+    "row": 179,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=179&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783637107047_179",
+    "checkedAt": "2026-07-09T22:46:39.381Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "附件六把这票货的数字摊开后，原先的“普通电子产品”申报显得站不住脚：24台运动相机 B3 工程样机各内装1块98Wh 锂离子电池，另带8块同型号备用电池，共画成",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 180,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=180&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783637199385_180",
+    "checkedAt": "2026-07-09T22:46:45.372Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "到货点验卡住了。中心主任需要在供货商开箱前看清一件事：这套已经送到实验楼的岛津 LC-20A 高效液相色谱系统，眼下究竟只够做外包装和箱数确认，还是已经具备安装",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  }
+]

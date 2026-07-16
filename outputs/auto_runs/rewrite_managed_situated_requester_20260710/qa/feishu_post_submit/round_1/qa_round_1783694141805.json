@@ -1,0 +1,28 @@
+[
+  {
+    "row": 179,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=179&qa_result_col=AC&qa_note_col=AD&action=recheck_row&_=1783694012730_179",
+    "checkedAt": "2026-07-10T14:35:04.771Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "研发还想按次日锁苏州到华沙的班列舱位，可订舱草单已经把货写成普通电子产品，我手上的货物信息却是24台B3工程样机，每台内装1块98Wh锂离子电池，另外还有8块同",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 180,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=180&qa_result_col=AC&qa_note_col=AD&action=recheck_row&_=1783694104777_180",
+    "checkedAt": "2026-07-10T14:35:41.804Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "岛津LC-20A已经送到实验楼，供货商想本周开箱，下周安装，还口头说验收签字后就能办尾款，可我手里现在只有箱数照片和安装日期。中心主任问我这周到底能签到哪一步，",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  }
+]

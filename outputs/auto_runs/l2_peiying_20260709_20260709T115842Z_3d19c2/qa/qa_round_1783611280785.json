@@ -1,0 +1,211 @@
+[
+  {
+    "row": 121,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=121&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783610722206_121",
+    "checkedAt": "2026-07-09T15:25:34.253Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "客户成功刚问我：生成式客服助手下周灰度前，产品和法务会上到底要追哪些材料？目前能确认的只有三件事：灰度只给两家付费客户开、默认不把客户会话用于训练、客户后台保留",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 122,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=122&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783610734255_122",
+    "checkedAt": "2026-07-09T15:26:16.247Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "业委会周四晚上要谈电动自行车整改，物业巡查照片里还有车停在门厅、楼梯口和疏散通道附近。工程部想扩建集中充电区，居民代表又追问架空层、地下非机动车库能不能改，旧车",
+    "note": "附件缺少改造评估所需图纸、报价、居民表决和消防书面意见，无法支撑架空层/地下库改造可行性判断。请补充相关材料，或缩小任务范围至仅输出政策口径沟通稿。请补充能直接支持核心任务的数据、案例、原型、截图、政策原文、调研材料或业务记录，避免只给同领域泛材料。具体可改为：补充架空层和地下非机动车库的平面图、改造报价、居民表决结果、消防或街道书面意见，或修改题目为仅基于现有政策输出沟通口径和跟踪表模板。",
+    "categories": [
+      "prompt_style"
+    ]
+  },
+  {
+    "row": 123,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=123&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783610776247_123",
+    "checkedAt": "2026-07-09T15:26:52.008Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "直播排期已经卡到月底，低糖高蛋白代餐粉的主播脚本还在反复改：运营想保留“控糖”“饭前一杯少吃主食”“饱腹不长胖”，店铺页还要放包装背面、营养成分表和达人短视频。",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 134,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=134&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783610812009_134",
+    "checkedAt": "2026-07-09T15:27:02.877Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "我这边刚收到会员运营的淡季短信召回需求，周一会前要先给法务看口径。名单里有手机号、身份证后四位、入住城市、消费频次、生日月份，还有“商务客/亲子客”标签；注册时",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 135,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=135&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783610822878_135",
+    "checkedAt": "2026-07-09T15:27:25.935Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "直播运营周五要重排一组左旋肉碱类保健食品素材，上一版脚本被平台打回后，大家主要卡在主播口播、详情页卖点、达人前后对比图、客服承诺和购物车标题：“吃完瘦”“不反弹",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 136,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=136&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783610845936_136",
+    "checkedAt": "2026-07-09T15:29:39.848Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "街道抛来一个养老助餐点运营机会，理事会周三前要先判断要不要继续跟。我们有社区厨房合作方和志愿者队伍，但没承接过政府购买服务；助餐、送餐、食品安全、补贴对象、基本",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 140,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=140&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783610979849_140",
+    "checkedAt": "2026-07-09T15:30:12.655Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "外包队资料不全，周五还能不能进场？物业工程群把雨水井和隔油池清掏排期排好了，对方只发营业执照、报价单和两张工人身份证；有限空间作业审批表、监护人安排、通风检测记",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 141,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=141&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783611012656_141",
+    "checkedAt": "2026-07-09T15:30:26.675Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "我早上收到后勤主任发来的食堂承包商换季菜单和家长投诉截图，下周一就想换新菜单，下午还要面对家委会追问。承包商只给了菜单、供货商名单和几张冷柜照片，食品留样记录、",
+    "note": "场景表达不自然：背景细节过多，但核心任务与背景的关联不够自然，建议精简背景，直接说明需要基于法规和承包商材料输出整改意见和补件表。请把报告式、材料式说法改成真实用户会提出的决策、比较、整理、建议需求，保留预算、偏好、限制和实际用途。具体可改为：精简背景描述，例如：&#x27;学校食堂承包商换季，现有菜单、供货商名单和冷柜照片，需结合法规输出整改复核意见（Word）和台账补件表（Excel）。&#x27;。",
+    "categories": [
+      "scene_naturalness",
+      "prompt_style"
+    ]
+  },
+  {
+    "row": 142,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=142&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783611026675_142",
+    "checkedAt": "2026-07-09T15:31:12.500Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "连锁药房慢病复购入口这周要灰度：老会员拍处方，药师审核后系统把常用处方药配送到家，运营还排了“买二送一”“复购立减”的位置。法务这次集中追处方真实性、禁售药品拦",
+    "note": "缺少具体年份或灰度日期，无法确定法规版本和业务时效，请补充时间信息。请补充年份、截止日期、数据周期、政策生效时间或适用版本；普通题不强制加时间，只补会影响结论的时间口径。具体可改为：在题目中明确灰度年份和月份，例如“2026年6月第3周灰度”，并确认法规版本与时间一致。修改后应让审核人一眼看出问题原因、需要补充的材料、应补到哪个字段，以及出题人可以直接执行的调整方向，并减少来回追问；不要只写笼统。",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 143,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=143&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783611072501_143",
+    "checkedAt": "2026-07-09T15:31:27.737Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "合作的一家社区诊所想这个月递交医保定点申请，负责人先发了营业执照、医疗机构执业许可证和一份自查表，但药品耗材追溯码、影像结果上传、医技人员资质、价格执行、基金使",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 144,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=144&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783611087738_144",
+    "checkedAt": "2026-07-09T15:31:55.327Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "我这边收到财务同事的求助：公益项目后台里有企业捐款、员工配捐、物资折价和几笔备注含糊的“公益合作款”，捐赠人已经在催公益事业捐赠票据和税前扣除材料。但后台名单、",
+    "note": "缺少后台捐赠明细、收款凭证、协议、物资评估、受助对象清单等核心素材，请补充至少一批真实或模拟的捐赠数据，或明确要求仅输出模板和规则说明。 缺少后台捐赠明细、收款凭证、协议、物资评估、受助对象清单等核心材料，模板。请补充至少一批真实或模拟的捐赠数据（含金额、类型、材料状态），或明确要求仅输出模板和规则说明，不涉及具体批次判断。",
+    "categories": [
+      "prompt_style"
+    ]
+  },
+  {
+    "row": 145,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=145&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783611115328_145",
+    "checkedAt": "2026-07-09T15:32:57.275Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "周五前要定达人脚本，运营把“敏感肌急救精华”的三段短视频口播、详情页首屏文案和前后对比图都放进排期表，投放链接已经约好达人账号。现在最难定的是“三天退红”“医美",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 146,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=146&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783611177276_146",
+    "checkedAt": "2026-07-09T15:33:06.221Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "明天客户周会要给销售一个能上桌的口径：官网预约试用、展会扫码、公众号留资这三路线索，是否能先接入海外CRM，哪些字段先留在境内。现有材料只有字段清单、供应商标准",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 147,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=147&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783611186222_147",
+    "checkedAt": "2026-07-09T15:34:06.611Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "社区工作人员让我准备下周协调会材料，业委会群里已经吵了两晚：电梯广告一年18万元到底进了哪里，物业说抵了保洁和维保，业主代表要求看合同、入账流水和分摊明细。偏偏",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 148,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=148&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783611246612_148",
+    "checkedAt": "2026-07-09T15:34:17.472Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "招聘小程序的“AI初筛”计划在2026年7月灰度，现在产品已经把A档优先展示、B档抽看、C档沉底的后台样式画好了。麻烦在上线评审前把候选人会看到什么、HR后台能",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 149,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=149&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783611257473_149",
+    "checkedAt": "2026-07-09T15:34:40.785Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "我这边负责的本地生活平台想把“城市周末民宿”专题排进下周首页，但招商给来的30套房源还只是散资料：证照照片、房屋图、消防承诺书、价格表各有一些，完整房源明细表还",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  }
+]

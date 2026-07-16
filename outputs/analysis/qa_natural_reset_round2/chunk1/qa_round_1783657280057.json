@@ -1,0 +1,54 @@
+[
+  {
+    "row": 121,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=121&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783657179330_121",
+    "checkedAt": "2026-07-10T04:19:49.870Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "我在客户成功团队负责这次生成式客服助手的客户灰度，明天下午要和产品、法务一起确认下周能不能先向两家付费客户开放。产品目前说明，助手会连接企业知识库、FAQ和工单",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 122,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=122&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783657189873_122",
+    "checkedAt": "2026-07-10T04:19:59.106Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "周四业委会要让物业经理说明，眼前的电动自行车问题现在能处理到哪一步；完整改造方案尚不具备讨论条件。巡查照片已经看到车辆停在门厅、楼梯口和疏散通道附近，居民还会追",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 135,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=135&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783657199107_135",
+    "checkedAt": "2026-07-10T04:20:23.852Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "周五改稿会先做一轮前置收件和风险分类，涉及一批左旋肉碱类保健食品直播素材。上一版脚本已经被平台打回，运营群里仍有人试探“吃完瘦”“不反弹”“安全不伤身”等说法；",
+    "note": "缺少核心素材：蓝帽/批准信息、广告审查凭证、达人图片授权、客服承诺依据、平台退回记录、各渠道完整当前稿原文均未提供。请补充上述材料，或调整题目为仅做通用风险提示和收件流程设计。补充时要写清数据来源、覆盖范围、地区年份、统计口径或附件位置，确保后续答案能基于真实材料给出具体判断。具体可改为：补充缺失的批准信息、审查凭证、授权文件、平台记录和当前稿原文，或修改题目为：基于已知法规和案例，制定左旋肉碱。",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 136,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=136&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783657223854_136",
+    "checkedAt": "2026-07-10T04:21:20.056Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "一家社会组织正在考虑是否继续投入养老助餐项目的前期沟通。手头资料来自不同层级和地区：民政部方案说明助餐网络与部门职责，浙江实施方案反映省级运营机制，政府购买服务",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "row": 172,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=172&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783656472583_172",
+    "checkedAt": "2026-07-10T04:08:04.949Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "截至2026年7月10日晚，会员运营想把新品会员日弹窗放进小程序测试。页面设想把9.9元券包、积分抽奖、生日月加赠和“连喝7天抽免单”放在一起，后台还准备按手机",
+    "note": "附件三《互联网广告管理办法》读取失败（频率限制），该附件用于判断弹窗广告合规，属于核心材料，请重新上传或提供可稳定访问的链接。 缺少活动规则、预算、奖项数量、中奖概率、弹窗截图、核销日志和用户授权记录等关键材料，无法支撑具体功能测试范围判断和成本测算。请补充上述材料或调整题目为仅基于现有法规进行合规分析。请更换可访问链接、上传附件原文，或在附件内容列补充足够正文摘录和数据口径，避免在缺少真实材料。",
+    "categories": [
+      "attachment_read_failed"
+    ]
+  },
+  {
+    "row": 173,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=173&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783656484952_173",
+    "checkedAt": "2026-07-10T04:08:13.545Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "园长打算在9月新学期前，让两个班试用儿童智能手表。设想中的功能包括进出园自动打卡、离园围栏提醒、SOS一键录音、家长端查看位置，还准备把迟到次数同步给班主任。家",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 174,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=174&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783656493546_174",
+    "checkedAt": "2026-07-10T04:10:13.859Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "票务产品经理要在周一前把2026年8月体育场演唱会的新版购票规则发给主办方确认。草案写了每个身份证限购一张、实名入场、开票后48小时内免费退、临演前分档收取退票",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 178,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=178&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783656613862_178",
+    "checkedAt": "2026-07-10T04:10:47.169Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "投委会当前只需要回答一个问题：寒武纪在2025年首次实现年度盈利后，现有公开信息是否足以支持从事件跟踪转入重点研究池。一方看重营收和归母净利润上升，以及2026",
+    "note": "关键步骤问题：末尾需加入产物自检或交付前核对。请按真实完成顺序保留关键动作，删除过细或无关步骤。请按任务真实完成顺序整理关键动作，L1保持4-8条，L2保持8-15条，保留必要流程节点，合并过细或重复动作。具体可改为：加入产物自检或交付前核对步骤。修改后应让审核人一眼看出问题原因、需要补充的材料、应补到哪个字段，以及出题人可以直接执行的调整方向，并减少来回追问；不要只写笼统描述或模糊来源。",
+    "categories": [
+      "step_count"
+    ]
+  },
+  {
+    "row": 179,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=179&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783656647170_179",
+    "checkedAt": "2026-07-10T04:12:16.030Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "供应链团队希望次日锁定苏州至华沙的中欧班列舱位，货物是24台运动相机B3工程样机，每台内装1块98Wh锂离子电池，另有8块同型号备用电池，订舱草单把它们安排成4",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 180,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=180&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783656736031_180",
+    "checkedAt": "2026-07-10T04:12:53.550Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "分析测试中心新购的岛津LC-20A高效液相色谱系统已经送到实验楼。供货商希望本周开箱、下周安装，并口头表示验收签字后即可申请尾款；资产管理员手里却只有箱数照片和",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  }
+]

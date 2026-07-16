@@ -1,0 +1,15 @@
+[
+  {
+    "row": 149,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=149&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783602119352_149",
+    "checkedAt": "2026-07-09T13:04:03.129Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "本地生活平台准备上线“城市周末民宿”专题，招商已收集30套房源的证照照片、房屋照片、消防承诺书和价格表，但房源明细表还在汇总，部分房源是否完成旅馆业备案、住宿登",
+    "note": "附件读取失败：题目依赖附件或来源链接，但来源链接读取失败或附件原文不可用；请更换可访问链接、上传附件原文，或在附件内容列补充足够正文摘录/数据口径后重新质检。请更换可访问链接、上传附件原文，或在附件内容列补充足够正文摘录和数据口径，避免在缺少真实材料时误判通过。具体可改为：请更换可访问链接、上传附件原文，或在附件内容列补充足够的正文摘录/数据口径后重新质检。",
+    "categories": [
+      "attachment_read_failed"
+    ]
+  }
+]

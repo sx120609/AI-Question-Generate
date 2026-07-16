@@ -1,0 +1,69 @@
+[
+  {
+    "row": 121,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=121&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783638805592_121",
+    "checkedAt": "2026-07-09T23:13:33.602Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "两家付费客户会先承受这次灰度的真实影响：生成式客服助手准备下周开放，产品说明它会接企业知识库、FAQ 和工单，自动生成回复与摘要，客户后台保留人工转接，并称不会",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 122,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=122&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783638813605_122",
+    "checkedAt": "2026-07-09T23:13:39.792Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "物业经理周四要上业委会，大家肯定会追问门厅、楼梯口和疏散通道附近的电动自行车怎么处理，集中充电区什么时候扩，架空层和地下非机动车库能不能利用。巡查照片已经看到违",
+    "note": "产物格式不明确：L2/L3 需要在产物内容/产物格式中写清具体可编辑或结构化格式，如 Word、Excel、PPT、HTML、workflow、trace 或 runbook；普通报告/复盘/方案类产物请使用常规办公格式，不推荐 Markdown。请在产物内容/产物格式中写明具体可编辑或结构化格式，并让题目自然保留核心交付物，例如 Word、Excel、PPT、HTML、workflow、tra。",
+    "categories": [
+      "product_format"
+    ]
+  },
+  {
+    "row": 123,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=123&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783638819793_123",
+    "checkedAt": "2026-07-09T23:13:52.724Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "退回件数和改稿次数在月底排期前不断上升，低糖高蛋白代餐粉却还同时流转着直播脚本、详情页草稿、包装背面图和达人短视频等多个版本。“控糖”“饭前一杯少吃主食”“饱腹",
+    "note": "场景表达不自然：运营人员日常排期前做版本差异诊断，更自然的表达是直接说明要解决的问题和交付物，而不是写成类似正式报告。建议简化背景描述，直接聚焦任务。 产物要求生硬：运营排期前的版本诊断，更自然的交付是直接给出处理建议和优先级，而不是强制要求docx和xlsx格式。建议弱化格式要求，让模型自由输出可用的结果。请把报告式、材料式说法改成真实用户会提出的决策、比较、整理、建议需求，保留预算、偏好、限。",
+    "categories": [
+      "scene_naturalness",
+      "prompt_style"
+    ]
+  },
+  {
+    "row": 134,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=134&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783638832726_134",
+    "checkedAt": "2026-07-09T23:14:03.599Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "周一上午法务要看淡季短信召回方案，今天必须先决定六类名单字段怎么处理。手机号、身份证后四位、入住城市、消费频次、生日月份和“商务客/亲子客”标签已经出现在业务底",
+    "note": "场景表达不自然：法务合规审查更可能直接要求逐项说明合规依据和风险，而非先交付docx和xlsx。建议改为更自然的任务描述，如“请逐项分析六类字段的合规性，给出处理建议”。请把报告式、材料式说法改成真实用户会提出的决策、比较、整理、建议需求，保留预算、偏好、限制和实际用途。具体可改为：改为：法务要求对六类字段进行合规审查，请逐项分析每类字段的合法性、最小必要性、授权状态、外包风险，并给出保留、脱敏。",
+    "categories": [
+      "scene_naturalness",
+      "prompt_style"
+    ]
+  },
+  {
+    "row": 135,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=135&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783638843600_135",
+    "checkedAt": "2026-07-09T23:14:16.744Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "违规件数和退回原因突然成为周五改稿会的焦点：上一版左旋肉碱类保健食品直播脚本已被平台打回，但运营群里仍在反复试探“吃完瘦”“不反弹”“安全不伤身”。主播口播、详",
+    "note": "缺少核心素材：请补充主播口播、详情页、对比图、客服承诺、购物车标题等各版本具体内容，以及平台退回意见原文，否则 核心任务不聚焦：请明确本题首要目标是“诊断退回原因并给出整改建议”还是“建立风险监测流程”，避免将流程设计、素材分析和报告生成混为一道题。补充时要写清数据来源、覆盖范围、地区年份、统计口径或附件位置，确保后续答案能基于真实材料给出具体判断。",
+    "categories": [
+      "other"
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "runId": "rewrite_shenli_all_20260709T215202Z_63bf72",
+  "objective": "完整重写沈礼现有17条记录并提交审核",
+  "operator": "codex",
+  "generatedAnnotator": "沈礼",
+  "uidPrefix": "沈礼_",
+  "count": 17,
+  "status": "created",
+  "createdAt": "2026-07-09T21:52:02.231Z",
+  "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+  "sheetId": "49e351",
+  "dirs": {
+    "root": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_shenli_all_20260709T215202Z_63bf72",
+    "sources": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_shenli_all_20260709T215202Z_63bf72\\sources",
+    "attachments": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_shenli_all_20260709T215202Z_63bf72\\attachments",
+    "drafts": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_shenli_all_20260709T215202Z_63bf72\\drafts",
+    "feishu": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_shenli_all_20260709T215202Z_63bf72\\feishu",
+    "qa": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_shenli_all_20260709T215202Z_63bf72\\qa",
+    "logs": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_shenli_all_20260709T215202Z_63bf72\\logs",
+    "tmp": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_shenli_all_20260709T215202Z_63bf72\\tmp"
+  },
+  "diversityPlanPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_shenli_all_20260709T215202Z_63bf72\\sources\\diversity_plan.json",
+  "diversityPolicyId": "l2-structural-diversity-v1",
+  "diversityPolicyVersion": 1,
+  "boundaries": {
+    "writableRoots": [
+      "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_shenli_all_20260709T215202Z_63bf72"
+    ],
+    "sharedWritesRequireLocks": [
+      "outputs/l2_questions.tsv",
+      "outputs/feishu_fill_plan_*.json",
+      "outputs/auto_runs/_structure_registry.json",
+      "Feishu sheet rows"
+    ],
+    "noTouch": [
+      "Rows not reserved by this run",
+      "Other runs under outputs/auto_runs",
+      "Existing attachments outside this run unless explicitly imported"
+    ]
+  }
+}

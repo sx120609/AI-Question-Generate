@@ -1,0 +1,80 @@
+[
+  {
+    "row": 140,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=140&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783674838232_140",
+    "checkedAt": "2026-07-10T09:14:05.125Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "周五的雨水井和隔油池清掏已经排进物业工程群，外包队却只发来营业执照、报价单和两张工人身份证。有限空间作业审批表、监护人安排、通风检测记录、应急装备、培训记录和外",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 141,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=141&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783674845127_141",
+    "checkedAt": "2026-07-10T09:14:20.682Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "后勤主任一早转来的换季菜单、供货商名单和冷柜照片，看起来已经有了一套新菜单的轮廓；家长投诉截图也随消息一起发了过来。菜名和照片齐全仍回答不了下周一能不能换菜单。",
+    "note": "产物格式不明确：L2/L3 需要在产物内容/产物格式中写清具体可编辑或结构化格式，如 Word、Excel、PPT、HTML、workflow、trace 或 runbook；普通报告/复盘/方案类产物请使用常规办公格式，不推荐 Markdown。请在产物内容/产物格式中写明具体可编辑或结构化格式，并让题目自然保留核心交付物，例如 Word、Excel、PPT、HTML、workflow、tra。",
+    "categories": [
+      "product_format"
+    ]
+  },
+  {
+    "row": 142,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=142&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783674860683_142",
+    "checkedAt": "2026-07-10T09:14:45.953Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "慢病复购入口的设想已经很具体：老会员上传处方，药师审核后，系统把常用处方药配送到家；页面同时预留了“买二送一”和“复购立减”。药房产品经理本周想做灰度，真正需要",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 143,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=143&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783674885954_143",
+    "checkedAt": "2026-07-10T09:15:05.312Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "营业执照、医疗机构执业许可证和一份自查表已经到了老板手里，社区诊所希望这个月把医保定点材料递出去。自查表里的药品耗材追溯码使用、影像结果上传、医技人员资质、价格",
+    "note": "产物格式不明确：L2/L3 需要在产物内容/产物格式中写清具体可编辑或结构化格式，如 Word、Excel、PPT、HTML、workflow、trace 或 runbook；普通报告/复盘/方案类产物请使用常规办公格式，不推荐 Markdown。 题目表述冗余：大量描述政策文件关系、自查表内容拆解、预审意见细化要求等，使题目冗长，核心任务不突出。请精简题目，保留核心任务：基于诊所自查表和附件政。",
+    "categories": [
+      "product_format"
+    ]
+  },
+  {
+    "row": 144,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=144&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783674905313_144",
+    "checkedAt": "2026-07-10T09:15:23.648Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "公益项目后台把企业捐款、员工配捐、物资折价和几笔备注为“公益合作款”的记录放在了一起，捐赠人又在催公益事业捐赠票据和税前扣除材料。财务眼下不能只凭后台备注决定怎",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 145,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=145&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783674923649_145",
+    "checkedAt": "2026-07-10T09:15:38.893Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "今天要过“敏感肌急救精华”的实际投放素材。附件里有三段达人短视频口播、详情页首屏文案和前后对比图，购买入口还会与达人内容放在一起；周五前这些内容就要定稿。运营需",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  }
+]

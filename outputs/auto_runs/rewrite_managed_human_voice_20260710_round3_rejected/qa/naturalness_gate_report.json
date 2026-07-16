@@ -1,0 +1,2495 @@
+{
+  "schemaVersion": 1,
+  "kind": "naturalness-gate-report",
+  "gateId": "naturalness-gate-v1",
+  "metricsVersion": "naturalness-metrics-v1",
+  "generatedAt": "2026-07-10T09:48:56.428Z",
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_managed_human_voice_20260710\\drafts\\l2_questions_human_voice.tsv",
+  "candidateHash": "804c4cf5412d100baf0b7e2cad95c78d89fdabeb7c5724da6de4d19701611f9e",
+  "baselinePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\config\\naturalness_benchmark.json",
+  "baselineHash": "f7357bc2781c481fa92cd67f9d11dd2ae8c7a484fd08167ad9f3b1c3fa79d49e",
+  "baselineId": "naturalness-benchmark-v1",
+  "baselineSampleCount": 14,
+  "effectiveThresholds": {
+    "row": {
+      "disclaimerSentenceDensity": {
+        "metric": "disclaimerSentenceDensity",
+        "direction": "upper",
+        "review": 0.2125,
+        "fail": 0.3425,
+        "source": {
+          "type": "benchmark-quantile",
+          "baselineId": "naturalness-benchmark-v1",
+          "sampleCount": 14,
+          "reviewQuantile": 0.9,
+          "failQuantile": 0.98
+        }
+      },
+      "disclaimerSentenceCount": {
+        "metric": "disclaimerSentenceCount",
+        "direction": "upper",
+        "review": 2.7,
+        "fail": 5.22,
+        "source": {
+          "type": "benchmark-quantile",
+          "baselineId": "naturalness-benchmark-v1",
+          "sampleCount": 14,
+          "reviewQuantile": 0.9,
+          "failQuantile": 0.98
+        }
+      },
+      "concreteFactsPer100Chars": {
+        "metric": "concreteFactsPer100Chars",
+        "direction": "lower",
+        "review": 0.0938,
+        "source": {
+          "type": "benchmark-quantile",
+          "baselineId": "naturalness-benchmark-v1",
+          "sampleCount": 14,
+          "reviewQuantile": 0.1
+        }
+      },
+      "templateMarkerCount": {
+        "metric": "templateMarkerCount",
+        "direction": "upper",
+        "review": 3,
+        "source": {
+          "type": "benchmark-quantile",
+          "baselineId": "naturalness-benchmark-v1",
+          "sampleCount": 14,
+          "reviewQuantile": 0.9
+        }
+      },
+      "minimumDisclaimerSentencesForFail": {
+        "value": 2,
+        "source": {
+          "type": "row-policy-cap",
+          "profileId": "approved-corpus-quantiles-v1",
+          "parameter": "minimumDisclaimerSentencesForFail",
+          "rationale": "One matched sentence may be legitimate evidence hygiene and cannot cause a hard fail by itself."
+        }
+      }
+    },
+    "batch": {
+      "discourseSkeletonDominantShare": {
+        "metric": "discourseSkeletonDominantShare",
+        "direction": "upper",
+        "review": 0.2656,
+        "fail": 0.3719,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "naturalness-benchmark-v1",
+          "sampleCount": 14,
+          "observedCount": 1,
+          "observedShare": 0.0714,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "fixedWordExcelTailShare": {
+        "metric": "fixedWordExcelTailShare",
+        "direction": "upper",
+        "review": 0.7594,
+        "fail": 0.8135,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "naturalness-benchmark-v1",
+          "sampleCount": 14,
+          "observedCount": 8,
+          "observedShare": 0.5714,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "finalStepSelfCheckShare": {
+        "metric": "finalStepSelfCheckShare",
+        "direction": "upper",
+        "review": 0.8139,
+        "fail": 0.8591,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "naturalness-benchmark-v1",
+          "sampleCount": 14,
+          "observedCount": 9,
+          "observedShare": 0.6429,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "stepCountModeShare": {
+        "metric": "stepCountModeShare",
+        "direction": "upper",
+        "review": 0.5055,
+        "fail": 0.5913,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "naturalness-benchmark-v1",
+          "sampleCount": 14,
+          "observedCount": 4,
+          "observedShare": 0.2857,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "weakScheduleShare": {
+        "metric": "weakScheduleShare",
+        "direction": "upper",
+        "review": 0.5055,
+        "fail": 0.5913,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "naturalness-benchmark-v1",
+          "sampleCount": 14,
+          "observedCount": 4,
+          "observedShare": 0.2857,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "weakScheduleDominantShare": {
+        "metric": "weakScheduleDominantShare",
+        "direction": "upper",
+        "review": 0.353,
+        "fail": 0.4523,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "naturalness-benchmark-v1",
+          "sampleCount": 14,
+          "observedCount": 2,
+          "observedShare": 0.1429,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "minimumRows": {
+        "value": 5,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-quantiles-v1",
+          "parameter": "minimumRows"
+        }
+      },
+      "reviewLevelTemplateSignalsForFail": {
+        "value": 2,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-quantiles-v1",
+          "parameter": "reviewLevelTemplateSignalsForFail",
+          "rationale": "Several moderate batch-level repetitions together constitute template concentration."
+        }
+      }
+    }
+  },
+  "status": "REVIEW",
+  "ok": false,
+  "reviewRequired": true,
+  "blocked": true,
+  "summary": {
+    "rowCount": 22,
+    "rowStatusCounts": {
+      "PASS": 16,
+      "REVIEW": 6
+    },
+    "batchStatus": "PASS",
+    "findingCounts": {
+      "REVIEW:low_concrete_fact_density": 6,
+      "REVIEW:disclaimer_missing_material_density": 1
+    }
+  },
+  "rows": [
+    {
+      "uid": "沈礼_7.9_01",
+      "dataRow": 2,
+      "questionLength": 672,
+      "paragraphCount": 4,
+      "sentenceCount": 16,
+      "disclaimerSentenceCount": 2,
+      "disclaimerSentenceDensity": 0.125,
+      "missingMaterialSentenceCount": 1,
+      "evidenceBoundarySentenceCount": 1,
+      "disclaimerSignalCount": 3,
+      "concreteFactAnchorCount": 2,
+      "concreteFactsPer100Chars": 0.2976,
+      "firstPersonPresent": true,
+      "firstPersonOpening": true,
+      "paragraphActions": [
+        "decision",
+        "boundary",
+        "deliverable",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "decision": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "evidence": 0,
+          "quality": 0
+        },
+        {
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "deliverable": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 5,
+          "evidence": 2,
+          "boundary": 1,
+          "scene": 1,
+          "instruction": 1,
+          "decision": 0,
+          "quality": 0
+        },
+        {
+          "deliverable": 5,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "boundary": 0
+        }
+      ],
+      "discourseSkeleton": "decision>boundary>deliverable>deliverable",
+      "compressedDiscourseSkeleton": "decision>boundary>deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 9,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "relative-meeting",
+      "weakScheduleDevice": true,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 2,
+      "evidence": {
+        "disclaimerSentences": [
+          "产品说“不拿客户会话训练”和“保留人工转接”，材料里却还没有对应配置；",
+          "公开备案公告只放查询路径，供应商针对本项目的备案材料仍单独留项。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quoted-detail",
+            "value": "“不拿客户会话训练”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“保留人工转接”"
+          }
+        ],
+        "finalParagraph": "Word会前稿从这张表里抽出法务需要对齐的边界和问题，按客户从发起会话到转人工的顺序写，方便会上逐段核对。灰度是否开放以及开到哪一段留在会议中决定；会前交付的重点，是让每个产品说法都能找到对应材料，找不到的就成为明确追问。会议中也能沿表核对，不必重新翻找每条规则的出处。",
+        "finalStep": "完成Word会前稿，让规则出处、产品说法和待答问题沿同一条会话路径出现。"
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "沈礼_7.9_02",
+      "dataRow": 3,
+      "questionLength": 650,
+      "paragraphCount": 5,
+      "sentenceCount": 16,
+      "disclaimerSentenceCount": 0,
+      "disclaimerSentenceDensity": 0,
+      "missingMaterialSentenceCount": 0,
+      "evidenceBoundarySentenceCount": 0,
+      "disclaimerSignalCount": 0,
+      "concreteFactAnchorCount": 0,
+      "concreteFactsPer100Chars": 0,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "evidence",
+        "evidence",
+        "instruction",
+        "deliverable",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "quality": 0
+        },
+        {
+          "evidence": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "deliverable": 5,
+          "evidence": 2,
+          "instruction": 1,
+          "boundary": 0,
+          "decision": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "deliverable": 5,
+          "decision": 2,
+          "evidence": 2,
+          "scene": 1,
+          "boundary": 0,
+          "quality": 0,
+          "instruction": 0
+        }
+      ],
+      "discourseSkeleton": "evidence>evidence>instruction>deliverable>deliverable",
+      "compressedDiscourseSkeleton": "evidence>instruction>deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 12,
+      "finalStepSelfCheck": true,
+      "scheduleAuthenticityTag": "relative-meeting",
+      "weakScheduleDevice": true,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 3,
+      "evidence": {
+        "disclaimerSentences": [],
+        "concreteFactAnchors": [],
+        "finalParagraph": "Excel跟踪表按位置单列，保留照片事实、当前处理、所缺图纸或意见、责任人和居民沟通状态。周四会上提到的门厅、楼梯口、疏散通道、集中充电区、架空层和地下库都能回到各自记录，不会把一个位置的依据套到另一个位置。",
+        "finalStep": "答疑稿和跟踪表完成后做一次点位自检：各抽一个禁停点位、现有充电区和拟勘查空间，把照片事实、当下动作、所缺材料和责任人逐项对回。"
+      },
+      "status": "REVIEW",
+      "findings": [
+        {
+          "rule": "low_concrete_fact_density",
+          "severity": "REVIEW",
+          "message": "The scene contains fewer concrete anchors than the lower benchmark quantile; inspect whether disclaimers are replacing business facts.",
+          "evidence": {
+            "anchorCount": 0,
+            "per100Chars": 0
+          },
+          "threshold": {
+            "metric": "concreteFactsPer100Chars",
+            "direction": "lower",
+            "review": 0.0938,
+            "source": {
+              "type": "benchmark-quantile",
+              "baselineId": "naturalness-benchmark-v1",
+              "sampleCount": 14,
+              "reviewQuantile": 0.1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "uid": "沈礼_7.9_03",
+      "dataRow": 4,
+      "questionLength": 738,
+      "paragraphCount": 3,
+      "sentenceCount": 15,
+      "disclaimerSentenceCount": 3,
+      "disclaimerSentenceDensity": 0.2,
+      "missingMaterialSentenceCount": 1,
+      "evidenceBoundarySentenceCount": 2,
+      "disclaimerSignalCount": 3,
+      "concreteFactAnchorCount": 3,
+      "concreteFactsPer100Chars": 0.4065,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "boundary",
+        "deliverable",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "boundary": 3,
+          "decision": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "evidence": 0,
+          "quality": 0
+        },
+        {
+          "deliverable": 5,
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1
+        },
+        {
+          "deliverable": 5,
+          "boundary": 5,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1
+        }
+      ],
+      "discourseSkeleton": "boundary>deliverable>deliverable",
+      "compressedDiscourseSkeleton": "boundary>deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 12,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "relative-time-only",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 1,
+      "evidence": {
+        "disclaimerSentences": [
+          "现有附件能回答广告识别、预包装食品标签、特殊食品广告、网络食品销售和食品广告责任等规则问题，却没有配方检测报告、包装标签原件、店铺页面截图、达人合作关系和广告审查材料。",
+          "同一句营销主张放在口播、达人内容或商品页时，广告识别、上下文和证据位置都要分别记录，不能用一条总意见替代。",
+          "Word只汇总会影响投放的重点，让运营拿到后能按素材位置安排修改，也不把规则附件写成配方、检测或达人合作证明。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quoted-detail",
+            "value": "“控糖”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“饭前一杯少吃主食”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“饱腹不长胖”"
+          }
+        ],
+        "finalParagraph": "Word投放审查意见从月底排期需要的动作写起，分别说明可保留、改成客观描述、补证明后再看和暂缓上线的项目，并把普通食品身份、广告可识别性和页面标签问题分开。Excel里的每条原文都要能回到直播口播、达人短视频、详情页或包装展示中的实际位置，处理意见旁边直接列所缺的配方、标签、页面或合作材料。同一句营销主张放在口播、达人内容或商品页时，广告识别、上下文和证据位置都要分别记录，不能用一条总意见替代。包装背面和营养成分表还要与页面展示一起核对，发现信息对不上就留在补件项。Word只汇总会影响投放的重点，让运营拿到后能按素材位置安排修改，也不把规则附件写成配方、检测或达人合作证明。",
+        "finalStep": "把已具备处理条件的素材交回月底排期，其余项目按补证明或暂缓状态留在改稿表。"
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "沈礼_7.9_04",
+      "dataRow": 5,
+      "questionLength": 704,
+      "paragraphCount": 2,
+      "sentenceCount": 15,
+      "disclaimerSentenceCount": 2,
+      "disclaimerSentenceDensity": 0.1333,
+      "missingMaterialSentenceCount": 2,
+      "evidenceBoundarySentenceCount": 0,
+      "disclaimerSignalCount": 2,
+      "concreteFactAnchorCount": 1,
+      "concreteFactsPer100Chars": 0.142,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "deliverable",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "deliverable": 5,
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "quality": 0
+        },
+        {
+          "deliverable": 5,
+          "decision": 2,
+          "evidence": 2,
+          "boundary": 1,
+          "scene": 1,
+          "instruction": 1,
+          "quality": 0
+        }
+      ],
+      "discourseSkeleton": "deliverable>deliverable",
+      "compressedDiscourseSkeleton": "deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 9,
+      "finalStepSelfCheck": true,
+      "scheduleAuthenticityTag": "relative-time-only",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 2,
+      "evidence": {
+        "disclaimerSentences": [
+          "短信外包平台合同、授权记录、发送日志、退订回执和注销处理结果都还没拿到，现有法规只能提供处理规则。",
+          "酒店后台有没有授权、权限和处理记录，仍以运营及外包材料为准。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quoted-detail",
+            "value": "“商务客／亲子客”"
+          }
+        ],
+        "finalParagraph": "Word法规框架只收拢法务讨论真正需要的内容：现有用户协议能覆盖到哪里，哪些字段需要更具体的告知或同意，外包合同应说明哪些处理边界，发送日志怎样留存，退订和注销事项由哪个环节承接。个人信息保护法、数据安全法、网络安全法和个人信息安全规范分别落到这些实际动作上；酒店后台有没有授权、权限和处理记录，仍以运营及外包材料为准。退订回执和注销处理结果分别落到对应流程，不混成笼统的已处理状态。字段意见发生变化时，也要看是哪份授权、合同或日志改变了判断。周一这一版的结果是一套逐字段意见和清楚的补件路径，后续活动审批直接读取这套记录。",
+        "finalStep": "送法务前做一次流程自检：把发送、退订回流和注销处理三段记录接起来，确认字段意见、授权依据与外包动作都落在对应位置；缺少授权、合同或日志的字段仍保持暂停或待判断。"
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "沈礼_7.9_05",
+      "dataRow": 6,
+      "questionLength": 653,
+      "paragraphCount": 4,
+      "sentenceCount": 16,
+      "disclaimerSentenceCount": 1,
+      "disclaimerSentenceDensity": 0.0625,
+      "missingMaterialSentenceCount": 1,
+      "evidenceBoundarySentenceCount": 0,
+      "disclaimerSignalCount": 1,
+      "concreteFactAnchorCount": 3,
+      "concreteFactsPer100Chars": 0.6897,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "boundary",
+        "boundary",
+        "evidence",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "boundary": 3,
+          "evidence": 2,
+          "scene": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "quality": 0,
+          "instruction": 0
+        },
+        {
+          "boundary": 4,
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "quality": 0
+        },
+        {
+          "evidence": 2,
+          "scene": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "quality": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 5,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "boundary": 0
+        }
+      ],
+      "discourseSkeleton": "boundary>boundary>evidence>deliverable",
+      "compressedDiscourseSkeleton": "boundary>evidence>deliverable",
+      "fixedWordExcelTail": true,
+      "stepCount": 10,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "relative-deadline",
+      "weakScheduleDevice": true,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 3,
+      "evidence": {
+        "disclaimerSentences": [
+          "但其他口播、页面和图片没有原文，也没有相应证明，不能隔空替运营写替换句或下使用结论。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quoted-detail",
+            "value": "“吃完瘦”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“不反弹”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“安全不伤身”"
+          }
+        ],
+        "finalParagraph": "三句话以外的素材还会分别碰到功效保证、疾病暗示、达人证明、广告可识别性和客服延伸承诺，原文与证明到齐后再进入逐条判断。周五交付两样东西。Word话术红线说明只讲三句现成表达的风险和当前处理，运营拿到就能先撤下；Excel收件与改稿表按口播、详情页、达人图片、客服承诺和购物车标题分行，记录原文位置、提供人、批准或授权材料、缺项、下一步动作和处理理由。资料以后补进原行，再逐条决定撤下、改成客观描述、补材料后复核或暂缓使用，不另起一套表。",
+        "finalStep": "将到件后的审查意见继续写回原素材行，使收件记录和改稿动作保持衔接。"
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "沈礼_7.9_06",
+      "dataRow": 7,
+      "questionLength": 806,
+      "paragraphCount": 4,
+      "sentenceCount": 19,
+      "disclaimerSentenceCount": 2,
+      "disclaimerSentenceDensity": 0.1053,
+      "missingMaterialSentenceCount": 2,
+      "evidenceBoundarySentenceCount": 0,
+      "disclaimerSignalCount": 3,
+      "concreteFactAnchorCount": 0,
+      "concreteFactsPer100Chars": 0,
+      "firstPersonPresent": true,
+      "firstPersonOpening": true,
+      "paragraphActions": [
+        "boundary",
+        "evidence",
+        "deliverable",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "boundary": 4,
+          "scene": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "instruction": 0
+        },
+        {
+          "evidence": 2,
+          "scene": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "quality": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 5,
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "quality": 0
+        },
+        {
+          "deliverable": 5,
+          "decision": 2,
+          "scene": 1,
+          "instruction": 1,
+          "boundary": 0,
+          "evidence": 0,
+          "quality": 0
+        }
+      ],
+      "discourseSkeleton": "boundary>evidence>deliverable>deliverable",
+      "compressedDiscourseSkeleton": "boundary>evidence>deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 14,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "relative-meeting",
+      "weakScheduleDevice": true,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 2,
+      "evidence": {
+        "disclaimerSentences": [
+          "堂食助餐、送餐、食品安全、补贴对象和基本养老服务清单怎样接到一个具体项目上，现阶段都还没有街道材料回答。",
+          "真正影响后续沟通的材料还没来：街道招标文件、厨房资质、食品经营许可、成本测算、送餐合同、志愿者排班和补贴对象名单。"
+        ],
+        "concreteFactAnchors": [],
+        "finalParagraph": "Word会前材料不做投标方案，重点回答公开政策能说明什么、组织现在拿得出什么、哪些条件要由街道文件确认。理事会看到的应当是一组能继续谈的问题：采购事项覆盖哪些服务，服务对象和补贴如何确定，厨房与送餐主体需要什么材料，志愿者参与到什么环节，食品安全和结算责任怎样划分。若继续沟通，这些问题就是下一轮与街道核实的主线；若现有缺口已经超出组织愿意投入的前期准备，也要在讨论要点中直接呈现。周三前的结论停在是否继续沟通，投标判断等街道文件和项目材料到位后再谈。",
+        "finalStep": "理事会材料交付前逐项核对堂食、送餐和补贴结算，确认异地政策没有写成本地条件，未到手的项目文件也没有写成组织现有能力。"
+      },
+      "status": "REVIEW",
+      "findings": [
+        {
+          "rule": "low_concrete_fact_density",
+          "severity": "REVIEW",
+          "message": "The scene contains fewer concrete anchors than the lower benchmark quantile; inspect whether disclaimers are replacing business facts.",
+          "evidence": {
+            "anchorCount": 0,
+            "per100Chars": 0
+          },
+          "threshold": {
+            "metric": "concreteFactsPer100Chars",
+            "direction": "lower",
+            "review": 0.0938,
+            "source": {
+              "type": "benchmark-quantile",
+              "baselineId": "naturalness-benchmark-v1",
+              "sampleCount": 14,
+              "reviewQuantile": 0.1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "uid": "沈礼_7.9_07",
+      "dataRow": 8,
+      "questionLength": 669,
+      "paragraphCount": 4,
+      "sentenceCount": 14,
+      "disclaimerSentenceCount": 2,
+      "disclaimerSentenceDensity": 0.1429,
+      "missingMaterialSentenceCount": 1,
+      "evidenceBoundarySentenceCount": 1,
+      "disclaimerSignalCount": 3,
+      "concreteFactAnchorCount": 0,
+      "concreteFactsPer100Chars": 0,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "evidence",
+        "decision",
+        "boundary",
+        "decision"
+      ],
+      "paragraphActionScores": [
+        {
+          "evidence": 2,
+          "boundary": 1,
+          "scene": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "quality": 0,
+          "instruction": 0
+        },
+        {
+          "decision": 2,
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "quality": 0
+        },
+        {
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "deliverable": 0,
+          "instruction": 0
+        },
+        {
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "instruction": 0
+        }
+      ],
+      "discourseSkeleton": "evidence>decision>boundary>decision",
+      "compressedDiscourseSkeleton": "evidence>decision>boundary>decision",
+      "fixedWordExcelTail": false,
+      "stepCount": 8,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "relative-deadline",
+      "weakScheduleDevice": true,
+      "closesWithDeliverable": false,
+      "templateMarkerCount": 1,
+      "evidence": {
+        "disclaimerSentences": [
+          "有限空间作业审批表、监护人安排、通风检测记录、应急装备、培训记录和外包安全协议都没有出现在这批资料里。",
+          "同样，现场临时看到一件装备，也不能替代培训、审批和安全协议。"
+        ],
+        "concreteFactAnchors": [],
+        "finalParagraph": "最终给物业经理一个能直接用于周五排期的准入意见，把当前阻断项、进场前应补项目和必须到现场确认的事项分开。配套清单由工程经办人继续收件并记录现场结果，营业执照、报价单和身份证保留在基础资料栏，审批、监护、检测、培训、装备和协议各回到自己的核对位置。现场检测结果、作业地点和签认人也要落在同一条作业记录中。外包队补到哪一项，物业就按对应条件复核，不靠口头承诺放行。",
+        "finalStep": "让现场人员按核对清单记录检测、监护、装备和异常处置，材料收件不代替现场判断。"
+      },
+      "status": "REVIEW",
+      "findings": [
+        {
+          "rule": "low_concrete_fact_density",
+          "severity": "REVIEW",
+          "message": "The scene contains fewer concrete anchors than the lower benchmark quantile; inspect whether disclaimers are replacing business facts.",
+          "evidence": {
+            "anchorCount": 0,
+            "per100Chars": 0
+          },
+          "threshold": {
+            "metric": "concreteFactsPer100Chars",
+            "direction": "lower",
+            "review": 0.0938,
+            "source": {
+              "type": "benchmark-quantile",
+              "baselineId": "naturalness-benchmark-v1",
+              "sampleCount": 14,
+              "reviewQuantile": 0.1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "uid": "沈礼_7.9_08",
+      "dataRow": 9,
+      "questionLength": 768,
+      "paragraphCount": 5,
+      "sentenceCount": 19,
+      "disclaimerSentenceCount": 1,
+      "disclaimerSentenceDensity": 0.0526,
+      "missingMaterialSentenceCount": 1,
+      "evidenceBoundarySentenceCount": 0,
+      "disclaimerSignalCount": 2,
+      "concreteFactAnchorCount": 0,
+      "concreteFactsPer100Chars": 0,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "boundary",
+        "decision",
+        "boundary",
+        "evidence",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "boundary": 4,
+          "evidence": 2,
+          "scene": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "quality": 0,
+          "instruction": 0
+        },
+        {
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "instruction": 0
+        },
+        {
+          "boundary": 3,
+          "evidence": 2,
+          "scene": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "quality": 0,
+          "instruction": 0
+        },
+        {
+          "evidence": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 5,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "boundary": 0
+        }
+      ],
+      "discourseSkeleton": "boundary>decision>boundary>evidence>deliverable",
+      "compressedDiscourseSkeleton": "boundary>decision>boundary>evidence>deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 11,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "relative-time-only",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 1,
+      "evidence": {
+        "disclaimerSentences": [
+          "食品留样记录、陪餐安排、从业人员健康证、日管控周排查月调度记录还没有对上，供货商资质、承包合同履约材料和投诉原件也不在现有资料中。"
+        ],
+        "concreteFactAnchors": [],
+        "finalParagraph": "最后留给后勤主任的是Word复核意见，用来说明新菜单是否具备下周一启用条件、哪些动作属于校方、哪些材料由承包商补；Excel跟进表交给校方、承包商和食品安全员继续更新。表中按供餐环节记录已有资料、责任方、需要补交或现场查看的内容及复核结果，菜单、名单和照片不会被当作其他环节已经合格的证明。",
+        "finalStep": "由后勤主任依据启用判断和跟进表向家委会说明校方与承包商各自的动作。"
+      },
+      "status": "REVIEW",
+      "findings": [
+        {
+          "rule": "low_concrete_fact_density",
+          "severity": "REVIEW",
+          "message": "The scene contains fewer concrete anchors than the lower benchmark quantile; inspect whether disclaimers are replacing business facts.",
+          "evidence": {
+            "anchorCount": 0,
+            "per100Chars": 0
+          },
+          "threshold": {
+            "metric": "concreteFactsPer100Chars",
+            "direction": "lower",
+            "review": 0.0938,
+            "source": {
+              "type": "benchmark-quantile",
+              "baselineId": "naturalness-benchmark-v1",
+              "sampleCount": 14,
+              "reviewQuantile": 0.1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "uid": "沈礼_7.9_09",
+      "dataRow": 10,
+      "questionLength": 676,
+      "paragraphCount": 3,
+      "sentenceCount": 16,
+      "disclaimerSentenceCount": 3,
+      "disclaimerSentenceDensity": 0.1875,
+      "missingMaterialSentenceCount": 2,
+      "evidenceBoundarySentenceCount": 1,
+      "disclaimerSignalCount": 4,
+      "concreteFactAnchorCount": 2,
+      "concreteFactsPer100Chars": 0.2959,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "boundary",
+        "boundary",
+        "boundary"
+      ],
+      "paragraphActionScores": [
+        {
+          "boundary": 3,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0
+        },
+        {
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0
+        },
+        {
+          "boundary": 5,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0
+        }
+      ],
+      "discourseSkeleton": "boundary>boundary>boundary",
+      "compressedDiscourseSkeleton": "boundary",
+      "fixedWordExcelTail": false,
+      "stepCount": 9,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "relative-time-only",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": false,
+      "templateMarkerCount": 0,
+      "evidence": {
+        "disclaimerSentences": [
+          "页面上的促销不能脱离药品类别和处方条件单独判断，拍处方、药师审核、药品匹配、配送到家和复购提醒也不能被一个统一状态带过。",
+          "题设没有处方样本、药师资质排班、审核日志、配送协议、用户授权记录和促销活动审批材料。",
+          "工作重点因此落在功能和页面：每个节点需要什么输入，药师或系统做什么，留下什么记录，用户会看到什么，缺少哪项材料时功能应当停在哪一层。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quoted-detail",
+            "value": "“买二送一”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“复购立减”"
+          }
+        ],
+        "finalParagraph": "题设没有处方样本、药师资质排班、审核日志、配送协议、用户授权记录和促销活动审批材料。工作重点因此落在功能和页面：每个节点需要什么输入，药师或系统做什么，留下什么记录，用户会看到什么，缺少哪项材料时功能应当停在哪一层。处方样本对应处方内容，资质排班和审核日志对应药师动作，配送协议与授权记录则回到配送和用户信息处理。产品和法务拿到的复核意见要能指出禁售拦截、处方审核、长期处方、促销表达、配送与授权各自的处理方式；功能核对表则把规则、现有证据、页面动作和待收材料接在同一行。最终根据这些条件决定本周灰度可以包含哪些功能，哪些位置先调整，哪些必须等真实记录和协议到位。",
+        "finalStep": "依据核对结果确定本周灰度范围及暂不进入灰度的功能位置。"
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "沈礼_7.9_10",
+      "dataRow": 11,
+      "questionLength": 650,
+      "paragraphCount": 3,
+      "sentenceCount": 15,
+      "disclaimerSentenceCount": 4,
+      "disclaimerSentenceDensity": 0.2667,
+      "missingMaterialSentenceCount": 3,
+      "evidenceBoundarySentenceCount": 1,
+      "disclaimerSignalCount": 5,
+      "concreteFactAnchorCount": 0,
+      "concreteFactsPer100Chars": 0,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "boundary",
+        "evidence",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "deliverable": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "evidence": 2,
+          "boundary": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 5,
+          "boundary": 5,
+          "decision": 2,
+          "evidence": 2,
+          "instruction": 1,
+          "quality": 0,
+          "scene": 0
+        }
+      ],
+      "discourseSkeleton": "boundary>evidence>deliverable",
+      "compressedDiscourseSkeleton": "boundary>evidence>deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 12,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "no-schedule-device",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 1,
+      "evidence": {
+        "disclaimerSentences": [
+          "自查表里提到药品耗材追溯码、影像结果上传、医技人员资质、价格执行和基金使用内控，但都只写了结论，没有对应原件、系统画面、人员证书、价格记录或制度全文。",
+          "要从自查表里的五项逐个往回找证据：追溯码看实际记录，影像上传看系统截图，医技人员看证书，价格执行看收费和价格资料，基金内控既看制度正文，也看有没有运行痕迹。",
+          "自查表里没有被原件、系统画面、人员证书、价格记录或制度全文接住的内容仍按待补处理，真实材料到齐后再进入申报预审。",
+          "营业执照和执业许可证到手也不等于其他条件已经满足，规则附件更不能替诊所证明实际运行。"
+        ],
+        "concreteFactAnchors": [],
+        "finalParagraph": "这次先做补件安排。每一项缺口都要写出它影响的是申报入口、专业评估、协议管理还是后续履行，老板才能按办理环节安排诊所下一轮收件，并把经办人落到具体事项上。Excel补件表按入口条件、服务能力、人员、价格、追溯、基金内控和系统接口放材料，写明现有文件、缺口、经办人、影响环节和补件先后。Word补件安排把可先整理、等待正式证明、先改系统或制度三种动作分开，列出下一批材料先收什么。它不判断这个月是否适合递交；自查表里没有被原件、系统画面、人员证书、价格记录或制度全文接住的内容仍按待补处理，真实材料到齐后再进入申报预审。营业执照和执业许可证到手也不等于其他条件已经满足，规则附件更不能替诊所证明实际运行。",
+        "finalStep": "把补件安排交给老板和诊所负责人确定下一轮收件顺序，真实材料到齐后再作申报预审。"
+      },
+      "status": "REVIEW",
+      "findings": [
+        {
+          "rule": "disclaimer_missing_material_density",
+          "severity": "REVIEW",
+          "message": "Missing-material or evidence-boundary sentences occupy too much of the question relative to the approved benchmark.",
+          "evidence": {
+            "sentenceCount": 15,
+            "taggedSentenceCount": 4,
+            "density": 0.2667,
+            "signalCount": 5
+          },
+          "threshold": {
+            "density": {
+              "metric": "disclaimerSentenceDensity",
+              "direction": "upper",
+              "review": 0.2125,
+              "fail": 0.3425,
+              "source": {
+                "type": "benchmark-quantile",
+                "baselineId": "naturalness-benchmark-v1",
+                "sampleCount": 14,
+                "reviewQuantile": 0.9,
+                "failQuantile": 0.98
+              }
+            },
+            "count": {
+              "metric": "disclaimerSentenceCount",
+              "direction": "upper",
+              "review": 2.7,
+              "fail": 5.22,
+              "source": {
+                "type": "benchmark-quantile",
+                "baselineId": "naturalness-benchmark-v1",
+                "sampleCount": 14,
+                "reviewQuantile": 0.9,
+                "failQuantile": 0.98
+              }
+            },
+            "minimumSentencesForFail": {
+              "value": 2,
+              "source": {
+                "type": "row-policy-cap",
+                "profileId": "approved-corpus-quantiles-v1",
+                "parameter": "minimumDisclaimerSentencesForFail",
+                "rationale": "One matched sentence may be legitimate evidence hygiene and cannot cause a hard fail by itself."
+              }
+            },
+            "combination": "Both density and sentence count must cross the same review/fail band; a single word cannot trigger this rule."
+          }
+        },
+        {
+          "rule": "low_concrete_fact_density",
+          "severity": "REVIEW",
+          "message": "The scene contains fewer concrete anchors than the lower benchmark quantile; inspect whether disclaimers are replacing business facts.",
+          "evidence": {
+            "anchorCount": 0,
+            "per100Chars": 0
+          },
+          "threshold": {
+            "metric": "concreteFactsPer100Chars",
+            "direction": "lower",
+            "review": 0.0938,
+            "source": {
+              "type": "benchmark-quantile",
+              "baselineId": "naturalness-benchmark-v1",
+              "sampleCount": 14,
+              "reviewQuantile": 0.1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "uid": "沈礼_7.9_11",
+      "dataRow": 12,
+      "questionLength": 663,
+      "paragraphCount": 4,
+      "sentenceCount": 15,
+      "disclaimerSentenceCount": 3,
+      "disclaimerSentenceDensity": 0.2,
+      "missingMaterialSentenceCount": 1,
+      "evidenceBoundarySentenceCount": 2,
+      "disclaimerSignalCount": 3,
+      "concreteFactAnchorCount": 1,
+      "concreteFactsPer100Chars": 0.1508,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "boundary",
+        "boundary",
+        "boundary",
+        "boundary"
+      ],
+      "paragraphActionScores": [
+        {
+          "boundary": 3,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "deliverable": 0,
+          "instruction": 0
+        },
+        {
+          "boundary": 3,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0
+        },
+        {
+          "boundary": 5,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0
+        },
+        {
+          "boundary": 4,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0
+        }
+      ],
+      "discourseSkeleton": "boundary>boundary>boundary>boundary",
+      "compressedDiscourseSkeleton": "boundary",
+      "fixedWordExcelTail": false,
+      "stepCount": 10,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "no-schedule-device",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": false,
+      "templateMarkerCount": 0,
+      "evidence": {
+        "disclaimerSentences": [
+          "项目组尚未交后台捐赠明细、收款凭证、捐赠协议、物资评估材料、受助对象清单、票据开具记录和税前扣除资格证明。",
+          "现阶段不预填金额或批次结论。",
+          "财务拿到项目组资料后从后台记录开始核对，无法确认性质的“公益合作款”先转协议核验，不与已确认捐赠混在一起。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quoted-detail",
+            "value": "“公益合作款”"
+          }
+        ],
+        "finalParagraph": "批次核对模板放在实际处理的最前面，逐笔记录捐赠类型、现有材料、票据动作、税前扣除提示、经办人和复核状态；规则说明用于解释各栏怎样填写以及电子票据和核销怎样留痕。财务拿到项目组资料后从后台记录开始核对，无法确认性质的“公益合作款”先转协议核验，不与已确认捐赠混在一起。",
+        "finalStep": "把批次模板交给财务和项目组，按同一分流办法承接后续原始材料。"
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "裴硬_7.9_01",
+      "dataRow": 13,
+      "questionLength": 672,
+      "paragraphCount": 5,
+      "sentenceCount": 18,
+      "disclaimerSentenceCount": 2,
+      "disclaimerSentenceDensity": 0.1111,
+      "missingMaterialSentenceCount": 2,
+      "evidenceBoundarySentenceCount": 0,
+      "disclaimerSignalCount": 3,
+      "concreteFactAnchorCount": 4,
+      "concreteFactsPer100Chars": 0.5952,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "decision",
+        "boundary",
+        "decision",
+        "boundary",
+        "decision"
+      ],
+      "paragraphActionScores": [
+        {
+          "decision": 2,
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "quality": 0
+        },
+        {
+          "boundary": 3,
+          "decision": 2,
+          "deliverable": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "scene": 0
+        },
+        {
+          "boundary": 2,
+          "decision": 2,
+          "evidence": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "decision": 2,
+          "quality": 2,
+          "scene": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "evidence": 0,
+          "instruction": 0
+        }
+      ],
+      "discourseSkeleton": "decision>boundary>decision>boundary>decision",
+      "compressedDiscourseSkeleton": "decision>boundary>decision>boundary>decision",
+      "fixedWordExcelTail": false,
+      "stepCount": 13,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "relative-deadline",
+      "weakScheduleDevice": true,
+      "closesWithDeliverable": false,
+      "templateMarkerCount": 1,
+      "evidence": {
+        "disclaimerSentences": [
+          "产品备案页、功效评价摘要、达人合同、前后对比图来源和后台投放数据没有随附件交来。",
+          "替换方向仍围绕原本要表达的卖点，不增加附件没有提供的新功效或用户体验。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quoted-detail",
+            "value": "“敏感肌急救精华”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“三天退红”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“医美级维稳”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“修护屏障”"
+          }
+        ],
+        "finalParagraph": "素材审改意见按口播、详情页、对比图和购买入口呈现原文、处理结论、理由与改写方向，供内容运营和法务统一周五定稿口径。改稿台账继续跟踪每个点位的材料、修改人和复核状态，让内容运营、法务和投放使用同一处结论。",
+        "finalStep": "将已经完成审改的点位交回内容运营、法务和投放继续定稿。"
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "裴硬_7.9_02",
+      "dataRow": 14,
+      "questionLength": 651,
+      "paragraphCount": 4,
+      "sentenceCount": 15,
+      "disclaimerSentenceCount": 2,
+      "disclaimerSentenceDensity": 0.1333,
+      "missingMaterialSentenceCount": 2,
+      "evidenceBoundarySentenceCount": 0,
+      "disclaimerSignalCount": 2,
+      "concreteFactAnchorCount": 1,
+      "concreteFactsPer100Chars": 0.1536,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "boundary",
+        "boundary",
+        "boundary",
+        "decision"
+      ],
+      "paragraphActionScores": [
+        {
+          "boundary": 3,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0
+        },
+        {
+          "boundary": 3,
+          "decision": 2,
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "quality": 0
+        },
+        {
+          "boundary": 5,
+          "evidence": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "decision": 2,
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "quality": 0
+        }
+      ],
+      "discourseSkeleton": "boundary>boundary>boundary>decision",
+      "compressedDiscourseSkeleton": "boundary>decision",
+      "fixedWordExcelTail": false,
+      "stepCount": 8,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "relative-meeting",
+      "weakScheduleDevice": true,
+      "closesWithDeliverable": false,
+      "templateMarkerCount": 1,
+      "evidence": {
+        "disclaimerSentences": [
+          "现有材料只有字段清单、供应商标准合同和一页“全球合规”说明。",
+          "个人信息保护、数据安全、安全评估和跨境流动规则能够帮助识别告知、最小必要、分类分级、接收方和出境路径所需条件，但正式CRM合同、境外接收方安全材料、用户授权记录及历史导出日志尚未取得。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quoted-detail",
+            "value": "“全球合规”"
+          }
+        ],
+        "finalParagraph": "周会材料最终围绕字段和渠道给出初筛结果，不替正式出境审批选定路径。字段表保存来源、用途、现有材料、建议动作和补件责任；说明稿把销售能向客户讲清的试点范围、暂留境内的字段及正式评审前提集中起来。周会据此讨论范围明确的试点是否值得继续，海外CRM当前不写成已经具备接入条件。",
+        "finalStep": "把字段初筛结果转成销售明天可在客户周会上使用的范围说明。"
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "裴硬_7.9_03",
+      "dataRow": 15,
+      "questionLength": 752,
+      "paragraphCount": 6,
+      "sentenceCount": 18,
+      "disclaimerSentenceCount": 2,
+      "disclaimerSentenceDensity": 0.1111,
+      "missingMaterialSentenceCount": 2,
+      "evidenceBoundarySentenceCount": 0,
+      "disclaimerSignalCount": 4,
+      "concreteFactAnchorCount": 1,
+      "concreteFactsPer100Chars": 0.133,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "boundary",
+        "decision",
+        "boundary",
+        "decision",
+        "decision",
+        "decision"
+      ],
+      "paragraphActionScores": [
+        {
+          "boundary": 3,
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "quality": 0
+        },
+        {
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "boundary": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "scene": 0
+        },
+        {
+          "boundary": 3,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0
+        },
+        {
+          "decision": 2,
+          "evidence": 2,
+          "boundary": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "decision": 2,
+          "evidence": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "scene": 0,
+          "instruction": 0
+        }
+      ],
+      "discourseSkeleton": "boundary>decision>boundary>decision>decision>decision",
+      "compressedDiscourseSkeleton": "boundary>decision>boundary>decision",
+      "fixedWordExcelTail": false,
+      "stepCount": 14,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "relative-meeting",
+      "weakScheduleDevice": true,
+      "closesWithDeliverable": false,
+      "templateMarkerCount": 1,
+      "evidence": {
+        "disclaimerSentences": [
+          "现有附件可以说明公开和共同决定的一般要求，却没有广告合同和银行流水，所以18万元的实际收款、去向及抵扣关系要留给原始材料回答。",
+          "工程报价原件、业主表决票和主管部门备案记录没有交来，程序走到哪里要靠这些材料确认。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quantity",
+            "value": "18万元"
+          }
+        ],
+        "finalParagraph": "会议结束后，广告收益仍沿合同与流水核对，保洁维保回到物业服务和支出资料，大修事项继续走报价与表决程序。三条线各自保留经办人和材料位置，避免一个问题的文件被拿去支撑另一项资金结论。",
+        "finalStep": "把协调会尚未解决的问题交回相应合同、流水、报价或表决程序继续办理。"
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "裴硬_7.9_04",
+      "dataRow": 16,
+      "questionLength": 654,
+      "paragraphCount": 4,
+      "sentenceCount": 13,
+      "disclaimerSentenceCount": 2,
+      "disclaimerSentenceDensity": 0.1538,
+      "missingMaterialSentenceCount": 2,
+      "evidenceBoundarySentenceCount": 0,
+      "disclaimerSignalCount": 2,
+      "concreteFactAnchorCount": 2,
+      "concreteFactsPer100Chars": 0.3058,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "boundary",
+        "decision",
+        "evidence",
+        "boundary"
+      ],
+      "paragraphActionScores": [
+        {
+          "boundary": 3,
+          "decision": 2,
+          "quality": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "evidence": 0,
+          "scene": 0
+        },
+        {
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0
+        },
+        {
+          "evidence": 2,
+          "quality": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "boundary": 5,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "deliverable": 0,
+          "instruction": 0
+        }
+      ],
+      "discourseSkeleton": "boundary>decision>evidence>boundary",
+      "compressedDiscourseSkeleton": "boundary>decision>evidence>boundary",
+      "fixedWordExcelTail": false,
+      "stepCount": 9,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "anchored-time",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": false,
+      "templateMarkerCount": 0,
+      "evidence": {
+        "disclaimerSentences": [
+          "算法参数、训练数据来源、候选人授权记录、岗位真实性证明和人工复核日志尚未提供。",
+          "产品、HR和法务据此选择当前处理方式，并把待补材料交到对应流程位置。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "date-time",
+            "value": "2026年7"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“AI初筛”"
+          }
+        ],
+        "finalParagraph": "算法参数、训练数据来源、候选人授权记录、岗位真实性证明和人工复核日志尚未提供。评审意见因此要明确哪些页面信息可以先调整，哪些自动判断必须保留人工处理，三档设计在什么条件下才适合进入灰度；规则核对表则逐节点记录数据、系统动作、候选人提示、HR操作和所需留痕。产品、HR和法务据此选择当前处理方式，并把待补材料交到对应流程位置。",
+        "finalStep": "由产品、HR和法务根据复核意见确定进入灰度的设计及所需材料。"
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "裴硬_7.9_05",
+      "dataRow": 17,
+      "questionLength": 698,
+      "paragraphCount": 5,
+      "sentenceCount": 17,
+      "disclaimerSentenceCount": 3,
+      "disclaimerSentenceDensity": 0.1765,
+      "missingMaterialSentenceCount": 2,
+      "evidenceBoundarySentenceCount": 1,
+      "disclaimerSignalCount": 3,
+      "concreteFactAnchorCount": 2,
+      "concreteFactsPer100Chars": 0.2865,
+      "firstPersonPresent": true,
+      "firstPersonOpening": true,
+      "paragraphActions": [
+        "boundary",
+        "boundary",
+        "decision",
+        "decision",
+        "evidence"
+      ],
+      "paragraphActionScores": [
+        {
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "scene": 1,
+          "deliverable": 0,
+          "quality": 0,
+          "instruction": 0
+        },
+        {
+          "boundary": 4,
+          "evidence": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "instruction": 0
+        },
+        {
+          "decision": 2,
+          "evidence": 2,
+          "boundary": 1,
+          "scene": 1,
+          "deliverable": 0,
+          "quality": 0,
+          "instruction": 0
+        },
+        {
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "instruction": 0
+        }
+      ],
+      "discourseSkeleton": "boundary>boundary>decision>decision>evidence",
+      "compressedDiscourseSkeleton": "boundary>decision>evidence",
+      "fixedWordExcelTail": false,
+      "stepCount": 10,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "relative-time-only",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": false,
+      "templateMarkerCount": 0,
+      "evidence": {
+        "disclaimerSentences": [
+          "我负责的本地生活平台想把“城市周末民宿”专题排进下周首页，招商送来的30套房源资料却还没有形成完整明细。",
+          "证照照片、房屋图、承诺书和价格表各有用途，不能拿一项材料去替代另一项核验结果。",
+          "当前没有成套材料证明30套房源的证照真实性、现场消防、公安报备、权属、住宿登记系统接入和订单履约情况。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quantity",
+            "value": "30套"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“城市周末民宿”"
+          }
+        ],
+        "finalParagraph": "先搭专题页不等于先放具体房源。运营可依据规则安排页面工作，招商继续按模板收30套明细，风控逐套核对治安、消防、主体和交易信息。只有房源行达到相应处理条件，相关信息才进入后续上架环节。",
+        "finalStep": "把达到相应条件的房源信息交给运营进入后续上架环节。"
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "沈礼_7.10_01",
+      "dataRow": 18,
+      "questionLength": 651,
+      "paragraphCount": 3,
+      "sentenceCount": 12,
+      "disclaimerSentenceCount": 0,
+      "disclaimerSentenceDensity": 0,
+      "missingMaterialSentenceCount": 0,
+      "evidenceBoundarySentenceCount": 0,
+      "disclaimerSignalCount": 0,
+      "concreteFactAnchorCount": 7,
+      "concreteFactsPer100Chars": 1.0753,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "boundary",
+        "boundary",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "boundary": 3,
+          "decision": 2,
+          "evidence": 2,
+          "scene": 1,
+          "deliverable": 0,
+          "quality": 0,
+          "instruction": 0
+        },
+        {
+          "boundary": 3,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0
+        },
+        {
+          "deliverable": 5,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "boundary": 0,
+          "instruction": 0
+        }
+      ],
+      "discourseSkeleton": "boundary>boundary>deliverable",
+      "compressedDiscourseSkeleton": "boundary>deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 8,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "anchored-time",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 1,
+      "evidence": {
+        "disclaimerSentences": [],
+        "concreteFactAnchors": [
+          {
+            "kind": "date-time",
+            "value": "2026年7"
+          },
+          {
+            "kind": "quantity",
+            "value": "9.9元"
+          },
+          {
+            "kind": "quantity",
+            "value": "7天"
+          },
+          {
+            "kind": "quantity",
+            "value": "30天"
+          },
+          {
+            "kind": "identifier",
+            "value": "9.9"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“连喝7天抽免单”"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“连喝7天”"
+          }
+        ],
+        "finalParagraph": "今晚评审用的Word把券包、抽奖、生日权益、“连喝7天”的附加条件和分层推送接到用户操作中，每一处标明可保留、改文案、补公示后再看或暂缓测试。Excel按一条规则或一个数据字段占一行，放入原文、涉及权益或字段、依据、所缺材料、经办人和复核状态，不复制整篇意见。会员运营能从具体弹窗位置继续改，法务也能看出哪一项仍等预算、日志、截图或授权记录。",
+        "finalStep": "把今晚仍缺公示、售后路径或授权依据的项目留在台账中，供会员运营补齐后继续复核。"
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "沈礼_7.10_02",
+      "dataRow": 19,
+      "questionLength": 668,
+      "paragraphCount": 4,
+      "sentenceCount": 14,
+      "disclaimerSentenceCount": 2,
+      "disclaimerSentenceDensity": 0.1429,
+      "missingMaterialSentenceCount": 1,
+      "evidenceBoundarySentenceCount": 1,
+      "disclaimerSignalCount": 2,
+      "concreteFactAnchorCount": 0,
+      "concreteFactsPer100Chars": 0,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "boundary",
+        "decision",
+        "boundary",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "boundary": 3,
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "quality": 0
+        },
+        {
+          "decision": 2,
+          "evidence": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "deliverable": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 5,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "boundary": 1,
+          "instruction": 1,
+          "scene": 0
+        }
+      ],
+      "discourseSkeleton": "boundary>decision>boundary>deliverable",
+      "compressedDiscourseSkeleton": "boundary>decision>boundary>deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 9,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "relative-time-only",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 1,
+      "evidence": {
+        "disclaimerSentences": [
+          "监护人授权文本、数据字段表、录音留存配置、后台权限和设备安全测评均未提供，因此白皮书里的功能介绍先进入核对表，演示账号中能看到的页面只记录所见，功能是否适合两个班试用要等相应材料和配置逐项复核。",
+          "这次复核停在两个班的试用范围，不延伸成全园铺开安排。"
+        ],
+        "concreteFactAnchors": [],
+        "finalParagraph": "Excel按功能整理数据项、处理目的、可见角色、授权方式、保存期限、当前材料和供应商补件，便于园方逐项谈配置。Word面向园长、家委会和供应商，把两个班的试点范围、监护人选择、不同意参与的安排以及需要供应商回应的问题写在一处。这次复核停在两个班的试用范围，不延伸成全园铺开安排。结论按功能落到可小范围试用、补授权后再看、需要调整配置或暂缓，不把一只手表打成一个总状态。",
+        "finalStep": "按功能形成试用意见和家委会说明，把需要改配置或等待材料的项目留给供应商继续处理。"
+      },
+      "status": "REVIEW",
+      "findings": [
+        {
+          "rule": "low_concrete_fact_density",
+          "severity": "REVIEW",
+          "message": "The scene contains fewer concrete anchors than the lower benchmark quantile; inspect whether disclaimers are replacing business facts.",
+          "evidence": {
+            "anchorCount": 0,
+            "per100Chars": 0
+          },
+          "threshold": {
+            "metric": "concreteFactsPer100Chars",
+            "direction": "lower",
+            "review": 0.0938,
+            "source": {
+              "type": "benchmark-quantile",
+              "baselineId": "naturalness-benchmark-v1",
+              "sampleCount": 14,
+              "reviewQuantile": 0.1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "uid": "沈礼_7.10_03",
+      "dataRow": 20,
+      "questionLength": 727,
+      "paragraphCount": 5,
+      "sentenceCount": 16,
+      "disclaimerSentenceCount": 0,
+      "disclaimerSentenceDensity": 0,
+      "missingMaterialSentenceCount": 0,
+      "evidenceBoundarySentenceCount": 0,
+      "disclaimerSignalCount": 0,
+      "concreteFactAnchorCount": 3,
+      "concreteFactsPer100Chars": 0.4127,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "boundary",
+        "boundary",
+        "evidence",
+        "evidence",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "boundary": 3,
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "quality": 0
+        },
+        {
+          "boundary": 3,
+          "evidence": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "evidence": 2,
+          "quality": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0
+        },
+        {
+          "deliverable": 5,
+          "evidence": 2,
+          "quality": 2,
+          "boundary": 0,
+          "decision": 0,
+          "scene": 0,
+          "instruction": 0
+        }
+      ],
+      "discourseSkeleton": "boundary>boundary>evidence>evidence>deliverable",
+      "compressedDiscourseSkeleton": "boundary>evidence>deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 10,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "anchored-time",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 1,
+      "evidence": {
+        "disclaimerSentences": [],
+        "concreteFactAnchors": [
+          {
+            "kind": "date-time",
+            "value": "2026年8"
+          },
+          {
+            "kind": "quantity",
+            "value": "48小时"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“风控拦截”"
+          }
+        ],
+        "finalParagraph": "Word复核意见沿购票、入场、退票、转赠受限、风控拦截和用户申诉写，让产品、客服、风控与主办方看到同一条用户路径。Excel按规则条款保存用户影响、现有材料、规则依据、确认主体、客服口径和当前状态；后续批准、许可、协议、成本及隐私材料到件时，直接回到对应条款更新。",
+        "finalStep": "把后续收到的主办方或主管部门材料写回具体条款，更新公示文字和客服口径。"
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "沈礼_7.10_04",
+      "dataRow": 21,
+      "questionLength": 697,
+      "paragraphCount": 4,
+      "sentenceCount": 14,
+      "disclaimerSentenceCount": 1,
+      "disclaimerSentenceDensity": 0.0714,
+      "missingMaterialSentenceCount": 1,
+      "evidenceBoundarySentenceCount": 0,
+      "disclaimerSignalCount": 1,
+      "concreteFactAnchorCount": 21,
+      "concreteFactsPer100Chars": 3.0129,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "decision",
+        "boundary",
+        "decision",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "decision": 2,
+          "scene": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "evidence": 0,
+          "quality": 0,
+          "instruction": 0
+        },
+        {
+          "boundary": 1,
+          "scene": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "instruction": 0
+        },
+        {
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 5,
+          "decision": 2,
+          "evidence": 2,
+          "scene": 1,
+          "boundary": 0,
+          "quality": 0,
+          "instruction": 0
+        }
+      ],
+      "discourseSkeleton": "decision>boundary>decision>deliverable",
+      "compressedDiscourseSkeleton": "decision>boundary>decision>deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 13,
+      "finalStepSelfCheck": true,
+      "scheduleAuthenticityTag": "anchored-time",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 2,
+      "evidence": {
+        "disclaimerSentences": [
+          "公开披露可以看到现金流转正与几个营运资金余额同时发生了变化，但一季报未经审计，也没有客户结构和逐户回款资料；"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "date-time",
+            "value": "2026年4月30日"
+          },
+          {
+            "kind": "quantity",
+            "value": "64.97亿元"
+          },
+          {
+            "kind": "quantity",
+            "value": "20.59亿元"
+          },
+          {
+            "kind": "quantity",
+            "value": "4.98亿元"
+          },
+          {
+            "kind": "quantity",
+            "value": "6.71亿元"
+          },
+          {
+            "kind": "quantity",
+            "value": "49.44亿元"
+          },
+          {
+            "kind": "quantity",
+            "value": "88.66%"
+          },
+          {
+            "kind": "quantity",
+            "value": "8.34亿元"
+          },
+          {
+            "kind": "quantity",
+            "value": "12.19亿元"
+          },
+          {
+            "kind": "quantity",
+            "value": "18.97亿元"
+          },
+          {
+            "kind": "quantity",
+            "value": "30日"
+          },
+          {
+            "kind": "identifier",
+            "value": "64.97"
+          },
+          {
+            "kind": "identifier",
+            "value": "20.59"
+          },
+          {
+            "kind": "identifier",
+            "value": "4.98"
+          },
+          {
+            "kind": "identifier",
+            "value": "6.71"
+          },
+          {
+            "kind": "identifier",
+            "value": "49.44"
+          },
+          {
+            "kind": "identifier",
+            "value": "88.66"
+          },
+          {
+            "kind": "identifier",
+            "value": "8.34"
+          },
+          {
+            "kind": "identifier",
+            "value": "12.19"
+          },
+          {
+            "kind": "identifier",
+            "value": "18.97"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“转入重点研究池、保留观察、暂缓”"
+          }
+        ],
+        "finalParagraph": "Excel先完成来源索引、原始数据、快报年报勾稽、现金含量、年度现金流桥、应收与存货周转、客户和供应商集中度以及季度跟踪。Word研究备忘录只回答一件事：现有公开信息支持“转入重点研究池、保留观察、暂缓”中的哪一档。备忘录同时写出支持信息、反向信号和未来两个报告期会改变建议的观察指标，不加入目标价。",
+        "finalStep": "两份产物完成后做一次独立交付自检：随机抽一项利润数据和一项营运资金判断，从Word回到Excel公式、正式披露及页码；回不到来源的结论删去或降为待观察。"
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "沈礼_7.10_05",
+      "dataRow": 22,
+      "questionLength": 685,
+      "paragraphCount": 4,
+      "sentenceCount": 14,
+      "disclaimerSentenceCount": 2,
+      "disclaimerSentenceDensity": 0.1429,
+      "missingMaterialSentenceCount": 1,
+      "evidenceBoundarySentenceCount": 1,
+      "disclaimerSignalCount": 2,
+      "concreteFactAnchorCount": 9,
+      "concreteFactsPer100Chars": 1.3139,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "boundary",
+        "boundary",
+        "deliverable",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "boundary": 3,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0
+        },
+        {
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "scene": 0
+        },
+        {
+          "deliverable": 5,
+          "boundary": 4,
+          "evidence": 2,
+          "scene": 1,
+          "decision": 0,
+          "quality": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 5,
+          "decision": 2,
+          "instruction": 1,
+          "boundary": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0
+        }
+      ],
+      "discourseSkeleton": "boundary>boundary>deliverable>deliverable",
+      "compressedDiscourseSkeleton": "boundary>deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 13,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "anchored-time",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 1,
+      "evidence": {
+        "disclaimerSentences": [
+          "型号没有对应上以后，98Wh只是一项参数，无法独自回答B3是否完成测试、怎样申报以及4箱货物分别采用什么包装和标记。",
+          "它适合做包件台账，却不能替代B3测试报告、运输条件鉴定、包装检验或承运人书面接受。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "date-time",
+            "value": "2026年7月10日"
+          },
+          {
+            "kind": "quantity",
+            "value": "10日"
+          },
+          {
+            "kind": "quantity",
+            "value": "24台"
+          },
+          {
+            "kind": "identifier",
+            "value": "B3"
+          },
+          {
+            "kind": "identifier",
+            "value": "UN38"
+          },
+          {
+            "kind": "identifier",
+            "value": "B2"
+          },
+          {
+            "kind": "identifier",
+            "value": "P910"
+          },
+          {
+            "kind": "identifier",
+            "value": "LP905"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“普通电子产品”"
+          }
+        ],
+        "finalParagraph": "Excel按24台内装电池样机、8块备用电池和4箱货物逐项列型号、数量、Wh、申报信息、防护、包装标记、现有文件与责任人。Word缺件与路径说明把每项落到草单可交代理、补件后再交、转原型或危货路径、暂停确认四种状态，次日是否锁舱随B3文件、包件方案和路线参与方书面回复更新。",
+        "finalStep": "根据B3型号文件、包件路径和路线参与方书面回复，更新草单可交代理或继续暂停的状态。"
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "沈礼_7.10_06",
+      "dataRow": 23,
+      "questionLength": 732,
+      "paragraphCount": 5,
+      "sentenceCount": 18,
+      "disclaimerSentenceCount": 1,
+      "disclaimerSentenceDensity": 0.0556,
+      "missingMaterialSentenceCount": 1,
+      "evidenceBoundarySentenceCount": 0,
+      "disclaimerSignalCount": 1,
+      "concreteFactAnchorCount": 7,
+      "concreteFactsPer100Chars": 0.9563,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "evidence",
+        "boundary",
+        "evidence",
+        "evidence",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "instruction": 0
+        },
+        {
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "deliverable": 0,
+          "instruction": 0
+        },
+        {
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0
+        },
+        {
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0
+        },
+        {
+          "deliverable": 5,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "boundary": 0,
+          "instruction": 0
+        }
+      ],
+      "discourseSkeleton": "evidence>boundary>evidence>evidence>deliverable",
+      "compressedDiscourseSkeleton": "evidence>boundary>evidence>deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 11,
+      "finalStepSelfCheck": true,
+      "scheduleAuthenticityTag": "relative-time-only",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 2,
+      "evidence": {
+        "disclaimerSentences": [
+          "开箱核对要接回本项目合同正文与技术附件、供应商响应文件、装箱单、序列号清单和质量证明书，这些基线文件尚未归档。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quantity",
+            "value": "10%"
+          },
+          {
+            "kind": "quantity",
+            "value": "0.06%"
+          },
+          {
+            "kind": "identifier",
+            "value": "LC-20A"
+          },
+          {
+            "kind": "identifier",
+            "value": "0.001"
+          },
+          {
+            "kind": "identifier",
+            "value": "10.0"
+          },
+          {
+            "kind": "identifier",
+            "value": "0.06"
+          },
+          {
+            "kind": "quoted-detail",
+            "value": "“验收签字”"
+          }
+        ],
+        "finalParagraph": "Word预审意见按到货、开箱、安装、性能测试、正式验收和尾款办理逐段写出当前能签的范围与阻断项。Excel台账把本项目合同基线、公开参考值、检查或测试方法、原始记录位置、实测值、证据等级和付款影响分开，空白外校表单只借字段，外校流程只借资料目录。尾款是否触发最终回到本项目合同和签章验收记录，供货商的口头说法登记为待核事项。",
+        "finalStep": "由中心主任依据各阶段证据选择可开箱点验、可安排安装、待技术验收或暂缓验收及付款。"
+      },
+      "status": "PASS",
+      "findings": []
+    }
+  ],
+  "batch": {
+    "status": "PASS",
+    "metrics": {
+      "rowCount": 22,
+      "firstPersonShare": 0.1364,
+      "firstPersonOpeningShare": 0.1364,
+      "discourseSkeletonDominantShare": 0.1818,
+      "discourseSkeletonDominant": "boundary>evidence>deliverable",
+      "discourseSkeletonCounts": {
+        "decision>boundary>deliverable": 1,
+        "evidence>instruction>deliverable": 1,
+        "boundary>deliverable": 3,
+        "deliverable": 1,
+        "boundary>evidence>deliverable": 4,
+        "evidence>decision>boundary>decision": 1,
+        "boundary>decision>boundary>evidence>deliverable": 1,
+        "boundary": 2,
+        "decision>boundary>decision>boundary>decision": 1,
+        "boundary>decision": 1,
+        "boundary>decision>boundary>decision": 1,
+        "boundary>decision>evidence>boundary": 1,
+        "boundary>decision>evidence": 1,
+        "boundary>decision>boundary>deliverable": 1,
+        "decision>boundary>decision>deliverable": 1,
+        "evidence>boundary>evidence>deliverable": 1
+      },
+      "fixedWordExcelTailShare": 0.0455,
+      "finalStepSelfCheckShare": 0.1818,
+      "stepCountModeShare": 0.2273,
+      "stepCountMode": 9,
+      "stepCountCounts": {
+        "8": 3,
+        "9": 5,
+        "10": 4,
+        "11": 2,
+        "12": 3,
+        "13": 3,
+        "14": 2
+      },
+      "weakScheduleShare": 0.3636,
+      "weakScheduleDominantShare": 0.2273,
+      "weakScheduleDominantTag": "relative-meeting",
+      "scheduleTagCounts": {
+        "relative-meeting": 5,
+        "relative-time-only": 7,
+        "relative-deadline": 3,
+        "no-schedule-device": 2,
+        "anchored-time": 5
+      },
+      "disclaimerHeavyShare": 0.0455,
+      "lowConcreteFactShare": 0.2727
+    },
+    "findings": []
+  }
+}

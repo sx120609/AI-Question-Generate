@@ -1,0 +1,2383 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-11T09:03:30.331Z",
+  "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+  "sheetId": "49e351",
+  "requestedRange": "49e351!A38:AZ45",
+  "targetRows": [],
+  "returnedRange": "49e351!A38:AZ45",
+  "revision": 5704,
+  "values": [
+    [
+      "苏子瞻01",
+      "我在券商消费组负责旅游零售公司跟踪，准备把中国中免纳入2026年下半年的重点复盘名单。过去一年，公司经营修复需要从公开披露材料里拆开看。年报能看到收入、利润、毛利率、存货和费用等变化，一季报又更新了海南区域、机场渠道和季度利润情况。与此同时，海南离岛免税政策在2025年11月起调整，商品范围、适用人群和提货规则都有新变化（政策变化只按附件中已经披露的公告和监管办法处理）。\n现在组里需要在晨会前形成一份能继续跟踪的材料。材料聚焦中国中免2026年下半年的核心跟踪主线，而不是扩写成泛泛的免税行业研究。候选主线先分成三类：海南离岛免税政策兑现，机场口岸免税修复，市内免税和会员运营承接消费回流。请结合附件中的公司定期报告、股东会材料、提质增效报告和政策文件，把三条主线放进同一张判断框架里比较。比较时要回到收入弹性、利润质量、政策确定性和可持续跟踪指标（这里的可持续跟踪指标指后续定期报告或公告中还能继续核对的公开披露项目）。\n这份材料后续要给组内研究员和投资经理一起看，报告负责解释判断过程，表格负责保留关键数据和评分依据，最终交付需要可编辑。DOCX报告题名为《中国中免2026年下半年跟踪主线复盘备忘录》，建议控制在6000至8000字，报告里要说明2025年到2026年一季度的业绩变化，拆出海南、机场和市内免税相关线索，解释政策调整可能改变哪些跟踪指标，并给出唯一优先主线和两个次级观察主线。XLSX工作簿题名为《中国中免公开披露跟踪底表》，至少保留渠道线索、政策变化、三主线评分、风险事项和待核验问题等几个工作表。交付前请检查报告结论和底表评分是否一致，关键数字是否能回到附件，材料之外无法确认的信息统一写入待核验事项。",
+      "L2 流程型",
+      "金融服务与财富投研",
+      "市场数据与基本面研判",
+      "消费旅游零售公司公开披露复盘",
+      "基于中国中免公开披露文件和海南离岛免税政策材料，判断2026年下半年公司跟踪的优先主线，并形成可编辑投研备忘录和跟踪底表。",
+      "5年",
+      "16h",
+      [
+        {
+          "fileToken": "GlnGbFGNkozfoYxmiHWcS0RUnFd",
+          "mimeType": "application/pdf",
+          "size": 1294999,
+          "text": "附件4《中国旅游集团中免股份有限公司2025年年度股东会、2026年第一次A股类别股东会、2026年第一次H股类别股东会会议资料（更新后）》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "DMntbyxzdoUgr9x7TwIchSXvn2b",
+          "mimeType": "text/html",
+          "size": 39708,
+          "text": "附件5《财政部 海关总署 税务总局关于调整海南离岛旅客免税购物政策的公告》.html",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "PTswbloOtoeqSJxrL6ycHAfFndb",
+          "mimeType": "application/pdf",
+          "size": 1020971,
+          "text": "附件6《中华人民共和国海关对海南离岛旅客免税购物监管办法（2025年修订）》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "R7khbyFNcoROk0xj6NLcw5rzn1b",
+          "mimeType": "text/html",
+          "size": 18201,
+          "text": "附件7《中国旅游研究院：2025年中国旅游经济运行分析与2026年发展预测》.html",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "KIcibLKqQovsOtxGQMycYZyWnjc",
+          "mimeType": "application/pdf",
+          "size": 50655527,
+          "text": "附件1《中国中免：2025年年度报告》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "RR8ibHCfNouDYnxq829cFC8inre",
+          "mimeType": "application/pdf",
+          "size": 2450512,
+          "text": "附件2《中国旅游集团中免股份有限公司2026年第一季度报告》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "Yd63bChR7oyLaAxREZXcVI9InGg",
+          "mimeType": "application/pdf",
+          "size": 1917234,
+          "text": "附件3《中国旅游集团中免股份有限公司关于2025年度“提质增效重回报”行动方案执行情况的评估报告》.pdf",
+          "type": "attachment"
+        }
+      ],
+      "HTML、PDF",
+      [
+        {
+          "text": "附件1《中国中免：2025年年度报告》来源：新浪财经公司公告，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12047992&stockid=601888",
+          "text": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12047992&stockid=601888",
+          "type": "url"
+        },
+        {
+          "text": "，提供了中国中免2025年年度经营情况、财务数据、业务分部、费用、存货、风险因素和管理层讨论信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件2《中国旅游集团中免股份有限公司2026年第一季度报告》来源：中国旅游集团，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://www.ctg.cn/2026-05-14/e8ff48f9-c589-470f-a84c-64dc0239845f1778745758968.pdf",
+          "text": "https://www.ctg.cn/2026-05-14/e8ff48f9-c589-470f-a84c-64dc0239845f1778745758968.pdf",
+          "type": "url"
+        },
+        {
+          "text": "，提供了中国中免2026年第一季度营业收入、利润、现金流、资产负债、海南区域表现和机场渠道进展信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件3《中国旅游集团中免股份有限公司关于2025年度“提质增效重回报”行动方案执行情况的评估报告》来源：雪球公告镜像，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://stockmc.xueqiu.com/202603/601888_20260331_HFUX.pdf",
+          "text": "https://stockmc.xueqiu.com/202603/601888_20260331_HFUX.pdf",
+          "type": "url"
+        },
+        {
+          "text": "，提供了公司2025年度提质增效行动执行情况、海南离岛免税业务举措、渠道运营、会员运营和股东回报相关信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件4《中国旅游集团中免股份有限公司2025年年度股东会、2026年第一次A股类别股东会、2026年第一次H股类别股东会会议资料（更新后）》来源：雪球公告镜像，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://stockmc.xueqiu.com/202606/601888_20260612_OQ9M.pdf",
+          "text": "https://stockmc.xueqiu.com/202606/601888_20260612_OQ9M.pdf",
+          "type": "url"
+        },
+        {
+          "text": "，提供了股东会审议事项、年度董事会报告、财务决算、利润分配、公司治理和后续经营安排信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件5《财政部 海关总署 税务总局关于调整海南离岛旅客免税购物政策的公告》来源：国家税务总局政策法规库，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://fgk.chinatax.gov.cn/zcfgk/c102416/c5243696/content.html",
+          "text": "https://fgk.chinatax.gov.cn/zcfgk/c102416/c5243696/content.html",
+          "type": "url"
+        },
+        {
+          "text": "，提供了2025年海南离岛免税购物政策调整事项、商品品类、适用人群、购物额度、提货方式和执行时间信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "附件6《中华人民共和国海关对海南离岛旅客免税购物监管办法（2025年修订）》来源：商务部中国商务法规，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=104239",
+          "text": "https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=104239",
+          "type": "url"
+        },
+        {
+          "text": "，提供了海南离岛旅客免税购物监管办法的发布文号、实施日期、离岛旅客定义、免税品销售监管、提货监管、退换货处理和法律责任信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件7《中国旅游研究院：2025年中国旅游经济运行分析与2026年发展预测》来源：中国旅游研究院，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://www.ctaweb.org.cn/yanjiuchengguo/10441.html",
+          "text": "https://www.ctaweb.org.cn/yanjiuchengguo/10441.html",
+          "type": "url"
+        },
+        {
+          "text": "，提供了2025年旅游经济运行分析、2026年发展预测、旅游消费变化和入出境旅游市场研究框架信息。",
+          "type": "text"
+        }
+      ],
+      "DOCX、XLSX",
+      "一份《中国中免2026年下半年跟踪主线复盘备忘录.docx》，一份《中国中免公开披露跟踪底表.xlsx》。",
+      "1. 先核验7个附件的文件类型、发布时间、发布主体和适用边界，建立报告索引表，区分公司定期报告、股东会材料、提质增效报告、政策公告和行业背景材料。\n\n2. 从附件1提取中国中免2025年收入、利润、毛利率、费用、存货、分业务或分渠道描述和管理层讨论信息，形成年度经营复盘底稿。\n\n3. 从附件2提取2026年一季度营业收入、利润、现金流、资产负债、海南区域表现和机场渠道进展，和2025年年度数据放在同一张表里对照。\n\n4. 从附件3和附件4提取公司在海南离岛免税、机场渠道、市内免税、会员运营、提质增效和股东回报方面的公开披露线索，判断这些线索是否能进入2026年下半年跟踪框架。\n\n5. 从附件5和附件6提取海南离岛免税政策调整内容，重点整理商品品类、适用人群、购物额度、提货方式和监管要求，并标注政策实施时间。\n\n6. 结合附件7提取旅游经济和旅游消费恢复相关背景，只作为外部环境参考，不能替代中国中免自身经营数据。\n\n7. 建立XLSX工作簿，至少包含报告索引、财务摘录、渠道线索、政策变化、三主线评分、风险事项和待核验问题几个工作表，并保留来源附件、报告期、表格或章节位置。\n\n8. 设计三条候选主线的评分框架，至少覆盖收入弹性、利润质量、政策确定性和可持续跟踪指标，说明每个维度为什么会影响优先主线选择。\n\n9. 将海南离岛免税政策兑现、机场口岸免税修复、市内免税和会员运营承接消费回流三条主线逐一代入评分框架，区分附件已经证明的事实、基于公开材料形成的判断和仍待核验的信息。\n\n10. 识别每条主线的主要风险，例如政策落地节奏、渠道修复弹性、费用投放压力、毛利率变化和存货周转变化，并判断这些风险会影响收入弹性、利润质量还是持续跟踪难度。\n\n11. 撰写DOCX备忘录，按照“业绩复盘—政策变化—三主线比较—优先主线选择—后续跟踪指标—风险与待核验事项”的顺序组织内容，给出唯一优先主线和两个次级观察主线。\n\n12. 对照XLSX底表检查DOCX结论，确认报告中的关键数字、政策变化和主线评分都能回到附件来源，不能用行业背景材料替代公司披露数据。\n\n13. 交付前做一致性自检，确认DOCX和XLSX均可编辑，两个产物中的报告期、字段名称、主线判断、风险事项和待核验问题保持一致。",
+      "苏子瞻",
+      "通过",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "",
+      "",
+      "",
+      "",
+      null,
+      null,
+      null,
+      null,
+      null,
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=38&qa_result_col=AT&qa_note_col=AU&action=recheck_row&qa_row_id=49e351_38_6df5b1da&row_fingerprint=6df5b1daef0f",
+          "text": "点我质检",
+          "type": "url"
+        }
+      ],
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&student_row=38&student_field=P&async=1&qa_result_col=AT&qa_note_col=AU&action=enqueue_batch&qa_row_id=49e351_38_6df5b1da&row_fingerprint=6df5b1daef0f",
+          "text": "点我批量质检",
+          "type": "url"
+        }
+      ],
+      "",
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&selected_col=AR&async=1&qa_result_col=AT&qa_note_col=AU&action=enqueue_selected",
+          "text": "执行选择质检",
+          "type": "url"
+        }
+      ],
+      "✅通过",
+      "已完成大模型质检，未发现问题",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "苏子瞻02",
+      "我在广西大学一个教学科研单位负责大型仪器开放共享考核材料整理。国有资产与实验室管理处已经发布2025年度大型科研仪器开放共享评价考核数据填报通知，学校后续还会组织校级绩效考核。本单位需要先把报送口径理顺，避免集中报送时出现平台信息、线下记录和佐证材料对不上的情况。\n这次准备的材料涉及多个环节。通知里提到平台信息更新、仪器信息变更、退网申请和年度使用情况上报，50万元及以上设备纳入共享情况也要单独整理。校级考核还会结合平台线上记录和线下记录本核查数据真实性（这里指平台自动留痕和仪器使用登记材料），考核结果会影响资源配置、维修经费分配和整改安排。附件能支持的是填报要求、表单字段和报送流程，具体仪器的真实机时、服务用户和维修状态留给本单位后续补充。\n请只基于附件里的广西大学通知、共享平台页面、管理办法和填报表单，整理一套2025年度大型仪器开放共享考核报送准备材料。材料要先说明本次考核涉及哪些表单和事项，再把填报对象、数据来源、报送节点和佐证材料拆成可执行清单。平台补录、学院审核、统一报送和退网核查要分开处理。退网和待核查事项只设计字段和判定口径（指附件要求核查的事项类别，不替本单位填写实际仪器结论）。\n这轮材料要让学院分管领导知道报送风险在哪里，也要让院级管理员和仪器管理员看清下一步该补什么。可以在《2025年度大型仪器开放共享考核报送准备说明.docx》里把考核依据、报送事项、表单关系和准备顺序讲清楚。平台补录、线下记录核查、退网申请和佐证材料补交性质不一样，不能统一写成“材料待完善”。说明里要交代哪些事项来自学校通知，哪些事项来自共享平台，哪些事项需要本单位后续补数据。\n《大型仪器开放共享考核材料清单与核查底表.xlsx》要能落到每一类报送材料。表格里至少保留附件索引、任务分解、平台补录、退网核查、佐证材料、报送时限和责任分工几个工作表。每一行要看得出材料名称、对应通知要求、数据来源、责任角色、完成状态、佐证材料和待核查事项。表格里还要能分辨问题来自平台信息缺失、线下记录待补、表单字段未确认，还是具体仪器状态需要后续核查。\n学院推进材料时，打开《大仪考核材料进度看板.html》就能看到各类材料的准备状态、表单完成度、待补录事项、待审核事项和临近截止提醒。平台补录未完成、退网原因待确认、50万元及以上设备清单待核对、年度使用情况待补证这些状态要直接提示，避免只看到“已整理”却看不出证据是否齐全。看板需要支持按材料类型和责任角色筛选，移动端也能阅读，空状态和加载状态要有清楚提示（空状态指暂无任务、暂无待补录事项或暂无临近截止提醒时的页面呈现）。\n交付前用“某台50万元以上仪器已在设备清单中出现，但平台共享状态和年度使用情况还未确认”这个场景回查三份产物：DOCX是否说明这类事项的报送边界，XLSX是否能记录平台状态、使用情况、责任人和待补证据，HTML是否能提示该事项仍待核查。三份材料里的表单名称、报送时限、责任角色和待核查事项必须保持一致，关键要求都要能回到附件。",
+      "L2流程型",
+      "教育科研与生命科学",
+      "高校/科研管理与教学材料",
+      "大型科研仪器开放共享考核报送准备",
+      "基于广西大学大型仪器开放共享管理办法、共享平台页面、考核通知和填报表单，整理2025年度大型仪器开放共享考核报送准备材料，形成可编辑说明稿、核查底表和进度看板。",
+      "5年",
+      "14h",
+      [
+        {
+          "fileToken": "UpcWbiUPWoA3zrxBXZEck4wTntd",
+          "mimeType": "text/html",
+          "size": 15124,
+          "text": "附件4《关于尽快完善广西大学仪器设备共享平台上仪器设备共享设置、提供共享服务的通知》.html",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "Pb4ebkMTDoXLfex4fFIc9S7Mnhf",
+          "mimeType": "application/pdf",
+          "size": 1273139,
+          "text": "附件5《关于做好2025年广西大型科研仪器开放共享评价考核数据填报工作的通知》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "Cdq4bku4OoR4hNx2KjPcXtvJnqh",
+          "mimeType": "application/pdf",
+          "size": 1418394,
+          "text": "附件6《关于开展广西大学2025年度大型科研仪器开放共享绩效考核工作的通知》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "K5Z6bagAeoWAVbxKdUHcDv2Lndc",
+          "mimeType": "application/pdf",
+          "size": 2153687,
+          "text": "附件1《广西大学大型仪器设备开放共享管理办法（2025年修订）》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "GbMsb2iW7oIlfexSbo9caTvGn8d",
+          "mimeType": "text/html",
+          "size": 12688,
+          "text": "附件2《广西大学大型仪器设备共享平台简介》.html",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "Ta0rbyh1UoZspXxKP9TcSSlBnWg",
+          "mimeType": "text/html",
+          "size": 22230,
+          "text": "附件3《广西大学大型仪器设备共享平台仪器信息页》.html",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "GyXXbUtcCofTtGxnWZucxOZCn4c",
+          "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "size": 49987,
+          "text": "附件7《2025年度大仪共享仪器使用情况上报表》.xlsx",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "OIzwbAD46ocgmCxEWWVcjzvJnec",
+          "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "size": 10754,
+          "text": "附件8《学院（单位）50万元及以上科研仪器设备清单及纳入共享情况表》.xlsx",
+          "type": "attachment"
+        }
+      ],
+      "HTML、XLSX  PDF",
+      [
+        {
+          "text": "附件1《广西大学大型仪器设备开放共享管理办法（2025年修订）》来源：广西大学大型仪器设备共享平台，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://gxpt.gxu.edu.cn/genee/post/147",
+          "text": "https://gxpt.gxu.edu.cn/genee/post/147",
+          "type": "url"
+        },
+        {
+          "text": "，提供了大型仪器设备开放共享的适用范围、三级管理责任、平台运行管理、经费与维修基金、评价考核方式和整改约束信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件2《广西大学大型仪器设备共享平台简介》来源：广西大学大型仪器设备共享平台，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://gxpt.gxu.edu.cn/genee/category/center",
+          "text": "https://gxpt.gxu.edu.cn/genee/category/center",
+          "type": "url"
+        },
+        {
+          "text": "，提供了广西大学大型仪器设备共享平台的建设背景、设备规模、服务对象、平台定位和开放共享基础信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件3《广西大学大型仪器设备共享平台仪器信息页》来源：广西大学大型仪器设备共享平台，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://gxpt.gxu.edu.cn/genee/category/equipment",
+          "text": "https://gxpt.gxu.edu.cn/genee/category/equipment",
+          "type": "url"
+        },
+        {
+          "text": "，提供了平台按学院、仪器分类和所属平台展示仪器信息的页面结构。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件4《关于尽快完善广西大学仪器设备共享平台上仪器设备共享设置、提供共享服务的通知》来源：广西大学大型仪器设备共享平台，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://gxpt.gxu.edu.cn/genee/post/158",
+          "text": "https://gxpt.gxu.edu.cn/genee/post/158",
+          "type": "url"
+        },
+        {
+          "text": "，提供了50万元及以上仪器导入共享平台、共享设置完善、仪器负责人账号、共享控制方式安装申请和报送要求信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件5《关于做好2025年广西大型科研仪器开放共享评价考核数据填报工作的通知》来源：广西大学大型仪器设备共享平台，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://gxpt.gxu.edu.cn/genee/post/167",
+          "text": "https://gxpt.gxu.edu.cn/genee/post/167",
+          "type": "url"
+        },
+        {
+          "text": "，提供了2025年广西大型科研仪器开放共享评价考核的考核时段、涉及仪器台套数、涉及学院单位、填报附件、平台补录要求和报送时限信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件6《关于开展广西大学2025年度大型科研仪器开放共享绩效考核工作的通知》来源：广西大学大型仪器设备共享平台，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://gxpt.gxu.edu.cn/genee/post/177",
+          "text": "https://gxpt.gxu.edu.cn/genee/post/177",
+          "type": "url"
+        },
+        {
+          "text": "，提供了广西大学2025年度大型科研仪器开放共享绩效考核的考核范围、单位管理成效、仪器使用成效、机组自查、单位考核、特殊仪器处理和材料提交流程信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件7《2025年度大仪共享仪器使用情况上报表》来源：广西大学大型仪器设备共享平台，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://gxpt.gxu.edu.cn/genee/%21upload/file/20251226160720_24155.xlsx",
+          "text": "https://gxpt.gxu.edu.cn/genee/%21upload/file/20251226160720_24155.xlsx",
+          "type": "url"
+        },
+        {
+          "text": "，提供了2025年度大仪共享仪器使用情况上报所需的表格字段和年度使用数据填报结构。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件8《学院（单位）50万元及以上科研仪器设备清单及纳入共享情况表》来源：广西大学大型仪器设备共享平台，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://gxpt.gxu.edu.cn/genee/%21upload/file/20251215155906_42649.xlsx",
+          "text": "https://gxpt.gxu.edu.cn/genee/%21upload/file/20251215155906_42649.xlsx",
+          "type": "url"
+        },
+        {
+          "text": "，提供了学院或单位50万元及以上科研仪器设备清单、纳入共享情况和逐台设备核对所需的表格字段。",
+          "type": "text"
+        }
+      ],
+      "word、excel、html",
+      "《2025年度大型仪器开放共享考核报送准备说明.docx》说明广西大学2025年度大型仪器开放共享评价考核的依据、涉及事项、表单关系和准备顺序，区分学校通知、共享平台和本单位后续补数事项，明确平台补录、学院审核、统一报送、退网核查、50万元及以上设备清单核对、线下记录核查和佐证材料补交的处理边界，并提示学院分管领导、院级管理员和仪器管理员各自需要关注的报送风险。\n\n《大型仪器开放共享考核材料清单与核查底表.xlsx》按附件索引、任务分解、平台补录、退网核查、佐证材料、报送时限和责任分工建立工作表，逐行记录材料名称、对应通知要求、数据来源、责任角色、完成状态、佐证材料和待核查事项，帮助区分平台信息缺失、线下记录待补、表单字段未确认和具体仪器状态待核查等不同问题。\n\n《大仪考核材料进度看板.html》展示各类材料准备状态、表单完成度、待补录事项、待审核事项和临近截止提醒，支持按材料类型和责任角色筛选，并对平台补录未完成、退网原因待确认、50万元及以上设备清单待核对、年度使用情况待补证等状态进行提示，移动端可阅读，空状态和加载状态有清楚呈现。\n\n",
+      "1. 先核验8个附件的文件类型、发布主体、发布时间和适用范围，建立附件索引表，区分管理办法、平台页面、共享设置通知、数据填报通知、绩效考核通知和XLSX表单。\n\n2. 从附件1提取大型仪器设备开放共享的适用范围、学校与教学科研单位职责、平台运行要求、数据填报要求、评价考核方式和整改约束，形成制度依据摘要。\n\n3. 从附件2和附件3梳理广西大学大型仪器设备共享平台的服务定位、仪器分类、学院分类和信息展示方式，判断后续平台补录清单需要保留哪些页面字段。\n\n4. 从附件4提取平台共享设置完善要求、仪器负责人账号要求、共享控制方式安装申请和报送节点，整理出平台补录和共享设置核查事项。\n\n5. 从附件5提取2025年度数据填报通知中的考核时段、涉及仪器台套数、涉及学院单位、附件3至附件13的填报事项、电子材料和纸质材料报送时限。\n\n6. 从附件6提取校级绩效考核的考核范围、单位管理成效、仪器使用成效、机组自查、单位考核、逐台核定评分和特殊仪器申请处理流程。\n\n7. 根据附件7和附件8的表格结构，设计XLSX核查底表字段，至少覆盖材料名称、对应通知要求、数据来源、责任角色、完成状态、佐证材料和待核查事项。\n\n8. 判断每类材料属于平台补录、线下记录核查、表单填报、学院审核、统一报送、退网核查还是特殊仪器处理，并说明不同类别为什么不能合并成同一种“材料待完善”。\n\n9. 建立待核查事项分类规则，把平台信息缺失、线下记录待补、表单字段未确认、具体仪器状态待核查和佐证材料不足分开记录，实际机时和服务用户数据留给本单位补充。\n\n10. 撰写DOCX报送准备说明，围绕考核依据、报送事项、表单关系、准备顺序、责任角色和风险提醒组织内容，让学院分管领导能看清报送风险，院级管理员和仪器管理员能看清下一步动作。\n\n11. 制作XLSX材料清单与核查底表，设置附件索引、任务分解、平台补录、退网核查、佐证材料、报送时限和责任分工等工作表，保证每个工作表都能回到通知或表单字段。\n\n12. 制作HTML进度看板，展示材料准备状态、表单完成度、待补录事项、待审核事项和临近截止提醒，支持按材料类型和责任角色筛选，并处理移动端展示、空状态和加载状态。\n\n13. 用“某台50万元以上仪器已在设备清单中出现，但平台共享状态和年度使用情况还未确认”的场景回查三份产物，确认DOCX说明了报送边界，XLSX能记录平台状态、使用情况、责任人和待补证据，HTML能提示该事项仍待核查。\n\n14. 交付前做一致性自检，确认三份产物中的表单名称、报送时限、责任角色、待核查事项和关键要求保持一致，所有关键要求都能回到对应附件。",
+      "苏子瞻",
+      "通过",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "",
+      "",
+      "",
+      "",
+      null,
+      null,
+      null,
+      null,
+      null,
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=39&qa_result_col=AT&qa_note_col=AU&action=recheck_row&qa_row_id=49e351_39_48da2b49&row_fingerprint=48da2b49d8d8",
+          "text": "点我质检",
+          "type": "url"
+        }
+      ],
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&student_row=39&student_field=P&async=1&qa_result_col=AT&qa_note_col=AU&action=enqueue_batch&qa_row_id=49e351_39_48da2b49&row_fingerprint=48da2b49d8d8",
+          "text": "点我批量质检",
+          "type": "url"
+        }
+      ],
+      "",
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&selected_col=AR&async=1&qa_result_col=AT&qa_note_col=AU&action=enqueue_selected",
+          "text": "执行选择质检",
+          "type": "url"
+        }
+      ],
+      "✅通过",
+      "已完成大模型质检，未发现问题",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "苏子瞻03",
+      "7月初，紫金银行连续披露了紫银转债二季度转股结果和到期兑付暨摘牌提示公告。到期日、兑付金额和最后交易日等关键节点已经能从公告里核出来，分支机构很快会遇到持仓客户咨询。总部这次要把公开公告转成分支机构能用的提醒材料（指客户能否在最后交易日前卖出、停止交易后转股或持有至兑付），让客户经理知道哪些话可以基于公告提示，哪些信息必须回到账户系统确认。\n几个关键信息分散在不同文件里。募集说明书能还原债券期限、票面利率等基础条款。转股价调整公告能说明最新转股价的变化过程。二季度转股结果公告显示仍有较大规模没有转股，到期兑付公告则把最后交易、最后转股和资金发放节点集中列出。如果只看其中一份材料，容易漏掉停止交易后的转股窗口，也容易把卖出、转股和到期兑付混成同一种处理方式。\n请只基于附件里的募集说明书、发行人定期报告、评级报告和转债相关公告，整理一套紫银转债到期节点核查与客户提醒材料。材料先要把关键日期、关键金额和关键条款核对清楚，再把客户可能遇到的三类动作分开说明：最后交易日前卖出，停止交易后至最后转股日前转股，持有至到期兑付。附件能支持的是公开节点、债券条款和发行人经营背景，客户真实持仓数据留给券商内部系统补充（包括持仓数量、成本价、风险等级和交易权限）。\n分支机构晨会先看一份到期节点说明稿.docx。说明稿要把到期兑付安排、转股窗口、转股价调整过程和剩余未转股规模讲清楚。卖出、转股和兑付对应的时间节点不同，材料里要分开写。哪些信息来自公告，哪些信息需要客户经理查账户系统，哪些表述只能作为风险提示，也要放在同一页里说清楚。\n客户提醒核查表.xlsx给产品支持岗和分支客户经理一起维护。表格里至少保留公告索引、关键节点、条款核查、客户数据待补、提醒动作、话术边界和风险事项几个工作表。每一行要看得出信息来源、适用客户范围、最后处理时间和人工复核状态。表里还要能分辨当前卡点来自公告节点未核清、客户持仓未确认，还是交易权限待核验。\n到期提醒页.html给客户经理临近节点时打开看。页面里把到期时间轴、兑付金额、最后交易日、最后转股日和转股价变化放在显眼位置，再把卖出、转股和持有至兑付三类路径分开展示。页面需要提示哪些信息还要回到账户系统确认，移动端也要能阅读。空状态和加载状态要有清楚提示（空状态指客户数据尚未导入、暂无待提醒客户或暂无临近节点时的页面呈现）。\n客户沟通问答.md写给一线客户经理。客户问“是不是必须转股”“到期是不是一定比卖出划算”“停止交易后还能不能处理”“兑付款什么时候到账”等问题时，问答材料要引导客户经理回到公告事实、账户数据和适当性边界。收益判断留给客户本人，客户持仓和交易权限没有确认前，材料只提示公开节点和需要补充核实的信息。\n交付前用“某客户仍持有紫银转债，但系统还没有导入成本价和风险等级”这个场景回查四份材料。说明稿要解释清楚最后交易日和最后转股日，XLSX要能记录持仓、成本、权限和提醒状态，HTML要提示客户数据缺口，Markdown问答要避免把转股或兑付写成唯一处理建议。交付前自检四份材料里的日期、金额、转股价格、客户数据缺口和风险提示保持一致，关键事实都要能回到附件。",
+      "L2流程型",
+      "金融服务与财富投研",
+      "风险测算、量化与报表",
+      "可转债到期节点核查与客户提醒",
+      "基于紫银转债募集说明书、转股价调整公告、转股结果公告、到期兑付公告和发行人公开材料，整理到期节点核查与客户提醒材料，形成说明稿、核查表、提醒页和客户沟通问答。",
+      "5年",
+      "14h",
+      [
+        {
+          "fileToken": "JBTTbWdhsof51OxDaoGcKWGwnYd",
+          "mimeType": "application/pdf",
+          "size": 482865,
+          "text": "附件5《江苏紫金农村商业银行股份有限公司关于根据2025年中期利润分配方案调整可转债转股价的公告》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "YaCyb7kTtoSdEnxWKhHcGTg4nCd",
+          "mimeType": "application/pdf",
+          "size": 470326,
+          "text": "附件6《江苏紫金农村商业银行股份有限公司关于根据2025年度利润分配方案调整可转债转股价的公告》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "WNYIb3d2oos3vGxb652caHTZnqh",
+          "mimeType": "application/pdf",
+          "size": 846688,
+          "text": "附件7《江苏紫金农村商业银行股份有限公司可转债转股结果暨股份变动公告》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "Tl3Xb7HjRoNo2nxdmMkc7iv9ncc",
+          "mimeType": "application/pdf",
+          "size": 892115,
+          "text": "附件8《江苏紫金农村商业银行股份有限公司关于“紫银转债”到期兑付暨摘牌的第一次提示性公告》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "JZtTbHXspoIk4FxRTx8cqJyVnKe",
+          "mimeType": "application/pdf",
+          "size": 2100462,
+          "text": "附件3《江苏紫金农村商业银行股份有限公司2026年第一季度报告》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "ONL5bZnwzopvd2xJ9ZtcddyUnDe",
+          "mimeType": "application/pdf",
+          "size": 9547634,
+          "text": "附件4《江苏紫金农村商业银行股份有限公司公开发行A股可转换公司债券2026年跟踪评级报告》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "H0HFbPuZhoKLdrxw1YTcHqFonFf",
+          "mimeType": "application/pdf",
+          "size": 32649767,
+          "text": "附件1《江苏紫金农村商业银行股份有限公司公开发行A股可转换公司债券募集说明书》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "Y5A7bQkOYooFIyxTp3vcBrLzn9b",
+          "mimeType": "application/pdf",
+          "size": 41991462,
+          "text": "附件2《江苏紫金农村商业银行股份有限公司2025年年度报告》.pdf",
+          "type": "attachment"
+        }
+      ],
+      "PDF",
+      [
+        {
+          "text": "附件1《江苏紫金农村商业银行股份有限公司公开发行A股可转换公司债券募集说明书》来源：东方财富公告PDF，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://pdf.dfcfw.com/pdf/H2_AN202007201392950875_1.pdf",
+          "text": "https://pdf.dfcfw.com/pdf/H2_AN202007201392950875_1.pdf",
+          "type": "url"
+        },
+        {
+          "text": "，提供了紫银转债发行规模、期限、票面利率、转股期、赎回条款、回售安排、转股价格调整规则和风险提示信息。",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件2《江苏紫金农村商业银行股份有限公司2025年年度报告》来源：雪球公告镜像，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://stockmc.xueqiu.com/202604/601860_20260424_X627.pdf",
+          "text": "https://stockmc.xueqiu.com/202604/601860_20260424_X627.pdf",
+          "type": "url"
+        },
+        {
+          "text": "，提供了紫金银行2025年经营情况、财务报表、利润分配、资产质量、流动性风险和公司治理信息。",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件3《江苏紫金农村商业银行股份有限公司2026年第一季度报告》来源：雪球公告镜像，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://stockmc.xueqiu.com/202604/601860_20260424_ZQTS.pdf",
+          "text": "https://stockmc.xueqiu.com/202604/601860_20260424_ZQTS.pdf",
+          "type": "url"
+        },
+        {
+          "text": "，提供了紫金银行2026年一季度营业收入、利润、资产质量、杠杆率、流动性覆盖率和主要监管指标信息。",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件4《江苏紫金农村商业银行股份有限公司公开发行A股可转换公司债券2026年跟踪评级报告》来源：雪球公告镜像，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://stockmc.xueqiu.com/202606/601860_20260623_WE8Q.pdf",
+          "text": "https://stockmc.xueqiu.com/202606/601860_20260623_WE8Q.pdf",
+          "type": "url"
+        },
+        {
+          "text": "，提供了紫金银行主体评级、紫银转债债项评级、评级展望、债券条款、转股价格历史和信用风险分析信息。",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件5《江苏紫金农村商业银行股份有限公司关于根据2025年中期利润分配方案调整可转债转股价的公告》来源：巨潮资讯公告PDF，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://static.cninfo.com.cn/finalpage/2026-01-29/1224954421.PDF",
+          "text": "https://static.cninfo.com.cn/finalpage/2026-01-29/1224954421.PDF",
+          "type": "url"
+        },
+        {
+          "text": "，提供了紫银转债因2025年中期利润分配调整转股价格的调整前价格、调整后价格、调整公式、实施日期和暂停转股安排信息。",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件6《江苏紫金农村商业银行股份有限公司关于根据2025年度利润分配方案调整可转债转股价的公告》来源：雪球公告镜像，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://stockmc.xueqiu.com/202606/601860_20260602_IBIA.pdf",
+          "text": "https://stockmc.xueqiu.com/202606/601860_20260602_IBIA.pdf",
+          "type": "url"
+        },
+        {
+          "text": "，提供了紫银转债因2025年度利润分配调整转股价格的调整前价格、调整后价格、每股派息金额、实施日期和停复牌安排信息。",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件7《江苏紫金农村商业银行股份有限公司可转债转股结果暨股份变动公告》来源：上海证券报，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://paper.cnstock.com/html/2026-07/02/content_2238631.htm",
+          "text": "https://paper.cnstock.com/html/2026-07/02/content_2238631.htm",
+          "type": "url"
+        },
+        {
+          "text": "，提供了截至2026年6月30日紫银转债累计转股金额、累计转股数、尚未转股金额、剩余未转股比例和本季度转股情况信息。",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件8《江苏紫金农村商业银行股份有限公司关于“紫银转债”到期兑付暨摘牌的第一次提示性公告》来源：上海证券报，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://paper.cnstock.com/html/2026-07/07/content_2239974.htm",
+          "text": "https://paper.cnstock.com/html/2026-07/07/content_2239974.htm",
+          "type": "url"
+        },
+        {
+          "text": "，提供了紫银转债到期日、兑付登记日、兑付本息金额、兑付资金发放日、摘牌日、最后交易日和最后转股日信息。",
+          "type": "text"
+        }
+      ],
+      "DOCX、XLSX、HTML、WORD",
+      "一份到期节点说明稿，一份客户提醒核查表，一份到期提醒页，一份客户沟通问答。",
+      "1. 先核验8个附件的文件类型、发布主体、发布时间和适用边界，建立公告索引表，区分募集说明书、发行人定期报告、评级报告、转股价公告、转股结果公告和到期兑付公告，判断每类附件在客户提醒材料中只能承担什么作用。\n\n2. 从附件1提取紫银转债发行规模、期限、票面利率、转股期、到期兑付条款和转股价格调整规则，先还原债券条款底层逻辑，再判断哪些条款会影响卖出、转股和持有至兑付三类客户动作。\n\n3. 从附件5和附件6提取两次转股价调整的调整前价格、调整后价格、调整公式和实施日期，串成转股价变化时间线，并判断最新转股价应当在客户提醒材料中作为事实提示，还是可以用于收益判断。\n\n4. 从附件7提取累计转股金额、尚未转股金额、剩余未转股比例和本季度转股情况，判断为什么分支机构仍需要面向存量持有人做提醒，而不能只把到期兑付公告转发给客户。\n\n5. 从附件8提取到期日、兑付登记日、兑付金额、资金发放日、摘牌日、最后交易日和最后转股日，建立节点核查表，并判断停止交易后仍可转股的时间窗口是否需要在材料中单独强调。\n\n6. 从附件2、附件3和附件4提取发行人经营背景、资产质量、监管指标、评级结果和风险提示，判断这些信息只能作为公开背景和风险提示，不能替代客户账户数据或适当性判断。\n\n7. 将客户可能遇到的处理动作分成最后交易日前卖出、停止交易后至最后转股日前转股、持有至到期兑付三类路径，逐一匹配对应日期、操作窗口、可引用公告和需要补充的账户信息。\n\n8. 设计客户提醒的分流规则：只有公开公告能确认的内容写成统一提醒，涉及持仓数量、成本价、风险等级和交易权限的内容列为内部系统待补项，涉及收益取舍的内容保留给客户本人判断。\n\n9. 建立客户数据缺口判断表，把“公告节点未核清”“客户持仓未确认”“交易权限待核验”“客户经理解释边界待复核”等情形分开处理，判断每一种缺口会影响提醒发送、人工复核还是话术限制。\n\n10. 制作客户提醒核查表.xlsx，设置公告索引和关键节点、条款核查和客户数据待补、提醒动作和风险事项等工作表，并在表内保留来源附件、适用客户范围、最后处理时间、人工复核状态和处理路径判断依据。\n\n11. 撰写到期节点说明稿.docx，围绕到期兑付安排、转股窗口、转股价变化、剩余未转股规模、账户数据缺口和风险提示边界组织内容，结论必须说明三类路径的差异，而不是给出单一处理建议。\n\n12. 制作到期提醒页.html，把到期时间轴、兑付金额、最后交易日、最后转股日和三类路径放在显眼位置，并根据客户数据是否导入、是否存在临近节点和是否需要人工复核设计空状态与加载状态。\n\n13. 编写客户沟通问答.md，围绕是否必须转股、停止交易后是否还能处理、兑付款到账时间等常见问题，判断哪些问题可以直接引用公告回答，哪些问题必须转入账户核验或适当性提示。\n\n14. 用“某客户仍持有紫银转债，但系统还没有导入成本价和风险等级”的场景回查四份材料，确认说明稿没有把转股或兑付写成唯一建议，XLSX能标记客户数据缺口，HTML能提示待复核状态，WORD能把客户选择边界说清楚。",
+      "苏子瞻",
+      "不通过",
+      "Markdown 格式产物需要修改",
+      null,
+      "一次修改不通过请返修",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "",
+      "",
+      "",
+      "",
+      null,
+      null,
+      null,
+      null,
+      null,
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=40&qa_result_col=AT&qa_note_col=AU&action=recheck_row&qa_row_id=49e351_40_5e151300&row_fingerprint=5e1513008d7e",
+          "text": "点我质检",
+          "type": "url"
+        }
+      ],
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&student_row=40&student_field=P&async=1&qa_result_col=AT&qa_note_col=AU&action=enqueue_batch&qa_row_id=49e351_40_5e151300&row_fingerprint=5e1513008d7e",
+          "text": "点我批量质检",
+          "type": "url"
+        }
+      ],
+      "",
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&selected_col=AR&async=1&qa_result_col=AT&qa_note_col=AU&action=enqueue_selected",
+          "text": "执行选择质检",
+          "type": "url"
+        }
+      ],
+      "❌不通过",
+      "产物格式不明确：L2/L3 需要在产物内容/产物格式中写清具体可编辑或结构化格式，如 Word、Excel、PPT、HTML、workflow、trace 或 runbook；普通报告/复盘/方案类产物请使用常规办公格式，不推荐 Markdown。请在产物内容/产物格式中写明具体可编辑或结构化格式，并让题目自然保留核心交付物，例如 Word、Excel、PPT、HTML、workflow、tra。",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "苏子瞻04",
+      "我在区财政局政府采购监管岗，正在准备2025年政府采购领域“四类”违法违规行为专项整治的代理机构检查材料。上海市财政局、市公安局和市市场监管局已经发出专项整治通知，明确本市纳入检查的代理机构名单和工作阶段。接下来区里要先完成书面审查准备，不能等代理机构交来项目资料后再临时决定怎么查。\n这轮检查已经有清楚的上级依据。上海通知里写明，代理机构收到检查通知后要报送2024年度代理项目清单，财政部门再结合投诉举报线索和重点项目抽取检查项目。被抽取项目的文件、数据和资料要随自查报告一并报送。后续书面审查要形成工作底稿，现场检查还会核实资料、调阅评审录音录像，并查看保证金和服务费收取情况（现场检查只按附件中的程序和材料要求处理，不预设任何代理机构存在违法违规）。\n请只基于附件里的专项整治通知、代理机构检查名单、监督检查暂行办法和三年行动方案，整理一套区财政局检查组可以直接使用的检查准备材料。材料先要说明这次检查的对象、阶段和重点事项，再把代理机构自查、财政部门书面审查、现场检查和延伸核查分成几类工作。检查底稿只能设计问题线索、材料缺口和证据归档字段，不能替具体代理机构认定违法事实。真实项目资料、评审录音录像和保证金收退记录留给检查过程中补充（包括代理机构报送的项目清单、自查报告和抽取项目材料）。\n检查准备材料完成后，需要交给参与专项整治的工作人员使用。先整理一份开工说明.docx，把检查依据、检查对象、推进顺序和材料流转关系说明清楚。说明稿重点帮助检查人员快速判断一份材料应该在哪个阶段查看，以及发现异常后下一步如何进入复核流程。\n随后整理工作底稿.xlsx，作为检查过程中的记录工具。底稿需要把代理机构名单、抽查项目、检查事项和材料提交情况串起来，让检查人员能够沿着同一条路径记录发现的问题。对于已经收到的材料，记录审核结果。对于暂时缺少的内容，记录缺口位置和后续补充动作。\n最后制作一个检查进度页.html，方便负责人掌握整体推进情况。页面需要展示当前检查阶段、项目材料完成情况和待处理事项等信息，并支持按照阶段查看具体进展。没有对应任务时，需要保留清晰的空状态提示（例如当前没有待复核项目或没有新增材料缺口）。\n交付前，用一个实际检查场景回看三份材料是否能够衔接。例如某代理机构提交了项目清单，但抽查项目中的部分证明材料仍在补充阶段。开工说明需要解释这类情况属于哪个流程节点，工作底稿需要留下对应记录，进度页需要同步当前状态。三份材料中的段划分、处理动作和后续跟进方式需要保持一致。",
+      "L2流程型",
+      "法律、政务与公共服务",
+      "法律、政务与公共服务",
+      "政策研究与政务材料",
+      "基于上海市政府采购领域专项整治通知、代理机构检查名单和监督检查规则，整理区财政局检查组开工前使用的检查准备说明、工作底稿和进度页。",
+      "5年",
+      "14h",
+      [
+        {
+          "fileToken": "TjuObHQCho5yPpx6NDScCOzhnNd",
+          "mimeType": "application/pdf",
+          "size": 1812873,
+          "text": "附件4《政府采购代理机构监督检查暂行办法》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "P1xQbNaqZodWkUxwbLzctv39nih",
+          "mimeType": "application/pdf",
+          "size": 1161234,
+          "text": "附件6《国务院办公厅关于严格规范涉企行政检查的意见》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "JkphbQDx0oJlUPxTlNRcUO8cnJg",
+          "mimeType": "application/pdf",
+          "size": 1218589,
+          "text": "附件7《政府采购领域“整顿市场秩序、建设法规体系、促进产业发展”三年行动方案（2024—2026年）》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "DiPebA3sCo8s1Vx8dyQcbJ8snhd",
+          "mimeType": "application/pdf",
+          "size": 4002492,
+          "text": "附件1《关于开展2025年上海市政府采购领域“四类”违法违规行为专项整治工作的通知》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "UrJbb74jBo8UufxVi4Oc13xKnOc",
+          "mimeType": "application/pdf",
+          "size": 2860389,
+          "text": "附件2《财政部 公安部 市场监管总局关于开展2025年政府采购领域“四类”违法违规行为专项整治工作的通知（财库〔2025〕14号）》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "MZPgbG1k7oD3dUxXIN5cXUdXn4b",
+          "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "size": 18315,
+          "text": "附件3《2025年专项整治代理机构检查名单》.xlsx",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "FuhZbMDANo8CBxx5THCcDXUEnsh",
+          "mimeType": "application/pdf",
+          "size": 1812873,
+          "text": "附件5《政府采购代理机构监督检查暂行办法》.pdf",
+          "type": "attachment"
+        }
+      ],
+      "PDF、XLSX、",
+      [
+        {
+          "text": "附件1《关于开展2025年上海市政府采购领域“四类”违法违规行为专项整治工作的通知》来源：上海市财政局，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://czj.sh.gov.cn/zys_8908/zcfg_8983/zcfb_8985/zfcg_9033/20250806/xxfboswf0000003366.html",
+          "text": "https://czj.sh.gov.cn/zys_8908/zcfg_8983/zcfb_8985/zfcg_9033/20250806/xxfboswf0000003366.html",
+          "type": "url"
+        },
+        {
+          "text": "，提供了上海市2025年政府采购专项整治通知正文、政策咨询入口和相关附件下载入口信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件2《关于开展2025年上海市政府采购领域“四类”违法违规行为专项整治工作的通知》来源：上海市财政局，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://czj.sh.gov.cn/cmsres/ec/ec06fe1e02a84dc1869b1d34d1e4d6ee/838811d0e3dd98c027080fbf4cc613ae.pdf",
+          "text": "https://czj.sh.gov.cn/cmsres/ec/ec06fe1e02a84dc1869b1d34d1e4d6ee/838811d0e3dd98c027080fbf4cc613ae.pdf",
+          "type": "url"
+        },
+        {
+          "text": "，提供了上海市专项整治的重点内容、部门协同机制、代理机构分级分类检查规则、书面审查要求、现场检查要求、延伸核查要求和阶段时限信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件3《财政部 公安部 市场监管总局关于开展2025年政府采购领域“四类”违法违规行为专项整治工作的通知（财库〔2025〕14号）》来源：上海市财政局附件，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://czj.sh.gov.cn/cmsres/56/568a851beccd4e1c9bf6f1be97e25e80/bd039c84ae4ac0b9d8701c9297492611.pdf",
+          "text": "https://czj.sh.gov.cn/cmsres/56/568a851beccd4e1c9bf6f1be97e25e80/bd039c84ae4ac0b9d8701c9297492611.pdf",
+          "type": "url"
+        },
+        {
+          "text": "，提供了2025年政府采购领域专项整治的国家层面工作要求、检查重点、部门分工和检查名单确定依据。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件4《2025年专项整治代理机构检查名单》来源：上海市财政局附件，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://czj.sh.gov.cn/cmsres/e1/e1587b7414d24f93bcf9eaee7d447310/fd96603d95c771137854552b9eaf216d.xlsx",
+          "text": "https://czj.sh.gov.cn/cmsres/e1/e1587b7414d24f93bcf9eaee7d447310/fd96603d95c771137854552b9eaf216d.xlsx",
+          "type": "url"
+        },
+        {
+          "text": "，提供了上海市2025年专项整治纳入检查的代理机构名单，不提供单个代理机构的项目资料或违法事实。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件5《政府采购代理机构监督检查暂行办法》来源：中国政府采购网，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://www.ccgp.gov.cn/zcfg/mof/202412/W020241202550749289202.pdf",
+          "text": "https://www.ccgp.gov.cn/zcfg/mof/202412/W020241202550749289202.pdf",
+          "type": "url"
+        },
+        {
+          "text": "，提供了政府采购代理机构监督检查的适用范围、分级分类检查规则、检查重点、组织实施程序、现场检查要求和处理处罚结果运用信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件6《国务院办公厅关于严格规范涉企行政检查的意见》来源：生态环境部转载中国政府网，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://www.mee.gov.cn/zcwj/gwywj/202501/t20250106_1100065.shtml",
+          "text": "https://www.mee.gov.cn/zcwj/gwywj/202501/t20250106_1100065.shtml",
+          "type": "url"
+        },
+        {
+          "text": "，提供了涉企行政检查主体、检查事项、检查方式、专项检查范围控制、联合检查和防止重复检查等规范要求信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件7《政府采购领域“整顿市场秩序、建设法规体系、促进产业发展”三年行动方案（2024—2026年）》来源：生态环境部转载中国政府网，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://www.mee.gov.cn/zcwj/gwywj/202407/t20240705_1081018.shtml",
+          "text": "https://www.mee.gov.cn/zcwj/gwywj/202407/t20240705_1081018.shtml",
+          "type": "url"
+        },
+        {
+          "text": "，提供了政府采购领域三年行动的总体目标、专项整治方向、制度建设任务和协同监管要求信息。",
+          "type": "text"
+        }
+      ],
+      "word、excel、html",
+      "一份开工说明，一份工作底稿，一份检查进度页。",
+      "1. 读取附件1和附件2，提取上海市2025年政府采购领域“四类”违法违规行为专项整治的检查重点、部门协同安排、阶段任务和工作时限，建立上海专项整治依据表。\n\n2. 读取附件3，提取国家层面专项整治通知中的检查重点、名单确定依据和部门分工，判断上海本次检查安排如何承接国家层面要求。\n\n3. 读取附件4，提取纳入检查的代理机构名称和名单结构，建立代理机构基础表，并为后续抽取项目、材料接收、书面审查和现场检查预留可追踪字段。\n\n4. 读取附件5，提取政府采购代理机构监督检查的适用范围、检查内容、组织实施程序、现场检查要求和结果运用规则，整理成检查事项分类表。\n\n5. 读取附件6，提取涉企行政检查的主体资格、检查事项、检查方式、专项检查范围控制和联合检查要求，判断本题中的现场检查、延伸核查和部门协同边界应如何表达。\n\n6. 读取附件7，提取政府采购领域三年行动方案中的市场秩序整治、法规体系建设和协同监管要求，判断这些内容在本题中应作为专项整治背景和工作方向，不替代上海本次检查名单和具体检查流程。\n\n7. 基于步骤1、步骤2和步骤4，对比上海专项整治通知、国家层面通知和监督检查暂行办法中的检查事项，把代理机构自查、财政部门书面审查、现场检查、延伸核查和处理处罚分成不同阶段。\n\n8. 基于步骤3和步骤7，设计工作底稿中的主线字段，确保代理机构名单、抽取项目、检查事项、材料接收状态和后续动作能够串起来，避免名单表、项目表和检查记录彼此脱节。\n\n9. 基于步骤4和步骤5，设计检查边界判断规则，把书面审查能先标记的事项、现场检查才能核实的事项、需要部门协同的事项和不能预设违法结论的事项分开处理。\n\n10. 基于步骤7至步骤9，建立材料状态分流规则，把代理机构已提交材料、待接收材料、待现场核验材料、待部门协同事项和已完成闭环事项分开记录，避免把不同阶段的事项都写成同一种处理状态。\n\n11. 基于步骤8至步骤10，设计工作底稿.xlsx的工作表结构，至少包含附件索引、代理机构名单、抽取项目、检查事项、材料状态、现场核验、部门协同和后续处理等页面，并在每个页面保留依据来源和下一步动作字段。\n\n12. 基于步骤1至步骤10，撰写开工说明.docx的内容框架，重点说明本次检查的依据、对象、阶段顺序、材料流转和复核边界，让检查人员能判断一份材料应进入哪个检查环节。\n\n13. 基于步骤10和步骤11，设计检查进度页.html的信息层级，优先展示检查阶段、代理机构材料接收、抽取项目审查和待处理事项，再支持按阶段或材料类型筛选。\n\n14. 基于步骤9和步骤10，用“某代理机构已提交年度代理项目清单，但抽取项目的部分证明材料仍在接收中”这个场景回查三份产物，判断开工说明是否能解释流程节点，工作底稿是否能记录材料状态和下一步动作，进度页是否能同步该事项的推进状态。\n\n15. 最后进行一致性自检，核对开工说明、工作底稿和进度页中的检查阶段、材料名称、处理动作、责任角色和依据来源是否一致，所有关键要求都要能回到附件1至附件7。",
+      "苏子瞻",
+      "通过",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "",
+      "",
+      "",
+      "",
+      null,
+      null,
+      null,
+      null,
+      null,
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=41&qa_result_col=AT&qa_note_col=AU&action=recheck_row&qa_row_id=49e351_41_118469ab&row_fingerprint=118469ab554b",
+          "text": "点我质检",
+          "type": "url"
+        }
+      ],
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&student_row=41&student_field=P&async=1&qa_result_col=AT&qa_note_col=AU&action=enqueue_batch&qa_row_id=49e351_41_118469ab&row_fingerprint=118469ab554b",
+          "text": "点我批量质检",
+          "type": "url"
+        }
+      ],
+      "",
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&selected_col=AR&async=1&qa_result_col=AT&qa_note_col=AU&action=enqueue_selected",
+          "text": "执行选择质检",
+          "type": "url"
+        }
+      ],
+      "✅通过",
+      "已完成大模型质检，未发现问题",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "苏子瞻05",
+      "现在是2025年7月，我在增城区教育局积分入学工作专班协助整理拟录取结果公示后的咨询材料。2025年来穗人员随迁子女积分排名结果、招生计划、入围资格线和拟录取结果已经陆续公布，家长接下来最容易问的不是单一名单查询，而是几个节点之间的关系：孩子是否进入拟录取名单，达到入围资格线是否等于一定录取，拟录取后什么时候注册，未被拟录取但达到相应镇街入围资格线时还要关注什么安排。\n这件事需要先把公开材料里的办理链条理顺。实施细则能说明积分申请、排名、志愿填报、录取公示和注册的基本流程。积分排名结果公示能说明排名结果已经经过申请、审核和复审赋分。招生计划和入围资格线能把各镇街、各学段的投档范围说明清楚。拟录取结果公示则给出了小学和初中拟录取名单，也提醒申请人关注注册安排和后续补填志愿信息。请只基于这些附件做咨询分流，不重新计算任何申请人的个人积分，也不把附件没有披露的志愿填报记录、系统审核过程或学校现场注册反馈写成确定事实。\n请先判断拟录取公示后最需要分流的三类咨询：第一类是已经出现在拟录取名单中的注册提醒，第二类是达到相应镇街入围资格线但没有进入拟录取名单的后续关注，第三类是家长对排名、入围资格线和招生计划关系的理解偏差。每一类咨询都要说明能直接引用哪份公告，哪些信息必须回到积分入学系统或承办科室核验，哪些说法不能由窗口人员直接承诺（这里的核验只指内部系统、报名记录和学校注册反馈等材料，不要补造数据）。\n帮我生成三份可直接给工作专班使用的材料。第一份是docx格式的咨询分流手册，正文控制在2500到3500字，必须说明本次公开材料的顺序、三类咨询的分流规则、窗口答复边界、注册提醒事项和待核验信息。第二份是xlsx格式的名单核查与咨询登记表，至少包含公告索引、入围资格线核对、拟录取名单核查、咨询类型登记、注册提醒、待核验事项几个sheet。表格里只能保留公告已经脱敏展示的信息和窗口登记所需字段，不能要求填完整身份证号。第三份是pptx格式的晨会沟通稿，控制在8页以内，用更直白的语言告诉窗口老师今天怎么解释排名、入围资格线、拟录取和注册之间的关系，以及遇到争议时先转到哪一个核验步骤。\n完成后请单独写一段自检，检查小学和初中拟录取结果是否都被覆盖，招生计划和入围资格线是否分别使用，是否把“达到入围资格线”误写成“必然录取”，是否编造个人积分复核结果或志愿填报记录，docx、xlsx和pptx里的镇街名称、学段分类、时间节点和待核验事项是否一致。",
+      "L2流程型",
+      "法律、政务与公共服务",
+      "政策研究与政务材料",
+      "积分入学拟录取公示咨询分流",
+      "基于增城区2025年来穗人员随迁子女积分入学实施细则、积分排名公示、招生计划、入围资格线和拟录取结果材料，整理拟录取公示后的咨询分流手册、名单核查与咨询登记表、晨会沟通稿。",
+      "5年",
+      "14h",
+      [
+        {
+          "fileToken": "D5zabmgaFo8ziRxIen0cvnOinMh",
+          "mimeType": "application/pdf",
+          "size": 856773,
+          "text": "附件4《2025年增城区来穗人员随迁子女积分制入学招生计划》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "X7TWbeyGYoclOLxHKHQcBywxnpc",
+          "mimeType": "application/pdf",
+          "size": 93352,
+          "text": "附件5《2025年增城区来穗人员随迁子女积分制入学入围资格线》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "ZcfFbeAKVoQL98x3gc4cRBRRnqe",
+          "mimeType": "text/html",
+          "size": 53727,
+          "text": "附件6《2025年增城区来穗人员随迁子女申请入学拟录取结果公示》.html",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "WtHKbewOAoe1oqxQ2lncYv3hnce",
+          "mimeType": "application/pdf",
+          "size": 2396821,
+          "text": "附件1《广州市增城区人民政府办公室关于印发增城区来穗人员随迁子女接受义务教育实施细则（修订）的通知》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "Xo2jbY5uaoHrSFxg4tlcprrDnDh",
+          "mimeType": "text/html",
+          "size": 53218,
+          "text": "附件2《2025年增城区来穗人员随迁子女申请入学积分排名结果公示》.html",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "LC8pb0e6WoxKUOxH2DfctwhPnWe",
+          "mimeType": "text/html",
+          "size": 53351,
+          "text": "附件3《关于公布2025年增城区来穗人员随迁子女积分入学招生计划和入围资格线的通知》.html",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "CmuZbvQPGoaeXAxrafMcffzPnqh",
+          "mimeType": "application/pdf",
+          "size": 38575435,
+          "text": "附件7《2025年增城区来穗人员随迁子女积分入学拟录取结果（小学）》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "LyNPbpkjJoNLa1xXynvc8Saknmf",
+          "mimeType": "application/pdf",
+          "size": 30741420,
+          "text": "附件8《2025年增城区来穗人员随迁子女积分入学拟录取结果（初中）》.pdf",
+          "type": "attachment"
+        }
+      ],
+      "HTML、PDF",
+      [
+        {
+          "text": "附件1《广州市增城区人民政府办公室关于印发增城区来穗人员随迁子女接受义务教育实施细则（修订）的通知》来源：广州市人民政府，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://www.gz.gov.cn/gfxwj/qjgfxwj/zcq/qfb/content/post_9641632.html",
+          "text": "https://www.gz.gov.cn/gfxwj/qjgfxwj/zcq/qfb/content/post_9641632.html",
+          "type": "url"
+        },
+        {
+          "text": "，提供了增城区来穗人员随迁子女积分入学的适用对象、部门职责、积分申请、排名、志愿填报、录取公示和注册流程信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件2《2025年增城区来穗人员随迁子女申请入学积分排名结果公示》来源：广州市增城区人民政府，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://www.zc.gov.cn/jg/qzfbm/qjyj/jfrx/gsgg/content/post_10301916.html",
+          "text": "https://www.zc.gov.cn/jg/qzfbm/qjyj/jfrx/gsgg/content/post_10301916.html",
+          "type": "url"
+        },
+        {
+          "text": "，提供了2025年增城区积分排名结果公示的发布时间、公示期间、审核与复审赋分流程，以及小学和初中积分排名结果附件入口信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件3《关于公布2025年增城区来穗人员随迁子女积分入学招生计划和入围资格线的通知》来源：广州市增城区人民政府，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://www.zc.gov.cn/jg/qzfbm/qjyj/jfrx/gsgg/content/post_10317012.html",
+          "text": "https://www.zc.gov.cn/jg/qzfbm/qjyj/jfrx/gsgg/content/post_10317012.html",
+          "type": "url"
+        },
+        {
+          "text": "，提供了2025年增城区积分入学招生计划和入围资格线发布背景、投档录取对象范围、联系人和附件入口信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件4《2025年增城区来穗人员随迁子女积分制入学招生计划》来源：广州市增城区人民政府，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://www.zc.gov.cn/attachment/7/7833/7833170/10317012.pdf",
+          "text": "https://www.zc.gov.cn/attachment/7/7833/7833170/10317012.pdf",
+          "type": "url"
+        },
+        {
+          "text": "，提供了2025年增城区小学一年级和初中七年级积分入学招生学校、所属镇街、计划人数和备注信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件5《2025年增城区来穗人员随迁子女积分制入学入围资格线》来源：广州市增城区人民政府，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://www.zc.gov.cn/attachment/7/7832/7832786/10317012.pdf",
+          "text": "https://www.zc.gov.cn/attachment/7/7832/7832786/10317012.pdf",
+          "type": "url"
+        },
+        {
+          "text": "，提供了2025年增城区各镇街小学和初中积分入学入围资格线信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件6《2025年增城区来穗人员随迁子女申请入学拟录取结果公示》来源：广州市增城区人民政府，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://www.zc.gov.cn/jg/qzfbm/qjyj/jfrx/gsgg/content/post_10335138.html",
+          "text": "https://www.zc.gov.cn/jg/qzfbm/qjyj/jfrx/gsgg/content/post_10335138.html",
+          "type": "url"
+        },
+        {
+          "text": "，提供了2025年增城区积分入学拟录取名单公示期、注册时间、注册材料提醒和补填志愿提示信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件7《2025年增城区来穗人员随迁子女积分入学拟录取结果（小学）》来源：广州市增城区人民政府，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://www.zc.gov.cn/attachment/7/7838/7838533/10335138.pdf",
+          "text": "https://www.zc.gov.cn/attachment/7/7838/7838533/10335138.pdf",
+          "type": "url"
+        },
+        {
+          "text": "，提供了2025年增城区小学一年级积分入学拟录取结果中的街镇、年级、脱敏学生身份信息和拟录取学校信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件8《2025年增城区来穗人员随迁子女积分入学拟录取结果（初中）》来源：广州市增城区人民政府，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://www.zc.gov.cn/attachment/7/7838/7838534/10335138.pdf",
+          "text": "https://www.zc.gov.cn/attachment/7/7838/7838534/10335138.pdf",
+          "type": "url"
+        },
+        {
+          "text": "，提供了2025年增城区初中一年级积分入学拟录取结果中的街镇、年级、脱敏学生身份信息和拟录取学校信息。",
+          "type": "text"
+        }
+      ],
+      "DOCX、XLSX、PPTX",
+      "一份咨询分流手册，一份名单核查与咨询登记表，一份晨会沟通稿。",
+      "1. 读取附件1，提取增城区来穗人员随迁子女积分入学的适用对象、积分申请、排名、志愿填报、录取公示和注册流程，建立办理流程依据表，判断咨询分流材料需要围绕哪些流程节点展开。\n\n2. 读取附件2，提取2025年积分排名结果公示的发布时间、公示期间、审核与复审赋分流程，以及小学和初中积分排名结果附件入口，判断排名公示在咨询答复中只能说明排名结果形成过程，不能替代拟录取结论。\n\n3. 读取附件3，提取招生计划和入围资格线发布背景、投档录取对象范围、联系人和附件入口，判断“达到入围资格线”在办理链条中属于进入投档范围的条件，不能直接写成已经录取。\n\n4. 读取附件4，提取小学一年级和初中七年级积分入学招生学校、所属镇街、计划人数和备注信息，建立招生计划底表，并判断家长咨询中涉及学校名额时应回到镇街、学段和学校计划三个维度核对。\n\n5. 读取附件5，提取各镇街小学和初中积分入学入围资格线，建立入围资格线核对表，并基于步骤4判断资格线需要和招生计划配合解释，不能脱离镇街和学段单独回答。\n\n6. 读取附件6，提取拟录取结果公示期、注册时间、注册材料提醒和补填志愿提示信息，判断拟录取公示后咨询分流应重点覆盖注册提醒、未录取后续关注和争议核验三个方向。\n\n7. 读取附件7和附件8，分别提取小学、初中拟录取结果中的街镇、年级、脱敏学生身份信息和拟录取学校信息，建立拟录取名单核查底表，并判断咨询登记表只能保留脱敏展示信息和窗口登记所需字段。\n\n8. 基于步骤1至步骤7，设计三类咨询分流规则：已进入拟录取名单的咨询进入注册提醒，达到相应镇街入围资格线但未进入拟录取名单的咨询进入后续关注，围绕排名、资格线和招生计划关系的咨询进入政策解释。\n\n9. 基于步骤2至步骤7，建立公告证据映射表，把每类咨询分别对应到可直接引用的附件来源、需要系统核验的信息和应转承办科室处理的事项，防止窗口人员把公告事实和个案核验混在一起。\n\n10. 基于步骤8和步骤9，设计名单核查与咨询登记表.xlsx的工作表结构，至少包含公告索引、入围资格线核对、拟录取名单核查、咨询类型登记、注册提醒和待核验事项，并保留镇街、学段、咨询类型和处理状态字段。\n\n11. 基于步骤1、步骤3和步骤6，撰写咨询分流手册.docx的内容框架，先说明公开材料的发布顺序，再解释排名结果、入围资格线、招生计划、拟录取结果和注册安排之间的关系。\n\n12. 基于步骤8至步骤11，制作晨会沟通稿.pptx的页面结构，将内容控制在8页以内，重点让窗口老师能快速区分三类咨询、引用对应公告，并知道争议事项应进入哪一个核验步骤。\n\n13. 基于步骤7至步骤10，用“某学生出现在小学拟录取结果中，但家长同时询问能否调整学校”这个场景回查三份产物，判断手册是否解释注册和异议边界，表格是否能记录公告依据和待核验事项，PPT是否能指导窗口老师先转入核验流程。\n\n14. 最后进行一致性自检，核对docx、xlsx和pptx中的镇街名称、学段分类、时间节点、入围资格线、注册安排和待核验事项是否一致，所有关键事实都要能回到附件1至附件8。",
+      "苏子瞻",
+      "通过",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "",
+      "",
+      "",
+      "",
+      null,
+      null,
+      null,
+      null,
+      null,
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=42&qa_result_col=AT&qa_note_col=AU&action=recheck_row&qa_row_id=49e351_42_d9ecae4a&row_fingerprint=d9ecae4a2ec4",
+          "text": "点我质检",
+          "type": "url"
+        }
+      ],
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&student_row=42&student_field=P&async=1&qa_result_col=AT&qa_note_col=AU&action=enqueue_batch&qa_row_id=49e351_42_d9ecae4a&row_fingerprint=d9ecae4a2ec4",
+          "text": "点我批量质检",
+          "type": "url"
+        }
+      ],
+      "",
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&selected_col=AR&async=1&qa_result_col=AT&qa_note_col=AU&action=enqueue_selected",
+          "text": "执行选择质检",
+          "type": "url"
+        }
+      ],
+      "✅通过",
+      "已完成大模型质检，未发现问题",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "苏子瞻06",
+      "我在一家生鲜到家平台的商品合规组，负责把监管抽检通告转成内部复核任务。北京市市场监督管理局在2025年9月底到10月下旬连续发布了几期食品安全监督抽检信息公告，附件里已经能看到每期抽检批次、不合格产品信息、被抽样单位、食品名称、购进日期、不合格项目、检验结果和标准值。商品运营和客服现在最关心的是，通告里的不合格批次怎样进入平台内部排查流程，哪些内容可以直接引用监管公告，哪些还要等商家补充进货凭证和批次材料。\n这次复核要先回到批次证据。通告里出现的胡萝卜、鸡蛋、杨梅和餐饮具等名称都比较常见，食品名称只适合作为初筛线索。真正能支撑内部处置的，是被抽样单位、购进日期、不合格项目、检验结果和标准值之间的对应关系（批次证据指监管通告中能够共同指向同一抽检事项的信息）。第36期到第39期的不合格产品里，问题类型覆盖农兽药残留、食品添加剂、重金属和餐饮具卫生等情况。后续如果平台商品名称相似，也要先核清批次证据，再判断是否需要商家补材料，避免把同名商品直接当成同一批次问题。\n请只基于附件里的4期食品抽检公告和对应不合格产品信息，完成一套平台抽检通告批次复核流程。先按公告期数整理每期抽检总量和不合格数量，再逐条提取不合格产品的被抽样单位、食品名称、购进日期、不合格项目、检验结果和标准值。随后把不合格项目归成几类风险线索，判断哪些可以进入平台商品待匹配，哪些需要商家补充进货凭证、供货者资质或商品页面截图，哪些只能暂时列为待核验事项。平台商品库、订单记录、商家资质和进货凭证不在附件里，后续只作为内部或商家补充材料处理（包括平台SKU、订单范围和商家实际进货材料）。\n审核人员需要逐期核对监管公告里的批次事实。公告正文负责说明每期抽检范围和不合格数量，不合格产品信息表负责记录被抽样单位、购进日期和检验项目。食品名称不能替代批次编号、进货凭证或平台SKU匹配。检验结果和标准值可以用于判断问题类型，但只能说明监管抽检中对应项目的结果，不能扩展成平台上所有同名商品的处置结论。涉及商品下架、售后提示或商家整改的动作，要等平台内部匹配和商家补证后再形成处理结论。\n客服和招商运营后续也要用同一套材料。客服需要知道哪些事实来自监管公告，哪些回答要等商品治理同事核查后再说。招商运营需要知道找商家补什么材料，以及商家提交材料后应该回填到哪一行。对于平台商品名称相似、批次无法确认、进货日期不一致或商家未提交凭证等情况，要单独列出当前状态和下一步动作（这里的状态只表示复核进度，不代表已经确认平台商品属于通告批次）。\n项目最终交付两份可编辑文件。一份是Excel版抽检批次复核台账，用来承接逐期公告核对和平台内部匹配。台账至少要覆盖公告基础信息、产品事实、问题类型、平台复核、商家补证、客服同步和待核验事项。每条记录都要保留公告来源、食品名称、被抽样单位、购进日期、不合格项目、检验结果和标准值，并给平台SKU、订单范围、商家资质和进货凭证预留待补字段。另一份是Word版平台抽检通告处置SOP，说明公告接收、批次摘录、商品初筛、商家补证、合规复核、客服同步和后续处理的流程。两个文件中的公告期数、食品名称、不合格项目、风险线索、补证材料和待核验事项必须保持一致。交付前请检查是否把同名商品误写成同批次问题，是否把监管抽检事实扩展成平台处置结论，是否补造附件没有提供的平台SKU、订单记录或商家凭证。",
+      "L2流程型",
+      "品牌市场与电商零售",
+      "内容合规与风险控制",
+      "食品抽检通告后的商品批次复核",
+      "基于北京市市场监督管理局连续4期食品安全监督抽检公告和不合格产品信息，整理平台抽检通告批次复核台账和平台抽检通告处置SOP，区分监管公告事实、平台待匹配事项和商家补证边界。",
+      "5年",
+      "14h",
+      [
+        {
+          "fileToken": "Og2PbB5FJoanoExcpvVcQgVinsd",
+          "mimeType": "application/pdf",
+          "size": 316283,
+          "text": "附件7《食品抽检不合格产品信息（2025年第38期附件3）》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "LM8CbdH0aoquRIxuIpGcvMdonPb",
+          "mimeType": "application/pdf",
+          "size": 339827,
+          "text": "附件8《食品抽检不合格产品信息（2025年第39期附件3）》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "DTM7bmIOboW0IaxFunRcThiFnje",
+          "mimeType": "text/html",
+          "size": 137260,
+          "text": "附件1《北京市市场监督管理局关于食品安全监督抽检信息的公告（2025年第36期）》.html",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "TJnNbSwdlo88L9xdjRZcFhAmnLb",
+          "mimeType": "text/html",
+          "size": 136754,
+          "text": "附件2《北京市市场监督管理局关于食品安全监督抽检信息的公告（2025年第37期）》.html",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "JGJ6bMYL5oB1MPxGTfgc67jUn5d",
+          "mimeType": "text/html",
+          "size": 136599,
+          "text": "附件3《北京市市场监督管理局关于食品安全监督抽检信息的公告（2025年第38期）》.html",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "VpFvboB7loOHxsxUYw0ceLhknjf",
+          "mimeType": "text/html",
+          "size": 137217,
+          "text": "附件4《北京市市场监督管理局关于食品安全监督抽检信息的公告（2025年第39期）》.html",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "OKOlbVhmoofBATxyOMqcf4QfnHf",
+          "mimeType": "application/pdf",
+          "size": 338000,
+          "text": "附件5《食品抽检不合格产品信息（2025年第36期附件3）》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "EnUmbj1JyoDcRxxsFKzcBaUVnY2",
+          "mimeType": "application/pdf",
+          "size": 334716,
+          "text": "附件6《食品抽检不合格产品信息（2025年第37期附件3）》.pdf",
+          "type": "attachment"
+        }
+      ],
+      "HTML、PDF",
+      [
+        {
+          "text": "附件1《北京市市场监督管理局关于食品安全监督抽检信息的公告（2025年第36期）》来源：北京市市场监督管理局，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://scjgj.beijing.gov.cn/zwxx/gs/spzlgs/202509/t20250930_4215590.html",
+          "text": "https://scjgj.beijing.gov.cn/zwxx/gs/spzlgs/202509/t20250930_4215590.html",
+          "type": "url"
+        },
+        {
+          "text": "，提供了2025年第36期食品安全监督抽检的抽检类别、抽检批次数、合格批次数、不合格批次数和附件入口信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件2《北京市市场监督管理局关于食品安全监督抽检信息的公告（2025年第37期）》来源：北京市市场监督管理局，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://scjgj.beijing.gov.cn/zwxx/gs/spzlgs/202510/t20251015_4225513.html",
+          "text": "https://scjgj.beijing.gov.cn/zwxx/gs/spzlgs/202510/t20251015_4225513.html",
+          "type": "url"
+        },
+        {
+          "text": "，提供了2025年第37期食品安全监督抽检的抽检类别、抽检批次数、合格批次数、不合格批次数和附件入口信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件3《北京市市场监督管理局关于食品安全监督抽检信息的公告（2025年第38期）》来源：北京市市场监督管理局，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://scjgj.beijing.gov.cn/zwxx/gs/spzlgs/202510/t20251017_4229963.html",
+          "text": "https://scjgj.beijing.gov.cn/zwxx/gs/spzlgs/202510/t20251017_4229963.html",
+          "type": "url"
+        },
+        {
+          "text": "，提供了2025年第38期食品安全监督抽检的抽检类别、抽检批次数、合格批次数、不合格批次数和附件入口信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件4《北京市市场监督管理局关于食品安全监督抽检信息的公告（2025年第39期）》来源：北京市市场监督管理局，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://scjgj.beijing.gov.cn/zwxx/gs/spzlgs/202510/t20251022_4236223.html",
+          "text": "https://scjgj.beijing.gov.cn/zwxx/gs/spzlgs/202510/t20251022_4236223.html",
+          "type": "url"
+        },
+        {
+          "text": "，提供了2025年第39期食品安全监督抽检的抽检类别、抽检批次数、合格批次数、不合格批次数和附件入口信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件5《食品抽检不合格产品信息（2025年第36期附件3）》来源：北京市市场监督管理局，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://scjgj.beijing.gov.cn/zwxx/gs/spzlgs/202509/P020250930731789609882.pdf",
+          "text": "https://scjgj.beijing.gov.cn/zwxx/gs/spzlgs/202509/P020250930731789609882.pdf",
+          "type": "url"
+        },
+        {
+          "text": "，提供了第36期不合格产品的被抽样单位、被抽样单位地址、食品名称、购进日期、不合格项目、检验结果和标准值信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件6《食品抽检不合格产品信息（2025年第37期附件3）》来源：北京市市场监督管理局，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://scjgj.beijing.gov.cn/zwxx/gs/spzlgs/202510/P020251015599156960124.pdf",
+          "text": "https://scjgj.beijing.gov.cn/zwxx/gs/spzlgs/202510/P020251015599156960124.pdf",
+          "type": "url"
+        },
+        {
+          "text": "，提供了第37期不合格产品的被抽样单位、被抽样单位地址、食品名称、购进日期、不合格项目、检验结果和标准值信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件7《食品抽检不合格产品信息（2025年第38期附件3）》来源：北京市市场监督管理局，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://scjgj.beijing.gov.cn/zwxx/gs/spzlgs/202510/P020251017651946659623.pdf",
+          "text": "https://scjgj.beijing.gov.cn/zwxx/gs/spzlgs/202510/P020251017651946659623.pdf",
+          "type": "url"
+        },
+        {
+          "text": "，提供了第38期不合格产品的被抽样单位、被抽样单位地址、食品名称、购进日期、不合格项目、检验结果和标准值信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件8《食品抽检不合格产品信息（2025年第39期附件3）》来源：北京市市场监督管理局，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://scjgj.beijing.gov.cn/zwxx/gs/spzlgs/202510/P020251022748284209332.pdf",
+          "text": "https://scjgj.beijing.gov.cn/zwxx/gs/spzlgs/202510/P020251022748284209332.pdf",
+          "type": "url"
+        },
+        {
+          "text": "，提供了第39期不合格产品的被抽样单位、被抽样单位地址、食品名称、购进日期、不合格项目、检验结果和标准值信息。",
+          "type": "text"
+        }
+      ],
+      "XLSX、DOCX",
+      "一份Excel版抽检批次复核台账，一份Word版平台抽检通告处置SOP。",
+      "1. 读取附件1至附件4，提取第36期至第39期食品安全监督抽检公告的发布时间、抽检类别、抽检批次数、合格批次数、不合格批次数和附件入口，建立公告索引表。\n\n2. 基于步骤1，对比4期公告的抽检范围和不合格数量，判断复核台账应按公告期数先建立主索引，再进入不合格产品明细核对，避免不同期次混在同一批次判断里。\n\n3. 读取附件5至附件8，逐条提取4期不合格产品信息中的被抽样单位、被抽样单位地址、食品名称、购进日期、不合格项目、检验结果和标准值，建立不合格产品摘录表。\n\n4. 基于步骤3，核对每条不合格产品是否同时具备食品名称、被抽样单位、购进日期和不合格项目，判断哪些信息能作为监管公告事实直接进入台账，哪些只能作为后续平台匹配的线索。\n\n5. 基于步骤3和步骤4，将不合格项目归并为农兽药残留、食品添加剂、重金属、餐饮具卫生等风险线索，并为每类线索标注对应的检验结果和标准值来源。\n\n6. 读取附件5至附件8中涉及同名或相近食品名称的记录，比较其被抽样单位、购进日期和不合格项目，判断食品名称只能作为初筛字段，不能单独作为平台商品处置依据。\n\n7. 基于步骤1至步骤6，设计Excel版抽检批次复核台账的字段结构，至少覆盖公告基础信息、产品事实、问题类型、平台复核、商家补证、客服同步和待核验事项。\n\n8. 基于步骤6和步骤7，在台账中为平台SKU、订单范围、商家资质、进货凭证和商品页面截图设置待补字段，判断这些字段只能由平台内部系统或商家后续材料补充，不能从监管公告中直接填写结论。\n\n9. 基于步骤3至步骤8，设计商家补证分流规则：批次信息不足的记录优先补进货凭证，供货来源不清的记录补供货者资质，平台商品名称相似但批次未确认的记录补商品页面截图和内部SKU匹配结果。\n\n10. 基于步骤4至步骤9，设计客服同步边界，把可直接引用的监管公告事实、需要商品治理核验的信息和暂时不能对外承诺的处置结论分开记录，避免客服把监管抽检事实扩展成平台商品结论。\n\n11. 基于步骤1至步骤10，撰写Word版平台抽检通告处置SOP，按公告接收、批次摘录、商品初筛、商家补证、合规复核、客服同步和后续处理组织流程。\n\n12. 基于步骤7至步骤11，检查Excel台账和Word SOP中的公告期数、食品名称、不合格项目、问题类型、补证材料和待核验事项是否一一对应，确保两个文件使用同一套批次证据和处理边界。\n\n13. 用“某平台商品名称与第39期通告中的鸡蛋相同，但商家尚未提交购进日期和进货凭证”这个场景回查两份产物，判断Excel是否能记录公告事实、平台SKU和待补材料，Word是否能解释为什么不能直接认定同批次。\n\n14. 最后进行事实边界自检，确认产物没有补造平台SKU、订单记录、商家凭证或处置结论，没有把同名商品误写成同批次问题，也没有把监管抽检结果扩展成平台所有同名商品的风险结论。",
+      "苏子瞻",
+      "通过",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "",
+      "",
+      "",
+      "",
+      null,
+      null,
+      null,
+      null,
+      null,
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=43&qa_result_col=AT&qa_note_col=AU&action=recheck_row&qa_row_id=49e351_43_6314a8e1&row_fingerprint=6314a8e112b5",
+          "text": "点我质检",
+          "type": "url"
+        }
+      ],
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&student_row=43&student_field=P&async=1&qa_result_col=AT&qa_note_col=AU&action=enqueue_batch&qa_row_id=49e351_43_6314a8e1&row_fingerprint=6314a8e112b5",
+          "text": "点我批量质检",
+          "type": "url"
+        }
+      ],
+      "",
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&selected_col=AR&async=1&qa_result_col=AT&qa_note_col=AU&action=enqueue_selected",
+          "text": "执行选择质检",
+          "type": "url"
+        }
+      ],
+      "✅通过",
+      "已完成大模型质检，未发现问题",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "苏子瞻07",
+      "投行信息化组正在给可转债项目组做一个审核问询材料检索助手，第一批试点选用珂玛科技向不特定对象发行可转换公司债券的公开申报文件。项目组手里已经有问询回复报告、募集说明书、会计师专项说明、律师补充法律意见书、发行保荐书和上市保荐书等PDF。后续如果监管继续追问，项目组希望系统先帮人定位原文证据，而不是直接替人生成审核结论。\n这批材料最容易出错的地方，是同一个问询事项会被不同文件从不同角色说一遍。问询回复报告会先列出深交所问题和发行人回复，募集说明书承接发行方案、风险因素和募集资金用途，会计师专项说明负责财务会计问题，律师补充法律意见书负责土地、环评、少数股东合作和租赁等法律事项。保荐书则从保荐机构角度说明核查意见和发行条件。后续做检索助手时，如果只按关键词切片，很容易把发行人回复、中介机构核查意见和募集说明书披露内容混在一起。\n请只基于附件里的8份PDF，整理一套审核问询材料知识库预处理交付物。先把问询事项拆成可以检索的问题单元，再为每个问题单元标注涉及文件、责任角色、证据页码、原文摘录、可回答范围和待跟踪边界。能够从PDF直接确认的内容进入证据切片（指可以被检索系统召回，并且能回到原文位置的短文本片段）。附件没有披露的最终注册批复、发行结果、后续整改完成情况和未公开项目底稿，只能写成不可回答或待跟踪状态。\n第一份交付物是JSONL格式的问询证据切片库。每一行对应一个可检索证据片段，字段至少包含chunk_id、question_id、issue_type、source_file、source_role、page_range、evidence_text、answer_scope、must_not_infer和follow_up_status。证据片段要短到可以被检索系统直接召回，也要保留足够上下文，避免系统只抓到一句话就误判文件角色。\n第二份交付物是YAML格式的检索路由与拒答规则配置。配置要把经营业绩、客户集中度、应收账款、募投项目、土地环评、收购苏州铠欣、财务性投资、发行条件和风险披露等问题路由到对应文件组（这里的路由，是指系统收到问题后优先查哪些文件，再用哪些文件补充验证）。每条路由需要说明优先检索文件、备选检索文件、允许回答的问题、必须拒答或转人工的问题，以及引用顺序。涉及会计师和律师分别发表意见的事项，要把两个角色分开，避免系统把中介意见写成发行人自己的结论。\n第三份交付物是CSV格式的问答回归测试集，用来验收检索助手是否会混用材料。测试集至少设计40条问题，覆盖能直接回答、只能引用披露事实、需要提示待跟踪、必须拒答或转人工这几类场景。每条测试样例要包含user_query、expected_route、expected_source_file、expected_answer_type、must_cite_fields、forbidden_claims和pass_criteria。测试问题要尽量贴近项目组真实提问，例如“项目一土地手续现在进展到哪一步”“苏州铠欣业绩承诺是否受募投项目影响”“会计师对收入增长和应收账款问题发表了什么意见”。\n交付前要做一次证据边界自检。先检查JSONL里每个chunk是否能回到PDF原文，再检查YAML路由是否把发行人、会计师、律师和保荐机构的角色分开。CSV测试集还要覆盖可回答和不可回答场景，让系统知道哪些问题只能提示待跟踪或转人工。所有涉及审核状态的回答都只能写到附件披露时点。最终能否注册、是否已经发行完成、募投项目后续是否按计划落地，都不能从现有附件里直接推出。",
+      "L2流程型",
+      "科技软件与 AI 工作流",
+      "企业知识与流程自动化",
+      "审核问询材料检索助手知识库预处理",
+      "基于珂玛科技向不特定对象发行可转换公司债券的公开PDF申报材料，整理审核问询材料知识库预处理交付物，形成问询证据切片库、检索路由与拒答规则配置、问答回归测试集。",
+      "5年",
+      "16h",
+      [
+        {
+          "fileToken": "M5HIbhqlLoPyJBxfBEKcsZlJnad",
+          "mimeType": "application/pdf",
+          "size": 10828397,
+          "text": "附件7《中信证券股份有限公司关于苏州珂玛材料科技股份有限公司向不特定对象发行可转换公司债券之发行保荐书（修订稿）》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "NDIebT83qozbZFxHdXmcwFUenGh",
+          "mimeType": "application/pdf",
+          "size": 5246123,
+          "text": "附件8《苏州珂玛材料科技股份有限公司向不特定对象发行可转换公司债券方案论证分析报告》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "NTONbZmWbo3HvxxlNw7cKfKhnSh",
+          "mimeType": "application/pdf",
+          "size": 34733807,
+          "text": "附件1《关于苏州珂玛材料科技股份有限公司申请向不特定对象发行可转换公司债券的审核问询函的回复报告》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "UtSrbb2PtovGgLxKZIKcVAPOnvf",
+          "mimeType": "application/pdf",
+          "size": 290560,
+          "text": "附件2《苏州珂玛材料科技股份有限公司关于向不特定对象发行可转换公司债券的审核问询函回复及募集说明书等申请文件更新的提示性公告》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "Xj32bad5OouthPxEmWIcCn5Onfc",
+          "mimeType": "application/pdf",
+          "size": 5242880,
+          "text": "附件4《关于苏州珂玛材料科技股份有限公司申请向不特定对象发行可转换公司债券的审核问询函中有关财务会计问题的专项说明》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "Evulb6V5HodcGix87KzcrbjLnqb",
+          "mimeType": "application/pdf",
+          "size": 12412680,
+          "text": "附件5《上海市通力律师事务所关于苏州珂玛材料科技股份有限公司向不特定对象发行可转换公司债券之补充法律意见书（一）》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "RLaCbRGy8oro6uxy9gtcBznMnhc",
+          "mimeType": "application/pdf",
+          "size": 10174783,
+          "text": "附件6《中信证券股份有限公司关于苏州珂玛材料科技股份有限公司向不特定对象发行可转换公司债券之上市保荐书（修订稿）》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "JqqRbiBOhoWEFixgUvHcfJTwnzk",
+          "mimeType": "application/pdf",
+          "size": 71886035,
+          "text": "附件3《苏州珂玛材料科技股份有限公司向不特定对象发行可转换公司债券募集说明书（修订稿）》.pdf",
+          "type": "attachment"
+        }
+      ],
+      "PDF",
+      [
+        {
+          "text": "附件1《关于苏州珂玛材料科技股份有限公司申请向不特定对象发行可转换公司债券的审核问询函的回复报告》来源：东方财富公告PDF，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://pdf.dfcfw.com/pdf/H2_AN202601261818423641_1.pdf",
+          "text": "https://pdf.dfcfw.com/pdf/H2_AN202601261818423641_1.pdf",
+          "type": "url"
+        },
+        {
+          "text": "，提供了深交所审核问询函问题、发行人回复、保荐机构核查过程，以及经营业绩、客户集中度、应收账款、募投项目、收购事项和财务性投资等问题的回复信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件2《苏州珂玛材料科技股份有限公司关于向不特定对象发行可转换公司债券的审核问询函回复及募集说明书等申请文件更新的提示性公告》来源：巨潮资讯网，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://static.cninfo.com.cn/finalpage/2026-01-26/1224949442.PDF",
+          "text": "https://static.cninfo.com.cn/finalpage/2026-01-26/1224949442.PDF",
+          "type": "url"
+        },
+        {
+          "text": "，提供了公司收到审核问询函、会同中介机构回复并更新申请文件，以及本次发行尚需审核和注册的状态信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件3《苏州珂玛材料科技股份有限公司向不特定对象发行可转换公司债券募集说明书（修订稿）》来源：深交所信息披露文件，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://disc.static.szse.cn/disc/disk03/finalpage/2025-12-04/0b4ab78c-1faf-4ccb-ac1c-129976403923.PDF",
+          "text": "https://disc.static.szse.cn/disc/disk03/finalpage/2025-12-04/0b4ab78c-1faf-4ccb-ac1c-129976403923.PDF",
+          "type": "url"
+        },
+        {
+          "text": "，提供了本次可转债发行方案、风险因素、募集资金用途、发行人业务财务情况、债券条款和投资者保护安排信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件4《关于苏州珂玛材料科技股份有限公司申请向不特定对象发行可转换公司债券的审核问询函中有关财务会计问题的专项说明》来源：同花顺公告PDF，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://notice.10jqka.com.cn/api/pdf/86b605987bd4182d_1769413372/%E7%8F%82%E7%8E%9B%E7%A7%91%E6%8A%80%3A7-2%E4%BC%9A%E8%AE%A1%E5%B8%88%E5%85%B3%E4%BA%8E%E5%AE%A1%E6%A0%B8%E9%97%AE%E8%AF%A2%E5%87%BD%E7%9A%84%E5%9B%9E%E5%A4%8D%28%E8%B1%81%E5%85%8D%E7%89%88%29.pdf",
+          "text": "https://notice.10jqka.com.cn/api/pdf/86b605987bd4182d_1769413372/%E7%8F%82%E7%8E%9B%E7%A7%91%E6%8A%80%3A7-2%E4%BC%9A%E8%AE%A1%E5%B8%88%E5%85%B3%E4%BA%8E%E5%AE%A1%E6%A0%B8%E9%97%AE%E8%AF%A2%E5%87%BD%E7%9A%84%E5%9B%9E%E5%A4%8D%28%E8%B1%81%E5%85%8D%E7%89%88%29.pdf",
+          "type": "url"
+        },
+        {
+          "text": "，提供了申报会计师对审核问询函中财务会计问题的专项核查说明。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件5《上海市通力律师事务所关于苏州珂玛材料科技股份有限公司向不特定对象发行可转换公司债券之补充法律意见书（一）》来源：巨潮资讯网，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://static.cninfo.com.cn/finalpage/2025-12-04/1224850061.PDF",
+          "text": "https://static.cninfo.com.cn/finalpage/2025-12-04/1224850061.PDF",
+          "type": "url"
+        },
+        {
+          "text": "，提供了律师针对募投项目土地、环评、节能审查、少数股东合作、租赁厂房和相关法律事项的补充核查意见。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件6《中信证券股份有限公司关于苏州珂玛材料科技股份有限公司向不特定对象发行可转换公司债券之上市保荐书（修订稿）》来源：深交所信息披露文件，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://disc.static.szse.cn/disc/disk03/finalpage/2025-12-04/702c0f2c-8b64-4709-bd51-73e34866e25a.PDF",
+          "text": "https://disc.static.szse.cn/disc/disk03/finalpage/2025-12-04/702c0f2c-8b64-4709-bd51-73e34866e25a.PDF",
+          "type": "url"
+        },
+        {
+          "text": "，提供了保荐机构对本次可转债上市保荐事项、发行人基本情况、发行条件和保荐结论的信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件7《中信证券股份有限公司关于苏州珂玛材料科技股份有限公司向不特定对象发行可转换公司债券之发行保荐书（修订稿）》来源：深交所信息披露文件，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://disc.static.szse.cn/disc/disk03/finalpage/2025-12-04/41e80468-07d8-4e19-96d9-f7e9c56366e5.PDF",
+          "text": "https://disc.static.szse.cn/disc/disk03/finalpage/2025-12-04/41e80468-07d8-4e19-96d9-f7e9c56366e5.PDF",
+          "type": "url"
+        },
+        {
+          "text": "，提供了保荐机构对本次发行的尽职调查、发行条件核查、主要风险和保荐结论信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件8《苏州珂玛材料科技股份有限公司向不特定对象发行可转换公司债券方案论证分析报告》来源：深交所信息披露文件，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://disc.static.szse.cn/disc/disk03/finalpage/2025-08-26/2ab64e98-af71-4316-9c11-1630c2470f79.PDF",
+          "text": "https://disc.static.szse.cn/disc/disk03/finalpage/2025-08-26/2ab64e98-af71-4316-9c11-1630c2470f79.PDF",
+          "type": "url"
+        },
+        {
+          "text": "，提供了本次可转债发行方案的必要性、可行性、发行对象、证券品种选择和方案合理性分析信息。",
+          "type": "text"
+        }
+      ],
+      "JSONL、YAML、CSV",
+      "一份问询证据切片库，一份检索路由与拒答规则配置，一份问答回归测试集。",
+      "1. 读取附件1，提取深交所审核问询函问题、发行人回复、保荐机构核查过程和主要问询事项，建立question_id基础表，并记录每个问题对应的页码范围和问题标题。\n\n2. 读取附件2，提取公司收到审核问询函、会同中介机构回复并更新申请文件的披露状态，以及本次发行尚需审核和注册的信息，建立审核状态边界表。\n\n3. 基于步骤1和步骤2，划定知识库回答范围：仅覆盖PDF披露时点内的问询回复和申请文件更新状态，最终注册批复、发行结果和后续整改完成情况进入follow_up_status字段。\n\n4. 读取附件3，提取募集说明书中的发行方案、风险因素、募集资金用途、发行人业务财务情况、债券条款和投资者保护安排，建立募集说明书证据索引。\n\n5. 读取附件4，提取申报会计师对经营业绩、客户集中度、应收账款、收入增长、财务性投资等财务会计问题的专项核查说明，建立会计师角色证据表。\n\n6. 读取附件5，提取律师针对募投项目土地、环评、节能审查、少数股东合作、租赁厂房和相关法律事项的补充核查意见，建立律师角色证据表。\n\n7. 读取附件6和附件7，提取上市保荐书和发行保荐书中的发行人基本情况、发行条件、尽职调查、主要风险和保荐结论，建立保荐机构角色证据表。\n\n8. 读取附件8，提取本次可转债发行方案的必要性、可行性、发行对象、证券品种选择和方案合理性分析，建立方案论证证据表。\n\n9. 基于步骤1至步骤8，将问询事项拆分为经营业绩、客户集中度、应收账款、募投项目、土地环评、收购苏州铠欣、财务性投资、发行条件和风险披露等issue_type，并为每类事项匹配优先文件组和备选文件组。\n\n10. 基于步骤4至步骤8，为每个问题单元提取可进入JSONL的证据切片，字段至少包含chunk_id、question_id、issue_type、source_file、source_role、page_range、evidence_text、answer_scope、must_not_infer和follow_up_status。\n\n11. 基于步骤5至步骤7，判断同一事项中发行人、会计师、律师和保荐机构的表述边界，确保JSONL中的source_role能区分发行人回复、中介机构核查意见和募集说明书披露内容。\n\n12. 基于步骤9至步骤11，编写YAML格式的检索路由与拒答规则配置，为每类问题设置优先检索文件、备选检索文件、允许回答范围、转人工条件、拒答边界和引用顺序。\n\n13. 基于步骤3和步骤12，设置审核状态类拒答规则，对最终注册批复、发行结果、后续整改完成情况和未公开项目底稿类问题标记为不可回答或待跟踪，防止系统把披露时点后的事项推断成事实。\n\n14. 基于步骤9至步骤13，设计CSV格式的问答回归测试集，至少包含40条user_query，覆盖能直接回答、只能引用披露事实、需要提示待跟踪、必须拒答或转人工四类场景，并填写expected_route、expected_source_file、expected_answer_type、must_cite_fields、forbidden_claims和pass_criteria。\n\n15. 最后进行证据边界自检，检查JSONL里每个chunk是否能回到PDF原文，YAML路由是否把不同责任角色分开，CSV测试集是否覆盖可回答和不可回答场景，并确认所有涉及审核状态的回答都停留在附件披露时点。",
+      "苏子瞻",
+      "一次修改",
+      null,
+      null,
+      "修改通过",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "",
+      "",
+      "",
+      "",
+      null,
+      null,
+      null,
+      null,
+      null,
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=44&qa_result_col=AT&qa_note_col=AU&action=recheck_row&qa_row_id=49e351_44_25dd7c26&row_fingerprint=25dd7c265185",
+          "text": "点我质检",
+          "type": "url"
+        }
+      ],
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&student_row=44&student_field=P&async=1&qa_result_col=AT&qa_note_col=AU&action=enqueue_batch&qa_row_id=49e351_44_25dd7c26&row_fingerprint=25dd7c265185",
+          "text": "点我批量质检",
+          "type": "url"
+        }
+      ],
+      "",
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&selected_col=AR&async=1&qa_result_col=AT&qa_note_col=AU&action=enqueue_selected",
+          "text": "执行选择质检",
+          "type": "url"
+        }
+      ],
+      "❌不通过",
+      "关键步骤问题：L2 做题关键步骤当前为16条，超过15条；请合并相近动作，压缩到8-15条。请按真实完成顺序保留关键动作，删除过细或无关步骤。请按任务真实完成顺序整理关键动作，L1保持4-8条，L2保持8-15条，保留必要流程节点，合并过细或重复动作。具体可改为：将做题关键步骤压缩到8-15条。修改后应让审核人一眼看出问题原因、需要补充的材料、应补到哪个字段，以及出题人可以直接执行的调整方向，并。",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "苏子瞻08",
+      "公司投拓小组正在准备一宗深汕特别合作区产业用地的挂牌竞买资料。交易页面已经挂出出让公告、竞买须知和出让合同样本，附件里还有宗地图和规划设计要点表。投资负责人现在只要求先把竞买前能核清的事项整理出来，方便投拓、法务和资金同事在报名之前共同检查。报价测算和利润判断留给后续投委会模型，这次材料只服务于竞买准备。\n这批资料分散在几个文件里。出让公告能说明宗地基本条件和交易安排，竞买须知能还原报名材料、保证金和竞价程序等要求。宗地图提供界址点和边长，规划设计要点表说明用地性质、建筑控制和建设前置要求等内容。出让合同样本可以提前提示价款缴纳、开竣工约束和违约责任。土地使用权出让业务问答只作为流程解释材料，具体地块判断仍要回到本宗地的出让文件。\n请只基于附件里的出让文件和流程材料，整理一套产业用地竞买前资料包。先把交易节点和报名材料整理成竞买时间线，再把成交后事项放到同一张待办表里。宗地图中的界址点和边长需要整理成红线核对表，方便后续交给测绘或设计同事复看。规划设计要点表里的建设限制需要单独归集，重点覆盖地质灾害评估、海绵城市等前置要求。附件没有披露的企业资金来源和内部授权，税务测算、施工成本、投委会报价等内容，统一列为公司内部待补事项。\n这件事现在要给投拓负责人做会前判断，材料不用重抄公开文件。Excel底稿负责把交易节点和报名材料，宗地图核对、规划限制等内容放在同一张工作簿里，并单独列出合同关注点和内部待补事项。Word报告要说明这宗地目前能进入竞买准备的依据，哪些外部节点必须按附件执行，报名之前需要先处理什么。一页PPT式会前摘要只保留管理层最关心的几件事：报名是否来得及，保证金材料和规划限制是否存在会前卡点，内部文件还有哪些没有补齐。对于宗地边界，只做界址点和边长核对，不补地图底图或测绘结论。对于资金来源审查、内部授权和最终报价，只设置核验入口，不替公司作判断。\n交付前用一个实际场景回查三份材料：投拓同事已经确认报名意向，但资金来源材料和内部授权还没有完成。Excel要能记录外部节点和内部待补事项，Word要解释报名节点和规划边界，PPT要提示保证金、授权文件等会前卡点。三份材料中的宗地信息和时间节点要一致。材料名称、规划限制和待补事项也要前后一致，关键内容都要能回到附件。",
+      "L2流程型",
+      "房地产与大宗资产",
+      "项目可研与财务测算",
+      "产业用地竞买前资料包核对",
+      "基于深圳深汕特别合作区一宗产业用地的出让公告、竞买须知、宗地图、规划设计要点表和出让合同样本等材料，整理竞买前使用的资料核验底稿、核对报告和会前摘要。",
+      "5年",
+      "14h",
+      [
+        {
+          "fileToken": "UEvbb0QDnoWvnmx6LQZcJ5Lrnie",
+          "mimeType": "application/pdf",
+          "size": 2637446,
+          "text": "附件6《出让合同（样本）》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "ApgFbMrUmoxxutxMQRlcslTWnud",
+          "mimeType": "application/pdf",
+          "size": 8436276,
+          "text": "附件7《深圳公共资源交易中心土地使用权出让业务知识问答2025版》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "DsIubxggNofpB9xTUbocmLyZnng",
+          "mimeType": "application/pdf",
+          "size": 2489973,
+          "text": "附件3《深圳市国有建设用地使用权挂牌出让竞买须知》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "TzHwb2utgo2zcIxrHxsc9GQZnMc",
+          "mimeType": "application/pdf",
+          "size": 3651886,
+          "text": "附件4《E2025-0015宗地图》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "HbDybJ6MnoZBDQxUr4IcPCHBnUX",
+          "mimeType": "application/pdf",
+          "size": 1102779,
+          "text": "附件5《E2025-0015宗地规划设计要点表》.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "P0UJbqEaVo4xygx5nWjc5MOFnXF",
+          "mimeType": "application/pdf",
+          "size": 878247,
+          "text": "E2025-0015宗地规划设计要点表.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "VcyebSS2DoUoCFxCCNkcrVvsnRe",
+          "mimeType": "application/pdf",
+          "size": 141237,
+          "text": "E2025-0015宗地图.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "Emlyb2djwoK4pxxjiQkcJzuwnje",
+          "mimeType": "application/pdf",
+          "size": 220666,
+          "text": "出让合同（样本）.pdf",
+          "type": "attachment"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "fileToken": "Svlzbs8oMoelIJxlX2Wcl2Q3ngc",
+          "mimeType": "application/msword",
+          "size": 65024,
+          "text": "附件2《深土交告〔2025〕60号》.doc",
+          "type": "attachment"
+        }
+      ],
+      "DOC、PDF",
+      [
+        {
+          "text": "附件1《深圳市国有建设用地使用权出让公告深土交告〔2025〕60号：E2025-0015宗地交易页面》来源：深圳公共资源交易中心，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://www.szggzy.com/mobile/jygg/landOre.html?landNo=E2025-0015&mode=%E6%8C%82%E7%89%8C&packageId=0461aa4157e64873983b9e720908904e",
+          "text": "https://www.szggzy.com/mobile/jygg/landOre.html?landNo=E2025-0015&mode=%E6%8C%82%E7%89%8C&packageId=0461aa4157e64873983b9e720908904e",
+          "type": "url"
+        },
+        {
+          "text": "，提供了宗地交易页面、宗地基本信息和出让文件入口信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件2《深土交告〔2025〕60号》来源：深圳公共资源交易中心，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://file.szggzy.com/tradeapi/file/gd-file/token_download?attname=%E6%B7%B1%E5%9C%9F%E4%BA%A4%E5%91%8A%E3%80%942025%E3%80%9560%E5%8F%B7.doc&isOutNet=true&token=%2BeXyWpd8lKWyPkcy2kRcWe4rin95SdYD5qLvDFwCJycmtBBHxxd%2F%2Fw%3D%3D",
+          "text": "https://file.szggzy.com/tradeapi/file/gd-file/token_download?attname=%E6%B7%B1%E5%9C%9F%E4%BA%A4%E5%91%8A%E3%80%942025%E3%80%9560%E5%8F%B7.doc&isOutNet=true&token=%2BeXyWpd8lKWyPkcy2kRcWe4rin95SdYD5qLvDFwCJycmtBBHxxd%2F%2Fw%3D%3D",
+          "type": "url"
+        },
+        {
+          "text": "，提供了宗地出让公告、宗地出让条件、竞买要求、竞价安排和交易提示信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件3《深圳市国有建设用地使用权挂牌出让竞买须知》来源：深圳市规划和自然资源局，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://pnr.sz.gov.cn/attachment/1/1665/1665320/12574077.pdf",
+          "text": "https://pnr.sz.gov.cn/attachment/1/1665/1665320/12574077.pdf",
+          "type": "url"
+        },
+        {
+          "text": "，提供了挂牌出让适用范围、出让文件组成、竞买申请材料、资格确认、报价规则和竞价程序信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件4《E2025-0015宗地图》来源：深圳公共资源交易中心，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://file.szggzy.com/tradeapi/file/gd-file/token_download?attname=E2025-0015%E5%AE%97%E5%9C%B0%E5%9B%BE.pdf&isOutNet=true&token=%2BeXyWpd8lKWyPkcy2kRcWe4rin95SdYDg5AO1hex7mImtBBHxxd%2F%2Fw%3D%3D",
+          "text": "https://file.szggzy.com/tradeapi/file/gd-file/token_download?attname=E2025-0015%E5%AE%97%E5%9C%B0%E5%9B%BE.pdf&isOutNet=true&token=%2BeXyWpd8lKWyPkcy2kRcWe4rin95SdYDg5AO1hex7mImtBBHxxd%2F%2Fw%3D%3D",
+          "type": "url"
+        },
+        {
+          "text": "，提供了宗地界址点坐标、边长和宗地红线范围信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件5《E2025-0015宗地规划设计要点表》来源：深圳公共资源交易中心，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://file.szggzy.com/tradeapi/file/gd-file/token_download?attname=E2025-0015%E5%AE%97%E5%9C%B0%E8%A7%84%E5%88%92%E8%AE%BE%E8%AE%A1%E8%A6%81%E7%82%B9%E8%A1%A8.pdf&isOutNet=true&token=%2BeXyWpd8lKWyPkcy2kRcWe4rin95SdYDKKMyMZkcsqAmtBBHxxd%2F%2Fw%3D%3D",
+          "text": "https://file.szggzy.com/tradeapi/file/gd-file/token_download?attname=E2025-0015%E5%AE%97%E5%9C%B0%E8%A7%84%E5%88%92%E8%AE%BE%E8%AE%A1%E8%A6%81%E7%82%B9%E8%A1%A8.pdf&isOutNet=true&token=%2BeXyWpd8lKWyPkcy2kRcWe4rin95SdYDKKMyMZkcsqAmtBBHxxd%2F%2Fw%3D%3D",
+          "type": "url"
+        },
+        {
+          "text": "，提供了宗地用地性质、规划控制、地质灾害、海绵城市和建设前置要求等信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件6《出让合同（样本）》来源：深圳公共资源交易中心，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://file.szggzy.com/tradeapi/file/gd-file/token_download?attname=%E5%87%BA%E8%AE%A9%E5%90%88%E5%90%8C%EF%BC%88%E6%A0%B7%E6%9C%AC%EF%BC%89.pdf&isOutNet=true&token=%2BeXyWpd8lKVxi0WHE6k54%2B4rin95SdYDpRp4nDJo0ycmtBBHxxd%2F%2Fw%3D%3D",
+          "text": "https://file.szggzy.com/tradeapi/file/gd-file/token_download?attname=%E5%87%BA%E8%AE%A9%E5%90%88%E5%90%8C%EF%BC%88%E6%A0%B7%E6%9C%AC%EF%BC%89.pdf&isOutNet=true&token=%2BeXyWpd8lKVxi0WHE6k54%2B4rin95SdYDpRp4nDJo0ycmtBBHxxd%2F%2Fw%3D%3D",
+          "type": "url"
+        },
+        {
+          "text": "，提供了出让合同样本、价款缴纳、土地开发建设、开竣工约束、转让出租抵押和违约责任信息。\n",
+          "type": "text"
+        },
+        {
+          "text": "\n",
+          "type": "text"
+        },
+        {
+          "text": "附件7《深圳公共资源交易中心土地使用权出让业务知识问答2025版》来源：深圳公共资源交易中心，链接：",
+          "type": "text"
+        },
+        {
+          "cellPosition": null,
+          "link": "https://new.szggzy.com/u/cms/www/202508/25153717pjc8/%E6%B7%B1%E5%9C%B3%E5%85%AC%E5%85%B1%E8%B5%84%E6%BA%90%E4%BA%A4%E6%98%93%E4%B8%AD%E5%BF%83%E5%9C%9F%E5%9C%B0%E4%BD%BF%E7%94%A8%E6%9D%83%E5%87%BA%E8%AE%A9%E4%B8%9A%E5%8A%A1%E7%9F%A5%E8%AF%86%E9%97%AE%E7%AD%942025%E7%89%88.pdf",
+          "text": "https://new.szggzy.com/u/cms/www/202508/25153717pjc8/%E6%B7%B1%E5%9C%B3%E5%85%AC%E5%85%B1%E8%B5%84%E6%BA%90%E4%BA%A4%E6%98%93%E4%B8%AD%E5%BF%83%E5%9C%9F%E5%9C%B0%E4%BD%BF%E7%94%A8%E6%9D%83%E5%87%BA%E8%AE%A9%E4%B8%9A%E5%8A%A1%E7%9F%A5%E8%AF%86%E9%97%AE%E7%AD%942025%E7%89%88.pdf",
+          "type": "url"
+        },
+        {
+          "text": "，提供了深圳土地竞买流程、报名材料、保证金交纳、报价竞价和成交后手续等流程解释信息。",
+          "type": "text"
+        }
+      ],
+      "XLSX、DOCX、PPTX",
+      "一份竞买资料核验底稿，一份竞买前核对报告，一页会前摘要。",
+      "1. 读取附件1和附件2，提取宗地基本信息、出让方式、公告期、竞买条件和交易安排，建立宗地基本信息表。\n\n2. 读取附件3，提取竞买申请材料、资格确认、保证金要求、报价规则和竞价程序，建立竞买流程清单。\n\n3. 基于步骤1和步骤2，整理外部交易节点，区分公告已明确的时间要求和公司内部需要自行设置的准备节点。\n\n4. 读取附件4，提取宗地图中的界址点坐标、边长和点位编号，建立宗地图核对表。\n\n5. 基于步骤4，判断宗地图能够支持哪些边界核对事项，并说明需要测绘或设计同事后续处理的内容。\n\n6. 读取附件5，提取用地性质、建筑控制、地质灾害评估、海绵城市等建设前置要求，建立规划限制清单。\n\n7. 读取附件6，提取价款缴纳、土地交付、开竣工要求、转让限制和违约责任等合同关注点，建立签约事项清单。\n\n8. 读取附件7，提取土地竞买流程、报名材料、保证金交纳、报价竞价和成交后手续等解释内容，用于校对核对报告中的流程表述。\n\n9. 基于步骤1至步骤8，制作Excel竞买资料核验底稿，把交易节点、报名材料、宗地图核对、规划限制、合同关注点和内部待补事项放在同一工作簿中。\n\n10. 基于步骤3、步骤6和步骤7，撰写Word竞买前核对报告，说明公开文件已确认事项、公司内部待补事项和报名之前需要优先处理的风险点。\n\n11. 基于步骤9和步骤10，制作一页PPT式会前摘要，提炼报名进度、保证金准备、规划限制、合同关注点和内部待补文件等管理层关心的问题。\n\n12. 用“投拓同事已确认报名意向，但资金来源材料和内部授权尚未完成”的场景回查三份产物，确认Excel能记录外部节点和内部待补，Word能解释核验边界，PPT能提示会前卡点。\n\n13. 最后核对三份产物中的宗地信息、时间节点、材料名称、规划限制、合同关注点和待补事项是否一致，确认没有补造企业资金来源、内部授权、税务测算、施工成本和最终报价。",
+      "苏子瞻",
+      "一次修改",
+      null,
+      null,
+      "修改通过",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "",
+      "",
+      "",
+      "",
+      null,
+      null,
+      null,
+      null,
+      null,
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=45&qa_result_col=AT&qa_note_col=AU&action=recheck_row&qa_row_id=49e351_45_9caf33ce&row_fingerprint=9caf33ce0cb5",
+          "text": "点我质检",
+          "type": "url"
+        }
+      ],
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&student_row=45&student_field=P&async=1&qa_result_col=AT&qa_note_col=AU&action=enqueue_batch&qa_row_id=49e351_45_9caf33ce&row_fingerprint=9caf33ce0cb5",
+          "text": "点我批量质检",
+          "type": "url"
+        }
+      ],
+      "",
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&selected_col=AR&async=1&qa_result_col=AT&qa_note_col=AU&action=enqueue_selected",
+          "text": "执行选择质检",
+          "type": "url"
+        }
+      ],
+      "❌不通过",
+      "附件读取失败：题目依赖附件或来源链接，但来源链接读取失败或附件原文不可用；请更换可访问链接、上传附件原文，或在附件内容列补充足够正文摘录/数据口径后重新质检。请更换可访问链接、上传附件原文，或在附件内容列补充足够正文摘录和数据口径，避免在缺少真实材料时误判通过。具体可改为：请更换可访问链接、上传附件原文，或在附件内容列补充足够的正文摘录/数据口径后重新质检。",
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  ]
+}

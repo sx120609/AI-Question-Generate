@@ -1,0 +1,54 @@
+[
+  {
+    "row": 121,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=121&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783604579776_121",
+    "checkedAt": "2026-07-09T13:43:23.947Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "客户成功刚问我：生成式客服助手下周能不能先给两家付费客户开灰度？产品说只接企业知识库、FAQ和工单，不训练新模型，可客服会话里会出现联系人、订单号、投诉内容，系",
+    "note": "信息支撑不足：缺少供应商备案号、客户授权文本、日志留存配置、人工审核排班和应急处置流程等关键内部材料，请补充这些材料或明确说明这些信息由用户自行掌握、模型仅基于公开法规做合规边界分析。补充时要写清数据来源、覆盖范围、地区年份、统计口径或附件位置，确保后续答案能基于真实材料给出具体判断。具体可改为：补充供应商备案号、客户授权文本、日志留存配置、人工审核排班和应急处置流程等材料，或调整题目为仅基于公。",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 122,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=122&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783604603949_122",
+    "checkedAt": "2026-07-09T13:43:51.059Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "业委会周四晚上要谈电动自行车整改，物业巡查照片里还有车停在门厅、楼梯口和疏散通道附近。工程部想扩建集中充电区，居民代表又追问架空层、地下非机动车库能不能改，旧车",
+    "note": "附件条数问题：L2 当前附件约3条，要求4-8条；请按核心任务补齐必要附件，或合并/删除非核心材料，避免附件数量与任务层级不匹配。请按任务层级调整附件数量，L1保持0-3条，L2保持4-8条；优先保留能直接支撑核心任务的材料。具体可改为：将L2附件调整为4-8条；不足时补充支撑材料，过多时合并或删除非核心附件。修改后应让审核人一眼看出问题原因、需要补充的材料、应补到哪个字段，以及出题人可以直接执。",
+    "categories": [
+      "attachment_count"
+    ]
+  },
+  {
+    "row": 123,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=123&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783604631060_123",
+    "checkedAt": "2026-07-09T13:44:21.171Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "直播排期已经卡到月底，低糖高蛋白代餐粉的主播脚本还在反复改：运营想保留“控糖”“饭前一杯少吃主食”“饱腹不长胖”，店铺页还要放包装背面、营养成分表和达人短视频。",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 134,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=134&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783604661172_134",
+    "checkedAt": "2026-07-09T13:44:35.915Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "我这边刚收到会员运营的淡季短信召回需求，周一会前要先给法务看口径。名单里有手机号、身份证后四位、入住城市、消费频次、生日月份，还有“商务客/亲子客”标签；注册时",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  }
+]

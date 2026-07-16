@@ -1,0 +1,28 @@
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>质检完成</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background:#f6f7fb; padding:24px; color:#111827; }
+    .card { max-width:720px; margin:0 auto; background:white; border-radius:16px; padding:24px; box-shadow:0 8px 28px rgba(0,0,0,.08); }
+    h1 { margin:0 0 12px; font-size:24px; }
+    .ok { color:#16a34a; } .bad { color:#dc2626; }
+    .meta { color:#6b7280; margin-bottom:16px; }
+    .box { background:#f9fafb; border:1px solid #e5e7eb; border-radius:12px; padding:14px; line-height:1.7; }
+    .tip { margin-top:18px; color:#374151; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>✅ 质检完成</h1>
+    <div class="meta">工作表：7.08 L2作业表 ｜ 行号：142 ｜ 已写入 AT / AU 列</div>
+    <p><b>题目：</b>产品、运营和法务下午要决定处方药复购功能能不能进入本周灰度。设想中的流程是患者上传处方、药师审核、常用处方药配送到家，页面同时展示“买二送一”和“复购立减”。现</p>
+    <p><b>质检状态：</b><span class="bad">❌不通过</span></p>
+    <div class="box"><b>质检意见：</b><br>场景表达不自然：产品评审会议的真实需求是分析风险、给出建议，而非直接生成正式报告和核对表；请改为先让AI分析各环节风险、异常处理建议，再自然整理成会议讨论材料。 产物要求生硬：直接要求生成docx和xlsx，但缺少真实任务驱动；请先明确用户要解决的问题和决策目标，再自然整理成必要文档。请把报告式、材料式说法改成真实用户会提出的决策、比较、整理、建议需求，保留预算、偏好、限制和实际用途。</div>
+    <p class="tip">现在可以关闭这个页面，回到飞书表格查看「质检状态」和「质检意见」。</p>
+  </div>
+</body>
+</html>

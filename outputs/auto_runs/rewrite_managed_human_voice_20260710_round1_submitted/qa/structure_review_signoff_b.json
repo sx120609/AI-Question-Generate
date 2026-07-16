@@ -1,0 +1,10 @@
+{
+  "kind": "structure-review-signoff",
+  "requestId": "structure_2edf5ebf5891de1d96ee2361",
+  "bindingHash": "2edf5ebf5891de1d96ee236108da51fe43663f3e0900140859a27885a529e371",
+  "requestHash": "61b30b8848a249d6eb9fce7a1d0d210aa36a6ebf0908d3b3689c3de4113baeaf",
+  "decision": "APPROVE",
+  "reviewer": "independent-model-reviewer-b",
+  "rationale": "独立模型结构复核结论：1. 沈礼_7.9_11 与沈礼_7.9_01 虽同为 exception-routing、decision-memo/evidence-ledger 和 iterative-loop，但前者处理公益项目中的企业捐款、员工配捐、物资折价及‘公益合作款’，实际流程是逐笔确认性质、核对协议与收款凭证、进入票据复核、区分税前扣除提示并保留核销记录；后者处理生成式客服灰度，事实对象是知识库检索、回复与摘要生成、人工转接、日志、备案和客户授权，实际流程沿一通客服会话核对数据流、公开规则、供应商补件和灰度会追问。两题 openingMode、informationOrder 和 evidenceTopology 不同，报告中的 lexicalSkeleton 仅 0.0057、narrativeLexical 仅 0.0188，且无共享硬短语或词汇重复，因此是业务上常见的分流分类碰撞，不是模板复用。2. 裴硬_7.9_05 与沈礼_7.9_05 虽同为 clock-pressure、threshold-gate 和 evidence-trace，但前者围绕 30 套民宿散件，按单套房源归集证照、权属、治安备案、住宿登记、现场消防和履约资料，再分为可暂存、补证后上架、现场核验或暂缓上线；后者围绕左旋肉碱直播中的‘吃完瘦’‘不反弹’‘安全不伤身’三句及口播、详情页、达人图、客服承诺和购物车标题，按原文收件后执行撤下、客观改写、补材料复核或暂缓使用。两题的事实实体、核验单位、交付使用方式和后续动作均独立，产物先后也不同；报告中的 lexicalSkeleton 仅 0.0055、narrativeLexical 仅 0.0203，同样无共享硬短语或词汇重复。两个碰撞均由粗粒度决策、产物和流程标签相同引起，候选可接受。",
+  "reviewedAt": "2026-07-10T08:57:16.000Z"
+}

@@ -1,0 +1,91 @@
+{
+  "runId": "rewrite_managed_situated_requester_20260710",
+  "generatedAt": "2026-07-10T14:18:05.994Z",
+  "objective": "将沈礼和裴硬的22条系统生成记录重写为角色有限视角的真实单段工作请求并提交复审",
+  "status": "submitted-qa-passed",
+  "submittedAt": "2026-07-10T14:23:51.891Z",
+  "finalizedAt": "2026-07-10T14:40:50.612Z",
+  "count": 22,
+  "generatedAnnotators": [
+    "沈礼",
+    "裴硬"
+  ],
+  "annotatorIdentityNote": "沈礼与裴硬仅为系统生成标注身份，每个主题使用独立personaId。",
+  "promptProtocol": "situated-requester-v1",
+  "candidateCountPerScene": 3,
+  "questionPresentation": "single-paragraph-clear-request-v2",
+  "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+  "sheetId": "49e351",
+  "sheetRows": [
+    121,
+    122,
+    123,
+    134,
+    135,
+    136,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    172,
+    173,
+    174,
+    178,
+    179,
+    180
+  ],
+  "writableFields": [
+    "题目",
+    "任务概括",
+    "附件内容",
+    "产物内容",
+    "做题关键步骤"
+  ],
+  "sources": {
+    "factLedger": "sources/fact_ledger.json",
+    "sceneCards": "sources/scene_cards.json",
+    "requesterCandidates": "sources/requester_candidates.json"
+  },
+  "submission": {
+    "applied": true,
+    "writeRevision": 5425,
+    "finalQaRevision": 5455,
+    "writtenColumns": [
+      "B",
+      "G",
+      "L",
+      "N",
+      "O"
+    ],
+    "valueRangeCount": 110,
+    "readbackExactMatches": 110,
+    "unexpectedChangedCells": 0,
+    "finalSnapshot": "sources/feishu_final_A121_P180.json",
+    "attachmentsPreserved": true,
+    "attachmentObjectCount": 186,
+    "productFormat": "docx, xlsx"
+  },
+  "release": {
+    "status": "PASS",
+    "releaseGateId": "combined-release-gate-v2",
+    "receipt": "feishu/release_gate_receipt.json",
+    "roleConsistency": "PASS",
+    "naturalness": "PASS",
+    "structure": "APPROVED_REVIEW"
+  },
+  "qa": {
+    "status": "PASS",
+    "passedRows": 22,
+    "failedRows": 0,
+    "finalColumnsSnapshot": "qa/feishu_post_submit/feishu_qa_columns_final.json",
+    "round1Receipt": "qa/feishu_post_submit/round_1/qa_round_1783694087569.json",
+    "round2Receipt": "qa/feishu_post_submit/round_2_failed_only/qa_round_1783694284677.json",
+    "round3Receipt": "qa/feishu_post_submit/round_3_row_144/qa_round_1783694376554.json"
+  }
+}

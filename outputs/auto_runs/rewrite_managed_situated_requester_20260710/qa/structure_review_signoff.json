@@ -1,0 +1,10 @@
+{
+  "kind": "structure-review-signoff",
+  "requestId": "structure_dc9999531712e81a5ad76e66",
+  "bindingHash": "dc9999531712e81a5ad76e669600ea9e4b7dcefd583233614fdfefc20329680a",
+  "requestHash": "a1d32b5bf124abc60548f1f951d4a8ca2c37ecd2eaefa8ce9edac7e18f43178c",
+  "decision": "APPROVE",
+  "reviewer": "independent-structure-reviewer-situated-20260710-b",
+  "rationale": "我独立读取了当前哈希绑定的候选稿、fill plan、结构报告和审核请求。唯一 REVIEW 是沈礼_7.9_11与沈礼_7.9_01的粗结构签名相同，但实际相似度只有0.309，命中的高维仅为exception-routing决策分类和iterative-loop流程分类。沈礼_7.9_01处理生成式客服灰度会，沿客户会话核对知识库、回复与摘要生成、人工转接、日志、备案和个人信息材料，Word先形成边界追问稿，Excel记录会话环节问题，开放范围由会议决定。沈礼_7.9_11处理公益项目财务，将企业捐款、员工配捐、物资折价和性质未明的公益合作款逐笔分流，核对协议、收款、物资、票据、税前扣除资格和核销材料，Excel先承接批次记录，Word解释填表与分流规则。两题的开头分类分别为user-impact和decision-fork，信息顺序相似度0.2，证据拓扑分别为incomplete-evidence-pack和records-and-templates，产物顺序也分别为document-first和workbook-first。当前报告的词汇骨架重叠为0.0121，叙事词汇重叠为0.02，没有共享短语、词汇复制或硬重复告警。共同的异常分流与材料到件后复核来自工作流程的抽象分类，不构成同一模板或语义复写，因此批准本次结构REVIEW。该结论由未参与这两条撰写的独立模型审核得出，不代表人类审核。",
+  "reviewedAt": "2026-07-10T14:20:40.4237106Z"
+}

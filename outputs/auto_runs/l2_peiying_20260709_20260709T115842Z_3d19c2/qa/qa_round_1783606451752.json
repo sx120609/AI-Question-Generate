@@ -1,0 +1,15 @@
+[
+  {
+    "row": 144,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=144&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783606374950_144",
+    "checkedAt": "2026-07-09T14:14:11.750Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "我这边收到财务同事的求助：公益项目后台里有企业捐款、员工配捐、物资折价和几笔备注含糊的“公益合作款”，捐赠人已经在催公益事业捐赠票据和税前扣除材料。但后台名单、",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  }
+]

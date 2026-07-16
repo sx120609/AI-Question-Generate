@@ -1,0 +1,67 @@
+[
+  {
+    "row": 145,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=145&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783611395855_145",
+    "checkedAt": "2026-07-09T15:37:34.101Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "周五前要定达人脚本，运营把“敏感肌急救精华”的三段短视频口播、详情页首屏文案和前后对比图都放进排期表，投放链接已经约好达人账号。现在最难定的是“三天退红”“医美",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 146,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=146&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783611454105_146",
+    "checkedAt": "2026-07-09T15:37:42.283Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "明天客户周会要给销售一个能上桌的口径：官网预约试用、展会扫码、公众号留资这三路线索，是否能先接入海外CRM，哪些字段先留在境内。现有材料只有字段清单、供应商标准",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 147,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=147&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783611462284_147",
+    "checkedAt": "2026-07-09T15:38:05.439Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "社区工作人员让我准备下周协调会材料，业委会群里已经吵了两晚：电梯广告一年18万元到底进了哪里，物业说抵了保洁和维保，业主代表要求看合同、入账流水和分摊明细。偏偏",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 148,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=148&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783611485440_148",
+    "checkedAt": "2026-07-09T15:38:22.126Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "招聘小程序的“AI初筛”计划在2026年7月灰度，现在产品已经把A档优先展示、B档抽看、C档沉底的后台样式画好了。麻烦在上线评审前把候选人会看到什么、HR后台能",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 149,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=149&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783611502127_149",
+    "checkedAt": "2026-07-09T15:39:31.983Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "我这边负责的本地生活平台想把“城市周末民宿”专题排进下周首页，但招商给来的30套房源还只是散资料：证照照片、房屋图、消防承诺书、价格表各有一些，完整房源明细表还",
+    "note": "附件读取失败：题目依赖附件或来源链接，但来源链接读取失败或附件原文不可用；请更换可访问链接、上传附件原文，或在附件内容列补充足够正文摘录/数据口径后重新质检。请更换可访问链接、上传附件原文，或在附件内容列补充足够正文摘录和数据口径，避免在缺少真实材料时误判通过。具体可改为：请更换可访问链接、上传附件原文，或在附件内容列补充足够的正文摘录/数据口径后重新质检。",
+    "categories": [
+      "attachment_read_failed"
+    ]
+  }
+]

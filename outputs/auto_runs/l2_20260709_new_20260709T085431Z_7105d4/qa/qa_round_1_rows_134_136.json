@@ -1,0 +1,41 @@
+[
+  {
+    "row": 134,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=134&qa_result_col=AT&qa_note_col=AU&action=recheck_row&qa_row_id=49e351_134_67479ad7&row_fingerprint=67479ad797f7",
+    "checkedAt": "2026-07-09T09:24:26.736Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "财务早上把深圳科创局那份训力券通知转给我，说老板想知道我们上个月为什么没敢报，以及下半年如果继续买智能算力，还能不能提前把材料补齐。我们现在只有云厂商的算力订单",
+    "note": "附件读取失败：题目依赖附件或来源链接，但来源链接读取失败或附件原文不可用；请更换可访问链接、上传附件原文，或在附件内容列补充足够正文摘录/数据口径后重新质检。 汉字和数字之间有多余空格：请删除题目或产物要求中汉字与数字之间的空格，例如将“第 2 周”“共 3 个样本”改为“第2周”“共3个样本”。请更换可访问链接、上传附件原文，或在附件内容列补充足够正文摘录和数据口径，避免在缺少真实材料时误判通。",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 135,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=135&qa_result_col=AT&qa_note_col=AU&action=recheck_row&qa_row_id=49e351_135_f5ab365d&row_fingerprint=f5ab365dd359",
+    "checkedAt": "2026-07-09T09:24:51.908Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "运营那边周五想把一款左旋肉碱类保健食品重新拉进直播间，上一版被平台退回后大家有点急。现在素材包里有主播口播稿、详情页卖点、几张达人前后对比图和客服承诺话术，里面",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 136,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=136&qa_result_col=AT&qa_note_col=AU&action=recheck_row&qa_row_id=49e351_136_9c61a5fc&row_fingerprint=9c61a5fcec1d",
+    "checkedAt": "2026-07-09T09:26:36.802Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "街道项目对接人刚发来一个养老助餐点运营机会，理事会想周三前决定要不要投。我们社会组织有社区厨房合作方和志愿者队伍，但以前没承接过政府购买服务；大家现在最拿不准的",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  }
+]

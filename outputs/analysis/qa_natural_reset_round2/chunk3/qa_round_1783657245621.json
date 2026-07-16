@@ -1,0 +1,41 @@
+[
+  {
+    "row": 146,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=146&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783657179327_146",
+    "checkedAt": "2026-07-10T04:19:47.845Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "当前是2026年7月10日，销售明天要在客户周会上说明，官网预约试用、展会扫码和公众号留资产生的线索，能否提出一个少字段海外CRM试点方案。拟议字段包括姓名、手",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 148,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=148&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783657187849_148",
+    "checkedAt": "2026-07-10T04:19:56.826Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "当前是2026年7月10日，招聘产品周五要过一次上线评审。后台样式已经把候选人分成A档优先展示、B档抽看、C档沉底，产品打算在7月先做小范围灰度；HR最担心的是",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 178,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=178&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783657196827_178",
+    "checkedAt": "2026-07-10T04:20:45.618Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "投委会当前只需要回答一个问题：寒武纪在2025年首次实现年度盈利后，现有公开信息是否足以支持从事件跟踪转入重点研究池。一方看重营收和归母净利润上升，以及2026",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  }
+]

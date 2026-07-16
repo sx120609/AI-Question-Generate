@@ -1,0 +1,60 @@
+{
+  "version": 2,
+  "description": "由本系统生成并负责持续维护的标注身份。批量修订默认只作用于这些身份。",
+  "managedGeneratedAnnotators": [
+    {
+      "name": "沈礼",
+      "uidPrefix": "沈礼_",
+      "knownRunIds": [
+        "formal_20260709_115_117",
+        "l2_20260709_new_20260709T085431Z_7105d4",
+        "l2_20260709_batch5_20260709T111803Z_9246fb",
+        "l2_20260709T172539Z_b3f5d2",
+        "l2_shenli_20260709T202051Z_866b59",
+        "rewrite_shenli_natural_reset_20260710",
+        "rewrite_shenli_human_voice_20260710",
+        "rewrite_managed_human_voice_20260710",
+        "rewrite_managed_suzizhan_method_20260711",
+        "rewrite_managed_no_blank_lines_fix_20260711",
+        "rewrite_managed_corpus_calibrated_20260711",
+        "rewrite_managed_protocol_v2_20260711",
+        "upgrade_managed_v4_except_7_10_04_20260712"
+      ],
+      "active": true
+    },
+    {
+      "name": "裴硬",
+      "uidPrefix": "裴硬_",
+      "knownRunIds": [
+        "l2_peiying_20260709_20260709T115842Z_3d19c2",
+        "rewrite_peiying_natural_reset_20260710",
+        "rewrite_peiying_human_voice_20260710",
+        "rewrite_managed_human_voice_20260710",
+        "rewrite_managed_suzizhan_method_20260711",
+        "rewrite_managed_no_blank_lines_fix_20260711",
+        "rewrite_managed_corpus_calibrated_20260711",
+        "rewrite_managed_protocol_v2_20260711",
+        "upgrade_managed_v4_except_7_10_04_20260712"
+      ],
+      "active": true
+    }
+  ],
+  "maintenancePolicy": {
+    "defaultScope": "managedGeneratedAnnotators",
+    "matchBy": [
+      "标注专家姓名",
+      "UID前缀",
+      "runId"
+    ],
+    "requireExplicitOverrideForOtherAnnotators": true,
+    "currentCanonicalRewriteRuns": {
+      "沈礼": "upgrade_managed_v4_except_7_10_04_20260712",
+      "裴硬": "upgrade_managed_v4_except_7_10_04_20260712",
+      "combined": "upgrade_managed_v4_except_7_10_04_20260712"
+    },
+    "canonicalExclusions": {
+      "沈礼_7.10_04": "rewrite_managed_protocol_v2_20260711"
+    }
+  },
+  "lastUpdated": "2026-07-12"
+}

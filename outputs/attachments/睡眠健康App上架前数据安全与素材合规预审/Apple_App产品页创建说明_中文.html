@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+	<meta charset="utf-8" />
+<meta name="Author" content="Apple Inc." />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="icon" href="/favicon.ico" />
+<link rel="mask-icon" href="/apple-logo.svg" color="#333333">
+
+<link rel="stylesheet" href="/assets/styles/global.dist.css?51172657083" type="text/css" />
+<link rel="stylesheet" href="/assets/styles/dark-mode.css?54232608030" type="text/css" media="(prefers-color-scheme: dark)" data-color-scheme="dark" />
+<link rel="stylesheet" href="/assets/styles/localization.css?54232608030" type="text/css" />
+
+<script src="/assets/scripts/lib/jquery/jquery-3.6.0.min.js?45232608030"></script>
+<script src="/assets/scripts/settings.js?45232608030"></script>
+<script src="/assets/scripts/language-locales.js?45232608030"></script>
+<script src="/assets/scripts/DeveloperBreadcrumbs.js?45232608030"></script>
+<script src="/assets/metrics/scripts/analytics-module.js?45232608030"></script>
+
+<script async src="/assets/scripts/retinate.js?45232608030"></script>
+<script src="/assets/scripts/global-logout.js?45232608030"></script>
+
+<script async crossorigin src="https://sfss.cdn-apple.com/2.0.0-beta.2/sf-symbol.js?55012651131"></script>
+<link rel="stylesheet" href="https://sf-saas.cdn-apple.com/2.4.0-beta.0/animations/all.css" type="text/css" />
+
+
+
+
+
+	<link rel="stylesheet" href="https://www.apple.com/wss/fonts?families=SF+Pro+SC,v1|SF+Pro,v3|SF+Pro+Icons,v3">
+<link rel="stylesheet" href="https://www.apple.com/wss/fonts?family=SF+Mono&v=2" type="text/css" />
+<link rel="stylesheet" href="https://www.apple.com/wss/fonts?family=Apple+Icons&amp;v=1" type="text/css" />
+	<title>创建你的产品页面 - App Store - Apple Developer</title>
+	<meta name="omni_page" content="Creating Your Product Page - App Store - (Chinese)" />
+	<meta name="Description" content="查找实用信息和最佳做法，为你的 App 创建高质量的 App Store 产品页面。"  />
+
+	<meta property="og:locale" content="zh-CN" />
+	<meta property="og:site_name" content="Apple Developer" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://developer.apple.com/news/images/og/app-store-og.png" />
+	<meta property="og:title" content="创建你的产品页面 - App Store - Apple Developer"  />
+	<meta property="og:description" content="查找实用信息和最佳做法，为你的 App 创建高质量的 App Store 产品页面。"  />
+	<meta property="og:url" content="https://developer.apple.com/cn/app-store/product-page/" />
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content="https://developer.apple.com/news/images/og/app-store-og-twitter.png">
+	<meta name="twitter:description" content="查找实用信息和最佳做法，为你的 App 创建高质量的 App Store 产品页面。">
+	<meta name="twitter:title" content="创建你的产品页面 - App Store - Apple Developer">
+	<meta name="twitter:url" content="https://developer.apple.com/cn/app-store/product-page/">
+
+	<link rel="alternate" href="https://developer.apple.com/kr/app-store/product-page/" hreflang="ko-KR" />
+	<link rel="alternate" href="https://developer.apple.com/jp/app-store/product-page/" hreflang="ja-JP" />
+	<link rel="alternate" href="https://developer.apple.com/cn/app-store/product-page/" hreflang="zh-CN" />
+	<link rel="alternate" href="https://developer.apple.com/app-store/product-page/" hreflang="en" />
+	<link rel="canonical" href="https://developer.apple.com/cn/app-store/product-page/" />
+
+	<link rel="stylesheet" href="/app-store/styles/app-store.css?Friday, 30-Jan-2026 23:09:35 UTC" type="text/css" />
+	<link rel="stylesheet" href="/app-store/product-page/styles/product-page-alt.css?Friday, 30-Jan-2026 23:09:38 UTC" type="text/css" />
+</head>
+
+<body class="app-store dmf">
+	<script>
+	// Execute immediately to avoid UI flash
+	(function () {
+		// Prevent React dev mode from running this multiple times
+		if (window.__didRunColorThemeScript) {
+			return;
+		}
+		window.__didRunColorThemeScript = true;
+
+		const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+		const body = document.body;
+
+		// If theme-dark or theme-light is already applied, do nothing and lock it
+		if (body.classList.contains("theme-dark") || body.classList.contains("theme-light")) {
+
+			// Set the data-color-scheme attribute based on the existing theme
+			body.setAttribute('data-color-scheme', body.classList.contains("theme-dark") ? "dark" : "light");
+
+			// Prevent future modifications
+			window.__disableColorScheme = true;
+
+			// Hide the color picker immediately
+			const style = document.createElement('style');
+			style.textContent = '.color-scheme-toggle { display: none !important; }';
+			document.head.appendChild(style);
+
+			return;
+		}
+
+		// Otherwise, set theme normally based on user settings or system preference
+		if (window.Settings && window.Settings.preferredColorScheme) {
+			const colorTheme = (window.Settings.preferredColorScheme === 'auto') && !prefersDark ? 'light'
+				: (window.Settings.preferredColorScheme === 'light') ? 'light' : 'dark';
+			body.setAttribute('data-color-scheme', colorTheme);
+			colorTheme === "dark" ? body.classList.add("theme-dark") : body.classList.add("theme-light");
+		} else {
+			const colorTheme = prefersDark ? 'dark' : 'light';
+			body.setAttribute('data-color-scheme', colorTheme);
+			prefersDark ? body.classList.add("theme-dark") : body.classList.add("theme-light");
+		}
+	})();
+</script>
+
+
+<link rel="stylesheet" href="/assets/styles/suggest-lang.css?54232608030" type="text/css" />
+<div id="suggest-lang" class="ribbon hide" lang="en">
+	<div class="ribbon-content-wrapper">
+		<div class="ribbon-content row">
+			<div class="column large-12 large-centered">
+				<p><a href="#" id="suggest-link" class="ribbon-link more">View in English</a></p>
+				<button id="suggest-closer" class="icon icon-after icon-reset" aria-label="Dismiss language suggestion" tabindex="0"></button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="/assets/scripts/suggest-lang.js?03162626057"></script>
+<link rel="stylesheet" href="/assets/styles/globalnav.css?48212635068" type="text/css" />
+<nav id="globalnav" lang="zh-CN" dir="ltr" aria-label="全部网页" class="globalnav js   " style="--r-globalnav-text-zoom-scale: 1;">
+	<div class="globalnav-content">
+		<div class="globalnav-item globalnav-menuback"><button aria-label="主菜单" class="globalnav-menuback-button"><span class="globalnav-chevron-icon"><svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+						<path d="m1.5618 24.0621 6.5581-6.4238c.2368-.2319.2407-.6118.0088-.8486-.2324-.2373-.6123-.2407-.8486-.0088l-7 6.8569c-.1157.1138-.1807.2695-.1802.4316.001.1621.0674.3174.1846.4297l7 6.7241c.1162.1118.2661.1675.4155.1675.1577 0 .3149-.062.4326-.1846.2295-.2388.2222-.6187-.0171-.8481z"></path>
+					</svg></span></button></div>
+		<ul id="globalnav-list" class="globalnav-list">
+			<li class="
+	globalnav-item
+	globalnav-item-apple
+	ac-gn-item
+	ac-gn-apple
+">
+				<a href="/cn/" aria-label="Apple 开发者" class="globalnav-link globalnav-link-apple ac-gn-link ac-gn-link-apple-developer" id="ac-gn-firstfocus-small">
+					<span class="ac-gn-link-text globalnav-link-text">Apple 开发者</span>
+				</a>
+			</li>
+			<li class="globalnav-item globalnav-menu">
+				<div class="globalnav-flyout" style="--r-globalnav-flyout-item-total: 0; --r-globalnav-flyout-group-number: 0;">
+					<div class="globalnav-menu-list" style="--r-globalnav-flyout-item-total: 7;">
+						<div class="
+    globalnav-item
+    globalnav-item-getting-started
+    globalnav-item-menu
+    globalnav-item-submenu
+" style="--r-globalnav-flyout-item-number: 0;">
+							<ul class="globalnav-submenu-trigger-group">
+								<li class="globalnav-submenu-trigger-item">
+									<a href="/cn/get-started/" data-topnav-flyout-trigger-compact="true" aria-label="入门汇总" class="globalnav-link globalnav-submenu-trigger-link globalnav-link-getting-started">
+										<span class="globalnav-link-text-container">
+											<span class="globalnav-link-text">入门汇总</span>
+										</span>
+										<span class="globalnav-link-chevron">
+											<svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+												<path d="m8.1155 30.358a.6.6 0 1 1 -.831.8653l-7-6.7242a.6.6 0 0 1 -.0045-.8613l7-6.8569a.6.6 0 1 1 .84.8574l-6.5582 6.4238z"></path>
+											</svg>
+										</span>
+									</a>
+								</li>
+								<li class="globalnav-submenu-trigger-item">
+									<button id="globalnav-menubutton-link-getting-started" class="globalnav-submenu-trigger-button" aria-expanded="false" aria-controls="globalnav-submenu-link-getting-started" aria-label="“入门汇总”菜单" data-topnav-flyout-trigger-regular="true">
+										<span class="globalnav-image-regular globalnav-submenu-button-icon">
+											<svg height="10" viewBox="0 0 10 10" width="10" xmlns="http://www.w3.org/2000/svg">
+												<path d="m4.6725 6.635-2.655-2.667a.445.445 0 0 1 -.123-.304.4331.4331 0 0 1 .427-.439h.006a.447.447 0 0 1 .316.135l2.357 2.365 2.356-2.365a.458.458 0 0 1 .316-.135.433.433 0 0 1 .433.433v.006a.4189.4189 0 0 1 -.123.3l-2.655 2.671a.4451.4451 0 0 1 -.327.14.464.464 0 0 1 -.328-.14z"></path>
+											</svg>
+										</span>
+										<span class="globalnav-image-compact globalnav-submenu-button-icon">
+											<svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+												<path d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"></path>
+											</svg>
+										</span>
+									</button>
+								</li>
+							</ul>
+							<div id="globalnav-submenu-link-getting-started" class="globalnav-flyout globalnav-submenu" aria-labelledby="globalnav-menubutton-link-getting-started" style="--r-globalnav-flyout-item-total: 0; --r-globalnav-flyout-group-number: 0; --r-globalnav-flyout-height: auto; --r-globalnav-flyout-rate: 240ms;">
+								<div class="globalnav-flyout-scroll-container">
+									<div class="globalnav-flyout-content globalnav-submenu-content" style="--r-globalnav-flyout-elevated-group-count: 1; --r-globalnav-flyout-group-total: 2; --r-globalnav-flyout-item-total: 4;">
+										<div class="globalnav-submenu-group globalnav-submenu-group-elevated" style="--r-globalnav-flyout-group-number: 0;">
+
+											<h2 class="globalnav-submenu-header" id="apple-getting-started-heading" style="--r-globalnav-flyout-item-number: 1;">探索“入门汇总”</h2>
+											<ul class="globalnav-submenu-list" aria-labelledby="apple-getting-started-heading">
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 2;"><a href="/cn/get-started/" class="globalnav-submenu-link">概览</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 3;"><a href="/cn/learn/" class="globalnav-submenu-link">学习</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 4;"><a href="/cn/programs/" class="globalnav-submenu-link">Apple Developer Program</a></li>
+											</ul>
+										</div>
+										<div class="globalnav-submenu-group" style="--r-globalnav-flyout-group-number: 1;">
+
+											<h2 class="globalnav-submenu-header" id="apple-learn-heading" style="--r-globalnav-flyout-item-number: 1;">及时了解最新动态</h2>
+											<ul class="globalnav-submenu-list" aria-labelledby="apple-learn-heading">
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 2;"><a href="/cn/news/" class="globalnav-submenu-link">最新动态</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 3;"><a href="/cn/hello/" class="globalnav-submenu-link">开发者你好</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="
+  globalnav-item
+  globalnav-item-platforms
+  globalnav-item-menu
+  globalnav-item-submenu
+" style="--r-globalnav-flyout-item-number: 1;">
+							<ul class="globalnav-submenu-trigger-group">
+								<li class="globalnav-submenu-trigger-item">
+									<a href="/cn/platforms/" aria-label="平台" class="globalnav-link globalnav-submenu-trigger-link globalnav-link-platforms">
+										<span class="globalnav-link-text-container">
+											<span class="globalnav-link-text">平台</span>
+										</span>
+										<span class="globalnav-link-chevron">
+											<svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+												<path d="m8.1155 30.358a.6.6 0 1 1 -.831.8653l-7-6.7242a.6.6 0 0 1 -.0045-.8613l7-6.8569a.6.6 0 1 1 .84.8574l-6.5582 6.4238z"></path>
+											</svg>
+										</span>
+									</a>
+								</li>
+								<li class="globalnav-submenu-trigger-item">
+									<button id="globalnav-menubutton-link-platforms" class="globalnav-submenu-trigger-button" aria-expanded="false" aria-controls="globalnav-submenu-link-platforms" aria-label="“平台”菜单">
+										<span class="globalnav-image-regular globalnav-submenu-button-icon">
+											<svg height="10" viewBox="0 0 10 10" width="10" xmlns="http://www.w3.org/2000/svg">
+												<path d="m4.6725 6.635-2.655-2.667a.445.445 0 0 1 -.123-.304.4331.4331 0 0 1 .427-.439h.006a.447.447 0 0 1 .316.135l2.357 2.365 2.356-2.365a.458.458 0 0 1 .316-.135.433.433 0 0 1 .433.433v.006a.4189.4189 0 0 1 -.123.3l-2.655 2.671a.4451.4451 0 0 1 -.327.14.464.464 0 0 1 -.328-.14z"></path>
+											</svg>
+										</span>
+										<span class="globalnav-image-compact globalnav-submenu-button-icon">
+											<svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+												<path d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"></path>
+											</svg>
+										</span>
+									</button>
+								</li>
+							</ul>
+							<div id="globalnav-submenu-link-platforms" class="globalnav-flyout globalnav-submenu" aria-labelledby="globalnav-menubutton-link-platforms" style="--r-globalnav-flyout-item-total: 0; --r-globalnav-flyout-group-number: 0; --r-globalnav-flyout-height: auto; --r-globalnav-flyout-rate: 240ms;">
+								<div class="globalnav-flyout-scroll-container">
+									<div class="globalnav-flyout-content globalnav-submenu-content" style="--r-globalnav-flyout-elevated-group-count: 1; --r-globalnav-flyout-group-total: 2; --r-globalnav-flyout-item-total: 9;">
+										<!-- Explore -->
+										<div class="globalnav-submenu-group globalnav-submenu-group-elevated" style="--r-globalnav-flyout-group-number: 0;">
+
+											<h2 class="globalnav-submenu-header" id="platforms-apple-heading" style="--r-globalnav-flyout-item-number: 1;">探索“平台”</h2>
+											<ul class="globalnav-submenu-list" aria-labelledby="platforms-apple-heading">
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 2;"><a href="/cn/platforms/" class="globalnav-submenu-link">Apple 平台</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 3;"><a href="/cn/ios/" class="globalnav-submenu-link">iOS</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 4;"><a href="/cn/ipados/" class="globalnav-submenu-link">iPadOS</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 5;"><a href="/cn/macos/" class="globalnav-submenu-link">macOS</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 6;"><a href="/cn/tvos/" class="globalnav-submenu-link">Apple tvOS</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 7;"><a href="/cn/visionos/" class="globalnav-submenu-link">visionOS</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 8;"><a href="/cn/watchos/" class="globalnav-submenu-link">watchOS</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 9;"><a href="/cn/app-store/" class="globalnav-submenu-link">App Store</a></li>
+											</ul>
+										</div>
+										<!--  Featured -->
+										<div class="globalnav-submenu-group" style="--r-globalnav-flyout-group-number: 1;">
+
+											<h2 class="globalnav-submenu-header" id="platforms-learn-heading" style="--r-globalnav-flyout-item-number: 1;">精选</h2>
+											<ul class="globalnav-submenu-list" aria-labelledby="platforms-learn-heading">
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 2;"><a href="/cn/design/" class="globalnav-submenu-link">设计</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 3;"><a href="/cn/distribute/" class="globalnav-submenu-link">分发</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 4;"><a href="/cn/games/" class="globalnav-submenu-link">游戏</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 5;"><a href="/cn/accessories/" class="globalnav-submenu-link">配件</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 6;"><a href="/safari/" class="globalnav-submenu-link">网页<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 7;"><a href="/cn/apple-home/" class="globalnav-submenu-link">Home</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 8;"><a href="/cn/carplay/" class="globalnav-submenu-link">CarPlay 车载</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="
+  globalnav-item
+  globalnav-item-technologies
+  globalnav-item-menu
+  globalnav-item-submenu
+" style="--r-globalnav-flyout-item-number: 2;">
+							<ul class="globalnav-submenu-trigger-group">
+								<li class="globalnav-submenu-trigger-item">
+									<a href="/cn/technologies/" aria-label="技术" class="globalnav-link globalnav-submenu-trigger-link globalnav-link-technologies">
+										<span class="globalnav-link-text-container">
+											<span class="globalnav-link-text">技术</span>
+										</span>
+										<span class="globalnav-link-chevron">
+											<svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+												<path d="m8.1155 30.358a.6.6 0 1 1 -.831.8653l-7-6.7242a.6.6 0 0 1 -.0045-.8613l7-6.8569a.6.6 0 1 1 .84.8574l-6.5582 6.4238z"></path>
+											</svg>
+										</span>
+									</a>
+								</li>
+								<li class="globalnav-submenu-trigger-item">
+									<button id="globalnav-menubutton-link-technologies" class="globalnav-submenu-trigger-button" aria-expanded="false" aria-controls="globalnav-submenu-link-technologies" aria-label="“技术”菜单">
+										<span class="globalnav-image-regular globalnav-submenu-button-icon">
+											<svg height="10" viewBox="0 0 10 10" width="10" xmlns="http://www.w3.org/2000/svg">
+												<path d="m4.6725 6.635-2.655-2.667a.445.445 0 0 1 -.123-.304.4331.4331 0 0 1 .427-.439h.006a.447.447 0 0 1 .316.135l2.357 2.365 2.356-2.365a.458.458 0 0 1 .316-.135.433.433 0 0 1 .433.433v.006a.4189.4189 0 0 1 -.123.3l-2.655 2.671a.4451.4451 0 0 1 -.327.14.464.464 0 0 1 -.328-.14z"></path>
+											</svg>
+										</span>
+										<span class="globalnav-image-compact globalnav-submenu-button-icon">
+											<svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+												<path d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"></path>
+											</svg>
+										</span>
+									</button>
+								</li>
+							</ul>
+							<div id="globalnav-submenu-link-technologies" class="globalnav-flyout globalnav-submenu" aria-labelledby="globalnav-menubutton-link-technologies" style="--r-globalnav-flyout-item-total: 0; --r-globalnav-flyout-group-number: 0; --r-globalnav-flyout-height: auto; --r-globalnav-flyout-rate: 254ms;">
+								<div class="globalnav-flyout-scroll-container">
+									<div class="globalnav-flyout-content globalnav-submenu-content" style="--r-globalnav-flyout-elevated-group-count: 1; --r-globalnav-flyout-group-total: 2; --r-globalnav-flyout-item-total: 8;">
+										<!-- Explore -->
+										<div class="globalnav-submenu-group globalnav-submenu-group-elevated" style="--r-globalnav-flyout-group-number: 0;">
+
+											<h2 class="globalnav-submenu-header" id="technologies-learn-heading" style="--r-globalnav-flyout-item-number: 1;">探索“技术”</h2>
+											<ul class="globalnav-submenu-list" aria-labelledby="technologies-learn-heading">
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 2;"><a href="/cn/technologies/" class="globalnav-submenu-link">概览</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 3;"><a href="/cn/xcode/" class="globalnav-submenu-link">Xcode</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 4;"><a href="/cn/swift/" class="globalnav-submenu-link">Swift</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 5;"><a href="/cn/swiftui/" class="globalnav-submenu-link">SwiftUI</a></li>
+											</ul>
+										</div>
+										<!--  Featured -->
+										<div class="globalnav-submenu-group" style="--r-globalnav-flyout-group-number: 1;">
+
+											<h2 class="globalnav-submenu-header" id="technologies-featured-heading" style="--r-globalnav-flyout-item-number: 1;">精选</h2>
+											<ul class="globalnav-submenu-list" aria-labelledby="technologies-featured-heading">
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 2;"><a href="/documentation/accessibility" class="globalnav-submenu-link">辅助功能<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 3;"><a href="/documentation/appintents" class="globalnav-submenu-link">App Intents<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 4;"><a href="/cn/apple-intelligence/" class="globalnav-submenu-link">Apple 智能</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 5;"><a href="/cn/games/" class="globalnav-submenu-link">游戏</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 6;"><a href="/cn/machine-learning/" class="globalnav-submenu-link">机器学习与 AI</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 7;"><a href="/cn/security/" class="globalnav-submenu-link">安全性</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 8;"><a href="/cn/xcode-cloud/" class="globalnav-submenu-link">Xcode Cloud</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="
+  globalnav-item
+  globalnav-item-community
+  globalnav-item-menu
+  globalnav-item-submenu
+" style="--r-globalnav-flyout-item-number: 3;">
+							<ul class="globalnav-submenu-trigger-group">
+								<li class="globalnav-submenu-trigger-item">
+									<a href="/cn/community/" aria-label="社区" class="globalnav-link globalnav-submenu-trigger-link globalnav-link-community">
+										<span class="globalnav-link-text-container">
+											<span class="globalnav-link-text">社区</span>
+										</span>
+										<span class="globalnav-link-chevron">
+											<svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+												<path d="m8.1155 30.358a.6.6 0 1 1 -.831.8653l-7-6.7242a.6.6 0 0 1 -.0045-.8613l7-6.8569a.6.6 0 1 1 .84.8574l-6.5582 6.4238z"></path>
+											</svg>
+										</span>
+									</a>
+								</li>
+								<li class="globalnav-submenu-trigger-item">
+									<button id="globalnav-menubutton-link-community" class="globalnav-submenu-trigger-button" aria-expanded="false" aria-controls="globalnav-submenu-link-community" aria-label="“社区”菜单">
+										<span class="globalnav-image-regular globalnav-submenu-button-icon">
+											<svg height="10" viewBox="0 0 10 10" width="10" xmlns="http://www.w3.org/2000/svg">
+												<path d="m4.6725 6.635-2.655-2.667a.445.445 0 0 1 -.123-.304.4331.4331 0 0 1 .427-.439h.006a.447.447 0 0 1 .316.135l2.357 2.365 2.356-2.365a.458.458 0 0 1 .316-.135.433.433 0 0 1 .433.433v.006a.4189.4189 0 0 1 -.123.3l-2.655 2.671a.4451.4451 0 0 1 -.327.14.464.464 0 0 1 -.328-.14z"></path>
+											</svg>
+										</span>
+										<span class="globalnav-image-compact globalnav-submenu-button-icon">
+											<svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+												<path d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"></path>
+											</svg>
+										</span>
+									</button>
+								</li>
+							</ul>
+							<div id="globalnav-submenu-link-community" class="globalnav-flyout globalnav-submenu" aria-labelledby="globalnav-menubutton-link-community" style="--r-globalnav-flyout-item-total: 0; --r-globalnav-flyout-group-number: 0; --r-globalnav-flyout-height: auto; --r-globalnav-flyout-rate: 240ms;">
+								<div class="globalnav-flyout-scroll-container">
+									<div class="globalnav-flyout-content globalnav-submenu-content" style="--r-globalnav-flyout-elevated-group-count: 1; --r-globalnav-flyout-group-total: 2; --r-globalnav-flyout-item-total: 7;">
+										<!-- Explore -->
+										<div class="globalnav-submenu-group globalnav-submenu-group-elevated" style="--r-globalnav-flyout-group-number: 0;">
+
+											<h2 class="globalnav-submenu-header" id="community-engage-heading" style="--r-globalnav-flyout-item-number: 1;">探索“社区”</h2>
+											<ul class="globalnav-submenu-list" aria-labelledby="community-engage-heading">
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 2;"><a href="/cn/community/" class="globalnav-submenu-link">概览</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 3;"><a href="/cn/events/" class="globalnav-submenu-link">“与 Apple 会面交流”活动</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 4;"><a href="/community/events/" class="globalnav-submenu-link">社区主导的活动<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 5;"><a href="/forums/" class="globalnav-submenu-link">开发者论坛<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 6;"><a href="https://opensource.apple.com" class="globalnav-submenu-link">开源<span class="loc-en-only"></span></a></li>
+											</ul>
+										</div>
+										<!-- Featured -->
+										<div class="globalnav-submenu-group" style="--r-globalnav-flyout-group-number: 1;">
+
+											<h2 class="globalnav-submenu-header" id="community-contribute-heading" style="--r-globalnav-flyout-item-number: 1;">精选</h2>
+											<ul class="globalnav-submenu-list" aria-labelledby="community-contribute-heading">
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 2;"><a href="/cn/wwdc/" class="globalnav-submenu-link">WWDC</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 3;"><a href="/cn/swift-student-challenge/" class="globalnav-submenu-link">Swift Student Challenge</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 4;"><a href="/developer-stories/" class="globalnav-submenu-link">开发者故事</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 5;"><a href="/app-store/app-store-awards/" class="globalnav-submenu-link">App Store 大奖<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 6;"><a href="/cn/design/awards/" class="globalnav-submenu-link">Apple 设计大奖</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 7;"><a href="/cn/events/developer-centers/" class="globalnav-submenu-link">Apple Developer Centers</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="
+							    globalnav-item
+							    globalnav-item-documentation
+							    globalnav-item-menu
+							    globalnav-item-submenu
+							" style="--r-globalnav-flyout-item-number: 4;">
+							<ul class="globalnav-submenu-trigger-group">
+								<li class="globalnav-submenu-trigger-item">
+									<a href="/documentation/" aria-label="文档" class="globalnav-link globalnav-submenu-trigger-link globalnav-link-documentation">
+										<span class="globalnav-link-text-container">
+											<span class="globalnav-link-text">文档<span class="loc-en-only"></span></span>
+										</span>
+										<span class="globalnav-link-chevron">
+											<svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+												<path d="m8.1155 30.358a.6.6 0 1 1 -.831.8653l-7-6.7242a.6.6 0 0 1 -.0045-.8613l7-6.8569a.6.6 0 1 1 .84.8574l-6.5582 6.4238z"></path>
+											</svg>
+										</span>
+									</a>
+								</li>
+								<li class="globalnav-submenu-trigger-item">
+									<button id="globalnav-menubutton-link-documentation" class="globalnav-submenu-trigger-button" aria-expanded="false" aria-controls="globalnav-submenu-link-documentation" aria-label="“文档”菜单">
+										<span class="globalnav-image-regular globalnav-submenu-button-icon">
+											<svg height="10" viewBox="0 0 10 10" width="10" xmlns="http://www.w3.org/2000/svg">
+												<path d="m4.6725 6.635-2.655-2.667a.445.445 0 0 1 -.123-.304.4331.4331 0 0 1 .427-.439h.006a.447.447 0 0 1 .316.135l2.357 2.365 2.356-2.365a.458.458 0 0 1 .316-.135.433.433 0 0 1 .433.433v.006a.4189.4189 0 0 1 -.123.3l-2.655 2.671a.4451.4451 0 0 1 -.327.14.464.464 0 0 1 -.328-.14z"></path>
+											</svg>
+										</span>
+										<span class="globalnav-image-compact globalnav-submenu-button-icon">
+											<svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+												<path d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"></path>
+											</svg>
+										</span>
+									</button>
+								</li>
+							</ul>
+							<div id="globalnav-submenu-link-documentation" class="globalnav-flyout globalnav-submenu" aria-labelledby="globalnav-menubutton-link-documentation" style="--r-globalnav-flyout-item-total: 0; --r-globalnav-flyout-group-number: 0; --r-globalnav-flyout-height: auto; --r-globalnav-flyout-rate: 240ms;">
+								<div class="globalnav-flyout-scroll-container">
+									<div class="globalnav-flyout-content globalnav-submenu-content" style="--r-globalnav-flyout-elevated-group-count: 1; --r-globalnav-flyout-group-total: 2; --r-globalnav-flyout-item-total: 9;">
+										<!-- Explore -->
+										<div class="globalnav-submenu-group globalnav-submenu-group-elevated" style="--r-globalnav-flyout-group-number: 0;">
+
+											<h2 class="globalnav-submenu-header" id="docs-explore" style="--r-globalnav-flyout-item-number: 1;">探索“文档”</h2>
+											<ul class="globalnav-submenu-list" aria-labelledby="docs-explore">
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 2;"><a href="/documentation/" class="globalnav-submenu-link">文档库<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 3;"><a href="/documentation/TechnologyOverviews" class="globalnav-submenu-link">技术概述<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 4;"><a href="/documentation/SampleCode" class="globalnav-submenu-link">示例代码<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 5;"><a href="/cn/design/human-interface-guidelines/" class="globalnav-submenu-link">《人机界面指南》</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 6;"><a href="/cn/videos/" class="globalnav-submenu-link">视频</a></li>
+											</ul>
+										</div>
+										<!-- Release Notes -->
+										<div class="globalnav-submenu-group" style="--r-globalnav-flyout-group-number: 1;">
+
+											<h2 class="globalnav-submenu-header" id="docs-release-notes" style="--r-globalnav-flyout-item-number: 1;">发布说明</h2>
+											<ul class="globalnav-submenu-list" aria-labelledby="docs-release-notes">
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 2;"><a href="/documentation/Updates" class="globalnav-submenu-link">精选更新<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 3;"><a href="/documentation/ios-ipados-release-notes" class="globalnav-submenu-link">iOS<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 4;"><a href="/documentation/ios-ipados-release-notes" class="globalnav-submenu-link">iPadOS<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 5;"><a href="/documentation/macos-release-notes" class="globalnav-submenu-link">macOS<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 6;"><a href="/documentation/watchos-release-notes" class="globalnav-submenu-link">watchOS<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 7;"><a href="/documentation/visionos-release-notes/" class="globalnav-submenu-link">visionOS<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 8;"><a href="/documentation/tvos-release-notes" class="globalnav-submenu-link">Apple tvOS<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 9;"><a href="/documentation/Updates/xcode" class="globalnav-submenu-link">Xcode<span class="loc-en-only"></span></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="
+  globalnav-item
+  globalnav-item-downloads
+  globalnav-item-menu
+  globalnav-item-submenu
+" style="--r-globalnav-flyout-item-number: 5;">
+							<ul class="globalnav-submenu-trigger-group">
+								<li class="globalnav-submenu-trigger-item">
+									<a href="/cn/download/" aria-label="下载" class="globalnav-link globalnav-submenu-trigger-link globalnav-link-downloads">
+										<span class="globalnav-link-text-container">
+											<span class="globalnav-link-text">下载</span>
+										</span>
+										<span class="globalnav-link-chevron">
+											<svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+												<path d="m8.1155 30.358a.6.6 0 1 1 -.831.8653l-7-6.7242a.6.6 0 0 1 -.0045-.8613l7-6.8569a.6.6 0 1 1 .84.8574l-6.5582 6.4238z"></path>
+											</svg>
+										</span>
+									</a>
+								</li>
+								<li class="globalnav-submenu-trigger-item">
+									<button id="globalnav-menubutton-link-downloads" class="globalnav-submenu-trigger-button" aria-expanded="false" aria-controls="globalnav-submenu-link-downloads" aria-label="“下载”菜单">
+										<span class="globalnav-image-regular globalnav-submenu-button-icon">
+											<svg height="10" viewBox="0 0 10 10" width="10" xmlns="http://www.w3.org/2000/svg">
+												<path d="m4.6725 6.635-2.655-2.667a.445.445 0 0 1 -.123-.304.4331.4331 0 0 1 .427-.439h.006a.447.447 0 0 1 .316.135l2.357 2.365 2.356-2.365a.458.458 0 0 1 .316-.135.433.433 0 0 1 .433.433v.006a.4189.4189 0 0 1 -.123.3l-2.655 2.671a.4451.4451 0 0 1 -.327.14.464.464 0 0 1 -.328-.14z"></path>
+											</svg>
+										</span>
+										<span class="globalnav-image-compact globalnav-submenu-button-icon">
+											<svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+												<path d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"></path>
+											</svg>
+										</span>
+									</button>
+								</li>
+							</ul>
+							<div id="globalnav-submenu-link-downloads" class="globalnav-flyout globalnav-submenu" aria-labelledby="globalnav-menubutton-link-downloads" style="--r-globalnav-flyout-item-total: 0; --r-globalnav-flyout-group-number: 0; --r-globalnav-flyout-height: auto; --r-globalnav-flyout-rate: 240ms;">
+								<div class="globalnav-flyout-scroll-container">
+									<div class="globalnav-flyout-content globalnav-submenu-content" style="--r-globalnav-flyout-elevated-group-count: 1; --r-globalnav-flyout-group-total: 2; --r-globalnav-flyout-item-total: 6;">
+										<!-- Explore -->
+										<div class="globalnav-submenu-group globalnav-submenu-group-elevated" style="--r-globalnav-flyout-group-number: 0;">
+
+											<h2 class="globalnav-submenu-header" id="downloads-explore-heading" style="--r-globalnav-flyout-item-number: 1;">探索“下载”</h2>
+											<ul class="globalnav-submenu-list" aria-labelledby="downloads-explore-heading">
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 2;"><a href="/cn/download/" class="globalnav-submenu-link">所有下载</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 3;"><a href="/download/os/" class="globalnav-submenu-link">操作系统<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 4;"><a href="/download/applications/" class="globalnav-submenu-link">应用程序<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 5;"><a href="/cn/design/resources/" class="globalnav-submenu-link">设计资源</a></li>
+											</ul>
+										</div>
+										<!-- Featured -->
+										<div class="globalnav-submenu-group" style="--r-globalnav-flyout-group-number: 1;">
+
+											<h2 class="globalnav-submenu-header" id="downloads-featured-heading" style="--r-globalnav-flyout-item-number: 1;">精选</h2>
+											<ul class="globalnav-submenu-list" aria-labelledby="downloads-featured-heading">
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 2;"><a href="/cn/xcode/" class="globalnav-submenu-link">Xcode</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 3;"><a href="/cn/testflight/" class="globalnav-submenu-link">TestFlight</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 4;"><a href="/cn/fonts/" class="globalnav-submenu-link">字体</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 5;"><a href="/cn/sf-symbols/" class="globalnav-submenu-link">SF Symbols</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 6;"><a href="/cn/icon-composer/" class="globalnav-submenu-link">Icon Composer</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="
+  globalnav-item
+  globalnav-item-support
+  globalnav-item-menu
+  globalnav-item-submenu
+" style="--r-globalnav-flyout-item-number: 6;">
+							<ul class="globalnav-submenu-trigger-group">
+								<li class="globalnav-submenu-trigger-item">
+									<a href="/cn/support/" aria-label="支持" class="globalnav-link globalnav-submenu-trigger-link globalnav-link-support">
+										<span class="globalnav-link-text-container">
+											<span class="globalnav-link-text">支持</span>
+										</span>
+										<span class="globalnav-link-chevron">
+											<svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+												<path d="m8.1155 30.358a.6.6 0 1 1 -.831.8653l-7-6.7242a.6.6 0 0 1 -.0045-.8613l7-6.8569a.6.6 0 1 1 .84.8574l-6.5582 6.4238z"></path>
+											</svg>
+										</span>
+									</a>
+								</li>
+								<li class="globalnav-submenu-trigger-item">
+									<button id="globalnav-menubutton-link-support" class="globalnav-submenu-trigger-button" aria-expanded="false" aria-controls="globalnav-submenu-link-support" aria-label="“支持”菜单">
+										<span class="globalnav-image-regular globalnav-submenu-button-icon">
+											<svg height="10" viewBox="0 0 10 10" width="10" xmlns="http://www.w3.org/2000/svg">
+												<path d="m4.6725 6.635-2.655-2.667a.445.445 0 0 1 -.123-.304.4331.4331 0 0 1 .427-.439h.006a.447.447 0 0 1 .316.135l2.357 2.365 2.356-2.365a.458.458 0 0 1 .316-.135.433.433 0 0 1 .433.433v.006a.4189.4189 0 0 1 -.123.3l-2.655 2.671a.4451.4451 0 0 1 -.327.14.464.464 0 0 1 -.328-.14z"></path>
+											</svg>
+										</span>
+										<span class="globalnav-image-compact globalnav-submenu-button-icon">
+											<svg height="48" viewBox="0 0 9 48" width="9" xmlns="http://www.w3.org/2000/svg">
+												<path d="m7.4382 24.0621-6.5581-6.4238c-.2368-.2319-.2407-.6118-.0088-.8486.2324-.2373.6123-.2407.8486-.0088l7 6.8569c.1157.1138.1807.2695.1802.4316-.001.1621-.0674.3174-.1846.4297l-7 6.7242c-.1162.1118-.2661.1675-.4155.1675-.1577 0-.3149-.062-.4326-.1846-.2295-.2388-.2222-.6187.0171-.8481l6.5537-6.2959z"></path>
+											</svg>
+										</span>
+									</button>
+								</li>
+							</ul>
+							<div id="globalnav-submenu-link-support" class="globalnav-flyout globalnav-submenu" aria-labelledby="globalnav-menubutton-link-support" style="--r-globalnav-flyout-item-total: 0; --r-globalnav-flyout-group-number: 0; --r-globalnav-flyout-height: auto; --r-globalnav-flyout-rate: 240ms;">
+								<div class="globalnav-flyout-scroll-container">
+									<div class="globalnav-flyout-content globalnav-submenu-content" style="--r-globalnav-flyout-elevated-group-count: 1; --r-globalnav-flyout-group-total: 2; --r-globalnav-flyout-item-total: 7;">
+										<!-- Explore -->
+										<div class="globalnav-submenu-group globalnav-submenu-group-elevated" style="--r-globalnav-flyout-group-number: 0;">
+
+											<h2 class="globalnav-submenu-header" id="explore-support" style="--r-globalnav-flyout-item-number: 1;">探索“支持”</h2>
+											<ul class="globalnav-submenu-list" aria-labelledby="explore-support">
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 2;"><a href="/cn/support/" class="globalnav-submenu-link">概览</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 3;"><a href="/cn/help/" class="globalnav-submenu-link">帮助指南</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 4;"><a href="/forums/" class="globalnav-submenu-link">开发者论坛<span class="loc-en-only"></span></a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 5;"><a href="/cn/feedback-assistant/" class="globalnav-submenu-link">“反馈助理”</a></li>
+												<li class="globalnav-submenu-list-item-elevated" style="--r-globalnav-flyout-item-number: 6;"><a href="/contact/" class="globalnav-submenu-link">联系我们</a></li>
+											</ul>
+										</div>
+										<!-- Featured -->
+										<div class="globalnav-submenu-group" style="--r-globalnav-flyout-group-number: 1;">
+
+											<h2 class="globalnav-submenu-header" id="support-help" style="--r-globalnav-flyout-item-number: 1;">精选</h2>
+											<ul class="globalnav-submenu-list" aria-labelledby="support-help">
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 2;"><a href="/cn/help/account/" class="globalnav-submenu-link">《开发者账户帮助》</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 3;"><a href="/cn/app-store/review/guidelines/" class="globalnav-submenu-link">《App 审核指南》</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 4;"><a href="/cn/help/app-store-connect/" class="globalnav-submenu-link">《App Store Connect 帮助》</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 5;"><a href="/cn/news/upcoming-requirements/" class="globalnav-submenu-link">即将实行的要求</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 6;"><a href="/cn/support/terms/" class="globalnav-submenu-link">协议和准则</a></li>
+												<li class="globalnav-submenu-list-item" style="--r-globalnav-flyout-item-number: 7;"><a href="/system-status/" class="globalnav-submenu-link">系统状态<span class="loc-en-only"></span></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<!-- Search -->
+			<li data-topnav-flyout-label="Search" class="globalnav-item globalnav-search shift-0-1" data-globalnav-iconflyout-enabled="true">
+				<a role="button" id="globalnav-menubutton-link-search" href="/search/" data-topnav-flyout-trigger-regular="true" data-topnav-flyout-trigger-compact="true" aria-label="搜索" class="globalnav-link globalnav-link-search">
+					<span class="globalnav-image-regular">
+						<svg xmlns="http://www.w3.org/2000/svg" width="15px" height="44px" viewBox="0 0 15 44">
+							<path d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z"></path>
+						</svg>
+					</span>
+					<span class="globalnav-image-compact">
+						<svg height="48" viewBox="0 0 17 48" width="17" xmlns="http://www.w3.org/2000/svg">
+							<path d="m16.2294 29.9556-4.1755-4.0821a6.4711 6.4711 0 1 0 -1.2839 1.2625l4.2005 4.1066a.9.9 0 1 0 1.2588-1.287zm-14.5294-8.0017a5.2455 5.2455 0 1 1 5.2455 5.2527 5.2549 5.2549 0 0 1 -5.2455-5.2527z"></path>
+						</svg>
+					</span>
+				</a>
+				<div id="globalnav-submenu-search" aria-labelledby="globalnav-menubutton-link-search" class="globalnav-flyout globalnav-submenu" style="--r-globalnav-flyout-item-total: 0; --r-globalnav-flyout-group-number: 0; --r-globalnav-flyout-height: 388px; --r-globalnav-flyout-rate: 240ms;">
+					<div class="globalnav-flyout-scroll-container">
+						<div class="globalnav-flyout-content globalnav-submenu-content">
+							<form action="/search/" method="get" class="globalnav-searchfield">
+								<div class="globalnav-searchfield-wrapper">
+									<input placeholder="搜索" name="q" aria-label="搜索" autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false" class="globalnav-searchfield-input">
+									<input id="globalnav-searchfield-src" type="hidden" name="src" value="globalnav">
+									<button aria-label="清除搜索" tabindex="-1" type="button" class="globalnav-searchfield-reset" disabled="" aria-hidden="true">
+										<span class="globalnav-image-regular">
+											<svg height="14" viewBox="0 0 14 14" width="14" xmlns="http://www.w3.org/2000/svg">
+												<path d="m7 .0339a6.9661 6.9661 0 1 0 6.9661 6.9661 6.9661 6.9661 0 0 0 -6.9661-6.9661zm2.798 8.9867a.55.55 0 0 1 -.778.7774l-2.02-2.02-2.02 2.02a.55.55 0 0 1 -.7784-.7774l2.0206-2.0206-2.0204-2.02a.55.55 0 0 1 .7782-.7778l2.02 2.02 2.02-2.02a.55.55 0 0 1 .778.7778l-2.0203 2.02z"></path>
+											</svg>
+										</span>
+										<span class="globalnav-image-compact">
+											<svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+												<path d="m0 8a8.0474 8.0474 0 0 1 7.9922-8 8.0609 8.0609 0 0 1 8.0078 8 8.0541 8.0541 0 0 1 -8 8 8.0541 8.0541 0 0 1 -8-8zm5.6549 3.2863 2.3373-2.353 2.3451 2.353a.6935.6935 0 0 0 .4627.1961.6662.6662 0 0 0 .6667-.6667.6777.6777 0 0 0 -.1961-.4706l-2.3451-2.3373 2.3529-2.3607a.5943.5943 0 0 0 .1961-.4549.66.66 0 0 0 -.6667-.6589.6142.6142 0 0 0 -.447.1961l-2.3686 2.3606-2.353-2.3527a.6152.6152 0 0 0 -.447-.1883.6529.6529 0 0 0 -.6667.651.6264.6264 0 0 0 .1961.4549l2.3451 2.3529-2.3451 2.353a.61.61 0 0 0 -.1961.4549.6661.6661 0 0 0 .6667.6667.6589.6589 0 0 0 .4627-.1961z"></path>
+											</svg>
+										</span>
+									</button>
+									<button aria-label="提交搜索" tabindex="-1" aria-hidden="true" type="submit" class="globalnav-searchfield-submit" disabled="">
+										<span class="globalnav-image-regular">
+											<svg height="32" viewBox="0 0 30 32" width="30" xmlns="http://www.w3.org/2000/svg">
+												<path d="m23.3291 23.3066-4.35-4.35c-.0105-.0105-.0247-.0136-.0355-.0235a6.8714 6.8714 0 1 0 -1.5736 1.4969c.0214.0256.03.0575.0542.0815l4.35 4.35a1.1 1.1 0 1 0 1.5557-1.5547zm-15.4507-8.582a5.6031 5.6031 0 1 1 5.603 5.61 5.613 5.613 0 0 1 -5.603-5.61z"></path>
+											</svg>
+										</span>
+										<span class="globalnav-image-compact">
+											<svg width="38" height="40" viewBox="0 0 38 40" xmlns="http://www.w3.org/2000/svg">
+												<path d="m28.6724 27.8633-5.07-5.07c-.0095-.0095-.0224-.0122-.032-.0213a7.9967 7.9967 0 1 0 -1.8711 1.7625c.0254.03.0357.0681.0642.0967l5.07 5.07a1.3 1.3 0 0 0 1.8389-1.8379zm-18.0035-10.0033a6.5447 6.5447 0 1 1 6.545 6.5449 6.5518 6.5518 0 0 1 -6.545-6.5449z"></path>
+											</svg>
+										</span>
+									</button>
+								</div>
+							</form>
+							<div class="globalnav-searchresults">
+								<div class="globalnav-searchresults-current">
+									<div class="globalnav-searchresults-container" style="--r-globalnav-flyout-group-number: 0;">
+
+										<h2 class="globalnav-searchresults-header" style="--r-globalnav-flyout-item-number: 0;">快速链接</h2>
+										<ul class="globalnav-searchresults-list" role="list">
+											<li class="globalnav-searchresults-list-item" role="listitem" style="--r-globalnav-flyout-item-number: 1;">
+												<a class="globalnav-searchresults-list-link" href="/cn/events/" data-query="no keyword" data-section="quicklinks" data-items="5" data-index="0" data-label="活动">
+													<span class="globalnav-searchresults-list-icon">
+														<span class="globalnav-image-regular globalnav-link-image">
+															<svg height="16" viewBox="0 0 9 16" width="9" xmlns="http://www.w3.org/2000/svg">
+																<path d="m8.6124 8.1035-2.99 2.99a.5.5 0 0 1 -.7071-.7071l2.1366-2.1364h-6.316a.5.5 0 0 1 0-1h6.316l-2.1368-2.1367a.5.5 0 0 1 .7071-.7071l2.99 2.99a.5.5 0 0 1 .0002.7073z"></path>
+															</svg>
+														</span>
+														<span class="globalnav-image-compact globalnav-link-image">
+															<svg height="25" viewBox="0 0 13 25" width="13" xmlns="http://www.w3.org/2000/svg">
+																<path d="m12.3577 13.4238-4.4444 4.4444a.6.6 0 0 1 -.8486-.8477l3.37-3.37h-9.3231a.65.65 0 0 1 0-1.3008h9.3232l-3.37-3.37a.6.6 0 0 1 .8486-.8477l4.4444 4.4444a.5989.5989 0 0 1 -.0001.8474z"></path>
+															</svg>
+														</span>
+													</span>
+													<span class="globalnav-searchresults-list-text">活动</span>
+												</a>
+											</li>
+											<li class="globalnav-searchresults-list-item" role="listitem" style="--r-globalnav-flyout-item-number: 2;">
+												<a class="globalnav-searchresults-list-link" href="/cn/news/" data-query="no keyword" data-section="quicklinks" data-items="5" data-index="1" data-label="新闻">
+													<span class="globalnav-searchresults-list-icon">
+														<span class="globalnav-image-regular globalnav-link-image">
+															<svg height="16" viewBox="0 0 9 16" width="9" xmlns="http://www.w3.org/2000/svg">
+																<path d="m8.6124 8.1035-2.99 2.99a.5.5 0 0 1 -.7071-.7071l2.1366-2.1364h-6.316a.5.5 0 0 1 0-1h6.316l-2.1368-2.1367a.5.5 0 0 1 .7071-.7071l2.99 2.99a.5.5 0 0 1 .0002.7073z"></path>
+															</svg>
+														</span>
+														<span class="globalnav-image-compact globalnav-link-image">
+															<svg height="25" viewBox="0 0 13 25" width="13" xmlns="http://www.w3.org/2000/svg">
+																<path d="m12.3577 13.4238-4.4444 4.4444a.6.6 0 0 1 -.8486-.8477l3.37-3.37h-9.3231a.65.65 0 0 1 0-1.3008h9.3232l-3.37-3.37a.6.6 0 0 1 .8486-.8477l4.4444 4.4444a.5989.5989 0 0 1 -.0001.8474z"></path>
+															</svg>
+														</span>
+													</span>
+													<span class="globalnav-searchresults-list-text">新闻</span>
+												</a>
+											</li>
+											<li class="globalnav-searchresults-list-item" role="listitem" style="--r-globalnav-flyout-item-number: 3;">
+												<a class="globalnav-searchresults-list-link" href="/forums/" data-query="no keyword" data-section="quicklinks" data-items="5" data-index="2" data-label="论坛">
+													<span class="globalnav-searchresults-list-icon">
+														<span class="globalnav-image-regular globalnav-link-image">
+															<svg height="16" viewBox="0 0 9 16" width="9" xmlns="http://www.w3.org/2000/svg">
+																<path d="m8.6124 8.1035-2.99 2.99a.5.5 0 0 1 -.7071-.7071l2.1366-2.1364h-6.316a.5.5 0 0 1 0-1h6.316l-2.1368-2.1367a.5.5 0 0 1 .7071-.7071l2.99 2.99a.5.5 0 0 1 .0002.7073z"></path>
+															</svg>
+														</span>
+														<span class="globalnav-image-compact globalnav-link-image">
+															<svg height="25" viewBox="0 0 13 25" width="13" xmlns="http://www.w3.org/2000/svg">
+																<path d="m12.3577 13.4238-4.4444 4.4444a.6.6 0 0 1 -.8486-.8477l3.37-3.37h-9.3231a.65.65 0 0 1 0-1.3008h9.3232l-3.37-3.37a.6.6 0 0 1 .8486-.8477l4.4444 4.4444a.5989.5989 0 0 1 -.0001.8474z"></path>
+															</svg>
+														</span>
+													</span>
+													<span class="globalnav-searchresults-list-text">论坛<span class="loc-en-only"></span></span>
+												</a>
+											</li>
+											<li class="globalnav-searchresults-list-item" role="listitem" style="--r-globalnav-flyout-item-number: 4;">
+												<a class="globalnav-searchresults-list-link" href="/documentation/samplecode/" data-query="no keyword" data-section="quicklinks" data-items="5" data-index="3" data-label="示例代码">
+													<span class="globalnav-searchresults-list-icon">
+														<span class="globalnav-image-regular globalnav-link-image">
+															<svg height="16" viewBox="0 0 9 16" width="9" xmlns="http://www.w3.org/2000/svg">
+																<path d="m8.6124 8.1035-2.99 2.99a.5.5 0 0 1 -.7071-.7071l2.1366-2.1364h-6.316a.5.5 0 0 1 0-1h6.316l-2.1368-2.1367a.5.5 0 0 1 .7071-.7071l2.99 2.99a.5.5 0 0 1 .0002.7073z"></path>
+															</svg>
+														</span>
+														<span class="globalnav-image-compact globalnav-link-image">
+															<svg height="25" viewBox="0 0 13 25" width="13" xmlns="http://www.w3.org/2000/svg">
+																<path d="m12.3577 13.4238-4.4444 4.4444a.6.6 0 0 1 -.8486-.8477l3.37-3.37h-9.3231a.65.65 0 0 1 0-1.3008h9.3232l-3.37-3.37a.6.6 0 0 1 .8486-.8477l4.4444 4.4444a.5989.5989 0 0 1 -.0001.8474z"></path>
+															</svg>
+														</span>
+													</span>
+													<span class="globalnav-searchresults-list-text">示例代码<span class="loc-en-only"></span></span>
+												</a>
+											</li>
+											<li class="globalnav-searchresults-list-item" role="listitem" style="--r-globalnav-flyout-item-number: 5;">
+												<a class="globalnav-searchresults-list-link" href="/cn/videos/" data-query="no keyword" data-section="quicklinks" data-items="5" data-index="4" data-label="视频">
+													<span class="globalnav-searchresults-list-icon">
+														<span class="globalnav-image-regular globalnav-link-image">
+															<svg height="16" viewBox="0 0 9 16" width="9" xmlns="http://www.w3.org/2000/svg">
+																<path d="m8.6124 8.1035-2.99 2.99a.5.5 0 0 1 -.7071-.7071l2.1366-2.1364h-6.316a.5.5 0 0 1 0-1h6.316l-2.1368-2.1367a.5.5 0 0 1 .7071-.7071l2.99 2.99a.5.5 0 0 1 .0002.7073z"></path>
+															</svg>
+														</span>
+														<span class="globalnav-image-compact globalnav-link-image">
+															<svg height="25" viewBox="0 0 13 25" width="13" xmlns="http://www.w3.org/2000/svg">
+																<path d="m12.3577 13.4238-4.4444 4.4444a.6.6 0 0 1 -.8486-.8477l3.37-3.37h-9.3231a.65.65 0 0 1 0-1.3008h9.3232l-3.37-3.37a.6.6 0 0 1 .8486-.8477l4.4444 4.4444a.5989.5989 0 0 1 -.0001.8474z"></path>
+															</svg>
+														</span>
+													</span>
+													<span class="globalnav-searchresults-list-text">视频</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<!-- Account -->
+			<li id="globalnav-account" class="globalnav-item globalnav-account">
+				<div class="globalnav-account-wrapper">
+					<a href="/account/" aria-label="账户" class="globalnav-link globalnav-link-account">
+						<span class="globalnav-image-regular globalnav-link-image" aria-hidden="true">
+							<svg width="17" height="47" viewBox="0 0 117.045 120" xmlns="http://www.w3.org/2000/svg" focusable="false" preserveAspectRatio="xMidYMid meet">
+								<path fill="currentColor" d="M58.496,109.742c27.503,0 49.825,-22.271 49.825,-49.774c0,-27.503 -22.322,-49.773 -49.825,-49.773c-27.451,0 -49.773,22.27 -49.773,49.773c0,27.503 22.322,49.774 49.773,49.774zM58.496,101.474c-22.945,0 -41.465,-18.561 -41.465,-41.506c0,-22.944 18.52,-41.506 41.465,-41.506c22.945,0 41.506,18.562 41.506,41.506c0,22.945 -18.561,41.506 -41.506,41.506zM91.931,92.156l-0.156,-0.549c-2.433,-7.174 -15.338,-15.037 -33.279,-15.037c-17.92,0 -30.773,7.852 -33.227,15.005l-0.156,0.581c8.825,8.692 23.891,13.762 33.394,13.762c9.575,0 24.525,-5.028 33.424,-13.762zM58.496,68.304c9.398,0.103 16.759,-7.924 16.759,-18.421c0,-9.875 -7.393,-18.048 -16.759,-18.048c-9.314,0 -16.769,8.173 -16.707,18.048c0.052,10.497 7.31,18.317 16.707,18.421z" />
+							</svg>
+						</span>
+						<span class="globalnav-image-compact globalnav-link-image" aria-hidden="true">
+							<svg width="20" height="51" viewBox="0 0 117.045 120" xmlns="http://www.w3.org/2000/svg" focusable="false" preserveAspectRatio="xMidYMid meet">
+								<path fill="currentColor" d="M58.496,109.742c27.503,0 49.825,-22.271 49.825,-49.774c0,-27.503 -22.322,-49.773 -49.825,-49.773c-27.451,0 -49.773,22.27 -49.773,49.773c0,27.503 22.322,49.774 49.773,49.774zM58.496,101.474c-22.945,0 -41.465,-18.561 -41.465,-41.506c0,-22.944 18.52,-41.506 41.465,-41.506c22.945,0 41.506,18.562 41.506,41.506c0,22.945 -18.561,41.506 -41.506,41.506zM91.931,92.156l-0.156,-0.549c-2.433,-7.174 -15.338,-15.037 -33.279,-15.037c-17.92,0 -30.773,7.852 -33.227,15.005l-0.156,0.581c8.825,8.692 23.891,13.762 33.394,13.762c9.575,0 24.525,-5.028 33.424,-13.762zM58.496,68.304c9.398,0.103 16.759,-7.924 16.759,-18.421c0,-9.875 -7.393,-18.048 -16.759,-18.048c-9.314,0 -16.769,8.173 -16.707,18.048c0.052,10.497 7.31,18.317 16.707,18.421z" />
+							</svg>
+						</span>
+					</a>
+				</div>
+			</li>
+		</ul>
+		<div class="globalnav-menutrigger">
+			<button id="globalnav-menutrigger-button" aria-controls="globalnav-list" aria-label="菜单" class="globalnav-menutrigger-button"><svg width="18" height="18" viewBox="0 0 18 18">
+					<polyline id="globalnav-menutrigger-bread-bottom" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" points="2 12, 16 12" class="globalnav-menutrigger-bread globalnav-menutrigger-bread-bottom">
+						<animate id="globalnav-anim-menutrigger-bread-bottom-open" attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 2 12, 16 12; 2 9, 16 9; 3.5 15, 15 3.5"></animate>
+						<animate id="globalnav-anim-menutrigger-bread-bottom-close" attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 3.5 15, 15 3.5; 2 9, 16 9; 2 12, 16 12"></animate>
+					</polyline>
+					<polyline id="globalnav-menutrigger-bread-top" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" points="2 5, 16 5" class="globalnav-menutrigger-bread globalnav-menutrigger-bread-top">
+						<animate id="globalnav-anim-menutrigger-bread-top-open" attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 2 5, 16 5; 2 9, 16 9; 3.5 3.5, 15 15"></animate>
+						<animate id="globalnav-anim-menutrigger-bread-top-close" attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 3.5 3.5, 15 15; 2 9, 16 9; 2 5, 16 5"></animate>
+					</polyline>
+				</svg>
+			</button>
+		</div>
+	</div>
+	<span style="visibility: hidden; position: absolute; top: 0px; z-index: -1;"> </span>
+</nav>
+<!-- <div class="globalnav-placeholder"></div> -->
+<script src="/assets/scripts/ac-globalnav.built.js?01172638057"></script>
+	<!-- metrics -->
+<script>
+	/* RSID: */
+	var s_account="awdappledeveloper"
+</script>	
+<script src="/assets/metrics/scripts/analytics.js"></script>
+<script>
+	s_sections = [
+		{
+			"pattern": "^/documentation",
+			"channel": "www.documentation.developer"
+		},
+		{
+			"pattern": "^/library",
+			"channel": "www.documentation.developer"
+		},
+		{
+			"pattern": "^/tutorials",
+			"channel": "www.documentation.developer"
+		},	
+		{
+			"pattern": "human\\-interface\\-guidelines",
+			"channel": "www.hig.developer"
+		},
+		{
+			"pattern": "/testflight/",
+			"channel": "www.appstoreconnect.developer"
+		},
+		{
+			"pattern": "/app\\-store\\-connect/",
+			"channel": "www.appstoreconnect.developer"
+		},
+		{
+			"pattern": "/support/app\\-store\\-connect/",
+			"channel": "www.appstoreconnect.developer"
+		},
+		{
+			"pattern": "/help/app\\-store\\-connect/",
+			"channel": "www.appstoreconnect.developer"
+		},
+		{
+			"pattern": "/wwdc/",
+			"channel": "www.wwdc.developer"
+		},
+		{
+			"pattern": "/wwdc\\d{2}/",
+			"channel": "www.wwdc.developer"
+		},
+		{
+			"pattern": "/videos/",
+			"channel": "www.videos.developer"
+		},
+		{
+			"pattern": "^/account",
+			"channel": "www.account.developer"
+		},
+		{
+			"pattern": "downloads?",
+			"channel": "www.download.developer"
+		},
+		{
+			"pattern": "/localization/",
+			"channel": "www.appstore.developer"
+		},	
+		{
+			"pattern": "/app\\-store/",
+			"channel": "www.appstore.developer"
+		},
+		{
+			"pattern": "/in\\-app\\-purchase/",
+			"channel": "www.appstore.developer"
+		},
+		{
+			"pattern": "/cn/",
+			"channel": "www.cn.developer"
+		},
+		{
+			"pattern": "/jp/",
+			"channel": "www.jp.developer"
+		},
+		{
+			"pattern": "/kr/",
+			"channel": "www.kr.developer"
+		},
+		{
+			"pattern": "/de/",
+			"channel": "www.de.developer"
+		},
+		{
+			"pattern": "/la/",
+			"channel": "www.la.developer"
+		},
+		{
+			"pattern": "/fr/",
+			"channel": "www.fr.developer"
+		},
+		{
+			"pattern": "/it/",
+			"channel": "www.it.developer"
+		},
+		{
+			"pattern": "/br/",
+			"channel": "www.br.developer"
+		}
+	];
+	
+	s.pageName= AC && AC.Tracking && AC.Tracking.pageName();
+	s.channel="www.en.developer";
+	
+	s_sections.forEach((s_section) => {
+		var regex = new RegExp(s_section.pattern);
+		
+		if(location.pathname.search(regex) !== -1) {
+			s.channel=s_section.channel;
+		}
+	});
+	
+	/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+	var s_code=s.t();if(s_code)document.write(s_code)
+</script>
+<!-- /metrics -->
+	<link rel="stylesheet" property="stylesheet" href="/assets/styles/localnav.css" type="text/css" />
+<input type="checkbox" id="localnav-menustate" class="localnav-menustate"/>
+<nav id="localnav" class="localnav localnav-scrim" data-sticky role="navigation">
+	<div class="localnav-wrapper">
+		<div class="localnav-background"></div>
+		<div class="localnav-content">
+			<h2 class="localnav-title">
+				<a href="/cn/app-store/">App Store</a>
+			</h2>
+
+			<div class="localnav-menu">
+				<a href="#localnav-menustate" class="localnav-menucta-anchor localnav-menucta-anchor-open" id="localnav-menustate-open">
+					<span class="localnav-menucta-anchor-label">打开菜单</span>
+				</a>
+				<a href="#" class="localnav-menucta-anchor localnav-menucta-anchor-close" id="localnav-menustate-close">
+					<span class="localnav-menucta-anchor-label">关闭菜单</span>
+				</a>
+				<div class="localnav-menu-tray">
+					<ul class="localnav-menu-items">
+						<li class="localnav-menu-item">
+							<a href="/cn/app-store/" class="localnav-menu-link">概览</a>
+						</li>
+						<li class="localnav-menu-item">
+							<a href="/cn/app-store/whats-new/" class="localnav-menu-link">新功能指南</a>
+						</li>
+						<li class="localnav-menu-item">
+							<a href="/cn/app-store/get-started/" class="localnav-menu-link">入门汇总</a>
+						</li>
+						<li class="localnav-menu-item">
+							<a href="/cn/app-store/resources/" class="localnav-menu-link">资源</a>
+						</li>
+					</ul>
+				</div>
+				<div class="localnav-actions localnav-actions">
+					<div class="localnav-action localnav-action-menucta" aria-hidden="true">
+						<label for="localnav-menustate" class="localnav-menucta">
+							<span class="localnav-menucta-chevron"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+<label id="localnav-curtain" for="localnav-menustate"></label>
+<script src="/assets/scripts/ac-localnav.built.js"></script>
+<script type="text/javascript" src="/assets/scripts/localnav.js"></script>
+
+	<main id="main" class="main" role="main">
+		<div class="ribbon ribbon-blue-to-default">
+			<div class="ribbon-drop-wrapper">
+				<div class="ribbon-content-wrapper">
+					<div class="ribbon-content row">
+						<div class="column large-centered large-12">
+							<p> 你现在可以利用<a href="/cn/app-store/product-page-optimization/" class="ribbon-link nowrap">产品页面优化</a>，并在 App&nbsp;Store 上创建<a href="/cn/app-store/custom-product-pages/" class="ribbon-link nowrap">自定产品页面</a>了。 </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="section section-hero bg-light">
+			<div class="section-content">
+				<div class="row">
+					<div class="column large-centered large-10 small-12 text-center">
+
+						<h1 class="typography-headline">创建你的产品页</h1>
+						<p class="typography-intro">App&nbsp;Store 产品页面中的每个元素都有能力帮助提升你的 App 下载量。了解如何通过精心设计的元数据，帮助用户在你的产品页面和搜索结果中更容易发现并乐享你的 App。你可以在 App&nbsp;Store&nbsp;Connect 中创建并维护产品页面，或使用 App&nbsp;Store&nbsp;Connect&nbsp;API 来自动化工作流程。</p>
+					</div>
+				</div>
+			</div>
+			<figure class="lockup-hero center"></figure>
+		</section>
+
+		<section class="section section-app-name">
+			<div class="section-content">
+				<div class="row-flex">
+					<div class="column-flex-center large-offset-1 large-5 medium-7 medium-offset-0 small-12">
+
+						<h2 class="typography-subsection-headline">App 名称</h2>
+						<p>App 的名称对于用户如何发现你的 App 至关重要。为你的 App 选择一个简单易记的名称，它不仅应通俗易懂，还应能简括 App 的用途。确保它鲜明独特。名称应避免使用太普遍的词语，或与现有 App 名称过于相似。App 名称最多可以包含 30 个字符。</p>
+					</div>
+					<div class="column-flex-center large-offset-1 large-5 medium-offset-0 small-offset-0 small-12">
+						<div class="pin-wrapper">
+							<figure class="device-wrap device-iphone-15-pro-titanium-container device-iphone-15-pro-titanium device-medium-for-small device-flex" role="img">
+								<picture class="device-screen">
+									<source media="(max-width:1068px)" srcset="/app-store/product-page/images/cn-screen-15-product-page-medium_2x.jpg" />
+									<img src="/app-store/product-page/images/cn-screen-15-product-page-large_2x.jpg" width="100%" alt="iPhone showing App Store product page for Forest Explorer app featuring rock climbing" aria-label="iPhone showing App Store product page for Forest Explorer app featuring rock climbing" />
+								</picture>
+								<figure class="device-hardware"></figure>
+							</figure>
+							<div class="pin pin-horizontal pin-horizontal-left medium-hide">
+								<span class="pin-caption">App 名称</span>
+							</div>
+							<div class="pin pin-vertical pin-vertical-bottom large-hide medium-show">
+								<span class="pin-caption">App 名称</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-icon bg-light">
+			<div class="section-content">
+				<div class="row-flex">
+					<div class="column-flex-center large-offset-1 large-5 medium-7 medium-offset-0 small-12">
+
+						<h2 class="typography-subsection-headline">图标</h2>
+						<p>App 图标是用户查看 App 时首先映入眼帘的元素之一，请善用它来展现 App 的特性和用途，给用户留下深刻的第一印象。请与图形设计师合作，设计出简约而又易于辨识的图标。尝试测试各种设计方案，以确定哪一款图标在目标受众中最具辨识度和意义。</p>
+						<p>为确保图标以各种尺寸展示时均清晰易辨，请避免添加不必要的视觉细节。请参阅<a href="/cn/design/human-interface-guidelines/">《人机界面指南》<span class="loc-cj"></span></a>，以了解如何创建既美观又令人印象深刻的图标。</p>
+					</div>
+					<div class="column-flex-center large-offset-1 large-5 medium-offset-0 small-offset-0 small-12">
+						<div class="pin-wrapper">
+							<figure class="device-wrap device-iphone-15-pro-titanium-container device-iphone-15-pro-titanium device-medium-for-small device-flex" role="img">
+								<picture class="device-screen">
+									<source media="(max-width:1068px)" srcset="/app-store/product-page/images/cn-screen-15-product-page-medium_2x.jpg" />
+									<img src="/app-store/product-page/images/cn-screen-15-product-page-large_2x.jpg" width="100%" alt="iPhone showing App Store product page for Forest Explorer app featuring rock climbing" aria-label="iPhone showing App Store product page for Forest Explorer app featuring rock climbing" />
+								</picture>
+								<figure class="device-hardware"></figure>
+							</figure>
+							<div class="pin pin-horizontal pin-horizontal-left medium-hide">
+								<span class="pin-caption">图标</span>
+							</div>
+							<div class="pin pin-vertical pin-vertical-bottom large-hide medium-show">
+								<span class="pin-caption">图标</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-subtitle">
+			<div class="section-content">
+				<div class="row-flex">
+					<div class="column-flex-center large-offset-1 large-5 medium-7 medium-offset-0 small-12">
+
+						<h2 class="typography-subsection-headline">副标题</h2>
+						<p>App 的副标题旨在以简洁的措词来归纳你的 App。应考虑使用副标题来更详细地说明 App 的价值，而不是使用 App 的名称。你应避免使用“全球最佳 App”等太宽泛的描述，而应突显 App 的特色或典型用途，从而引起受众共鸣。你可以在提交 App 的新版本时更新副标题，以帮助确定最能吸引用户的副标题。副标题最多可以包含 30 个字符。它会在 App Store 中显示在 App 名称的下方。</p>
+					</div>
+					<div class="column-flex-center large-offset-1 large-5 medium-offset-0 small-offset-0 small-12">
+						<div class="pin-wrapper">
+							<figure class="device-wrap device-iphone-15-pro-titanium-container device-iphone-15-pro-titanium device-medium-for-small device-flex" role="img">
+								<picture class="device-screen">
+									<source media="(max-width:1068px)" srcset="/app-store/product-page/images/cn-screen-15-product-page-medium_2x.jpg" />
+									<img src="/app-store/product-page/images/cn-screen-15-product-page-large_2x.jpg" width="100%" alt="iPhone showing App Store product page for Forest Explorer app featuring rock climbing" aria-label="iPhone showing App Store product page for Forest Explorer app featuring rock climbing" />
+								</picture>
+								<figure class="device-hardware"></figure>
+							</figure>
+							<div class="pin pin-horizontal pin-horizontal-left medium-hide">
+								<span class="pin-caption">副标题</span>
+							</div>
+							<div class="pin pin-vertical pin-vertical-bottom large-hide medium-show">
+								<span class="pin-caption">副标题</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-app-previews bg-light">
+			<div class="section-content">
+				<div class="row-flex">
+					<div class="column-flex-center large-offset-1 large-5 medium-7 medium-offset-0 small-12">
+
+						<h2 class="typography-subsection-headline">App 预览</h2>
+						<p>App 预览以简短的视频形式，演示 App 的特性、功能和用户界面 (UI)，而且用户在 App Store 上就可以直接观看。预览视频使用在设备上采集的素材来展示 App 的使用体验，其长度可达 30 秒。在 App&nbsp;Store 和 Mac&nbsp;App&nbsp;Store 产品页面上，你可以展示最多三个 App 预览，也可以将它们本地化为 App&nbsp;Store 上支持的所有语言版本。</p>
+						<p>当用户查看你的产品页面时，App 预览会以静音模式自动播放，因此请务必确保视频的前几秒内容极具视觉吸引力。当视频没有自动播放时，App 预览会显示海报帧。</p>
+						<p>要进一步了解如何打造出色的 App 预览，请参阅“<a href="/cn/app-store/app-previews/" class="nowrap">借助 App 预览，展示更多精彩内容</a>”。</p>
+					</div>
+					<div class="column-flex-center large-offset-1 large-5 medium-offset-0 small-offset-0 small-12">
+						<div class="pin-wrapper">
+							<figure class="device-wrap device-iphone-15-pro-titanium-container device-iphone-15-pro-titanium device-medium-for-small device-flex" role="img">
+								<picture class="device-screen">
+									<source media="(max-width:1068px)" srcset="/app-store/product-page/images/cn-screen-15-product-page-medium_2x.jpg" />
+									<img src="/app-store/product-page/images/cn-screen-15-product-page-large_2x.jpg" width="100%" alt="iPhone showing App Store product page for Forest Explorer app featuring rock climbing" aria-label="iPhone showing App Store product page for Forest Explorer app featuring rock climbing" />
+								</picture>
+								<figure class="device-hardware"></figure>
+							</figure>
+							<div class="pin pin-horizontal pin-horizontal-left medium-hide">
+								<span class="pin-caption">App 预览</span>
+							</div>
+							<div class="pin pin-vertical pin-vertical-bottom large-hide medium-show">
+								<span class="pin-caption">App 预览</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-screenshots">
+			<div class="section-content">
+				<div class="row-flex">
+					<div class="column-flex-center large-offset-1 large-5 medium-7 medium-offset-0 small-12">
+
+						<h2 class="typography-subsection-headline">截屏</h2>
+						<p>利用从你 App 的用户界面中采集的图像，以直观形象的方式展现 App 的用户体验。在 App&nbsp;Store 和 Mac&nbsp;App&nbsp;Store 产品页面上，你可以展示最多 10 张截屏。当没有 App 预览可用时，第一到第三张截屏 (具体数量取决于截屏的显示方向) 将显示在搜索结果中，因此请确保这几张图像能突显出你 App 的精髓。后面的每一张截屏应分别突显 App 的一个主要优势或功能，以便充分阐释 App 的价值。如果你的 App 支持深色模式，你可以考虑包含至少一张深色模式下的截屏，为用户展示深色模式下的效果。</p>
+						<p>有关截屏规范，请参阅“<a href="/cn/help/app-store-connect/reference/screenshot-specifications/" class="nowrap">App Store Connect 帮助</a>”。</p>
+					</div>
+					<div class="column-flex-center large-offset-1 large-5 medium-offset-0 small-offset-0 small-12">
+						<div class="pin-wrapper">
+							<figure class="device-wrap device-iphone-15-pro-titanium-container device-iphone-15-pro-titanium device-medium-for-small device-flex" role="img">
+								<picture class="device-screen">
+									<source media="(max-width:1068px)" srcset="/app-store/product-page/images/cn-screen-15-product-page-screenshot-medium_2x.jpg" />
+									<img src="/app-store/product-page/images/cn-screen-15-product-page-screenshot-large_2x.jpg" width="100%" alt="" aria-label="" />
+								</picture>
+								<figure class="device-hardware"></figure>
+							</figure>
+							<div class="pin pin-horizontal pin-horizontal-left medium-hide">
+								<span class="pin-caption">截屏</span>
+							</div>
+							<div class="pin pin-vertical pin-vertical-bottom large-hide medium-show">
+								<span class="pin-caption">截屏</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-description bg-light">
+			<div class="section-content">
+				<div class="row">
+					<div class="column large-offset-1 large-5 medium-7 medium-offset-0 small-12">
+
+						<h2 class="typography-subsection-headline">描述</h2>
+						<p>描述应当引人入胜，能够重点强调 App 的特性和功能。理想的描述是一段简洁的说明性文字，后面附有 App 主要功能的简短列表。让潜在用户了解你的 App 的独特之处，以及他们为何会喜欢上这款 App。介绍 App 时应使用与你的品牌相符的语气，并使用目标受众能够接受和理解的词句。描述中的第一句话至关重要 — 这是用户在还没有点开阅读更多内容时能够读到的唯一信息。这句话应字字斟酌，请将重点放在 App 的独特功能上。</p>
+						<p>如果你想要提及嘉奖荣誉，建议将其放在描述的末尾或在宣传文本中加以说明。请不要在描述中添加不必要的关键词，以试图优化搜索结果。同样也请避免在 App 的描述中包括具体价格。价格信息已显示在产品页面上，而在描述中提及的价格可能并不是在所有地区都适用的准确价格。</p>
+						<p>在提交 App 的新版本时，你可一并更新 App 的描述。如果你希望更频繁地分享重要更新，而不受 App 提交日程所限，可考虑更新宣传文本。</p>
+
+						<h2 class="typography-subsection-headline">宣传文本</h2>
+						<p>App 的宣传文本显示在描述的顶部，其长度不应超过 170 个字符。你无须提交 App 的新版本，也可以随时更新这一部分的内容。应考虑使用宣传文本来分享 App 的最新动态，比如限时促销或即将发布的功能。</p>
+					</div>
+					<div class="column large-offset-1 large-5 medium-offset-0 small-offset-0 small-12">
+						<div class="pin-wrapper">
+							<figure class="device-wrap device-iphone-15-pro-titanium-container device-iphone-15-pro-titanium device-medium-for-small device-flex" role="img">
+								<picture class="device-screen">
+									<source media="(max-width:1068px)" srcset="/app-store/product-page/images/cn-screen-15-description-medium_2x.jpg" />
+									<img src="/app-store/product-page/images/cn-screen-15-description-large_2x.jpg" width="100%" alt="" aria-label="" />
+								</picture>
+								<figure class="device-hardware"></figure>
+							</figure>
+							<div class="pin pin-horizontal pin-horizontal-left medium-hide">
+								<span class="pin-caption">描述</span>
+							</div>
+							<div class="pin pin-vertical pin-vertical-bottom large-hide medium-show">
+								<span class="pin-caption">描述</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-keywords">
+			<div class="section-content">
+				<div class="row">
+					<div class="column large-offset-1 large-5 medium-7 medium-offset-0 small-12">
+
+						<h2 class="typography-subsection-headline">关键词</h2>
+						<p>关键词可帮助确定你的 App 会在哪些搜索结果中显示，因此请仔细选择关键词，以确保用户可以轻松找到你的 App。选择关键词时，考虑受众在查找类似的 App 时会使用哪些字词。对 App 特性和功能的描述应该尽可能明确具体，以便你的 App 能通过搜索算法显示在关联的搜索结果中。关键词的热门程度通常和使用该关键词的 App 搜索结果排名高低成反比。你应在两者中取得平衡。可能会有很多人搜索类似“工作”或“社交”等流行的实用词语，但竞争排名的 App 也非常多。相反，不太热门的关键词搜索次数较少，但排名的竞争并不那么激烈。</p>
+						<p>关键词总计不能超过 100 个字符；如果有多个关键词，请以逗号分隔且不加空格。(请注意，可以在关键词短语内部使用空格来分隔字词。例如，物业,房屋,2024 房地产。)请注意避免以下情况，以便在字符限制内最大程度地增加关键词数量：</p>
+						<ul>
+							<li>词语的复数形式 (如果已包含单数形式)</li>
+							<li>类别名称或“App”一词</li>
+							<li>重复词语</li>
+							<li>特殊字符 (如 ＃ 或 @，除非包含在你的品牌标识中)。因为用户搜索你的 App 时，特殊字符不会被算入搜索权重里。</li>
+						</ul>
+						<p>关键词使用不当是 App 被 App Store 拒绝的一个常见原因。请勿在关键词中加入以下内容：</p>
+						<ul>
+							<li>未经授权的商标用语、名人姓名以及其他受保护的词语和短语</li>
+							<li>与 App 无关的词语</li>
+							<li>竞品 App 的名称</li>
+							<li>不相关、不适当、冒犯性或令人反感的词语</li>
+						</ul>
+						<p>另外请注意，宣传文本不会影响你的 App 的搜索排名，因此不得用于显示关键词。</p>
+					</div>
+					<div class="column large-offset-1 large-5 medium-offset-0 small-offset-0 small-12">
+						<figure class="device-wrap device-iphone-15-pro-titanium-container device-iphone-15-pro-titanium device-medium-for-small device-flex" role="img">
+							<picture class="device-screen">
+								<source media="(max-width:1068px)" srcset="/app-store/product-page/images/cn-screen-15-product-page-search-medium_2x.jpg" />
+								<img src="/app-store/product-page/images/cn-screen-15-product-page-search-large_2x.jpg" width="100%" alt="" aria-label="" />
+							</picture>
+							<figure class="device-hardware"></figure>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-in-app-purchases bg-light">
+			<div class="section-content">
+				<div class="row">
+					<div class="column large-offset-1 large-5 medium-7 medium-offset-0 small-12">
+
+						<h2 class="typography-subsection-headline">App 内购买项目</h2>
+						<p>用户可以直接在你的产品页面上查看 App 内购买项目并进行购买。App 内购买项目和订阅项目在产品页面上显示在两个不同的部分中；在这两个部分中，你一共可以展示最多 20 个项目。你还能选择这些项目的列示顺序，以帮助提高特定内容的认知度。各项目都应有自己的显示名称、推广图像和描述。App 内购买项目的名称最多可以包含 35 个字符，描述最多可以包含 55 个字符，因此它们应能流畅、贴切而简洁地突显你的 App 内购买项目的优势。</p>
+						<p>App 内购买项目也可能会显示在搜索结果中，并有可能被推荐到“Today”、“游戏”和“App”标签上。用户在这些位置轻点 App 内购买项目时，会直接转到你的产品页面；在该页面中，他们不但能了解 App 的描述，查看截屏和 App 预览，还能点击购买 App 内购买项目。如果用户在点击购买你的某个 App 内购买项目时还未在他们的设备上安装相应的 App，系统会提示他们下载或购买这款 App来完成交易。</p>
+						<p>有关详细信息，请参阅“<a href="/cn/app-store/promoting-in-app-purchases/">推广 App 内购买项目</a>”。</p>
+					</div>
+					<div class="column large-offset-1 large-5 medium-offset-0 small-offset-0 small-12">
+						<div class="pin-wrapper">
+							<figure class="device-wrap device-iphone-15-pro-titanium-container device-iphone-15-pro-titanium device-medium-for-small device-flex" role="img">
+								<picture class="device-screen">
+									<source media="(max-width:1068px)" srcset="/app-store/product-page/images/cn-screen-15-iap-medium_2x.jpg" />
+									<img src="/app-store/product-page/images/cn-screen-15-iap-large_2x.jpg" width="100%" alt="" aria-label="" />
+								</picture>
+								<figure class="device-hardware"></figure>
+							</figure>
+							<div class="pin pin-horizontal pin-horizontal-left medium-hide">
+								<span class="pin-caption">App 内购买项目</span>
+							</div>
+							<div class="pin pin-vertical pin-vertical-bottom large-hide medium-show">
+								<span class="pin-caption">App 内购买项目</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-whats-new">
+			<div class="section-content">
+				<div class="row-flex">
+					<div class="column-flex-center large-offset-1 large-5 medium-7 medium-offset-0 small-12">
+
+						<h2 class="typography-subsection-headline">新功能</h2>
+						<p>当你更新 App 时，可使用“新功能”来告知用户有哪些变更内容。这一信息会在产品页面和 “更新” 标签的产品介绍中呈现。</p>
+						<p>如果你根据反馈添加了新的功能或修复了某个错误，可通过“新功能”让用户知道你听取了他们的意见。请按重要性依次列出 App 的新特性、内容或功能，并添加具有号召性的文字信息，让用户对更新充满期待。</p>
+					</div>
+					<div class="column-flex-center large-offset-1 large-5 medium-offset-0 small-offset-0 small-12">
+						<div class="pin-wrapper">
+							<figure class="device-wrap device-iphone-15-pro-titanium-container device-iphone-15-pro-titanium device-medium-for-small device-flex" role="img">
+								<picture class="device-screen">
+									<source media="(max-width:1068px)" srcset="/app-store/product-page/images/cn-screen-15-whatsnew-medium_2x.jpg" />
+									<img src="/app-store/product-page/images/cn-screen-15-whatsnew-large_2x.jpg" width="100%" alt="" aria-label="" />
+								</picture>
+								<figure class="device-hardware"></figure>
+							</figure>
+							<div class="pin pin-horizontal pin-horizontal-left medium-hide">
+								<span class="pin-caption">新功能</span>
+							</div>
+							<div class="pin pin-vertical pin-vertical-bottom large-hide medium-show">
+								<span class="pin-caption">新功能</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-ratings-and-reviews bg-light">
+			<div class="section-content">
+				<div class="row">
+					<div class="column large-offset-1 large-5 medium-7 medium-offset-0 small-12">
+
+						<h2 class="typography-subsection-headline">评分与评论</h2>
+						<p>评分和评论会影响你的 App 在搜索中的排名，也能帮助吸引用户。你应专注于提供优质的 App 体验，获取用户的好评。用户的个人评分会汇总成为你 App 的总评分，并显示在你的产品页面和搜索结果中。App&nbsp;Store 中各个地区之间的总评分互不影响。</p>
+						<p>借助 <a href="/documentation/storekit/skstorereviewcontroller/">SKStoreReviewController API<span class="loc-en-only"></span></a>，你能为用户提供一种更简单的方法来为你的 App 提供反馈。在 365 天以内，你最多可向用户征求三次评分。用户会经由你的预设提示来提交评分，撰写和提交评论时他们也不必离开该 App。</p>
+						<p>你可以使用 App&nbsp;Store&nbsp;Connect 回复用户对你的 App 的评论，以直接处理反馈、解答疑问以及消除他们的顾虑。当你回复用户评论时，评论者会收到通知并可选择更新其评论。评论和回复可以随时更新，但是产品页面上只会显示每位用户最新发表的评论和回复。</p>
+						<p>有关更多详情，请参阅“<span class="nowrap"><a href="/cn/app-store/ratings-and-reviews/">评分、评论和回复</a>”。</span></p>
+					</div>
+					<div class="column large-offset-1 large-5 medium-offset-0 small-offset-0 small-12">
+						<figure class="device-wrap device-iphone-15-pro-titanium-container device-iphone-15-pro-titanium device-medium-for-small device-flex" role="img">
+							<picture class="device-screen">
+								<source media="(max-width:1068px)" srcset="/app-store/product-page/images/cn-screen-15-description-medium_2x.jpg" />
+								<img src="/app-store/product-page/images/cn-screen-15-description-large_2x.jpg" width="100%" alt="" aria-label="" />
+							</picture>
+							<figure class="device-hardware"></figure>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-categories">
+			<div class="section-content">
+				<div class="row-flex">
+					<div class="column-flex-center large-offset-1 large-5 medium-7 medium-offset-0 small-12">
+
+						<h2 class="typography-subsection-headline">类别</h2>
+						<p>App&nbsp;Store 上的类别能帮助用户发现符合他们需求的新 App。你可以为 App 分配一个主要类别和一个次要类别。主要类别对曝光度尤为重要，它可以帮助用户在浏览或筛选搜索结果时找到你的 App，并决定你的 App 将出现在 App&nbsp;Store 上的哪个标签中。请务必选择最恰当的主要类别。选择与你的 App 无关的类别可能会导致你的 App 在提交以供审核时遭到拒绝。</p>
+						<p>有关更多详情，请参阅“<span class="nowrap"><a href="/cn/app-store/categories/">选择类别</a>”。</span></p>
+					</div>
+					<div class="column-flex-center large-offset-1 large-5 medium-offset-0 small-offset-0 small-12">
+						<figure class="device-wrap device-iphone-15-pro-titanium-container device-iphone-15-pro-titanium device-medium-for-small device-flex" role="img">
+							<picture class="device-screen">
+								<source media="(max-width:1068px)" srcset="/app-store/product-page/images/cn-screen-15-categories-medium_2x.jpg" />
+								<img src="/app-store/product-page/images/cn-screen-15-categories-large_2x.jpg" width="100%" alt="" aria-label="" />
+							</picture>
+							<figure class="device-hardware"></figure>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-localization bg-light">
+			<div class="section-content">
+				<div class="row-flex">
+					<div class="column-flex-center large-offset-1 large-5 medium-7 medium-offset-0 small-12">
+
+						<h2 class="typography-subsection-headline">本地化</h2>
+						<p>如果你的 App 支持多种语言，请确保为该 App 面向的每个市场本地化其描述、关键词、App 预览和截屏。你还可以翻译 App 的名称，并根据不同市场的风俗文化制定关键词，让你的 App 更好地引起当地受众的共鸣。</p>
+						<p>更多相关信息，请参阅<span class="nowrap"><a href="/cn/help/app-store-connect/manage-app-information/localize-app-store-information/">本地化 App Store 信息</a>。</span></p>
+						<p>了解如何本地化你的 App，请参阅<span class="nowrap"><a href="/cn/localization/">为 App 扩展新市场</a>。</span></p>
+					</div>
+					<div class="column-flex-center large-offset-1 large-5 medium-offset-0 small-offset-0 small-12">
+						<figure class="device-wrap device-iphone-15-pro-titanium-container device-iphone-15-pro-titanium device-medium-for-small device-flex" role="img">
+							<picture class="device-screen">
+								<source media="(max-width:1068px)" srcset="/app-store/product-page/images/jp-screen-15-product-page-screenshot-medium_2x.jpg" />
+								<img src="/app-store/product-page/images/jp-screen-15-product-page-screenshot-large_2x.jpg" width="100%" alt="" aria-label="" />
+							</picture>
+							<figure class="device-hardware"></figure>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-enhancing">
+			<div class="section-content">
+				<div class="row">
+					<div class="column large-offset-1 large-10 small-offset-0 small-12">
+
+						<h2 class="typography-subsection-headline">进一步利用你的产品页面</h2>
+
+						<h3>产品页面优化</h3>
+						<p>在 App 产品页面的不同版本上使用不同的图标、截屏和 App 预览，找出效果最佳的版本。不同的 App 产品页面版本将随机显示给一定比例并符合条件的 App&nbsp;Store 用户，相关结果将显示在“App 分析”中，帮助你找出效果最佳的版本，并在 App&nbsp;Store 上对所有人显示。</p>
+						<p class="margin-bottom"><a href="/cn/app-store/product-page-optimization/" class="more">进一步了解</a></p>
+
+						<h3>自定产品页面</h3>
+						<p>为 App 产品页面创建附加的版本，以突出特定的功能或内容，用户可通过你共享的唯一 URL 链接至不同版本的产品页面。自定产品页面还可以设置不同的截屏、App 预览和推广文本 (并为其进行本地化)，借此帮助你展示特定的运动项目、角色、节目，以及游戏功能等。</p>
+						<p><a href="/cn/app-store/custom-product-pages/" class="more">进一步了解</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-support">
+			<div class="section-content theme-dark bg-blue-callout">
+				<div class="row">
+					<div class="column large-centered large-10 medium-12 text-center">
+
+						<h2 class="typography-subsection-headline">其他 Apple&nbsp;平台的元数据</h2>
+						<p>了解如何准备你的产品页面元数据。</p>
+						<div class="row icon-row">
+							<div class="column large-3 small-12 text-center">
+								<a class="block-link" href="/cn/watchos/submit/">
+									<figure class="icon-support icon-apple-watch"></figure> Apple&nbsp;Watch 版 App&nbsp;Store</a>
+							</div>
+							<div class="column large-3 small-12 text-center">
+								<a class="block-link" href="/cn/tvos/submit/">
+									<figure class="icon-support icon-apple-tv"></figure> Apple&nbsp;TV 版 App&nbsp;Store</a>
+							</div>
+							<div class="column large-3 small-12 text-center">
+								<a class="block-link" href="/cn/imessage/">
+									<figure class="icon-support icon-imessage"></figure> iMessage 信息版 App&nbsp;Store</a>
+							</div>
+							<div class="column large-3 small-12 text-center">
+								<a class="block-link" href="/cn/visionos/submit/">
+									<figure class="icon-support icon-visionos"></figure> visionOS 版 App&nbsp;Store</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+		<link rel="stylesheet" property="stylesheet" href="/assets/styles/router-strip.css" type="text/css" />
+	<aside class="section developer-router-links">
+		<div class="section-content">
+			<div class="row">
+				<div class="column large-3 medium-6 small-12">
+					<a href="/cn/app-store/submitting/" class="block text-center">
+						<figure class="router-icon router-icon-submit"></figure>
+						<p><strong>提交</strong></p>
+						<p class="typography-subbody">准备好你的 App 和元数据，以提交至 <span class="nowrap">App Store。</span></p>
+						<p class="typography-subbody">
+							<span class="block-link more">进一步了解</span>
+						</p>
+					</a>
+				</div>
+				<div class="column large-3 medium-6 small-12">
+					<a href="/cn/app-store-connect/" class="block text-center">
+						<figure class="router-icon router-icon-manage"></figure>
+						<p><strong>管理</strong></p>
+						<p class="typography-subbody">管理 App、分析、销售报告、商务信息，以及更多。</p>
+						<p class="typography-subbody">
+							<span class="block-link more">进一步了解</span>
+						</p>
+					</a>
+				</div>
+				<div class="column large-3 medium-6 small-12">
+					<a href="/cn/app-store/promote/" class="block text-center">
+						<figure class="router-icon router-icon-promote"></figure>
+						<p><strong>推广</strong></p>
+						<p class="typography-subbody">获取营销指南和工具，以助你在 <span class="nowrap">App Store</span> 上推广你的 App。</p>
+						<p class="typography-subbody">
+							<span class="block-link more">进一步了解</span>
+						</p>
+					</a>
+				</div>
+				<div class="column large-3 medium-6 small-12">
+					<a href="/cn/support/app-store/" class="block text-center">
+						<figure class="router-icon router-icon-help"></figure>
+						<p><strong>支持</strong></p>
+						<p class="typography-subbody">有任何疑问或请求？查看指南和文章获取帮助，或联系我们。</p>
+						<p class="typography-subbody">
+							<span class="block-link more">进一步了解</span>
+						</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</aside>
+	<link rel="stylesheet" href="/assets/styles/footer.dist.css">
+<footer id="footer" class="footer" role="contentinfo" aria-labelledby="footer-label">
+    <div class="footer-content">
+        <h2 class="footer-label" id="footer-label">Developer Footer</h2>
+
+	<section class="footer-sosumi">
+		<ul>
+			<li>这些信息适用于 iOS&nbsp;11 及更高版本上的 App&nbsp;Store，以及 macOS&nbsp;Mojave 及更高版本上的 Mac&nbsp;App&nbsp;Store。虽然你提供的元数据可在你 App 支持的所有平台版本上的 App&nbsp;Store 中共享，但某些栏位和功能在较早版本上可能不提供。</li>
+		</ul>
+	</section>
+
+	<developer-breadcrumbs>
+		<li><a href="/cn/app-store/">App Store</a></li>
+		<li>创建你的产品页面</li>
+	</developer-breadcrumbs>
+	        <nav class="footer-directory" aria-label="Apple Developer 目录" role="navigation" lang="zh-CN">
+	<!--googleoff: all-->
+	<div class="footer-directory-column">
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-platform" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-platform">
+
+				<h3 class="footer-directory-column-section-title">平台</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-platform" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">打开菜单</span> </a> <a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">关闭菜单</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/ios/">iOS</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/ipados/">iPadOS</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/macos/">macOS</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/tvos/">Apple tvOS</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/visionos/">visionOS</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/watchos/">watchOS</a></li>
+			</ul>
+		</div>
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-tools" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-tools">
+
+				<h3 class="footer-directory-column-section-title">工具</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-tools" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">打开菜单</span> </a>
+			<a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">关闭菜单</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/swift/">Swift</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/swiftui/">SwiftUI</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/swift-playground/">Swift Playground</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/testflight/">TestFlight</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/xcode/">Xcode</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/xcode-cloud/">Xcode Cloud</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/sf-symbols/">SF Symbols</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer-directory-column">
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-topics" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-topics">
+
+				<h3 class="footer-directory-column-section-title">主题和技术</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-topics" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">打开菜单</span> </a> <a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">关闭菜单</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/accessibility/">辅助功能</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/accessories/">配件</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/apple-intelligence/">Apple 智能</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/app-extensions/">App 扩展</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/app-store/">App Store</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/audio/">音频与视频 (英文)</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/augmented-reality/">增强现实</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/design/">设计</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/distribute/">分发</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/education/">教育</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/fonts/">字体 (英文)</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/games/">游戏</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/health-fitness/">健康与健身</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/in-app-purchase/">App 内购买项目</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/localization/">本地化</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/maps/">地图与位置</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/machine-learning/">机器学习与 AI</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://opensource.apple.com">开源资源 (英文)</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/security/">安全性</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/safari/">Safari 浏览器与网页 (英文)</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer-directory-column">
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-resources" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-resources">
+
+				<h3 class="footer-directory-column-section-title">资源和支持</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-resources" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">打开菜单</span> </a> <a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">关闭菜单</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/documentation/">完整文档 (英文)</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/documentation/">部分主题文档 (简体中文)</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/learn/">教程</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/download/">下载</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/forums/">论坛 (英文)</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/videos/">视频</a></li>
+			</ul>
+		</div>
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-support" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-support">
+
+				<h3 class="footer-directory-column-section-title">支持</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-support" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">打开菜单</span> </a>
+			<a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">关闭菜单</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/support/articles/">支持文档</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/contact/">联系我们</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/bug-reporting/">错误报告</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/system-status/">系统状态 (英文)</a></li>
+			</ul>
+		</div>
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-account" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-account">
+
+				<h3 class="footer-directory-column-section-title">账户</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-account" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">打开菜单</span> </a> <a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">关闭菜单</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/account/">Apple 开发者</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://appstoreconnect.apple.com/">App Store Connect</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/account/ios/certificate/">证书、标识符和描述文件 (英文)</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://feedbackassistant.apple.com/">反馈助理</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer-directory-column">
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-programs" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-programs">
+
+				<h3 class="footer-directory-column-section-title">计划和活动</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-programs" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">打开菜单</span> </a> <a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">关闭菜单</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/programs/">Apple Developer Program</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/programs/enterprise/">Apple Developer Enterprise Program</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/app-store/small-business-program/">App Store Small Business Program</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://mfi.apple.com/">MFi Program (英文)</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/programs/mini-apps-partner/">Mini Apps Partner Program</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/programs/news-partner/">News Partner Program (英文)</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/programs/video-partner/">Video Partner Program (英文)</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/security-bounty/">安全赏金计划 (英文)</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link nowrap" href="/programs/security-research-device/">Security Research Device Program (英文)</a></li>
+			</ul>
+		</div>
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-events" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-events">
+
+				<h3 class="footer-directory-column-section-title">活动</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-events" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">打开菜单</span> </a>
+			<a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">关闭菜单</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/events/">与 Apple 会面交流</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/events/developer-centers/">Apple Developer Center</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/app-store/app-store-awards/">App Store 大奖 (英文)</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/design/awards/">Apple 设计大奖</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/academies/">Apple Developer Academies (英文)</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="/cn/wwdc24/">WWDC</a></li>
+			</ul>
+		</div>
+	</div>
+	<!--googleon: all-->
+</nav>
+        <section class="footer-mini" vocab="http://schema.org/" typeof="Organization" lang="zh-CN">
+	<div class="footer-mini-news">
+		<div class="copy">
+			<div class="footer-mini-legal-link">阅读<a href="/cn/news/">最近新闻</a>。</div> 获取 <a href="https://apps.apple.com/cn/app/apple-developer/id640199958">Apple Developer App</a>。
+		</div>
+		<div class="content">
+			<div class="color-scheme-toggle"
+				role="radiogroup"
+				tabindex="0"
+				aria-label="Select a color scheme preference">
+
+				<label data-color-scheme-option="light">
+
+					<input type="radio" value="light" autocomplete="off"
+						onchange="window.setPreferredColorScheme(event.target.value)" />
+
+					<div class="text">Light</div>
+
+				</label>
+
+				<label data-color-scheme-option="dark">
+
+					<input type="radio" value="dark" autocomplete="off"
+						onchange="window.setPreferredColorScheme(event.target.value)" />
+
+					<div class="text">Dark</div>
+
+				</label>
+
+				<label data-color-scheme-option="auto">
+
+					<input type="radio" value="auto" autocomplete="off"
+						onchange="window.setPreferredColorScheme(event.target.value)" />
+
+					<div class="text">Auto</div>
+
+				</label>
+
+			</div>
+			<script async src="/assets/scripts/color-scheme-toggle.js"></script>
+		</div>
+	</div>
+	<link rel="stylesheet" href="/assets/styles/language-dropdown.css?54232608030">
+	<div class="language-dropdown dropdown-container legacy-form hidden">
+		<select class="dropdown" aria-label="Language Dropdown"></select>
+		<span class="dropdown-icon icon icon-chevrondown" aria-hidden="true"></span>
+	</div>
+	<script src="/assets/scripts/language-dropdown.js?45232608030"></script>
+	<div class="footer-mini-legal">
+		<div class="footer-mini-legal-copyright">版权所有 ©  2026 <a href="https://www.apple.com/cn/">Apple Inc.</a> 保留所有权利。</div>
+		<div class="footer-mini-legal-links">
+			<a class="footer-mini-legal-link" href="https://www.apple.com/cn/legal/internet-services/terms/site.html" class="first">使用条款</a>
+			<a class="footer-mini-legal-link" href="https://www.apple.com.cn/legal/privacy/">隐私政策</a>
+			<a class="footer-mini-legal-link" href="/cn/support/terms/">协议和准则</a>
+		</div>
+	</div>
+</section>
+    </div>
+</footer>
+</body>
+</html>

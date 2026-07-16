@@ -1,0 +1,80 @@
+[
+  {
+    "row": 121,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=121&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783656472579_121",
+    "checkedAt": "2026-07-10T04:07:59.958Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "我在客户成功团队负责这次生成式客服助手的客户灰度，明天下午要和产品、法务一起确认下周能不能先向两家付费客户开放。产品目前说明，助手会连接企业知识库、FAQ和工单",
+    "note": "附件读取失败：题目依赖附件或来源链接，但来源链接读取失败或附件原文不可用；请更换可访问链接、上传附件原文，或在附件内容列补充足够正文摘录/数据口径后重新质检。请更换可访问链接、上传附件原文，或在附件内容列补充足够正文摘录和数据口径，避免在缺少真实材料时误判通过。具体可改为：请更换可访问链接、上传附件原文，或在附件内容列补充足够的正文摘录/数据口径后重新质检。",
+    "categories": [
+      "attachment_read_failed"
+    ]
+  },
+  {
+    "row": 122,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=122&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783656479962_122",
+    "checkedAt": "2026-07-10T04:08:09.082Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "周四业委会要让物业经理说明，眼前的电动自行车问题现在能处理到哪一步；完整改造方案尚不具备讨论条件。巡查照片已经看到车辆停在门厅、楼梯口和疏散通道附近，居民还会追",
+    "note": "关键步骤问题：末尾需加入产物自检或交付前核对。请按真实完成顺序保留关键动作，删除过细或无关步骤。请按任务真实完成顺序整理关键动作，L1保持4-8条，L2保持8-15条，保留必要流程节点，合并过细或重复动作。具体可改为：加入产物自检或交付前核对步骤。修改后应让审核人一眼看出问题原因、需要补充的材料、应补到哪个字段，以及出题人可以直接执行的调整方向，并减少来回追问；不要只写笼统描述或模糊来源。",
+    "categories": [
+      "step_count"
+    ]
+  },
+  {
+    "row": 123,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=123&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783656489083_123",
+    "checkedAt": "2026-07-10T04:08:19.361Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "月底排期临近，低糖高蛋白代餐粉的直播脚本、达人短视频、详情页草稿和包装背面图仍在同时流转。“控糖”“饭前一杯少吃主食”“饱腹不长胖”等说法出现在不同版本和不同位",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 134,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=134&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783656499362_134",
+    "checkedAt": "2026-07-10T04:08:28.659Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "酒店会员运营准备做淡季短信召回，法务周一上午要决定名单里的六类字段能否进入本轮发送。业务底表已经出现手机号、身份证后四位、入住城市、消费频次、生日月份和“商务客",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 135,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=135&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783656508660_135",
+    "checkedAt": "2026-07-10T04:08:41.886Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "周五改稿会要处理一批左旋肉碱类保健食品直播素材。上一版脚本已经被平台打回，运营群里仍有人试探“吃完瘦”“不反弹”“安全不伤身”等说法；主播口播、详情页卖点、达人",
+    "note": "缺少核心材料：蓝帽/批准信息、广告审查凭证、达人图片授权、客服承诺依据、平台退回记录、各渠道当前稿原文。没有这些材料，风险提示。请补充上述材料，或缩小任务范围为仅整理收件清单和风险分类。补充时要写清数据来源、覆盖范围、地区年份、统计口径或附件位置，确保后续答案能基于真实材料给出具体判断。具体可改为：补充蓝帽/批准信息、广告审查凭证、达人图片授权、客服承诺依据、平台退回记录和各渠道当前稿原文，或缩。",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 136,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=136&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783656521887_136",
+    "checkedAt": "2026-07-10T04:08:54.711Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "一家社会组织正在考虑是否继续投入养老助餐项目的前期沟通。手头资料来自不同层级和地区：民政部方案说明助餐网络与部门职责，浙江实施方案反映省级运营机制，政府购买服务",
+    "note": "关键步骤问题：末尾需加入产物自检或交付前核对。请按真实完成顺序保留关键动作，删除过细或无关步骤。请按任务真实完成顺序整理关键动作，L1保持4-8条，L2保持8-15条，保留必要流程节点，合并过细或重复动作。具体可改为：加入产物自检或交付前核对步骤。修改后应让审核人一眼看出问题原因、需要补充的材料、应补到哪个字段，以及出题人可以直接执行的调整方向，并减少来回追问；不要只写笼统描述或模糊来源。",
+    "categories": [
+      "step_count"
+    ]
+  }
+]

@@ -1,0 +1,93 @@
+import fs from "node:fs/promises";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const root = path.resolve(__dirname, "../..");
+const tsvPath = path.join(root, "outputs", "l2_questions.tsv");
+
+const encodeSteps = (steps) => steps.join("\\n");
+const encodeParagraphs = (paragraphs) => paragraphs.join("\\n");
+
+const sleepRelatedAttachments =
+  "附件一_Apple_App审核指南_官方中文页面.html；附件二_Apple_App产品页创建说明_官方中文页面.html；附件三_Apple_App隐私详情与数据类型说明_官方中文页面.html；附件四_Google_Play数据安全表单帮助_官方中文页面.html；附件五_Google_Play健康类应用声明表单帮助_官方中文页面.html；附件六_Google_Play健康类内容与服务政策_官方中文页面.html；附件七_FTC_背书与推荐广告指南_2023.pdf";
+
+const sleepAttachmentContent =
+  "附件一：《Apple App 审核指南》，用于核对 App Store 审核、安全、隐私、法律合规、健康建议表达和误导性功效表述边界。\\n来源：https://developer.apple.com/cn/app-store/review/guidelines/\\n附件二：《Apple App 产品页创建说明》，用于核对商店描述、截图文案、产品页元数据、宣传语和上架前展示材料的表达口径。\\n来源：https://developer.apple.com/cn/app-store/product-page/\\n附件三：《Apple App 隐私详情与数据类型说明》，用于核对隐私标签、数据类型、数据使用目的和第三方数据披露口径。\\n来源：https://developer.apple.com/cn/app-store/app-privacy-details/\\n附件四：《Google Play 数据安全表单帮助》，用于核对安卓侧数据收集、共享、加密、删除、SDK 和数据安全表单填写口径。\\n来源：https://support.google.com/googleplay/android-developer/answer/10787469?hl=zh-Hans\\n附件五：《Google Play 健康类应用声明表单帮助》，用于确认睡眠评分、健康建议、可穿戴设备数据导入等功能是否需要健康类应用声明。\\n来源：https://support.google.com/googleplay/android-developer/answer/13996367?hl=zh-Hans\\n附件六：《Google Play 健康类内容与服务政策》，用于核对健康内容、服务边界、医疗化表达和不当健康声明风险。\\n来源：https://support.google.com/googleplay/android-developer/topic/9877466?hl=zh-Hans\\n附件七：《FTC 背书与推荐广告指南（2023）》，用于核对达人合作披露、典型效果、体验限制和广告主监控责任。\\n来源：https://www.ftc.gov/system/files/ftc_gov/pdf/p204500_endorsement_guides_in_2023.pdf\\n边界：以上资料只能支撑商店文案、数据披露、健康功能边界和达人素材口径预审，不能证明本App一定过审、SDK实际采集路径、临床效果或功能不构成医疗用途。";
+
+const sleepSteps = encodeSteps([
+  "1. 先把新版本功能拆成账号注册、睡眠评分、AI 睡眠建议、可穿戴设备导入、推送提醒、达人投放素材六类。",
+  "2. 列出每类功能可能涉及的数据，包括账号、健康与健身数据、设备信息、使用行为、第三方 SDK 和广告追踪。",
+  "3. 读取应用商店审核指南中文摘要，标出健康建议、误导性疗效、隐私、用户同意和产品页表达相关要求。",
+  "4. 读取产品页和隐私详情中文摘要，把商店文案、截图、隐私标签需要披露的内容转成核对表。",
+  "5. 读取安卓应用数据安全表单中文摘要，核对数据收集、共享、加密、删除和第三方代码披露是否需要补材料。",
+  "6. 读取健康应用声明中文摘要，判断睡眠建议和健康功能声明属于哪类，哪些说法需要避免医疗化。",
+  "7. 读取达人广告披露指南中文摘要，检查短视频是否说明付费合作、体验限制和效果差异。",
+  "8. 把初版文案按可保留、需改写、暂缓使用、需法务确认分组，所有结论回指附件摘要或写明缺口。",
+  "9. 整理产品需要补的证据，例如 SDK 数据清单、隐私政策链接、账号删除入口、达人合作关系说明。",
+  "10. 生成 Word 预审意见、Excel 核对表和改稿清单，最后检查是否编造过审结论、医疗效果或未给来源的合规判断。",
+]);
+
+const sleepQuestion = encodeParagraphs([
+  "我这边要先把睡眠打卡 App 新版的提审材料拦一遍，老板希望8月底前同时上 App Store 和 Google Play。新版多了账号注册、睡眠评分、AI 睡眠建议、可穿戴设备导入和推送提醒，市场同事还约了3个健康类达人；现在卡住的是商店描述、截图文案、达人脚本都有初稿，但隐私标签、数据安全表、健康类声明和合作披露没对齐。",
+  "手头可用的资料是 Apple 审核、产品页、隐私详情，Google Play 数据安全表单、健康类应用声明和健康内容政策，还有 FTC 背书广告指南，统一按2026年7月9日能打开的版本核。帮我把现有文案和数据项拆成可先保留、建议改谨慎、需要产品/研发/法务补材料三类；SDK 实采路径、医生背书、临床效果、平台审核结论、达人真实体验这类公开资料看不出来的，放进需内部确认。交付按产品会能用的口径整理成可编辑Word核查说明、Excel改稿和补件表，以及一份商店描述和达人脚本修改清单。"
+]);
+
+const schoolRelatedAttachments =
+  "附件一_教育部学校食品安全与营养健康管理规定.pdf；附件二_市场监管总局学校食堂委托管理服务合同示范文本.html；附件三_市场监管总局食品生产经营企业落实食品安全主体责任规定.docx；附件四_重庆市市场监管局餐饮服务食品安全操作规范页面.html；附件五_中国政府网食品经营许可和备案管理办法.html";
+
+const schoolAttachmentContent =
+  "附件一：《学校食品安全与营养健康管理规定》，用于核对校长负责制、陪餐、家长沟通、营养健康、集中用餐信息公开和学校食堂管理要求。\\n来源：https://www.moe.gov.cn/jyb_xxgk/xxgk/zhengce/guizhang/202112/P020211208552028545827.pdf\\n附件二：《学校食堂委托管理服务合同示范文本》，用于整理托管合同中人员配置、采购验收、食堂考核、违约解除、食安责任和投诉反馈条款。\\n来源：https://htsfwb.samr.gov.cn/View?id=96bca357-fa35-4893-b225-ebd7e356621d\\n附件三：《食品生产经营企业落实食品安全主体责任规定》，用于确认食品安全总监、食品安全员、日管控、周排查、月调度和风险处置责任。\\n来源：https://sjfg.samr.gov.cn/law/file//docx/3235243/1664267667505.docx\\n附件四：《餐饮服务食品安全操作规范》，用于核对从业人员健康管理、原料采购、加工制作、备餐供餐、留样、清洗消毒和场所卫生要求。\\n来源：https://scjgj.cq.gov.cn/zz/hcq/zwgk/fdzdgknr_146781/jdjc_146793/spyp/jczdbz/202112/t20211214_10167366.html\\n附件五：《食品经营许可和备案管理办法》，用于确认学校食堂主体业态标注、许可事项变更、经营项目和证照资料补充口径。\\n来源：https://www.gov.cn/gongbao/2023/issue_10606/202307/content_6894763.html\\n边界：以上资料只能支撑合同续签前的条款核对、食安制度整改、许可资料梳理和沟通清单，不能证明承包商证照真实有效、现场记录完整、监管部门已经认可整改或学校一定可以续签。";
+
+const schoolProductContent =
+  "一份给校长和总务处会前看的可编辑Word续签建议清单（docx），内容包括是否建议直接续签、哪些合同条款要补、哪些食安问题要先整改、哪些证照和记录要承包商补交；" +
+  "一份可编辑Excel整改跟踪表（xlsx），表头包括问题来源、对应附件依据、涉及合同条款、责任方、需补材料、整改优先级、截止时间、是否影响续签；另附一段发给食堂托管公司的补材料和沟通话术。";
+
+const schoolSteps = encodeSteps([
+  "1. 先把续签判断拆成合同条款、食品安全制度、现场操作记录、许可资料、家长沟通五个部分。",
+  "2. 读取学校食品安全与营养健康管理规定，提取校长负责制、陪餐、信息公开、家长沟通和营养健康相关要求。",
+  "3. 读取学校食堂委托管理服务合同示范文本，把人员配置、采购验收、留样、考核、违约解除和投诉反馈条款列成核对项。",
+  "4. 读取食品安全主体责任规定，确认食品安全总监、食品安全员、日管控、周排查、月调度和风险处置材料是否要补。",
+  "5. 读取餐饮服务食品安全操作规范，整理从业人员健康、原料采购、加工制作、备餐供餐、留样和清洗消毒的现场记录要求。",
+  "6. 读取食品经营许可和备案管理办法，核对学校食堂主体业态、经营项目、许可变更和证照资料是否可能影响续签。",
+  "7. 把家长群反映的问题逐条放入核对表，区分已有公开资料能判断、需要学校查台账、需要承包商补材料、需要当地监管部门确认。",
+  "8. 将合同条款缺口和现场记录缺口分开评级，标出哪些是续签前必须补齐，哪些可以作为续签后的整改跟踪项。",
+  "9. 形成给校长看的续签建议，说明是直接续签、附条件续签还是暂缓续签，并写清每个判断对应的附件依据或资料缺口。",
+  "10. 生成 Word 续签建议清单、Excel 整改跟踪表和承包商沟通话术，最后自检是否编造证照状态、监管结论、实际卫生记录或家长投诉原文。",
+]);
+
+const schoolQuestion = encodeParagraphs([
+  "暑假这阵子校长把食堂托管续签的事压给总务处，我要先把能查的规则和合同口径捋出来。上学期家长群提过菜品重复、留样照片不全、陪餐反馈没人跟进，但学校也没决定立刻换供应商；会前需要一份能让校长判断直接续签、附条件续签还是暂缓续签的材料。资料包里是学校食品安全与营养健康管理规定、食堂委托管理合同示范文本、主体责任规定、餐饮服务操作规范、食品经营许可和备案办法，主要拿来核合同条款、食品安全责任、证照和日常台账。台账原件、承包商证照真伪、现场卫生照片、采购票据、家长投诉原文和当地监管意见不是公开文件能核出来的，分别放到学校查台账、承包商补材料、监管或律师确认。最后产物给校长和总务处开会用：一份可编辑Word续签建议清单，一张Excel整改跟踪表，再加发给托管公司的补材料沟通话术。"
+]);
+
+const text = await fs.readFile(tsvPath, "utf8");
+const rows = text.trimEnd().split(/\r?\n/).map((line) => line.split("\t"));
+const header = rows[0];
+const col = Object.fromEntries(header.map((name, idx) => [name, idx]));
+
+const sleep = rows[1];
+sleep[col["题目"]] = sleepQuestion;
+sleep[col["相关附件"]] = sleepRelatedAttachments;
+sleep[col["附件格式"]] = "html, pdf";
+sleep[col["附件内容"]] = sleepAttachmentContent;
+sleep[col["产物内容"]] = sleep[col["产物内容"]]
+  .replace(/一份 5-7 页/g, "一份5-7页")
+  .replace(/一张可编辑表格/g, "一张可编辑Excel表格");
+sleep[col["做题关键步骤"]] = sleepSteps;
+
+const school = rows[2];
+school[col["题目"]] = schoolQuestion;
+school[col["一级目录"]] = "教育与公共服务";
+school[col["二级目录"]] = "校园后勤与食堂管理";
+school[col["三级目录"]] = "民办高中食堂托管续签前食品安全与合同整改审查";
+school[col["任务概括"]] =
+  "帮助民办高中总务处在食堂托管合同续签前整理食品安全、许可资料、合同条款和整改跟踪清单。";
+school[col["相关附件"]] = schoolRelatedAttachments;
+school[col["附件格式"]] = "pdf, html, docx";
+school[col["附件内容"]] = schoolAttachmentContent;
+school[col["产物格式"]] = "docx, xlsx";
+school[col["产物内容"]] = schoolProductContent;
+school[col["做题关键步骤"]] = schoolSteps;
+
+await fs.writeFile(tsvPath, `${rows.map((row) => row.join("\t")).join("\n")}\n`, "utf8");
+console.log(`Updated ${tsvPath}`);

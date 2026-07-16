@@ -1,0 +1,88 @@
+{
+  "runId": "l2_shenli_20260709T202051Z_866b59",
+  "objective": "为沈礼生产3条L2并提交飞书",
+  "operator": "codex",
+  "generatedAnnotator": "沈礼",
+  "uidPrefix": "沈礼_",
+  "count": 3,
+  "status": "accepted",
+  "createdAt": "2026-07-09T20:20:51.831Z",
+  "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+  "sheetId": "49e351",
+  "dirs": {
+    "root": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_shenli_20260709T202051Z_866b59",
+    "sources": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_shenli_20260709T202051Z_866b59\\sources",
+    "attachments": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_shenli_20260709T202051Z_866b59\\attachments",
+    "drafts": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_shenli_20260709T202051Z_866b59\\drafts",
+    "feishu": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_shenli_20260709T202051Z_866b59\\feishu",
+    "qa": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_shenli_20260709T202051Z_866b59\\qa",
+    "logs": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_shenli_20260709T202051Z_866b59\\logs",
+    "tmp": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_shenli_20260709T202051Z_866b59\\tmp"
+  },
+  "boundaries": {
+    "writableRoots": [
+      "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_shenli_20260709T202051Z_866b59"
+    ],
+    "sharedWritesRequireLocks": [
+      "outputs/l2_questions.tsv",
+      "outputs/feishu_fill_plan_*.json",
+      "Feishu sheet rows"
+    ],
+    "noTouch": [
+      "Rows not reserved by this run",
+      "Other runs under outputs/auto_runs",
+      "Existing attachments outside this run unless explicitly imported"
+    ]
+  },
+  "reservationId": "l2_shenli_20260709T202051Z_866b59_178_180",
+  "reservedRows": [
+    178,
+    179,
+    180
+  ],
+  "completedUids": [
+    "沈礼_7.10_04",
+    "沈礼_7.10_05",
+    "沈礼_7.10_06"
+  ],
+  "updatedAt": "2026-07-09T20:56:09.351Z",
+  "rows": [
+    178,
+    179,
+    180
+  ],
+  "uids": [
+    "沈礼_7.10_04",
+    "沈礼_7.10_05",
+    "沈礼_7.10_06"
+  ],
+  "attachmentCount": 17,
+  "draftPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_shenli_20260709T202051Z_866b59\\drafts\\l2_questions_178_180_shenli_710.tsv",
+  "fillPlanPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_shenli_20260709T202051Z_866b59\\feishu\\feishu_fill_plan_178_180.json",
+  "topicsPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_shenli_20260709T202051Z_866b59\\sources\\topics_178_180.json",
+  "completedRows": [
+    178,
+    179,
+    180
+  ],
+  "managedBySystem": true,
+  "topicIds": [
+    "沈礼_7.10_04",
+    "沈礼_7.10_05",
+    "沈礼_7.10_06"
+  ],
+  "qaStatus": "passed",
+  "qaColumns": {
+    "result": "AT",
+    "note": "AU"
+  },
+  "attachmentCounts": [
+    5,
+    6,
+    6
+  ],
+  "productFormats": [
+    "docx, xlsx"
+  ],
+  "completedAt": "2026-07-09T20:56:09.328Z"
+}

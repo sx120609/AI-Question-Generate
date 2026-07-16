@@ -1,0 +1,79 @@
+{
+  "reservation": {
+    "id": "l2_20260709_batch5_20260709T111803Z_9246fb_140_144",
+    "runId": "l2_20260709_batch5_20260709T111803Z_9246fb",
+    "startRow": 140,
+    "endRow": 144,
+    "count": 5,
+    "status": "reserved",
+    "createdAt": "2026-07-09T11:18:22.956Z"
+  },
+  "uids": [
+    "沈礼_7.9_07",
+    "沈礼_7.9_08",
+    "沈礼_7.9_09",
+    "沈礼_7.9_10",
+    "沈礼_7.9_11"
+  ],
+  "apiResult": {
+    "code": 0,
+    "data": {
+      "responses": [
+        {
+          "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+          "updatedCells": 1,
+          "updatedColumns": 1,
+          "updatedRange": "49e351!A140:A140",
+          "updatedRows": 1
+        },
+        {
+          "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+          "updatedCells": 1,
+          "updatedColumns": 1,
+          "updatedRange": "49e351!A141:A141",
+          "updatedRows": 1
+        },
+        {
+          "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+          "updatedCells": 1,
+          "updatedColumns": 1,
+          "updatedRange": "49e351!A142:A142",
+          "updatedRows": 1
+        },
+        {
+          "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+          "updatedCells": 1,
+          "updatedColumns": 1,
+          "updatedRange": "49e351!A143:A143",
+          "updatedRows": 1
+        },
+        {
+          "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+          "updatedCells": 1,
+          "updatedColumns": 1,
+          "updatedRange": "49e351!A144:A144",
+          "updatedRows": 1
+        }
+      ],
+      "revision": 2937,
+      "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc"
+    }
+  },
+  "verify": [
+    [
+      "沈礼_7.9_07"
+    ],
+    [
+      "沈礼_7.9_08"
+    ],
+    [
+      "沈礼_7.9_09"
+    ],
+    [
+      "沈礼_7.9_10"
+    ],
+    [
+      "沈礼_7.9_11"
+    ]
+  ]
+}

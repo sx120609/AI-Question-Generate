@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-10T13:03:06.1559939Z",
+  "status": "PASS",
+  "scope": "future-generation-and-any-future-B-column-write",
+  "remoteWritesPerformed": false,
+  "policy": {
+    "naturalnessGateId": "naturalness-gate-v2",
+    "metricsVersion": "naturalness-metrics-v2",
+    "questionLanguagePolicyId": "direct-request-punctuation-v1",
+    "questionPresentation": "single-paragraph-clear-request-v1",
+    "politeQingStillProhibitedInGeneratedNarrative": true,
+    "allowedDirectRequestFrames": [
+      "帮我",
+      "你给我",
+      "我想要",
+      "需要你",
+      "麻烦你"
+    ],
+    "requiredRequestUnit": "requester-or-recipient + action + concrete-deliverable",
+    "productFormatMappingRequired": true,
+    "paragraphJoinAddsVisibleSpace": false,
+    "semicolonCountsAsTerminalSentence": false
+  },
+  "batchPunctuationReviewPolicy": {
+    "requestFrameDominantShare": 0.3,
+    "shortOpeningShare": 0.1,
+    "firstPunctuationTerminalShare": 0.1,
+    "minimumFirstSentenceCommaShare": 0.85,
+    "minimumCommaToPeriodRatio": 1.8,
+    "maximumEnumerationCommasPer100Chars": 2.4,
+    "maximumEarlyStructuralPunctuationShare": 0.2,
+    "maximumSemicolonRowShare": 0.6,
+    "maximumTerminalSentenceCharacters": 240
+  },
+  "benchmarkV2": {
+    "path": "config/naturalness_benchmark_v2.json",
+    "liveSheetRevision": 5397,
+    "strictPassOtherAnnotatorRecords": 76,
+    "eligibleRecords": 67,
+    "selectedPositiveRecords": 30,
+    "strictPassWithDirectRequestRecords": 11
+  },
+  "currentCanonical22Diagnostic": {
+    "candidate": "outputs/auto_runs/rewrite_managed_human_voice_20260710/drafts/l2_questions_human_voice.tsv",
+    "report": "outputs/analysis/current22_request_punctuation_audit_20260710.json",
+    "status": "FAIL",
+    "failedRows": 22,
+    "explicitRequestShare": 0,
+    "shortOpeningShare": 0.2727,
+    "firstPunctuationTerminalShare": 0.2727,
+    "firstSentenceCommaShare": 0.7273,
+    "commaToPeriodRatio": 1.3415,
+    "enumerationCommasPer100Chars": 3.2336,
+    "earlyStructuralPunctuationShare": 0.4545,
+    "semicolonRowShare": 0.9545
+  },
+  "verification": {
+    "syntaxChecks": "PASS",
+    "testsPassed": 90,
+    "testsFailed": 0
+  }
+}

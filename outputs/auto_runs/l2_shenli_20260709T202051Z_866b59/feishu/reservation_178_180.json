@@ -1,0 +1,43 @@
+{
+  "id": "l2_shenli_20260709T202051Z_866b59_178_180",
+  "runId": "l2_shenli_20260709T202051Z_866b59",
+  "startRow": 178,
+  "endRow": 180,
+  "count": 3,
+  "status": "accepted",
+  "generatedAnnotator": "沈礼",
+  "managedBySystem": true,
+  "createdAt": "2026-07-09T20:21:21.807Z",
+  "rows": [
+    178,
+    179,
+    180
+  ],
+  "uids": [
+    "沈礼_7.10_04",
+    "沈礼_7.10_05",
+    "沈礼_7.10_06"
+  ],
+  "updatedAt": "2026-07-09T20:56:09.348Z",
+  "completedUids": [
+    "沈礼_7.10_04",
+    "沈礼_7.10_05",
+    "沈礼_7.10_06"
+  ],
+  "qa": {
+    "resultColumn": "AT",
+    "noteColumn": "AU",
+    "status": "passed",
+    "rows": [
+      178,
+      179,
+      180
+    ]
+  },
+  "attachmentCounts": [
+    5,
+    6,
+    6
+  ],
+  "completedAt": "2026-07-09T20:56:09.328Z"
+}

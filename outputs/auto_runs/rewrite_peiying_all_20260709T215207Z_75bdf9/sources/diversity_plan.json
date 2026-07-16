@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "policyId": "l2-structural-diversity-v1",
+  "policyVersion": 1,
+  "runId": "rewrite_peiying_all_20260709T215207Z_75bdf9",
+  "generatedAt": "2026-07-09T21:52:07.540Z",
+  "expiresAt": "2026-07-10T23:09:20.193Z",
+  "profiles": [
+    {
+      "slot": 1,
+      "index": 0,
+      "profileId": "rewrite_peiying_all_20260709T215207Z_75bdf9_structure_01",
+      "lengthBand": "layered-610",
+      "openingMode": "clock-pressure",
+      "informationOrder": [
+        "trigger",
+        "conflict",
+        "facts",
+        "decision",
+        "evidence",
+        "gap",
+        "audience",
+        "deliverable"
+      ],
+      "decisionForm": "conditional-recommendation",
+      "evidenceTopology": "rules-plus-case-data",
+      "flowTopology": "exception-routing",
+      "productTopology": "meeting-brief__evidence-ledger",
+      "uid": "裴硬_7.9_03",
+      "reconciledAt": "2026-07-09T23:09:20.192Z"
+    },
+    {
+      "slot": 2,
+      "index": 1,
+      "profileId": "rewrite_peiying_all_20260709T215207Z_75bdf9_structure_02",
+      "lengthBand": "evidence-700",
+      "openingMode": "clock-pressure",
+      "informationOrder": [
+        "actor",
+        "conflict",
+        "decision",
+        "gap",
+        "evidence",
+        "facts",
+        "deliverable",
+        "audience"
+      ],
+      "decisionForm": "multi-option",
+      "evidenceTopology": "conflicting-versions",
+      "flowTopology": "evidence-trace",
+      "productTopology": "decision-memo__evidence-ledger",
+      "uid": "裴硬_7.9_04",
+      "reconciledAt": "2026-07-09T23:09:20.192Z"
+    },
+    {
+      "slot": 3,
+      "index": 2,
+      "profileId": "rewrite_peiying_all_20260709T215207Z_75bdf9_structure_03",
+      "lengthBand": "evidence-700",
+      "openingMode": "clock-pressure",
+      "informationOrder": [
+        "trigger",
+        "facts",
+        "actor",
+        "audience",
+        "evidence",
+        "gap",
+        "decision",
+        "acceptance",
+        "conflict",
+        "deliverable"
+      ],
+      "decisionForm": "exception-routing",
+      "evidenceTopology": "cross-jurisdiction",
+      "flowTopology": "exception-routing",
+      "productTopology": "meeting-brief__evidence-ledger",
+      "uid": "裴硬_7.9_02",
+      "reconciledAt": "2026-07-09T23:09:20.192Z"
+    },
+    {
+      "slot": 4,
+      "index": 3,
+      "profileId": "rewrite_peiying_all_20260709T215207Z_75bdf9_structure_04",
+      "lengthBand": "layered-610",
+      "openingMode": "evidence-discovery",
+      "informationOrder": [
+        "evidence",
+        "conflict",
+        "facts",
+        "acceptance",
+        "decision",
+        "deliverable",
+        "actor"
+      ],
+      "decisionForm": "threshold-gate",
+      "evidenceTopology": "technical-acceptance",
+      "flowTopology": "iterative-loop",
+      "productTopology": "review-opinion__exception-log",
+      "uid": "裴硬_7.9_01",
+      "reconciledAt": "2026-07-09T23:09:20.192Z"
+    },
+    {
+      "slot": 5,
+      "index": 4,
+      "profileId": "rewrite_peiying_all_20260709T215207Z_75bdf9_structure_05",
+      "lengthBand": "focused-520",
+      "openingMode": "incident-led",
+      "informationOrder": [
+        "conflict",
+        "facts",
+        "actor",
+        "evidence",
+        "decision",
+        "acceptance",
+        "deliverable"
+      ],
+      "decisionForm": "exception-routing",
+      "evidenceTopology": "records-and-templates",
+      "flowTopology": "branching",
+      "productTopology": "operating-playbook__stage-gate-matrix",
+      "uid": "裴硬_7.9_05",
+      "reconciledAt": "2026-07-09T23:09:20.192Z"
+    }
+  ],
+  "note": "Original automatic allocation is preserved in diversity_plan_allocated.json. This frozen passport records the topic-fit candidate selected after verifying minimum length, information coverage, batch diversity, and history distance; subsequent changes must continue to match it.",
+  "reconciledAt": "2026-07-09T23:09:20.192Z",
+  "reconciliation": {
+    "kind": "topic-fit-candidate-selection",
+    "allocatedPlanPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_peiying_all_20260709T215207Z_75bdf9\\sources\\diversity_plan_allocated.json",
+    "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_peiying_all_20260709T215207Z_75bdf9\\drafts\\l2_questions_rewritten.tsv",
+    "freeGateStatus": "PASS",
+    "freeGateFindingCount": 0
+  }
+}

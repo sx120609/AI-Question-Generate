@@ -1,0 +1,247 @@
+{
+  "generatedAt": "2026-07-09T12:21:15.774Z",
+  "qualityGate": "五题均通过附件质量闸门，每题4个附件",
+  "sourceCards": [
+    {
+      "topicId": "裴硬_7.9_01",
+      "title": "敏感肌精华达人素材功效宣称与标签复核",
+      "qualityGate": "通过",
+      "attachments": [
+        {
+          "file": "附件一_化妆品监督管理条例.pdf",
+          "format": "pdf",
+          "url": "https://xzfg.moj.gov.cn/law/download?LawID=451&type=pdf",
+          "purpose": "用于核对化妆品注册备案、标签广告真实性、功效宣称和违法宣称责任边界。",
+          "bytes": 559755,
+          "contentType": "application/pdf",
+          "head": "255044462d312e350d25c8c8",
+          "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\attachments\\01_化妆品达人素材功效宣称\\附件一_化妆品监督管理条例.pdf"
+        },
+        {
+          "file": "附件二_化妆品网络经营监督管理办法.html",
+          "format": "html",
+          "url": "https://yjj.scjgj.fujian.gov.cn/hzp/flfg/202305/t20230519_6172489.htm",
+          "purpose": "用于核对平台内化妆品经营者信息展示、产品信息披露、风险处置和页面留痕要求。",
+          "bytes": 133948,
+          "contentType": "text/html",
+          "head": "3c21444f4354595045206874",
+          "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\attachments\\01_化妆品达人素材功效宣称\\附件二_化妆品网络经营监督管理办法.html"
+        },
+        {
+          "file": "附件三_化妆品功效宣称评价规范.html",
+          "format": "html",
+          "url": "https://yjj.scjgj.fujian.gov.cn/hzp/flfg/202107/t20210708_5642667.htm",
+          "purpose": "用于核对保湿、修护、舒缓等功效宣称的评价依据、摘要公开和禁用表达口径。",
+          "bytes": 262432,
+          "contentType": "text/html",
+          "head": "3c21444f4354595045206874",
+          "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\attachments\\01_化妆品达人素材功效宣称\\附件三_化妆品功效宣称评价规范.html"
+        },
+        {
+          "file": "附件四_互联网广告管理办法.html",
+          "format": "html",
+          "url": "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202306/t20230620_481045.html",
+          "purpose": "用于核对互联网广告可识别性、广告发布者责任、种草内容和购买链接结合时的标识要求。",
+          "bytes": 70714,
+          "contentType": "text/html",
+          "head": "3c21444f4354595045206874",
+          "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\attachments\\01_化妆品达人素材功效宣称\\附件四_互联网广告管理办法.html"
+        }
+      ],
+      "boundary": "以上资料能支持化妆品功效宣称、网络经营展示、广告标识和达人素材改稿判断，不能证明产品备案资料、功效评价摘要截图、达人合同、投放后台数据或消费者使用效果已经核验。"
+    },
+    {
+      "topicId": "裴硬_7.9_02",
+      "title": "海外CRM试用前销售线索数据出境复核",
+      "qualityGate": "通过",
+      "attachments": [
+        {
+          "file": "附件一_个人信息保护法_数据出境规则.html",
+          "format": "html",
+          "url": "https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm",
+          "purpose": "用于核对个人信息处理的合法性基础、告知同意、敏感个人信息、委托处理和个人信息出境规则。",
+          "bytes": 60221,
+          "contentType": "text/html",
+          "head": "3c21444f4354595045206874",
+          "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\attachments\\02_海外CRM数据出境\\附件一_个人信息保护法_数据出境规则.html"
+        },
+        {
+          "file": "附件二_中华人民共和国数据安全法.html",
+          "format": "html",
+          "url": "https://www.cac.gov.cn/2021-06/11/c_1624994566919140.htm",
+          "purpose": "用于核对数据分类分级、风险监测、数据处理活动安全义务和重要数据管理要求。",
+          "bytes": 32994,
+          "contentType": "text/html",
+          "head": "3c21444f4354595045206874",
+          "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\attachments\\02_海外CRM数据出境\\附件二_中华人民共和国数据安全法.html"
+        },
+        {
+          "file": "附件三_数据出境安全评估办法.html",
+          "format": "html",
+          "url": "https://www.cac.gov.cn/2022-07/07/c_1658811536594644.htm",
+          "purpose": "用于核对触发安全评估的情形、申报材料、评估重点和出境活动持续监管要求。",
+          "bytes": 14660,
+          "contentType": "text/html",
+          "head": "3c21444f4354595045206874",
+          "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\attachments\\02_海外CRM数据出境\\附件三_数据出境安全评估办法.html"
+        },
+        {
+          "file": "附件四_促进和规范数据跨境流动规定.html",
+          "format": "html",
+          "url": "https://www.cac.gov.cn/2024-03/22/c_1712776611775634.htm",
+          "purpose": "用于核对2024年跨境数据流动便利化口径、豁免情形、负面清单和个人信息出境路径。",
+          "bytes": 20978,
+          "contentType": "text/html",
+          "head": "3c21444f4354595045206874",
+          "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\attachments\\02_海外CRM数据出境\\附件四_促进和规范数据跨境流动规定.html"
+        }
+      ],
+      "boundary": "以上资料能支持客户线索个人信息处理、数据分类、跨境传输路径和合规触发条件判断，不能证明真实合同条款、境外接收方安全能力、用户授权记录、系统字段字典或历史导出日志已经核验。"
+    },
+    {
+      "topicId": "裴硬_7.9_03",
+      "title": "小区电梯广告公共收益公开与维修资金动用复核",
+      "qualityGate": "通过",
+      "attachments": [
+        {
+          "file": "附件一_民法典物权编业主共有与维修资金条款.html",
+          "format": "html",
+          "url": "https://www.spp.gov.cn/spp/ssmfdyflvdtpgz/202008/t20200831_478410.shtml",
+          "purpose": "用于核对业主共有部分、共有收益归属、共同决定事项和维修资金筹集使用规则。",
+          "bytes": 113466,
+          "contentType": "text/html",
+          "head": "3c21444f4354595045206874",
+          "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\attachments\\03_小区公共收益维修资金\\附件一_民法典物权编业主共有与维修资金条款.html"
+        },
+        {
+          "file": "附件二_物业管理条例.pdf",
+          "format": "pdf",
+          "url": "https://xzfg.moj.gov.cn/law/download?LawID=960&type=pdf",
+          "purpose": "用于核对物业服务企业职责、业主大会制度、共有收益和物业服务活动监督要求。",
+          "bytes": 266566,
+          "contentType": "application/pdf",
+          "head": "255044462d312e370a25c2b3",
+          "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\attachments\\03_小区公共收益维修资金\\附件二_物业管理条例.pdf"
+        },
+        {
+          "file": "附件三_住宅专项维修资金管理办法.html",
+          "format": "html",
+          "url": "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/200804/t20080402_144499.html",
+          "purpose": "用于核对维修资金交存、使用、分摊、应急使用和监督管理流程。",
+          "bytes": 74916,
+          "contentType": "text/html",
+          "head": "3c21444f4354595045206874",
+          "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\attachments\\03_小区公共收益维修资金\\附件三_住宅专项维修资金管理办法.html"
+        },
+        {
+          "file": "附件四_业主大会和业主委员会指导规则.pdf",
+          "format": "pdf",
+          "url": "https://www.mohurd.gov.cn/file/2023/20230508/3c521deb-89bd-4559-8c7c-4d099fb7e731.pdf",
+          "purpose": "用于核对业主大会会议、业委会职责、表决组织和信息公开的程序性要求。",
+          "bytes": 155248,
+          "contentType": "application/pdf",
+          "head": "255044462d312e340a312030",
+          "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\attachments\\03_小区公共收益维修资金\\附件四_业主大会和业主委员会指导规则.pdf"
+        }
+      ],
+      "boundary": "以上资料能支持共有部位收益归属、业主大会授权、物业公开义务和维修资金动用流程判断，不能证明广告合同原件、业主表决票、收益入账流水、维修工程报价或主管部门备案记录已经核验。"
+    },
+    {
+      "topicId": "裴硬_7.9_04",
+      "title": "招聘小程序AI简历筛选与候选人告知复核",
+      "qualityGate": "通过",
+      "attachments": [
+        {
+          "file": "附件一_网络招聘服务管理规定.html",
+          "format": "html",
+          "url": "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202103/t20210309_374224.html",
+          "purpose": "用于核对网络招聘服务主体责任、招聘信息真实性、求职者信息保护和服务规则。",
+          "bytes": 67324,
+          "contentType": "text/html",
+          "head": "3c21444f4354595045206874",
+          "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\attachments\\04_AI招聘筛选\\附件一_网络招聘服务管理规定.html"
+        },
+        {
+          "file": "附件二_个人信息保护法_招聘候选人信息处理.html",
+          "format": "html",
+          "url": "https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm",
+          "purpose": "用于核对候选人个人信息处理、告知同意、最小必要、自动化决策和敏感信息保护。",
+          "bytes": 60221,
+          "contentType": "text/html",
+          "head": "3c21444f4354595045206874",
+          "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\attachments\\04_AI招聘筛选\\附件二_个人信息保护法_招聘候选人信息处理.html"
+        },
+        {
+          "file": "附件三_互联网信息服务算法推荐管理规定.html",
+          "format": "html",
+          "url": "https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm",
+          "purpose": "用于核对算法推荐服务备案、透明度、用户选择权和不得实施不合理差别待遇等要求。",
+          "bytes": 31231,
+          "contentType": "text/html",
+          "head": "3c21444f4354595045206874",
+          "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\attachments\\04_AI招聘筛选\\附件三_互联网信息服务算法推荐管理规定.html"
+        },
+        {
+          "file": "附件四_生成式人工智能服务管理暂行办法.html",
+          "format": "html",
+          "url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+          "purpose": "用于核对生成式AI服务提供和使用中的内容治理、训练数据、个人信息保护和安全评估口径。",
+          "bytes": 29431,
+          "contentType": "text/html",
+          "head": "3c21444f4354595045206874",
+          "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\attachments\\04_AI招聘筛选\\附件四_生成式人工智能服务管理暂行办法.html"
+        }
+      ],
+      "boundary": "以上资料能支持网络招聘服务、个人信息处理、算法推荐和生成式人工智能使用边界判断，不能证明企业真实模型参数、训练数据来源、候选人授权记录、招聘职位真实性或人工复核日志已经核验。"
+    },
+    {
+      "topicId": "裴硬_7.9_05",
+      "title": "民宿平台房源上架前治安消防与交易信息复核",
+      "qualityGate": "通过",
+      "attachments": [
+        {
+          "file": "附件一_旅馆业治安管理办法.pdf",
+          "format": "pdf",
+          "url": "https://xzfg.moj.gov.cn/law/download?LawID=694&type=pdf",
+          "purpose": "用于核对旅馆业开办、住宿登记、治安管理和违法经营责任。",
+          "bytes": 200166,
+          "contentType": "application/pdf",
+          "head": "255044462d312e370d0a25b5",
+          "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\attachments\\05_民宿平台房源上架\\附件一_旅馆业治安管理办法.pdf"
+        },
+        {
+          "file": "附件二_中华人民共和国消防法.html",
+          "format": "html",
+          "url": "https://www.mem.gov.cn/fw/flfgbz/fg/fl_6143/",
+          "purpose": "核对住宿经营场所消防安全责任、设施维护、通道畅通、公众聚集场所投入使用前消防安全检查或承诺管理。",
+          "bytes": 1820,
+          "contentType": "text/html",
+          "head": "3c21444f4354595045206874",
+          "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\attachments\\05_民宿平台房源上架\\附件二_中华人民共和国消防法.html",
+          "size": 1820
+        },
+        {
+          "file": "附件三_网络交易监督管理办法.html",
+          "format": "html",
+          "url": "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202104/t20210423_357848.html",
+          "purpose": "用于核对平台内经营者信息报送、商品服务信息展示、交易记录保存和平台治理义务。",
+          "bytes": 77930,
+          "contentType": "text/html",
+          "head": "3c21444f4354595045206874",
+          "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\attachments\\05_民宿平台房源上架\\附件三_网络交易监督管理办法.html"
+        },
+        {
+          "file": "附件四_中华人民共和国电子商务法.html",
+          "format": "html",
+          "url": "https://www.cac.gov.cn/2018-09/01/c_1123362506.htm",
+          "purpose": "用于核对电子商务平台经营者身份核验、信息公示、交易安全、消费者权益和记录保存要求。",
+          "bytes": 29256,
+          "contentType": "text/html",
+          "head": "3c21444f4354595045206874",
+          "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_peiying_20260709_20260709T115842Z_3d19c2\\attachments\\05_民宿平台房源上架\\附件四_中华人民共和国电子商务法.html"
+        }
+      ],
+      "boundary": "以上资料能支持民宿房源上架前的住宿治安、消防安全、网络交易信息展示和平台经营义务判断，不能证明房东真实证照、现场消防设施、公安报备、房屋权属、线下巡检照片或订单履约记录已经核验。"
+    }
+  ]
+}

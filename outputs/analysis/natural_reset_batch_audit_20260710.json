@@ -1,0 +1,1310 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-10T04:24:44.508Z",
+  "status": "PASS",
+  "policyId": "l2-natural-diversity-v2",
+  "policyVersion": 2,
+  "count": 22,
+  "summary": {
+    "questionVisibleCharacters": {
+      "min": 650,
+      "p25": 665,
+      "median": 706.5,
+      "average": 719,
+      "p75": 726,
+      "max": 882
+    },
+    "paragraphCounts": [
+      4,
+      5
+    ],
+    "stepCounts": [
+      9,
+      10,
+      11
+    ],
+    "attachmentCount": 104,
+    "validAttachmentCount": 104,
+    "diversityReviewCount": 3,
+    "lintReviewCount": 2,
+    "manualReviewCount": 5,
+    "retiredTermCounts": {
+      "证据拓扑": 0,
+      "阶段门": 0,
+      "情景模型": 0,
+      "监测看板": 0,
+      "诊断报告": 0,
+      "条款矩阵": 0,
+      "questionTail": 0
+    }
+  },
+  "errors": [],
+  "manualReview": [
+    {
+      "uid": "沈礼_7.9_11",
+      "rule": "batch-exact-structure-signature",
+      "disposition": "accepted-independent-business-task",
+      "reason": "启发式分类相同，但业务事实、处理对象、使用场景和正文措辞不同，未发现词法重复。"
+    },
+    {
+      "uid": "沈礼_7.10_02",
+      "rule": "batch-step-action-isomorphism",
+      "disposition": "accepted-independent-business-task",
+      "reason": "步骤均涉及数据或材料核对，但业务对象、使用者、决定和正文无共享长句。"
+    },
+    {
+      "uid": "沈礼_7.10_05",
+      "rule": "batch-exact-structure-signature",
+      "disposition": "accepted-independent-business-task",
+      "reason": "启发式分类相同，但业务事实、处理对象、使用场景和正文措辞不同，未发现词法重复。"
+    },
+    {
+      "uid": "沈礼_7.9_11",
+      "rule": "missing-evidence-boundary",
+      "disposition": "accepted-explicitly-bounded-in-plain-language",
+      "reason": "题面已明确本次没有后台名单、收款、协议、估值和受助对象资料，不判断具体批次并且不预填金额或结论。"
+    },
+    {
+      "uid": "裴硬_7.9_03",
+      "rule": "missing-evidence-boundary",
+      "disposition": "accepted-explicitly-bounded-in-plain-language",
+      "reason": "题面已明确广告合同、流水、票据、表决和报价原件未归档，社区只主持事实与程序核对，不确认资金用途。"
+    }
+  ],
+  "diversity": {
+    "status": "PASS",
+    "ok": true,
+    "reviewRequired": true,
+    "reviewCount": 3,
+    "findings": [
+      {
+        "level": "REVIEW",
+        "rule": "batch-exact-structure-signature",
+        "index": 10,
+        "uid": "沈礼_7.9_11",
+        "message": "与同批第 2 条具有相同的决策、产物和流程分类；分类相同不再直接判失败，但需人工确认场景是否真实独立。",
+        "otherIndex": 1,
+        "similarity": {
+          "score": 0.3903,
+          "dimensions": {
+            "openingMode": 0,
+            "informationOrder": 0.5,
+            "decisionForm": 1,
+            "evidenceTopology": 0,
+            "artifactTopology": 1,
+            "stepActions": 0.6,
+            "flowTopology": 1,
+            "sentenceRhythm": 0.6176,
+            "lexicalSkeleton": 0.0163,
+            "narrativeLexical": 0.0208
+          },
+          "highDimensions": [
+            "decisionForm",
+            "artifactTopology",
+            "flowTopology"
+          ],
+          "coreHighDimensions": [
+            "artifactTopology",
+            "flowTopology"
+          ],
+          "sharedPhraseHard": false,
+          "sharedPhraseReview": false,
+          "lexicalDuplicate": false,
+          "exactStructureSignature": true
+        }
+      },
+      {
+        "level": "REVIEW",
+        "rule": "batch-step-action-isomorphism",
+        "index": 12,
+        "uid": "沈礼_7.10_02",
+        "message": "与同批第 4 条的步骤动作相近，但业务正文差异较大，需人工复核。",
+        "otherIndex": 3,
+        "similarity": {
+          "score": 0.2401,
+          "dimensions": {
+            "openingMode": 0,
+            "informationOrder": 0.5,
+            "decisionForm": 0,
+            "evidenceTopology": 0,
+            "artifactTopology": 0.4286,
+            "stepActions": 0.9,
+            "flowTopology": 0,
+            "sentenceRhythm": 0.8143,
+            "lexicalSkeleton": 0.0182,
+            "narrativeLexical": 0.025
+          },
+          "highDimensions": [
+            "stepActions",
+            "sentenceRhythm"
+          ],
+          "coreHighDimensions": [
+            "stepActions"
+          ],
+          "sharedPhraseHard": false,
+          "sharedPhraseReview": false,
+          "lexicalDuplicate": false,
+          "exactStructureSignature": false
+        }
+      },
+      {
+        "level": "REVIEW",
+        "rule": "batch-exact-structure-signature",
+        "index": 15,
+        "uid": "沈礼_7.10_05",
+        "message": "与同批第 13 条具有相同的决策、产物和流程分类；分类相同不再直接判失败，但需人工确认场景是否真实独立。",
+        "otherIndex": 12,
+        "similarity": {
+          "score": 0.4087,
+          "dimensions": {
+            "openingMode": 0,
+            "informationOrder": 0.7143,
+            "decisionForm": 1,
+            "evidenceTopology": 0,
+            "artifactTopology": 1,
+            "stepActions": 0.6,
+            "flowTopology": 1,
+            "sentenceRhythm": 0.7006,
+            "lexicalSkeleton": 0.009,
+            "narrativeLexical": 0.0144
+          },
+          "highDimensions": [
+            "decisionForm",
+            "artifactTopology",
+            "flowTopology"
+          ],
+          "coreHighDimensions": [
+            "artifactTopology",
+            "flowTopology"
+          ],
+          "sharedPhraseHard": false,
+          "sharedPhraseReview": false,
+          "lexicalDuplicate": false,
+          "exactStructureSignature": true
+        }
+      }
+    ]
+  },
+  "rows": [
+    {
+      "uid": "沈礼_7.9_01",
+      "sheetRow": 121,
+      "annotator": "沈礼",
+      "questionVisibleCharacters": 724,
+      "questionParagraphs": 5,
+      "stepCount": 10,
+      "deliveryPositionRatio": 0.858,
+      "immutableFieldsExact": true,
+      "productFormat": "docx, xlsx",
+      "politeImperativeFree": true,
+      "rawProductExtensionsFree": true
+    },
+    {
+      "uid": "沈礼_7.9_02",
+      "sheetRow": 122,
+      "annotator": "沈礼",
+      "questionVisibleCharacters": 655,
+      "questionParagraphs": 4,
+      "stepCount": 9,
+      "deliveryPositionRatio": 0.8,
+      "immutableFieldsExact": true,
+      "productFormat": "docx, xlsx",
+      "politeImperativeFree": true,
+      "rawProductExtensionsFree": true
+    },
+    {
+      "uid": "沈礼_7.9_03",
+      "sheetRow": 123,
+      "annotator": "沈礼",
+      "questionVisibleCharacters": 665,
+      "questionParagraphs": 4,
+      "stepCount": 10,
+      "deliveryPositionRatio": 0.784,
+      "immutableFieldsExact": true,
+      "productFormat": "docx, xlsx",
+      "politeImperativeFree": true,
+      "rawProductExtensionsFree": true
+    },
+    {
+      "uid": "沈礼_7.9_04",
+      "sheetRow": 134,
+      "annotator": "沈礼",
+      "questionVisibleCharacters": 654,
+      "questionParagraphs": 4,
+      "stepCount": 10,
+      "deliveryPositionRatio": 0.814,
+      "immutableFieldsExact": true,
+      "productFormat": "docx, xlsx",
+      "politeImperativeFree": true,
+      "rawProductExtensionsFree": true
+    },
+    {
+      "uid": "沈礼_7.9_05",
+      "sheetRow": 135,
+      "annotator": "沈礼",
+      "questionVisibleCharacters": 751,
+      "questionParagraphs": 4,
+      "stepCount": 10,
+      "deliveryPositionRatio": 0.748,
+      "immutableFieldsExact": true,
+      "productFormat": "docx, xlsx",
+      "politeImperativeFree": true,
+      "rawProductExtensionsFree": true
+    },
+    {
+      "uid": "沈礼_7.9_06",
+      "sheetRow": 136,
+      "annotator": "沈礼",
+      "questionVisibleCharacters": 650,
+      "questionParagraphs": 4,
+      "stepCount": 10,
+      "deliveryPositionRatio": 0.759,
+      "immutableFieldsExact": true,
+      "productFormat": "docx, xlsx",
+      "politeImperativeFree": true,
+      "rawProductExtensionsFree": true
+    },
+    {
+      "uid": "沈礼_7.9_07",
+      "sheetRow": 140,
+      "annotator": "沈礼",
+      "questionVisibleCharacters": 661,
+      "questionParagraphs": 4,
+      "stepCount": 10,
+      "deliveryPositionRatio": 0.789,
+      "immutableFieldsExact": true,
+      "productFormat": "docx, xlsx",
+      "politeImperativeFree": true,
+      "rawProductExtensionsFree": true
+    },
+    {
+      "uid": "沈礼_7.9_08",
+      "sheetRow": 141,
+      "annotator": "沈礼",
+      "questionVisibleCharacters": 707,
+      "questionParagraphs": 4,
+      "stepCount": 10,
+      "deliveryPositionRatio": 0.919,
+      "immutableFieldsExact": true,
+      "productFormat": "docx, xlsx",
+      "politeImperativeFree": true,
+      "rawProductExtensionsFree": true
+    },
+    {
+      "uid": "沈礼_7.9_09",
+      "sheetRow": 142,
+      "annotator": "沈礼",
+      "questionVisibleCharacters": 726,
+      "questionParagraphs": 4,
+      "stepCount": 10,
+      "deliveryPositionRatio": 0.765,
+      "immutableFieldsExact": true,
+      "productFormat": "docx, xlsx",
+      "politeImperativeFree": true,
+      "rawProductExtensionsFree": true
+    },
+    {
+      "uid": "沈礼_7.9_10",
+      "sheetRow": 143,
+      "annotator": "沈礼",
+      "questionVisibleCharacters": 728,
+      "questionParagraphs": 4,
+      "stepCount": 10,
+      "deliveryPositionRatio": 0.785,
+      "immutableFieldsExact": true,
+      "productFormat": "docx, xlsx",
+      "politeImperativeFree": true,
+      "rawProductExtensionsFree": true
+    },
+    {
+      "uid": "沈礼_7.9_11",
+      "sheetRow": 144,
+      "annotator": "沈礼",
+      "questionVisibleCharacters": 683,
+      "questionParagraphs": 4,
+      "stepCount": 10,
+      "deliveryPositionRatio": 0.775,
+      "immutableFieldsExact": true,
+      "productFormat": "docx, xlsx",
+      "politeImperativeFree": true,
+      "rawProductExtensionsFree": true
+    },
+    {
+      "uid": "沈礼_7.10_01",
+      "sheetRow": 172,
+      "annotator": "沈礼",
+      "questionVisibleCharacters": 666,
+      "questionParagraphs": 4,
+      "stepCount": 10,
+      "deliveryPositionRatio": 0.777,
+      "immutableFieldsExact": true,
+      "productFormat": "docx, xlsx",
+      "politeImperativeFree": true,
+      "rawProductExtensionsFree": true
+    },
+    {
+      "uid": "沈礼_7.10_02",
+      "sheetRow": 173,
+      "annotator": "沈礼",
+      "questionVisibleCharacters": 722,
+      "questionParagraphs": 4,
+      "stepCount": 10,
+      "deliveryPositionRatio": 0.788,
+      "immutableFieldsExact": true,
+      "productFormat": "docx, xlsx",
+      "politeImperativeFree": true,
+      "rawProductExtensionsFree": true
+    },
+    {
+      "uid": "沈礼_7.10_03",
+      "sheetRow": 174,
+      "annotator": "沈礼",
+      "questionVisibleCharacters": 814,
+      "questionParagraphs": 5,
+      "stepCount": 10,
+      "deliveryPositionRatio": 0.8,
+      "immutableFieldsExact": true,
+      "productFormat": "docx, xlsx",
+      "politeImperativeFree": true,
+      "rawProductExtensionsFree": true
+    },
+    {
+      "uid": "沈礼_7.10_04",
+      "sheetRow": 178,
+      "annotator": "沈礼",
+      "questionVisibleCharacters": 836,
+      "questionParagraphs": 5,
+      "stepCount": 10,
+      "deliveryPositionRatio": 0.909,
+      "immutableFieldsExact": true,
+      "productFormat": "docx, xlsx",
+      "politeImperativeFree": true,
+      "rawProductExtensionsFree": true
+    },
+    {
+      "uid": "沈礼_7.10_05",
+      "sheetRow": 179,
+      "annotator": "沈礼",
+      "questionVisibleCharacters": 837,
+      "questionParagraphs": 5,
+      "stepCount": 10,
+      "deliveryPositionRatio": 0.811,
+      "immutableFieldsExact": true,
+      "productFormat": "docx, xlsx",
+      "politeImperativeFree": true,
+      "rawProductExtensionsFree": true
+    },
+    {
+      "uid": "沈礼_7.10_06",
+      "sheetRow": 180,
+      "annotator": "沈礼",
+      "questionVisibleCharacters": 882,
+      "questionParagraphs": 5,
+      "stepCount": 11,
+      "deliveryPositionRatio": 0.804,
+      "immutableFieldsExact": true,
+      "productFormat": "docx, xlsx",
+      "politeImperativeFree": true,
+      "rawProductExtensionsFree": true
+    },
+    {
+      "uid": "裴硬_7.9_01",
+      "sheetRow": 145,
+      "annotator": "裴硬",
+      "questionVisibleCharacters": 692,
+      "questionParagraphs": 5,
+      "stepCount": 10,
+      "deliveryPositionRatio": 0.789,
+      "immutableFieldsExact": true,
+      "productFormat": "docx, xlsx",
+      "politeImperativeFree": true,
+      "rawProductExtensionsFree": true
+    },
+    {
+      "uid": "裴硬_7.9_02",
+      "sheetRow": 146,
+      "annotator": "裴硬",
+      "questionVisibleCharacters": 706,
+      "questionParagraphs": 4,
+      "stepCount": 10,
+      "deliveryPositionRatio": 0.736,
+      "immutableFieldsExact": true,
+      "productFormat": "docx, xlsx",
+      "politeImperativeFree": true,
+      "rawProductExtensionsFree": true
+    },
+    {
+      "uid": "裴硬_7.9_03",
+      "sheetRow": 147,
+      "annotator": "裴硬",
+      "questionVisibleCharacters": 659,
+      "questionParagraphs": 4,
+      "stepCount": 10,
+      "deliveryPositionRatio": 0.761,
+      "immutableFieldsExact": true,
+      "productFormat": "docx, xlsx",
+      "politeImperativeFree": true,
+      "rawProductExtensionsFree": true
+    },
+    {
+      "uid": "裴硬_7.9_04",
+      "sheetRow": 148,
+      "annotator": "裴硬",
+      "questionVisibleCharacters": 676,
+      "questionParagraphs": 4,
+      "stepCount": 9,
+      "deliveryPositionRatio": 0.801,
+      "immutableFieldsExact": true,
+      "productFormat": "docx, xlsx",
+      "politeImperativeFree": true,
+      "rawProductExtensionsFree": true
+    },
+    {
+      "uid": "裴硬_7.9_05",
+      "sheetRow": 149,
+      "annotator": "裴硬",
+      "questionVisibleCharacters": 723,
+      "questionParagraphs": 4,
+      "stepCount": 9,
+      "deliveryPositionRatio": 0.672,
+      "immutableFieldsExact": true,
+      "productFormat": "docx, xlsx",
+      "politeImperativeFree": true,
+      "rawProductExtensionsFree": true
+    }
+  ],
+  "attachments": [
+    {
+      "uid": "沈礼_7.9_01",
+      "fileName": "附件一_生成式人工智能服务管理暂行办法.html",
+      "valid": true,
+      "bytes": 29431,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_01",
+      "fileName": "附件二_互联网信息服务深度合成管理规定.html",
+      "valid": true,
+      "bytes": 29675,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_01",
+      "fileName": "附件三_中华人民共和国个人信息保护法.html",
+      "valid": true,
+      "bytes": 60221,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_01",
+      "fileName": "附件四_生成式人工智能服务安全基本要求_GBT45654_2025.pdf",
+      "valid": true,
+      "bytes": 567265,
+      "extension": "pdf",
+      "detail": "signature=%PDF"
+    },
+    {
+      "uid": "沈礼_7.9_01",
+      "fileName": "附件五_生成式人工智能服务已备案信息公告.html",
+      "valid": true,
+      "bytes": 20544,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_02",
+      "fileName": "附件一_高层民用建筑消防安全管理规定.pdf",
+      "valid": true,
+      "bytes": 168935,
+      "extension": "pdf",
+      "detail": "signature=%PDF"
+    },
+    {
+      "uid": "沈礼_7.9_02",
+      "fileName": "附件二_高层民用建筑消防安全管理规定页面.html",
+      "valid": true,
+      "bytes": 286484,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_02",
+      "fileName": "附件三_高层民用建筑消防安全管理规定政策解读.html",
+      "valid": true,
+      "bytes": 60608,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_02",
+      "fileName": "附件四_2025年度电动自行车以旧换新工作通知.html",
+      "valid": true,
+      "bytes": 15252,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_02",
+      "fileName": "附件五_电动自行车以旧换新政策解读.html",
+      "valid": true,
+      "bytes": 23348,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_03",
+      "fileName": "附件一_互联网广告管理办法.html",
+      "valid": true,
+      "bytes": 28691,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_03",
+      "fileName": "附件二_互联网广告可识别性执法指南.html",
+      "valid": true,
+      "bytes": 41997,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_03",
+      "fileName": "附件三_预包装食品标签通则_GB7718_2011.pdf",
+      "valid": true,
+      "bytes": 217865,
+      "extension": "pdf",
+      "detail": "signature=%PDF"
+    },
+    {
+      "uid": "沈礼_7.9_03",
+      "fileName": "附件四_特殊食品广告审查管理暂行办法.pdf",
+      "valid": true,
+      "bytes": 186928,
+      "extension": "pdf",
+      "detail": "signature=%PDF"
+    },
+    {
+      "uid": "沈礼_7.9_03",
+      "fileName": "附件五_网络食品安全违法行为查处办法.pdf",
+      "valid": true,
+      "bytes": 197172,
+      "extension": "pdf",
+      "detail": "signature=%PDF"
+    },
+    {
+      "uid": "沈礼_7.9_03",
+      "fileName": "附件六_中华人民共和国食品安全法.pdf",
+      "valid": true,
+      "bytes": 266488,
+      "extension": "pdf",
+      "detail": "signature=%PDF"
+    },
+    {
+      "uid": "沈礼_7.9_04",
+      "fileName": "附件一_中华人民共和国个人信息保护法.html",
+      "valid": true,
+      "bytes": 60221,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_04",
+      "fileName": "附件二_中华人民共和国数据安全法.html",
+      "valid": true,
+      "bytes": 32994,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_04",
+      "fileName": "附件三_中华人民共和国网络安全法.html",
+      "valid": true,
+      "bytes": 19799,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_04",
+      "fileName": "附件四_信息安全技术个人信息安全规范国家标准信息.html",
+      "valid": true,
+      "bytes": 87663,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_05",
+      "fileName": "附件一_互联网广告管理办法.html",
+      "valid": true,
+      "bytes": 45017,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_05",
+      "fileName": "附件二_中华人民共和国广告法.html",
+      "valid": true,
+      "bytes": 67989,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_05",
+      "fileName": "附件三_广告审查管理暂行办法.pdf",
+      "valid": true,
+      "bytes": 186928,
+      "extension": "pdf",
+      "detail": "signature=%PDF"
+    },
+    {
+      "uid": "沈礼_7.9_05",
+      "fileName": "附件四_网络直播营销管理办法发布说明.html",
+      "valid": true,
+      "bytes": 13781,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_05",
+      "fileName": "附件五_福建省2025年虚假违法广告典型案例.html",
+      "valid": true,
+      "bytes": 64503,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_05",
+      "fileName": "附件六_市场监管总局直播电商典型案例.html",
+      "valid": true,
+      "bytes": 46263,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_06",
+      "fileName": "附件一_民政部积极发展老年助餐服务行动方案.html",
+      "valid": true,
+      "bytes": 58117,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_06",
+      "fileName": "附件二_浙江省发展老年助餐服务行动实施方案.pdf",
+      "valid": true,
+      "bytes": 2155522,
+      "extension": "pdf",
+      "detail": "signature=%PDF"
+    },
+    {
+      "uid": "沈礼_7.9_06",
+      "fileName": "附件三_浙江省政府向社会力量购买服务指导性目录2024.xlsx",
+      "valid": true,
+      "bytes": 27829,
+      "extension": "xlsx",
+      "detail": "signature=\"PK\\u0003\\u0004\""
+    },
+    {
+      "uid": "沈礼_7.9_06",
+      "fileName": "附件四_广州市基本养老服务清单2024.html",
+      "valid": true,
+      "bytes": 178262,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_07",
+      "fileName": "附件一_中华人民共和国安全生产法.html",
+      "valid": true,
+      "bytes": 158867,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_07",
+      "fileName": "附件二_工贸企业有限空间作业安全规定.pdf",
+      "valid": true,
+      "bytes": 130745,
+      "extension": "pdf",
+      "detail": "signature=%PDF"
+    },
+    {
+      "uid": "沈礼_7.9_07",
+      "fileName": "附件三_工贸企业有限空间作业安全规定解读.html",
+      "valid": true,
+      "bytes": 44378,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_07",
+      "fileName": "附件四_工贸企业重大事故隐患判定标准.html",
+      "valid": true,
+      "bytes": 125664,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_08",
+      "fileName": "附件一_学校食品安全与营养健康管理规定.html",
+      "valid": true,
+      "bytes": 44284,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_08",
+      "fileName": "附件二_加强学校校外供餐管理工作通知.html",
+      "valid": true,
+      "bytes": 21323,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_08",
+      "fileName": "附件三_中华人民共和国食品安全法.html",
+      "valid": true,
+      "bytes": 74128,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_08",
+      "fileName": "附件四_食品生产经营企业落实食品安全主体责任规定.html",
+      "valid": true,
+      "bytes": 51284,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_09",
+      "fileName": "附件一_药品网络销售监督管理办法.html",
+      "valid": true,
+      "bytes": 43810,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_09",
+      "fileName": "附件二_药品网络销售禁止清单第一版公告.html",
+      "valid": true,
+      "bytes": 10334,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_09",
+      "fileName": "附件三_处方管理办法.pdf",
+      "valid": true,
+      "bytes": 239999,
+      "extension": "pdf",
+      "detail": "signature=%PDF"
+    },
+    {
+      "uid": "沈礼_7.9_09",
+      "fileName": "附件四_长期处方管理规范试行.html",
+      "valid": true,
+      "bytes": 25764,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_10",
+      "fileName": "附件一_医疗机构医疗保障定点管理暂行办法.html",
+      "valid": true,
+      "bytes": 43900,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_10",
+      "fileName": "附件二_医疗机构医疗保障定点管理暂行办法.pdf",
+      "valid": true,
+      "bytes": 203638,
+      "extension": "pdf",
+      "detail": "signature=%PDF"
+    },
+    {
+      "uid": "沈礼_7.9_10",
+      "fileName": "附件三_进一步加强医疗保障定点医疗机构管理通知.html",
+      "valid": true,
+      "bytes": 11753,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_10",
+      "fileName": "附件四_医疗保障基金使用监督管理条例实施细则.html",
+      "valid": true,
+      "bytes": 35741,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_11",
+      "fileName": "附件一_中华人民共和国慈善法.html",
+      "valid": true,
+      "bytes": 232220,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_11",
+      "fileName": "附件二_中华人民共和国公益事业捐赠法.html",
+      "valid": true,
+      "bytes": 31125,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.9_11",
+      "fileName": "附件三_公益事业捐赠票据使用管理办法.pdf",
+      "valid": true,
+      "bytes": 2586364,
+      "extension": "pdf",
+      "detail": "signature=%PDF"
+    },
+    {
+      "uid": "沈礼_7.9_11",
+      "fileName": "附件四_公益性捐赠税前扣除事项公告.html",
+      "valid": true,
+      "bytes": 48925,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.10_01",
+      "fileName": "附件一_茶饮促销行为暂行规定.html",
+      "valid": true,
+      "bytes": 60627,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.10_01",
+      "fileName": "附件二_茶饮消费者权益保护法实施条例.html",
+      "valid": true,
+      "bytes": 65252,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.10_01",
+      "fileName": "附件三_茶饮互联网广告管理办法.html",
+      "valid": true,
+      "bytes": 70714,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.10_01",
+      "fileName": "附件四_茶饮网络交易监督管理办法.html",
+      "valid": true,
+      "bytes": 77930,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.10_01",
+      "fileName": "附件五_茶饮会员个人信息保护法.html",
+      "valid": true,
+      "bytes": 60221,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.10_02",
+      "fileName": "附件一_儿童手表儿童个人信息网络保护规定.html",
+      "valid": true,
+      "bytes": 22216,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.10_02",
+      "fileName": "附件二_儿童手表未成年人网络保护条例.html",
+      "valid": true,
+      "bytes": 50111,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.10_02",
+      "fileName": "附件三_儿童手表个人信息保护法.html",
+      "valid": true,
+      "bytes": 60221,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.10_02",
+      "fileName": "附件四_儿童手表网络数据安全管理条例.html",
+      "valid": true,
+      "bytes": 59055,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.10_02",
+      "fileName": "附件五_儿童手表App违法违规收集个人信息认定方法.html",
+      "valid": true,
+      "bytes": 19061,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.10_03",
+      "fileName": "附件一_票务大型营业性演出规范管理通知.html",
+      "valid": true,
+      "bytes": 35455,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.10_03",
+      "fileName": "附件二_票务营业性演出管理条例.pdf",
+      "valid": true,
+      "bytes": 296552,
+      "extension": "pdf",
+      "detail": "signature=%PDF"
+    },
+    {
+      "uid": "沈礼_7.10_03",
+      "fileName": "附件三_票务营业性演出管理条例实施细则.pdf",
+      "valid": true,
+      "bytes": 164130,
+      "extension": "pdf",
+      "detail": "signature=%PDF"
+    },
+    {
+      "uid": "沈礼_7.10_03",
+      "fileName": "附件四_票务大型群众性活动安全管理条例.html",
+      "valid": true,
+      "bytes": 63072,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.10_03",
+      "fileName": "附件五_票务网络交易平台规则监督管理办法.html",
+      "valid": true,
+      "bytes": 40355,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.10_03",
+      "fileName": "附件六_票务个人信息保护法.html",
+      "valid": true,
+      "bytes": 60221,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.10_03",
+      "fileName": "附件七_票务消费者权益保护法实施条例.html",
+      "valid": true,
+      "bytes": 65252,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.10_04",
+      "fileName": "附件一_寒武纪_2025年年度报告_20260313.pdf",
+      "valid": true,
+      "bytes": 1531788,
+      "extension": "pdf",
+      "detail": "signature=%PDF"
+    },
+    {
+      "uid": "沈礼_7.10_04",
+      "fileName": "附件二_寒武纪_2024年年度报告_20250419.pdf",
+      "valid": true,
+      "bytes": 1505155,
+      "extension": "pdf",
+      "detail": "signature=%PDF"
+    },
+    {
+      "uid": "沈礼_7.10_04",
+      "fileName": "附件三_寒武纪_2025年度业绩快报_20260228.pdf",
+      "valid": true,
+      "bytes": 118340,
+      "extension": "pdf",
+      "detail": "signature=%PDF"
+    },
+    {
+      "uid": "沈礼_7.10_04",
+      "fileName": "附件四_寒武纪_2026年第一季度报告_20260430.pdf",
+      "valid": true,
+      "bytes": 189239,
+      "extension": "pdf",
+      "detail": "signature=%PDF"
+    },
+    {
+      "uid": "沈礼_7.10_04",
+      "fileName": "附件五_上交所_XBRL经营业绩概览_寒武纪_2022至2025.json",
+      "valid": true,
+      "bytes": 4339,
+      "extension": "json",
+      "detail": "json-parse-ok"
+    },
+    {
+      "uid": "沈礼_7.10_05",
+      "fileName": "附件一_消费型锂电池货物铁路运输指导意见.html",
+      "valid": true,
+      "bytes": 57848,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.10_05",
+      "fileName": "附件二_铁路危险货物运输安全监督管理规定.html",
+      "valid": true,
+      "bytes": 102928,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.10_05",
+      "fileName": "附件三_铁路货物运输规则_2026.pdf",
+      "valid": true,
+      "bytes": 339815,
+      "extension": "pdf",
+      "detail": "signature=%PDF"
+    },
+    {
+      "uid": "沈礼_7.10_05",
+      "fileName": "附件四_国际货协危险货物规则2025修改通知.html",
+      "valid": true,
+      "bytes": 47005,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.10_05",
+      "fileName": "附件五_国际货协危险货物规则2025修改事项.pdf",
+      "valid": true,
+      "bytes": 592757,
+      "extension": "pdf",
+      "detail": "signature=%PDF"
+    },
+    {
+      "uid": "沈礼_7.10_05",
+      "fileName": "附件六_B3原型样机订舱事实与缺件清单_截至2026-07-10.json",
+      "valid": true,
+      "bytes": 5006,
+      "extension": "json",
+      "detail": "json-parse-ok"
+    },
+    {
+      "uid": "沈礼_7.10_06",
+      "fileName": "附件一_华东理工大学LC20A采购技术参数公示.html",
+      "valid": true,
+      "bytes": 50872,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "沈礼_7.10_06",
+      "fileName": "附件二_岛津LC20A安装准备条件.pdf",
+      "valid": true,
+      "bytes": 301277,
+      "extension": "pdf",
+      "detail": "signature=%PDF"
+    },
+    {
+      "uid": "沈礼_7.10_06",
+      "fileName": "附件三_中国地质大学大型仪器设备验收工作流程.pdf",
+      "valid": true,
+      "bytes": 288127,
+      "extension": "pdf",
+      "detail": "signature=%PDF"
+    },
+    {
+      "uid": "沈礼_7.10_06",
+      "fileName": "附件四_中国传媒大学项目到货验收申请表.xlsx",
+      "valid": true,
+      "bytes": 11214,
+      "extension": "xlsx",
+      "detail": "signature=\"PK\\u0003\\u0004\""
+    },
+    {
+      "uid": "沈礼_7.10_06",
+      "fileName": "附件五_华南理工大学仪器设备开箱与点验货记录.docx",
+      "valid": true,
+      "bytes": 42496,
+      "extension": "docx",
+      "detail": "signature=\"PK\\u0003\\u0004\""
+    },
+    {
+      "uid": "沈礼_7.10_06",
+      "fileName": "附件六_华南理工大学进口仪器设备购置合同模板.docx",
+      "valid": true,
+      "bytes": 30239,
+      "extension": "docx",
+      "detail": "signature=\"PK\\u0003\\u0004\""
+    },
+    {
+      "uid": "裴硬_7.9_01",
+      "fileName": "附件一_化妆品监督管理条例.pdf",
+      "valid": true,
+      "bytes": 559755,
+      "extension": "pdf",
+      "detail": "signature=%PDF"
+    },
+    {
+      "uid": "裴硬_7.9_01",
+      "fileName": "附件二_化妆品网络经营监督管理办法.html",
+      "valid": true,
+      "bytes": 133948,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "裴硬_7.9_01",
+      "fileName": "附件三_化妆品功效宣称评价规范.html",
+      "valid": true,
+      "bytes": 262432,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "裴硬_7.9_01",
+      "fileName": "附件四_互联网广告管理办法.html",
+      "valid": true,
+      "bytes": 70714,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "裴硬_7.9_02",
+      "fileName": "附件一_个人信息保护法_数据出境规则.html",
+      "valid": true,
+      "bytes": 60221,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "裴硬_7.9_02",
+      "fileName": "附件二_中华人民共和国数据安全法.html",
+      "valid": true,
+      "bytes": 32994,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "裴硬_7.9_02",
+      "fileName": "附件三_数据出境安全评估办法.html",
+      "valid": true,
+      "bytes": 14660,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "裴硬_7.9_02",
+      "fileName": "附件四_促进和规范数据跨境流动规定.html",
+      "valid": true,
+      "bytes": 20978,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "裴硬_7.9_03",
+      "fileName": "附件一_民法典物权编业主共有与维修资金条款.html",
+      "valid": true,
+      "bytes": 113466,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "裴硬_7.9_03",
+      "fileName": "附件二_物业管理条例.pdf",
+      "valid": true,
+      "bytes": 266566,
+      "extension": "pdf",
+      "detail": "signature=%PDF"
+    },
+    {
+      "uid": "裴硬_7.9_03",
+      "fileName": "附件三_住宅专项维修资金管理办法.html",
+      "valid": true,
+      "bytes": 74916,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "裴硬_7.9_03",
+      "fileName": "附件四_业主大会和业主委员会指导规则.pdf",
+      "valid": true,
+      "bytes": 155248,
+      "extension": "pdf",
+      "detail": "signature=%PDF"
+    },
+    {
+      "uid": "裴硬_7.9_04",
+      "fileName": "附件一_网络招聘服务管理规定.html",
+      "valid": true,
+      "bytes": 67324,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "裴硬_7.9_04",
+      "fileName": "附件二_个人信息保护法_招聘候选人信息处理.html",
+      "valid": true,
+      "bytes": 60221,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "裴硬_7.9_04",
+      "fileName": "附件三_互联网信息服务算法推荐管理规定.html",
+      "valid": true,
+      "bytes": 31231,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "裴硬_7.9_04",
+      "fileName": "附件四_生成式人工智能服务管理暂行办法.html",
+      "valid": true,
+      "bytes": 29431,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "裴硬_7.9_05",
+      "fileName": "附件一_旅馆业治安管理办法.pdf",
+      "valid": true,
+      "bytes": 200166,
+      "extension": "pdf",
+      "detail": "signature=%PDF"
+    },
+    {
+      "uid": "裴硬_7.9_05",
+      "fileName": "附件二_中华人民共和国消防法.html",
+      "valid": true,
+      "bytes": 1820,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "裴硬_7.9_05",
+      "fileName": "附件三_网络交易监督管理办法.html",
+      "valid": true,
+      "bytes": 77930,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    },
+    {
+      "uid": "裴硬_7.9_05",
+      "fileName": "附件四_中华人民共和国电子商务法.html",
+      "valid": true,
+      "bytes": 29256,
+      "extension": "html",
+      "detail": "html-markup-ok"
+    }
+  ]
+}

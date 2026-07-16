@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "ok": true,
+  "status": "PASS",
+  "generatedAt": "2026-07-11T13:55:39.094Z",
+  "policyId": "l2-corpus-calibrated-source-driven-v5",
+  "policyVersion": 5,
+  "gateStatus": "PASS",
+  "authorizationMode": "DIRECT_PASS",
+  "reviewAuthorization": null,
+  "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_managed_protocol_v2_20260711\\feishu\\structure_gate_report.json",
+  "reportHash": "26e538e60d18ba4370082bce78d34fe044a33a0f0e851c3b94218315e6af3b05",
+  "batchHash": "0fd5196f683305bebf7176423c88f8e3cc0bfe98dd37948ceeed673f038cd925",
+  "rowHashes": [
+    {
+      "index": 0,
+      "uid": "",
+      "sheetRow": 121,
+      "hash": "33cb190eeedf04a414a47d76c3c1b03de637423efc1b1ab525af436f6cac8259"
+    },
+    {
+      "index": 1,
+      "uid": "",
+      "sheetRow": 122,
+      "hash": "7f33df46905563b6c533118a2f4d99321b2f9800497bcd281f698c699b674301"
+    },
+    {
+      "index": 2,
+      "uid": "",
+      "sheetRow": 123,
+      "hash": "9d5905e724aaf6e8a45f07945a19aa48d60c747bcfb538fec9f611bf65e38cc5"
+    },
+    {
+      "index": 3,
+      "uid": "",
+      "sheetRow": 134,
+      "hash": "dc4ef255fa0d5efd5216527a71910968f12af0531c019b8bf3a8ccf4f7110ae3"
+    },
+    {
+      "index": 4,
+      "uid": "",
+      "sheetRow": 135,
+      "hash": "368af1064f431359881485373d3623bb6343a6713e32da3e06f36cd001e3ac68"
+    },
+    {
+      "index": 5,
+      "uid": "",
+      "sheetRow": 136,
+      "hash": "09d6d723e207cfe255315ebce4ab84a5d2c6a82e255e24b9393aa2cbd8139a48"
+    },
+    {
+      "index": 6,
+      "uid": "",
+      "sheetRow": 140,
+      "hash": "b4336717b37d50f272e4f7892fd778c5b043ae78aae2ba7c32d19aebf3134e73"
+    },
+    {
+      "index": 7,
+      "uid": "",
+      "sheetRow": 141,
+      "hash": "3858e37ac064469f0ebc6c2cb7982d7385840def7ef31a30a6cdf660e5a3c14c"
+    },
+    {
+      "index": 8,
+      "uid": "",
+      "sheetRow": 142,
+      "hash": "97836746cb8b279f4eb7e538afc69b8ed121fa5a4a8104f9ab96dfb74964db72"
+    },
+    {
+      "index": 9,
+      "uid": "",
+      "sheetRow": 143,
+      "hash": "064aea64d065db02713f4e74e36fb1dc088e1eb242dd847d138759dae3a77f9a"
+    },
+    {
+      "index": 10,
+      "uid": "",
+      "sheetRow": 144,
+      "hash": "120e954cde9811d7a0fac13b738b2612118f761f0f36ba6e5864166f5793eb18"
+    },
+    {
+      "index": 11,
+      "uid": "",
+      "sheetRow": 145,
+      "hash": "a8895565dda94fb7eb2f20e86732ed04678c0816c67ebc6d1359798387d90289"
+    },
+    {
+      "index": 12,
+      "uid": "",
+      "sheetRow": 146,
+      "hash": "e9426b1631888033f6f343cd3ff963101e55c23b6d2562d7fe6ca91baa16a243"
+    },
+    {
+      "index": 13,
+      "uid": "",
+      "sheetRow": 147,
+      "hash": "c35b73f7764bd10c092070648c8f23be041f63e069e636e9a8bb28602c0cf589"
+    },
+    {
+      "index": 14,
+      "uid": "",
+      "sheetRow": 148,
+      "hash": "3f7a9a35eac08293b34e85960774d666d7e1c617f0538150477a65fe1d62ac3c"
+    },
+    {
+      "index": 15,
+      "uid": "",
+      "sheetRow": 149,
+      "hash": "195c1b7aac5904dd518c56f09230513726ebc8a662287715b1e085e645502bba"
+    },
+    {
+      "index": 16,
+      "uid": "",
+      "sheetRow": 172,
+      "hash": "bf5ad0ef65319e86403f1485ddaae25ed29f96b0df32752b5a0517a30da48b76"
+    },
+    {
+      "index": 17,
+      "uid": "",
+      "sheetRow": 173,
+      "hash": "54f92e9910c7a3b21ef1e5926ff4e829cbe164ad233ef5414ad86188b93c0a50"
+    },
+    {
+      "index": 18,
+      "uid": "",
+      "sheetRow": 174,
+      "hash": "be492406ef306795ed237ef58da774e342a18c9536061829be779dbd4248c913"
+    },
+    {
+      "index": 19,
+      "uid": "",
+      "sheetRow": 178,
+      "hash": "0a051e13266e4ded21d1f2d7cc0b7e47145b899e163104458d9aa2b2dc4e0e25"
+    },
+    {
+      "index": 20,
+      "uid": "",
+      "sheetRow": 179,
+      "hash": "1fa58b574b1c5197fae5c202dd30af0bc073449a78bfa732d165a4ee246c53ea"
+    },
+    {
+      "index": 21,
+      "uid": "",
+      "sheetRow": 180,
+      "hash": "7fda2cc071dd9c40c6310da4056ac5660e29814352be498b0de14273e0fb241e"
+    }
+  ]
+}

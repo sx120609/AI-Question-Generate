@@ -1,0 +1,68 @@
+[
+  {
+    "row": 145,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=145&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783613236700_145",
+    "checkedAt": "2026-07-09T16:08:19.978Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "周五前要定达人脚本，运营已经把“敏感肌急救精华”的三段短视频口播、详情页首屏文案和前后对比图排进投放表，达人账号也约好了。现在最卡的是“三天退红”“医美级维稳”",
+    "note": "场景表达不自然：题目开头像内部沟通记录，但指令不够清晰。建议直接说明核心任务：基于附件法规，审核运营提供的口播、详情页、对比图等素材，给出风险判断和修改建议，并输出Word会前稿和Excel改稿表。请把报告式、材料式说法改成真实用户会提出的决策、比较、整理、建议需求，保留预算、偏好、限制和实际用途。具体可改为：简化背景描述，直接说明核心任务：基于附件法规，审核运营提供的口播、详情页、对比图等素材。",
+    "categories": [
+      "scene_naturalness",
+      "prompt_style"
+    ]
+  },
+  {
+    "row": 146,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=146&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783613299981_146",
+    "checkedAt": "2026-07-09T16:08:28.751Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "销售明天客户周会要一个能上桌的口径：官网预约试用、展会扫码、公众号留资这三路线索，到底能不能先接入海外CRM，哪些字段先留在境内。现有材料只有字段清单、供应商标",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 147,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=147&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783613308752_147",
+    "checkedAt": "2026-07-09T16:09:05.451Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "社区工作人员让我准备下周协调会材料，业委会群里已经吵了两晚：电梯广告一年18万元到底进了哪里，物业说抵了保洁和维保，业主代表要求看合同、入账流水和分摊明细。偏偏",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 148,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=148&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783613345452_148",
+    "checkedAt": "2026-07-09T16:09:18.538Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "招聘小程序的“AI初筛”想在2026年7月灰度，产品已经把A档优先展示、B档抽看、C档沉底的后台样式画好了。上线评审前，HR和法务都想先看清候选人会看到什么、H",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 149,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=149&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783613358539_149",
+    "checkedAt": "2026-07-09T16:10:38.190Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "我这边负责的本地生活平台想把“城市周末民宿”专题排进下周首页，但招商给来的30套房源还只是散资料：证照照片、房屋图、消防承诺书、价格表各有一些，完整房源明细表还",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  }
+]

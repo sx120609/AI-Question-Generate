@@ -1,0 +1,67 @@
+[
+  {
+    "row": 144,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=144&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783638805595_144",
+    "checkedAt": "2026-07-09T23:13:37.588Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "“公益合作款”是否达到进入捐赠票据复核的门槛，还是应先停在业务款性质核对？财务后台同时出现企业捐款、员工配捐、物资折价和若干备注含糊的款项，捐赠人正在催票据及税",
+    "note": "附件读取失败：题目依赖附件或来源链接，但来源链接读取失败或附件原文不可用；请更换可访问链接、上传附件原文，或在附件内容列补充足够正文摘录/数据口径后重新质检。 附件缺少具体批次材料：附件仅提供通用法规，未提供任何具体批次的收款截图、捐赠协议、物资评估、受助对象清单等材料，无法支撑对具体批次的判断。请补充至少一个批次的真实或模拟材料，或明确说明由用户自行提供。",
+    "categories": [
+      "attachment_read_failed"
+    ]
+  },
+  {
+    "row": 172,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=172&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783638817590_172",
+    "checkedAt": "2026-07-09T23:13:48.495Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "截至2026年7月10日晚，会员运营想把新品会员日弹窗放进小程序测试。页面把9.9元券包、积分抽奖、生日月加赠和“连喝7天抽免单”放在一起，后台还准备按手机号、",
+    "note": "缺少弹窗截图、奖项数量、中奖概率、核销日志和授权记录等核心材料，无法支撑文案审改和规则核对；请补充弹窗截图、奖项明细、中奖概率、核销日志和用户授权记录。 场景表达不自然：请用更自然的业务语言描述需求，例如“帮我把这些活动规则审一遍，出个修改意见和核对表”，避免过度结构化。补充时要写清数据来源、覆盖范围、地区年份、统计口径或附件位置，确保后续答案能基于真实材料给出具体判断。",
+    "categories": [
+      "scene_naturalness"
+    ]
+  },
+  {
+    "row": 173,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=173&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783638828495_173",
+    "checkedAt": "2026-07-09T23:13:53.505Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "家长开门见山地问：定位和录音谁能看、保存多久，不同意佩戴会不会影响孩子正常入离园。园长明天要带着一个明确答复去家委会，再决定9月是否在两个班启动试用。供应商展示",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 174,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=174&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783638833507_174",
+    "checkedAt": "2026-07-09T23:13:59.745Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "票务产品经理把2026年8月体育场演唱会购票待审文本和几张流程图交接给我，要求周一前形成可以与主办方讨论的改版方案。待审文本写着每个身份证限购一张、实名入场、开",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 178,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=178&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783638839746_178",
+    "checkedAt": "2026-07-09T23:14:08.078Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "投委会的分歧已经从“2025年是否首次年度盈利”转向“利润有没有转成现金”。一方主张寒武纪在营收、归母净利润跳升且2026年一季度经营现金流转正后，应升入重点研",
+    "note": "关键步骤问题：末尾需加入产物自检或交付前核对。请按真实完成顺序保留关键动作，删除过细或无关步骤。请按任务真实完成顺序整理关键动作，L1保持4-8条，L2保持8-15条，保留必要流程节点，合并过细或重复动作。具体可改为：加入产物自检或交付前核对步骤。修改后应让审核人一眼看出问题原因、需要补充的材料、应补到哪个字段，以及出题人可以直接执行的调整方向，并减少来回追问；不要只写笼统描述或模糊来源。",
+    "categories": [
+      "step_count"
+    ]
+  }
+]

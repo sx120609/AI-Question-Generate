@@ -1,0 +1,67 @@
+[
+  {
+    "row": 144,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=144&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783637030382_144",
+    "checkedAt": "2026-07-09T22:43:58.004Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "“公益合作款”是否达到进入捐赠票据复核的门槛，还是应先停在业务款性质核对？财务后台同时出现企业捐款、员工配捐、物资折价和若干备注含糊的款项，捐赠人正在催票据及税",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 172,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=172&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783637038006_172",
+    "checkedAt": "2026-07-09T22:44:09.828Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "今晚要避免把2026年7月新品会员日放进小程序测试，不能只看弹窗是否做完。9.9元券包、积分抽奖、生日月加赠和“连喝7天抽免单”被塞在同一页面，后台还拟用手机号",
+    "note": "缺少券包价格、奖项设置、概率、用户字段等具体数据，无法支撑xlsx计算模型；请补充关键数值或明确数据来源。 缺少当前时间或活动截止日期，影响法规适用和紧急动作判断；请补充时间锚点。补充时要写清数据来源、覆盖范围、地区年份、统计口径或附件位置，确保后续答案能基于真实材料给出具体判断。修改时请优先处理会影响数据接收和答案落地的问题，确保出题人能直接照着改。",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 173,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=173&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783637049829_173",
+    "checkedAt": "2026-07-09T22:44:22.026Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "试点评审卡住了。园长希望9月前在两个班使用儿童智能手表，功能包括进出园自动打卡、离园围栏提醒、SOS 一键录音、家长端查看位置，还想把迟到次数同步给班主任；家委",
+    "note": "场景表达不自然：幼儿园试点决策更可能是口头讨论或简单纪要，而非要求生成正式会议简报和情景模型。请调整为更自然的表达，例如直接要求分析功能合规性、风险点及替代方案，并给出建议。 产物要求生硬：核心任务是分析功能合规性和风险，产物应自然服务于决策，而非生硬要求docx和xlsx格式。请改为直接要求分析结果和建议，或仅保留必要格式。",
+    "categories": [
+      "scene_naturalness"
+    ]
+  },
+  {
+    "row": 174,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=174&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783637062027_174",
+    "checkedAt": "2026-07-09T22:44:33.843Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "票务产品经理把2026年8月体育场演唱会购票待审文本和几张流程图交接给我，要求周一前形成可以与主办方讨论的改版方案。待审文本写着每个身份证限购一张、实名入场、开",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 178,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=178&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783637073844_178",
+    "checkedAt": "2026-07-09T22:44:46.995Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "投委会的分歧已经从“2025年是否首次年度盈利”转向“利润有没有转成现金”。一方主张寒武纪在营收、归母净利润跳升且2026年一季度经营现金流转正后，应升入重点研",
+    "note": "关键步骤问题：末尾需加入产物自检或交付前核对。请按真实完成顺序保留关键动作，删除过细或无关步骤。 核心任务不唯一：题目包含多期数据链、财务指标、营运资金桥、优先级排序、观察界限、敏感性分析等多个子任务，建议聚焦于盈利质量评估和优先级排序，将敏感性分析作为可选扩展。请按任务真实完成顺序整理关键动作，L1保持4-8条，L2保持8-15条，保留必要流程节点，合并过细或重复动作。",
+    "categories": [
+      "step_count"
+    ]
+  }
+]

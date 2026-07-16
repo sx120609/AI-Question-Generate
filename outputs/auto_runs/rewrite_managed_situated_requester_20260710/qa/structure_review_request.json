@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "kind": "structure-review-request",
+  "status": "PENDING_REVIEW",
+  "requestId": "structure_dc9999531712e81a5ad76e66",
+  "generatedAt": "2026-07-10T14:18:23.379Z",
+  "gateId": "structure-review-gate-v1",
+  "policyId": "l2-human-grounded-diversity-v3",
+  "policyVersion": 3,
+  "requestedBy": "structure-gate-automation",
+  "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_managed_situated_requester_20260710\\feishu\\structure_gate_report.json",
+  "reportSubjectHash": "cded2c408bf20953dd3d021e741bcb087ffef8e7cf6706d7df598603c28e11c3",
+  "evaluationHash": "fd33f146b38046906fbc57cdf19589a8db22a72b26150bfdb2c84fc2870895df",
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_managed_situated_requester_20260710\\drafts\\l2_questions_situated.tsv",
+  "candidateHash": "e18c383c74b4bdbd0b377ca0c8f3e7efe6fa7191813d336a71c5d397e0045535",
+  "passportPath": "",
+  "passportHash": "",
+  "fillPlanPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_managed_situated_requester_20260710\\feishu\\feishu_fill_plan_situated.json",
+  "fillPlanHash": "99df0c13f42111e8fd1aec51fab9ede137540d05504924a047f87cde3c9d5b5b",
+  "bindingHash": "dc9999531712e81a5ad76e669600ea9e4b7dcefd583233614fdfefc20329680a",
+  "reviewFindings": [
+    {
+      "uid": "沈礼_7.9_11",
+      "index": 10,
+      "rule": "batch-exact-structure-signature"
+    }
+  ],
+  "signoff": null,
+  "note": "This hash-bound request is not an approval. A separately authored independent signoff file is required."
+}

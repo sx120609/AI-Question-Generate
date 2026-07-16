@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "kind": "naturalness-review-signoff",
+  "requestId": "naturalness_ca999cbfe5846eedd0a05693",
+  "bindingHash": "ca999cbfe5846eedd0a05693d8c50a763c155bd1020885fe7c0127517d77f5a5",
+  "requestHash": "0a460bf45406173b71f194f90842f122c2aeacf59fb961d15b01acf9ef4587d8",
+  "decision": "APPROVE",
+  "reviewer": "independent-model-reviewer-round2",
+  "reviewerType": "model",
+  "rationale": "Independent model review compared all six low-anchor REVIEW rows with managed_records_source.json. Their concrete anchors are source-derived locations, actors, material states, relative deadlines, Chinese number words, named functions and process facts; the metric's zero numeric-anchor count does not mean the scenes are vague, and inventing Arabic-number facts would reduce fidelity. For 沈礼_7.9_10, the flagged density is 3/14 sentences (0.2143) against a 0.2125 review threshold; one tagged sentence is a five-item evidence-mapping instruction rather than a generic disclaimer, while the other boundaries directly preserve the source's missing original documents, screenshots, certificates and internal-control text. The row remains action-led and does not substitute warnings for the task. I also reviewed the eight post-QA revisions against the prior submitted snapshot: the four added closing checks use different task-native operations (point-location trace, send/opt-out/cancellation chain, regional-policy applicability check, and formula/disclosure/page trace), and the other four revisions are row-specific narrative or scope repairs. They do not introduce a shared final-self-check shell. The 22-row batch remains PASS on concentration metrics, with no batch finding and no polite imperative construction. Approval is by an independent model reviewer, not a human reviewer.",
+  "reviewedAt": "2026-07-10T09:38:14.332Z"
+}

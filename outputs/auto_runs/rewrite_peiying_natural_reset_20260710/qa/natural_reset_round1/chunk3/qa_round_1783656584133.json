@@ -1,0 +1,67 @@
+[
+  {
+    "row": 145,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=145&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783656472567_145",
+    "checkedAt": "2026-07-10T04:08:10.648Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "周五前要定稿“敏感肌急救精华”的达人投放素材，运营已经把三段短视频口播、详情页首屏文案和前后对比图放进附件。素材里反复出现“三天退红”“医美级维稳”“修护屏障”",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 146,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=146&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783656490651_146",
+    "checkedAt": "2026-07-10T04:08:25.304Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "销售明天要在客户周会上说明，官网预约试用、展会扫码和公众号留资产生的线索，能否同步到海外CRM。拟同步字段包括姓名、手机号、公司邮箱、职位、采购预算和跟进备注。",
+    "note": "补充关键材料：正式CRM合同、字段字典、境外接收方安全措施说明、用户授权记录、历史导出日志，以及三类线索的收集页面和告知内容。 明确核心目标为“判断能否开展少字段试点”，将字段分析、路径判断、交付物等作为子任务统一服务于该目标，避免并列多个独立任务。补充时要写清数据来源、覆盖范围、地区年份、统计口径或附件位置，确保后续答案能基于真实材料给出具体判断。",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 147,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=147&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783656505305_147",
+    "checkedAt": "2026-07-10T04:08:40.092Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "社区下周要主持物业和业主代表的协调会。会上争的是几件很具体的事：电梯广告一年18万元究竟收了多少、进入哪个账户、用于什么支出，以及三台电梯大修是否能够动用住宅专",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 148,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=148&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783656520095_148",
+    "checkedAt": "2026-07-10T04:08:51.617Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "招聘产品周五要过一次上线评审。后台样式已经把候选人分成A档优先展示、B档抽看、C档沉底，产品打算在2026年7月先做小范围灰度；HR最担心的是C档简历会不会从日",
+    "note": "缺少时间锚点：题目提到2026年7月灰度，但未给出当前时间或评审时间，影响对法规版本和计划合理性的判断。请补充当前时间或评审日期。请补充年份、截止日期、数据周期、政策生效时间或适用版本；普通题不强制加时间，只补会影响结论的时间口径。具体可改为：在题目中补充当前时间或评审日期，例如“当前为2026年6月”。修改后应让审核人一眼看出问题原因、需要补充的材料、应补到哪个字段，以及出题人可以直接执行的调。",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 149,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=149&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783656531618_149",
+    "checkedAt": "2026-07-10T04:09:44.132Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "本地生活平台把“城市周末民宿”专题排进了下周首页，招商交来的30套房源却还是散件：有些只有证照照片，有些带房屋图片或消防承诺书，价格表也没有统一到房源编号，完整",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  }
+]

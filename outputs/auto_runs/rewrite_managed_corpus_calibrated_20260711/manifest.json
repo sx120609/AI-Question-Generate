@@ -1,0 +1,65 @@
+{
+  "runId": "rewrite_managed_corpus_calibrated_20260711",
+  "generatedAt": "2026-07-11T12:07:25.326Z",
+  "objective": "按多作者通过稿分布重写沈礼与裴硬全部系统记录并重新提交",
+  "status": "submitted-readback-verified",
+  "count": 22,
+  "generatedAnnotators": [
+    "沈礼",
+    "裴硬"
+  ],
+  "sourceReadback": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_managed_no_blank_lines_fix_20260711\\feishu\\final_readback.json",
+  "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+  "sheetId": "49e351",
+  "sheetRows": [
+    121,
+    122,
+    123,
+    134,
+    135,
+    136,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    172,
+    173,
+    174,
+    178,
+    179,
+    180
+  ],
+  "writableFields": [
+    "题目",
+    "任务概括",
+    "附件内容",
+    "产物内容",
+    "做题关键步骤"
+  ],
+  "preservedFields": [
+    "UID",
+    "相关附件",
+    "附件格式",
+    "产物格式",
+    "标注专家姓名"
+  ],
+  "questionPresentation": "corpus-calibrated-natural-paragraphs-no-blank-lines-v5",
+  "submission": {
+    "writtenCellCount": 110,
+    "verifiedCellCount": 110,
+    "latestUpdate": "attachment-content-blank-lines-removed",
+    "latestUpdatedColumn": "L",
+    "latestUpdatedRows": 22,
+    "latestVerificationFailures": 0,
+    "attachmentCellsWritten": 0,
+    "attachmentObjectsPreserved": 104,
+    "sheetRevision": 5967,
+    "auditStatus": "PASS"
+  }
+}

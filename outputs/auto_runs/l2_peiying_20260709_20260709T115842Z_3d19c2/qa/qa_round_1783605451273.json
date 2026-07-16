@@ -1,0 +1,15 @@
+[
+  {
+    "row": 136,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=136&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783605349522_136",
+    "checkedAt": "2026-07-09T13:57:31.269Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "街道抛来一个养老助餐点运营机会，理事会周三前要先判断要不要继续跟。我们有社区厨房合作方和志愿者队伍，但没承接过政府购买服务；助餐、送餐、食品安全、补贴对象、基本",
+    "note": "场景表达不自然：理事会周三前判断是否跟进，更自然的做法是让AI分析政策匹配、风险点和追问清单，直接给出判断建议和讨论要点，而不是要求正式Word报告和Excel表格。请改为：先写清用户要解决的问题和决策目标，再自然整理成分析建议或沟通材料。 产物要求生硬：理事会内部讨论场景，不应直接要求正式Word报告和Excel表格。请先明确用户要解决的问题和决策目标，再自然整理成分析建议、追问清单或讨论要点。",
+    "categories": [
+      "scene_naturalness"
+    ]
+  }
+]

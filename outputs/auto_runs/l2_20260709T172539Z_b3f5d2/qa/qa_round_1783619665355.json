@@ -1,0 +1,41 @@
+[
+  {
+    "row": 172,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=172&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783619620283_172",
+    "checkedAt": "2026-07-09T17:53:46.987Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "会员运营刚把2026年7月新品会员日的规则截图发来，说今晚就想进小程序测试：9.9元券包、积分抽奖、生日月加赠和“连喝7天抽免单”都放在同一个弹窗里，后台还准备",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 173,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=173&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783619626993_173",
+    "checkedAt": "2026-07-09T17:53:54.496Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "园长今天早会说，9月新学期前想在两个班试用儿童智能手表：进出园自动打卡、离园围栏提醒、SOS一键录音、家长端查看位置，顺手还想把迟到次数同步给班主任。家委会肯定",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 174,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=174&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783619634498_174",
+    "checkedAt": "2026-07-09T17:54:25.353Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "票务产品经理把2026年8月体育场演唱会的新版购票规则丢给我，想周一前给主办方确认：每个身份证限购一张、实名入场、开票后48小时内免费退、临演前按梯次收手续费，",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  }
+]

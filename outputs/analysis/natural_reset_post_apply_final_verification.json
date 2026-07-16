@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-10T04:27:15.925Z",
+  "mode": "post",
+  "annotator": "",
+  "baselinePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\analysis\\natural_reset_live_before_apply.json",
+  "targetPaths": [
+    "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_shenli_natural_reset_20260710\\drafts\\l2_questions_natural_reset.tsv",
+    "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\rewrite_peiying_natural_reset_20260710\\drafts\\l2_questions_natural_reset.tsv"
+  ],
+  "status": "PASS",
+  "count": 22,
+  "immutableFields": [
+    "UID",
+    "任务类型",
+    "一级目录",
+    "二级目录",
+    "三级目录",
+    "标注专家工作年限",
+    "人类完成时间",
+    "相关附件",
+    "附件格式",
+    "产物格式",
+    "标注专家姓名"
+  ],
+  "narrativeFields": [
+    "题目",
+    "任务概括",
+    "附件内容",
+    "产物内容",
+    "做题关键步骤"
+  ],
+  "mismatches": []
+}

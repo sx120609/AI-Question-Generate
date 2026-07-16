@@ -1,0 +1,15 @@
+[
+  {
+    "row": 121,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=121&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783604911529_121",
+    "checkedAt": "2026-07-09T13:48:46.193Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "客户成功刚问我：生成式客服助手下周灰度前，产品和法务会上到底要追哪些材料？目前能确认的只有三件事：灰度只给两家付费客户开、默认不把客户会话用于训练、客户后台保留",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "ok": true,
+  "runId": "l2_shenli_20260709T202051Z_866b59",
+  "completedAt": "2026-07-09T20:56:09.328Z",
+  "spreadsheetToken": "ByAysb2Cdh9V2wtISbJc6Z01nwc",
+  "sheetId": "49e351",
+  "rows": [
+    {
+      "row": 178,
+      "uid": "沈礼_7.10_04",
+      "title": "寒武纪首次盈利后的经营质量与现金转换复核",
+      "attachmentCount": 5,
+      "productFormat": "docx, xlsx",
+      "qa": "✅通过"
+    },
+    {
+      "row": 179,
+      "uid": "沈礼_7.10_05",
+      "title": "中欧班列锂电池原型样机订舱前放行复核",
+      "attachmentCount": 6,
+      "productFormat": "docx, xlsx",
+      "qa": "✅通过"
+    },
+    {
+      "row": 180,
+      "uid": "沈礼_7.10_06",
+      "title": "高效液相色谱仪到货验收与付款前技术核对",
+      "attachmentCount": 6,
+      "productFormat": "docx, xlsx",
+      "qa": "✅通过"
+    }
+  ],
+  "totalAttachments": 17,
+  "verificationPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_shenli_20260709T202051Z_866b59\\feishu\\final_remote_verification_178_180.json",
+  "draftPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_shenli_20260709T202051Z_866b59\\drafts\\l2_questions_178_180_shenli_710.tsv",
+  "manifestStatus": "accepted",
+  "reservationStatus": "accepted",
+  "topicStatuses": [
+    {
+      "topicId": "沈礼_7.10_04",
+      "status": "accepted"
+    },
+    {
+      "topicId": "沈礼_7.10_05",
+      "status": "accepted"
+    },
+    {
+      "topicId": "沈礼_7.10_06",
+      "status": "accepted"
+    }
+  ]
+}

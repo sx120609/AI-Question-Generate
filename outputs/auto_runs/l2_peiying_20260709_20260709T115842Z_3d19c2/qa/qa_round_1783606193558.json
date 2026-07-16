@@ -1,0 +1,54 @@
+[
+  {
+    "row": 142,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=142&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783605826523_142",
+    "checkedAt": "2026-07-09T14:05:27.894Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "连锁药房慢病复购入口这周要灰度：老会员拍处方，药师审核后系统把常用处方药配送到家，运营还排了“买二送一”“复购立减”的位置。法务这次集中追处方真实性、禁售药品拦",
+    "note": "附件读取失败：题目依赖附件或来源链接，但来源链接读取失败或附件原文不可用；请更换可访问链接、上传附件原文，或在附件内容列补充足够正文摘录/数据口径后重新质检。 附件仅提供通用法规，缺少处方样本、药师排班、审核日志、配送协议、用户授权记录等具体业务材料，无法支撑对处方真实性、药师审核、配送留痕等环节的判断。请补充具体业务记录或调整题目为仅做法规合规检查。",
+    "categories": [
+      "attachment_read_failed"
+    ]
+  },
+  {
+    "row": 143,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=143&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783605927896_143",
+    "checkedAt": "2026-07-09T14:06:16.135Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "合作的一家社区诊所想这个月递交医保定点申请，负责人先发了营业执照、医疗机构执业许可证和一份自查表，但药品耗材追溯码、影像结果上传、医技人员资质、价格执行、基金使",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 144,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=144&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783605976136_144",
+    "checkedAt": "2026-07-09T14:08:00.797Z",
+    "status": "✅通过",
+    "passed": true,
+    "title": "财务把公益项目后台捐赠名单导出来，里面有企业捐款、员工配捐、物资折价和几笔备注含糊的“公益合作款”。捐赠人催着要公益事业捐赠票据和税前扣除材料，但项目组只零散留",
+    "note": "已完成大模型质检，未发现问题",
+    "categories": [
+      "other"
+    ]
+  },
+  {
+    "row": 145,
+    "httpStatus": 200,
+    "url": "https://qa.251104.xyz/check/sheet?spreadsheet_token=ByAysb2Cdh9V2wtISbJc6Z01nwc&sheet_id=49e351&row=145&qa_result_col=AT&qa_note_col=AU&action=recheck_row&_=1783606080798_145",
+    "checkedAt": "2026-07-09T14:09:53.557Z",
+    "status": "❌不通过",
+    "passed": false,
+    "title": "周五前要定达人脚本，运营把“敏感肌急救精华”的三段短视频口播、详情页首屏文案和前后对比图都放进排期表，投放链接已经约好达人账号。现在最难定的是“三天退红”“医美",
+    "note": "场景表达不自然：题目开头“周五前要定达人脚本”等像内部工作流描述，而非用户向AI提出的自然任务；建议改为用户直接提出需求，如“我有一批达人素材，需要你帮我复核法规风险并给出修改建议”。 产物要求生硬：直接要求Word和Excel，但缺少用户真实用途（如向法务汇报、用于内容审批）；建议先说明用户要解决什么问题，再自然引出产物。",
+    "categories": [
+      "scene_naturalness"
+    ]
+  }
+]
