@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <!-- Google Tag Manager -->
+<script async>
+  window.onload = function () {
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      // j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      j.src = '/packages/meeting-library/build/gtm@0.0.1.js';
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5VQ988V');
+  };
+</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8" />
+<meta content="ie-comp" name="renderer" />
+<meta content="webkit" name="renderer" />
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+<meta content="portrait" name="screen-orientation" />
+<meta content="portrait" name="x5-orientation" />
+<meta content="yes" name="full-screen" />
+<meta content="true" name="x5-fullscreen" />
+<meta content="application" name="browsermode" />
+<meta content="app" name="x5-page-mode" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="email=no" name="format-detection" />
+<meta content="address=no" name="format-detection" />
+<meta content="notranslate" name="google" />
+<link href="/packages/meeting-public/favicon.ico" rel="icon" />
+<link
+  href="https://cdn.meeting.tencent.com/assets/official-website-mobile/logo128.png"
+  type="image/png"
+  rel="apple-touch-icon"
+/>
+<link
+  href="https://cdn.meeting.tencent.com/assets/official-website-mobile/manifest.json"
+  rel="manifest"
+/>
+<link href="/packages/meeting-library/build/tea@0.0.1.css" rel="stylesheet" />
+<link href="/packages/meeting-library/build/github-markdown@0.0.1.css" rel="stylesheet" />
+<link href="/packages/meeting-components/build/meeting-components.css" rel="stylesheet" />
+<script src="/packages/meeting-library/build/core-js@0.0.1.js"></script>
+<script src="/packages/meeting-library/build/fetch@0.0.1.js"></script>
+<script src="/packages/meeting-library/build/axios@0.0.1.js"></script>
+<script src="/packages/meeting-library/build/system@0.0.1.js"></script>
+<script src="/packages/meeting-library/build/emonitor@0.0.1.js"></script>
+<script src="/packages/meeting-library/build/fastclick@0.0.1.js"></script>
+<script src="/packages/meeting-library/build/tcplayer@0.0.1.js" async></script>
+<script
+  src="https://cdn-go.cn/aegis/aegis-sdk/latest/aegis.min.js"
+  crossorigin="anonymous"
+></script>
+<script>
+  function __checkIE() {
+    var isLeIE10 =
+      navigator.appName === 'Microsoft Internet Explorer' &&
+      parseInt(navigator.appVersion.split(';')[1].replace(/[ ]/g, '').replace('MSIE', '')) <= 10;
+    if (isLeIE10) {
+      location.href = './IEFix.html';
+    }
+  }
+  function __getreferrer() {
+    function setCookie(key, value, days, path) {
+      let expires = '';
+      if (days) {
+        const d = new Date();
+        d.setTime(d.getTime() + days * 24 * 60 * 60 * 1000);
+        expires = `; expires=${d.toGMTString()}`;
+      }
+
+      document.cookie = `${key}=${value}${expires}${path ? `; path=${path}` : ''}`;
+    }
+    function getDomain(url) {
+      const domain = url.split('/');
+      if (domain[2]) {
+        return `${domain[0]}//${domain[2]}`;
+      }
+      return '';
+    }
+    const domain = document.referrer ? getDomain(document.referrer) : '';
+    console.log('配置化官网===>', document.referrer);
+    // 访问页面的完整URL
+    setCookie('landing_url', window.location.href, 2, '/');
+    // 访问页面的路径，不含参数
+    setCookie('landing_path', `${window.location.origin}${window.location.pathname}`, 2, '/');
+    // 上级页面的完整URL
+    setCookie('landing_referralurl', document.referrer, 2, '/');
+    // 上级页面的域名
+    setCookie('landing_referraldomain', domain, 2, '/');
+    // 上级页面的完整URL-session
+    sessionStorage.setItem('landing_url_session', window.location.href);
+    // 上级页面的域名-session
+    sessionStorage.setItem(
+      'landing_path_session',
+      `${window.location.origin}${window.location.pathname}`,
+    );
+    // 访问页面的路径，不含参数-session
+    sessionStorage.setItem('landing_referralurl_session', document.referrer);
+    // 上级页面的完整URL-session
+    sessionStorage.setItem('landing_referraldomain_session', domain);
+  }
+  function __checkHost() {
+    if (navigator.appName === 'Netscape') {
+      if (location.host === 'meeting.qq.com') {
+        location.host = 'meeting.tencent.com';
+      }
+    } else {
+      if (location.host.indexOf('source.') !== -1) {
+        location.host = 'meeting.tencent.com';
+      }
+    }
+  }
+  function __initMonitor() {
+    if (
+      window.emonitor &&
+      typeof window.emonitor.create === 'function' &&
+      /^(http|https):\/\/(meeting|wemeet)\.(qq|tencent)\.com/.test(window.location.href)
+    ) {
+      window.emonitorIns = window.emonitor.create({
+        name: 'tencent_meeting_officialWebsite',
+        mode: '007',
+        atta: {
+          name: 'tencent_meeting_web',
+        },
+      });
+    }
+  }
+  function __setFromSourceCookie() {
+    function getCookie(key) {
+      var arr1 = document.cookie.split('; ');
+      for (let i = 0; i < arr1.length; i++) {
+        //通过=截断，把name=Jack截断成[name,Jack]数组
+        const arr2 = arr1[i].split('=');
+        if (arr2[0] === key) {
+          return decodeURI(arr2[1]);
+        }
+      }
+      return '';
+    }
+    function getRequest(name) {
+      let urlSearch = location.search.split('?')[1];
+      if (urlSearch) {
+        // 去除 hash 值
+        [urlSearch] = String(urlSearch).split('#');
+      }
+      const res = new RegExp(`(^|&)${name}=([^&]*)`).exec(urlSearch);
+      return !!res && res[2];
+    }
+    const nowDate = new Date();
+    nowDate.setTime(nowDate.getTime() + 2 * 24 * 60 * 60 * 1000); // 48小时失效
+    const old = getCookie('multifrom'); // 获取以存的
+    const fromScurce = getRequest('fromSource');
+    const newVal = old ? old.split(',') : [];
+    if (fromScurce) {
+      // 之前没有存，存下
+      if (!old || !old.includes(fromScurce)) {
+        newVal.push(fromScurce);
+      }
+      // 存储
+      document.cookie = `multifrom=${encodeURI(
+        newVal.join(','),
+      )}; expires=${nowDate.toGMTString()}; path=/`; // 站外
+    }
+  }
+  // 设置用户唯一标识
+  function __setWebUuid() {
+    function getGuid() {
+      return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+        var r = (Math.random() * 16) | 0;
+        var v = c === 'x' ? r : (r & 0x3) | 0x8;
+        return v.toString(16);
+      });
+    }
+    function setCookie(key, value, days, path) {
+      let expires = '';
+      if (days) {
+        const d = new Date();
+        d.setTime(d.getTime() + days * 24 * 60 * 60 * 1000);
+        expires = `; expires=${d.toGMTString()}`;
+      }
+
+      document.cookie = `${key}=${value}${expires}${path ? `; path=${path}` : ''}`;
+    }
+    function getCookie(cookieName) {
+      var arr;
+      var reg = new RegExp('(^| )'.concat(cookieName, '=([^;]*)(;|$)'));
+      if ((arr = document.cookie.match(reg))) {
+        return unescape(arr[2]);
+      }
+      return null;
+    }
+    let uuid = '';
+    const loca_uuid = getCookie('web_uid');
+    if (loca_uuid) {
+      uuid = loca_uuid;
+    } else {
+      uuid = getGuid();
+      setCookie('web_uid', uuid, 365 * 100, '/');
+    }
+  }
+  // 添加监控
+  function _setAegis() {
+    // tam 接入初始化
+    if (window.Aegis) {
+      const aegis = new Aegis({
+        id: 'ebsNQtbXiDGfWdRJce',
+        uin: '',
+        reportApiSpeed: true,
+        reportAssetSpeed: true,
+        api: {
+          apiDetail: true,
+        },
+        // 上报拦截
+        beforeReport(log) {
+          const level = Number(log.level);
+          if (level > 2) {
+            // 忽略大量的灯塔上报错误
+            const ignores = [
+              /otheve\.beacon\.qq\.com/,
+              /h\.trace\.qq\.com/,
+              /Script error./,
+              /FastClick/,
+              /QQHDVideoObj/,
+            ];
+            if (ignores.some((re) => re.test(log.msg))) {
+              console.log('ignores aegis report');
+              return false;
+            }
+          }
+        },
+      });
+      window.tam = aegis;
+    }
+  }
+  function __initCheck() {
+    __checkIE();
+    __getreferrer();
+    __checkHost();
+    __initMonitor();
+    __setFromSourceCookie();
+    __setWebUuid();
+    _setAegis();
+  }
+  __initCheck();
+</script>
+
+    
+    <link rel="prefetch" href="/packages/meeting-library/build/axios@0.0.1.js">
+    <link rel="prefetch" href="/packages/meeting-library/build/beacon@0.0.1.js">
+    <link rel="prefetch" href="/packages/meeting-library/build/core-js@0.0.1.js">
+    <link rel="prefetch" href="/packages/meeting-library/build/emonitor@0.0.1.js">
+    <link rel="prefetch" href="/packages/meeting-library/build/fastclick@0.0.1.js">
+    <link rel="prefetch" href="/packages/meeting-library/build/fetch@0.0.1.js">
+    <link rel="prefetch" href="/packages/meeting-library/build/github-markdown@0.0.1.css">
+    <link rel="prefetch" href="/packages/meeting-library/build/gtm@0.0.1.js">
+    <link rel="prefetch" href="/packages/meeting-library/build/html5shiv@0.0.1.js">
+    <link rel="prefetch" href="/packages/meeting-library/build/jweixin-work@0.0.1.js">
+    <link rel="prefetch" href="/packages/meeting-library/build/jweixin@0.0.1.js">
+    <link rel="prefetch" href="/packages/meeting-library/build/place@0.0.1.json">
+    <link rel="prefetch" href="/packages/meeting-library/build/qqapi@0.0.1.js">
+    <link rel="prefetch" href="/packages/meeting-library/build/qrcode1@0.0.1.js">
+    <link rel="prefetch" href="/packages/meeting-library/build/raven@0.0.1.js">
+    <link rel="prefetch" href="/packages/meeting-library/build/react-dom@0.0.1.js">
+    <link rel="prefetch" href="/packages/meeting-library/build/react-redux@0.0.1.js">
+    <link rel="prefetch" href="/packages/meeting-library/build/react-router-dom@0.0.1.js">
+    <link rel="prefetch" href="/packages/meeting-library/build/react@0.0.1.js">
+    <link rel="prefetch" href="/packages/meeting-library/build/share@0.0.1.js">
+    <link rel="prefetch" href="/packages/meeting-library/build/swiper@0.0.1.css">
+    <link rel="prefetch" href="/packages/meeting-library/build/swiper@0.0.1.js">
+    <link rel="prefetch" href="/packages/meeting-library/build/system@0.0.1.js">
+    <link rel="prefetch" href="/packages/meeting-library/build/tcplayer@0.0.1.css">
+    <link rel="prefetch" href="/packages/meeting-library/build/tcplayer@0.0.1.js">
+    <link rel="prefetch" href="/packages/meeting-library/build/tcss-ping@0.0.1.js">
+    <link rel="prefetch" href="/packages/meeting-library/build/tea@0.0.1.css">
+    <link rel="prefetch" href="/packages/meeting-library/build/vconsole@0.0.1.js">
+    
+  <script type="module" crossorigin src="/assets/support-doc-detail.3f58818a.js"></script>
+  <link rel="modulepreload" href="/assets/root.4e4a9223.js">
+  <link rel="modulepreload" href="/assets/vendor.b1ecdbe2.js">
+  <link rel="modulepreload" href="/assets/redirectMap.4f734d5f.js">
+  <link rel="modulepreload" href="/assets/common.06eda7e2.js">
+  <link rel="stylesheet" href="/assets-css/root-2e7f77e1.css">
+  <link rel="stylesheet" href="/assets-css/support-doc-b0ca840b.css">
+</head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript>
+  <iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-5VQ988V"
+    height="0"
+    width="0"
+    style="display: none; visibility: hidden"
+  ></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div id="my-header"><header class="meeting-header"><img class="seo-default-img" src="https://cdn.meeting.tencent.com/assets/configurable-website/packages/meeting-public/meeting_logo.png" alt="seoDefault">
+  <div style="display: none;"><img src="https://dldir1.qq.com/download/packages/logo3.png" alt="shareDefault"></div>
+  <div class="left"><div class="header-logo"><a data-link="https://meeting.tencent.com/" id="meeting-logo"><img alt="logo" class="logo meeting-logo" id="meeting-header-logo" src="/logo_meeting.png"></a>
+      <span class="divide-line"></span>
+      <a target="_blank" data-link="https://cloud.tencent.com/" id="cloud-logo"><img alt="logo" class="logo cloud-logo" id="cloud-header-logo" src="/logo_cloud.png"></a></div>
+    <nav class="nav"><ul class="nav-group"><li class="nav-item has-child" data-index="0" id="server"><span class="nav-title">产品服务</span>
+                <img alt="arrow" class="up-arrow" src="/packages/meeting-public/images/img-header/up_arrow_svg.svg">
+              </li><li class="nav-item has-child" data-index="1" id="solutions"><span class="nav-title">解决方案</span>
+                <img alt="arrow" class="up-arrow" src="/packages/meeting-public/images/img-header/up_arrow_svg.svg">
+              </li><li class="nav-item" data-index="2" data-link="/buy/" data-label="Mega_Menu_Click_Pricing" data-stringId="buy" id="buy" data-label2="e#mega_menu#pricing#click"><a href="/buy/" class="nav-title" data-index="2">定价与购买</a>
+              </li><li class="nav-item has-child" data-index="3" id="support"><span class="nav-title">资源中心</span>
+                <img alt="arrow" class="up-arrow" src="/packages/meeting-public/images/img-header/up_arrow_svg.svg">
+              </li><li class="nav-item" data-index="4" data-link="/customers/" data-label="Mega_Menu_Click_Customer" data-stringId="case" id="case" data-label2="e#mega_menu#customer#click"><a href="/customers/" class="nav-title" data-index="4">客户案例</a>
+              </li></ul></nav></div>
+  <div class="right" id="pc-right"><div class="nav-section"><li data-index="5" data-stringId="tel" data-label2="e#mega_menu#400#click" id="tel" class="nav-item"><img class="icon" src="/packages/meeting-public/images/img-header/tel_number.svg" alt="tel"><a href="tel:4009700700" class="nav-title tel">4009-700-700
+            </a></li>
+          <span class="divide-line tel-line"></span>
+        </div>
+    <div class="meeting-user"><ul class="nav-group meeting-user-action"><li class="nav-item" data-index="6" data-link="/user-center/join" data-label="Mega_Menu_Click_Join_Meeting" id="enter" data-label2="e#mega_menu#join_meeting#click"><span class="nav-title">加入会议</span>
+              </li><li class="nav-item has-child" data-index="7" data-id="host" id="host"><span class="nav-title">发起会议</span>
+                <img alt="arrow" class="up-arrow" src="/packages/meeting-public/images/img-header/up_arrow_svg.svg">
+              </li></ul>
+      
+      <div class="meeting-user-info active"><button class="action-button login" data-index="0" data-link="/qrcode-login.html" data-label="Mega_Menu_Click_Login" data-label2="e#mega_menu#login#click"><a class="nav-title" href="javascript:;">登录</a></button>
+        </div>
+      <div class="meeting-user-info">
+        <div class="user-center avatar"><div class="user-avatar-part-nav"><img class="img-avatar" id="user-avatar" src="https://madialab-storage-1256380422.cos.ap-guangzhou.myqcloud.com/img/vst_ico80x80_2x.png" alt="avatar">
+            <img class="corp-avatar-logo-img" id="corp-avatar-logo" alt="corp-logo"></div>
+          <div class="dropdown-box" id="user-dropdown-box"><div class="dropdown-box-wrap"><ul><li class="name drop-user-info" id="meeting-username"><div class="user-avatar-part"><img class="img-avatar" alt="avatar" id="dropdown-user-avatar">
+                    <img class="corp-avatar-logo-img corp-avatar-card" id="corp-avatar-logo2" alt="corp-logo"></div>
+                  <div class="user-name-part"><ww-open-data type="userName"></ww-open-data>
+                    <div class="type"><span class="individual"></span>
+                      <span class="corporate"></span>
+                      <span class="free"></span>
+                      <span class="commercial"></span>
+                      <span class="professional"></span>
+                      <span class="educate"></span></div></div></li>
+                <div class="row-line"></div>
+                <li class="dropdown-item activity-item" style="display: none;" id="activity-center" data-label2="e#mega_menu#zone#click"><div class="icon"></div>
+                  活动空间</li>
+                <li class="dropdown-item usercenter-item" id="user-center" data-label="Mega_Menu_Click_UserCenter" data-label2="e#mega_menu#usercenter#click"><div class="icon"></div>
+                  用户中心</li>
+                <li class="dropdown-item account-item" id="change-account" data-label="Mega_Menu_Click_Switch_Account" data-label2="e#mega_menu#switch_account#click"><div class="icon"></div>
+                  切换帐号</li>
+                <div class="row-line"></div>
+                <li class="dropdown-item logout-item" id="meeting-logout" data-label="Mega_Menu_Click_Logout" data-label2="e#mega_menu#logout#click"><div class="icon"></div>
+                  退出登录</li></ul></div></div></div></div></div>
+    <div class="nav-download"><button class="nav-item" data-index="8" data-link="/download/" data-label="Mega_Menu_Click_Download" data-label2="e#mega_menu#download_center#click" id="download">下载中心</button></div></div>
+  <div class="dropdown-menu" id="dropdown-menu-0"><div class="dropdown-menu-inner flex-direction-col"><div class="dropdown-nav-group" data-index="0"><div class="dropdown-nav-group-title">随时随地发起会议</div>
+                <ul class="dropdown-nav-group-menu"><li class="dropdown-nav-item" id="cloud-meeting" data-index="0" data-link="/cloud-meeting/" data-label="Mega_Menu_Click_Product_Meeting" data-label2="e#mega_menu#product_meeting#click" data-parent="0"><div class="nav-title"><img class="dropdown-nav-item-icon" src="/packages/meeting-public/images/img-header/meeting.svg" alt="">
+                        <div class="dropdown-nav-item-title">视频会议</div>
+                        <div class="dropdown-nav-item-desc">高清流畅的音视频会议 </div></div>
+                    </li><li class="dropdown-nav-item" id="webinar" data-index="1" data-link="/webinar/" data-label="Mega_Menu_Click_Product_Webinar" data-label2="e#mega_menu#product_webinar#click" data-parent="0"><div class="nav-title"><img class="dropdown-nav-item-icon" src="/packages/meeting-public/images/img-header/webinar.svg" alt="">
+                        <div class="dropdown-nav-item-title">网络研讨会</div>
+                        <div class="dropdown-nav-item-desc">大型营销、培训、研讨会议解决方案</div></div>
+                    </li>
+                </ul>
+            </div><div class="dropdown-nav-group" data-index="1"><div class="dropdown-nav-group-title">在会议室高效开会</div>
+                <ul class="dropdown-nav-group-menu"><li class="dropdown-nav-item" id="cloud-rooms" data-index="0" data-link="/cloud-rooms/" data-label="Mega_Menu_Click_Product_Rooms" data-label2="e#mega_menu#product_rooms#click" data-parent="0"><div class="nav-title"><img class="dropdown-nav-item-icon" src="/packages/meeting-public/images/img-header/rooms.svg" alt="">
+                        <div class="dropdown-nav-item-title">会议室（Rooms）</div>
+                        <div class="dropdown-nav-item-desc">如意会议室</div></div>
+                    </li><li class="dropdown-nav-item" id="cloud-mra" data-index="1" data-link="/cloud-mra/" data-label="Mega_Menu_Click_Product_Controller" data-label2="e#mega_menu#product_controller#click" data-parent="0"><div class="nav-title"><img class="dropdown-nav-item-icon" src="/packages/meeting-public/images/img-header/mra.svg" alt="">
+                        <div class="dropdown-nav-item-title">会议室连接器（MRA）</div>
+                        <div class="dropdown-nav-item-desc">完美兼容SIP/H.323</div></div>
+                    </li><li class="dropdown-nav-item" id="inside" data-index="2" data-link="/inside/" data-label="Mega_Menu_Click_Product_Inside" data-label2="e#mega_menu#product_inside#click" data-parent="0"><div class="nav-title"><img class="dropdown-nav-item-icon" src="/packages/meeting-public/images/img-header/inside.svg" alt="">
+                        <div class="dropdown-nav-item-title">腾讯天籁inside</div>
+                        <div class="dropdown-nav-item-desc">会议室音频解决方案</div></div>
+                    </li>
+                </ul>
+            </div><div class="dropdown-nav-group" data-index="2"><div class="dropdown-nav-group-title">开放生态</div>
+                <ul class="dropdown-nav-group-menu"><li class="dropdown-nav-item" id="open-api" data-index="0" data-link="/open-api/" data-label="Mega_Menu_Click_Product_Openplatform" data-label2="e#mega_menu#product_openplatform#click" data-parent="0"><div class="nav-title"><img class="dropdown-nav-item-icon" src="/packages/meeting-public/images/img-header/open.svg" alt="">
+                        <div class="dropdown-nav-item-title">开放平台</div>
+                        <div class="dropdown-nav-item-desc">提供丰富的接入方式 </div></div>
+                    </li><li class="dropdown-nav-item" id="marketplace" data-index="1" data-link="/marketplace/" data-label="Mega_Menu_Click_Product_Marketplace_Index" data-label2="e#mega_menu#product_marketplace#click" data-parent="0"><div class="nav-title"><img class="dropdown-nav-item-icon" src="/packages/meeting-public/images/img-header/market.svg" alt="">
+                        <div class="dropdown-nav-item-title">应用市场</div>
+                        <div class="dropdown-nav-item-desc">海量会议扩展应用 </div></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div><div class="dropdown-menu" id="dropdown-menu-1"><div class="dropdown-menu-inner"><div class="dropdown-nav-group" data-index="0"><div class="dropdown-nav-group-title">满足多种行业的会议需要</div>
+                <ul class="dropdown-nav-group-menu"><li class="dropdown-nav-item" id="solutions-education" data-index="0" data-link="/solutions/education/" data-label="" data-label2="e#mega_menu#solutions_education#click" data-parent="1"><div class="nav-title"><img class="dropdown-nav-item-icon" src="/packages/meeting-public/images/img-header/education.svg" alt="">
+                        <div class="dropdown-nav-item-title">教育</div>
+                        <div class="dropdown-nav-item-desc"></div></div>
+                    </li><li class="dropdown-nav-item" id="solutions-finance" data-index="1" data-link="/solutions/finance/" data-label="" data-label2="e#mega_menu#solutions_finance#click" data-parent="1"><div class="nav-title"><img class="dropdown-nav-item-icon" src="/packages/meeting-public/images/img-header/finance.svg" alt="">
+                        <div class="dropdown-nav-item-title">金融</div>
+                        <div class="dropdown-nav-item-desc"></div></div>
+                    </li><li class="dropdown-nav-item" id="solutions-medicine" data-index="2" data-link="/solutions/medicine/" data-label="" data-label2="e#mega_menu#solutions_medicine#click" data-parent="1"><div class="nav-title"><img class="dropdown-nav-item-icon" src="/packages/meeting-public/images/img-header/medicine.svg" alt="">
+                        <div class="dropdown-nav-item-title">医药</div>
+                        <div class="dropdown-nav-item-desc"></div></div>
+                    </li><li class="dropdown-nav-item" id="solutions-hospital" data-index="3" data-link="/solutions/hospital/" data-label="" data-label2="e#mega_menu#solutions_hospital#click" data-parent="1"><div class="nav-title"><img class="dropdown-nav-item-icon" src="/packages/meeting-public/images/img-header/hospital.svg" alt="">
+                        <div class="dropdown-nav-item-title">医院</div>
+                        <div class="dropdown-nav-item-desc"></div></div>
+                    </li><li class="dropdown-nav-item" id="solutions-court" data-index="4" data-link="/solutions/court/" data-label="" data-label2="e#mega_menu#solutions_court#click" data-parent="1"><div class="nav-title"><img class="dropdown-nav-item-icon" src="/packages/meeting-public/images/img-header/safe.svg" alt="">
+                        <div class="dropdown-nav-item-title">法院</div>
+                        <div class="dropdown-nav-item-desc"></div></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div><div class="dropdown-menu" id="dropdown-menu-2">
+    </div><div class="dropdown-menu" id="dropdown-menu-3"><div class="dropdown-menu-inner"><div class="dropdown-nav-group" data-index="0">
+                <ul class="dropdown-nav-group-menu"><li class="dropdown-nav-item" id="help-center" data-index="0" data-link="/support/" data-label="Mega_Menu_Click_Support_Guide" data-label2="e#mega_menu#support_guide#click" data-parent="3"><div class="nav-title"><img class="dropdown-nav-item-icon" src="/packages/meeting-public/images/img-header/help.svg" alt="">
+                        <div class="dropdown-nav-item-title">帮助中心</div>
+                        <div class="dropdown-nav-item-desc">寻找开会秘籍</div></div>
+                    </li><li class="dropdown-nav-item" id="cooperative-partners" data-index="1" data-link="/cooperative-partners/" data-label="Mega_Menu_Click_Support_Partner" data-label2="e#mega_menu#support_partner#click" data-parent="3"><div class="nav-title"><img class="dropdown-nav-item-icon" src="/packages/meeting-public/images/img-header/partners.svg" alt="">
+                        <div class="dropdown-nav-item-title">合作伙伴</div>
+                        <div class="dropdown-nav-item-desc">携手共创会议生态</div></div>
+                    </li><li class="dropdown-nav-item" id="support-communication" data-index="2" data-link="https://support.qq.com/products/42324" data-label="Mega_Menu_Click_Communication" data-label2="e#mega_menu#support_communication#click" data-parent="3"><div class="nav-title"><img class="dropdown-nav-item-icon" src="/packages/meeting-public/images/img-header/community.svg" alt="">
+                        <div class="dropdown-nav-item-title">交流社区</div>
+                        <div class="dropdown-nav-item-desc">用户交流中心</div></div>
+                    </li><li class="dropdown-nav-item" id="news-center" data-index="3" data-link="/news/" data-label="Mega_Menu_Click_Support_News" data-label2="e#mega_menu#support_news#click" data-parent="3"><div class="nav-title"><img class="dropdown-nav-item-icon" src="/packages/meeting-public/images/img-header/news.svg" alt="">
+                        <div class="dropdown-nav-item-title">新闻中心</div>
+                        <div class="dropdown-nav-item-desc">获取最新动态 </div></div>
+                    </li><li class="dropdown-nav-item" id="operation-activity-contact" data-index="4" data-link="/operation-activity/contact/" data-label="Mega_Menu_Click_Support_Contact" data-label2="e#mega_menu#support_contactsales#click" data-parent="3"><div class="nav-title"><img class="dropdown-nav-item-icon" src="/packages/meeting-public/images/img-header/contacts.svg" alt="">
+                        <div class="dropdown-nav-item-title">联系销售</div>
+                        <div class="dropdown-nav-item-desc">获取会议解决方案</div></div>
+                    </li><li class="dropdown-nav-item" id="professional-service" data-index="5" data-link="/professional-service/" data-label="Mega_Menu_Click_Support_Professional_Service" data-label2="e#mega_menu#support_professional_service#click" data-parent="3"><div class="nav-title"><img class="dropdown-nav-item-icon" src="/packages/meeting-public/images/img-header/professional.svg" alt="">
+                        <div class="dropdown-nav-item-title">专家支持服务</div>
+                        <div class="dropdown-nav-item-desc">为您提供全方面的会议保障</div></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div><div class="dropdown-menu" id="dropdown-menu-4">
+    </div><div class="dropdown-menu drop-down" id="dropdown-menu-5">
+    </div><div class="dropdown-menu drop-down" id="dropdown-menu-6">
+    </div><div class="dropdown-menu drop-down" id="dropdown-menu-7"><div class="dropdown-menu-inner flex-direction-col"><div class="dropdown-nav-group" data-index="0"><li class="dropdown-nav-item dropdown-nav-title" id="meeting-schedule" data-index="0" data-link="/user-center/schedule" data-label="Mega_Menu_Click_Schedule_Meeting" data-label2="e#mega_menu#schedule_meeting#click">预定会议
+                </li>
+            </div><div class="dropdown-nav-group" data-index="1"><li class="dropdown-nav-item dropdown-nav-title" id="meeting-start" data-index="1" data-link="/user-center/start" data-label="Mega_Menu_Click_Start_Meeting" data-label2="e#mega_menu#start_meeting#click">快速会议
+                </li>
+            </div><div class="dropdown-nav-group" data-index="2"><li class="dropdown-nav-item dropdown-nav-title" id="webinar-schedule" data-index="2" data-link="/user-center/webinar/schedule" data-label="Mega_Menu_Click_Schedule_Webinar" data-label2="e#mega_menu#schedule_webinar#click">网络研讨会(Webinar)
+                </li>
+            </div>
+        </div>
+    </div><div class="dropdown-menu drop-down" id="dropdown-menu-8">
+    </div>
+  <div class="header-mobile-section"><div class="header-mobile-all right mobile" id="mobile-right"><img class="img-action-icon open" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAeCAYAAABE4bxTAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAJKADAAQAAAABAAAAHgAAAADBn0PbAAAAdUlEQVRYCWNgGGSAEeoeEB0FxKoD5L7bQHuXAfF/mP3RUA5IYKAwyA0MTCBiMAEWqGNAwQUCAx1lEFeMkqMhMBoCoyEwgCEwWpcBAx9XXTlal+FLmbDmBz41o3KjITAaAqMhQJcQGK3LgME8WpeRk9YGb10GAD/2cbzKaTdLAAAAAElFTkSuQmCC" alt="">
+      <img class="img-action-icon close" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAHKADAAQAAAABAAAAHAAAAABkvfSiAAAB7ElEQVRIDcWWS07DMBCG7YR1Jc7ACfrgBlygCwQSLFoVFY5EK6p2UZ5n4Aj0seAhkDgDEmtsM78TB6epEydQMVLr2PH8n2fsiczYf1q33290ev39v1oDtKBp6wWmgxfii99Lya47vbNDM161hQa0oGlDOQQNjCm1HQNEEATHk9H5TRVgBJNT8g21P+cf4ZbaGw+Hcx2hEmyHYDVLPJRSTrsnpwfWmNdjBgYv0tYMetQrWC5mz/Xm7ptSqk1jJs2BUqzdaLVel/PZE/yKDAuUUl3SvCiyyCHO1uAO3eTFcvHw+BsoYEK4YD9bkwBBrwr1haUiRAcGKNKIdFK3ML0uWBjyo8locKtFrb9UhGYce+YDzYONL7Iw6OuyMKDVNk8Qc9ftGSJzweCTC8QEFxTvyOwMiSLYqoNWWP1zpZfmmf2FixcME+0Vor/WHFAz1xsGB3uVRmCjrVeEjn00Cyv1RSoEOmCCaIp+JkPe0NxT6oLhNCK8KmXhjDAPhjpzHKTCSNcCi2CIDlYFmgH6wiJkeWgKWBZWBZoAq8LKQjUQtyu68FyRc7IAei71BQE4b0/rzeYLbha6jnjI3hnnn3CKrTTMOOIEx2WDWo2MtDWDekkdWje3ms9X32i52mSLCGZubJm5gG76IpyBbnrgG1DAtp2c/31uAAAAAElFTkSuQmCC" alt=""></div>
+    <div class="header-mobile-list"><div class="menu-list"><div class="mobile-user-info"><div class="user-avatar-part-mobile"><img src="https://madialab-storage-1256380422.cos.ap-guangzhou.myqcloud.com/img/vst_ico80x80_2x.png" alt="avatar" class="avatar" id="mobile-user-avatar">
+            <img class="corp-avatar-logo-img" id="corp-avatar-logo-mobile" alt="corp-logo"></div>
+          <div class="info"><div class="name"></div>
+            <div class="type"><span class="individual"></span>
+              <span class="corporate"></span>
+              <span class="free"></span>
+              <span class="commercial"></span>
+              <span class="professional"></span>
+              <span class="educate"></span></div></div></div>
+        <div class="header-mobile-btnOneOut"><div class="header-mobile-btnOne" data-height="3"><span class="header-mobile-btnOneWord">产品服务</span>
+                <span class="header-mobile-btnOneArrow"></span></div>
+              <div class="header-mobile-btnOneList"><div class="header-mobile-btnOneListOne-menu" data-index="0"><div class="header-mobile-btnOneListOne-menu-title">随时随地发起会议</div>
+                    <div class="header-mobile-btnOneListOne" id="cloud-meeting" data-index="0" data-link="/cloud-meeting/" data-label="Mega_Menu_Click_Product_Meeting" data-label2="e#mega_menu#product_meeting#click"><div class="header-mobile-btnOneListOne-icon1" style="background: url(/packages/meeting-public/images/img-header/meeting.svg); background-size: cover;"></div>
+                          <div class="header-mobile-btnOneListOne-word"><div class="word-title">视频会议</div>
+                            <div class="word-desc">线上视频会议</div></div>
+                        </div><div class="header-mobile-btnOneListOne" id="webinar" data-index="1" data-link="/webinar/" data-label="Mega_Menu_Click_Product_Webinar" data-label2="e#mega_menu#product_webinar#click"><div class="header-mobile-btnOneListOne-icon1" style="background: url(/packages/meeting-public/images/img-header/webinar.svg); background-size: cover;"></div>
+                          <div class="header-mobile-btnOneListOne-word"><div class="word-title">网络研讨会(Webinar)</div>
+                            <div class="word-desc">在线活动工具</div></div>
+                        </div>
+                  </div><div class="header-mobile-btnOneListOne-menu" data-index="1"><div class="header-mobile-btnOneListOne-menu-title">在会议室高效开会</div>
+                    <div class="header-mobile-btnOneListOne" id="cloud-rooms" data-index="0" data-link="/cloud-rooms/" data-label="Mega_Menu_Click_Product_Rooms" data-label2="e#mega_menu#product_rooms#click"><div class="header-mobile-btnOneListOne-icon1" style="background: url(/packages/meeting-public/images/img-header/rooms.svg); background-size: cover;"></div>
+                          <div class="header-mobile-btnOneListOne-word"><div class="word-title">会议室（Rooms）</div>
+                            <div class="word-desc">线下会议系统软件</div></div>
+                        </div><div class="header-mobile-btnOneListOne" id="cloud-mra" data-index="1" data-link="/cloud-mra/" data-label="Mega_Menu_Click_Product_Controller" data-label2="e#mega_menu#product_controller#click"><div class="header-mobile-btnOneListOne-icon1" style="background: url(/packages/meeting-public/images/img-header/mra.svg); background-size: cover;"></div>
+                          <div class="header-mobile-btnOneListOne-word"><div class="word-title">会议室连接器（MRA）</div>
+                            <div class="word-desc">兼容SIP/H.323会议系统</div></div>
+                        </div><div class="header-mobile-btnOneListOne" id="inside" data-index="2" data-link="/inside/" data-label="Mega_Menu_Click_Product_Inside" data-label2="e#mega_menu#product_inside#click"><div class="header-mobile-btnOneListOne-icon1" style="background: url(/packages/meeting-public/images/img-header/inside.svg); background-size: cover;"></div>
+                          <div class="header-mobile-btnOneListOne-word"><div class="word-title">腾讯天籁inside</div>
+                            <div class="word-desc">会议室音频解决方案</div></div>
+                        </div>
+                  </div><div class="header-mobile-btnOneListOne-menu" data-index="2"><div class="header-mobile-btnOneListOne-menu-title">开放生态</div>
+                    <div class="header-mobile-btnOneListOne" id="open-api" data-index="0" data-link="/open-api/" data-label="Mega_Menu_Click_Product_Openplatform" data-label2="e#mega_menu#product_openplatform#click"><div class="header-mobile-btnOneListOne-icon1" style="background: url(/packages/meeting-public/images/img-header/open.svg); background-size: cover;"></div>
+                          <div class="header-mobile-btnOneListOne-word"><div class="word-title">开放平台</div>
+                            <div class="word-desc">开发者创作平台</div></div>
+                        </div><div class="header-mobile-btnOneListOne" id="marketplace" data-index="1" data-link="/marketplace/" data-label="Mega_Menu_Click_Product_Marketplace_Index" data-label2="e#mega_menu#product_marketplace#click"><div class="header-mobile-btnOneListOne-icon1" style="background: url(/packages/meeting-public/images/img-header/market.svg); background-size: cover;"></div>
+                          <div class="header-mobile-btnOneListOne-word"><div class="word-title">应用市场</div>
+                            <div class="word-desc">视频会议扩展应用</div></div>
+                        </div>
+                  </div></div>
+            </div><div class="header-mobile-btnOneOut"><div class="header-mobile-btnOne" data-height="1"><span class="header-mobile-btnOneWord">解决方案</span>
+                <span class="header-mobile-btnOneArrow"></span></div>
+              <div class="header-mobile-btnOneList"><div class="header-mobile-btnOneListOne-menu" data-index="0"><div class="header-mobile-btnOneListOne-menu-title">满足多种行业的会议需要</div>
+                    <div class="header-mobile-btnOneListOne" id="solutions-education" data-index="0" data-link="/solutions/education/" data-label="" data-label2="e#mega_menu#solutions_education#click"><div class="header-mobile-btnOneListOne-icon1" style="background: url(/packages/meeting-public/images/img-header/education.svg); background-size: cover;"></div>
+                          <div class="header-mobile-btnOneListOne-word"><div class="word-title">教育</div>
+                            <div class="word-desc"></div></div>
+                        </div><div class="header-mobile-btnOneListOne" id="solutions-finance" data-index="1" data-link="/solutions/finance/" data-label="" data-label2="e#mega_menu#solutions_finance#click"><div class="header-mobile-btnOneListOne-icon1" style="background: url(/packages/meeting-public/images/img-header/finance.svg); background-size: cover;"></div>
+                          <div class="header-mobile-btnOneListOne-word"><div class="word-title">金融</div>
+                            <div class="word-desc"></div></div>
+                        </div><div class="header-mobile-btnOneListOne" id="solutions-medicine" data-index="2" data-link="/solutions/medicine/" data-label="" data-label2="e#mega_menu#solutions_medicine#click"><div class="header-mobile-btnOneListOne-icon1" style="background: url(/packages/meeting-public/images/img-header/medicine.svg); background-size: cover;"></div>
+                          <div class="header-mobile-btnOneListOne-word"><div class="word-title">医药</div>
+                            <div class="word-desc"></div></div>
+                        </div><div class="header-mobile-btnOneListOne" id="solutions-hospital" data-index="3" data-link="/solutions/hospital/" data-label="" data-label2="e#mega_menu#solutions_hospital#click"><div class="header-mobile-btnOneListOne-icon1" style="background: url(/packages/meeting-public/images/img-header/hospital.svg); background-size: cover;"></div>
+                          <div class="header-mobile-btnOneListOne-word"><div class="word-title">医院</div>
+                            <div class="word-desc"></div></div>
+                        </div><div class="header-mobile-btnOneListOne" id="solutions-court" data-index="4" data-link="/solutions/court/" data-label="" data-label2="e#mega_menu#solutions_court#click"><div class="header-mobile-btnOneListOne-icon1" style="background: url(/packages/meeting-public/images/img-header/safe.svg); background-size: cover;"></div>
+                          <div class="header-mobile-btnOneListOne-word"><div class="word-title">法院</div>
+                            <div class="word-desc"></div></div>
+                        </div>
+                  </div></div>
+            </div><div class="header-mobile-btnOneOut"><div class="header-mobile-btnOne" data-index="2" id="buy" data-link="/buy/" data-label="Mega_Menu_Click_Pricing" data-label2="e#mega_menu#pricing#click"><span class="header-mobile-btnOneWord">定价与购买
+                </span></div>
+            </div><div class="header-mobile-btnOneOut"><div class="header-mobile-btnOne" data-height="1"><span class="header-mobile-btnOneWord">资源中心</span>
+                <span class="header-mobile-btnOneArrow"></span></div>
+              <div class="header-mobile-btnOneList"><div class="header-mobile-btnOneListOne-menu" data-index="0">
+                    <div class="header-mobile-btnOneListOne" id="help-center" data-index="0" data-link="/support-center/" data-label="Mega_Menu_Click_Support_Guide" data-label2="e#mega_menu#support_guide#click"><div class="header-mobile-btnOneListOne-icon1" style="background: url(/packages/meeting-public/images/img-header/help.svg); background-size: cover;"></div>
+                          <div class="header-mobile-btnOneListOne-word"><div class="word-title">帮助中心</div>
+                            <div class="word-desc">产品使用指南</div></div>
+                        </div><div class="header-mobile-btnOneListOne" id="support-communication" data-index="1" data-link="https://support.qq.com/products/42324" data-label="Mega_Menu_Click_Communication" data-label2="e#mega_menu#support_communication#click"><div class="header-mobile-btnOneListOne-icon1" style="background: url(/packages/meeting-public/images/img-header/community.svg); background-size: cover;"></div>
+                          <div class="header-mobile-btnOneListOne-word"><div class="word-title">交流社区</div>
+                            <div class="word-desc">用户交流中心</div></div>
+                        </div><div class="header-mobile-btnOneListOne" id="news-center" data-index="2" data-link="/news/" data-label="Mega_Menu_Click_Support_News" data-label2="e#mega_menu#support_news#click"><div class="header-mobile-btnOneListOne-icon1" style="background: url(/packages/meeting-public/images/img-header/news.svg); background-size: cover;"></div>
+                          <div class="header-mobile-btnOneListOne-word"><div class="word-title">新闻中心</div>
+                            <div class="word-desc">最新动态</div></div>
+                        </div><div class="header-mobile-btnOneListOne" id="operation-activity-contact" data-index="3" data-link="/operation-activity/contact/" data-label="Mega_Menu_Click_Support_Contact" data-label2="e#mega_menu#support_contactsales#click"><div class="header-mobile-btnOneListOne-icon1" style="background: url(/packages/meeting-public/images/img-header/contacts.svg); background-size: cover;"></div>
+                          <div class="header-mobile-btnOneListOne-word"><div class="word-title">联系销售</div>
+                            <div class="word-desc">免费获取企业解决方案</div></div>
+                        </div>
+                  </div></div>
+            </div><div class="header-mobile-btnOneOut"><div class="header-mobile-btnOne" data-index="4" id="case" data-link="/customers/" data-label="Mega_Menu_Click_Customer" data-label2="e#mega_menu#customer#click"><span class="header-mobile-btnOneWord">客户案例
+                </span></div>
+            </div><div class="header-mobile-btnOneOut"><div class="header-mobile-btnOne" data-index="5" id="download" data-link="/download/" data-label="Mega_Menu_Click_Download" data-label2="e#mega_menu#download_m#click"><span class="header-mobile-btnOneWord">立即下载
+                </span></div>
+            </div></div>
+      <div class="login-regiter-box"><div class="login-btn active"><div class="loginout-btn common-btn" data-link="/mobile/login.html#/" data-label="mbweb_catalogue_null_logon_null_null_click" data-type="login">登录</div></div>
+        <div class="login-btn"><div class="loginout-btn common-btn switch-account" data-link="/select-account-type.html?change-account=1&amp;redirect_type=2&amp;redirect_link=index.html" data-label="mbweb_catalogue_null_switchaccount_null_null_click" data-type="switch">切换帐号</div>
+          <div class="loginout-btn common-btn" data-label="mbweb_catalogue_null_logout_null_null_click" data-type="logout">退出登录</div></div></div></div></div></header></div>
+    <div class="content-layout">
+      <div id="app">
+        
+      </div>
+    </div>
+    <script>
+  var SVELTE_SSG_STATE = {"id":"1174","pageName":"1174","groupId":"34","groupTitle":"音频/视频","type":3,"title":"实时辅助字幕","description":"腾讯会议会员，不限时字幕特权。","keywords":"会员，字幕，不限时字幕，会员特权，会员功能","pagePath":"support-doc-detail","contentBody":{"title":"实时辅助字幕","desc":"腾讯会议会员，不限时字幕特权。","detail":"<h1><a id=\"_0\"></a>实时辅助字幕</h1>\n<h2><a id=\"_2\"></a>一、功能介绍</h2>\n<p>腾讯会议支持成员参加会议时，开启实时辅助字幕，将会自动识别会议中的语音内容，为用户实时展示文本。</p>\n<h2><a id=\"_6\"></a>二、推荐人群及场景</h2>\n<ul>\n<li>商务会谈：实时转写会议内容，告别会后整理</li>\n<li>头脑风暴：实时转写讨论灵感，记录奇思妙想</li>\n<li>线上培训：实时转写培训内容，轻松记录重点</li>\n</ul>\n<h2><a id=\"_12\"></a>三、使用条件</h2>\n<h3><a id=\"1_14\"></a>1.版本要求</h3>\n<p>①3.7版本及以上支持固定使用；<br>\n②3.13版本及以上支持拖动、拉伸字幕；<br>\n③会员、商业版、企业版用户。<a href=\"https://meeting.tencent.com/buy.html?mid=ts.p.help.wz\" target=\"_blank\">&gt;&gt;前往购买</a></p>\n<h3><a id=\"2_20\"></a>2.系统要求</h3>\n<p>Windows/macOS/Android/iOS。</p>\n<h2><a id=\"_24\"></a>四、如何使用字幕</h2>\n<h3><a id=\"1_25\"></a>1.主持人/联席主持人</h3>\n<h4><a id=\"1WindowsmacOS_26\"></a>1）Windows/macOS</h4>\n<p>①点击底部工具栏【应用】-&gt; 【开启字幕】即可开启字幕功能；（仅自己可见）</p>\n<p>②主持人和联席主持人可点击“字幕”旁边的“三角”按钮来设置是否<strong>允许成员开启字幕</strong>、<strong>声源语言</strong>、<strong>翻译显示</strong>以及是否<strong>同时显示双语</strong>。</p>\n<ul>\n<li><strong>允许成员开启字幕</strong>：主持人/联席主持人可以管控成员会中字幕功能的权限。</li>\n<li><strong>声源语言</strong>：可以通过切换声源语言来更准确的识别语音内容。</li>\n<li><strong>翻译显示</strong>：支持将语音内容翻译显示为中文/英文。</li>\n<li><strong>同时显示双语</strong>：开启翻译后，可以设置同时显示双语，则字幕区域会同时显示声源语言和目标语言。</li>\n</ul>\n<p><img src=\"https://cdn.meeting.tencent.com/upload/website/support-center/meeting-63b3e2cd1a975.png?time=1672734351341\" alt=\"1.png\"  loading=\"lazy\" ></p>\n<p>③开启字幕后，点击“字幕”右上角的【翻译设置】按钮，支持设置<strong>声源语言</strong>、<strong>翻译显示</strong>以及是否<strong>同时显示双语</strong>。</p>\n<p><img src=\"https://cdn.meeting.tencent.com/upload/website/support-center/meeting-63b3e2f228af7.png?time=1672734351341\" alt=\"2.png\"  loading=\"lazy\" ></p>\n<p>④点击“字幕”右上角的【设置】按钮，支持设置<strong>字号大小</strong>、是否<strong>允许成员开启字幕</strong>以及是否<strong>开启实时转写</strong>。</p>\n<ul>\n<li><strong>开启实时转写</strong>：开启后支持全员查看完整转写记录。</li>\n</ul>\n<p><img src=\"https://cdn.meeting.tencent.com/upload/website/support-center/meeting-63b3e333e9935.png?time=1672734351341\" alt=\"3.png\"  loading=\"lazy\" ></p>\n<p>⑤鼠标点击长按“字幕区域”可在会议窗口内自由拖动，且可以根据需要拉伸字幕宽度。</p>\n<p><img src=\"https://cdn.meeting.tencent.com/upload/website/support-center/meeting-63b3e34b76751.png?time=1672734351341\" alt=\"4.png\"  loading=\"lazy\" ></p>\n<p>⑥共享屏幕时，鼠标点击长按“字幕区域”可在桌面内自由拖动。</p>\n<p><img src=\"https://cdn.meeting.tencent.com/upload/website/support-center/meeting-63b3e357c6c57.png?time=1672734351341\" alt=\"5.png\"  loading=\"lazy\" ></p>\n<h4><a id=\"2AndroidiOS_54\"></a>2）Android/iOS</h4>\n<p>①点击底部工具栏【更多】-&gt; 【开启字幕】即可开启字幕功能；（仅自己可见）</p>\n<p>②开启字幕后，点击“字幕”即可设置<strong>声源语言</strong>、<strong>翻译显示</strong>、是否<strong>同时显示双语</strong>以及是否<strong>开启实时转写</strong>。</p>\n<p><img src=\"https://cdn.meeting.tencent.com/upload/website/support-center/meeting-63b3e39f01e73.png?time=1672734351341\" alt=\"6.png\"  loading=\"lazy\" ></p>\n<p>③主持人/联席主持人可在底部工具栏【更多】-&gt; 【设置】-&gt; <strong>主持人设置</strong>中管理是否<strong>允许成员开启字幕</strong>。</p>\n<p><img src=\"https://cdn.meeting.tencent.com/upload/website/support-center/meeting-63b3e3b775c7c.png?time=1672734351341\" alt=\"7.png\"  loading=\"lazy\" ></p>\n<h3><a id=\"2_65\"></a>2.参会成员</h3>\n<h4><a id=\"1WindowsmacOS_66\"></a>1）Windows/macOS</h4>\n<p>①当主持人/联席主持人勾选【允许成员开启字幕】后，参会成员可点击底部工具栏【应用】-&gt; 【开启字幕】即可开启字幕功能（仅自己可见）；</p>\n<p><img src=\"https://cdn.meeting.tencent.com/upload/website/support-center/meeting-63b3e3d52d9e6.png?time=1672734351341\" alt=\"8.png\"  loading=\"lazy\" ></p>\n<p>②参会成员仅支持设置<strong>翻译显示</strong>以及是否<strong>同时显示双语</strong>。</p>\n<p><img src=\"https://cdn.meeting.tencent.com/upload/website/support-center/meeting-63b3e3e9849dd.png?time=1672734351341\" alt=\"9.png\"  loading=\"lazy\" ></p>\n<p>③开启字幕后，点击“字幕”右上角的【翻译设置】按钮，支持设置<strong>翻译显</strong>示以及是否<strong>同时显示双语</strong>。</p>\n<p><img src=\"https://cdn.meeting.tencent.com/upload/website/support-center/meeting-63b3e41e1e77c.png?time=1672734351341\" alt=\"10.png\"  loading=\"lazy\" ></p>\n<p>④点击“字幕”右上角的【设置】按钮，支持设置<strong>字号大小</strong>以及<strong>请求主持人开启转写</strong>。</p>\n<p><img src=\"https://cdn.meeting.tencent.com/upload/website/support-center/meeting-63b3e438c9b46.png?time=1672734351341\" alt=\"11.png\"  loading=\"lazy\" ></p>\n<p>⑤鼠标点击长按“字幕区域”可在会议窗口内自由拖动。</p>\n<p><img src=\"https://cdn.meeting.tencent.com/upload/website/support-center/meeting-63b3e448ca9f1.png?time=1672734351341\" alt=\"12.png\"  loading=\"lazy\" ></p>\n<p>⑥共享屏幕时，鼠标点击长按“字幕区域”可在桌面内自由拖动。</p>\n<p><img src=\"https://cdn.meeting.tencent.com/upload/website/support-center/meeting-63b3e456c072d.png?time=1672734351341\" alt=\"13.png\"  loading=\"lazy\" ></p>\n<h4><a id=\"2AndroidiOS_91\"></a>2）Android/iOS</h4>\n<p>①点击底部工具栏【更多】-&gt; 【开启字幕】即可开启字幕功能；（仅自己可见）</p>\n<p>②开启字幕后，点击“字幕”即可设置<strong>翻译显示</strong>、是否<strong>同时显示双语</strong>以及<strong>请求开启实时转写</strong>。</p>\n<p><img src=\"https://cdn.meeting.tencent.com/upload/website/support-center/meeting-63b3e47369c10.png?time=1672734351341\" alt=\"14.png\"  loading=\"lazy\" ></p>\n<h2><a id=\"_98\"></a>五、注意事项</h2>\n<p>①字幕为付费功能，会员、企业版、商业版等用户可以享受不限时使用字幕特权。<br>\n<a href=\"https://meeting.tencent.com/buy.html?mid=ts.p.help.wz\" target=\"_blank\">点击开通会员，即可享受不限时字幕</a>。</p>\n<p>②移动端暂不支持调节字号大小。</p>\n<p>③移动端暂不支持调节字幕拖动。</p>\n<p>④当前字幕仅支持中文普通话、英文识别，暂不支持方言识别，机器识别仅供参考。</p>\n<p>⑤商业版、企业版用户默认打开<strong>字幕</strong>功能开关，<strong>企业超级管理员</strong>和<strong>有帐户设置权限的管理员</strong>可以在企业管理后台-&gt;账户管理-&gt;<a href=\"https://meeting.tencent.com/user-center/account-setting\" target=\"_blank\">账户设置</a>-&gt;会议设置-&gt;会中设置中对字幕功能使用权限进行管理，关闭此功能后，您账户下的所有会议均无法使用字幕功能。</p>\n<p><img src=\"https://cdn.meeting.tencent.com/upload/website/support-center/meeting-63b3e4db55a9d.png?time=1672734351341\" alt=\"15.png\"  loading=\"lazy\" ></p>\n","recommend_link":[],"pdf_url":{"id":5745,"url":"https://cdn.meeting.tencent.com/upload/website/support-center/meeting-63b3e6910e445.pdf"},"event_name":"support_center_click_event_explore"}}
+</script>
+<script src="/packages/meeting-components/build/meeting-components-full.umd.js"></script>
+<script src="/packages/meeting-library/build/tcss-ping@0.0.1.js" defer></script>
+<script defer>
+  var isMobileDevice = false;
+  function __report() {
+    if (typeof pgvMain === 'function') {
+      if (
+        location.host === 'meeting.qq.com' ||
+        location.host === 'meeting.tencent.com' ||
+        location.host === 'wemeet.qq.com'
+      ) {
+        pgvMain({ virtualDomain: 'meeting.qq.com' });
+      }
+    }
+  }
+  function isMobile() {
+    return (
+      /android|webos|iphone|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent) &&
+      screen.width < 600
+    );
+  }
+  function isHuaweiPad() {
+    const ua = window.navigator.userAgent.toLowerCase();
+    const points = window.navigator.maxTouchPoints;
+    if (
+      ua.includes('huawei') &&
+      ua.includes('android') &&
+      !ua.includes('mobile') &&
+      points >= 5 &&
+      screen.width >= 600
+    ) {
+      return true;
+    }
+    return false;
+  }
+  function isPad() {
+    function isSafari() {
+      var ua = navigator.userAgent.toLowerCase();
+      var fd = function (ss) {
+        return ua.indexOf(ss) > -1;
+      };
+      var nf = function (ss) {
+        return ua.indexOf(ss) === -1;
+      };
+      var a = fd('safari/');
+      var b = nf('chrome/');
+      var c = nf('qq/') && nf('mqqbrowser');
+      return a && b && c;
+    }
+    if (/iPad/i.test(navigator.userAgent)) {
+      return true;
+    }
+    if (isHuaweiPad()) {
+      return true;
+    }
+    return !!(isSafari() && !isMobile() && navigator.maxTouchPoints);
+  }
+  function __adapter() {
+    var oMeta = document.createElement('meta');
+    if (isMobile()) {
+      var scale = screen.width / 375;
+      isMobileDevice = true;
+      oMeta.content =
+        'width=375, initial-scale=' + scale + ', user-scalable=0, minimum-scale=.5,maximum-scale=3';
+      oMeta.name = 'viewport';
+      document.getElementsByTagName('head')[0].appendChild(oMeta);
+      document.getElementsByTagName('html')[0].style.width = '375px';
+    } else if (isPad()) {
+      var scale = 1;
+      // 兜底处理
+      if (screen.width >= 600 && screen.width < 1200) {
+        scale = screen.width / 1180 - 0.2;
+      }
+      oMeta.content =
+        'width=device-width, initial-scale=' +
+        scale +
+        ', user-scalable=0, minimum-scale=.5,maximum-scale=3';
+      oMeta.name = 'viewport';
+      document.getElementsByTagName('head')[0].appendChild(oMeta);
+    } else {
+      oMeta.content =
+        'width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=.5,maximum-scale=3';
+      oMeta.name = 'viewport';
+      document.getElementsByTagName('head')[0].appendChild(oMeta);
+    }
+    if ('addEventListener' in document) {
+      document.addEventListener(
+        'DOMContentLoaded',
+        function () {
+          if (FastClick) {
+            FastClick?.attach(document.body);
+          }
+        },
+        false,
+      );
+    }
+  }
+  __adapter();
+  MeetingComponents.renderCommonHeader({ el: 'my-header', useMobile: true });
+  __report();
+</script>
+
+    
+  
+<script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+  <script nomodule src="/assets/polyfills-legacy.224bd654.js"></script>
+  <script nomodule id="vite-legacy-entry" data-src="/assets/support-doc-detail-legacy.e4dfc3a3.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+</body>
+</html>

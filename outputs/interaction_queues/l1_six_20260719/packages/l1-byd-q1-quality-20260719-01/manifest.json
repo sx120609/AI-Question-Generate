@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "kind": "immutable-doubao-interaction-package",
+  "jobId": "l1-byd-q1-quality-20260719-01",
+  "createdAt": "2026-07-18T17:25:31.264Z",
+  "sourceConfigPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_byd_q1_quality_20260718T165247Z_56f0c1\\doubao\\job.json",
+  "sourceConfigSha256": "97578a1ae5db808a2683f8f60b4cd66c9b4610ef22376387c98a8991519dab39",
+  "configSha256": "14e424a93ad126a1274c7923c94e68d9b7bc9941b00efc9d4e81a0279f07caf3",
+  "attachmentReceipt": {
+    "attachmentCount": 1,
+    "attachments": [
+      {
+        "classification": "specific-business",
+        "introductionHint": "把正式报告名称直接嵌入任务句，后续核对继续引用同一份已验证原件。",
+        "name": "比亚迪股份有限公司2026年第一季度报告.pdf",
+        "relativePath": "比亚迪股份有限公司2026年第一季度报告.pdf",
+        "sha256": "8e07bf9481c450daa0184c8bab218eb5b29f5587fc406116a911903852c0c907",
+        "sizeBytes": 306755,
+        "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-29/1225233071.PDF",
+        "summary": "披露比亚迪2026年一季度损益、现金流、资产负债项目变动和对应原因，财务会计报告未经审计。"
+      }
+    ],
+    "initialAttachmentNames": [
+      "比亚迪股份有限公司2026年第一季度报告.pdf"
+    ],
+    "minimumSpecificBusinessShare": 0.8,
+    "pass": true,
+    "policyId": "doubao-l1-l2-attachment-policy-v1",
+    "productionEvidence": {
+      "attachmentCount": 1,
+      "downloadManifestHash": "46a0dc86e535a57c0acab10190c2a5f462a69c74153ab30f67ae8b52eb4f56b5",
+      "downloadManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_byd_q1_quality_20260718T165247Z_56f0c1\\sources\\download_manifest.json",
+      "mode": "production-path",
+      "pass": true,
+      "policyId": "reuse-l2-source-acquisition-path-v1",
+      "productionRunId": "l1_six_byd_q1_quality_20260718T165247Z_56f0c1",
+      "productionTraceGateReceiptHash": "2e4b3a47371b6106501a93add569f8208e6a44bef91d60663cc0199eece41aac",
+      "productionTraceGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_byd_q1_quality_20260718T165247Z_56f0c1\\feishu\\production_trace_gate_receipt.json",
+      "productionTraceHash": "4b782aea0f2d0d320adf97eec884e529425e8e998e80fcbe4e69269d09032557",
+      "productionTracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_byd_q1_quality_20260718T165247Z_56f0c1\\qa\\production_trace.json",
+      "recordUid": "沈礼_20260719_l1_byd_q1_quality_01",
+      "releaseGateReceiptHash": "62caf3217f62ca9b8745f134af8b3c18fe3aba7625f9d84e63d60549a276b1f2",
+      "releaseGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_byd_q1_quality_20260718T165247Z_56f0c1\\feishu\\release_gate_receipt.json",
+      "verifiedAt": "2026-07-18T17:25:31.245Z"
+    },
+    "specificBusinessShare": 1,
+    "verifiedAt": "2026-07-18T17:25:31.246Z"
+  }
+}

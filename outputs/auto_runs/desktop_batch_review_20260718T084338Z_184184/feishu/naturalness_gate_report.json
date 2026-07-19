@@ -1,0 +1,1270 @@
+{
+  "schemaVersion": 1,
+  "kind": "naturalness-gate-report",
+  "gateId": "naturalness-gate-v6",
+  "metricsVersion": "naturalness-metrics-v6",
+  "questionLanguagePolicyId": "corpus-calibrated-intent-punctuation-v4",
+  "generatedAt": "2026-07-18T09:23:01.167Z",
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\drafts\\l1_questions.tsv",
+  "candidateHash": "04afc0471b57b75fd16b45e409f399ca36af8fbdcdf1f6a494905fcc5d0f0f56",
+  "baselinePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\sources\\naturalness_baseline.json",
+  "baselineHash": "0ec3102d5fa14b1b0aa65dcbd3744583646a65adf1b5772598438d80fc79812a",
+  "baselineId": "l1-phase3-reference-v1",
+  "baselineSampleCount": 5,
+  "effectiveThresholds": {
+    "row": {
+      "disclaimerSentenceDensity": {
+        "metric": "disclaimerSentenceDensity",
+        "direction": "upper",
+        "review": 0.4714,
+        "fail": 0.4943,
+        "source": {
+          "type": "benchmark-quantile",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "reviewQuantile": 0.9,
+          "failQuantile": 0.98
+        }
+      },
+      "disclaimerSentenceCount": {
+        "metric": "disclaimerSentenceCount",
+        "direction": "upper",
+        "review": 3.6,
+        "fail": 3.92,
+        "source": {
+          "type": "benchmark-quantile",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "reviewQuantile": 0.9,
+          "failQuantile": 0.98
+        }
+      },
+      "concreteFactsPer100Chars": {
+        "metric": "concreteFactsPer100Chars",
+        "direction": "lower",
+        "review": 0.624,
+        "source": {
+          "type": "benchmark-quantile",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "reviewQuantile": 0.1
+        }
+      },
+      "templateMarkerCount": {
+        "metric": "templateMarkerCount",
+        "direction": "upper",
+        "review": 1.2,
+        "source": {
+          "type": "benchmark-quantile",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "reviewQuantile": 0.9
+        }
+      },
+      "minimumDisclaimerSentencesForFail": {
+        "value": 2,
+        "source": {
+          "type": "row-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "minimumDisclaimerSentencesForFail",
+          "rationale": "One matched sentence may be legitimate evidence hygiene and cannot cause a hard fail by itself."
+        }
+      },
+      "requireDirectRequest": {
+        "value": false,
+        "source": {
+          "type": "row-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "requireDirectRequest",
+          "rationale": "Direct second-person requests are a corpus feature, not a universal requirement; actionable work-order phrasing is also valid."
+        }
+      },
+      "shortOpeningMaxCharacters": {
+        "value": 30,
+        "source": {
+          "type": "row-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "shortOpeningMaxCharacters"
+        }
+      },
+      "structuralPunctuationReviewCount": {
+        "value": 4,
+        "source": {
+          "type": "row-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "structuralPunctuationReviewCount"
+        }
+      },
+      "maximumTerminalSentenceCharacters": {
+        "value": 240,
+        "source": {
+          "type": "row-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "maximumTerminalSentenceCharacters"
+        }
+      }
+    },
+    "batch": {
+      "discourseSkeletonDominantShare": {
+        "metric": "discourseSkeletonDominantShare",
+        "direction": "upper",
+        "review": 0.5647,
+        "fail": 0.6837,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "observedCount": 1,
+          "observedShare": 0.2,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "fixedWordExcelTailShare": {
+        "metric": "fixedWordExcelTailShare",
+        "direction": "upper",
+        "review": 0.3512,
+        "fail": 0.5197,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "observedCount": 0,
+          "observedShare": 0,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "finalStepSelfCheckShare": {
+        "metric": "finalStepSelfCheckShare",
+        "direction": "upper",
+        "review": 0.3512,
+        "fail": 0.5197,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "observedCount": 0,
+          "observedShare": 0,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "stepCountModeShare": {
+        "metric": "stepCountModeShare",
+        "direction": "upper",
+        "review": 0.8573,
+        "fail": 0.905,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "observedCount": 3,
+          "observedShare": 0.6,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "weakScheduleShare": {
+        "metric": "weakScheduleShare",
+        "direction": "upper",
+        "review": 0.5647,
+        "fail": 0.6837,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "observedCount": 1,
+          "observedShare": 0.2,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "weakScheduleDominantShare": {
+        "metric": "weakScheduleDominantShare",
+        "direction": "upper",
+        "review": 0.5647,
+        "fail": 0.6837,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "observedCount": 1,
+          "observedShare": 0.2,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "minimumRows": {
+        "value": 8,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "minimumRows"
+        }
+      },
+      "reviewLevelTemplateSignalsForFail": {
+        "value": 2,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "reviewLevelTemplateSignalsForFail",
+          "rationale": "Several moderate batch-level repetitions together constitute template concentration."
+        }
+      },
+      "requestFrameDominantShare": {
+        "metric": "requestFrameDominantShare",
+        "direction": "upper",
+        "review": 0.8,
+        "fail": 0.95,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "requestFrameDominantShareReview",
+          "failParameter": "requestFrameDominantShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "shortOpeningShare": {
+        "metric": "shortOpeningShare",
+        "direction": "upper",
+        "review": 0.25,
+        "fail": 0.5,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "shortOpeningShareReview",
+          "failParameter": "shortOpeningShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "firstPunctuationTerminalShare": {
+        "metric": "firstPunctuationTerminalShare",
+        "direction": "upper",
+        "review": 0.25,
+        "fail": 0.5,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "firstPunctuationTerminalShareReview",
+          "failParameter": "firstPunctuationTerminalShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "firstSentenceCommaShare": {
+        "metric": "firstSentenceCommaShare",
+        "direction": "lower",
+        "review": 0.6,
+        "fail": 0.4,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "firstSentenceCommaShareReview",
+          "failParameter": "firstSentenceCommaShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "commaToPeriodRatio": {
+        "metric": "commaToPeriodRatio",
+        "direction": "lower",
+        "review": 1.1,
+        "fail": 0.8,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "commaToPeriodRatioReview",
+          "failParameter": "commaToPeriodRatioFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "enumerationCommasPer100Chars": {
+        "metric": "enumerationCommasPer100Chars",
+        "direction": "upper",
+        "review": 2.8,
+        "fail": 4,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "enumerationCommasPer100CharsReview",
+          "failParameter": "enumerationCommasPer100CharsFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "earlyStructuralPunctuationShare": {
+        "metric": "earlyStructuralPunctuationShare",
+        "direction": "upper",
+        "review": 0.2,
+        "fail": 0.4,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "earlyStructuralPunctuationShareReview",
+          "failParameter": "earlyStructuralPunctuationShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "semicolonRowShare": {
+        "metric": "semicolonRowShare",
+        "direction": "upper",
+        "review": 0.6,
+        "fail": 0.8,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "semicolonRowShareReview",
+          "failParameter": "semicolonRowShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "longSentenceShare": {
+        "metric": "longSentenceShare",
+        "direction": "upper",
+        "review": 0.1,
+        "fail": 0.25,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "longSentenceShareReview",
+          "failParameter": "longSentenceShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      }
+    }
+  },
+  "status": "PASS",
+  "ok": true,
+  "reviewRequired": false,
+  "blocked": false,
+  "summary": {
+    "rowCount": 1,
+    "rowStatusCounts": {
+      "PASS": 1
+    },
+    "batchStatus": "PASS",
+    "findingCounts": {}
+  },
+  "rows": [
+    {
+      "uid": "裴硬_20260718_desktop_batch_review_01",
+      "dataRow": 2,
+      "questionLength": 1200,
+      "paragraphCount": 1,
+      "sentenceCount": 60,
+      "disclaimerSentenceCount": 1,
+      "disclaimerSentenceDensity": 0.0167,
+      "missingMaterialSentenceCount": 1,
+      "evidenceBoundarySentenceCount": 0,
+      "disclaimerSignalCount": 1,
+      "concreteFactAnchorCount": 47,
+      "concreteFactsPer100Chars": 3.9167,
+      "firstPersonPresent": true,
+      "firstPersonOpening": true,
+      "paragraphActions": [
+        "deliverable",
+        "evidence",
+        "boundary",
+        "evidence",
+        "detail",
+        "detail",
+        "instruction",
+        "quality",
+        "detail",
+        "detail",
+        "detail",
+        "detail",
+        "detail",
+        "detail",
+        "detail",
+        "detail",
+        "detail",
+        "detail",
+        "detail",
+        "detail",
+        "detail",
+        "detail",
+        "quality",
+        "detail",
+        "quality",
+        "detail",
+        "instruction",
+        "quality",
+        "detail",
+        "detail",
+        "detail",
+        "detail",
+        "quality",
+        "quality",
+        "detail",
+        "evidence",
+        "detail",
+        "detail",
+        "detail",
+        "evidence",
+        "detail",
+        "detail",
+        "detail",
+        "detail",
+        "instruction",
+        "detail",
+        "evidence",
+        "detail",
+        "detail",
+        "instruction",
+        "quality",
+        "detail",
+        "detail",
+        "quality",
+        "evidence",
+        "evidence",
+        "decision",
+        "decision",
+        "detail",
+        "detail"
+      ],
+      "paragraphActionScores": [
+        {
+          "deliverable": 5,
+          "quality": 2,
+          "instruction": 1,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "scene": 0
+        },
+        {
+          "evidence": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "boundary": 4,
+          "evidence": 2,
+          "quality": 2,
+          "deliverable": 0,
+          "decision": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "evidence": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "quality": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "quality": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "quality": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "quality": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "quality": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "quality": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "evidence": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "evidence": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "evidence": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "quality": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "quality": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "evidence": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "evidence": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "decision": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "decision": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0,
+          "quality": 0,
+          "scene": 0,
+          "instruction": 0
+        }
+      ],
+      "discourseSkeleton": "deliverable>evidence>boundary>evidence>detail>detail>instruction>quality>detail>detail>detail>detail>detail>detail>detail>detail>detail>detail>detail>detail>detail>detail>quality>detail>quality>detail>instruction>quality>detail>detail>detail>detail>quality>quality>detail>evidence>detail>detail>detail>evidence>detail>detail>detail>detail>instruction>detail>evidence>detail>detail>instruction>quality>detail>detail>quality>evidence>evidence>decision>decision>detail>detail",
+      "compressedDiscourseSkeleton": "deliverable>evidence>boundary>evidence>detail>instruction>quality>detail>quality>detail>quality>detail>instruction>quality>detail>quality>detail>evidence>detail>evidence>detail>instruction>detail>evidence>detail>instruction>quality>detail>quality>evidence>decision>detail",
+      "fixedWordExcelTail": false,
+      "stepCount": 6,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "no-schedule-device",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": false,
+      "templateMarkerCount": 0,
+      "explicitRequestPresent": true,
+      "requestFrame": "work-order-需要",
+      "requestPositionRatio": 0.0092,
+      "requestMarker": "需要",
+      "requestDeliverableMarker": "Excel",
+      "missingDeliverableFormats": [],
+      "firstSentenceLength": 36,
+      "firstSentenceCommaCount": 0,
+      "firstPunctuationIsTerminal": true,
+      "commaCount": 0,
+      "periodCount": 60,
+      "colonCount": 0,
+      "semicolonCount": 0,
+      "enumerationCommaCount": 0,
+      "commaToPeriodRatio": 0,
+      "enumerationCommasPer100Chars": 0,
+      "structuralPunctuationCount": 0,
+      "structuralPunctuationPer100Chars": 0,
+      "earlyStructuralPunctuation": false,
+      "containsSemicolon": false,
+      "maximumTerminalSentenceLength": 39,
+      "evidence": {
+        "disclaimerSentences": [
+          "兼容性及验收记录连同付款与售后记录均保持待补。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quantity",
+            "value": "535条"
+          },
+          {
+            "kind": "quantity",
+            "value": "5889台"
+          },
+          {
+            "kind": "quantity",
+            "value": "195台"
+          },
+          {
+            "kind": "quantity",
+            "value": "463台"
+          },
+          {
+            "kind": "quantity",
+            "value": "899台"
+          },
+          {
+            "kind": "quantity",
+            "value": "1663台"
+          },
+          {
+            "kind": "quantity",
+            "value": "2638台"
+          },
+          {
+            "kind": "quantity",
+            "value": "31台"
+          },
+          {
+            "kind": "quantity",
+            "value": "3072台"
+          },
+          {
+            "kind": "quantity",
+            "value": "2620台"
+          },
+          {
+            "kind": "quantity",
+            "value": "9台"
+          },
+          {
+            "kind": "quantity",
+            "value": "188台"
+          },
+          {
+            "kind": "quantity",
+            "value": "1台"
+          },
+          {
+            "kind": "quantity",
+            "value": "506条"
+          },
+          {
+            "kind": "quantity",
+            "value": "5条"
+          },
+          {
+            "kind": "quantity",
+            "value": "4900元"
+          },
+          {
+            "kind": "quantity",
+            "value": "4585元"
+          },
+          {
+            "kind": "quantity",
+            "value": "4939元"
+          },
+          {
+            "kind": "quantity",
+            "value": "4940元"
+          },
+          {
+            "kind": "quantity",
+            "value": "4950元"
+          },
+          {
+            "kind": "quantity",
+            "value": "4960元"
+          },
+          {
+            "kind": "quantity",
+            "value": "955500元"
+          },
+          {
+            "kind": "quantity",
+            "value": "2122855元"
+          },
+          {
+            "kind": "quantity",
+            "value": "4440161元"
+          },
+          {
+            "kind": "quantity",
+            "value": "8215220元"
+          },
+          {
+            "kind": "quantity",
+            "value": "13058100元"
+          },
+          {
+            "kind": "quantity",
+            "value": "153760元"
+          },
+          {
+            "kind": "quantity",
+            "value": "28945596元"
+          },
+          {
+            "kind": "quantity",
+            "value": "29445000元"
+          },
+          {
+            "kind": "quantity",
+            "value": "499404元"
+          },
+          {
+            "kind": "quantity",
+            "value": "1.696%"
+          },
+          {
+            "kind": "quantity",
+            "value": "212.2855万元"
+          },
+          {
+            "kind": "quantity",
+            "value": "2682.2741万元"
+          },
+          {
+            "kind": "quantity",
+            "value": "4978元"
+          },
+          {
+            "kind": "quantity",
+            "value": "0元"
+          },
+          {
+            "kind": "quantity",
+            "value": "558元"
+          },
+          {
+            "kind": "quantity",
+            "value": "168995元"
+          },
+          {
+            "kind": "quantity",
+            "value": "9750元"
+          },
+          {
+            "kind": "quantity",
+            "value": "16630元"
+          },
+          {
+            "kind": "quantity",
+            "value": "9889元"
+          },
+          {
+            "kind": "quantity",
+            "value": "0%"
+          },
+          {
+            "kind": "quantity",
+            "value": "1%"
+          },
+          {
+            "kind": "quantity",
+            "value": "2%"
+          },
+          {
+            "kind": "identifier",
+            "value": "1.696"
+          },
+          {
+            "kind": "identifier",
+            "value": "212.2855"
+          },
+          {
+            "kind": "identifier",
+            "value": "2682.2741"
+          },
+          {
+            "kind": "named-product",
+            "value": "UOS"
+          }
+        ],
+        "finalParagraph": "采购结算与设备抽检同事需要一份可下载的Excel成交复核表来推进后续工作。目前实际订单和到货记录处于缺口状态。兼容性及验收记录连同付款与售后记录均保持待补。我将在首轮一次性接收并核验十份附件。这些材料包括一份成交结果公告和一份配送计划。另有一份采购文件以及一份得分排序表与六份技术规范偏离表。我们需要整理配送计划原始明细并建立清洗映射。核对535条有效明细与5889台合计。配置1的数量为195台。配置2有463台。配置3确认是899台。配置4与配置5分别为1663台和2638台。配置6单独汇总31台。操作系统方面麒麟汇总3072台且统信UOS汇总2620台。中科方德汇总9台及其他口径汇总188台。把其中1台截断文本单独标记。把506条PR单号空值连同5条纯数字地址列入待核清单。这些异常保持原始状态。对六包成交金额逐项重算。第一包的成交单价为4900元。第二包与第三包依次是4585元和4939元。第四包至第六包的成交单价为4940元和4950元以及4960元。反向核对第一包955500元和第二包2122855元。第三包4440161元与第四包8215220元也需确认。第五包13058100元及第六包153760元同步复核。解释六包合计28945596元与预算29445000元之间499404元的差额。约1.696%的预算偏差也需说明。公告概要显示的212.2855万元恰与第二包一致。把该数额与六包合计相差2682.2741万元的冲突原因列为待确认。将六份偏离表中的响应值与成交版本对齐。前五包响应值均为4950元且第六包响应值为4978元。计算各包单台差额及按计划数量形成的总差额。核对第五包复核值0元和第六包558元。第二包168995元与第一包9750元一并核对。第四包16630元及第三包9889元也需确认。依据采购文件公式测算原厂质保情景。配置6在各情景下均按0%计算。配置1至配置5的三年情景同样按0%计算。五年情景按1%计算且六年情景按2%计算。注明情景金额仅供测算以区分实际合同结算额。规格对照需纳入处理器信息。内存形式连同硬盘组合也由你录入该表。显卡口径同样补充完整。得分表中的匿名编号保持原样且不映射到供应商。首轮人工抽检准备需要从六包中挑选两包进入。金额规模差异会影响抽检排序。价格版本变动同样是排序依据。规格特征连同公开证据缺口也会纳入考量。第四包和第六包仅列一名投标人的状态仅供排序参考。写明选择理由及另一种合理解释。这项建议只安排补证顺序且不形成验收或履约结论。表内设置七个分页。分页包括原始明细和清洗映射。另设六包复核和规格对照。待核清单和抽检建议以及来源索引单独设页。根据文件名和内容建立来源索引。保留公告页码或网页区段以及表格行号与PDF页码。每个数值和判断均注明出处并可回到原件。区分可证事实和合理推断以及待确认项。这份表格随后交给现场同事继续回填。",
+        "finalStep": "结合金额规模、数量覆盖、价格变动和证据缺口挑选两包进入人工抽检，并建立来源索引。",
+        "request": {
+          "clear": true,
+          "frame": "work-order-需要",
+          "requestMarker": "需要",
+          "requestIndex": 11,
+          "requestSentenceIndex": 0,
+          "deliverableMarker": "Excel",
+          "deliverableIndex": 19
+        },
+        "punctuation": {
+          "visibleCharacters": 1200,
+          "firstSentence": "采购结算与设备抽检同事需要一份可下载的Excel成交复核表来推进后续工作。",
+          "firstSentenceLength": 36,
+          "firstSentenceCommaCount": 0,
+          "firstPunctuation": "。",
+          "firstPunctuationIndex": 36,
+          "firstPunctuationIsTerminal": true,
+          "commaCount": 0,
+          "periodCount": 60,
+          "colonCount": 0,
+          "semicolonCount": 0,
+          "enumerationCommaCount": 0,
+          "structuralPunctuationCount": 0,
+          "commaToPeriodRatio": 0,
+          "enumerationCommasPer100Chars": 0,
+          "structuralPunctuationPer100Chars": 0,
+          "earlyStructuralPunctuation": false,
+          "containsSemicolon": false,
+          "maximumTerminalSentenceLength": 39
+        }
+      },
+      "status": "PASS",
+      "findings": []
+    }
+  ],
+  "batch": {
+    "status": "PASS",
+    "metrics": {
+      "rowCount": 1,
+      "firstPersonShare": 1,
+      "firstPersonOpeningShare": 1,
+      "discourseSkeletonDominantShare": 1,
+      "discourseSkeletonDominant": "deliverable>evidence>boundary>evidence>detail>instruction>quality>detail>quality>detail>quality>detail>instruction>quality>detail>quality>detail>evidence>detail>evidence>detail>instruction>detail>evidence>detail>instruction>quality>detail>quality>evidence>decision>detail",
+      "discourseSkeletonCounts": {
+        "deliverable>evidence>boundary>evidence>detail>instruction>quality>detail>quality>detail>quality>detail>instruction>quality>detail>quality>detail>evidence>detail>evidence>detail>instruction>detail>evidence>detail>instruction>quality>detail>quality>evidence>decision>detail": 1
+      },
+      "fixedWordExcelTailShare": 0,
+      "finalStepSelfCheckShare": 0,
+      "stepCountModeShare": 1,
+      "stepCountMode": 6,
+      "stepCountCounts": {
+        "6": 1
+      },
+      "weakScheduleShare": 0,
+      "weakScheduleDominantShare": 0,
+      "weakScheduleDominantTag": "",
+      "scheduleTagCounts": {
+        "no-schedule-device": 1
+      },
+      "disclaimerHeavyShare": 0,
+      "lowConcreteFactShare": 0,
+      "explicitRequestShare": 1,
+      "requestFrameDominantShare": 1,
+      "requestFrameDominant": "work-order-需要",
+      "requestFrameCounts": {
+        "work-order-需要": 1
+      },
+      "shortOpeningShare": 0,
+      "firstPunctuationTerminalShare": 1,
+      "firstSentenceCommaShare": 0,
+      "commaToPeriodRatio": 0,
+      "enumerationCommasPer100Chars": 0,
+      "earlyStructuralPunctuationShare": 0,
+      "semicolonRowShare": 0,
+      "longSentenceShare": 0
+    },
+    "findings": []
+  }
+}

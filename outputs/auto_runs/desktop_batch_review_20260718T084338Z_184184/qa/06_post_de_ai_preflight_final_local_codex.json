@@ -1,0 +1,15 @@
+{
+  "kind": "local-codex-stage-response",
+  "stage": "06_post_de_ai_preflight_final",
+  "model": "gpt-5.6-sol",
+  "provider": "local-codex-cli",
+  "completedAt": "2026-07-18T09:21:35.428Z",
+  "promptHash": "9607895da8c1f240409318cfa23cfa63bf342f855600a82eae9131429b7a7149",
+  "parsed": {
+    "pass": true,
+    "issues": [],
+    "factsPreserved": true,
+    "attachmentsPreserved": true,
+    "visibleTextClean": true
+  }
+}

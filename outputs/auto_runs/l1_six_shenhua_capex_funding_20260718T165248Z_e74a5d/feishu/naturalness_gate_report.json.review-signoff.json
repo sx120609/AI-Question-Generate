@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "kind": "naturalness-review-signoff",
+  "requestId": "naturalness_bf17e8e7cb830fbdf676fd12",
+  "bindingHash": "bf17e8e7cb830fbdf676fd125b8baa3ac211cf1bae32063a5fcda3864d684960",
+  "requestHash": "40c5925fd9b95b86ea5d604d850c7921483a61357209876e7f0a966a5b669a68",
+  "decision": "APPROVE",
+  "reviewer": "local-codex-independent-naturalness-reviewer-gpt-5.6-sol",
+  "rationale": "免责声明仅占1句且用于约束证据边界，没有挤占核心业务事实。请求明确指定报告、分析对象、计算字段、参照数据、证据要求和Excel交付物，附件也已提供，任务可执行。整体表达符合真实同事为预算及融资披露复核而提出的工作请求，虽具体事实锚点偏少，但不足以构成否决理由。",
+  "reviewedAt": "2026-07-18T17:32:22.583Z",
+  "evidence": {
+    "reviewReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_shenhua_capex_funding_20260718T165248Z_e74a5d\\qa\\07_naturalness_independent_review_local_codex.json",
+    "disclaimerDisplacesFacts": false,
+    "taskExecutable": true,
+    "naturalWorkRequest": true
+  }
+}

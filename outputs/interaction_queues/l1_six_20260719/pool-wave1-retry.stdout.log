@@ -1,0 +1,50 @@
+{
+  "browserContextId": "1084C633D11647B8992D48E50C635F55",
+  "handled": 3,
+  "workers": [
+    {
+      "handled": 1,
+      "jobs": [
+        {
+          "jobId": "l1-baosteel-mix-profit-20260719-04",
+          "resultPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\results\\l1-baosteel-mix-profit-20260719-04.json",
+          "status": "complete"
+        }
+      ],
+      "targetId": "EA29CEDF91A95DC7FAA5494ACA9CC873",
+      "workerId": "slot-1-EA29CEDF91A95DC7FAA5494ACA9CC873"
+    },
+    {
+      "handled": 1,
+      "jobs": [
+        {
+          "error": {
+            "code": "",
+            "message": "A unique share selection panel is not open."
+          },
+          "jobId": "l1-byd-q1-quality-20260719-01",
+          "resultPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\results\\l1-byd-q1-quality-20260719-01.json",
+          "status": "failed"
+        }
+      ],
+      "targetId": "2312292BC690B375D99E7174326C30CA",
+      "workerId": "slot-2-2312292BC690B375D99E7174326C30CA"
+    },
+    {
+      "handled": 1,
+      "jobs": [
+        {
+          "error": {
+            "code": "",
+            "message": "Local Computer state could not be verified before disabling it."
+          },
+          "jobId": "l1-cqrcb-growth-capital-20260719-03",
+          "resultPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\results\\l1-cqrcb-growth-capital-20260719-03.json",
+          "status": "failed"
+        }
+      ],
+      "targetId": "FE2F471C9D5CA08F7202543D8F82C28E",
+      "workerId": "slot-3-FE2F471C9D5CA08F7202543D8F82C28E"
+    }
+  ]
+}

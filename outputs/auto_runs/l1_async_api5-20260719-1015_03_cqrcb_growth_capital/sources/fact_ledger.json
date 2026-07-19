@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "kind": "evidence-bound-fact-ledger",
+  "runId": "l1_async_api5-20260719-1015_03_cqrcb_growth_capital",
+  "recordUid": "沈礼_api5-20260719-1015_03",
+  "generatedAt": "2026-07-19T02:07:59.912Z",
+  "facts": [
+    {
+      "id": "cqrcb-profit-return",
+      "claimType": "source-fact",
+      "text": "2026年一季度营业收入78.301亿元，同比增长8.39%；归母净利润39.346亿元，同比增长5.07%；年化ROA为0.95%，同比下降0.04个百分点；年化加权ROE为11.95%，同比下降0.05个百分点。",
+      "locator": "PDF第3页主要财务数据及第6页经营分析",
+      "uid": "沈礼_api5-20260719-1015_03",
+      "sourceRefs": [
+        "cqrcb-2026q1-report"
+      ]
+    },
+    {
+      "id": "cqrcb-balance-growth",
+      "claimType": "source-fact",
+      "text": "2026年3月末资产总额17663.223亿元，较年末增长6.04%；贷款总额8300.95亿元，增长4.11%；客户存款11079.046亿元，增长7.70%。",
+      "locator": "PDF第3页主要财务数据及第7页经营分析",
+      "uid": "沈礼_api5-20260719-1015_03",
+      "sourceRefs": [
+        "cqrcb-2026q1-report"
+      ]
+    },
+    {
+      "id": "cqrcb-capital-ratios",
+      "claimType": "source-fact",
+      "text": "集团核心一级资本充足率由2025年末12.67%降至12.25%，一级资本充足率由13.27%降至12.81%，资本充足率由14.46%降至14.00%。",
+      "locator": "PDF第5页资本充足率表",
+      "uid": "沈礼_api5-20260719-1015_03",
+      "sourceRefs": [
+        "cqrcb-2026q1-report"
+      ]
+    },
+    {
+      "id": "cqrcb-leverage",
+      "claimType": "source-fact",
+      "text": "集团杠杆率由2025年末8.02%降至2026年3月末7.87%，同期调整后的表内外资产余额由1712008.8百万元增至1816249.9百万元。",
+      "locator": "PDF第6页杠杆率表",
+      "uid": "沈礼_api5-20260719-1015_03",
+      "sourceRefs": [
+        "cqrcb-2026q1-report"
+      ]
+    },
+    {
+      "id": "cqrcb-asset-quality",
+      "claimType": "source-fact",
+      "text": "2026年3月末不良贷款率1.07%，较年末下降0.01个百分点；拨备覆盖率365.72%，较年末下降1.54个百分点。",
+      "locator": "PDF第7页季度经营简要分析",
+      "uid": "沈礼_api5-20260719-1015_03",
+      "sourceRefs": [
+        "cqrcb-2026q1-report"
+      ]
+    },
+    {
+      "id": "cqrcb-audit-boundary",
+      "claimType": "evidence-boundary",
+      "text": "渝农商行2026年第一季度财务报表未经审计，单季报告没有给出资本比率变化对未来业务配置的管理层量化阈值。",
+      "locator": "PDF第2页重要内容提示及披露边界",
+      "uid": "沈礼_api5-20260719-1015_03",
+      "sourceRefs": [
+        "cqrcb-2026q1-report"
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "id": "cqrcb-2026q1-report",
+      "uid": "沈礼_api5-20260719-1015_03",
+      "name": "重庆农村商业银行股份有限公司2026年第一季度报告.pdf",
+      "text": "披露渝农商行一季度收入利润、资产负债增长、资本充足率、杠杆率、流动性和资产质量指标。",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-29/1225237379.PDF",
+      "sha256": "261e993750d5c1f5b6b430c583d1a24cff13e43ae1aa7206bb78e102b5b6666f"
+    }
+  ],
+  "unknowns": [
+    {
+      "id": "cqrcb_growth_capital_api5-20260719-1015-unknown-1",
+      "uid": "沈礼_api5-20260719-1015_03",
+      "text": "附件没有披露资本充足率与杠杆率下降对应的具体业务条线资本消耗。"
+    },
+    {
+      "id": "cqrcb_growth_capital_api5-20260719-1015-unknown-2",
+      "uid": "沈礼_api5-20260719-1015_03",
+      "text": "单季数据不能单独证明全年资产扩张速度和回报水平的持续性。"
+    }
+  ],
+  "decision": {
+    "id": "cqrcb_growth_capital_api5-20260719-1015-decision",
+    "text": "形成一份增长与资本约束复核简报，把收入利润、资产负债增速、资本比率、杠杆和资产质量放在同一页级证据链中，并列出需要补充的条线资本数据。"
+  },
+  "deliveryUse": {
+    "recipient": "银行经营复核专员及下游同事",
+    "purpose": "供银行经营分析同事决定下一步需要补取哪些资本和业务条线资料。"
+  }
+}

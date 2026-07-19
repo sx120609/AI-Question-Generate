@@ -1,0 +1,15 @@
+{
+  "kind": "l1-stage3-gate-summary",
+  "generatedAt": "2026-07-18T18:08:04.632Z",
+  "workflowState": "COMPLETE",
+  "finalRecordUid": "沈礼_20260719_l1_inspur_profit_cash_05",
+  "roleConsistency": "PASS",
+  "productionTrace": "PASS",
+  "release": {
+    "ok": true,
+    "phase": "release",
+    "status": "PASS"
+  },
+  "feishuWriteAttempted": false,
+  "feishuWriteApplied": false
+}

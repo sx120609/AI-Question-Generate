@@ -1,0 +1,26 @@
+{
+  "kind": "local-codex-stage-response",
+  "stage": "06_post_de_ai_preflight_targeted",
+  "model": "gpt-5.6-sol",
+  "provider": "local-codex-cli",
+  "completedAt": "2026-07-18T13:03:14.099Z",
+  "promptHash": "02cc2f79c2883a8c7c7c7874c202fde8d64ef39d58a3b6e67f01e60aa019773f",
+  "parsed": {
+    "pass": false,
+    "issues": [
+      {
+        "rule": "不得把季报与经营简报差额直接认定为非物流业务收入",
+        "evidence": "“核对经营简报不含其他非物流业务收入的边界”将经营简报与季报的边界预设为排除其他非物流业务收入，超出了原问题要求的边界差异核验。",
+        "repair": "仅要求核验物流相关收入与一季报总营业收入的边界差异，无法直接对应的差额标为待公司分部或科目资料确认，不预设为非物流业务收入。"
+      },
+      {
+        "rule": "最终Excel交付要求必须保持",
+        "evidence": "原问题明确要求“可下载的最终Excel口径核对表，文件格式为xlsx”，出站文本仅写“整理一份Excel口径核对表”，遗漏可下载和xlsx格式要求。",
+        "repair": "明确保留“提供可下载的最终Excel口径核对表，文件格式为xlsx”。"
+      }
+    ],
+    "factsPreserved": false,
+    "attachmentsPreserved": true,
+    "visibleTextClean": false
+  }
+}

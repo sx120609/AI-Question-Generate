@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "kind": "l1-production-trace-gate-report",
+  "productionProfile": "l1",
+  "gateId": "production-trace-gate-v6-profiled",
+  "status": "PASS",
+  "generatedAt": "2026-07-18T13:22:00.795Z",
+  "packetPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\sources\\production_input_packet.json",
+  "packetHash": "3bce477029c2158fe8fc44f1136e25d6a690e54da421fe3c8a68aa2eab88658f",
+  "tracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\qa\\production_trace.json",
+  "traceHash": "677fc8a832dfcdea98a5ff5e76a1449bf6bd0d9d6769416978251c6ac556dbf9",
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\drafts\\l1_questions.tsv",
+  "candidateHash": "5d5a13a33aa550b455990807aaa65d74ce4b536e605990105c2dca5957fdb6a1",
+  "fillPlanPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\feishu\\feishu_fill_plan.json",
+  "fillPlanHash": "b67689088fdc1375a219a23709887e7f82be86168262939567456f34e27f8cb6",
+  "rowCount": 1,
+  "attachmentRoot": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\attachments",
+  "attachmentBindings": [
+    {
+      "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+      "name": "顺丰控股2026年2月快递物流业务经营简报.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\attachments\\顺丰控股2026年2月快递物流业务经营简报.pdf",
+      "sha256": "b6d498ec52aea25bf45329c3890bdc26270e498eaf5a4d8088c7d63dc7756fff",
+      "bytes": 98758
+    },
+    {
+      "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+      "name": "顺丰控股2026年3月快递物流业务经营简报.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\attachments\\顺丰控股2026年3月快递物流业务经营简报.pdf",
+      "sha256": "aa21dd7d0f298800d5962078776289649f2992be6458c06a632d498624279260",
+      "bytes": 96891
+    },
+    {
+      "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+      "name": "顺丰控股2026年第一季度报告.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\attachments\\顺丰控股2026年第一季度报告.pdf",
+      "sha256": "72a07309388abcdce1aad7f33307c1693446a04cd435fbb2e656ba582f8ef5e2",
+      "bytes": 319909
+    }
+  ],
+  "productFormatDiversity": {
+    "policyId": "not-required-for-l1",
+    "status": "SKIPPED",
+    "rowCount": 1,
+    "findings": []
+  },
+  "findings": []
+}

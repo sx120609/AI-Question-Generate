@@ -1,0 +1,133 @@
+{
+  "sceneCard": {
+    "schemaVersion": 1,
+    "policyId": "situated-requester-v1",
+    "topicId": "accessible-training-platform-poc",
+    "personaId": "persona-lnd-digital-pm-01",
+    "requester": {
+      "functionalRole": "企业学习与发展数字化项目经理",
+      "organizationType": "设有跨地区员工培训的企业",
+      "department": "",
+      "responsibility": "核验候选直播平台的公开无障碍证据并安排下一轮实测",
+      "authorityBoundary": "只能决定哪一个平台优先进入 POC，不能据此作出最终采购或合规结论",
+      "recipientRelation": "把证据对比表交给培训项目组安排下一轮实测"
+    },
+    "scene": {
+      "workflowStage": "培训直播平台 POC 前的公开证据初筛",
+      "trigger": "公司准备把跨地区员工培训固定成常态化直播",
+      "currentBlockage": "不同厂商的无障碍说明分散在产品页和帮助中心",
+      "mainDecision": "三个候选平台中哪一个优先进入 POC",
+      "downstreamUse": "供培训团队安排下一轮实测"
+    },
+    "informationBoundary": {
+      "knownFactIds": [
+        "fact-trigger",
+        "fact-access-needs",
+        "fact-candidates",
+        "fact-blockage",
+        "fact-decision",
+        "fact-boundary",
+        "fact-source-check"
+      ],
+      "availableMaterialIds": [
+        "material-zoom-accessibility",
+        "material-zoom-captions",
+        "material-teams-captions",
+        "material-teams-screenreader",
+        "material-meet-accessibility",
+        "material-meet-translated",
+        "material-w3c-live-captions",
+        "material-w3c-keyboard",
+        "material-w3c-focus"
+      ],
+      "unknowns": [
+        "三个平台在目标企业许可证下的字幕、翻译字幕和转录权限",
+        "目标参训语言是否全部落在各平台当前支持范围内",
+        "企业管理员策略是否会关闭公开文档中描述的能力",
+        "录制、字幕和转录数据在目标租户中的保存期限与导出权限",
+        "目标直播规模和会议类型下的实际可用性"
+      ],
+      "forbiddenInferences": [
+        "不得把公开功能说明直接写成目标租户已经具备的能力",
+        "不能把这轮桌面研究写成最终采购或合规结论"
+      ]
+    },
+    "voice": {
+      "channel": "内部任务单",
+      "formality": "直接、克制的项目工作委托",
+      "domainVocabulary": [
+        "实时字幕",
+        "翻译字幕",
+        "屏幕阅读器",
+        "管理员策略",
+        "POC"
+      ],
+      "avoidVocabulary": [
+        "全链路",
+        "闭环",
+        "赋能",
+        "深度洞察"
+      ]
+    },
+    "maskTerms": [
+      "Zoom",
+      "Microsoft Teams",
+      "Google Meet",
+      "实时字幕",
+      "屏幕阅读器",
+      "POC"
+    ],
+    "evidenceBindings": [
+      {
+        "claim": "公司准备把跨地区员工培训固定成常态化直播",
+        "factIds": [
+          "fact-trigger"
+        ]
+      },
+      {
+        "claim": "参训者中有依赖实时字幕、键盘操作或屏幕阅读器的同事",
+        "factIds": [
+          "fact-access-needs"
+        ]
+      },
+      {
+        "claim": "候选平台是 Zoom、Microsoft Teams 和 Google Meet",
+        "factIds": [
+          "fact-candidates"
+        ]
+      },
+      {
+        "claim": "不同厂商的无障碍说明分散在产品页和帮助中心",
+        "factIds": [
+          "fact-blockage"
+        ]
+      },
+      {
+        "claim": "三个候选平台中哪一个优先进入 POC",
+        "factIds": [
+          "fact-decision"
+        ]
+      },
+      {
+        "claim": "供培训团队安排下一轮实测",
+        "factIds": [
+          "fact-boundary"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "checks": {
+      "knownFactCount": 7,
+      "materialCount": 9,
+      "unknownCount": 5,
+      "evidenceBindingCount": 6,
+      "factLedgerVerified": true
+    },
+    "sceneCardHash": "cb7e1dcc9867785595627f45869c0e3e4c58f285ef152b74a91d2e82f82fb1b8",
+    "validationHash": "5396bd1c7ae99d4f6e37df6008a63e6bb24215cf950aed3cc063394f3ad955a6"
+  }
+}

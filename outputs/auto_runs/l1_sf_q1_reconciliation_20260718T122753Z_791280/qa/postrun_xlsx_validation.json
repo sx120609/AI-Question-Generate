@@ -1,0 +1,31 @@
+{
+  "status": "FAIL",
+  "validatedAt": "2026-07-18T15:18:00.000Z",
+  "validator": "local-excel-16-readonly-plus-openxml-inspection",
+  "artifact": "doubao/downloads/顺丰控股2026Q1数据口径核对表.xlsx",
+  "artifactSizeBytes": 24589,
+  "excelOpen": {
+    "normal": false,
+    "repairMode": false,
+    "extractDataMode": false,
+    "hresult": -2146827284,
+    "message": "Excel 16.0 could not open the downloaded workbook."
+  },
+  "packageInspection": {
+    "zipReadable": true,
+    "xmlPartsWellFormed": true,
+    "sheetCount": 6,
+    "formulaNodeCount": 146
+  },
+  "blockingEvidence": {
+    "issue": "Text explanations were serialized as formula nodes, so the xlsx is not a valid openable Excel deliverable.",
+    "examples": [
+      "物流收入勾稽链!G7: 速运物流+供应链及国际",
+      "物流收入勾稽链!G16: 1-2月合计+3月合计（第二条路径验证）",
+      "业务量与单票收入复算!G8: 收入÷业务量",
+      "业务量与单票收入复算!D65: MAX(下侧偏差,上侧偏差)"
+    ]
+  },
+  "feishuWriteApplied": false,
+  "conclusion": "The formal Doubao result passed the artifact-card gate, but the independently downloaded xlsx failed the real openability gate and must not be treated as a valid final deliverable."
+}

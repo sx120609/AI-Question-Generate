@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "kind": "doubao-interaction-queue-item",
+  "state": "completed",
+  "jobId": "l1-async-api5-20260719-1015-03",
+  "enqueuedAt": "2026-07-19T02:10:26.069Z",
+  "attempt": 4,
+  "configPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\packages\\l1-async-api5-20260719-1015-03\\job.json",
+  "configSha256": "4295328d900bf169b29e6037048c9f3250a27a94f50e81083f4a7978f5f2828c",
+  "packageManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\packages\\l1-async-api5-20260719-1015-03\\manifest.json",
+  "packageManifestSha256": "ddd808e7b7054b189d9ded7a34f1513127c9653b777c06d4a6dddb92d3b9c483",
+  "recoveryCount": 1,
+  "recoveredAt": "2026-07-19T02:16:37.793Z",
+  "retryHistory": [
+    {
+      "archivedResultPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\results\\history\\l1-async-api5-20260719-1015-03-attempt-2-875a6233-c0b9-4826-aefd-6ce6a016f973.json",
+      "attempt": 2,
+      "failedAt": "2026-07-19T02:16:38.399Z",
+      "lastError": {
+        "code": "",
+        "message": "Resume must use the same Doubao window target as the saved job state."
+      },
+      "retriedAt": "2026-07-19T02:40:26.513Z"
+    }
+  ],
+  "retriedAt": "2026-07-19T02:40:26.514Z",
+  "resultPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\results\\l1-async-api5-20260719-1015-03.json",
+  "queueResumeHistory": [
+    {
+      "attempt": 3,
+      "failedAt": "2026-07-19T04:44:44.958Z",
+      "lastError": {
+        "code": "",
+        "message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"receive_message\"]').nth(2).locator('[data-testid=\"message_action_like\"]')\u001b[22m\n\u001b[2m    - locator resolved to <button data-state=\"closed\" data-loading=\"false\" data-disabled=\"false\" data-dbx-name=\"button\" data-trigger-type=\"hover\" data-testid=\"message_action_like\" class=\"flex shrink-0 items-center justify-center font-[400] whitespace-nowrap select-none [&_svg]:shrink-0 text-[14px] leading-[22px] gap-[4px] rounded-dbx-sm p-[4px] transition-colors duration-150 ease-out bg-transparent hover:bg-dbx-fill-trans-10-hover [&:is(:where(:is([aria-haspopup=\"dialog\"],[aria-haspopup=\"menu\"])[data-state=\"open\"]:not([data-sl…>…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <iframe title=\"订阅\" class=\"h-full w-full border-0\" src=\"https://www.doubao.com/member/quota-management?enter_method=click_personal_profile&platform=desktop&is_setting_iframe=1&theme=light&platform=desktop&locale=zh\"></iframe> from <div role=\"dialog\" tabindex=\"-1\" id=\"radix-:r8m1:\" data-state=\"open\" data-slot=\"dialog-content\" data-setting-modal-layer=\"\" aria-labelledby=\"radix-:r8m2:\" aria-describedby=\"radix-:r8m3:\" class=\"fixed top-[50%] left-[50%] grid w-[420px] max-w-[calc(100%-40px)] translate-x-[-50%] translate-y-[-50%] transform rounded-dbx-xl [border-width:0.5px] border-solid border-dbx-line-10 bg-dbx-bg-float px-[23.5px] pt-[21.5px] pb-[23.5px] duration-200 data-[state=closed]:animate-out data-[state=closed]:fade-out-0…>…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <iframe title=\"订阅\" class=\"h-full w-full border-0\" src=\"https://www.doubao.com/member/quota-management?enter_method=click_personal_profile&platform=desktop&is_setting_iframe=1&theme=light&platform=desktop&locale=zh\"></iframe> from <div role=\"dialog\" tabindex=\"-1\" id=\"radix-:r8m1:\" data-state=\"open\" data-slot=\"dialog-content\" data-setting-modal-layer=\"\" aria-labelledby=\"radix-:r8m2:\" aria-describedby=\"radix-:r8m3:\" class=\"fixed top-[50%] left-[50%] grid w-[420px] max-w-[calc(100%-40px)] translate-x-[-50%] translate-y-[-50%] transform rounded-dbx-xl [border-width:0.5px] border-solid border-dbx-line-10 bg-dbx-bg-float px-[23.5px] pt-[21.5px] pb-[23.5px] duration-200 data-[state=closed]:animate-out data-[state=closed]:fade-out-0…>…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    5 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <iframe title=\"订阅\" class=\"h-full w-full border-0\" src=\"https://www.doubao.com/member/quota-management?enter_method=click_personal_profile&platform=desktop&is_setting_iframe=1&theme=light&platform=desktop&locale=zh\"></iframe> from <div role=\"dialog\" tabindex=\"-1\" id=\"radix-:r8m1:\" data-state=\"open\" data-slot=\"dialog-content\" data-setting-modal-layer=\"\" aria-labelledby=\"radix-:r8m2:\" aria-describedby=\"radix-:r8m3:\" class=\"fixed top-[50%] left-[50%] grid w-[420px] max-w-[calc(100%-40px)] translate-x-[-50%] translate-y-[-50%] transform rounded-dbx-xl [border-width:0.5px] border-solid border-dbx-line-10 bg-dbx-bg-float px-[23.5px] pt-[21.5px] pb-[23.5px] duration-200 data-[state=closed]:animate-out data-[state=closed]:fade-out-0…>…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\u001b[2m    47 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <iframe title=\"订阅\" class=\"h-full w-full border-0\" src=\"https://www.doubao.com/member/quota-management?enter_method=click_personal_profile&platform=desktop&is_setting_iframe=1&theme=light&platform=desktop&locale=zh\"></iframe> from <div role=\"dialog\" tabindex=\"-1\" id=\"radix-:r8m4:\" data-state=\"open\" data-slot=\"dialog-content\" data-setting-modal-layer=\"\" aria-labelledby=\"radix-:r8m5:\" aria-describedby=\"radix-:r8m6:\" class=\"fixed top-[50%] left-[50%] grid w-[420px] max-w-[calc(100%-40px)] translate-x-[-50%] translate-y-[-50%] transform rounded-dbx-xl [border-width:0.5px] border-solid border-dbx-line-10 bg-dbx-bg-float px-[23.5px] pt-[21.5px] pb-[23.5px] duration-200 data-[state=closed]:animate-out data-[state=closed]:fade-out-0…>…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n"
+      },
+      "resumedAt": "2026-07-19T04:49:54.334Z"
+    }
+  ],
+  "resume": true,
+  "resumeTargetId": "B5A3CF92CF77EE3846553E1E7250EE56",
+  "resumedAt": "2026-07-19T04:49:54.335Z",
+  "finishedAt": "2026-07-19T04:55:12.144Z",
+  "lastError": null
+}

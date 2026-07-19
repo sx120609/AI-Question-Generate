@@ -1,0 +1,8 @@
+file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/build/automation/produce_l1_single_task.mjs:938
+  throw new Error(JSON.stringify({
+        ^
+
+Error: {"roleConsistency":"PASS","roleErrors":[],"productionTrace":"PASS","processFindings":[],"release":{"ok":false,"phase":"structure","status":"FAIL"},"naturalnessFindings":[],"structureFindings":[{"level":"FAIL","rule":"information-coverage-insufficient","index":0,"uid":"沈礼_20260719_l1_shenhua_capex_funding_02","message":"题面有效信息单元不足，不能靠空话或边界句凑长度。","detectedUnits":["time","trigger","facts","gap","evidence","deliverable"],"missingGroups":["actor|audience","decision"]}]}
+    at file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/build/automation/produce_l1_single_task.mjs:938:9
+
+Node.js v26.5.0

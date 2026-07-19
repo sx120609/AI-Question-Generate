@@ -1,0 +1,93 @@
+{
+  "kind": "scene-card-gate-report",
+  "gateId": "scene-card-role-consistency-v1",
+  "protocolId": "situated-requester-v1",
+  "schemaVersion": 1,
+  "status": "PASS",
+  "ok": true,
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\drafts\\l1_questions.tsv",
+  "candidateHash": "5d5a13a33aa550b455990807aaa65d74ce4b536e605990105c2dca5957fdb6a1",
+  "sceneCardPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\sources\\scene_cards.json",
+  "sceneCardFileHash": "c627bbf48c34a69c9b5651bd95b72952dad09c89701c363963139cb8bc18a4e6",
+  "sceneCardBundleHash": "721dd09e2a54d78c3be8e6feed300ac3a25fa6986c24b847f0255fdc0a5233ae",
+  "sceneCardSetHash": "73bdfde860e1579bf16fd9cc6f9924cf7c013f9b270ee5f2db161de6de5c2a79",
+  "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\sources\\fact_ledger.json",
+  "factLedgerHash": "ba7775febd7705593e791bf21bffc89a768dce49499a1f20ef38f7f04f23339d",
+  "summary": {
+    "candidateRowCount": 1,
+    "sceneCardCount": 1,
+    "passedRowCount": 1,
+    "failedRowCount": 0,
+    "globalErrorCount": 0,
+    "batchCollisionCount": 0
+  },
+  "rows": [
+    {
+      "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "e3e40dad8ab2a5399d8bf6a5e247ef7e69c1e18b9743c36ca7998bc9a101278b",
+      "cardHash": "af1a5f3912ff508d33e387108eb34e705f8812d24963043bb9fb11d0b7f29e73",
+      "roleConsistencyHash": "ad0e4588b87b359f2265eebab5f5341f0dff41e818730a8bff182caf57da50cf",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "polite-request",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "xlsx"
+        ],
+        "mFormats": [
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "无法直接对应的差额留待后续通过公司分部或科目资料确认，归因栏保持留空。",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "",
+            "occurrences": 0
+          },
+          "downstreamUseSpan": {
+            "span": "请再基于前述核对结果整理一份可下载的Excel口径核对表，按xlsx格式交付并作为结论底表。",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [
+            "2026年",
+            "2月",
+            "3月",
+            "1"
+          ],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "d9d21eb0214cca7038e39d9a6fefe38403199987174bfa15b218376201d39cc6"
+      }
+    }
+  ],
+  "batch": {
+    "ok": true,
+    "status": "PASS",
+    "thresholds": {
+      "highMaskedTrigramSimilarity": 0.72,
+      "sharedMaskedFragmentLength": 18
+    },
+    "comparisons": [],
+    "errors": []
+  },
+  "errors": [],
+  "evaluationHash": "1673d047cb2100cb2f5995917589a3209e170f333c86139786f0c588df9f1501"
+}

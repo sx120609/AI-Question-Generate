@@ -5,6 +5,13 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 import { loadGeneratedIdentities, matchGeneratedIdentity } from "./generated_identities.mjs";
 import { runProductionPreflight } from "./production_preflight.mjs";
 import { initializeProductionWorkflowFile } from "./production_workflow_state.mjs";
+import { resolveProductionProfile } from "./production_profile.mjs";
+import {
+  normalizeProductionModelProvider,
+  PRODUCTION_MODEL_DEFAULTS,
+  THIRD_PARTY_MODEL_PROVIDER,
+} from "./production_model_client.mjs";
+import { MUGUA_DE_AI_REWRITE_DEFAULTS } from "./mugua_de_ai_rewrite_client.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export const REPO_ROOT = path.resolve(__dirname, "../..");
@@ -29,9 +36,9 @@ export function sanitizeId(value) {
     .slice(0, 120);
 }
 
-export function createRunId(prefix = "l2") {
+export function createRunId(prefix = "l1") {
   const suffix = crypto.randomBytes(3).toString("hex");
-  return `${sanitizeId(prefix) || "l2"}_${timestampId()}_${suffix}`;
+  return `${sanitizeId(prefix) || "l1"}_${timestampId()}_${suffix}`;
 }
 
 export async function ensureDir(dir) {
@@ -73,12 +80,15 @@ export async function createAutoRun({
   spreadsheetToken = "",
   sheetId = "",
   annotator = "",
-  prefix = "l2",
-  runId = createRunId(prefix),
+  profile = "l1",
+  prefix = "",
+  runId = "",
   autoRunsRoot = AUTO_RUNS_ROOT,
   structureRegistryPath,
   structuralDiversityPolicyPath,
 } = {}) {
+  const productionProfile = resolveProductionProfile(profile);
+  runId ||= createRunId(prefix || productionProfile.defaultPrefix);
   const identityConfig = await loadGeneratedIdentities();
   const generatedIdentity = matchGeneratedIdentity({ name: annotator }, identityConfig);
   if (!generatedIdentity) {
@@ -103,6 +113,7 @@ export async function createAutoRun({
     runId: path.basename(runDir),
     count,
     outPath: productionInputPacketPath,
+    profile: productionProfile.id,
   });
   const productionWorkflowStatePath = path.join(dirs.sources, "production_workflow_state.json");
   const productionTracePath = path.join(dirs.qa, "production_trace.json");
@@ -111,24 +122,44 @@ export async function createAutoRun({
     outPath: productionWorkflowStatePath,
     runId: path.basename(runDir),
   });
+  const naturalnessBaselinePath = productionProfile.id === "l1"
+    ? path.join(dirs.sources, "naturalness_baseline.json")
+    : path.join(REPO_ROOT, "config", "naturalness_benchmark_v2.json");
+  if (productionProfile.id === "l1") {
+    const { buildL1NaturalnessBaseline } = await import("./l1_naturalness_baseline.mjs");
+    await buildL1NaturalnessBaseline({
+      referenceDatasetPath: productionInputPacket.inputs.referenceWorkbook.path,
+      outPath: naturalnessBaselinePath,
+    });
+  }
   const diversityPlanPath = path.join(dirs.sources, "diversity_plan.json");
   const factLedgerPath = path.join(dirs.sources, "fact_ledger.json");
   const sceneCardPath = path.join(dirs.sources, "scene_cards.json");
   const roleConsistencyReportPath = path.join(dirs.feishu, "role_consistency_report.json");
   const { reserveProfilesForRun } = await import("./structure_gate.mjs");
+  const effectiveStructureRegistryPath = structureRegistryPath
+    ?? path.join(AUTO_RUNS_ROOT, productionProfile.id === "l1" ? "_structure_registry_l1.json" : "_structure_registry.json");
+  const effectiveStructuralDiversityPolicyPath = structuralDiversityPolicyPath
+    ?? productionProfile.structuralDiversityPolicyPath;
   const diversityPlan = await reserveProfilesForRun({
     runId: path.basename(runDir),
     count,
     outPath: diversityPlanPath,
-    registryPath: structureRegistryPath,
-    policyPath: structuralDiversityPolicyPath,
+    registryPath: effectiveStructureRegistryPath,
+    policyPath: effectiveStructuralDiversityPolicyPath,
     owner: path.basename(runDir),
   });
+  const productionModelProvider = normalizeProductionModelProvider();
+  const productionModel = productionModelProvider === THIRD_PARTY_MODEL_PROVIDER
+    ? process.env.THIRD_PARTY_MODEL || "runtime-required"
+    : process.env.CODEX_MODEL || process.env.OPENAI_MODEL || PRODUCTION_MODEL_DEFAULTS.model;
 
   const manifest = {
     runId: path.basename(runDir),
-    objective: objective || "L2 auto production",
+    objective: objective || productionProfile.defaultObjective,
     operator,
+    productionProfile: productionProfile.id,
+    taskType: productionProfile.taskType,
     generatedAnnotator: generatedIdentity.name,
     uidPrefix: generatedIdentity.uidPrefix,
     count,
@@ -138,9 +169,34 @@ export async function createAutoRun({
     sheetId,
     dirs,
     diversityPlanPath,
+    naturalnessBaselinePath,
     diversityPolicyId: diversityPlan.policyId,
     diversityPolicyVersion: diversityPlan.policyVersion,
+    structuralDiversityPolicyPath: path.resolve(effectiveStructuralDiversityPolicyPath),
+    structureRegistryPath: path.resolve(effectiveStructureRegistryPath),
+    modelRouting: {
+      generation: {
+        provider: productionModelProvider,
+        model: productionModel,
+        runnerId: "production-generation-v1-model-router",
+      },
+      qualityGates: {
+        provider: productionModelProvider,
+        model: productionModel,
+        runnerId: "exact-two-quality-gates-v3-model-router",
+      },
+      deAiRewrite: {
+        provider: "mugua-openai-compatible",
+        baseUrl: process.env.DE_AI_REWRITE_BASE_URL || MUGUA_DE_AI_REWRITE_DEFAULTS.baseUrl,
+        model: process.env.DE_AI_REWRITE_MODEL || MUGUA_DE_AI_REWRITE_DEFAULTS.model,
+        promptPath: process.env.DE_AI_REWRITE_PROMPT_PATH || MUGUA_DE_AI_REWRITE_DEFAULTS.promptPath,
+        promptHash: productionInputPacket.inputs.deAiRewritePrompt?.sha256 || "",
+      },
+      policy: "Generation and quality gates use the Codex model by default. Third-party model APIs require explicit provider selection. Only de-AI rewriting uses Mugua Gemini through its OpenAI-compatible API.",
+    },
     productionProtocol: {
+      profileId: productionProfile.id,
+      taskType: productionProfile.taskType,
       protocolId: productionInputPacket.protocolId,
       inputPacketPath: productionInputPacketPath,
       workflowStatePath: productionWorkflowStatePath,
@@ -153,7 +209,7 @@ export async function createAutoRun({
         questionHash: item.questionHash,
         attachmentSummaryHash: item.attachmentSummaryHash,
       })),
-      promptVersion: "sampled-two-gate-prompts-v1",
+      promptVersion: "profiled-sampled-two-gate-prompts-v2-domestic-work-scope",
       stages: ["reference-sample", "reference-breakdown", "attachment-plan", "question-draft", "first-quality-gate", "second-language-gate", "final-compiler"],
     },
     situatedGeneration: {
@@ -169,9 +225,9 @@ export async function createAutoRun({
     boundaries: {
       writableRoots: [runDir],
       sharedWritesRequireLocks: [
-        "outputs/l2_questions.tsv",
+        `outputs/${productionProfile.id}_questions.tsv`,
         "outputs/feishu_fill_plan_*.json",
-        "outputs/auto_runs/_structure_registry.json",
+        path.resolve(effectiveStructureRegistryPath),
         "Feishu sheet rows",
       ],
       noTouch: [
@@ -373,7 +429,8 @@ async function main(argv = process.argv.slice(2)) {
     count: args.count ? Number(args.count) : 2,
     spreadsheetToken: args.spreadsheetToken,
     sheetId: args.sheetId,
-    prefix: args.prefix || "l2",
+    profile: args.profile || "l1",
+    prefix: args.prefix || "",
   });
 }
 

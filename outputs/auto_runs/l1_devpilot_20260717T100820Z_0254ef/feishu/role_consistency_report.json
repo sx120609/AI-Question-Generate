@@ -1,0 +1,90 @@
+{
+  "kind": "scene-card-gate-report",
+  "gateId": "scene-card-role-consistency-v1",
+  "protocolId": "situated-requester-v1",
+  "schemaVersion": 1,
+  "status": "PASS",
+  "ok": true,
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_devpilot_20260717T100820Z_0254ef\\drafts\\l1_questions.tsv",
+  "candidateHash": "45b23defc64a088d39f98f698a8f8550ca46cf4089766270a64ba149cf7b5d0b",
+  "sceneCardPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_devpilot_20260717T100820Z_0254ef\\sources\\scene_cards.json",
+  "sceneCardFileHash": "0765e0ccf1d8a0a6afc534ed72464c2fdcd1211c57cc0fbde18d496536c179f5",
+  "sceneCardBundleHash": "12253e1b7366ddfcb9d1d52623e51d31c7587e46ebf9c98849c97c93f1b16af5",
+  "sceneCardSetHash": "c190d3189dfd65f2a2fa9ca0187a556150cc5f7cfd9783cb23d4f0848855fb23",
+  "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_devpilot_20260717T100820Z_0254ef\\sources\\fact_ledger.json",
+  "factLedgerHash": "7223558d7f7e33400cbb284ad435a68f29fea174106074f76d187b50867a0f03",
+  "summary": {
+    "candidateRowCount": 1,
+    "sceneCardCount": 1,
+    "passedRowCount": 1,
+    "failedRowCount": 0,
+    "globalErrorCount": 0,
+    "batchCollisionCount": 0
+  },
+  "rows": [
+    {
+      "uid": "沈礼_7.17_L1_01",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "cb7e1dcc9867785595627f45869c0e3e4c58f285ef152b74a91d2e82f82fb1b8",
+      "cardHash": "9411870085d1fc936b106f7b5002ec1811f9f66d774d27fc55c59e8178417473",
+      "roleConsistencyHash": "834e8d0515d4f25529c60a371eaa812b4bca1683979e02e44fd9547f615e67e4",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "work-order-制作",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "xlsx"
+        ],
+        "mFormats": [
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "我们计划将跨地区员工培训转为常态化直播，由于部分参训员工需要依赖实时字幕、屏幕阅读器或键盘操作，我们需要评估 Zoom、Microsoft Teams 和 Google Meet 这三个候选平台的无障碍支持情况。",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "",
+            "occurrences": 0
+          },
+          "downstreamUseSpan": {
+            "span": "请根据截至2026年7月17日可访问的官方产品文档与帮助页面，制作一份 Excel 对比表。",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [
+            "2026年7月17日"
+          ],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "5be9f7751569cc8d6429d63293b476674d478a95b8d50f5680443a2d4a70f104"
+      }
+    }
+  ],
+  "batch": {
+    "ok": true,
+    "status": "PASS",
+    "thresholds": {
+      "highMaskedTrigramSimilarity": 0.72,
+      "sharedMaskedFragmentLength": 18
+    },
+    "comparisons": [],
+    "errors": []
+  },
+  "errors": [],
+  "evaluationHash": "e3429408ebac2c7a1ee564157db92ba094a7c1d34983e78081ca1b9a2451ab51"
+}

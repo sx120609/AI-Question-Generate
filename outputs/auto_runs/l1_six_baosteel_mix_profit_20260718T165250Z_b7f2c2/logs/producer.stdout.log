@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "slug": "baosteel_mix_profit",
+  "runId": "l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2",
+  "recordUid": "沈礼_20260719_l1_baosteel_mix_profit_04",
+  "jobId": "l1-baosteel-mix-profit-20260719-04",
+  "finalQuestion": "请根据《宝山钢铁股份有限公司2026年第一季度报告.pdf》，帮我做一份关于宝钢股份2026年一季度产品结构与利润表现的PPT，准备在接下来的产品经营会议上用，用来讨论后续要补充哪些产品盈利和订单兑现的资料。\n\nPPT里需要给出一个明确的判断：“2+2+N”产品销量的提升以及出口接单的改善，到底能不能直接支撑整体盈利的好转。为了论证这一点，你需要对比一下营业收入、归母净利润和经营现金流的同比变动情况。同时，还要分别看看钢铁制造、加工配送这两个分部的毛利率，以及合计毛利率的同比增减，借此来分析分部毛利率对整体盈利改善构成了怎样的制约。在处理数据时，千万别把有内部抵消的分部收入直接加总，也别把报告里没明确披露的产品或出口利润贡献当成确定的归因。\n\n最后请交付一份可下载的演示稿，内容得涵盖产品和出口亮点、核心财务对比、分部毛利率、证据边界、待补数据和最终结论页。所有用到的数据都要标明报告页码、未经审计的状态和派生计算的口径，并且要严格区分哪些是已证实的事实、哪些是合理推断，还有哪些是需要进一步确认的事项。",
+  "attachmentSha256": "76b0d27c65fb55ba2cd3301f83e4448846de438d1575ea05e551fe0b829cb23d",
+  "firstQa": {
+    "pass": true,
+    "issues": []
+  },
+  "secondQa": "需语言小修",
+  "deAiPass": true,
+  "roleConsistency": "PASS",
+  "productionTrace": "PASS",
+  "release": "PASS",
+  "jobPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2\\doubao\\job.json",
+  "feishuWriteApplied": false
+}

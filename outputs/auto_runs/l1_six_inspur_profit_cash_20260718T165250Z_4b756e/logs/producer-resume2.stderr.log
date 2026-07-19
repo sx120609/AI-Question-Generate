@@ -1,0 +1,8 @@
+file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/build/automation/produce_l1_single_task.mjs:704
+    lastDeAiError = new Error(`Post de-AI audit rejected attempt ${attempt}: ${JSON.stringify(audit)}`);
+                    ^
+
+Error: Post de-AI audit rejected attempt 3: {"pass":false,"issues":[{"rule":"保留自然的真实请求者场景","evidence":"sourceQuestion中的“我作为经营质量复核专员，正在……复核”在outboundQuestion中被删除，仅保留了用途说明，未体现请求者本人正在负责或执行该项复核。","repair":"保留“我作为经营质量复核专员，正在复核……”或自然等价表述。"},{"rule":"保持附件核对范围和事实边界","evidence":"sourceQuestion明确要求“请核对第2至3页”，outboundQuestion仅称根据附件内容查核，遗漏了限定页码。","repair":"明确保留“核对第2至3页”的范围要求。"}],"factsPreserved":false,"attachmentsPreserved":true,"visibleTextClean":true}
+    at file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/build/automation/produce_l1_single_task.mjs:704:21
+
+Node.js v26.5.0

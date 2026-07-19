@@ -1,0 +1,41 @@
+{
+  "kind": "local-codex-stage-response",
+  "stage": "06_post_de_ai_preflight_targeted",
+  "model": "gpt-5.6-sol",
+  "provider": "local-codex-cli",
+  "completedAt": "2026-07-18T09:19:07.750Z",
+  "promptHash": "d3aa47c996e1765b6728409af2d5ac51698f1dfcc93e5f8c907ad667c9fdb9aa",
+  "parsed": {
+    "pass": false,
+    "issues": [
+      {
+        "rule": "必须保留交付物可下载属性",
+        "evidence": "sourceQuestion要求“生成一份可下载的Excel成交复核表”，outboundQuestion仅写“一份Excel成交复核表”。",
+        "repair": "明确恢复“可下载的Excel成交复核表”。"
+      },
+      {
+        "rule": "必须保留匿名编号禁止映射供应商的边界",
+        "evidence": "原文为“匿名编号不得映射到供应商”，出站文本仅称“匿名编号在得分表中维持原状”，未明确禁止映射。",
+        "repair": "明确写明匿名编号不得映射到供应商。"
+      },
+      {
+        "rule": "必须完整保留抽检建议的结论边界",
+        "evidence": "原文规定“不形成验收或履约结论”，出站文本仅保留“无履约结论”，遗漏验收结论边界。",
+        "repair": "恢复“不形成验收或履约结论”。"
+      },
+      {
+        "rule": "必须保留首轮一次性接收要求",
+        "evidence": "原文要求“首轮一次性接收并核验十份附件”，出站文本仅写“我来接收并核验十份附件”。",
+        "repair": "补回“首轮一次性”要求。"
+      },
+      {
+        "rule": "必须保留每个数值均可追溯至原件的要求",
+        "evidence": "原文要求“后续每个数值和判断都能回到原件”，出站文本仅要求“每个判断均注明出处”，未覆盖每个数值。",
+        "repair": "明确要求每个数值和判断均注明出处并可回溯至原件。"
+      }
+    ],
+    "factsPreserved": false,
+    "attachmentsPreserved": true,
+    "visibleTextClean": true
+  }
+}

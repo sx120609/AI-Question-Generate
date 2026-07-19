@@ -1,0 +1,429 @@
+{
+  "schemaVersion": 4,
+  "kind": "l1-production-workflow-state",
+  "productionProfile": "l1",
+  "taskType": "L1 探索型",
+  "protocolId": "l1-phase3-codex-model-two-gates-trace-v6",
+  "runId": "l1_sf_q1_reconciliation_20260718T122753Z_791280",
+  "runMode": "development-codex-session",
+  "packetRunId": "l1_sf_q1_reconciliation_20260718T122753Z_791280",
+  "qualityGatePromptHashes": {
+    "first-quality-gate": "93535a1acb9ac383852c526e8f31c797e89a77a0bf1e9ba8ed3e2a8b7c4bf620",
+    "second-language-gate": "e5265d1d76de85de6f3b9313e84e733cf77578bde2c0da63fb4118f770117680"
+  },
+  "createdAt": "2026-07-18T13:21:48.215Z",
+  "updatedAt": "2026-07-18T13:22:00.751Z",
+  "questions": [
+    {
+      "questionIndex": 1,
+      "state": "COMPLETE",
+      "referenceLocation": {
+        "sheet": "三期示例数据",
+        "row": 6
+      },
+      "referenceHashes": {
+        "question": "26881aecf3d872288f8d6ae297905f7d5f313c1c1061764180168053e27bb331",
+        "attachmentSummary": "92edc97cba246ff145a6c590c3cd8e32721cfd50e76da6cc3bebb6658223281f"
+      },
+      "firstQaFailureCount": 0,
+      "formatRequirement": null,
+      "revisionLog": [
+        {
+          "at": "2026-07-18T13:21:48.244Z",
+          "stage": "second-language-gate",
+          "conclusion": "需语言小修"
+        }
+      ],
+      "events": [
+        {
+          "at": "2026-07-18T13:21:48.215Z",
+          "type": "reference.sampled",
+          "sheet": "三期示例数据",
+          "row": 6
+        },
+        {
+          "at": "2026-07-18T13:21:48.220Z",
+          "type": "reference.breakdown.recorded"
+        },
+        {
+          "at": "2026-07-18T13:21:48.221Z",
+          "type": "attachments.recorded",
+          "count": 3
+        },
+        {
+          "at": "2026-07-18T13:21:48.233Z",
+          "type": "draft.recorded",
+          "reason": "initial"
+        },
+        {
+          "at": "2026-07-18T13:21:48.239Z",
+          "type": "first-qa.passed"
+        },
+        {
+          "at": "2026-07-18T13:21:48.244Z",
+          "type": "second-qa.second-qa-pass"
+        },
+        {
+          "at": "2026-07-18T13:22:00.750Z",
+          "type": "de-ai-rewrite.passed",
+          "policyId": "mugua-gemini-de-ai-rewrite-v2",
+          "selectedAttempt": 1
+        },
+        {
+          "at": "2026-07-18T13:22:00.751Z",
+          "type": "final.completed"
+        }
+      ],
+      "referenceBreakdown": {
+        "businessScene": "资源受限的中小型生产企业正在多个数字化改造候选项之间确定首期建设优先级，需要形成可供管理层决策的立项建议。",
+        "coreBlockage": "候选项的投入、实施约束、收益口径和证据成熟度不一致，部分效益依赖供应方预测或尚未补齐的基础条件，导致表面收益无法直接转化为可信且可落地的优先级判断。",
+        "mainTask": "依据统一的硬约束、量化效益和证据可信度标准评估全部候选项，并选择唯一一个优先实施项。",
+        "attachmentSupport": "附件提供原则性筛选框架和评测取证要求：前者用于确定效益导向、轻量实施和适配性等判断维度，后者用于审查数据来源、基线、测量方法及后续验证安排；附件不替代题面数据，也不直接给出选择结果。",
+        "deliverableOrigin": "该产物自然产生于数字化项目的立项与优先级评审环节：先完成准入核验、经济性测算和风险审查，再将可追溯的比较结果压缩为管理层可审批、实施团队可接续的决策材料。",
+        "imitableStructure": "可模仿“交代业务背景与共同资源边界—并列给出若干候选项的成本、周期、损失基线、预期改善和附加效益—引用附件建立原则与证据标准—先用硬条件排除不可行项—统一口径计算收益与回收指标—审查关键假设及缺口—作出唯一选择—用紧凑决策文档承载比较、理由、前置条件和验证清单”的推进方式。",
+        "forbiddenReuse": "不得复用精密加工行业、质量追溯/OEE/CRM等具体领域与方案对象，不得复用原有公司条件、人员配置、金额、周期、设备数量、损失额、改善比例、工时及人工单价，不得沿用所述指南附件、示例平台、原句表达，也不得照搬“一页特定文档+固定数量理由和条件”的产物组合。",
+        "referenceAttachmentStructure": "采用“双层支撑材料”结构：一类给出业务决策原则和项目适配导向，另一类规定成熟度或成效评测所需的证据、基线与采集要求；概括只说明各自功能及其与判断步骤的对应关系。",
+        "referenceProductParagraphLogic": "原题后半段先要求把附件原则嵌入约束核验、经济性测算和假设审查，再收束为唯一决策；随后明确材料面向审批或决策使用者，指定便于快速审阅的紧凑格式，并列出必须呈现的比较依据、结论、论证、实施门槛与验证缺口，从而同时界定交付范围和验收标准。"
+      },
+      "updatedAt": "2026-07-18T13:22:00.751Z",
+      "attachmentPlan": {
+        "mainDecision": "建立带公式和来源页码的季度收入口径核对表，确认经营简报分项与累计值能够回算，并把与一季报总营业收入的差额保持为口径桥接项而非直接归因。",
+        "attachments": [
+          {
+            "name": "顺丰控股2026年2月快递物流业务经营简报.pdf",
+            "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-03-20/1225018701.PDF",
+            "format": "pdf",
+            "classification": "specific-business",
+            "objectLevel": true,
+            "timeAnchor": "2026年2月及2026年1至2月累计",
+            "specificityEvidence": {
+              "object": "顺丰控股股份有限公司证券代码002352",
+              "periodOrEvent": "2026年2月及2026年1至2月累计",
+              "uniqueContent": "2026年2月单月与1至2月累计的速运物流、供应链及国际业务收入和业务量，以及数据未经审计且不含其他非物流业务收入的边界"
+            },
+            "summary": "2026年2月单月与1至2月累计的速运物流、供应链及国际业务收入和业务量，以及数据未经审计且不含其他非物流业务收入的边界",
+            "localPath": "顺丰控股2026年2月快递物流业务经营简报.pdf",
+            "sha256": "b6d498ec52aea25bf45329c3890bdc26270e498eaf5a4d8088c7d63dc7756fff",
+            "bytes": 98758,
+            "sizeBytes": 98758,
+            "introductionHint": "首轮随任务一次上传，后续所有核对继续引用同一批已验证原件。"
+          },
+          {
+            "name": "顺丰控股2026年3月快递物流业务经营简报.pdf",
+            "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-18/1225117549.PDF",
+            "format": "pdf",
+            "classification": "specific-business",
+            "objectLevel": true,
+            "timeAnchor": "2026年3月",
+            "specificityEvidence": {
+              "object": "顺丰控股股份有限公司证券代码002352",
+              "periodOrEvent": "2026年3月",
+              "uniqueContent": "2026年3月单月的速运物流、供应链及国际业务收入、业务量和单票收入，以及数据未经审计且不含其他非物流业务收入的边界"
+            },
+            "summary": "2026年3月单月的速运物流、供应链及国际业务收入、业务量和单票收入，以及数据未经审计且不含其他非物流业务收入的边界",
+            "localPath": "顺丰控股2026年3月快递物流业务经营简报.pdf",
+            "sha256": "aa21dd7d0f298800d5962078776289649f2992be6458c06a632d498624279260",
+            "bytes": 96891,
+            "sizeBytes": 96891,
+            "introductionHint": "首轮随任务一次上传，后续所有核对继续引用同一批已验证原件。"
+          },
+          {
+            "name": "顺丰控股2026年第一季度报告.pdf",
+            "sourceUrl": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-04-29/7883bdc1-3a59-4fd9-8e05-707bf938cc0f.PDF",
+            "format": "pdf",
+            "classification": "specific-business",
+            "objectLevel": true,
+            "timeAnchor": "2026年1月1日至2026年3月31日",
+            "specificityEvidence": {
+              "object": "顺丰控股股份有限公司证券代码002352",
+              "periodOrEvent": "2026年1月1日至2026年3月31日",
+              "uniqueContent": "2026年第一季度和上年同期营业收入、净利润、经营现金流等主要会计数据，并明确季度报告未经审计"
+            },
+            "summary": "2026年第一季度和上年同期营业收入、净利润、经营现金流等主要会计数据，并明确季度报告未经审计",
+            "localPath": "顺丰控股2026年第一季度报告.pdf",
+            "sha256": "72a07309388abcdce1aad7f33307c1693446a04cd435fbb2e656ba582f8ef5e2",
+            "bytes": 319909,
+            "sizeBytes": 319909,
+            "introductionHint": "首轮随任务一次上传，后续所有核对继续引用同一批已验证原件。"
+          }
+        ],
+        "specificBusinessShareRationale": "三份材料都绑定顺丰控股证券代码002352和2026年一季度具体披露期，具体业务材料占比为100%。",
+        "timeSeriesRationale": "2月简报提供1至2月累计，3月简报提供单月，一季报提供季度总营业收入，可形成同一对象跨披露期和跨单位的时间序列桥接。",
+        "objectSupportInQuestion": "题面明确顺丰控股、2026年一季度、三份具体披露和经营数据复核用途。",
+        "newAttachmentSupport": "2月简报支撑累计值，3月简报补齐季度末单月，一季报提供总营业收入与报告期定义。",
+        "newQuestionStructureMapping": "沿用样例的真实工作卡点、证据核验和下游交付逻辑，改为先确认材料与来源底表，再依据真实回复逐轮推进季度桥接、差额边界和工作簿交付。"
+      },
+      "draft": {
+        "question": "请核对《顺丰控股2026年2月快递物流业务经营简报》《顺丰控股2026年3月快递物流业务经营简报》和《顺丰控股2026年第一季度报告》，判断它们能否组成2026年一季度的数据来源链。重点确认1至2月累计与3月单月的期间衔接，并说明经营简报排除其他非物流业务收入而一季报列示总营业收入造成的边界差异，同时处理亿元两位小数与千元披露的精度以及指标可比性。请你附带整理来源底表，记录未经审计状态和来源页码，无法直接对应的项目标为待核，最终用于生成可下载的Excel口径核对表。",
+        "mainTask": "判断三份披露材料能否构成顺丰控股2026年一季度可追溯且口径边界清晰的数据来源链。",
+        "usedFactIds": [
+          "fact-jan-feb-cumulative",
+          "fact-feb-boundary",
+          "fact-march-month",
+          "fact-march-boundary",
+          "fact-q1-revenue",
+          "fact-q1-boundary"
+        ],
+        "usedAttachmentNames": [
+          "顺丰控股2026年2月快递物流业务经营简报.pdf",
+          "顺丰控股2026年3月快递物流业务经营简报.pdf",
+          "顺丰控股2026年第一季度报告.pdf"
+        ],
+        "productFormats": "xlsx",
+        "deliverableRationale": [
+          {
+            "format": "xlsx",
+            "user": "经营数据复核同事",
+            "purpose": "复核季度数据口径并为取得分部或科目明细后继续回填",
+            "whyThisFormat": "Excel适合承载跨期间和跨单位的来源记录、口径状态及后续公式核验，并可直接下载续用。"
+          }
+        ],
+        "structureMapping": "沿用真实业务卡点、证据核验和下游交付的推进结构，改为围绕季度披露材料判断来源链是否成立，不复用原候选项目评估的领域和内容。",
+        "productParagraphMapping": "后半段先收束期间衔接、收入边界、精度与可比性判断，再把来源底表作为直接支撑产物，并明确待核状态和最终Excel用途。"
+      },
+      "preQaStructureAudit": {
+        "oneSentenceMainTask": "判断三份顺丰控股2026年一季度披露材料能否形成期间连续、边界清晰且可追溯的数据来源链，并以来源底表附带留痕。",
+        "uniqueMainTask": true,
+        "specificObjectDecision": true,
+        "specificFilesDominant": true,
+        "evidenceChain": "证据链以顺丰控股（证券代码002352）为唯一对象：2月经营简报提供2026年1至2月累计及其非物流业务排除边界，3月经营简报补充3月单月数据及相同边界，一季报提供1月1日至3月31日总营业收入和未经审计状态；据此先核验期间衔接，再桥接经营业务收入与总营业收入的范围差异，并结合披露单位、精度、指标定义和页码形成可追溯结论。三份附件均为对象级具体业务材料，占比100%，但对象级证据是否最终完整仍需以附件正文中的指标定义、单位和页码逐项核验。",
+        "l2ReasoningChain": "从三份真实附件抽取对象、报告期、收入指标、范围声明、计量单位和审计状态，验证“1至2月累计+3月单月”是否覆盖第一季度；随后比较经营简报分项口径与一季报总营业收入口径，将无法直接对应的差额保留为待核桥接项，不作无证据归因；再评估亿元两位小数与千元披露带来的舍入误差及指标可比性，最终判断来源链是否成立，并将结论、来源页码和待核项写入附带底表。该链条包含来源、差异、冲突、计算口径和业务判断，未在首轮倾倒数字清单或未来流程。",
+        "variableDrift": [
+          "附件数量为3个，虽处于L1允许的1—3个范围内，但未采用优先的1—2个核心文件；三份材料对季度来源链判断均有直接作用，属于可解释的上限使用。",
+          "题面主诉求是判断数据来源链是否成立，Excel底表属于直接支撑交付；若后续把工作重心转成表格生成、增删列或格式处理，则会从业务判断漂移为文件操作。",
+          "参考结构来自数字化项目优先级决策，而候选题已切换为财务披露来源链核验；当前仅沿用证据核验与交付收束结构，未见业务对象或结论口径向参考领域回漂。"
+        ]
+      },
+      "firstQaFullResult": {
+        "pass": true,
+        "issues": [],
+        "execution": {
+          "runnerId": "exact-two-quality-gates-v2-codex-session",
+          "provider": "codex-session",
+          "model": "gpt-5.6-sol",
+          "sourcePromptHash": "93535a1acb9ac383852c526e8f31c797e89a77a0bf1e9ba8ed3e2a8b7c4bf620",
+          "renderedPromptHash": "34b28bd2ca53f535ea608d0a1cebd6bd6bab476910e2baae7ab059e40f73cebc",
+          "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\qa\\01_first_quality_gate_raw.json",
+          "rawResponseHash": "393f82d0148c2ddb8c3d4a65d4dbe94aa146de39135e3593f4620c4664d35bcb",
+          "completedAt": "2026-07-18T13:21:48.237Z"
+        }
+      },
+      "firstQaAttempts": [
+        {
+          "at": "2026-07-18T13:21:48.239Z",
+          "result": {
+            "pass": true,
+            "issues": [],
+            "execution": {
+              "runnerId": "exact-two-quality-gates-v2-codex-session",
+              "provider": "codex-session",
+              "model": "gpt-5.6-sol",
+              "sourcePromptHash": "93535a1acb9ac383852c526e8f31c797e89a77a0bf1e9ba8ed3e2a8b7c4bf620",
+              "renderedPromptHash": "34b28bd2ca53f535ea608d0a1cebd6bd6bab476910e2baae7ab059e40f73cebc",
+              "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\qa\\01_first_quality_gate_raw.json",
+              "rawResponseHash": "393f82d0148c2ddb8c3d4a65d4dbe94aa146de39135e3593f4620c4664d35bcb",
+              "completedAt": "2026-07-18T13:21:48.237Z"
+            }
+          }
+        }
+      ],
+      "secondQaFullResult": {
+        "conclusion": "需语言小修",
+        "coreJudgment": "题面任务与证据边界清楚，但末句信息较密且“附带整理”略显生硬，可通过拆句和调整衔接改善表达。",
+        "modifications": "将精度处理与指标可比性核对分开表述，并把来源底表的状态记录、页码记录和待核要求拆分为更自然的句子，未改变附件、任务或产物。",
+        "modifiedQuestion": "请核对《顺丰控股2026年2月快递物流业务经营简报》《顺丰控股2026年3月快递物流业务经营简报》和《顺丰控股2026年第一季度报告》，判断这三份附件能否组成2026年一季度的数据来源链。重点确认1至2月累计与3月单月的期间衔接，并说明经营简报排除其他非物流业务收入而一季报列示总营业收入造成的边界差异。请同时处理亿元两位小数与千元披露的精度差异，并核对指标可比性。请你一并整理当前材料的来源底表，记录未经审计状态和来源页码。无法直接对应的项目标为待核，最终用于生成可下载的Excel口径核对表。",
+        "punctuationAudit": "标点自然，书名号成对，每句话均未使用超过一个顿号，也未为指标强行添加内容。",
+        "remainingNote": "后续应依据三份附件核对来源链和口径边界，未经审计内容须保留状态，无法直接对应的项目不得改写为确定结论。",
+        "execution": {
+          "runnerId": "exact-two-quality-gates-v2-codex-session",
+          "provider": "codex-session",
+          "model": "gpt-5.6-sol",
+          "sourcePromptHash": "e5265d1d76de85de6f3b9313e84e733cf77578bde2c0da63fb4118f770117680",
+          "renderedPromptHash": "983023706a01257faa0ae923b0eedb8a24c758109178bd87c5b25f695c3eb633",
+          "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\qa\\01_second_language_gate_raw.json",
+          "rawResponseHash": "b15d8c38c625a8424c9a45f50e50b3e7b49e79c7879e7c8cc454a3ba5510be41",
+          "completedAt": "2026-07-18T13:21:48.242Z"
+        }
+      },
+      "secondQaAttempts": [
+        {
+          "at": "2026-07-18T13:21:48.244Z",
+          "result": {
+            "conclusion": "需语言小修",
+            "coreJudgment": "题面任务与证据边界清楚，但末句信息较密且“附带整理”略显生硬，可通过拆句和调整衔接改善表达。",
+            "modifications": "将精度处理与指标可比性核对分开表述，并把来源底表的状态记录、页码记录和待核要求拆分为更自然的句子，未改变附件、任务或产物。",
+            "modifiedQuestion": "请核对《顺丰控股2026年2月快递物流业务经营简报》《顺丰控股2026年3月快递物流业务经营简报》和《顺丰控股2026年第一季度报告》，判断这三份附件能否组成2026年一季度的数据来源链。重点确认1至2月累计与3月单月的期间衔接，并说明经营简报排除其他非物流业务收入而一季报列示总营业收入造成的边界差异。请同时处理亿元两位小数与千元披露的精度差异，并核对指标可比性。请你一并整理当前材料的来源底表，记录未经审计状态和来源页码。无法直接对应的项目标为待核，最终用于生成可下载的Excel口径核对表。",
+            "punctuationAudit": "标点自然，书名号成对，每句话均未使用超过一个顿号，也未为指标强行添加内容。",
+            "remainingNote": "后续应依据三份附件核对来源链和口径边界，未经审计内容须保留状态，无法直接对应的项目不得改写为确定结论。",
+            "execution": {
+              "runnerId": "exact-two-quality-gates-v2-codex-session",
+              "provider": "codex-session",
+              "model": "gpt-5.6-sol",
+              "sourcePromptHash": "e5265d1d76de85de6f3b9313e84e733cf77578bde2c0da63fb4118f770117680",
+              "renderedPromptHash": "983023706a01257faa0ae923b0eedb8a24c758109178bd87c5b25f695c3eb633",
+              "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\qa\\01_second_language_gate_raw.json",
+              "rawResponseHash": "b15d8c38c625a8424c9a45f50e50b3e7b49e79c7879e7c8cc454a3ba5510be41",
+              "completedAt": "2026-07-18T13:21:48.242Z"
+            }
+          }
+        }
+      ],
+      "deAiRewrite": {
+        "kind": "de-ai-question-rewrite",
+        "policyId": "mugua-gemini-de-ai-rewrite-v2",
+        "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+        "generatedAt": "2026-07-18T13:20:09.852Z",
+        "provider": "mugua-openai-compatible",
+        "endpoint": "https://api.mugua.link/v1/chat/completions",
+        "model": "gemini-3.1-pro-preview",
+        "finishReason": "stop",
+        "usage": {
+          "inputTokens": 2066,
+          "outputTokens": 2002,
+          "totalTokens": 4068
+        },
+        "promptHash": "e23be7daacbe627947dd1c7d1d19e0ad742ded600b62adfac5528f6792d62751",
+        "sourceQuestionHash": "debd0596becda26e38bd799747e7114fd43f565bc7b459853fa8d19a36e2bf4e",
+        "rewrittenQuestionHash": "a3b65b1ebdd503d567013ca1fc84baa361e945bad3d230d21edb4bc680a0ae3e",
+        "selectedAttempt": 1,
+        "attempts": [
+          {
+            "attempt": 1,
+            "pass": true,
+            "findingRules": []
+          }
+        ],
+        "rewrite": {
+          "question": "刚传了顺丰控股2026年第一季度报告以及同年2月与3月的快递物流业务经营简报。需要看看这三份材料能否拼出完整的一季度数据来源链。请理清1至2月累计数据和3月单月数据之间的衔接关系。同时核验经营简报里的物流相关收入与一季报总营业收入在披露范围上的差异。无法直接对应的差额留待后续通过公司分部或科目资料确认，归因栏保持留空。针对以千元披露与以亿元保留两位小数造成的单位及精度差异进行处理，并评估各项指标的可比性。各项指标需标注具体来源页码以及未经审计的财务状态。无法直接对应的项目在表内保持待核状态。请再基于前述核对结果整理一份可下载的Excel口径核对表，按xlsx格式交付并作为结论底表。",
+          "requestContract": {
+            "requestSpan": "请再基于前述核对结果整理一份可下载的Excel口径核对表，按xlsx格式交付并作为结论底表。",
+            "action": "整理",
+            "outputs": [
+              {
+                "format": "xlsx",
+                "humanName": "Excel",
+                "purpose": "供后续执行和留痕使用"
+              }
+            ]
+          },
+          "roleTrace": {
+            "blockageSpan": "无法直接对应的差额留待后续通过公司分部或科目资料确认，归因栏保持留空。",
+            "motivationSpan": "",
+            "downstreamUseSpan": "请再基于前述核对结果整理一份可下载的Excel口径核对表，按xlsx格式交付并作为结论底表。"
+          },
+          "usedFactIds": [
+            "fact-feb-month",
+            "fact-jan-feb-cumulative",
+            "fact-feb-boundary",
+            "fact-march-month",
+            "fact-march-boundary",
+            "fact-q1-revenue",
+            "fact-q1-boundary",
+            "fact-quarter-bridge",
+            "fact-subtotal-checks",
+            "fact-unit-price-checks"
+          ],
+          "deliberatelyOmitted": [],
+          "flowStages": [
+            {
+              "stage": "证据归位",
+              "evidence": "事实包中的公开材料与待补信息",
+              "decision": "区分可确认规则和未知现场状态",
+              "next": "证据足够则形成执行对象，不足则进入补证"
+            },
+            {
+              "stage": "执行对象核对",
+              "evidence": "已归位的对象关系与状态记录",
+              "decision": "建立带公式和来源页码的季度收入口径核对表，确认经营简报分项与累计值能够回算，并把与一季报总营业收入的差额保持为口径桥接项而非直接归因。",
+              "next": "符合条件则进入小范围验证，否则停止推进"
+            },
+            {
+              "stage": "小范围验证",
+              "evidence": "试点输入与实际返回记录",
+              "decision": "判断结果是否满足扩大范围的条件",
+              "next": "通过则推进，失败则退回原状态并留痕"
+            },
+            {
+              "stage": "交接收束",
+              "evidence": "判断依据、验证结果与回退记录",
+              "decision": "确认下游拿到一致结论",
+              "next": "复核季度数据口径并为后续取得分部或科目明细后继续回填。"
+            }
+          ],
+          "selfAudit": {
+            "factsPreserved": true,
+            "formatsPreserved": true,
+            "processChainExplicit": true,
+            "failureOrRollbackExplicit": true,
+            "noInventedFacts": true,
+            "noAiShell": true
+          }
+        },
+        "validation": {
+          "pass": true,
+          "visibleLength": 294,
+          "similarity": [
+            {
+              "referenceIndex": 1,
+              "editSimilarity": 0.26241134751773054,
+              "trigramJaccard": 0.16831683168316833,
+              "longestExactCopyRun": 15,
+              "longestExactCopySpan": "顺丰控股2026年第一季度报告"
+            },
+            {
+              "referenceIndex": 2,
+              "editSimilarity": 0.04385964912280704,
+              "trigramJaccard": 0,
+              "longestExactCopyRun": 2,
+              "longestExactCopySpan": "20"
+            }
+          ],
+          "findings": [],
+          "factGuard": {
+            "ok": true,
+            "candidateAnchors": {
+              "numbers": [
+                "2026年",
+                "2月",
+                "3月",
+                "1"
+              ],
+              "quotedClaims": [],
+              "timeMarkers": []
+            },
+            "unsupported": {
+              "numbers": [],
+              "quotedClaims": [],
+              "timeMarkers": []
+            },
+            "errors": []
+          }
+        },
+        "targetedRepair": {
+          "reason": "request_span_not_direct_request",
+          "provider": "mugua-openai-compatible",
+          "promptHash": "e23be7daacbe627947dd1c7d1d19e0ad742ded600b62adfac5528f6792d62751"
+        }
+      },
+      "recordUid": "沈礼_20260718_sf_q1_reconciliation_01",
+      "finalRecord": {
+        "UID": "沈礼_20260718_sf_q1_reconciliation_01",
+        "题目": "刚传了顺丰控股2026年第一季度报告以及同年2月与3月的快递物流业务经营简报。需要看看这三份材料能否拼出完整的一季度数据来源链。请理清1至2月累计数据和3月单月数据之间的衔接关系。同时核验经营简报里的物流相关收入与一季报总营业收入在披露范围上的差异。无法直接对应的差额留待后续通过公司分部或科目资料确认，归因栏保持留空。针对以千元披露与以亿元保留两位小数造成的单位及精度差异进行处理，并评估各项指标的可比性。各项指标需标注具体来源页码以及未经审计的财务状态。无法直接对应的项目在表内保持待核状态。请再基于前述核对结果整理一份可下载的Excel口径核对表，按xlsx格式交付并作为结论底表。",
+        "任务类型": "L1 探索型",
+        "一级目录": "商业与市场分析",
+        "二级目录": "经营数据复核",
+        "三级目录": "物流月报与季报收入口径差异",
+        "任务概括": "顺丰控股2026年一季度经营简报与季报营业收入口径复核",
+        "标注专家工作年限": "5年",
+        "人类完成时间": "4H",
+        "相关附件": "顺丰控股2026年2月快递物流业务经营简报.pdf、顺丰控股2026年3月快递物流业务经营简报.pdf、顺丰控股2026年第一季度报告.pdf",
+        "附件格式": "pdf",
+        "附件内容": "顺丰控股2026年2月快递物流业务经营简报.pdf：2026年2月单月与1至2月累计的速运物流、供应链及国际业务收入和业务量，以及数据未经审计且不含其他非物流业务收入的边界\n顺丰控股2026年3月快递物流业务经营简报.pdf：2026年3月单月的速运物流、供应链及国际业务收入、业务量和单票收入，以及数据未经审计且不含其他非物流业务收入的边界\n顺丰控股2026年第一季度报告.pdf：2026年第一季度和上年同期营业收入、净利润、经营现金流等主要会计数据，并明确季度报告未经审计",
+        "产物格式": "xlsx",
+        "产物内容": "一份可下载的顺丰控股2026年一季度经营数据口径核对Excel，包含来源底表、统一单位后的月度与累计数据、分项回算、单票收入回算、季报桥接差额、证据边界、待确认项和来源索引。",
+        "做题关键步骤": "1. 核验三份官方披露文件的公司、报告期、公告编号、页码和审计状态。\n2. 建立1至2月累计、3月单月和一季报总营业收入的来源底表并统一单位。\n3. 回算速运物流与供应链及国际业务分项合计，核对经营简报累计值。\n4. 用收入和业务量回算单票收入，保留原披露精度与公式。\n5. 将经营简报季度累计与一季报营业收入桥接，分别复核本期和上年同期差额。\n6. 把可证事实、合理推断和待确认明细分栏，生成带公式及来源索引的可下载Excel。",
+        "标注专家姓名": "沈礼"
+      }
+    }
+  ]
+}

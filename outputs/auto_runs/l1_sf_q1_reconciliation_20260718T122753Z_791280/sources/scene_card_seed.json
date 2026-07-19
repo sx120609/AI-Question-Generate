@@ -1,0 +1,169 @@
+{
+  "topic": {
+    "topicId": "sf-2026q1-logistics-revenue-reconciliation",
+    "title": "顺丰控股2026年一季度月度经营简报与季报营业收入口径复核",
+    "primaryCategory": "商业与市场分析",
+    "secondaryCategory": "经营数据复核",
+    "tertiaryCategory": "物流月报与季报收入口径差异",
+    "businessScenario": "数据复核同事需要把顺丰控股2026年2月和3月经营简报与一季报统一单位并解释物流口径与营业总收入口径差异",
+    "mainDecision": "确认月度经营简报累计值如何与一季报营业收入衔接，并把可证差额与待确认口径分开",
+    "role": "经营数据复核专员",
+    "artifactSummary": "带公式和来源索引的季度收入口径核对表",
+    "artifactFormats": "xlsx",
+    "attachmentSummary": "顺丰控股2026年2月经营简报、3月经营简报和第一季度报告",
+    "keywords": [
+      "顺丰控股",
+      "经营简报",
+      "一季报",
+      "物流收入",
+      "营业收入",
+      "口径差异",
+      "时间序列"
+    ]
+  },
+  "sceneCard": {
+    "schemaVersion": 1,
+    "policyId": "situated-requester-v1",
+    "topicId": "sf-2026q1-logistics-revenue-reconciliation",
+    "personaId": "sf-quarterly-data-reviewer-01",
+    "requester": {
+      "functionalRole": "经营数据复核专员",
+      "organizationType": "企业数据研究团队",
+      "department": "",
+      "responsibility": "把公开经营简报和定期报告整理成可追溯的季度口径核对底表",
+      "authorityBoundary": "只负责复核公开披露的算术与口径，无权确认差额对应的具体业务明细，该明细以公司后续披露为准",
+      "recipientRelation": "把核对表交给经营数据复核同事继续使用"
+    },
+    "scene": {
+      "workflowStage": "2026年一季度经营数据口径复核",
+      "trigger": "2026年第一季度报告把报告期定义为2026年1月1日至3月31日，披露营业收入74142121千元，上年同期69849924千元，同比增长6.14%。",
+      "currentBlockage": "三份附件没有披露一季报营业收入与经营简报物流相关收入差额对应的其他非物流业务明细，差额只能登记为待公司分部或科目资料确认。",
+      "mainDecision": "建立带公式和来源页码的季度收入口径核对表，确认经营简报分项与累计值能够回算，并把与一季报总营业收入的差额保持为口径桥接项而非直接归因。",
+      "downstreamUse": "复核季度数据口径并为后续取得分部或科目明细后继续回填。"
+    },
+    "informationBoundary": {
+      "knownFactIds": [
+        "fact-feb-month",
+        "fact-jan-feb-cumulative",
+        "fact-feb-boundary",
+        "fact-march-month",
+        "fact-march-boundary",
+        "fact-q1-revenue",
+        "fact-q1-boundary",
+        "fact-quarter-bridge",
+        "fact-subtotal-checks",
+        "fact-unit-price-checks"
+      ],
+      "availableMaterialIds": [
+        "material-feb-brief",
+        "material-mar-brief",
+        "material-q1-report"
+      ],
+      "unknowns": [
+        "三份附件没有披露一季报营业收入与经营简报物流相关收入差额对应的其他非物流业务明细，差额只能登记为待公司分部或科目资料确认。",
+        "经营简报以亿元保留两位小数，一季报以千元披露，跨表差额同时包含业务口径差异和月报四舍五入影响，附件无法拆分两者的精确贡献。",
+        "三份附件均为未经审计披露，后续审计报告或年度报告可能提供不同精度或进一步分类。"
+      ],
+      "forbiddenInferences": [
+        "13.76121亿元差额不得直接归因到某个业务板块",
+        "不得把差额直接表述为其他非物流业务收入，也不得从一季报营业收入中直接剔除",
+        "以千元披露与以亿元保留两位小数属于披露单位和精度差异，不得改写成记账习惯",
+        "未经审计数据不得描述为审计确认值",
+        "经营简报亿元两位小数与季报千元精度差异不得忽略"
+      ]
+    },
+    "voice": {
+      "channel": "内部数据复核消息",
+      "formality": "直接、克制、以证据和可继续回填为导向",
+      "domainVocabulary": [
+        "经营简报",
+        "一季报",
+        "营业收入",
+        "口径",
+        "累计",
+        "单票收入",
+        "来源页码"
+      ],
+      "avoidVocabulary": [
+        "全链路",
+        "闭环",
+        "赋能",
+        "深度洞察",
+        "记账习惯",
+        "剔除出去",
+        "麻烦",
+        "劳烦",
+        "烦请",
+        "辛苦"
+      ]
+    },
+    "maskTerms": [
+      "顺丰控股",
+      "经营简报",
+      "一季报",
+      "物流收入",
+      "口径复核"
+    ],
+    "evidenceBindings": [
+      {
+        "claim": "2026年第一季度报告把报告期定义为2026年1月1日至3月31日，披露营业收入74142121千元，上年同期69849924千元，同比增长6.14%。",
+        "factIds": [
+          "fact-q1-revenue"
+        ]
+      },
+      {
+        "claim": "三份附件没有披露一季报营业收入与经营简报物流相关收入差额对应的其他非物流业务明细，差额只能登记为待公司分部或科目资料确认。",
+        "factIds": [
+          "fact-q1-revenue",
+          "fact-quarter-bridge"
+        ]
+      },
+      {
+        "claim": "建立带公式和来源页码的季度收入口径核对表，确认经营简报分项与累计值能够回算，并把与一季报总营业收入的差额保持为口径桥接项而非直接归因。",
+        "factIds": [
+          "fact-quarter-bridge",
+          "fact-subtotal-checks",
+          "fact-q1-boundary"
+        ]
+      }
+    ]
+  },
+  "sourceCards": {
+    "schemaVersion": 1,
+    "kind": "source-card-bundle",
+    "runId": "l1_sf_q1_reconciliation_20260718T122753Z_791280",
+    "recordUid": "沈礼_20260718_sf_q1_reconciliation_01",
+    "sources": [
+      {
+        "materialId": "material-feb-brief",
+        "title": "顺丰控股2026年2月快递物流业务经营简报",
+        "publisher": "巨潮资讯网",
+        "publishedAt": "2026-03-20",
+        "accessedAt": "2026-07-18",
+        "path": "attachments/顺丰控股2026年2月快递物流业务经营简报.pdf",
+        "supports": "2026年2月单月与1至2月累计的速运物流、供应链及国际业务收入和业务量，以及数据未经审计且不含其他非物流业务收入的边界",
+        "boundary": "经营简报收入排除其他非物流业务，数据未经审计且以定期报告为准"
+      },
+      {
+        "materialId": "material-mar-brief",
+        "title": "顺丰控股2026年3月快递物流业务经营简报",
+        "publisher": "巨潮资讯网",
+        "publishedAt": "2026-04-18",
+        "accessedAt": "2026-07-18",
+        "path": "attachments/顺丰控股2026年3月快递物流业务经营简报.pdf",
+        "supports": "2026年3月单月的速运物流、供应链及国际业务收入、业务量和单票收入，以及数据未经审计且不含其他非物流业务收入的边界",
+        "boundary": "经营简报收入排除其他非物流业务，数据未经审计且以定期报告为准"
+      },
+      {
+        "materialId": "material-q1-report",
+        "title": "顺丰控股2026年第一季度报告",
+        "publisher": "深圳证券交易所信息披露平台",
+        "publishedAt": "2026-04-29",
+        "accessedAt": "2026-07-18",
+        "path": "attachments/顺丰控股2026年第一季度报告.pdf",
+        "supports": "2026年第一季度和上年同期营业收入、净利润、经营现金流等主要会计数据，并明确季度报告未经审计",
+        "boundary": "总营业收入未拆出其他非物流业务明细，报告未经审计"
+      }
+    ]
+  }
+}

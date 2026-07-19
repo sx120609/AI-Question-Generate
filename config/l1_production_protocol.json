@@ -1,0 +1,90 @@
+{
+  "version": 6,
+  "profileId": "l1",
+  "protocolId": "l1-phase3-codex-model-two-gates-trace-v6",
+  "enabled": true,
+  "contentScope": {
+    "policyVersion": "domestic-work-scope-v1",
+    "defaultAudience": "domestic-users",
+    "foreignPlatforms": "blocked",
+    "domesticSensitiveTopics": "blocked",
+    "everyInteractionMustAdvanceWork": true,
+    "calculationMinimumComplexityDimensions": 2,
+    "simpleArithmetic": "blocked"
+  },
+  "interactionShape": {
+    "mainRequestsPerRound": 1,
+    "maximumDirectSubRequestsPerRound": 1,
+    "deferFutureBranchesUntilObservedResponse": true,
+    "futureRiskAndRollbackEnumeration": "blocked",
+    "numericInventoryInVisiblePrompt": "blocked",
+    "substantiveReasoningRequiredPerRound": true,
+    "mechanicalDeliveryActions": "supporting-only"
+  },
+  "attachments": {
+    "inherits": "l2-current-hard-standard",
+    "minimum": 1,
+    "recommendedMaximum": 2,
+    "maximum": 3,
+    "minimumSpecificBusinessShare": 0.8,
+    "requireSpecificObjectEvidence": true,
+    "publicSourcesOnly": "blocked"
+  },
+  "sourceDerivation": {
+    "sourceFirst": true,
+    "topicMustBeExtractedFromAttachmentContent": true,
+    "titleOrIndustrySimilarityIsInsufficient": true,
+    "inventedBusinessContext": "blocked",
+    "level1Category": "feishu-dropdown-options-only"
+  },
+  "inputs": {
+    "requirementsPreferred": "docs/rules/02-垂域高难度题目生产-二期要求.md",
+    "requirementsRemoteSource": "https://ycnni67pjhck.feishu.cn/wiki/SnN9w3OP6i4OFkkUt7zcTbFTnYF",
+    "referenceDataset": "inputs/production/l1_phase3_reference_examples.json",
+    "referenceRemoteSource": "https://ycnni67pjhck.feishu.cn/wiki/LpjWwH0m9iAxxMkA1vIcDhaInoh?sheet=YhA0Ad",
+    "firstQaPrompt": "inputs/production/L1题面第一道质检提示词.txt",
+    "secondQaPrompt": "inputs/production/L1题面第二道质检提示词.txt",
+    "deAiPrompt": "inputs/production/L1题面去AI改写提示词.txt"
+  },
+  "sampling": {
+    "oneReferencePerQuestion": true,
+    "useOnlyConfiguredFields": true,
+    "withoutReplacementWithinBatch": true,
+    "excludeRejectedExamples": true
+  },
+  "modelRouting": {
+    "generation": {
+      "provider": "codex-model",
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "high",
+      "runner": "build/automation/production_generation_runner.mjs"
+    },
+    "qualityGates": {
+      "provider": "codex-model",
+      "model": "gpt-5.6-sol",
+      "reasoningEffort": "high",
+      "runner": "build/automation/two_quality_gate_runner.mjs"
+    },
+    "thirdPartyModel": {
+      "enabledOnlyByExplicitProviderSelection": true,
+      "providerValue": "third-party"
+    },
+    "deAiRewrite": {
+      "provider": "mugua-openai-compatible",
+      "baseUrl": "https://api.mugua.link/v1",
+      "model": "gemini-3.1-pro-preview",
+      "prompt": "inputs/production/L1题面去AI改写提示词.txt",
+      "runner": "build/automation/mugua_de_ai_rewrite_client.mjs"
+    }
+  },
+  "qualityOrder": [
+    "reference-sample",
+    "structure-breakdown",
+    "attachment-plan",
+    "first-quality-gate",
+    "second-language-gate",
+    "de-ai-rewrite",
+    "final-output"
+  ],
+  "submissionRequiresProcessReceipt": true
+}

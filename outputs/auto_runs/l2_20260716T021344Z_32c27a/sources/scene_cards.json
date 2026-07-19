@@ -1,0 +1,223 @@
+{
+  "kind": "scene-card-bundle",
+  "protocolId": "situated-requester-v1",
+  "schemaVersion": 1,
+  "factLedgerPath": "fact_ledger.json",
+  "factLedgerHash": "931fd4d6b085b90a963cc33f887e11a64dbfc521d1317030b53d9ba71097c863",
+  "cards": [
+    {
+      "recordUid": "434",
+      "sceneCard": {
+        "schemaVersion": 1,
+        "policyId": "situated-requester-v1",
+        "topicId": "topic-iotda-certificate-rotation",
+        "personaId": "persona-iotda-ops-434",
+        "requester": {
+          "functionalRole": "设备平台运维工程师",
+          "organizationType": "使用华为云 IoTDA 管理联网设备的企业",
+          "department": "",
+          "responsibility": "核对存量设备证书关系并设计可执行的轮换与回滚路径",
+          "authorityBoundary": "只能依据公开规则整理方案，不能替代有权限的人员执行生产证书状态变更",
+          "recipientRelation": "把零散技术材料交给能制作工作簿和操作页的协作同事"
+        },
+        "scene": {
+          "workflowStage": "存量设备证书轮换前的验证准备",
+          "trigger": "存量X.509设备需要轮换证书，同时要保留可验证的停用和回滚路径",
+          "currentBlockage": "内部设备清单和当前证书关联信息尚未提供，公开材料只能确认平台规则",
+          "mainDecision": "判断本批设备是否具备进入证书轮换的条件",
+          "downstreamUse": "设备运维和值班同事按工作簿筛查并从操作页执行试点与回滚"
+        },
+        "informationBoundary": {
+          "knownFactIds": [
+            "fact-row-434"
+          ],
+          "availableMaterialIds": [
+            "material-row-434"
+          ],
+          "unknowns": [
+            "华为云生产租户的设备证书映射原始台账原件"
+          ],
+          "forbiddenInferences": [
+            "不能把公开文档、SDK 示例或模拟记录补写成已经发生的生产验证结果"
+          ]
+        },
+        "voice": {
+          "channel": "即时工作消息",
+          "formality": "熟悉同事之间的具体工作交代，直接说明真实卡点和交付用途",
+          "domainVocabulary": [
+            "证书轮换",
+            "设备回连",
+            "证书指纹",
+            "状态更新",
+            "回滚"
+          ],
+          "avoidVocabulary": [
+            "全面赋能",
+            "一站式闭环",
+            "全景抓手",
+            "深度洞察"
+          ]
+        },
+        "maskTerms": [
+          "华为云 IoTDA",
+          "X.509",
+          "设备证书",
+          "MQTT",
+          "CA 证书"
+        ],
+        "evidenceBindings": [
+          {
+            "claim": "存量X.509设备需要轮换证书，同时要保留可验证的停用和回滚路径",
+            "factIds": [
+              "fact-row-434"
+            ]
+          },
+          {
+            "claim": "内部设备清单和当前证书关联信息尚未提供，公开材料只能确认平台规则",
+            "factIds": [
+              "fact-row-434"
+            ]
+          },
+          {
+            "claim": "判断本批设备是否具备进入证书轮换的条件",
+            "factIds": [
+              "fact-row-434"
+            ]
+          }
+        ]
+      },
+      "requestContract": {
+        "requestSpan": "请把这套准备流程整理成一份 Excel 工作簿和一个 HTML 操作页。",
+        "action": "整理",
+        "outputs": [
+          {
+            "format": "xlsx",
+            "humanName": "Excel",
+            "purpose": "供后续执行和留痕使用"
+          },
+          {
+            "format": "html",
+            "humanName": "HTML",
+            "purpose": "供后续执行和留痕使用"
+          }
+        ]
+      },
+      "roleTrace": {
+        "blockageSpan": "轮换前需要先弄清设备与证书的对应关系，因为停用设备证书会使关联设备无法接入，删除 CA 证书也会影响使用它完成认证的设备。",
+        "motivationSpan": "",
+        "downstreamUseSpan": "可轮换名单为空或回滚条件不完整时，结论保持为暂不进入试点，放行结果以真实核对记录为准。"
+      },
+      "usedFactIds": [
+        "fact-row-434"
+      ],
+      "deliberatelyOmitted": []
+    },
+    {
+      "recordUid": "435",
+      "sceneCard": {
+        "schemaVersion": 1,
+        "policyId": "situated-requester-v1",
+        "topicId": "topic-dingtalk-stream-migration",
+        "personaId": "persona-dingtalk-integration-435",
+        "requester": {
+          "functionalRole": "企业应用集成工程师",
+          "organizationType": "使用钉钉企业内部应用处理人员事件的团队",
+          "department": "",
+          "responsibility": "梳理事件推送模式差异并准备可验证的迁移演练",
+          "authorityBoundary": "只能形成迁移评审与验证矩阵，不能替代应用管理员修改生产推送配置",
+          "recipientRelation": "把平台文档和现有问题交给能整理评审说明与验证矩阵的协作同事"
+        },
+        "scene": {
+          "workflowStage": "钉钉事件订阅切换演练前的评审准备",
+          "trigger": "现有钉钉事件订阅准备从 HTTP 回调迁移到 Stream 模式",
+          "currentBlockage": "生产订阅清单和运行配置尚未提供，材料只能确认两种接入路径",
+          "mainDecision": "判断当前材料是否足以进入切换演练",
+          "downstreamUse": "企业应用集成团队用评审说明放行，并在验证矩阵保留逐事件证据"
+        },
+        "informationBoundary": {
+          "knownFactIds": [
+            "fact-row-435"
+          ],
+          "availableMaterialIds": [
+            "material-row-435"
+          ],
+          "unknowns": [
+            "钉钉应用生产配置导出文件原件"
+          ],
+          "forbiddenInferences": [
+            "不能把公开文档、SDK 示例或模拟记录补写成已经发生的生产验证结果"
+          ]
+        },
+        "voice": {
+          "channel": "即时工作消息",
+          "formality": "熟悉同事之间的具体工作交代，直接说明真实卡点和交付用途",
+          "domainVocabulary": [
+            "事件推送",
+            "幂等键",
+            "鉴权",
+            "回调",
+            "错误码"
+          ],
+          "avoidVocabulary": [
+            "全面赋能",
+            "一站式闭环",
+            "全景抓手",
+            "深度洞察"
+          ]
+        },
+        "maskTerms": [
+          "钉钉",
+          "HTTP 回调",
+          "Stream",
+          "人员异动",
+          "事件订阅"
+        ],
+        "evidenceBindings": [
+          {
+            "claim": "现有钉钉事件订阅准备从 HTTP 回调迁移到 Stream 模式",
+            "factIds": [
+              "fact-row-435"
+            ]
+          },
+          {
+            "claim": "生产订阅清单和运行配置尚未提供，材料只能确认两种接入路径",
+            "factIds": [
+              "fact-row-435"
+            ]
+          },
+          {
+            "claim": "判断当前材料是否足以进入切换演练",
+            "factIds": [
+              "fact-row-435"
+            ]
+          }
+        ]
+      },
+      "requestContract": {
+        "requestSpan": "请把评审结果整理成一份 Word 迁移说明和一张 Excel 验证矩阵。",
+        "action": "整理",
+        "outputs": [
+          {
+            "format": "docx",
+            "humanName": "Word",
+            "purpose": "供后续执行和留痕使用"
+          },
+          {
+            "format": "xlsx",
+            "humanName": "Excel",
+            "purpose": "供后续执行和留痕使用"
+          }
+        ]
+      },
+      "roleTrace": {
+        "blockageSpan": "现在缺少一份能把旧回调配置、新接入方式和演练证据放在一起的迁移记录。",
+        "motivationSpan": "",
+        "downstreamUseSpan": "同一事件在 Word 中提出的放行条件，要能在 Excel 中找到对应记录，避免说明已经放行而矩阵仍缺证据。"
+      },
+      "usedFactIds": [
+        "fact-row-435"
+      ],
+      "deliberatelyOmitted": []
+    }
+  ]
+}

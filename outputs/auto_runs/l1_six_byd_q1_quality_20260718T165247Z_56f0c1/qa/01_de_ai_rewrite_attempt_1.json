@@ -1,0 +1,149 @@
+{
+  "kind": "de-ai-question-rewrite",
+  "policyId": "mugua-gemini-de-ai-rewrite-v2",
+  "uid": "沈礼_20260719_l1_byd_q1_quality_01",
+  "generatedAt": "2026-07-18T17:22:31.596Z",
+  "provider": "mugua-openai-compatible",
+  "endpoint": "https://api.mugua.link/v1/chat/completions",
+  "model": "gemini-3.1-pro-preview",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 1401,
+    "outputTokens": 1016,
+    "totalTokens": 2417
+  },
+  "promptHash": "4fd32db348963891862657e78bf0819922824e554e0be25041a33a26e7f10677",
+  "sourceQuestionHash": "4f37dbfcfdd2a38f6fd79776173cd2332a163c991febd80d40433312c72e2d3c",
+  "rewrittenQuestionHash": "14fa5df01068f296cabfd3f3c6520bdd89ec845b88c27a92131ad25058ac1391",
+  "selectedAttempt": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "pass": false,
+      "visibleLength": 301,
+      "findingRules": [
+        "rewrite-edit-similarity-too-high"
+      ]
+    },
+    {
+      "attempt": 2,
+      "pass": true,
+      "visibleLength": 387,
+      "findingRules": []
+    }
+  ],
+  "rewrite": {
+    "question": "请处理一下《比亚迪股份有限公司2026年第一季度报告.pdf》，做一份关于其2026年一季度经营质量的Excel核对表。\n\n表里需要重点关注几个核心财务指标的同比变动情况，包括经营现金流、归母净利润以及营业收入。同时请结合这些数据，把现金利润的覆盖关系重新测算一遍。另外，像应付票据、开发支出、短期借款还有现金流的具体变动明细，也请一并梳理进表格。\n\n在整理过程中，必须严格区分哪些是报告里直接写明的原因，哪些是通过披露数据算出来的变化，还有哪些是目前无法确定、必须等业务分部资料补充后才能判断的。各项数据都要附带来源页码、计算公式、统计口径，并注明未经审计状态。要是你复算的结果跟报告披露的数值对不上，记得把差异明确标注出来，顺便列一下后续为了查明原因还需要哪些关于区域、价格、销量或者业务分部的补充材料。最后提醒一下，千万别主观地将经营现金流下降跟融资变化硬扯上因果关系。",
+    "requestContract": {
+      "requestSpan": "请处理一下《比亚迪股份有限公司2026年第一季度报告.pdf》，做一份关于其2026年一季度经营质量的Excel核对表。",
+      "action": "请处",
+      "outputs": [
+        {
+          "format": "xlsx",
+          "humanName": "Excel",
+          "purpose": "供后续执行和留痕使用"
+        }
+      ]
+    },
+    "roleTrace": {
+      "blockageSpan": "在整理过程中，必须严格区分哪些是报告里直接写明的原因，哪些是通过披露数据算出来的变化，还有哪些是目前无法确定、必须等业务分部资料补充后才能判断的。",
+      "motivationSpan": "",
+      "downstreamUseSpan": "请处理一下《比亚迪股份有限公司2026年第一季度报告.pdf》，做一份关于其2026年一季度经营质量的Excel核对表。"
+    },
+    "usedFactIds": [
+      "byd-core-performance",
+      "byd-profit-quality",
+      "byd-development-spend",
+      "byd-financing-shift",
+      "byd-cashflow-explanation",
+      "byd-audit-boundary"
+    ],
+    "deliberatelyOmitted": [],
+    "flowStages": [
+      {
+        "stage": "证据归位",
+        "evidence": "事实包中的公开材料与待补信息",
+        "decision": "区分可确认规则和未知现场状态",
+        "next": "证据足够则形成执行对象，不足则进入补证"
+      },
+      {
+        "stage": "执行对象核对",
+        "evidence": "已归位的对象关系与状态记录",
+        "decision": "建立一份季度经营质量核对表，复算收入、利润和经营现金流变化，整理研发与融资项目的披露解释，并把无法由附件直接归因的部分保留为待补证事项。",
+        "next": "符合条件则进入小范围验证，否则停止推进"
+      },
+      {
+        "stage": "小范围验证",
+        "evidence": "试点输入与实际返回记录",
+        "decision": "判断结果是否满足扩大范围的条件",
+        "next": "通过则推进，失败则退回原状态并留痕"
+      },
+      {
+        "stage": "交接收束",
+        "evidence": "判断依据、验证结果与回退记录",
+        "decision": "确认下游拿到一致结论",
+        "next": "供经营分析同事继续取得分部和销量资料后补充归因。"
+      }
+    ],
+    "selfAudit": {
+      "factsPreserved": true,
+      "formatsPreserved": true,
+      "processChainExplicit": true,
+      "failureOrRollbackExplicit": true,
+      "noInventedFacts": true,
+      "noAiShell": true
+    }
+  },
+  "validation": {
+    "pass": true,
+    "visibleLength": 384,
+    "similarity": [
+      {
+        "referenceIndex": 1,
+        "editSimilarity": 0.348314606741573,
+        "trigramJaccard": 0.17012448132780084,
+        "longestExactCopyRun": 26,
+        "longestExactCopySpan": "《比亚迪股份有限公司2026年第一季度报告.pdf》"
+      },
+      {
+        "referenceIndex": 2,
+        "editSimilarity": 0.059160305343511466,
+        "trigramJaccard": 0.0011890606420927466,
+        "longestExactCopyRun": 3,
+        "longestExactCopySpan": "202"
+      }
+    ],
+    "findings": [],
+    "factGuard": {
+      "ok": true,
+      "candidateAnchors": {
+        "numbers": [
+          "2026年"
+        ],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "unsupported": {
+        "numbers": [],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "errors": []
+    }
+  },
+  "deterministicStyleCleanup": {
+    "applied": true,
+    "rules": [
+      "remove-banned-politeness",
+      "remove-upload-meta-language"
+    ],
+    "sourceApiQuestionHash": "387019bb7ae01928f0cf7fb063ef6c308d343a6cfd6b3807d45244a2846e00a3"
+  },
+  "postDeAiAudit": {
+    "pass": true,
+    "issues": [],
+    "factsPreserved": true,
+    "attachmentsPreserved": true,
+    "visibleTextClean": true
+  }
+}

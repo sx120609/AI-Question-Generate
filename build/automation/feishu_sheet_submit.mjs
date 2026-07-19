@@ -1,7 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
-import { createFeishuClient, findFilesByName, rangeForCell } from "./feishu_openapi_client.mjs";
+import { createFeishuClient, findFilesByName, parseA1Span, rangeForCell } from "./feishu_openapi_client.mjs";
 import { assertClearQuestionRequest, assertNaturalQuestionPresentation } from "./language_style.mjs";
 import { appendJsonl, ensureDir, withLock, writeJsonAtomic } from "./run_context.mjs";
 import { verifyReleaseReceipt } from "./release_gate.mjs";
@@ -57,6 +57,76 @@ export function readBackCellText(value) {
   return "";
 }
 
+function sheetIdFromRange(range) {
+  const text = String(range ?? "");
+  return text.includes("!") ? text.split("!", 1)[0] : "";
+}
+
+function spanContainsCell(span, cell) {
+  if (!span || !cell?.startRow || !cell?.endRow) return false;
+  return (
+    cell.startColumn === cell.endColumn &&
+    cell.startRow === cell.endRow &&
+    cell.startColumn >= span.startColumn &&
+    cell.startColumn <= span.endColumn &&
+    (span.startRow === null || cell.startRow >= span.startRow) &&
+    (span.endRow === null || cell.startRow <= span.endRow)
+  );
+}
+
+function selectedDropdownValues(raw, multipleValues) {
+  if (raw === null || raw === undefined || raw === "") return [];
+  if (Array.isArray(raw)) return raw.map((item) => String(item).trim()).filter(Boolean);
+  const text = String(raw).trim();
+  if (!multipleValues) return [text];
+  return text.split(/[,，\n]+/u).map((item) => item.trim()).filter(Boolean);
+}
+
+export function validateDropdownValueRanges({ valueRanges = [], dataValidations = [], sheetId = "" } = {}) {
+  const checks = [];
+  const errors = [];
+
+  for (const valueRange of valueRanges) {
+    const cellRange = valueRange.range || (valueRange.address ? rangeForCell(sheetId, valueRange.address) : "");
+    const cellSheetId = sheetIdFromRange(cellRange) || sheetId;
+    const cell = parseA1Span(cellRange);
+    if (!cell || cell.startColumn !== cell.endColumn || cell.startRow !== cell.endRow) continue;
+
+    for (const validation of dataValidations) {
+      if (validation?.dataValidationType !== "list") continue;
+      const applies = (validation.ranges || []).some((validationRange) => {
+        const validationSheetId = sheetIdFromRange(validationRange);
+        if (validationSheetId && cellSheetId && validationSheetId !== cellSheetId) return false;
+        return spanContainsCell(parseA1Span(validationRange), cell);
+      });
+      if (!applies) continue;
+
+      const allowed = (validation.conditionValues || []).map((item) => String(item));
+      const selected = selectedDropdownValues(
+        valueRange.values?.[0]?.[0],
+        validation.options?.multipleValues === true,
+      );
+      const invalid = selected.filter((item) => !allowed.includes(item));
+      const address = valueRange.address || cellRange.split("!").at(-1)?.split(":")[0] || cellRange;
+      checks.push({ address, selected, allowedCount: allowed.length, ok: invalid.length === 0 });
+      if (invalid.length) {
+        errors.push(`${address} contains values outside the configured dropdown: ${invalid.join(", ")}`);
+      }
+      break;
+    }
+  }
+
+  if (errors.length) {
+    throw new Error(`Feishu dropdown validation failed: ${errors.join("; ")}`);
+  }
+  return {
+    required: checks.length > 0,
+    verified: true,
+    checkedCells: checks.length,
+    checks,
+  };
+}
+
 function planRowsInRange(plan, rows) {
   const allowed = rows?.length ? new Set(rows.map(Number)) : null;
   return plan.rows.filter((row) => !allowed || allowed.has(Number(row.sheetRow)));
@@ -68,6 +138,7 @@ export async function verifyReleaseGateForSubmission({
   valueRanges = [],
   receiptPath = "",
   planPath = "",
+  policyPath,
 } = {}) {
   const writesNarrativeFields = valueRanges.some((item) =>
     ["B", "G", "L", "N", "O"].includes(item.address?.[0]?.toUpperCase())
@@ -81,7 +152,7 @@ export async function verifyReleaseGateForSubmission({
     throw new Error(`Release-gate receipt is required before writing narrative fields: ${resolvedReceiptPath}`);
   }
   const selectedPlanRows = planRowsInRange(plan, rows);
-  const receiptCheck = await verifyReleaseReceipt({ receiptPath: resolvedReceiptPath, rows: selectedPlanRows });
+  const receiptCheck = await verifyReleaseReceipt({ receiptPath: resolvedReceiptPath, rows: selectedPlanRows, policyPath });
   if (!receiptCheck.ok) {
     throw new Error(`Release-gate receipt validation failed: ${receiptCheck.errors.join("; ")}`);
   }
@@ -234,6 +305,7 @@ export async function submitFeishuSheetPlan({
   processReceiptPath = "",
   testOnlyBypassProductionProtocol = false,
   structureRegistryPath,
+  policyPath,
   logPath = "",
   lockOwner = `feishu_submit_${process.pid}`,
 } = {}) {
@@ -271,6 +343,7 @@ export async function submitFeishuSheetPlan({
         valueRanges,
         receiptPath: suppliedReleaseReceiptPath,
         planPath,
+        policyPath,
       })
     : { required: false, verified: false, receiptPath: "" };
   const narrativeWrite = valueRanges.some((item) =>
@@ -317,6 +390,7 @@ export async function submitFeishuSheetPlan({
       receiptPath: releaseGate.receiptPath,
       status: "reserved",
       registryPath: structureRegistryPath,
+      policyPath,
       owner: lockOwner,
     });
     structureRegistration = {
@@ -358,7 +432,23 @@ export async function submitFeishuSheetPlan({
 
   let apiResult = null;
   let verification = [];
+  let dropdownValidation = {
+    required: false,
+    verified: false,
+    checkedCells: 0,
+    checks: [],
+  };
   if (apply) {
+    const validationClient = await createFeishuClient({ transport });
+    const validationRules = await validationClient.getDataValidations({
+      spreadsheetToken: target.spreadsheetToken,
+      range: target.sheetId,
+    });
+    dropdownValidation = validateDropdownValueRanges({
+      valueRanges,
+      dataValidations: validationRules.dataValidations,
+      sheetId: target.sheetId,
+    });
     const lockName = `feishu_sheet_${target.spreadsheetToken}_${target.sheetId}`;
     await withLock(lockName, { owner: lockOwner, metadata: { rows, valueRangeCount: valueRanges.length } }, async () => {
       if (releaseGate.required) {
@@ -371,6 +461,7 @@ export async function submitFeishuSheetPlan({
           valueRanges,
           receiptPath: releaseGate.receiptPath,
           planPath,
+          policyPath,
         });
       }
       if (productionProcess.required) {
@@ -407,6 +498,7 @@ export async function submitFeishuSheetPlan({
         receiptPath: releaseGate.receiptPath,
         status: "submitted",
         registryPath: structureRegistryPath,
+        policyPath,
         owner: lockOwner,
       });
       structureRegistration = {
@@ -429,6 +521,7 @@ export async function submitFeishuSheetPlan({
     questionPresentation,
     releaseGate,
     productionProcess,
+    dropdownValidation,
     structureRegistration,
     apiResult,
     verification,
@@ -465,6 +558,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
     structureReceiptPath: args["structure-receipt"] ? resolveFromRoot(args["structure-receipt"]) : "",
     processReceiptPath: args["process-receipt"] ? resolveFromRoot(args["process-receipt"]) : "",
     structureRegistryPath: args["structure-registry"] ? resolveFromRoot(args["structure-registry"]) : undefined,
+    policyPath: args.policy ? resolveFromRoot(args.policy) : undefined,
     buildAttachments: args["skip-attachments"] !== true,
     logPath: args.log ? resolveFromRoot(args.log) : "",
     lockOwner: args.owner || `feishu_submit_${process.pid}`,

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "doubao-interaction-queue-item",
+  "state": "completed",
+  "jobId": "l1-shenhua-capex-funding-20260719-02",
+  "enqueuedAt": "2026-07-18T17:32:59.208Z",
+  "attempt": 1,
+  "configPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-shenhua-capex-funding-20260719-02\\job.json",
+  "configSha256": "5fa92c4daf916010717b450082655ce07060333f70a22dfe2bd5e948764062d0",
+  "packageManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-shenhua-capex-funding-20260719-02\\manifest.json",
+  "packageManifestSha256": "9c1d65f27803ac79bbd122ac13fb144e9eb22e477e6aa027f55869710bcb73bc",
+  "finishedAt": "2026-07-18T19:43:05.700Z",
+  "resultPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\results\\l1-shenhua-capex-funding-20260719-02.json",
+  "lastError": null
+}

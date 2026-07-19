@@ -1,0 +1,133 @@
+{
+  "kind": "claude-question-rewrite-batch",
+  "policyId": "claude-from-scratch-human-request-v2",
+  "generatedAt": "2026-07-16T05:56:28.636Z",
+  "runDir": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a",
+  "results": [
+    {
+      "kind": "claude-question-only-redraft",
+      "policyId": "claude-from-scratch-human-request-v2",
+      "uid": "435",
+      "generatedAt": "2026-07-16T05:56:28.635Z",
+      "provider": "openai-compatible",
+      "model": "claude-opus-4-8",
+      "finishReason": "stop",
+      "usage": {
+        "inputTokens": 16807,
+        "outputTokens": 1347,
+        "totalTokens": 18154
+      },
+      "rewrite": {
+        "question": "现在真正卡住的是，钉钉这套事件订阅要从 HTTP 回调换到 Stream 模式，可我手上只有平台那几篇文档，能看出接入路径确实分成 Stream 和 HTTP 两条，但生产订阅清单和真实运行配置一直没拿到，所以我判断不了咱们这个应用现在到底走哪条路，也说不清能不能两种方式并行保留一段时间。在拿到那份应用生产配置导出原件之前，我这边只能停在确认路径这一步，所以想先跟你把一件事定下来，就是这批材料够不够支撑进切换演练，够就照着往下走，不够就得先把缺的那部分补齐再说。\n文档里能确认的我都逐篇对了一遍，回调那边把 JSON 事件推送和安全校验的做法讲得挺清楚，Stream 那边给了 Java 和 Node 两个客户端的初始化入口，人员变更 v2 的事件字段页面也在，接口失败时的错误码检索入口也有。可这些说到底都只是文档页面和示例，不代表咱们应用已经订阅、真的跑通过一遍，具体是哪种接入路径还得看运行日志才敢下结论。生产 token 和回调地址这类东西不能直接搬进来当成已经验证过的结果，SDK 里给的示例凭证也是一样，这条线我不敢自己往上补。\n我的权限只到评审和验证矩阵这一层，真要动生产推送配置还得应用管理员来，所以想请你把这些平台文档、眼下这个卡点等一起整理成一份评审说明，再配一张逐事件的验证矩阵。矩阵里先把幂等键、鉴权等需要逐条核对的项摆出来，每一项标清证据在哪和由谁负责，剩下还缺什么也一并写上，方便切换演练时照着填。\n通过了就照矩阵里的项一条条往下推进，万一哪个事件对不上就按里面记的最小回退步骤退回 HTTP 回调，同时把当时的运行日志、错误码等留在交接记录里给下一班接手。麻烦你评审说明出成 docx 给我们集成团队做放行判断，验证矩阵出成 xlsx 留着切换演练时逐事件填证据，我这边一拿到就去对生产清单那块的缺口。",
+        "requestContract": {
+          "requestSpan": "我的权限只到评审和验证矩阵这一层，真要动生产推送配置还得应用管理员来，所以想请你把这些平台文档、眼下这个卡点等一起整理成一份评审说明，再配一张逐事件的验证矩阵。",
+          "action": "整理",
+          "outputs": [
+            {
+              "format": "docx",
+              "humanName": "Word",
+              "purpose": "供后续执行和留痕使用"
+            },
+            {
+              "format": "xlsx",
+              "humanName": "Excel",
+              "purpose": "供后续执行和留痕使用"
+            }
+          ]
+        },
+        "roleTrace": {
+          "blockageSpan": "现在真正卡住的是，钉钉这套事件订阅要从 HTTP 回调换到 Stream 模式，可我手上只有平台那几篇文档，能看出接入路径确实分成 Stream 和 HTTP 两条，但生产订阅清单和真实运行配置一直没拿到，所以我判断不了咱们这个应用现在到底走哪条路，也说不清能不能两种方式并行保留一段时间。",
+          "motivationSpan": "矩阵里先把幂等键、鉴权等需要逐条核对的项摆出来，每一项标清证据在哪和由谁负责，剩下还缺什么也一并写上，方便切换演练时照着填。",
+          "downstreamUseSpan": "麻烦你评审说明出成 docx 给我们集成团队做放行判断，验证矩阵出成 xlsx 留着切换演练时逐事件填证据，我这边一拿到就去对生产清单那块的缺口。"
+        },
+        "usedFactIds": [
+          "fact-row-435"
+        ],
+        "deliberatelyOmitted": [],
+        "flowStages": [
+          {
+            "stage": "证据归位",
+            "evidence": "事实包中的公开材料与待补信息",
+            "decision": "区分可确认规则和未知现场状态",
+            "next": "证据足够则形成执行对象，不足则进入补证"
+          },
+          {
+            "stage": "执行对象核对",
+            "evidence": "已归位的对象关系与状态记录",
+            "decision": "判断当前材料是否足以进入切换演练",
+            "next": "符合条件则进入小范围验证，否则停止推进"
+          },
+          {
+            "stage": "小范围验证",
+            "evidence": "试点输入与实际返回记录",
+            "decision": "判断结果是否满足扩大范围的条件",
+            "next": "通过则推进，失败则退回原状态并留痕"
+          },
+          {
+            "stage": "交接收束",
+            "evidence": "判断依据、验证结果与回退记录",
+            "decision": "确认下游拿到一致结论",
+            "next": "企业应用集成团队用评审说明放行，并在验证矩阵保留逐事件证据"
+          }
+        ],
+        "selfAudit": {
+          "factsPreserved": true,
+          "formatsPreserved": true,
+          "processChainExplicit": true,
+          "failureOrRollbackExplicit": true,
+          "noInventedFacts": true,
+          "noAiShell": true
+        }
+      },
+      "validation": {
+        "pass": false,
+        "visibleLength": 739,
+        "similarity": [
+          {
+            "referenceIndex": 1,
+            "editSimilarity": 0.07711442786069655,
+            "trigramJaccard": 0.045590433482810166,
+            "longestExactCopyRun": 10
+          },
+          {
+            "referenceIndex": 2,
+            "editSimilarity": 0.07233502538071068,
+            "trigramJaccard": 0.04380664652567976,
+            "longestExactCopyRun": 10
+          }
+        ],
+        "findings": [
+          {
+            "rule": "request-human-name-not-in-span",
+            "format": "docx"
+          },
+          {
+            "rule": "request-human-name-not-in-span",
+            "format": "xlsx"
+          }
+        ],
+        "factGuard": {
+          "ok": true,
+          "candidateAnchors": {
+            "numbers": [
+              "2"
+            ],
+            "quotedClaims": [],
+            "timeMarkers": []
+          },
+          "unsupported": {
+            "numbers": [],
+            "quotedClaims": [],
+            "timeMarkers": []
+          },
+          "errors": []
+        }
+      }
+    }
+  ],
+  "usage": {
+    "inputTokens": 16807,
+    "outputTokens": 1347,
+    "totalTokens": 18154
+  }
+}

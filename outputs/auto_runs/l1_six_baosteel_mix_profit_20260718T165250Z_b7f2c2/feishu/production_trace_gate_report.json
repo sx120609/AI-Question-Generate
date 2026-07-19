@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "l1-production-trace-gate-report",
+  "productionProfile": "l1",
+  "gateId": "production-trace-gate-v6-profiled",
+  "status": "PASS",
+  "generatedAt": "2026-07-18T17:40:19.640Z",
+  "packetPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2\\sources\\production_input_packet.json",
+  "packetHash": "fdde4b698cca4083a2a88502efbd26b3930572ed024d5ed482ed2fc7c451cef2",
+  "tracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2\\qa\\production_trace.json",
+  "traceHash": "d8847bc2d1bc30f9600f0112c42aed502c40c9daaa38e22e5ffe190763e73dbd",
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2\\drafts\\l1_questions.tsv",
+  "candidateHash": "cb2201b5b39e0fc0f24013738238cf7d24796ec1430726aa2696f4eb1fe58110",
+  "fillPlanPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2\\feishu\\feishu_fill_plan.json",
+  "fillPlanHash": "9b16cbb59078df904f9527051e95db7617c338b117ee5c41a571b6023ec0b044",
+  "rowCount": 1,
+  "attachmentRoot": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2\\attachments",
+  "attachmentBindings": [
+    {
+      "uid": "沈礼_20260719_l1_baosteel_mix_profit_04",
+      "name": "宝山钢铁股份有限公司2026年第一季度报告.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2\\attachments\\宝山钢铁股份有限公司2026年第一季度报告.pdf",
+      "sha256": "76b0d27c65fb55ba2cd3301f83e4448846de438d1575ea05e551fe0b829cb23d",
+      "bytes": 191834
+    }
+  ],
+  "productFormatDiversity": {
+    "policyId": "not-required-for-l1",
+    "status": "SKIPPED",
+    "rowCount": 1,
+    "findings": []
+  },
+  "findings": []
+}

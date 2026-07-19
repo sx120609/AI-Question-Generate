@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "status": "DRY_RUN_ONLY_NO_RESERVED_FEISHU_ROW",
+  "questionPresentation": "natural-paragraphs-no-blank-lines-v4",
+  "generatedAt": "2026-07-18T17:40:19.591Z",
+  "sourcePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2\\drafts\\l1_questions.tsv",
+  "startRow": 999904,
+  "sheetRows": [
+    999904
+  ],
+  "count": 1,
+  "note": "No Feishu row is reserved. This is a non-production dry-run placeholder. No external write is authorized.",
+  "columnMap": [
+    {
+      "field": "UID",
+      "column": "A"
+    },
+    {
+      "field": "题目",
+      "column": "B"
+    },
+    {
+      "field": "任务类型",
+      "column": "C"
+    },
+    {
+      "field": "一级目录",
+      "column": "D"
+    },
+    {
+      "field": "二级目录",
+      "column": "E"
+    },
+    {
+      "field": "三级目录",
+      "column": "F"
+    },
+    {
+      "field": "任务概括",
+      "column": "G"
+    },
+    {
+      "field": "标注专家工作年限",
+      "column": "H"
+    },
+    {
+      "field": "人类完成时间",
+      "column": "I"
+    },
+    {
+      "field": "相关附件",
+      "column": "J"
+    },
+    {
+      "field": "附件格式",
+      "column": "K"
+    },
+    {
+      "field": "附件内容",
+      "column": "L"
+    },
+    {
+      "field": "产物格式",
+      "column": "M"
+    },
+    {
+      "field": "产物内容",
+      "column": "N"
+    },
+    {
+      "field": "做题关键步骤",
+      "column": "O"
+    }
+  ],
+  "rows": [
+    {
+      "dataRow": 2,
+      "sheetRow": 999904,
+      "title": "宝钢股份2026年一季度产品结构与利润表现复核",
+      "updates": [
+        {
+          "address": "A999904",
+          "column": "A",
+          "field": "UID",
+          "value": "沈礼_20260719_l1_baosteel_mix_profit_04",
+          "chars": 37,
+          "hasNewlines": false,
+          "preview": "沈礼_20260719_l1_baosteel_mix_profit_04"
+        },
+        {
+          "address": "B999904",
+          "column": "B",
+          "field": "题目",
+          "value": "请根据《宝山钢铁股份有限公司2026年第一季度报告.pdf》，帮我做一份关于宝钢股份2026年一季度产品结构与利润表现的PPT，准备在接下来的产品经营会议上用，用来讨论后续要补充哪些产品盈利和订单兑现的资料。\n\nPPT里需要给出一个明确的判断：“2+2+N”产品销量的提升以及出口接单的改善，到底能不能直接支撑整体盈利的好转。为了论证这一点，你需要对比一下营业收入、归母净利润和经营现金流的同比变动情况。同时，还要分别看看钢铁制造、加工配送这两个分部的毛利率，以及合计毛利率的同比增减，借此来分析分部毛利率对整体盈利改善构成了怎样的制约。在处理数据时，千万别把有内部抵消的分部收入直接加总，也别把报告里没明确披露的产品或出口利润贡献当成确定的归因。\n\n最后请交付一份可下载的演示稿，内容得涵盖产品和出口亮点、核心财务对比、分部毛利率、证据边界、待补数据和最终结论页。所有用到的数据都要标明报告页码、未经审计的状态和派生计算的口径，并且要严格区分哪些是已证实的事实、哪些是合理推断，还有哪些是需要进一步确认的事项。",
+          "chars": 456,
+          "hasNewlines": true,
+          "preview": "请根据《宝山钢铁股份有限公司2026年第一季度报告.pdf》，帮我做一份关于宝钢股份2026年一季度产品结构与利润表现的PPT，准备在接下来的产品经营会议上用，"
+        },
+        {
+          "address": "C999904",
+          "column": "C",
+          "field": "任务类型",
+          "value": "L1 探索型",
+          "chars": 6,
+          "hasNewlines": false,
+          "preview": "L1 探索型"
+        },
+        {
+          "address": "D999904",
+          "column": "D",
+          "field": "一级目录",
+          "value": "商业与市场分析",
+          "chars": 7,
+          "hasNewlines": false,
+          "preview": "商业与市场分析"
+        },
+        {
+          "address": "E999904",
+          "column": "E",
+          "field": "二级目录",
+          "value": "产品结构分析",
+          "chars": 6,
+          "hasNewlines": false,
+          "preview": "产品结构分析"
+        },
+        {
+          "address": "F999904",
+          "column": "F",
+          "field": "三级目录",
+          "value": "高附加值产品与分部毛利",
+          "chars": 11,
+          "hasNewlines": false,
+          "preview": "高附加值产品与分部毛利"
+        },
+        {
+          "address": "G999904",
+          "column": "G",
+          "field": "任务概括",
+          "value": "宝钢股份2026年一季度产品结构与利润表现复核",
+          "chars": 23,
+          "hasNewlines": false,
+          "preview": "宝钢股份2026年一季度产品结构与利润表现复核"
+        },
+        {
+          "address": "H999904",
+          "column": "H",
+          "field": "标注专家工作年限",
+          "value": "5年",
+          "chars": 2,
+          "hasNewlines": false,
+          "preview": "5年"
+        },
+        {
+          "address": "I999904",
+          "column": "I",
+          "field": "人类完成时间",
+          "value": "4H",
+          "chars": 2,
+          "hasNewlines": false,
+          "preview": "4H"
+        },
+        {
+          "address": "J999904",
+          "column": "J",
+          "field": "相关附件",
+          "value": "宝山钢铁股份有限公司2026年第一季度报告.pdf",
+          "chars": 25,
+          "hasNewlines": false,
+          "preview": "宝山钢铁股份有限公司2026年第一季度报告.pdf"
+        },
+        {
+          "address": "K999904",
+          "column": "K",
+          "field": "附件格式",
+          "value": "pdf",
+          "chars": 3,
+          "hasNewlines": false,
+          "preview": "pdf"
+        },
+        {
+          "address": "L999904",
+          "column": "L",
+          "field": "附件内容",
+          "value": "宝山钢铁股份有限公司2026年第一季度报告.pdf：披露宝钢股份一季度产品销量、出口接单、经营分部收入成本毛利率和核心财务指标。 来源：https://static.cninfo.com.cn/finalpage/2026-04-30/1225257456.PDF",
+          "chars": 132,
+          "hasNewlines": false,
+          "preview": "宝山钢铁股份有限公司2026年第一季度报告.pdf：披露宝钢股份一季度产品销量、出口接单、经营分部收入成本毛利率和核心财务指标。 来源：https://stat"
+        },
+        {
+          "address": "M999904",
+          "column": "M",
+          "field": "产物格式",
+          "value": "pptx",
+          "chars": 4,
+          "hasNewlines": false,
+          "preview": "pptx"
+        },
+        {
+          "address": "N999904",
+          "column": "N",
+          "field": "产物内容",
+          "value": "一份可下载的宝钢股份2026年一季度产品结构与利润表现PPT，包含产品和出口亮点、核心财务对比、分部毛利率、证据边界、待补数据和结论页。",
+          "chars": 68,
+          "hasNewlines": false,
+          "preview": "一份可下载的宝钢股份2026年一季度产品结构与利润表现PPT，包含产品和出口亮点、核心财务对比、分部毛利率、证据边界、待补数据和结论页。"
+        },
+        {
+          "address": "O999904",
+          "column": "O",
+          "field": "做题关键步骤",
+          "value": "1. 核验产品销量和出口接单披露\n2. 对齐营业收入、利润和现金流方向\n3. 比较钢铁制造与加工配送分部收入和毛利率\n4. 复算整体毛利率变化\n5. 识别内部抵消和产品贡献缺口\n6. 制作带来源脚注的PPT并检查页面一致性",
+          "chars": 111,
+          "hasNewlines": true,
+          "preview": "1. 核验产品销量和出口接单披露\n2. 对齐营业收入、利润和现金流方向\n3. 比较钢铁制造与加工配送分部收入和毛利率\n4. 复算整体毛利率变化\n5. 识别内部抵"
+        }
+      ]
+    }
+  ]
+}

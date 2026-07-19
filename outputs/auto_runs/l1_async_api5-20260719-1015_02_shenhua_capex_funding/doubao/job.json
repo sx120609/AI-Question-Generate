@@ -1,0 +1,63 @@
+{
+  "jobId": "l1-async-api5-20260719-1015-02",
+  "attachmentRoot": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_02_shenhua_capex_funding\\attachments",
+  "initialAttachmentNames": [
+    "中国神华能源股份有限公司2026年第一季度报告.pdf"
+  ],
+  "productionEvidence": {
+    "recordUid": "沈礼_api5-20260719-1015_02",
+    "productionTracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_02_shenhua_capex_funding\\qa\\production_trace.json",
+    "productionTraceGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_02_shenhua_capex_funding\\feishu\\production_trace_gate_receipt.json",
+    "releaseGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_02_shenhua_capex_funding\\feishu\\release_gate_receipt.json",
+    "downloadManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_02_shenhua_capex_funding\\sources\\download_manifest.json"
+  },
+  "maxRounds": 6,
+  "maximumRounds": 10,
+  "mode": "openai-compatible",
+  "taskGoal": "计划复核人员需要把重大资产交易带来的经营目标变化与分业务资本开支增量对齐。。制作调整前后资本开支核对表，识别增量集中度并把经营现金流与计划资金需求并列展示，资金来源只保留报告披露的渠道和待补分配栏。，最终一份可下载的中国神华2026年调整后资本开支Excel，包含经营目标变化、分业务资本开支、增量占比、经营现金流参照、资金来源边界和待补分配栏。",
+  "successCriteria": [
+    "调整前后计划和页码准确",
+    "分业务增量及占比可复算",
+    "计划值与一季度实际值明确区分",
+    "不虚构融资来源分配",
+    "交付可下载xlsx"
+  ],
+  "initialPrompt": "我正在做中国神华交易并表后的资本开支调整与资金承接复核，这份结果供资本计划同事跟踪项目预算和后续融资披露。\n\n为了给资本计划同事跟踪项目预算和后续融资披露提供参考，请根据《中国神华能源股份有限公司2026年第一季度报告.pdf》帮我做个数据复核。请先核对纳入重大资产交易后的2026年经营目标，以及调整前后的分业务资本开支。你需要复核各分项合计与披露总额是否一致并解释差异，同时计算各业务的增量，以及它们在179.64亿元总增量里的占比。\n\n另外，请核对2026年第一季度经营现金流与上年同期的数据，复算同比变化，并复核相关现金流口径作为资金参照的适用范围。基于这些数据，请给出一个明确结论，说明资本开支增量主要集中在哪些业务，并评估这份报告现有的披露内容最多能支持到哪种程度的资金承接结论。\n\n最后请整理一份可下载的《中国神华2026年调整后资本开支》Excel文件。表格里要列示经营目标变化、分业务资本开支、增量占比、2026年第一季度经营现金流参照及同比复算、报告披露的资金来源渠道，并留出待补分配栏。请在表里保留来源页码、未经审计状态、计算公式和派生计算过程。注意严格区分可证事实、合理推断和待确认项，不要把未披露的资金分配或业务归因写成已经证实的事项。",
+  "responseTimeoutMs": 600000,
+  "interactionRewrite": {
+    "type": "openai-compatible",
+    "baseUrl": "https://api.mugua.link/v1",
+    "model": "gemini-3.1-pro-preview",
+    "apiKeyEnv": "DE_AI_REWRITE_API_KEY",
+    "temperature": 0.55,
+    "timeoutMs": 180000
+  },
+  "promptPreflight": {
+    "type": "responses-api",
+    "baseUrl": "https://myapi.lowiq.net",
+    "model": "gpt-5.6-sol",
+    "apiKeyEnv": "CODEX_RESPONSES_API_KEY",
+    "reasoningEffort": "high",
+    "requireUsage": true,
+    "retries": 1,
+    "timeoutMs": 360000
+  },
+  "policy": {
+    "type": "responses-api",
+    "baseUrl": "https://myapi.lowiq.net",
+    "model": "gpt-5.6-sol",
+    "apiKeyEnv": "CODEX_RESPONSES_API_KEY",
+    "reasoningEffort": "high",
+    "requireUsage": true,
+    "retries": 1,
+    "timeoutMs": 360000
+  },
+  "productRequirement": {
+    "required": true,
+    "requestedFormats": [
+      "excel"
+    ],
+    "allowEquivalentOnline": false,
+    "allowUnavailableBestEffort": false
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "kind": "l2-first-quality-gate-raw-response",
+  "runnerId": "exact-two-quality-gates-v1",
+  "questionIndex": 2,
+  "sourcePromptHash": "087cc4ad0246d5108b267961190eb8d619206a673b3536092b90cf4a6124622e",
+  "renderedPromptHash": "57c7a24a3ffb139b5f67fcf2e2c0c2f5b7bb8ada6b404b30bdc86950347ce4ef",
+  "response": {
+    "id": "msg_4e892264ac464e87b21169a189ab54a0",
+    "model": "claude-opus-4-8",
+    "content": "{\"pass\": true, \"issues\": []}",
+    "finishReason": "stop",
+    "usage": {
+      "inputTokens": 19016,
+      "outputTokens": 11,
+      "totalTokens": 19027
+    }
+  },
+  "initialResponse": {
+    "id": "msg_4e892264ac464e87b21169a189ab54a0",
+    "model": "claude-opus-4-8",
+    "content": "{\"pass\": true, \"issues\": []}",
+    "finishReason": "stop",
+    "usage": {
+      "inputTokens": 19016,
+      "outputTokens": 11,
+      "totalTokens": 19027
+    }
+  },
+  "formatRepair": null,
+  "parsed": {
+    "pass": true,
+    "issues": []
+  }
+}

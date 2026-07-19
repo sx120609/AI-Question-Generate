@@ -1,0 +1,20 @@
+{
+  "kind": "local-codex-stage-response",
+  "stage": "03_pre_qa_structure_audit_attempt_1",
+  "model": "gpt-5.6-sol",
+  "provider": "local-codex-cli",
+  "completedAt": "2026-07-18T17:34:33.770Z",
+  "promptHash": "e043fd677a7e9c252f506b5ff980b699453a74382ab24edcfbaca20fd8ad3e6c",
+  "parsed": {
+    "oneSentenceMainTask": "复核渝农商行2026年一季度增长、回报、资本、杠杆与资产质量指标，形成区分改善项和约束项的可追溯Word简报。",
+    "uniqueMainTask": true,
+    "specificObjectDecision": true,
+    "specificFilesDominant": true,
+    "evidenceChain": "题面锁定重庆农村商业银行股份有限公司及其2026年第一季度报告，以唯一核心附件中的本期、上年同期和期初数据核对收入利润、资产负债、资本充足率、杠杆率和资产质量，再区分报告直接支持的改善项、约束项、疑点与未披露事项，并通过页码、未经审计状态和派生计算说明形成对象级可追溯证据链；附件数量为1且具体业务材料占比为100%。",
+    "l2ReasoningChain": "任务标注为L1探索型，其推进链为：从真实季度报告抽取对象与指标事实，复核期间和比较口径，识别指标差异或冲突，将事实、派生计算、业务判断和证据边界分层，综合判断改善项与资本约束项，最后集中列示需要补取的业务条线资本数据；交付格式和补数清单均从属于这一主要判断。",
+    "variableDrift": [
+      "附件摘要和uniqueContent提到“流动性”，但题面主要核验维度及mainTask未将其列为核心对象，存在轻微维度漂移。",
+      "一级目录被声明为“金融服务与财富投研”，但输入未提供飞书配置项原表，无法独立验证其是否为原样选项。"
+    ]
+  }
+}

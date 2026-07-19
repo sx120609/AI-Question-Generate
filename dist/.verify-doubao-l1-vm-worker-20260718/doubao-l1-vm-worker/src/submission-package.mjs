@@ -1,0 +1,98 @@
+import { createHash } from "node:crypto";
+import { mkdir, readFile, rename, rm, writeFile } from "node:fs/promises";
+import path from "node:path";
+
+import { artifactRootForResult } from "./artifact-capture.mjs";
+
+function digest(bytes) {
+  return createHash("sha256").update(bytes).digest("hex");
+}
+
+export function submissionPackagePath(resultPath) {
+  return path.join(artifactRootForResult(resultPath), "feishu-submission-package.json");
+}
+
+export function buildSubmissionPackage(state, { target = null } = {}) {
+  if (state?.status === "complete") throw new Error("Submission package must be built before final completion.");
+  if (!Array.isArray(state?.rounds) || state.rounds.length < 6) {
+    throw new Error("Submission package requires at least six completed rounds.");
+  }
+  if (state?.finalProductAcceptance?.accepted !== true) {
+    throw new Error("Submission package requires an accepted final product assessment.");
+  }
+  return {
+    schemaVersion: 1,
+    kind: "doubao-feishu-submission-package",
+    status: "READY_NOT_SUBMITTED",
+    generatedAt: new Date().toISOString(),
+    jobId: state.jobId,
+    configHash: state.configHash,
+    roundCount: state.rounds.length,
+    productAcceptance: structuredClone(state.finalProductAcceptance),
+    conversation: {
+      conversationId: state.conversationId,
+      feedbackUrl: state.feedbackUrl,
+      logId: state.logId,
+      shareLink: state.shareLink,
+      allMessagesSelected: state.shareReceipt?.allSelected === true,
+      selectedMessageCount: state.shareReceipt?.selectedCount ?? 0,
+    },
+    rows: state.rounds.map((round, index) => ({
+      roundNumber: index + 1,
+      prompt: round.prompt,
+      responseIdentity: round.response?.responseIdentity ?? "",
+      productScreenshot: {
+        artifactPath: round.responseScreenshot?.artifactPath ?? "",
+        sha256: round.responseScreenshot?.sha256 ?? "",
+        sizeBytes: round.responseScreenshot?.sizeBytes ?? 0,
+      },
+      humanEvaluation: {
+        labels: round.evaluation?.labels ?? [],
+        note: round.evaluation?.note ?? "",
+        vote: round.evaluation?.vote ?? "",
+      },
+    })),
+    target: target && typeof target === "object" ? structuredClone(target) : null,
+    writeback: {
+      applied: false,
+      policy: "prepare-only-until-an-exact-feishu-target-row-and-field-map-are-authorized",
+      readbackVerified: false,
+    },
+  };
+}
+
+export async function writeSubmissionPackage(state, { resultPath, target = null } = {}) {
+  if (!path.isAbsolute(String(resultPath ?? ""))) {
+    throw new Error("resultPath must be absolute when writing the submission package.");
+  }
+  const packagePath = submissionPackagePath(resultPath);
+  const value = buildSubmissionPackage(state, { target });
+  const bytes = Buffer.from(`${JSON.stringify(value, null, 2)}\n`, "utf8");
+  await mkdir(path.dirname(packagePath), { recursive: true });
+  const temporaryPath = `${packagePath}.${process.pid}.${Date.now()}.tmp`;
+  try {
+    await writeFile(temporaryPath, bytes);
+    const temporaryReadback = await readFile(temporaryPath);
+    if (digest(temporaryReadback) !== digest(bytes)) throw new Error("Submission package temporary readback mismatch.");
+    await rename(temporaryPath, packagePath);
+    const finalBytes = await readFile(packagePath);
+    const parsed = JSON.parse(finalBytes.toString("utf8"));
+    if (parsed.status !== "READY_NOT_SUBMITTED" || parsed.roundCount !== state.rounds.length) {
+      throw new Error("Submission package final readback failed structural verification.");
+    }
+    return {
+      artifactPath: path.relative(path.dirname(resultPath), packagePath).replace(/\\/gu, "/"),
+      pass: true,
+      roundCount: parsed.roundCount,
+      screenshotCount: parsed.rows.filter((row) => row.productScreenshot?.artifactPath).length,
+      sha256: digest(finalBytes),
+      sizeBytes: finalBytes.length,
+      status: parsed.status,
+      targetConfigured: parsed.target != null,
+      writeApplied: parsed.writeback.applied,
+      writtenAt: new Date().toISOString(),
+    };
+  } finally {
+    await rm(temporaryPath, { force: true });
+  }
+}

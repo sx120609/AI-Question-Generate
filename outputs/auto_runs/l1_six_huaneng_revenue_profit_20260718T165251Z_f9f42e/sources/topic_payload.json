@@ -1,0 +1,119 @@
+{
+  "recordUid": "沈礼_20260719_l1_huaneng_segment_profit_06",
+  "topic": {
+    "topicId": "huaneng-2026q1-segment-profit-driver",
+    "title": "华能国际2026年一季度板块利润与经营驱动复核",
+    "primaryCategory": "企业经营与战略决策",
+    "secondaryCategory": "能源经营分析",
+    "tertiaryCategory": "板块利润与成本驱动",
+    "businessScenario": "电力经营分析人员需要解释总收入利润下滑与不同电力板块利润分化。",
+    "mainDecision": "将发电量、电价、燃料成本和板块利润放在同一证据框架中，判断哪些方向由报告明确支持。",
+    "role": "电力经营分析专员",
+    "artifactSummary": "板块利润驱动交互页面",
+    "artifactFormats": "html",
+    "keywords": [
+      "华能国际",
+      "发电量",
+      "上网电价",
+      "燃料成本",
+      "板块利润"
+    ],
+    "attachmentSummary": "披露华能国际一季度收入利润现金流、发电与电价原因、燃料成本变化以及境内电力板块利润分化。"
+  },
+  "attachments": [
+    {
+      "id": "huaneng-2026q1-report",
+      "name": "华能国际电力股份有限公司2026年第一季度报告.pdf",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-04-29/1225237875.PDF",
+      "sourcePageUrl": "https://static.cninfo.com.cn/finalpage/2026-04-29/1225237875.PDF",
+      "publishedAt": "2026-04-29",
+      "timeAnchor": "2026年1月1日至3月31日",
+      "uniqueContent": "披露华能国际一季度收入利润现金流、发电与电价原因、燃料成本变化以及境内电力板块利润分化。",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_huaneng_revenue_profit_20260718T165251Z_f9f42e\\attachments\\华能国际电力股份有限公司2026年第一季度报告.pdf",
+      "size": 151655,
+      "sha256": "2d403df5eaf375d7866867f3abae6119ea8fa381064de9d5e5cfb4b67dcbc135"
+    }
+  ],
+  "facts": [
+    {
+      "id": "huaneng-core-performance",
+      "claimType": "source-fact",
+      "text": "2026年一季度营业收入56782594376元，同比下降5.89%；归母净利润4483918670元，同比下降9.83%；扣非归母净利润4220765364元，同比下降12.04%。",
+      "locator": "PDF第1至2页主要财务数据表",
+      "uid": "沈礼_20260719_l1_huaneng_segment_profit_06",
+      "sourceRefs": [
+        "huaneng-2026q1-report"
+      ]
+    },
+    {
+      "id": "huaneng-operating-cash",
+      "claimType": "source-fact",
+      "text": "经营活动现金流量净额12436770516元，同比下降28.51%，报告主要解释为境内发电量和平均上网结算电价下降导致营业收入减少。",
+      "locator": "PDF第2页和第4页现金流变动说明",
+      "uid": "沈礼_20260719_l1_huaneng_segment_profit_06",
+      "sourceRefs": [
+        "huaneng-2026q1-report"
+      ]
+    },
+    {
+      "id": "huaneng-income-profit-reason",
+      "claimType": "source-fact",
+      "text": "报告把营业收入下降主要归因于境内发电量和平均上网结算电价同比下降；利润下降则归因于发电量、电价下降与燃料成本下降的综合影响。",
+      "locator": "PDF第3页主要指标变动原因",
+      "uid": "沈礼_20260719_l1_huaneng_segment_profit_06",
+      "sourceRefs": [
+        "huaneng-2026q1-report"
+      ]
+    },
+    {
+      "id": "huaneng-cost-inventory",
+      "claimType": "source-fact",
+      "text": "营业成本同比下降6.44%，主要因境内燃料成本下降；存货较年末下降28.14%，主要因燃煤单价下降和库存消耗。",
+      "locator": "PDF第3至4页报表项目变动原因",
+      "uid": "沈礼_20260719_l1_huaneng_segment_profit_06",
+      "sourceRefs": [
+        "huaneng-2026q1-report"
+      ]
+    },
+    {
+      "id": "huaneng-segment-profit",
+      "claimType": "source-fact",
+      "text": "境内电力板块利润总额中，燃煤43.41亿元、同比增长9.01%，燃机9.41亿元、增长24.93%，风电18.08亿元、下降19.70%，光伏2.33亿元、下降58.67%。",
+      "locator": "PDF第4至5页境内各电力板块利润表",
+      "uid": "沈礼_20260719_l1_huaneng_segment_profit_06",
+      "sourceRefs": [
+        "huaneng-2026q1-report"
+      ]
+    },
+    {
+      "id": "huaneng-boundary",
+      "claimType": "evidence-boundary",
+      "text": "报告未披露各板块发电量、电价和燃料成本对利润变化的完整量价成本桥接，季度财务报表未经审计。",
+      "locator": "PDF第1页重要提示及第3至5页披露边界",
+      "uid": "沈礼_20260719_l1_huaneng_segment_profit_06",
+      "sourceRefs": [
+        "huaneng-2026q1-report"
+      ]
+    }
+  ],
+  "unknowns": [
+    {
+      "id": "huaneng_revenue_profit-unknown-1",
+      "uid": "沈礼_20260719_l1_huaneng_segment_profit_06",
+      "text": "附件没有给出各电力板块利润变化的完整量价成本贡献值。"
+    },
+    {
+      "id": "huaneng_revenue_profit-unknown-2",
+      "uid": "沈礼_20260719_l1_huaneng_segment_profit_06",
+      "text": "总公司经营现金流下降不能直接按各板块利润比例分摊。"
+    }
+  ],
+  "decision": {
+    "id": "huaneng_revenue_profit-decision",
+    "text": "制作板块利润驱动交互页面，把总量指标、报告披露的原因、燃料成本线索和板块利润方向并列，缺少的量价成本贡献保持待补。"
+  },
+  "deliveryUse": {
+    "recipient": "电力经营分析专员及下游同事",
+    "purpose": "供电力经营复盘时筛选需要进一步补取的板块经营数据。"
+  }
+}

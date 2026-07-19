@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "l1-production-trace-gate-report",
+  "productionProfile": "l1",
+  "gateId": "production-trace-gate-v6-profiled",
+  "status": "PASS",
+  "generatedAt": "2026-07-19T02:13:25.394Z",
+  "packetPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_05_inspur_profit_cash\\sources\\production_input_packet.json",
+  "packetHash": "40d759061ef961521fedcdbf6026b75ea256a9cb550c04977bd422b092b034ab",
+  "tracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_05_inspur_profit_cash\\qa\\production_trace.json",
+  "traceHash": "85951be63c1e69fa1a8cd784a52070df5c1cc6b3ef6f23360b1e1fa758c8f12f",
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_05_inspur_profit_cash\\drafts\\l1_questions.tsv",
+  "candidateHash": "61ab7db720f198a87095514d1c1832447329ffdced4601b90624c423b217ca36",
+  "fillPlanPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_05_inspur_profit_cash\\feishu\\feishu_fill_plan.json",
+  "fillPlanHash": "b76ee2724b860282580b3fe8655c6e79d046113124d21047a568b41fa88c7c23",
+  "rowCount": 1,
+  "attachmentRoot": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_05_inspur_profit_cash\\attachments",
+  "attachmentBindings": [
+    {
+      "uid": "沈礼_api5-20260719-1015_05",
+      "name": "浪潮电子信息产业股份有限公司2026年第一季度报告.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_05_inspur_profit_cash\\attachments\\浪潮电子信息产业股份有限公司2026年第一季度报告.pdf",
+      "sha256": "1d9075ccddc8da08907e3486f9aaddfb81cb19ea5881a50e096cac6c3ad5fcd6",
+      "bytes": 388530
+    }
+  ],
+  "productFormatDiversity": {
+    "policyId": "not-required-for-l1",
+    "status": "SKIPPED",
+    "rowCount": 1,
+    "findings": []
+  },
+  "findings": []
+}

@@ -1,0 +1,90 @@
+{
+  "kind": "scene-card-gate-report",
+  "gateId": "scene-card-role-consistency-v1",
+  "protocolId": "situated-requester-v1",
+  "schemaVersion": 1,
+  "status": "PASS",
+  "ok": true,
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_huaneng_revenue_profit_20260718T165251Z_f9f42e\\drafts\\l1_questions.tsv",
+  "candidateHash": "a6215ea20c46f80d21418a7c0607598dbde0d0b350f25b87965f7f7195843d7b",
+  "sceneCardPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_huaneng_revenue_profit_20260718T165251Z_f9f42e\\sources\\scene_cards.json",
+  "sceneCardFileHash": "4c4fa55e2fbb73c93482ce6361798d8c9e000ca34c68637925b56f9d7c2bc30b",
+  "sceneCardBundleHash": "19cc3242b5b1a55760afc847131eb657cf38fd3b547120d2d64fc03ef43fc863",
+  "sceneCardSetHash": "f439b25db8288b102bab7e03f42bb8becccd99fc79a2181608f6d2749bb146a4",
+  "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_huaneng_revenue_profit_20260718T165251Z_f9f42e\\sources\\fact_ledger.json",
+  "factLedgerHash": "f5c5e8acaa2cfed96dfcb187ddbeca5612b50c157be45baa29d0d07925509b62",
+  "summary": {
+    "candidateRowCount": 1,
+    "sceneCardCount": 1,
+    "passedRowCount": 1,
+    "failedRowCount": 0,
+    "globalErrorCount": 0,
+    "batchCollisionCount": 0
+  },
+  "rows": [
+    {
+      "uid": "沈礼_20260719_l1_huaneng_segment_profit_06",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "b4ba3a4e38cff18f4dd13751faf523ccf6ade9b7269cadf3d856060bbbf1b73f",
+      "cardHash": "98dee4345b649b886101ab75ede68079bb1b6f291d26c381fb98c2035a75026b",
+      "roleConsistencyHash": "c3c1143ca01cbdf719a4feca227e4151f167c2780d9a846eb52e01ca8159f703",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "polite-request",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "html"
+        ],
+        "mFormats": [
+          "html"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "我正在做华能国际2026年一季度板块利润与经营驱动复核，这份结果供电力经营复盘时筛选需要进一步补取的板块经营数据。",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "",
+            "occurrences": 0
+          },
+          "downstreamUseSpan": {
+            "span": "请基于前述核对结果整理一个可下载、能在本地打开的2026年第一季度HTML分析页（html格式），页面里要呈现总量指标、原因证据、板块利润对比、证据边界、筛选说明和待补数据，里面的每一项数据都要标注PDF来源页码和未经审计状态，并且保留派生计算的过程。",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [
+            "2026年"
+          ],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "977bde359c3b9df515a3f7fbde51cfd24d00e120f61b0bb0681bbc0e9af782c8"
+      }
+    }
+  ],
+  "batch": {
+    "ok": true,
+    "status": "PASS",
+    "thresholds": {
+      "highMaskedTrigramSimilarity": 0.72,
+      "sharedMaskedFragmentLength": 18
+    },
+    "comparisons": [],
+    "errors": []
+  },
+  "errors": [],
+  "evaluationHash": "b31f62617f5cd33c21789b59a7c433417df7730a9179e0b6acb30d12a90252df"
+}

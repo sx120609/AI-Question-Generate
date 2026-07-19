@@ -1,0 +1,10 @@
+file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/build/automation/release_gate.mjs:310
+        throw new Error(`Cannot reuse signed naturalness review artifacts: ${error?.message || String(error)}`);
+              ^
+
+Error: Cannot reuse signed naturalness review artifacts: Naturalness candidate hash mismatch.
+    at resolveNaturalnessPhase (file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/build/automation/release_gate.mjs:310:15)
+    at async runReleaseGate (file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/build/automation/release_gate.mjs:773:23)
+    at async file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/build/automation/produce_l1_single_task.mjs:850:21
+
+Node.js v26.5.0

@@ -1,0 +1,94 @@
+{
+  "kind": "scene-card-gate-report",
+  "gateId": "scene-card-role-consistency-v1",
+  "protocolId": "situated-requester-v1",
+  "schemaVersion": 1,
+  "status": "PASS",
+  "ok": true,
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\drafts\\l1_questions.tsv",
+  "candidateHash": "c70f0c5adcf64ea23a96d7ca7ed1b817911f11196507c7dbd52f3a1177e836d9",
+  "sceneCardPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\sources\\scene_cards.json",
+  "sceneCardFileHash": "21a49c02ac586a511c86b7ec45f6762f6f0b77e865d9043f7c4e9bde7208341d",
+  "sceneCardBundleHash": "f4313c7ae9b27d6287674c0e8d4abd7709ce5432eff3a8a70d891dd361aa7bf3",
+  "sceneCardSetHash": "ccdc391f1010d262ea0f969eb43cffae90895cdea692246eeea0086d1b7805ab",
+  "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\sources\\fact_ledger.json",
+  "factLedgerHash": "3b4bd80f64f28834202effe700fb8bdc563584b4975ae2a4a8d6ee775181aa72",
+  "summary": {
+    "candidateRowCount": 1,
+    "sceneCardCount": 1,
+    "passedRowCount": 1,
+    "failedRowCount": 0,
+    "globalErrorCount": 0,
+    "batchCollisionCount": 0
+  },
+  "rows": [
+    {
+      "uid": "沈礼_api5-20260719-1015_03",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "a13af9688c0bcc28693d1b3310364f8aff47505eb8fa4009572bfe45204c1bff",
+      "cardHash": "e95a2d439425850e8beae298a2b6d7920d528d1cb1dc3750bab1a1e851fd15b2",
+      "roleConsistencyHash": "32db7e767563b5b536277a286d6c4d03619d54189b74e6557162cc9d2ab327f3",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "polite-request",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "docx"
+        ],
+        "mFormats": [
+          "docx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "另外，请单独列出两项待核边界：一是目前未披露业务条线的资本消耗情况，二是单季数据无法证明全年的持续性。",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "",
+            "occurrences": 0
+          },
+          "downstreamUseSpan": {
+            "span": "我需要复核渝农商行的资产扩张和收入增长是否受到了资本与回报的约束，以便经营分析同事决定下一步要补充哪些业务条线和资本资料。",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [
+            "2026年",
+            "8.39%",
+            "5.07%",
+            "0.04",
+            "0.05个"
+          ],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "8bb35dea21bcd7e1d755a74daa98b266d185193148cfea39483aa36cde2d4935"
+      }
+    }
+  ],
+  "batch": {
+    "ok": true,
+    "status": "PASS",
+    "thresholds": {
+      "highMaskedTrigramSimilarity": 0.72,
+      "sharedMaskedFragmentLength": 18
+    },
+    "comparisons": [],
+    "errors": []
+  },
+  "errors": [],
+  "evaluationHash": "5f2ed76c04a5ec4b1da9dc746e8cfbd990ff6309840ae8713592f58444277a29"
+}

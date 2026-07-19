@@ -1,0 +1,173 @@
+{
+  "topic": {
+    "topicId": "shenhua-2026-adjusted-capex-funding",
+    "title": "中国神华交易并表后的资本开支调整与资金承接复核",
+    "primaryCategory": "投资战略、专业服务与企业经营",
+    "secondaryCategory": "资本计划复核",
+    "tertiaryCategory": "并表调整与资金承接",
+    "businessScenario": "计划复核人员需要把重大资产交易带来的经营目标变化与分业务资本开支增量对齐。",
+    "mainDecision": "确认资本开支增量集中在哪些业务，并评估附件能支持到何种资金承接结论。",
+    "role": "资本计划复核专员",
+    "artifactSummary": "调整前后资本开支与资金承接核对表",
+    "artifactFormats": "xlsx",
+    "keywords": [
+      "中国神华",
+      "资本开支",
+      "资产交易",
+      "经营目标",
+      "资金来源"
+    ],
+    "attachmentSummary": "披露中国神华一季度经营财务数据、重大资产交易后经营目标调整、分业务资本开支计划和资金来源边界。"
+  },
+  "sceneCard": {
+    "schemaVersion": 1,
+    "policyId": "situated-requester-v1",
+    "topicId": "shenhua-2026-adjusted-capex-funding",
+    "personaId": "shenhua_capex_funding_api5-20260719-1015-requester-01",
+    "requester": {
+      "functionalRole": "资本计划复核专员",
+      "organizationType": "企业经营与研究团队",
+      "department": "",
+      "responsibility": "把中国神华能源股份有限公司公开季度报告整理成可追溯的调整前后资本开支与资金承接核对表",
+      "authorityBoundary": "只负责复核公开披露、派生计算和证据边界，无权把未披露的业务明细写成确定归因。",
+      "recipientRelation": "资本计划复核专员及下游同事"
+    },
+    "scene": {
+      "workflowStage": "计划复核人员需要把重大资产交易带来的经营目标变化与分业务资本开支增量对齐。",
+      "trigger": "2026年一季度营业收入70397百万元，同比增长1.2%；利润总额16594百万元，同比下降7.8%；归母净利润10667百万元，同比下降10.7%；经营现金流量净额17363百万元，同比下降15.5%。",
+      "currentBlockage": "附件没有给出资本开支计划按经营现金、贷款、债务和权益融资的金额拆分。",
+      "mainDecision": "制作调整前后资本开支核对表，识别增量集中度并把经营现金流与计划资金需求并列展示，资金来源只保留报告披露的渠道和待补分配栏。",
+      "downstreamUse": "供资本计划同事跟踪项目预算和后续融资披露。"
+    },
+    "informationBoundary": {
+      "knownFactIds": [
+        "shenhua-q1-core",
+        "shenhua-transaction-scope",
+        "shenhua-target-adjustment",
+        "shenhua-capex-total",
+        "shenhua-capex-mix",
+        "shenhua-funding-boundary"
+      ],
+      "availableMaterialIds": [
+        "shenhua-2026q1-report"
+      ],
+      "unknowns": [
+        "附件没有给出资本开支计划按经营现金、贷款、债务和权益融资的金额拆分。",
+        "调整后的经营目标与资本开支均是计划值，实际结果可能受项目进度、市场和审批影响。"
+      ],
+      "forbiddenInferences": [
+        "未由季度报告披露的业务明细不得写成确定事实",
+        "派生计算只能使用事实账本中的数值和口径",
+        "未经审计的季度数据不得描述为审计确认值",
+        "相关性和变动线索不得直接表述为因果归因"
+      ]
+    },
+    "voice": {
+      "channel": "内部业务复核消息",
+      "formality": "直接、克制、以证据和可继续回填为导向",
+      "domainVocabulary": [
+        "中国神华",
+        "资本开支",
+        "资产交易",
+        "经营目标",
+        "资金来源"
+      ],
+      "avoidVocabulary": [
+        "全链路",
+        "闭环",
+        "赋能",
+        "深度洞察",
+        "麻烦",
+        "劳烦",
+        "烦请",
+        "辛苦",
+        "刚传了"
+      ]
+    },
+    "maskTerms": [
+      "中国神华能源股份有限公司",
+      "601088",
+      "中国神华",
+      "资本开支",
+      "资产交易",
+      "经营目标"
+    ],
+    "evidenceBindings": [
+      {
+        "claim": "2026年一季度营业收入70397百万元，同比增长1.2%；利润总额16594百万元，同比下降7.8%；归母净利润10667百万元，同比下降10.7%；经营现金流量净额17363百万元，同比下降15.5%。",
+        "factIds": [
+          "shenhua-q1-core"
+        ]
+      },
+      {
+        "claim": "附件没有给出资本开支计划按经营现金、贷款、债务和权益融资的金额拆分。",
+        "factIds": [
+          "shenhua-funding-boundary",
+          "shenhua-q1-core"
+        ]
+      },
+      {
+        "claim": "制作调整前后资本开支核对表，识别增量集中度并把经营现金流与计划资金需求并列展示，资金来源只保留报告披露的渠道和待补分配栏。",
+        "factIds": [
+          "shenhua-q1-core",
+          "shenhua-funding-boundary"
+        ]
+      }
+    ]
+  },
+  "attachmentPlan": {
+    "mainDecision": "制作调整前后资本开支核对表，识别增量集中度并把经营现金流与计划资金需求并列展示，资金来源只保留报告披露的渠道和待补分配栏。",
+    "attachments": [
+      {
+        "name": "中国神华能源股份有限公司2026年第一季度报告.pdf",
+        "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-25/1225185746.PDF",
+        "format": "pdf",
+        "classification": "specific-business",
+        "objectLevel": true,
+        "timeAnchor": "2026年1月1日至3月31日及调整后的2026年度计划",
+        "specificityEvidence": {
+          "object": "中国神华能源股份有限公司证券代码601088",
+          "periodOrEvent": "2026年1月1日至3月31日及调整后的2026年度计划",
+          "uniqueContent": "披露中国神华一季度经营财务数据、重大资产交易后经营目标调整、分业务资本开支计划和资金来源边界。"
+        },
+        "summary": "披露中国神华一季度经营财务数据、重大资产交易后经营目标调整、分业务资本开支计划和资金来源边界。",
+        "localPath": "中国神华能源股份有限公司2026年第一季度报告.pdf",
+        "sha256": "eafdac378c6aece9511c0e3c501ed99312a47addd138a5562d9710e66caf5959",
+        "bytes": 282693,
+        "sizeBytes": 282693,
+        "introductionHint": "把正式报告名称直接嵌入任务句，后续核对继续引用同一份已验证原件。"
+      }
+    ],
+    "specificBusinessShareRationale": "附件绑定中国神华能源股份有限公司证券代码601088和2026年1月1日至3月31日及调整后的2026年度计划，具体业务材料占比为100%。",
+    "timeSeriesRationale": "季度报告同时提供本期、上年同期或期初比较数，可形成同一对象的期间核对链。",
+    "objectSupportInQuestion": "题面明确中国神华能源股份有限公司、正式报告名称、报告期和计划复核人员需要把重大资产交易带来的经营目标变化与分业务资本开支增量对齐。。",
+    "newAttachmentSupport": "披露中国神华一季度经营财务数据、重大资产交易后经营目标调整、分业务资本开支计划和资金来源边界。",
+    "newQuestionStructureMapping": "沿用样例的真实工作卡点、证据核验和下游交付逻辑，改为围绕确认资本开支增量集中在哪些业务，并评估附件能支持到何种资金承接结论。逐轮推进。"
+  },
+  "draft": {
+    "deliverableRationale": [
+      {
+        "format": "xlsx",
+        "purpose": "用于资本开支计划复核、项目预算跟踪和后续融资披露回填",
+        "user": "资本计划复核专员及下游同事",
+        "whyThisFormat": "需要按业务核对调整前后数据、复算增量占比并持续补充分配信息，xlsx便于保留公式、来源和待核状态"
+      }
+    ],
+    "mainTask": "核对中国神华2026年调整前后经营目标与分业务资本开支，判断增量集中业务及公开披露可支持的资金承接结论边界。",
+    "productFormats": "xlsx",
+    "productParagraphMapping": "题面后半段将判断收束为可下载的核对表，要求同时呈现业务增量、现金流参照、资金渠道和待补分配信息，并以页码、审计状态和计算痕迹约束结论强度。",
+    "question": "请依据《中国神华能源股份有限公司2026年第一季度报告.pdf》核对重大资产交易纳入后的2026年经营目标与调整前后分业务资本开支，复核分项合计和披露总额并解释差异，确认179.64亿元增量主要集中在哪些业务，同时评估现有披露最多能支持到何种资金承接结论。形成可下载的中国神华2026年调整后资本开支Excel，列示经营目标变化、分业务资本开支、增量占比、2026年一季度经营现金流参照、报告披露的资金来源渠道和待补分配栏，保留来源页码、未经审计状态、公式及派生计算，区分可证事实、合理推断和待确认项，不把未披露的资金分配或业务归因写成确定结论。",
+    "structureMapping": "沿用从业务变化进入统一口径核对，再审查证据边界并形成单一判断的推进方式，改为围绕中国神华资本开支调整、增量集中度和资金承接披露展开，不复用样例领域、对象或固定产物组合。",
+    "usedAttachmentNames": [
+      "中国神华能源股份有限公司2026年第一季度报告.pdf"
+    ],
+    "usedFactIds": [
+      "shenhua-q1-core",
+      "shenhua-transaction-scope",
+      "shenhua-target-adjustment",
+      "shenhua-capex-total",
+      "shenhua-capex-mix",
+      "shenhua-funding-boundary"
+    ]
+  }
+}

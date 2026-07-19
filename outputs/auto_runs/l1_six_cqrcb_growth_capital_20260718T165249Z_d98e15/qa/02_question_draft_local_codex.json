@@ -1,0 +1,34 @@
+{
+  "kind": "local-codex-stage-response",
+  "stage": "02_question_draft",
+  "model": "gpt-5.6-sol",
+  "provider": "local-codex-cli",
+  "completedAt": "2026-07-18T17:34:07.417Z",
+  "promptHash": "e38d500a6e1649cd50cce04507b5e68ee9ea50eda28bf0f85fbf8f619be9c59b",
+  "parsed": {
+    "question": "请依据《重庆农村商业银行股份有限公司2026年第一季度报告.pdf》，把2026年一季度收入利润、资产负债增长、资本充足率、杠杆率和资产质量纳入同一证据框架，复核比较口径与指标变动，区分可由报告支持的改善项和约束项，并说明差异或疑点。最终形成可下载的渝农商行2026年一季度增长与资本约束Word简报，含指标对照表、改善与承压判断、来源页码、未经审计状态、派生计算说明、证据边界和补数清单。报告未披露的业务条线资本消耗不得作确定归因，单季变化不得外推为全年趋势。",
+    "mainTask": "复核渝农商行2026年一季度增长、回报、资本、杠杆与资产质量指标，形成区分改善项和约束项的可追溯Word简报。",
+    "usedFactIds": [
+      "cqrcb-profit-return",
+      "cqrcb-balance-growth",
+      "cqrcb-capital-ratios",
+      "cqrcb-leverage",
+      "cqrcb-asset-quality",
+      "cqrcb-audit-boundary"
+    ],
+    "usedAttachmentNames": [
+      "重庆农村商业银行股份有限公司2026年第一季度报告.pdf"
+    ],
+    "productFormats": "docx",
+    "deliverableRationale": [
+      {
+        "format": "docx",
+        "user": "银行经营复核专员及下游经营分析同事",
+        "purpose": "用于复核经营表现并决定下一步需要补取的资本和业务条线资料",
+        "whyThisFormat": "该任务需要呈现指标对照、页码证据、判断边界和可继续回填的补数清单，docx便于内部审阅、批注和后续更新。"
+      }
+    ],
+    "structureMapping": "沿用真实业务卡点、单一核心判断、证据核验、事实与推断分层及下游交付的推进结构，业务对象改为渝农商行季度经营与资本约束复核，不复用样例领域、对象或决策选项。",
+    "productParagraphMapping": "后半段先限定正式报告和核验维度，再收束到改善项与约束项判断，随后明确指标表、来源页码、审计与派生计算边界、补数清单及docx用途，使产物直接服务后续资料补取。"
+  }
+}

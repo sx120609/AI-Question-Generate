@@ -1,0 +1,15 @@
+{
+  "kind": "l1-stage3-gate-summary",
+  "generatedAt": "2026-07-18T17:40:34.523Z",
+  "workflowState": "COMPLETE",
+  "finalRecordUid": "沈礼_20260719_l1_baosteel_mix_profit_04",
+  "roleConsistency": "PASS",
+  "productionTrace": "PASS",
+  "release": {
+    "ok": true,
+    "phase": "release",
+    "status": "PASS"
+  },
+  "feishuWriteAttempted": false,
+  "feishuWriteApplied": false
+}

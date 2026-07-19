@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "policyId": "l1-phase3-source-driven-v1",
+  "policyVersion": 1,
+  "runId": "l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2",
+  "generatedAt": "2026-07-18T16:52:50.770Z",
+  "expiresAt": "2026-07-19T16:52:50.770Z",
+  "profiles": [
+    {
+      "slot": 1,
+      "index": 0,
+      "profileId": "l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2_source_01",
+      "sourceDriven": true
+    }
+  ],
+  "note": "No opening, evidence, flow, or product style is assigned. Draft from source facts, then use batch gates to detect accidental concentration."
+}

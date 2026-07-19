@@ -1,0 +1,1005 @@
+{
+  "configHash": "26a9a7e0ea75bb70775653ae708db04ff3ecd1d96f038d6726f298c218a7eb9d",
+  "conversationId": "38434252802105858",
+  "jobId": "l1-mooncake-capacity-20260718",
+  "maxRounds": 6,
+  "mode": "openai-compatible",
+  "contentScopePolicyVersion": "domestic-work-scope-v1",
+  "finalProductAcceptance": null,
+  "productRequirement": {
+    "allowEquivalentOnline": true,
+    "allowUnavailableBestEffort": true,
+    "required": true,
+    "requestedFormats": [
+      "excel"
+    ]
+  },
+  "rounds": [
+    {
+      "contentScopeBeforeModel": {
+        "calculationComplexityCount": 2,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "contentScopeAfterModel": {
+        "calculationComplexityCount": 2,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "evaluation": {
+        "note": "回复里列了分SKU需求和工作簿结构。不过待定金的核心口径前后有冲突。全周期汇总写的是21,920盒。TOP2又写约9,000盒。这样没法复核50%转化率和弹性产能。这也会直接影响后续排产。另外产物卡片上没有显示可下载链接。",
+        "panelClosed": true,
+        "submitted": true,
+        "labels": [
+          "其他"
+        ],
+        "responseCount": 1,
+        "vote": "dislike",
+        "evidenceQuote": "待定金总量\t21,920\t团购渠道待收定金，单列",
+        "score": 2
+      },
+      "feedbackPreflight": {
+        "issues": [],
+        "pass": true,
+        "prompt": "回复里列了分SKU需求和工作簿结构。不过待定金的核心口径前后有冲突。全周期汇总写的是21,920盒。TOP2又写约9,000盒。这样没法复核50%转化率和弹性产能。这也会直接影响后续排产。另外产物卡片上没有显示可下载链接。",
+        "changed": false,
+        "model": "gpt-5.6-sol",
+        "provider": "local-codex-cli",
+        "retryTrace": [
+          {
+            "attempt": 1,
+            "phase": "initial",
+            "retry": 0,
+            "status": "success"
+          }
+        ],
+        "textPurpose": "feedback-note",
+        "usage": {}
+      },
+      "feedbackRewrite": {
+        "changed": true,
+        "model": "gemini-3.1-pro-preview",
+        "pass": true,
+        "preservation": {
+          "issues": [],
+          "pass": true,
+          "rewrittenLength": 111,
+          "sourceLength": 101
+        },
+        "prompt": "回复里列了分SKU需求和工作簿结构。不过待定金的核心口径前后有冲突。全周期汇总写的是21,920盒。TOP2又写约9,000盒。这样没法复核50%转化率和弹性产能。这也会直接影响后续排产。另外产物卡片上没有显示可下载链接。",
+        "retryTrace": [
+          {
+            "attempt": 1,
+            "phase": "initial",
+            "retry": 0,
+            "status": "success"
+          }
+        ],
+        "textPurpose": "feedback-note",
+        "usage": {
+          "prompt_tokens": 654,
+          "completion_tokens": 896,
+          "total_tokens": 1550,
+          "billing_usage": {
+            "source": "gemini_chat",
+            "semantic": "gemini",
+            "gemini_usage_metadata": {
+              "promptTokenCount": 654,
+              "toolUsePromptTokenCount": 0,
+              "candidatesTokenCount": 87,
+              "totalTokenCount": 1550,
+              "thoughtsTokenCount": 809,
+              "cachedContentTokenCount": 0,
+              "promptTokensDetails": [],
+              "toolUsePromptTokensDetails": [],
+              "candidatesTokensDetails": []
+            }
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 654,
+            "audio_tokens": 0,
+            "image_tokens": 0
+          },
+          "completion_tokens_details": {
+            "text_tokens": 0,
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 809
+          },
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "input_tokens_details": null,
+          "claude_cache_creation_5_m_tokens": 0,
+          "claude_cache_creation_1_h_tokens": 0
+        }
+      },
+      "attachmentNames": [
+        "附件一_月饼预售与渠道滚动预测_20260718.csv",
+        "附件四_预测口径与7月18日排产会纪要.txt"
+      ],
+      "index": 1,
+      "plannedPrompt": "我负责华东中央厨房今年的月饼旺季排产，管理层希望在7月31日前确定W1到W4的生产策略。四款产品要同时覆盖直营网点、电商预售和企业团购。现在各渠道的数量单位并不一致，确认程度也有差别，生产端还要考虑换型、班组和仓储约束。\n\n我先给你附件一和附件四。附件一保留了各系统导出的原始数量、折算系数和历史波动。附件四记录了7月18日排产会上对口径和订单权重的争议。\n\n这次先把需求侧算清。你把三类渠道统一折成盒，按W1到W4分别汇总四个SKU的预测量和已确认量。待定金订单单列。结合历史误差和取消率修正需求，再把现货与积压计入基准需求区间。结果里保留每一步计算口径，并指出对排产影响最大的三个不确定因素。\n\n我会根据这份结果继续补充产线和履约约束，最后需要一份可下载的Excel排产决策工作簿。",
+      "preflight": {
+        "issues": [],
+        "pass": true,
+        "prompt": "我负责华东中央厨房今年的月饼旺季排产。管理层希望在7月31日前确定W1到W4的生产策略。四款产品要同时覆盖直营网点、电商预售和企业团购。现在各渠道的数量单位不一致，确认程度也有差别。生产端还要考虑换型、班组和仓储约束。我先发你附件一和附件四。附件一保留了各系统导出的原始数量、折算系数和历史波动。附件四记录了7月18日排产会上对口径和订单权重的争议。你先把需求侧算清。把三类渠道统一折成盒，按W1到W4分别汇总四个SKU的预测量和已确认量。待定金订单单列。结合历史误差和取消率修正需求，把现货与积压计入基准需求区间。结果里保留每一步计算口径，并指出对排产影响最大的三个不确定因素。我会根据这份结果继续补充产线和履约约束，最后我们需要一份可下载的Excel排产决策工作簿。",
+        "changed": false,
+        "model": "gpt-5.6-sol",
+        "provider": "local-codex-cli",
+        "retryTrace": [
+          {
+            "attempt": 1,
+            "phase": "initial",
+            "retry": 0,
+            "status": "success"
+          }
+        ],
+        "textPurpose": "chat-prompt",
+        "usage": {}
+      },
+      "prompt": "我负责华东中央厨房今年的月饼旺季排产。管理层希望在7月31日前确定W1到W4的生产策略。四款产品要同时覆盖直营网点、电商预售和企业团购。现在各渠道的数量单位不一致，确认程度也有差别。生产端还要考虑换型、班组和仓储约束。我先发你附件一和附件四。附件一保留了各系统导出的原始数量、折算系数和历史波动。附件四记录了7月18日排产会上对口径和订单权重的争议。你先把需求侧算清。把三类渠道统一折成盒，按W1到W4分别汇总四个SKU的预测量和已确认量。待定金订单单列。结合历史误差和取消率修正需求，把现货与积压计入基准需求区间。结果里保留每一步计算口径，并指出对排产影响最大的三个不确定因素。我会根据这份结果继续补充产线和履约约束，最后我们需要一份可下载的Excel排产决策工作簿。",
+      "response": {
+        "attachmentUpload": {
+          "completedAt": "2026-07-18T05:08:26.409Z",
+          "expectedCount": 2,
+          "expectedNames": [
+            "附件一_月饼预售与渠道滚动预测_20260718.csv",
+            "附件四_预测口径与7月18日排产会纪要.txt"
+          ],
+          "fileInputMultiple": true,
+          "pass": true,
+          "selectedNames": [
+            "附件一_月饼预售与渠道滚动预测_20260718.csv",
+            "附件四_预测口径与7月18日排产会纪要.txt"
+          ],
+          "startedAt": "2026-07-18T05:08:23.000Z",
+          "visibleCount": 2,
+          "visibleNames": [
+            "附件一_月饼预售与渠道滚动预测_20260718.csv",
+            "附件四_预测口径与7月18日排产会纪要.txt"
+          ]
+        },
+        "artifacts": [
+          {
+            "dataTestId": "sheet-product-card",
+            "href": "",
+            "label": "Asset cover",
+            "text": "月饼旺季排产_需求侧测算工作簿\n创建时间：13:08"
+          }
+        ],
+        "completedAt": "2026-07-18T05:12:19.984Z",
+        "conversationId": "38434252802105858",
+        "durationMs": 237065,
+        "prompt": "我负责华东中央厨房今年的月饼旺季排产。管理层希望在7月31日前确定W1到W4的生产策略。四款产品要同时覆盖直营网点、电商预售和企业团购。现在各渠道的数量单位不一致，确认程度也有差别。生产端还要考虑换型、班组和仓储约束。我先发你附件一和附件四。附件一保留了各系统导出的原始数量、折算系数和历史波动。附件四记录了7月18日排产会上对口径和订单权重的争议。你先把需求侧算清。把三类渠道统一折成盒，按W1到W4分别汇总四个SKU的预测量和已确认量。待定金订单单列。结合历史误差和取消率修正需求，把现货与积压计入基准需求区间。结果里保留每一步计算口径，并指出对排产影响最大的三个不确定因素。我会根据这份结果继续补充产线和履约约束，最后我们需要一份可下载的Excel排产决策工作簿。",
+        "response": "需求侧测算已完成，工作簿包含 9 个 Sheet，完整保留了每一步计算口径。核心结论如下：\n一、全周期需求总量（W1-W4，统一折盒）\n表格\n指标\t数量（盒）\t说明\n预测总量\t288,960\t三渠道原始预测折盒后合计\n已确认总量\t176,030\t已锁单部分，覆盖率约 60.9%\n待定金总量\t21,920\t团购渠道待收定金，单列\n净需求中值\t288,201\t扣减现货、计入积压后的基准排产参考\n二、分 SKU 净需求中值（W1-W4 合计）\n流心奶黄 MC01：101,152 盒（占比 35%，最大单品）\n双黄莲蓉 DL03：80,076 盒（占比 28%，预测最稳，MAPE 仅～14%）\n低糖五仁 WF02：60,655 盒（占比 21%）\n茶香桃山 TJ04：46,318 盒（占比 16%，新品，不确定性最高）\n三、排产影响最大的三个不确定因素\nTOP1 新品茶香桃山预测偏差\nMAPE 高达 24%-32%，是成熟品的 2 倍以上\nW4 净需求上下限相差约 5,000 盒，区间宽度超 50%\n建议：W1-W2 按中值偏下排产，单列缓冲产能和仓储\nTOP2 团购待定金订单转化率\n全周期待定金合计约 9,000 盒（折盒后），W4 占比最高\n财务建议按 50% 计入，即约 4,500 盒弹性产能\n触发点：7 月 25 日销售锁单表、9 月 10 日团购最终锁单\nTOP3 电商投放与直播资源确认\n电商渠道 MAPE 普遍高于直营 5-8 个百分点\nW3-W4 电商占比超 50%，低糖五仁标签页、茶香桃山达人排期尚未锁定\n建议：电商预测按下限保守备料，包装线预留 10%-15% 弹性\n四、工作簿结构\n计算口径说明 — 10 步计算逻辑完整说明\n原始数据 — 附件一原始数据完整保留\n折算明细_统一盒 — 各渠道折盒后明细\n周度汇总_分 SKU — W1-W4 × 4SKU 汇总（高风险行标橙）\n需求修正区间 — MAPE + 取消率修正后的上 / 中 / 下限\n净需求基准 — 计入现货与积压后的净需求\n分渠道预测矩阵 — 三渠道横向对比透视\n不确定因素 TOP3 — 量化影响与排产建议\n全周期总量汇总 — 4SKU 合计总览\n你可以补充产线、班组、仓储等约束条件，我们继续搭建完整的排产决策模型。",
+        "responseIdentity": "block_b549be20-8266-11f1-a40a-b735be607447",
+        "responseCount": 1,
+        "sendReceipt": {
+          "countAfter": 2,
+          "countBefore": 0,
+          "identity": "block_4a8e4188-3e9e-4dd3-93e6-828310dca925",
+          "pass": true,
+          "prompt": "我负责华东中央厨房今年的月饼旺季排产。管理层希望在 7 月 31 日前确定 W1 到 W4 的生产策略。四款产品要同时覆盖直营网点、电商预售和企业团购。现在各渠道的数量单位不一致，确认程度也有差别。生产端还要考虑换型、班组和仓储约束。我先发你附件一和附件四。附件一保留了各系统导出的原始数量、折算系数和历史波动。附件四记录了 7 月 18 日排产会上对口径和订单权重的争议。你先把需求侧算清。把三类渠道统一折成盒，按 W1 到 W4 分别汇总四个 SKU 的预测量和已确认量。待定金订单单列。结合历史误差和取消率修正需求，把现货与积压计入基准需求区间。结果里保留每一步计算口径，并指出对排产影响最大的三个不确定因素。我会根据这份结果继续补充产线和履约约束，最后我们需要一份可下载的 Excel 排产决策工作簿。",
+          "verifiedAt": "2026-07-18T05:08:26.948Z"
+        },
+        "startedAt": "2026-07-18T05:08:22.919Z",
+        "url": "chrome://doubao-chat/chat/38434252802105858?layout=zen_split&pluginId=ai-sheet-canvas&canvas_impayload=%7B%22artifactMetaId%22%3A%2250324683610578178%22%2C%22artifactVersionId%22%3A%2250324683610578434%22%2C%22blockStatus%22%3A2%2C%22blockType%22%3A10030%2C%22conversationId%22%3A%2238434252802105858%22%2C%22docTitle%22%3A%22%E6%9C%88%E9%A5%BC%E6%97%BA%E5%AD%A3%E6%8E%92%E4%BA%A7_%E9%9C%80%E6%B1%82%E4%BE%A7%E6%B5%8B%E7%AE%97%E5%B7%A5%E4%BD%9C%E7%B0%BF%22%2C%22docToken%22%3A%22R79fslQ7thse01tlhWEcbDvMnte%22%2C%22isAutoOpen%22%3Atrue%2C%22messageId%22%3A%2250325982172174594%22%2C%22resourceType%22%3A12%2C%22resourceVersion%22%3A-1%2C%22scene%22%3A%22unknown%22%7D"
+      },
+      "rewrite": {
+        "changed": true,
+        "model": "gemini-3.1-pro-preview",
+        "pass": true,
+        "preservation": {
+          "issues": [],
+          "pass": true,
+          "rewrittenLength": 335,
+          "sourceLength": 343
+        },
+        "prompt": "我负责华东中央厨房今年的月饼旺季排产。管理层希望在7月31日前确定W1到W4的生产策略。四款产品要同时覆盖直营网点、电商预售和企业团购。现在各渠道的数量单位不一致，确认程度也有差别。生产端还要考虑换型、班组和仓储约束。我先发你附件一和附件四。附件一保留了各系统导出的原始数量、折算系数和历史波动。附件四记录了7月18日排产会上对口径和订单权重的争议。你先把需求侧算清。把三类渠道统一折成盒，按W1到W4分别汇总四个SKU的预测量和已确认量。待定金订单单列。结合历史误差和取消率修正需求，把现货与积压计入基准需求区间。结果里保留每一步计算口径，并指出对排产影响最大的三个不确定因素。我会根据这份结果继续补充产线和履约约束，最后我们需要一份可下载的Excel排产决策工作簿。",
+        "retryTrace": [
+          {
+            "attempt": 1,
+            "phase": "initial",
+            "retry": 0,
+            "status": "success"
+          }
+        ],
+        "textPurpose": "chat-prompt",
+        "usage": {
+          "prompt_tokens": 815,
+          "completion_tokens": 1190,
+          "total_tokens": 2005,
+          "billing_usage": {
+            "source": "gemini_chat",
+            "semantic": "gemini",
+            "gemini_usage_metadata": {
+              "promptTokenCount": 815,
+              "toolUsePromptTokenCount": 0,
+              "candidatesTokenCount": 243,
+              "totalTokenCount": 2005,
+              "thoughtsTokenCount": 947,
+              "cachedContentTokenCount": 0,
+              "promptTokensDetails": [],
+              "toolUsePromptTokensDetails": [],
+              "candidatesTokensDetails": []
+            }
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 815,
+            "audio_tokens": 0,
+            "image_tokens": 0
+          },
+          "completion_tokens_details": {
+            "text_tokens": 0,
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 947
+          },
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "input_tokens_details": null,
+          "claude_cache_creation_5_m_tokens": 0,
+          "claude_cache_creation_1_h_tokens": 0
+        }
+      },
+      "status": "complete",
+      "modelRetries": {
+        "prompt_de_ai_rewrite": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success"
+            }
+          ],
+          "status": "complete"
+        },
+        "prompt_preflight": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success"
+            }
+          ],
+          "status": "complete"
+        },
+        "evaluation_planner": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success"
+            }
+          ],
+          "status": "complete"
+        },
+        "feedback_de_ai_rewrite": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success"
+            }
+          ],
+          "status": "complete"
+        },
+        "feedback_preflight": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success"
+            }
+          ],
+          "status": "complete"
+        }
+      },
+      "contentScopeAfterRewrite": {
+        "calculationComplexityCount": 2,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "attachmentVerification": {
+        "attachmentCount": 2,
+        "attachments": [
+          {
+            "classification": "specific-business",
+            "introductionHint": "首轮用于统一渠道数量口径并识别需求波动和数据缺口。",
+            "name": "附件一_月饼预售与渠道滚动预测_20260718.csv",
+            "relativePath": "附件一_月饼预售与渠道滚动预测_20260718.csv",
+            "sha256": "a88f7bf0b74df4b965437eadc24d7ee7b709800d487e212af8cb72dcbdeb02c0",
+            "sizeBytes": 7391,
+            "sourceUrl": "https://ops.example.cn/planning/exports/FV0718",
+            "summary": "2026年7月18日导出的W1至W4月饼滚动预测表，包含四个SKU在直营网点、电商预售和企业团购的预测量、确认量、待定金量、单位折算、历史误差、取消率、现货与积压。"
+          },
+          {
+            "classification": "specific-business",
+            "introductionHint": "首轮与需求表一起上传，用于解释单位折算和预测口径争议。",
+            "name": "附件四_预测口径与7月18日排产会纪要.txt",
+            "relativePath": "附件四_预测口径与7月18日排产会纪要.txt",
+            "sha256": "e99c32ea64e6706c3533140a00972325bff7a093273460cd4cf8ee55bf7e811d",
+            "sizeBytes": 1914,
+            "sourceUrl": "https://oa.example.cn/meetings/20260718-mooncake-plan",
+            "summary": "2026年7月18日排产会纪要，记录三类渠道数量口径、预测版本、现货与积压处理、产能计算方式、五项部门争议，以及管理层对策略对比和改排触发指标的要求。"
+          }
+        ],
+        "pass": true,
+        "verifiedAt": "2026-07-18T05:08:22.863Z"
+      },
+      "responseVisibility": {
+        "issues": [],
+        "observations": [],
+        "pass": true
+      },
+      "responseScreenshot": {
+        "capturedAt": "2026-07-18T05:12:22.993Z",
+        "pass": true,
+        "readbackAfter": "identity-and-text-match",
+        "responseCount": 1,
+        "responseIdentity": "block_b549be20-8266-11f1-a40a-b735be607447",
+        "sha256": "b8d26650109345af9564acc7dcf069c697c13376e9ac8f69ae2a76a0dfc8ea89",
+        "sizeBytes": 131802,
+        "artifactPath": "result.artifacts/round-01-response.png"
+      },
+      "nextPromptContentScope": {
+        "calculationComplexityCount": 3,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "decision": {
+        "evaluation": {
+          "evidenceQuote": "待定金总量\t21,920\t团购渠道待收定金，单列",
+          "labels": [
+            "其他"
+          ],
+          "note": "回复里列了分SKU需求和工作簿结构。不过待定金的核心口径前后有冲突。全周期汇总写的是21,920盒。TOP2又写约9,000盒。这样没法复核50%转化率和弹性产能。这也会直接影响后续排产。另外产物卡片上没有显示可下载链接。",
+          "score": 2,
+          "vote": "dislike"
+        },
+        "nextAttachmentNames": [],
+        "nextPrompt": "你先核对全周期待定金总量的口径，正文一处写21,920盒，TOP2又写约9,000盒。请按SKU和W1至W4列出原始单位、折算系数与折盒结果，统一修正总量并说明50%转化率对应的弹性产能。",
+        "productAssessment": null,
+        "evaluator": {
+          "id": "local-codex-1784351565542",
+          "model": "gpt-5.6-sol",
+          "provider": "local-codex-cli",
+          "retryTrace": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success",
+              "validationAttempt": 1
+            }
+          ],
+          "usage": {},
+          "validationFailures": []
+        }
+      },
+      "feedbackSourceNote": "回复给出了分SKU需求和工作簿结构，但待定金核心口径前后冲突。全周期汇总写21,920盒，TOP2又写约9,000盒，导致50%转化率和弹性产能无法复核，也会直接影响后续排产。产物卡片未显示可下载链接。",
+      "feedbackRewriteContentScope": {
+        "calculationComplexityCount": 2,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "feedbackContentScope": {
+        "calculationComplexityCount": 2,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "productAssessment": null
+    },
+    {
+      "contentScopeBeforeModel": {
+        "calculationComplexityCount": 3,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "contentScopeAfterModel": {
+        "calculationComplexityCount": 3,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "evaluation": {
+        "note": "本轮回复明确核实了21,920盒的正确口径。结果按W1至W4和四个SKU列出了原始套数、折算系数及折盒结果。分项加总也能复核到总量。这处“弹性产能区间10,960至21,920盒”的口径容易混淆基准计入量与额外预留量。在基准已计入50%的情况下，转化率升至100%时追加的弹性产能应明确为10,960盒。",
+        "panelClosed": true,
+        "submitted": true,
+        "labels": [
+          "内容准确",
+          "易于理解",
+          "其他"
+        ],
+        "responseCount": 2,
+        "vote": "like",
+        "evidenceQuote": "全周期待定金总量统一为 21,920 盒（折盒后）",
+        "score": 3
+      },
+      "feedbackPreflight": {
+        "issues": [],
+        "pass": true,
+        "prompt": "本轮回复明确核实了21,920盒的正确口径。结果按W1至W4和四个SKU列出了原始套数、折算系数及折盒结果。分项加总也能复核到总量。这处“弹性产能区间10,960至21,920盒”的口径容易混淆基准计入量与额外预留量。在基准已计入50%的情况下，转化率升至100%时追加的弹性产能应明确为10,960盒。",
+        "changed": false,
+        "model": "gpt-5.6-sol",
+        "provider": "local-codex-cli",
+        "retryTrace": [
+          {
+            "attempt": 1,
+            "phase": "initial",
+            "retry": 0,
+            "status": "success"
+          }
+        ],
+        "textPurpose": "feedback-note",
+        "usage": {}
+      },
+      "feedbackRewrite": {
+        "changed": true,
+        "model": "gemini-3.1-pro-preview",
+        "pass": true,
+        "preservation": {
+          "issues": [],
+          "pass": true,
+          "rewrittenLength": 152,
+          "sourceLength": 146
+        },
+        "prompt": "本轮回复明确核实了21,920盒的正确口径。结果按W1至W4和四个SKU列出了原始套数、折算系数及折盒结果。分项加总也能复核到总量。这处“弹性产能区间10,960至21,920盒”的口径容易混淆基准计入量与额外预留量。在基准已计入50%的情况下，转化率升至100%时追加的弹性产能应明确为10,960盒。",
+        "retryTrace": [
+          {
+            "attempt": 1,
+            "phase": "initial",
+            "retry": 0,
+            "status": "success"
+          }
+        ],
+        "textPurpose": "feedback-note",
+        "usage": {
+          "prompt_tokens": 747,
+          "completion_tokens": 904,
+          "total_tokens": 1651,
+          "billing_usage": {
+            "source": "gemini_chat",
+            "semantic": "gemini",
+            "gemini_usage_metadata": {
+              "promptTokenCount": 747,
+              "toolUsePromptTokenCount": 0,
+              "candidatesTokenCount": 131,
+              "totalTokenCount": 1651,
+              "thoughtsTokenCount": 773,
+              "cachedContentTokenCount": 0,
+              "promptTokensDetails": [],
+              "toolUsePromptTokensDetails": [],
+              "candidatesTokensDetails": []
+            }
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 747,
+            "audio_tokens": 0,
+            "image_tokens": 0
+          },
+          "completion_tokens_details": {
+            "text_tokens": 0,
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 773
+          },
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "input_tokens_details": null,
+          "claude_cache_creation_5_m_tokens": 0,
+          "claude_cache_creation_1_h_tokens": 0
+        }
+      },
+      "attachmentNames": [],
+      "index": 2,
+      "plannedPrompt": "你先核对全周期待定金总量的口径，正文一处写21,920盒，TOP2又写约9,000盒。请按SKU和W1至W4列出原始单位、折算系数与折盒结果，统一修正总量并说明50%转化率对应的弹性产能。",
+      "preflight": {
+        "issues": [],
+        "pass": true,
+        "prompt": "你先核对一下全周期待定金总量的口径。正文有一处写的是21,920盒，TOP2那里又写了约9,000盒。按SKU和W1至W4把原始单位、折算系数以及折盒结果都列出来。统一修正总量，再说明一下50%转化率对应的弹性产能。",
+        "changed": false,
+        "model": "gpt-5.6-sol",
+        "provider": "local-codex-cli",
+        "retryTrace": [
+          {
+            "attempt": 1,
+            "phase": "initial",
+            "retry": 0,
+            "status": "success"
+          }
+        ],
+        "textPurpose": "chat-prompt",
+        "usage": {}
+      },
+      "prompt": "你先核对一下全周期待定金总量的口径。正文有一处写的是21,920盒，TOP2那里又写了约9,000盒。按SKU和W1至W4把原始单位、折算系数以及折盒结果都列出来。统一修正总量，再说明一下50%转化率对应的弹性产能。",
+      "response": {
+        "attachmentUpload": null,
+        "artifacts": [
+          {
+            "dataTestId": "sheet-product-card",
+            "href": "",
+            "label": "Asset cover",
+            "text": "月饼旺季排产_需求侧测算工作簿（修正版）\n创建时间：13:13"
+          }
+        ],
+        "completedAt": "2026-07-18T05:16:54.414Z",
+        "conversationId": "38434252802105858",
+        "durationMs": 203046,
+        "prompt": "你先核对一下全周期待定金总量的口径。正文有一处写的是21,920盒，TOP2那里又写了约9,000盒。按SKU和W1至W4把原始单位、折算系数以及折盒结果都列出来。统一修正总量，再说明一下50%转化率对应的弹性产能。",
+        "response": "确认了，21,920 盒是全周期折盒后的正确总量，之前 TOP2 描述里的 \"9,000 盒\" 是笔误（实际是流心奶黄单 SKU 的待定金量）。现在修正工作簿，新增待定金折算明细 Sheet 并统一口径。\n已完成口径修正，全周期待定金总量统一为 21,920 盒（折盒后）。之前 TOP2 描述中的 \"9,000 盒\" 是笔误（实为流心奶黄单 SKU 的待定金量）。工作簿新增「待定金折算明细」Sheet，完整保留了原始单位、折算系数和折盒结果。\n一、待定金折算明细（企业团购渠道，原始单位：套）\n表格\n波次\tSKU\t原始数量 (套)\t折算系数 (盒 / 套)\t折盒后 (盒)\nW1\t流心奶黄\t80\t×8\t640\n\t低糖五仁\t50\t×6\t300\n\t双黄莲蓉\t40\t×8\t320\n\t茶香桃山\t40\t×6\t240\n\tW1 小计\t\t\t1,500\nW2\t流心奶黄\t180\t×8\t1,440\n\t低糖五仁\t110\t×6\t660\n\t双黄莲蓉\t90\t×8\t720\n\t茶香桃山\t80\t×6\t480\n\tW2 小计\t\t\t3,300\nW3\t流心奶黄\t360\t×8\t2,880\n\t低糖五仁\t180\t×6\t1,080\n\t双黄莲蓉\t240\t×8\t1,920\n\t茶香桃山\t150\t×6\t900\n\tW3 小计\t\t\t6,780\nW4\t流心奶黄\t520\t×8\t4,160\n\t低糖五仁\t310\t×6\t1,860\n\t双黄莲蓉\t360\t×8\t2,880\n\t茶香桃山\t240\t×6\t1,440\n\tW4 小计\t\t\t10,340\n全周期合计\t\t\t\t21,920\n二、分 SKU 待定金汇总（折盒后）\n流心奶黄 MC01：9,120 盒（占比 41.6%，最大宗）\n双黄莲蓉 DL03：5,840 盒（占比 26.6%）\n低糖五仁 WF02：3,900 盒（占比 17.8%）\n茶香桃山 TJ04：3,060 盒（占比 14.0%）\n三、50% 转化率对应的弹性产能\n表格\n口径\t对应产能（盒）\t说明\n财务基准（50% 转化率）\t10,960\t按财务建议折半计入排产需求基准\n乐观情景（100% 全部转化）\t21,920\t若所有待定金订单全部落单的上限\n弹性产能区间\t10,960 ~ 21,920\t排产需预留的弹性空间，差额约 1.1 万盒\n排产建议：\n基准需求按 50% 计入（+10,960 盒），确保原料采购不超配\n包装线和成品仓预留 100% 弹性空间（+21,920 盒），因为 9 月 10 日前团购仍可锁单\n7 月 25 日销售锁单表更新后，可一次性修正 W3-W4 的待定金系数\n四、本次修正内容\n新增「待定金折算明细」Sheet：完整列出 16 条团购待定金的原始套数、折算系数、折盒结果，含周小计和全周期合计\n修正「不确定因素 TOP3」Sheet：TOP2 量化影响统一为 21,920 盒，50% 转化率对应 10,960 盒\n补充「计算口径说明」：新增第 11 条待定金弹性产能计算口径\n其余 Sheet 数据不变，总量均为折盒后口径\n你可以继续补充产线、班组、仓储等约束条件，我们进入排产侧的建模。",
+        "responseIdentity": "block_6b1bc360-8267-11f1-a40a-b735be607447",
+        "responseCount": 2,
+        "sendReceipt": {
+          "countAfter": 3,
+          "countBefore": 2,
+          "identity": "block_6b155ac0-8267-11f1-a40a-b735be607447",
+          "pass": true,
+          "prompt": "你先核对一下全周期待定金总量的口径。正文有一处写的是 21,920 盒，TOP2 那里又写了约 9,000 盒。按 SKU 和 W1 至 W4 把原始单位、折算系数以及折盒结果都列出来。统一修正总量，再说明一下 50% 转化率对应的弹性产能。",
+          "verifiedAt": "2026-07-18T05:13:31.800Z"
+        },
+        "startedAt": "2026-07-18T05:13:31.368Z",
+        "url": "chrome://doubao-chat/chat/38434252802105858?layout=zen_split&pluginId=ai-sheet-canvas&canvas_impayload=%7B%22artifactMetaId%22%3A%2250324683610578178%22%2C%22artifactVersionId%22%3A%2250324683610578434%22%2C%22blockStatus%22%3A2%2C%22blockType%22%3A10030%2C%22conversationId%22%3A%2238434252802105858%22%2C%22docTitle%22%3A%22%E6%9C%88%E9%A5%BC%E6%97%BA%E5%AD%A3%E6%8E%92%E4%BA%A7_%E9%9C%80%E6%B1%82%E4%BE%A7%E6%B5%8B%E7%AE%97%E5%B7%A5%E4%BD%9C%E7%B0%BF%22%2C%22docToken%22%3A%22R79fslQ7thse01tlhWEcbDvMnte%22%2C%22isAutoOpen%22%3Atrue%2C%22messageId%22%3A%2250325982172174594%22%2C%22resourceType%22%3A12%2C%22resourceVersion%22%3A-1%2C%22scene%22%3A%22unknown%22%7D"
+      },
+      "rewrite": {
+        "changed": true,
+        "model": "gemini-3.1-pro-preview",
+        "pass": true,
+        "preservation": {
+          "issues": [],
+          "pass": true,
+          "rewrittenLength": 108,
+          "sourceLength": 94
+        },
+        "prompt": "你先核对一下全周期待定金总量的口径。正文有一处写的是21,920盒，TOP2那里又写了约9,000盒。按SKU和W1至W4把原始单位、折算系数以及折盒结果都列出来。统一修正总量，再说明一下50%转化率对应的弹性产能。",
+        "retryTrace": [
+          {
+            "attempt": 1,
+            "phase": "initial",
+            "retry": 0,
+            "status": "success"
+          }
+        ],
+        "textPurpose": "chat-prompt",
+        "usage": {
+          "prompt_tokens": 881,
+          "completion_tokens": 657,
+          "total_tokens": 1538,
+          "billing_usage": {
+            "source": "gemini_chat",
+            "semantic": "gemini",
+            "gemini_usage_metadata": {
+              "promptTokenCount": 881,
+              "toolUsePromptTokenCount": 0,
+              "candidatesTokenCount": 92,
+              "totalTokenCount": 1538,
+              "thoughtsTokenCount": 565,
+              "cachedContentTokenCount": 0,
+              "promptTokensDetails": [],
+              "toolUsePromptTokensDetails": [],
+              "candidatesTokensDetails": []
+            }
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 881,
+            "audio_tokens": 0,
+            "image_tokens": 0
+          },
+          "completion_tokens_details": {
+            "text_tokens": 0,
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 565
+          },
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "input_tokens_details": null,
+          "claude_cache_creation_5_m_tokens": 0,
+          "claude_cache_creation_1_h_tokens": 0
+        }
+      },
+      "status": "complete",
+      "modelRetries": {
+        "prompt_de_ai_rewrite": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success"
+            }
+          ],
+          "status": "complete"
+        },
+        "prompt_preflight": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success"
+            }
+          ],
+          "status": "complete"
+        },
+        "evaluation_planner": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success"
+            }
+          ],
+          "status": "complete"
+        },
+        "feedback_de_ai_rewrite": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success"
+            }
+          ],
+          "status": "complete"
+        },
+        "feedback_preflight": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success"
+            }
+          ],
+          "status": "complete"
+        }
+      },
+      "contentScopeAfterRewrite": {
+        "calculationComplexityCount": 3,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "responseVisibility": {
+        "issues": [],
+        "observations": [],
+        "pass": true
+      },
+      "responseScreenshot": {
+        "capturedAt": "2026-07-18T05:16:55.994Z",
+        "pass": true,
+        "readbackAfter": "identity-and-text-match",
+        "responseCount": 2,
+        "responseIdentity": "block_6b1bc360-8267-11f1-a40a-b735be607447",
+        "sha256": "5354be38a7594a7e281a4954ede3524b66bd58b7fdc38b81c910e48d9a57b80f",
+        "sizeBytes": 152727,
+        "artifactPath": "result.artifacts/round-02-response.png"
+      },
+      "nextPromptContentScope": {
+        "calculationComplexityCount": 2,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "decision": {
+        "evaluation": {
+          "evidenceQuote": "全周期待定金总量统一为 21,920 盒（折盒后）",
+          "labels": [
+            "内容准确",
+            "易于理解",
+            "其他"
+          ],
+          "note": "本轮回复明确核实了21,920盒的正确口径。结果按W1至W4和四个SKU列出了原始套数、折算系数及折盒结果。分项加总也能复核到总量。这处“弹性产能区间10,960至21,920盒”的口径容易混淆基准计入量与额外预留量。在基准已计入50%的情况下，转化率升至100%时追加的弹性产能应明确为10,960盒。",
+          "score": 3,
+          "vote": "like"
+        },
+        "nextAttachmentNames": [
+          "附件二_月饼产线换型与班组能力_20260718.csv"
+        ],
+        "nextPrompt": "待定金基准计入量已统一为10,960盒，向100%转化情景追加的弹性产能也是10,960盒。请你结合新上传的附件二继续核对，因为现在需要把需求区间映射到产线能力。按三条生产线和两条包装线测算扣除一次合格率与停机后的周有效产能。再纳入最小批量、换型清洗时间、班组技能、加班上限和维护窗口，列出四个SKU在W1至W4的产能缺口与瓶颈计算过程。",
+        "productAssessment": null,
+        "evaluator": {
+          "id": "local-codex-1784352242986",
+          "model": "gpt-5.6-sol",
+          "provider": "local-codex-cli",
+          "retryTrace": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success",
+              "validationAttempt": 1
+            }
+          ],
+          "usage": {},
+          "validationFailures": []
+        }
+      },
+      "feedbackSourceNote": "回复明确核实了21,920盒的正确口径，并按W1至W4和四个SKU列出了原始套数、折算系数及折盒结果，分项加总也能复核到总量。小缺口是“弹性产能区间10,960至21,920盒”容易混淆基准计入量与额外预留量，若基准已计入50%，转化率升至100%时需要追加的弹性产能应明确为10,960盒。",
+      "feedbackRewriteContentScope": {
+        "calculationComplexityCount": 2,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "feedbackContentScope": {
+        "calculationComplexityCount": 2,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "productAssessment": null
+    },
+    {
+      "contentScopeBeforeModel": {
+        "calculationComplexityCount": 2,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "contentScopeAfterModel": {
+        "calculationComplexityCount": 2,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "evaluation": null,
+      "feedbackPreflight": null,
+      "feedbackRewrite": null,
+      "attachmentNames": [
+        "附件二_月饼产线换型与班组能力_20260718.csv"
+      ],
+      "index": 3,
+      "plannedPrompt": "待定金基准计入量已统一为10,960盒，向100%转化情景追加的弹性产能也是10,960盒。请你结合新上传的附件二继续核对，因为现在需要把需求区间映射到产线能力。按三条生产线和两条包装线测算扣除一次合格率与停机后的周有效产能。再纳入最小批量、换型清洗时间、班组技能、加班上限和维护窗口，列出四个SKU在W1至W4的产能缺口与瓶颈计算过程。",
+      "preflight": {
+        "issues": [],
+        "pass": true,
+        "prompt": "待定金基准计入量已统一为10,960盒。向100%转化情景追加的弹性产能也是10,960盒。我已经上传了附件二。你结合附件二把需求区间映射到产线能力。先按三条生产线和两条包装线测算扣除一次合格率与停机后的周有效产能。接着纳入最小批量和换型清洗时间。再结合班组技能、加班上限与维护窗口进行计算。把四个SKU在W1至W4的产能缺口与瓶颈计算过程完整列出来。",
+        "changed": false,
+        "model": "gpt-5.6-sol",
+        "provider": "local-codex-cli",
+        "retryTrace": [
+          {
+            "attempt": 1,
+            "phase": "initial",
+            "retry": 0,
+            "status": "success"
+          }
+        ],
+        "textPurpose": "chat-prompt",
+        "usage": {}
+      },
+      "prompt": "待定金基准计入量已统一为10,960盒。向100%转化情景追加的弹性产能也是10,960盒。我已经上传了附件二。你结合附件二把需求区间映射到产线能力。先按三条生产线和两条包装线测算扣除一次合格率与停机后的周有效产能。接着纳入最小批量和换型清洗时间。再结合班组技能、加班上限与维护窗口进行计算。把四个SKU在W1至W4的产能缺口与瓶颈计算过程完整列出来。",
+      "response": null,
+      "rewrite": {
+        "changed": true,
+        "model": "gemini-3.1-pro-preview",
+        "pass": true,
+        "preservation": {
+          "issues": [],
+          "pass": true,
+          "rewrittenLength": 176,
+          "sourceLength": 169
+        },
+        "prompt": "待定金基准计入量已统一为10,960盒。向100%转化情景追加的弹性产能也是10,960盒。我已经上传了附件二。你结合附件二把需求区间映射到产线能力。先按三条生产线和两条包装线测算扣除一次合格率与停机后的周有效产能。接着纳入最小批量和换型清洗时间。再结合班组技能、加班上限与维护窗口进行计算。把四个SKU在W1至W4的产能缺口与瓶颈计算过程完整列出来。",
+        "retryTrace": [
+          {
+            "attempt": 1,
+            "phase": "initial",
+            "retry": 0,
+            "status": "success"
+          }
+        ],
+        "textPurpose": "chat-prompt",
+        "usage": {
+          "prompt_tokens": 1018,
+          "completion_tokens": 912,
+          "total_tokens": 1930,
+          "billing_usage": {
+            "source": "gemini_chat",
+            "semantic": "gemini",
+            "gemini_usage_metadata": {
+              "promptTokenCount": 1018,
+              "toolUsePromptTokenCount": 0,
+              "candidatesTokenCount": 135,
+              "totalTokenCount": 1930,
+              "thoughtsTokenCount": 777,
+              "cachedContentTokenCount": 0,
+              "promptTokensDetails": [],
+              "toolUsePromptTokensDetails": [],
+              "candidatesTokensDetails": []
+            }
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 1018,
+            "audio_tokens": 0,
+            "image_tokens": 0
+          },
+          "completion_tokens_details": {
+            "text_tokens": 0,
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 777
+          },
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "input_tokens_details": null,
+          "claude_cache_creation_5_m_tokens": 0,
+          "claude_cache_creation_1_h_tokens": 0
+        }
+      },
+      "status": "sending",
+      "modelRetries": {
+        "prompt_de_ai_rewrite": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success"
+            }
+          ],
+          "status": "complete"
+        },
+        "prompt_preflight": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success"
+            }
+          ],
+          "status": "complete"
+        }
+      },
+      "contentScopeAfterRewrite": {
+        "calculationComplexityCount": 2,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "attachmentVerification": {
+        "attachmentCount": 1,
+        "attachments": [
+          {
+            "classification": "specific-business",
+            "introductionHint": "需求折算完成后追加，用于定位产能瓶颈并测算换型和班组约束。",
+            "name": "附件二_月饼产线换型与班组能力_20260718.csv",
+            "relativePath": "附件二_月饼产线换型与班组能力_20260718.csv",
+            "sha256": "4e8176c31244f41b6fca1eb993f2a6d8fb9278d6706e49e0323e84b50d82252f",
+            "sizeBytes": 1999,
+            "sourceUrl": "https://mes.example.cn/capacity/snapshot/20260718",
+            "summary": "2026年7月18日形成的产线能力快照，包含三条生产线和两条包装线的标准产能、近四周实绩、合格率、最小批量、换型清洗、熟练工、加班上限、维护窗口与停机率。"
+          }
+        ],
+        "pass": true,
+        "verifiedAt": "2026-07-18T05:24:47.989Z"
+      }
+    }
+  ],
+  "runId": "a265505c-8359-4029-ae18-ea4fb530a62a",
+  "schemaVersion": 5,
+  "successCriteria": [
+    "三类渠道数量统一折算为盒，并保留原始单位、折算系数、确认量、待定金量、历史误差、取消率、现货和积压口径",
+    "需求情景同时反映订单确定性与预测波动，四个SKU和W1至W4均有可复核的计算过程",
+    "候选排产策略覆盖实绩产能、一次合格率、最小批量、换型清洗、班组技能、维护、冷库、包材和履约窗口",
+    "最终Excel包含口径清洗、需求情景、能力约束、排产方案、压力测试和触发指标，并给出一个优先方案及资源调整顺序"
+  ],
+  "taskGoal": "分析华东中央厨房四款月饼在W1至W4的需求可靠性与生产履约约束，形成可执行的旺季排产策略和唯一优先方案，并交付可下载的Excel排产决策工作簿。",
+  "startedAt": "2026-07-18T05:07:59.771Z",
+  "status": "paused_by_operator",
+  "uploadedAttachmentNames": [
+    "附件一_月饼预售与渠道滚动预测_20260718.csv",
+    "附件四_预测口径与7月18日排产会纪要.txt"
+  ],
+  "workerPid": null,
+  "workerStartedAt": "2026-07-18T05:23:18.987Z",
+  "initialContentScope": {
+    "calculationComplexityCount": 2,
+    "issues": [],
+    "pass": true,
+    "policyVersion": "domestic-work-scope-v1"
+  },
+  "attachmentManifest": {
+    "attachmentCount": 4,
+    "attachments": [
+      {
+        "classification": "specific-business",
+        "introductionHint": "首轮用于统一渠道数量口径并识别需求波动和数据缺口。",
+        "name": "附件一_月饼预售与渠道滚动预测_20260718.csv",
+        "relativePath": "附件一_月饼预售与渠道滚动预测_20260718.csv",
+        "sha256": "a88f7bf0b74df4b965437eadc24d7ee7b709800d487e212af8cb72dcbdeb02c0",
+        "sizeBytes": 7391,
+        "sourceUrl": "https://ops.example.cn/planning/exports/FV0718",
+        "summary": "2026年7月18日导出的W1至W4月饼滚动预测表，包含四个SKU在直营网点、电商预售和企业团购的预测量、确认量、待定金量、单位折算、历史误差、取消率、现货与积压。"
+      },
+      {
+        "classification": "specific-business",
+        "introductionHint": "需求折算完成后追加，用于定位产能瓶颈并测算换型和班组约束。",
+        "name": "附件二_月饼产线换型与班组能力_20260718.csv",
+        "relativePath": "附件二_月饼产线换型与班组能力_20260718.csv",
+        "sha256": "4e8176c31244f41b6fca1eb993f2a6d8fb9278d6706e49e0323e84b50d82252f",
+        "sizeBytes": 1999,
+        "sourceUrl": "https://mes.example.cn/capacity/snapshot/20260718",
+        "summary": "2026年7月18日形成的产线能力快照，包含三条生产线和两条包装线的标准产能、近四周实绩、合格率、最小批量、换型清洗、熟练工、加班上限、维护窗口与停机率。"
+      },
+      {
+        "classification": "specific-business",
+        "introductionHint": "形成候选排产策略时追加，用于校验冷库、包材和履约窗口的可执行性。",
+        "name": "附件三_冷库包材与履约约束快照_20260718.html",
+        "relativePath": "附件三_冷库包材与履约约束快照_20260718.html",
+        "sha256": "0ba84e61d7afee016dee62c16ef1f3127206a2fd3b60bf0f26e28ee740c6d00a",
+        "sizeBytes": 4139,
+        "sourceUrl": "https://wms.example.cn/peak-season/snapshot/SC0718",
+        "summary": "2026年7月18日仓储采购履约联合快照，包含四个仓区的托位与占用、六类关键包材的库存和到货、三个渠道的截单与日处理上限，以及当前尚待协调的容量事项。"
+      },
+      {
+        "classification": "specific-business",
+        "introductionHint": "首轮与需求表一起上传，用于解释单位折算和预测口径争议。",
+        "name": "附件四_预测口径与7月18日排产会纪要.txt",
+        "relativePath": "附件四_预测口径与7月18日排产会纪要.txt",
+        "sha256": "e99c32ea64e6706c3533140a00972325bff7a093273460cd4cf8ee55bf7e811d",
+        "sizeBytes": 1914,
+        "sourceUrl": "https://oa.example.cn/meetings/20260718-mooncake-plan",
+        "summary": "2026年7月18日排产会纪要，记录三类渠道数量口径、预测版本、现货与积压处理、产能计算方式、五项部门争议，以及管理层对策略对比和改排触发指标的要求。"
+      }
+    ],
+    "initialAttachmentNames": [
+      "附件一_月饼预售与渠道滚动预测_20260718.csv",
+      "附件四_预测口径与7月18日排产会纪要.txt"
+    ],
+    "minimumSpecificBusinessShare": 0.8,
+    "pass": true,
+    "policyId": "doubao-l1-l2-attachment-policy-v1",
+    "specificBusinessShare": 1,
+    "verifiedAt": "2026-07-18T05:23:19.019Z"
+  },
+  "stoppedWorkerPid": 24584,
+  "workerStoppedAt": "2026-07-18T05:27:26.921Z",
+  "updatedAt": "2026-07-18T05:27:26.922Z",
+  "resumeHistory": [
+    {
+      "previousRunId": "dcfc745d-8b2d-423c-a897-82b7dd050e5d",
+      "previousStatus": "paused_model_error",
+      "resumedAt": "2026-07-18T05:20:35.172Z"
+    },
+    {
+      "previousRunId": "27a11576-b0e8-4b57-a11c-dbd3fc6f8629",
+      "previousStatus": "paused_model_error",
+      "resumedAt": "2026-07-18T05:23:18.987Z"
+    }
+  ],
+  "error": {
+    "code": "JOB_PAUSE_REQUESTED",
+    "message": "The job was paused by an operator request.",
+    "stack": "JobPauseRequestedError: The job was paused by an operator request.\n    at Timeout._onTimeout (file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/doubao-automation/src/job-control.mjs:85:53)",
+    "attempts": [],
+    "issues": [],
+    "productAssessment": null
+  },
+  "failedAt": "2026-07-18T05:27:26.921Z",
+  "pause": {
+    "reason": "operator-request",
+    "resumePolicy": "manual-resume-only-no-fallback"
+  }
+}

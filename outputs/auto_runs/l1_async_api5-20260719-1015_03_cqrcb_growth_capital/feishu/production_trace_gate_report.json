@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "l1-production-trace-gate-report",
+  "productionProfile": "l1",
+  "gateId": "production-trace-gate-v6-profiled",
+  "status": "PASS",
+  "generatedAt": "2026-07-19T02:10:01.632Z",
+  "packetPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\sources\\production_input_packet.json",
+  "packetHash": "74e0325c06ccdd3283c7e32fd400a6519ec786ebecde318c731af28fbe594b7f",
+  "tracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\qa\\production_trace.json",
+  "traceHash": "e86517c09c1d3688897beabcd6b5abb975a4b908a1ac96b4b40d9445271e6dea",
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\drafts\\l1_questions.tsv",
+  "candidateHash": "c70f0c5adcf64ea23a96d7ca7ed1b817911f11196507c7dbd52f3a1177e836d9",
+  "fillPlanPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\feishu\\feishu_fill_plan.json",
+  "fillPlanHash": "8d1279f3a2672ccebc46fd681eee5a9375dc8465104178162f51ff889bdeb62c",
+  "rowCount": 1,
+  "attachmentRoot": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\attachments",
+  "attachmentBindings": [
+    {
+      "uid": "沈礼_api5-20260719-1015_03",
+      "name": "重庆农村商业银行股份有限公司2026年第一季度报告.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\attachments\\重庆农村商业银行股份有限公司2026年第一季度报告.pdf",
+      "sha256": "261e993750d5c1f5b6b430c583d1a24cff13e43ae1aa7206bb78e102b5b6666f",
+      "bytes": 391082
+    }
+  ],
+  "productFormatDiversity": {
+    "policyId": "not-required-for-l1",
+    "status": "SKIPPED",
+    "rowCount": 1,
+    "findings": []
+  },
+  "findings": []
+}

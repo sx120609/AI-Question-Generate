@@ -1,0 +1,396 @@
+{
+  "schemaVersion": 4,
+  "kind": "l1-production-workflow-state",
+  "productionProfile": "l1",
+  "taskType": "L1 探索型",
+  "protocolId": "l1-phase3-codex-model-two-gates-trace-v6",
+  "runId": "l1_six_shenhua_capex_funding_20260718T165248Z_e74a5d",
+  "runMode": "development-codex-session",
+  "packetRunId": "l1_six_shenhua_capex_funding_20260718T165248Z_e74a5d",
+  "qualityGatePromptHashes": {
+    "first-quality-gate": "454723865e5ba3279da5aeb39347e8df97fb6c5df35f505e350cc9b64a5fa5a5",
+    "second-language-gate": "31aba0f4bbe071e3922f2d8d2df783955641f701c3a64a246bc87517d17c3017"
+  },
+  "createdAt": "2026-07-18T17:31:15.497Z",
+  "updatedAt": "2026-07-18T17:32:08.519Z",
+  "questions": [
+    {
+      "questionIndex": 1,
+      "state": "COMPLETE",
+      "referenceLocation": {
+        "sheet": "三期示例数据",
+        "row": 5
+      },
+      "referenceHashes": {
+        "question": "b7c680363cf16ec47252c0bc37a259fe46f15321f0d30a765fe8135434ea9764",
+        "attachmentSummary": "44969f2bb9cf7b2a53e097f5a7fa3b0c13764755a2fecdddd2f7a09e94ccb933"
+      },
+      "firstQaFailureCount": 0,
+      "formatRequirement": null,
+      "revisionLog": [
+        {
+          "at": "2026-07-18T17:31:34.736Z",
+          "stage": "second-language-gate",
+          "conclusion": "需语言小修"
+        }
+      ],
+      "events": [
+        {
+          "at": "2026-07-18T17:31:15.497Z",
+          "type": "reference.sampled",
+          "sheet": "三期示例数据",
+          "row": 5
+        },
+        {
+          "at": "2026-07-18T17:31:15.502Z",
+          "type": "reference.breakdown.recorded"
+        },
+        {
+          "at": "2026-07-18T17:31:15.503Z",
+          "type": "attachments.recorded",
+          "count": 1
+        },
+        {
+          "at": "2026-07-18T17:31:15.510Z",
+          "type": "draft.recorded",
+          "reason": "initial"
+        },
+        {
+          "at": "2026-07-18T17:31:15.515Z",
+          "type": "first-qa.passed"
+        },
+        {
+          "at": "2026-07-18T17:31:34.736Z",
+          "type": "second-qa.second-qa-pass"
+        },
+        {
+          "at": "2026-07-18T17:32:08.519Z",
+          "type": "de-ai-rewrite.passed",
+          "policyId": "mugua-gemini-de-ai-rewrite-v2",
+          "selectedAttempt": 2
+        },
+        {
+          "at": "2026-07-18T17:32:08.519Z",
+          "type": "final.completed"
+        }
+      ],
+      "referenceBreakdown": {
+        "businessScene": "企业在既有单一线上渠道经营基础上，考虑进入新的销售渠道，需要在资源、预算与履约能力受限的条件下作出进入决策。",
+        "coreBlockage": "决策前既要识别候选渠道是否存在不可满足的准入门槛，又要把分散且可能过时的资料统一到可比口径，并避免将无法核实的信息当作事实。",
+        "mainTask": "基于附件提供的经营基线与市场背景，核验候选渠道的现行权威规则，先进行硬门槛筛查，再比较进入所需的增量投入、运营压力、履约条件与获客能力，最终形成唯一的进入策略结论。",
+        "attachmentSupport": "附件承担两类辅助作用：一类描述当前渠道的运营基线，便于计算进入新渠道带来的增量变化；另一类提供目标市场及经营环境背景，帮助理解规则与合规风险。附件不是最终裁决依据，若与现行权威信息冲突，应以现行信息为准并披露差异。",
+        "deliverableOrigin": "产物自然产生于渠道评估工作流的收口阶段：先完成资格排查与统一口径比较，再把结论、关键依据、落地条件和信息缺口压缩为供负责人快速审批的决策材料。",
+        "imitableStructure": "可模仿“约束条件交代—资料核验—硬门槛先行—统一维度比较—冲突处理—唯一结论—证据与行动项—来源追溯—未知项显式标记”的推进链路；也可模仿用现有业务作为基线、只评估新增影响的分析方式。",
+        "forbiddenReuse": "不得复用样例中的城市、行业品类、目标国家或地区、企业类型、具体渠道与平台、时间节点、预算额度、人员配置、商品数量、价格区间、仓储安排、附件名称与来源、比较维度的原句、结论选项措辞、证据及行动项数量、文档页数和格式组合，也不得照搬任何原句或将这些要素仅作同义替换。",
+        "referenceAttachmentStructure": "参考附件采用“内部或既有渠道操作资料＋外部市场与贸易背景资料”的双层结构：前者建立当前经营基线，后者补充目标环境、准入与合规语境；二者共同支持判断，但仍需由现行权威来源完成时效性校验。",
+        "referenceProductParagraphLogic": "题面后半段先规定信息核验与冲突处理规则，再要求按固定顺序完成门槛筛查和多维比较；随后明确产物的实际使用者是需要快速审批进入方案的业务负责人，并限定语言、载体和篇幅；接着收紧交付边界，要求只能给出一个明确结论，同时附上支撑依据、执行前置条件和可追溯来源；最后以时间标记、未知项标注和禁止臆造作为验收条件，使结论具备可核查性与可执行性。"
+      },
+      "updatedAt": "2026-07-18T17:32:08.519Z",
+      "attachmentPlan": {
+        "mainDecision": "制作调整前后资本开支核对表，识别增量集中度并把经营现金流与计划资金需求并列展示，资金来源只保留报告披露的渠道和待补分配栏。",
+        "attachments": [
+          {
+            "name": "中国神华能源股份有限公司2026年第一季度报告.pdf",
+            "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-25/1225185746.PDF",
+            "format": "pdf",
+            "classification": "specific-business",
+            "objectLevel": true,
+            "timeAnchor": "2026年1月1日至3月31日及调整后的2026年度计划",
+            "specificityEvidence": {
+              "object": "中国神华能源股份有限公司证券代码601088",
+              "periodOrEvent": "2026年1月1日至3月31日及调整后的2026年度计划",
+              "uniqueContent": "披露中国神华一季度经营财务数据、重大资产交易后经营目标调整、分业务资本开支计划和资金来源边界。"
+            },
+            "summary": "披露中国神华一季度经营财务数据、重大资产交易后经营目标调整、分业务资本开支计划和资金来源边界。",
+            "localPath": "中国神华能源股份有限公司2026年第一季度报告.pdf",
+            "sha256": "eafdac378c6aece9511c0e3c501ed99312a47addd138a5562d9710e66caf5959",
+            "bytes": 282693,
+            "sizeBytes": 282693,
+            "introductionHint": "把正式报告名称直接嵌入任务句，后续核对继续引用同一份已验证原件。"
+          }
+        ],
+        "specificBusinessShareRationale": "附件绑定中国神华能源股份有限公司证券代码601088和2026年1月1日至3月31日及调整后的2026年度计划，具体业务材料占比为100%。",
+        "timeSeriesRationale": "季度报告同时提供本期、上年同期或期初比较数，可形成同一对象的期间核对链。",
+        "objectSupportInQuestion": "题面明确中国神华能源股份有限公司、正式报告名称、报告期和计划复核人员需要把重大资产交易带来的经营目标变化与分业务资本开支增量对齐。。",
+        "newAttachmentSupport": "披露中国神华一季度经营财务数据、重大资产交易后经营目标调整、分业务资本开支计划和资金来源边界。",
+        "newQuestionStructureMapping": "沿用样例的真实工作卡点、证据核验和下游交付逻辑，改为围绕确认资本开支增量集中在哪些业务，并评估附件能支持到何种资金承接结论。逐轮推进。"
+      },
+      "draft": {
+        "question": "请依据《中国神华能源股份有限公司2026年第一季度报告.pdf》复核重大资产交易纳入新资产后，2026年资本开支增量主要集中在哪些业务，并判断现有披露最多能支持到何种资金承接结论。形成可下载的调整后资本开支Excel，纳入经营目标变化、调整前后分业务资本开支、增量及占比、一季度经营现金流参照、已披露资金来源渠道和待补分配栏。保留报告页码、未经审计状态及派生计算过程，区分报告事实、合理推断和待确认项，不得将未披露的资金分配或业务归因写成确定结论。",
+        "mainTask": "复核中国神华2026年资本开支增量的业务集中度及公开报告能够支持的资金承接结论，并制作可追溯的调整后资本开支核对表。",
+        "usedFactIds": [
+          "shenhua-q1-core",
+          "shenhua-transaction-scope",
+          "shenhua-target-adjustment",
+          "shenhua-capex-total",
+          "shenhua-capex-mix",
+          "shenhua-funding-boundary"
+        ],
+        "usedAttachmentNames": [
+          "中国神华能源股份有限公司2026年第一季度报告.pdf"
+        ],
+        "productFormats": "xlsx",
+        "deliverableRationale": [
+          {
+            "format": "xlsx",
+            "user": "资本计划复核专员及下游同事",
+            "purpose": "跟踪项目预算、复核资本开支增量集中度并持续回填后续融资披露",
+            "whyThisFormat": "Excel适合承载调整前后数据对照、分业务计算、来源页码、证据边界及待补分配字段，并便于后续更新和复算。"
+          }
+        ],
+        "structureMapping": "沿用“工作卡点—核对来源—统一口径比较—处理证据边界—形成当前判断—交付可追溯产物”的推进结构，以调整前计划为基线评估交易后新增影响，但改为中国神华资本开支与资金承接复核。",
+        "productParagraphMapping": "题面后半段先收束为一份供资本计划复核使用的Excel，再明确经营目标、业务增量、现金流参照与资金来源边界等内容，最后以页码、审计状态、派生计算和待确认项作为可追溯要求。"
+      },
+      "preQaStructureAudit": {
+        "oneSentenceMainTask": "复核中国神华重大资产交易后2026年资本开支增量的业务集中度及报告可支持的资金承接结论，并形成可追溯的调整后资本开支核对表。",
+        "uniqueMainTask": true,
+        "specificObjectDecision": true,
+        "specificFilesDominant": true,
+        "evidenceChain": "仅使用1份具体业务附件，材料占比为100%，对象、报告期、交易事件和分析口径均已绑定；题面要求保留报告页码、未经审计状态、派生计算过程并区分事实、推断和待确认项，形成“报告披露—口径核对—派生计算—边界判断”的证据链，但输入只提供附件计划和事实ID，未展示真实附件正文摘录、对应页码及逐项对象级证据，故证据完整性仍待正文核验。",
+        "l2ReasoningChain": "以调整前资本计划为基线，对齐重大资产交易后的经营目标和调整后分业务资本开支，计算各业务增量及占比以判断集中度；再以一季度经营现金流作参照，结合报告明确披露的资金来源渠道界定最多可支持的资金承接结论，并将未披露的业务资金分配保留为待确认项。多个核验维度共同服务同一主要判断，Excel属于附带的可追溯交付。",
+        "variableDrift": [
+          "参考结构中的渠道准入与进入策略已迁移为资本开支及资金承接判断，属于业务变量替换，但候选题内部对象和主判断保持一致。",
+          "structureMapping提到“调整前计划为基线”，输入未给出调整前计划在附件正文中的具体页码或可核验证据。",
+          "attachmentPlan声称报告披露资金来源边界和分业务资本开支，但未提供正文摘录验证这些字段是否均来自同一真实附件。",
+          "一级目录及其飞书配置项未在输入中出现，无法核验目录是否原样选取并与附件业务对象一致。"
+        ]
+      },
+      "firstQaFullResult": {
+        "pass": true,
+        "issues": [],
+        "execution": {
+          "runnerId": "exact-two-quality-gates-v2-codex-session",
+          "provider": "codex-session",
+          "model": "gpt-5.6-sol",
+          "sourcePromptHash": "454723865e5ba3279da5aeb39347e8df97fb6c5df35f505e350cc9b64a5fa5a5",
+          "renderedPromptHash": "2ffe682f7e3f1d47e5a7cdb33d0c7f0f284a1c70649a21fb52b85ab6dbc22512",
+          "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_shenhua_capex_funding_20260718T165248Z_e74a5d\\qa\\01_first_quality_gate_attempt_1_raw.json",
+          "rawResponseHash": "06e0fc443fb08a89f003d7bb1e49b3e51c2edfbaa8b2af2a66c5fbc187f8a4fb",
+          "completedAt": "2026-07-18T17:31:15.513Z"
+        }
+      },
+      "firstQaAttempts": [
+        {
+          "at": "2026-07-18T17:31:15.515Z",
+          "result": {
+            "pass": true,
+            "issues": [],
+            "execution": {
+              "runnerId": "exact-two-quality-gates-v2-codex-session",
+              "provider": "codex-session",
+              "model": "gpt-5.6-sol",
+              "sourcePromptHash": "454723865e5ba3279da5aeb39347e8df97fb6c5df35f505e350cc9b64a5fa5a5",
+              "renderedPromptHash": "2ffe682f7e3f1d47e5a7cdb33d0c7f0f284a1c70649a21fb52b85ab6dbc22512",
+              "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_shenhua_capex_funding_20260718T165248Z_e74a5d\\qa\\01_first_quality_gate_attempt_1_raw.json",
+              "rawResponseHash": "06e0fc443fb08a89f003d7bb1e49b3e51c2edfbaa8b2af2a66c5fbc187f8a4fb",
+              "completedAt": "2026-07-18T17:31:15.513Z"
+            }
+          }
+        }
+      ],
+      "secondQaFullResult": {
+        "conclusion": "需语言小修",
+        "coreJudgment": "题面任务、证据边界和交付要求清楚。补充当前工作场景、下游用途和明确的结论请求后，题意完整，未改变原有事实与判断边界。",
+        "modifications": "在开头以资本计划复核专员的第一人称自然交代工作场景及下游用途，加入一次“请给出明确结论”，并明确要求确认资本开支增量集中的业务及评估附件所能支持的资金承接结论。保留原题全部事实、附件、计算、边界和交付要求。",
+        "modifiedQuestion": "我是一名资本计划复核专员，正在复核重大资产交易纳入新资产后的资本开支变化，供资本计划同事跟踪项目预算和后续融资披露。请依据《中国神华能源股份有限公司2026年第一季度报告.pdf》，请给出明确结论，确认重大资产交易纳入新资产后，2026年资本开支增量主要集中在哪些业务，并评估该附件最多能支持到何种资金承接结论。\n\n形成可下载的调整后资本开支Excel，纳入经营目标变化、调整前后分业务资本开支、增量及占比、一季度经营现金流参照、已披露的资金来源渠道和待补分配栏。保留报告页码、未经审计状态和派生计算过程，区分报告事实、合理推断与待确认项，不得将未披露的资金分配或业务归因写成确定结论。",
+        "punctuationAudit": "标点使用自然，书名号成对，未使用括号或分号，也未为指标强行添加内容。“请给出明确结论”仅出现一次。",
+        "remainingNote": "后续只能依据报告披露及可追溯的派生计算作出判断，并持续区分报告事实、合理推断和待确认项。",
+        "execution": {
+          "runnerId": "exact-two-quality-gates-v2-codex-session",
+          "provider": "codex-session",
+          "model": "gpt-5.6-sol",
+          "sourcePromptHash": "31aba0f4bbe071e3922f2d8d2df783955641f701c3a64a246bc87517d17c3017",
+          "renderedPromptHash": "9a0d3d46bf7b605adc3b4bdc29943b93009996790ad543f450893085f48ac7b8",
+          "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_shenhua_capex_funding_20260718T165248Z_e74a5d\\qa\\01_second_language_gate_raw.json",
+          "rawResponseHash": "0fe3f803b934f7c31edafd3506f3830caa128480c5514eaac957a9d1a8ac36c5",
+          "completedAt": "2026-07-18T17:31:34.735Z"
+        }
+      },
+      "secondQaAttempts": [
+        {
+          "at": "2026-07-18T17:31:34.736Z",
+          "result": {
+            "conclusion": "需语言小修",
+            "coreJudgment": "题面任务、证据边界和交付要求清楚。补充当前工作场景、下游用途和明确的结论请求后，题意完整，未改变原有事实与判断边界。",
+            "modifications": "在开头以资本计划复核专员的第一人称自然交代工作场景及下游用途，加入一次“请给出明确结论”，并明确要求确认资本开支增量集中的业务及评估附件所能支持的资金承接结论。保留原题全部事实、附件、计算、边界和交付要求。",
+            "modifiedQuestion": "我是一名资本计划复核专员，正在复核重大资产交易纳入新资产后的资本开支变化，供资本计划同事跟踪项目预算和后续融资披露。请依据《中国神华能源股份有限公司2026年第一季度报告.pdf》，请给出明确结论，确认重大资产交易纳入新资产后，2026年资本开支增量主要集中在哪些业务，并评估该附件最多能支持到何种资金承接结论。\n\n形成可下载的调整后资本开支Excel，纳入经营目标变化、调整前后分业务资本开支、增量及占比、一季度经营现金流参照、已披露的资金来源渠道和待补分配栏。保留报告页码、未经审计状态和派生计算过程，区分报告事实、合理推断与待确认项，不得将未披露的资金分配或业务归因写成确定结论。",
+            "punctuationAudit": "标点使用自然，书名号成对，未使用括号或分号，也未为指标强行添加内容。“请给出明确结论”仅出现一次。",
+            "remainingNote": "后续只能依据报告披露及可追溯的派生计算作出判断，并持续区分报告事实、合理推断和待确认项。",
+            "execution": {
+              "runnerId": "exact-two-quality-gates-v2-codex-session",
+              "provider": "codex-session",
+              "model": "gpt-5.6-sol",
+              "sourcePromptHash": "31aba0f4bbe071e3922f2d8d2df783955641f701c3a64a246bc87517d17c3017",
+              "renderedPromptHash": "9a0d3d46bf7b605adc3b4bdc29943b93009996790ad543f450893085f48ac7b8",
+              "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_shenhua_capex_funding_20260718T165248Z_e74a5d\\qa\\01_second_language_gate_raw.json",
+              "rawResponseHash": "0fe3f803b934f7c31edafd3506f3830caa128480c5514eaac957a9d1a8ac36c5",
+              "completedAt": "2026-07-18T17:31:34.735Z"
+            }
+          }
+        }
+      ],
+      "deAiRewrite": {
+        "kind": "de-ai-question-rewrite",
+        "policyId": "mugua-gemini-de-ai-rewrite-v2",
+        "uid": "沈礼_20260719_l1_shenhua_capex_funding_02",
+        "generatedAt": "2026-07-18T17:31:57.629Z",
+        "provider": "mugua-openai-compatible",
+        "endpoint": "https://api.mugua.link/v1/chat/completions",
+        "model": "gemini-3.1-pro-preview",
+        "finishReason": "stop",
+        "usage": {
+          "inputTokens": 1418,
+          "outputTokens": 1213,
+          "totalTokens": 2631
+        },
+        "promptHash": "3b92bae41f916f4d557fed56cec2476838ebed74f7dbcd07333afad33b59fe1e",
+        "sourceQuestionHash": "8a6af54c7ca75a149a21dc59dca965a6462f6fdb057b5a0a7efc77adaf05dd0a",
+        "rewrittenQuestionHash": "9b3b7ba093141d79a457389185a94b419cc9aefde7f5d11bd9e1ed556cc87506",
+        "selectedAttempt": 2,
+        "attempts": [
+          {
+            "attempt": 1,
+            "pass": false,
+            "visibleLength": 305,
+            "findingRules": [
+              "rewrite-edit-similarity-too-high",
+              "rewrite-exact-copy-run-too-long"
+            ]
+          },
+          {
+            "attempt": 2,
+            "pass": true,
+            "visibleLength": 365,
+            "findingRules": []
+          }
+        ],
+        "rewrite": {
+          "question": "为了方便同事后续跟踪项目预算和融资披露，我需要复核重大资产交易纳入新资产后的资本开支变化情况。请根据《中国神华能源股份有限公司2026年第一季度报告.pdf》，帮我确认这次新资产纳入后，2026年的资本开支增量主要集中在哪些具体的业务板块上，并评估一下仅凭这份报告最多能支持得出什么样的资金承接结论。\n\n请将结果整理成一份调整后资本开支的Excel表格供下载。表格里需要列出各业务调整前后的资本开支数额，算出具体的增量和所占比例。同时要把经营目标的变化情况、第一季度的经营现金流数据作为参照放进去，还要列明目前已经披露出来的资金来源渠道，并留出一个待补分配栏。\n\n整理时请务必保留报告页码、未经审计状态以及派生的计算过程。另外要注意严格区分报告里明确的事实、合理推断和待确认的事项，不要把未披露的资金分配或业务归因直接写成确定的结论。",
+          "requestContract": {
+            "requestSpan": "请将结果整理成一份调整后资本开支的Excel表格供下载。",
+            "action": "整理",
+            "outputs": [
+              {
+                "format": "xlsx",
+                "humanName": "Excel",
+                "purpose": "供后续执行和留痕使用"
+              }
+            ]
+          },
+          "roleTrace": {
+            "blockageSpan": "为了方便同事后续跟踪项目预算和融资披露，我需要复核重大资产交易纳入新资产后的资本开支变化情况。",
+            "motivationSpan": "为了方便同事后续跟踪项目预算和融资披露，我需要复核重大资产交易纳入新资产后的资本开支变化情况。",
+            "downstreamUseSpan": "为了方便同事后续跟踪项目预算和融资披露，我需要复核重大资产交易纳入新资产后的资本开支变化情况。"
+          },
+          "usedFactIds": [
+            "shenhua-q1-core",
+            "shenhua-transaction-scope",
+            "shenhua-target-adjustment",
+            "shenhua-capex-total",
+            "shenhua-capex-mix",
+            "shenhua-funding-boundary"
+          ],
+          "deliberatelyOmitted": [],
+          "flowStages": [
+            {
+              "stage": "证据归位",
+              "evidence": "事实包中的公开材料与待补信息",
+              "decision": "区分可确认规则和未知现场状态",
+              "next": "证据足够则形成执行对象，不足则进入补证"
+            },
+            {
+              "stage": "执行对象核对",
+              "evidence": "已归位的对象关系与状态记录",
+              "decision": "制作调整前后资本开支核对表，识别增量集中度并把经营现金流与计划资金需求并列展示，资金来源只保留报告披露的渠道和待补分配栏。",
+              "next": "符合条件则进入小范围验证，否则停止推进"
+            },
+            {
+              "stage": "小范围验证",
+              "evidence": "试点输入与实际返回记录",
+              "decision": "判断结果是否满足扩大范围的条件",
+              "next": "通过则推进，失败则退回原状态并留痕"
+            },
+            {
+              "stage": "交接收束",
+              "evidence": "判断依据、验证结果与回退记录",
+              "decision": "确认下游拿到一致结论",
+              "next": "供资本计划同事跟踪项目预算和后续融资披露。"
+            }
+          ],
+          "selfAudit": {
+            "factsPreserved": true,
+            "formatsPreserved": true,
+            "processChainExplicit": true,
+            "failureOrRollbackExplicit": true,
+            "noInventedFacts": true,
+            "noAiShell": true
+          }
+        },
+        "validation": {
+          "pass": true,
+          "visibleLength": 363,
+          "similarity": [
+            {
+              "referenceIndex": 1,
+              "editSimilarity": 0.47536231884057967,
+              "trigramJaccard": 0.28054298642533937,
+              "longestExactCopyRun": 30,
+              "longestExactCopySpan": "据《中国神华能源股份有限公司2026年第一季度报告.pdf》"
+            },
+            {
+              "referenceIndex": 2,
+              "editSimilarity": 0.02898550724637683,
+              "trigramJaccard": 0.007911392405063292,
+              "longestExactCopyRun": 6,
+              "longestExactCopySpan": "2026年第"
+            }
+          ],
+          "findings": [],
+          "factGuard": {
+            "ok": true,
+            "candidateAnchors": {
+              "numbers": [
+                "2026年"
+              ],
+              "quotedClaims": [],
+              "timeMarkers": []
+            },
+            "unsupported": {
+              "numbers": [],
+              "quotedClaims": [],
+              "timeMarkers": []
+            },
+            "errors": []
+          }
+        },
+        "deterministicStyleCleanup": {
+          "applied": true,
+          "rules": [
+            "remove-banned-politeness",
+            "remove-upload-meta-language"
+          ],
+          "sourceApiQuestionHash": "8276251f105802f65b25989d3b60042914718fcbeb361bd0d37872cf204c93e4"
+        }
+      },
+      "recordUid": "沈礼_20260719_l1_shenhua_capex_funding_02",
+      "finalRecord": {
+        "UID": "沈礼_20260719_l1_shenhua_capex_funding_02",
+        "题目": "为了方便同事后续跟踪项目预算和融资披露，我需要复核重大资产交易纳入新资产后的资本开支变化情况。请根据《中国神华能源股份有限公司2026年第一季度报告.pdf》，帮我确认这次新资产纳入后，2026年的资本开支增量主要集中在哪些具体的业务板块上，并评估一下仅凭这份报告最多能支持得出什么样的资金承接结论。\n\n请将结果整理成一份调整后资本开支的Excel表格供下载。表格里需要列出各业务调整前后的资本开支数额，算出具体的增量和所占比例。同时要把经营目标的变化情况、第一季度的经营现金流数据作为参照放进去，还要列明目前已经披露出来的资金来源渠道，并留出一个待补分配栏。\n\n整理时请务必保留报告页码、未经审计状态以及派生的计算过程。另外要注意严格区分报告里明确的事实、合理推断和待确认的事项，不要把未披露的资金分配或业务归因直接写成确定的结论。",
+        "任务类型": "L1 探索型",
+        "一级目录": "投资战略、专业服务与企业经营",
+        "二级目录": "资本计划复核",
+        "三级目录": "并表调整与资金承接",
+        "任务概括": "中国神华交易并表后的资本开支调整与资金承接复核",
+        "标注专家工作年限": "5年",
+        "人类完成时间": "4H",
+        "相关附件": "中国神华能源股份有限公司2026年第一季度报告.pdf",
+        "附件格式": "pdf",
+        "附件内容": "中国神华能源股份有限公司2026年第一季度报告.pdf：披露中国神华一季度经营财务数据、重大资产交易后经营目标调整、分业务资本开支计划和资金来源边界。 来源：https://static.cninfo.com.cn/finalpage/2026-04-25/1225185746.PDF",
+        "产物格式": "xlsx",
+        "产物内容": "一份可下载的中国神华2026年调整后资本开支Excel，包含经营目标变化、分业务资本开支、增量占比、经营现金流参照、资金来源边界和待补分配栏。",
+        "做题关键步骤": "1. 核验交易交割与计划调整的披露范围\n2. 录入调整前后经营目标并复算变化\n3. 录入分业务资本开支并复算增量\n4. 计算主要业务增量集中度\n5. 将一季度经营现金流与年度资本开支计划分期边界分开\n6. 生成可回填的Excel并检查公式和来源",
+        "标注专家姓名": "沈礼"
+      }
+    }
+  ]
+}

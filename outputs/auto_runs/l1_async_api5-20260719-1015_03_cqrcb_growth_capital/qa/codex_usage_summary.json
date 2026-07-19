@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "kind": "codex-token-usage-summary",
+  "completeMetering": true,
+  "recordCount": 8,
+  "meteredRecordCount": 8,
+  "unmeteredRecordCount": 0,
+  "totals": {
+    "metered": true,
+    "source": "responses-api-aggregate",
+    "requestCount": 8,
+    "inputTokens": 19141,
+    "cachedInputTokens": 0,
+    "uncachedInputTokens": 19141,
+    "outputTokens": 9202,
+    "reasoningTokens": 5509,
+    "visibleOutputTokens": 3693,
+    "totalTokens": 28343
+  },
+  "entries": [
+    {
+      "stage": "01_reference_breakdown",
+      "provider": "openai-compatible-responses-api",
+      "model": "gpt-5.6-sol",
+      "usage": {
+        "metered": true,
+        "source": "responses-api",
+        "requestCount": 1,
+        "inputTokens": 843,
+        "cachedInputTokens": 0,
+        "uncachedInputTokens": 843,
+        "outputTokens": 1096,
+        "reasoningTokens": 227,
+        "visibleOutputTokens": 869,
+        "totalTokens": 1939
+      }
+    },
+    {
+      "stage": "02_question_draft",
+      "provider": "openai-compatible-responses-api",
+      "model": "gpt-5.6-sol",
+      "usage": {
+        "metered": true,
+        "source": "responses-api",
+        "requestCount": 1,
+        "inputTokens": 6247,
+        "cachedInputTokens": 0,
+        "uncachedInputTokens": 6247,
+        "outputTokens": 2191,
+        "reasoningTokens": 1510,
+        "visibleOutputTokens": 681,
+        "totalTokens": 8438
+      }
+    },
+    {
+      "stage": "03_pre_qa_structure_audit_attempt_1",
+      "provider": "openai-compatible-responses-api",
+      "model": "gpt-5.6-sol",
+      "usage": {
+        "metered": true,
+        "source": "responses-api",
+        "requestCount": 1,
+        "inputTokens": 2874,
+        "cachedInputTokens": 0,
+        "uncachedInputTokens": 2874,
+        "outputTokens": 1610,
+        "reasoningTokens": 825,
+        "visibleOutputTokens": 785,
+        "totalTokens": 4484
+      }
+    },
+    {
+      "stage": "04_first_quality_gate_attempt_1",
+      "provider": "openai-compatible-responses-api",
+      "model": "gpt-5.6-sol",
+      "usage": {
+        "metered": true,
+        "source": "responses-api",
+        "requestCount": 1,
+        "inputTokens": 2492,
+        "cachedInputTokens": 0,
+        "uncachedInputTokens": 2492,
+        "outputTokens": 422,
+        "reasoningTokens": 399,
+        "visibleOutputTokens": 23,
+        "totalTokens": 2914
+      }
+    },
+    {
+      "stage": "05_requester_decision_coverage_repair_v3",
+      "provider": "openai-compatible-responses-api",
+      "model": "gpt-5.6-sol",
+      "usage": {
+        "metered": true,
+        "source": "responses-api",
+        "requestCount": 1,
+        "inputTokens": 830,
+        "cachedInputTokens": 0,
+        "uncachedInputTokens": 830,
+        "outputTokens": 2131,
+        "reasoningTokens": 1446,
+        "visibleOutputTokens": 685,
+        "totalTokens": 2961
+      }
+    },
+    {
+      "stage": "05_second_language_gate",
+      "provider": "openai-compatible-responses-api",
+      "model": "gpt-5.6-sol",
+      "usage": {
+        "metered": true,
+        "source": "responses-api",
+        "requestCount": 1,
+        "inputTokens": 1520,
+        "cachedInputTokens": 0,
+        "uncachedInputTokens": 1520,
+        "outputTokens": 752,
+        "reasoningTokens": 340,
+        "visibleOutputTokens": 412,
+        "totalTokens": 2272
+      }
+    },
+    {
+      "stage": "06_post_de_ai_preflight_1",
+      "provider": "openai-compatible-responses-api",
+      "model": "gpt-5.6-sol",
+      "usage": {
+        "metered": true,
+        "source": "responses-api",
+        "requestCount": 1,
+        "inputTokens": 1331,
+        "cachedInputTokens": 0,
+        "uncachedInputTokens": 1331,
+        "outputTokens": 458,
+        "reasoningTokens": 416,
+        "visibleOutputTokens": 42,
+        "totalTokens": 1789
+      }
+    },
+    {
+      "stage": "07_naturalness_independent_review",
+      "provider": "openai-compatible-responses-api",
+      "model": "gpt-5.6-sol",
+      "usage": {
+        "metered": true,
+        "source": "responses-api",
+        "requestCount": 1,
+        "inputTokens": 3004,
+        "cachedInputTokens": 0,
+        "uncachedInputTokens": 3004,
+        "outputTokens": 542,
+        "reasoningTokens": 346,
+        "visibleOutputTokens": 196,
+        "totalTokens": 3546
+      }
+    }
+  ],
+  "backend": "responses-api",
+  "model": "gpt-5.6-sol",
+  "generatedAt": "2026-07-19T02:10:26.008Z"
+}

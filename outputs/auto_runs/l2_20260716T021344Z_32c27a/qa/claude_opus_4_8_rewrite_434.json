@@ -1,0 +1,137 @@
+{
+  "kind": "claude-question-rewrite-batch",
+  "policyId": "claude-situated-process-rewrite-v1",
+  "generatedAt": "2026-07-16T05:15:00.684Z",
+  "runDir": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a",
+  "results": [
+    {
+      "kind": "claude-question-rewrite",
+      "policyId": "claude-situated-process-rewrite-v1",
+      "uid": "434",
+      "generatedAt": "2026-07-16T05:15:00.682Z",
+      "provider": "openai-compatible",
+      "model": "claude-opus-4-8",
+      "finishReason": "stop",
+      "usage": {
+        "inputTokens": 17927,
+        "outputTokens": 1689,
+        "totalTokens": 19616
+      },
+      "rewrite": {
+        "question": "我们维护的设备都通过华为云 IoTDA 接入，认证走 X.509，现在要整理一次存量证书轮换。可我不想在没有核清证书状态和设备关联关系时直接停用旧证书，因为停用某张设备证书会让它关联的设备无法接入，删除 CA 证书也会波及用它鉴权的设备。官方页面写明只有 MQTT 接入支持这种认证，每个用户最多上传100个 CA 证书，设备证书会在到期前30天告警，证书配额按设备数配额的1.5倍计算。这几条约束的先后顺序和回滚条件得先讲清楚，才能把停用动作限制在证据已经完整的设备范围内。\n我已经把注册 X.509 设备、设备证书管理和相关接口等官方材料放进附件，另外还有 MQTT.fx 接入验证和平台证书资源说明。这些资料能确认认证方式、证书状态和调测路径等公开规则，却没有我们的设备清单和当前证书指纹，也缺少业务分组与可接受离线窗口。所以公开规则和内部待补数据要分开记，设备与证书的关系收进同一张映射表，映射里得能找出即将过期、已经停用等异常，也要标出暂时无法确认关联关系的记录，这样公开约束和真实数据不会混在一起看。\n状态切换前先安排新旧证书并存验证，再拿单台设备的回连结果决定要不要扩大批次。如果这台设备停用后回连失败，就照映射里的回滚状态退回原证书，先停在这一步不往下走。回连成功才允许把范围扩到下一批，后续批次的进入条件和观察窗口都跟着试点结果定，任何需要真实环境才能确认的结果都保留成待执行项。\n你帮我把这次轮换整理成一份可直接筛查的 Excel 工作簿，再做一个给值班同事打开就能照着执行的 HTML 操作页。Excel 要保留设备标识和证书指纹等对象字段，记录证书状态和到期时间等判断字段，也放入验证结果与回滚状态。页面按准备和试点等阶段往下推，每一步都写清要看什么证据以及失败后回到哪里，列表查询和状态更新接口的调用口径也要给出，让执行人知道怎么核对返回值。\n最后只回答本批设备是否具备进入轮换的条件，别把官方文档当成已经完成的环境验证。你可以放一个证书即将过期的样例，再补一个关联关系缺失的样例，然后用停用后回连失败的情况检查回滚动作。交付前把同一设备在两份产物里的状态和下一步对一遍，确保值班同事从表格切到页面时不会拿到两套结论。",
+        "requestContract": {
+          "requestSpan": "你帮我把这次轮换整理成一份可直接筛查的 Excel 工作簿，再做一个给值班同事打开就能照着执行的 HTML 操作页。",
+          "action": "帮我把",
+          "outputs": [
+            {
+              "format": "xlsx",
+              "humanName": "Excel 工作簿",
+              "purpose": "筛查设备证书关系与轮换条件"
+            },
+            {
+              "format": "html",
+              "humanName": "HTML 操作页",
+              "purpose": "让值班同事按阶段执行与回滚"
+            }
+          ]
+        },
+        "roleTrace": {
+          "blockageSpan": "可我不想在没有核清证书状态和设备关联关系时直接停用旧证书",
+          "motivationSpan": "",
+          "downstreamUseSpan": "你帮我把这次轮换整理成一份可直接筛查的 Excel 工作簿，再做一个给值班同事打开就能照着执行的 HTML 操作页。"
+        },
+        "usedFactIds": [
+          "fact-row-434",
+          "material-row-434"
+        ],
+        "deliberatelyOmitted": [
+          "华为云生产租户的设备证书映射原始台账原件"
+        ],
+        "flowStages": [
+          {
+            "stage": "核对公开规则与内部缺口",
+            "evidence": "附件里注册设备、证书管理和接口等材料能确认认证方式与证书状态等规则，但缺设备清单和当前证书指纹",
+            "decision": "把公开约束和内部待补数据分开，判断哪些字段仍需补齐",
+            "next": "进入映射表建立环节"
+          },
+          {
+            "stage": "建立设备与证书映射表",
+            "evidence": "分开后的公开规则加上待补内部字段",
+            "decision": "找出即将过期、已停用和关联关系无法确认等异常记录",
+            "next": "关系完整的进入并存验证，无法确认的标记待补后回到本环节"
+          },
+          {
+            "stage": "单台试点与并存验证",
+            "evidence": "映射表筛出的候选设备及其证书状态",
+            "decision": "用新旧证书并存后单台回连结果判断是否具备扩批条件",
+            "next": "回连成功进入扩批，回连失败进入回滚"
+          },
+          {
+            "stage": "回滚",
+            "evidence": "停用后回连失败的试点结果",
+            "decision": "照映射里的回滚状态退回原证书并停止扩批",
+            "next": "回到映射表复核证据后再判断"
+          },
+          {
+            "stage": "交付前一致性核对",
+            "evidence": "Excel 工作簿与 HTML 操作页里同一设备的状态和下一步",
+            "decision": "确认两份产物结论一致且真实结果仍为待执行",
+            "next": "交给值班同事按操作页执行"
+          }
+        ],
+        "selfAudit": {
+          "factsPreserved": true,
+          "formatsPreserved": true,
+          "processChainExplicit": true,
+          "failureOrRollbackExplicit": true,
+          "noInventedFacts": true,
+          "noAiShell": true
+        }
+      },
+      "validation": {
+        "pass": false,
+        "visibleLength": 900,
+        "findings": [
+          {
+            "rule": "mechanical-sequence-shell"
+          },
+          {
+            "rule": "fact-id-coverage",
+            "expected": [
+              "fact-row-434"
+            ],
+            "actual": [
+              "fact-row-434",
+              "material-row-434",
+              "华为云生产租户的设备证书映射原始台账原件"
+            ]
+          }
+        ],
+        "factGuard": {
+          "ok": true,
+          "candidateAnchors": {
+            "numbers": [
+              "509",
+              "100个",
+              "30天",
+              "1.5"
+            ],
+            "quotedClaims": [],
+            "timeMarkers": []
+          },
+          "unsupported": {
+            "numbers": [],
+            "quotedClaims": [],
+            "timeMarkers": []
+          },
+          "errors": []
+        }
+      }
+    }
+  ],
+  "usage": {
+    "inputTokens": 17927,
+    "outputTokens": 1689,
+    "totalTokens": 19616
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "l1-second-language-gate-raw-response",
+  "runnerId": "exact-two-quality-gates-v2-codex-session",
+  "sourcePromptHash": "edef2687bba5f4be5df531e8102585f5c6eab1318ca849c8482dd2c5e581407a",
+  "renderedPromptHash": "40a9f1d971798ffb4ee5c1ca1eaaf0fe46be0f0f7e5022bfd820e4a49fb0f037",
+  "response": {
+    "provider": "codex-session",
+    "model": "gpt-5.6-sol",
+    "finishReason": "completed"
+  },
+  "acceptedRound": 1,
+  "attempts": [
+    {
+      "round": 1,
+      "parsed": {
+        "conclusion": "通过",
+        "coreJudgement": "题面表达自然，主任务、证据边界和下一轮实测边界均清楚。",
+        "majorChanges": "无",
+        "modifiedQuestion": "公司准备把跨地区员工培训固定成常态化直播，参训者中有依赖实时字幕、键盘操作或屏幕阅读器的同事。现在候选平台是 Zoom、Microsoft Teams 和 Google Meet，但相关说明分散在厂商的无障碍页面和帮助中心，字幕能力还可能受会议类型、许可证和管理员设置影响。请以截至2026年7月17日仍可访问的官方产品文档和帮助页为准，整理一份 Excel 对比表。表中先核对实时字幕、翻译字幕和屏幕阅读器支持，再记录键盘与焦点操作。录制与转录留存也要单独说明，同时检查主持人和管理员能控制什么，并为每条判断附上来源链接和访问日期。公开页面没有说清的套餐限制、字幕语言范围和导出权限不要自行补齐，保存期限与直播规模也统一列成待确认项，并说明需要通过什么实测或询价补证。表尾只推荐一个优先进入 POC 的平台，写明选择依据以及另外两个暂缓的证据缺口。这个结论只用于安排下一轮实测，不作为最终采购或合规判断。",
+        "punctuationCheck": "标点自然，括号成对，没有为指标添加内容。",
+        "remainingAttention": "执行时不能把厂商公开说明等同于目标租户已开通能力。"
+      }
+    }
+  ]
+}

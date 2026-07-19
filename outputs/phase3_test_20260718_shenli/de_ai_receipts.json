@@ -1,0 +1,22 @@
+[
+  {
+    "questionIndex": 1,
+    "provider": "mugua-openai-compatible",
+    "model": "gemini-3.1-pro-preview",
+    "promptHash": "cdb6c0db8e40b56866d6c62e1682fc9a10154b2530356c1686637425c6b9a7f6",
+    "inputTokens": 1837,
+    "outputTokens": 892,
+    "totalTokens": 2729,
+    "accepted": true
+  },
+  {
+    "questionIndex": 2,
+    "provider": "mugua-openai-compatible",
+    "model": "gemini-3.1-pro-preview",
+    "promptHash": "cdb6c0db8e40b56866d6c62e1682fc9a10154b2530356c1686637425c6b9a7f6",
+    "inputTokens": 1818,
+    "outputTokens": 971,
+    "totalTokens": 2789,
+    "accepted": true
+  }
+]

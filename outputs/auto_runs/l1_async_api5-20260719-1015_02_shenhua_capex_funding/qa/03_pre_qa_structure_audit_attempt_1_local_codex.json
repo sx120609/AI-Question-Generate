@@ -1,0 +1,49 @@
+{
+  "kind": "codex-stage-response",
+  "stage": "03_pre_qa_structure_audit_attempt_1",
+  "model": "gpt-5.6-sol",
+  "provider": "openai-compatible-responses-api",
+  "responseId": "resp_0dc0b59cfedb9f86016a5c2fc9b8f4819988e1f194bd518e16",
+  "requestId": "c79855c6-b716-4e46-964d-7f14660c9fe0",
+  "completedAt": "2026-07-19T02:01:23.381Z",
+  "promptHash": "9d508cc8439513dca4ead11496ee9e61eb2d9a27f264a58d57b6a4ee9f2fc1d6",
+  "usage": {
+    "metered": true,
+    "source": "responses-api",
+    "requestCount": 1,
+    "inputTokens": 2621,
+    "cachedInputTokens": 0,
+    "uncachedInputTokens": 2621,
+    "outputTokens": 1290,
+    "reasoningTokens": 516,
+    "visibleOutputTokens": 774,
+    "totalTokens": 3911,
+    "providerUsage": {
+      "input_tokens": 2621,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 1290,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 3911
+    }
+  },
+  "parsed": {
+    "evidenceChain": "题面形成了“中国神华—重大资产交易纳入后的2026年度经营目标及资本开支调整—核对分项与总额、识别179.64亿元增量集中业务、判断资金承接披露边界—输出核对表”的对象级链条；但输入仅提供附件名称、URL、哈希、摘要和事实ID，未提供PDF正文、页码摘录、原始表格或事实ID对应证据，且所列报告发布日期为2026-04-25，无法据此完成真实附件正文核验。因此，经营目标变化、调整前后资本开支、179.64亿元增量、经营现金流和资金来源渠道目前均属于待核事实，对象级证据链不完整；一级目录是否原样来自飞书配置项也因未提供配置清单而无法核验。",
+    "l2ReasoningChain": "任务标记为L1探索型，合理推进链应为：从报告正文确认重大资产交易及并表范围变化→抽取调整前后经营目标和分业务资本开支→统一单位与口径并复算分项合计、披露总额及差异→计算各业务增量和占比以判断集中度→将一季度经营现金流仅作为期间参照→提取报告明确披露的资金来源→区分可证事实、合理推断与待确认分配，收束到资金承接结论边界。该链条共同服务一个主要判断，附件数量为1且计划中特定业务材料占比为100%，但因缺少真实正文证据，当前只能确认结构设计，不能确认任何计算、差异解释或资金判断。题面已提前列出179.64亿元并集中要求多类表格字段，存在一定结论数字和后续交付字段前置，但尚未达到大规模数字清单倾倒。",
+    "oneSentenceMainTask": "核对中国神华2026年调整前后经营目标与分业务资本开支，判断增量集中业务及公开披露可支持的资金承接结论边界。",
+    "specificFilesDominant": false,
+    "specificObjectDecision": true,
+    "uniqueMainTask": true,
+    "variableDrift": [
+      "referenceBreakdown的业务场景、核心卡点和主任务是“多个改进项目的唯一优先立项建议”，与候选题的中国神华并表调整、资本开支复核和资金承接边界不一致。",
+      "referenceBreakdown称附件为“方向性原则文件加评测取证规范”的双层结构，而attachmentPlan仅有一份上市公司季度报告，附件角色和证据结构发生漂移。",
+      "referenceBreakdown围绕候选项目投入、周期、人员、收益、硬约束和供应方预测，候选题则围绕经营目标、分业务资本开支、经营现金流及资金来源，两套核心变量不可直接映射。",
+      "structureMapping声称沿用参考结构且不复用固定产物组合，但候选题实际没有多个候选项目、硬约束淘汰或唯一立项选择，结构映射说明与实际任务不完全相符。",
+      "附件计划将报告摘要、事实ID和“100%具体业务材料”当作正文支持，但未提供事实ID到具体页码、表格、原文或公式的映射，证据状态由“已验证原件”漂移为仅有元数据声明。"
+    ]
+  }
+}

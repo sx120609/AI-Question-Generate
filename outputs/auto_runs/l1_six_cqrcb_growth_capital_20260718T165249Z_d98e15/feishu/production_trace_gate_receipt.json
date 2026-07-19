@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "kind": "l1-production-trace-gate-receipt",
+  "productionProfile": "l1",
+  "gateId": "production-trace-gate-v6-profiled",
+  "status": "PASS",
+  "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_cqrcb_growth_capital_20260718T165249Z_d98e15\\feishu\\production_trace_gate_report.json",
+  "reportHash": "418d679545b776f890ef6f42076ed9473f8bbfea09230168ca2d12b2b8aeb880",
+  "packetHash": "d739bf13bf4a3ebad4d526383c98101f7715eafec97932ac9af070b15aa81043",
+  "traceHash": "a545deaa90323289babe771821da0797cef368921f689d5c56c79415e14667c0",
+  "candidateHash": "8ca65fb47a5415c98f29f07e02dabe5e784a1a13e7ba9764cd73d2d8cd3e1897",
+  "fillPlanHash": "d872c9121bc5d01eb1fda071fc95c4756c8b02219ed93a089f0bb186b3297f67"
+}

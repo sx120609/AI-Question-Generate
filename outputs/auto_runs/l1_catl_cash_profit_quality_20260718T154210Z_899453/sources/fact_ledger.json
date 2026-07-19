@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "kind": "evidence-bound-fact-ledger",
+  "runId": "l1_catl_cash_profit_quality_20260718T154210Z_899453",
+  "recordUid": "沈礼_20260718_catl_cash_profit_quality_01",
+  "generatedAt": "2026-07-18T15:56:19.391Z",
+  "facts": [
+    {
+      "id": "fact-annual-audit-boundary",
+      "claimType": "evidence-boundary",
+      "text": "宁德时代2025年年度财务报表由致同会计师事务所出具标准无保留意见，年度报告中的2025年末余额可作为2026年一季报期初数的经审计对照。",
+      "sourceRefs": [
+        "material-annual-2025"
+      ],
+      "locator": "2025年年度报告PDF第107页审计意见及第111至112页合并资产负债表",
+      "uid": "沈礼_20260718_catl_cash_profit_quality_01"
+    },
+    {
+      "id": "fact-annual-core",
+      "claimType": "source-fact",
+      "text": "2025年年度报告披露营业收入423701834千元、归母净利润72201282千元、经营活动现金流量净额133219982千元，分别较2024年增长17.04%、42.28%和37.35%。",
+      "sourceRefs": [
+        "material-annual-2025"
+      ],
+      "locator": "2025年年度报告PDF第11页主要会计数据和财务指标表",
+      "uid": "沈礼_20260718_catl_cash_profit_quality_01"
+    },
+    {
+      "id": "fact-2025q1-comparatives",
+      "claimType": "source-fact",
+      "text": "2025年年度报告季度表列示2025年第一季度营业收入84704589千元、归母净利润13962558千元、经营活动现金流量净额32868257千元，与2026年一季报的上年同期比较数一致。",
+      "sourceRefs": [
+        "material-annual-2025",
+        "material-q1-2026"
+      ],
+      "locator": "2025年年度报告PDF第12页季度主要财务指标表及2026年一季报PDF第1页主要会计数据表",
+      "uid": "沈礼_20260718_catl_cash_profit_quality_01"
+    },
+    {
+      "id": "fact-2026q1-core",
+      "claimType": "source-fact",
+      "text": "2026年第一季度报告披露营业收入129131041千元、归母净利润20737710千元、经营活动现金流量净额33680852千元，分别同比增长52.45%、48.52%和2.47%。",
+      "sourceRefs": [
+        "material-q1-2026"
+      ],
+      "locator": "2026年第一季度报告PDF第1页主要会计数据和财务指标表",
+      "uid": "沈礼_20260718_catl_cash_profit_quality_01"
+    },
+    {
+      "id": "fact-q1-audit-boundary",
+      "claimType": "evidence-boundary",
+      "text": "2026年第一季度财务会计报告未经审计，所有一季度结论均应保留这一证据边界。",
+      "sourceRefs": [
+        "material-q1-2026"
+      ],
+      "locator": "2026年第一季度报告PDF第1页审计状态勾选及第12页审计报告说明",
+      "uid": "沈礼_20260718_catl_cash_profit_quality_01"
+    },
+    {
+      "id": "fact-cash-profit-coverage",
+      "claimType": "derived-check",
+      "text": "按经营活动现金流量净额除以归母净利润计算，2026年第一季度现金利润覆盖率为162.41%，2025年第一季度为235.40%，同比下降72.99个百分点。归母净利润同比增长48.52%而经营现金流仅增长2.47%，两项都为正但增速明显分化。",
+      "sourceRefs": [
+        "material-annual-2025",
+        "material-q1-2026"
+      ],
+      "locator": "2025年年度报告PDF第12页季度表与2026年第一季度报告PDF第1页主要会计数据表",
+      "uid": "沈礼_20260718_catl_cash_profit_quality_01"
+    },
+    {
+      "id": "fact-q1-working-capital-balances",
+      "claimType": "source-fact",
+      "text": "2026年3月31日相对2025年12月31日，应收账款由76403264增至77710096千元，存货由94526239增至108940929千元，应付账款由160328962增至180625070千元，应付票据由103276999增至119820947千元，合同负债由49233377降至45549672千元。",
+      "sourceRefs": [
+        "material-annual-2025",
+        "material-q1-2026"
+      ],
+      "locator": "2025年年度报告PDF第111至112页及2026年第一季度报告PDF第5至6页合并资产负债表",
+      "uid": "沈礼_20260718_catl_cash_profit_quality_01"
+    },
+    {
+      "id": "fact-working-capital-deltas",
+      "claimType": "derived-check",
+      "text": "2026年第一季度应收账款增加1306832千元、存货增加14414690千元、应付账款增加20296108千元、应付票据增加16543948千元、合同负债减少3683705千元。按应收账款加存货减应付账款、应付票据和合同负债的简化代理口径，净变动为-17434829千元。",
+      "sourceRefs": [
+        "material-annual-2025",
+        "material-q1-2026"
+      ],
+      "locator": "两份报告的合并资产负债表对应科目差额回算",
+      "uid": "沈礼_20260718_catl_cash_profit_quality_01"
+    },
+    {
+      "id": "fact-q1-cashflow-detail",
+      "claimType": "source-fact",
+      "text": "2026年第一季度投资活动现金流量净额为-14623616千元，筹资活动现金流量净额为8762324千元，汇率变动影响为-3394943千元，现金及现金等价物净增加额为24424618千元。",
+      "sourceRefs": [
+        "material-q1-2026"
+      ],
+      "locator": "2026年第一季度报告PDF第11至12页合并现金流量表",
+      "uid": "沈礼_20260718_catl_cash_profit_quality_01"
+    }
+  ],
+  "materials": [
+    {
+      "id": "material-annual-2025",
+      "uid": "沈礼_20260718_catl_cash_profit_quality_01",
+      "name": "宁德时代2025年年度报告.pdf",
+      "text": "经审计的2025年度主要财务指标、季度分项数据和年末应收账款、存货、应付账款等余额",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-03-10/1225002214.PDF",
+      "sha256": "c15272977147dee7e6935a38ea0e4fd6855370aabb106f54cfe20f7cf6048ec9"
+    },
+    {
+      "id": "material-q1-2026",
+      "uid": "沈礼_20260718_catl_cash_profit_quality_01",
+      "name": "宁德时代2026年第一季度报告.pdf",
+      "text": "未经审计的2026年第一季度收入、利润、经营现金流和期末营运资本项目，并列示上年同期或年初比较数",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-16/1225107946.PDF",
+      "sha256": "32e4936e6dd68a89741a8167b4c4ae3f8b4bc7ef61d70f35b294e1cb0e46fbe8"
+    }
+  ],
+  "unknowns": [
+    {
+      "id": "unknown-ocf-attribution",
+      "text": "两份附件不足以把经营现金流增速与利润增速的分化直接归因于单一营运资本科目，完整解释还需要现金流量表补充资料、科目明细和非现金调整。",
+      "uid": "沈礼_20260718_catl_cash_profit_quality_01"
+    },
+    {
+      "id": "unknown-working-capital-proxy",
+      "text": "简化营运资本代理项只包含五个期末余额科目，未覆盖预付款项、应收款项融资、其他应收款、其他流动负债及汇率和并购等影响，不能等同于经营现金流量表的营运资本变动。",
+      "uid": "沈礼_20260718_catl_cash_profit_quality_01"
+    },
+    {
+      "id": "unknown-quarterly-audit",
+      "text": "2026年第一季度报告未经审计，后续审计或年度披露可能调整分类或提供更细的解释。",
+      "uid": "沈礼_20260718_catl_cash_profit_quality_01"
+    }
+  ],
+  "decision": {
+    "id": "decision-cash-quality-workbook",
+    "text": "建立带公式和来源页码的利润现金质量核对表，确认两期现金利润覆盖率及其变化，并把营运资本余额变化保留为观察线索而非经营现金流的直接归因。"
+  },
+  "deliveryUse": {
+    "recipient": "经营分析同事",
+    "purpose": "复核一季度利润增长的现金支撑程度，并为取得更细科目资料后继续分析留出可回填底表。"
+  }
+}

@@ -1,0 +1,910 @@
+{
+  "configHash": "6523549c7e4ba6866a0ecd8682990a99040c2d01875c76979d805533ba2bada4",
+  "conversationId": "38435457272036866",
+  "jobId": "l1-async-api5-20260719-1015-04",
+  "minimumRounds": 6,
+  "maxRounds": 10,
+  "mode": "openai-compatible",
+  "contentScopePolicyVersion": "domestic-work-scope-v1",
+  "executionSlot": {
+    "browserContextId": "1084C633D11647B8992D48E50C635F55",
+    "endpoint": "http://127.0.0.1:9229",
+    "targetId": "D7F9BF5AF432877197B0C1AA9F2D24BB",
+    "workerId": "slot-3-D7F9BF5AF432877197B0C1AA9F2D24BB"
+  },
+  "finalProductAcceptance": null,
+  "productRequirement": {
+    "allowEquivalentOnline": false,
+    "allowUnavailableBestEffort": false,
+    "required": true,
+    "requestedFormats": [
+      "ppt"
+    ]
+  },
+  "rounds": [
+    {
+      "contentScopeBeforeModel": {
+        "calculationComplexityCount": 3,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "contentScopeAfterModel": {
+        "calculationComplexityCount": 3,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "evaluation": {
+        "note": "本轮回复给出的核心财务同比复算、内部抵消勾稽、利润桥和产品/出口指标，整体框架很接近会议材料。不过引文中的因果判断超出了现有证据，钢铁制造分部总体毛利率下降只能证明分部盈利承压，不能单独证明高附加值产品溢价“未兑现”，这还可能受原料成本、产品组合、售价及基地差异共同影响。另外，分部表未列上年同期收入和成本却直接给出同比毛利率变化，导致这处口径难以复核；关于“抵消仅为口径调整、不影响合并利润总额”的判断，也未区分当期内部交易抵消与未实现内部利润抵消。当前结果只有在线演示产物卡片和导出说明，没有可核验的实际 pptx 下载附件，尚未达到最终交付要求。",
+        "panelClosed": true,
+        "submitted": true,
+        "labels": [
+          "其他"
+        ],
+        "responseCount": 3,
+        "vote": "dislike",
+        "evidenceQuote": "钢铁制造毛利率仅5.5%且同比微降 0.1pct—— 高附加值产品的溢价未在分部层面兑现",
+        "score": 2
+      },
+      "feedbackPreflight": {
+        "issues": [],
+        "pass": true,
+        "prompt": "本轮回复给出的核心财务同比复算、内部抵消勾稽、利润桥和产品/出口指标，整体框架很接近会议材料。不过引文中的因果判断超出了现有证据，钢铁制造分部总体毛利率下降只能证明分部盈利承压，不能单独证明高附加值产品溢价“未兑现”，这还可能受原料成本、产品组合、售价及基地差异共同影响。另外，分部表未列上年同期收入和成本却直接给出同比毛利率变化，导致这处口径难以复核；关于“抵消仅为口径调整、不影响合并利润总额”的判断，也未区分当期内部交易抵消与未实现内部利润抵消。当前结果只有在线演示产物卡片和导出说明，没有可核验的实际 pptx 下载附件，尚未达到最终交付要求。",
+        "changed": false,
+        "model": "gpt-5.6-sol",
+        "provider": "openai-compatible-responses-api",
+        "retryTrace": [
+          {
+            "attempt": 1,
+            "phase": "initial",
+            "retry": 0,
+            "status": "success"
+          }
+        ],
+        "textPurpose": "feedback-note",
+        "usage": {
+          "metered": true,
+          "source": "responses-api",
+          "requestCount": 1,
+          "inputTokens": 3000,
+          "cachedInputTokens": 0,
+          "uncachedInputTokens": 3000,
+          "outputTokens": 82,
+          "reasoningTokens": 61,
+          "visibleOutputTokens": 21,
+          "totalTokens": 3082,
+          "providerUsage": {
+            "input_tokens": 3000,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 82,
+            "output_tokens_details": {
+              "reasoning_tokens": 61
+            },
+            "total_tokens": 3082
+          }
+        }
+      },
+      "feedbackRewrite": {
+        "changed": true,
+        "contentValidationTrace": [
+          {
+            "attempt": 1,
+            "status": "accepted"
+          }
+        ],
+        "model": "gemini-3.1-pro-preview",
+        "pass": true,
+        "preservation": {
+          "issues": [],
+          "anchorDiff": {
+            "numbers": {
+              "added": [],
+              "missing": []
+            },
+            "urls": {
+              "added": [],
+              "missing": []
+            },
+            "latin": {
+              "added": [],
+              "missing": []
+            }
+          },
+          "pass": true,
+          "rewrittenLength": 276,
+          "sourceLength": 264
+        },
+        "prompt": "本轮回复给出的核心财务同比复算、内部抵消勾稽、利润桥和产品/出口指标，整体框架很接近会议材料。不过引文中的因果判断超出了现有证据，钢铁制造分部总体毛利率下降只能证明分部盈利承压，不能单独证明高附加值产品溢价“未兑现”，这还可能受原料成本、产品组合、售价及基地差异共同影响。另外，分部表未列上年同期收入和成本却直接给出同比毛利率变化，导致这处口径难以复核；关于“抵消仅为口径调整、不影响合并利润总额”的判断，也未区分当期内部交易抵消与未实现内部利润抵消。当前结果只有在线演示产物卡片和导出说明，没有可核验的实际 pptx 下载附件，尚未达到最终交付要求。",
+        "retryTrace": [
+          {
+            "attempt": 1,
+            "phase": "initial",
+            "retry": 0,
+            "status": "success",
+            "contentAttempt": 1
+          }
+        ],
+        "textPurpose": "feedback-note",
+        "usage": {
+          "prompt_tokens": 1087,
+          "completion_tokens": 1310,
+          "total_tokens": 2397,
+          "billing_usage": {
+            "source": "gemini_chat",
+            "semantic": "gemini",
+            "gemini_usage_metadata": {
+              "promptTokenCount": 1087,
+              "toolUsePromptTokenCount": 0,
+              "candidatesTokenCount": 192,
+              "totalTokenCount": 2397,
+              "thoughtsTokenCount": 1118,
+              "cachedContentTokenCount": 0,
+              "promptTokensDetails": [],
+              "toolUsePromptTokensDetails": [],
+              "candidatesTokensDetails": []
+            }
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 1087,
+            "audio_tokens": 0,
+            "image_tokens": 0
+          },
+          "completion_tokens_details": {
+            "text_tokens": 0,
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 1118
+          },
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "input_tokens_details": null,
+          "claude_cache_creation_5_m_tokens": 0,
+          "claude_cache_creation_1_h_tokens": 0
+        }
+      },
+      "attachmentNames": [
+        "宝山钢铁股份有限公司2026年第一季度报告.pdf"
+      ],
+      "index": 1,
+      "plannedPrompt": "我正在做宝钢股份2026年一季度产品结构与利润表现复核，这份结果供产品经营会议讨论下一步需要补取的产品盈利和订单兑现资料。\n\n为了准备接下来的产品经营会议，我们需要讨论后续要补充哪些产品盈利和订单兑现的资料。请根据《宝山钢铁股份有限公司2026年第一季度报告.pdf》中的内容，帮我核对2026年一季度的核心财务、主营业务分部数据，以及产品结构和出口接单的情况。\n\n在处理数据时，请对本期和上年同期的数据进行同比复算，并确认同比口径是否一致。针对主营业务分部的数据，你需要重新核实分项收入和内部抵消金额的统计口径，并复算毛利率以及相关的派生比率。\n\n请重点解释为什么结构指标在向好，归母净利润却出现了下降。你需要给出一个明确的结论，判断“2+2+N”产品销量和出口接单等指标的改善，能不能直接支持整体盈利的改善，并说明分部毛利率对这个判断构成了什么限制。分析时请注意区分可证事实、合理推断和待确认项，保留具体的来源页码，并注明季度数据未经审计。另外，不要把销量或接单的变化直接当成当季的利润贡献。\n\n最后请帮我生成一份可下载的PPT，方便我们在会上直接使用。PPT的内容需要包含产品和出口亮点、核心财务对比、分部毛利率、证据边界、待补数据以及结论页。",
+      "preflight": {
+        "issues": [],
+        "pass": true,
+        "prompt": "我正在做宝钢股份2026年一季度产品结构与利润表现复核，结果供产品经营会议讨论下一步需补充的产品盈利和订单兑现资料。请根据《宝山钢铁股份有限公司2026年第一季度报告.pdf》，核对2026年一季度的核心财务、主营业务分部数据，以及产品结构和出口接单情况。\n\n请对本期和上年同期数据进行同比复算，确认同比口径是否一致。针对主营业务分部数据，重新核实分项收入和内部抵消金额的统计口径，复算毛利率及相关派生比率。\n\n重点解释为什么结构指标在向好，归母净利润却出现下降。给出明确结论，判断“2+2+N”产品销量和出口接单等指标的改善能不能直接支持整体盈利改善，并说明分部毛利率对该判断构成了什么限制。分析时区分可证事实、合理推断和待确认项，保留具体来源页码，注明季度数据未经审计，不要把销量或接单变化直接当成当季利润贡献。\n\n最后生成一份可下载的PPT，内容包含产品和出口亮点、核心财务对比、分部毛利率、证据边界、待补数据以及结论页。",
+        "changed": false,
+        "model": "gpt-5.6-sol",
+        "provider": "openai-compatible-responses-api",
+        "retryTrace": [
+          {
+            "attempt": 1,
+            "phase": "initial",
+            "retry": 0,
+            "status": "success"
+          }
+        ],
+        "textPurpose": "chat-prompt",
+        "usage": {
+          "metered": true,
+          "source": "responses-api",
+          "requestCount": 1,
+          "inputTokens": 1612,
+          "cachedInputTokens": 0,
+          "uncachedInputTokens": 1612,
+          "outputTokens": 126,
+          "reasoningTokens": 105,
+          "visibleOutputTokens": 21,
+          "totalTokens": 1738,
+          "providerUsage": {
+            "input_tokens": 1612,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 126,
+            "output_tokens_details": {
+              "reasoning_tokens": 105
+            },
+            "total_tokens": 1738
+          }
+        }
+      },
+      "prompt": "我正在做宝钢股份2026年一季度产品结构与利润表现复核，结果供产品经营会议讨论下一步需补充的产品盈利和订单兑现资料。请根据《宝山钢铁股份有限公司2026年第一季度报告.pdf》，核对2026年一季度的核心财务、主营业务分部数据，以及产品结构和出口接单情况。\n\n请对本期和上年同期数据进行同比复算，确认同比口径是否一致。针对主营业务分部数据，重新核实分项收入和内部抵消金额的统计口径，复算毛利率及相关派生比率。\n\n重点解释为什么结构指标在向好，归母净利润却出现下降。给出明确结论，判断“2+2+N”产品销量和出口接单等指标的改善能不能直接支持整体盈利改善，并说明分部毛利率对该判断构成了什么限制。分析时区分可证事实、合理推断和待确认项，保留具体来源页码，注明季度数据未经审计，不要把销量或接单变化直接当成当季利润贡献。\n\n最后生成一份可下载的PPT，内容包含产品和出口亮点、核心财务对比、分部毛利率、证据边界、待补数据以及结论页。",
+      "response": {
+        "attachmentUpload": {
+          "completedAt": "2026-07-19T02:47:39.825Z",
+          "expectedCount": 1,
+          "expectedNames": [
+            "宝山钢铁股份有限公司2026年第一季度报告.pdf"
+          ],
+          "fileInputMultiple": true,
+          "pass": true,
+          "selectedNames": [
+            "宝山钢铁股份有限公司2026年第一季度报告.pdf"
+          ],
+          "startedAt": "2026-07-19T02:46:57.472Z",
+          "visibleCount": 1,
+          "visibleNames": [
+            "宝山钢铁股份有限公司2026年第一季度报告.pdf"
+          ]
+        },
+        "artifacts": [
+          {
+            "accessState": "",
+            "cardStatus": "2",
+            "cardUnsupported": "false",
+            "dataTestId": "slides-product-card",
+            "href": "",
+            "label": "Asset cover",
+            "text": "宝钢股份2026Q1产品结构与利润表现复核\n创建时间：10:47"
+          }
+        ],
+        "completedAt": "2026-07-19T02:48:38.644Z",
+        "conversationId": "38435457272036866",
+        "durationMs": 101379,
+        "prompt": "我正在做宝钢股份2026年一季度产品结构与利润表现复核，结果供产品经营会议讨论下一步需补充的产品盈利和订单兑现资料。请根据《宝山钢铁股份有限公司2026年第一季度报告.pdf》，核对2026年一季度的核心财务、主营业务分部数据，以及产品结构和出口接单情况。\n\n请对本期和上年同期数据进行同比复算，确认同比口径是否一致。针对主营业务分部数据，重新核实分项收入和内部抵消金额的统计口径，复算毛利率及相关派生比率。\n\n重点解释为什么结构指标在向好，归母净利润却出现下降。给出明确结论，判断“2+2+N”产品销量和出口接单等指标的改善能不能直接支持整体盈利改善，并说明分部毛利率对该判断构成了什么限制。分析时区分可证事实、合理推断和待确认项，保留具体来源页码，注明季度数据未经审计，不要把销量或接单变化直接当成当季利润贡献。\n\n最后生成一份可下载的PPT，内容包含产品和出口亮点、核心财务对比、分部毛利率、证据边界、待补数据以及结论页。",
+        "response": "宝钢股份 2026Q1 产品结构与利润表现复核（最终版）\n已完成全部数据复核与 PPT 制作，以下为核心结论汇总。\n一、同比复算结论（口径一致，全部匹配）\n表格\n项目\t2026Q1\t2025Q1\t披露同比\t复算同比\t来源\n营业收入\t770.61 亿\t728.80 亿\t+5.7%\t+5.74%\t报告 P2\n利润总额\t30.33 亿\t32.92 亿\t-7.8%\t-7.87%\t报告 P2\n归母净利润\t22.25 亿\t24.34 亿\t-8.6%\t-8.59%\t报告 P2\n扣非净利润\t21.93 亿\t23.99 亿\t-8.6%\t-8.59%\t报告 P2\n经营现金流\t44.17 亿\t43.55 亿\t+1.4%\t+1.42%\t报告 P2\n口径确认：两期均为合并口径、1-3 月累计数，统计口径一致，同比可比。季度数据未经审计。\n二、分部数据与内部抵消核实\n毛利率复算：\n表格\n分部\t收入 (亿)\t成本 (亿)\t披露毛利率\t复算毛利率\t同比变动\n钢铁制造\t566.20\t535.05\t5.5%\t5.50%\t-0.1pct\n加工配送\t664.51\t655.42\t1.4%\t1.37%\t-0.02pct\n其他\t54.99\t44.89\t18.4%\t18.37%\t-0.8pct\n合并合计\t770.61\t719.58\t6.6%\t6.62%\t-0.6pct\n内部抵消勾稽：\n抵消前分部收入合计 = 566.20 + 664.51 + 54.99 = 1,285.70 亿元\n分部间抵消额 = -515.09 亿元（消除加工配送与钢铁制造的内部交易重复计算）\n合并营业收入 = 1,285.70 - 515.09 = 770.61 亿元（与利润表完全一致 ✓）\n抵消性质：仅为口径调整，不影响合并利润总额，不得将抵消额变动归因于盈利增减\n三、五层利润归因桥（可核验，无重复计算）\n表格\n层级\t变动额\t主要驱动\n毛利变动\t-1.60 亿\t收入 + 41.82 亿，成本 + 43.41 亿，成本涨幅超过收入\n营业利润变动\t-2.54 亿\t毛利 - 1.60 + 其他收益 - 1.86 + 公允价值 - 0.85，被管销研费用减少 + 2.91 对冲\n利润总额变动\t-2.59 亿\t加营业外收支净额 - 0.04\n净利润变动\t-2.50 亿\t加所得税减少 + 0.09\n归母净利润变动\t-2.09 亿\t加少数股东损益减少 + 0.40\n与披露 - 8.6% 完全吻合，全部 17 项均来自合并利润表（报告 P8-P9），为可证事实。\n四、核心判断：结构改善不足以直接支撑盈利修复\n可证事实（向好指标）：\n\"2+2+N\" 产品销量 861.9 万吨，同比 + 37.7 万吨（+4.6%），来源：报告 P1\n出口接单量 196.1 万吨，同比 + 41.6 万吨（+26.9%），来源：报告 P1\n分部毛利率构成的限制：\n钢铁制造毛利率仅5.5%且同比微降 0.1pct—— 高附加值产品的溢价未在分部层面兑现\n加工配送毛利率仅1.4%—— 规模大但盈利贡献极薄，拉低整体质量\n接单≠当季利润—— 出口接单为订单指标，交付确认收入有滞后；出口产品毛利率未单独披露\n明确结论：\n2+2+N 销量增长和出口接单改善不能直接支持整体盈利改善的判断。结构优化方向正确，但在当前 \"钢价跌（-4.4%）+ 原料涨（铁矿石 + 3.2%、焦煤 + 10.9%）\" 的行业剪刀差环境下，产品溢价被成本上涨吞噬。需同时满足①原燃料成本边际回落、②高附加值产品溢价在分部毛利率中体现，才能兑现为盈利改善。\n五、证据分级与待补数据\n可证事实：核心财务数据、分部收入成本毛利率、期间费用明细、其他收益 / 投资收益变动、行业数据引用\n合理推断：购销剪刀差是毛利下降原因之一、出口接单对未来收入有拉动但当季贡献无法量化\n待确认项：2+2+N 各产品毛利率拆分、出口产品盈利质量、接单转化率、各基地成本差异\nPPT 共 7 页（封面 + 6 个内容板块），已按上述口径全部修订完成，包含完整归因桥、内部抵消说明、证据分级标注。\nPPT 下载方式：打开链接后点击右上角「・・・」→「下载」→「PowerPoint (.pptx)」即可导出本地可编辑文件。",
+        "responseIdentity": "block_35ca9d70-831c-11f1-a40a-b735be607447",
+        "responseCount": 3,
+        "sendReceipt": {
+          "countAfter": 3,
+          "countBefore": 2,
+          "identity": "block_8b6f4b22-069a-4f67-a1d3-55d19d23ce7c",
+          "pass": true,
+          "prompt": "我正在做宝钢股份 2026 年一季度产品结构与利润表现复核，结果供产品经营会议讨论下一步需补充的产品盈利和订单兑现资料。请根据《宝山钢铁股份有限公司 2026 年第一季度报告.pdf》，核对 2026 年一季度的核心财务、主营业务分部数据，以及产品结构和出口接单情况。\n请对本期和上年同期数据进行同比复算，确认同比口径是否一致。针对主营业务分部数据，重新核实分项收入和内部抵消金额的统计口径，复算毛利率及相关派生比率。\n重点解释为什么结构指标在向好，归母净利润却出现下降。给出明确结论，判断 “2+2+N” 产品销量和出口接单等指标的改善能不能直接支持整体盈利改善，并说明分部毛利率对该判断构成了什么限制。分析时区分可证事实、合理推断和待确认项，保留具体来源页码，注明季度数据未经审计，不要把销量或接单变化直接当成当季利润贡献。\n最后生成一份可下载的 PPT，内容包含产品和出口亮点、核心财务对比、分部毛利率、证据边界、待补数据以及结论页。",
+          "verifiedAt": "2026-07-19T02:47:41.770Z"
+        },
+        "startedAt": "2026-07-19T02:46:57.266Z",
+        "url": "chrome://doubao-chat/chat/38435457272036866?layout=zen_split&pluginId=ai-sheet-canvas&canvas_impayload=%7B%22artifactMetaId%22%3A%2250350651193497090%22%2C%22artifactVersionId%22%3A%2250350651193497346%22%2C%22blockStatus%22%3A2%2C%22blockType%22%3A10030%2C%22conversationId%22%3A%2238435457272036866%22%2C%22docTitle%22%3A%22%E4%B8%AD%E5%9B%BD%E7%A5%9E%E5%8D%8E2026%E5%B9%B4%E8%B0%83%E6%95%B4%E5%90%8E%E8%B5%84%E6%9C%AC%E5%BC%80%E6%94%AF%E5%A4%8D%E6%A0%B8%E8%A1%A8%22%2C%22docToken%22%3A%22AJl2sp0jghtE76tcRCjcFszNnhz%22%2C%22isAutoOpen%22%3Atrue%2C%22messageId%22%3A%2250336192327021826%22%2C%22resourceType%22%3A12%2C%22resourceVersion%22%3A-1%2C%22scene%22%3A%22unknown%22%7D"
+      },
+      "rewrite": {
+        "changed": true,
+        "contentValidationTrace": [
+          {
+            "attempt": 1,
+            "status": "accepted"
+          }
+        ],
+        "model": "gemini-3.1-pro-preview",
+        "pass": true,
+        "preservation": {
+          "issues": [],
+          "anchorDiff": {
+            "numbers": {
+              "added": [],
+              "missing": []
+            },
+            "urls": {
+              "added": [],
+              "missing": []
+            },
+            "latin": {
+              "added": [],
+              "missing": []
+            }
+          },
+          "pass": true,
+          "rewrittenLength": 414,
+          "sourceLength": 525
+        },
+        "prompt": "我正在做宝钢股份2026年一季度产品结构与利润表现复核，结果供产品经营会议讨论下一步需补充的产品盈利和订单兑现资料。请根据《宝山钢铁股份有限公司2026年第一季度报告.pdf》，核对2026年一季度的核心财务、主营业务分部数据，以及产品结构和出口接单情况。\n\n请对本期和上年同期数据进行同比复算，确认同比口径是否一致。针对主营业务分部数据，重新核实分项收入和内部抵消金额的统计口径，复算毛利率及相关派生比率。\n\n重点解释为什么结构指标在向好，归母净利润却出现下降。给出明确结论，判断“2+2+N”产品销量和出口接单等指标的改善能不能直接支持整体盈利改善，并说明分部毛利率对该判断构成了什么限制。分析时区分可证事实、合理推断和待确认项，保留具体来源页码，注明季度数据未经审计，不要把销量或接单变化直接当成当季利润贡献。\n\n最后生成一份可下载的PPT，内容包含产品和出口亮点、核心财务对比、分部毛利率、证据边界、待补数据以及结论页。",
+        "retryTrace": [
+          {
+            "attempt": 1,
+            "phase": "initial",
+            "retry": 0,
+            "status": "success",
+            "contentAttempt": 1
+          }
+        ],
+        "textPurpose": "chat-prompt",
+        "usage": {
+          "prompt_tokens": 1457,
+          "completion_tokens": 1706,
+          "total_tokens": 3163,
+          "billing_usage": {
+            "source": "gemini_chat",
+            "semantic": "gemini",
+            "gemini_usage_metadata": {
+              "promptTokenCount": 1457,
+              "toolUsePromptTokenCount": 0,
+              "candidatesTokenCount": 295,
+              "totalTokenCount": 3163,
+              "thoughtsTokenCount": 1411,
+              "cachedContentTokenCount": 0,
+              "promptTokensDetails": [],
+              "toolUsePromptTokensDetails": [],
+              "candidatesTokensDetails": []
+            }
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 1457,
+            "audio_tokens": 0,
+            "image_tokens": 0
+          },
+          "completion_tokens_details": {
+            "text_tokens": 0,
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 1411
+          },
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "input_tokens_details": null,
+          "claude_cache_creation_5_m_tokens": 0,
+          "claude_cache_creation_1_h_tokens": 0
+        }
+      },
+      "status": "complete",
+      "promptQualityRetryTrace": [
+        {
+          "attempt": 1,
+          "status": "accepted"
+        }
+      ],
+      "modelRetries": {
+        "prompt_de_ai_rewrite": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success"
+            }
+          ],
+          "status": "complete"
+        },
+        "prompt_preflight": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success"
+            }
+          ],
+          "status": "complete"
+        },
+        "evaluation_planner": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success"
+            }
+          ],
+          "status": "complete"
+        },
+        "feedback_de_ai_rewrite": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success"
+            }
+          ],
+          "status": "complete"
+        },
+        "feedback_preflight": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success"
+            }
+          ],
+          "status": "complete"
+        }
+      },
+      "contentScopeAfterRewrite": {
+        "calculationComplexityCount": 3,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "attachmentVerification": {
+        "attachmentCount": 1,
+        "attachments": [
+          {
+            "classification": "specific-business",
+            "introductionHint": "把正式报告名称直接嵌入任务句，后续核对继续引用同一份已验证原件。",
+            "name": "宝山钢铁股份有限公司2026年第一季度报告.pdf",
+            "relativePath": "宝山钢铁股份有限公司2026年第一季度报告.pdf",
+            "sha256": "76b0d27c65fb55ba2cd3301f83e4448846de438d1575ea05e551fe0b829cb23d",
+            "sizeBytes": 191834,
+            "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-30/1225257456.PDF",
+            "summary": "披露宝钢股份一季度产品销量、出口接单、经营分部收入成本毛利率和核心财务指标。"
+          }
+        ],
+        "pass": true,
+        "verifiedAt": "2026-07-19T02:46:56.877Z"
+      },
+      "responseVisibility": {
+        "issues": [],
+        "observations": [],
+        "pass": true
+      },
+      "nextPromptContentScope": {
+        "calculationComplexityCount": 3,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "decision": {
+        "evaluation": {
+          "evidenceQuote": "钢铁制造毛利率仅5.5%且同比微降 0.1pct—— 高附加值产品的溢价未在分部层面兑现",
+          "labels": [
+            "其他"
+          ],
+          "note": "本轮回复给出的核心财务同比复算、内部抵消勾稽、利润桥和产品/出口指标，整体框架很接近会议材料。不过引文中的因果判断超出了现有证据，钢铁制造分部总体毛利率下降只能证明分部盈利承压，不能单独证明高附加值产品溢价“未兑现”，这还可能受原料成本、产品组合、售价及基地差异共同影响。另外，分部表未列上年同期收入和成本却直接给出同比毛利率变化，导致这处口径难以复核；关于“抵消仅为口径调整、不影响合并利润总额”的判断，也未区分当期内部交易抵消与未实现内部利润抵消。当前结果只有在线演示产物卡片和导出说明，没有可核验的实际 pptx 下载附件，尚未达到最终交付要求。",
+          "score": 2,
+          "vote": "dislike"
+        },
+        "nextAttachmentNames": [],
+        "nextPrompt": "现有结论中，钢铁制造毛利率5.5%且同比下降只能证明分部整体承压，尚不足以证明高附加值产品溢价未兑现。请据报告披露重新收紧这条证据链：补列各主营分部本期与上年同期的收入、成本、毛利率、同比变动及准确来源页码，展示毛利率复算公式；把“溢价未兑现”改为合理推断，并明确原料成本、售价、产品组合等混杂因素。同步修正内部抵消表述，区分收入成本抵消和可能的未实现内部利润抵消，说明仅凭分部收入抵消额不能判断其对利润的影响。将修订内容落实到演示稿，并提供可直接下载、可编辑的 .pptx 文件。",
+        "productAssessment": null,
+        "taskOutcome": "continue",
+        "unresolvedIssues": [
+          "分部毛利率同比变化缺少上年同期收入、成本和逐项来源，无法复核。",
+          "“高附加值产品溢价未兑现”被表述为确定结论，但现有分部层面证据不足。",
+          "内部抵消对利润的说明过于绝对，未区分交易抵消与未实现内部利润抵消。",
+          "尚未提供可直接下载的实际 .pptx 文件。"
+        ],
+        "evaluator": {
+          "id": "resp_0a4a68b8714009ba016a5c3b07c434819b9dbc0c6194d3897c",
+          "model": "gpt-5.6-sol",
+          "provider": "openai-compatible-responses-api",
+          "retryTrace": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success",
+              "validationAttempt": 1
+            }
+          ],
+          "usage": {
+            "metered": true,
+            "source": "responses-api-aggregate",
+            "requestCount": 1,
+            "inputTokens": 3202,
+            "cachedInputTokens": 0,
+            "uncachedInputTokens": 3202,
+            "outputTokens": 1051,
+            "reasoningTokens": 467,
+            "visibleOutputTokens": 584,
+            "totalTokens": 4253
+          },
+          "usageAttempts": [
+            {
+              "metered": true,
+              "source": "responses-api",
+              "requestCount": 1,
+              "inputTokens": 3202,
+              "cachedInputTokens": 0,
+              "uncachedInputTokens": 3202,
+              "outputTokens": 1051,
+              "reasoningTokens": 467,
+              "visibleOutputTokens": 584,
+              "totalTokens": 4253,
+              "providerUsage": {
+                "input_tokens": 3202,
+                "input_tokens_details": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0
+                },
+                "output_tokens": 1051,
+                "output_tokens_details": {
+                  "reasoning_tokens": 467
+                },
+                "total_tokens": 4253
+              }
+            }
+          ],
+          "validationFailures": []
+        }
+      },
+      "feedbackSourceNote": "回复已经给出核心财务同比复算、内部抵消勾稽、利润桥和产品/出口指标，整体框架很接近会议材料；但引文中的因果判断超出了现有证据：钢铁制造分部总体毛利率下降只能证明分部盈利承压，不能单独证明高附加值产品溢价“未兑现”，还可能受原料成本、产品组合、售价及基地差异共同影响。此外，分部表未列上年同期收入和成本，却直接给出同比毛利率变化，难以复核；“抵消仅为口径调整、不影响合并利润总额”也需要区分当期内部交易抵消与未实现内部利润抵消。当前只有在线演示产物卡片和导出说明，没有可核验的实际 .pptx 下载附件，因此尚未满足最终交付要求。",
+      "feedbackQualityRetryTrace": [
+        {
+          "attempt": 1,
+          "status": "accepted"
+        }
+      ],
+      "feedbackRewriteContentScope": {
+        "calculationComplexityCount": 3,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "feedbackContentScope": {
+        "calculationComplexityCount": 3,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "productAssessment": null
+    },
+    {
+      "contentScopeBeforeModel": {
+        "calculationComplexityCount": 3,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "contentScopeAfterModel": {
+        "calculationComplexityCount": 3,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "evaluation": null,
+      "feedbackPreflight": null,
+      "feedbackRewrite": null,
+      "attachmentNames": [],
+      "index": 2,
+      "plannedPrompt": "现有结论中，钢铁制造毛利率5.5%且同比下降只能证明分部整体承压，尚不足以证明高附加值产品溢价未兑现。请据报告披露重新收紧这条证据链：补列各主营分部本期与上年同期的收入、成本、毛利率、同比变动及准确来源页码，展示毛利率复算公式；把“溢价未兑现”改为合理推断，并明确原料成本、售价、产品组合等混杂因素。同步修正内部抵消表述，区分收入成本抵消和可能的未实现内部利润抵消，说明仅凭分部收入抵消额不能判断其对利润的影响。将修订内容落实到演示稿，并提供可直接下载、可编辑的 .pptx 文件。",
+      "preflight": {
+        "issues": [],
+        "pass": true,
+        "prompt": "现有结论里，钢铁制造毛利率5.5%且同比下降只能证明分部整体承压，还不足以说明高附加值产品溢价未兑现。麻烦根据报告披露重新梳理一下这部分：补充各主营分部本期与上年同期的收入、成本、毛利率、同比变动及准确来源页码，展示毛利率复算公式；把“溢价未兑现”调整为合理推断，并明确原料成本、售价、产品组合等混杂因素。另外同步修正内部抵消的表述，区分收入成本抵消和可能的未实现内部利润抵消，说明仅凭分部收入抵消额无法判断其对利润的影响。请将这些修订更新到演示稿中，提供一份可下载编辑的 pptx 文件。",
+        "changed": false,
+        "model": "gpt-5.6-sol",
+        "provider": "openai-compatible-responses-api",
+        "retryTrace": [
+          {
+            "attempt": 1,
+            "phase": "initial",
+            "retry": 0,
+            "status": "success"
+          }
+        ],
+        "textPurpose": "chat-prompt",
+        "usage": {
+          "metered": true,
+          "source": "responses-api",
+          "requestCount": 1,
+          "inputTokens": 3241,
+          "cachedInputTokens": 0,
+          "uncachedInputTokens": 3241,
+          "outputTokens": 372,
+          "reasoningTokens": 351,
+          "visibleOutputTokens": 21,
+          "totalTokens": 3613,
+          "providerUsage": {
+            "input_tokens": 3241,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 372,
+            "output_tokens_details": {
+              "reasoning_tokens": 351
+            },
+            "total_tokens": 3613
+          }
+        }
+      },
+      "prompt": "现有结论里，钢铁制造毛利率5.5%且同比下降只能证明分部整体承压，还不足以说明高附加值产品溢价未兑现。麻烦根据报告披露重新梳理一下这部分：补充各主营分部本期与上年同期的收入、成本、毛利率、同比变动及准确来源页码，展示毛利率复算公式；把“溢价未兑现”调整为合理推断，并明确原料成本、售价、产品组合等混杂因素。另外同步修正内部抵消的表述，区分收入成本抵消和可能的未实现内部利润抵消，说明仅凭分部收入抵消额无法判断其对利润的影响。请将这些修订更新到演示稿中，提供一份可下载编辑的 pptx 文件。",
+      "response": {
+        "attachmentUpload": null,
+        "artifacts": [
+          {
+            "accessState": "",
+            "cardStatus": "2",
+            "cardUnsupported": "false",
+            "dataTestId": "slides-product-card",
+            "href": "",
+            "label": "Asset cover",
+            "text": "宝钢股份2026Q1产品结构与利润表现复核\n创建时间：10:50"
+          }
+        ],
+        "completedAt": "2026-07-19T02:57:44.889Z",
+        "conversationId": "38435457272036866",
+        "durationMs": 461005,
+        "prompt": "现有结论里，钢铁制造毛利率5.5%且同比下降只能证明分部整体承压，还不足以说明高附加值产品溢价未兑现。麻烦根据报告披露重新梳理一下这部分：补充各主营分部本期与上年同期的收入、成本、毛利率、同比变动及准确来源页码，展示毛利率复算公式；把“溢价未兑现”调整为合理推断，并明确原料成本、售价、产品组合等混杂因素。另外同步修正内部抵消的表述，区分收入成本抵消和可能的未实现内部利润抵消，说明仅凭分部收入抵消额无法判断其对利润的影响。请将这些修订更新到演示稿中，提供一份可下载编辑的 pptx 文件。",
+        "response": "第三轮修订完成\n已按要求完成 3 页内容修订，核心调整如下：\n一、第 4 页（分部毛利率与内部抵消）\n新增各分部两期完整数据（来源：报告 P3）：\n表格\n经营分部\t2025Q1 收入\t2025Q1 成本\t2025Q1 毛利率\t2026Q1 收入\t2026Q1 成本\t2026Q1 毛利率\t同比变动\n钢铁制造\t581.47 亿\t548.86 亿\t5.6%\t566.20 亿\t535.05 亿\t5.5%\t-0.1pct\n加工配送\t756.50 亿\t745.99 亿\t1.4%\t664.51 亿\t655.42 亿\t1.4%\t-0.02pct\n其他\t51.42 亿\t41.54 亿\t19.2%\t54.99 亿\t44.89 亿\t18.4%\t-0.8pct\n分部间抵消\t-660.60 亿\t-660.22 亿\t/\t-515.09 亿\t-515.77 亿\t/\t不适用\n合并合计\t728.80 亿\t676.17 亿\t7.2%\t770.61 亿\t719.58 亿\t6.6%\t-0.6pct\n毛利率复算公式：\n毛利率 =（营业收入 - 营业成本）/ 营业收入 × 100%\n示例：钢铁制造 2026Q1 = (566.20 - 535.05) / 566.20 = 5.50% ✓\n内部抵消口径修正（区分三层）：\n收入与成本同步抵消：分部间交易同时虚增收入和成本，合并时同步抵消收入 515.09 亿、成本 515.77 亿，抵消后不影响毛利总额\n可能存在未实现内部利润抵消：收入与成本抵消额相差 0.68 亿（515.77 - 515.09），差额可能包含存货中未实现内部利润的调整，但报告未明确披露该差额性质\n关键结论：仅凭分部收入抵消额无法判断其对合并利润的影响，抵消额大小变化不等于利润变化\n二、第 5 页（证据分级边界）\n可证事实新增：\n钢铁制造分部毛利率 5.5%、同比下降 0.1 个百分点（报告 P3）—— 分部整体承压为可证事实\n合理推断调整（原 \"溢价未兑现\" 降级）：\n高附加值产品溢价是否兑现无法单独确认：分部毛利率受原料成本、产品售价、产品组合三因素混杂影响，无法分离出结构升级的单独贡献\n分部间抵消差额 0.68 亿可能涉及未实现内部利润调整，但报告未明确，无法确认对利润的具体影响\n禁令新增： 不得将分部毛利率下降简单归因于某单一因素\n三、第 7 页（结论页同步修正）\n结论第二条修正为：\n但无法直接支持盈利改善判断\n限制一：钢铁制造分部毛利率仅 5.5% 且同比微降，分部整体承压（可证事实）\n限制二：高附加值产品溢价是否兑现为合理推断，分部毛利率受原料成本、产品售价、产品组合三因素混杂影响，无法单独分离结构升级贡献\n限制三：出口接单为订单指标，收入确认滞后，出口产品毛利率未披露\n结论第四条新增：行业剪刀差对毛利下降的具体贡献程度属合理推断范畴，待成本明细数据补取后进一步确认。\nPPTX 下载方式：打开链接后点击右上角「・・・」→「下载」→「PowerPoint (.pptx)」即可导出本地可编辑文件。",
+        "responseIdentity": "block_8b27a470-831c-11f1-a40a-b735be607447",
+        "responseCount": 3,
+        "sendReceipt": {
+          "countAfter": 3,
+          "countBefore": 3,
+          "identity": "block_35c6cce0-831c-11f1-a40a-b735be607447",
+          "pass": true,
+          "prompt": "现有结论里，钢铁制造毛利率 5.5% 且同比下降只能证明分部整体承压，还不足以说明高附加值产品溢价未兑现。麻烦根据报告披露重新梳理一下这部分：补充各主营分部本期与上年同期的收入、成本、毛利率、同比变动及准确来源页码，展示毛利率复算公式；把 “溢价未兑现” 调整为合理推断，并明确原料成本、售价、产品组合等混杂因素。另外同步修正内部抵消的表述，区分收入成本抵消和可能的未实现内部利润抵消，说明仅凭分部收入抵消额无法判断其对利润的影响。请将这些修订更新到演示稿中，提供一份可下载编辑的 pptx 文件。",
+          "verifiedAt": "2026-07-19T02:50:04.567Z"
+        },
+        "startedAt": "2026-07-19T02:50:03.884Z",
+        "url": "chrome://doubao-chat/chat/38435457272036866"
+      },
+      "rewrite": {
+        "changed": true,
+        "contentValidationTrace": [
+          {
+            "attempt": 1,
+            "status": "accepted"
+          }
+        ],
+        "model": "gemini-3.1-pro-preview",
+        "pass": true,
+        "preservation": {
+          "issues": [],
+          "anchorDiff": {
+            "numbers": {
+              "added": [],
+              "missing": []
+            },
+            "urls": {
+              "added": [],
+              "missing": []
+            },
+            "latin": {
+              "added": [],
+              "missing": []
+            }
+          },
+          "pass": true,
+          "rewrittenLength": 245,
+          "sourceLength": 241
+        },
+        "prompt": "现有结论里，钢铁制造毛利率5.5%且同比下降只能证明分部整体承压，还不足以说明高附加值产品溢价未兑现。麻烦根据报告披露重新梳理一下这部分：补充各主营分部本期与上年同期的收入、成本、毛利率、同比变动及准确来源页码，展示毛利率复算公式；把“溢价未兑现”调整为合理推断，并明确原料成本、售价、产品组合等混杂因素。另外同步修正内部抵消的表述，区分收入成本抵消和可能的未实现内部利润抵消，说明仅凭分部收入抵消额无法判断其对利润的影响。请将这些修订更新到演示稿中，提供一份可下载编辑的 pptx 文件。",
+        "retryTrace": [
+          {
+            "attempt": 1,
+            "phase": "initial",
+            "retry": 0,
+            "status": "success",
+            "contentAttempt": 1
+          }
+        ],
+        "textPurpose": "chat-prompt",
+        "usage": {
+          "prompt_tokens": 1352,
+          "completion_tokens": 956,
+          "total_tokens": 2308,
+          "billing_usage": {
+            "source": "gemini_chat",
+            "semantic": "gemini",
+            "gemini_usage_metadata": {
+              "promptTokenCount": 1352,
+              "toolUsePromptTokenCount": 0,
+              "candidatesTokenCount": 176,
+              "totalTokenCount": 2308,
+              "thoughtsTokenCount": 780,
+              "cachedContentTokenCount": 0,
+              "promptTokensDetails": [],
+              "toolUsePromptTokensDetails": [],
+              "candidatesTokensDetails": []
+            }
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 1352,
+            "audio_tokens": 0,
+            "image_tokens": 0
+          },
+          "completion_tokens_details": {
+            "text_tokens": 0,
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 780
+          },
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "input_tokens_details": null,
+          "claude_cache_creation_5_m_tokens": 0,
+          "claude_cache_creation_1_h_tokens": 0
+        }
+      },
+      "status": "response_visibility_pass",
+      "promptQualityRetryTrace": [
+        {
+          "attempt": 1,
+          "status": "accepted"
+        }
+      ],
+      "modelRetries": {
+        "prompt_de_ai_rewrite": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success"
+            }
+          ],
+          "status": "complete"
+        },
+        "prompt_preflight": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success"
+            }
+          ],
+          "status": "complete"
+        }
+      },
+      "contentScopeAfterRewrite": {
+        "calculationComplexityCount": 3,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "responseVisibility": {
+        "issues": [],
+        "observations": [],
+        "pass": true
+      }
+    }
+  ],
+  "runId": "d5487273-155e-41a8-93a0-35c7f11c3615",
+  "schemaVersion": 7,
+  "successCriteria": [
+    "产品与财务指标来源清楚",
+    "分部毛利率变化准确",
+    "不把订单量直接等同利润贡献",
+    "内部抵消边界明确",
+    "交付可下载pptx"
+  ],
+  "taskGoal": "产品经营复核人员需要解释结构指标向好但归母净利润下降的证据组合。。制作产品结构与利润表现复核演示稿，把产品销量和出口接单亮点与分部毛利率、整体利润和现金流并列，明确可证改善与不能归因的部分。，最终一份可下载的宝钢股份2026年一季度产品结构与利润表现PPT，包含产品和出口亮点、核心财务对比、分部毛利率、证据边界、待补数据和结论页。",
+  "startedAt": "2026-07-19T02:46:21.570Z",
+  "status": "running",
+  "codexUsageHistory": [],
+  "uploadedAttachmentNames": [
+    "宝山钢铁股份有限公司2026年第一季度报告.pdf"
+  ],
+  "workerPid": 5660,
+  "workerStartedAt": "2026-07-19T02:46:21.570Z",
+  "codexUsageSummary": {
+    "schemaVersion": 1,
+    "kind": "codex-token-usage-summary",
+    "completeMetering": true,
+    "recordCount": 4,
+    "meteredRecordCount": 4,
+    "unmeteredRecordCount": 0,
+    "totals": {
+      "metered": true,
+      "source": "responses-api-aggregate",
+      "requestCount": 4,
+      "inputTokens": 11055,
+      "cachedInputTokens": 0,
+      "uncachedInputTokens": 11055,
+      "outputTokens": 1631,
+      "reasoningTokens": 984,
+      "visibleOutputTokens": 647,
+      "totalTokens": 12686
+    },
+    "entries": [
+      {
+        "round": 1,
+        "stage": "prompt-preflight",
+        "provider": "openai-compatible-responses-api",
+        "model": "gpt-5.6-sol",
+        "usage": {
+          "metered": true,
+          "source": "responses-api",
+          "requestCount": 1,
+          "inputTokens": 1612,
+          "cachedInputTokens": 0,
+          "uncachedInputTokens": 1612,
+          "outputTokens": 126,
+          "reasoningTokens": 105,
+          "visibleOutputTokens": 21,
+          "totalTokens": 1738
+        }
+      },
+      {
+        "round": 1,
+        "stage": "evaluation-planner",
+        "provider": "openai-compatible-responses-api",
+        "model": "gpt-5.6-sol",
+        "usage": {
+          "metered": true,
+          "source": "responses-api-aggregate",
+          "requestCount": 1,
+          "inputTokens": 3202,
+          "cachedInputTokens": 0,
+          "uncachedInputTokens": 3202,
+          "outputTokens": 1051,
+          "reasoningTokens": 467,
+          "visibleOutputTokens": 584,
+          "totalTokens": 4253
+        }
+      },
+      {
+        "round": 1,
+        "stage": "feedback-preflight",
+        "provider": "openai-compatible-responses-api",
+        "model": "gpt-5.6-sol",
+        "usage": {
+          "metered": true,
+          "source": "responses-api",
+          "requestCount": 1,
+          "inputTokens": 3000,
+          "cachedInputTokens": 0,
+          "uncachedInputTokens": 3000,
+          "outputTokens": 82,
+          "reasoningTokens": 61,
+          "visibleOutputTokens": 21,
+          "totalTokens": 3082
+        }
+      },
+      {
+        "round": 2,
+        "stage": "prompt-preflight",
+        "provider": "openai-compatible-responses-api",
+        "model": "gpt-5.6-sol",
+        "usage": {
+          "metered": true,
+          "source": "responses-api",
+          "requestCount": 1,
+          "inputTokens": 3241,
+          "cachedInputTokens": 0,
+          "uncachedInputTokens": 3241,
+          "outputTokens": 372,
+          "reasoningTokens": 351,
+          "visibleOutputTokens": 21,
+          "totalTokens": 3613
+        }
+      }
+    ]
+  },
+  "initialContentScope": {
+    "calculationComplexityCount": 3,
+    "issues": [],
+    "pass": true,
+    "policyVersion": "domestic-work-scope-v1"
+  },
+  "attachmentManifest": {
+    "attachmentCount": 1,
+    "attachments": [
+      {
+        "classification": "specific-business",
+        "introductionHint": "把正式报告名称直接嵌入任务句，后续核对继续引用同一份已验证原件。",
+        "name": "宝山钢铁股份有限公司2026年第一季度报告.pdf",
+        "relativePath": "宝山钢铁股份有限公司2026年第一季度报告.pdf",
+        "sha256": "76b0d27c65fb55ba2cd3301f83e4448846de438d1575ea05e551fe0b829cb23d",
+        "sizeBytes": 191834,
+        "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-30/1225257456.PDF",
+        "summary": "披露宝钢股份一季度产品销量、出口接单、经营分部收入成本毛利率和核心财务指标。"
+      }
+    ],
+    "initialAttachmentNames": [
+      "宝山钢铁股份有限公司2026年第一季度报告.pdf"
+    ],
+    "minimumSpecificBusinessShare": 0.8,
+    "pass": true,
+    "policyId": "doubao-l1-l2-attachment-policy-v1",
+    "productionEvidence": {
+      "attachmentCount": 1,
+      "downloadManifestHash": "0f94806cec17dcaceeaa4ddbc66b50749c08144149c2ddf3b3b51042b834bcd1",
+      "downloadManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\packages\\l1-async-api5-20260719-1015-04\\evidence\\download_manifest.json",
+      "mode": "production-path",
+      "pass": true,
+      "policyId": "reuse-l2-source-acquisition-path-v1",
+      "productionRunId": "l1_async_api5-20260719-1015_04_baosteel_mix_profit",
+      "productionTraceGateReceiptHash": "fbcd82659b9b3917ca859a65aa753464485153672df34cdf87dc1bf3edd3b3a0",
+      "productionTraceGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\packages\\l1-async-api5-20260719-1015-04\\evidence\\production_trace_gate_receipt.json",
+      "productionTraceHash": "67cd7cc5e1a7c8769ab828c299b8620da2db8a28de8a46834be338dc6f604211",
+      "productionTracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\packages\\l1-async-api5-20260719-1015-04\\evidence\\production_trace.json",
+      "recordUid": "沈礼_api5-20260719-1015_04",
+      "releaseGateReceiptHash": "bdfd06ae529ce570f342d5aeb30eceedccc760fb9b5cbbe3adc2746d9f64c372",
+      "releaseGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\packages\\l1-async-api5-20260719-1015-04\\evidence\\release_gate_receipt.json",
+      "verifiedAt": "2026-07-19T02:46:21.579Z"
+    },
+    "specificBusinessShare": 1,
+    "verifiedAt": "2026-07-19T02:46:21.579Z"
+  },
+  "updatedAt": "2026-07-19T02:57:44.894Z"
+}

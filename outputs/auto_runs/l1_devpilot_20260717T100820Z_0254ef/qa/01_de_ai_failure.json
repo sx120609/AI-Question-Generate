@@ -1,0 +1,16 @@
+{
+  "kind": "de-ai-question-rewrite-failure",
+  "policyId": "external-de-ai-rewrite-api-v1",
+  "uid": "沈礼_7.17_L1_01",
+  "generatedAt": "2026-07-17T10:30:25.022Z",
+  "status": "FAILED",
+  "provider": "external-rewrite-api",
+  "endpoint": "http://114.28.145.95:3001/api/rewrite",
+  "model": "gemini-3.1-pro-preview",
+  "sourceQuestionHash": "4e2c262fa618e16fe161ef94e4899784a28afdbaf6746135bd6dbd85281f766a",
+  "error": {
+    "name": "Error",
+    "message": "De-AI rewrite API request timed out after 60000ms."
+  },
+  "authorization": "BLOCK_FINALIZATION_AND_SUBMISSION"
+}

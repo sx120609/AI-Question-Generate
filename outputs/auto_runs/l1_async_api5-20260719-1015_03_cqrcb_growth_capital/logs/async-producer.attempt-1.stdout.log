@@ -1,0 +1,35 @@
+{
+  "ok": true,
+  "slug": "cqrcb_growth_capital_api5-20260719-1015",
+  "runId": "l1_async_api5-20260719-1015_03_cqrcb_growth_capital",
+  "recordUid": "沈礼_api5-20260719-1015_03",
+  "jobId": "l1-async-api5-20260719-1015-03",
+  "finalQuestion": "我正在做渝农商行2026年一季度增长与资本约束复核，这份结果供银行经营分析同事决定下一步需要补取哪些资本和业务条线资料。\n\n我需要复核渝农商行的资产扩张和收入增长是否受到了资本与回报的约束，以便经营分析同事决定下一步要补充哪些业务条线和资本资料。请基于《重庆农村商业银行股份有限公司2026年第一季度报告.pdf》，以营业收入和归母净利润分别实现8.39%和5.07%的同比增长，但年化ROA和ROE却分别同比下降了0.04和0.05个百分点这一现象为切入点，给出一个明确的判断结论。\n\n请建立一个统一的页级证据框架，涵盖收入利润、资产负债增速、资本充足率、杠杆率以及资产质量，并从中区分出哪些是改善项，哪些是约束项。在处理数据时，仔细核对本期与上年同期数值并重新计算同比变化，同时要复核比率计算、分项数据、期间、集团口径、单位以及年化或较年末口径的差异。如果发现正文、表格或者派生计算的结果之间存在冲突，请保留原始披露数据并把差异标注出来。请注意区分已证实事实、合理推断和待确认事项，不要把指标之间的联动直接当成因果关系来写。\n\n最后，请输出一份名为《渝农商行2026年一季度增长与资本约束简报》的可下载Word文档。文档里需要提供详细的指标对照表格并附上来源页码，写明派生数据的计算过程，标注报告未经审计的状态，并列出后续的补数清单。同时要明确指出改善与承压的具体判断及证据边界。另外，请单独列出两项待核边界：一是目前未披露业务条线的资本消耗情况，二是单季数据无法证明全年的持续性。",
+  "attachmentSha256": "261e993750d5c1f5b6b430c583d1a24cff13e43ae1aa7206bb78e102b5b6666f",
+  "firstQa": {
+    "issues": [],
+    "pass": true
+  },
+  "secondQa": "需语言小修",
+  "deAiPass": true,
+  "roleConsistency": "PASS",
+  "productionTrace": "PASS",
+  "release": "PASS",
+  "jobPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\doubao\\job.json",
+  "codexBackend": "responses-api",
+  "codexModel": "gpt-5.6-sol",
+  "codexUsageSummaryPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\qa\\codex_usage_summary.json",
+  "codexUsage": {
+    "metered": true,
+    "source": "responses-api-aggregate",
+    "requestCount": 8,
+    "inputTokens": 19141,
+    "cachedInputTokens": 0,
+    "uncachedInputTokens": 19141,
+    "outputTokens": 9202,
+    "reasoningTokens": 5509,
+    "visibleOutputTokens": 3693,
+    "totalTokens": 28343
+  },
+  "feishuWriteApplied": false
+}

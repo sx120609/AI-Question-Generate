@@ -191,6 +191,33 @@ test("binds requestSpan/action/outputs and roleTrace exactly to the question and
   assert.equal(codes.has("request_outputs_mismatch_m"), true);
 });
 
+test("L1 role audit permits a concrete deliverable without a file-format label", () => {
+  const l1Question = "设备已经到了，原始测试数据还没拿到，你帮我整理一份证据清单，给主任判断现在能签到哪一步。";
+  const envelope = envelopeFor("沈礼_L1_scene_001", {
+    requestContract: {
+      requestSpan: "你帮我整理一份证据清单",
+      action: "整理",
+      outputs: [],
+    },
+    roleTrace: {
+      blockageSpan: "原始测试数据还没拿到",
+      motivationSpan: "设备已经到了",
+      downstreamUseSpan: "给主任判断现在能签到哪一步",
+    },
+  });
+  const report = auditRoleConsistency({
+    sceneCard: envelope.sceneCard,
+    envelope,
+    question: l1Question,
+    productFormats: "",
+    productionProfile: "l1",
+    factLedger,
+  });
+  assert.equal(report.ok, true, JSON.stringify(report.errors, null, 2));
+  assert.deepEqual(report.checks.requestOutputFormats, []);
+  assert.deepEqual(report.checks.mFormats, []);
+});
+
 test("rejects role-card leakage and numbers, dates, quotations, or drama outside used fact bindings", () => {
   const envelope = envelopeFor();
   const unsafeQuestion = `${question.slice(0, -1)}，我的角色是${envelope.sceneCard.personaId}，领导催得很急，另写明2026年7月11日有4台设备并标成“已经批准”。`;

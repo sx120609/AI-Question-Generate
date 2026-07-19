@@ -1,0 +1,173 @@
+{
+  "version": 1,
+  "status": "UNAUTHORIZED_PREVIEW_ONLY",
+  "generatedAt": "2026-07-17T10:31:41.860Z",
+  "sourcePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_devpilot_20260717T100820Z_0254ef\\drafts\\01_pre_de_ai.json",
+  "startRow": 2,
+  "sheetRows": [
+    2
+  ],
+  "count": 1,
+  "note": "This preview exists only to prove that submission rejects a workflow without a passing de-AI rewrite and production receipts. It is not authorized for Feishu writeback.",
+  "columnMap": [
+    {
+      "field": "UID",
+      "column": "A"
+    },
+    {
+      "field": "题目",
+      "column": "B"
+    },
+    {
+      "field": "任务类型",
+      "column": "C"
+    },
+    {
+      "field": "一级目录",
+      "column": "D"
+    },
+    {
+      "field": "二级目录",
+      "column": "E"
+    },
+    {
+      "field": "三级目录",
+      "column": "F"
+    },
+    {
+      "field": "任务概括",
+      "column": "G"
+    },
+    {
+      "field": "标注专家工作年限",
+      "column": "H"
+    },
+    {
+      "field": "人类完成时间",
+      "column": "I"
+    },
+    {
+      "field": "相关附件",
+      "column": "J"
+    },
+    {
+      "field": "附件格式",
+      "column": "K"
+    },
+    {
+      "field": "附件内容",
+      "column": "L"
+    },
+    {
+      "field": "产物格式",
+      "column": "M"
+    },
+    {
+      "field": "产物内容",
+      "column": "N"
+    },
+    {
+      "field": "做题关键步骤",
+      "column": "O"
+    }
+  ],
+  "rows": [
+    {
+      "dataRow": 2,
+      "sheetRow": 2,
+      "title": "核验三款培训直播平台的公开无障碍证据并选择一个优先进入 POC",
+      "updates": [
+        {
+          "address": "A2",
+          "column": "A",
+          "field": "UID",
+          "value": "沈礼_7.17_L1_01"
+        },
+        {
+          "address": "B2",
+          "column": "B",
+          "field": "题目",
+          "value": "公司准备把跨地区员工培训固定成常态化直播，参训者中有依赖实时字幕、键盘操作或屏幕阅读器的同事。现在候选平台是 Zoom、Microsoft Teams 和 Google Meet，但相关说明分散在厂商的无障碍页面和帮助中心，字幕能力还可能受会议类型、许可证和管理员设置影响。请以截至2026年7月17日仍可访问的官方产品文档和帮助页为准，整理一份 Excel 对比表。表中先核对实时字幕、翻译字幕和屏幕阅读器支持，再记录键盘与焦点操作。录制与转录留存也要单独说明，同时检查主持人和管理员能控制什么，并为每条判断附上来源链接和访问日期。公开页面没有说清的套餐限制、字幕语言范围和导出权限不要自行补齐，保存期限与直播规模也统一列成待确认项，并说明需要通过什么实测或询价补证。表尾只推荐一个优先进入 POC 的平台，写明选择依据以及另外两个暂缓的证据缺口。这个结论只用于安排下一轮实测，不作为最终采购或合规判断。"
+        },
+        {
+          "address": "C2",
+          "column": "C",
+          "field": "任务类型",
+          "value": "L1 探索型"
+        },
+        {
+          "address": "D2",
+          "column": "D",
+          "field": "一级目录",
+          "value": "科技软件与 AI 工作流"
+        },
+        {
+          "address": "E2",
+          "column": "E",
+          "field": "二级目录",
+          "value": "企业软件与技术方案"
+        },
+        {
+          "address": "F2",
+          "column": "F",
+          "field": "三级目录",
+          "value": "在线培训直播平台无障碍能力初筛"
+        },
+        {
+          "address": "G2",
+          "column": "G",
+          "field": "任务概括",
+          "value": "核验三款培训直播平台的公开无障碍证据并选择一个优先进入 POC"
+        },
+        {
+          "address": "H2",
+          "column": "H",
+          "field": "标注专家工作年限",
+          "value": "3年"
+        },
+        {
+          "address": "I2",
+          "column": "I",
+          "field": "人类完成时间",
+          "value": "5H"
+        },
+        {
+          "address": "J2",
+          "column": "J",
+          "field": "相关附件",
+          "value": "无"
+        },
+        {
+          "address": "K2",
+          "column": "K",
+          "field": "附件格式",
+          "value": "无"
+        },
+        {
+          "address": "L2",
+          "column": "L",
+          "field": "附件内容",
+          "value": "无文件附件，使用已核验可访问的厂商官方产品文档、帮助中心与 W3C 无障碍解释页。"
+        },
+        {
+          "address": "M2",
+          "column": "M",
+          "field": "产物格式",
+          "value": "xlsx"
+        },
+        {
+          "address": "N2",
+          "column": "N",
+          "field": "产物内容",
+          "value": "一份逐条绑定官方来源和访问日期的候选平台无障碍证据对比表，包含能力边界、待确认项、补证方法和一个 POC 优先建议。"
+        },
+        {
+          "address": "O2",
+          "column": "O",
+          "field": "做题关键步骤",
+          "value": "1. 明确本轮只做公开证据初筛及 POC 排序。\n2. 检索并核验三家厂商官方产品文档与帮助页。\n3. 按统一维度摘录功能证据、适用条件和来源日期。\n4. 区分已证实事实、合理推断与公开资料未说明事项。\n5. 将许可证、语言、管理员策略、导出留存和规模边界转成实测或询价问题。\n6. 比较证据完整度并推荐一个优先进入 POC 的平台。"
+        }
+      ]
+    }
+  ]
+}

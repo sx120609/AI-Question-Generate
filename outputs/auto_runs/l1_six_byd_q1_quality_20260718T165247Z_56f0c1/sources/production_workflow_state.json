@@ -1,0 +1,405 @@
+{
+  "schemaVersion": 4,
+  "kind": "l1-production-workflow-state",
+  "productionProfile": "l1",
+  "taskType": "L1 探索型",
+  "protocolId": "l1-phase3-codex-model-two-gates-trace-v6",
+  "runId": "l1_six_byd_q1_quality_20260718T165247Z_56f0c1",
+  "runMode": "development-codex-session",
+  "packetRunId": "l1_six_byd_q1_quality_20260718T165247Z_56f0c1",
+  "qualityGatePromptHashes": {
+    "first-quality-gate": "454723865e5ba3279da5aeb39347e8df97fb6c5df35f505e350cc9b64a5fa5a5",
+    "second-language-gate": "31aba0f4bbe071e3922f2d8d2df783955641f701c3a64a246bc87517d17c3017"
+  },
+  "createdAt": "2026-07-18T17:24:33.354Z",
+  "updatedAt": "2026-07-18T17:24:33.404Z",
+  "questions": [
+    {
+      "questionIndex": 1,
+      "state": "COMPLETE",
+      "referenceLocation": {
+        "sheet": "三期示例数据",
+        "row": 3
+      },
+      "referenceHashes": {
+        "question": "418574532f8ee79e831615134242df51341398b1834ada3bd1d0916b80e39437",
+        "attachmentSummary": "04485f7aa8b30d5e19d84d49aa2db6db184ad0adb45430fc8da02e9b35a96cb5"
+      },
+      "firstQaFailureCount": 0,
+      "formatRequirement": null,
+      "revisionLog": [
+        {
+          "at": "2026-07-18T17:24:33.388Z",
+          "stage": "second-language-gate",
+          "conclusion": "需语言小修"
+        }
+      ],
+      "events": [
+        {
+          "at": "2026-07-18T17:24:33.354Z",
+          "type": "reference.sampled",
+          "sheet": "三期示例数据",
+          "row": 3
+        },
+        {
+          "at": "2026-07-18T17:24:33.359Z",
+          "type": "reference.breakdown.recorded"
+        },
+        {
+          "at": "2026-07-18T17:24:33.359Z",
+          "type": "attachments.recorded",
+          "count": 1
+        },
+        {
+          "at": "2026-07-18T17:24:33.369Z",
+          "type": "draft.recorded",
+          "reason": "initial"
+        },
+        {
+          "at": "2026-07-18T17:24:33.376Z",
+          "type": "first-qa.passed"
+        },
+        {
+          "at": "2026-07-18T17:24:33.388Z",
+          "type": "second-qa.second-qa-pass"
+        },
+        {
+          "at": "2026-07-18T17:24:33.404Z",
+          "type": "de-ai-rewrite.passed",
+          "policyId": "mugua-gemini-de-ai-rewrite-v2",
+          "selectedAttempt": "direct-request-1"
+        },
+        {
+          "at": "2026-07-18T17:24:33.404Z",
+          "type": "final.completed"
+        }
+      ],
+      "referenceBreakdown": {
+        "businessScene": "企业在将一项专业评估能力纳入常规前端业务流程前，业务、交付与管理角色对其定位存在分歧，需要依据外部权威材料形成内部决策意见。",
+        "coreBlockage": "宏观行业证据只能说明发展趋势与通用实践，无法直接证明具体客户的需求强度、实施收益和商业可行性；同时，可靠评估又依赖客户侧数据与实施条件，导致标准化前置和条件化深度介入之间难以取舍。",
+        "mainTask": "审查公开权威材料的证据边界，评估目标能力进入常规前端流程的价值、适用范围、前置条件与风险，并在预设的互斥路径中作出唯一明确选择。",
+        "attachmentSupport": "附件用于提供行业现状、目标群体特征、方法框架、优化实践、风险治理和技术演进等背景证据；判断时需将材料直接支持的事实、结合业务情境得到的推断以及材料无法验证的商业假设分层呈现，并核对数据口径。",
+        "deliverableOrigin": "产物是管理决策前的研读材料，自然产生于方案定版前的跨团队争议收敛环节，用来统一证据基础、暴露待验证事项并支持负责人拍板。",
+        "imitableStructure": "可模仿“内部角色分歧—管理者提出单一决策问题—限定权威资料—按证据强度分层—校验统计口径—分析价值、对象、条件与风险—从互斥选项中定案—形成会前可编辑材料”的推进链条。",
+        "forbiddenReuse": "不得复用样例中的具体行业、服务名称、客户群体、机构或报告、年份与数值、数据字段、结论选项原文、附件主题组合、平台语境、待确认指标清单、篇幅和文件形式的原组合，以及任何原句或近义改写式复述。",
+        "referenceAttachmentStructure": "单份权威研究材料的摘要型附件，内容横跨市场环境、特定群体采用情况、实践框架、效能改进、风险保障与新技术演进，为同一决策提供多维背景，但不包含企业自身的一手经营验证。",
+        "referenceProductParagraphLogic": "后半段先规定从附件提取哪些主题及如何划分证据等级，再要求核查数据的时间、对象、范围和来源，随后把证据映射到业务价值、适用者、实施门槛与风险；继而要求在有限且互斥的路径中给出单一结论，明确材料的使用者、可编辑的会前交付格式和篇幅边界，最后列出外部材料不能替代验证的事项，作为验收时检查是否越界推断的标准。"
+      },
+      "updatedAt": "2026-07-18T17:24:33.404Z",
+      "attachmentPlan": {
+        "mainDecision": "建立一份季度经营质量核对表，复算收入、利润和经营现金流变化，整理研发与融资项目的披露解释，并把无法由附件直接归因的部分保留为待补证事项。",
+        "attachments": [
+          {
+            "name": "比亚迪股份有限公司2026年第一季度报告.pdf",
+            "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-29/1225233071.PDF",
+            "format": "pdf",
+            "classification": "specific-business",
+            "objectLevel": true,
+            "timeAnchor": "2026年1月1日至3月31日",
+            "specificityEvidence": {
+              "object": "比亚迪股份有限公司证券代码002594",
+              "periodOrEvent": "2026年1月1日至3月31日",
+              "uniqueContent": "披露比亚迪2026年一季度损益、现金流、资产负债项目变动和对应原因，财务会计报告未经审计。"
+            },
+            "summary": "披露比亚迪2026年一季度损益、现金流、资产负债项目变动和对应原因，财务会计报告未经审计。",
+            "localPath": "比亚迪股份有限公司2026年第一季度报告.pdf",
+            "sha256": "8e07bf9481c450daa0184c8bab218eb5b29f5587fc406116a911903852c0c907",
+            "bytes": 306755,
+            "sizeBytes": 306755,
+            "introductionHint": "把正式报告名称直接嵌入任务句，后续核对继续引用同一份已验证原件。"
+          }
+        ],
+        "specificBusinessShareRationale": "附件绑定比亚迪股份有限公司证券代码002594和2026年1月1日至3月31日，具体业务材料占比为100%。",
+        "timeSeriesRationale": "季度报告同时提供本期、上年同期或期初比较数，可形成同一对象的期间核对链。",
+        "objectSupportInQuestion": "题面明确比亚迪股份有限公司、正式报告名称、报告期和经营数据复核人员需要判断收入、利润和经营现金流同步下滑时，研发投入与融资项目变化能解释到什么程度。。",
+        "newAttachmentSupport": "披露比亚迪2026年一季度损益、现金流、资产负债项目变动和对应原因，财务会计报告未经审计。",
+        "newQuestionStructureMapping": "沿用样例的真实工作卡点、证据核验和下游交付逻辑，改为围绕区分报告明确披露的变动原因、可复算的变化和仍需补充业务分部资料才能判断的部分。逐轮推进。"
+      },
+      "draft": {
+        "question": "请依据《比亚迪股份有限公司2026年第一季度报告.pdf》整理比亚迪2026年一季度经营质量核对表，核对营业收入、归母净利润和经营现金流同比变化，复算现金利润覆盖关系，并梳理开发支出、短期借款、应付票据及现金流变动。请在同一份xlsx中区分报告明确披露的原因、可由披露数据复算的结果和现有证据无法确认的归因，逐项保留来源页码、未经审计状态、计算公式与口径，发现披露值和复算值不一致时标明差异，列出需补充的业务分部、销量、价格或区域资料，不把融资变化与经营现金流下降直接写成因果关系。",
+        "mainTask": "建立可追溯的比亚迪2026年一季度经营质量Excel核对表，区分披露原因、派生结果和待补证归因。",
+        "usedFactIds": [
+          "byd-core-performance",
+          "byd-profit-quality",
+          "byd-development-spend",
+          "byd-financing-shift",
+          "byd-cashflow-explanation",
+          "byd-audit-boundary"
+        ],
+        "usedAttachmentNames": [
+          "比亚迪股份有限公司2026年第一季度报告.pdf"
+        ],
+        "productFormats": "xlsx",
+        "deliverableRationale": [
+          {
+            "format": "xlsx",
+            "user": "经营数据复核专员及下游经营分析同事",
+            "purpose": "复核季度经营质量并在取得分部和销量资料后继续回填归因",
+            "whyThisFormat": "Excel适合保存来源索引、同比复算公式、证据分层和待补材料字段，也便于后续追加业务明细并复核口径。"
+          }
+        ],
+        "structureMapping": "沿用真实复核卡点、限定正式报告、分层核验证据、复算关键关系、识别待确认事项并形成下游可续填产物的推进结构，业务对象改为比亚迪季度经营质量。",
+        "productParagraphMapping": "后半段先收束到单一xlsx核对表，再规定披露原因、派生计算和证据边界的分层方式，同时保留页码、审计状态、差异处理及待补资料，使交付物直接服务后续经营归因。"
+      },
+      "preQaStructureAudit": {
+        "oneSentenceMainTask": "依据比亚迪2026年第一季度报告建立可追溯的经营质量核对表，复算关键经营指标并区分披露事实、派生结果与待补证归因。",
+        "uniqueMainTask": true,
+        "specificObjectDecision": true,
+        "specificFilesDominant": true,
+        "evidenceChain": "单一附件明确绑定比亚迪股份有限公司及2026年第一季度，题面形成“报告披露值与原因—同比及现金利润覆盖关系复算—披露值和复算值差异核对—无法确认的归因及待补资料”链条；但输入只提供附件摘要和事实标识，未展示从附件正文抽取的具体数值、原因原文及页码，因此对象级证据链的真实性和完整性尚不能独立确认。",
+        "l2ReasoningChain": "主体围绕同一经营质量判断推进，要求校验口径、复算关系、区分事实与推断并控制因果越界，具备来源核对、计算和证据分层推理；不过首轮同时铺开收入、利润、经营现金流、开发支出、借款、票据、差异处理、审计状态及多类待补资料，交付字段密度偏高，部分内容更适合在读取附件后动态展开。",
+        "variableDrift": [
+          "“经营质量”从收入、利润和经营现金流的核心核对扩展到开发支出、短期借款、应付票据及多类归因资料，边界有所外扩，但仍可归入同一主要判断。",
+          "输入未提供飞书一级目录配置项或已选目录，无法检查目录是否原样选取以及是否与附件业务对象一致。",
+          "附件计划宣称已验证正文和对象级证据，但未给出正文摘录、具体页码或事实值，证据状态从“计划性描述”漂移为“已核实”的风险尚未消除。"
+        ]
+      },
+      "firstQaFullResult": {
+        "pass": true,
+        "issues": [],
+        "execution": {
+          "runnerId": "exact-two-quality-gates-v2-codex-session",
+          "provider": "codex-session",
+          "model": "gpt-5.6-sol",
+          "sourcePromptHash": "454723865e5ba3279da5aeb39347e8df97fb6c5df35f505e350cc9b64a5fa5a5",
+          "renderedPromptHash": "75770c5640a391c764fe660d5aecb7d678e936fded6e2475ca899569255cf9c4",
+          "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_byd_q1_quality_20260718T165247Z_56f0c1\\qa\\01_first_quality_gate_attempt_1_raw.json",
+          "rawResponseHash": "9ceccde89935478aeeae28d64c95d15e155a12c4549128d84d3dcb82ffa0a13a",
+          "completedAt": "2026-07-18T17:24:33.372Z"
+        }
+      },
+      "firstQaAttempts": [
+        {
+          "at": "2026-07-18T17:24:33.376Z",
+          "result": {
+            "pass": true,
+            "issues": [],
+            "execution": {
+              "runnerId": "exact-two-quality-gates-v2-codex-session",
+              "provider": "codex-session",
+              "model": "gpt-5.6-sol",
+              "sourcePromptHash": "454723865e5ba3279da5aeb39347e8df97fb6c5df35f505e350cc9b64a5fa5a5",
+              "renderedPromptHash": "75770c5640a391c764fe660d5aecb7d678e936fded6e2475ca899569255cf9c4",
+              "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_byd_q1_quality_20260718T165247Z_56f0c1\\qa\\01_first_quality_gate_attempt_1_raw.json",
+              "rawResponseHash": "9ceccde89935478aeeae28d64c95d15e155a12c4549128d84d3dcb82ffa0a13a",
+              "completedAt": "2026-07-18T17:24:33.372Z"
+            }
+          }
+        }
+      ],
+      "secondQaFullResult": {
+        "conclusion": "需语言小修",
+        "coreJudgment": "题面任务明确、证据边界完整，需补充一条自然、可执行的判断要求，以明确区分报告披露、数据复算和资料不足三类判断边界。",
+        "modifications": "在保留原题全部事实、附件、计算、边界和交付要求的基础上，将判断要求调整为区分报告明确披露的变动原因、可由披露数据复算的变化，以及仍需补充业务分部资料才能判断的部分。",
+        "modifiedQuestion": "请依据《比亚迪股份有限公司2026年第一季度报告.pdf》整理比亚迪2026年一季度经营质量核对表，核对营业收入、归母净利润和经营现金流的同比变化，复算现金利润覆盖关系，并梳理开发支出、短期借款、应付票据及现金流变动。\n\n请在同一份xlsx中区分报告明确披露的变动原因、可由披露数据复算的变化和仍需补充业务分部资料才能判断的部分，逐项保留来源页码、未经审计状态、计算公式与口径。发现披露值和复算值不一致时，请标明差异，并列出需补充的业务分部、销量、价格或区域资料。不要把融资变化与经营现金流下降直接写成因果关系。",
+        "punctuationAudit": "标点使用自然，题面无括号，不存在配对问题，未使用分号，也没有为指标强行添加内容。",
+        "remainingNote": "执行时须严格区分报告明确披露的变动原因、可复算的变化和仍需补充业务分部资料才能判断的部分，并保留来源、审计状态、公式与口径，不得越界推断因果关系。",
+        "execution": {
+          "runnerId": "exact-two-quality-gates-v2-codex-session",
+          "provider": "codex-session",
+          "model": "gpt-5.6-sol",
+          "sourcePromptHash": "31aba0f4bbe071e3922f2d8d2df783955641f701c3a64a246bc87517d17c3017",
+          "renderedPromptHash": "5e4a9147b52f920880b84a47339f22844ff6bf5b9683bd2f487dbad9a3b481a2",
+          "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_byd_q1_quality_20260718T165247Z_56f0c1\\qa\\01_second_language_gate_raw.json",
+          "rawResponseHash": "23720190bbd7588e87c534b50e867bb63b2dd6725e157a92be42fa11e1e56c3a",
+          "completedAt": "2026-07-18T17:24:33.385Z"
+        }
+      },
+      "secondQaAttempts": [
+        {
+          "at": "2026-07-18T17:24:33.388Z",
+          "result": {
+            "conclusion": "需语言小修",
+            "coreJudgment": "题面任务明确、证据边界完整，需补充一条自然、可执行的判断要求，以明确区分报告披露、数据复算和资料不足三类判断边界。",
+            "modifications": "在保留原题全部事实、附件、计算、边界和交付要求的基础上，将判断要求调整为区分报告明确披露的变动原因、可由披露数据复算的变化，以及仍需补充业务分部资料才能判断的部分。",
+            "modifiedQuestion": "请依据《比亚迪股份有限公司2026年第一季度报告.pdf》整理比亚迪2026年一季度经营质量核对表，核对营业收入、归母净利润和经营现金流的同比变化，复算现金利润覆盖关系，并梳理开发支出、短期借款、应付票据及现金流变动。\n\n请在同一份xlsx中区分报告明确披露的变动原因、可由披露数据复算的变化和仍需补充业务分部资料才能判断的部分，逐项保留来源页码、未经审计状态、计算公式与口径。发现披露值和复算值不一致时，请标明差异，并列出需补充的业务分部、销量、价格或区域资料。不要把融资变化与经营现金流下降直接写成因果关系。",
+            "punctuationAudit": "标点使用自然，题面无括号，不存在配对问题，未使用分号，也没有为指标强行添加内容。",
+            "remainingNote": "执行时须严格区分报告明确披露的变动原因、可复算的变化和仍需补充业务分部资料才能判断的部分，并保留来源、审计状态、公式与口径，不得越界推断因果关系。",
+            "execution": {
+              "runnerId": "exact-two-quality-gates-v2-codex-session",
+              "provider": "codex-session",
+              "model": "gpt-5.6-sol",
+              "sourcePromptHash": "31aba0f4bbe071e3922f2d8d2df783955641f701c3a64a246bc87517d17c3017",
+              "renderedPromptHash": "5e4a9147b52f920880b84a47339f22844ff6bf5b9683bd2f487dbad9a3b481a2",
+              "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_byd_q1_quality_20260718T165247Z_56f0c1\\qa\\01_second_language_gate_raw.json",
+              "rawResponseHash": "23720190bbd7588e87c534b50e867bb63b2dd6725e157a92be42fa11e1e56c3a",
+              "completedAt": "2026-07-18T17:24:33.385Z"
+            }
+          }
+        }
+      ],
+      "deAiRewrite": {
+        "kind": "de-ai-question-rewrite",
+        "policyId": "mugua-gemini-de-ai-rewrite-v2",
+        "uid": "沈礼_20260719_l1_byd_q1_quality_01",
+        "generatedAt": "2026-07-18T17:23:08.499Z",
+        "provider": "mugua-openai-compatible",
+        "endpoint": "https://api.mugua.link/v1/chat/completions",
+        "model": "gemini-3.1-pro-preview",
+        "finishReason": "stop",
+        "usage": {
+          "inputTokens": 1320,
+          "outputTokens": 1462,
+          "totalTokens": 2782
+        },
+        "promptHash": "2106951c7d25fb39e896b28a151bcd9fe186aebcf531108c7396fa44f8f25e71",
+        "sourceQuestionHash": "4f37dbfcfdd2a38f6fd79776173cd2332a163c991febd80d40433312c72e2d3c",
+        "rewrittenQuestionHash": "ec284123d25cfe4ca30858a95c761e8dcccbe158b1688ad650a067fe5aff4b77",
+        "selectedAttempt": "direct-request-1",
+        "attempts": [
+          {
+            "attempt": 1,
+            "pass": false,
+            "visibleLength": 301,
+            "findingRules": [
+              "rewrite-edit-similarity-too-high"
+            ]
+          },
+          {
+            "attempt": 2,
+            "pass": true,
+            "visibleLength": 387,
+            "findingRules": []
+          }
+        ],
+        "rewrite": {
+          "question": "我们需要梳理《比亚迪股份有限公司2026年第一季度报告.pdf》中关于2026年一季度经营质量的情况。重点关注经营现金流、归母净利润以及营业收入这几个核心财务指标的同比变动情况，并结合这些数据重新测算现金利润的覆盖关系。另外，应付票据、开发支出、短期借款还有现金流的具体变动明细也需要一并梳理。\n\n在整理过程中，必须严格区分哪些是报告里直接写明的原因，哪些是通过披露数据算出来的变化，还有哪些是目前无法确定、必须等业务分部资料补充后才能判断的。各项数据都要附带来源页码、计算公式、统计口径，并注明未经审计状态。要是复算的结果跟报告披露的数值对不上，记得明确标注差异，顺便列出后续为了查明原因还需要哪些关于区域、价格、销量或者业务分部的补充材料。千万别主观地将经营现金流下降跟融资变化硬扯上因果关系。\n\n请基于前述核对结果整理一份可下载的Excel核对表（xlsx格式）。",
+          "requestContract": {
+            "requestSpan": "请基于前述核对结果整理一份可下载的Excel核对表（xlsx格式）。",
+            "action": "整理",
+            "outputs": [
+              {
+                "format": "xlsx",
+                "humanName": "Excel",
+                "purpose": "供后续执行和留痕使用"
+              }
+            ]
+          },
+          "roleTrace": {
+            "blockageSpan": "在整理过程中，必须严格区分哪些是报告里直接写明的原因，哪些是通过披露数据算出来的变化，还有哪些是目前无法确定、必须等业务分部资料补充后才能判断的。",
+            "motivationSpan": "",
+            "downstreamUseSpan": "请基于前述核对结果整理一份可下载的Excel核对表（xlsx格式）。"
+          },
+          "usedFactIds": [
+            "byd-core-performance",
+            "byd-profit-quality",
+            "byd-development-spend",
+            "byd-financing-shift",
+            "byd-cashflow-explanation",
+            "byd-audit-boundary"
+          ],
+          "deliberatelyOmitted": [],
+          "flowStages": [
+            {
+              "stage": "证据归位",
+              "evidence": "事实包中的公开材料与待补信息",
+              "decision": "区分可确认规则和未知现场状态",
+              "next": "证据足够则形成执行对象，不足则进入补证"
+            },
+            {
+              "stage": "执行对象核对",
+              "evidence": "已归位的对象关系与状态记录",
+              "decision": "建立一份季度经营质量核对表，复算收入、利润和经营现金流变化，整理研发与融资项目的披露解释，并把无法由附件直接归因的部分保留为待补证事项。",
+              "next": "符合条件则进入小范围验证，否则停止推进"
+            },
+            {
+              "stage": "小范围验证",
+              "evidence": "试点输入与实际返回记录",
+              "decision": "判断结果是否满足扩大范围的条件",
+              "next": "通过则推进，失败则退回原状态并留痕"
+            },
+            {
+              "stage": "交接收束",
+              "evidence": "判断依据、验证结果与回退记录",
+              "decision": "确认下游拿到一致结论",
+              "next": "供经营分析同事继续取得分部和销量资料后补充归因。"
+            }
+          ],
+          "selfAudit": {
+            "factsPreserved": true,
+            "formatsPreserved": true,
+            "processChainExplicit": true,
+            "failureOrRollbackExplicit": true,
+            "noInventedFacts": true,
+            "noAiShell": true
+          }
+        },
+        "validation": {
+          "pass": true,
+          "visibleLength": 381,
+          "similarity": [
+            {
+              "referenceIndex": 1,
+              "editSimilarity": 0.3436619718309859,
+              "trigramJaccard": 0.17782426778242677,
+              "longestExactCopyRun": 26,
+              "longestExactCopySpan": "《比亚迪股份有限公司2026年第一季度报告.pdf》"
+            },
+            {
+              "referenceIndex": 2,
+              "editSimilarity": 0.05534351145038163,
+              "trigramJaccard": 0.0011904761904761906,
+              "longestExactCopyRun": 3,
+              "longestExactCopySpan": "202"
+            }
+          ],
+          "findings": [],
+          "factGuard": {
+            "ok": true,
+            "candidateAnchors": {
+              "numbers": [
+                "2026年"
+              ],
+              "quotedClaims": [],
+              "timeMarkers": []
+            },
+            "unsupported": {
+              "numbers": [],
+              "quotedClaims": [],
+              "timeMarkers": []
+            },
+            "errors": []
+          }
+        },
+        "deterministicStyleCleanup": {
+          "applied": true,
+          "rules": [
+            "remove-banned-politeness",
+            "remove-upload-meta-language"
+          ],
+          "sourceApiQuestionHash": "387019bb7ae01928f0cf7fb063ef6c308d343a6cfd6b3807d45244a2846e00a3"
+        },
+        "targetedRepair": {
+          "reason": "request_span_not_direct_request",
+          "promptHash": "2106951c7d25fb39e896b28a151bcd9fe186aebcf531108c7396fa44f8f25e71"
+        },
+        "postDeAiAudit": {
+          "pass": true,
+          "issues": [],
+          "factsPreserved": true,
+          "attachmentsPreserved": true,
+          "visibleTextClean": true
+        }
+      },
+      "recordUid": "沈礼_20260719_l1_byd_q1_quality_01",
+      "finalRecord": {
+        "UID": "沈礼_20260719_l1_byd_q1_quality_01",
+        "题目": "我们需要梳理《比亚迪股份有限公司2026年第一季度报告.pdf》中关于2026年一季度经营质量的情况。重点关注经营现金流、归母净利润以及营业收入这几个核心财务指标的同比变动情况，并结合这些数据重新测算现金利润的覆盖关系。另外，应付票据、开发支出、短期借款还有现金流的具体变动明细也需要一并梳理。\n\n在整理过程中，必须严格区分哪些是报告里直接写明的原因，哪些是通过披露数据算出来的变化，还有哪些是目前无法确定、必须等业务分部资料补充后才能判断的。各项数据都要附带来源页码、计算公式、统计口径，并注明未经审计状态。要是复算的结果跟报告披露的数值对不上，记得明确标注差异，顺便列出后续为了查明原因还需要哪些关于区域、价格、销量或者业务分部的补充材料。千万别主观地将经营现金流下降跟融资变化硬扯上因果关系。\n\n请基于前述核对结果整理一份可下载的Excel核对表（xlsx格式）。",
+        "任务类型": "L1 探索型",
+        "一级目录": "企业经营与战略决策",
+        "二级目录": "季度经营质量复核",
+        "三级目录": "利润现金与融资变化",
+        "任务概括": "比亚迪2026年一季度利润现金与融资变化复核",
+        "标注专家工作年限": "5年",
+        "人类完成时间": "4H",
+        "相关附件": "比亚迪股份有限公司2026年第一季度报告.pdf",
+        "附件格式": "pdf",
+        "附件内容": "比亚迪股份有限公司2026年第一季度报告.pdf：披露比亚迪2026年一季度损益、现金流、资产负债项目变动和对应原因，财务会计报告未经审计。 来源：https://static.cninfo.com.cn/finalpage/2026-04-29/1225233071.PDF",
+        "产物格式": "xlsx",
+        "产物内容": "一份可下载的比亚迪2026年一季度经营质量Excel核对表，包含来源索引、核心指标同比、现金利润覆盖关系、研发与融资变动、披露原因、证据边界和待补材料。",
+        "做题关键步骤": "1. 核验报告期、证券代码和未经审计状态\n2. 录入本期与上年同期收入、利润和经营现金流并复算同比\n3. 计算两期现金利润覆盖关系\n4. 整理开发支出、短期借款和应付票据的期末变化\n5. 区分报告原文原因、派生判断和待补证事项\n6. 生成带公式和来源页码的Excel并重新打开检查",
+        "标注专家姓名": "沈礼"
+      }
+    }
+  ]
+}

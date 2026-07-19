@@ -1,0 +1,116 @@
+{
+  "runId": "l1_devpilot_20260717T100820Z_0254ef",
+  "objective": "单题L1全流程开发试产，不提交飞书",
+  "operator": "codex-development-session",
+  "productionProfile": "l1",
+  "runMode": "development-codex-session",
+  "taskType": "L1 探索型",
+  "generatedAnnotator": "沈礼",
+  "uidPrefix": "沈礼_",
+  "count": 1,
+  "status": "created",
+  "createdAt": "2026-07-17T10:08:20.636Z",
+  "spreadsheetToken": "",
+  "sheetId": "",
+  "dirs": {
+    "root": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_devpilot_20260717T100820Z_0254ef",
+    "sources": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_devpilot_20260717T100820Z_0254ef\\sources",
+    "attachments": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_devpilot_20260717T100820Z_0254ef\\attachments",
+    "drafts": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_devpilot_20260717T100820Z_0254ef\\drafts",
+    "feishu": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_devpilot_20260717T100820Z_0254ef\\feishu",
+    "qa": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_devpilot_20260717T100820Z_0254ef\\qa",
+    "logs": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_devpilot_20260717T100820Z_0254ef\\logs",
+    "tmp": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_devpilot_20260717T100820Z_0254ef\\tmp"
+  },
+  "diversityPlanPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_devpilot_20260717T100820Z_0254ef\\sources\\diversity_plan.json",
+  "naturalnessBaselinePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_devpilot_20260717T100820Z_0254ef\\sources\\naturalness_baseline.json",
+  "diversityPolicyId": "l1-phase3-source-driven-v1",
+  "diversityPolicyVersion": 1,
+  "structuralDiversityPolicyPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\config\\structural_diversity_l1.json",
+  "structureRegistryPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\_structure_registry_l1.json",
+  "modelRouting": {
+    "developmentExecution": {
+      "provider": "codex-session",
+      "model": "gpt-5.6-sol",
+      "scope": "generation and exactly two quality gates in this development pilot only"
+    },
+    "generation": {
+      "provider": "codex-model",
+      "model": "gpt-5.6-sol",
+      "runnerId": "production-generation-v1-model-router"
+    },
+    "qualityGates": {
+      "provider": "codex-model",
+      "model": "gpt-5.6-sol",
+      "runnerId": "exact-two-quality-gates-v3-model-router"
+    },
+    "deAiRewrite": {
+      "provider": "mugua-openai-compatible",
+      "baseUrl": "https://api.mugua.link/v1",
+      "model": "gemini-3.5-flash",
+      "promptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\inputs\\production\\L1题面去AI改写提示词.txt",
+      "promptHash": "c8167cb76d054211f2c97539619a524e1dd5ad5829b69a2ea0216d309ed26d4d"
+    },
+    "policy": "Generation and quality gates use the Codex model by default. Third-party generation APIs require explicit provider selection. Only de-AI rewriting uses Mugua Gemini through its OpenAI-compatible API."
+  },
+  "productionProtocol": {
+    "profileId": "l1",
+    "taskType": "L1 探索型",
+    "protocolId": "l1-phase3-codex-model-two-gates-trace-v2",
+    "inputPacketPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_devpilot_20260717T100820Z_0254ef\\sources\\production_input_packet.json",
+    "workflowStatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_devpilot_20260717T100820Z_0254ef\\sources\\production_workflow_state.json",
+    "productionTracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_devpilot_20260717T100820Z_0254ef\\qa\\production_trace.json",
+    "inputStatus": "READY",
+    "sampledReferences": [
+      {
+        "questionIndex": 1,
+        "sheet": "三期示例数据",
+        "row": 2,
+        "questionHash": "a29a7b3458c032cc29c7c425ce57281a5efdc68cd0754351fed4ef06e79df832",
+        "attachmentSummaryHash": "484d55613910eb8c0917fe308b499d474115ced993cd002a17d7cc75254330a4"
+      }
+    ],
+    "promptVersion": "profiled-sampled-two-gate-prompts-v1",
+    "stages": [
+      "reference-sample",
+      "reference-breakdown",
+      "attachment-plan",
+      "question-draft",
+      "first-quality-gate",
+      "second-language-gate",
+      "de-ai-rewrite",
+      "final-compiler"
+    ]
+  },
+  "situatedGeneration": {
+    "policyId": "situated-requester-v1",
+    "promptVersion": "situated-requester-prompts-v1",
+    "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_devpilot_20260717T100820Z_0254ef\\sources\\fact_ledger.json",
+    "sceneCardPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_devpilot_20260717T100820Z_0254ef\\sources\\scene_cards.json",
+    "roleConsistencyReportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_devpilot_20260717T100820Z_0254ef\\feishu\\role_consistency_report.json",
+    "stages": [
+      "scene-card",
+      "requester",
+      "field-compiler",
+      "audit"
+    ],
+    "candidateCountPerScene": 3,
+    "note": "The scene card is a hidden generation artifact. It must never be copied into the Feishu question cell."
+  },
+  "boundaries": {
+    "writableRoots": [
+      "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_devpilot_20260717T100820Z_0254ef"
+    ],
+    "sharedWritesRequireLocks": [
+      "outputs/l1_questions.tsv",
+      "outputs/feishu_fill_plan_*.json",
+      "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\_structure_registry_l1.json",
+      "Feishu sheet rows"
+    ],
+    "noTouch": [
+      "Rows not reserved by this run",
+      "Other runs under outputs/auto_runs",
+      "Existing attachments outside this run unless explicitly imported"
+    ]
+  }
+}

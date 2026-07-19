@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "kind": "evidence-bound-fact-ledger",
+  "runId": "workstation_acceptance_20260718T054801Z_df4628",
+  "recordUid": "沈礼_20260718_workstation_preacceptance_01",
+  "generatedAt": "2026-07-18T06:05:00.000Z",
+  "facts": [
+    {
+      "id": "fact-project-identity",
+      "uid": "沈礼_20260718_workstation_preacceptance_01",
+      "claimType": "source-fact",
+      "text": "中国政府采购网于2026年6月4日发布图形工作站（含显示器）采购项目中标结果公告，项目编号0724-2611Z1612177，采购人为中山大学肿瘤防治中心。",
+      "sourceRefs": ["material-ccgp-award"],
+      "locator": "中标结果公告标题、公告概要和第一项"
+    },
+    {
+      "id": "fact-award-summary",
+      "uid": "沈礼_20260718_workstation_preacceptance_01",
+      "claimType": "source-fact",
+      "text": "中标供应商为广州讯中信息科技有限公司；包1中标金额151.9万元，包2中标金额68.718万元，总中标金额220.618万元。",
+      "sourceRefs": ["material-ccgp-award"],
+      "locator": "中标结果公告第三项和公告概要"
+    },
+    {
+      "id": "fact-package-one-award-lines",
+      "uid": "沈礼_20260718_workstation_preacceptance_01",
+      "claimType": "source-fact",
+      "text": "中标结果公告把包1列为200台，内网工作站A品牌联想、型号ThinkStation P3_Tiny_G2、单价6750元；内网工作站B品牌联想、型号ThinkStation P368-C4、单价6850元。公告同一行没有拆出A和B各自的中标数量。",
+      "sourceRefs": ["material-ccgp-award"],
+      "locator": "中标结果公告第四项主要标的信息第1行"
+    },
+    {
+      "id": "fact-package-two-award-line",
+      "uid": "沈礼_20260718_workstation_preacceptance_01",
+      "claimType": "source-fact",
+      "text": "中标结果公告把包2列为39台阅片工作站，品牌联想，型号ThinkStation P2_Tower，单价16800元。",
+      "sourceRefs": ["material-ccgp-award"],
+      "locator": "中标结果公告第四项主要标的信息第2行"
+    },
+    {
+      "id": "fact-tender-quantity-mix",
+      "uid": "沈礼_20260718_workstation_preacceptance_01",
+      "claimType": "source-fact",
+      "text": "招标文件的包1最低配置清单为内网工作站A 150台、内网工作站B 50台、液晶显示器200台；数量属于预估数量，实际按供货期内采购人下单和中标单价结算。包2配置清单为阅片工作站39台、液晶显示器39台。",
+      "sourceRefs": ["material-ccgp-tender"],
+      "locator": "招标文件PDF第9页和第11页"
+    },
+    {
+      "id": "fact-arithmetic-residuals",
+      "uid": "沈礼_20260718_workstation_preacceptance_01",
+      "claimType": "derived-check",
+      "text": "按招标文件预估组合和中标公告工作站单价计算，包1工作站小计为150×6750+50×6850=1355000元，与包1中标金额1519000元相差164000元；包2工作站小计为39×16800=655200元，与包2中标金额687180元相差31980元。两项差额分别除以对应显示器数量200台和39台都等于820元。公开公告没有直接给出显示器单价，820元只能作为核对报价明细的算术线索。",
+      "sourceRefs": ["material-ccgp-award", "material-ccgp-tender"],
+      "locator": "中标公告金额与单价；招标文件PDF第9页和第11页数量"
+    },
+    {
+      "id": "fact-delivery-acceptance",
+      "uid": "沈礼_20260718_workstation_preacceptance_01",
+      "claimType": "source-fact",
+      "text": "包1在采购人分批下单并发出通知后30个自然日内交货安装；包2在合同签订并收到发货通知后30个自然日内交货。交货地点为采购人指定地点。设备安装调试正常后需正常运行30天，再按采购人要求办理验收。",
+      "sourceRefs": ["material-ccgp-tender"],
+      "locator": "招标文件PDF第11页商务要求"
+    },
+    {
+      "id": "fact-payment-warranty",
+      "uid": "沈礼_20260718_workstation_preacceptance_01",
+      "claimType": "source-fact",
+      "text": "包1分批按实结算，每批验收合格并收到等额发票后支付该批结算金额100%，供货期为合同签订后12个月或达到合同限额时止；包2正式验收后支付95%，验收合格满1年后满足申请函和每年2次维护保养报告条件再支付5%。厂家保修期自最终验收合格起不少于3年。",
+      "sourceRefs": ["material-ccgp-tender"],
+      "locator": "招标文件PDF第12页付款方式和售后服务"
+    },
+    {
+      "id": "fact-p3-tiny-guide",
+      "uid": "沈礼_20260718_workstation_preacceptance_01",
+      "claimType": "source-fact",
+      "text": "联想ThinkStation P3 Tiny Gen 2用户指南后视图列有安全锁插槽、以太网接口、USB-A 10Gbps接口、具备键盘开机功能的USB-A 10Gbps接口、USB-A 5Gbps接口、HDMI输出接口和DisplayPort输出接口；选配接口会随具体机型变化。",
+      "sourceRefs": ["material-lenovo-p3-tiny"],
+      "locator": "用户指南PDF第6页"
+    },
+    {
+      "id": "fact-p368-guide",
+      "uid": "沈礼_20260718_workstation_preacceptance_01",
+      "claimType": "source-fact",
+      "text": "联想ThinkStation P368-C4用户指南后部接口说明列有HDMI输出接口、DisplayPort输出接口、以太网接口、多个USB接口和安全锁插槽；VGA、PS/2、串口等标有适用于特定型号。",
+      "sourceRefs": ["material-lenovo-p368"],
+      "locator": "用户指南PDF第5至6页"
+    },
+    {
+      "id": "fact-p2-tower-guide",
+      "uid": "沈礼_20260718_workstation_preacceptance_01",
+      "claimType": "source-fact",
+      "text": "联想ThinkStation P2 Tower用户指南后视图列有HDMI输出接口、DisplayPort输出接口、USB 3.2 Gen 1接口、具备键盘开机功能的USB 3.2 Gen 1接口、以太网接口和安全锁插槽；选配接口会随具体机型变化。",
+      "sourceRefs": ["material-lenovo-p2-tower"],
+      "locator": "用户指南PDF第7页"
+    },
+    {
+      "id": "fact-guide-evidence-boundary",
+      "uid": "沈礼_20260718_workstation_preacceptance_01",
+      "claimType": "evidence-boundary",
+      "text": "三份联想用户指南能够支持型号系列的接口位置和功能核对项，不能替代本批到货设备铭牌、序列号、装箱清单、BIOS配置读数、显示器型号和现场运行记录。",
+      "sourceRefs": ["material-lenovo-p3-tiny", "material-lenovo-p368", "material-lenovo-p2-tower"],
+      "locator": "三份指南中的适用机型和特定型号提示"
+    }
+  ],
+  "materials": [
+    {
+      "id": "material-ccgp-award",
+      "uid": "沈礼_20260718_workstation_preacceptance_01",
+      "name": "01_ccgp_award_result.html",
+      "text": "中国政府采购网中标结果公告，包含项目编号、采购人、中标供应商、包金额、工作站型号、总数量和工作站单价。",
+      "sourceUrl": "https://www.ccgp.gov.cn/cggg/zygg/zbgg/202606/t20260604_26685746.htm",
+      "sha256": "aa92f568f0ba16a715fe70de17bdeb649194e4127c05f1e22d5046bbf0d9711b"
+    },
+    {
+      "id": "material-ccgp-tender",
+      "uid": "沈礼_20260718_workstation_preacceptance_01",
+      "name": "02_ccgp_tender_document.pdf",
+      "text": "中国政府采购网中标结果公告所附招标文件，包含包组数量组合、技术要求、交货、验收、付款和保修条件。",
+      "sourceUrl": "https://download.ccgp.gov.cn/oss/download?uuid=B5D63E6DFCF7514E1B5784173A2375",
+      "sha256": "90cc672177a57325983a2231a96097dbf34233eeba33a05d346ac71c3211bc08"
+    },
+    {
+      "id": "material-lenovo-p3-tiny",
+      "uid": "沈礼_20260718_workstation_preacceptance_01",
+      "name": "03_lenovo_thinkstation_p3_tiny_gen2_user_guide.pdf",
+      "text": "联想官方ThinkStation P3 Tiny Gen 2用户指南，适用于该系列，提供后视图、接口和功能说明。",
+      "sourceUrl": "https://chinakb.lenovo.com.cn/chinakb/prod-api/file/downloadFile?key=uniko/FILE/b6fc317ace0ccc48ede32aa2e4f97956-1772157485340.pdf&name=ThinkStation%20P3%20Tiny%20Gen%202%20%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97-20260227.pdf",
+      "sha256": "9a7bb2dfb6d5dae13fca49c7f9a66f43dd81ea98c2cfe4bad00f2e43daaa2422"
+    },
+    {
+      "id": "material-lenovo-p368",
+      "uid": "沈礼_20260718_workstation_preacceptance_01",
+      "name": "04_lenovo_thinkstation_p368_c4_user_guide.pdf",
+      "text": "联想官方ThinkStation P368-C4用户指南，提供后部接口、可选接口和机型限定说明。",
+      "sourceUrl": "https://chinakb.lenovo.com.cn/chinakb/prod-api/file/downloadFile?key=uniko/FILE/c243bfe5ae9f4755c5d06a7e33982f61-1757922846732.pdf&name=ThinkStation%20P368-C4%20%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97-20250915.pdf",
+      "sha256": "421d617cf2e0830e83af4ba46d8c91ea1ad18b8e2feb47c40173b68efec8d9a8"
+    },
+    {
+      "id": "material-lenovo-p2-tower",
+      "uid": "沈礼_20260718_workstation_preacceptance_01",
+      "name": "05_lenovo_thinkstation_p2_tower_user_guide.pdf",
+      "text": "联想官方ThinkStation P2 Tower用户指南，提供后视图、接口和机型限定说明。",
+      "sourceUrl": "https://chinakb.lenovo.com.cn/chinakb/prod-api/file/downloadFile?key=uniko/FILE/eef1841e3330662d70e6a000027631cb-1760063572795.pdf&name=ThinkStation%20P2%20Tower%20%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97-20251009.pdf",
+      "sha256": "c7aed55aee835c4d1ed23ef9b936476ecf14b88ba4b581d9f4ef67f3d73c1234"
+    }
+  ],
+  "unknowns": [
+    {
+      "id": "unknown-delivery-ledger",
+      "uid": "沈礼_20260718_workstation_preacceptance_01",
+      "text": "本批发货通知、采购人实际下单数量、到货清单、设备与显示器序列号、铭牌照片和资产台账尚未提供。"
+    },
+    {
+      "id": "unknown-configuration-readback",
+      "uid": "沈礼_20260718_workstation_preacceptance_01",
+      "text": "实际到货设备的CPU、内存、硬盘、显卡、接口、BIOS安全设置、操作系统和显示器配置读数尚未提供。"
+    },
+    {
+      "id": "unknown-price-breakdown",
+      "uid": "沈礼_20260718_workstation_preacceptance_01",
+      "text": "中标报价明细、显示器单价和合同设备配置清单尚未提供；算术差额820元不能直接登记为显示器确认单价。"
+    },
+    {
+      "id": "unknown-acceptance-evidence",
+      "uid": "沈礼_20260718_workstation_preacceptance_01",
+      "text": "到货外观检查、安装调试、30天正常运行、正式验收、发票、保修承诺和维护保养报告均无实际返回或签章记录。"
+    },
+    {
+      "id": "unknown-certificates",
+      "uid": "沈礼_20260718_workstation_preacceptance_01",
+      "text": "显示器强制性产品认证证书、工作站产品证明、原厂售后服务承诺函和全新原装证明尚未提供。"
+    }
+  ],
+  "decision": {
+    "id": "decision-preacceptance-workbook",
+    "text": "依据公开项目材料建立可执行的到货预验收核对工作簿，先核清金额与数量口径，再把每台设备的现场证据、差异等级和下一步动作留给真实台账回填。"
+  },
+  "deliveryUse": {
+    "recipient": "设备运维与项目交付同事",
+    "purpose": "到货前准备核对口径并在现场逐台回填，不能代替正式验收报告。"
+  }
+}

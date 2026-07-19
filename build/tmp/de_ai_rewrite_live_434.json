@@ -1,0 +1,150 @@
+{
+  "kind": "de-ai-question-rewrite-batch",
+  "policyId": "external-de-ai-rewrite-api-v1",
+  "generatedAt": "2026-07-17T08:45:13.378Z",
+  "runDir": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a",
+  "results": [
+    {
+      "kind": "de-ai-question-rewrite",
+      "policyId": "external-de-ai-rewrite-api-v1",
+      "uid": "434",
+      "generatedAt": "2026-07-17T08:45:13.377Z",
+      "provider": "external-rewrite-api",
+      "endpoint": "http://114.28.145.95:3001/api/rewrite",
+      "model": "gemini-3.1-pro-preview",
+      "finishReason": "rewrite-api",
+      "usage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "totalTokens": 0
+      },
+      "rewrite": {
+        "question": "咱们华为云 IoTDA 上有一批用 X.509 证书接入的设备快到期了，得准备换证。换之前必须摸清设备和证书的对应关系，不然误删误停会导致设备直接掉线。现在内部清单、证书指纹台账和允许离线的时间窗口都还没给，所以咱们这次只输出一套轮换准备方案，生产环境的验证等材料补齐了再做。\n\n附件里的 6 份材料只是说明平台规则（包括设备注册、状态管理、接口、MQTT 接入和换证说明），告诉我们平台支持的范围和操作字段。但真实环境里的设备关系和状态，还得等拿到台账和真实查询结果为准。\n\n准备工作这么推进：先建映射表。把每台设备对应到证书指纹，核查当前状态和到期时间。对应不上或状态不明的，全打进“待核区”，不要进试点名单。核对清楚的，按到期时间排批次。试点时新旧证书先并存验证，拿单台设备测，重新接入且连接稳定了，再扩大范围。一旦验证失败马上叫停，把动过的设备按原证书和原状态回滚，并在交接记录里写清失败原因。\n\n接下来，把这套流程做成两个东西：一个 Excel 工作簿，一个 HTML 操作页。\nExcel 给运维排查用，字段要有：设备标识、证书指纹、当前状态、到期时间、试点批次和验证结果。\nHTML 操作页给值班同事用，按实际操作顺序把查询、核对、试点、回滚列清楚。每一步都要写明前置条件以及失败后退回哪个位置。注意，同一台设备在 Excel 里的进度必须跟 HTML 操作页的阶段对得上，别出两套结论。\n\n最后在结论里明确：现有材料只够做准备启动。生产环境的映射台账、接口真实返回数据和离线窗口，统统列为“待补输入”。只要可轮换名单为空，或者回滚条件不完整，结论就是“暂不进入试点”。最终能不能放行，全看实际的核对记录。",
+        "requestContract": {
+          "requestSpan": "接下来，把这套流程做成两个东西：一个 Excel 工作簿，一个 HTML 操作页。",
+          "action": "做成",
+          "outputs": [
+            {
+              "format": "xlsx",
+              "humanName": "Excel",
+              "purpose": "供后续执行和留痕使用"
+            },
+            {
+              "format": "html",
+              "humanName": "HTML",
+              "purpose": "供后续执行和留痕使用"
+            }
+          ]
+        },
+        "roleTrace": {
+          "blockageSpan": "现在内部清单、证书指纹台账和允许离线的时间窗口都还没给，所以咱们这次只输出一套轮换准备方案，生产环境的验证等材料补齐了再做。",
+          "motivationSpan": "",
+          "downstreamUseSpan": "最终能不能放行，全看实际的核对记录。"
+        },
+        "usedFactIds": [
+          "fact-row-434"
+        ],
+        "deliberatelyOmitted": [],
+        "flowStages": [
+          {
+            "stage": "证据归位",
+            "evidence": "事实包中的公开材料与待补信息",
+            "decision": "区分可确认规则和未知现场状态",
+            "next": "证据足够则形成执行对象，不足则进入补证"
+          },
+          {
+            "stage": "执行对象核对",
+            "evidence": "已归位的对象关系与状态记录",
+            "decision": "判断本批设备是否具备进入证书轮换的条件",
+            "next": "符合条件则进入小范围验证，否则停止推进"
+          },
+          {
+            "stage": "小范围验证",
+            "evidence": "试点输入与实际返回记录",
+            "decision": "判断结果是否满足扩大范围的条件",
+            "next": "通过则推进，失败则退回原状态并留痕"
+          },
+          {
+            "stage": "交接收束",
+            "evidence": "判断依据、验证结果与回退记录",
+            "decision": "确认下游拿到一致结论",
+            "next": "设备运维和值班同事按工作簿筛查并从操作页执行试点与回滚"
+          }
+        ],
+        "selfAudit": {
+          "factsPreserved": true,
+          "formatsPreserved": true,
+          "processChainExplicit": true,
+          "failureOrRollbackExplicit": true,
+          "noInventedFacts": true,
+          "noAiShell": true
+        }
+      },
+      "validation": {
+        "pass": false,
+        "visibleLength": 683,
+        "similarity": [
+          {
+            "referenceIndex": 1,
+            "editSimilarity": 0.40077821011673154,
+            "trigramJaccard": 0.16998191681735986,
+            "longestExactCopyRun": 12
+          }
+        ],
+        "findings": [
+          {
+            "rule": "question-visible-length",
+            "actual": 683,
+            "min": 700,
+            "max": 1500
+          },
+          {
+            "rule": "mechanical-sequence-shell"
+          },
+          {
+            "rule": "performative-colloquialism",
+            "matches": [
+              "咱们"
+            ]
+          },
+          {
+            "rule": "explanatory-parentheses-below-minimum",
+            "expectedMinimum": 3,
+            "actual": 1
+          },
+          {
+            "rule": "enumeration-comma-over-limit",
+            "sentenceIndex": 4,
+            "expectedMaximum": 2,
+            "actual": 3,
+            "sentence": "附件里的 6 份材料只是说明平台规则（包括设备注册、状态管理、接口、MQTT 接入和换证说明），告诉我们平台支持的范围和操作字段。"
+          },
+          {
+            "rule": "enumeration-comma-over-limit",
+            "sentenceIndex": 13,
+            "expectedMaximum": 2,
+            "actual": 4,
+            "sentence": "Excel 给运维排查用，字段要有：设备标识、证书指纹、当前状态、到期时间、试点批次和验证结果。"
+          },
+          {
+            "rule": "enumeration-comma-over-limit",
+            "sentenceIndex": 14,
+            "expectedMaximum": 2,
+            "actual": 3,
+            "sentence": "HTML 操作页给值班同事用，按实际操作顺序把查询、核对、试点、回滚列清楚。"
+          },
+          {
+            "rule": "unsupported-fact-anchor",
+            "message": "434 introduces factual anchors not present in its source record: number:6份"
+          }
+        ],
+        "factGuard": null
+      }
+    }
+  ],
+  "usage": {
+    "inputTokens": 0,
+    "outputTokens": 0,
+    "totalTokens": 0
+  }
+}

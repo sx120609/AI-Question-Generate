@@ -1,0 +1,113 @@
+{
+  "kind": "scene-card-gate-report",
+  "gateId": "scene-card-role-consistency-v1",
+  "protocolId": "situated-requester-v1",
+  "schemaVersion": 1,
+  "status": "PASS",
+  "ok": true,
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\workstation_acceptance_20260718T054801Z_df4628\\drafts\\l1_questions.tsv",
+  "candidateHash": "4a907438da47a4d5268ea3bc9c9f81e242ca9f529cf4125cc3248c0000a17fad",
+  "sceneCardPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\workstation_acceptance_20260718T054801Z_df4628\\sources\\scene_cards.json",
+  "sceneCardFileHash": "2cc0167f5e49c4ae5f1a923497d285fe236d0093ea4f8b022c4adf875adf91a4",
+  "sceneCardBundleHash": "04b4ca84434d006eb6316b2ed9c992e7580ffb04892c1c331d888bb21aaa5af0",
+  "sceneCardSetHash": "7ee615769c3c8770dff2a5a45561a327436037c5e87ba6d028e4dad3f05b175a",
+  "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\workstation_acceptance_20260718T054801Z_df4628\\sources\\fact_ledger.json",
+  "factLedgerHash": "6736054d57ec95c26098a95dc1120ac4f276ed6b672d295cc153accc4aee0077",
+  "summary": {
+    "candidateRowCount": 1,
+    "sceneCardCount": 1,
+    "passedRowCount": 1,
+    "failedRowCount": 0,
+    "globalErrorCount": 0,
+    "batchCollisionCount": 0
+  },
+  "rows": [
+    {
+      "uid": "沈礼_20260718_workstation_preacceptance_01",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "135eb92bba55f0e39f65776b2e77edc581ba12da835129cd242c54e4c6542a6e",
+      "cardHash": "0b1f2e86829590b5014144b371aa3043a9cbec2ea30137ab7b6de88a3ab020b0",
+      "roleConsistencyHash": "f423e6b72f32002058531580b33b9c4d89f9152088722656049812ba40069492",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "work-order-制作",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "xlsx"
+        ],
+        "mFormats": [
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "缺少现场资料的项目统一标注为待核。",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "那三份指南用来支撑对应系列的接口位置和功能检查。",
+            "occurrences": 1
+          },
+          "downstreamUseSpan": {
+            "span": "设备运维和项目交付同事需要逐台核验新到设备并形成差异处置清单，请为中山大学肿瘤防治中心项目0724-2611Z1612177制作一份Excel形式的到货预验收核对表。",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [
+            "0724",
+            "-2611",
+            "1612177",
+            "1",
+            "1519000元",
+            "150台",
+            "6750元",
+            "50台",
+            "6850元",
+            "164000元",
+            "2",
+            "687180元",
+            "39台",
+            "16800元",
+            "31980元",
+            "820元",
+            "3",
+            "368",
+            "4",
+            "30天",
+            "100%",
+            "95%",
+            "5%",
+            "3年"
+          ],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "29a210ce5400f5e85739b7b67b3712054aaaf41c429ab193ea8d0548b2cb5041"
+      }
+    }
+  ],
+  "batch": {
+    "ok": true,
+    "status": "PASS",
+    "thresholds": {
+      "highMaskedTrigramSimilarity": 0.72,
+      "sharedMaskedFragmentLength": 18
+    },
+    "comparisons": [],
+    "errors": []
+  },
+  "errors": [],
+  "evaluationHash": "f476ddc4986ee839dfceaadc0e64430c521b9a7286b7cf1de4b13669e9fe4d2d"
+}

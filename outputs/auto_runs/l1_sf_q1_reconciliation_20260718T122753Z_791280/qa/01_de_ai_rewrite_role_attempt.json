@@ -1,0 +1,142 @@
+{
+  "kind": "de-ai-question-rewrite",
+  "policyId": "mugua-gemini-de-ai-rewrite-v2",
+  "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+  "generatedAt": "2026-07-18T12:56:26.078Z",
+  "provider": "mugua-openai-compatible",
+  "endpoint": "https://api.mugua.link/v1/chat/completions",
+  "model": "gemini-3.1-pro-preview",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 2114,
+    "outputTokens": 2628,
+    "totalTokens": 4742
+  },
+  "promptHash": "0f47e32e160f3fa1558355b1b198bdb02c96a8512eb0e3fe3a30bb85730f0148",
+  "sourceQuestionHash": "af2f060c9cf2c939d2edea2a6fee82ee2aa7d9787fd1777fdb20abe4316f5d82",
+  "rewrittenQuestionHash": "7f7ff5f585ad868f71edfeef6fbdbaa8f86322ce0d558011d00bdcbcefcf10db",
+  "selectedAttempt": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "pass": false,
+      "visibleLength": 291,
+      "findingRules": [
+        "mechanical-sequence-shell",
+        "rewrite-edit-similarity-too-high",
+        "rewrite-exact-copy-run-too-long"
+      ]
+    },
+    {
+      "attempt": 2,
+      "pass": true,
+      "visibleLength": 279,
+      "findingRules": []
+    }
+  ],
+  "rewrite": {
+    "question": "我上传了顺丰控股在2026年发布的三份材料。其中两份是关于快递物流业务经营的简报，分别对应2月份和3月份。还有一份是第一季度的报告。帮我核对这些文件能否拼成一季度的同一数据来源链。重点确认前两个月的累计数据与3月单月的数据能否顺利衔接。经营简报仅包含物流业务收入。一季报披露的则是总营业收入。你需要说明这一口径边界。材料里存在以千元披露和以亿元保留两位小数的区别。留意核验单位精度与指标的可比性。核对时保留未经审计标识以及来源页码。无法直接对应的内容在状态栏记录为待核。基于前述核对结果整理一份可下载的Excel口径核对表。按xlsx格式交付并作为结论底表。",
+    "requestContract": {
+      "requestSpan": "基于前述核对结果整理一份可下载的Excel口径核对表。",
+      "action": "整理",
+      "outputs": [
+        {
+          "format": "xlsx",
+          "humanName": "Excel",
+          "purpose": "供后续执行和留痕使用"
+        }
+      ]
+    },
+    "roleTrace": {
+      "blockageSpan": "无法直接对应的内容在状态栏记录为待核。",
+      "motivationSpan": "",
+      "downstreamUseSpan": "基于前述核对结果整理一份可下载的Excel口径核对表。"
+    },
+    "usedFactIds": [
+      "fact-feb-month",
+      "fact-jan-feb-cumulative",
+      "fact-feb-boundary",
+      "fact-march-month",
+      "fact-march-boundary",
+      "fact-q1-revenue",
+      "fact-q1-boundary",
+      "fact-quarter-bridge",
+      "fact-subtotal-checks",
+      "fact-unit-price-checks"
+    ],
+    "deliberatelyOmitted": [],
+    "flowStages": [
+      {
+        "stage": "证据归位",
+        "evidence": "事实包中的公开材料与待补信息",
+        "decision": "区分可确认规则和未知现场状态",
+        "next": "证据足够则形成执行对象，不足则进入补证"
+      },
+      {
+        "stage": "执行对象核对",
+        "evidence": "已归位的对象关系与状态记录",
+        "decision": "建立带公式和来源页码的季度收入口径核对表，确认经营简报分项与累计值能够回算，并把与一季报总营业收入的差额保持为口径桥接项而非直接归因。",
+        "next": "符合条件则进入小范围验证，否则停止推进"
+      },
+      {
+        "stage": "小范围验证",
+        "evidence": "试点输入与实际返回记录",
+        "decision": "判断结果是否满足扩大范围的条件",
+        "next": "通过则推进，失败则退回原状态并留痕"
+      },
+      {
+        "stage": "交接收束",
+        "evidence": "判断依据、验证结果与回退记录",
+        "decision": "确认下游拿到一致结论",
+        "next": "复核季度数据口径并为后续取得分部或科目明细后继续回填。"
+      }
+    ],
+    "selfAudit": {
+      "factsPreserved": true,
+      "formatsPreserved": true,
+      "processChainExplicit": true,
+      "failureOrRollbackExplicit": true,
+      "noInventedFacts": true,
+      "noAiShell": true
+    }
+  },
+  "validation": {
+    "pass": true,
+    "visibleLength": 279,
+    "similarity": [
+      {
+        "referenceIndex": 1,
+        "editSimilarity": 0.4734848484848485,
+        "trigramJaccard": 0.2807486631016043,
+        "longestExactCopyRun": 15,
+        "longestExactCopySpan": "一季度的同一数据来源链重点确认"
+      },
+      {
+        "referenceIndex": 2,
+        "editSimilarity": 0.05555555555555558,
+        "trigramJaccard": 0,
+        "longestExactCopyRun": 2,
+        "longestExactCopySpan": "20"
+      }
+    ],
+    "findings": [],
+    "factGuard": {
+      "ok": true,
+      "candidateAnchors": {
+        "numbers": [
+          "2026年",
+          "2月",
+          "3月"
+        ],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "unsupported": {
+        "numbers": [],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "errors": []
+    }
+  }
+}

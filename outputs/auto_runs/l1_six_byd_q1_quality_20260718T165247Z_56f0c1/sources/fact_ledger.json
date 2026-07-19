@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "kind": "evidence-bound-fact-ledger",
+  "runId": "l1_six_byd_q1_quality_20260718T165247Z_56f0c1",
+  "recordUid": "沈礼_20260719_l1_byd_q1_quality_01",
+  "generatedAt": "2026-07-18T17:24:33.341Z",
+  "facts": [
+    {
+      "id": "byd-core-performance",
+      "claimType": "source-fact",
+      "text": "2026年一季度营业收入150225314000元，同比下降11.82%；归母净利润4084551000元，同比下降55.38%；经营活动现金流量净额2790305000元，同比下降67.48%。",
+      "locator": "PDF第2页主要会计数据和财务指标表",
+      "uid": "沈礼_20260719_l1_byd_q1_quality_01",
+      "sourceRefs": [
+        "byd-2026q1-report"
+      ]
+    },
+    {
+      "id": "byd-profit-quality",
+      "claimType": "derived-check",
+      "text": "按披露数回算，2026年一季度经营现金流量净额与归母净利润之比约为0.68，上年同期约为0.94，现金利润覆盖关系同比走弱。",
+      "locator": "PDF第2页归母净利润和经营活动现金流量净额行",
+      "uid": "沈礼_20260719_l1_byd_q1_quality_01",
+      "sourceRefs": [
+        "byd-2026q1-report"
+      ]
+    },
+    {
+      "id": "byd-development-spend",
+      "claimType": "source-fact",
+      "text": "开发支出由2025年末5971312000元增至2026年3月末8285431000元，增长38.75%，报告解释为内部研发投入增加。",
+      "locator": "PDF第3页资产负债表变动原因表",
+      "uid": "沈礼_20260719_l1_byd_q1_quality_01",
+      "sourceRefs": [
+        "byd-2026q1-report"
+      ]
+    },
+    {
+      "id": "byd-financing-shift",
+      "claimType": "source-fact",
+      "text": "短期借款由38484710000元增至66296294000元，增长72.27%；应付票据由22463883000元增至48603440000元，增长116.36%，报告分别解释为融资需求和票据结算增加。",
+      "locator": "PDF第3页资产负债表变动原因表",
+      "uid": "沈礼_20260719_l1_byd_q1_quality_01",
+      "sourceRefs": [
+        "byd-2026q1-report"
+      ]
+    },
+    {
+      "id": "byd-cashflow-explanation",
+      "claimType": "source-fact",
+      "text": "报告把经营现金流量净额下降主要解释为销售商品、提供劳务收到的现金减少；投资现金净流出收窄与长期资产购建支出减少有关。",
+      "locator": "PDF第3页现金流量表变动原因表",
+      "uid": "沈礼_20260719_l1_byd_q1_quality_01",
+      "sourceRefs": [
+        "byd-2026q1-report"
+      ]
+    },
+    {
+      "id": "byd-audit-boundary",
+      "claimType": "evidence-boundary",
+      "text": "比亚迪2026年第一季度财务会计报告未经审计，单份报告没有提供按业务分部拆解的收入、利润和现金流桥接表。",
+      "locator": "PDF第1页重要内容提示及全文披露边界",
+      "uid": "沈礼_20260719_l1_byd_q1_quality_01",
+      "sourceRefs": [
+        "byd-2026q1-report"
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "id": "byd-2026q1-report",
+      "uid": "沈礼_20260719_l1_byd_q1_quality_01",
+      "name": "比亚迪股份有限公司2026年第一季度报告.pdf",
+      "text": "披露比亚迪2026年一季度损益、现金流、资产负债项目变动和对应原因，财务会计报告未经审计。",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-29/1225233071.PDF",
+      "sha256": "8e07bf9481c450daa0184c8bab218eb5b29f5587fc406116a911903852c0c907"
+    }
+  ],
+  "unknowns": [
+    {
+      "id": "byd_q1_quality-unknown-1",
+      "uid": "沈礼_20260719_l1_byd_q1_quality_01",
+      "text": "附件没有给出收入和利润降幅按业务板块、销量、价格或区域拆分后的完整贡献。"
+    },
+    {
+      "id": "byd_q1_quality-unknown-2",
+      "uid": "沈礼_20260719_l1_byd_q1_quality_01",
+      "text": "短期借款和应付票据增加与经营现金流下降之间不能仅凭季度报告确定直接因果关系。"
+    }
+  ],
+  "decision": {
+    "id": "byd_q1_quality-decision",
+    "text": "建立一份季度经营质量核对表，复算收入、利润和经营现金流变化，整理研发与融资项目的披露解释，并把无法由附件直接归因的部分保留为待补证事项。"
+  },
+  "deliveryUse": {
+    "recipient": "经营数据复核专员及下游同事",
+    "purpose": "供经营分析同事继续取得分部和销量资料后补充归因。"
+  }
+}

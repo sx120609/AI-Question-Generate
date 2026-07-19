@@ -1,0 +1,399 @@
+{
+  "schemaVersion": 4,
+  "kind": "l1-production-workflow-state",
+  "productionProfile": "l1",
+  "taskType": "L1 探索型",
+  "protocolId": "l1-phase3-codex-model-two-gates-trace-v6",
+  "runId": "l1_six_inspur_profit_cash_20260718T165250Z_4b756e",
+  "runMode": "development-codex-session",
+  "packetRunId": "l1_six_inspur_profit_cash_20260718T165250Z_4b756e",
+  "qualityGatePromptHashes": {
+    "first-quality-gate": "454723865e5ba3279da5aeb39347e8df97fb6c5df35f505e350cc9b64a5fa5a5",
+    "second-language-gate": "31aba0f4bbe071e3922f2d8d2df783955641f701c3a64a246bc87517d17c3017"
+  },
+  "createdAt": "2026-07-18T18:07:20.226Z",
+  "updatedAt": "2026-07-18T18:07:52.276Z",
+  "questions": [
+    {
+      "questionIndex": 1,
+      "state": "COMPLETE",
+      "referenceLocation": {
+        "sheet": "三期示例数据",
+        "row": 7
+      },
+      "referenceHashes": {
+        "question": "2873653da868d34534541fc9f7348f48eb4837eec95ac9c3f6caa6da4791b1f5",
+        "attachmentSummary": "484d55613910eb8c0917fe308b499d474115ced993cd002a17d7cc75254330a4"
+      },
+      "firstQaFailureCount": 0,
+      "formatRequirement": null,
+      "revisionLog": [
+        {
+          "at": "2026-07-18T18:07:20.339Z",
+          "stage": "second-language-gate",
+          "conclusion": "需语言小修"
+        }
+      ],
+      "events": [
+        {
+          "at": "2026-07-18T18:07:20.226Z",
+          "type": "reference.sampled",
+          "sheet": "三期示例数据",
+          "row": 7
+        },
+        {
+          "at": "2026-07-18T18:07:20.242Z",
+          "type": "reference.breakdown.recorded"
+        },
+        {
+          "at": "2026-07-18T18:07:20.243Z",
+          "type": "attachments.recorded",
+          "count": 1
+        },
+        {
+          "at": "2026-07-18T18:07:20.277Z",
+          "type": "draft.recorded",
+          "reason": "initial"
+        },
+        {
+          "at": "2026-07-18T18:07:20.302Z",
+          "type": "first-qa.passed"
+        },
+        {
+          "at": "2026-07-18T18:07:20.339Z",
+          "type": "second-qa.second-qa-pass"
+        },
+        {
+          "at": "2026-07-18T18:07:52.266Z",
+          "type": "de-ai-rewrite.passed",
+          "policyId": "mugua-gemini-de-ai-rewrite-v2",
+          "selectedAttempt": 2
+        },
+        {
+          "at": "2026-07-18T18:07:52.275Z",
+          "type": "final.completed"
+        }
+      ],
+      "referenceBreakdown": {
+        "businessScene": "临时提前的投资组合复盘中，组合负责人需要在客户可能赎回资金、内部投资偏好与风控担忧并存的情况下，为单一持仓的仓位调整决策做前置研究。",
+        "coreBlockage": "决策时限压缩且证据尚未系统核验；经营关注点、外部风险与流动性约束交织，公开信息还可能存在口径冲突、时点不一致或关键缺口，因此暂不具备直接下结论的条件。",
+        "mainTask": "基于指定截止时点可核验的公开资料完成证据摸底：筛选高价值来源，说明每项资料可回答的问题与数据时点，并标出信息冲突和重要缺口。",
+        "attachmentSupport": "没有附件提供事实基础，判断完全依赖后续对公开资料的检索、来源分级、时点核对与交叉验证；附件不参与本轮推理。",
+        "deliverableOrigin": "工作流先完成证据清单与缺口识别，再逐步核对经营、估值、风险情景和资金约束；全部验证完成后，才会自然沉淀为供内部决策机构使用的正式持仓决策材料。本轮产物只是该正式材料的研究底稿。",
+        "imitableStructure": "可模仿“突发时限变化引出决策压力—交代角色、持仓约束和多方关注—限定权威来源与信息截止点—先做证据地图并识别冲突缺口—明确禁止提前给建议—约定分阶段核验后再形成正式交付物”的推进方式。",
+        "forbiddenReuse": "不得复用样例中的具体公司、证券市场、组合类型、客户身份、持仓比例、成本价格、赎回比例、目标仓位、日期、行业风险点、资料平台、文件名称、DOCX格式、无附件设定及任何原句；也不得照搬“证券持仓决策备忘录”这一领域与产物组合。",
+        "referenceAttachmentStructure": "本例附件结构为空。迁移时只能记录“是否有附件、附件提供哪类证据、覆盖哪些判断环节、存在哪些时点或口径限制”，不能虚构附件内容，也不能把无附件作为固定模板。",
+        "referenceProductParagraphLogic": "题面后半段先限定本轮只做资料与证据层的中间成果，并设置不得越界的结论和成品限制；随后说明还需继续核对的分析模块；最后由完整工作流自然引出最终使用者、正式载体、提交场景与完成条件。验收重点依次是来源可核验、用途说明清楚、数据时点明确、冲突与缺口被标注，以及本轮没有提前输出决策结论或最终文件。"
+      },
+      "updatedAt": "2026-07-18T18:07:52.276Z",
+      "attachmentPlan": {
+        "mainDecision": "建立利润现金与营运节奏核对表，复算核心指标方向，整理应收、预收和融资变化的披露线索，并保留客户与项目明细待补栏。",
+        "attachments": [
+          {
+            "name": "浪潮电子信息产业股份有限公司2026年第一季度报告.pdf",
+            "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-30/1225257759.PDF",
+            "format": "pdf",
+            "classification": "specific-business",
+            "objectLevel": true,
+            "timeAnchor": "2026年1月1日至3月31日",
+            "specificityEvidence": {
+              "object": "浪潮电子信息产业股份有限公司证券代码000977",
+              "periodOrEvent": "2026年1月1日至3月31日",
+              "uniqueContent": "披露浪潮信息一季度收入利润现金流分化、应收账款和合同负债变化以及融资节奏原因。"
+            },
+            "summary": "披露浪潮信息一季度收入利润现金流分化、应收账款和合同负债变化以及融资节奏原因。",
+            "localPath": "浪潮电子信息产业股份有限公司2026年第一季度报告.pdf",
+            "sha256": "1d9075ccddc8da08907e3486f9aaddfb81cb19ea5881a50e096cac6c3ad5fcd6",
+            "bytes": 388530,
+            "sizeBytes": 388530,
+            "introductionHint": "把正式报告名称直接嵌入任务句，后续核对继续引用同一份已验证原件。"
+          }
+        ],
+        "specificBusinessShareRationale": "附件绑定浪潮电子信息产业股份有限公司证券代码000977和2026年1月1日至3月31日，具体业务材料占比为100%。",
+        "timeSeriesRationale": "季度报告同时提供本期、上年同期或期初比较数，可形成同一对象的期间核对链。",
+        "objectSupportInQuestion": "题面明确浪潮电子信息产业股份有限公司、正式报告名称、报告期和科技企业经营复核人员需要解释收入下降、利润增长而经营现金转负的差异。。",
+        "newAttachmentSupport": "披露浪潮信息一季度收入利润现金流分化、应收账款和合同负债变化以及融资节奏原因。",
+        "newQuestionStructureMapping": "沿用样例的真实工作卡点、证据核验和下游交付逻辑，改为围绕确认附件能支持的回款、预收和融资节奏线索，并避免把线索写成完整因果归因。逐轮推进。"
+      },
+      "draft": {
+        "question": "请依据《浪潮电子信息产业股份有限公司2026年第一季度报告.pdf》核对2026年一季度收入下降、利润增长而经营现金转负的差异，重点确认第2至3页能够支持的回款、预收和融资节奏线索，区分报告原文、派生计算、合理推断与待确认项，不把应收账款、合同负债和短期借款的同步变动写成完整因果归因。整理一份可下载的浪潮信息2026年一季度利润现金与营运节奏Excel，包含收入利润现金对照、应收与合同负债线索、融资变化、来源页码、未经审计状态、计算口径、证据边界及客户、项目、账龄等待补明细，供后续取得回款和项目数据后继续复核。",
+        "mainTask": "核对季度报告可支持的回款、预收和融资节奏线索，并形成可追溯、可继续回填的利润现金与营运节奏Excel。",
+        "usedFactIds": [
+          "inspur-core-performance",
+          "inspur-operating-cash",
+          "inspur-receivables",
+          "inspur-contract-liability",
+          "inspur-financing",
+          "inspur-boundary"
+        ],
+        "usedAttachmentNames": [
+          "浪潮电子信息产业股份有限公司2026年第一季度报告.pdf"
+        ],
+        "productFormats": "xlsx",
+        "deliverableRationale": [
+          {
+            "format": "xlsx",
+            "user": "经营质量复核专员及下游经营分析同事",
+            "purpose": "用于复算核心指标、对照利润现金变化，并在取得回款和项目明细后继续补充判断",
+            "whyThisFormat": "多期间、多指标及证据字段需要结构化对照、计算和持续回填，Excel比文字或演示文件更适合复核与更新"
+          }
+        ],
+        "structureMapping": "沿用真实经营卡点引出单一判断、核验附件证据、标注冲突与缺口、为下游继续复核留接口的推进结构，改为浪潮信息季度经营质量复核，不复用投资持仓领域及其对象、约束和产物。",
+        "productParagraphMapping": "后半段先限定本轮只确认公开报告能够支持的节奏线索并禁止越界归因，再以来源页码、审计状态、派生计算和待核边界收束，最终自然落到供后续补充回款及项目明细使用的xlsx核对表。"
+      },
+      "preQaStructureAudit": {
+        "oneSentenceMainTask": "依据浪潮信息2026年第一季度报告，核对收入、利润与经营现金流分化及应收、预收和融资节奏线索，区分原文、计算、推断和待确认项并形成可追溯Excel底稿。",
+        "uniqueMainTask": true,
+        "specificObjectDecision": true,
+        "specificFilesDominant": true,
+        "evidenceChain": "证据链以唯一真实附件《浪潮电子信息产业股份有限公司2026年第一季度报告.pdf》为起点，锁定000977及2026年一季度，引用第2至3页披露数据，复算收入、利润、经营现金流及相关科目变化，再将应收账款、合同负债和短期借款变化作为节奏线索进行有限推断，同时标注未经审计状态、页码、计算口径、证据边界及客户、项目、账龄等缺口；附件数为1且具体业务材料占比100%，对象级链路完整，但输入未展示附件正文摘录，真实性核验目前依赖附件元数据和事实标识。",
+        "l2ReasoningChain": "该题标注为L1探索型，首轮围绕一个主要判断推进：先确认报告原文能够支持的业绩与现金流差异，再做派生计算和科目联动核验，随后识别可能的回款、预收与融资节奏，最后明确不能据此形成完整因果归因及仍需补充的对象级明细；题面没有要求首轮倾倒后续完整计算或未来流程，Excel属于承载复算、溯源和后续回填的附带交付。",
+        "variableDrift": [
+          "一级目录“科技与产品研发”与附件正文及任务核心的财务经营复核对象不一致，存在目录变量漂移，应改选飞书配置项中与科技企业经营分析、财务经营复核或经营质量核验相符的一级目录。",
+          "candidate.mainTask把“形成Excel”并入主任务表述，attachmentPlan.mainDecision又以“建立核对表”开头，产物动作相对题面中的核心业务判断有所前移，但尚未形成第二个独立主任务。"
+        ]
+      },
+      "firstQaFullResult": {
+        "pass": true,
+        "issues": [],
+        "execution": {
+          "runnerId": "exact-two-quality-gates-v2-codex-session",
+          "provider": "codex-session",
+          "model": "gpt-5.6-sol",
+          "sourcePromptHash": "454723865e5ba3279da5aeb39347e8df97fb6c5df35f505e350cc9b64a5fa5a5",
+          "renderedPromptHash": "2dea9d82fcb84bf7e327adc4544195e6e830d159cc62b74a41752d3cb065af09",
+          "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_inspur_profit_cash_20260718T165250Z_4b756e\\qa\\01_first_quality_gate_attempt_1_raw.json",
+          "rawResponseHash": "2d97c0f014876b8e10be1a7e8dde86142f0ef13e976d3f3e57b0b74778459ce0",
+          "completedAt": "2026-07-18T18:07:20.298Z"
+        }
+      },
+      "firstQaAttempts": [
+        {
+          "at": "2026-07-18T18:07:20.302Z",
+          "result": {
+            "pass": true,
+            "issues": [],
+            "execution": {
+              "runnerId": "exact-two-quality-gates-v2-codex-session",
+              "provider": "codex-session",
+              "model": "gpt-5.6-sol",
+              "sourcePromptHash": "454723865e5ba3279da5aeb39347e8df97fb6c5df35f505e350cc9b64a5fa5a5",
+              "renderedPromptHash": "2dea9d82fcb84bf7e327adc4544195e6e830d159cc62b74a41752d3cb065af09",
+              "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_inspur_profit_cash_20260718T165250Z_4b756e\\qa\\01_first_quality_gate_attempt_1_raw.json",
+              "rawResponseHash": "2d97c0f014876b8e10be1a7e8dde86142f0ef13e976d3f3e57b0b74778459ce0",
+              "completedAt": "2026-07-18T18:07:20.298Z"
+            }
+          }
+        }
+      ],
+      "secondQaFullResult": {
+        "conclusion": "需语言小修",
+        "coreJudgment": "原题事实、附件、核对重点、证据边界和Excel交付要求完整。补充当前工作场景、下游用途、明确结论请求及复杂核对信号后，题面更符合第二道语言质检要求。",
+        "modifications": "在开头以第一人称补充“经营质量复核专员”角色及指定下游用途。加入一次“请给出明确结论”，明确确认附件支持的回款、预收和融资节奏线索，同时避免完整因果归因。补充本期与上年同期及同比复算，并增加分项、比率、占比、现金流和计算口径复核要求。未改变原题事实、附件、页码、证据边界或交付内容。",
+        "modifiedQuestion": "我作为经营质量复核专员，正在依据《浪潮电子信息产业股份有限公司2026年第一季度报告.pdf》，复核2026年一季度收入下降、利润增长而经营现金转负的差异，本次复核供经营分析同事继续取得回款和项目明细后补充判断。\n\n请核对第2至3页，复算本期与上年同期数据及同比变化，并对收入、利润、经营现金流等分项以及相关比率、占比、现金流和计算口径进行复核。区分报告原文、派生计算、合理推断与待确认项。请给出明确结论，确认附件能够支持的回款、预收和融资节奏线索，并避免将应收账款、合同负债和短期借款的同步变动写成完整因果归因。\n\n整理一份可下载的浪潮信息2026年一季度利润现金与营运节奏Excel文件，包含收入利润现金对照、应收与合同负债线索、融资变化、来源页码、未经审计状态、计算口径、证据边界，以及客户、项目、账龄等有待补充的明细，供后续取得回款和项目数据后继续复核。",
+        "punctuationAudit": "标点使用自然，书名号成对，未使用分号。“请给出明确结论”仅出现一次，并列核对项层次清楚。",
+        "remainingNote": "执行时仍需严格区分报告原文、派生计算、合理推断与待确认项，不得超出附件证据边界，也不得将同步变动直接表述为完整因果归因。",
+        "execution": {
+          "runnerId": "exact-two-quality-gates-v2-codex-session",
+          "provider": "codex-session",
+          "model": "gpt-5.6-sol",
+          "sourcePromptHash": "31aba0f4bbe071e3922f2d8d2df783955641f701c3a64a246bc87517d17c3017",
+          "renderedPromptHash": "ad9d8a32074d1119c63d4cef5d20763b9d750c152b0251659fa67bb2b38bdd40",
+          "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_inspur_profit_cash_20260718T165250Z_4b756e\\qa\\01_second_language_gate_raw.json",
+          "rawResponseHash": "fe1f55b69f04bd423d53d1fc1da79f6e76c8b7d6eb4a3b0d60ca51408e7b4b29",
+          "completedAt": "2026-07-18T18:07:20.330Z"
+        }
+      },
+      "secondQaAttempts": [
+        {
+          "at": "2026-07-18T18:07:20.338Z",
+          "result": {
+            "conclusion": "需语言小修",
+            "coreJudgment": "原题事实、附件、核对重点、证据边界和Excel交付要求完整。补充当前工作场景、下游用途、明确结论请求及复杂核对信号后，题面更符合第二道语言质检要求。",
+            "modifications": "在开头以第一人称补充“经营质量复核专员”角色及指定下游用途。加入一次“请给出明确结论”，明确确认附件支持的回款、预收和融资节奏线索，同时避免完整因果归因。补充本期与上年同期及同比复算，并增加分项、比率、占比、现金流和计算口径复核要求。未改变原题事实、附件、页码、证据边界或交付内容。",
+            "modifiedQuestion": "我作为经营质量复核专员，正在依据《浪潮电子信息产业股份有限公司2026年第一季度报告.pdf》，复核2026年一季度收入下降、利润增长而经营现金转负的差异，本次复核供经营分析同事继续取得回款和项目明细后补充判断。\n\n请核对第2至3页，复算本期与上年同期数据及同比变化，并对收入、利润、经营现金流等分项以及相关比率、占比、现金流和计算口径进行复核。区分报告原文、派生计算、合理推断与待确认项。请给出明确结论，确认附件能够支持的回款、预收和融资节奏线索，并避免将应收账款、合同负债和短期借款的同步变动写成完整因果归因。\n\n整理一份可下载的浪潮信息2026年一季度利润现金与营运节奏Excel文件，包含收入利润现金对照、应收与合同负债线索、融资变化、来源页码、未经审计状态、计算口径、证据边界，以及客户、项目、账龄等有待补充的明细，供后续取得回款和项目数据后继续复核。",
+            "punctuationAudit": "标点使用自然，书名号成对，未使用分号。“请给出明确结论”仅出现一次，并列核对项层次清楚。",
+            "remainingNote": "执行时仍需严格区分报告原文、派生计算、合理推断与待确认项，不得超出附件证据边界，也不得将同步变动直接表述为完整因果归因。",
+            "execution": {
+              "runnerId": "exact-two-quality-gates-v2-codex-session",
+              "provider": "codex-session",
+              "model": "gpt-5.6-sol",
+              "sourcePromptHash": "31aba0f4bbe071e3922f2d8d2df783955641f701c3a64a246bc87517d17c3017",
+              "renderedPromptHash": "ad9d8a32074d1119c63d4cef5d20763b9d750c152b0251659fa67bb2b38bdd40",
+              "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_inspur_profit_cash_20260718T165250Z_4b756e\\qa\\01_second_language_gate_raw.json",
+              "rawResponseHash": "fe1f55b69f04bd423d53d1fc1da79f6e76c8b7d6eb4a3b0d60ca51408e7b4b29",
+              "completedAt": "2026-07-18T18:07:20.330Z"
+            }
+          }
+        }
+      ],
+      "deAiRewrite": {
+        "kind": "de-ai-question-rewrite",
+        "policyId": "mugua-gemini-de-ai-rewrite-v2",
+        "uid": "沈礼_20260719_l1_inspur_profit_cash_05",
+        "generatedAt": "2026-07-18T18:07:42.112Z",
+        "provider": "mugua-openai-compatible",
+        "endpoint": "https://api.mugua.link/v1/chat/completions",
+        "model": "gemini-3.1-pro-preview",
+        "finishReason": "stop",
+        "usage": {
+          "inputTokens": 1473,
+          "outputTokens": 1476,
+          "totalTokens": 2949
+        },
+        "promptHash": "5ce5045abaf014ded108161a7945a48bf2ea8cb8fc467a4b0d4241054889da3a",
+        "sourceQuestionHash": "8aa917bc202fb80f0eb6574b95ab052ffe06abb821c08810da13207841a3f02f",
+        "rewrittenQuestionHash": "ed0fd13aa9958f997d977a9ca78abe1ab997f130fc41497b250f56ce46d27207",
+        "selectedAttempt": 2,
+        "attempts": [
+          {
+            "attempt": 1,
+            "pass": false,
+            "visibleLength": 358,
+            "findingRules": [
+              "rewrite-trigram-overlap-too-high",
+              "rewrite-exact-copy-run-too-long"
+            ]
+          },
+          {
+            "attempt": 2,
+            "pass": true,
+            "visibleLength": 446,
+            "findingRules": []
+          }
+        ],
+        "rewrite": {
+          "question": "我正在做浪潮信息2026年一季度利润现金与营运节奏复核，这份结果供经营分析同事继续取得回款和项目明细后补充判断。\n\n请基于《浪潮电子信息产业股份有限公司2026年第一季度报告.pdf》中的内容，帮我复算一下今年一季度和去年同期的数据以及同比变动情况。这次重点要复核为什么一季度会出现收入下降、利润却在增长，但经营现金流转负的现象。请仔细核对各项收入、利润、经营现金流的具体分项，包括相关的比率、占比以及具体的计算口径。同时确认一下报告里有没有能体现回款、预收和融资节奏的线索。\n\n这里需要严格区分哪些是报告原文、哪些是派生计算或合理推断，还有哪些是待确认事项。请给出明确的结论，特别注意不要把应收账款、合同负债以及短期借款的同步变化直接当成完整的因果关系来归因。\n\n最后请帮我整理一份浪潮信息2026年一季度利润现金与营运节奏的Excel下载文件。表格里除了要对照收入、利润和现金情况，记录计算口径、未经审计状态、来源页码和证据边界外，还要把应收账款与合同负债的线索以及融资变化情况都梳理进去。另外，请在表格中预留出客户、项目、账龄等需要后续补充的明细位置，方便经营分析同事拿到回款和项目明细后继续做判断。\n\n请基于上述核对结果给出明确结论，并整理一份可下载的Excel营运节奏核对表，按xlsx格式交付。",
+          "requestContract": {
+            "requestSpan": "最后请帮我整理一份浪潮信息2026年一季度利润现金与营运节奏的Excel下载文件。",
+            "action": "帮我",
+            "outputs": [
+              {
+                "format": "xlsx",
+                "humanName": "Excel",
+                "purpose": "供后续执行和留痕使用"
+              }
+            ]
+          },
+          "roleTrace": {
+            "blockageSpan": "我正在做浪潮信息2026年一季度利润现金与营运节奏复核，这份结果供经营分析同事继续取得回款和项目明细后补充判断。",
+            "motivationSpan": "另外，请在表格中预留出客户、项目、账龄等需要后续补充的明细位置，方便经营分析同事拿到回款和项目明细后继续做判断。",
+            "downstreamUseSpan": "另外，请在表格中预留出客户、项目、账龄等需要后续补充的明细位置，方便经营分析同事拿到回款和项目明细后继续做判断。"
+          },
+          "usedFactIds": [
+            "inspur-core-performance",
+            "inspur-operating-cash",
+            "inspur-receivables",
+            "inspur-contract-liability",
+            "inspur-financing",
+            "inspur-boundary"
+          ],
+          "deliberatelyOmitted": [],
+          "flowStages": [
+            {
+              "stage": "证据归位",
+              "evidence": "事实包中的公开材料与待补信息",
+              "decision": "区分可确认规则和未知现场状态",
+              "next": "证据足够则形成执行对象，不足则进入补证"
+            },
+            {
+              "stage": "执行对象核对",
+              "evidence": "已归位的对象关系与状态记录",
+              "decision": "建立利润现金与营运节奏核对表，复算核心指标方向，整理应收、预收和融资变化的披露线索，并保留客户与项目明细待补栏。",
+              "next": "符合条件则进入小范围验证，否则停止推进"
+            },
+            {
+              "stage": "小范围验证",
+              "evidence": "试点输入与实际返回记录",
+              "decision": "判断结果是否满足扩大范围的条件",
+              "next": "通过则推进，失败则退回原状态并留痕"
+            },
+            {
+              "stage": "交接收束",
+              "evidence": "判断依据、验证结果与回退记录",
+              "decision": "确认下游拿到一致结论",
+              "next": "供经营分析同事继续取得回款和项目明细后补充判断。"
+            }
+          ],
+          "selfAudit": {
+            "factsPreserved": true,
+            "formatsPreserved": true,
+            "processChainExplicit": true,
+            "failureOrRollbackExplicit": true,
+            "noInventedFacts": true,
+            "noAiShell": true
+          }
+        },
+        "validation": {
+          "pass": true,
+          "visibleLength": 545,
+          "similarity": [
+            {
+              "referenceIndex": 1,
+              "editSimilarity": 0.2901960784313725,
+              "trigramJaccard": 0.24058919803600654,
+              "longestExactCopyRun": 31,
+              "longestExactCopySpan": "《浪潮电子信息产业股份有限公司2026年第一季度报告.pdf》"
+            },
+            {
+              "referenceIndex": 2,
+              "editSimilarity": 0.0607843137254902,
+              "trigramJaccard": 0.007751937984496124,
+              "longestExactCopyRun": 5,
+              "longestExactCopySpan": "2026年"
+            }
+          ],
+          "findings": [],
+          "factGuard": {
+            "ok": true,
+            "candidateAnchors": {
+              "numbers": [
+                "2026年"
+              ],
+              "quotedClaims": [],
+              "timeMarkers": []
+            },
+            "unsupported": {
+              "numbers": [],
+              "quotedClaims": [],
+              "timeMarkers": []
+            },
+            "errors": []
+          }
+        },
+        "deterministicStyleCleanup": {
+          "applied": true,
+          "rules": [
+            "remove-unbound-inline-page-range",
+            "remove-unbound-title-quotes",
+            "remove-banned-politeness",
+            "remove-upload-meta-language",
+            "restore-known-requester-context",
+            "restore-explicit-decision-request",
+            "restore-downloadable-format-requirement"
+          ],
+          "sourceApiQuestionHash": "2a735a0fd44116bc1e7a290c9b6214fbe4e5458b8c32fba20226568f9e0f4285"
+        }
+      },
+      "recordUid": "沈礼_20260719_l1_inspur_profit_cash_05",
+      "finalRecord": {
+        "UID": "沈礼_20260719_l1_inspur_profit_cash_05",
+        "题目": "我正在做浪潮信息2026年一季度利润现金与营运节奏复核，这份结果供经营分析同事继续取得回款和项目明细后补充判断。\n\n请基于《浪潮电子信息产业股份有限公司2026年第一季度报告.pdf》中的内容，帮我复算一下今年一季度和去年同期的数据以及同比变动情况。这次重点要复核为什么一季度会出现收入下降、利润却在增长，但经营现金流转负的现象。请仔细核对各项收入、利润、经营现金流的具体分项，包括相关的比率、占比以及具体的计算口径。同时确认一下报告里有没有能体现回款、预收和融资节奏的线索。\n\n这里需要严格区分哪些是报告原文、哪些是派生计算或合理推断，还有哪些是待确认事项。请给出明确的结论，特别注意不要把应收账款、合同负债以及短期借款的同步变化直接当成完整的因果关系来归因。\n\n最后请帮我整理一份浪潮信息2026年一季度利润现金与营运节奏的Excel下载文件。表格里除了要对照收入、利润和现金情况，记录计算口径、未经审计状态、来源页码和证据边界外，还要把应收账款与合同负债的线索以及融资变化情况都梳理进去。另外，请在表格中预留出客户、项目、账龄等需要后续补充的明细位置，方便经营分析同事拿到回款和项目明细后继续做判断。\n\n请基于上述核对结果给出明确结论，并整理一份可下载的Excel营运节奏核对表，按xlsx格式交付。",
+        "任务类型": "L1 探索型",
+        "一级目录": "科技与产品研发",
+        "二级目录": "科技企业经营复核",
+        "三级目录": "利润现金与回款节奏",
+        "任务概括": "浪潮信息2026年一季度利润现金与营运节奏复核",
+        "标注专家工作年限": "5年",
+        "人类完成时间": "4H",
+        "相关附件": "浪潮电子信息产业股份有限公司2026年第一季度报告.pdf",
+        "附件格式": "pdf",
+        "附件内容": "浪潮电子信息产业股份有限公司2026年第一季度报告.pdf：披露浪潮信息一季度收入利润现金流分化、应收账款和合同负债变化以及融资节奏原因。 来源：https://static.cninfo.com.cn/finalpage/2026-04-30/1225257759.PDF",
+        "产物格式": "xlsx",
+        "产物内容": "一份可下载的浪潮信息2026年一季度利润现金与营运节奏Excel，含收入利润现金对照、应收与合同负债线索、融资变化、证据边界和待补明细。",
+        "做题关键步骤": "1. 核验报告期和审计状态\n2. 对齐收入、归母利润、扣非利润和经营现金流\n3. 计算利润现金差额及方向\n4. 整理应收账款和合同负债变化原因\n5. 核对短期借款与筹资现金流变化\n6. 生成带公式、来源和待补栏的Excel",
+        "标注专家姓名": "沈礼"
+      }
+    }
+  ]
+}

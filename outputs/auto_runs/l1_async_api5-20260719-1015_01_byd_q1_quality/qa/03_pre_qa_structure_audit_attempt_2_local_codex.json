@@ -1,0 +1,50 @@
+{
+  "kind": "codex-stage-response",
+  "stage": "03_pre_qa_structure_audit_attempt_2",
+  "model": "gpt-5.6-sol",
+  "provider": "openai-compatible-responses-api",
+  "responseId": "resp_03dce15cfc549dee016a5c31b8ddc88198904c26d30671d925",
+  "requestId": "8bc37ee0-e2d4-4f7f-ba92-731b6a072d7e",
+  "completedAt": "2026-07-19T02:10:09.681Z",
+  "promptHash": "1fa7af247aa9b5ec36fa8cffa195410868d6913d4c2a3cea181eaa9938937d89",
+  "usage": {
+    "metered": true,
+    "source": "responses-api",
+    "requestCount": 1,
+    "inputTokens": 2483,
+    "cachedInputTokens": 0,
+    "uncachedInputTokens": 2483,
+    "outputTokens": 2183,
+    "reasoningTokens": 1552,
+    "visibleOutputTokens": 631,
+    "totalTokens": 4666,
+    "providerUsage": {
+      "input_tokens": 2483,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 2183,
+      "output_tokens_details": {
+        "reasoning_tokens": 1552
+      },
+      "total_tokens": 4666
+    }
+  },
+  "parsed": {
+    "evidenceChain": "证据链在源文件真实性与正文读取环节即中断：candidate的usedAttachmentNames和usedFactIds均为空，question为“blocked”，未从任何真实附件正文抽取报表项目、变动原因、页码或事实锚点；attachmentPlan虽然列出文件名、URL、哈希、大小、对象和期间，但这些均为计划层元数据，不能证明PDF已正式披露、真实可读或与所述正文一致。因此尚未形成“正式原件—正文页码—对象级数据—同比复算—披露原因—证据边界/待补材料”的完整链条。",
+    "l2ReasoningChain": "该候选标注为L1探索型而非L2，且L1推理也未实际启动：预期主线应由报告真实性核验推进至收入、利润和经营现金流差异复算，再区分报告明确披露的原因、可由数字支持的解释及需外部材料补证的部分；当前仅识别了来源阻塞，没有检查至少一个真实附件，也没有形成来源、差异、冲突、计算口径或业务判断的探索结果。未出现数字清单或未来流程倾倒，但这不能弥补附件取证缺失。",
+    "oneSentenceMainTask": "停止使用当前无法核验的《比亚迪股份有限公司2026年第一季度报告.pdf》，改用巨潮资讯网已正式披露且可读取的比亚迪季度报告原件，并重新核验正文、链接、页码和事实锚点后再生成经营质量复核委托。",
+    "specificFilesDominant": false,
+    "specificObjectDecision": false,
+    "uniqueMainTask": true,
+    "variableDrift": [
+      "candidate将指定的2026年第一季度报告判定为不可核验并要求替换，但attachmentPlan仍将同一文件描述为正式、具体且可支持2026年一季度经营核对的核心附件。",
+      "candidate的usedAttachmentNames为空，相关附件和attachmentPlan却继续指定同一PDF，实际使用状态与附件规划状态不一致。",
+      "candidate的question为“blocked”，但attachmentPlan.objectSupportInQuestion声称题面已明确公司、报告期及经营判断问题。",
+      "candidate说明尚未形成产物收束段，deliverableRationale却已将xlsx确定为承载复算、原因、证据边界和待补材料的交付物。",
+      "attachmentPlan提供URL、SHA-256、字节数及正文摘要，但没有真实附件正文、页码或可复核摘录，元数据完整度被误当成对象级证据完整度。",
+      "一级目录虽填写为“企业经营与战略决策”，输入未提供飞书配置项原表，无法核验其是否为配置项原样值。"
+    ]
+  }
+}

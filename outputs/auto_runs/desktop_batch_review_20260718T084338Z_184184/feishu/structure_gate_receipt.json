@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 2,
+  "ok": true,
+  "status": "PASS",
+  "generatedAt": "2026-07-18T09:23:01.190Z",
+  "policyId": "l1-phase3-source-driven-v1",
+  "policyVersion": 1,
+  "gateStatus": "PASS",
+  "authorizationMode": "DIRECT_PASS",
+  "reviewAuthorization": null,
+  "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\feishu\\structure_gate_report.json",
+  "reportHash": "8066793f96c2c712f39f0ed061d13e3e28bae196e7c5998a92dbf4cc760f51a7",
+  "batchHash": "e54cfe22fd97aed2cc6d053920e30231ea9ab67cc7c8e78b213a1e6b51720b55",
+  "rowHashes": [
+    {
+      "index": 0,
+      "uid": "裴硬_20260718_desktop_batch_review_01",
+      "sheetRow": 999999,
+      "hash": "5e7141fc4ba93e043534f1fbcd8b2f757c569819b00bdd6df073076133a0908c"
+    }
+  ]
+}

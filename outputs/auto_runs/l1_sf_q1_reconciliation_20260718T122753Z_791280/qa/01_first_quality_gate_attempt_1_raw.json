@@ -1,0 +1,23 @@
+{
+  "runnerId": "exact-two-quality-gates-v2-codex-session",
+  "provider": "codex-session",
+  "model": "gpt-5.6-sol",
+  "sourcePromptHash": "93535a1acb9ac383852c526e8f31c797e89a77a0bf1e9ba8ed3e2a8b7c4bf620",
+  "renderedPromptHash": "3357ec443bef33b0c351f23322a7dd040af977c048687bd19363d90bbd2162b7",
+  "completedAt": "2026-07-18T12:42:59.701Z",
+  "parsed": {
+    "pass": false,
+    "issues": [
+      {
+        "rule": "calculation-too-simple",
+        "evidence": "题目要求将三份材料中的指标“统一记录单位设为千元”，实质包含直接单位换算，但未同时具备多变量或多维数据、时间序列、约束或情景、数据清洗、口径复核中的至少两类计算复杂度。",
+        "repair": "将本轮主诉求改为跨月经营简报与一季报的指标口径核对，例如同时处理月度与季度时间范围、收入边界差异、累计值衔接及单位清洗，并要求解释无法直接对应的指标；单位换算仅作为附带步骤。"
+      },
+      {
+        "rule": "mechanical-task-dominant",
+        "evidence": "当前交付主要是逐条抄录材料名称、披露期间、指标原值、原单位和页码，再进行单位转换及标记，来源冲突处理、口径差异解释或业务判断不足，机械建表占主导。",
+        "repair": "把主诉求聚焦为核验三份材料能否形成一致的一季度指标来源链，要求识别并说明披露范围、累计期间、业务边界和指标定义的差异或冲突；底表作为承载核验结论的附带产物。"
+      }
+    ]
+  }
+}

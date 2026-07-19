@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "kind": "doubao-feishu-submission-package",
+  "status": "INCOMPLETE_NOT_SUBMITTED",
+  "generatedAt": "2026-07-17T17:56:57.033Z",
+  "jobId": "l1-account2-accessibility-poc-20260718",
+  "configHash": "b4b3c6bc32511e88a4666fb3b86bfd588faa1254a87d9e2ed6c25a86de45c716",
+  "blockingReason": "final-product-not-accepted",
+  "productAcceptance": {
+    "accepted": false,
+    "items": [
+      {
+        "accepted": false,
+        "requestedFormat": "excel",
+        "status": "missing"
+      }
+    ],
+    "overall": "missing-or-unacceptable",
+    "requirement": {
+      "allowEquivalentOnline": true,
+      "allowUnavailableBestEffort": true,
+      "required": true,
+      "requestedFormats": [
+        "excel"
+      ]
+    }
+  },
+  "roundCount": 6,
+  "conversation": {
+    "conversationId": "38435087616164866",
+    "feedbackUrl": "https://www.doubao.com/thread/xc25822a095508ec6b76d4ff28f6fd8e4",
+    "logId": "20260718015319A0D2E1AF7EEB375349A7",
+    "shareLink": "https://www.doubao.com/thread/x45876be4ea67852f9df4a9a9ce3da6b8",
+    "allMessagesSelected": true,
+    "selectedMessageCount": 8
+  },
+  "rows": [
+    {
+      "roundNumber": 1,
+      "prompt": "公司准备把跨地区员工培训改成常态化直播，考虑到部分同事需要实时字幕、屏幕阅读器或全键盘操作，目前候选平台定为腾讯会议、钉钉和飞书。附件一是2026年7月18日下载的腾讯会议官方会议字幕说明，这只是个起点，不代表它的整体无障碍能力已经核实。\n\n这阶段先不推荐平台，也不做最终表格。麻烦结合附件一，并查找截至2026年7月18日仍能访问的这三家官方产品文档和帮助页面，先整理一份证据清单。需要逐个平台列出：实时字幕、翻译字幕、屏幕阅读器、键盘与焦点操作、录制和转录留存、主持人及管理员控制分别能核实到什么程度，同时记录下对应的页面标题、链接、访问日期、适用端、版本和套餐。\n\n官方没写清楚的地方直接留空标为待确认，不要用媒体测评或自行推断。整理完后，请指出目前证据冲突最大的地方，以及最需要安排实测的3个缺口。后续我们再收窄试点验证脚本和优先平台，等全部核清后再做可下载电子表格。",
+      "response": "近 7 天专业版功能的免费额度用完了，我得休息一阵子了，预计 7 月 25 日 01:08 恢复为你服务，到时我再接着帮你。先使用快速模式，和我聊聊别的吧。开通豆包专业版，免等待，继续为你服务。",
+      "responseIdentity": "response-1",
+      "productScreenshot": {
+        "capturedAt": "2026-07-17T17:25:31.922Z",
+        "pass": true,
+        "responseCount": 1,
+        "responseIdentity": "response-1",
+        "sha256": "6c65c6053021e88cd614d46988e8ed3239d8c9fb088c18d67bf011f6747be947",
+        "sizeBytes": 49692,
+        "artifactPath": "result.artifacts/round-01-response.png"
+      },
+      "humanEvaluation": {
+        "evidenceQuote": "近 7 天专业版功能的免费额度用完了，我得休息一阵子了",
+        "labels": [
+          "其他"
+        ],
+        "note": "你这回复就只提示了额度耗尽和预计恢复时间，根本没给我整理腾讯会议、钉钉、飞书的官方证据清单。我要的页面标题、链接、访问日期、适用端、版本、套餐、证据冲突，还有那3个实测缺口，全都没有，这回复完全没法用。",
+        "score": 0,
+        "vote": "dislike"
+      }
+    },
+    {
+      "roundNumber": 2,
+      "prompt": "你刚才提到要等7月25日恢复，但现在没有任何官方证据可以核验。我们先从腾讯会议开始，请按实时字幕、翻译字幕、屏幕阅读器、键盘与焦点操作、录制和转录留存、主持人及管理员控制这六项，整理一下官方页面的证据。每一项都要附上页面标题、链接、访问日期、适用端、版本和套餐。如果官方没有写明，就直接标为“待确认”，不要自己推测。",
+      "response": "近 7 天专业版功能的免费额度用完了，我得休息一阵子了，预计 7 月 25 日 01:08 恢复为你服务，到时我再接着帮你。先使用快速模式，和我聊聊别的吧。开通豆包专业版，免等待，继续为你服务。",
+      "responseIdentity": "response-2",
+      "productScreenshot": {
+        "capturedAt": "2026-07-17T17:26:37.272Z",
+        "pass": true,
+        "responseCount": 2,
+        "responseIdentity": "response-2",
+        "sha256": "6c65c6053021e88cd614d46988e8ed3239d8c9fb088c18d67bf011f6747be947",
+        "sizeBytes": 49692,
+        "artifactPath": "result.artifacts/round-02-response.png"
+      },
+      "humanEvaluation": {
+        "evidenceQuote": "近 7 天专业版功能的免费额度用完了，我得休息一阵子了，预计 7 月 25 日 01:08 恢复为你服务",
+        "labels": [
+          "其他"
+        ],
+        "note": "你这次回复只弹了额度耗尽和恢复时间的提示，完全没给腾讯会议六项无障碍能力的任何官方证据。而且页面标题、链接、访问日期、适用端、版本和套餐信息全都没有，这样本轮根本没法用来做证据核验或者后续试点安排。",
+        "score": 0,
+        "vote": "dislike"
+      }
+    },
+    {
+      "roundNumber": 3,
+      "prompt": "你前面只说了专业版额度用完，还是没有给到能核实的内容。咱们先把范围缩小到腾讯会议的“实时字幕”和“翻译字幕”这两项。请只根据截至2026年7月18日还能访问的腾讯会议官方页面，分别列出页面标题、链接、访问日期、适用端、版本和套餐。如果官方没写清楚，就直接标“待确认”，不用自己推测。",
+      "response": "近 7 天专业版功能的免费额度用完了，我得休息一阵子了，预计 7 月 25 日 01:08 恢复为你服务，到时我再接着帮你。先使用快速模式，和我聊聊别的吧。开通豆包专业版，免等待，继续为你服务。",
+      "responseIdentity": "response-3",
+      "productScreenshot": {
+        "capturedAt": "2026-07-17T17:31:51.797Z",
+        "pass": true,
+        "responseCount": 3,
+        "responseIdentity": "response-3",
+        "sha256": "6c65c6053021e88cd614d46988e8ed3239d8c9fb088c18d67bf011f6747be947",
+        "sizeBytes": 49692,
+        "artifactPath": "result.artifacts/round-03-response.png"
+      },
+      "humanEvaluation": {
+        "evidenceQuote": "近 7 天专业版功能的免费额度用完了，我得休息一阵子了，预计 7 月 25 日 01:08 恢复为你服务",
+        "labels": [
+          "其他"
+        ],
+        "note": "这次的回复还是只说了额度耗尽和恢复时间，完全没给到我这轮要的腾讯会议“实时字幕”和“翻译字幕”的官方证据。里面也没有页面标题、链接、访问日期、适用端、版本或套餐信息，这让我根本没法拿去核验。",
+        "score": 0,
+        "vote": "dislike"
+      }
+    },
+    {
+      "roundNumber": 4,
+      "prompt": "你之前提到预计7月25日恢复，但现在腾讯会议的两项字幕能力还是没有可核验的内容。咱们先只核对“实时字幕”这部分：请提供截至2026年7月18日依然可以访问的腾讯会议官方页面标题、链接和访问日期，以及页面上明确写出的适用端、版本和套餐。如果页面没写明，相关字段统一标为“待确认”，不要自己推测。",
+      "response": "近 7 天专业版功能的免费额度用完了，我得休息一阵子了，预计 7 月 25 日 01:08 恢复为你服务，到时我再接着帮你。先使用快速模式，和我聊聊别的吧。开通豆包专业版，免等待，继续为你服务。",
+      "responseIdentity": "response-4",
+      "productScreenshot": {
+        "capturedAt": "2026-07-17T17:32:53.910Z",
+        "pass": true,
+        "responseCount": 4,
+        "responseIdentity": "response-4",
+        "sha256": "6c65c6053021e88cd614d46988e8ed3239d8c9fb088c18d67bf011f6747be947",
+        "sizeBytes": 49692,
+        "artifactPath": "result.artifacts/round-04-response.png"
+      },
+      "humanEvaluation": {
+        "evidenceQuote": "近 7 天专业版功能的免费额度用完了，我得休息一阵子了，预计 7 月 25 日 01:08 恢复为你服务",
+        "labels": [
+          "其他"
+        ],
+        "note": "这轮回复光说专业版额度已用完，让我等待或者开通服务，根本没提供我要求的腾讯会议实时字幕官方页面标题、链接和访问日期，也没有去核对适用端、版本和套餐。当前给出的内容没法用来做证据核验。",
+        "score": 0,
+        "vote": "dislike"
+      }
+    },
+    {
+      "roundNumber": 5,
+      "prompt": "前面提到预计7月25日恢复，但实时字幕这块还是没有可核验的来源。麻烦先只补充一条截至2026年7月18日还能访问的腾讯会议官方实时字幕页面证据：提供页面标题、官方链接和访问日期，并逐字摘录页面里能证明支持实时字幕的原文。其他字段暂时先不用整理。",
+      "response": "近 7 天专业版功能的免费额度用完了，我得休息一阵子了，预计 7 月 25 日 01:08 恢复为你服务，到时我再接着帮你。先使用快速模式，和我聊聊别的吧。开通豆包专业版，免等待，继续为你服务。",
+      "responseIdentity": "block_6fd2bd60-8207-11f1-bdd2-75475c3b515d",
+      "productScreenshot": {
+        "capturedAt": "2026-07-17T17:46:31.005Z",
+        "pass": true,
+        "responseCount": 4,
+        "responseIdentity": "block_6fd2bd60-8207-11f1-bdd2-75475c3b515d",
+        "sha256": "6c65c6053021e88cd614d46988e8ed3239d8c9fb088c18d67bf011f6747be947",
+        "sizeBytes": 49692,
+        "artifactPath": "result.artifacts/round-05-response.png"
+      },
+      "humanEvaluation": {
+        "evidenceQuote": "近 7 天专业版功能的免费额度用完了，我得休息一阵子了，预计 7 月 25 日 01:08 恢复为你服务，到时我再接着帮你",
+        "labels": [
+          "其他"
+        ],
+        "note": "连续第5轮了，给我的回复还是只有专业版额度耗尽和恢复时间。这轮要求的腾讯会议官方页面标题、链接、访问日期还有原文证据全都没提供。现在的回复根本没法用来做无障碍能力核验，也没法形成可下载电子表格或者平台试点结论。",
+        "score": 0,
+        "vote": "dislike"
+      }
+    },
+    {
+      "roundNumber": 6,
+      "prompt": "前5轮的反馈都是专业版额度耗尽以及7月25日恢复时间，现在没法继续核验了，不用再重复检索。麻烦直接整理一份本次试点验证的未完成清单，里面需要列出实时字幕、翻译字幕、屏幕阅读器、键盘与焦点操作、录制和转录留存、主持人及管理员控制这六类还缺少的官方证据，同时说明一下可下载电子表格和优先平台结论目前都还没形成。另外，请写明7月25日恢复后首先要核验的腾讯会议官方字幕页面字段。整理时客观陈述现状即可，不要写成已完成，也别推荐平台。",
+      "response": "近 7 天专业版功能的免费额度用完了，我得休息一阵子了，预计 7 月 25 日 01:08 恢复为你服务，到时我再接着帮你。先使用快速模式，和我聊聊别的吧。开通豆包专业版，免等待，继续为你服务。",
+      "responseIdentity": "block_64d27760-8208-11f1-bdd2-75475c3b515d",
+      "productScreenshot": {
+        "capturedAt": "2026-07-17T17:53:22.282Z",
+        "pass": true,
+        "responseCount": 4,
+        "responseIdentity": "block_64d27760-8208-11f1-bdd2-75475c3b515d",
+        "sha256": "6c65c6053021e88cd614d46988e8ed3239d8c9fb088c18d67bf011f6747be947",
+        "sizeBytes": 49692,
+        "artifactPath": "result.artifacts/round-06-response.png"
+      },
+      "humanEvaluation": {
+        "evidenceQuote": "近 7 天专业版功能的免费额度用完了，我得休息一阵子了，预计 7 月 25 日 01:08 恢复为你服务，到时我再接着帮你。",
+        "labels": [
+          "其他"
+        ],
+        "note": "这次的回复还是只有额度耗尽和恢复时间的提示。引用部分既没有按要求整理出六类官方证据的未完成清单，也没有说明电子表格及优先平台结论还没形成，更没有列出等额度恢复后需要先核验的腾讯会议字幕页面字段。这轮的回复没法用。",
+        "score": 0,
+        "vote": "dislike"
+      }
+    }
+  ],
+  "target": null,
+  "writeback": {
+    "applied": false,
+    "policy": "blocked-because-final-product-was-not-accepted",
+    "readbackVerified": false
+  }
+}

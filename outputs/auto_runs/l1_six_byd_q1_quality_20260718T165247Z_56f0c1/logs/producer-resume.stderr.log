@@ -1,0 +1,8 @@
+file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/build/automation/produce_l1_single_task.mjs:859
+  throw new Error(JSON.stringify({
+        ^
+
+Error: {"roleConsistency":"PASS","roleErrors":[],"productionTrace":"FAIL","processFindings":[{"uid":"沈礼_20260719_l1_byd_q1_quality_01","rule":"second-language-gate-raw-parsed-result-missing"}],"release":{"ok":false,"phase":"structure","status":"FAIL"},"naturalnessFindings":[],"structureFindings":[{"level":"FAIL","rule":"information-coverage-insufficient","index":0,"uid":"沈礼_20260719_l1_byd_q1_quality_01","message":"题面有效信息单元不足，不能靠空话或边界句凑长度。","detectedUnits":["actor","time","trigger","facts","gap","evidence","deliverable","acceptance"],"missingGroups":["decision"]}]}
+    at file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/build/automation/produce_l1_single_task.mjs:859:9
+
+Node.js v26.5.0

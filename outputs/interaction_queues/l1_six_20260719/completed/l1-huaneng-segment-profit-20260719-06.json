@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "kind": "doubao-interaction-queue-item",
+  "state": "completed",
+  "jobId": "l1-huaneng-segment-profit-20260719-06",
+  "enqueuedAt": "2026-07-18T18:13:58.100Z",
+  "attempt": 1,
+  "configPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-huaneng-segment-profit-20260719-06\\job.json",
+  "configSha256": "2fd10973016ab91b92368518744c72362e311150558064c1ef71bd76ab1ef682",
+  "packageManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-huaneng-segment-profit-20260719-06\\manifest.json",
+  "packageManifestSha256": "3bba4bc59642337dd65f93e7ff236dbe8c45b83f9bd0689d3b2b10a0dacb5473",
+  "finishedAt": "2026-07-18T19:41:01.776Z",
+  "resultPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\results\\l1-huaneng-segment-profit-20260719-06.json",
+  "lastError": null
+}

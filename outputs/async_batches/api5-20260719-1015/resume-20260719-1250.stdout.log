@@ -1,0 +1,77 @@
+{
+  "ok": true,
+  "batchId": "api5-20260719-1015",
+  "batchRoot": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015",
+  "batchSpecPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\batch_spec.json",
+  "batchStatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\pipeline_state.json",
+  "queueRoot": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue",
+  "production": {
+    "taskCount": 0,
+    "producedCount": 0,
+    "enqueuedCount": 0,
+    "failedCount": 0
+  },
+  "interactionPool": {
+    "ok": true,
+    "value": {
+      "browserContextId": "1084C633D11647B8992D48E50C635F55",
+      "handled": 2,
+      "workers": [
+        {
+          "handled": 1,
+          "jobs": [
+            {
+              "jobId": "l1-async-api5-20260719-1015-03",
+              "resultPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\results\\l1-async-api5-20260719-1015-03.json",
+              "status": "complete"
+            }
+          ],
+          "targetId": "B5A3CF92CF77EE3846553E1E7250EE56",
+          "workerId": "slot-1-B5A3CF92CF77EE3846553E1E7250EE56"
+        },
+        {
+          "handled": 1,
+          "jobs": [
+            {
+              "jobId": "l1-async-api5-20260719-1015-04",
+              "resultPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\results\\l1-async-api5-20260719-1015-04.json",
+              "status": "complete"
+            }
+          ],
+          "targetId": "D7D0C95D27E7EBC90AB80754B3B5A5EF",
+          "workerId": "slot-2-D7D0C95D27E7EBC90AB80754B3B5A5EF"
+        },
+        {
+          "handled": 0,
+          "jobs": [],
+          "targetId": "D7F9BF5AF432877197B0C1AA9F2D24BB",
+          "workerId": "slot-3-D7F9BF5AF432877197B0C1AA9F2D24BB"
+        }
+      ]
+    }
+  },
+  "queueStatus": {
+    "schemaVersion": 1,
+    "queueRoot": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue",
+    "counts": {
+      "pending": 0,
+      "running": 0,
+      "completed": 5,
+      "paused": 0,
+      "failed": 0
+    },
+    "jobs": {
+      "pending": [],
+      "running": [],
+      "completed": [
+        "l1-async-api5-20260719-1015-01",
+        "l1-async-api5-20260719-1015-02",
+        "l1-async-api5-20260719-1015-03",
+        "l1-async-api5-20260719-1015-04",
+        "l1-async-api5-20260719-1015-05"
+      ],
+      "paused": [],
+      "failed": []
+    }
+  }
+}

@@ -3,6 +3,7 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 
 import { REPO_ROOT, writeJsonAtomic } from "./run_context.mjs";
+import { resolveProductionProfile } from "./production_profile.mjs";
 
 export const SITUATED_GENERATION_PROMPT_VERSION = "situated-requester-prompts-v1";
 
@@ -87,18 +88,22 @@ ${jsonBlock(sourceCards)}
 ${jsonBlock(recentBatchVoiceSignals)}`);
 }
 
-export function buildRequesterPrompt({ sceneCard, factLedger, productFormats, candidateCount = 3, recentBatchVoiceSignals = [] } = {}) {
+export function buildRequesterPrompt({ sceneCard, factLedger, productFormats = "", productionProfile = "l1", candidateCount = 3, recentBatchVoiceSignals = [] } = {}) {
   required(sceneCard, "sceneCard");
   required(factLedger, "factLedger");
-  required(productFormats, "productFormats");
+  const profile = resolveProductionProfile(productionProfile);
+  if (!profile.productFormat.optional) required(productFormats, "productFormats");
   if (!Number.isInteger(candidateCount) || candidateCount < 2 || candidateCount > 6) {
     throw new TypeError("candidateCount must be an integer between 2 and 6.");
   }
-  return promptEnvelope("requester", `你现在就是角色卡中的实际需求方，不是出题员、审稿人、故事作者或全知叙述者。你正在真实工作渠道里给一个能完成任务的助手发消息。
+  const formatInstruction = String(productFormats).trim()
+    ? `用人类名称提出 ${productFormats} 对应的全部交付物。`
+    : "不强行指定文件格式；把当前轮次要解决的问题和最终期望内容说清楚即可。";
+  return promptEnvelope("requester", `你现在就是角色卡中的实际需求方，不是出题员、审稿人、故事作者或全知叙述者。你正在真实工作渠道里给一个能完成任务的助手发消息。这是一条${profile.label}任务。
 
 只使用事实账本中该角色有权知道的信息。先从角色眼下真正关心或卡住的事情说起，再自然提出委托；不介绍角色卡，不解释世界观，不复述生产规则，不为了“真人感”制造情绪、老板、会议、日期、金额或冲突。未知内容保持未知，但用这个岗位会说的话表达，不写模型免责声明。
 
-分别生成 ${candidateCount} 条完整候选。候选之间应来自不同的真实注意焦点或信息进入顺序，而不是替换同义词、轮换固定开头或强制套用风格标签。参考正式表人工直通稿的组织方式：让具体岗位说明正在处理的真实对象和资料链，交代附件能证明什么、哪些内部事实仍待补，再自然落到产物用途和验收回查。题面可以连写，也可以按真实工作消息自然分段；段间只能使用一个换行符，禁止连续换行形成空白行，不得写成项目符号或编号规格单。系统生成记录不使用“请”，但必须保留明确委托，不能退化成无主语文件规格；任何请求句式都不能成为固定开头。用人类名称提出 ${productFormats} 对应的全部交付物。
+分别生成 ${candidateCount} 条完整候选。候选之间应来自不同的注意焦点或信息进入顺序，而不是替换同义词、轮换固定开头或强制套用风格标签。参考正式表人工直通稿的组织方式：让具体岗位说明正在处理的对象和资料链，交代附件或公开来源能证明什么、哪些内部事实仍待补，再落到当前轮次目的和后续用途。采用克制、准确的内部任务说明风格，不通过“咱们、说死、谁也不敢、卡得动不了”等表演型口语制造真人感。题面可以连写，也可以按业务意群自然分段；段间只能使用一个换行符，禁止连续换行形成空白行，不得写成项目符号或编号规格单。必须保留明确委托，不能退化成无主语文件规格；可以根据语境使用“请”“帮我”或工作指令，但任何请求句式都不能成为固定开头。${formatInstruction}
 
 每个候选同时输出不可见的校验 sidecar：
 {
@@ -128,11 +133,12 @@ ${jsonBlock(factLedger)}
 ${jsonBlock(recentBatchVoiceSignals)}`);
 }
 
-export function buildFieldCompilerPrompt({ selectedCandidate, sceneCard, factLedger, sourcePackage, outputColumns = [] } = {}) {
+export function buildFieldCompilerPrompt({ selectedCandidate, sceneCard, factLedger, sourcePackage, productionProfile = "l1", outputColumns = [] } = {}) {
   required(selectedCandidate, "selectedCandidate");
   required(sceneCard, "sceneCard");
   required(factLedger, "factLedger");
-  return promptEnvelope("field-compiler", `你是“L2字段编译 agent”。输入中的 question 已由真实请求者视角选定并冻结。你只能把它原样放入B列，禁止润色、扩写、缩写、换标点、补请求句或把其他字段的规格说明倒灌回题面。
+  const profile = resolveProductionProfile(productionProfile);
+  return promptEnvelope("field-compiler", `你是“${profile.label}字段编译 agent”。输入中的 question 已由真实请求者视角选定并冻结。你只能把它原样放入B列，禁止润色、扩写、缩写、换标点、补请求句或把其他字段的规格说明倒灌回题面。
 
 根据事实账本、来源资料和冻结题面生成其余结构化字段。G/N/O 可以结构化，但不得制造题面中不存在的新事实；关键步骤按真实动作排列。若发现题面与资料矛盾，输出 blocked 和原因，不能自行重写B列。
 
@@ -160,16 +166,17 @@ ${jsonBlock(factLedger)}
 ${jsonBlock(sourcePackage ?? {})}`);
 }
 
-export function buildOutOfCharacterAuditPrompt({ candidate, sceneCard, factLedger, productFormats, siblingCandidates = [] } = {}) {
+export function buildOutOfCharacterAuditPrompt({ candidate, sceneCard, factLedger, productFormats = "", productionProfile = "l1", siblingCandidates = [] } = {}) {
   required(candidate, "candidate");
   required(sceneCard, "sceneCard");
   required(factLedger, "factLedger");
-  required(productFormats, "productFormats");
+  const profile = resolveProductionProfile(productionProfile);
+  if (!profile.productFormat.optional) required(productFormats, "productFormats");
   return promptEnvelope("audit", `你是独立的“出戏审核 agent”，不能替作者润色。审核候选是否真的由角色卡中的人说出，而不是统一出题模型的声音。
 
 逐项判定：
 1. requestContract 与 roleTrace 中每个非空 span 是否都能在 question 中逐字找到。
-2. 请求动作和 ${productFormats} 全部交付物是否清楚，交付物是否有真实用途。
+2. 请求动作${String(productFormats).trim() ? `和 ${productFormats} 全部交付物` : "、当前轮次目标与最终期望内容"}是否清楚，指定的交付物是否有真实用途。
 3. 角色是否说出了超出职责或 knownFactIds 的法规体系、证据分类、数字、日期、引语或内部事实。
 4. 是否用“作为一名”自报身份，或把隐藏人物设定、世界观和生产规则写进题面。
 5. 是否凭空增加老板催办、临时会议、截止时间、金额、部门争执或戏剧化对白。

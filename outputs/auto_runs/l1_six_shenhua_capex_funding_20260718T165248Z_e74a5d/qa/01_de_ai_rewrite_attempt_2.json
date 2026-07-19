@@ -1,0 +1,149 @@
+{
+  "kind": "de-ai-question-rewrite",
+  "policyId": "mugua-gemini-de-ai-rewrite-v2",
+  "uid": "沈礼_20260719_l1_shenhua_capex_funding_02",
+  "generatedAt": "2026-07-18T17:29:59.013Z",
+  "provider": "mugua-openai-compatible",
+  "endpoint": "https://api.mugua.link/v1/chat/completions",
+  "model": "gemini-3.1-pro-preview",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 1380,
+    "outputTokens": 1003,
+    "totalTokens": 2383
+  },
+  "promptHash": "281817ad9d606e3e49066172055081de9bf04da5c9e9988ab4a93de9f6700dd3",
+  "sourceQuestionHash": "2489ba2efb48cc149e251551a51eb8e1afda31e429f9a32c21a3327cd743d318",
+  "rewrittenQuestionHash": "cbe09fd312a4b175ef00515ddf3b46921dfa68529c4925bf5df1b6f6f2995756",
+  "selectedAttempt": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "pass": false,
+      "visibleLength": 272,
+      "findingRules": [
+        "rewrite-exact-copy-run-too-long"
+      ]
+    },
+    {
+      "attempt": 2,
+      "pass": true,
+      "visibleLength": 334,
+      "findingRules": []
+    }
+  ],
+  "rewrite": {
+    "question": "请处理一下《中国神华能源股份有限公司2026年第一季度报告.pdf》里的数据，重点复核重大资产交易纳入新资产后，2026年资本开支的增量具体落在了哪些业务板块，同时评估当前披露的信息能多大程度上说明资金承接的情况。\n\n最后需要输出一份Excel表格。表里要体现出调整前后的各业务资本开支情况，算出具体的增量和它们所占的比例。另外，还要把一季度的经营现金流作为参考放进去，并列出目前已经披露出来的资金来源渠道，同时留出待补分配的栏位，以及经营目标发生的变化。\n\n数据处理时记得标明对应的报告页码，注明未经审计的状态，并把派生计算的过程写清楚。注意一定要分清哪些是报告里的原话，哪些是合理推断或者还需要确认的事项，千万别把没披露的资金分配细节或者业务归因当成确定的事实来写。",
+    "requestContract": {
+      "requestSpan": "最后需要输出一份Excel表格。",
+      "action": "最后",
+      "outputs": [
+        {
+          "format": "xlsx",
+          "humanName": "Excel",
+          "purpose": "供后续执行和留痕使用"
+        }
+      ]
+    },
+    "roleTrace": {
+      "blockageSpan": "请处理一下《中国神华能源股份有限公司2026年第一季度报告.pdf》里的数据，重点复核重大资产交易纳入新资产后，2026年资本开支的增量具体落在了哪些业务板块，同时评估当前披露的信息能多大程度上说明资金承接的情况。",
+      "motivationSpan": "",
+      "downstreamUseSpan": "最后需要输出一份Excel表格。"
+    },
+    "usedFactIds": [
+      "shenhua-q1-core",
+      "shenhua-transaction-scope",
+      "shenhua-target-adjustment",
+      "shenhua-capex-total",
+      "shenhua-capex-mix",
+      "shenhua-funding-boundary"
+    ],
+    "deliberatelyOmitted": [],
+    "flowStages": [
+      {
+        "stage": "证据归位",
+        "evidence": "事实包中的公开材料与待补信息",
+        "decision": "区分可确认规则和未知现场状态",
+        "next": "证据足够则形成执行对象，不足则进入补证"
+      },
+      {
+        "stage": "执行对象核对",
+        "evidence": "已归位的对象关系与状态记录",
+        "decision": "制作调整前后资本开支核对表，识别增量集中度并把经营现金流与计划资金需求并列展示，资金来源只保留报告披露的渠道和待补分配栏。",
+        "next": "符合条件则进入小范围验证，否则停止推进"
+      },
+      {
+        "stage": "小范围验证",
+        "evidence": "试点输入与实际返回记录",
+        "decision": "判断结果是否满足扩大范围的条件",
+        "next": "通过则推进，失败则退回原状态并留痕"
+      },
+      {
+        "stage": "交接收束",
+        "evidence": "判断依据、验证结果与回退记录",
+        "decision": "确认下游拿到一致结论",
+        "next": "供资本计划同事跟踪项目预算和后续融资披露。"
+      }
+    ],
+    "selfAudit": {
+      "factsPreserved": true,
+      "formatsPreserved": true,
+      "processChainExplicit": true,
+      "failureOrRollbackExplicit": true,
+      "noInventedFacts": true,
+      "noAiShell": true
+    }
+  },
+  "validation": {
+    "pass": true,
+    "visibleLength": 331,
+    "similarity": [
+      {
+        "referenceIndex": 1,
+        "editSimilarity": 0.3801916932907349,
+        "trigramJaccard": 0.1912442396313364,
+        "longestExactCopyRun": 29,
+        "longestExactCopySpan": "《中国神华能源股份有限公司2026年第一季度报告.pdf》"
+      },
+      {
+        "referenceIndex": 2,
+        "editSimilarity": 0.021341463414634165,
+        "trigramJaccard": 0.009852216748768473,
+        "longestExactCopyRun": 6,
+        "longestExactCopySpan": "2026年第"
+      }
+    ],
+    "findings": [],
+    "factGuard": {
+      "ok": true,
+      "candidateAnchors": {
+        "numbers": [
+          "2026年"
+        ],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "unsupported": {
+        "numbers": [],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "errors": []
+    }
+  },
+  "deterministicStyleCleanup": {
+    "applied": true,
+    "rules": [
+      "remove-banned-politeness",
+      "remove-upload-meta-language"
+    ],
+    "sourceApiQuestionHash": "47ca484d9a39c67323ff97c4a6315bad6b14f0e66d038ab4abe36b06d54bf319"
+  },
+  "postDeAiAudit": {
+    "pass": true,
+    "issues": [],
+    "factsPreserved": true,
+    "attachmentsPreserved": true,
+    "visibleTextClean": true
+  }
+}

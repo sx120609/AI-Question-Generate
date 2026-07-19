@@ -1,0 +1,43 @@
+{
+  "jobId": "replace-with-unique-job-id",
+  "attachmentRoot": "C:\\DoubaoAutomation\\jobs\\replace-with-unique-job-id\\attachments",
+  "initialAttachmentNames": [
+    "附件一_真实业务对象记录.xlsx"
+  ],
+  "productionEvidence": {
+    "recordUid": "替换为二期生产轨迹中的真实recordUid",
+    "productionTracePath": "C:\\DoubaoAutomation\\jobs\\replace-with-unique-job-id\\evidence\\qa\\production_trace.json",
+    "productionTraceGateReceiptPath": "C:\\DoubaoAutomation\\jobs\\replace-with-unique-job-id\\evidence\\feishu\\production_trace_gate_receipt.json",
+    "releaseGateReceiptPath": "C:\\DoubaoAutomation\\jobs\\replace-with-unique-job-id\\evidence\\feishu\\release_gate_receipt.json",
+    "downloadManifestPath": "C:\\DoubaoAutomation\\jobs\\replace-with-unique-job-id\\evidence\\sources\\download_manifest.json"
+  },
+  "maxRounds": 6,
+  "mode": "openai-compatible",
+  "taskGoal": "说明这道完整端到端任务最终需要得到什么可使用的交付物。",
+  "successCriteria": [
+    "列出可核验的成功条件",
+    "说明哪些缺失会导致回复不可用"
+  ],
+  "initialPrompt": "填写首轮完整端到端任务。",
+  "responseTimeoutMs": 300000,
+  "interactionRewrite": {
+    "type": "openai-compatible",
+    "baseUrl": "https://api.mugua.link/v1",
+    "model": "gemini-3.1-pro-preview",
+    "apiKeyEnv": "DE_AI_REWRITE_API_KEY",
+    "temperature": 0.55,
+    "timeoutMs": 180000
+  },
+  "promptPreflight": {
+    "type": "local-codex",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "timeoutMs": 360000
+  },
+  "policy": {
+    "type": "local-codex",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "timeoutMs": 360000
+  }
+}

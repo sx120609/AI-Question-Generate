@@ -1,0 +1,628 @@
+{
+  "schemaVersion": 1,
+  "kind": "naturalness-gate-report",
+  "gateId": "naturalness-gate-v6",
+  "metricsVersion": "naturalness-metrics-v6",
+  "questionLanguagePolicyId": "corpus-calibrated-intent-punctuation-v4",
+  "generatedAt": "2026-07-18T06:53:22.541Z",
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\workstation_acceptance_20260718T054801Z_df4628\\drafts\\l1_questions.tsv",
+  "candidateHash": "4a907438da47a4d5268ea3bc9c9f81e242ca9f529cf4125cc3248c0000a17fad",
+  "baselinePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\workstation_acceptance_20260718T054801Z_df4628\\sources\\naturalness_baseline.json",
+  "baselineHash": "0ec3102d5fa14b1b0aa65dcbd3744583646a65adf1b5772598438d80fc79812a",
+  "baselineId": "l1-phase3-reference-v1",
+  "baselineSampleCount": 5,
+  "effectiveThresholds": {
+    "row": {
+      "disclaimerSentenceDensity": {
+        "metric": "disclaimerSentenceDensity",
+        "direction": "upper",
+        "review": 0.4714,
+        "fail": 0.4943,
+        "source": {
+          "type": "benchmark-quantile",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "reviewQuantile": 0.9,
+          "failQuantile": 0.98
+        }
+      },
+      "disclaimerSentenceCount": {
+        "metric": "disclaimerSentenceCount",
+        "direction": "upper",
+        "review": 3.6,
+        "fail": 3.92,
+        "source": {
+          "type": "benchmark-quantile",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "reviewQuantile": 0.9,
+          "failQuantile": 0.98
+        }
+      },
+      "concreteFactsPer100Chars": {
+        "metric": "concreteFactsPer100Chars",
+        "direction": "lower",
+        "review": 0.624,
+        "source": {
+          "type": "benchmark-quantile",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "reviewQuantile": 0.1
+        }
+      },
+      "templateMarkerCount": {
+        "metric": "templateMarkerCount",
+        "direction": "upper",
+        "review": 1.2,
+        "source": {
+          "type": "benchmark-quantile",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "reviewQuantile": 0.9
+        }
+      },
+      "minimumDisclaimerSentencesForFail": {
+        "value": 2,
+        "source": {
+          "type": "row-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "minimumDisclaimerSentencesForFail",
+          "rationale": "One matched sentence may be legitimate evidence hygiene and cannot cause a hard fail by itself."
+        }
+      },
+      "requireDirectRequest": {
+        "value": false,
+        "source": {
+          "type": "row-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "requireDirectRequest",
+          "rationale": "Direct second-person requests are a corpus feature, not a universal requirement; actionable work-order phrasing is also valid."
+        }
+      },
+      "shortOpeningMaxCharacters": {
+        "value": 30,
+        "source": {
+          "type": "row-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "shortOpeningMaxCharacters"
+        }
+      },
+      "structuralPunctuationReviewCount": {
+        "value": 4,
+        "source": {
+          "type": "row-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "structuralPunctuationReviewCount"
+        }
+      },
+      "maximumTerminalSentenceCharacters": {
+        "value": 240,
+        "source": {
+          "type": "row-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "maximumTerminalSentenceCharacters"
+        }
+      }
+    },
+    "batch": {
+      "discourseSkeletonDominantShare": {
+        "metric": "discourseSkeletonDominantShare",
+        "direction": "upper",
+        "review": 0.5647,
+        "fail": 0.6837,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "observedCount": 1,
+          "observedShare": 0.2,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "fixedWordExcelTailShare": {
+        "metric": "fixedWordExcelTailShare",
+        "direction": "upper",
+        "review": 0.3512,
+        "fail": 0.5197,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "observedCount": 0,
+          "observedShare": 0,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "finalStepSelfCheckShare": {
+        "metric": "finalStepSelfCheckShare",
+        "direction": "upper",
+        "review": 0.3512,
+        "fail": 0.5197,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "observedCount": 0,
+          "observedShare": 0,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "stepCountModeShare": {
+        "metric": "stepCountModeShare",
+        "direction": "upper",
+        "review": 0.8573,
+        "fail": 0.905,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "observedCount": 3,
+          "observedShare": 0.6,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "weakScheduleShare": {
+        "metric": "weakScheduleShare",
+        "direction": "upper",
+        "review": 0.5647,
+        "fail": 0.6837,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "observedCount": 1,
+          "observedShare": 0.2,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "weakScheduleDominantShare": {
+        "metric": "weakScheduleDominantShare",
+        "direction": "upper",
+        "review": 0.5647,
+        "fail": 0.6837,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "observedCount": 1,
+          "observedShare": 0.2,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "minimumRows": {
+        "value": 8,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "minimumRows"
+        }
+      },
+      "reviewLevelTemplateSignalsForFail": {
+        "value": 2,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "reviewLevelTemplateSignalsForFail",
+          "rationale": "Several moderate batch-level repetitions together constitute template concentration."
+        }
+      },
+      "requestFrameDominantShare": {
+        "metric": "requestFrameDominantShare",
+        "direction": "upper",
+        "review": 0.8,
+        "fail": 0.95,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "requestFrameDominantShareReview",
+          "failParameter": "requestFrameDominantShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "shortOpeningShare": {
+        "metric": "shortOpeningShare",
+        "direction": "upper",
+        "review": 0.25,
+        "fail": 0.5,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "shortOpeningShareReview",
+          "failParameter": "shortOpeningShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "firstPunctuationTerminalShare": {
+        "metric": "firstPunctuationTerminalShare",
+        "direction": "upper",
+        "review": 0.25,
+        "fail": 0.5,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "firstPunctuationTerminalShareReview",
+          "failParameter": "firstPunctuationTerminalShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "firstSentenceCommaShare": {
+        "metric": "firstSentenceCommaShare",
+        "direction": "lower",
+        "review": 0.6,
+        "fail": 0.4,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "firstSentenceCommaShareReview",
+          "failParameter": "firstSentenceCommaShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "commaToPeriodRatio": {
+        "metric": "commaToPeriodRatio",
+        "direction": "lower",
+        "review": 1.1,
+        "fail": 0.8,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "commaToPeriodRatioReview",
+          "failParameter": "commaToPeriodRatioFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "enumerationCommasPer100Chars": {
+        "metric": "enumerationCommasPer100Chars",
+        "direction": "upper",
+        "review": 2.8,
+        "fail": 4,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "enumerationCommasPer100CharsReview",
+          "failParameter": "enumerationCommasPer100CharsFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "earlyStructuralPunctuationShare": {
+        "metric": "earlyStructuralPunctuationShare",
+        "direction": "upper",
+        "review": 0.2,
+        "fail": 0.4,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "earlyStructuralPunctuationShareReview",
+          "failParameter": "earlyStructuralPunctuationShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "semicolonRowShare": {
+        "metric": "semicolonRowShare",
+        "direction": "upper",
+        "review": 0.6,
+        "fail": 0.8,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "semicolonRowShareReview",
+          "failParameter": "semicolonRowShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "longSentenceShare": {
+        "metric": "longSentenceShare",
+        "direction": "upper",
+        "review": 0.1,
+        "fail": 0.25,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "longSentenceShareReview",
+          "failParameter": "longSentenceShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      }
+    }
+  },
+  "status": "PASS",
+  "ok": true,
+  "reviewRequired": false,
+  "blocked": false,
+  "summary": {
+    "rowCount": 1,
+    "rowStatusCounts": {
+      "PASS": 1
+    },
+    "batchStatus": "PASS",
+    "findingCounts": {}
+  },
+  "rows": [
+    {
+      "uid": "沈礼_20260718_workstation_preacceptance_01",
+      "dataRow": 2,
+      "questionLength": 769,
+      "paragraphCount": 5,
+      "sentenceCount": 27,
+      "disclaimerSentenceCount": 1,
+      "disclaimerSentenceDensity": 0.037,
+      "missingMaterialSentenceCount": 1,
+      "evidenceBoundarySentenceCount": 0,
+      "disclaimerSignalCount": 1,
+      "concreteFactAnchorCount": 24,
+      "concreteFactsPer100Chars": 3.1209,
+      "firstPersonPresent": true,
+      "firstPersonOpening": true,
+      "paragraphActions": [
+        "deliverable",
+        "evidence",
+        "evidence",
+        "evidence",
+        "deliverable"
+      ],
+      "paragraphActionScores": [
+        {
+          "deliverable": 5,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "boundary": 0,
+          "decision": 0,
+          "evidence": 0
+        },
+        {
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0
+        },
+        {
+          "evidence": 2,
+          "quality": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "scene": 0
+        },
+        {
+          "evidence": 2,
+          "quality": 2,
+          "deliverable": 0,
+          "boundary": 0,
+          "decision": 0,
+          "scene": 0,
+          "instruction": 0
+        },
+        {
+          "deliverable": 5,
+          "boundary": 4,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "decision": 0
+        }
+      ],
+      "discourseSkeleton": "deliverable>evidence>evidence>evidence>deliverable",
+      "compressedDiscourseSkeleton": "deliverable>evidence>deliverable",
+      "fixedWordExcelTail": false,
+      "stepCount": 6,
+      "finalStepSelfCheck": false,
+      "scheduleAuthenticityTag": "no-schedule-device",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": true,
+      "templateMarkerCount": 1,
+      "explicitRequestPresent": true,
+      "requestFrame": "work-order-制作",
+      "requestPositionRatio": 0.0794,
+      "requestMarker": "制作",
+      "requestDeliverableMarker": "Excel",
+      "missingDeliverableFormats": [],
+      "firstSentenceLength": 82,
+      "firstSentenceCommaCount": 1,
+      "firstPunctuationIsTerminal": false,
+      "commaCount": 5,
+      "periodCount": 27,
+      "colonCount": 0,
+      "semicolonCount": 0,
+      "enumerationCommaCount": 3,
+      "commaToPeriodRatio": 0.1852,
+      "enumerationCommasPer100Chars": 0.3901,
+      "structuralPunctuationCount": 0,
+      "structuralPunctuationPer100Chars": 0,
+      "earlyStructuralPunctuation": false,
+      "containsSemicolon": false,
+      "maximumTerminalSentenceLength": 82,
+      "evidence": {
+        "disclaimerSentences": [
+          "缺少现场资料的项目统一标注为待核。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "quantity",
+            "value": "1519000元"
+          },
+          {
+            "kind": "quantity",
+            "value": "150台"
+          },
+          {
+            "kind": "quantity",
+            "value": "6750元"
+          },
+          {
+            "kind": "quantity",
+            "value": "50台"
+          },
+          {
+            "kind": "quantity",
+            "value": "6850元"
+          },
+          {
+            "kind": "quantity",
+            "value": "164000元"
+          },
+          {
+            "kind": "quantity",
+            "value": "687180元"
+          },
+          {
+            "kind": "quantity",
+            "value": "39台"
+          },
+          {
+            "kind": "quantity",
+            "value": "16800元"
+          },
+          {
+            "kind": "quantity",
+            "value": "31980元"
+          },
+          {
+            "kind": "quantity",
+            "value": "820元"
+          },
+          {
+            "kind": "quantity",
+            "value": "30天"
+          },
+          {
+            "kind": "quantity",
+            "value": "100%"
+          },
+          {
+            "kind": "quantity",
+            "value": "95%"
+          },
+          {
+            "kind": "quantity",
+            "value": "5%"
+          },
+          {
+            "kind": "identifier",
+            "value": "Z1612177"
+          },
+          {
+            "kind": "identifier",
+            "value": "P3"
+          },
+          {
+            "kind": "identifier",
+            "value": "P368-C4"
+          },
+          {
+            "kind": "identifier",
+            "value": "P2"
+          },
+          {
+            "kind": "named-product",
+            "value": "Z1612177"
+          },
+          {
+            "kind": "named-product",
+            "value": "Tiny Gen"
+          },
+          {
+            "kind": "named-product",
+            "value": "P368-C4"
+          },
+          {
+            "kind": "named-product",
+            "value": "Tower"
+          },
+          {
+            "kind": "named-product",
+            "value": "CPU"
+          }
+        ],
+        "finalParagraph": "表内要把可证事实与合理推断分栏展示。缺少现场资料的项目统一标注为待核。表尾汇总差异等级、证据来源与下一步动作，生成这份可下载的Excel核对表。本轮交付只用于预验收准备，正式验收结论以实际台账与签章记录为准。",
+        "finalStep": "汇总付款与保修触发条件，生成启动拦截结论和来源索引。",
+        "request": {
+          "clear": true,
+          "frame": "work-order-制作",
+          "requestMarker": "制作",
+          "requestIndex": 62,
+          "requestSentenceIndex": 0,
+          "deliverableMarker": "Excel",
+          "deliverableIndex": 66
+        },
+        "punctuation": {
+          "visibleCharacters": 769,
+          "firstSentence": "设备运维和项目交付同事需要逐台核验新到设备并形成差异处置清单，请为中山大学肿瘤防治中心项目0724-2611Z1612177制作一份Excel形式的到货预验收核对表。",
+          "firstSentenceLength": 82,
+          "firstSentenceCommaCount": 1,
+          "firstPunctuation": "，",
+          "firstPunctuationIndex": 30,
+          "firstPunctuationIsTerminal": false,
+          "commaCount": 5,
+          "periodCount": 27,
+          "colonCount": 0,
+          "semicolonCount": 0,
+          "enumerationCommaCount": 3,
+          "structuralPunctuationCount": 0,
+          "commaToPeriodRatio": 0.1852,
+          "enumerationCommasPer100Chars": 0.3901,
+          "structuralPunctuationPer100Chars": 0,
+          "earlyStructuralPunctuation": false,
+          "containsSemicolon": false,
+          "maximumTerminalSentenceLength": 82
+        }
+      },
+      "status": "PASS",
+      "findings": []
+    }
+  ],
+  "batch": {
+    "status": "PASS",
+    "metrics": {
+      "rowCount": 1,
+      "firstPersonShare": 1,
+      "firstPersonOpeningShare": 1,
+      "discourseSkeletonDominantShare": 1,
+      "discourseSkeletonDominant": "deliverable>evidence>deliverable",
+      "discourseSkeletonCounts": {
+        "deliverable>evidence>deliverable": 1
+      },
+      "fixedWordExcelTailShare": 0,
+      "finalStepSelfCheckShare": 0,
+      "stepCountModeShare": 1,
+      "stepCountMode": 6,
+      "stepCountCounts": {
+        "6": 1
+      },
+      "weakScheduleShare": 0,
+      "weakScheduleDominantShare": 0,
+      "weakScheduleDominantTag": "",
+      "scheduleTagCounts": {
+        "no-schedule-device": 1
+      },
+      "disclaimerHeavyShare": 0,
+      "lowConcreteFactShare": 0,
+      "explicitRequestShare": 1,
+      "requestFrameDominantShare": 1,
+      "requestFrameDominant": "work-order-制作",
+      "requestFrameCounts": {
+        "work-order-制作": 1
+      },
+      "shortOpeningShare": 0,
+      "firstPunctuationTerminalShare": 0,
+      "firstSentenceCommaShare": 1,
+      "commaToPeriodRatio": 0.1852,
+      "enumerationCommasPer100Chars": 0.3901,
+      "earlyStructuralPunctuationShare": 0,
+      "semicolonRowShare": 0,
+      "longSentenceShare": 0
+    },
+    "findings": []
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "kind": "doubao-interaction-queue-item",
+  "state": "completed",
+  "jobId": "l1-cqrcb-growth-capital-20260719-03",
+  "enqueuedAt": "2026-07-18T17:37:09.127Z",
+  "attempt": 3,
+  "configPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-cqrcb-growth-capital-20260719-03\\job.json",
+  "configSha256": "aec932d524bcd5ea6bdef8b5833234883ddb326b51185ddf14b0e1a7ac13d020",
+  "packageManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-cqrcb-growth-capital-20260719-03\\manifest.json",
+  "packageManifestSha256": "8993d0a326311b6e7a8e93a0331c8fb4419e6551cf9f2f7af6715fcadb630bbd",
+  "retryHistory": [
+    {
+      "archivedResultPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\results\\history\\l1-cqrcb-growth-capital-20260719-03-attempt-1-5e76e517-9725-483a-a5d5-8bab1d358dee.json",
+      "attempt": 1,
+      "failedAt": "2026-07-18T18:15:36.986Z",
+      "lastError": {
+        "code": "",
+        "message": "Local Computer state could not be verified before disabling it."
+      },
+      "retriedAt": "2026-07-18T18:19:52.088Z"
+    },
+    {
+      "archivedResultPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\results\\history\\l1-cqrcb-growth-capital-20260719-03-attempt-2-3238bb61-2947-45fd-a0d6-64d487dc8915.json",
+      "attempt": 2,
+      "failedAt": "2026-07-18T18:21:18.708Z",
+      "lastError": {
+        "code": "",
+        "message": "Local Computer state could not be verified before disabling it."
+      },
+      "retriedAt": "2026-07-18T18:22:56.765Z"
+    }
+  ],
+  "retriedAt": "2026-07-18T18:22:56.766Z",
+  "finishedAt": "2026-07-18T19:02:00.155Z",
+  "resultPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\results\\l1-cqrcb-growth-capital-20260719-03.json",
+  "lastError": null
+}

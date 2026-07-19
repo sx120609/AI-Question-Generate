@@ -1,3 +1,4 @@
+import crypto from "node:crypto";
 import fs from "node:fs/promises";
 import path from "node:path";
 
@@ -5,9 +6,21 @@ import { evaluateNarrativeHardRules, validateContinuityAudit } from "./narrative
 import { evaluateAttachmentSemantics } from "./attachment_semantic_rules.mjs";
 import { buildFormatCoverageAssignments } from "./product_format_diversity.mjs";
 import { analyzeProductFormat } from "./product_format.mjs";
+import { isPacketForProfile, resolveProductionProfile } from "./production_profile.mjs";
 
-export const PRODUCTION_WORKFLOW_SCHEMA_VERSION = 3;
+export const PRODUCTION_WORKFLOW_SCHEMA_VERSION = 4;
 export const MAX_FIRST_QA_FAILURES = 2;
+const SUPPORTED_QUALITY_GATE_RUNNER_IDS = new Set([
+  "exact-two-quality-gates-v1",
+  "exact-two-quality-gates-v2-codex-session",
+  "exact-two-quality-gates-v3-model-router",
+]);
+const SUPPORTED_QUALITY_GATE_PROVIDERS = new Set([
+  "openai-compatible",
+  "codex-session",
+  "codex-model",
+  "third-party-openai-compatible",
+]);
 
 async function writeJsonAtomic(filePath, value) {
   await fs.mkdir(path.dirname(filePath), { recursive: true });
@@ -18,6 +31,10 @@ async function writeJsonAtomic(filePath, value) {
 
 function now() {
   return new Date().toISOString();
+}
+
+function sha256(value) {
+  return crypto.createHash("sha256").update(String(value)).digest("hex");
 }
 
 function requireState(question, allowed, action) {
@@ -37,18 +54,54 @@ function questionAt(workflow, questionIndex) {
   return question;
 }
 
+function assertRealQualityGateExecution(workflow, result, stage) {
+  const execution = result?.execution;
+  const expectedHash = workflow?.qualityGatePromptHashes?.[stage];
+  const profile = resolveProductionProfile(workflow);
+  if (!execution || !SUPPORTED_QUALITY_GATE_RUNNER_IDS.has(execution.runnerId)) {
+    throw new Error(`${stage} must contain a supported real quality-gate execution record.`);
+  }
+  if (!SUPPORTED_QUALITY_GATE_PROVIDERS.has(execution.provider) || !String(execution.model ?? "").trim()) {
+    throw new Error(`${stage} must record its model provider and model.`);
+  }
+  const developmentCodexSession = workflow.runMode === "development-codex-session"
+    && execution.runnerId === "exact-two-quality-gates-v2-codex-session"
+    && execution.provider === "codex-session";
+  if (profile.id === "l1" && !developmentCodexSession
+    && (execution.runnerId !== "exact-two-quality-gates-v3-model-router"
+      || !["codex-model", "third-party-openai-compatible"].includes(execution.provider))) {
+    throw new Error(`${stage} must use the L1 production model router; legacy quality providers are replay-only.`);
+  }
+  if (!expectedHash || execution.sourcePromptHash !== expectedHash) {
+    throw new Error(`${stage} did not use the prompt hash frozen into the workflow.`);
+  }
+  for (const key of ["renderedPromptHash", "rawResponsePath", "rawResponseHash", "completedAt"]) {
+    if (!String(execution[key] ?? "").trim()) throw new Error(`${stage} execution is missing ${key}.`);
+  }
+}
+
 export function initializeProductionWorkflow({ packet, runId = packet?.runId ?? "" } = {}) {
-  if (packet?.kind !== "l2-production-input-packet" || packet.status !== "READY") {
-    throw new Error("Cannot initialize workflow without a READY l2-production-input-packet.");
+  const profile = resolveProductionProfile(packet);
+  if (!isPacketForProfile(packet, profile)) {
+    throw new Error(`Cannot initialize workflow without a READY ${profile.packetKind}.`);
   }
   const createdAt = now();
-  const formatRequirements = buildFormatCoverageAssignments(packet.inputs.referenceWorkbook.samples.length, { seed: runId });
+  const formatRequirements = profile.productFormat.requireBatchCoverage
+    ? buildFormatCoverageAssignments(packet.inputs.referenceWorkbook.samples.length, { seed: runId })
+    : Array.from({ length: packet.inputs.referenceWorkbook.samples.length }, () => null);
   return {
     schemaVersion: PRODUCTION_WORKFLOW_SCHEMA_VERSION,
-    kind: "l2-production-workflow-state",
+    kind: profile.workflowKind,
+    productionProfile: profile.id,
+    taskType: profile.taskType,
     protocolId: packet.protocolId,
     runId,
+    runMode: packet.runMode || "production-api",
     packetRunId: packet.runId,
+    qualityGatePromptHashes: {
+      "first-quality-gate": packet.inputs.firstQaPrompt.sha256,
+      "second-language-gate": packet.inputs.secondQaPrompt.sha256,
+    },
     createdAt,
     updatedAt: createdAt,
     questions: packet.inputs.referenceWorkbook.samples.map((sample, index) => ({
@@ -90,10 +143,19 @@ export function recordReferenceBreakdown(workflow, questionIndex, breakdown) {
 export function recordAttachmentPlan(workflow, questionIndex, attachmentPlan) {
   const question = questionAt(workflow, questionIndex);
   requireState(question, ["STRUCTURE_READY", "FIRST_QA_REPAIR_REQUIRED"], "recordAttachmentPlan");
-  if (!Array.isArray(attachmentPlan?.attachments) || !attachmentPlan.attachments.length) {
-    throw new Error("Attachment plan must contain at least one attachment.");
+  const profile = resolveProductionProfile(workflow);
+  if (!Array.isArray(attachmentPlan?.attachments)) {
+    throw new Error("Attachment plan must contain an attachments array.");
   }
-  const semanticResult = evaluateAttachmentSemantics(attachmentPlan);
+  if (attachmentPlan.attachments.length < profile.attachments.minimum
+    || (profile.attachments.maximum != null && attachmentPlan.attachments.length > profile.attachments.maximum)) {
+    throw new Error(`Attachment plan must contain ${profile.attachments.minimum}–${profile.attachments.maximum ?? "unlimited"} attachments.`);
+  }
+  const semanticResult = evaluateAttachmentSemantics(attachmentPlan, {
+    allowEmpty: profile.attachments.minimum === 0,
+    maximumAttachments: profile.attachments.maximum,
+    minimumSpecificBusinessShare: profile.attachments.minimumSpecificBusinessShare,
+  });
   if (semanticResult.findings.length) {
     throw new Error(`Attachment plan cannot pass the specific-evidence policy: ${semanticResult.findings.map((item) => item.rule).join(", ")}.`);
   }
@@ -107,22 +169,28 @@ export function recordAttachmentPlan(workflow, questionIndex, attachmentPlan) {
 export function recordDraft(workflow, questionIndex, draft, { reason = "initial" } = {}) {
   const question = questionAt(workflow, questionIndex);
   requireState(question, ["ATTACHMENTS_READY", "FIRST_QA_REPAIR_REQUIRED"], "recordDraft");
+  const profile = resolveProductionProfile(workflow);
   if (!String(draft?.question ?? "").trim() || !String(draft?.mainTask ?? "").trim()) {
     throw new Error("Draft must contain question and mainTask.");
   }
   const formatAnalysis = analyzeProductFormat(draft?.productFormats);
-  if (!formatAnalysis.isCanonical) throw new Error("Draft productFormats must use canonical extension-only labels.");
+  const emptyFormatsAllowed = profile.productFormat.optional && !formatAnalysis.source;
+  if (!emptyFormatsAllowed && !formatAnalysis.isCanonical) throw new Error("Draft productFormats must use canonical extension-only labels.");
   if (question.formatRequirement && !formatAnalysis.formats.includes(question.formatRequirement)) {
     throw new Error(`Draft must satisfy the reserved office-format coverage requirement: ${question.formatRequirement}.`);
   }
-  if (!Array.isArray(draft?.deliverableRationale)) throw new Error("Draft must include deliverableRationale.");
+  if (formatAnalysis.formats.length && !Array.isArray(draft?.deliverableRationale)) throw new Error("Draft must include deliverableRationale.");
   for (const format of formatAnalysis.formats) {
     const rationale = draft.deliverableRationale.find((item) => item?.format === format);
     if (!rationale || !String(rationale.user ?? "").trim() || !String(rationale.purpose ?? "").trim() || !String(rationale.whyThisFormat ?? "").trim()) {
       throw new Error(`Draft is missing a complete deliverable rationale for ${format}.`);
     }
   }
-  question.draft = structuredClone(draft);
+  question.draft = structuredClone({
+    ...draft,
+    productFormats: String(draft?.productFormats ?? "").trim(),
+    deliverableRationale: Array.isArray(draft?.deliverableRationale) ? draft.deliverableRationale : [],
+  });
   question.state = "DRAFT_READY";
   if (reason !== "initial") question.revisionLog.push({ at: now(), stage: "first-quality-gate", reason });
   appendEvent(question, "draft.recorded", { reason });
@@ -137,6 +205,7 @@ export function recordFirstQualityGate(workflow, questionIndex, gateOutput) {
   if (typeof result?.pass !== "boolean" || !Array.isArray(result?.issues)) {
     throw new Error("First quality gate must contain boolean pass and issues array.");
   }
+  assertRealQualityGateExecution(workflow, result, "first-quality-gate");
   question.preQaStructureAudit = structuredClone(gateOutput?.preQaStructureAudit ?? {});
   question.firstQaFullResult = structuredClone(result);
   question.firstQaAttempts ??= [];
@@ -160,14 +229,25 @@ export function recordFirstQualityGate(workflow, questionIndex, gateOutput) {
 
 export function recordSecondLanguageGate(workflow, questionIndex, result) {
   const question = questionAt(workflow, questionIndex);
+  const profile = resolveProductionProfile(workflow);
   requireState(question, ["FIRST_QA_PASS", "SECOND_QA_REWRITE_REQUIRED"], "recordSecondLanguageGate");
   const conclusion = result?.conclusion;
   if (!String(result?.modifiedQuestion ?? "").trim()) throw new Error("Second language gate must include the complete modifiedQuestion.");
+  assertRealQualityGateExecution(workflow, result, "second-language-gate");
   if (["通过", "需语言小修"].includes(conclusion)) {
-    const findings = [
-      ...evaluateNarrativeHardRules(result.modifiedQuestion),
-      ...validateContinuityAudit(result.modifiedQuestion, result.continuityAudit),
-    ];
+    const findings = [...evaluateNarrativeHardRules(result.modifiedQuestion, {
+      minimumExplanatoryParentheses: profile.language.minimumExplanatoryParentheses,
+      forbidSemicolon: profile.language.forbidSemicolon,
+    })];
+    if (profile.language.requireContinuityAudit && result.execution?.provider === "codex-session") {
+      const selfCheck = result.secondPromptSelfCheck;
+      const requiredTrue = ["atLeastThreeMeaningfulParentheses", "productParagraphReferenceLogic", "narrativeFlowReviewed"];
+      const requiredFalse = ["semicolonUsed", "overTwoEnumerationCommas", "commaDisguisedList", "labelParentheses", "overloadedParallelSentence", "bannedProblemRatherThan", "bannedSomeSome", "mechanicalDepartmentOpposition"];
+      for (const key of requiredTrue) if (selfCheck?.[key] !== true) findings.push({ rule: `second-prompt-self-check-${key}` });
+      for (const key of requiredFalse) if (selfCheck?.[key] !== false) findings.push({ rule: `second-prompt-self-check-${key}` });
+    } else if (profile.language.requireContinuityAudit) {
+      findings.push(...validateContinuityAudit(result.modifiedQuestion, result.continuityAudit));
+    }
     if (findings.length) {
       throw new Error(`Second language gate cannot pass the connected plain-narrative policy: ${findings.map((item) => item.rule).join(", ")}.`);
     }
@@ -185,18 +265,49 @@ export function recordSecondLanguageGate(workflow, questionIndex, result) {
   return workflow;
 }
 
+export function recordDeAiRewrite(workflow, questionIndex, result) {
+  const question = questionAt(workflow, questionIndex);
+  requireState(question, ["SECOND_QA_PASS"], "recordDeAiRewrite");
+  const sourceQuestion = String(question.secondQaFullResult?.modifiedQuestion ?? "").trim();
+  const rewrittenQuestion = String(result?.rewrite?.question ?? "").trim();
+  if (result?.kind !== "de-ai-question-rewrite"
+    || !["mugua-openai-compatible", "external-rewrite-api"].includes(result?.provider)) {
+    throw new Error("De-AI rewrite must come from an approved external rewrite provider.");
+  }
+  if (result?.validation?.pass !== true || !rewrittenQuestion) {
+    throw new Error("De-AI rewrite must contain a passing validated question.");
+  }
+  if (result.sourceQuestionHash !== sha256(sourceQuestion)) {
+    throw new Error("De-AI rewrite is not bound to the second-gate question.");
+  }
+  if (result.rewrittenQuestionHash !== sha256(rewrittenQuestion)) {
+    throw new Error("De-AI rewrite output hash does not match the rewritten question.");
+  }
+  question.deAiRewrite = structuredClone(result);
+  question.state = "DE_AI_REWRITE_PASS";
+  appendEvent(question, "de-ai-rewrite.passed", {
+    policyId: result.policyId,
+    selectedAttempt: result.selectedAttempt,
+  });
+  workflow.updatedAt = now();
+  return workflow;
+}
+
 export function recordFinalRecord(workflow, questionIndex, { recordUid, finalRecord } = {}) {
   const question = questionAt(workflow, questionIndex);
-  requireState(question, ["SECOND_QA_PASS"], "recordFinalRecord");
+  const profile = resolveProductionProfile(workflow);
+  requireState(question, profile.id === "l1" ? ["DE_AI_REWRITE_PASS"] : ["SECOND_QA_PASS", "DE_AI_REWRITE_PASS"], "recordFinalRecord");
   if (!String(recordUid ?? "").trim() || !finalRecord || typeof finalRecord !== "object") {
     throw new Error("Final compilation requires recordUid and finalRecord.");
   }
-  if (finalRecord.题目 !== question.secondQaFullResult.modifiedQuestion) {
-    throw new Error("Final question must exactly match the second-gate modified question.");
+  const frozenQuestion = question.deAiRewrite?.rewrite?.question ?? question.secondQaFullResult.modifiedQuestion;
+  if (finalRecord.题目 !== frozenQuestion) {
+    throw new Error("Final question must exactly match the validated de-AI rewrite, or the second gate when no rewrite is required.");
   }
   const finalFormats = analyzeProductFormat(finalRecord.产物格式);
   const draftFormats = analyzeProductFormat(question.draft.productFormats);
-  if (!finalFormats.isCanonical || finalFormats.canonical !== draftFormats.canonical) {
+  const bothFormatsEmpty = profile.productFormat.optional && !finalFormats.source && !draftFormats.source;
+  if (!bothFormatsEmpty && (!finalFormats.isCanonical || finalFormats.canonical !== draftFormats.canonical)) {
     throw new Error("Final product formats must exactly match the formats selected before drafting.");
   }
   question.recordUid = recordUid;
@@ -211,9 +322,11 @@ export function buildProductionTrace(workflow) {
   if (workflow.questions.some((question) => question.state !== "COMPLETE")) {
     throw new Error("Production trace cannot be finalized while any question is incomplete.");
   }
+  const profile = resolveProductionProfile(workflow);
   return {
     schemaVersion: 3,
-    kind: "l2-production-trace",
+    kind: profile.traceKind,
+    productionProfile: profile.id,
     protocolId: workflow.protocolId,
     runId: workflow.runId,
     generatedAt: now(),
@@ -235,6 +348,7 @@ export function buildProductionTrace(workflow) {
       firstQaFullResult: question.firstQaFullResult,
       firstQaRepairs: question.firstQaAttempts.filter((attempt) => attempt.result.pass !== true),
       secondQaFullResult: question.secondQaFullResult,
+      deAiRewrite: question.deAiRewrite ?? null,
       revisionLog: question.revisionLog,
       finalRecord: question.finalRecord,
       workflowEvents: question.events,

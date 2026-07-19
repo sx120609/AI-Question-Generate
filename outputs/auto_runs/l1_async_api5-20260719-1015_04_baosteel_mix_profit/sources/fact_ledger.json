@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "kind": "evidence-bound-fact-ledger",
+  "runId": "l1_async_api5-20260719-1015_04_baosteel_mix_profit",
+  "recordUid": "沈礼_api5-20260719-1015_04",
+  "generatedAt": "2026-07-19T02:09:50.658Z",
+  "facts": [
+    {
+      "id": "baosteel-product-export",
+      "claimType": "source-fact",
+      "text": "2026年一季度“2+2+N”产品销量861.9万吨，同比增加37.7万吨；出口接单量196.1万吨，同比增加41.6万吨。",
+      "locator": "PDF第1页公司亮点",
+      "uid": "沈礼_api5-20260719-1015_04",
+      "sourceRefs": [
+        "baosteel-2026q1-report"
+      ]
+    },
+    {
+      "id": "baosteel-core-performance",
+      "claimType": "source-fact",
+      "text": "一季度营业收入77061百万元，同比增长5.7%；归母净利润2225百万元，同比下降8.6%；经营现金流量净额4417百万元，同比增长1.4%。",
+      "locator": "PDF第2页主要会计数据表",
+      "uid": "沈礼_api5-20260719-1015_04",
+      "sourceRefs": [
+        "baosteel-2026q1-report"
+      ]
+    },
+    {
+      "id": "baosteel-steel-segment",
+      "claimType": "source-fact",
+      "text": "钢铁制造分部收入56620百万元，同比下降2.6%，毛利率5.5%，同比下降0.1个百分点。",
+      "locator": "PDF第3页主营业务分部表",
+      "uid": "沈礼_api5-20260719-1015_04",
+      "sourceRefs": [
+        "baosteel-2026q1-report"
+      ]
+    },
+    {
+      "id": "baosteel-processing-segment",
+      "claimType": "source-fact",
+      "text": "加工配送分部收入66451百万元，同比下降12.2%，毛利率1.4%，同比下降约0.02个百分点。",
+      "locator": "PDF第3页主营业务分部表",
+      "uid": "沈礼_api5-20260719-1015_04",
+      "sourceRefs": [
+        "baosteel-2026q1-report"
+      ]
+    },
+    {
+      "id": "baosteel-total-margin",
+      "claimType": "source-fact",
+      "text": "合计营业收入77061百万元、营业成本71958百万元，毛利率6.6%，上年同期毛利率7.2%，下降0.6个百分点。",
+      "locator": "PDF第3页主营业务分部表",
+      "uid": "沈礼_api5-20260719-1015_04",
+      "sourceRefs": [
+        "baosteel-2026q1-report"
+      ]
+    },
+    {
+      "id": "baosteel-boundary",
+      "claimType": "evidence-boundary",
+      "text": "报告披露产品销量和出口接单亮点，但没有给出“2+2+N”产品及出口订单对当季收入和利润的单独贡献金额，季度财务报表未经审计。",
+      "locator": "PDF第1至3页披露边界",
+      "uid": "沈礼_api5-20260719-1015_04",
+      "sourceRefs": [
+        "baosteel-2026q1-report"
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "id": "baosteel-2026q1-report",
+      "uid": "沈礼_api5-20260719-1015_04",
+      "name": "宝山钢铁股份有限公司2026年第一季度报告.pdf",
+      "text": "披露宝钢股份一季度产品销量、出口接单、经营分部收入成本毛利率和核心财务指标。",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-30/1225257456.PDF",
+      "sha256": "76b0d27c65fb55ba2cd3301f83e4448846de438d1575ea05e551fe0b829cb23d"
+    }
+  ],
+  "unknowns": [
+    {
+      "id": "baosteel_mix_profit_api5-20260719-1015-unknown-1",
+      "uid": "沈礼_api5-20260719-1015_04",
+      "text": "附件不能把高附加值产品销量和出口接单变化直接换算为当季利润贡献。"
+    },
+    {
+      "id": "baosteel_mix_profit_api5-20260719-1015-unknown-2",
+      "uid": "沈礼_api5-20260719-1015_04",
+      "text": "分部收入存在内部抵消，不能把各分部收入简单相加解释为外部营业收入。"
+    }
+  ],
+  "decision": {
+    "id": "baosteel_mix_profit_api5-20260719-1015-decision",
+    "text": "制作产品结构与利润表现复核演示稿，把产品销量和出口接单亮点与分部毛利率、整体利润和现金流并列，明确可证改善与不能归因的部分。"
+  },
+  "deliveryUse": {
+    "recipient": "产品经营复核专员及下游同事",
+    "purpose": "供产品经营会议讨论下一步需要补取的产品盈利和订单兑现资料。"
+  }
+}

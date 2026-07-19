@@ -1,0 +1,110 @@
+{
+  "kind": "claude-question-rewrite-batch",
+  "policyId": "claude-situated-process-rewrite-v1",
+  "generatedAt": "2026-07-16T05:17:01.110Z",
+  "runDir": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a",
+  "results": [
+    {
+      "kind": "claude-question-rewrite",
+      "policyId": "claude-situated-process-rewrite-v1",
+      "uid": "435",
+      "generatedAt": "2026-07-16T05:17:01.109Z",
+      "provider": "openai-compatible",
+      "model": "claude-opus-4-8",
+      "finishReason": "stop",
+      "usage": {
+        "inputTokens": 18758,
+        "outputTokens": 2727,
+        "totalTokens": 21485
+      },
+      "rewrite": {
+        "question": "我们现有的钉钉企业内部应用还在用 HTTP 回调接收人员变更事件，开发后台已经可以选 Stream、SyncHTTP 等推送方式。团队想把接收方式改到 Stream 模式，因为官方 SDK 已经封装了事件推送和机器人收消息等接入能力。可现在没有一份把旧回调、控制台配置和新客户端运行方式对齐的迁移记录。人员异动还在持续发生，直接切换容易碰到漏收或重复处理，也可能在连接失败时找不到回退入口，所以模式差异和验证边界得先理顺。\n附件里有推送方式配置页和 HTTP 事件订阅说明，另外放了全局错误码与人员变更 Stream 事件等资料。Java 和 Node 两套官方 SDK 说明也一并保留，方便团队按实际运行语言来选。旧页面能确认事件以 JSON 通过 HTTP POST 发到指定地址，也涉及 token 校验和对称加密，新资料则说明 Stream 能承接事件和机器人消息等场景。材料里没有我们的订阅清单和回调成功率，也没写幂等键设计与告警阈值，生产密钥和运行语言同样不在附件里，这些只能列成待补项，不能从示例代码推成现状。\n你给我做一份 Word《钉钉事件推送迁移评审说明》，另外整理一张 Excel《事件订阅切换验证矩阵》。Word 从现状盘点推进到模式比较，再把改造步骤和回滚路径接起来，每一步都要写清接收哪些事件配置以及据此判断能不能往下走。每个阶段还要说明先试哪些事件和怎样保存原回调配置，遇到鉴权失败或平台错误码时也要留下定位入口等操作口径。Excel 则逐事件保留旧入口和 Stream 订阅方式，再记录样例负载与幂等判断等验证信息，人员异动 v2 要作为完整样例，还能查到处理结果和告警证据。\n评审结论只回答现有材料够不够进入切换演练，不直接宣布生产切换成功。验证矩阵从一次正常接收开始，重复投递要单独模拟，鉴权或连接失败时还要观察能否退回旧入口。完成后回看 Word 的放行条件，确认每个条件都能在 Excel 找到证据。控制台是否允许并行保留两种方式还无法从附件确认，就先把它放到演练前核验项。若实际不能并行，就在说明里写出恢复旧回调和核对补发记录等最小步骤。",
+        "requestContract": {
+          "requestSpan": "你给我做一份 Word《钉钉事件推送迁移评审说明》，另外整理一张 Excel《事件订阅切换验证矩阵》。",
+          "action": "你给我做",
+          "outputs": [
+            {
+              "format": "docx",
+              "humanName": "Word《钉钉事件推送迁移评审说明》",
+              "purpose": "解释迁移决策与回滚边界"
+            },
+            {
+              "format": "xlsx",
+              "humanName": "Excel《事件订阅切换验证矩阵》",
+              "purpose": "逐事件记录切换验证证据"
+            }
+          ]
+        },
+        "roleTrace": {
+          "blockageSpan": "可现在没有一份把旧回调、控制台配置和新客户端运行方式对齐的迁移记录。",
+          "motivationSpan": "",
+          "downstreamUseSpan": "完成后回看 Word 的放行条件，确认每个条件都能在 Excel 找到证据。"
+        },
+        "usedFactIds": [
+          "fact-row-435"
+        ],
+        "deliberatelyOmitted": [],
+        "flowStages": [
+          {
+            "stage": "现状盘点",
+            "evidence": "六份官方材料只能确认 HTTP 回调与 Stream 两种接入路径",
+            "decision": "判断现有材料够不够进入切换演练",
+            "next": "材料对齐则进入模式比较，订阅清单和幂等键等缺口列成待补项"
+          },
+          {
+            "stage": "模式比较与改造",
+            "evidence": "旧页面的 JSON 回调加解密与新资料的 Stream 承接能力",
+            "decision": "改造步骤和回滚路径能不能接得起来",
+            "next": "接得起来进入验证演练，接不上退回盘点补内部材料"
+          },
+          {
+            "stage": "验证演练",
+            "evidence": "人员异动 v2 样例负载与幂等判断",
+            "decision": "正常接收、重复投递和失败退回三个场景证据是否齐全",
+            "next": "证据齐则映射到 Word 放行条件，缺证据的条件不判通过"
+          },
+          {
+            "stage": "并行核验与回退",
+            "evidence": "控制台是否允许并行保留两种推送方式仍无法从附件确认",
+            "decision": "能否并行保留旧回调作为回退入口",
+            "next": "不能并行则在说明里写出恢复旧回调和核对补发记录等最小步骤"
+          }
+        ],
+        "selfAudit": {
+          "factsPreserved": true,
+          "formatsPreserved": true,
+          "processChainExplicit": true,
+          "failureOrRollbackExplicit": true,
+          "noInventedFacts": true,
+          "noAiShell": true
+        }
+      },
+      "validation": {
+        "pass": true,
+        "visibleLength": 849,
+        "findings": [],
+        "factGuard": {
+          "ok": true,
+          "candidateAnchors": {
+            "numbers": [
+              "2"
+            ],
+            "quotedClaims": [],
+            "timeMarkers": []
+          },
+          "unsupported": {
+            "numbers": [],
+            "quotedClaims": [],
+            "timeMarkers": []
+          },
+          "errors": []
+        }
+      }
+    }
+  ],
+  "usage": {
+    "inputTokens": 18758,
+    "outputTokens": 2727,
+    "totalTokens": 21485
+  }
+}

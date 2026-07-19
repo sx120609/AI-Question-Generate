@@ -1,0 +1,681 @@
+{
+  "schemaVersion": 1,
+  "kind": "naturalness-gate-report",
+  "gateId": "naturalness-gate-v5",
+  "metricsVersion": "naturalness-metrics-v5",
+  "questionLanguagePolicyId": "corpus-calibrated-intent-punctuation-v4",
+  "generatedAt": "2026-07-16T08:05:48.900Z",
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\drafts\\l2_questions.tsv",
+  "candidateHash": "43927f360da2458de9e890f2b058d71aafbf8d822c6ece5a6489a03acb71d5f9",
+  "baselinePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\config\\naturalness_benchmark_v2.json",
+  "baselineHash": "b97d5f54c5f63304c3485ce67f4f663a01258dcf0cf9bfab101cf775d5ff0fa6",
+  "baselineId": "naturalness-benchmark-v2",
+  "baselineSampleCount": 30,
+  "effectiveThresholds": {
+    "row": {
+      "disclaimerSentenceDensity": {
+        "metric": "disclaimerSentenceDensity",
+        "direction": "upper",
+        "review": 0.225,
+        "fail": 0.342,
+        "source": {
+          "type": "benchmark-quantile",
+          "baselineId": "naturalness-benchmark-v2",
+          "sampleCount": 30,
+          "reviewQuantile": 0.9,
+          "failQuantile": 0.98
+        }
+      },
+      "disclaimerSentenceCount": {
+        "metric": "disclaimerSentenceCount",
+        "direction": "upper",
+        "review": 2.1,
+        "fail": 3.84,
+        "source": {
+          "type": "benchmark-quantile",
+          "baselineId": "naturalness-benchmark-v2",
+          "sampleCount": 30,
+          "reviewQuantile": 0.9,
+          "failQuantile": 0.98
+        }
+      },
+      "concreteFactsPer100Chars": {
+        "metric": "concreteFactsPer100Chars",
+        "direction": "lower",
+        "review": 0,
+        "source": {
+          "type": "benchmark-quantile",
+          "baselineId": "naturalness-benchmark-v2",
+          "sampleCount": 30,
+          "reviewQuantile": 0.1
+        }
+      },
+      "templateMarkerCount": {
+        "metric": "templateMarkerCount",
+        "direction": "upper",
+        "review": 3,
+        "source": {
+          "type": "benchmark-quantile",
+          "baselineId": "naturalness-benchmark-v2",
+          "sampleCount": 30,
+          "reviewQuantile": 0.9
+        }
+      },
+      "minimumDisclaimerSentencesForFail": {
+        "value": 2,
+        "source": {
+          "type": "row-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "minimumDisclaimerSentencesForFail",
+          "rationale": "One matched sentence may be legitimate evidence hygiene and cannot cause a hard fail by itself."
+        }
+      },
+      "requireDirectRequest": {
+        "value": false,
+        "source": {
+          "type": "row-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "requireDirectRequest",
+          "rationale": "Direct second-person requests are a corpus feature, not a universal requirement; actionable work-order phrasing is also valid."
+        }
+      },
+      "shortOpeningMaxCharacters": {
+        "value": 30,
+        "source": {
+          "type": "row-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "shortOpeningMaxCharacters"
+        }
+      },
+      "structuralPunctuationReviewCount": {
+        "value": 4,
+        "source": {
+          "type": "row-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "structuralPunctuationReviewCount"
+        }
+      },
+      "maximumTerminalSentenceCharacters": {
+        "value": 240,
+        "source": {
+          "type": "row-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "maximumTerminalSentenceCharacters"
+        }
+      }
+    },
+    "batch": {
+      "discourseSkeletonDominantShare": {
+        "metric": "discourseSkeletonDominantShare",
+        "direction": "upper",
+        "review": 0.2255,
+        "fail": 0.2934,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "naturalness-benchmark-v2",
+          "sampleCount": 30,
+          "observedCount": 3,
+          "observedShare": 0.1,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "fixedWordExcelTailShare": {
+        "metric": "fixedWordExcelTailShare",
+        "direction": "upper",
+        "review": 0.613,
+        "fail": 0.6668,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "naturalness-benchmark-v2",
+          "sampleCount": 30,
+          "observedCount": 14,
+          "observedShare": 0.4667,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "finalStepSelfCheckShare": {
+        "metric": "finalStepSelfCheckShare",
+        "direction": "upper",
+        "review": 0.8427,
+        "fail": 0.8742,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "naturalness-benchmark-v2",
+          "sampleCount": 30,
+          "observedCount": 22,
+          "observedShare": 0.7333,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "stepCountModeShare": {
+        "metric": "stepCountModeShare",
+        "direction": "upper",
+        "review": 0.4146,
+        "fail": 0.4788,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "naturalness-benchmark-v2",
+          "sampleCount": 30,
+          "observedCount": 8,
+          "observedShare": 0.2667,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "weakScheduleShare": {
+        "metric": "weakScheduleShare",
+        "direction": "upper",
+        "review": 0.3425,
+        "fail": 0.4088,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "naturalness-benchmark-v2",
+          "sampleCount": 30,
+          "observedCount": 6,
+          "observedShare": 0.2,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "weakScheduleDominantShare": {
+        "metric": "weakScheduleDominantShare",
+        "direction": "upper",
+        "review": 0.266,
+        "fail": 0.3336,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "naturalness-benchmark-v2",
+          "sampleCount": 30,
+          "observedCount": 4,
+          "observedShare": 0.1333,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "minimumRows": {
+        "value": 8,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "minimumRows"
+        }
+      },
+      "reviewLevelTemplateSignalsForFail": {
+        "value": 2,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "reviewLevelTemplateSignalsForFail",
+          "rationale": "Several moderate batch-level repetitions together constitute template concentration."
+        }
+      },
+      "requestFrameDominantShare": {
+        "metric": "requestFrameDominantShare",
+        "direction": "upper",
+        "review": 0.8,
+        "fail": 0.95,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "requestFrameDominantShareReview",
+          "failParameter": "requestFrameDominantShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "shortOpeningShare": {
+        "metric": "shortOpeningShare",
+        "direction": "upper",
+        "review": 0.25,
+        "fail": 0.5,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "shortOpeningShareReview",
+          "failParameter": "shortOpeningShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "firstPunctuationTerminalShare": {
+        "metric": "firstPunctuationTerminalShare",
+        "direction": "upper",
+        "review": 0.25,
+        "fail": 0.5,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "firstPunctuationTerminalShareReview",
+          "failParameter": "firstPunctuationTerminalShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "firstSentenceCommaShare": {
+        "metric": "firstSentenceCommaShare",
+        "direction": "lower",
+        "review": 0.6,
+        "fail": 0.4,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "firstSentenceCommaShareReview",
+          "failParameter": "firstSentenceCommaShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "commaToPeriodRatio": {
+        "metric": "commaToPeriodRatio",
+        "direction": "lower",
+        "review": 1.1,
+        "fail": 0.8,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "commaToPeriodRatioReview",
+          "failParameter": "commaToPeriodRatioFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "enumerationCommasPer100Chars": {
+        "metric": "enumerationCommasPer100Chars",
+        "direction": "upper",
+        "review": 2.8,
+        "fail": 4,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "enumerationCommasPer100CharsReview",
+          "failParameter": "enumerationCommasPer100CharsFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "earlyStructuralPunctuationShare": {
+        "metric": "earlyStructuralPunctuationShare",
+        "direction": "upper",
+        "review": 0.2,
+        "fail": 0.4,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "earlyStructuralPunctuationShareReview",
+          "failParameter": "earlyStructuralPunctuationShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "semicolonRowShare": {
+        "metric": "semicolonRowShare",
+        "direction": "upper",
+        "review": 0.6,
+        "fail": 0.8,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "semicolonRowShareReview",
+          "failParameter": "semicolonRowShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "longSentenceShare": {
+        "metric": "longSentenceShare",
+        "direction": "upper",
+        "review": 0.1,
+        "fail": 0.25,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "longSentenceShareReview",
+          "failParameter": "longSentenceShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      }
+    }
+  },
+  "status": "PASS",
+  "ok": true,
+  "reviewRequired": false,
+  "blocked": false,
+  "summary": {
+    "rowCount": 2,
+    "rowStatusCounts": {
+      "PASS": 2
+    },
+    "batchStatus": "PASS",
+    "findingCounts": {}
+  },
+  "rows": [
+    {
+      "uid": "434",
+      "dataRow": 2,
+      "questionLength": 827,
+      "paragraphCount": 5,
+      "sentenceCount": 18,
+      "disclaimerSentenceCount": 2,
+      "disclaimerSentenceDensity": 0.1111,
+      "missingMaterialSentenceCount": 0,
+      "evidenceBoundarySentenceCount": 2,
+      "disclaimerSignalCount": 2,
+      "concreteFactAnchorCount": 0,
+      "concreteFactsPer100Chars": 0,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "boundary",
+        "deliverable",
+        "boundary",
+        "deliverable",
+        "boundary"
+      ],
+      "paragraphActionScores": [
+        {
+          "boundary": 4,
+          "evidence": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "decision": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "deliverable": 5,
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "boundary": 0,
+          "decision": 0,
+          "quality": 0
+        },
+        {
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "scene": 0
+        },
+        {
+          "deliverable": 5,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "boundary": 0,
+          "decision": 0
+        },
+        {
+          "boundary": 3,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "scene": 0
+        }
+      ],
+      "discourseSkeleton": "boundary>deliverable>boundary>deliverable>boundary",
+      "compressedDiscourseSkeleton": "boundary>deliverable>boundary>deliverable>boundary",
+      "fixedWordExcelTail": false,
+      "stepCount": 11,
+      "finalStepSelfCheck": true,
+      "scheduleAuthenticityTag": "no-schedule-device",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": false,
+      "templateMarkerCount": 1,
+      "explicitRequestPresent": true,
+      "requestFrame": "polite-request",
+      "requestPositionRatio": 0.6528,
+      "requestMarker": "请把",
+      "requestDeliverableMarker": "Excel",
+      "missingDeliverableFormats": [],
+      "firstSentenceLength": 56,
+      "firstSentenceCommaCount": 1,
+      "firstPunctuationIsTerminal": false,
+      "commaCount": 22,
+      "periodCount": 18,
+      "colonCount": 0,
+      "semicolonCount": 0,
+      "enumerationCommaCount": 8,
+      "commaToPeriodRatio": 1.2222,
+      "enumerationCommasPer100Chars": 0.9674,
+      "structuralPunctuationCount": 0,
+      "structuralPunctuationPer100Chars": 0,
+      "earlyStructuralPunctuation": false,
+      "containsSemicolon": false,
+      "maximumTerminalSentenceLength": 71,
+      "evidence": {
+        "disclaimerSentences": [
+          "目前内部设备清单、证书指纹台账和可接受的离线窗口还没有提供，因此本次工作的结果应是一套公开规则下的轮换准备方案，生产验证留待内部材料补齐后完成。",
+          "对应关系不清或状态无法确认的设备留在待核区，不进入试点名单。"
+        ],
+        "concreteFactAnchors": [],
+        "finalParagraph": "最终结论只判断现有材料是否足以启动轮换准备，以及哪些条件满足后才能进入试点。生产租户的设备证书映射台账、实际接口返回和离线窗口都列为待补输入。可轮换名单为空或回滚条件不完整时，结论保持为暂不进入试点，放行结果以真实核对记录为准。",
+        "finalStep": "对照两份产物中同一设备的状态、下一步和回滚动作，确认条件结论完全一致。",
+        "request": {
+          "clear": true,
+          "frame": "polite-request",
+          "requestMarker": "请把",
+          "requestIndex": 551,
+          "requestSentenceIndex": 11,
+          "deliverableMarker": "Excel",
+          "deliverableIndex": 565
+        },
+        "punctuation": {
+          "visibleCharacters": 827,
+          "firstSentence": "华为云IoTDA上有一批通过X.509证书（用于确认设备身份的数字证书）接入的存量设备，现有证书陆续接近轮换窗口。",
+          "firstSentenceLength": 56,
+          "firstSentenceCommaCount": 1,
+          "firstPunctuation": "，",
+          "firstPunctuationIndex": 43,
+          "firstPunctuationIsTerminal": false,
+          "commaCount": 22,
+          "periodCount": 18,
+          "colonCount": 0,
+          "semicolonCount": 0,
+          "enumerationCommaCount": 8,
+          "structuralPunctuationCount": 0,
+          "commaToPeriodRatio": 1.2222,
+          "enumerationCommasPer100Chars": 0.9674,
+          "structuralPunctuationPer100Chars": 0,
+          "earlyStructuralPunctuation": false,
+          "containsSemicolon": false,
+          "maximumTerminalSentenceLength": 71
+        }
+      },
+      "status": "PASS",
+      "findings": []
+    },
+    {
+      "uid": "435",
+      "dataRow": 3,
+      "questionLength": 873,
+      "paragraphCount": 5,
+      "sentenceCount": 20,
+      "disclaimerSentenceCount": 3,
+      "disclaimerSentenceDensity": 0.15,
+      "missingMaterialSentenceCount": 2,
+      "evidenceBoundarySentenceCount": 1,
+      "disclaimerSignalCount": 3,
+      "concreteFactAnchorCount": 1,
+      "concreteFactsPer100Chars": 0.1145,
+      "firstPersonPresent": false,
+      "firstPersonOpening": false,
+      "paragraphActions": [
+        "boundary",
+        "boundary",
+        "boundary",
+        "deliverable",
+        "boundary"
+      ],
+      "paragraphActionScores": [
+        {
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0,
+          "quality": 0
+        },
+        {
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "quality": 0,
+          "scene": 0
+        },
+        {
+          "boundary": 3,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "scene": 1,
+          "instruction": 1,
+          "deliverable": 0
+        },
+        {
+          "deliverable": 5,
+          "decision": 2,
+          "evidence": 2,
+          "scene": 1,
+          "instruction": 1,
+          "boundary": 0,
+          "quality": 0
+        },
+        {
+          "boundary": 4,
+          "decision": 2,
+          "evidence": 2,
+          "quality": 2,
+          "instruction": 1,
+          "deliverable": 0,
+          "scene": 0
+        }
+      ],
+      "discourseSkeleton": "boundary>boundary>boundary>deliverable>boundary",
+      "compressedDiscourseSkeleton": "boundary>deliverable>boundary",
+      "fixedWordExcelTail": false,
+      "stepCount": 12,
+      "finalStepSelfCheck": true,
+      "scheduleAuthenticityTag": "no-schedule-device",
+      "weakScheduleDevice": false,
+      "closesWithDeliverable": false,
+      "templateMarkerCount": 1,
+      "explicitRequestPresent": true,
+      "requestFrame": "polite-request",
+      "requestPositionRatio": 0.6471,
+      "requestMarker": "请把",
+      "requestDeliverableMarker": "Word",
+      "missingDeliverableFormats": [],
+      "firstSentenceLength": 66,
+      "firstSentenceCommaCount": 1,
+      "firstPunctuationIsTerminal": false,
+      "commaCount": 23,
+      "periodCount": 20,
+      "colonCount": 0,
+      "semicolonCount": 0,
+      "enumerationCommaCount": 8,
+      "commaToPeriodRatio": 1.15,
+      "enumerationCommasPer100Chars": 0.9164,
+      "structuralPunctuationCount": 0,
+      "structuralPunctuationPer100Chars": 0,
+      "earlyStructuralPunctuation": false,
+      "containsSemicolon": false,
+      "maximumTerminalSentenceLength": 70,
+      "evidence": {
+        "disclaimerSentences": [
+          "现在缺少一份能把旧回调配置、新接入方式和演练证据放在一起的迁移记录。",
+          "它们还不能说明本应用当前订阅了哪些事件，也无法确认控制台是否允许两种方式同时保留，这些内容需要从生产配置导出和演练记录中补齐。",
+          "生产配置导出、订阅事件清单和运行日志列为待补输入。"
+        ],
+        "concreteFactAnchors": [
+          {
+            "kind": "identifier",
+            "value": "v2"
+          }
+        ],
+        "finalParagraph": "结论只回答现有材料是否足以开展演练准备，以及还要补哪些对象级信息。生产配置导出、订阅事件清单和运行日志列为待补输入。两种推送方式能否并行保留也在演练前确认。如果实际不能并行，迁移说明需要写清恢复旧回调与核对补发记录的最小步骤，生产切换结论由后续演练证据确认。",
+        "finalStep": "汇总演练准入结论和未决事项，确认没有把 SDK 示例结果写成生产切换事实。",
+        "request": {
+          "clear": true,
+          "frame": "polite-request",
+          "requestMarker": "请把",
+          "requestIndex": 585,
+          "requestSentenceIndex": 12,
+          "deliverableMarker": "Word",
+          "deliverableIndex": 597
+        },
+        "punctuation": {
+          "visibleCharacters": 873,
+          "firstSentence": "现有钉钉企业内部应用通过HTTP回调接收人员变更事件，团队准备评估是否迁移到Stream模式（由客户端与平台保持连接并持续接收事件）。",
+          "firstSentenceLength": 66,
+          "firstSentenceCommaCount": 1,
+          "firstPunctuation": "，",
+          "firstPunctuationIndex": 26,
+          "firstPunctuationIsTerminal": false,
+          "commaCount": 23,
+          "periodCount": 20,
+          "colonCount": 0,
+          "semicolonCount": 0,
+          "enumerationCommaCount": 8,
+          "structuralPunctuationCount": 0,
+          "commaToPeriodRatio": 1.15,
+          "enumerationCommasPer100Chars": 0.9164,
+          "structuralPunctuationPer100Chars": 0,
+          "earlyStructuralPunctuation": false,
+          "containsSemicolon": false,
+          "maximumTerminalSentenceLength": 70
+        }
+      },
+      "status": "PASS",
+      "findings": []
+    }
+  ],
+  "batch": {
+    "status": "PASS",
+    "metrics": {
+      "rowCount": 2,
+      "firstPersonShare": 0,
+      "firstPersonOpeningShare": 0,
+      "discourseSkeletonDominantShare": 0.5,
+      "discourseSkeletonDominant": "boundary>deliverable>boundary",
+      "discourseSkeletonCounts": {
+        "boundary>deliverable>boundary>deliverable>boundary": 1,
+        "boundary>deliverable>boundary": 1
+      },
+      "fixedWordExcelTailShare": 0,
+      "finalStepSelfCheckShare": 1,
+      "stepCountModeShare": 0.5,
+      "stepCountMode": 11,
+      "stepCountCounts": {
+        "11": 1,
+        "12": 1
+      },
+      "weakScheduleShare": 0,
+      "weakScheduleDominantShare": 0,
+      "weakScheduleDominantTag": "",
+      "scheduleTagCounts": {
+        "no-schedule-device": 2
+      },
+      "disclaimerHeavyShare": 0,
+      "lowConcreteFactShare": 0,
+      "explicitRequestShare": 1,
+      "requestFrameDominantShare": 1,
+      "requestFrameDominant": "polite-request",
+      "requestFrameCounts": {
+        "polite-request": 2
+      },
+      "shortOpeningShare": 0,
+      "firstPunctuationTerminalShare": 0,
+      "firstSentenceCommaShare": 1,
+      "commaToPeriodRatio": 1.1842,
+      "enumerationCommasPer100Chars": 0.9412,
+      "earlyStructuralPunctuationShare": 0,
+      "semicolonRowShare": 0,
+      "longSentenceShare": 0
+    },
+    "findings": []
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "doubao-vm-worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Standalone CDP-based automation worker for the Doubao Windows client.",
+  "scripts": {
+    "test": "node --test",
+    "probe": "node src/cli.mjs probe",
+    "inspect": "node src/cli.mjs inspect",
+    "run-job": "node src/cli.mjs run-job",
+    "stop-job": "node src/cli.mjs stop-job",
+    "verify-result": "node src/cli.mjs verify-result"
+  },
+  "dependencies": {
+    "playwright-core": "1.61.1"
+  }
+}

@@ -1,0 +1,513 @@
+{
+  "schemaVersion": 1,
+  "kind": "naturalness-benchmark-baseline",
+  "metricsVersion": "naturalness-metrics-v6",
+  "questionLanguagePolicyId": "corpus-calibrated-intent-punctuation-v4",
+  "baselineId": "l1-phase3-reference-v1",
+  "generatedAt": "2026-07-17T00:00:00.000Z",
+  "sampleCount": 5,
+  "calibrationProfile": {
+    "profileId": "approved-corpus-plus-human-review-v2",
+    "rowQuantiles": {
+      "upperReview": 0.9,
+      "upperFail": 0.98,
+      "lowerReview": 0.1
+    },
+    "rowPolicy": {
+      "minimumDisclaimerSentencesForFail": 2,
+      "requireDirectRequest": false,
+      "shortOpeningMaxCharacters": 30,
+      "structuralPunctuationReviewCount": 4,
+      "maximumTerminalSentenceCharacters": 240
+    },
+    "batchUpperBounds": {
+      "reviewZ": 1.645,
+      "failZ": 2.326
+    },
+    "batchPolicy": {
+      "minimumRows": 8,
+      "reviewLevelTemplateSignalsForFail": 2,
+      "requestFrameDominantShareReview": 0.8,
+      "requestFrameDominantShareFail": 0.95,
+      "shortOpeningShareReview": 0.25,
+      "shortOpeningShareFail": 0.5,
+      "firstPunctuationTerminalShareReview": 0.25,
+      "firstPunctuationTerminalShareFail": 0.5,
+      "firstSentenceCommaShareReview": 0.6,
+      "firstSentenceCommaShareFail": 0.4,
+      "commaToPeriodRatioReview": 1.1,
+      "commaToPeriodRatioFail": 0.8,
+      "enumerationCommasPer100CharsReview": 2.8,
+      "enumerationCommasPer100CharsFail": 4,
+      "earlyStructuralPunctuationShareReview": 0.2,
+      "earlyStructuralPunctuationShareFail": 0.4,
+      "semicolonRowShareReview": 0.6,
+      "semicolonRowShareFail": 0.8,
+      "longSentenceShareReview": 0.1,
+      "longSentenceShareFail": 0.25
+    }
+  },
+  "thresholds": {
+    "row": {
+      "disclaimerSentenceDensity": {
+        "metric": "disclaimerSentenceDensity",
+        "direction": "upper",
+        "review": 0.4714,
+        "fail": 0.4943,
+        "source": {
+          "type": "benchmark-quantile",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "reviewQuantile": 0.9,
+          "failQuantile": 0.98
+        }
+      },
+      "disclaimerSentenceCount": {
+        "metric": "disclaimerSentenceCount",
+        "direction": "upper",
+        "review": 3.6,
+        "fail": 3.92,
+        "source": {
+          "type": "benchmark-quantile",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "reviewQuantile": 0.9,
+          "failQuantile": 0.98
+        }
+      },
+      "concreteFactsPer100Chars": {
+        "metric": "concreteFactsPer100Chars",
+        "direction": "lower",
+        "review": 0.624,
+        "source": {
+          "type": "benchmark-quantile",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "reviewQuantile": 0.1
+        }
+      },
+      "templateMarkerCount": {
+        "metric": "templateMarkerCount",
+        "direction": "upper",
+        "review": 1.2,
+        "source": {
+          "type": "benchmark-quantile",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "reviewQuantile": 0.9
+        }
+      },
+      "minimumDisclaimerSentencesForFail": {
+        "value": 2,
+        "source": {
+          "type": "row-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "minimumDisclaimerSentencesForFail",
+          "rationale": "One matched sentence may be legitimate evidence hygiene and cannot cause a hard fail by itself."
+        }
+      },
+      "requireDirectRequest": {
+        "value": false,
+        "source": {
+          "type": "row-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "requireDirectRequest",
+          "rationale": "Direct second-person requests are a corpus feature, not a universal requirement; actionable work-order phrasing is also valid."
+        }
+      },
+      "shortOpeningMaxCharacters": {
+        "value": 30,
+        "source": {
+          "type": "row-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "shortOpeningMaxCharacters"
+        }
+      },
+      "structuralPunctuationReviewCount": {
+        "value": 4,
+        "source": {
+          "type": "row-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "structuralPunctuationReviewCount"
+        }
+      },
+      "maximumTerminalSentenceCharacters": {
+        "value": 240,
+        "source": {
+          "type": "row-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "maximumTerminalSentenceCharacters"
+        }
+      }
+    },
+    "batch": {
+      "discourseSkeletonDominantShare": {
+        "metric": "discourseSkeletonDominantShare",
+        "direction": "upper",
+        "review": 0.5647,
+        "fail": 0.6837,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "observedCount": 1,
+          "observedShare": 0.2,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "fixedWordExcelTailShare": {
+        "metric": "fixedWordExcelTailShare",
+        "direction": "upper",
+        "review": 0.3512,
+        "fail": 0.5197,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "observedCount": 0,
+          "observedShare": 0,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "finalStepSelfCheckShare": {
+        "metric": "finalStepSelfCheckShare",
+        "direction": "upper",
+        "review": 0.3512,
+        "fail": 0.5197,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "observedCount": 0,
+          "observedShare": 0,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "stepCountModeShare": {
+        "metric": "stepCountModeShare",
+        "direction": "upper",
+        "review": 0.8573,
+        "fail": 0.905,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "observedCount": 3,
+          "observedShare": 0.6,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "weakScheduleShare": {
+        "metric": "weakScheduleShare",
+        "direction": "upper",
+        "review": 0.5647,
+        "fail": 0.6837,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "observedCount": 1,
+          "observedShare": 0.2,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "weakScheduleDominantShare": {
+        "metric": "weakScheduleDominantShare",
+        "direction": "upper",
+        "review": 0.5647,
+        "fail": 0.6837,
+        "source": {
+          "type": "benchmark-rate-upper-bound",
+          "baselineId": "l1-phase3-reference-v1",
+          "sampleCount": 5,
+          "observedCount": 1,
+          "observedShare": 0.2,
+          "reviewZ": 1.645,
+          "failZ": 2.326
+        }
+      },
+      "minimumRows": {
+        "value": 8,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "minimumRows"
+        }
+      },
+      "reviewLevelTemplateSignalsForFail": {
+        "value": 2,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "parameter": "reviewLevelTemplateSignalsForFail",
+          "rationale": "Several moderate batch-level repetitions together constitute template concentration."
+        }
+      },
+      "requestFrameDominantShare": {
+        "metric": "requestFrameDominantShare",
+        "direction": "upper",
+        "review": 0.8,
+        "fail": 0.95,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "requestFrameDominantShareReview",
+          "failParameter": "requestFrameDominantShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "shortOpeningShare": {
+        "metric": "shortOpeningShare",
+        "direction": "upper",
+        "review": 0.25,
+        "fail": 0.5,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "shortOpeningShareReview",
+          "failParameter": "shortOpeningShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "firstPunctuationTerminalShare": {
+        "metric": "firstPunctuationTerminalShare",
+        "direction": "upper",
+        "review": 0.25,
+        "fail": 0.5,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "firstPunctuationTerminalShareReview",
+          "failParameter": "firstPunctuationTerminalShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "firstSentenceCommaShare": {
+        "metric": "firstSentenceCommaShare",
+        "direction": "lower",
+        "review": 0.6,
+        "fail": 0.4,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "firstSentenceCommaShareReview",
+          "failParameter": "firstSentenceCommaShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "commaToPeriodRatio": {
+        "metric": "commaToPeriodRatio",
+        "direction": "lower",
+        "review": 1.1,
+        "fail": 0.8,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "commaToPeriodRatioReview",
+          "failParameter": "commaToPeriodRatioFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "enumerationCommasPer100Chars": {
+        "metric": "enumerationCommasPer100Chars",
+        "direction": "upper",
+        "review": 2.8,
+        "fail": 4,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "enumerationCommasPer100CharsReview",
+          "failParameter": "enumerationCommasPer100CharsFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "earlyStructuralPunctuationShare": {
+        "metric": "earlyStructuralPunctuationShare",
+        "direction": "upper",
+        "review": 0.2,
+        "fail": 0.4,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "earlyStructuralPunctuationShareReview",
+          "failParameter": "earlyStructuralPunctuationShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "semicolonRowShare": {
+        "metric": "semicolonRowShare",
+        "direction": "upper",
+        "review": 0.6,
+        "fail": 0.8,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "semicolonRowShareReview",
+          "failParameter": "semicolonRowShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      },
+      "longSentenceShare": {
+        "metric": "longSentenceShare",
+        "direction": "upper",
+        "review": 0.1,
+        "fail": 0.25,
+        "source": {
+          "type": "batch-policy-cap",
+          "profileId": "approved-corpus-plus-human-review-v2",
+          "reviewParameter": "longSentenceShareReview",
+          "failParameter": "longSentenceShareFail",
+          "rationale": "Explicit user-calibrated language contract; evaluated as a batch distribution to avoid punctuation-by-quota writing."
+        }
+      }
+    }
+  },
+  "benchmark": {
+    "distributions": {
+      "disclaimerSentenceDensity": {
+        "min": 0,
+        "p10": 0,
+        "p50": 0.2,
+        "p90": 0.4714,
+        "p98": 0.4943,
+        "max": 0.5,
+        "mean": 0.2257
+      },
+      "disclaimerSentenceCount": {
+        "min": 0,
+        "p10": 0,
+        "p50": 1,
+        "p90": 3.6,
+        "p98": 3.92,
+        "max": 4,
+        "mean": 1.6
+      },
+      "concreteFactsPer100Chars": {
+        "min": 0.4573,
+        "p10": 0.624,
+        "p50": 2.957,
+        "p90": 5.0525,
+        "p98": 5.6789,
+        "max": 5.8355,
+        "mean": 2.8004
+      },
+      "templateMarkerCount": {
+        "min": 0,
+        "p10": 0,
+        "p50": 0,
+        "p90": 1.2,
+        "p98": 1.84,
+        "max": 2,
+        "mean": 0.4
+      },
+      "questionLength": {
+        "min": 361,
+        "p10": 365.4,
+        "p50": 377,
+        "p90": 622.4,
+        "p98": 649.28,
+        "max": 656,
+        "mean": 467.6
+      },
+      "paragraphCount": {
+        "min": 1,
+        "p10": 1,
+        "p50": 3,
+        "p90": 3,
+        "p98": 3,
+        "max": 3,
+        "mean": 2.2
+      },
+      "stepCount": {
+        "min": 6,
+        "p10": 6,
+        "p50": 8,
+        "p90": 8,
+        "p98": 8,
+        "max": 8,
+        "mean": 7.2
+      },
+      "firstSentenceLength": {
+        "min": 26,
+        "p10": 40.4,
+        "p50": 67,
+        "p90": 76.4,
+        "p98": 80.88,
+        "max": 82,
+        "mean": 61
+      },
+      "commaToPeriodRatio": {
+        "min": 1.625,
+        "p10": 1.7178,
+        "p50": 2.4,
+        "p90": 3.33,
+        "p98": 3.706,
+        "max": 3.8,
+        "mean": 2.4614
+      },
+      "enumerationCommasPer100Chars": {
+        "min": 1.662,
+        "p10": 1.7499,
+        "p50": 2.122,
+        "p90": 3.0396,
+        "p98": 3.1689,
+        "max": 3.2012,
+        "mean": 2.3328
+      },
+      "structuralPunctuationPer100Chars": {
+        "min": 0,
+        "p10": 0.122,
+        "p50": 0.3497,
+        "p90": 0.6991,
+        "p98": 0.7765,
+        "max": 0.7958,
+        "mean": 0.4009
+      },
+      "maximumTerminalSentenceLength": {
+        "min": 62,
+        "p10": 72.4,
+        "p50": 119,
+        "p90": 150.2,
+        "p98": 160.44,
+        "max": 163,
+        "mean": 112.6
+      }
+    },
+    "batchRates": {
+      "discourseSkeletonDominantShare": 0.2,
+      "fixedWordExcelTailShare": 0,
+      "finalStepSelfCheckShare": 0,
+      "stepCountModeShare": 0.6,
+      "weakScheduleShare": 0.2,
+      "weakScheduleDominantShare": 0.2
+    },
+    "firstPersonShare": 1,
+    "explicitRequestShare": 0.8,
+    "requestFrameCounts": {
+      "polite-request": 3,
+      "missing": 1,
+      "you-take-it": 1
+    },
+    "scheduleTagCounts": {
+      "anchored-time": 3,
+      "relative-meeting": 1,
+      "no-schedule-device": 1
+    },
+    "discourseSkeletonCounts": {
+      "deliverable>boundary": 1,
+      "evidence>decision>deliverable": 1,
+      "decision>scene>evidence>boundary": 1,
+      "scene>boundary>detail>decision>detail": 1,
+      "decision>quality": 1
+    },
+    "stepCountCounts": {
+      "6": 2,
+      "8": 3
+    }
+  }
+}

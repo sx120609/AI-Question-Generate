@@ -1,0 +1,28 @@
+{
+  "kind": "l1-stage3-gate-summary",
+  "generatedAt": "2026-07-17T10:47:20.704Z",
+  "workflowState": "COMPLETE",
+  "finalRecordUid": "沈礼_7.17_L1_01",
+  "roleConsistency": "PASS",
+  "productionTrace": "PASS",
+  "deAiRewrite": {
+    "status": "PASS",
+    "provider": "mugua-openai-compatible",
+    "model": "gemini-3.5-flash"
+  },
+  "naturalness": "PASS",
+  "structure": "PASS",
+  "release": {
+    "ok": true,
+    "phase": "release",
+    "status": "PASS"
+  },
+  "feishuDryRun": {
+    "status": "PASS",
+    "apply": false,
+    "valueRangeCount": 14,
+    "apiResult": null
+  },
+  "feishuWriteAttempted": false,
+  "secretPersisted": false
+}

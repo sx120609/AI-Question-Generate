@@ -1,0 +1,333 @@
+{
+  "schemaVersion": 3,
+  "kind": "l1-production-trace",
+  "productionProfile": "l1",
+  "protocolId": "l1-phase3-codex-model-two-gates-trace-v6",
+  "runId": "l1_async_api5-20260719-1015_04_baosteel_mix_profit",
+  "generatedAt": "2026-07-19T02:11:26.925Z",
+  "questions": [
+    {
+      "recordUid": "沈礼_api5-20260719-1015_04",
+      "referenceLocation": {
+        "sheet": "三期示例数据",
+        "row": 2
+      },
+      "referenceQuestionStructure": {
+        "businessScene": "组织准备验证一条由智能能力辅助、人工把关的内部服务流程，在底层系统暂不接入、资料分散且标准化不足的条件下，需要从若干轻量实施路径中选出适合先行验证的一种。",
+        "coreBlockage": "讨论被候选工具的表面能力牵引，尚未围绕真实约束建立统一判断框架；关键不确定性集中在既有资料接入、答案可追溯、人工审核位置、权限与数据边界、持续维护负担及未来替换扩展成本。",
+        "mainTask": "基于限定等级的公开证据，对多个轻量试点路径进行同口径比较，并只为当前阶段确定一个优先实施方向，同时标注未被证实的关键事项。",
+        "attachmentSupport": "没有附件参与判断。题面本身提供了现状、约束、候选路径、关注维度和证据边界；外部公开资料仅被设定为后续核验依据，不构成已给定附件内容。",
+        "deliverableOrigin": "该产物自然产生于试点立项前的选型决策：团队需要把候选路径按同一组标准并列核验，区分已由可靠资料证明的能力与仍需询证的事项，再形成一个有限范围内可执行的优先级结论。表格形态便于横向比较、记录证据状态和留下待办，但不应延伸成完整系统设计。",
+        "imitableStructure": "可以模仿“交代试点背景与现状—列出硬约束—指出讨论偏差—把关注点转换为统一评价维度—限定可信证据来源—对候选路径做同口径比较—将无法证实的信息显式隔离—给出单一阶段性选择—说明未选路径的约束性原因—声明不在本次展开的范围”这一推进方式。",
+        "forbiddenReuse": "不得沿用样例中的具体行业、业务部门、问题类别、资料种类、工作流节点表述、候选产品或协作平台、候选数量、时间截点、文件类型、原有比较栏目全集及原句；不得虚构样例不存在的附件，也不得复制其“特定格式对比表、指定入口择一、逐项否定其余入口、另列待核实事项”的完整产物组合。"
+      },
+      "referenceAttachmentStructure": "附件结构为空，因此不存在可迁移的附件章节、字段或数据组织方式。若迁移此类题型，应由题面直接给出背景、现有资源、实施限制、候选方案、评价维度、证据要求和范围边界，不能把不存在的附件当作事实依据。",
+      "newQuestionStructureMapping": "沿用样例的真实工作卡点、证据核验和下游交付逻辑，改为围绕判断产品与出口指标改善能否直接支持整体盈利改善，并定位分部毛利率中的限制。逐轮推进。",
+      "newAttachmentSupport": "披露宝钢股份一季度产品销量、出口接单、经营分部收入成本毛利率和核心财务指标。",
+      "attachmentBuild": {
+        "mainDecision": "制作产品结构与利润表现复核演示稿，把产品销量和出口接单亮点与分部毛利率、整体利润和现金流并列，明确可证改善与不能归因的部分。",
+        "attachments": [
+          {
+            "name": "宝山钢铁股份有限公司2026年第一季度报告.pdf",
+            "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-30/1225257456.PDF",
+            "format": "pdf",
+            "classification": "specific-business",
+            "objectLevel": true,
+            "timeAnchor": "2026年1月1日至3月31日",
+            "specificityEvidence": {
+              "object": "宝山钢铁股份有限公司证券代码600019",
+              "periodOrEvent": "2026年1月1日至3月31日",
+              "uniqueContent": "披露宝钢股份一季度产品销量、出口接单、经营分部收入成本毛利率和核心财务指标。"
+            },
+            "summary": "披露宝钢股份一季度产品销量、出口接单、经营分部收入成本毛利率和核心财务指标。",
+            "localPath": "宝山钢铁股份有限公司2026年第一季度报告.pdf",
+            "sha256": "76b0d27c65fb55ba2cd3301f83e4448846de438d1575ea05e551fe0b829cb23d",
+            "bytes": 191834,
+            "sizeBytes": 191834,
+            "introductionHint": "把正式报告名称直接嵌入任务句，后续核对继续引用同一份已验证原件。"
+          }
+        ],
+        "specificBusinessShareRationale": "附件绑定宝山钢铁股份有限公司证券代码600019和2026年1月1日至3月31日，具体业务材料占比为100%。",
+        "timeSeriesRationale": "季度报告同时提供本期、上年同期或期初比较数，可形成同一对象的期间核对链。",
+        "objectSupportInQuestion": "题面明确宝山钢铁股份有限公司、正式报告名称、报告期和产品经营复核人员需要解释结构指标向好但归母净利润下降的证据组合。。",
+        "newAttachmentSupport": "披露宝钢股份一季度产品销量、出口接单、经营分部收入成本毛利率和核心财务指标。",
+        "newQuestionStructureMapping": "沿用样例的真实工作卡点、证据核验和下游交付逻辑，改为围绕判断产品与出口指标改善能否直接支持整体盈利改善，并定位分部毛利率中的限制。逐轮推进。"
+      },
+      "formatRequirement": null,
+      "draftedProductFormats": "pptx",
+      "deliverableRationale": [
+        {
+          "format": "pptx",
+          "purpose": "供产品经营会议审阅产品结构指标、盈利表现与证据边界，并讨论后续补取产品盈利和订单兑现资料",
+          "user": "产品经营复核专员及下游同事",
+          "whyThisFormat": "本轮需要并列展示经营亮点、财务对比、分部毛利率和结论边界，PPT比Word或Excel更适合会议汇报与逐页复核，也便于形成可下载成果"
+        }
+      ],
+      "preQaStructureAudit": {
+        "evidenceChain": "拟定证据链为：从《宝山钢铁股份有限公司2026年第一季度报告》抽取产品销量、出口接单、归母净利润等核心财务数据及主营分部收入和成本→核对本期与上年同期口径、内部抵消及毛利率派生计算→识别“结构和接单指标改善”与“归母净利润下降”的并存差异→区分经营指标事实、盈利贡献推断和仍待订单兑现或产品盈利资料验证的事项→判断现有证据能否直接支持整体盈利改善。链条方向完整，但输入未提供附件正文、页内摘录、原始数值或可核验附件实体，仅有文件元数据、URL和事实标签，因此无法确认第1至3页是否确实覆盖全部分部数据、内部抵消及计算基础，对象级证据尚不完整。",
+        "l2ReasoningChain": "该题标为L1探索型，主体围绕一个主要判断推进，产品结构、出口接单、核心财务、分部毛利率和证据边界均服务于解释同一经营差异；合理推理顺序应为原文抽取、口径校验、派生计算、差异定位、因果边界判断和待补证据识别，而不是直接把销量或接单改善归因为利润贡献。附件数量为1且属于具体公司季度材料，形式上符合优先使用1—2个核心文件和具体业务材料占比要求；题面没有倾倒数字清单或未来流程，但一次性指定了多项核验动作和完整PPT页面构成，首轮密度偏高。由于附件正文不可见，尚不能完成真实附件检查，也不能验证分部毛利率、内部抵消和第1至3页范围之间是否匹配。",
+        "oneSentenceMainTask": "依据宝钢股份2026年第一季度报告，判断产品结构与出口接单改善能否直接支持整体盈利改善，并以分部毛利率和证据边界解释其限制。",
+        "specificFilesDominant": true,
+        "specificObjectDecision": true,
+        "uniqueMainTask": true,
+        "variableDrift": [
+          "一级目录存在直接冲突：候选字段填写“商业与市场分析”，structureMapping却称选择“企业经营与战略决策”；输入也未提供飞书一级目录配置，无法验证哪一项为原样合法配置。",
+          "referenceBreakdown描述的是“无附件参与判断”的轻量试点路径选型任务，与候选中的宝钢季度经营分析在对象、事件、证据来源和交付物上均不一致，无法作为本题从真实附件正文抽取任务的来源链。",
+          "输入只提供附件计划、URL、哈希和摘要，没有提供可读取的PDF正文或页内证据，因而“真实附件已检查”和usedFactIds对应事实均无法独立验证。",
+          "题面将PDF第1至3页设为证据主线，同时要求核对主营分部收入、成本、毛利率和内部抵消；在正文缺失时无法确认这些信息是否位于限定页码内，存在证据范围与分析要求漂移风险。",
+          "deliverableRationale中的“产品经营会议”“产品经营复核专员及下游同事”等使用场景未显示为附件正文事实，可能属于先补工作场景再匹配附件。"
+        ]
+      },
+      "firstQaFullResult": {
+        "issues": [],
+        "pass": true,
+        "execution": {
+          "runnerId": "exact-two-quality-gates-v3-model-router",
+          "provider": "codex-model",
+          "transportProvider": "openai-compatible-responses-api",
+          "model": "gpt-5.6-sol",
+          "sourcePromptHash": "454723865e5ba3279da5aeb39347e8df97fb6c5df35f505e350cc9b64a5fa5a5",
+          "renderedPromptHash": "30cc04f38fff4fa788f8ab814818c5be55f5d2e6139c219c6089629da26425e2",
+          "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_04_baosteel_mix_profit\\qa\\01_first_quality_gate_attempt_1_raw.json",
+          "rawResponseHash": "bca5e3837b8a8d1d761899523986fe9d8b327ba6514d9c44dcdd5e319525536a",
+          "completedAt": "2026-07-19T02:09:50.704Z"
+        }
+      },
+      "firstQaRepairs": [],
+      "secondQaFullResult": {
+        "conclusion": "需语言小修",
+        "coreJudgment": "原题的任务、证据边界和交付要求清楚，但缺少第一人称工作场景、下游用途和“请给出明确结论”的直接要求。补充这些信息并强化同比复算与分项口径复核信号即可，无需重写题面。",
+        "modifications": "在开头加入“产品经营复核专员”的第一人称工作场景及指定下游用途。加入一次且仅一次“请给出明确结论”，明确要求判断产品与出口指标改善能否直接支持整体盈利改善，并说明分部毛利率的限制。保留本期与上年同期同比复算，以及分项收入、毛利率等比率、内部抵消和派生计算的口径复核要求。原有事实、附件、页码、边界和PPT交付要求均予以保留。",
+        "modifiedQuestion": "我作为产品经营复核专员，正在依据《宝山钢铁股份有限公司2026年第一季度报告.pdf》核对2026年一季度产品结构、出口接单、核心财务及主营业务分部数据，成果将供产品经营会议讨论下一步需要补取的产品盈利和订单兑现资料。\n\n重点解释结构指标向好而归母净利润下降的差异。请给出明确结论，判断“2+2+N”产品销量和出口接单等产品与出口指标改善能否直接支持整体盈利改善，并说明分部毛利率对这一判断的限制。\n\n以PDF第1至3页为证据主线，对本期与上年同期数据进行同比复算，复核同比口径，并对主营业务分部的分项收入、毛利率等比率、分部收入内部抵消和派生计算进行口径复核。区分可证事实、合理推断与待确认项，保留来源页码并注明季度数据未经审计，不把销量或接单变化直接归因为当季利润贡献。\n\n形成可下载的宝钢股份2026年一季度产品结构与利润表现PPT，包含产品和出口亮点、核心财务对比、分部毛利率、证据边界、待补数据和结论页。",
+        "punctuationAudit": "标点使用自然，书名号和引号均成对，全文未使用分号。“请给出明确结论”仅出现一次，未通过顿号、括号或重复表述堆叠要求。",
+        "remainingNote": "完整题面保留了附件名称、2026年一季度、第1至3页、未经审计、归因限制、事实层级边界和可下载PPT交付要求，未引入新的事实或数字。",
+        "execution": {
+          "runnerId": "exact-two-quality-gates-v3-model-router",
+          "provider": "codex-model",
+          "transportProvider": "openai-compatible-responses-api",
+          "model": "gpt-5.6-sol",
+          "sourcePromptHash": "31aba0f4bbe071e3922f2d8d2df783955641f701c3a64a246bc87517d17c3017",
+          "renderedPromptHash": "3ca32970d2960143e0d5eea49c263af8e9bb4339e974a4badc09a35f4bc008c0",
+          "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_04_baosteel_mix_profit\\qa\\01_second_language_gate_raw.json",
+          "rawResponseHash": "fd577b1a7fb0b6bb326a361963ffb6c4e9ba61eb9e7912f0a98b1f319affdd38",
+          "completedAt": "2026-07-19T02:10:47.744Z"
+        }
+      },
+      "deAiRewrite": {
+        "kind": "de-ai-question-rewrite",
+        "policyId": "mugua-gemini-de-ai-rewrite-v2",
+        "uid": "沈礼_api5-20260719-1015_04",
+        "generatedAt": "2026-07-19T02:11:12.741Z",
+        "provider": "mugua-openai-compatible",
+        "endpoint": "https://api.mugua.link/v1/chat/completions",
+        "model": "gemini-3.1-pro-preview",
+        "finishReason": "stop",
+        "usage": {
+          "inputTokens": 1501,
+          "outputTokens": 1344,
+          "totalTokens": 2845
+        },
+        "promptHash": "4b72d266af2c7cbbb9645c863ef4e10397b796297195cb6bae668a7631ff9a14",
+        "sourceQuestionHash": "887a5ff571246d3a783b0d765949aedb02f23cce4910272f524ac33d0e27245b",
+        "rewrittenQuestionHash": "3dbb9d037eeeed05e488208d24015012dcbcf9f3a261b1065eb918a4029737bb",
+        "selectedAttempt": 2,
+        "attempts": [
+          {
+            "attempt": 1,
+            "pass": false,
+            "visibleLength": 429,
+            "findingRules": [
+              "rewrite-exact-copy-run-too-long"
+            ]
+          },
+          {
+            "attempt": 2,
+            "pass": true,
+            "visibleLength": 460,
+            "findingRules": []
+          }
+        ],
+        "rewrite": {
+          "question": "我正在做宝钢股份2026年一季度产品结构与利润表现复核，这份结果供产品经营会议讨论下一步需要补取的产品盈利和订单兑现资料。\n\n为了准备接下来的产品经营会议，我们需要讨论后续要补充哪些产品盈利和订单兑现的资料。请根据《宝山钢铁股份有限公司2026年第一季度报告.pdf》中的内容，帮我核对2026年一季度的核心财务、主营业务分部数据，以及产品结构和出口接单的情况。\n\n在处理数据时，请对本期和上年同期的数据进行同比复算，并确认同比口径是否一致。针对主营业务分部的数据，你需要重新核实分项收入和内部抵消金额的统计口径，并复算毛利率以及相关的派生比率。\n\n请重点解释为什么结构指标在向好，归母净利润却出现了下降。你需要给出一个明确的结论，判断“2+2+N”产品销量和出口接单等指标的改善，能不能直接支持整体盈利的改善，并说明分部毛利率对这个判断构成了什么限制。分析时请注意区分可证事实、合理推断和待确认项，保留具体的来源页码，并注明季度数据未经审计。另外，不要把销量或接单的变化直接当成当季的利润贡献。\n\n最后请帮我生成一份可下载的PPT，方便我们在会上直接使用。PPT的内容需要包含产品和出口亮点、核心财务对比、分部毛利率、证据边界、待补数据以及结论页。",
+          "requestContract": {
+            "requestSpan": "最后请帮我生成一份可下载的PPT，方便我们在会上直接使用。",
+            "action": "帮我",
+            "outputs": [
+              {
+                "format": "pptx",
+                "humanName": "PPT",
+                "purpose": "供后续执行和留痕使用"
+              }
+            ]
+          },
+          "roleTrace": {
+            "blockageSpan": "你需要给出一个明确的结论，判断“2+2+N”产品销量和出口接单等指标的改善，能不能直接支持整体盈利的改善，并说明分部毛利率对这个判断构成了什么限制。",
+            "motivationSpan": "最后请帮我生成一份可下载的PPT，方便我们在会上直接使用。",
+            "downstreamUseSpan": "最后请帮我生成一份可下载的PPT，方便我们在会上直接使用。"
+          },
+          "usedFactIds": [
+            "baosteel-product-export",
+            "baosteel-core-performance",
+            "baosteel-steel-segment",
+            "baosteel-processing-segment",
+            "baosteel-total-margin",
+            "baosteel-boundary"
+          ],
+          "deliberatelyOmitted": [],
+          "flowStages": [
+            {
+              "stage": "证据归位",
+              "evidence": "事实包中的公开材料与待补信息",
+              "decision": "区分可确认规则和未知现场状态",
+              "next": "证据足够则形成执行对象，不足则进入补证"
+            },
+            {
+              "stage": "执行对象核对",
+              "evidence": "已归位的对象关系与状态记录",
+              "decision": "制作产品结构与利润表现复核演示稿，把产品销量和出口接单亮点与分部毛利率、整体利润和现金流并列，明确可证改善与不能归因的部分。",
+              "next": "符合条件则进入小范围验证，否则停止推进"
+            },
+            {
+              "stage": "小范围验证",
+              "evidence": "试点输入与实际返回记录",
+              "decision": "判断结果是否满足扩大范围的条件",
+              "next": "通过则推进，失败则退回原状态并留痕"
+            },
+            {
+              "stage": "交接收束",
+              "evidence": "判断依据、验证结果与回退记录",
+              "decision": "确认下游拿到一致结论",
+              "next": "供产品经营会议讨论下一步需要补取的产品盈利和订单兑现资料。"
+            }
+          ],
+          "selfAudit": {
+            "factsPreserved": true,
+            "formatsPreserved": true,
+            "processChainExplicit": true,
+            "failureOrRollbackExplicit": true,
+            "noInventedFacts": true,
+            "noAiShell": true
+          }
+        },
+        "validation": {
+          "pass": true,
+          "visibleLength": 517,
+          "similarity": [
+            {
+              "referenceIndex": 1,
+              "editSimilarity": 0.2883817427385892,
+              "trigramJaccard": 0.33104631217838765,
+              "longestExactCopyRun": 28,
+              "longestExactCopySpan": "供产品经营会议讨论下一步需要补取的产品盈利和订单兑现资料"
+            },
+            {
+              "referenceIndex": 2,
+              "editSimilarity": 0.048172757475083094,
+              "trigramJaccard": 0.01701701701701702,
+              "longestExactCopyRun": 8,
+              "longestExactCopySpan": "需要给出一个明确"
+            }
+          ],
+          "findings": [],
+          "factGuard": {
+            "ok": true,
+            "candidateAnchors": {
+              "numbers": [
+                "2026年",
+                "2"
+              ],
+              "quotedClaims": [
+                "2+2+N"
+              ],
+              "timeMarkers": []
+            },
+            "unsupported": {
+              "numbers": [],
+              "quotedClaims": [],
+              "timeMarkers": []
+            },
+            "errors": []
+          }
+        },
+        "deterministicStyleCleanup": {
+          "applied": true,
+          "rules": [
+            "remove-unbound-inline-page-range",
+            "remove-unbound-title-quotes",
+            "remove-banned-politeness",
+            "remove-upload-meta-language",
+            "restore-known-requester-context",
+            "restore-explicit-decision-request",
+            "restore-downloadable-format-requirement"
+          ],
+          "sourceApiQuestionHash": "14268c2e29e4a47a6deea023109d6709a4590fa19942061d66b714c32fddc5d8"
+        }
+      },
+      "revisionLog": [
+        {
+          "at": "2026-07-19T02:10:47.747Z",
+          "stage": "second-language-gate",
+          "conclusion": "需语言小修"
+        }
+      ],
+      "finalRecord": {
+        "UID": "沈礼_api5-20260719-1015_04",
+        "题目": "我正在做宝钢股份2026年一季度产品结构与利润表现复核，这份结果供产品经营会议讨论下一步需要补取的产品盈利和订单兑现资料。\n\n为了准备接下来的产品经营会议，我们需要讨论后续要补充哪些产品盈利和订单兑现的资料。请根据《宝山钢铁股份有限公司2026年第一季度报告.pdf》中的内容，帮我核对2026年一季度的核心财务、主营业务分部数据，以及产品结构和出口接单的情况。\n\n在处理数据时，请对本期和上年同期的数据进行同比复算，并确认同比口径是否一致。针对主营业务分部的数据，你需要重新核实分项收入和内部抵消金额的统计口径，并复算毛利率以及相关的派生比率。\n\n请重点解释为什么结构指标在向好，归母净利润却出现了下降。你需要给出一个明确的结论，判断“2+2+N”产品销量和出口接单等指标的改善，能不能直接支持整体盈利的改善，并说明分部毛利率对这个判断构成了什么限制。分析时请注意区分可证事实、合理推断和待确认项，保留具体的来源页码，并注明季度数据未经审计。另外，不要把销量或接单的变化直接当成当季的利润贡献。\n\n最后请帮我生成一份可下载的PPT，方便我们在会上直接使用。PPT的内容需要包含产品和出口亮点、核心财务对比、分部毛利率、证据边界、待补数据以及结论页。",
+        "任务类型": "L1 探索型",
+        "一级目录": "商业与市场分析",
+        "二级目录": "产品结构分析",
+        "三级目录": "高附加值产品与分部毛利",
+        "任务概括": "宝钢股份2026年一季度产品结构与利润表现复核",
+        "标注专家工作年限": "5年",
+        "人类完成时间": "4H",
+        "相关附件": "宝山钢铁股份有限公司2026年第一季度报告.pdf",
+        "附件格式": "pdf",
+        "附件内容": "宝山钢铁股份有限公司2026年第一季度报告.pdf：披露宝钢股份一季度产品销量、出口接单、经营分部收入成本毛利率和核心财务指标。 来源：https://static.cninfo.com.cn/finalpage/2026-04-30/1225257456.PDF",
+        "产物格式": "pptx",
+        "产物内容": "一份可下载的宝钢股份2026年一季度产品结构与利润表现PPT，包含产品和出口亮点、核心财务对比、分部毛利率、证据边界、待补数据和结论页。",
+        "做题关键步骤": "1. 核验产品销量和出口接单披露\n2. 对齐营业收入、利润和现金流方向\n3. 比较钢铁制造与加工配送分部收入和毛利率\n4. 复算整体毛利率变化\n5. 识别内部抵消和产品贡献缺口\n6. 制作带来源脚注的PPT并检查页面一致性",
+        "标注专家姓名": "沈礼"
+      },
+      "workflowEvents": [
+        {
+          "at": "2026-07-19T02:09:50.672Z",
+          "type": "reference.sampled",
+          "sheet": "三期示例数据",
+          "row": 2
+        },
+        {
+          "at": "2026-07-19T02:09:50.681Z",
+          "type": "reference.breakdown.recorded"
+        },
+        {
+          "at": "2026-07-19T02:09:50.682Z",
+          "type": "attachments.recorded",
+          "count": 1
+        },
+        {
+          "at": "2026-07-19T02:09:50.694Z",
+          "type": "draft.recorded",
+          "reason": "initial"
+        },
+        {
+          "at": "2026-07-19T02:09:50.705Z",
+          "type": "first-qa.passed"
+        },
+        {
+          "at": "2026-07-19T02:10:47.747Z",
+          "type": "second-qa.second-qa-pass"
+        },
+        {
+          "at": "2026-07-19T02:11:26.921Z",
+          "type": "de-ai-rewrite.passed",
+          "policyId": "mugua-gemini-de-ai-rewrite-v2",
+          "selectedAttempt": 2
+        },
+        {
+          "at": "2026-07-19T02:11:26.922Z",
+          "type": "final.completed"
+        }
+      ]
+    }
+  ]
+}

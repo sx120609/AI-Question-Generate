@@ -1,0 +1,90 @@
+{
+  "kind": "scene-card-gate-report",
+  "gateId": "scene-card-role-consistency-v1",
+  "protocolId": "situated-requester-v1",
+  "schemaVersion": 1,
+  "status": "PASS",
+  "ok": true,
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_05_inspur_profit_cash\\drafts\\l1_questions.tsv",
+  "candidateHash": "61ab7db720f198a87095514d1c1832447329ffdced4601b90624c423b217ca36",
+  "sceneCardPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_05_inspur_profit_cash\\sources\\scene_cards.json",
+  "sceneCardFileHash": "9bd2af7847b4b43672e622dd94ac9941ff5eebaaaa567b13992199437424a5c2",
+  "sceneCardBundleHash": "a5e0b634ed1a22b06ceac2752d93153b3acb63014fc686c1803bc2a833fe856f",
+  "sceneCardSetHash": "fe521e58a4365be26db82ee0b3f4828533d8e4770e6efbb5ff132690ee616eca",
+  "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_05_inspur_profit_cash\\sources\\fact_ledger.json",
+  "factLedgerHash": "babdc0ae8dc624d99e92f24be4ce76b74f815fe70705a6200ba997cbf91c77dc",
+  "summary": {
+    "candidateRowCount": 1,
+    "sceneCardCount": 1,
+    "passedRowCount": 1,
+    "failedRowCount": 0,
+    "globalErrorCount": 0,
+    "batchCollisionCount": 0
+  },
+  "rows": [
+    {
+      "uid": "沈礼_api5-20260719-1015_05",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "0afa5b4ff23479f6d0d1b706c03e2d37683812bec64c2456c17cd9f557877a86",
+      "cardHash": "ced3db6578286802bd3df26780646132bc87fb66daef2cea096d2de0686032a2",
+      "roleConsistencyHash": "0d8dd80e767d663ef20539742ced1beedeee79b60b8fe44de84a182170d79e56",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "polite-request",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "xlsx"
+        ],
+        "mFormats": [
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "请根据《浪潮电子信息产业股份有限公司2026年第一季度报告.pdf》，核对本期、上年同期和期初数据的统计口径，复算本期与上年同期的核心指标以及同比变动方向，同时对收入、利润、现金流相关分项、比率和占比进行口径复核，看看报表数据和变动原因能不能对得上。",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "对于目前缺失的客户、项目和账龄明细，请在表里留出回填栏，方便经营分析同事后续拿到回款和项目明细后继续补充判断，不要自行把相关变动推断为完整的因果关系。",
+            "occurrences": 1
+          },
+          "downstreamUseSpan": {
+            "span": "对于目前缺失的客户、项目和账龄明细，请在表里留出回填栏，方便经营分析同事后续拿到回款和项目明细后继续补充判断，不要自行把相关变动推断为完整的因果关系。",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [
+            "2026年"
+          ],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "6832fd55b8e5efce5eb3d66392e435b1bcc8522b4033705515392f9933baad60"
+      }
+    }
+  ],
+  "batch": {
+    "ok": true,
+    "status": "PASS",
+    "thresholds": {
+      "highMaskedTrigramSimilarity": 0.72,
+      "sharedMaskedFragmentLength": 18
+    },
+    "comparisons": [],
+    "errors": []
+  },
+  "errors": [],
+  "evaluationHash": "9a4f4aa0f3004fbccf57f993faa8f6da36b98b21e5659627a0ccedc1f2690c2d"
+}

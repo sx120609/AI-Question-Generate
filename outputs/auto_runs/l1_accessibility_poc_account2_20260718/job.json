@@ -1,0 +1,63 @@
+{
+  "jobId": "l1-account2-accessibility-poc-20260718",
+  "attachmentRoot": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_accessibility_poc_account2_20260718\\attachments",
+  "attachments": [
+    {
+      "name": "附件一_腾讯会议官方会议字幕说明.html",
+      "relativePath": "附件一_腾讯会议官方会议字幕说明.html",
+      "sha256": "25a428a89acc9cc81d26af89495c267bbd2900331f7926b2fc39b9aa4044aa2d",
+      "sizeBytes": 56859,
+      "sourceUrl": "https://meeting.tencent.com/support-doc-detail/1174/index.html",
+      "summary": "2026年7月18日下载的腾讯会议官方会议字幕帮助页面，包含实时辅助字幕的使用条件、支持端、版本和主持人控制项。",
+      "classification": "specific-business",
+      "objectLevel": true,
+      "timeAnchor": "2026年7月18日培训直播平台无障碍POC资料核验",
+      "specificityEvidence": {
+        "object": "腾讯会议会议字幕功能",
+        "periodOrEvent": "2026年7月18日培训直播平台无障碍POC准备",
+        "uniqueContent": "官方页面列明实时辅助字幕、支持端、版本条件以及主持人与联席主持人的字幕控制项"
+      },
+      "introductionHint": "首轮只把它作为腾讯会议字幕能力的起始证据，并与钉钉、飞书现行官方页面按同一口径核验。"
+    }
+  ],
+  "initialAttachmentNames": [
+    "附件一_腾讯会议官方会议字幕说明.html"
+  ],
+  "maxRounds": 6,
+  "mode": "openai-compatible",
+  "taskGoal": "为国内企业跨地区员工常态化培训直播完成腾讯会议、钉钉和飞书的无障碍能力证据核验，形成可用于下一阶段试点验证安排的可下载电子表格，并给出唯一优先试点平台。",
+  "successCriteria": [
+    "只使用截至2026年7月18日仍可访问的三家官方产品文档和帮助页面，每项判断附来源链接、页面标题和访问日期",
+    "分别核对实时字幕、翻译字幕、屏幕阅读器、键盘与焦点操作、录制和转录留存、主持人及管理员控制，并区分支持端、版本和套餐",
+    "官方公开页面没有写清楚的套餐、语言、导出、保存期限和直播规模信息保持留白或标为待确认，不作推测",
+    "最终可下载电子表格给出一个优先进入试点验证的平台，另外两家仅基于证据缺口说明暂缓原因，并明确结论不作为最终采购或合规决策"
+  ],
+  "initialPrompt": "我们准备把跨地区员工培训改成常态化直播，一部分同事需要实时字幕、屏幕阅读器或全键盘操作，候选平台只看腾讯会议、钉钉和飞书。附件一是2026年7月18日下载的腾讯会议官方会议字幕说明，它只是证据起点，不代表腾讯会议整体无障碍能力已经核实。\n\n这一轮先不要推荐平台，也不要制作最终表格。请结合附件，并查找截至2026年7月18日仍能访问的三家官方产品文档和帮助页面，先整理一份证据清单：逐个平台列出实时字幕、翻译字幕、屏幕阅读器、键盘与焦点操作、录制和转录留存、主持人及管理员控制分别能核实到什么，同时记录页面标题、链接、访问日期、适用端、版本和套餐。官方没有写清楚的地方直接留空并标成待确认，不要用媒体测评或自行推断。最后指出目前证据冲突最大的地方，以及最应该安排实测的3个缺口。后面我会继续和你收窄试点验证脚本和优先平台，全部核清后再做可下载电子表格。",
+  "productRequirement": {
+    "required": true,
+    "requestedFormats": ["excel"],
+    "allowEquivalentOnline": true,
+    "allowUnavailableBestEffort": true
+  },
+  "responseTimeoutMs": 300000,
+  "interactionRewrite": {
+    "type": "openai-compatible",
+    "baseUrl": "https://api.mugua.link/v1",
+    "model": "gemini-3.1-pro-preview",
+    "apiKeyEnv": "DE_AI_REWRITE_API_KEY",
+    "temperature": 0.55,
+    "timeoutMs": 180000
+  },
+  "promptPreflight": {
+    "type": "local-codex",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "timeoutMs": 360000
+  },
+  "policy": {
+    "type": "local-codex",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "timeoutMs": 360000
+  }
+}

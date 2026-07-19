@@ -1,0 +1,91 @@
+{
+  "kind": "scene-card-gate-report",
+  "gateId": "scene-card-role-consistency-v1",
+  "protocolId": "situated-requester-v1",
+  "schemaVersion": 1,
+  "status": "PASS",
+  "ok": true,
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_02_shenhua_capex_funding\\drafts\\l1_questions.tsv",
+  "candidateHash": "67e81b5160c8119032963639e0d3528058a9f9115289f02d5461607c33a0eb7c",
+  "sceneCardPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_02_shenhua_capex_funding\\sources\\scene_cards.json",
+  "sceneCardFileHash": "2defa33a2fbcc8c96f90832288d8f379b43b7ae89eb89554bfeaf8ce3af0cb11",
+  "sceneCardBundleHash": "003c88042008ec760b750f64642c7da69dc579eaafe6dd0923d02a3079cd1628",
+  "sceneCardSetHash": "4e0cfe6fb24aa4ba918e8056bb1030367de8a43fec27a0bf44492b5b02e78829",
+  "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_02_shenhua_capex_funding\\sources\\fact_ledger.json",
+  "factLedgerHash": "02290374989f4d7b097fe36ceffbec6388a1d6cf94d274e7eb930e11f017d227",
+  "summary": {
+    "candidateRowCount": 1,
+    "sceneCardCount": 1,
+    "passedRowCount": 1,
+    "failedRowCount": 0,
+    "globalErrorCount": 0,
+    "batchCollisionCount": 0
+  },
+  "rows": [
+    {
+      "uid": "沈礼_api5-20260719-1015_02",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "ef8fc467eef9c253113e6f2435a2958c27cf85de0bde394be73e71becfd9f492",
+      "cardHash": "bd9d0ad339c42b7efbeda152f3da3df964c6f182ab100bdc2be480f132277cf2",
+      "roleConsistencyHash": "d5c9c84310088e5a3dc4e5dd461e1036596bf2796462496178c07be68836a894",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "polite-request",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "xlsx"
+        ],
+        "mFormats": [
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "我正在做中国神华交易并表后的资本开支调整与资金承接复核，这份结果供资本计划同事跟踪项目预算和后续融资披露。",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "",
+            "occurrences": 0
+          },
+          "downstreamUseSpan": {
+            "span": "为了给资本计划同事跟踪项目预算和后续融资披露提供参考，请根据《中国神华能源股份有限公司2026年第一季度报告.pdf》帮我做个数据复核。",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [
+            "2026年",
+            "179.64亿元"
+          ],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "49ea158e5f6f0f4ac380927d20c23cc5f6634c90954935605acf70a951bbdaae"
+      }
+    }
+  ],
+  "batch": {
+    "ok": true,
+    "status": "PASS",
+    "thresholds": {
+      "highMaskedTrigramSimilarity": 0.72,
+      "sharedMaskedFragmentLength": 18
+    },
+    "comparisons": [],
+    "errors": []
+  },
+  "errors": [],
+  "evaluationHash": "1101ad2ba402412f250e3d4312be3838f289a04e8c5ec9374457e16f4ab47edf"
+}

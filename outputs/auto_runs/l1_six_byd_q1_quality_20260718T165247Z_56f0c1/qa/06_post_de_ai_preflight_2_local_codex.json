@@ -1,0 +1,21 @@
+{
+  "kind": "local-codex-stage-response",
+  "stage": "06_post_de_ai_preflight_2",
+  "model": "gpt-5.6-sol",
+  "provider": "local-codex-cli",
+  "completedAt": "2026-07-18T17:21:00.187Z",
+  "promptHash": "f206c4002b4461e0c8a6b11fda71b5f81bfbe3998572c9fd0708c254b1e4327d",
+  "parsed": {
+    "pass": false,
+    "issues": [
+      {
+        "rule": "拦截词语“麻烦”",
+        "evidence": "outboundQuestion以“麻烦结合这份……”开头。",
+        "repair": "删除“麻烦”，其余内容保持不变。"
+      }
+    ],
+    "factsPreserved": true,
+    "attachmentsPreserved": true,
+    "visibleTextClean": false
+  }
+}

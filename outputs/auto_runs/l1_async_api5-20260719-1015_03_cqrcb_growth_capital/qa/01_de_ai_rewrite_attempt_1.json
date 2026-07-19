@@ -1,0 +1,159 @@
+{
+  "kind": "de-ai-question-rewrite",
+  "policyId": "mugua-gemini-de-ai-rewrite-v2",
+  "uid": "沈礼_api5-20260719-1015_03",
+  "generatedAt": "2026-07-19T02:09:44.545Z",
+  "provider": "mugua-openai-compatible",
+  "endpoint": "https://api.mugua.link/v1/chat/completions",
+  "model": "gemini-3.1-pro-preview",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 1585,
+    "outputTokens": 1759,
+    "totalTokens": 3344
+  },
+  "promptHash": "1bf0ccef66d3860efa68e7e4db7650e77ea40dea6700161ae2dae97067625b85",
+  "sourceQuestionHash": "e2b928c5c6b5537f19c2875bfac2ed06281d696ed4b9130de74be1e3b21ee6e3",
+  "rewrittenQuestionHash": "8bc3ced9732a384b7e0e3f10dcb5c669a5bdb7581b3ed0eadef428da5fd1e3fd",
+  "selectedAttempt": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "pass": false,
+      "visibleLength": 525,
+      "findingRules": [
+        "rewrite-trigram-overlap-too-high",
+        "rewrite-exact-copy-run-too-long"
+      ]
+    },
+    {
+      "attempt": 2,
+      "pass": true,
+      "visibleLength": 579,
+      "findingRules": []
+    }
+  ],
+  "rewrite": {
+    "question": "我正在做渝农商行2026年一季度增长与资本约束复核，这份结果供银行经营分析同事决定下一步需要补取哪些资本和业务条线资料。\n\n我需要复核渝农商行的资产扩张和收入增长是否受到了资本与回报的约束，以便经营分析同事决定下一步要补充哪些业务条线和资本资料。请基于《重庆农村商业银行股份有限公司2026年第一季度报告.pdf》，以营业收入和归母净利润分别实现8.39%和5.07%的同比增长，但年化ROA和ROE却分别同比下降了0.04和0.05个百分点这一现象为切入点，给出一个明确的判断结论。\n\n请建立一个统一的页级证据框架，涵盖收入利润、资产负债增速、资本充足率、杠杆率以及资产质量，并从中区分出哪些是改善项，哪些是约束项。在处理数据时，仔细核对本期与上年同期数值并重新计算同比变化，同时要复核比率计算、分项数据、期间、集团口径、单位以及年化或较年末口径的差异。如果发现正文、表格或者派生计算的结果之间存在冲突，请保留原始披露数据并把差异标注出来。请注意区分已证实事实、合理推断和待确认事项，不要把指标之间的联动直接当成因果关系来写。\n\n最后，请输出一份名为《渝农商行2026年一季度增长与资本约束简报》的可下载Word文档。文档里需要提供详细的指标对照表格并附上来源页码，写明派生数据的计算过程，标注报告未经审计的状态，并列出后续的补数清单。同时要明确指出改善与承压的具体判断及证据边界。另外，请单独列出两项待核边界：一是目前未披露业务条线的资本消耗情况，二是单季数据无法证明全年的持续性。",
+    "requestContract": {
+      "requestSpan": "最后，请输出一份名为《渝农商行2026年一季度增长与资本约束简报》的可下载Word文档。",
+      "action": "最后",
+      "outputs": [
+        {
+          "format": "docx",
+          "humanName": "Word",
+          "purpose": "供后续执行和留痕使用"
+        }
+      ]
+    },
+    "roleTrace": {
+      "blockageSpan": "另外，请单独列出两项待核边界：一是目前未披露业务条线的资本消耗情况，二是单季数据无法证明全年的持续性。",
+      "motivationSpan": "",
+      "downstreamUseSpan": "我需要复核渝农商行的资产扩张和收入增长是否受到了资本与回报的约束，以便经营分析同事决定下一步要补充哪些业务条线和资本资料。"
+    },
+    "usedFactIds": [
+      "cqrcb-profit-return",
+      "cqrcb-balance-growth",
+      "cqrcb-capital-ratios",
+      "cqrcb-leverage",
+      "cqrcb-asset-quality",
+      "cqrcb-audit-boundary"
+    ],
+    "deliberatelyOmitted": [],
+    "flowStages": [
+      {
+        "stage": "证据归位",
+        "evidence": "事实包中的公开材料与待补信息",
+        "decision": "区分可确认规则和未知现场状态",
+        "next": "证据足够则形成执行对象，不足则进入补证"
+      },
+      {
+        "stage": "执行对象核对",
+        "evidence": "已归位的对象关系与状态记录",
+        "decision": "形成一份增长与资本约束复核简报，把收入利润、资产负债增速、资本比率、杠杆和资产质量放在同一页级证据链中，并列出需要补充的条线资本数据。",
+        "next": "符合条件则进入小范围验证，否则停止推进"
+      },
+      {
+        "stage": "小范围验证",
+        "evidence": "试点输入与实际返回记录",
+        "decision": "判断结果是否满足扩大范围的条件",
+        "next": "通过则推进，失败则退回原状态并留痕"
+      },
+      {
+        "stage": "交接收束",
+        "evidence": "判断依据、验证结果与回退记录",
+        "decision": "确认下游拿到一致结论",
+        "next": "供银行经营分析同事决定下一步需要补取哪些资本和业务条线资料。"
+      }
+    ],
+    "selfAudit": {
+      "factsPreserved": true,
+      "formatsPreserved": true,
+      "processChainExplicit": true,
+      "failureOrRollbackExplicit": true,
+      "noInventedFacts": true,
+      "noAiShell": true
+    }
+  },
+  "validation": {
+    "pass": true,
+    "visibleLength": 637,
+    "similarity": [
+      {
+        "referenceIndex": 1,
+        "editSimilarity": 0.3277591973244147,
+        "trigramJaccard": 0.28664921465968585,
+        "longestExactCopyRun": 31,
+        "longestExactCopySpan": "《重庆农村商业银行股份有限公司2026年第一季度报告.pdf》"
+      },
+      {
+        "referenceIndex": 2,
+        "editSimilarity": 0.04347826086956519,
+        "trigramJaccard": 0.011494252873563218,
+        "longestExactCopyRun": 6,
+        "longestExactCopySpan": "给出一个明确"
+      }
+    ],
+    "findings": [],
+    "factGuard": {
+      "ok": true,
+      "candidateAnchors": {
+        "numbers": [
+          "2026年",
+          "8.39%",
+          "5.07%",
+          "0.04",
+          "0.05个"
+        ],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "unsupported": {
+        "numbers": [],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "errors": []
+    }
+  },
+  "deterministicStyleCleanup": {
+    "applied": true,
+    "rules": [
+      "remove-unbound-inline-page-range",
+      "remove-unbound-title-quotes",
+      "remove-banned-politeness",
+      "remove-upload-meta-language",
+      "restore-known-requester-context",
+      "restore-explicit-decision-request",
+      "restore-downloadable-format-requirement"
+    ],
+    "sourceApiQuestionHash": "1ffecfb866cd0cec24710cf62c8942c8d72f6cfefc9b54750aa505dc2b6302f8"
+  },
+  "postDeAiAudit": {
+    "attachmentsPreserved": true,
+    "factsPreserved": true,
+    "issues": [],
+    "pass": true,
+    "visibleTextClean": true
+  }
+}

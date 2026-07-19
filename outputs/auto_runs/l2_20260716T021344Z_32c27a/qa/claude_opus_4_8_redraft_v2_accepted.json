@@ -1,0 +1,443 @@
+{
+  "kind": "claude-question-redraft-v2-accepted-batch",
+  "generatedAt": "2026-07-16T06:01:37.223Z",
+  "runId": "l2_20260716T021344Z_32c27a",
+  "results": [
+    {
+      "uid": "434",
+      "model": "claude-opus-4-8",
+      "policyId": "claude-from-scratch-human-request-v2",
+      "usage": {
+        "inputTokens": 15780,
+        "outputTokens": 2753,
+        "totalTokens": 18533
+      },
+      "localRepairs": [
+        {
+          "type": "human-format-name",
+          "from": "xlsx",
+          "to": "Excel"
+        },
+        {
+          "type": "human-format-name",
+          "from": "html",
+          "to": "HTML"
+        },
+        {
+          "type": "clear-request-frame",
+          "from": "麻烦你据此做",
+          "to": "你帮我做"
+        },
+        {
+          "type": "mechanical-order-shell",
+          "from": "所以我想的做法是先把",
+          "to": "所以我想把"
+        },
+        {
+          "type": "latin-cjk-spacing",
+          "from": "SDK示例",
+          "to": "SDK 示例"
+        },
+        {
+          "type": "latin-cjk-spacing",
+          "from": "MQTT.fx那类",
+          "to": "MQTT.fx 那类"
+        }
+      ],
+      "rewrite": {
+        "question": "手头这批存量X.509设备到了要做证书轮换的时候，可我现在卡在没有底账上，动不了。内部设备清单和当前证书的关联信息还没到我这边，我手上能对得上的只有华为云那几份公开规则，靠它们我最多确认平台允许做什么和限制什么，至于具体哪几台设备真能进轮换我判断不了。更麻烦的是生产租户里那份设备证书映射的原始台账原件我拿不到，这个不补上来，哪台设备现在挂着哪张证书、指纹又是什么，都只能靠猜，谁也不敢拿猜的东西去动生产。\n所以我想把公开规则里能用的事实抽出来当索引，比如注册证书认证设备的入口和参数该怎么填、平台对证书配额和到期告警是怎么规定的这类，再加上状态更新接口需要哪些请求响应字段和证书列表查询会返回什么结构等等，把它们整理成一张能逐条核对的对照表。等内部台账一进来，我就拿这张对照逐台去比，看每台设备的证书指纹、绑定关系和到期时间是不是都和规则以及台账对得上，对不上的先挑出来不进这一轮。\n能对得上的那部分才允许进下一步的小范围验证，先挑少量设备走一遍试点，换证之后紧盯着设备回连正不正常和状态更新有没有真的生效，回连成功而且指纹一致的才算这台过了关。过了就按同样的节奏往后推更多批次，把范围一点点放大。中途只要出现回连不上或者状态对不齐的情况，就立刻停下来退回到换证前的那张证书，同时把当时涉及的设备和操作时间还有现象等都原样记下来，交给下一个接手的同事，别让同一个问题在批次之间悄悄传下去。\n还有一条我得先跟你说死，公开文档、SDK 示例和MQTT.fx 那类调测记录等都只能当参考用，谁都不能拿它们冒充已经发生过的生产验证结果，真实的返回值和回连证据必须在拿到授权的环境里跑出来才算数。我把上面这些理清楚后交给你，你帮我做一份Excel工作簿让设备运维同事能逐台筛查证书状态，再配一页HTML操作页让值班同事照着一步步执行试点和回滚等操作，这样现场是谁在什么时候动了哪台设备都能回头追得到。",
+        "requestContract": {
+          "requestSpan": "我把上面这些理清楚后交给你，你帮我做一份Excel工作簿让设备运维同事能逐台筛查证书状态，再配一页HTML操作页让值班同事照着一步步执行试点和回滚等操作，这样现场是谁在什么时候动了哪台设备都能回头追得到。",
+          "action": "帮我",
+          "outputs": [
+            {
+              "format": "xlsx",
+              "humanName": "Excel",
+              "purpose": "供后续执行和留痕使用"
+            },
+            {
+              "format": "html",
+              "humanName": "HTML",
+              "purpose": "供后续执行和留痕使用"
+            }
+          ]
+        },
+        "roleTrace": {
+          "blockageSpan": "内部设备清单和当前证书的关联信息还没到我这边，我手上能对得上的只有华为云那几份公开规则，靠它们我最多确认平台允许做什么和限制什么，至于具体哪几台设备真能进轮换我判断不了。",
+          "motivationSpan": "中途只要出现回连不上或者状态对不齐的情况，就立刻停下来退回到换证前的那张证书，同时把当时涉及的设备和操作时间还有现象等都原样记下来，交给下一个接手的同事，别让同一个问题在批次之间悄悄传下去。",
+          "downstreamUseSpan": "我把上面这些理清楚后交给你，你帮我做一份Excel工作簿让设备运维同事能逐台筛查证书状态，再配一页HTML操作页让值班同事照着一步步执行试点和回滚等操作，这样现场是谁在什么时候动了哪台设备都能回头追得到。"
+        },
+        "usedFactIds": [
+          "fact-row-434"
+        ],
+        "deliberatelyOmitted": [],
+        "flowStages": [
+          {
+            "stage": "证据归位",
+            "evidence": "事实包中的公开材料与待补信息",
+            "decision": "区分可确认规则和未知现场状态",
+            "next": "证据足够则形成执行对象，不足则进入补证"
+          },
+          {
+            "stage": "执行对象核对",
+            "evidence": "已归位的对象关系与状态记录",
+            "decision": "判断本批设备是否具备进入证书轮换的条件",
+            "next": "符合条件则进入小范围验证，否则停止推进"
+          },
+          {
+            "stage": "小范围验证",
+            "evidence": "试点输入与实际返回记录",
+            "decision": "判断结果是否满足扩大范围的条件",
+            "next": "通过则推进，失败则退回原状态并留痕"
+          },
+          {
+            "stage": "交接收束",
+            "evidence": "判断依据、验证结果与回退记录",
+            "decision": "确认下游拿到一致结论",
+            "next": "设备运维和值班同事按工作簿筛查并从操作页执行试点与回滚"
+          }
+        ],
+        "selfAudit": {
+          "factsPreserved": true,
+          "formatsPreserved": true,
+          "processChainExplicit": true,
+          "failureOrRollbackExplicit": true,
+          "noInventedFacts": true,
+          "noAiShell": true
+        }
+      },
+      "validation": {
+        "pass": true,
+        "visibleLength": 791,
+        "similarity": [
+          {
+            "referenceIndex": 1,
+            "editSimilarity": 0.06462984723854293,
+            "trigramJaccard": 0.052486187845303865,
+            "longestExactCopyRun": 9
+          },
+          {
+            "referenceIndex": 2,
+            "editSimilarity": 0.04681404421326396,
+            "trigramJaccard": 0.05224963715529753,
+            "longestExactCopyRun": 9
+          }
+        ],
+        "findings": [],
+        "factGuard": {
+          "ok": true,
+          "candidateAnchors": {
+            "numbers": [
+              "509"
+            ],
+            "quotedClaims": [],
+            "timeMarkers": []
+          },
+          "unsupported": {
+            "numbers": [],
+            "quotedClaims": [],
+            "timeMarkers": []
+          },
+          "errors": []
+        }
+      },
+      "continuityAudit": {
+        "sentenceLinks": [
+          {
+            "from": 1,
+            "to": 2,
+            "relation": "递进",
+            "reason": "后一处沿用前句业务对象，并把证据继续推进到判断、验证或交接。"
+          },
+          {
+            "from": 2,
+            "to": 3,
+            "relation": "递进",
+            "reason": "后一处沿用前句业务对象，并把证据继续推进到判断、验证或交接。"
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "relation": "递进",
+            "reason": "后一处沿用前句业务对象，并把证据继续推进到判断、验证或交接。"
+          },
+          {
+            "from": 4,
+            "to": 5,
+            "relation": "递进",
+            "reason": "后一处沿用前句业务对象，并把证据继续推进到判断、验证或交接。"
+          },
+          {
+            "from": 5,
+            "to": 6,
+            "relation": "递进",
+            "reason": "后一处沿用前句业务对象，并把证据继续推进到判断、验证或交接。"
+          },
+          {
+            "from": 6,
+            "to": 7,
+            "relation": "递进",
+            "reason": "后一处沿用前句业务对象，并把证据继续推进到判断、验证或交接。"
+          },
+          {
+            "from": 7,
+            "to": 8,
+            "relation": "递进",
+            "reason": "后一处沿用前句业务对象，并把证据继续推进到判断、验证或交接。"
+          },
+          {
+            "from": 8,
+            "to": 9,
+            "relation": "递进",
+            "reason": "后一处沿用前句业务对象，并把证据继续推进到判断、验证或交接。"
+          },
+          {
+            "from": 9,
+            "to": 10,
+            "relation": "递进",
+            "reason": "后一处沿用前句业务对象，并把证据继续推进到判断、验证或交接。"
+          }
+        ],
+        "paragraphLinks": [
+          {
+            "from": 1,
+            "to": 2,
+            "relation": "递进",
+            "reason": "后一段承接前段的卡点或证据，并进入下一判断、验证或交付环节。"
+          },
+          {
+            "from": 2,
+            "to": 3,
+            "relation": "递进",
+            "reason": "后一段承接前段的卡点或证据，并进入下一判断、验证或交付环节。"
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "relation": "递进",
+            "reason": "后一段承接前段的卡点或证据，并进入下一判断、验证或交付环节。"
+          }
+        ],
+        "commaListFree": true,
+        "outsiderReadable": true,
+        "narrativeFlow": true,
+        "unexplainedProfessionalTerms": []
+      }
+    },
+    {
+      "uid": "435",
+      "model": "claude-opus-4-8",
+      "policyId": "claude-from-scratch-human-request-v2",
+      "usage": {
+        "inputTokens": 16807,
+        "outputTokens": 1347,
+        "totalTokens": 18154
+      },
+      "localRepairs": [
+        {
+          "type": "human-format-name",
+          "from": "docx",
+          "to": "Word"
+        },
+        {
+          "type": "human-format-name",
+          "from": "xlsx",
+          "to": "Excel"
+        },
+        {
+          "type": "clear-request-frame",
+          "from": "麻烦你评审说明出成 Word",
+          "to": "麻烦你把评审说明做成 Word"
+        },
+        {
+          "type": "clear-request-frame",
+          "from": "验证矩阵出成 Excel",
+          "to": "验证矩阵做成 Excel"
+        },
+        {
+          "type": "clear-request-frame",
+          "from": "所以想请你",
+          "to": "所以我想让你"
+        }
+      ],
+      "rewrite": {
+        "question": "现在真正卡住的是，钉钉这套事件订阅要从 HTTP 回调换到 Stream 模式，可我手上只有平台那几篇文档，能看出接入路径确实分成 Stream 和 HTTP 两条，但生产订阅清单和真实运行配置一直没拿到，所以我判断不了咱们这个应用现在到底走哪条路，也说不清能不能两种方式并行保留一段时间。在拿到那份应用生产配置导出原件之前，我这边只能停在确认路径这一步，所以想先跟你把一件事定下来，就是这批材料够不够支撑进切换演练，够就照着往下走，不够就得先把缺的那部分补齐再说。\n文档里能确认的我都逐篇对了一遍，回调那边把 JSON 事件推送和安全校验的做法讲得挺清楚，Stream 那边给了 Java 和 Node 两个客户端的初始化入口，人员变更 v2 的事件字段页面也在，接口失败时的错误码检索入口也有。可这些说到底都只是文档页面和示例，不代表咱们应用已经订阅、真的跑通过一遍，具体是哪种接入路径还得看运行日志才敢下结论。生产 token 和回调地址这类东西不能直接搬进来当成已经验证过的结果，SDK 里给的示例凭证也是一样，这条线我不敢自己往上补。\n我的权限只到评审和验证矩阵这一层，真要动生产推送配置还得应用管理员来，所以我想让你把这些平台文档、眼下这个卡点等一起整理成一份评审说明，再配一张逐事件的验证矩阵。矩阵里先把幂等键、鉴权等需要逐条核对的项摆出来，每一项标清证据在哪和由谁负责，剩下还缺什么也一并写上，方便切换演练时照着填。\n通过了就照矩阵里的项一条条往下推进，万一哪个事件对不上就按里面记的最小回退步骤退回 HTTP 回调，同时把当时的运行日志、错误码等留在交接记录里给下一班接手。麻烦你把评审说明做成 Word 给我们集成团队做放行判断，验证矩阵做成 Excel 留着切换演练时逐事件填证据，我这边一拿到就去对生产清单那块的缺口。",
+        "requestContract": {
+          "requestSpan": "麻烦你把评审说明做成 Word 给我们集成团队做放行判断，验证矩阵做成 Excel 留着切换演练时逐事件填证据，我这边一拿到就去对生产清单那块的缺口。",
+          "action": "给我",
+          "outputs": [
+            {
+              "format": "docx",
+              "humanName": "Word",
+              "purpose": "供后续执行和留痕使用"
+            },
+            {
+              "format": "xlsx",
+              "humanName": "Excel",
+              "purpose": "供后续执行和留痕使用"
+            }
+          ]
+        },
+        "roleTrace": {
+          "blockageSpan": "现在真正卡住的是，钉钉这套事件订阅要从 HTTP 回调换到 Stream 模式，可我手上只有平台那几篇文档，能看出接入路径确实分成 Stream 和 HTTP 两条，但生产订阅清单和真实运行配置一直没拿到，所以我判断不了咱们这个应用现在到底走哪条路，也说不清能不能两种方式并行保留一段时间。",
+          "motivationSpan": "矩阵里先把幂等键、鉴权等需要逐条核对的项摆出来，每一项标清证据在哪和由谁负责，剩下还缺什么也一并写上，方便切换演练时照着填。",
+          "downstreamUseSpan": "麻烦你把评审说明做成 Word 给我们集成团队做放行判断，验证矩阵做成 Excel 留着切换演练时逐事件填证据，我这边一拿到就去对生产清单那块的缺口。"
+        },
+        "usedFactIds": [
+          "fact-row-435"
+        ],
+        "deliberatelyOmitted": [],
+        "flowStages": [
+          {
+            "stage": "证据归位",
+            "evidence": "事实包中的公开材料与待补信息",
+            "decision": "区分可确认规则和未知现场状态",
+            "next": "证据足够则形成执行对象，不足则进入补证"
+          },
+          {
+            "stage": "执行对象核对",
+            "evidence": "已归位的对象关系与状态记录",
+            "decision": "判断当前材料是否足以进入切换演练",
+            "next": "符合条件则进入小范围验证，否则停止推进"
+          },
+          {
+            "stage": "小范围验证",
+            "evidence": "试点输入与实际返回记录",
+            "decision": "判断结果是否满足扩大范围的条件",
+            "next": "通过则推进，失败则退回原状态并留痕"
+          },
+          {
+            "stage": "交接收束",
+            "evidence": "判断依据、验证结果与回退记录",
+            "decision": "确认下游拿到一致结论",
+            "next": "企业应用集成团队用评审说明放行，并在验证矩阵保留逐事件证据"
+          }
+        ],
+        "selfAudit": {
+          "factsPreserved": true,
+          "formatsPreserved": true,
+          "processChainExplicit": true,
+          "failureOrRollbackExplicit": true,
+          "noInventedFacts": true,
+          "noAiShell": true
+        }
+      },
+      "validation": {
+        "pass": true,
+        "visibleLength": 742,
+        "similarity": [
+          {
+            "referenceIndex": 1,
+            "editSimilarity": 0.07587064676616917,
+            "trigramJaccard": 0.04940119760479042,
+            "longestExactCopyRun": 10
+          },
+          {
+            "referenceIndex": 2,
+            "editSimilarity": 0.07106598984771573,
+            "trigramJaccard": 0.047655068078668684,
+            "longestExactCopyRun": 10
+          }
+        ],
+        "findings": [],
+        "factGuard": {
+          "ok": true,
+          "candidateAnchors": {
+            "numbers": [
+              "2"
+            ],
+            "quotedClaims": [],
+            "timeMarkers": []
+          },
+          "unsupported": {
+            "numbers": [],
+            "quotedClaims": [],
+            "timeMarkers": []
+          },
+          "errors": []
+        }
+      },
+      "continuityAudit": {
+        "sentenceLinks": [
+          {
+            "from": 1,
+            "to": 2,
+            "relation": "递进",
+            "reason": "后一处沿用前句业务对象，并把证据继续推进到判断、验证或交接。"
+          },
+          {
+            "from": 2,
+            "to": 3,
+            "relation": "递进",
+            "reason": "后一处沿用前句业务对象，并把证据继续推进到判断、验证或交接。"
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "relation": "递进",
+            "reason": "后一处沿用前句业务对象，并把证据继续推进到判断、验证或交接。"
+          },
+          {
+            "from": 4,
+            "to": 5,
+            "relation": "递进",
+            "reason": "后一处沿用前句业务对象，并把证据继续推进到判断、验证或交接。"
+          },
+          {
+            "from": 5,
+            "to": 6,
+            "relation": "递进",
+            "reason": "后一处沿用前句业务对象，并把证据继续推进到判断、验证或交接。"
+          },
+          {
+            "from": 6,
+            "to": 7,
+            "relation": "递进",
+            "reason": "后一处沿用前句业务对象，并把证据继续推进到判断、验证或交接。"
+          },
+          {
+            "from": 7,
+            "to": 8,
+            "relation": "递进",
+            "reason": "后一处沿用前句业务对象，并把证据继续推进到判断、验证或交接。"
+          },
+          {
+            "from": 8,
+            "to": 9,
+            "relation": "递进",
+            "reason": "后一处沿用前句业务对象，并把证据继续推进到判断、验证或交接。"
+          }
+        ],
+        "paragraphLinks": [
+          {
+            "from": 1,
+            "to": 2,
+            "relation": "递进",
+            "reason": "后一段承接前段的卡点或证据，并进入下一判断、验证或交付环节。"
+          },
+          {
+            "from": 2,
+            "to": 3,
+            "relation": "递进",
+            "reason": "后一段承接前段的卡点或证据，并进入下一判断、验证或交付环节。"
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "relation": "递进",
+            "reason": "后一段承接前段的卡点或证据，并进入下一判断、验证或交付环节。"
+          }
+        ],
+        "commaListFree": true,
+        "outsiderReadable": true,
+        "narrativeFlow": true,
+        "unexplainedProfessionalTerms": []
+      }
+    }
+  ],
+  "usage": {
+    "inputTokens": 32587,
+    "outputTokens": 4100,
+    "totalTokens": 36687
+  }
+}

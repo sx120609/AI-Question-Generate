@@ -1,0 +1,133 @@
+{
+  "kind": "scene-card-bundle",
+  "protocolId": "situated-requester-v1",
+  "schemaVersion": 1,
+  "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_shenhua_capex_funding_20260718T165248Z_e74a5d\\sources\\fact_ledger.json",
+  "factLedgerHash": "4380ac883df69ceaa84bb1681d880c57d8b36d2c190add6a3723aaadd99eff2e",
+  "cards": [
+    {
+      "recordUid": "沈礼_20260719_l1_shenhua_capex_funding_02",
+      "sceneCard": {
+        "schemaVersion": 1,
+        "policyId": "situated-requester-v1",
+        "topicId": "shenhua-2026-adjusted-capex-funding",
+        "personaId": "shenhua_capex_funding-requester-01",
+        "requester": {
+          "functionalRole": "资本计划复核专员",
+          "organizationType": "企业经营与研究团队",
+          "department": "",
+          "responsibility": "把中国神华能源股份有限公司公开季度报告整理成可追溯的调整前后资本开支与资金承接核对表",
+          "authorityBoundary": "只负责复核公开披露、派生计算和证据边界，无权把未披露的业务明细写成确定归因。",
+          "recipientRelation": "资本计划复核专员及下游同事"
+        },
+        "scene": {
+          "workflowStage": "计划复核人员需要把重大资产交易带来的经营目标变化与分业务资本开支增量对齐。",
+          "trigger": "2026年一季度营业收入70397百万元，同比增长1.2%；利润总额16594百万元，同比下降7.8%；归母净利润10667百万元，同比下降10.7%；经营现金流量净额17363百万元，同比下降15.5%。",
+          "currentBlockage": "附件没有给出资本开支计划按经营现金、贷款、债务和权益融资的金额拆分。",
+          "mainDecision": "制作调整前后资本开支核对表，识别增量集中度并把经营现金流与计划资金需求并列展示，资金来源只保留报告披露的渠道和待补分配栏。",
+          "downstreamUse": "供资本计划同事跟踪项目预算和后续融资披露。"
+        },
+        "informationBoundary": {
+          "knownFactIds": [
+            "shenhua-q1-core",
+            "shenhua-transaction-scope",
+            "shenhua-target-adjustment",
+            "shenhua-capex-total",
+            "shenhua-capex-mix",
+            "shenhua-funding-boundary"
+          ],
+          "availableMaterialIds": [
+            "shenhua-2026q1-report"
+          ],
+          "unknowns": [
+            "附件没有给出资本开支计划按经营现金、贷款、债务和权益融资的金额拆分。",
+            "调整后的经营目标与资本开支均是计划值，实际结果可能受项目进度、市场和审批影响。"
+          ],
+          "forbiddenInferences": [
+            "未由季度报告披露的业务明细不得写成确定事实",
+            "派生计算只能使用事实账本中的数值和口径",
+            "未经审计的季度数据不得描述为审计确认值",
+            "相关性和变动线索不得直接表述为因果归因"
+          ]
+        },
+        "voice": {
+          "channel": "内部业务复核消息",
+          "formality": "直接、克制、以证据和可继续回填为导向",
+          "domainVocabulary": [
+            "中国神华",
+            "资本开支",
+            "资产交易",
+            "经营目标",
+            "资金来源"
+          ],
+          "avoidVocabulary": [
+            "全链路",
+            "闭环",
+            "赋能",
+            "深度洞察",
+            "麻烦",
+            "劳烦",
+            "烦请",
+            "辛苦",
+            "刚传了"
+          ]
+        },
+        "maskTerms": [
+          "中国神华能源股份有限公司",
+          "601088",
+          "中国神华",
+          "资本开支",
+          "资产交易",
+          "经营目标"
+        ],
+        "evidenceBindings": [
+          {
+            "claim": "2026年一季度营业收入70397百万元，同比增长1.2%；利润总额16594百万元，同比下降7.8%；归母净利润10667百万元，同比下降10.7%；经营现金流量净额17363百万元，同比下降15.5%。",
+            "factIds": [
+              "shenhua-q1-core"
+            ]
+          },
+          {
+            "claim": "附件没有给出资本开支计划按经营现金、贷款、债务和权益融资的金额拆分。",
+            "factIds": [
+              "shenhua-funding-boundary",
+              "shenhua-q1-core"
+            ]
+          },
+          {
+            "claim": "制作调整前后资本开支核对表，识别增量集中度并把经营现金流与计划资金需求并列展示，资金来源只保留报告披露的渠道和待补分配栏。",
+            "factIds": [
+              "shenhua-q1-core",
+              "shenhua-funding-boundary"
+            ]
+          }
+        ]
+      },
+      "requestContract": {
+        "requestSpan": "请将结果整理成一份调整后资本开支的Excel表格供下载。",
+        "action": "整理",
+        "outputs": [
+          {
+            "format": "xlsx",
+            "humanName": "Excel",
+            "purpose": "供后续执行和留痕使用"
+          }
+        ]
+      },
+      "roleTrace": {
+        "blockageSpan": "为了方便同事后续跟踪项目预算和融资披露，我需要复核重大资产交易纳入新资产后的资本开支变化情况。",
+        "motivationSpan": "为了方便同事后续跟踪项目预算和融资披露，我需要复核重大资产交易纳入新资产后的资本开支变化情况。",
+        "downstreamUseSpan": "为了方便同事后续跟踪项目预算和融资披露，我需要复核重大资产交易纳入新资产后的资本开支变化情况。"
+      },
+      "usedFactIds": [
+        "shenhua-q1-core",
+        "shenhua-transaction-scope",
+        "shenhua-target-adjustment",
+        "shenhua-capex-total",
+        "shenhua-capex-mix",
+        "shenhua-funding-boundary"
+      ],
+      "deliberatelyOmitted": []
+    }
+  ]
+}

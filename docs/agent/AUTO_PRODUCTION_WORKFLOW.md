@@ -1,4 +1,6 @@
-# L2 自动生产与飞书提交工作流
+# L2 自动生产与飞书提交工作流（历史兼容）
+
+> 当前默认生产档位已经切换为三期 `L1 探索型`。所有新生产先读 `docs/agent/SOURCE_DERIVED_QUESTION_BASELINE.md`，再读 `docs/agent/L1_END_TO_END_PRODUCTION_PROTOCOL.md`；只有显式使用 `--profile=l2` 回放历史流程时才使用本文。
 
 本文件是新会话启动自动生产时必须先读的 runbook。目标是自动完成：可仿题面独立抽样、结构拆解、资料搜集、附件下载、题目生产、两道本地质检、过程留痕、飞书提交和外部质检反馈修正，直到通过或确认质检存在 bug。端到端硬约束见 `docs/agent/L2_END_TO_END_PRODUCTION_PROTOCOL.md`。
 
@@ -19,6 +21,7 @@
 ## 新会话启动步骤
 
 1. 阅读以下文件：
+   - `docs/agent/SOURCE_DERIVED_QUESTION_BASELINE.md`（二期既有的来源先行、对象级证据与禁止编造基线）
    - `config/generated_identities.json`（系统生成身份与默认维护范围）
    - `docs/agent/L2_PRODUCER_AGENT.md`
    - `docs/agent/L2_PROMPTS.md`
@@ -304,7 +307,7 @@ $topic = @{
 1. 先运行 `build/automation/feishu_auth_setup.mjs status`。如果未配置，按 `docs/agent/FEISHU_USER_AUTH_AND_CLI.md` 完成 `config-init` 和 `login`。
 2. 通过 `build/automation/feishu_sheet_submit.mjs` dry-run 生成 API `valueRanges`。
 3. 先运行 `build/automation/feishu_uid_reserve.mjs --transport=lark-cli --apply --verify`，只写 A 列 UID 占位。占位未成功时不得继续写正文。
-4. 用 Sheets `values_batch_update` 写入除 J 列外的正文、选项和说明字段；正式命令必须同时传入 `--release-receipt=<run>/feishu/release_gate_receipt.json` 和 `--process-receipt=<run>/feishu/production_trace_gate_receipt.json`，默认带 `--transport=lark-cli --skip-attachments`，附件队列单独生成。裸 structure receipt、缺少过程回执或历史 v1 回执均不能写 B/G/L/N/O。
+4. 用 Sheets `values_batch_update` 写入除 J 列外的正文、选项和说明字段；正式命令必须同时传入 `--release-receipt=<run>/feishu/release_gate_receipt.json` 和 `--process-receipt=<run>/feishu/production_trace_gate_receipt.json`。L1 还必须传入 `--policy=config/structural_diversity_l1.json` 与对应的 `--structure-registry=outputs/auto_runs/_structure_registry_l1.json`，保证提交前验证、加锁后二次验证和结构登记使用同一策略。默认带 `--transport=lark-cli --skip-attachments`，附件队列单独生成。裸 structure receipt、缺少过程回执或历史 v1 回执均不能写 B/G/L/N/O。
 5. 单独生成 J 列真实附件上传队列。
 6. 浏览器自动化只允许用于 J 列附件对象上传和可见文件名复核；没有 OpenAPI/CLI 用户授权时，浏览器也只能先写 A 列 UID 占位，再写本 run 行。
 7. 多线程场景下，API 写入和附件上传都必须限定在本 run 已预留且 A 列 UID 已占位的行号内。

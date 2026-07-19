@@ -1,0 +1,20 @@
+{
+  "kind": "local-codex-stage-response",
+  "stage": "03_pre_qa_structure_audit_attempt_2",
+  "model": "gpt-5.6-sol",
+  "provider": "local-codex-cli",
+  "completedAt": "2026-07-18T17:28:09.983Z",
+  "promptHash": "43f0875ac2927bdefa37a8577f645fa69fa8d95046bc2e51dbc3f204c63d268d",
+  "parsed": {
+    "oneSentenceMainTask": "核对中国神华2026年调整前后资本开支及经营目标，识别分业务增量集中度，并界定报告能够支持的资金承接结论。",
+    "uniqueMainTask": true,
+    "specificObjectDecision": true,
+    "specificFilesDominant": true,
+    "evidenceChain": "题面、mainTask与attachmentPlan均锁定中国神华及同一份2026年第一季度报告，附件数量为1且具体业务材料占比标注为100%；但现有输入仅提供来源网址、哈希、摘要和事实ID，未展示从附件正文抽取的具体数值、对应PDF页码及事实ID到判断的逐项映射，因此对象级证据链尚未完整闭合。",
+    "l2ReasoningChain": "推理链围绕同一主要判断推进：核对重大资产交易后的经营目标变化，统一比较调整前后分业务资本开支，计算增量及占比以识别集中业务，再以经营现金流和报告披露的资金来源为参照限定资金承接结论，并显式保留未披露分配与计划值边界；链条具备差异、计算口径和业务判断，但实际计算仍需附件正文数据和页码支撑。",
+    "variableDrift": [
+      "deliverableRationale中的“跟踪项目预算并持续回填后续融资披露”从本期报告复核延伸到未来持续流程，超出当前静态判断的必要范围。",
+      "referenceBreakdown仍以新销售渠道进入决策为业务场景，与候选题的中国神华资本开支对象不一致；若其仅作为抽象结构参考不构成题面漂移，但不能作为本题业务证据。"
+    ]
+  }
+}

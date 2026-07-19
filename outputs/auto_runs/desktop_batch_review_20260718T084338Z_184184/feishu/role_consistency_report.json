@@ -1,0 +1,138 @@
+{
+  "kind": "scene-card-gate-report",
+  "gateId": "scene-card-role-consistency-v1",
+  "protocolId": "situated-requester-v1",
+  "schemaVersion": 1,
+  "status": "PASS",
+  "ok": true,
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\drafts\\l1_questions.tsv",
+  "candidateHash": "04afc0471b57b75fd16b45e409f399ca36af8fbdcdf1f6a494905fcc5d0f0f56",
+  "sceneCardPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\sources\\scene_cards.json",
+  "sceneCardFileHash": "118c992f03e0a6b766cde2d4529fe4d8ca589f270bc06cdbacf8dae3ef0b764c",
+  "sceneCardBundleHash": "d6e9c689437e6a3c6243632734928f69d77f52121adad8146929e190572542b8",
+  "sceneCardSetHash": "089372dc8fc79ac353974d4307b6f2f3dae19d7b4df860710b5de88bb2c5a60a",
+  "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\sources\\fact_ledger.json",
+  "factLedgerHash": "4197006f590e7430abd9347118bcc7785736dc5c76541fbd339849efbdd99fb5",
+  "summary": {
+    "candidateRowCount": 1,
+    "sceneCardCount": 1,
+    "passedRowCount": 1,
+    "failedRowCount": 0,
+    "globalErrorCount": 0,
+    "batchCollisionCount": 0
+  },
+  "rows": [
+    {
+      "uid": "裴硬_20260718_desktop_batch_review_01",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "ac3acca12756356d0a95f6dac2bafe9889dbb59f7b5f14c0d5da3a1bbe6ea52b",
+      "cardHash": "6415d2a681e54382fcd96e3c8d4f59372edc3a19b3a5dab694044daf74c22ab1",
+      "roleConsistencyHash": "c7e87fd5140131989ef26a522d2461b3e04c201682b1a868bc0ca5c086410841",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "work-order-需要",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "xlsx"
+        ],
+        "mFormats": [
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "采购结算与设备抽检同事需要一份可下载的Excel成交复核表来推进后续工作。",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "这份表格随后交给现场同事继续回填。",
+            "occurrences": 1
+          },
+          "downstreamUseSpan": {
+            "span": "这份表格随后交给现场同事继续回填。",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [
+            "535条",
+            "5889台",
+            "1",
+            "195台",
+            "2",
+            "463台",
+            "3",
+            "899台",
+            "4",
+            "5",
+            "1663台",
+            "2638台",
+            "6",
+            "31台",
+            "3072台",
+            "2620台",
+            "9台",
+            "188台",
+            "1台",
+            "506条",
+            "5条",
+            "4900元",
+            "4585元",
+            "4939元",
+            "4940元",
+            "4950元",
+            "4960元",
+            "955500元",
+            "2122855元",
+            "4440161元",
+            "8215220元",
+            "13058100元",
+            "153760元",
+            "28945596元",
+            "29445000元",
+            "499404元",
+            "1.696%",
+            "212.2855万元",
+            "2682.2741万元",
+            "4978元",
+            "0元",
+            "558元",
+            "168995元",
+            "9750元",
+            "16630元",
+            "9889元",
+            "0%",
+            "1%",
+            "2%"
+          ],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "952cec1f76337d5a01df4d4ca1c6e029519f2e69927a0ec13dfb48ebd1bdb42c"
+      }
+    }
+  ],
+  "batch": {
+    "ok": true,
+    "status": "PASS",
+    "thresholds": {
+      "highMaskedTrigramSimilarity": 0.72,
+      "sharedMaskedFragmentLength": 18
+    },
+    "comparisons": [],
+    "errors": []
+  },
+  "errors": [],
+  "evaluationHash": "b264184a046c909fd8adeb1800f920f94681d05d1d360e74ec47f153dd3b5673"
+}

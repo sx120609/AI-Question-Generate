@@ -1,0 +1,63 @@
+{
+    "schemaVersion":  1,
+    "kind":  "official-material-download-manifest",
+    "runId":  "workstation_acceptance_20260718T054801Z_df4628",
+    "generatedAt":  "2026-07-18T06:07:49.0164622Z",
+    "items":  [
+                  {
+                      "name":  "01_ccgp_award_result.html",
+                      "url":  "https://www.ccgp.gov.cn/cggg/zygg/zbgg/202606/t20260604_26685746.htm",
+                      "sourcePageUrl":  "https://www.ccgp.gov.cn/cggg/zygg/zbgg/202606/t20260604_26685746.htm",
+                      "path":  "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\workstation_acceptance_20260718T054801Z_df4628\\attachments\\01\\01_ccgp_award_result.html",
+                      "size":  16648,
+                      "sha256":  "aa92f568f0ba16a715fe70de17bdeb649194e4127c05f1e22d5046bbf0d9711b",
+                      "contentType":  "text/html",
+                      "finalUrl":  "https://www.ccgp.gov.cn/cggg/zygg/zbgg/202606/t20260604_26685746.htm",
+                      "downloadedAt":  "2026-07-18T06:07:48.1151795Z"
+                  },
+                  {
+                      "name":  "02_ccgp_tender_document.pdf",
+                      "url":  "https://download.ccgp.gov.cn/oss/download?uuid=B5D63E6DFCF7514E1B5784173A2375",
+                      "sourcePageUrl":  "https://www.ccgp.gov.cn/cggg/zygg/zbgg/202606/t20260604_26685746.htm",
+                      "path":  "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\workstation_acceptance_20260718T054801Z_df4628\\attachments\\01\\02_ccgp_tender_document.pdf",
+                      "size":  1472948,
+                      "sha256":  "90cc672177a57325983a2231a96097dbf34233eeba33a05d346ac71c3211bc08",
+                      "contentType":  "application/pdf",
+                      "finalUrl":  "https://download.ccgp.gov.cn/oss/download?uuid=B5D63E6DFCF7514E1B5784173A2375",
+                      "downloadedAt":  "2026-07-18T06:07:48.2327018Z"
+                  },
+                  {
+                      "name":  "03_lenovo_thinkstation_p3_tiny_gen2_user_guide.pdf",
+                      "url":  "https://chinakb.lenovo.com.cn/chinakb/prod-api/file/downloadFile?key=uniko/FILE/b6fc317ace0ccc48ede32aa2e4f97956-1772157485340.pdf\u0026name=ThinkStation%20P3%20Tiny%20Gen%202%20%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97-20260227.pdf",
+                      "sourcePageUrl":  "https://iknow.lenovo.com.cn/detail/429100",
+                      "path":  "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\workstation_acceptance_20260718T054801Z_df4628\\attachments\\01\\03_lenovo_thinkstation_p3_tiny_gen2_user_guide.pdf",
+                      "size":  19900157,
+                      "sha256":  "9a7bb2dfb6d5dae13fca49c7f9a66f43dd81ea98c2cfe4bad00f2e43daaa2422",
+                      "contentType":  "application/pdf;charset=UTF-8",
+                      "finalUrl":  "https://chinakb.lenovo.com.cn/chinakb/prod-api/file/downloadFile?key=uniko/FILE/b6fc317ace0ccc48ede32aa2e4f97956-1772157485340.pdf\u0026name=ThinkStation%20P3%20Tiny%20Gen%202%20%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97-20260227.pdf",
+                      "downloadedAt":  "2026-07-18T06:07:48.5189695Z"
+                  },
+                  {
+                      "name":  "04_lenovo_thinkstation_p368_c4_user_guide.pdf",
+                      "url":  "https://chinakb.lenovo.com.cn/chinakb/prod-api/file/downloadFile?key=uniko/FILE/c243bfe5ae9f4755c5d06a7e33982f61-1757922846732.pdf\u0026name=ThinkStation%20P368-C4%20%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97-20250915.pdf",
+                      "sourcePageUrl":  "https://iknow.lenovo.com.cn/detail/428338",
+                      "path":  "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\workstation_acceptance_20260718T054801Z_df4628\\attachments\\01\\04_lenovo_thinkstation_p368_c4_user_guide.pdf",
+                      "size":  27105707,
+                      "sha256":  "421d617cf2e0830e83af4ba46d8c91ea1ad18b8e2feb47c40173b68efec8d9a8",
+                      "contentType":  "application/pdf;charset=UTF-8",
+                      "finalUrl":  "https://chinakb.lenovo.com.cn/chinakb/prod-api/file/downloadFile?key=uniko/FILE/c243bfe5ae9f4755c5d06a7e33982f61-1757922846732.pdf\u0026name=ThinkStation%20P368-C4%20%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97-20250915.pdf",
+                      "downloadedAt":  "2026-07-18T06:07:48.7095335Z"
+                  },
+                  {
+                      "name":  "05_lenovo_thinkstation_p2_tower_user_guide.pdf",
+                      "url":  "https://chinakb.lenovo.com.cn/chinakb/prod-api/file/downloadFile?key=uniko/FILE/eef1841e3330662d70e6a000027631cb-1760063572795.pdf\u0026name=ThinkStation%20P2%20Tower%20%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97-20251009.pdf",
+                      "sourcePageUrl":  "https://iknow.lenovo.com.cn/detail/420269",
+                      "path":  "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\workstation_acceptance_20260718T054801Z_df4628\\attachments\\01\\05_lenovo_thinkstation_p2_tower_user_guide.pdf",
+                      "size":  39993174,
+                      "sha256":  "c7aed55aee835c4d1ed23ef9b936476ecf14b88ba4b581d9f4ef67f3d73c1234",
+                      "contentType":  "application/pdf;charset=UTF-8",
+                      "finalUrl":  "https://chinakb.lenovo.com.cn/chinakb/prod-api/file/downloadFile?key=uniko/FILE/eef1841e3330662d70e6a000027631cb-1760063572795.pdf\u0026name=ThinkStation%20P2%20Tower%20%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97-20251009.pdf",
+                      "downloadedAt":  "2026-07-18T06:07:49.0144614Z"
+                  }
+              ]
+}

@@ -1,0 +1,147 @@
+{
+  "kind": "de-ai-question-rewrite",
+  "policyId": "mugua-gemini-de-ai-rewrite-v2",
+  "uid": "沈礼_20260719_l1_byd_q1_quality_01",
+  "generatedAt": "2026-07-18T17:20:45.526Z",
+  "provider": "mugua-openai-compatible",
+  "endpoint": "https://api.mugua.link/v1/chat/completions",
+  "model": "gemini-3.1-pro-preview",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 1399,
+    "outputTokens": 1386,
+    "totalTokens": 2785
+  },
+  "promptHash": "3248b7fc8b753012bdb2737423ced5d599daf6c85bd6421329f0235e9b834d39",
+  "sourceQuestionHash": "4f37dbfcfdd2a38f6fd79776173cd2332a163c991febd80d40433312c72e2d3c",
+  "rewrittenQuestionHash": "090e48194dbdeb7a066f8529d2c43859fa75e065af580d4c0e454307fe3732c5",
+  "selectedAttempt": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "pass": false,
+      "visibleLength": 303,
+      "findingRules": [
+        "rewrite-edit-similarity-too-high"
+      ]
+    },
+    {
+      "attempt": 2,
+      "pass": true,
+      "visibleLength": 346,
+      "findingRules": []
+    }
+  ],
+  "rewrite": {
+    "question": "麻烦结合这份《比亚迪股份有限公司2026年第一季度报告.pdf》，帮我做一份关于该公司今年一季度经营质量的核对表。重点核查一下营业收入、归母净利润以及经营现金流的同比变化情况，并把现金利润覆盖关系复算一遍，同时梳理出开发支出、短期借款、应付票据和现金流的具体变动。\n\n请把这些内容都汇总到一个Excel表格中，里面要明确区分开哪些变动原因是报告里直接写的，哪些是靠披露数据复算得出的，还有哪些是必须补充业务分部资料才能判断的。表格里的每一项都需要附上来源页码、未经审计状态提醒，以及对应的计算公式和口径。\n\n如果你在核对时发现复算值跟披露值有出入，请把差异标注出来，并列明后续还需要补充什么样的业务分部、销量、价格或者区域资料。另外注意一点，不要把融资方面的变化跟经营现金流下降直接挂钩当成因果关系。",
+    "requestContract": {
+      "requestSpan": "请把这些内容都汇总到一个Excel表格中，里面要明确区分开哪些变动原因是报告里直接写的，哪些是靠披露数据复算得出的，还有哪些是必须补充业务分部资料才能判断的。",
+      "action": "请把",
+      "outputs": [
+        {
+          "format": "xlsx",
+          "humanName": "Excel",
+          "purpose": "供后续执行和留痕使用"
+        }
+      ]
+    },
+    "roleTrace": {
+      "blockageSpan": "麻烦结合这份《比亚迪股份有限公司2026年第一季度报告.pdf》，帮我做一份关于该公司今年一季度经营质量的核对表。",
+      "motivationSpan": "",
+      "downstreamUseSpan": "请把这些内容都汇总到一个Excel表格中，里面要明确区分开哪些变动原因是报告里直接写的，哪些是靠披露数据复算得出的，还有哪些是必须补充业务分部资料才能判断的。"
+    },
+    "usedFactIds": [
+      "byd-core-performance",
+      "byd-profit-quality",
+      "byd-development-spend",
+      "byd-financing-shift",
+      "byd-cashflow-explanation",
+      "byd-audit-boundary"
+    ],
+    "deliberatelyOmitted": [],
+    "flowStages": [
+      {
+        "stage": "证据归位",
+        "evidence": "事实包中的公开材料与待补信息",
+        "decision": "区分可确认规则和未知现场状态",
+        "next": "证据足够则形成执行对象，不足则进入补证"
+      },
+      {
+        "stage": "执行对象核对",
+        "evidence": "已归位的对象关系与状态记录",
+        "decision": "建立一份季度经营质量核对表，复算收入、利润和经营现金流变化，整理研发与融资项目的披露解释，并把无法由附件直接归因的部分保留为待补证事项。",
+        "next": "符合条件则进入小范围验证，否则停止推进"
+      },
+      {
+        "stage": "小范围验证",
+        "evidence": "试点输入与实际返回记录",
+        "decision": "判断结果是否满足扩大范围的条件",
+        "next": "通过则推进，失败则退回原状态并留痕"
+      },
+      {
+        "stage": "交接收束",
+        "evidence": "判断依据、验证结果与回退记录",
+        "decision": "确认下游拿到一致结论",
+        "next": "供经营分析同事继续取得分部和销量资料后补充归因。"
+      }
+    ],
+    "selfAudit": {
+      "factsPreserved": true,
+      "formatsPreserved": true,
+      "processChainExplicit": true,
+      "failureOrRollbackExplicit": true,
+      "noInventedFacts": true,
+      "noAiShell": true
+    }
+  },
+  "validation": {
+    "pass": true,
+    "visibleLength": 346,
+    "similarity": [
+      {
+        "referenceIndex": 1,
+        "editSimilarity": 0.5432098765432098,
+        "trigramJaccard": 0.2617924528301887,
+        "longestExactCopyRun": 26,
+        "longestExactCopySpan": "《比亚迪股份有限公司2026年第一季度报告.pdf》"
+      },
+      {
+        "referenceIndex": 2,
+        "editSimilarity": 0.06297709923664119,
+        "trigramJaccard": 0.003703703703703704,
+        "longestExactCopyRun": 4,
+        "longestExactCopySpan": "明确区分"
+      }
+    ],
+    "findings": [],
+    "factGuard": {
+      "ok": true,
+      "candidateAnchors": {
+        "numbers": [
+          "2026年"
+        ],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "unsupported": {
+        "numbers": [],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "errors": []
+    }
+  },
+  "postDeAiAudit": {
+    "pass": false,
+    "issues": [
+      {
+        "rule": "拦截词语“麻烦”",
+        "evidence": "outboundQuestion以“麻烦结合这份……”开头。",
+        "repair": "删除“麻烦”，其余内容保持不变。"
+      }
+    ],
+    "factsPreserved": true,
+    "attachmentsPreserved": true,
+    "visibleTextClean": false
+  }
+}

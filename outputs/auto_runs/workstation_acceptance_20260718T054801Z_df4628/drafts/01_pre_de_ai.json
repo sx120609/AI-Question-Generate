@@ -1,0 +1,256 @@
+{
+  "topic": {
+    "id": "workstation-preacceptance-0724-2611Z1612177",
+    "title": "中山大学肿瘤防治中心图形工作站采购项目到货预验收核对",
+    "organization": "中山大学肿瘤防治中心",
+    "projectNumber": "0724-2611Z1612177",
+    "currentStage": "公开材料口径核对与现场到货预验收工作簿准备",
+    "uniqueDecision": "建立可直接回填的预验收核对工作簿，并在实际台账缺位时拦截验收结论"
+  },
+  "sceneCard": {
+    "schemaVersion": 1,
+    "policyId": "situated-requester-v1",
+    "topicId": "workstation-preacceptance-0724-2611Z1612177",
+    "personaId": "workstation-delivery-acceptance-coordinator-01",
+    "requester": {
+      "functionalRole": "设备采购项目交付协调人",
+      "organizationType": "医疗机构",
+      "department": "",
+      "responsibility": "整理公开采购口径并准备现场逐台回填的到货预验收工作簿",
+      "authorityBoundary": "可建立预验收核对口径，正式验收结论需以实际到货台账、现场读数和签章记录为准",
+      "recipientRelation": "把工作簿交给设备运维与项目交付同事在现场核对和回填"
+    },
+    "scene": {
+      "workflowStage": "图形工作站到货前的预验收准备",
+      "trigger": "中国政府采购网于2026年6月4日发布图形工作站（含显示器）采购项目中标结果公告，项目编号0724-2611Z1612177，采购人为中山大学肿瘤防治中心。",
+      "currentBlockage": "三份联想用户指南能够支持型号系列的接口位置和功能核对项，不能替代本批到货设备铭牌、序列号、装箱清单、BIOS配置读数、显示器型号和现场运行记录。",
+      "mainDecision": "依据公开项目材料建立可执行的到货预验收工作簿，现场台账缺位时保持待核状态",
+      "downstreamUse": "供设备运维与项目交付同事逐台回填并形成差异处置清单"
+    },
+    "informationBoundary": {
+      "knownFactIds": [
+        "fact-project-identity",
+        "fact-award-summary",
+        "fact-package-one-award-lines",
+        "fact-package-two-award-line",
+        "fact-tender-quantity-mix",
+        "fact-arithmetic-residuals",
+        "fact-delivery-acceptance",
+        "fact-payment-warranty",
+        "fact-p3-tiny-guide",
+        "fact-p368-guide",
+        "fact-p2-tower-guide",
+        "fact-guide-evidence-boundary"
+      ],
+      "availableMaterialIds": [
+        "material-ccgp-award",
+        "material-ccgp-tender",
+        "material-lenovo-p3-tiny",
+        "material-lenovo-p368",
+        "material-lenovo-p2-tower"
+      ],
+      "unknowns": [
+        "本批发货通知、采购人实际下单数量、到货清单、设备与显示器序列号、铭牌照片和资产台账尚未提供。",
+        "实际到货设备的CPU、内存、硬盘、显卡、接口、BIOS安全设置、操作系统和显示器配置读数尚未提供。",
+        "中标报价明细、显示器单价和合同设备配置清单尚未提供；算术差额820元不能直接登记为显示器确认单价。",
+        "到货外观检查、安装调试、30天正常运行、正式验收、发票、保修承诺和维护保养报告均无实际返回或签章记录。",
+        "显示器强制性产品认证证书、工作站产品证明、原厂售后服务承诺函和全新原装证明尚未提供。"
+      ],
+      "forbiddenInferences": [
+        "实际到货数量、序列号、配置读数和验收结果须以现场台账与实际返回为准",
+        "公开材料中的金额差额只作为报价明细核对线索，未确认为显示器单价"
+      ]
+    },
+    "voice": {
+      "channel": "内部项目群消息",
+      "formality": "直接、克制、以现场执行为导向",
+      "domainVocabulary": [
+        "预验收",
+        "包组",
+        "序列号",
+        "配置读数",
+        "差异清单",
+        "30天运行"
+      ],
+      "avoidVocabulary": [
+        "全链路",
+        "闭环",
+        "赋能",
+        "深度洞察",
+        "麻烦",
+        "劳烦",
+        "烦请",
+        "辛苦"
+      ]
+    },
+    "maskTerms": [
+      "中山大学肿瘤防治中心",
+      "图形工作站",
+      "ThinkStation",
+      "预验收",
+      "设备采购"
+    ],
+    "evidenceBindings": [
+      {
+        "claim": "中国政府采购网于2026年6月4日发布图形工作站（含显示器）采购项目中标结果公告，项目编号0724-2611Z1612177，采购人为中山大学肿瘤防治中心。",
+        "factIds": [
+          "fact-project-identity"
+        ]
+      },
+      {
+        "claim": "三份联想用户指南能够支持型号系列的接口位置和功能核对项，不能替代本批到货设备铭牌、序列号、装箱清单、BIOS配置读数、显示器型号和现场运行记录。",
+        "factIds": [
+          "fact-guide-evidence-boundary"
+        ]
+      },
+      {
+        "claim": "依据公开项目材料建立可执行的到货预验收工作簿，现场台账缺位时保持待核状态",
+        "factIds": [
+          "fact-delivery-acceptance",
+          "fact-guide-evidence-boundary"
+        ]
+      }
+    ]
+  },
+  "attachmentPlan": {
+    "mainDecision": "建立公开规则与现场回填分层的到货预验收工作簿",
+    "attachments": [
+      {
+        "name": "01_ccgp_award_result.html",
+        "sourceUrl": "https://www.ccgp.gov.cn/cggg/zygg/zbgg/202606/t20260604_26685746.htm",
+        "format": "html",
+        "classification": "specific-business",
+        "objectLevel": true,
+        "timeAnchor": "2026年6月4日中标结果公告",
+        "specificityEvidence": {
+          "object": "中山大学肿瘤防治中心图形工作站采购项目0724-2611Z1612177",
+          "periodOrEvent": "2026年6月4日中标结果公告",
+          "uniqueContent": "中标供应商、两个包组金额、工作站型号、总数量和工作站单价"
+        },
+        "summary": "中国政府采购网中标结果公告，包含项目编号、采购人、中标供应商、包金额、工作站型号、总数量和工作站单价。",
+        "localPath": "01/01_ccgp_award_result.html",
+        "sha256": "aa92f568f0ba16a715fe70de17bdeb649194e4127c05f1e22d5046bbf0d9711b",
+        "bytes": 16648,
+        "sizeBytes": 16648,
+        "introductionHint": "首轮随任务整包上传，只有文件上传校验失败时才重新核对该原件。"
+      },
+      {
+        "name": "02_ccgp_tender_document.pdf",
+        "sourceUrl": "https://download.ccgp.gov.cn/oss/download?uuid=B5D63E6DFCF7514E1B5784173A2375",
+        "format": "pdf",
+        "classification": "specific-business",
+        "objectLevel": true,
+        "timeAnchor": "2026年项目招标与中标事件",
+        "specificityEvidence": {
+          "object": "中山大学肿瘤防治中心图形工作站采购项目0724-2611Z1612177",
+          "periodOrEvent": "2026年项目招标与中标事件",
+          "uniqueContent": "包组预计数量组合、技术要求、交货期限、30天运行验收、付款与保修条件"
+        },
+        "summary": "中国政府采购网中标结果公告所附招标文件，包含包组数量组合、技术要求、交货、验收、付款和保修条件。",
+        "localPath": "01/02_ccgp_tender_document.pdf",
+        "sha256": "90cc672177a57325983a2231a96097dbf34233eeba33a05d346ac71c3211bc08",
+        "bytes": 1472948,
+        "sizeBytes": 1472948,
+        "introductionHint": "首轮随任务整包上传，只有文件上传校验失败时才重新核对该原件。"
+      },
+      {
+        "name": "03_lenovo_thinkstation_p3_tiny_gen2_user_guide.pdf",
+        "sourceUrl": "https://chinakb.lenovo.com.cn/chinakb/prod-api/file/downloadFile?key=uniko/FILE/b6fc317ace0ccc48ede32aa2e4f97956-1772157485340.pdf&name=ThinkStation%20P3%20Tiny%20Gen%202%20%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97-20260227.pdf",
+        "format": "pdf",
+        "classification": "specific-business",
+        "objectLevel": true,
+        "timeAnchor": "2026年2月27日版产品资料",
+        "specificityEvidence": {
+          "object": "中标公告列明的ThinkStation P3 Tiny Gen 2型号系列",
+          "periodOrEvent": "2026年2月27日版产品资料",
+          "uniqueContent": "该型号系列后视图、接口位置、键盘开机接口和选配接口边界"
+        },
+        "summary": "具体中标型号产品资料。联想官方ThinkStation P3 Tiny Gen 2用户指南，适用于该系列，提供后视图、接口和功能说明。",
+        "localPath": "01/03_lenovo_thinkstation_p3_tiny_gen2_user_guide.pdf",
+        "sha256": "9a7bb2dfb6d5dae13fca49c7f9a66f43dd81ea98c2cfe4bad00f2e43daaa2422",
+        "bytes": 19900157,
+        "sizeBytes": 19900157,
+        "introductionHint": "首轮随任务整包上传，只有文件上传校验失败时才重新核对该原件。"
+      },
+      {
+        "name": "04_lenovo_thinkstation_p368_c4_user_guide.pdf",
+        "sourceUrl": "https://chinakb.lenovo.com.cn/chinakb/prod-api/file/downloadFile?key=uniko/FILE/c243bfe5ae9f4755c5d06a7e33982f61-1757922846732.pdf&name=ThinkStation%20P368-C4%20%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97-20250915.pdf",
+        "format": "pdf",
+        "classification": "specific-business",
+        "objectLevel": true,
+        "timeAnchor": "2025年9月15日版产品资料",
+        "specificityEvidence": {
+          "object": "中标公告列明的ThinkStation P368-C4型号系列",
+          "periodOrEvent": "2025年9月15日版产品资料",
+          "uniqueContent": "该型号系列后部接口、可选接口和特定型号限制"
+        },
+        "summary": "具体中标型号产品资料。联想官方ThinkStation P368-C4用户指南，提供后部接口、可选接口和机型限定说明。",
+        "localPath": "01/04_lenovo_thinkstation_p368_c4_user_guide.pdf",
+        "sha256": "421d617cf2e0830e83af4ba46d8c91ea1ad18b8e2feb47c40173b68efec8d9a8",
+        "bytes": 27105707,
+        "sizeBytes": 27105707,
+        "introductionHint": "首轮随任务整包上传，只有文件上传校验失败时才重新核对该原件。"
+      },
+      {
+        "name": "05_lenovo_thinkstation_p2_tower_user_guide.pdf",
+        "sourceUrl": "https://chinakb.lenovo.com.cn/chinakb/prod-api/file/downloadFile?key=uniko/FILE/eef1841e3330662d70e6a000027631cb-1760063572795.pdf&name=ThinkStation%20P2%20Tower%20%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97-20251009.pdf",
+        "format": "pdf",
+        "classification": "specific-business",
+        "objectLevel": true,
+        "timeAnchor": "2025年10月9日版产品资料",
+        "specificityEvidence": {
+          "object": "中标公告列明的ThinkStation P2 Tower型号系列",
+          "periodOrEvent": "2025年10月9日版产品资料",
+          "uniqueContent": "该型号系列后视图、USB与显示接口、网络接口和选配接口边界"
+        },
+        "summary": "具体中标型号产品资料。联想官方ThinkStation P2 Tower用户指南，提供后视图、接口和机型限定说明。",
+        "localPath": "01/05_lenovo_thinkstation_p2_tower_user_guide.pdf",
+        "sha256": "c7aed55aee835c4d1ed23ef9b936476ecf14b88ba4b581d9f4ef67f3d73c1234",
+        "bytes": 39993174,
+        "sizeBytes": 39993174,
+        "introductionHint": "首轮随任务整包上传，只有文件上传校验失败时才重新核对该原件。"
+      }
+    ],
+    "specificBusinessShareRationale": "五份材料都绑定项目编号或中标型号，具体业务材料占比为100%。",
+    "timeSeriesRationale": "本题核对一个采购项目的到货预验收口径，关键维度是包组、型号、数量、金额、证据层级和30天运行节点，无需连续时间序列。",
+    "objectSupportInQuestion": "题面明确项目编号、采购单位、包组、型号和现场台账缺口。",
+    "newAttachmentSupport": "中标公告确认中标口径，招标文件确认预计数量与履约条件，三份型号手册建立现场接口核对项。五份材料首轮一次上传。",
+    "newQuestionStructureMapping": "沿用样例的真实工作卡点、证据核验、阶段性判断和下游交付逻辑，切换到采购到货预验收场景并以真实附件替代联网摸排。"
+  },
+  "draft": {
+    "question": "我已在首轮一次附上中标公告、招标文件和三份联想型号用户指南，请你依据这五份材料为中山大学肿瘤防治中心项目0724-2611Z1612177建立到货预验收核对表。先建立来源索引，标明各项规则的出处和证据层级。对照公告与招标文件复核两个包组的工作站单价、数量口径与包组金额，包1按150台6750元和50台6850元核算为1355000元，与1519000元相差164000元。包2按39台16800元核算为655200元，与687180元相差31980元。两项差额折算均为每台显示器820元，只登记为报价明细核对线索。公开材料页只写项目规则和型号级核对项，三份指南仅支撑对应系列的接口位置与功能检查。依据P3 Tiny Gen 2和P368-C4指南整理后部接口及选配提示，再依据P2 Tower指南整理显示接口与网络接口核对项。按包组预留实际到货数量字段。逐台页预留设备与显示器序列号字段，并设置CPU、内存与硬盘等配置读数栏。现场证据页另设铭牌照片和装箱清单索引，发货通知与资产台账状态也由现场回填。流程页写明安装调试正常后的30天运行节点，并保留包1分批验收合格及收到等额发票后支付100%的约束。包2正式验收后支付95%，满一年且具备申请函和每年两次维护保养报告后支付5%。厂家保修期按最终验收合格起不少于3年记录。将可证事实与合理推断分栏，缺少现场资料的项目统一标为待核。实际到货数量和序列号保留现场回填，配置读数与验收结果也保留现场回填。最后汇总差异等级、证据来源与下一步动作，生成可下载的到货预验收核对表，供设备运维与项目交付同事逐台使用并形成差异处置清单。本轮交付用于预验收准备，正式验收结论以实际台账与签章记录为准。",
+    "mainTask": "依据五份项目附件建立公开规则与现场回填分层的到货预验收核对表，并完成包组数量金额复核及履约约束整理。",
+    "usedFactIds": [
+      "fact-project-identity",
+      "fact-award-summary",
+      "fact-package-one-award-lines",
+      "fact-package-two-award-line",
+      "fact-tender-quantity-mix",
+      "fact-arithmetic-residuals",
+      "fact-delivery-acceptance",
+      "fact-payment-warranty",
+      "fact-p3-tiny-guide",
+      "fact-p368-guide",
+      "fact-p2-tower-guide",
+      "fact-guide-evidence-boundary"
+    ],
+    "usedAttachmentNames": [
+      "01_ccgp_award_result.html",
+      "02_ccgp_tender_document.pdf",
+      "03_lenovo_thinkstation_p3_tiny_gen2_user_guide.pdf",
+      "04_lenovo_thinkstation_p368_c4_user_guide.pdf",
+      "05_lenovo_thinkstation_p2_tower_user_guide.pdf"
+    ],
+    "productFormats": "xlsx",
+    "deliverableRationale": [
+      {
+        "format": "xlsx",
+        "user": "设备运维与项目交付同事",
+        "purpose": "到货前建立核对口径，并在现场逐台回填设备证据和差异处置状态",
+        "whyThisFormat": "逐台记录涉及多包组、多型号及多类配置字段，电子表格便于结构化录入、金额复核和差异筛选。"
+      }
+    ],
+    "structureMapping": "沿用真实卡点引出证据核验的递进结构，先交代到货预验收场景和现场资料缺口，再以五份对象级附件完成来源索引、口径复核、型号检查设计和待确认项划分，最终停留在可执行的预验收准备阶段。",
+    "productParagraphMapping": "后半段先划定公开材料与现场证据的边界，再承接逐台回填字段、30天运行节点及付款保修条件，随后以差异等级和下一步动作收束为现场使用的结构化核对表，并将正式验收结论留给实际台账与签章记录。"
+  }
+}

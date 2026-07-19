@@ -1,0 +1,177 @@
+{
+  "kind": "scene-card-bundle",
+  "protocolId": "situated-requester-v1",
+  "schemaVersion": 1,
+  "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\sources\\fact_ledger.json",
+  "factLedgerHash": "4197006f590e7430abd9347118bcc7785736dc5c76541fbd339849efbdd99fb5",
+  "cards": [
+    {
+      "recordUid": "裴硬_20260718_desktop_batch_review_01",
+      "sceneCard": {
+        "schemaVersion": 1,
+        "policyId": "situated-requester-v1",
+        "topicId": "desktop-batch-award-reconciliation-gc-hcd260444",
+        "personaId": "procurement-reconciliation-coordinator-01",
+        "requester": {
+          "functionalRole": "采购结算支持人员",
+          "organizationType": "国内单位采购支持团队",
+          "department": "",
+          "responsibility": "整理公开成交数据并给设备抽检同事准备可回填的核对口径",
+          "authorityBoundary": "权限只包括公开材料复核和首轮抽检安排，实际验收与付款结论由订单、实物和签章记录确认",
+          "recipientRelation": "把核对表交给采购结算与设备抽检同事继续补证"
+        },
+        "scene": {
+          "workflowStage": "公开成交数据复核与首轮人工抽检准备",
+          "trigger": "六包逐项金额合计28945596元，即2894.5596万元。公告概要的总中标金额字段显示212.2855万元，与第二包金额一致，和六包合计相差2682.2741万元。该字段冲突需要在核对表中单独展示。",
+          "currentBlockage": "六份技术偏离表的预算响应值依次为4950元、4950元、4950元、4950元、4950元和4978元。与最终成交单价相比，配置1至配置6每台分别下降50元、365元、11元、10元、0元和18元。按计划数量计算的总降幅依次为9750元、168995元、9889元、16630元、0元和558元。 配送计划535条明细中有506条PR单号为空。详细配送地址列有5条纯数字值，其中2条表现为11位电话号码，3条为数值1。上述行只能作为字段异常进入待核清单。",
+          "mainDecision": "先对齐六包数量、金额和规格证据，再从六包中挑选两包进入人工抽检",
+          "downstreamUse": "供采购结算同事核对公开口径，并让设备抽检同事按包补充订单和实物证据"
+        },
+        "informationBoundary": {
+          "knownFactIds": [
+            "fact-project-identity",
+            "fact-plan-volume",
+            "fact-plan-os-mix",
+            "fact-plan-data-quality",
+            "fact-award-lines",
+            "fact-award-total-conflict",
+            "fact-budget-variance",
+            "fact-response-price-revisions",
+            "fact-warranty-formula",
+            "fact-config-1-2",
+            "fact-config-3-4",
+            "fact-config-5-6",
+            "fact-ranking",
+            "fact-initial-review",
+            "fact-delivery-service",
+            "fact-evidence-boundary"
+          ],
+          "availableMaterialIds": [
+            "material-award-announcement",
+            "material-delivery-plan",
+            "material-procurement-file",
+            "material-score-ranking",
+            "material-deviation-1",
+            "material-deviation-2",
+            "material-deviation-3",
+            "material-deviation-4",
+            "material-deviation-5",
+            "material-deviation-6"
+          ],
+          "unknowns": [
+            "各采购单位实际下单数量、订单编号、合同编号和最终收货数量尚未提供。",
+            "设备序列号、实物配置、操作系统版本、外设清单和开机测试记录尚未提供。",
+            "真实业务软件清单、驱动兼容性测试、性能测试和用户试用反馈尚未提供。",
+            "合同、验收单、付款记录、故障工单和售后响应时长尚未提供。",
+            "公告概要总中标金额只显示第二包金额的原因未在公开页面说明。"
+          ],
+          "forbiddenInferences": [
+            "公开配送计划不代表实际下单和收货结果",
+            "技术偏离表不代表最终成交单价或实物配置已经验收",
+            "匿名得分表无法直接映射供应商名称"
+          ]
+        },
+        "voice": {
+          "channel": "内部采购项目群消息",
+          "formality": "直接、克制、面向实际复核",
+          "domainVocabulary": [
+            "成交口径",
+            "包号",
+            "计划数量",
+            "响应价格",
+            "成交单价",
+            "抽检"
+          ],
+          "avoidVocabulary": [
+            "全链路",
+            "闭环",
+            "赋能",
+            "深度洞察",
+            "麻烦",
+            "劳烦",
+            "烦请",
+            "辛苦"
+          ]
+        },
+        "maskTerms": [
+          "GC-HCD260444",
+          "台式计算机",
+          "成交复核",
+          "配置1",
+          "配置6",
+          "采购结算"
+        ],
+        "evidenceBindings": [
+          {
+            "claim": "六包逐项金额合计28945596元，即2894.5596万元。公告概要的总中标金额字段显示212.2855万元，与第二包金额一致，和六包合计相差2682.2741万元。该字段冲突需要在核对表中单独展示。",
+            "factIds": [
+              "fact-award-total-conflict"
+            ]
+          },
+          {
+            "claim": "六份技术偏离表的预算响应值依次为4950元、4950元、4950元、4950元、4950元和4978元。与最终成交单价相比，配置1至配置6每台分别下降50元、365元、11元、10元、0元和18元。按计划数量计算的总降幅依次为9750元、168995元、9889元、16630元、0元和558元。",
+            "factIds": [
+              "fact-response-price-revisions"
+            ]
+          },
+          {
+            "claim": "配送计划535条明细中有506条PR单号为空。详细配送地址列有5条纯数字值，其中2条表现为11位电话号码，3条为数值1。上述行只能作为字段异常进入待核清单。",
+            "factIds": [
+              "fact-plan-data-quality"
+            ]
+          },
+          {
+            "claim": "六份技术偏离表的预算响应值依次为4950元、4950元、4950元、4950元、4950元和4978元。与最终成交单价相比，配置1至配置6每台分别下降50元、365元、11元、10元、0元和18元。按计划数量计算的总降幅依次为9750元、168995元、9889元、16630元、0元和558元。 配送计划535条明细中有506条PR单号为空。详细配送地址列有5条纯数字值，其中2条表现为11位电话号码，3条为数值1。上述行只能作为字段异常进入待核清单。",
+            "factIds": [
+              "fact-response-price-revisions",
+              "fact-plan-data-quality"
+            ]
+          },
+          {
+            "claim": "先对齐六包数量、金额和规格证据，再从六包中挑选两包进入人工抽检",
+            "factIds": [
+              "fact-plan-volume",
+              "fact-award-lines",
+              "fact-evidence-boundary"
+            ]
+          }
+        ]
+      },
+      "requestContract": {
+        "requestSpan": "采购结算与设备抽检同事需要一份可下载的Excel成交复核表来推进后续工作。",
+        "action": "采购",
+        "outputs": [
+          {
+            "format": "xlsx",
+            "humanName": "Excel",
+            "purpose": "供后续执行和留痕使用"
+          }
+        ]
+      },
+      "roleTrace": {
+        "blockageSpan": "采购结算与设备抽检同事需要一份可下载的Excel成交复核表来推进后续工作。",
+        "motivationSpan": "这份表格随后交给现场同事继续回填。",
+        "downstreamUseSpan": "这份表格随后交给现场同事继续回填。"
+      },
+      "usedFactIds": [
+        "fact-project-identity",
+        "fact-plan-volume",
+        "fact-plan-os-mix",
+        "fact-plan-data-quality",
+        "fact-award-lines",
+        "fact-award-total-conflict",
+        "fact-budget-variance",
+        "fact-response-price-revisions",
+        "fact-warranty-formula",
+        "fact-config-1-2",
+        "fact-config-3-4",
+        "fact-config-5-6",
+        "fact-ranking",
+        "fact-initial-review",
+        "fact-delivery-service",
+        "fact-evidence-boundary"
+      ],
+      "deliberatelyOmitted": []
+    }
+  ]
+}

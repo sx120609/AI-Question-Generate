@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "kind": "source-card-bundle",
+  "runId": "l1_sf_q1_reconciliation_20260718T122753Z_791280",
+  "recordUid": "沈礼_20260718_sf_q1_reconciliation_01",
+  "sources": [
+    {
+      "materialId": "material-feb-brief",
+      "title": "顺丰控股2026年2月快递物流业务经营简报",
+      "publisher": "巨潮资讯网",
+      "publishedAt": "2026-03-20",
+      "accessedAt": "2026-07-18",
+      "path": "attachments/顺丰控股2026年2月快递物流业务经营简报.pdf",
+      "supports": "2026年2月单月与1至2月累计的速运物流、供应链及国际业务收入和业务量，以及数据未经审计且不含其他非物流业务收入的边界",
+      "boundary": "经营简报收入排除其他非物流业务，数据未经审计且以定期报告为准"
+    },
+    {
+      "materialId": "material-mar-brief",
+      "title": "顺丰控股2026年3月快递物流业务经营简报",
+      "publisher": "巨潮资讯网",
+      "publishedAt": "2026-04-18",
+      "accessedAt": "2026-07-18",
+      "path": "attachments/顺丰控股2026年3月快递物流业务经营简报.pdf",
+      "supports": "2026年3月单月的速运物流、供应链及国际业务收入、业务量和单票收入，以及数据未经审计且不含其他非物流业务收入的边界",
+      "boundary": "经营简报收入排除其他非物流业务，数据未经审计且以定期报告为准"
+    },
+    {
+      "materialId": "material-q1-report",
+      "title": "顺丰控股2026年第一季度报告",
+      "publisher": "深圳证券交易所信息披露平台",
+      "publishedAt": "2026-04-29",
+      "accessedAt": "2026-07-18",
+      "path": "attachments/顺丰控股2026年第一季度报告.pdf",
+      "supports": "2026年第一季度和上年同期营业收入、净利润、经营现金流等主要会计数据，并明确季度报告未经审计",
+      "boundary": "总营业收入未拆出其他非物流业务明细，报告未经审计"
+    }
+  ]
+}

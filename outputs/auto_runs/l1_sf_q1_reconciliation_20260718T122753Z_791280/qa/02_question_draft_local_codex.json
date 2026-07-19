@@ -1,0 +1,36 @@
+{
+  "kind": "local-codex-stage-response",
+  "stage": "02_question_draft",
+  "model": "gpt-5.6-sol",
+  "provider": "local-codex-cli",
+  "completedAt": "2026-07-18T13:12:40.731Z",
+  "promptHash": "5827cf3187397fb9bba75c8fb6c6c78b673ba67372310c718fd9a9e775455bd9",
+  "parsed": {
+    "question": "请核对《顺丰控股2026年2月快递物流业务经营简报》《顺丰控股2026年3月快递物流业务经营简报》和《顺丰控股2026年第一季度报告》，判断它们能否组成2026年一季度的数据来源链。重点确认1至2月累计与3月单月的期间衔接，并说明经营简报排除其他非物流业务收入而一季报列示总营业收入造成的边界差异，同时处理亿元两位小数与千元披露的精度以及指标可比性。请你附带整理来源底表，记录未经审计状态和来源页码，无法直接对应的项目标为待核，最终用于生成可下载的Excel口径核对表。",
+    "mainTask": "判断三份披露材料能否构成顺丰控股2026年一季度可追溯且口径边界清晰的数据来源链。",
+    "usedFactIds": [
+      "fact-jan-feb-cumulative",
+      "fact-feb-boundary",
+      "fact-march-month",
+      "fact-march-boundary",
+      "fact-q1-revenue",
+      "fact-q1-boundary"
+    ],
+    "usedAttachmentNames": [
+      "顺丰控股2026年2月快递物流业务经营简报.pdf",
+      "顺丰控股2026年3月快递物流业务经营简报.pdf",
+      "顺丰控股2026年第一季度报告.pdf"
+    ],
+    "productFormats": "xlsx",
+    "deliverableRationale": [
+      {
+        "format": "xlsx",
+        "user": "经营数据复核同事",
+        "purpose": "复核季度数据口径并为取得分部或科目明细后继续回填",
+        "whyThisFormat": "Excel适合承载跨期间和跨单位的来源记录、口径状态及后续公式核验，并可直接下载续用。"
+      }
+    ],
+    "structureMapping": "沿用真实业务卡点、证据核验和下游交付的推进结构，改为围绕季度披露材料判断来源链是否成立，不复用原候选项目评估的领域和内容。",
+    "productParagraphMapping": "后半段先收束期间衔接、收入边界、精度与可比性判断，再把来源底表作为直接支撑产物，并明确待核状态和最终Excel用途。"
+  }
+}

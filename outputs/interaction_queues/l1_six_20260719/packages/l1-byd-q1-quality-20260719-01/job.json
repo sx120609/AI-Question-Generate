@@ -1,0 +1,55 @@
+{
+  "jobId": "l1-byd-q1-quality-20260719-01",
+  "attachmentRoot": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-byd-q1-quality-20260719-01\\attachments",
+  "initialAttachmentNames": [
+    "比亚迪股份有限公司2026年第一季度报告.pdf"
+  ],
+  "productionEvidence": {
+    "recordUid": "沈礼_20260719_l1_byd_q1_quality_01",
+    "productionTracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-byd-q1-quality-20260719-01\\evidence\\production_trace.json",
+    "productionTraceGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-byd-q1-quality-20260719-01\\evidence\\production_trace_gate_receipt.json",
+    "releaseGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-byd-q1-quality-20260719-01\\evidence\\release_gate_receipt.json",
+    "downloadManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-byd-q1-quality-20260719-01\\evidence\\download_manifest.json"
+  },
+  "maxRounds": 6,
+  "maximumRounds": 10,
+  "mode": "openai-compatible",
+  "taskGoal": "经营数据复核人员需要判断收入、利润和经营现金流同步下滑时，研发投入与融资项目变化能解释到什么程度。。建立一份季度经营质量核对表，复算收入、利润和经营现金流变化，整理研发与融资项目的披露解释，并把无法由附件直接归因的部分保留为待补证事项。，最终一份可下载的比亚迪2026年一季度经营质量Excel核对表，包含来源索引、核心指标同比、现金利润覆盖关系、研发与融资变动、披露原因、证据边界和待补材料。",
+  "successCriteria": [
+    "核心数值与页码可回到官方PDF",
+    "同比和覆盖关系使用可执行公式",
+    "披露原因与推断分栏",
+    "不把融资变化直接写成现金流下降原因",
+    "交付真实可下载且可打开的xlsx文件"
+  ],
+  "initialPrompt": "我们需要梳理《比亚迪股份有限公司2026年第一季度报告.pdf》中关于2026年一季度经营质量的情况。重点关注经营现金流、归母净利润以及营业收入这几个核心财务指标的同比变动情况，并结合这些数据重新测算现金利润的覆盖关系。另外，应付票据、开发支出、短期借款还有现金流的具体变动明细也需要一并梳理。\n\n在整理过程中，必须严格区分哪些是报告里直接写明的原因，哪些是通过披露数据算出来的变化，还有哪些是目前无法确定、必须等业务分部资料补充后才能判断的。各项数据都要附带来源页码、计算公式、统计口径，并注明未经审计状态。要是复算的结果跟报告披露的数值对不上，记得明确标注差异，顺便列出后续为了查明原因还需要哪些关于区域、价格、销量或者业务分部的补充材料。千万别主观地将经营现金流下降跟融资变化硬扯上因果关系。\n\n请基于前述核对结果整理一份可下载的Excel核对表（xlsx格式）。",
+  "responseTimeoutMs": 600000,
+  "interactionRewrite": {
+    "type": "openai-compatible",
+    "baseUrl": "https://api.mugua.link/v1",
+    "model": "gemini-3.1-pro-preview",
+    "apiKeyEnv": "DE_AI_REWRITE_API_KEY",
+    "temperature": 0.55,
+    "timeoutMs": 180000
+  },
+  "promptPreflight": {
+    "type": "local-codex",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "timeoutMs": 360000
+  },
+  "policy": {
+    "type": "local-codex",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "timeoutMs": 360000
+  },
+  "productRequirement": {
+    "required": true,
+    "requestedFormats": [
+      "excel"
+    ],
+    "allowEquivalentOnline": false,
+    "allowUnavailableBestEffort": false
+  }
+}

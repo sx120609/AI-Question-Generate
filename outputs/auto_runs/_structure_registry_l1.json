@@ -1,0 +1,135 @@
+{
+  "version": 1,
+  "policyId": "l1-phase3-source-driven-v1",
+  "policyVersion": 1,
+  "entries": [],
+  "reservations": [
+    {
+      "runId": "workstation_acceptance_20260718T054801Z_df4628",
+      "status": "planned",
+      "createdAt": "2026-07-18T05:48:02.383Z",
+      "expiresAt": "2026-07-19T05:48:02.383Z",
+      "profiles": [
+        {
+          "slot": 1,
+          "index": 0,
+          "profileId": "workstation_acceptance_20260718T054801Z_df4628_source_01",
+          "sourceDriven": true
+        }
+      ]
+    },
+    {
+      "runId": "desktop_batch_review_20260718T084338Z_184184",
+      "status": "planned",
+      "createdAt": "2026-07-18T08:43:39.287Z",
+      "expiresAt": "2026-07-19T08:43:39.287Z",
+      "profiles": [
+        {
+          "slot": 1,
+          "index": 0,
+          "profileId": "desktop_batch_review_20260718T084338Z_184184_source_01",
+          "sourceDriven": true
+        }
+      ]
+    },
+    {
+      "runId": "l1_sf_q1_reconciliation_20260718T122753Z_791280",
+      "status": "planned",
+      "createdAt": "2026-07-18T12:27:54.064Z",
+      "expiresAt": "2026-07-19T12:27:54.064Z",
+      "profiles": [
+        {
+          "slot": 1,
+          "index": 0,
+          "profileId": "l1_sf_q1_reconciliation_20260718T122753Z_791280_source_01",
+          "sourceDriven": true
+        }
+      ]
+    },
+    {
+      "runId": "l1_six_byd_q1_quality_20260718T165247Z_56f0c1",
+      "status": "planned",
+      "createdAt": "2026-07-18T16:52:48.009Z",
+      "expiresAt": "2026-07-19T16:52:48.010Z",
+      "profiles": [
+        {
+          "slot": 1,
+          "index": 0,
+          "profileId": "l1_six_byd_q1_quality_20260718T165247Z_56f0c1_source_01",
+          "sourceDriven": true
+        }
+      ]
+    },
+    {
+      "runId": "l1_six_shenhua_capex_funding_20260718T165248Z_e74a5d",
+      "status": "planned",
+      "createdAt": "2026-07-18T16:52:49.243Z",
+      "expiresAt": "2026-07-19T16:52:49.243Z",
+      "profiles": [
+        {
+          "slot": 1,
+          "index": 0,
+          "profileId": "l1_six_shenhua_capex_funding_20260718T165248Z_e74a5d_source_01",
+          "sourceDriven": true
+        }
+      ]
+    },
+    {
+      "runId": "l1_six_cqrcb_growth_capital_20260718T165249Z_d98e15",
+      "status": "planned",
+      "createdAt": "2026-07-18T16:52:50.069Z",
+      "expiresAt": "2026-07-19T16:52:50.069Z",
+      "profiles": [
+        {
+          "slot": 1,
+          "index": 0,
+          "profileId": "l1_six_cqrcb_growth_capital_20260718T165249Z_d98e15_source_01",
+          "sourceDriven": true
+        }
+      ]
+    },
+    {
+      "runId": "l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2",
+      "status": "planned",
+      "createdAt": "2026-07-18T16:52:50.770Z",
+      "expiresAt": "2026-07-19T16:52:50.770Z",
+      "profiles": [
+        {
+          "slot": 1,
+          "index": 0,
+          "profileId": "l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2_source_01",
+          "sourceDriven": true
+        }
+      ]
+    },
+    {
+      "runId": "l1_six_inspur_profit_cash_20260718T165250Z_4b756e",
+      "status": "planned",
+      "createdAt": "2026-07-18T16:52:51.491Z",
+      "expiresAt": "2026-07-19T16:52:51.492Z",
+      "profiles": [
+        {
+          "slot": 1,
+          "index": 0,
+          "profileId": "l1_six_inspur_profit_cash_20260718T165250Z_4b756e_source_01",
+          "sourceDriven": true
+        }
+      ]
+    },
+    {
+      "runId": "l1_six_huaneng_revenue_profit_20260718T165251Z_f9f42e",
+      "status": "planned",
+      "createdAt": "2026-07-18T16:52:52.330Z",
+      "expiresAt": "2026-07-19T16:52:52.330Z",
+      "profiles": [
+        {
+          "slot": 1,
+          "index": 0,
+          "profileId": "l1_six_huaneng_revenue_profit_20260718T165251Z_f9f42e_source_01",
+          "sourceDriven": true
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-07-18T16:52:52.330Z"
+}

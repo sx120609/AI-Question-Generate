@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "kind": "l1-production-trace-gate-report",
+  "productionProfile": "l1",
+  "gateId": "production-trace-gate-v6-profiled",
+  "status": "PASS",
+  "generatedAt": "2026-07-18T06:53:22.505Z",
+  "packetPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\workstation_acceptance_20260718T054801Z_df4628\\sources\\production_input_packet.json",
+  "packetHash": "157b075b5f8fe1a2b4791120fad492d50ebc3443ad8bf8d12b85a4d63b74bb36",
+  "tracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\workstation_acceptance_20260718T054801Z_df4628\\qa\\production_trace.json",
+  "traceHash": "a50f229cc2e5f0762d26440b2c521da4d2e24af4b039626adcbce28dbbac61da",
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\workstation_acceptance_20260718T054801Z_df4628\\drafts\\l1_questions.tsv",
+  "candidateHash": "4a907438da47a4d5268ea3bc9c9f81e242ca9f529cf4125cc3248c0000a17fad",
+  "fillPlanPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\workstation_acceptance_20260718T054801Z_df4628\\feishu\\feishu_fill_plan.json",
+  "fillPlanHash": "ad352421cef8861859afd424b1c3b4a3cd50c52386ce165325426820bee52460",
+  "rowCount": 1,
+  "attachmentRoot": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\workstation_acceptance_20260718T054801Z_df4628\\attachments",
+  "attachmentBindings": [
+    {
+      "uid": "沈礼_20260718_workstation_preacceptance_01",
+      "name": "01_ccgp_award_result.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\workstation_acceptance_20260718T054801Z_df4628\\attachments\\01\\01_ccgp_award_result.html",
+      "sha256": "aa92f568f0ba16a715fe70de17bdeb649194e4127c05f1e22d5046bbf0d9711b",
+      "bytes": 16648
+    },
+    {
+      "uid": "沈礼_20260718_workstation_preacceptance_01",
+      "name": "02_ccgp_tender_document.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\workstation_acceptance_20260718T054801Z_df4628\\attachments\\01\\02_ccgp_tender_document.pdf",
+      "sha256": "90cc672177a57325983a2231a96097dbf34233eeba33a05d346ac71c3211bc08",
+      "bytes": 1472948
+    },
+    {
+      "uid": "沈礼_20260718_workstation_preacceptance_01",
+      "name": "03_lenovo_thinkstation_p3_tiny_gen2_user_guide.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\workstation_acceptance_20260718T054801Z_df4628\\attachments\\01\\03_lenovo_thinkstation_p3_tiny_gen2_user_guide.pdf",
+      "sha256": "9a7bb2dfb6d5dae13fca49c7f9a66f43dd81ea98c2cfe4bad00f2e43daaa2422",
+      "bytes": 19900157
+    },
+    {
+      "uid": "沈礼_20260718_workstation_preacceptance_01",
+      "name": "04_lenovo_thinkstation_p368_c4_user_guide.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\workstation_acceptance_20260718T054801Z_df4628\\attachments\\01\\04_lenovo_thinkstation_p368_c4_user_guide.pdf",
+      "sha256": "421d617cf2e0830e83af4ba46d8c91ea1ad18b8e2feb47c40173b68efec8d9a8",
+      "bytes": 27105707
+    },
+    {
+      "uid": "沈礼_20260718_workstation_preacceptance_01",
+      "name": "05_lenovo_thinkstation_p2_tower_user_guide.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\workstation_acceptance_20260718T054801Z_df4628\\attachments\\01\\05_lenovo_thinkstation_p2_tower_user_guide.pdf",
+      "sha256": "c7aed55aee835c4d1ed23ef9b936476ecf14b88ba4b581d9f4ef67f3d73c1234",
+      "bytes": 39993174
+    }
+  ],
+  "productFormatDiversity": {
+    "policyId": "not-required-for-l1",
+    "status": "SKIPPED",
+    "rowCount": 1,
+    "findings": []
+  },
+  "findings": []
+}

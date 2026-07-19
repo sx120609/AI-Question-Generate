@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "kind": "naturalness-review-signoff",
+  "requestId": "naturalness_96021f99117e5fe3a8d07459",
+  "bindingHash": "96021f99117e5fe3a8d07459f9cc87617135b4a1ced8a134beab41da2e1aa0bb",
+  "requestHash": "c9c12848898431d25555441e945e207247b16b8c88371075eda7236075eea86f",
+  "decision": "APPROVE",
+  "reviewer": "responses-api-independent-naturalness-reviewer-gpt-5.6-sol",
+  "rationale": "低事实锚点密度主要是因为具体数值需从所附季报中核取，并非免责声明挤占业务内容。请求已明确资料来源、核对范围、同比与毛利率复算要求、核心判断问题、证据边界、页码留存及PPT交付结构，附件也已提供，任务可执行。虽有会议场景、边界提醒和末尾交付物等模板标记，且前两段略有重复，但整体符合真实同事为经营会议委托财务与产品结构复核的表达，不属于上传元话语或空泛材料介绍。",
+  "reviewedAt": "2026-07-19T02:11:45.924Z",
+  "evidence": {
+    "reviewReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_04_baosteel_mix_profit\\qa\\07_naturalness_independent_review_local_codex.json",
+    "disclaimerDisplacesFacts": false,
+    "taskExecutable": true,
+    "naturalWorkRequest": true
+  }
+}

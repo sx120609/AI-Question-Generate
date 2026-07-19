@@ -1,0 +1,34 @@
+{
+  "kind": "local-codex-stage-response",
+  "stage": "02_question_draft_repair_1",
+  "model": "gpt-5.6-sol",
+  "provider": "local-codex-cli",
+  "completedAt": "2026-07-18T17:27:38.373Z",
+  "promptHash": "026e3974bb2f7b0dbfd3c5d7b9a5f306030153feca8ac3389143697960b8c3a6",
+  "parsed": {
+    "question": "一级目录：企业经营与战略决策。请依据《中国神华能源股份有限公司2026年第一季度报告.pdf》，核对重大资产交易纳入后经营目标与调整前后分业务资本开支，确认资本开支增量集中在哪些业务，并判断该附件最多能支持到何种资金承接结论。请制作可下载的中国神华2026年调整后资本开支Excel，列明经营目标变化、分业务资本开支、增量及占比、经营现金流参照、报告披露的资金来源渠道和待补分配栏，同时保留PDF页码、未经审计状态、派生计算过程及待核边界，不把计划值写成实际结果，也不将未披露的资金分配作确定归因。",
+    "mainTask": "核对中国神华2026年调整前后资本开支及经营目标，识别分业务增量集中度，并界定公开报告可支持的资金承接结论。",
+    "usedFactIds": [
+      "shenhua-q1-core",
+      "shenhua-transaction-scope",
+      "shenhua-target-adjustment",
+      "shenhua-capex-total",
+      "shenhua-capex-mix",
+      "shenhua-funding-boundary"
+    ],
+    "usedAttachmentNames": [
+      "中国神华能源股份有限公司2026年第一季度报告.pdf"
+    ],
+    "productFormats": "xlsx",
+    "deliverableRationale": [
+      {
+        "format": "xlsx",
+        "user": "资本计划复核专员及下游同事",
+        "purpose": "跟踪项目预算并持续回填后续融资披露",
+        "whyThisFormat": "适合统一复算调整前后数据、增量占比和现金流参照，并保留可筛选的证据来源、资金边界及待补分配字段。"
+      }
+    ],
+    "structureMapping": "沿用“业务变化形成复核卡点—核对附件来源与口径—统一比较调整前后数据—处理披露边界—形成单一判断—交付可追溯产物”的推进结构，业务对象改为中国神华资本开支及资金承接。",
+    "productParagraphMapping": "后半段先收束到增量集中度和资金承接证据边界，再指定供资本计划跟踪使用的Excel，并以页码、审计状态、派生计算、待补栏和禁止确定归因为验收边界。"
+  }
+}

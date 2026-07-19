@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "kind": "immutable-doubao-interaction-package",
+  "jobId": "l1-cqrcb-growth-capital-20260719-03",
+  "createdAt": "2026-07-18T17:37:09.113Z",
+  "sourceConfigPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_cqrcb_growth_capital_20260718T165249Z_d98e15\\doubao\\job.json",
+  "sourceConfigSha256": "e306533f470b7d9487ecf2f13a54d1a3fa09dfa37fba2f3fbca1d1f19e87168c",
+  "configSha256": "aec932d524bcd5ea6bdef8b5833234883ddb326b51185ddf14b0e1a7ac13d020",
+  "attachmentReceipt": {
+    "attachmentCount": 1,
+    "attachments": [
+      {
+        "classification": "specific-business",
+        "introductionHint": "把正式报告名称直接嵌入任务句，后续核对继续引用同一份已验证原件。",
+        "name": "重庆农村商业银行股份有限公司2026年第一季度报告.pdf",
+        "relativePath": "重庆农村商业银行股份有限公司2026年第一季度报告.pdf",
+        "sha256": "261e993750d5c1f5b6b430c583d1a24cff13e43ae1aa7206bb78e102b5b6666f",
+        "sizeBytes": 391082,
+        "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-29/1225237379.PDF",
+        "summary": "披露渝农商行一季度收入利润、资产负债增长、资本充足率、杠杆率、流动性和资产质量指标。"
+      }
+    ],
+    "initialAttachmentNames": [
+      "重庆农村商业银行股份有限公司2026年第一季度报告.pdf"
+    ],
+    "minimumSpecificBusinessShare": 0.8,
+    "pass": true,
+    "policyId": "doubao-l1-l2-attachment-policy-v1",
+    "productionEvidence": {
+      "attachmentCount": 1,
+      "downloadManifestHash": "ca8dadd15e93f11684acaf60f338a6c7935b9658f5a22483e53bd478fac6ef43",
+      "downloadManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_cqrcb_growth_capital_20260718T165249Z_d98e15\\sources\\download_manifest.json",
+      "mode": "production-path",
+      "pass": true,
+      "policyId": "reuse-l2-source-acquisition-path-v1",
+      "productionRunId": "l1_six_cqrcb_growth_capital_20260718T165249Z_d98e15",
+      "productionTraceGateReceiptHash": "e91f2eb46744b03261d6a9ded64226d2b8072fd475f9af9c47d3fb39e3f15f18",
+      "productionTraceGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_cqrcb_growth_capital_20260718T165249Z_d98e15\\feishu\\production_trace_gate_receipt.json",
+      "productionTraceHash": "a545deaa90323289babe771821da0797cef368921f689d5c56c79415e14667c0",
+      "productionTracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_cqrcb_growth_capital_20260718T165249Z_d98e15\\qa\\production_trace.json",
+      "recordUid": "沈礼_20260719_l1_cqrcb_growth_capital_03",
+      "releaseGateReceiptHash": "51c3326cb2ff3014da4d5ed48fd8bf2e0266cdc232993cd458a2b15bc64afd45",
+      "releaseGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_cqrcb_growth_capital_20260718T165249Z_d98e15\\feishu\\release_gate_receipt.json",
+      "verifiedAt": "2026-07-18T17:37:09.091Z"
+    },
+    "specificBusinessShare": 1,
+    "verifiedAt": "2026-07-18T17:37:09.093Z"
+  }
+}

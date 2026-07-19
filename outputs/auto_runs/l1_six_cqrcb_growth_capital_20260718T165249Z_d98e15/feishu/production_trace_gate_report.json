@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "l1-production-trace-gate-report",
+  "productionProfile": "l1",
+  "gateId": "production-trace-gate-v6-profiled",
+  "status": "PASS",
+  "generatedAt": "2026-07-18T17:36:10.832Z",
+  "packetPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_cqrcb_growth_capital_20260718T165249Z_d98e15\\sources\\production_input_packet.json",
+  "packetHash": "d739bf13bf4a3ebad4d526383c98101f7715eafec97932ac9af070b15aa81043",
+  "tracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_cqrcb_growth_capital_20260718T165249Z_d98e15\\qa\\production_trace.json",
+  "traceHash": "a545deaa90323289babe771821da0797cef368921f689d5c56c79415e14667c0",
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_cqrcb_growth_capital_20260718T165249Z_d98e15\\drafts\\l1_questions.tsv",
+  "candidateHash": "8ca65fb47a5415c98f29f07e02dabe5e784a1a13e7ba9764cd73d2d8cd3e1897",
+  "fillPlanPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_cqrcb_growth_capital_20260718T165249Z_d98e15\\feishu\\feishu_fill_plan.json",
+  "fillPlanHash": "d872c9121bc5d01eb1fda071fc95c4756c8b02219ed93a089f0bb186b3297f67",
+  "rowCount": 1,
+  "attachmentRoot": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_cqrcb_growth_capital_20260718T165249Z_d98e15\\attachments",
+  "attachmentBindings": [
+    {
+      "uid": "沈礼_20260719_l1_cqrcb_growth_capital_03",
+      "name": "重庆农村商业银行股份有限公司2026年第一季度报告.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_cqrcb_growth_capital_20260718T165249Z_d98e15\\attachments\\重庆农村商业银行股份有限公司2026年第一季度报告.pdf",
+      "sha256": "261e993750d5c1f5b6b430c583d1a24cff13e43ae1aa7206bb78e102b5b6666f",
+      "bytes": 391082
+    }
+  ],
+  "productFormatDiversity": {
+    "policyId": "not-required-for-l1",
+    "status": "SKIPPED",
+    "rowCount": 1,
+    "findings": []
+  },
+  "findings": []
+}

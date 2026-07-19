@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "kind": "doubao-interaction-queue-item",
+  "state": "completed",
+  "jobId": "l1-async-api5-20260719-1015-05",
+  "enqueuedAt": "2026-07-19T02:13:43.743Z",
+  "attempt": 4,
+  "configPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\packages\\l1-async-api5-20260719-1015-05\\job.json",
+  "configSha256": "ff7baf746f693bdeb1c43d3ef22d93c7fcf60b78a35d9ed7ea10fad9645c4273",
+  "packageManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\packages\\l1-async-api5-20260719-1015-05\\manifest.json",
+  "packageManifestSha256": "4cc0961d6f00737e3ea710b8a12538263d642cb3996c0c5bc30981f97f040f50",
+  "recoveryCount": 3,
+  "recoveredAt": "2026-07-19T03:00:05.063Z",
+  "resume": true,
+  "resultPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\results\\l1-async-api5-20260719-1015-05.json",
+  "resumeTargetId": "B5A3CF92CF77EE3846553E1E7250EE56",
+  "finishedAt": "2026-07-19T03:49:40.616Z",
+  "lastError": null
+}

@@ -1,0 +1,150 @@
+{
+  "kind": "de-ai-question-rewrite",
+  "policyId": "mugua-gemini-de-ai-rewrite-v2",
+  "uid": "沈礼_20260719_l1_cqrcb_growth_capital_03",
+  "generatedAt": "2026-07-18T17:35:50.073Z",
+  "provider": "mugua-openai-compatible",
+  "endpoint": "https://api.mugua.link/v1/chat/completions",
+  "model": "gemini-3.1-pro-preview",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 1434,
+    "outputTokens": 1083,
+    "totalTokens": 2517
+  },
+  "promptHash": "5f5af0c3325519fe800dc43596aa4956d83639008cfc0096c44eb2361592a4ea",
+  "sourceQuestionHash": "986de19506187c960546151204df7457bb6d2edaab6c08fe67565522a017c7c3",
+  "rewrittenQuestionHash": "91749a37b5305508ef2b3ffdbb031e4082892215a1edd870d3b177babffd37df",
+  "selectedAttempt": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "pass": false,
+      "visibleLength": 320,
+      "findingRules": [
+        "rewrite-edit-similarity-too-high",
+        "rewrite-exact-copy-run-too-long"
+      ]
+    },
+    {
+      "attempt": 2,
+      "pass": true,
+      "visibleLength": 384,
+      "findingRules": []
+    }
+  ],
+  "rewrite": {
+    "question": "请根据《重庆农村商业银行股份有限公司2026年第一季度报告.pdf》帮我做个经营复核。我需要把2026年一季度的资产负债增长、收入利润、杠杆率、资本充足率还有资产质量整合到一个证据框架下，梳理清楚各项指标的变动情况和比较口径。请根据复核结果给出明确结论，把报告能证实的约束项和改善项区分开，并指出里面存在的疑点或差异。这个结果后续会给分析同事看，用来评估下一步要补充哪些业务条线和资本资料。\n\n最后请整理成一份可下载的Word简报，命名为渝农商行2026年一季度增长与资本约束。简报里面要有具体的指标对照表，并附上来源页码和派生计算说明。同时，请明确标注出这份报告的未经审计状态，列出证据边界以及后续的补数清单，还要包含你对承压与改善情况的判断。\n\n另外注意一下，对于报告里没披露的业务条线资本消耗情况，不要自行做确定的归因，也不要把单季度的变化直接外推当成全年的趋势。",
+    "requestContract": {
+      "requestSpan": "最后请整理成一份可下载的Word简报，命名为渝农商行2026年一季度增长与资本约束。",
+      "action": "整理",
+      "outputs": [
+        {
+          "format": "docx",
+          "humanName": "Word",
+          "purpose": "供后续执行和留痕使用"
+        }
+      ]
+    },
+    "roleTrace": {
+      "blockageSpan": "请根据《重庆农村商业银行股份有限公司2026年第一季度报告.pdf》帮我做个经营复核。",
+      "motivationSpan": "这个结果后续会给分析同事看，用来评估下一步要补充哪些业务条线和资本资料。",
+      "downstreamUseSpan": "这个结果后续会给分析同事看，用来评估下一步要补充哪些业务条线和资本资料。"
+    },
+    "usedFactIds": [
+      "cqrcb-profit-return",
+      "cqrcb-balance-growth",
+      "cqrcb-capital-ratios",
+      "cqrcb-leverage",
+      "cqrcb-asset-quality",
+      "cqrcb-audit-boundary"
+    ],
+    "deliberatelyOmitted": [],
+    "flowStages": [
+      {
+        "stage": "证据归位",
+        "evidence": "事实包中的公开材料与待补信息",
+        "decision": "区分可确认规则和未知现场状态",
+        "next": "证据足够则形成执行对象，不足则进入补证"
+      },
+      {
+        "stage": "执行对象核对",
+        "evidence": "已归位的对象关系与状态记录",
+        "decision": "形成一份增长与资本约束复核简报，把收入利润、资产负债增速、资本比率、杠杆和资产质量放在同一页级证据链中，并列出需要补充的条线资本数据。",
+        "next": "符合条件则进入小范围验证，否则停止推进"
+      },
+      {
+        "stage": "小范围验证",
+        "evidence": "试点输入与实际返回记录",
+        "decision": "判断结果是否满足扩大范围的条件",
+        "next": "通过则推进，失败则退回原状态并留痕"
+      },
+      {
+        "stage": "交接收束",
+        "evidence": "判断依据、验证结果与回退记录",
+        "decision": "确认下游拿到一致结论",
+        "next": "供银行经营分析同事决定下一步需要补取哪些资本和业务条线资料。"
+      }
+    ],
+    "selfAudit": {
+      "factsPreserved": true,
+      "formatsPreserved": true,
+      "processChainExplicit": true,
+      "failureOrRollbackExplicit": true,
+      "noInventedFacts": true,
+      "noAiShell": true
+    }
+  },
+  "validation": {
+    "pass": true,
+    "visibleLength": 381,
+    "similarity": [
+      {
+        "referenceIndex": 1,
+        "editSimilarity": 0.276536312849162,
+        "trigramJaccard": 0.22357723577235772,
+        "longestExactCopyRun": 32,
+        "longestExactCopySpan": "据《重庆农村商业银行股份有限公司2026年第一季度报告.pdf》"
+      },
+      {
+        "referenceIndex": 2,
+        "editSimilarity": 0.06106870229007633,
+        "trigramJaccard": 0.007177033492822967,
+        "longestExactCopyRun": 4,
+        "longestExactCopySpan": "明确结论"
+      }
+    ],
+    "findings": [],
+    "factGuard": {
+      "ok": true,
+      "candidateAnchors": {
+        "numbers": [
+          "2026年"
+        ],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "unsupported": {
+        "numbers": [],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "errors": []
+    }
+  },
+  "deterministicStyleCleanup": {
+    "applied": true,
+    "rules": [
+      "remove-banned-politeness",
+      "remove-upload-meta-language"
+    ],
+    "sourceApiQuestionHash": "1c21863475ffc15913ee1e77b3e0048107535b9c585bb1f78dfd53e9e498df67"
+  },
+  "postDeAiAudit": {
+    "pass": true,
+    "issues": [],
+    "factsPreserved": true,
+    "attachmentsPreserved": true,
+    "visibleTextClean": true
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "kind": "doubao-interaction-queue-item",
+  "state": "completed",
+  "jobId": "l1-async-api5-20260719-1015-01",
+  "enqueuedAt": "2026-07-19T02:20:07.275Z",
+  "attempt": 4,
+  "configPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\packages\\l1-async-api5-20260719-1015-01\\job.json",
+  "configSha256": "990e34dd03e042844ce34fe06441291ed690f1f63982daac94daf0e569a2f0d8",
+  "packageManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\packages\\l1-async-api5-20260719-1015-01\\manifest.json",
+  "packageManifestSha256": "efc2d7b9a8fb26724206686770daf8b4e44b916df08801e52e6bdcdc461b27e5",
+  "resultPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\results\\l1-async-api5-20260719-1015-01.json",
+  "queueResumeHistory": [
+    {
+      "attempt": 1,
+      "failedAt": "2026-07-19T02:37:25.932Z",
+      "lastError": {
+        "code": "",
+        "message": "Timed out after 600000ms waiting for a complete response."
+      },
+      "resumedAt": "2026-07-19T02:38:01.340Z"
+    }
+  ],
+  "resume": true,
+  "resumeTargetId": "D7D0C95D27E7EBC90AB80754B3B5A5EF",
+  "resumedAt": "2026-07-19T02:38:01.341Z",
+  "recoveryCount": 2,
+  "recoveredAt": "2026-07-19T03:00:05.063Z",
+  "finishedAt": "2026-07-19T04:00:38.160Z",
+  "lastError": null
+}

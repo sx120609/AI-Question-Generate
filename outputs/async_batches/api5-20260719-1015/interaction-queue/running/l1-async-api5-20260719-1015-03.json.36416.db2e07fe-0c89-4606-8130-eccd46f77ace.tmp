@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "kind": "doubao-interaction-queue-item",
+  "state": "running",
+  "jobId": "l1-async-api5-20260719-1015-03",
+  "enqueuedAt": "2026-07-19T02:10:26.069Z",
+  "attempt": 1,
+  "configPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\packages\\l1-async-api5-20260719-1015-03\\job.json",
+  "configSha256": "4295328d900bf169b29e6037048c9f3250a27a94f50e81083f4a7978f5f2828c",
+  "packageManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\packages\\l1-async-api5-20260719-1015-03\\manifest.json",
+  "packageManifestSha256": "ddd808e7b7054b189d9ded7a34f1513127c9653b777c06d4a6dddb92d3b9c483",
+  "lease": {
+    "claimedAt": "2026-07-19T02:10:26.359Z",
+    "heartbeatAt": "2026-07-19T02:10:26.359Z",
+    "leaseToken": "521d4f37-f040-40a0-91fe-c56c65686b63",
+    "targetId": "D7D0C95D27E7EBC90AB80754B3B5A5EF",
+    "workerId": "slot-2-D7D0C95D27E7EBC90AB80754B3B5A5EF"
+  }
+}

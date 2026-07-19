@@ -1,0 +1,22 @@
+{
+  "kind": "doubao-resume-incident",
+  "recordedAt": "2026-07-18T13:50:00.000Z",
+  "partialConversationPreservedInDoubao": true,
+  "partialRoundsObserved": 4,
+  "cause": "The first run paused after the evaluator repeatedly produced a nextPrompt with excessive enumeration punctuation. The next CLI invocation omitted --resume, initialized the result path as a fresh run, then failed to click the new Office Task control because it was outside Playwright's calculated viewport.",
+  "originalPartialResultRecoverable": false,
+  "newConversationRequired": true,
+  "feishuWriteAttempted": false,
+  "feishuWriteApplied": false,
+  "preservedEvidence": {
+    "conversationStillVisibleInDoubao": true,
+    "roundScoresObserved": [2, 2, 3],
+    "fourthResponseWasReceived": true,
+    "resultFileAfterFailedFreshInvocation": "result.json"
+  },
+  "repairs": [
+    "Evaluator retry feedback now targets excessive enumeration punctuation and preserves the rest of the decision.",
+    "New Office Task click now falls back to the application's DOM click handler only when the unique visible control is outside the calculated viewport.",
+    "The replacement run uses a new result path so failed-attempt evidence is not overwritten again."
+  ]
+}

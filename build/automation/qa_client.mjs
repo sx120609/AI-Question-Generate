@@ -58,7 +58,7 @@ export function classifyQaNote(note) {
     ["attachment_read_failed", /附件读取失败|来源链接读取失败|附件原文不可用|正文摘录\/数据口径|缺少真实材料/],
     ["attachment_english", /英文附件|英文为主|中文材料|中文摘要|中文译文/],
     ["attachment_count", /附件条数|附件数量|当前附件约|要求4-8条/],
-    ["step_count", /关键步骤|步骤.*少于|8-15|当前为1条/],
+    ["step_count", /关键步骤|步骤.*少于|4-8|8-15|当前为1条/],
     ["product_format", /产物格式|Markdown|Email|格式不明确/],
     ["scene_naturalness", /场景表达不自然|真实业务|真实用户|生硬/],
     ["prompt_style", /AI感|模板|泛泛|任务说明|报告式/],

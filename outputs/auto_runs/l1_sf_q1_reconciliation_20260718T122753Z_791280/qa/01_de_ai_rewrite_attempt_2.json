@@ -1,0 +1,142 @@
+{
+  "kind": "de-ai-question-rewrite",
+  "policyId": "mugua-gemini-de-ai-rewrite-v2",
+  "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+  "generatedAt": "2026-07-18T12:51:09.439Z",
+  "provider": "mugua-openai-compatible",
+  "endpoint": "https://api.mugua.link/v1/chat/completions",
+  "model": "gemini-3.1-pro-preview",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 2094,
+    "outputTokens": 2361,
+    "totalTokens": 4455
+  },
+  "promptHash": "7af6e725acc3d2015436dfa7b69bb234cc6d7117ef3fe21509516f530521e713",
+  "sourceQuestionHash": "0299e2ba9867ff0947d4cfbac80a9ddb682a747f52ea7a888b3737337f7b6c50",
+  "rewrittenQuestionHash": "b590142f63356e5c957271b708caf0ce0ddb00be541c8db49711dad99ef39916",
+  "selectedAttempt": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "pass": false,
+      "visibleLength": 269,
+      "findingRules": [
+        "boundary-coaching-language",
+        "rewrite-exact-copy-run-too-long"
+      ]
+    },
+    {
+      "attempt": 2,
+      "pass": true,
+      "visibleLength": 208,
+      "findingRules": []
+    }
+  ],
+  "rewrite": {
+    "question": "顺丰控股2026年第一季度报告连同同年2月与3月的快递物流业务经营简报已经上传。评估这三份附件能否拼成该年一季度的数据来源链。核验过程需衔接1至2月累计数据与3月单月数据，明确经营简报内物流相关收入同一季报营业收入的边界。评估亿元保留两位小数及以千元披露这两种记账方式对精度与指标可比性的影响。整理一份可下载的Excel口径核对表交由我后续复核。表内记录来源页码及未经审计状态，遇到未直接对应的内容将状态栏标为待核。",
+    "requestContract": {
+      "requestSpan": "整理一份可下载的Excel口径核对表交由我后续复核。",
+      "action": "整理",
+      "outputs": [
+        {
+          "format": "xlsx",
+          "humanName": "Excel",
+          "purpose": "供后续执行和留痕使用"
+        }
+      ]
+    },
+    "roleTrace": {
+      "blockageSpan": "顺丰控股2026年第一季度报告连同同年2月与3月的快递物流业务经营简报已经上传。",
+      "motivationSpan": "",
+      "downstreamUseSpan": "整理一份可下载的Excel口径核对表交由我后续复核。"
+    },
+    "usedFactIds": [
+      "fact-feb-month",
+      "fact-jan-feb-cumulative",
+      "fact-feb-boundary",
+      "fact-march-month",
+      "fact-march-boundary",
+      "fact-q1-revenue",
+      "fact-q1-boundary",
+      "fact-quarter-bridge",
+      "fact-subtotal-checks",
+      "fact-unit-price-checks"
+    ],
+    "deliberatelyOmitted": [],
+    "flowStages": [
+      {
+        "stage": "证据归位",
+        "evidence": "事实包中的公开材料与待补信息",
+        "decision": "区分可确认规则和未知现场状态",
+        "next": "证据足够则形成执行对象，不足则进入补证"
+      },
+      {
+        "stage": "执行对象核对",
+        "evidence": "已归位的对象关系与状态记录",
+        "decision": "建立带公式和来源页码的季度收入口径核对表，确认经营简报分项与累计值能够回算，并把与一季报总营业收入的差额保持为口径桥接项而非直接归因。",
+        "next": "符合条件则进入小范围验证，否则停止推进"
+      },
+      {
+        "stage": "小范围验证",
+        "evidence": "试点输入与实际返回记录",
+        "decision": "判断结果是否满足扩大范围的条件",
+        "next": "通过则推进，失败则退回原状态并留痕"
+      },
+      {
+        "stage": "交接收束",
+        "evidence": "判断依据、验证结果与回退记录",
+        "decision": "确认下游拿到一致结论",
+        "next": "复核季度数据口径并为后续取得分部或科目明细后继续回填。"
+      }
+    ],
+    "selfAudit": {
+      "factsPreserved": true,
+      "formatsPreserved": true,
+      "processChainExplicit": true,
+      "failureOrRollbackExplicit": true,
+      "noInventedFacts": true,
+      "noAiShell": true
+    }
+  },
+  "validation": {
+    "pass": true,
+    "visibleLength": 208,
+    "similarity": [
+      {
+        "referenceIndex": 1,
+        "editSimilarity": 0.5174129353233831,
+        "trigramJaccard": 0.3272058823529412,
+        "longestExactCopyRun": 15,
+        "longestExactCopySpan": "顺丰控股2026年第一季度报告"
+      },
+      {
+        "referenceIndex": 2,
+        "editSimilarity": 0.049707602339181256,
+        "trigramJaccard": 0,
+        "longestExactCopyRun": 2,
+        "longestExactCopySpan": "20"
+      }
+    ],
+    "findings": [],
+    "factGuard": {
+      "ok": true,
+      "candidateAnchors": {
+        "numbers": [
+          "2026年",
+          "2月",
+          "3月",
+          "1"
+        ],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "unsupported": {
+        "numbers": [],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "errors": []
+    }
+  }
+}

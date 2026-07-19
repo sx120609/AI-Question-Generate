@@ -1,0 +1,98 @@
+{
+  "configHash": "c4ab22052c3b61b01a3de3eaff8c4fda747efbe253b32a8abc7f6ab3b3da3782",
+  "conversationId": "",
+  "jobId": "l1-baosteel-mix-profit-20260719-04",
+  "minimumRounds": 6,
+  "maxRounds": 10,
+  "mode": "openai-compatible",
+  "contentScopePolicyVersion": "domestic-work-scope-v1",
+  "executionSlot": {
+    "browserContextId": "1084C633D11647B8992D48E50C635F55",
+    "endpoint": "http://127.0.0.1:9229",
+    "targetId": "D7F9BF5AF432877197B0C1AA9F2D24BB",
+    "workerId": "slot-1-D7F9BF5AF432877197B0C1AA9F2D24BB"
+  },
+  "finalProductAcceptance": null,
+  "productRequirement": {
+    "allowEquivalentOnline": false,
+    "allowUnavailableBestEffort": false,
+    "required": true,
+    "requestedFormats": [
+      "ppt"
+    ]
+  },
+  "rounds": [],
+  "runId": "c25a3a4f-30e1-4e58-88e1-c801a51ae7ae",
+  "schemaVersion": 7,
+  "successCriteria": [
+    "产品与财务指标来源清楚",
+    "分部毛利率变化准确",
+    "不把订单量直接等同利润贡献",
+    "内部抵消边界明确",
+    "交付可下载pptx"
+  ],
+  "taskGoal": "产品经营复核人员需要解释结构指标向好但归母净利润下降的证据组合。。制作产品结构与利润表现复核演示稿，把产品销量和出口接单亮点与分部毛利率、整体利润和现金流并列，明确可证改善与不能归因的部分。，最终一份可下载的宝钢股份2026年一季度产品结构与利润表现PPT，包含产品和出口亮点、核心财务对比、分部毛利率、证据边界、待补数据和结论页。",
+  "startedAt": "2026-07-18T18:15:35.209Z",
+  "status": "failed",
+  "uploadedAttachmentNames": [],
+  "workerPid": null,
+  "workerStartedAt": "2026-07-18T18:15:35.209Z",
+  "initialContentScope": {
+    "calculationComplexityCount": 3,
+    "issues": [],
+    "pass": true,
+    "policyVersion": "domestic-work-scope-v1"
+  },
+  "attachmentManifest": {
+    "attachmentCount": 1,
+    "attachments": [
+      {
+        "classification": "specific-business",
+        "introductionHint": "把正式报告名称直接嵌入任务句，后续核对继续引用同一份已验证原件。",
+        "name": "宝山钢铁股份有限公司2026年第一季度报告.pdf",
+        "relativePath": "宝山钢铁股份有限公司2026年第一季度报告.pdf",
+        "sha256": "76b0d27c65fb55ba2cd3301f83e4448846de438d1575ea05e551fe0b829cb23d",
+        "sizeBytes": 191834,
+        "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-30/1225257456.PDF",
+        "summary": "披露宝钢股份一季度产品销量、出口接单、经营分部收入成本毛利率和核心财务指标。"
+      }
+    ],
+    "initialAttachmentNames": [
+      "宝山钢铁股份有限公司2026年第一季度报告.pdf"
+    ],
+    "minimumSpecificBusinessShare": 0.8,
+    "pass": true,
+    "policyId": "doubao-l1-l2-attachment-policy-v1",
+    "productionEvidence": {
+      "attachmentCount": 1,
+      "downloadManifestHash": "f934d60f0fdebceb3292591f5f880942ae738e3d1ebcbbf55232244d0dc625a6",
+      "downloadManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-baosteel-mix-profit-20260719-04\\evidence\\download_manifest.json",
+      "mode": "production-path",
+      "pass": true,
+      "policyId": "reuse-l2-source-acquisition-path-v1",
+      "productionRunId": "l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2",
+      "productionTraceGateReceiptHash": "537ead5ab8e82140aedf3126aa4dec82614aed7ecc258cc6015e3bf7f0bccb57",
+      "productionTraceGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-baosteel-mix-profit-20260719-04\\evidence\\production_trace_gate_receipt.json",
+      "productionTraceHash": "d8847bc2d1bc30f9600f0112c42aed502c40c9daaa38e22e5ffe190763e73dbd",
+      "productionTracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-baosteel-mix-profit-20260719-04\\evidence\\production_trace.json",
+      "recordUid": "沈礼_20260719_l1_baosteel_mix_profit_04",
+      "releaseGateReceiptHash": "d70f01074832fd1cb61c3c2b6c0a56bd31384a667167ee35450ca8d9cd0e85bc",
+      "releaseGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-baosteel-mix-profit-20260719-04\\evidence\\release_gate_receipt.json",
+      "verifiedAt": "2026-07-18T18:15:35.241Z"
+    },
+    "specificBusinessShare": 1,
+    "verifiedAt": "2026-07-18T18:15:35.241Z"
+  },
+  "error": {
+    "code": "",
+    "message": "locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"create_office_task_button\"]')\u001b[22m\n\u001b[2m    - locator resolved to <div aria-hidden=\"true\" data-aria-hidden=\"true\" data-testid=\"create_office_task_button\">…</div>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div data-state=\"open\" aria-hidden=\"true\" data-aria-hidden=\"true\" data-slot=\"dialog-overlay\" data-setting-modal-layer=\"\" class=\"fixed inset-0 bg-dbx-bg-mask data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:animate-in data-[state=open]:fade-in-0 z-[100]\"></div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div data-state=\"open\" aria-hidden=\"true\" data-aria-hidden=\"true\" data-slot=\"dialog-overlay\" data-setting-modal-layer=\"\" class=\"fixed inset-0 bg-dbx-bg-mask data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:animate-in data-[state=open]:fade-in-0 z-[100]\"></div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    16 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div data-state=\"open\" aria-hidden=\"true\" data-aria-hidden=\"true\" data-slot=\"dialog-overlay\" data-setting-modal-layer=\"\" class=\"fixed inset-0 bg-dbx-bg-mask data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:animate-in data-[state=open]:fade-in-0 z-[100]\"></div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+    "stack": "locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"create_office_task_button\"]')\u001b[22m\n\u001b[2m    - locator resolved to <div aria-hidden=\"true\" data-aria-hidden=\"true\" data-testid=\"create_office_task_button\">…</div>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div data-state=\"open\" aria-hidden=\"true\" data-aria-hidden=\"true\" data-slot=\"dialog-overlay\" data-setting-modal-layer=\"\" class=\"fixed inset-0 bg-dbx-bg-mask data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:animate-in data-[state=open]:fade-in-0 z-[100]\"></div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div data-state=\"open\" aria-hidden=\"true\" data-aria-hidden=\"true\" data-slot=\"dialog-overlay\" data-setting-modal-layer=\"\" class=\"fixed inset-0 bg-dbx-bg-mask data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:animate-in data-[state=open]:fade-in-0 z-[100]\"></div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    16 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div data-state=\"open\" aria-hidden=\"true\" data-aria-hidden=\"true\" data-slot=\"dialog-overlay\" data-setting-modal-layer=\"\" class=\"fixed inset-0 bg-dbx-bg-mask data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:animate-in data-[state=open]:fade-in-0 z-[100]\"></div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at openNewOfficeTask (C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\doubao-automation\\src\\doubao-client.mjs:329:18)\n    at async runDoubaoJob (C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\doubao-automation\\src\\job-runner.mjs:662:39)\n    at async runInteractionQueueWorker (C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\doubao-automation\\src\\queue-worker.mjs:73:22)\n    at async runInteractionQueuePool (C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\doubao-automation\\src\\queue-worker.mjs:141:19)\n    at async runQueuePool (C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\doubao-automation\\src\\cli.mjs:349:11)\n    at async file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/doubao-automation/src/cli.mjs:435:38",
+    "attempts": [],
+    "issues": [],
+    "productAssessment": null
+  },
+  "failedAt": "2026-07-18T18:15:45.470Z",
+  "stoppedWorkerPid": 3128,
+  "workerStoppedAt": "2026-07-18T18:15:45.470Z",
+  "updatedAt": "2026-07-18T18:15:45.473Z"
+}

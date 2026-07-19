@@ -1,0 +1,158 @@
+{
+  "kind": "scene-card-gate-report",
+  "gateId": "scene-card-role-consistency-v1",
+  "protocolId": "situated-requester-v1",
+  "schemaVersion": 1,
+  "status": "PASS",
+  "ok": true,
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\drafts\\l2_questions.tsv",
+  "candidateHash": "43927f360da2458de9e890f2b058d71aafbf8d822c6ece5a6489a03acb71d5f9",
+  "sceneCardPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\sources\\scene_cards.json",
+  "sceneCardFileHash": "3050733227756866af11a18e3c94e15430d230ef3ad4444126fd4a24af7eb383",
+  "sceneCardBundleHash": "b4f3433c0b8b9521ea0ff6c4dccabfffc36b4770399aab2278e5b60e730af6a9",
+  "sceneCardSetHash": "355806f20ff4b6e7b7f493aee11f74cd2ff41f53a1595663596b19f08206a024",
+  "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\sources\\fact_ledger.json",
+  "factLedgerHash": "931fd4d6b085b90a963cc33f887e11a64dbfc521d1317030b53d9ba71097c863",
+  "summary": {
+    "candidateRowCount": 2,
+    "sceneCardCount": 2,
+    "passedRowCount": 2,
+    "failedRowCount": 0,
+    "globalErrorCount": 0,
+    "batchCollisionCount": 0
+  },
+  "rows": [
+    {
+      "uid": "434",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "40453f7d0c3d27661530f00237768198600bb5d39a0d008d6fe091b99eef1ba0",
+      "cardHash": "1040558313b79e9062150c76cfd04e3ab13ebe9eed3843afc3d73c46f64321ca",
+      "roleConsistencyHash": "9834d3e965d623ae5620b62467c7a8c9eddcd013a56e9fcfe5e532400e492ec5",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "polite-request",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "html",
+          "xlsx"
+        ],
+        "mFormats": [
+          "html",
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "轮换前需要先弄清设备与证书的对应关系，因为停用设备证书会使关联设备无法接入，删除 CA 证书也会影响使用它完成认证的设备。",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "",
+            "occurrences": 0
+          },
+          "downstreamUseSpan": {
+            "span": "可轮换名单为空或回滚条件不完整时，结论保持为暂不进入试点，放行结果以真实核对记录为准。",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [
+            "509"
+          ],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "03c96a2b76931dfdd83265db68525a7c5a1f53e330ac6e55ee892504f9bc5e8c"
+      }
+    },
+    {
+      "uid": "435",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "6a78a49caa56b972a926cbd3562429fd79de2c567b0b572d65a103351a6b28be",
+      "cardHash": "ca6929df9b85a28f8bcdd90c4036ef6b5e7b2d8aa32150d3a039aa2fab711820",
+      "roleConsistencyHash": "c6860551a50e701257555205a471764132266956b143645a4a5108b55d6b8d41",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "polite-request",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "mFormats": [
+          "docx",
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "现在缺少一份能把旧回调配置、新接入方式和演练证据放在一起的迁移记录。",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "",
+            "occurrences": 0
+          },
+          "downstreamUseSpan": {
+            "span": "同一事件在 Word 中提出的放行条件，要能在 Excel 中找到对应记录，避免说明已经放行而矩阵仍缺证据。",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [
+            "2"
+          ],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "16e391cdf129fcb653654f1e32930d5e12baf9d39295cd3527d14ff85cc048fb"
+      }
+    }
+  ],
+  "batch": {
+    "ok": true,
+    "status": "PASS",
+    "thresholds": {
+      "highMaskedTrigramSimilarity": 0.72,
+      "sharedMaskedFragmentLength": 18
+    },
+    "comparisons": [
+      {
+        "leftUid": "434",
+        "rightUid": "435",
+        "leftMaskedHash": "dbed1981f7f594398586ec1f5e295a193969ec71621b32d6dfa827ba734270e0",
+        "rightMaskedHash": "6816b9f4c070f585b10c4da4009578e89303a3dd7dae22fa39010cefdba7d7c0",
+        "trigramSimilarity": 0.026,
+        "longestSharedFragmentLength": 10,
+        "longestSharedFragment": "没有提供因此本次工作",
+        "highSimilarity": false,
+        "sharedLongFragment": false
+      }
+    ],
+    "errors": []
+  },
+  "errors": [],
+  "evaluationHash": "f044edc9d85fab09e18b37d01e981eaa29bcdab62aae87d28379344db4167d6b"
+}

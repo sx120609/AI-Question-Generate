@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "kind": "source-card-bundle",
+  "runId": "workstation_acceptance_20260718T054801Z_df4628",
+  "recordUid": "沈礼_20260718_workstation_preacceptance_01",
+  "sources": [
+    {
+      "materialId": "material-ccgp-award",
+      "title": "图形工作站（含显示器）采购项目中标结果公告",
+      "publisher": "中国政府采购网",
+      "publishedAt": "2026-06-04",
+      "accessedAt": "2026-07-18",
+      "path": "attachments/01/01_ccgp_award_result.html",
+      "supports": "项目身份、中标供应商、包金额、工作站型号、总数量和工作站单价",
+      "boundary": "未提供A/B拆分数量、显示器单价、实际到货和验收结果"
+    },
+    {
+      "materialId": "material-ccgp-tender",
+      "title": "图形工作站（含显示器）采购项目招标文件",
+      "publisher": "中国政府采购网公告附件",
+      "publishedAt": "2026-05-08",
+      "accessedAt": "2026-07-18",
+      "path": "attachments/01/02_ccgp_tender_document.pdf",
+      "supports": "包组预估数量组合、技术条款、交货、验收、付款和保修条件",
+      "boundary": "招标要求不代表实际交付设备已经满足"
+    },
+    {
+      "materialId": "material-lenovo-p3-tiny",
+      "title": "ThinkStation P3 Tiny Gen 2用户指南",
+      "publisher": "联想知识库",
+      "publishedAt": "2026-02-27",
+      "accessedAt": "2026-07-18",
+      "path": "attachments/01/03_lenovo_thinkstation_p3_tiny_gen2_user_guide.pdf",
+      "supports": "P3 Tiny Gen 2系列后视图、接口和功能核对入口",
+      "boundary": "选配接口随具体机型变化，指南不证明本批实物配置"
+    },
+    {
+      "materialId": "material-lenovo-p368",
+      "title": "ThinkStation P368-C4用户指南",
+      "publisher": "联想知识库",
+      "publishedAt": "2025-09-15",
+      "accessedAt": "2026-07-18",
+      "path": "attachments/01/04_lenovo_thinkstation_p368_c4_user_guide.pdf",
+      "supports": "P368-C4后部接口和可选功能核对入口",
+      "boundary": "特定型号功能与实际配置仍需现场读回"
+    },
+    {
+      "materialId": "material-lenovo-p2-tower",
+      "title": "ThinkStation P2 Tower用户指南",
+      "publisher": "联想知识库",
+      "publishedAt": "2025-10-10",
+      "accessedAt": "2026-07-18",
+      "path": "attachments/01/05_lenovo_thinkstation_p2_tower_user_guide.pdf",
+      "supports": "P2 Tower后视图、接口和键盘开机功能核对入口",
+      "boundary": "选配接口随具体机型变化，指南不证明本批实物配置"
+    }
+  ]
+}

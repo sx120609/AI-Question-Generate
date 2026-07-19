@@ -1,0 +1,55 @@
+{
+  "jobId": "l1-cqrcb-growth-capital-20260719-03",
+  "attachmentRoot": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-cqrcb-growth-capital-20260719-03\\attachments",
+  "initialAttachmentNames": [
+    "重庆农村商业银行股份有限公司2026年第一季度报告.pdf"
+  ],
+  "productionEvidence": {
+    "recordUid": "沈礼_20260719_l1_cqrcb_growth_capital_03",
+    "productionTracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-cqrcb-growth-capital-20260719-03\\evidence\\production_trace.json",
+    "productionTraceGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-cqrcb-growth-capital-20260719-03\\evidence\\production_trace_gate_receipt.json",
+    "releaseGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-cqrcb-growth-capital-20260719-03\\evidence\\release_gate_receipt.json",
+    "downloadManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-cqrcb-growth-capital-20260719-03\\evidence\\download_manifest.json"
+  },
+  "maxRounds": 6,
+  "maximumRounds": 10,
+  "mode": "openai-compatible",
+  "taskGoal": "银行经营复核人员需要判断资产扩张和收入增长是否伴随资本与回报指标承压。。形成一份增长与资本约束复核简报，把收入利润、资产负债增速、资本比率、杠杆和资产质量放在同一页级证据链中，并列出需要补充的条线资本数据。，最终一份可下载的渝农商行2026年一季度增长与资本约束Word简报，含指标对照表、改善与承压判断、来源页码、证据边界和补数清单。",
+  "successCriteria": [
+    "指标和单位准确",
+    "变化百分点复算正确",
+    "增长与资本约束同时呈现",
+    "不推断条线资本消耗",
+    "交付可下载docx"
+  ],
+  "initialPrompt": "请根据《重庆农村商业银行股份有限公司2026年第一季度报告.pdf》帮我做个经营复核。我需要把2026年一季度的资产负债增长、收入利润、杠杆率、资本充足率还有资产质量整合到一个证据框架下，梳理清楚各项指标的变动情况和比较口径。请根据复核结果给出明确结论，把报告能证实的约束项和改善项区分开，并指出里面存在的疑点或差异。这个结果后续会给分析同事看，用来评估下一步要补充哪些业务条线和资本资料。\n\n最后请整理成一份可下载的Word简报，命名为渝农商行2026年一季度增长与资本约束。简报里面要有具体的指标对照表，并附上来源页码和派生计算说明。同时，请明确标注出这份报告的未经审计状态，列出证据边界以及后续的补数清单，还要包含你对承压与改善情况的判断。\n\n另外注意一下，对于报告里没披露的业务条线资本消耗情况，不要自行做确定的归因，也不要把单季度的变化直接外推当成全年的趋势。",
+  "responseTimeoutMs": 600000,
+  "interactionRewrite": {
+    "type": "openai-compatible",
+    "baseUrl": "https://api.mugua.link/v1",
+    "model": "gemini-3.1-pro-preview",
+    "apiKeyEnv": "DE_AI_REWRITE_API_KEY",
+    "temperature": 0.55,
+    "timeoutMs": 180000
+  },
+  "promptPreflight": {
+    "type": "local-codex",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "timeoutMs": 360000
+  },
+  "policy": {
+    "type": "local-codex",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "timeoutMs": 360000
+  },
+  "productRequirement": {
+    "required": true,
+    "requestedFormats": [
+      "word"
+    ],
+    "allowEquivalentOnline": false,
+    "allowUnavailableBestEffort": false
+  }
+}

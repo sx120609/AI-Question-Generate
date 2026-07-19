@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "ok": true,
+  "status": "PASS",
+  "generatedAt": "2026-07-19T02:09:50.337Z",
+  "policyId": "l1-phase3-source-driven-v1",
+  "policyVersion": 1,
+  "gateStatus": "PASS",
+  "authorizationMode": "DIRECT_PASS",
+  "reviewAuthorization": null,
+  "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_02_shenhua_capex_funding\\feishu\\structure_gate_report.json",
+  "reportHash": "be1678c5dce5257202a9742d4e574bb368e0b3b7568a4dbf6d114d83c991470c",
+  "batchHash": "875372583db0a0463eb370cb7eec4426994d1154b9cee52c78b73132861fb212",
+  "rowHashes": [
+    {
+      "index": 0,
+      "uid": "沈礼_api5-20260719-1015_02",
+      "sheetRow": 999902,
+      "hash": "99243bbe4415211eda6c51bd1f3db7b5aa4db0deaab3049f77d4a2bb8b5bf210"
+    }
+  ],
+  "kind": "release-gate-receipt",
+  "releaseSchemaVersion": 2,
+  "releaseGateId": "combined-release-gate-v2",
+  "structure": {
+    "receiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_02_shenhua_capex_funding\\feishu\\structure_gate_receipt.json",
+    "receiptHash": "eb57f9b8609898f45c8acc90f2a131344fcac7e02b80e82d86d6263b12108e6c",
+    "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_02_shenhua_capex_funding\\feishu\\structure_gate_report.json",
+    "reportHash": "be1678c5dce5257202a9742d4e574bb368e0b3b7568a4dbf6d114d83c991470c",
+    "gateStatus": "PASS",
+    "authorizationMode": "DIRECT_PASS"
+  },
+  "naturalness": {
+    "gateId": "naturalness-gate-v6",
+    "metricsVersion": "naturalness-metrics-v6",
+    "questionLanguagePolicyId": "corpus-calibrated-intent-punctuation-v4",
+    "status": "PASS",
+    "authorizationMode": "DIRECT_PASS",
+    "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_02_shenhua_capex_funding\\feishu\\naturalness_gate_report.json",
+    "reportHash": "bb3411c9121ec1efe4c2a351ff975836349d2242637164b83f54cf0806c7f8a7",
+    "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_02_shenhua_capex_funding\\drafts\\l1_questions.tsv",
+    "candidateHash": "67e81b5160c8119032963639e0d3528058a9f9115289f02d5461607c33a0eb7c",
+    "baselinePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_02_shenhua_capex_funding\\sources\\naturalness_baseline.json",
+    "baselineHash": "0ec3102d5fa14b1b0aa65dcbd3744583646a65adf1b5772598438d80fc79812a",
+    "reviewAuthorization": null
+  },
+  "roleConsistency": {
+    "gateId": "scene-card-role-consistency-v1",
+    "protocolId": "situated-requester-v1",
+    "status": "PASS",
+    "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_02_shenhua_capex_funding\\feishu\\role_consistency_report.json",
+    "reportHash": "265a100201cea1e02a7e38fb7d1ece93949e93a945240dd6e50fbbc814ab2d70",
+    "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_02_shenhua_capex_funding\\drafts\\l1_questions.tsv",
+    "candidateHash": "67e81b5160c8119032963639e0d3528058a9f9115289f02d5461607c33a0eb7c",
+    "sceneCardPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_02_shenhua_capex_funding\\sources\\scene_cards.json",
+    "sceneCardFileHash": "2defa33a2fbcc8c96f90832288d8f379b43b7ae89eb89554bfeaf8ce3af0cb11",
+    "sceneCardSetHash": "4e0cfe6fb24aa4ba918e8056bb1030367de8a43fec27a0bf44492b5b02e78829",
+    "sceneCardBundleHash": "003c88042008ec760b750f64642c7da69dc579eaafe6dd0923d02a3079cd1628",
+    "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_02_shenhua_capex_funding\\sources\\fact_ledger.json",
+    "factLedgerHash": "02290374989f4d7b097fe36ceffbec6388a1d6cf94d274e7eb930e11f017d227",
+    "evaluationHash": "1101ad2ba402412f250e3d4312be3838f289a04e8c5ec9374457e16f4ab47edf",
+    "rowBindingsHash": "6719df924a09adefa107871076f6068d24774e02cb9ea6ff78868cc3b94cfaa9"
+  }
+}

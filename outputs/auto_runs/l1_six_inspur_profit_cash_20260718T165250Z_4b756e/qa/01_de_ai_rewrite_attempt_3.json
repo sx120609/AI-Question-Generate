@@ -1,0 +1,163 @@
+{
+  "kind": "de-ai-question-rewrite",
+  "policyId": "mugua-gemini-de-ai-rewrite-v2",
+  "uid": "沈礼_20260719_l1_inspur_profit_cash_05",
+  "generatedAt": "2026-07-18T17:50:55.929Z",
+  "provider": "mugua-openai-compatible",
+  "endpoint": "https://api.mugua.link/v1/chat/completions",
+  "model": "gemini-3.1-pro-preview",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 1482,
+    "outputTokens": 1503,
+    "totalTokens": 2985
+  },
+  "promptHash": "fe935baf34a4dd252b4cfc298a142748b30ae97c2cbc803ca0eefbcae5386efe",
+  "sourceQuestionHash": "8aa917bc202fb80f0eb6574b95ab052ffe06abb821c08810da13207841a3f02f",
+  "rewrittenQuestionHash": "119be948a486d023f210c787428565438bff2f35ef46878e2ed217a525f8e6cb",
+  "selectedAttempt": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "pass": false,
+      "visibleLength": 393,
+      "findingRules": [
+        "rewrite-exact-copy-run-too-long"
+      ]
+    },
+    {
+      "attempt": 2,
+      "pass": true,
+      "visibleLength": 453,
+      "findingRules": []
+    }
+  ],
+  "rewrite": {
+    "question": "请根据《浪潮电子信息产业股份有限公司2026年第一季度报告.pdf》中的内容，帮我查核一下2026年一季度收入下降、利润却增长，同时经营现金流转负的具体差异情况。请复算本期与上年同期的数值及同比变化，并全面核对收入、利润、经营现金流的分项数据，以及相应的比率、占比和计算口径。\n\n在分析过程中，请重点提取能反映回款、预收和融资节奏的线索。你可以结合应收账款、合同负债和短期借款的同步变动来分析，但不要直接把它们写成绝对的因果归因。请务必明确区分哪些是报告原文、哪些是派生计算、合理推断或待确认事项，并给出清晰的结论。这主要是为了方便经营分析同事后续拿到回款和项目明细后做补充判断。\n\n最后请输出一份可下载的Excel表格，命名为“浪潮信息2026年一季度利润现金与营运节奏”。表格中需要呈现收入、利润和现金流的对照情况，单独梳理出应收账款与合同负债的线索以及融资变动。同时，请在表内注明计算口径、来源的具体页码、未经审计的财务状态和证据边界。另外，像客户、项目、账龄这类需要后续补充的明细项也请一并列出。",
+    "requestContract": {
+      "requestSpan": "最后请输出一份可下载的Excel表格，命名为“浪潮信息2026年一季度利润现金与营运节奏”。",
+      "action": "最后",
+      "outputs": [
+        {
+          "format": "xlsx",
+          "humanName": "Excel",
+          "purpose": "供后续执行和留痕使用"
+        }
+      ]
+    },
+    "roleTrace": {
+      "blockageSpan": "请根据《浪潮电子信息产业股份有限公司2026年第一季度报告.pdf》中的内容，帮我查核一下2026年一季度收入下降、利润却增长，同时经营现金流转负的具体差异情况。",
+      "motivationSpan": "这主要是为了方便经营分析同事后续拿到回款和项目明细后做补充判断。",
+      "downstreamUseSpan": "这主要是为了方便经营分析同事后续拿到回款和项目明细后做补充判断。"
+    },
+    "usedFactIds": [
+      "inspur-core-performance",
+      "inspur-operating-cash",
+      "inspur-receivables",
+      "inspur-contract-liability",
+      "inspur-financing",
+      "inspur-boundary"
+    ],
+    "deliberatelyOmitted": [],
+    "flowStages": [
+      {
+        "stage": "证据归位",
+        "evidence": "事实包中的公开材料与待补信息",
+        "decision": "区分可确认规则和未知现场状态",
+        "next": "证据足够则形成执行对象，不足则进入补证"
+      },
+      {
+        "stage": "执行对象核对",
+        "evidence": "已归位的对象关系与状态记录",
+        "decision": "建立利润现金与营运节奏核对表，复算核心指标方向，整理应收、预收和融资变化的披露线索，并保留客户与项目明细待补栏。",
+        "next": "符合条件则进入小范围验证，否则停止推进"
+      },
+      {
+        "stage": "小范围验证",
+        "evidence": "试点输入与实际返回记录",
+        "decision": "判断结果是否满足扩大范围的条件",
+        "next": "通过则推进，失败则退回原状态并留痕"
+      },
+      {
+        "stage": "交接收束",
+        "evidence": "判断依据、验证结果与回退记录",
+        "decision": "确认下游拿到一致结论",
+        "next": "供经营分析同事继续取得回款和项目明细后补充判断。"
+      }
+    ],
+    "selfAudit": {
+      "factsPreserved": true,
+      "formatsPreserved": true,
+      "processChainExplicit": true,
+      "failureOrRollbackExplicit": true,
+      "noInventedFacts": true,
+      "noAiShell": true
+    }
+  },
+  "validation": {
+    "pass": true,
+    "visibleLength": 448,
+    "similarity": [
+      {
+        "referenceIndex": 1,
+        "editSimilarity": 0.30339805825242716,
+        "trigramJaccard": 0.26126126126126126,
+        "longestExactCopyRun": 32,
+        "longestExactCopySpan": "据《浪潮电子信息产业股份有限公司2026年第一季度报告.pdf》"
+      },
+      {
+        "referenceIndex": 2,
+        "editSimilarity": 0.03883495145631066,
+        "trigramJaccard": 0.008379888268156424,
+        "longestExactCopyRun": 5,
+        "longestExactCopySpan": "2026年"
+      }
+    ],
+    "findings": [],
+    "factGuard": {
+      "ok": true,
+      "candidateAnchors": {
+        "numbers": [
+          "2026年"
+        ],
+        "quotedClaims": [
+          "浪潮信息2026年一季度利润现金与营运节奏"
+        ],
+        "timeMarkers": []
+      },
+      "unsupported": {
+        "numbers": [],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "errors": []
+    }
+  },
+  "deterministicStyleCleanup": {
+    "applied": true,
+    "rules": [
+      "remove-unbound-inline-page-range",
+      "remove-banned-politeness",
+      "remove-upload-meta-language"
+    ],
+    "sourceApiQuestionHash": "2c53c83a59fd19bad079b0d57e1f0bc9a4220addec703b511ef644f6a0bb9fbf"
+  },
+  "postDeAiAudit": {
+    "pass": false,
+    "issues": [
+      {
+        "rule": "保留自然的真实请求者场景",
+        "evidence": "sourceQuestion中的“我作为经营质量复核专员，正在……复核”在outboundQuestion中被删除，仅保留了用途说明，未体现请求者本人正在负责或执行该项复核。",
+        "repair": "保留“我作为经营质量复核专员，正在复核……”或自然等价表述。"
+      },
+      {
+        "rule": "保持附件核对范围和事实边界",
+        "evidence": "sourceQuestion明确要求“请核对第2至3页”，outboundQuestion仅称根据附件内容查核，遗漏了限定页码。",
+        "repair": "明确保留“核对第2至3页”的范围要求。"
+      }
+    ],
+    "factsPreserved": false,
+    "attachmentsPreserved": true,
+    "visibleTextClean": true
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "kind": "l1-stage3-gate-summary",
+  "generatedAt": "2026-07-18T06:53:22.587Z",
+  "workflowState": "COMPLETE",
+  "finalRecordUid": "沈礼_20260718_workstation_preacceptance_01",
+  "roleConsistency": "PASS",
+  "productionTrace": "PASS",
+  "release": {
+    "ok": true,
+    "phase": "release",
+    "status": "PASS"
+  },
+  "feishuWriteAttempted": false
+}

@@ -1,0 +1,329 @@
+{
+  "configHash": "ad589a001da5fae85f7db90f87f6dba19a174203b70c7c5f891d745f7da866e5",
+  "conversationId": "",
+  "jobId": "workstation-preacceptance-20260718-01",
+  "maxRounds": 6,
+  "mode": "openai-compatible",
+  "contentScopePolicyVersion": "domestic-work-scope-v1",
+  "finalProductAcceptance": null,
+  "productRequirement": {
+    "allowEquivalentOnline": true,
+    "allowUnavailableBestEffort": true,
+    "required": true,
+    "requestedFormats": [
+      "excel"
+    ]
+  },
+  "rounds": [
+    {
+      "contentScopeBeforeModel": {
+        "calculationComplexityCount": 2,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "contentScopeAfterModel": {
+        "calculationComplexityCount": 2,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "evaluation": null,
+      "feedbackPreflight": null,
+      "feedbackRewrite": null,
+      "attachmentNames": [
+        "01_ccgp_award_result.html",
+        "02_ccgp_tender_document.pdf",
+        "03_lenovo_thinkstation_p3_tiny_gen2_user_guide.pdf",
+        "04_lenovo_thinkstation_p368_c4_user_guide.pdf",
+        "05_lenovo_thinkstation_p2_tower_user_guide.pdf"
+      ],
+      "index": 1,
+      "plannedPrompt": "我想给设备运维和项目交付同事做一张到货预验收的 Excel 核对表，用来逐台核验新设备并形成差异处置清单。项目是中山大学肿瘤防治中心项目0724-2611Z1612177。中标公告、招标文件和三份联想型号用户指南都在附件里。\n\n建表时建立来源索引来标明规则出处与证据层级。我们对照公告和招标文件复核两个包组的工作站单价和数量口径。包1的1519000元总价与150台6750元加50台6850元的核算值相差164000元。包2的687180元总价与39台16800元的核算值存在31980元差额。这两处差额刚好都能解释为每台显示器820元，把这个折算结果登记为报价明细核对线索。公开材料页专门记录项目规则和型号级核对项。那三份指南用来支撑对应系列的接口位置和功能检查。依据P3 Tiny Gen 2和P368-C4指南整理后部接口以及选配提示。结合P2 Tower指南梳理显示接口和网络接口的核对项。\n\n表格要按包组预留实际到货数量字段。逐台页需要预留设备与显示器序列号字段。CPU、内存与硬盘等配置读数栏也设在这一页。现场证据页另外设置铭牌照片和装箱清单索引。发货通知与资产台账状态保持空白留给现场回填。实际到货数量和序列号也由现场回填。配置读数与验收结果同样交由现场回填处理。\n\n流程页记录安装调试正常后的30天运行节点。包1的付款条件是每批设备通过验收并取得等额发票，随后支付该批结算额的100%。包2正式验收通过后先付95%。满一年且具备申请函和每年两次维护保养报告后支付5%余款。厂家保修期从最终验收合格起算记录为不少于3年。\n\n表内要把可证事实与合理推断分栏展示。缺少现场资料的项目统一标注为待核。表尾汇总差异等级、证据来源与下一步动作，生成这份可下载的 Excel 核对表。本轮交付只用于预验收准备，正式验收结论以实际台账与签章记录为准。",
+      "preflight": {
+        "issues": [],
+        "pass": true,
+        "prompt": "我要给设备运维和项目交付同事做一张到货预验收的 Excel 核对表，用来逐台核验新设备并形成差异处置清单。项目是中山大学肿瘤防治中心项目0724-2611Z1612177。中标公告、招标文件和三份联想型号用户指南这批材料都在当前附件中。\n\n建表时建立来源索引来标明规则出处与证据层级。对照公告和招标文件复核两个包组的工作站单价和数量口径。包1的1519000元总价与150台6750元加50台6850元的核算值相差164000元。包2的687180元总价与39台16800元的核算值存在31980元差额。这两处差额刚好都能解释为每台显示器820元。把这个折算结果登记为报价明细核对线索。公开材料页专门记录项目规则和型号级核对项。那三份指南用来支撑对应系列的接口位置和功能检查。依据P3 Tiny Gen 2和P368-C4指南整理后部接口以及选配提示。结合P2 Tower指南梳理显示接口和网络接口的核对项。\n\n表格按包组预留实际到货数量字段。逐台页预留设备与显示器序列号字段。CPU、内存与硬盘等配置读数栏也设在这一页。现场证据页另外设置铭牌照片和装箱清单索引。发货通知与资产台账状态保持空白留给现场回填。实际到货数量和序列号交由现场回填。配置读数与验收结果由现场回填处理。\n\n流程页记录安装调试正常后的30天运行节点。包1的付款条件是每批设备通过验收并取得等额发票，随后支付该批结算额的100%。包2正式验收通过后先付95%。满一年且具备申请函和每年两次维护保养报告后支付5%余款。厂家保修期从最终验收合格起算记录为不少于3年。\n\n表内把可证事实与合理推断分栏展示。缺少现场资料的项目统一标注为待核。表尾汇总差异等级、证据来源与下一步动作，生成这份可下载的 Excel 核对表。本轮交付用于预验收准备。正式验收结论以实际台账与签章记录为准。",
+        "changed": false,
+        "model": "gpt-5.6-sol",
+        "provider": "local-codex-cli",
+        "retryTrace": [
+          {
+            "attempt": 1,
+            "phase": "initial",
+            "retry": 0,
+            "status": "success"
+          }
+        ],
+        "textPurpose": "chat-prompt",
+        "usage": {}
+      },
+      "prompt": "我要给设备运维和项目交付同事做一张到货预验收的 Excel 核对表，用来逐台核验新设备并形成差异处置清单。项目是中山大学肿瘤防治中心项目0724-2611Z1612177。中标公告、招标文件和三份联想型号用户指南这批材料都在当前附件中。\n\n建表时建立来源索引来标明规则出处与证据层级。对照公告和招标文件复核两个包组的工作站单价和数量口径。包1的1519000元总价与150台6750元加50台6850元的核算值相差164000元。包2的687180元总价与39台16800元的核算值存在31980元差额。这两处差额刚好都能解释为每台显示器820元。把这个折算结果登记为报价明细核对线索。公开材料页专门记录项目规则和型号级核对项。那三份指南用来支撑对应系列的接口位置和功能检查。依据P3 Tiny Gen 2和P368-C4指南整理后部接口以及选配提示。结合P2 Tower指南梳理显示接口和网络接口的核对项。\n\n表格按包组预留实际到货数量字段。逐台页预留设备与显示器序列号字段。CPU、内存与硬盘等配置读数栏也设在这一页。现场证据页另外设置铭牌照片和装箱清单索引。发货通知与资产台账状态保持空白留给现场回填。实际到货数量和序列号交由现场回填。配置读数与验收结果由现场回填处理。\n\n流程页记录安装调试正常后的30天运行节点。包1的付款条件是每批设备通过验收并取得等额发票，随后支付该批结算额的100%。包2正式验收通过后先付95%。满一年且具备申请函和每年两次维护保养报告后支付5%余款。厂家保修期从最终验收合格起算记录为不少于3年。\n\n表内把可证事实与合理推断分栏展示。缺少现场资料的项目统一标注为待核。表尾汇总差异等级、证据来源与下一步动作，生成这份可下载的 Excel 核对表。本轮交付用于预验收准备。正式验收结论以实际台账与签章记录为准。",
+      "response": null,
+      "rewrite": {
+        "changed": true,
+        "model": "gemini-3.1-pro-preview",
+        "pass": true,
+        "preservation": {
+          "issues": [],
+          "pass": true,
+          "rewrittenLength": 772,
+          "sourceLength": 776
+        },
+        "prompt": "我要给设备运维和项目交付同事做一张到货预验收的 Excel 核对表，用来逐台核验新设备并形成差异处置清单。项目是中山大学肿瘤防治中心项目0724-2611Z1612177。中标公告、招标文件和三份联想型号用户指南这批材料都在当前附件中。\n\n建表时建立来源索引来标明规则出处与证据层级。对照公告和招标文件复核两个包组的工作站单价和数量口径。包1的1519000元总价与150台6750元加50台6850元的核算值相差164000元。包2的687180元总价与39台16800元的核算值存在31980元差额。这两处差额刚好都能解释为每台显示器820元。把这个折算结果登记为报价明细核对线索。公开材料页专门记录项目规则和型号级核对项。那三份指南用来支撑对应系列的接口位置和功能检查。依据P3 Tiny Gen 2和P368-C4指南整理后部接口以及选配提示。结合P2 Tower指南梳理显示接口和网络接口的核对项。\n\n表格按包组预留实际到货数量字段。逐台页预留设备与显示器序列号字段。CPU、内存与硬盘等配置读数栏也设在这一页。现场证据页另外设置铭牌照片和装箱清单索引。发货通知与资产台账状态保持空白留给现场回填。实际到货数量和序列号交由现场回填。配置读数与验收结果由现场回填处理。\n\n流程页记录安装调试正常后的30天运行节点。包1的付款条件是每批设备通过验收并取得等额发票，随后支付该批结算额的100%。包2正式验收通过后先付95%。满一年且具备申请函和每年两次维护保养报告后支付5%余款。厂家保修期从最终验收合格起算记录为不少于3年。\n\n表内把可证事实与合理推断分栏展示。缺少现场资料的项目统一标注为待核。表尾汇总差异等级、证据来源与下一步动作，生成这份可下载的 Excel 核对表。本轮交付用于预验收准备。正式验收结论以实际台账与签章记录为准。",
+        "retryTrace": [
+          {
+            "attempt": 1,
+            "phase": "initial",
+            "retry": 0,
+            "status": "success"
+          }
+        ],
+        "textPurpose": "chat-prompt",
+        "usage": {
+          "prompt_tokens": 1387,
+          "completion_tokens": 1671,
+          "total_tokens": 3058,
+          "billing_usage": {
+            "source": "gemini_chat",
+            "semantic": "gemini",
+            "gemini_usage_metadata": {
+              "promptTokenCount": 1387,
+              "toolUsePromptTokenCount": 0,
+              "candidatesTokenCount": 570,
+              "totalTokenCount": 3058,
+              "thoughtsTokenCount": 1101,
+              "cachedContentTokenCount": 0,
+              "promptTokensDetails": [],
+              "toolUsePromptTokensDetails": [],
+              "candidatesTokensDetails": []
+            }
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 1387,
+            "audio_tokens": 0,
+            "image_tokens": 0
+          },
+          "completion_tokens_details": {
+            "text_tokens": 0,
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 1101
+          },
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "input_tokens_details": null,
+          "claude_cache_creation_5_m_tokens": 0,
+          "claude_cache_creation_1_h_tokens": 0
+        }
+      },
+      "status": "sending",
+      "modelRetries": {
+        "prompt_de_ai_rewrite": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success"
+            }
+          ],
+          "status": "complete"
+        },
+        "prompt_preflight": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success"
+            }
+          ],
+          "status": "complete"
+        }
+      },
+      "contentScopeAfterRewrite": {
+        "calculationComplexityCount": 2,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "attachmentVerification": {
+        "attachmentCount": 5,
+        "attachments": [
+          {
+            "classification": "specific-business",
+            "introductionHint": "首轮随任务整包上传，只有文件上传校验失败时才重新核对该原件。",
+            "name": "01_ccgp_award_result.html",
+            "relativePath": "01_ccgp_award_result.html",
+            "sha256": "aa92f568f0ba16a715fe70de17bdeb649194e4127c05f1e22d5046bbf0d9711b",
+            "sizeBytes": 16648,
+            "sourceUrl": "https://www.ccgp.gov.cn/cggg/zygg/zbgg/202606/t20260604_26685746.htm",
+            "summary": "中国政府采购网中标结果公告，包含项目编号、采购人、中标供应商、包金额、工作站型号、总数量和工作站单价。"
+          },
+          {
+            "classification": "specific-business",
+            "introductionHint": "首轮随任务整包上传，只有文件上传校验失败时才重新核对该原件。",
+            "name": "02_ccgp_tender_document.pdf",
+            "relativePath": "02_ccgp_tender_document.pdf",
+            "sha256": "90cc672177a57325983a2231a96097dbf34233eeba33a05d346ac71c3211bc08",
+            "sizeBytes": 1472948,
+            "sourceUrl": "https://download.ccgp.gov.cn/oss/download?uuid=B5D63E6DFCF7514E1B5784173A2375",
+            "summary": "中国政府采购网中标结果公告所附招标文件，包含包组数量组合、技术要求、交货、验收、付款和保修条件。"
+          },
+          {
+            "classification": "specific-business",
+            "introductionHint": "首轮随任务整包上传，只有文件上传校验失败时才重新核对该原件。",
+            "name": "03_lenovo_thinkstation_p3_tiny_gen2_user_guide.pdf",
+            "relativePath": "03_lenovo_thinkstation_p3_tiny_gen2_user_guide.pdf",
+            "sha256": "9a7bb2dfb6d5dae13fca49c7f9a66f43dd81ea98c2cfe4bad00f2e43daaa2422",
+            "sizeBytes": 19900157,
+            "sourceUrl": "https://chinakb.lenovo.com.cn/chinakb/prod-api/file/downloadFile?key=uniko/FILE/b6fc317ace0ccc48ede32aa2e4f97956-1772157485340.pdf&name=ThinkStation%20P3%20Tiny%20Gen%202%20%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97-20260227.pdf",
+            "summary": "具体中标型号产品资料。联想官方ThinkStation P3 Tiny Gen 2用户指南，适用于该系列，提供后视图、接口和功能说明。"
+          },
+          {
+            "classification": "specific-business",
+            "introductionHint": "首轮随任务整包上传，只有文件上传校验失败时才重新核对该原件。",
+            "name": "04_lenovo_thinkstation_p368_c4_user_guide.pdf",
+            "relativePath": "04_lenovo_thinkstation_p368_c4_user_guide.pdf",
+            "sha256": "421d617cf2e0830e83af4ba46d8c91ea1ad18b8e2feb47c40173b68efec8d9a8",
+            "sizeBytes": 27105707,
+            "sourceUrl": "https://chinakb.lenovo.com.cn/chinakb/prod-api/file/downloadFile?key=uniko/FILE/c243bfe5ae9f4755c5d06a7e33982f61-1757922846732.pdf&name=ThinkStation%20P368-C4%20%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97-20250915.pdf",
+            "summary": "具体中标型号产品资料。联想官方ThinkStation P368-C4用户指南，提供后部接口、可选接口和机型限定说明。"
+          },
+          {
+            "classification": "specific-business",
+            "introductionHint": "首轮随任务整包上传，只有文件上传校验失败时才重新核对该原件。",
+            "name": "05_lenovo_thinkstation_p2_tower_user_guide.pdf",
+            "relativePath": "05_lenovo_thinkstation_p2_tower_user_guide.pdf",
+            "sha256": "c7aed55aee835c4d1ed23ef9b936476ecf14b88ba4b581d9f4ef67f3d73c1234",
+            "sizeBytes": 39993174,
+            "sourceUrl": "https://chinakb.lenovo.com.cn/chinakb/prod-api/file/downloadFile?key=uniko/FILE/eef1841e3330662d70e6a000027631cb-1760063572795.pdf&name=ThinkStation%20P2%20Tower%20%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97-20251009.pdf",
+            "summary": "具体中标型号产品资料。联想官方ThinkStation P2 Tower用户指南，提供后视图、接口和机型限定说明。"
+          }
+        ],
+        "pass": true,
+        "verifiedAt": "2026-07-18T07:07:56.193Z"
+      }
+    }
+  ],
+  "runId": "d00df1ef-9217-4484-b982-b30e0fa550a5",
+  "schemaVersion": 5,
+  "successCriteria": [
+    "五份真实附件在首轮一次上传并由豆包读回全部文件名。",
+    "表格区分公开材料可证事实、金额折算线索和现场待核项。",
+    "两个包组的单价、数量和金额复核过程完整，820元只登记为报价明细核对线索。",
+    "实际到货数量、序列号、配置读数和验收结果保留空白现场回填。",
+    "表格包含型号级核对、差异等级、30天运行节点、付款条件、保修条件和来源索引。",
+    "第六轮提供真实可访问的Excel文件或等价在线表格产物节点。"
+  ],
+  "taskGoal": "完成一份可下载的图形工作站到货预验收Excel核对表，供设备运维和项目交付同事现场逐台回填并形成差异处置清单。",
+  "startedAt": "2026-07-18T07:07:21.507Z",
+  "status": "failed",
+  "uploadedAttachmentNames": [],
+  "workerPid": null,
+  "workerStartedAt": "2026-07-18T07:07:21.509Z",
+  "initialContentScope": {
+    "calculationComplexityCount": 2,
+    "issues": [],
+    "pass": true,
+    "policyVersion": "domestic-work-scope-v1"
+  },
+  "attachmentManifest": {
+    "attachmentCount": 5,
+    "attachments": [
+      {
+        "classification": "specific-business",
+        "introductionHint": "首轮随任务整包上传，只有文件上传校验失败时才重新核对该原件。",
+        "name": "01_ccgp_award_result.html",
+        "relativePath": "01_ccgp_award_result.html",
+        "sha256": "aa92f568f0ba16a715fe70de17bdeb649194e4127c05f1e22d5046bbf0d9711b",
+        "sizeBytes": 16648,
+        "sourceUrl": "https://www.ccgp.gov.cn/cggg/zygg/zbgg/202606/t20260604_26685746.htm",
+        "summary": "中国政府采购网中标结果公告，包含项目编号、采购人、中标供应商、包金额、工作站型号、总数量和工作站单价。"
+      },
+      {
+        "classification": "specific-business",
+        "introductionHint": "首轮随任务整包上传，只有文件上传校验失败时才重新核对该原件。",
+        "name": "02_ccgp_tender_document.pdf",
+        "relativePath": "02_ccgp_tender_document.pdf",
+        "sha256": "90cc672177a57325983a2231a96097dbf34233eeba33a05d346ac71c3211bc08",
+        "sizeBytes": 1472948,
+        "sourceUrl": "https://download.ccgp.gov.cn/oss/download?uuid=B5D63E6DFCF7514E1B5784173A2375",
+        "summary": "中国政府采购网中标结果公告所附招标文件，包含包组数量组合、技术要求、交货、验收、付款和保修条件。"
+      },
+      {
+        "classification": "specific-business",
+        "introductionHint": "首轮随任务整包上传，只有文件上传校验失败时才重新核对该原件。",
+        "name": "03_lenovo_thinkstation_p3_tiny_gen2_user_guide.pdf",
+        "relativePath": "03_lenovo_thinkstation_p3_tiny_gen2_user_guide.pdf",
+        "sha256": "9a7bb2dfb6d5dae13fca49c7f9a66f43dd81ea98c2cfe4bad00f2e43daaa2422",
+        "sizeBytes": 19900157,
+        "sourceUrl": "https://chinakb.lenovo.com.cn/chinakb/prod-api/file/downloadFile?key=uniko/FILE/b6fc317ace0ccc48ede32aa2e4f97956-1772157485340.pdf&name=ThinkStation%20P3%20Tiny%20Gen%202%20%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97-20260227.pdf",
+        "summary": "具体中标型号产品资料。联想官方ThinkStation P3 Tiny Gen 2用户指南，适用于该系列，提供后视图、接口和功能说明。"
+      },
+      {
+        "classification": "specific-business",
+        "introductionHint": "首轮随任务整包上传，只有文件上传校验失败时才重新核对该原件。",
+        "name": "04_lenovo_thinkstation_p368_c4_user_guide.pdf",
+        "relativePath": "04_lenovo_thinkstation_p368_c4_user_guide.pdf",
+        "sha256": "421d617cf2e0830e83af4ba46d8c91ea1ad18b8e2feb47c40173b68efec8d9a8",
+        "sizeBytes": 27105707,
+        "sourceUrl": "https://chinakb.lenovo.com.cn/chinakb/prod-api/file/downloadFile?key=uniko/FILE/c243bfe5ae9f4755c5d06a7e33982f61-1757922846732.pdf&name=ThinkStation%20P368-C4%20%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97-20250915.pdf",
+        "summary": "具体中标型号产品资料。联想官方ThinkStation P368-C4用户指南，提供后部接口、可选接口和机型限定说明。"
+      },
+      {
+        "classification": "specific-business",
+        "introductionHint": "首轮随任务整包上传，只有文件上传校验失败时才重新核对该原件。",
+        "name": "05_lenovo_thinkstation_p2_tower_user_guide.pdf",
+        "relativePath": "05_lenovo_thinkstation_p2_tower_user_guide.pdf",
+        "sha256": "c7aed55aee835c4d1ed23ef9b936476ecf14b88ba4b581d9f4ef67f3d73c1234",
+        "sizeBytes": 39993174,
+        "sourceUrl": "https://chinakb.lenovo.com.cn/chinakb/prod-api/file/downloadFile?key=uniko/FILE/eef1841e3330662d70e6a000027631cb-1760063572795.pdf&name=ThinkStation%20P2%20Tower%20%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97-20251009.pdf",
+        "summary": "具体中标型号产品资料。联想官方ThinkStation P2 Tower用户指南，提供后视图、接口和机型限定说明。"
+      }
+    ],
+    "initialAttachmentNames": [
+      "01_ccgp_award_result.html",
+      "02_ccgp_tender_document.pdf",
+      "03_lenovo_thinkstation_p3_tiny_gen2_user_guide.pdf",
+      "04_lenovo_thinkstation_p368_c4_user_guide.pdf",
+      "05_lenovo_thinkstation_p2_tower_user_guide.pdf"
+    ],
+    "minimumSpecificBusinessShare": 0.8,
+    "pass": true,
+    "policyId": "doubao-l1-l2-attachment-policy-v1",
+    "productionEvidence": {
+      "attachmentCount": 5,
+      "downloadManifestHash": "2d2de43ad90650825f2419fb380a02df1fe7514a902db24acbaf1fc052bdbdcb",
+      "downloadManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\workstation_acceptance_20260718T054801Z_df4628\\sources\\download_manifest.json",
+      "mode": "production-path",
+      "pass": true,
+      "policyId": "reuse-l2-source-acquisition-path-v1",
+      "productionRunId": "workstation_acceptance_20260718T054801Z_df4628",
+      "productionTraceGateReceiptHash": "2d82e38a475395e8293e4f37d692555b74c7cf88e0cc584a84a1039df81a24a2",
+      "productionTraceGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\workstation_acceptance_20260718T054801Z_df4628\\feishu\\production_trace_gate_receipt.json",
+      "productionTraceHash": "a50f229cc2e5f0762d26440b2c521da4d2e24af4b039626adcbce28dbbac61da",
+      "productionTracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\workstation_acceptance_20260718T054801Z_df4628\\qa\\production_trace.json",
+      "recordUid": "沈礼_20260718_workstation_preacceptance_01",
+      "releaseGateReceiptHash": "646e1a1d7588c328b3e1d3c8bffe5d13c63e06a38ce5a1b01ba31f715624d1a3",
+      "releaseGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\workstation_acceptance_20260718T054801Z_df4628\\feishu\\release_gate_receipt.json",
+      "verifiedAt": "2026-07-18T07:07:21.867Z"
+    },
+    "specificBusinessShare": 1,
+    "verifiedAt": "2026-07-18T07:07:21.868Z"
+  },
+  "error": {
+    "code": "",
+    "message": "locator.setInputFiles: Cannot transfer files larger than 50Mb to a browser not co-located with the server",
+    "stack": "locator.setInputFiles: Cannot transfer files larger than 50Mb to a browser not co-located with the server\n    at async uploadComposerAttachments (C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\doubao-automation\\src\\doubao-client.mjs:347:5)\n    at async sendAndWait (C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\doubao-automation\\src\\doubao-client.mjs:1049:7)\n    at async runDoubaoJob (C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\doubao-automation\\src\\job-runner.mjs:710:24)\n    at async runJob (C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\doubao-automation\\src\\cli.mjs:235:11)\n    at async file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/doubao-automation/src/cli.mjs:311:35",
+    "attempts": [],
+    "issues": [],
+    "productAssessment": null
+  },
+  "failedAt": "2026-07-18T07:07:56.893Z",
+  "stoppedWorkerPid": 9664,
+  "workerStoppedAt": "2026-07-18T07:07:56.893Z",
+  "updatedAt": "2026-07-18T07:07:56.894Z"
+}

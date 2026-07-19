@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "policyId": "l2-corpus-calibrated-source-driven-v5",
+  "policyVersion": 5,
+  "runId": "l2_20260716T021344Z_32c27a",
+  "generatedAt": "2026-07-16T02:13:45.643Z",
+  "expiresAt": "2026-07-17T02:13:45.643Z",
+  "profiles": [
+    {
+      "slot": 1,
+      "index": 0,
+      "profileId": "l2_20260716T021344Z_32c27a_source_01",
+      "sourceDriven": true
+    },
+    {
+      "slot": 2,
+      "index": 1,
+      "profileId": "l2_20260716T021344Z_32c27a_source_02",
+      "sourceDriven": true
+    }
+  ],
+  "note": "No opening, evidence, flow, or product style is assigned. Draft from source facts, then use batch gates to detect accidental concentration."
+}

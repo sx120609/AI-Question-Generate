@@ -1,0 +1,35 @@
+{
+  "ok": true,
+  "slug": "baosteel_mix_profit_api5-20260719-1015",
+  "runId": "l1_async_api5-20260719-1015_04_baosteel_mix_profit",
+  "recordUid": "沈礼_api5-20260719-1015_04",
+  "jobId": "l1-async-api5-20260719-1015-04",
+  "finalQuestion": "我正在做宝钢股份2026年一季度产品结构与利润表现复核，这份结果供产品经营会议讨论下一步需要补取的产品盈利和订单兑现资料。\n\n为了准备接下来的产品经营会议，我们需要讨论后续要补充哪些产品盈利和订单兑现的资料。请根据《宝山钢铁股份有限公司2026年第一季度报告.pdf》中的内容，帮我核对2026年一季度的核心财务、主营业务分部数据，以及产品结构和出口接单的情况。\n\n在处理数据时，请对本期和上年同期的数据进行同比复算，并确认同比口径是否一致。针对主营业务分部的数据，你需要重新核实分项收入和内部抵消金额的统计口径，并复算毛利率以及相关的派生比率。\n\n请重点解释为什么结构指标在向好，归母净利润却出现了下降。你需要给出一个明确的结论，判断“2+2+N”产品销量和出口接单等指标的改善，能不能直接支持整体盈利的改善，并说明分部毛利率对这个判断构成了什么限制。分析时请注意区分可证事实、合理推断和待确认项，保留具体的来源页码，并注明季度数据未经审计。另外，不要把销量或接单的变化直接当成当季的利润贡献。\n\n最后请帮我生成一份可下载的PPT，方便我们在会上直接使用。PPT的内容需要包含产品和出口亮点、核心财务对比、分部毛利率、证据边界、待补数据以及结论页。",
+  "attachmentSha256": "76b0d27c65fb55ba2cd3301f83e4448846de438d1575ea05e551fe0b829cb23d",
+  "firstQa": {
+    "issues": [],
+    "pass": true
+  },
+  "secondQa": "需语言小修",
+  "deAiPass": true,
+  "roleConsistency": "PASS",
+  "productionTrace": "PASS",
+  "release": "PASS",
+  "jobPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_04_baosteel_mix_profit\\doubao\\job.json",
+  "codexBackend": "responses-api",
+  "codexModel": "gpt-5.6-sol",
+  "codexUsageSummaryPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_04_baosteel_mix_profit\\qa\\codex_usage_summary.json",
+  "codexUsage": {
+    "metered": true,
+    "source": "responses-api-aggregate",
+    "requestCount": 8,
+    "inputTokens": 18068,
+    "cachedInputTokens": 0,
+    "uncachedInputTokens": 18068,
+    "outputTokens": 8693,
+    "reasoningTokens": 5271,
+    "visibleOutputTokens": 3422,
+    "totalTokens": 26761
+  },
+  "feishuWriteApplied": false
+}

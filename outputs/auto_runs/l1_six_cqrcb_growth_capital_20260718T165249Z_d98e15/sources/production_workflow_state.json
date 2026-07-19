@@ -1,0 +1,394 @@
+{
+  "schemaVersion": 4,
+  "kind": "l1-production-workflow-state",
+  "productionProfile": "l1",
+  "taskType": "L1 探索型",
+  "protocolId": "l1-phase3-codex-model-two-gates-trace-v6",
+  "runId": "l1_six_cqrcb_growth_capital_20260718T165249Z_d98e15",
+  "runMode": "development-codex-session",
+  "packetRunId": "l1_six_cqrcb_growth_capital_20260718T165249Z_d98e15",
+  "qualityGatePromptHashes": {
+    "first-quality-gate": "454723865e5ba3279da5aeb39347e8df97fb6c5df35f505e350cc9b64a5fa5a5",
+    "second-language-gate": "31aba0f4bbe071e3922f2d8d2df783955641f701c3a64a246bc87517d17c3017"
+  },
+  "createdAt": "2026-07-18T17:33:11.912Z",
+  "updatedAt": "2026-07-18T17:36:10.794Z",
+  "questions": [
+    {
+      "questionIndex": 1,
+      "state": "COMPLETE",
+      "referenceLocation": {
+        "sheet": "三期示例数据",
+        "row": 3
+      },
+      "referenceHashes": {
+        "question": "418574532f8ee79e831615134242df51341398b1834ada3bd1d0916b80e39437",
+        "attachmentSummary": "04485f7aa8b30d5e19d84d49aa2db6db184ad0adb45430fc8da02e9b35a96cb5"
+      },
+      "firstQaFailureCount": 0,
+      "formatRequirement": null,
+      "revisionLog": [
+        {
+          "at": "2026-07-18T17:35:28.894Z",
+          "stage": "second-language-gate",
+          "conclusion": "需语言小修"
+        }
+      ],
+      "events": [
+        {
+          "at": "2026-07-18T17:33:11.912Z",
+          "type": "reference.sampled",
+          "sheet": "三期示例数据",
+          "row": 3
+        },
+        {
+          "at": "2026-07-18T17:33:45.233Z",
+          "type": "reference.breakdown.recorded"
+        },
+        {
+          "at": "2026-07-18T17:33:45.234Z",
+          "type": "attachments.recorded",
+          "count": 1
+        },
+        {
+          "at": "2026-07-18T17:34:07.421Z",
+          "type": "draft.recorded",
+          "reason": "initial"
+        },
+        {
+          "at": "2026-07-18T17:34:42.680Z",
+          "type": "first-qa.passed"
+        },
+        {
+          "at": "2026-07-18T17:35:28.894Z",
+          "type": "second-qa.second-qa-pass"
+        },
+        {
+          "at": "2026-07-18T17:36:10.793Z",
+          "type": "de-ai-rewrite.passed",
+          "policyId": "mugua-gemini-de-ai-rewrite-v2",
+          "selectedAttempt": 2
+        },
+        {
+          "at": "2026-07-18T17:36:10.794Z",
+          "type": "final.completed"
+        }
+      ],
+      "referenceBreakdown": {
+        "businessScene": "企业内部在规划下一周期的标准化售前服务时，对某项诊断能力应作为默认环节、条件式增值服务还是暂缓纳入存在分歧，需要在决策会议前形成依据充分的研读意见。",
+        "coreBlockage": "公开行业材料只能说明市场趋势、技术实践与部分案例，无法直接证明具体客户的购买意愿、可实现收益和服务经济性；决策者必须避免把宏观增长误当成单项服务可成交、可交付或可产生效果的证据。",
+        "mainTask": "仅基于指定公开报告，核验并分级相关证据，分析候选诊断服务的价值、适用范围、启动前提与风险，并在预设的互斥路径中给出唯一明确的纳入决策。",
+        "attachmentSupport": "附件提供行业发展、目标客群采用情况、技术治理框架、优化实践、安全运营及自动化运维等方面的事实基础；判断时需将其拆分为报告直接支持的事实、结合业务场景得到的推断和材料无法覆盖的商业假设，同时核查数据的时间、对象、统计边界及来源口径。",
+        "deliverableOrigin": "该产物自然产生于标准方案变更前的内部评审流程：方案负责人需要把跨团队争议转化为可核验的证据链、决策条件和风险边界，供管理者在会前阅读并作出取舍，因此形成篇幅受控、可继续编辑的决策意见文档。",
+        "imitableStructure": "可迁移的推进方式是：先交代标准化方案调整及部门分歧，再收束为一个互斥决策问题；围绕指定材料提取与决策相关的主题证据；按事实、推断、未知分层；逐项核验数据口径；从价值、对象、前提、风险四个维度评估；将未覆盖的关键商业变量集中列为待确认；最后从预设选项中作出唯一结论，并规定使用者、篇幅、可编辑格式和会议用途。",
+        "forbiddenReuse": "不得复用云服务与成本诊断这一领域、原有企业及客户类型、原报告及发布机构、账单或资源运行类附件要素、原决策选项、年份和页数等数字、任何原句或近似措辞，也不得照搬“特定行业报告加特定售前服务加固定文档页数”的产物组合。",
+        "referenceAttachmentStructure": "单一权威公开行业材料的总结性附件，内容横跨市场概况、目标群体采用、技术或治理方法、效益优化、风险保障及智能运营等模块，可同时支撑趋势判断、实践依据与证据边界识别，但不含企业一手客户数据和服务经营数据。",
+        "referenceProductParagraphLogic": "后半段先限定证据来源和需要提炼的主题，再规定证据分级与数据口径核验方法，继而要求围绕候选方案评估价值、适用对象、必要条件和风险；随后设置互斥结论以保证决策明确，指定内部决策者为使用者，以可编辑、篇幅受控的会前材料作为格式与用途边界，最后列出材料无法证明的变量并禁止以宏观证据替代微观商业验证，从而形成清晰验收标准。"
+      },
+      "updatedAt": "2026-07-18T17:36:10.794Z",
+      "attachmentPlan": {
+        "mainDecision": "形成一份增长与资本约束复核简报，把收入利润、资产负债增速、资本比率、杠杆和资产质量放在同一页级证据链中，并列出需要补充的条线资本数据。",
+        "attachments": [
+          {
+            "name": "重庆农村商业银行股份有限公司2026年第一季度报告.pdf",
+            "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-29/1225237379.PDF",
+            "format": "pdf",
+            "classification": "specific-business",
+            "objectLevel": true,
+            "timeAnchor": "2026年1月1日至3月31日及2026年3月31日",
+            "specificityEvidence": {
+              "object": "重庆农村商业银行股份有限公司证券代码601077",
+              "periodOrEvent": "2026年1月1日至3月31日及2026年3月31日",
+              "uniqueContent": "披露渝农商行一季度收入利润、资产负债增长、资本充足率、杠杆率、流动性和资产质量指标。"
+            },
+            "summary": "披露渝农商行一季度收入利润、资产负债增长、资本充足率、杠杆率、流动性和资产质量指标。",
+            "localPath": "重庆农村商业银行股份有限公司2026年第一季度报告.pdf",
+            "sha256": "261e993750d5c1f5b6b430c583d1a24cff13e43ae1aa7206bb78e102b5b6666f",
+            "bytes": 391082,
+            "sizeBytes": 391082,
+            "introductionHint": "把正式报告名称直接嵌入任务句，后续核对继续引用同一份已验证原件。"
+          }
+        ],
+        "specificBusinessShareRationale": "附件绑定重庆农村商业银行股份有限公司证券代码601077和2026年1月1日至3月31日及2026年3月31日，具体业务材料占比为100%。",
+        "timeSeriesRationale": "季度报告同时提供本期、上年同期或期初比较数，可形成同一对象的期间核对链。",
+        "objectSupportInQuestion": "题面明确重庆农村商业银行股份有限公司、正式报告名称、报告期和银行经营复核人员需要判断资产扩张和收入增长是否伴随资本与回报指标承压。。",
+        "newAttachmentSupport": "披露渝农商行一季度收入利润、资产负债增长、资本充足率、杠杆率、流动性和资产质量指标。",
+        "newQuestionStructureMapping": "沿用样例的真实工作卡点、证据核验和下游交付逻辑，改为围绕把增长、资本充足、杠杆和资产质量放到同一证据框架中，区分改善项与约束项。逐轮推进。"
+      },
+      "draft": {
+        "question": "请依据《重庆农村商业银行股份有限公司2026年第一季度报告.pdf》，把2026年一季度收入利润、资产负债增长、资本充足率、杠杆率和资产质量纳入同一证据框架，复核比较口径与指标变动，区分可由报告支持的改善项和约束项，并说明差异或疑点。最终形成可下载的渝农商行2026年一季度增长与资本约束Word简报，含指标对照表、改善与承压判断、来源页码、未经审计状态、派生计算说明、证据边界和补数清单。报告未披露的业务条线资本消耗不得作确定归因，单季变化不得外推为全年趋势。",
+        "mainTask": "复核渝农商行2026年一季度增长、回报、资本、杠杆与资产质量指标，形成区分改善项和约束项的可追溯Word简报。",
+        "usedFactIds": [
+          "cqrcb-profit-return",
+          "cqrcb-balance-growth",
+          "cqrcb-capital-ratios",
+          "cqrcb-leverage",
+          "cqrcb-asset-quality",
+          "cqrcb-audit-boundary"
+        ],
+        "usedAttachmentNames": [
+          "重庆农村商业银行股份有限公司2026年第一季度报告.pdf"
+        ],
+        "productFormats": "docx",
+        "deliverableRationale": [
+          {
+            "format": "docx",
+            "user": "银行经营复核专员及下游经营分析同事",
+            "purpose": "用于复核经营表现并决定下一步需要补取的资本和业务条线资料",
+            "whyThisFormat": "该任务需要呈现指标对照、页码证据、判断边界和可继续回填的补数清单，docx便于内部审阅、批注和后续更新。"
+          }
+        ],
+        "structureMapping": "沿用真实业务卡点、单一核心判断、证据核验、事实与推断分层及下游交付的推进结构，业务对象改为渝农商行季度经营与资本约束复核，不复用样例领域、对象或决策选项。",
+        "productParagraphMapping": "后半段先限定正式报告和核验维度，再收束到改善项与约束项判断，随后明确指标表、来源页码、审计与派生计算边界、补数清单及docx用途，使产物直接服务后续资料补取。"
+      },
+      "preQaStructureAudit": {
+        "oneSentenceMainTask": "复核渝农商行2026年一季度增长、回报、资本、杠杆与资产质量指标，形成区分改善项和约束项的可追溯Word简报。",
+        "uniqueMainTask": true,
+        "specificObjectDecision": true,
+        "specificFilesDominant": true,
+        "evidenceChain": "题面锁定重庆农村商业银行股份有限公司及其2026年第一季度报告，以唯一核心附件中的本期、上年同期和期初数据核对收入利润、资产负债、资本充足率、杠杆率和资产质量，再区分报告直接支持的改善项、约束项、疑点与未披露事项，并通过页码、未经审计状态和派生计算说明形成对象级可追溯证据链；附件数量为1且具体业务材料占比为100%。",
+        "l2ReasoningChain": "任务标注为L1探索型，其推进链为：从真实季度报告抽取对象与指标事实，复核期间和比较口径，识别指标差异或冲突，将事实、派生计算、业务判断和证据边界分层，综合判断改善项与资本约束项，最后集中列示需要补取的业务条线资本数据；交付格式和补数清单均从属于这一主要判断。",
+        "variableDrift": [
+          "附件摘要和uniqueContent提到“流动性”，但题面主要核验维度及mainTask未将其列为核心对象，存在轻微维度漂移。",
+          "一级目录被声明为“金融服务与财富投研”，但输入未提供飞书配置项原表，无法独立验证其是否为原样选项。"
+        ]
+      },
+      "firstQaFullResult": {
+        "pass": true,
+        "issues": [],
+        "execution": {
+          "runnerId": "exact-two-quality-gates-v2-codex-session",
+          "provider": "codex-session",
+          "model": "gpt-5.6-sol",
+          "sourcePromptHash": "454723865e5ba3279da5aeb39347e8df97fb6c5df35f505e350cc9b64a5fa5a5",
+          "renderedPromptHash": "4a6895c205e3c65c8da667ba85ff82ed8f2c8461b0a29c41bfd9e9af083877c5",
+          "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_cqrcb_growth_capital_20260718T165249Z_d98e15\\qa\\01_first_quality_gate_attempt_1_raw.json",
+          "rawResponseHash": "244e840c9333ce63cd8fd4717454e8209da5c8b90cb7edb40b87b5bf15f015ee",
+          "completedAt": "2026-07-18T17:34:42.675Z"
+        }
+      },
+      "firstQaAttempts": [
+        {
+          "at": "2026-07-18T17:34:42.680Z",
+          "result": {
+            "pass": true,
+            "issues": [],
+            "execution": {
+              "runnerId": "exact-two-quality-gates-v2-codex-session",
+              "provider": "codex-session",
+              "model": "gpt-5.6-sol",
+              "sourcePromptHash": "454723865e5ba3279da5aeb39347e8df97fb6c5df35f505e350cc9b64a5fa5a5",
+              "renderedPromptHash": "4a6895c205e3c65c8da667ba85ff82ed8f2c8461b0a29c41bfd9e9af083877c5",
+              "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_cqrcb_growth_capital_20260718T165249Z_d98e15\\qa\\01_first_quality_gate_attempt_1_raw.json",
+              "rawResponseHash": "244e840c9333ce63cd8fd4717454e8209da5c8b90cb7edb40b87b5bf15f015ee",
+              "completedAt": "2026-07-18T17:34:42.675Z"
+            }
+          }
+        }
+      ],
+      "secondQaFullResult": {
+        "conclusion": "需语言小修",
+        "coreJudgment": "原题事实、附件、计算边界和交付要求完整，但需补充第一人称工作场景、下游用途和明确的结论请求。",
+        "modifications": "在题面开头补充“银行经营复核专员”的当前工作场景及指定下游用途，并加入一次“请给出明确结论”，使结论请求覆盖增长、资本充足、杠杆和资产质量的统一证据框架以及改善项与约束项的区分。其余事实、附件、计算、边界和交付要求均予以保留。",
+        "modifiedQuestion": "我是一名银行经营复核专员，正在依据《重庆农村商业银行股份有限公司2026年第一季度报告.pdf》开展复核，复核结果供银行经营分析同事决定下一步需要补取哪些资本和业务条线资料。\n\n请给出明确结论，把2026年一季度收入利润和资产负债增长、资本充足率、杠杆率和资产质量放到同一证据框架中，复核各项指标的比较口径及其变动，区分报告能够支持的改善项和约束项，并说明差异或疑点。\n\n最终形成可下载的渝农商行2026年一季度增长与资本约束Word简报，包含指标对照表、改善与承压判断、来源页码、未经审计状态、派生计算说明、证据边界和补数清单。报告未披露的业务条线资本消耗不得作确定归因，单季变化不得外推为全年趋势。",
+        "punctuationAudit": "标点使用自然，无未配对括号，未使用分号，明确结论请求仅出现一次。",
+        "remainingNote": "题面未新增事实、数字、未来轮次、上传元话语或客套表达，并完整保留未经审计状态、归因限制和趋势外推边界。",
+        "execution": {
+          "runnerId": "exact-two-quality-gates-v2-codex-session",
+          "provider": "codex-session",
+          "model": "gpt-5.6-sol",
+          "sourcePromptHash": "31aba0f4bbe071e3922f2d8d2df783955641f701c3a64a246bc87517d17c3017",
+          "renderedPromptHash": "b8904593867081242c0d7c0d4bf4c6629ccb19be6f380d485515fbc4fca518c5",
+          "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_cqrcb_growth_capital_20260718T165249Z_d98e15\\qa\\01_second_language_gate_raw.json",
+          "rawResponseHash": "d9161351ab943ae7590770feaf8b41efe47203d1b5c1fe7ac61bdc1e6bb82902",
+          "completedAt": "2026-07-18T17:35:28.891Z"
+        }
+      },
+      "secondQaAttempts": [
+        {
+          "at": "2026-07-18T17:35:28.894Z",
+          "result": {
+            "conclusion": "需语言小修",
+            "coreJudgment": "原题事实、附件、计算边界和交付要求完整，但需补充第一人称工作场景、下游用途和明确的结论请求。",
+            "modifications": "在题面开头补充“银行经营复核专员”的当前工作场景及指定下游用途，并加入一次“请给出明确结论”，使结论请求覆盖增长、资本充足、杠杆和资产质量的统一证据框架以及改善项与约束项的区分。其余事实、附件、计算、边界和交付要求均予以保留。",
+            "modifiedQuestion": "我是一名银行经营复核专员，正在依据《重庆农村商业银行股份有限公司2026年第一季度报告.pdf》开展复核，复核结果供银行经营分析同事决定下一步需要补取哪些资本和业务条线资料。\n\n请给出明确结论，把2026年一季度收入利润和资产负债增长、资本充足率、杠杆率和资产质量放到同一证据框架中，复核各项指标的比较口径及其变动，区分报告能够支持的改善项和约束项，并说明差异或疑点。\n\n最终形成可下载的渝农商行2026年一季度增长与资本约束Word简报，包含指标对照表、改善与承压判断、来源页码、未经审计状态、派生计算说明、证据边界和补数清单。报告未披露的业务条线资本消耗不得作确定归因，单季变化不得外推为全年趋势。",
+            "punctuationAudit": "标点使用自然，无未配对括号，未使用分号，明确结论请求仅出现一次。",
+            "remainingNote": "题面未新增事实、数字、未来轮次、上传元话语或客套表达，并完整保留未经审计状态、归因限制和趋势外推边界。",
+            "execution": {
+              "runnerId": "exact-two-quality-gates-v2-codex-session",
+              "provider": "codex-session",
+              "model": "gpt-5.6-sol",
+              "sourcePromptHash": "31aba0f4bbe071e3922f2d8d2df783955641f701c3a64a246bc87517d17c3017",
+              "renderedPromptHash": "b8904593867081242c0d7c0d4bf4c6629ccb19be6f380d485515fbc4fca518c5",
+              "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_cqrcb_growth_capital_20260718T165249Z_d98e15\\qa\\01_second_language_gate_raw.json",
+              "rawResponseHash": "d9161351ab943ae7590770feaf8b41efe47203d1b5c1fe7ac61bdc1e6bb82902",
+              "completedAt": "2026-07-18T17:35:28.891Z"
+            }
+          }
+        }
+      ],
+      "deAiRewrite": {
+        "kind": "de-ai-question-rewrite",
+        "policyId": "mugua-gemini-de-ai-rewrite-v2",
+        "uid": "沈礼_20260719_l1_cqrcb_growth_capital_03",
+        "generatedAt": "2026-07-18T17:35:50.073Z",
+        "provider": "mugua-openai-compatible",
+        "endpoint": "https://api.mugua.link/v1/chat/completions",
+        "model": "gemini-3.1-pro-preview",
+        "finishReason": "stop",
+        "usage": {
+          "inputTokens": 1434,
+          "outputTokens": 1083,
+          "totalTokens": 2517
+        },
+        "promptHash": "5f5af0c3325519fe800dc43596aa4956d83639008cfc0096c44eb2361592a4ea",
+        "sourceQuestionHash": "986de19506187c960546151204df7457bb6d2edaab6c08fe67565522a017c7c3",
+        "rewrittenQuestionHash": "91749a37b5305508ef2b3ffdbb031e4082892215a1edd870d3b177babffd37df",
+        "selectedAttempt": 2,
+        "attempts": [
+          {
+            "attempt": 1,
+            "pass": false,
+            "visibleLength": 320,
+            "findingRules": [
+              "rewrite-edit-similarity-too-high",
+              "rewrite-exact-copy-run-too-long"
+            ]
+          },
+          {
+            "attempt": 2,
+            "pass": true,
+            "visibleLength": 384,
+            "findingRules": []
+          }
+        ],
+        "rewrite": {
+          "question": "请根据《重庆农村商业银行股份有限公司2026年第一季度报告.pdf》帮我做个经营复核。我需要把2026年一季度的资产负债增长、收入利润、杠杆率、资本充足率还有资产质量整合到一个证据框架下，梳理清楚各项指标的变动情况和比较口径。请根据复核结果给出明确结论，把报告能证实的约束项和改善项区分开，并指出里面存在的疑点或差异。这个结果后续会给分析同事看，用来评估下一步要补充哪些业务条线和资本资料。\n\n最后请整理成一份可下载的Word简报，命名为渝农商行2026年一季度增长与资本约束。简报里面要有具体的指标对照表，并附上来源页码和派生计算说明。同时，请明确标注出这份报告的未经审计状态，列出证据边界以及后续的补数清单，还要包含你对承压与改善情况的判断。\n\n另外注意一下，对于报告里没披露的业务条线资本消耗情况，不要自行做确定的归因，也不要把单季度的变化直接外推当成全年的趋势。",
+          "requestContract": {
+            "requestSpan": "最后请整理成一份可下载的Word简报，命名为渝农商行2026年一季度增长与资本约束。",
+            "action": "整理",
+            "outputs": [
+              {
+                "format": "docx",
+                "humanName": "Word",
+                "purpose": "供后续执行和留痕使用"
+              }
+            ]
+          },
+          "roleTrace": {
+            "blockageSpan": "请根据《重庆农村商业银行股份有限公司2026年第一季度报告.pdf》帮我做个经营复核。",
+            "motivationSpan": "这个结果后续会给分析同事看，用来评估下一步要补充哪些业务条线和资本资料。",
+            "downstreamUseSpan": "这个结果后续会给分析同事看，用来评估下一步要补充哪些业务条线和资本资料。"
+          },
+          "usedFactIds": [
+            "cqrcb-profit-return",
+            "cqrcb-balance-growth",
+            "cqrcb-capital-ratios",
+            "cqrcb-leverage",
+            "cqrcb-asset-quality",
+            "cqrcb-audit-boundary"
+          ],
+          "deliberatelyOmitted": [],
+          "flowStages": [
+            {
+              "stage": "证据归位",
+              "evidence": "事实包中的公开材料与待补信息",
+              "decision": "区分可确认规则和未知现场状态",
+              "next": "证据足够则形成执行对象，不足则进入补证"
+            },
+            {
+              "stage": "执行对象核对",
+              "evidence": "已归位的对象关系与状态记录",
+              "decision": "形成一份增长与资本约束复核简报，把收入利润、资产负债增速、资本比率、杠杆和资产质量放在同一页级证据链中，并列出需要补充的条线资本数据。",
+              "next": "符合条件则进入小范围验证，否则停止推进"
+            },
+            {
+              "stage": "小范围验证",
+              "evidence": "试点输入与实际返回记录",
+              "decision": "判断结果是否满足扩大范围的条件",
+              "next": "通过则推进，失败则退回原状态并留痕"
+            },
+            {
+              "stage": "交接收束",
+              "evidence": "判断依据、验证结果与回退记录",
+              "decision": "确认下游拿到一致结论",
+              "next": "供银行经营分析同事决定下一步需要补取哪些资本和业务条线资料。"
+            }
+          ],
+          "selfAudit": {
+            "factsPreserved": true,
+            "formatsPreserved": true,
+            "processChainExplicit": true,
+            "failureOrRollbackExplicit": true,
+            "noInventedFacts": true,
+            "noAiShell": true
+          }
+        },
+        "validation": {
+          "pass": true,
+          "visibleLength": 381,
+          "similarity": [
+            {
+              "referenceIndex": 1,
+              "editSimilarity": 0.276536312849162,
+              "trigramJaccard": 0.22357723577235772,
+              "longestExactCopyRun": 32,
+              "longestExactCopySpan": "据《重庆农村商业银行股份有限公司2026年第一季度报告.pdf》"
+            },
+            {
+              "referenceIndex": 2,
+              "editSimilarity": 0.06106870229007633,
+              "trigramJaccard": 0.007177033492822967,
+              "longestExactCopyRun": 4,
+              "longestExactCopySpan": "明确结论"
+            }
+          ],
+          "findings": [],
+          "factGuard": {
+            "ok": true,
+            "candidateAnchors": {
+              "numbers": [
+                "2026年"
+              ],
+              "quotedClaims": [],
+              "timeMarkers": []
+            },
+            "unsupported": {
+              "numbers": [],
+              "quotedClaims": [],
+              "timeMarkers": []
+            },
+            "errors": []
+          }
+        },
+        "deterministicStyleCleanup": {
+          "applied": true,
+          "rules": [
+            "remove-banned-politeness",
+            "remove-upload-meta-language"
+          ],
+          "sourceApiQuestionHash": "1c21863475ffc15913ee1e77b3e0048107535b9c585bb1f78dfd53e9e498df67"
+        }
+      },
+      "recordUid": "沈礼_20260719_l1_cqrcb_growth_capital_03",
+      "finalRecord": {
+        "UID": "沈礼_20260719_l1_cqrcb_growth_capital_03",
+        "题目": "请根据《重庆农村商业银行股份有限公司2026年第一季度报告.pdf》帮我做个经营复核。我需要把2026年一季度的资产负债增长、收入利润、杠杆率、资本充足率还有资产质量整合到一个证据框架下，梳理清楚各项指标的变动情况和比较口径。请根据复核结果给出明确结论，把报告能证实的约束项和改善项区分开，并指出里面存在的疑点或差异。这个结果后续会给分析同事看，用来评估下一步要补充哪些业务条线和资本资料。\n\n最后请整理成一份可下载的Word简报，命名为渝农商行2026年一季度增长与资本约束。简报里面要有具体的指标对照表，并附上来源页码和派生计算说明。同时，请明确标注出这份报告的未经审计状态，列出证据边界以及后续的补数清单，还要包含你对承压与改善情况的判断。\n\n另外注意一下，对于报告里没披露的业务条线资本消耗情况，不要自行做确定的归因，也不要把单季度的变化直接外推当成全年的趋势。",
+        "任务类型": "L1 探索型",
+        "一级目录": "金融服务与财富投研",
+        "二级目录": "银行经营复核",
+        "三级目录": "增长资本与资产质量",
+        "任务概括": "渝农商行2026年一季度增长与资本约束复核",
+        "标注专家工作年限": "5年",
+        "人类完成时间": "4H",
+        "相关附件": "重庆农村商业银行股份有限公司2026年第一季度报告.pdf",
+        "附件格式": "pdf",
+        "附件内容": "重庆农村商业银行股份有限公司2026年第一季度报告.pdf：披露渝农商行一季度收入利润、资产负债增长、资本充足率、杠杆率、流动性和资产质量指标。 来源：https://static.cninfo.com.cn/finalpage/2026-04-29/1225237379.PDF",
+        "产物格式": "docx",
+        "产物内容": "一份可下载的渝农商行2026年一季度增长与资本约束Word简报，含指标对照表、改善与承压判断、来源页码、证据边界和补数清单。",
+        "做题关键步骤": "1. 核验报告期、单位与审计状态\n2. 对齐收入利润与回报指标\n3. 比较资产、贷款和存款增速\n4. 计算资本充足率和杠杆率变化百分点\n5. 核对不良率与拨备覆盖率方向\n6. 在Word简报中分开事实、判断和待补资料",
+        "标注专家姓名": "沈礼"
+      }
+    }
+  ]
+}

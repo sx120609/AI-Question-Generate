@@ -1,0 +1,42 @@
+{
+  "kind": "l1-local-model-checkpoint-resume",
+  "policy": "reuse-only-user-visible-content-stages-that-already-have-passing-downstream-gates",
+  "resumedAt": "2026-07-18T13:21:48.246Z",
+  "stages": [
+    {
+      "stage": "01_reference_breakdown",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\qa\\01_reference_breakdown_local_codex.json",
+      "fileHash": "afaf740455b9556a60e4023f39faee3733fa6f41ebafad93e5f5ac57f2fc1e6d",
+      "promptHash": "3bd94a58dbca3c8f28d377661dc88bcdcf5445aec63d57bd80d8fd4077a29a60",
+      "completedAt": "2026-07-18T13:11:53.804Z"
+    },
+    {
+      "stage": "02_question_draft",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\qa\\02_question_draft_local_codex.json",
+      "fileHash": "a33990e1e62a0b46adfd2948b8c5b3805e9db123641c1239641cf9fbf0d2d453",
+      "promptHash": "5827cf3187397fb9bba75c8fb6c6c78b673ba67372310c718fd9a9e775455bd9",
+      "completedAt": "2026-07-18T13:12:40.731Z"
+    },
+    {
+      "stage": "03_pre_qa_structure_audit",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\qa\\03_pre_qa_structure_audit_local_codex.json",
+      "fileHash": "a58190b246c11daea8c5bc70735b6d169c99bda5d11e8cb9d7cc16afc9858d05",
+      "promptHash": "99ddbb3a4eabd47c413dc6637c7aeab99657c6b8878ca6efcab1fab153ec4f44",
+      "completedAt": "2026-07-18T13:13:20.572Z"
+    },
+    {
+      "stage": "04_first_quality_gate_model",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\qa\\04_first_quality_gate_model_local_codex.json",
+      "fileHash": "0834ee8f750c0fb5fd92590a48f839223d3d75e01da92783ed6794bde0843d98",
+      "promptHash": "34b28bd2ca53f535ea608d0a1cebd6bd6bab476910e2baae7ab059e40f73cebc",
+      "completedAt": "2026-07-18T13:13:32.995Z"
+    },
+    {
+      "stage": "05_second_language_gate_model",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\qa\\05_second_language_gate_model_local_codex.json",
+      "fileHash": "5c808ac7f5c577c77c024dec86070e92d8cc4c0646bd7bd8ad359750523923d9",
+      "promptHash": "983023706a01257faa0ae923b0eedb8a24c758109178bd87c5b25f695c3eb633",
+      "completedAt": "2026-07-18T13:13:59.343Z"
+    }
+  ]
+}

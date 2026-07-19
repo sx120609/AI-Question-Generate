@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "kind": "l1-production-trace-gate-report",
+  "productionProfile": "l1",
+  "gateId": "production-trace-gate-v6-profiled",
+  "status": "PASS",
+  "generatedAt": "2026-07-18T09:23:01.131Z",
+  "packetPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\sources\\production_input_packet.json",
+  "packetHash": "c7681d4f0f8b0e08acb89eb4cf7e599c03471d9b2759716fd7bd9429c897abea",
+  "tracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\qa\\production_trace.json",
+  "traceHash": "a390c6c2f690db1fa6113c2dd64dbde4f4a7c6e9db875113330ac13a75f658d9",
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\drafts\\l1_questions.tsv",
+  "candidateHash": "04afc0471b57b75fd16b45e409f399ca36af8fbdcdf1f6a494905fcc5d0f0f56",
+  "fillPlanPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\feishu\\feishu_fill_plan.json",
+  "fillPlanHash": "49e3849c7056854e8d22364affcc354812be33443e7968934e1bd681277eabd8",
+  "rowCount": 1,
+  "attachmentRoot": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\attachments",
+  "attachmentBindings": [
+    {
+      "uid": "裴硬_20260718_desktop_batch_review_01",
+      "name": "成交结果公告.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\attachments\\成交结果公告.html",
+      "sha256": "174b6349265dc00db8b8b3bc87a59f4a3da72843ed1021d470e52b6d0df3c485",
+      "bytes": 63028
+    },
+    {
+      "uid": "裴硬_20260718_desktop_batch_review_01",
+      "name": "台式机202606计划公示.xls",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\attachments\\台式机202606计划公示.xls",
+      "sha256": "73d697a9722395fd6e53d9cc5425eb5c7a8c0da571f53e4ab24b899d8792f944",
+      "bytes": 125440
+    },
+    {
+      "uid": "裴硬_20260718_desktop_batch_review_01",
+      "name": "中央国家机关2026年台式计算机批量集中采购项目-6月采购文件.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\attachments\\中央国家机关2026年台式计算机批量集中采购项目-6月采购文件.pdf",
+      "sha256": "ef6477229bbe65ad818a538e5128a4ef54e75c77fc1a5056ad1f18b65818dd71",
+      "bytes": 1057590
+    },
+    {
+      "uid": "裴硬_20260718_desktop_batch_review_01",
+      "name": "投标人得分排序表_官方导出.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\attachments\\投标人得分排序表_官方导出.html",
+      "sha256": "e5b8da9da3aa3f4b75172558ab9ac8ba9923b13a934378f50cf69ee586b7b442",
+      "bytes": 5726
+    },
+    {
+      "uid": "裴硬_20260718_desktop_batch_review_01",
+      "name": "技术规范偏离表-1-软通.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\attachments\\技术规范偏离表-1-软通.pdf",
+      "sha256": "b0edb9318e9b59d44ec03106f10a1ce063e8d01f126b435adb328af37cb5ba83",
+      "bytes": 229470
+    },
+    {
+      "uid": "裴硬_20260718_desktop_batch_review_01",
+      "name": "技术规范偏离表-2-软通.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\attachments\\技术规范偏离表-2-软通.pdf",
+      "sha256": "64db76ce87f663e9e5a94becb0cdf96e98b20d2fcd953c4c6cc5cf8be0f860cb",
+      "bytes": 227372
+    },
+    {
+      "uid": "裴硬_20260718_desktop_batch_review_01",
+      "name": "技术规范偏离表-3-联想.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\attachments\\技术规范偏离表-3-联想.pdf",
+      "sha256": "4af9d1a0d534849cf1ca3000178d8f5403b4c0dd8cae4e0cc3ab97a8ab5c950a",
+      "bytes": 301888
+    },
+    {
+      "uid": "裴硬_20260718_desktop_batch_review_01",
+      "name": "技术规范偏离表-4-华为.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\attachments\\技术规范偏离表-4-华为.pdf",
+      "sha256": "d7017bd8c718545d7be46088b204183f969b7494fd8f07f46d12e7e410af885e",
+      "bytes": 332950
+    },
+    {
+      "uid": "裴硬_20260718_desktop_batch_review_01",
+      "name": "技术规范偏离表-5-安领信.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\attachments\\技术规范偏离表-5-安领信.pdf",
+      "sha256": "fb9b0c7144cbbd95c15930d1d31a9407e7d148204e016a148909701c4f1915be",
+      "bytes": 151061
+    },
+    {
+      "uid": "裴硬_20260718_desktop_batch_review_01",
+      "name": "技术规范偏离表-6-天津光电.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\attachments\\技术规范偏离表-6-天津光电.pdf",
+      "sha256": "bbf574c26a5030d27907b00f10b45fe3301776969ae054b85c1b7612d381f889",
+      "bytes": 198462
+    }
+  ],
+  "productFormatDiversity": {
+    "policyId": "not-required-for-l1",
+    "status": "SKIPPED",
+    "rowCount": 1,
+    "findings": []
+  },
+  "findings": []
+}

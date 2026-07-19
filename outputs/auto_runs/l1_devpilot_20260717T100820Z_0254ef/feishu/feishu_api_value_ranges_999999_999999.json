@@ -1,0 +1,208 @@
+{
+  "generatedAt": "2026-07-17T10:43:24.555Z",
+  "apply": false,
+  "transport": "auto",
+  "target": {
+    "spreadsheetToken": "",
+    "sheetId": "YhA0Ad",
+    "wikiUrl": "",
+    "sheetTitle": ""
+  },
+  "planPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_devpilot_20260717T100820Z_0254ef\\feishu\\feishu_fill_plan.json",
+  "rows": [
+    999999
+  ],
+  "questionPresentation": {
+    "required": true,
+    "verified": true,
+    "mode": "narrative-no-blank-lines-v5",
+    "paragraphCounts": {
+      "B999999": 1
+    },
+    "attachmentContentLineCounts": {
+      "L999999": 1
+    }
+  },
+  "releaseGate": {
+    "required": true,
+    "verified": true,
+    "receiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_devpilot_20260717T100820Z_0254ef\\feishu\\release_gate_receipt.json",
+    "releaseGateId": "combined-release-gate-v2",
+    "policyId": "l1-phase3-source-driven-v1",
+    "policyVersion": 1,
+    "naturalnessStatus": "PASS",
+    "roleConsistencyStatus": "PASS",
+    "sceneCardGateId": "scene-card-role-consistency-v1",
+    "structureStatus": "PASS"
+  },
+  "productionProcess": {
+    "required": true,
+    "verified": true,
+    "receiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_devpilot_20260717T100820Z_0254ef\\feishu\\production_trace_gate_receipt.json",
+    "gateId": "production-trace-gate-v6-profiled",
+    "status": "PASS"
+  },
+  "valueRangeCount": 14,
+  "skipped": [
+    {
+      "address": "J999999",
+      "reason": "excluded"
+    }
+  ],
+  "valueRanges": [
+    {
+      "range": "YhA0Ad!A999999:A999999",
+      "values": [
+        [
+          "沈礼_7.17_L1_01"
+        ]
+      ],
+      "address": "A999999",
+      "field": "UID",
+      "chars": 13
+    },
+    {
+      "range": "YhA0Ad!B999999:B999999",
+      "values": [
+        [
+          "我们计划将跨地区员工培训转为常态化直播，由于部分参训员工需要依赖实时字幕、屏幕阅读器或键盘操作，我们需要评估 Zoom、Microsoft Teams 和 Google Meet 这三个候选平台的无障碍支持情况。请根据截至2026年7月17日可访问的官方产品文档与帮助页面，制作一份 Excel 对比表。表内需要核对各平台的实时字幕、翻译字幕、屏幕阅读器支持，以及键盘与焦点操作的兼容性，并单独说明录制与转录的留存机制，同时理清主持人和管理员的具体控制权限。请为表中的每项判断附上来源链接和访问日期。如果官方公开页面没有明确说明套餐限制、字幕支持的语言范围或导出权限，请保持空白不要自行推测。对于保存期限和直播规模限制，请统一列为待确认事项，并注明后续需要通过哪些实测或询价手段来补充证据。在表格末尾，请推荐一个最适合优先进入 POC 阶段的平台并说明理由，同时指出另外两个平台暂缓推进的证据缺口。请注意，此结论仅用于指导下一阶段的实测安排，不作为最终的采购与合规决策。"
+        ]
+      ],
+      "address": "B999999",
+      "field": "题目",
+      "chars": 435
+    },
+    {
+      "range": "YhA0Ad!C999999:C999999",
+      "values": [
+        [
+          "L1 探索型"
+        ]
+      ],
+      "address": "C999999",
+      "field": "任务类型",
+      "chars": 6
+    },
+    {
+      "range": "YhA0Ad!D999999:D999999",
+      "values": [
+        [
+          "科技软件与 AI 工作流"
+        ]
+      ],
+      "address": "D999999",
+      "field": "一级目录",
+      "chars": 12
+    },
+    {
+      "range": "YhA0Ad!E999999:E999999",
+      "values": [
+        [
+          "企业软件与技术方案"
+        ]
+      ],
+      "address": "E999999",
+      "field": "二级目录",
+      "chars": 9
+    },
+    {
+      "range": "YhA0Ad!F999999:F999999",
+      "values": [
+        [
+          "在线培训直播平台无障碍能力初筛"
+        ]
+      ],
+      "address": "F999999",
+      "field": "三级目录",
+      "chars": 15
+    },
+    {
+      "range": "YhA0Ad!G999999:G999999",
+      "values": [
+        [
+          "核验三款培训直播平台的公开无障碍证据并选择一个优先进入 POC"
+        ]
+      ],
+      "address": "G999999",
+      "field": "任务概括",
+      "chars": 31
+    },
+    {
+      "range": "YhA0Ad!H999999:H999999",
+      "values": [
+        [
+          "3年"
+        ]
+      ],
+      "address": "H999999",
+      "field": "标注专家工作年限",
+      "chars": 2
+    },
+    {
+      "range": "YhA0Ad!I999999:I999999",
+      "values": [
+        [
+          "5H"
+        ]
+      ],
+      "address": "I999999",
+      "field": "人类完成时间",
+      "chars": 2
+    },
+    {
+      "range": "YhA0Ad!K999999:K999999",
+      "values": [
+        [
+          "无"
+        ]
+      ],
+      "address": "K999999",
+      "field": "附件格式",
+      "chars": 1
+    },
+    {
+      "range": "YhA0Ad!L999999:L999999",
+      "values": [
+        [
+          "无文件附件，使用已核验可访问的厂商官方产品文档、帮助中心与 W3C 无障碍解释页。"
+        ]
+      ],
+      "address": "L999999",
+      "field": "附件内容",
+      "chars": 41
+    },
+    {
+      "range": "YhA0Ad!M999999:M999999",
+      "values": [
+        [
+          "xlsx"
+        ]
+      ],
+      "address": "M999999",
+      "field": "产物格式",
+      "chars": 4
+    },
+    {
+      "range": "YhA0Ad!N999999:N999999",
+      "values": [
+        [
+          "一份逐条绑定官方来源和访问日期的候选平台无障碍证据对比表，包含能力边界、待确认项、补证方法和一个 POC 优先建议。"
+        ]
+      ],
+      "address": "N999999",
+      "field": "产物内容",
+      "chars": 58
+    },
+    {
+      "range": "YhA0Ad!O999999:O999999",
+      "values": [
+        [
+          "1. 明确本轮只做公开证据初筛及 POC 排序。\n2. 检索并核验三家厂商官方产品文档与帮助页。\n3. 按统一维度摘录功能证据、适用条件和来源日期。\n4. 区分已证实事实、合理推断与公开资料未说明事项。\n5. 将许可证、语言、管理员策略、导出留存和规模边界转成实测或询价问题。\n6. 比较证据完整度并推荐一个优先进入 POC 的平台。"
+        ]
+      ],
+      "address": "O999999",
+      "field": "做题关键步骤",
+      "chars": 167
+    }
+  ]
+}

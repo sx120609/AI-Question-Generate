@@ -16,7 +16,7 @@ const fields = [
 function fixtureRecord() {
   return {
     UID: "测试_01",
-    题目: "运营团队正在复核本季度的合同、回单等项目记录。现有数据口径不一样，所以异常订单、退款等情况还要单独标明。帮我把核对结果整理成Word说明和Excel工作簿，让结论能回到金额、时间等原始记录。",
+    题目: "运营团队正在复核本季度的合同和回单（包括补充协议）。现有数据口径不一样，所以异常订单和退款情况还要单独标明（以原始记录为准）。帮我把核对结果整理成Word说明和Excel工作簿，让结论能回到金额与时间记录（注明来源位置）。",
     任务类型: "L2流程型",
     一级目录: "互联网与平台业务",
     二级目录: "运营复盘与增长归因",
@@ -46,8 +46,35 @@ test("requires the sampled reference, two gates, attachment trace and final reco
     protocolId: "l2-sample-attachments-two-gates-trace-v1",
     status: "READY",
     questionCount: 1,
-    inputs: { referenceWorkbook: { samples: [{ questionIndex: 1, sheet: "Sheet1", row: 18, attachmentSummary: "来源：https://reference.example/a" }] } },
+    inputs: {
+      referenceWorkbook: { samples: [{ questionIndex: 1, sheet: "Sheet1", row: 18, attachmentSummary: "来源：https://reference.example/a" }] },
+      firstQaPrompt: { sha256: "first-prompt" },
+      secondQaPrompt: { sha256: "second-prompt" },
+    },
   };
+  const firstRawPath = path.join(dir, "first-quality-gate.json");
+  const secondRawPath = path.join(dir, "second-language-gate.json");
+  const firstRawText = JSON.stringify({
+    runnerId: "exact-two-quality-gates-v1",
+    sourcePromptHash: "first-prompt",
+    parsed: { pass: true, issues: [] },
+  });
+  const secondRawText = JSON.stringify({
+    runnerId: "exact-two-quality-gates-v1",
+    sourcePromptHash: "second-prompt",
+    acceptedRound: 1,
+    attempts: [{ parsed: { conclusion: "通过", modifiedQuestion: record.题目 } }],
+  });
+  const execution = (stage, rawPath, rawText) => ({
+    runnerId: "exact-two-quality-gates-v1",
+    provider: "openai-compatible",
+    model: "claude-opus-4-8",
+    sourcePromptHash: stage === "first-quality-gate" ? "first-prompt" : "second-prompt",
+    renderedPromptHash: `${stage}-rendered`,
+    rawResponsePath: rawPath,
+    rawResponseHash: attachmentHash(rawText),
+    completedAt: new Date().toISOString(),
+  });
   const trace = {
     protocolId: packet.protocolId,
     questions: [{
@@ -81,11 +108,12 @@ test("requires the sampled reference, two gates, attachment trace and final reco
         { format: "docx", user: "运营负责人", purpose: "说明复核结论", whyThisFormat: "适合承载连续判断" },
         { format: "xlsx", user: "运营同事", purpose: "保存项目记录", whyThisFormat: "适合筛选和持续更新" },
       ],
-      firstQaFullResult: { pass: true, issues: [] },
+      firstQaFullResult: { pass: true, issues: [], execution: execution("first-quality-gate", firstRawPath, firstRawText) },
       firstQaRepairs: [],
       secondQaFullResult: {
         conclusion: "通过",
         modifiedQuestion: record.题目,
+        execution: execution("second-language-gate", secondRawPath, secondRawText),
         continuityAudit: {
           sentenceLinks: [
             { from: 1, to: 2, relation: "因果", reason: "第二句说明项目记录为什么还需要继续区分异常情况" },
@@ -121,6 +149,8 @@ test("requires the sampled reference, two gates, attachment trace and final reco
     fs.writeFile(paths.trace, JSON.stringify(trace), "utf8"),
     fs.writeFile(paths.fillPlan, JSON.stringify(fillPlan), "utf8"),
     fs.writeFile(candidatePath, `${fields.join("\t")}\n${fields.map((field) => String(record[field] ?? "").replace(/\n/gu, "\\n")).join("\t")}\n`, "utf8"),
+    fs.writeFile(firstRawPath, firstRawText, "utf8"),
+    fs.writeFile(secondRawPath, secondRawText, "utf8"),
   ]);
   const result = await runProductionTraceGate({
     packetPath: paths.packet,
@@ -181,4 +211,158 @@ test("requires the sampled reference, two gates, attachment trace and final reco
   assert.equal(failed.report.status, "FAIL");
   assert.equal(failed.receipt, null);
   assert.ok(failed.report.findings.some((finding) => finding.rule === "first-quality-gate-not-pass"));
+});
+
+test("L1 trace gate requires a real L2-grade attachment while allowing no product format", async () => {
+  const dir = await fs.mkdtemp(path.join(os.tmpdir(), "l1-production-trace-gate-"));
+  const hash = (value) => crypto.createHash("sha256").update(value).digest("hex");
+  const attachmentRoot = path.join(dir, "attachments");
+  const attachmentName = "附件一_客服试点需求复核记录.xlsx";
+  const attachmentBytes = Buffer.from("l1 specific business attachment fixture");
+  await fs.mkdir(attachmentRoot, { recursive: true });
+  await fs.writeFile(path.join(attachmentRoot, attachmentName), attachmentBytes);
+  const question = "我在企业服务团队负责客服AI试点入口评估。现有知识材料比较分散，三种候选工具对来源展示和权限边界的公开说明也不一致。请核验截至当前能够查到的官方资料，比较三个入口能承担的范围，并把已证实事实、合理推断和待确认项分开。这一轮先形成证据清单，不提前给最终上线结论。";
+  const record = {
+    UID: "测试_L1_01",
+    题目: question,
+    任务类型: "L1 探索型",
+    一级目录: "科技软件与 AI 工作流",
+    二级目录: "企业知识与流程自动化",
+    三级目录: "客服AI试点入口初筛",
+    任务概括: "核验三个客服AI入口的公开证据和能力边界",
+    标注专家工作年限: "硕士",
+    人类完成时间: "4H",
+    相关附件: attachmentName,
+    附件格式: "xlsx",
+    附件内容: "附件一记录客服试点对象、2026年7月的需求复核结果和待确认权限项，来源：https://new.example/customer-service-poc",
+    产物格式: "",
+    产物内容: "一份来源、数据截止日、可回答问题、冲突和缺口组成的证据清单。",
+    做题关键步骤: "1、检索官方资料。2、记录来源与数据时间。3、区分事实和推断。4、整理冲突与待确认项。",
+    标注专家姓名: "测试",
+  };
+  const packet = {
+    kind: "l1-production-input-packet",
+    productionProfile: "l1",
+    protocolId: "l1-phase3-samples-two-gates-trace-v1",
+    runId: "l1-test",
+    status: "READY",
+    questionCount: 1,
+    inputs: {
+      referenceWorkbook: { samples: [{ questionIndex: 1, sheet: "三期示例数据", row: 2, attachmentSummary: "无" }] },
+      firstQaPrompt: { sha256: "l1-first" },
+      secondQaPrompt: { sha256: "l1-second" },
+    },
+  };
+  const firstRawPath = path.join(dir, "first-quality-gate.json");
+  const secondRawPath = path.join(dir, "second-language-gate.json");
+  const firstRawText = JSON.stringify({
+    runnerId: "exact-two-quality-gates-v3-model-router",
+    sourcePromptHash: "l1-first",
+    parsed: { pass: true, issues: [] },
+  });
+  const secondRawText = JSON.stringify({
+    runnerId: "exact-two-quality-gates-v3-model-router",
+    sourcePromptHash: "l1-second",
+    acceptedRound: 1,
+    attempts: [{ parsed: { conclusion: "通过", modifiedQuestion: question } }],
+  });
+  const execution = (stage, rawPath, rawText) => ({
+    runnerId: "exact-two-quality-gates-v3-model-router",
+    provider: "codex-model",
+    model: "gpt-5.6-sol",
+    sourcePromptHash: stage === "first-quality-gate" ? "l1-first" : "l1-second",
+    renderedPromptHash: `${stage}-rendered`,
+    rawResponsePath: rawPath,
+    rawResponseHash: hash(rawText),
+    completedAt: new Date().toISOString(),
+  });
+  const trace = {
+    kind: "l1-production-trace",
+    productionProfile: "l1",
+    protocolId: packet.protocolId,
+    questions: [{
+      recordUid: record.UID,
+      referenceLocation: { sheet: "三期示例数据", row: 2 },
+      referenceQuestionStructure: Object.fromEntries([
+        "businessScene", "coreBlockage", "mainTask", "attachmentSupport",
+        "deliverableOrigin", "imitableStructure", "forbiddenReuse",
+      ].map((key) => [key, `${key}说明`])),
+      referenceAttachmentStructure: "对象记录与公开规则配合",
+      newQuestionStructureMapping: "保留来源核验、证据分层和分阶段交互",
+      newAttachmentSupport: "对象记录提供真实需求和权限缺口，官方来源只核对平台规则",
+      attachmentBuild: {
+        attachments: [{
+          name: attachmentName,
+          sourceUrl: "https://new.example/customer-service-poc",
+          classification: "specific-business",
+          objectLevel: true,
+          timeAnchor: "2026年7月客服AI试点复核",
+          specificityEvidence: {
+            object: "客服AI试点入口",
+            periodOrEvent: "2026年7月需求复核",
+            uniqueContent: "记录该试点的实际需求、权限缺口和待确认项",
+          },
+          summary: "记录客服AI试点对象、需求复核结果和待确认权限项。",
+          localPath: attachmentName,
+          sha256: hash(attachmentBytes),
+        }],
+        newQuestionStructureMapping: "保留来源核验、证据分层和分阶段交互",
+        newAttachmentSupport: "对象记录提供真实需求和权限缺口，官方来源只核对平台规则",
+      },
+      formatRequirement: null,
+      draftedProductFormats: "",
+      deliverableRationale: [],
+      firstQaFullResult: { pass: true, issues: [], execution: execution("first-quality-gate", firstRawPath, firstRawText) },
+      firstQaRepairs: [],
+      secondQaFullResult: {
+        conclusion: "通过",
+        modifiedQuestion: question,
+        execution: execution("second-language-gate", secondRawPath, secondRawText),
+      },
+      deAiRewrite: {
+        kind: "de-ai-question-rewrite",
+        policyId: "external-de-ai-rewrite-api-v1",
+        provider: "external-rewrite-api",
+        selectedAttempt: 1,
+        sourceQuestionHash: hash(question),
+        rewrittenQuestionHash: hash(question),
+        rewrite: { question },
+        validation: { pass: true, findings: [] },
+      },
+      revisionLog: [],
+      finalRecord: record,
+    }],
+  };
+  const packetPath = path.join(dir, "packet.json");
+  const tracePath = path.join(dir, "trace.json");
+  const fillPlanPath = path.join(dir, "fill-plan.json");
+  const candidatePath = path.join(dir, "candidate.tsv");
+  const fillPlan = {
+    rows: [{
+      sheetRow: 2,
+      updates: fields.filter((field) => field !== "标注专家姓名").map((field) => ({ field, value: record[field] })),
+    }],
+  };
+  await Promise.all([
+    fs.writeFile(packetPath, JSON.stringify(packet), "utf8"),
+    fs.writeFile(tracePath, JSON.stringify(trace), "utf8"),
+    fs.writeFile(fillPlanPath, JSON.stringify(fillPlan), "utf8"),
+    fs.writeFile(candidatePath, `${fields.join("\t")}\n${fields.map((field) => String(record[field] ?? "").replace(/\n/gu, "\\n")).join("\t")}\n`, "utf8"),
+    fs.writeFile(firstRawPath, firstRawText, "utf8"),
+    fs.writeFile(secondRawPath, secondRawText, "utf8"),
+  ]);
+  const receiptPath = path.join(dir, "receipt.json");
+  const result = await runProductionTraceGate({
+    packetPath,
+    tracePath,
+    candidatePath,
+    fillPlanPath,
+    reportPath: path.join(dir, "report.json"),
+    receiptPath,
+    attachmentRoot,
+  });
+  assert.equal(result.report.status, "PASS", JSON.stringify(result.report.findings, null, 2));
+  assert.equal(result.report.productFormatDiversity.status, "SKIPPED");
+  assert.equal(result.receipt.kind, "l1-production-trace-gate-receipt");
+  assert.equal((await verifyProductionTraceReceipt({ receiptPath, fillPlanPath })).ok, true);
 });

@@ -1,0 +1,55 @@
+{
+  "jobId": "l1-inspur-profit-cash-20260719-05",
+  "attachmentRoot": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-inspur-profit-cash-20260719-05\\attachments",
+  "initialAttachmentNames": [
+    "浪潮电子信息产业股份有限公司2026年第一季度报告.pdf"
+  ],
+  "productionEvidence": {
+    "recordUid": "沈礼_20260719_l1_inspur_profit_cash_05",
+    "productionTracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-inspur-profit-cash-20260719-05\\evidence\\production_trace.json",
+    "productionTraceGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-inspur-profit-cash-20260719-05\\evidence\\production_trace_gate_receipt.json",
+    "releaseGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-inspur-profit-cash-20260719-05\\evidence\\release_gate_receipt.json",
+    "downloadManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-inspur-profit-cash-20260719-05\\evidence\\download_manifest.json"
+  },
+  "maxRounds": 6,
+  "maximumRounds": 10,
+  "mode": "openai-compatible",
+  "taskGoal": "科技企业经营复核人员需要解释收入下降、利润增长而经营现金转负的差异。。建立利润现金与营运节奏核对表，复算核心指标方向，整理应收、预收和融资变化的披露线索，并保留客户与项目明细待补栏。，最终一份可下载的浪潮信息2026年一季度利润现金与营运节奏Excel，含收入利润现金对照、应收与合同负债线索、融资变化、证据边界和待补明细。",
+  "successCriteria": [
+    "收入利润现金数值准确",
+    "变化方向和差额可复算",
+    "节奏线索与因果结论分开",
+    "客户项目明细保持待补",
+    "交付可下载xlsx"
+  ],
+  "initialPrompt": "我正在做浪潮信息2026年一季度利润现金与营运节奏复核，这份结果供经营分析同事继续取得回款和项目明细后补充判断。\n\n请基于《浪潮电子信息产业股份有限公司2026年第一季度报告.pdf》中的内容，帮我复算一下今年一季度和去年同期的数据以及同比变动情况。这次重点要复核为什么一季度会出现收入下降、利润却在增长，但经营现金流转负的现象。请仔细核对各项收入、利润、经营现金流的具体分项，包括相关的比率、占比以及具体的计算口径。同时确认一下报告里有没有能体现回款、预收和融资节奏的线索。\n\n这里需要严格区分哪些是报告原文、哪些是派生计算或合理推断，还有哪些是待确认事项。请给出明确的结论，特别注意不要把应收账款、合同负债以及短期借款的同步变化直接当成完整的因果关系来归因。\n\n最后请帮我整理一份浪潮信息2026年一季度利润现金与营运节奏的Excel下载文件。表格里除了要对照收入、利润和现金情况，记录计算口径、未经审计状态、来源页码和证据边界外，还要把应收账款与合同负债的线索以及融资变化情况都梳理进去。另外，请在表格中预留出客户、项目、账龄等需要后续补充的明细位置，方便经营分析同事拿到回款和项目明细后继续做判断。\n\n请基于上述核对结果给出明确结论，并整理一份可下载的Excel营运节奏核对表，按xlsx格式交付。",
+  "responseTimeoutMs": 600000,
+  "interactionRewrite": {
+    "type": "openai-compatible",
+    "baseUrl": "https://api.mugua.link/v1",
+    "model": "gemini-3.1-pro-preview",
+    "apiKeyEnv": "DE_AI_REWRITE_API_KEY",
+    "temperature": 0.55,
+    "timeoutMs": 180000
+  },
+  "promptPreflight": {
+    "type": "local-codex",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "timeoutMs": 360000
+  },
+  "policy": {
+    "type": "local-codex",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "timeoutMs": 360000
+  },
+  "productRequirement": {
+    "required": true,
+    "requestedFormats": [
+      "excel"
+    ],
+    "allowEquivalentOnline": false,
+    "allowUnavailableBestEffort": false
+  }
+}

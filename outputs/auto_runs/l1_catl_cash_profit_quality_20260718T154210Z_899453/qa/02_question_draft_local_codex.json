@@ -1,0 +1,36 @@
+{
+  "kind": "local-codex-stage-response",
+  "stage": "02_question_draft",
+  "model": "gpt-5.6-sol",
+  "provider": "local-codex-cli",
+  "completedAt": "2026-07-18T15:57:25.649Z",
+  "promptHash": "43b096d01ec961fa70c83a1d5dcfc9942caef3beebac9e0e9d21204fd5caffbb",
+  "parsed": {
+    "question": "请依据《宁德时代2025年年度报告.pdf》和《宁德时代2026年第一季度报告.pdf》，判断2026年第一季度利润增长是否得到经营现金流同步支撑。核对2025年和2026年第一季度现金利润覆盖率及其变化，解释归母净利润与经营现金流增速分化，并结合两期营运资本余额变化识别线索。年度报告数据按审计口径使用，一季报注明未经审计，无法由现有披露直接归因的项目标为待核。形成一份带公式、来源页码和结论状态的可下载Excel核对表，供经营分析同事继续复核和回填。",
+    "mainTask": "核验宁德时代2026年第一季度利润增长的经营现金流支撑程度，并保留审计边界和营运资本观察线索。",
+    "usedFactIds": [
+      "fact-annual-audit-boundary",
+      "fact-2025q1-comparatives",
+      "fact-2026q1-core",
+      "fact-q1-audit-boundary",
+      "fact-cash-profit-coverage",
+      "fact-q1-working-capital-balances",
+      "fact-working-capital-deltas"
+    ],
+    "usedAttachmentNames": [
+      "宁德时代2025年年度报告.pdf",
+      "宁德时代2026年第一季度报告.pdf"
+    ],
+    "productFormats": "xlsx",
+    "deliverableRationale": [
+      {
+        "format": "xlsx",
+        "user": "经营分析同事",
+        "purpose": "复核一季度利润增长的现金支撑程度，并在取得更细科目资料后继续回填分析",
+        "whyThisFormat": "两期指标需要公式回算、来源页码追溯和状态标记，Excel便于复核计算及后续补充数据"
+      }
+    ],
+    "structureMapping": "沿用真实工作卡点、跨期证据核验、口径边界审查和下游交付的判断链，改为围绕利润与经营现金流的同步性作出单一业务判断。",
+    "productParagraphMapping": "后半段先限定年度报告与一季报的审计边界及待核状态，再将公式、来源页码和结论状态收束为供经营分析同事继续复核回填的Excel核对表。"
+  }
+}

@@ -4,6 +4,7 @@ import path from "node:path";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import { fileURLToPath, pathToFileURL } from "node:url";
+import { resolveProductionProfile } from "./production_profile.mjs";
 
 const execFileAsync = promisify(execFile);
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
@@ -31,27 +32,29 @@ async function runExtractor(args) {
         errors.push(`${python}: not found`);
         continue;
       }
-      throw new Error(`L2 production preflight failed: ${error.stderr || error.stdout || error.message}`);
+      throw new Error(`Production preflight failed: ${error.stderr || error.stdout || error.message}`);
     }
   }
-  throw new Error(`No usable Python runtime for L2 production preflight: ${errors.join("; ")}`);
+  throw new Error(`No usable Python runtime for production preflight: ${errors.join("; ")}`);
 }
 
-export async function runProductionPreflight({ runId, count, outPath, seed = "" } = {}) {
+export async function runProductionPreflight({ runId, count, outPath, seed = "", profile = "l1" } = {}) {
   if (!runId || !Number.isInteger(Number(count)) || Number(count) < 1 || !outPath) {
     throw new Error("runProductionPreflight requires runId, positive integer count, and outPath.");
   }
+  const productionProfile = resolveProductionProfile(profile);
   await fs.mkdir(path.dirname(path.resolve(outPath)), { recursive: true });
   await runExtractor([
     "--root", REPO_ROOT,
     "--run-id", String(runId),
     "--count", String(count),
     "--out", path.resolve(outPath),
+    "--profile", productionProfile.id,
     ...(seed ? ["--seed", seed] : []),
   ]);
   const packet = JSON.parse(await fs.readFile(path.resolve(outPath), "utf8"));
   if (packet.status !== "READY") {
-    throw new Error(`L2 production preflight is ${packet.status}: ${JSON.stringify(packet.blockers)}`);
+    throw new Error(`${productionProfile.label} production preflight is ${packet.status}: ${JSON.stringify(packet.blockers)}`);
   }
   return packet;
 }
@@ -66,6 +69,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
     count: Number(args.count || 1),
     outPath: path.resolve(args.out || "outputs/production_input_packet.json"),
     seed: args.seed || "",
+    profile: args.profile || "l1",
   })
     .then((packet) => console.log(JSON.stringify({
       ok: true,

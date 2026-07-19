@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "kind": "immutable-doubao-interaction-package",
+  "jobId": "l1-async-api5-20260719-1015-05",
+  "createdAt": "2026-07-19T02:13:43.728Z",
+  "sourceConfigPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_05_inspur_profit_cash\\doubao\\job.json",
+  "sourceConfigSha256": "3b5e92daf3f9074b2a392a4784a7bca161f72c8783690e8cccace64c9ac4e7c4",
+  "configSha256": "ff7baf746f693bdeb1c43d3ef22d93c7fcf60b78a35d9ed7ea10fad9645c4273",
+  "attachmentReceipt": {
+    "attachmentCount": 1,
+    "attachments": [
+      {
+        "classification": "specific-business",
+        "introductionHint": "把正式报告名称直接嵌入任务句，后续核对继续引用同一份已验证原件。",
+        "name": "浪潮电子信息产业股份有限公司2026年第一季度报告.pdf",
+        "relativePath": "浪潮电子信息产业股份有限公司2026年第一季度报告.pdf",
+        "sha256": "1d9075ccddc8da08907e3486f9aaddfb81cb19ea5881a50e096cac6c3ad5fcd6",
+        "sizeBytes": 388530,
+        "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-30/1225257759.PDF",
+        "summary": "披露浪潮信息一季度收入利润现金流分化、应收账款和合同负债变化以及融资节奏原因。"
+      }
+    ],
+    "initialAttachmentNames": [
+      "浪潮电子信息产业股份有限公司2026年第一季度报告.pdf"
+    ],
+    "minimumSpecificBusinessShare": 0.8,
+    "pass": true,
+    "policyId": "doubao-l1-l2-attachment-policy-v1",
+    "productionEvidence": {
+      "attachmentCount": 1,
+      "downloadManifestHash": "4621e136c1b8600928511052ed74177c00c6d5e4cae5ba4bbf86a4fd4e28cde9",
+      "downloadManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_05_inspur_profit_cash\\sources\\download_manifest.json",
+      "mode": "production-path",
+      "pass": true,
+      "policyId": "reuse-l2-source-acquisition-path-v1",
+      "productionRunId": "l1_async_api5-20260719-1015_05_inspur_profit_cash",
+      "productionTraceGateReceiptHash": "1ca5c8b0c1ccbdcf60da0658699bf175f11c255786688e89a54f2ca5778833c4",
+      "productionTraceGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_05_inspur_profit_cash\\feishu\\production_trace_gate_receipt.json",
+      "productionTraceHash": "85951be63c1e69fa1a8cd784a52070df5c1cc6b3ef6f23360b1e1fa758c8f12f",
+      "productionTracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_05_inspur_profit_cash\\qa\\production_trace.json",
+      "recordUid": "沈礼_api5-20260719-1015_05",
+      "releaseGateReceiptHash": "738672f24c1bb3c0c73459f6e8e994e25118d78f6863eda2a9a32f9dc29cf2a6",
+      "releaseGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_05_inspur_profit_cash\\feishu\\release_gate_receipt.json",
+      "verifiedAt": "2026-07-19T02:13:43.711Z"
+    },
+    "specificBusinessShare": 1,
+    "verifiedAt": "2026-07-19T02:13:43.711Z"
+  }
+}

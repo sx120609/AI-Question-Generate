@@ -1,0 +1,157 @@
+{
+  "kind": "de-ai-question-rewrite",
+  "policyId": "mugua-gemini-de-ai-rewrite-v2",
+  "uid": "沈礼_api5-20260719-1015_04",
+  "generatedAt": "2026-07-19T02:11:12.741Z",
+  "provider": "mugua-openai-compatible",
+  "endpoint": "https://api.mugua.link/v1/chat/completions",
+  "model": "gemini-3.1-pro-preview",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 1501,
+    "outputTokens": 1344,
+    "totalTokens": 2845
+  },
+  "promptHash": "4b72d266af2c7cbbb9645c863ef4e10397b796297195cb6bae668a7631ff9a14",
+  "sourceQuestionHash": "887a5ff571246d3a783b0d765949aedb02f23cce4910272f524ac33d0e27245b",
+  "rewrittenQuestionHash": "3dbb9d037eeeed05e488208d24015012dcbcf9f3a261b1065eb918a4029737bb",
+  "selectedAttempt": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "pass": false,
+      "visibleLength": 429,
+      "findingRules": [
+        "rewrite-exact-copy-run-too-long"
+      ]
+    },
+    {
+      "attempt": 2,
+      "pass": true,
+      "visibleLength": 460,
+      "findingRules": []
+    }
+  ],
+  "rewrite": {
+    "question": "我正在做宝钢股份2026年一季度产品结构与利润表现复核，这份结果供产品经营会议讨论下一步需要补取的产品盈利和订单兑现资料。\n\n为了准备接下来的产品经营会议，我们需要讨论后续要补充哪些产品盈利和订单兑现的资料。请根据《宝山钢铁股份有限公司2026年第一季度报告.pdf》中的内容，帮我核对2026年一季度的核心财务、主营业务分部数据，以及产品结构和出口接单的情况。\n\n在处理数据时，请对本期和上年同期的数据进行同比复算，并确认同比口径是否一致。针对主营业务分部的数据，你需要重新核实分项收入和内部抵消金额的统计口径，并复算毛利率以及相关的派生比率。\n\n请重点解释为什么结构指标在向好，归母净利润却出现了下降。你需要给出一个明确的结论，判断“2+2+N”产品销量和出口接单等指标的改善，能不能直接支持整体盈利的改善，并说明分部毛利率对这个判断构成了什么限制。分析时请注意区分可证事实、合理推断和待确认项，保留具体的来源页码，并注明季度数据未经审计。另外，不要把销量或接单的变化直接当成当季的利润贡献。\n\n最后请帮我生成一份可下载的PPT，方便我们在会上直接使用。PPT的内容需要包含产品和出口亮点、核心财务对比、分部毛利率、证据边界、待补数据以及结论页。",
+    "requestContract": {
+      "requestSpan": "最后请帮我生成一份可下载的PPT，方便我们在会上直接使用。",
+      "action": "帮我",
+      "outputs": [
+        {
+          "format": "pptx",
+          "humanName": "PPT",
+          "purpose": "供后续执行和留痕使用"
+        }
+      ]
+    },
+    "roleTrace": {
+      "blockageSpan": "你需要给出一个明确的结论，判断“2+2+N”产品销量和出口接单等指标的改善，能不能直接支持整体盈利的改善，并说明分部毛利率对这个判断构成了什么限制。",
+      "motivationSpan": "最后请帮我生成一份可下载的PPT，方便我们在会上直接使用。",
+      "downstreamUseSpan": "最后请帮我生成一份可下载的PPT，方便我们在会上直接使用。"
+    },
+    "usedFactIds": [
+      "baosteel-product-export",
+      "baosteel-core-performance",
+      "baosteel-steel-segment",
+      "baosteel-processing-segment",
+      "baosteel-total-margin",
+      "baosteel-boundary"
+    ],
+    "deliberatelyOmitted": [],
+    "flowStages": [
+      {
+        "stage": "证据归位",
+        "evidence": "事实包中的公开材料与待补信息",
+        "decision": "区分可确认规则和未知现场状态",
+        "next": "证据足够则形成执行对象，不足则进入补证"
+      },
+      {
+        "stage": "执行对象核对",
+        "evidence": "已归位的对象关系与状态记录",
+        "decision": "制作产品结构与利润表现复核演示稿，把产品销量和出口接单亮点与分部毛利率、整体利润和现金流并列，明确可证改善与不能归因的部分。",
+        "next": "符合条件则进入小范围验证，否则停止推进"
+      },
+      {
+        "stage": "小范围验证",
+        "evidence": "试点输入与实际返回记录",
+        "decision": "判断结果是否满足扩大范围的条件",
+        "next": "通过则推进，失败则退回原状态并留痕"
+      },
+      {
+        "stage": "交接收束",
+        "evidence": "判断依据、验证结果与回退记录",
+        "decision": "确认下游拿到一致结论",
+        "next": "供产品经营会议讨论下一步需要补取的产品盈利和订单兑现资料。"
+      }
+    ],
+    "selfAudit": {
+      "factsPreserved": true,
+      "formatsPreserved": true,
+      "processChainExplicit": true,
+      "failureOrRollbackExplicit": true,
+      "noInventedFacts": true,
+      "noAiShell": true
+    }
+  },
+  "validation": {
+    "pass": true,
+    "visibleLength": 517,
+    "similarity": [
+      {
+        "referenceIndex": 1,
+        "editSimilarity": 0.2883817427385892,
+        "trigramJaccard": 0.33104631217838765,
+        "longestExactCopyRun": 28,
+        "longestExactCopySpan": "供产品经营会议讨论下一步需要补取的产品盈利和订单兑现资料"
+      },
+      {
+        "referenceIndex": 2,
+        "editSimilarity": 0.048172757475083094,
+        "trigramJaccard": 0.01701701701701702,
+        "longestExactCopyRun": 8,
+        "longestExactCopySpan": "需要给出一个明确"
+      }
+    ],
+    "findings": [],
+    "factGuard": {
+      "ok": true,
+      "candidateAnchors": {
+        "numbers": [
+          "2026年",
+          "2"
+        ],
+        "quotedClaims": [
+          "2+2+N"
+        ],
+        "timeMarkers": []
+      },
+      "unsupported": {
+        "numbers": [],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "errors": []
+    }
+  },
+  "deterministicStyleCleanup": {
+    "applied": true,
+    "rules": [
+      "remove-unbound-inline-page-range",
+      "remove-unbound-title-quotes",
+      "remove-banned-politeness",
+      "remove-upload-meta-language",
+      "restore-known-requester-context",
+      "restore-explicit-decision-request",
+      "restore-downloadable-format-requirement"
+    ],
+    "sourceApiQuestionHash": "14268c2e29e4a47a6deea023109d6709a4590fa19942061d66b714c32fddc5d8"
+  },
+  "postDeAiAudit": {
+    "attachmentsPreserved": true,
+    "factsPreserved": true,
+    "issues": [],
+    "pass": true,
+    "visibleTextClean": true
+  }
+}

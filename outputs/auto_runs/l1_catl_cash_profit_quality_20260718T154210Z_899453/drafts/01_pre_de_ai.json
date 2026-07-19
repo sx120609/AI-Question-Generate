@@ -1,0 +1,203 @@
+{
+  "topic": {
+    "topicId": "catl-2026q1-profit-cash-quality-reconciliation",
+    "title": "宁德时代2026年一季度利润与经营现金流质量复核",
+    "primaryCategory": "商业与市场分析",
+    "secondaryCategory": "经营数据复核",
+    "tertiaryCategory": "利润现金流与营运资本变动",
+    "businessScenario": "经营分析同事需要用宁德时代2025年年度报告和2026年第一季度报告复核利润增长与经营现金流增速分化，并观察期末营运资本项目变化",
+    "mainDecision": "确认一季度利润增长能否被经营现金流同步支撑，并把可计算的现金质量变化与无法直接归因的营运资本线索分开",
+    "role": "财务数据复核专员",
+    "artifactSummary": "带公式、来源索引和证据边界的利润现金质量核对表",
+    "artifactFormats": "xlsx",
+    "attachmentSummary": "宁德时代2025年年度报告和2026年第一季度报告",
+    "keywords": [
+      "宁德时代",
+      "一季报",
+      "经营现金流",
+      "归母净利润",
+      "现金质量",
+      "营运资本"
+    ]
+  },
+  "sceneCard": {
+    "schemaVersion": 1,
+    "policyId": "situated-requester-v1",
+    "topicId": "catl-2026q1-profit-cash-quality-reconciliation",
+    "personaId": "catl-cash-quality-reviewer-01",
+    "requester": {
+      "functionalRole": "经营数据复核专员",
+      "organizationType": "企业数据研究团队",
+      "department": "",
+      "responsibility": "把公开年度报告和季度报告整理成可追溯的利润现金质量核对底表",
+      "authorityBoundary": "只负责复核公开披露的算术与口径，无权把经营现金流增速分化直接归因于单一科目",
+      "recipientRelation": "把核对表交给经营分析同事继续使用"
+    },
+    "scene": {
+      "workflowStage": "2026年一季度利润现金质量复核",
+      "trigger": "2026年第一季度报告披露营业收入129131041千元、归母净利润20737710千元、经营活动现金流量净额33680852千元，分别同比增长52.45%、48.52%和2.47%。",
+      "currentBlockage": "两份附件不足以把经营现金流增速与利润增速的分化直接归因于单一营运资本科目，完整解释还需要现金流量表补充资料、科目明细和非现金调整。",
+      "mainDecision": "建立带公式和来源页码的利润现金质量核对表，确认两期现金利润覆盖率及其变化，并把营运资本余额变化保留为观察线索而非经营现金流的直接归因。",
+      "downstreamUse": "复核一季度利润增长的现金支撑程度，并为取得更细科目资料后继续分析留出可回填底表。"
+    },
+    "informationBoundary": {
+      "knownFactIds": [
+        "fact-annual-audit-boundary",
+        "fact-annual-core",
+        "fact-2025q1-comparatives",
+        "fact-2026q1-core",
+        "fact-q1-audit-boundary",
+        "fact-cash-profit-coverage",
+        "fact-q1-working-capital-balances",
+        "fact-working-capital-deltas",
+        "fact-q1-cashflow-detail"
+      ],
+      "availableMaterialIds": [
+        "material-annual-2025",
+        "material-q1-2026"
+      ],
+      "unknowns": [
+        "两份附件不足以把经营现金流增速与利润增速的分化直接归因于单一营运资本科目，完整解释还需要现金流量表补充资料、科目明细和非现金调整。",
+        "简化营运资本代理项只包含五个期末余额科目，未覆盖预付款项、应收款项融资、其他应收款、其他流动负债及汇率和并购等影响，不能等同于经营现金流量表的营运资本变动。",
+        "2026年第一季度报告未经审计，后续审计或年度披露可能调整分类或提供更细的解释。"
+      ],
+      "forbiddenInferences": [
+        "经营现金流增速与利润增速的分化不得直接归因到单一营运资本科目",
+        "简化营运资本代理项不得表述为现金流量表中的营运资本变动",
+        "2026年第一季度未经审计数据不得描述为审计确认值",
+        "期末余额变化只作为观察线索，不构成现金流变动的完整解释"
+      ]
+    },
+    "voice": {
+      "channel": "内部数据复核消息",
+      "formality": "直接、克制、以证据和可继续回填为导向",
+      "domainVocabulary": [
+        "年度报告",
+        "一季报",
+        "归母净利润",
+        "经营现金流",
+        "覆盖率",
+        "营运资本",
+        "来源页码"
+      ],
+      "avoidVocabulary": [
+        "全链路",
+        "闭环",
+        "赋能",
+        "深度洞察",
+        "记账习惯",
+        "剔除出去",
+        "麻烦",
+        "劳烦",
+        "烦请",
+        "辛苦"
+      ]
+    },
+    "maskTerms": [
+      "宁德时代",
+      "年度报告",
+      "一季报",
+      "经营现金流",
+      "现金质量"
+    ],
+    "evidenceBindings": [
+      {
+        "claim": "2026年第一季度报告披露营业收入129131041千元、归母净利润20737710千元、经营活动现金流量净额33680852千元，分别同比增长52.45%、48.52%和2.47%。",
+        "factIds": [
+          "fact-2026q1-core"
+        ]
+      },
+      {
+        "claim": "两份附件不足以把经营现金流增速与利润增速的分化直接归因于单一营运资本科目，完整解释还需要现金流量表补充资料、科目明细和非现金调整。",
+        "factIds": [
+          "fact-cash-profit-coverage",
+          "fact-q1-working-capital-balances"
+        ]
+      },
+      {
+        "claim": "建立带公式和来源页码的利润现金质量核对表，确认两期现金利润覆盖率及其变化，并把营运资本余额变化保留为观察线索而非经营现金流的直接归因。",
+        "factIds": [
+          "fact-cash-profit-coverage",
+          "fact-working-capital-deltas",
+          "fact-q1-audit-boundary"
+        ]
+      }
+    ]
+  },
+  "attachmentPlan": {
+    "mainDecision": "建立带公式和来源页码的利润现金质量核对表，确认两期现金利润覆盖率及其变化，并把营运资本余额变化保留为观察线索而非经营现金流的直接归因。",
+    "attachments": [
+      {
+        "name": "宁德时代2025年年度报告.pdf",
+        "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-03-10/1225002214.PDF",
+        "format": "pdf",
+        "classification": "specific-business",
+        "objectLevel": true,
+        "timeAnchor": "2025年度及2025年12月31日",
+        "specificityEvidence": {
+          "object": "宁德时代新能源科技股份有限公司证券代码300750",
+          "periodOrEvent": "2025年度及2025年12月31日",
+          "uniqueContent": "经审计的2025年度主要财务指标、季度分项数据和年末应收账款、存货、应付账款等余额"
+        },
+        "summary": "经审计的2025年度主要财务指标、季度分项数据和年末应收账款、存货、应付账款等余额",
+        "localPath": "宁德时代2025年年度报告.pdf",
+        "sha256": "c15272977147dee7e6935a38ea0e4fd6855370aabb106f54cfe20f7cf6048ec9",
+        "bytes": 2043710,
+        "sizeBytes": 2043710,
+        "introductionHint": "材料名称直接嵌入任务句，后续核对继续引用同一批已验证原件。"
+      },
+      {
+        "name": "宁德时代2026年第一季度报告.pdf",
+        "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-16/1225107946.PDF",
+        "format": "pdf",
+        "classification": "specific-business",
+        "objectLevel": true,
+        "timeAnchor": "2026年1月1日至2026年3月31日及2026年3月31日",
+        "specificityEvidence": {
+          "object": "宁德时代新能源科技股份有限公司证券代码300750",
+          "periodOrEvent": "2026年1月1日至2026年3月31日及2026年3月31日",
+          "uniqueContent": "未经审计的2026年第一季度收入、利润、经营现金流和期末营运资本项目，并列示上年同期或年初比较数"
+        },
+        "summary": "未经审计的2026年第一季度收入、利润、经营现金流和期末营运资本项目，并列示上年同期或年初比较数",
+        "localPath": "宁德时代2026年第一季度报告.pdf",
+        "sha256": "32e4936e6dd68a89741a8167b4c4ae3f8b4bc7ef61d70f35b294e1cb0e46fbe8",
+        "bytes": 537170,
+        "sizeBytes": 537170,
+        "introductionHint": "材料名称直接嵌入任务句，后续核对继续引用同一批已验证原件。"
+      }
+    ],
+    "specificBusinessShareRationale": "两份材料都绑定宁德时代证券代码300750和2025年度至2026年一季度具体披露期，具体业务材料占比为100%。",
+    "timeSeriesRationale": "年度报告提供经审计的2025年第一季度比较数和2025年末余额，一季报提供2026年第一季度损益、现金流与期末余额，可形成同一对象跨期间核对链。",
+    "objectSupportInQuestion": "题面明确宁德时代、2025年年度报告、2026年第一季度报告和财务数据复核用途。",
+    "newAttachmentSupport": "年度报告支撑经审计基期与期初余额，一季报支撑本期损益、现金流、期末余额和未经审计边界。",
+    "newQuestionStructureMapping": "沿用样例的真实工作卡点、证据核验和下游交付逻辑，改为先核对利润与经营现金流的增速分化，再依据真实回复逐轮推进覆盖率、营运资本线索和工作簿交付。"
+  },
+  "draft": {
+    "question": "请依据《宁德时代2025年年度报告.pdf》和《宁德时代2026年第一季度报告.pdf》，判断2026年第一季度利润增长是否得到经营现金流同步支撑。核对2025年和2026年第一季度现金利润覆盖率及其变化，解释归母净利润与经营现金流增速分化，并结合两期营运资本余额变化识别线索。年度报告数据按审计口径使用，一季报注明未经审计，无法由现有披露直接归因的项目标为待核。形成一份带公式、来源页码和结论状态的可下载Excel核对表，供经营分析同事继续复核和回填。",
+    "mainTask": "核验宁德时代2026年第一季度利润增长的经营现金流支撑程度，并保留审计边界和营运资本观察线索。",
+    "usedFactIds": [
+      "fact-annual-audit-boundary",
+      "fact-2025q1-comparatives",
+      "fact-2026q1-core",
+      "fact-q1-audit-boundary",
+      "fact-cash-profit-coverage",
+      "fact-q1-working-capital-balances",
+      "fact-working-capital-deltas"
+    ],
+    "usedAttachmentNames": [
+      "宁德时代2025年年度报告.pdf",
+      "宁德时代2026年第一季度报告.pdf"
+    ],
+    "productFormats": "xlsx",
+    "deliverableRationale": [
+      {
+        "format": "xlsx",
+        "user": "经营分析同事",
+        "purpose": "复核一季度利润增长的现金支撑程度，并在取得更细科目资料后继续回填分析",
+        "whyThisFormat": "两期指标需要公式回算、来源页码追溯和状态标记，Excel便于复核计算及后续补充数据"
+      }
+    ],
+    "structureMapping": "沿用真实工作卡点、跨期证据核验、口径边界审查和下游交付的判断链，改为围绕利润与经营现金流的同步性作出单一业务判断。",
+    "productParagraphMapping": "后半段先限定年度报告与一季报的审计边界及待核状态，再将公式、来源页码和结论状态收束为供经营分析同事继续复核回填的Excel核对表。"
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "kind": "claude-question-rewrite-batch",
+  "policyId": "claude-plain-professional-redraft-v3",
+  "generatedAt": "2026-07-16T06:16:13.071Z",
+  "runDir": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a",
+  "results": [
+    {
+      "kind": "claude-question-only-redraft",
+      "policyId": "claude-plain-professional-redraft-v3",
+      "uid": "434",
+      "generatedAt": "2026-07-16T06:16:13.070Z",
+      "provider": "openai-compatible",
+      "model": "claude-opus-4-8",
+      "finishReason": "stop",
+      "usage": {
+        "inputTokens": 15011,
+        "outputTokens": 2141,
+        "totalTokens": 17152
+      },
+      "rewrite": {
+        "question": "设备平台运维由我负责，这批工作里只能依据公开规则整理方案，不能替代有权限的人员执行生产证书状态变更。存量X.509设备已经到了需要轮换证书的阶段，同时要保留可验证的停用与回滚路径。内部设备清单和当前证书关联信息还没有交到我手上，能拿到的公开材料只能确认华为云平台的通用规则，无法确认本租户里每台设备与证书的实际对应。\n从公开文档能读到的事实分成几类。注册X.509证书认证设备的入口给出了接入参数与 MQTT 的接入范围，设备证书管理侧说明了配额限制以及到期告警与停用后对连接的影响。状态更新接口列出了更新证书时的请求字段和响应字段，证书列表查询接口给出了查询路径与返回结构。这些内容界定了平台允许做什么，但接口文档本身不代表任何生产状态已经变更，示例调测里的回连结果也不能当作本批设备的回连证据。\n需要做出的判断是本批设备现在是否具备进入证书轮换的条件。这个判断的前提是华为云生产租户的设备证书映射原始台账原件，只有拿到台账才能把设备与证书指纹对应起来并核对状态。台账缺位时不能用公开文档、SDK 示例或模拟记录补写成已经发生的验证结果，此时结论只能停在条件不足并说明缺哪一项。\n进入判断的证据分成两层。平台规则一层来自公开文档，用来确认配额和到期告警这些边界条件是否满足。设备事实一层来自台账与查询接口在获授权环境里的实际返回，用来确认每台设备的证书指纹与当前状态。证书指纹核对是进入轮换的第一道条件，指纹与台账对不上的设备直接排除在本批之外。到期时间用于排序，临近到期的设备优先进入试点批次而不是一次全部替换。设备回连是替换后的验证动作，一台设备完成状态更新后要在获授权环境里用新证书重新接入并确认连接稳定，这台设备的轮换才算有效。两层证据缺失或对不上的设备都保持在待核状态而不写入可轮换名单。\n我请你把上述规则和字段整理成一份工作簿，用 Excel 呈现，让每台设备的证书指纹、当前状态和到期时间能逐行核对，轮换批次与验证结果也各留一列。另做一份操作页用 HTML 呈现，把分批轮换、设备回连验证以及状态更新与回滚的动作按可执行顺序排开，每一步标明前置条件和退回位置。设备回连验证不通过的设备退回上一批而不进入状态更新，已经更新但回连失败的设备按操作页上的回滚路径恢复到轮换前的证书状态。\n启动条件是否成立不由单份材料决定，而要看工作簿里的可轮换名单是否非空以及操作页上的回滚路径对每个批次是否都可用。可轮换名单为空或回滚路径缺失时，交付要写明当前不具备启动条件以及后续需要补齐的输入。工作簿由设备运维同事用来筛查哪些设备可以进入试点，操作页由值班同事在获授权环境里按步骤执行试点与回滚，两份产物一起作为启动条件判断记录一并移交。",
+        "requestContract": {
+          "requestSpan": "设备平台运维由我负责，这批工作里只能依据公开规则整理方案，不能替代有权限的人员执行生产证书状态变更。",
+          "action": "整理",
+          "outputs": [
+            {
+              "format": "xlsx",
+              "humanName": "Excel",
+              "purpose": "供后续执行和留痕使用"
+            },
+            {
+              "format": "html",
+              "humanName": "HTML",
+              "purpose": "供后续执行和留痕使用"
+            }
+          ]
+        },
+        "roleTrace": {
+          "blockageSpan": "设备平台运维由我负责，这批工作里只能依据公开规则整理方案，不能替代有权限的人员执行生产证书状态变更。",
+          "motivationSpan": "平台规则一层来自公开文档，用来确认配额和到期告警这些边界条件是否满足。",
+          "downstreamUseSpan": "工作簿由设备运维同事用来筛查哪些设备可以进入试点，操作页由值班同事在获授权环境里按步骤执行试点与回滚，两份产物一起作为启动条件判断记录一并移交。"
+        },
+        "usedFactIds": [
+          "fact-row-434"
+        ],
+        "deliberatelyOmitted": [],
+        "flowStages": [
+          {
+            "stage": "证据归位",
+            "evidence": "事实包中的公开材料与待补信息",
+            "decision": "区分可确认规则和未知现场状态",
+            "next": "证据足够则形成执行对象，不足则进入补证"
+          },
+          {
+            "stage": "执行对象核对",
+            "evidence": "已归位的对象关系与状态记录",
+            "decision": "判断本批设备是否具备进入证书轮换的条件",
+            "next": "符合条件则进入小范围验证，否则停止推进"
+          },
+          {
+            "stage": "小范围验证",
+            "evidence": "试点输入与实际返回记录",
+            "decision": "判断结果是否满足扩大范围的条件",
+            "next": "通过则推进，失败则退回原状态并留痕"
+          },
+          {
+            "stage": "交接收束",
+            "evidence": "判断依据、验证结果与回退记录",
+            "decision": "确认下游拿到一致结论",
+            "next": "设备运维和值班同事按工作簿筛查并从操作页执行试点与回滚"
+          }
+        ],
+        "selfAudit": {
+          "factsPreserved": true,
+          "formatsPreserved": true,
+          "processChainExplicit": true,
+          "failureOrRollbackExplicit": true,
+          "noInventedFacts": true,
+          "noAiShell": true
+        }
+      },
+      "validation": {
+        "pass": false,
+        "visibleLength": 1107,
+        "similarity": [
+          {
+            "referenceIndex": 1,
+            "editSimilarity": 0.1195445920303605,
+            "trigramJaccard": 0.07958251793868232,
+            "longestExactCopyRun": 11
+          },
+          {
+            "referenceIndex": 2,
+            "editSimilarity": 0.0977229601518027,
+            "trigramJaccard": 0.05772931366260423,
+            "longestExactCopyRun": 9
+          }
+        ],
+        "findings": [
+          {
+            "rule": "request-human-name-not-in-span",
+            "format": "xlsx"
+          },
+          {
+            "rule": "request-human-name-not-in-span",
+            "format": "html"
+          }
+        ],
+        "factGuard": {
+          "ok": true,
+          "candidateAnchors": {
+            "numbers": [
+              "509"
+            ],
+            "quotedClaims": [],
+            "timeMarkers": []
+          },
+          "unsupported": {
+            "numbers": [],
+            "quotedClaims": [],
+            "timeMarkers": []
+          },
+          "errors": []
+        }
+      }
+    }
+  ],
+  "usage": {
+    "inputTokens": 15011,
+    "outputTokens": 2141,
+    "totalTokens": 17152
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "local-codex-stage-response",
+  "stage": "07_naturalness_independent_review",
+  "model": "gpt-5.6-sol",
+  "provider": "local-codex-cli",
+  "completedAt": "2026-07-18T17:36:21.873Z",
+  "promptHash": "fc248585bb3efcf4648fd5bec8c41a1ccaa3acc1acca864305da93275054a235",
+  "parsed": {
+    "decision": "APPROVE",
+    "rationale": "免责声明仅占1句且位于末段，用于限定未披露信息的归因和单季度外推，并未挤占业务事实。请求明确指定报告、复核指标、分析目标、Word交付物、指标对照表、来源页码、计算说明及补数清单，附件已提供，任务可执行。整体表达符合分析同事之间的真实工作委托，不属于上传元话语或空泛材料介绍。",
+    "disclaimerDisplacesFacts": false,
+    "taskExecutable": true,
+    "naturalWorkRequest": true
+  }
+}

@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="spm-id" content="ding_open_doc.document">
+    <meta name="aes-config" content="pid=6rNaMF&user_type=20&uid=&username="/>
+    <title>事件订阅 - 钉钉开放平台</title>
+    <meta name="description" content="钉钉会向应用推送订阅的事件，例如部门变更、签到通知、打卡通知等。通过订阅这些事件，可以更好地与钉钉集成。你只需告诉钉钉当某个事件发生时，钉钉需要推送消息到哪个URL，钉钉会以HTTP POST请求的方式将事件内容以JSON格式推送给你。">
+    <meta name="keywords" content="企业内部应用-接入指南,开发前必读,事件订阅">
+    <meta property="og:title" content="事件订阅 - 开放平台">
+    <meta property="og:url" content="http://developers.dingtalk.com/document/org/push-events">
+    <meta property="og:description" content="钉钉会向应用推送订阅的事件，例如部门变更、签到通知、打卡通知等。通过订阅这些事件，可以更好地与钉钉集成。你只需告诉钉钉当某个事件发生时，钉钉需要推送消息到哪个URL，钉钉会以HTTP POST请求的方式将事件内容以JSON格式推送给你。">
+    <meta property="og:image" content="https://img.alicdn.com/imgextra/i1/O1CN01nxYKcl24UxehoQlC8_!!6000000007395-2-tps-192-192.png">
+    <link rel="shortcut icon" id="favicon" type="image/png" href="https://img.alicdn.com/imgextra/i4/O1CN01RtfAks1Xa6qJFAekm_!!6000000002939-2-tps-128-128.png"/>
+    <link rel="apple-touch-icon" href="https://img.alicdn.com/imgextra/i4/O1CN01RtfAks1Xa6qJFAekm_!!6000000002939-2-tps-128-128.png">
+    <link rel="stylesheet" href="//g.alicdn.com/legao-comp/cool_app/1.39.0/web.css" />
+    <link rel="stylesheet" type="text/css" href="//g.alicdn.com/dingding/lippi-dingtalk-doc-front/0.50.0/main.css">
+    <!--引入SDK及插件-->
+    <script src="//g.alicdn.com/aes/??tracker/1.0.13/index.js,tracker-plugin-jserror/1.0.9/index.js,tracker-plugin-api/1.1.1/index.js,tracker-plugin-perf/1.1.4/index.js,tracker-plugin-longtask/1.0.1/index.js,tracker-plugin-tsl/1.0.1/index.js,tracker-plugin-pv/2.2.1/index.js,tracker-plugin-event/1.1.3/index.js"></script>
+</head>
+<body><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&yunid=&&trid=2132f50717841682837154297e0938&asid=AQAAAABbP1hqj+NWQwAAAAB7EvxF7KQZ7A==",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
+</script>
+
+<div style="display: none">
+                        <a href="https://developers.dingtalk.com/document/org/application-types"></a>
+                    <a href="https://developers.dingtalk.com/document/org/become-a-dingtalk-developer"></a>
+                    <a href="https://developers.dingtalk.com/document/org/basic-concepts"></a>
+                    <a href="https://developers.dingtalk.com/document/org/before-you-start"></a>
+                    <a href="https://developers.dingtalk.com/document/org/push-events"></a>
+                    <a href="https://developers.dingtalk.com/document/org/orgapp-development-process"></a>
+                    <a href="https://developers.dingtalk.com/document/org/authorized-custom-service-provider"></a>
+                    <a href="https://developers.dingtalk.com/document/org/create-orgapp"></a>
+                    <a href="https://developers.dingtalk.com/document/org/configure-orgapp"></a>
+                    <a href="https://developers.dingtalk.com/document/org/permission-management"></a>
+                    <a href="https://developers.dingtalk.com/document/org/cool-application-overview"></a>
+                    <a href="https://developers.dingtalk.com/document/org/quick-start-group-chat-cool-app"></a>
+                    <a href="https://developers.dingtalk.com/document/org/group-chat-cool-app-overview"></a>
+                    <a href="https://developers.dingtalk.com/document/org/create-a-process"></a>
+                    <a href="https://developers.dingtalk.com/document/org/quick-configuration-entry"></a>
+                    <a href="https://developers.dingtalk.com/document/org/save-and-publish"></a>
+                    <a href="https://developers.dingtalk.com/document/org/overview"></a>
+                    <a href="https://developers.dingtalk.com/document/org/common-message"></a>
+                    <a href="https://developers.dingtalk.com/document/org/flow-type-interactive-card"></a>
+                    <a href="https://developers.dingtalk.com/document/org/resident-type-ceiling"></a>
+                    <a href="https://developers.dingtalk.com/document/org/achieve-robot-dialogue"></a>
+                    <a href="https://developers.dingtalk.com/document/org/add-a-group-member"></a>
+                    <a href="https://developers.dingtalk.com/document/org/group-change-awareness-event-subscription"></a>
+                    <a href="https://developers.dingtalk.com/document/org/message-menu-overview"></a>
+                    <a href="https://developers.dingtalk.com/document/org/guide-to-the-process-of-accessing-message-menus"></a>
+                    <a href="https://developers.dingtalk.com/document/org/overview-of-link-enhancements"></a>
+                    <a href="https://developers.dingtalk.com/document/org/guide-for-enhancing-the-access-link-of-enterprise-internal-applications"></a>
+                    <a href="https://developers.dingtalk.com/document/org/overview-of-quick-commands"></a>
+                    <a href="https://developers.dingtalk.com/document/org/enter-the-shortcut-guide-process-guide"></a>
+                    <a href="https://developers.dingtalk.com/document/org/overview-of-member-data-page-expansion"></a>
+                    <a href="https://developers.dingtalk.com/document/org/development-member-data-page-extension"></a>
+                    <a href="https://developers.dingtalk.com/document/org/member-information-page-expands-interactive-card-capability"></a>
+                    <a href="https://developers.dingtalk.com/document/org/configure-event-org-subcription"></a>
+                    <a href="https://developers.dingtalk.com/document/org/obtain-the-event-list-of-failed-push-messages"></a>
+                    <a href="https://developers.dingtalk.com/document/org/event-list-1"></a>
+                    <a href="https://developers.dingtalk.com/document/org/personnel-management-mini-programs-only"></a>
+                    <a href="https://developers.dingtalk.com/document/org/access-the-monitoring-center"></a>
+                    <a href="https://developers.dingtalk.com/document/org/dingtalk-security-domain-name"></a>
+                    <a href="https://developers.dingtalk.com/document/org/publish-orgapp"></a>
+                    <a href="https://developers.dingtalk.com/document/org/microapplication-creation-and-release-process"></a>
+                    <a href="https://developers.dingtalk.com/document/org/set-application-visible-range"></a>
+                    <a href="https://developers.dingtalk.com/document/org/develop-org-h5-micro-applications"></a>
+                    <a href="https://developers.dingtalk.com/document/org/enterprise-intranet-application-h5-microapplication-authentication-tutorial-1"></a>
+                    <a href="https://developers.dingtalk.com/document/org/guide-to-developing-small-programs-in-enterprises"></a>
+                    <a href="https://developers.dingtalk.com/document/org/develop-org-mini-programs"></a>
+                    <a href="https://developers.dingtalk.com/document/org/create-orgapp-quick-links"></a>
+            
+</div>
+<div id="app"></div>
+<script>
+    window.g_config = {
+        id: "root",
+        isSectionalRender: true,
+        autoRender: false,
+        isRenderNav: false,
+        app_env: "daily",
+    };
+</script>
+
+<script
+        crossorigin="anonymous"
+        src="//g.alicdn.com/code/lib/react/16.13.0/umd/react.production.min.js"
+></script>
+<script
+        crossorigin="anonymous"
+        src="//g.alicdn.com/code/lib/react-dom/16.13.0/umd/react-dom.production.min.js"
+></script>
+<script
+        crossorigin="anonymous"
+        src="//g.alicdn.com/code/lib/prop-types/15.7.2/prop-types.js"
+></script>
+<script
+        crossorigin="anonymous"
+        src="//g.alicdn.com/platform/c/??react15-polyfill/0.0.1/dist/index.js,lie/3.0.2/dist/lie.polyfill.min.js,lodash/4.6.1/lodash.min.js,immutable/3.7.6/dist/immutable.min.js,natty-storage/2.0.2/dist/natty-storage.min.js,natty-fetch/2.6.0/dist/natty-fetch.pc.min.js"
+></script>
+<script
+        crossorigin="anonymous"
+        src="//g.alicdn.com/vision/render-engine/7.5.9/render-engine.min.js"
+></script>
+<script
+        crossorigin="anonymous"
+        src="//g.alicdn.com/legao-comp/cool_app/1.39.0/web.js"
+></script>
+    <script type="text/javascript">
+    var dropdownList = [{"children":[{"namespace":"kaifawendang","title":"开发文档"},{"namespace":"resourcedownload","title":"开发工具"},{"namespace":"changelog","title":"更新日志"},{"namespace":"contactus","title":"联系我们"},{"namespace":"kaifazhezhongxin","href":"https://open-dev.dingtalk.com/#/index","title":"开发者后台"}],"namespace":"tutorial","title":"教程"},{"children":[{"namespace":"kaifawendang","title":"开发文档"},{"namespace":"resourcedownload","title":"开发工具"},{"namespace":"design-specification","title":"设计规范"},{"namespace":"operation-specification","title":"运营规范"},{"namespace":"changelog","title":"更新日志"},{"namespace":"contactus","title":"联系我们"},{"namespace":"kaifazhezhongxin","href":"https://open-dev.dingtalk.com/#/index","title":"开发者后台"}],"namespace":"app","title":"应用开发"},{"children":[{"namespace":"kaifawendang","title":"开发文档"},{"namespace":"resourcedownload","title":"开发工具"},{"namespace":"changelog","title":"更新日志"},{"namespace":"contactus","title":"联系我们"},{"namespace":"kaifazhezhongxin","href":"https://open-dev.dingtalk.com/#/index","title":"开发者后台"}],"namespace":"chatgroup","title":"场景群"},{"children":[{"namespace":"kaifawendang","title":"开发文档"},{"namespace":"resourcedownload","title":"开发工具"},{"namespace":"changelog","title":"更新日志"},{"namespace":"contactus","title":"联系我们"},{"namespace":"kaifazhezhongxin","href":"https://open-dev.dingtalk.com/#/index","title":"开发者后台"}],"namespace":"robots","title":"钉钉机器人"},{"children":[{"namespace":"kaifawendang","title":"开发文档"},{"namespace":"resourcedownload","title":"开发工具"},{"namespace":"changelog","title":"更新日志"},{"namespace":"contactus","title":"联系我们"},{"namespace":"kaifazhezhongxin","href":"https://open-dev.dingtalk.com/#/index","title":"开发者后台"}],"namespace":"connector","title":"连接器"},{"children":[{"namespace":"kaifawendang","title":"开发文档"},{"namespace":"resourcedownload","title":"开发工具"},{"namespace":"changelog","title":"更新日志"},{"namespace":"contactus","title":"联系我们"},{"namespace":"kaifazhezhongxin","href":"https://open-dev.dingtalk.com/#/index","title":"开发者后台"}],"namespace":"dashboard","title":"工作台开发"},{"children":[{"namespace":"kaifawendang","title":"开发文档"},{"namespace":"changelog","title":"更新日志"},{"namespace":"contactus","title":"联系我们"},{"namespace":"kaifazhezhongxin","href":"https://open-dev.dingtalk.com/#/index","title":"开发者后台"}],"namespace":"mobile-app-guide","title":"移动应用接入"},{"children":[{"namespace":"kaifawendang","title":"开发文档"},{"namespace":"changelog","title":"更新日志"},{"namespace":"contactus","title":"联系我们"},{"namespace":"kaifazhezhongxin","href":"https://open-dev.dingtalk.com/#/index","title":"开发者后台"}],"namespace":"hardware-access","title":"智能硬件接入"},{"children":[{"namespace":"orgapp-server","title":"1"},{"namespace":"orgapp-client","title":"1"},{"namespace":"contactus","title":"1"},{"namespace":"org-faq","title":"1"},{"namespace":"isv","title":"1"},{"namespace":"isvapp-server","title":"1"},{"namespace":"isvapp-client","title":"1"},{"namespace":"operation-specification","title":"1"},{"namespace":"isv-faq","title":"1"},{"namespace":"personal","title":"1"},{"namespace":"personalapp-server","title":"1"},{"namespace":"personalapp-client","title":"1"},{"namespace":"personal-faq","title":"1"},{"namespace":"dashboard","title":"1"},{"namespace":"dashboard-faq","title":"1"},{"namespace":"group","title":"1"},{"namespace":"group-faq","title":"1"},{"namespace":"connector","title":"1"},{"namespace":"connection-platform-faq","title":"1"},{"namespace":"hardware-access","title":"1"},{"namespace":"hardware-access-faq","title":"1"},{"namespace":"changelog","title":"1"},{"namespace":"resourcedownload","title":"1"},{"namespace":"orgapp","title":"1"},{"namespace":"isvapp","title":"1"},{"namespace":"personalapp","title":"1"},{"namespace":"contactus","title":"1"}],"namespace":"org","title":"新手册"}];
+    window.currentDocNamespace = "org";
+    window.currentDocSlug = "push-events";
+    </script>
+<script src="//g.alicdn.com/retcode/log/log.js" crossorigin></script>
+<script src="//g.alicdn.com/dingding/lippi-dingtalk-doc-front/0.50.0/app.js"></script>
+</body>
+</html>
+

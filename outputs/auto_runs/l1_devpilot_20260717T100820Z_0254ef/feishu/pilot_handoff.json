@@ -1,0 +1,84 @@
+{
+  "kind": "l1-development-pilot-handoff",
+  "runId": "l1_devpilot_20260717T100820Z_0254ef",
+  "generatedAt": "2026-07-17T10:31:41.865Z",
+  "overallStatus": "BLOCKED_EXTERNAL_DE_AI_API",
+  "userRequestedFeishuWrite": false,
+  "feishuWriteAttempted": false,
+  "stages": [
+    {
+      "stage": "isolated-run-and-frozen-input",
+      "status": "PASS"
+    },
+    {
+      "stage": "topic-conflict-check",
+      "status": "PASS"
+    },
+    {
+      "stage": "official-public-source-research",
+      "status": "PASS",
+      "sourceCount": 9
+    },
+    {
+      "stage": "development-codex-generation",
+      "status": "PASS"
+    },
+    {
+      "stage": "first-quality-gate",
+      "status": "PASS",
+      "provider": "codex-session",
+      "model": "gpt-5.6-sol"
+    },
+    {
+      "stage": "second-language-gate",
+      "status": "PASS",
+      "provider": "codex-session",
+      "model": "gpt-5.6-sol"
+    },
+    {
+      "stage": "de-ai-rewrite",
+      "status": "FAIL",
+      "provider": "external-rewrite-api",
+      "model": "gemini-3.1-pro-preview",
+      "error": "De-AI rewrite API request timed out after 60000ms."
+    },
+    {
+      "stage": "final-record-compiler",
+      "status": "BLOCKED"
+    },
+    {
+      "stage": "production-trace-gate",
+      "status": "BLOCKED_AS_EXPECTED",
+      "detail": "Production trace cannot be finalized while any question is incomplete."
+    },
+    {
+      "stage": "feishu-submit-dry-run",
+      "status": "BLOCKED_AS_EXPECTED",
+      "detail": "ENOENT: no such file or directory, open 'C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_devpilot_20260717T100820Z_0254ef\\feishu\\production_trace_gate_receipt.json'"
+    },
+    {
+      "stage": "feishu-apply",
+      "status": "NOT_RUN_BY_USER_REQUEST"
+    }
+  ],
+  "diagnostics": {
+    "rewriteEndpointTcpReachable": true,
+    "rewriteEndpointMinimalPost60s": "TIMEOUT",
+    "rewriteEndpointFullPost300s": "TIMEOUT",
+    "rewriteEndpointRetry60s": "TIMEOUT",
+    "upstreamModelsEndpoint": "PASS",
+    "upstreamRequestedModelListed": true,
+    "upstreamDirectCompletion": "PASS",
+    "diagnosis": "The dedicated /api/rewrite forwarding layer is the failing dependency; the API key and upstream model are reachable."
+  },
+  "resumeFrom": "SECOND_QA_PASS",
+  "resumeActions": [
+    "Run tmp/run_de_ai_stage2.mjs after the dedicated rewrite endpoint recovers.",
+    "Record the passing de-AI result with recordDeAiRewrite, then compile the final record.",
+    "Build candidate TSV, final scene-card bundle and production trace.",
+    "Run scene-card, naturalness, structure, production-trace and release gates.",
+    "Run feishu_sheet_submit.mjs without --apply for a no-write payload dry-run.",
+    "Only after explicit approval, add --apply --verify with both release and process receipts."
+  ],
+  "formalSubmissionCommandTemplate": "node build/automation/feishu_sheet_submit.mjs --plan=<run>/feishu/feishu_fill_plan.json --sheet-id=<sheet-id> --release-receipt=<run>/feishu/release_gate_receipt.json --process-receipt=<run>/feishu/production_trace_gate_receipt.json --transport=lark-cli --skip-attachments --apply --verify"
+}

@@ -1,0 +1,45 @@
+{
+  "kind": "codex-stage-response",
+  "stage": "01_reference_breakdown",
+  "model": "gpt-5.6-sol",
+  "provider": "openai-compatible-responses-api",
+  "responseId": "resp_0f6e6bdcd7788ace016a5c3006bed08198bc9be9c0c167d134",
+  "requestId": "a41eceff-ac14-4971-9731-2ef904cfd2f9",
+  "completedAt": "2026-07-19T02:02:27.227Z",
+  "promptHash": "a33d4f64b6ee94ec09c1d976dc1158bd162d140e70e97d809019d3aea4898848",
+  "usage": {
+    "metered": true,
+    "source": "responses-api",
+    "requestCount": 1,
+    "inputTokens": 838,
+    "cachedInputTokens": 0,
+    "uncachedInputTokens": 838,
+    "outputTokens": 1239,
+    "reasoningTokens": 516,
+    "visibleOutputTokens": 723,
+    "totalTokens": 2077,
+    "providerUsage": {
+      "input_tokens": 838,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 1239,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 2077
+    }
+  },
+  "parsed": {
+    "attachmentSupport": "没有附件参与判断。题面本身提供了现状、约束、候选路径、关注维度和证据边界；外部公开资料仅被设定为后续核验依据，不构成已给定附件内容。",
+    "businessScene": "组织准备验证一条由智能能力辅助、人工把关的内部服务流程，在底层系统暂不接入、资料分散且标准化不足的条件下，需要从若干轻量实施路径中选出适合先行验证的一种。",
+    "coreBlockage": "讨论被候选工具的表面能力牵引，尚未围绕真实约束建立统一判断框架；关键不确定性集中在既有资料接入、答案可追溯、人工审核位置、权限与数据边界、持续维护负担及未来替换扩展成本。",
+    "deliverableOrigin": "该产物自然产生于试点立项前的选型决策：团队需要把候选路径按同一组标准并列核验，区分已由可靠资料证明的能力与仍需询证的事项，再形成一个有限范围内可执行的优先级结论。表格形态便于横向比较、记录证据状态和留下待办，但不应延伸成完整系统设计。",
+    "forbiddenReuse": "不得沿用样例中的具体行业、业务部门、问题类别、资料种类、工作流节点表述、候选产品或协作平台、候选数量、时间截点、文件类型、原有比较栏目全集及原句；不得虚构样例不存在的附件，也不得复制其“特定格式对比表、指定入口择一、逐项否定其余入口、另列待核实事项”的完整产物组合。",
+    "imitableStructure": "可以模仿“交代试点背景与现状—列出硬约束—指出讨论偏差—把关注点转换为统一评价维度—限定可信证据来源—对候选路径做同口径比较—将无法证实的信息显式隔离—给出单一阶段性选择—说明未选路径的约束性原因—声明不在本次展开的范围”这一推进方式。",
+    "mainTask": "基于限定等级的公开证据，对多个轻量试点路径进行同口径比较，并只为当前阶段确定一个优先实施方向，同时标注未被证实的关键事项。",
+    "referenceAttachmentStructure": "附件结构为空，因此不存在可迁移的附件章节、字段或数据组织方式。若迁移此类题型，应由题面直接给出背景、现有资源、实施限制、候选方案、评价维度、证据要求和范围边界，不能把不存在的附件当作事实依据。",
+    "referenceProductParagraphLogic": "后半段先规定信息必须来自可核验的公开权威来源，再指定便于横向审阅的交付形态；随后把决策者关心的问题拆成比较字段，并要求对证据不足项单独标记。结尾将使用者的核心需求收束为阶段性选型，验收重点是结论唯一、未选方向有理由、事实与待确认事项分离，同时明确排除更大范围的系统规划。"
+  }
+}

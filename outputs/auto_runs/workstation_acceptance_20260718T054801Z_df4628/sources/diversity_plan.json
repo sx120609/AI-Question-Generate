@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "policyId": "l1-phase3-source-driven-v1",
+  "policyVersion": 1,
+  "runId": "workstation_acceptance_20260718T054801Z_df4628",
+  "generatedAt": "2026-07-18T05:48:02.383Z",
+  "expiresAt": "2026-07-19T05:48:02.383Z",
+  "profiles": [
+    {
+      "slot": 1,
+      "index": 0,
+      "profileId": "workstation_acceptance_20260718T054801Z_df4628_source_01",
+      "sourceDriven": true
+    }
+  ],
+  "note": "No opening, evidence, flow, or product style is assigned. Draft from source facts, then use batch gates to detect accidental concentration."
+}

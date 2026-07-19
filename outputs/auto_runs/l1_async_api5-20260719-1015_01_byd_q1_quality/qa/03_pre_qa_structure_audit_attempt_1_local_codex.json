@@ -1,0 +1,49 @@
+{
+  "kind": "codex-stage-response",
+  "stage": "03_pre_qa_structure_audit_attempt_1",
+  "model": "gpt-5.6-sol",
+  "provider": "openai-compatible-responses-api",
+  "responseId": "resp_0bb594b6de3134cc016a5c2fde3dd08198bb257ca5e7a42a45",
+  "requestId": "db4f5669-30f9-45ee-978f-700a73a53a02",
+  "completedAt": "2026-07-19T02:02:19.920Z",
+  "promptHash": "711f5a3f0bb6b3db0f76e0536a8012e5f311ba1bef5967a58bdc4459f2a41118",
+  "usage": {
+    "metered": true,
+    "source": "responses-api",
+    "requestCount": 1,
+    "inputTokens": 2789,
+    "cachedInputTokens": 0,
+    "uncachedInputTokens": 2789,
+    "outputTokens": 2471,
+    "reasoningTokens": 1667,
+    "visibleOutputTokens": 804,
+    "totalTokens": 5260,
+    "providerUsage": {
+      "input_tokens": 2789,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 2471,
+      "output_tokens_details": {
+        "reasoning_tokens": 1667
+      },
+      "total_tokens": 5260
+    }
+  },
+  "parsed": {
+    "evidenceChain": "计划中的对象级证据链为：单份比亚迪2026年第一季度报告原件→定位本期与比较期财务报表数字及页码→复算营业收入、归母净利润和经营活动现金流量净额同比变化→计算现金利润覆盖关系→对应开发支出、短期借款、应付票据及现金流项目的原文解释→区分明确披露、可复算结果、相关线索和待补证归因→保留口径冲突与未经审计边界。该链条结构完整且全部围绕同一公司和报告期，但输入只提供文件元数据、摘要、哈希值和事实标签，没有附件正文、逐页摘录、比较期原始金额或披露原因原文，因而无法独立核验三个预置降幅、页码、解释口径及所谓真实附件内容，对象级证据链目前未闭合。",
+    "l2ReasoningChain": "主要推理链清楚：先统一本期与比较期口径，再复算核心指标和现金利润覆盖关系，随后把报表项目变动与报告解释对应，最后判断哪些结论能够由报告直接支持、哪些仅为线索、哪些必须补充分部、销量、价格或区域资料；收入、利润、经营现金流、研发和融资核验总体共同服务于经营质量及归因边界这一主要判断，并明确禁止把融资变化直接写成现金流下降的因果。不过任务标为L1探索型，却在首轮同时要求完成可下载终版xlsx、全量来源索引、公式、解释整理、冲突标记和后续补证框架，阶段密度偏高；更合适的首轮应先完成附件真实性、关键原始金额、比较口径和披露原文的最小证据抽取，再进入完整复算与归因分类。",
+    "oneSentenceMainTask": "依据指定季度报告复核比亚迪2026年一季度收入、利润和经营现金流变化及现金利润覆盖关系，并在可追溯核对表中划分披露解释、可复算结果、相关线索与待补证归因。",
+    "specificFilesDominant": true,
+    "specificObjectDecision": true,
+    "uniqueMainTask": true,
+    "variableDrift": [
+      "阶段漂移：任务标注为L1探索型，但题面直接要求形成可下载的完整xlsx及多层归因标注，接近终局交付而非首轮证据探索。",
+      "证据状态漂移：三个同比降幅及若干项目解释在尚未展示附件正文抽取结果前已作为既定事实写入题面，违反先从真实附件正文抽取对象、事件和可解决问题的顺序要求。",
+      "指标口径漂移风险：“现金利润覆盖关系”未明确分子、分母及归母净利润与净利润的选用规则，执行时可能在经营现金流量净额/归母净利润、经营现金流量净额/净利润等口径之间漂移。",
+      "材料范围漂移风险：分部、销量、价格和区域资料被列为后续归因条件，但当前仅配置一份季度报告；这些内容可以作为待补证缺口，不能在本轮被写成已核验变量或事实。",
+      "配置可验证性缺口：一级目录“企业经营与战略决策”与附件业务对象语义一致，但输入未提供飞书配置项原表，无法独立确认该目录名称确为配置项原文。"
+    ]
+  }
+}

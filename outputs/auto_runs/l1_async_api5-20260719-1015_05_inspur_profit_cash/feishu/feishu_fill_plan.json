@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "status": "DRY_RUN_ONLY_NO_RESERVED_FEISHU_ROW",
+  "questionPresentation": "natural-paragraphs-no-blank-lines-v4",
+  "generatedAt": "2026-07-19T02:13:25.364Z",
+  "sourcePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_05_inspur_profit_cash\\drafts\\l1_questions.tsv",
+  "startRow": 999905,
+  "sheetRows": [
+    999905
+  ],
+  "count": 1,
+  "note": "No Feishu row is reserved. This is a non-production dry-run placeholder. No external write is authorized.",
+  "columnMap": [
+    {
+      "field": "UID",
+      "column": "A"
+    },
+    {
+      "field": "题目",
+      "column": "B"
+    },
+    {
+      "field": "任务类型",
+      "column": "C"
+    },
+    {
+      "field": "一级目录",
+      "column": "D"
+    },
+    {
+      "field": "二级目录",
+      "column": "E"
+    },
+    {
+      "field": "三级目录",
+      "column": "F"
+    },
+    {
+      "field": "任务概括",
+      "column": "G"
+    },
+    {
+      "field": "标注专家工作年限",
+      "column": "H"
+    },
+    {
+      "field": "人类完成时间",
+      "column": "I"
+    },
+    {
+      "field": "相关附件",
+      "column": "J"
+    },
+    {
+      "field": "附件格式",
+      "column": "K"
+    },
+    {
+      "field": "附件内容",
+      "column": "L"
+    },
+    {
+      "field": "产物格式",
+      "column": "M"
+    },
+    {
+      "field": "产物内容",
+      "column": "N"
+    },
+    {
+      "field": "做题关键步骤",
+      "column": "O"
+    }
+  ],
+  "rows": [
+    {
+      "dataRow": 2,
+      "sheetRow": 999905,
+      "title": "浪潮信息2026年一季度利润现金与营运节奏复核",
+      "updates": [
+        {
+          "address": "A999905",
+          "column": "A",
+          "field": "UID",
+          "value": "沈礼_api5-20260719-1015_05",
+          "chars": 24,
+          "hasNewlines": false,
+          "preview": "沈礼_api5-20260719-1015_05"
+        },
+        {
+          "address": "B999905",
+          "column": "B",
+          "field": "题目",
+          "value": "我正在做浪潮信息2026年一季度利润现金与营运节奏复核。这次主要是想弄清楚收入下降、利润增长但经营现金转负这三者之间的差异。请根据《浪潮电子信息产业股份有限公司2026年第一季度报告.pdf》，核对本期、上年同期和期初数据的统计口径，复算本期与上年同期的核心指标以及同比变动方向，同时对收入、利润、现金流相关分项、比率和占比进行口径复核，看看报表数据和变动原因能不能对得上。如果发现有冲突或者解释不充分的地方，请单列出来说明。\n\n请在核对后给出一个明确结论，确认这份报告能支持的回款、预收和融资节奏线索，但注意别把这些线索直接写成完整的因果归因。表格内容需要包含收入、利润与现金的对照，应收与合同负债线索，融资变化，证据边界以及待补明细。请逐项标明来源页码、未经审计状态、派生计算过程和待核边界，严格区分可证事实、合理推断和待确认项。对于目前缺失的客户、项目和账龄明细，请在表里留出回填栏，方便经营分析同事后续拿到回款和项目明细后继续补充判断，不要自行把相关变动推断为完整的因果关系。\n\n请基于前述核对结果整理一份可下载的Excel营运节奏核对表，按xlsx格式交付。",
+          "chars": 484,
+          "hasNewlines": true,
+          "preview": "我正在做浪潮信息2026年一季度利润现金与营运节奏复核。这次主要是想弄清楚收入下降、利润增长但经营现金转负这三者之间的差异。请根据《浪潮电子信息产业股份有限公司"
+        },
+        {
+          "address": "C999905",
+          "column": "C",
+          "field": "任务类型",
+          "value": "L1 探索型",
+          "chars": 6,
+          "hasNewlines": false,
+          "preview": "L1 探索型"
+        },
+        {
+          "address": "D999905",
+          "column": "D",
+          "field": "一级目录",
+          "value": "科技与产品研发",
+          "chars": 7,
+          "hasNewlines": false,
+          "preview": "科技与产品研发"
+        },
+        {
+          "address": "E999905",
+          "column": "E",
+          "field": "二级目录",
+          "value": "科技企业经营复核",
+          "chars": 8,
+          "hasNewlines": false,
+          "preview": "科技企业经营复核"
+        },
+        {
+          "address": "F999905",
+          "column": "F",
+          "field": "三级目录",
+          "value": "利润现金与回款节奏",
+          "chars": 9,
+          "hasNewlines": false,
+          "preview": "利润现金与回款节奏"
+        },
+        {
+          "address": "G999905",
+          "column": "G",
+          "field": "任务概括",
+          "value": "浪潮信息2026年一季度利润现金与营运节奏复核",
+          "chars": 23,
+          "hasNewlines": false,
+          "preview": "浪潮信息2026年一季度利润现金与营运节奏复核"
+        },
+        {
+          "address": "H999905",
+          "column": "H",
+          "field": "标注专家工作年限",
+          "value": "5年",
+          "chars": 2,
+          "hasNewlines": false,
+          "preview": "5年"
+        },
+        {
+          "address": "I999905",
+          "column": "I",
+          "field": "人类完成时间",
+          "value": "4H",
+          "chars": 2,
+          "hasNewlines": false,
+          "preview": "4H"
+        },
+        {
+          "address": "J999905",
+          "column": "J",
+          "field": "相关附件",
+          "value": "浪潮电子信息产业股份有限公司2026年第一季度报告.pdf",
+          "chars": 29,
+          "hasNewlines": false,
+          "preview": "浪潮电子信息产业股份有限公司2026年第一季度报告.pdf"
+        },
+        {
+          "address": "K999905",
+          "column": "K",
+          "field": "附件格式",
+          "value": "pdf",
+          "chars": 3,
+          "hasNewlines": false,
+          "preview": "pdf"
+        },
+        {
+          "address": "L999905",
+          "column": "L",
+          "field": "附件内容",
+          "value": "浪潮电子信息产业股份有限公司2026年第一季度报告.pdf：披露浪潮信息一季度收入利润现金流分化、应收账款和合同负债变化以及融资节奏原因。 来源：https://static.cninfo.com.cn/finalpage/2026-04-30/1225257759.PDF",
+          "chars": 137,
+          "hasNewlines": false,
+          "preview": "浪潮电子信息产业股份有限公司2026年第一季度报告.pdf：披露浪潮信息一季度收入利润现金流分化、应收账款和合同负债变化以及融资节奏原因。 来源：https:/"
+        },
+        {
+          "address": "M999905",
+          "column": "M",
+          "field": "产物格式",
+          "value": "xlsx",
+          "chars": 4,
+          "hasNewlines": false,
+          "preview": "xlsx"
+        },
+        {
+          "address": "N999905",
+          "column": "N",
+          "field": "产物内容",
+          "value": "一份可下载的浪潮信息2026年一季度利润现金与营运节奏Excel，含收入利润现金对照、应收与合同负债线索、融资变化、证据边界和待补明细。",
+          "chars": 68,
+          "hasNewlines": false,
+          "preview": "一份可下载的浪潮信息2026年一季度利润现金与营运节奏Excel，含收入利润现金对照、应收与合同负债线索、融资变化、证据边界和待补明细。"
+        },
+        {
+          "address": "O999905",
+          "column": "O",
+          "field": "做题关键步骤",
+          "value": "1. 核验报告期和审计状态\n2. 对齐收入、归母利润、扣非利润和经营现金流\n3. 计算利润现金差额及方向\n4. 整理应收账款和合同负债变化原因\n5. 核对短期借款与筹资现金流变化\n6. 生成带公式、来源和待补栏的Excel",
+          "chars": 111,
+          "hasNewlines": true,
+          "preview": "1. 核验报告期和审计状态\n2. 对齐收入、归母利润、扣非利润和经营现金流\n3. 计算利润现金差额及方向\n4. 整理应收账款和合同负债变化原因\n5. 核对短期借"
+        }
+      ]
+    }
+  ]
+}

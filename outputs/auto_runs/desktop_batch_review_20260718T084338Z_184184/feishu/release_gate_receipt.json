@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "ok": true,
+  "status": "PASS",
+  "generatedAt": "2026-07-18T09:23:01.194Z",
+  "policyId": "l1-phase3-source-driven-v1",
+  "policyVersion": 1,
+  "gateStatus": "PASS",
+  "authorizationMode": "DIRECT_PASS",
+  "reviewAuthorization": null,
+  "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\feishu\\structure_gate_report.json",
+  "reportHash": "8066793f96c2c712f39f0ed061d13e3e28bae196e7c5998a92dbf4cc760f51a7",
+  "batchHash": "e54cfe22fd97aed2cc6d053920e30231ea9ab67cc7c8e78b213a1e6b51720b55",
+  "rowHashes": [
+    {
+      "index": 0,
+      "uid": "裴硬_20260718_desktop_batch_review_01",
+      "sheetRow": 999999,
+      "hash": "5e7141fc4ba93e043534f1fbcd8b2f757c569819b00bdd6df073076133a0908c"
+    }
+  ],
+  "kind": "release-gate-receipt",
+  "releaseSchemaVersion": 2,
+  "releaseGateId": "combined-release-gate-v2",
+  "structure": {
+    "receiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\feishu\\structure_gate_receipt.json",
+    "receiptHash": "f34737ba12d135a4b9f1db70eca6fc2bf2b3fb70113c2bc2e6e248e874d6b760",
+    "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\feishu\\structure_gate_report.json",
+    "reportHash": "8066793f96c2c712f39f0ed061d13e3e28bae196e7c5998a92dbf4cc760f51a7",
+    "gateStatus": "PASS",
+    "authorizationMode": "DIRECT_PASS"
+  },
+  "naturalness": {
+    "gateId": "naturalness-gate-v6",
+    "metricsVersion": "naturalness-metrics-v6",
+    "questionLanguagePolicyId": "corpus-calibrated-intent-punctuation-v4",
+    "status": "PASS",
+    "authorizationMode": "DIRECT_PASS",
+    "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\feishu\\naturalness_gate_report.json",
+    "reportHash": "f48a9ef55438baedb9342474a3451bdfba552ca810692f9d9f23fbe90e97a5aa",
+    "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\drafts\\l1_questions.tsv",
+    "candidateHash": "04afc0471b57b75fd16b45e409f399ca36af8fbdcdf1f6a494905fcc5d0f0f56",
+    "baselinePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\sources\\naturalness_baseline.json",
+    "baselineHash": "0ec3102d5fa14b1b0aa65dcbd3744583646a65adf1b5772598438d80fc79812a",
+    "reviewAuthorization": null
+  },
+  "roleConsistency": {
+    "gateId": "scene-card-role-consistency-v1",
+    "protocolId": "situated-requester-v1",
+    "status": "PASS",
+    "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\feishu\\role_consistency_report.json",
+    "reportHash": "50c1129fac8c2122a66bf05a64fccd36186b02337454bdcd25e95a9b4afcb844",
+    "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\drafts\\l1_questions.tsv",
+    "candidateHash": "04afc0471b57b75fd16b45e409f399ca36af8fbdcdf1f6a494905fcc5d0f0f56",
+    "sceneCardPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\sources\\scene_cards.json",
+    "sceneCardFileHash": "118c992f03e0a6b766cde2d4529fe4d8ca589f270bc06cdbacf8dae3ef0b764c",
+    "sceneCardSetHash": "089372dc8fc79ac353974d4307b6f2f3dae19d7b4df860710b5de88bb2c5a60a",
+    "sceneCardBundleHash": "d6e9c689437e6a3c6243632734928f69d77f52121adad8146929e190572542b8",
+    "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\sources\\fact_ledger.json",
+    "factLedgerHash": "4197006f590e7430abd9347118bcc7785736dc5c76541fbd339849efbdd99fb5",
+    "evaluationHash": "b264184a046c909fd8adeb1800f920f94681d05d1d360e74ec47f153dd3b5673",
+    "rowBindingsHash": "38450bacc09cc5c705f571c881968f105d893f73683a493266a977f0284513b8"
+  }
+}

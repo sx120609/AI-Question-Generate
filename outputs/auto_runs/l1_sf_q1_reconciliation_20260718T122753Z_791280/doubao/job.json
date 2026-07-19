@@ -1,0 +1,58 @@
+{
+  "jobId": "l1-sf-q1-reconciliation-20260718-01",
+  "attachmentRoot": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\attachments",
+  "initialAttachmentNames": [
+    "顺丰控股2026年2月快递物流业务经营简报.pdf",
+    "顺丰控股2026年3月快递物流业务经营简报.pdf",
+    "顺丰控股2026年第一季度报告.pdf"
+  ],
+  "productionEvidence": {
+    "recordUid": "沈礼_20260718_sf_q1_reconciliation_01",
+    "productionTracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\qa\\production_trace.json",
+    "productionTraceGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\feishu\\production_trace_gate_receipt.json",
+    "releaseGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\feishu\\release_gate_receipt.json",
+    "downloadManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\sources\\download_manifest.json"
+  },
+  "maxRounds": 6,
+  "maximumRounds": 10,
+  "mode": "openai-compatible",
+  "taskGoal": "基于顺丰控股2026年2月、3月快递物流业务经营简报和2026年第一季度报告，逐轮核验季度数据来源链、分项与单位精度、经营简报物流相关收入与季报总营业收入的披露范围差异，最终形成可下载且公式和来源完整的Excel口径核对表。",
+  "successCriteria": [
+    "准确识别并读取三份官方PDF，所有核心数字、审计状态和口径说明都能追溯到文件名及页码。",
+    "来源底表同时覆盖2026年1至2月累计、3月单月和一季报总营业收入，并保留上年同期可比数据及原披露单位。",
+    "统一单位后复核经营简报分项合计、季度累计和单票收入，工作簿中保留公式、原披露精度与复算精度。",
+    "分别桥接本期和上年同期经营简报物流相关收入与一季报总营业收入；无法直接对应的差额保持待公司分部或科目资料确认，归因栏留空。",
+    "Excel至少包含来源底表、口径桥接、复算检查、证据边界或待核清单、来源索引，关键数值带来源页码且表格可继续回填。",
+    "最终提供真实可下载且能正常打开的xlsx文件；仅有文字说明、缺页数据或不完整在线预览均不算完成。"
+  ],
+  "initialPrompt": "刚传了顺丰控股2026年第一季度报告以及同年2月与3月的快递物流业务经营简报。需要看看这三份材料能否拼出完整的一季度数据来源链。请理清1至2月累计数据和3月单月数据之间的衔接关系。同时核验经营简报里的物流相关收入与一季报总营业收入在披露范围上的差异。无法直接对应的差额留待后续通过公司分部或科目资料确认，归因栏保持留空。针对以千元披露与以亿元保留两位小数造成的单位及精度差异进行处理，并评估各项指标的可比性。各项指标需标注具体来源页码以及未经审计的财务状态。无法直接对应的项目在表内保持待核状态。请再基于前述核对结果整理一份可下载的Excel口径核对表，按xlsx格式交付并作为结论底表。",
+  "responseTimeoutMs": 600000,
+  "interactionRewrite": {
+    "type": "openai-compatible",
+    "baseUrl": "https://api.mugua.link/v1",
+    "model": "gemini-3.1-pro-preview",
+    "apiKeyEnv": "DE_AI_REWRITE_API_KEY",
+    "temperature": 0.55,
+    "timeoutMs": 180000
+  },
+  "promptPreflight": {
+    "type": "local-codex",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "timeoutMs": 360000
+  },
+  "policy": {
+    "type": "local-codex",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "timeoutMs": 360000
+  },
+  "productRequirement": {
+    "required": true,
+    "requestedFormats": [
+      "excel"
+    ],
+    "allowEquivalentOnline": false,
+    "allowUnavailableBestEffort": false
+  }
+}

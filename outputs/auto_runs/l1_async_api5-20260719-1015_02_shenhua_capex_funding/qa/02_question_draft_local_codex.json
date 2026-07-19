@@ -1,0 +1,60 @@
+{
+  "kind": "codex-stage-response",
+  "stage": "02_question_draft",
+  "model": "gpt-5.6-sol",
+  "provider": "openai-compatible-responses-api",
+  "responseId": "resp_0bba92291b245122016a5c2f9df234819a963f0cccceee1c57",
+  "requestId": "dd1412b8-e7c7-4377-af17-3aabcb030c6c",
+  "completedAt": "2026-07-19T02:00:40.871Z",
+  "promptHash": "cb85fa810b760fb21cdbf88a8e72f82b219c10f393658f135f883d3cb12949ea",
+  "usage": {
+    "metered": true,
+    "source": "responses-api",
+    "requestCount": 1,
+    "inputTokens": 6054,
+    "cachedInputTokens": 0,
+    "uncachedInputTokens": 6054,
+    "outputTokens": 2093,
+    "reasoningTokens": 1552,
+    "visibleOutputTokens": 541,
+    "totalTokens": 8147,
+    "providerUsage": {
+      "input_tokens": 6054,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 2093,
+      "output_tokens_details": {
+        "reasoning_tokens": 1552
+      },
+      "total_tokens": 8147
+    }
+  },
+  "parsed": {
+    "deliverableRationale": [
+      {
+        "format": "xlsx",
+        "purpose": "用于资本开支计划复核、项目预算跟踪和后续融资披露回填",
+        "user": "资本计划复核专员及下游同事",
+        "whyThisFormat": "需要按业务核对调整前后数据、复算增量占比并持续补充分配信息，xlsx便于保留公式、来源和待核状态"
+      }
+    ],
+    "mainTask": "核对中国神华2026年调整前后经营目标与分业务资本开支，判断增量集中业务及公开披露可支持的资金承接结论边界。",
+    "productFormats": "xlsx",
+    "productParagraphMapping": "题面后半段将判断收束为可下载的核对表，要求同时呈现业务增量、现金流参照、资金渠道和待补分配信息，并以页码、审计状态和计算痕迹约束结论强度。",
+    "question": "请依据《中国神华能源股份有限公司2026年第一季度报告.pdf》核对重大资产交易纳入后的2026年经营目标与调整前后分业务资本开支，复核分项合计和披露总额并解释差异，确认179.64亿元增量主要集中在哪些业务，同时评估现有披露最多能支持到何种资金承接结论。形成可下载的中国神华2026年调整后资本开支Excel，列示经营目标变化、分业务资本开支、增量占比、2026年一季度经营现金流参照、报告披露的资金来源渠道和待补分配栏，保留来源页码、未经审计状态、公式及派生计算，区分可证事实、合理推断和待确认项，不把未披露的资金分配或业务归因写成确定结论。",
+    "structureMapping": "沿用从业务变化进入统一口径核对，再审查证据边界并形成单一判断的推进方式，改为围绕中国神华资本开支调整、增量集中度和资金承接披露展开，不复用样例领域、对象或固定产物组合。",
+    "usedAttachmentNames": [
+      "中国神华能源股份有限公司2026年第一季度报告.pdf"
+    ],
+    "usedFactIds": [
+      "shenhua-q1-core",
+      "shenhua-transaction-scope",
+      "shenhua-target-adjustment",
+      "shenhua-capex-total",
+      "shenhua-capex-mix",
+      "shenhua-funding-boundary"
+    ]
+  }
+}

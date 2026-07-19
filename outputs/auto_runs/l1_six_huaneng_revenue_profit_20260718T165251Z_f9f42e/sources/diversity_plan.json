@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "policyId": "l1-phase3-source-driven-v1",
+  "policyVersion": 1,
+  "runId": "l1_six_huaneng_revenue_profit_20260718T165251Z_f9f42e",
+  "generatedAt": "2026-07-18T16:52:52.330Z",
+  "expiresAt": "2026-07-19T16:52:52.330Z",
+  "profiles": [
+    {
+      "slot": 1,
+      "index": 0,
+      "profileId": "l1_six_huaneng_revenue_profit_20260718T165251Z_f9f42e_source_01",
+      "sourceDriven": true
+    }
+  ],
+  "note": "No opening, evidence, flow, or product style is assigned. Draft from source facts, then use batch gates to detect accidental concentration."
+}

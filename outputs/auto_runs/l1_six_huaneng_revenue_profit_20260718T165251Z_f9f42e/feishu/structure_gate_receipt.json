@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 2,
+  "ok": true,
+  "status": "PASS",
+  "generatedAt": "2026-07-18T18:13:35.570Z",
+  "policyId": "l1-phase3-source-driven-v1",
+  "policyVersion": 1,
+  "gateStatus": "PASS",
+  "authorizationMode": "DIRECT_PASS",
+  "reviewAuthorization": null,
+  "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_huaneng_revenue_profit_20260718T165251Z_f9f42e\\feishu\\structure_gate_report.json",
+  "reportHash": "3599fec6c060fbc2193b8513b298d16055020f6fa439d50152b2aca27ff9931d",
+  "batchHash": "906a86c5cc58c671f185a5bf92702951140148be409f19125810e331dd33a1bf",
+  "rowHashes": [
+    {
+      "index": 0,
+      "uid": "沈礼_20260719_l1_huaneng_segment_profit_06",
+      "sheetRow": 999906,
+      "hash": "ade011713ea3fad1869648258178488f63d2daf9ab296a972f150d3d871c14ed"
+    }
+  ]
+}

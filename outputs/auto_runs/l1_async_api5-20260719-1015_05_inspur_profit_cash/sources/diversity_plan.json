@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "policyId": "l1-phase3-source-driven-v1",
+  "policyVersion": 1,
+  "runId": "l1_async_api5-20260719-1015_05_inspur_profit_cash",
+  "generatedAt": "2026-07-19T01:59:17.295Z",
+  "expiresAt": "2026-07-20T01:59:17.295Z",
+  "profiles": [
+    {
+      "slot": 1,
+      "index": 0,
+      "profileId": "l1_async_api5-20260719-1015_05_inspur_profit_cash_source_01",
+      "sourceDriven": true
+    }
+  ],
+  "note": "No opening, evidence, flow, or product style is assigned. Draft from source facts, then use batch gates to detect accidental concentration."
+}

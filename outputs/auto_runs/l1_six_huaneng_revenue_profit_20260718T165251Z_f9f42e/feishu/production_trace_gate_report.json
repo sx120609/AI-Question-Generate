@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "l1-production-trace-gate-report",
+  "productionProfile": "l1",
+  "gateId": "production-trace-gate-v6-profiled",
+  "status": "PASS",
+  "generatedAt": "2026-07-18T18:13:19.901Z",
+  "packetPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_huaneng_revenue_profit_20260718T165251Z_f9f42e\\sources\\production_input_packet.json",
+  "packetHash": "cd26716042b3f5569842c914b9785b8f5130da0b6706b4cca7cf1988c327fcbe",
+  "tracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_huaneng_revenue_profit_20260718T165251Z_f9f42e\\qa\\production_trace.json",
+  "traceHash": "139f0f7eec091f8a6f945e53eb897ee24516145bf01e6e13fa7dc294379c2176",
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_huaneng_revenue_profit_20260718T165251Z_f9f42e\\drafts\\l1_questions.tsv",
+  "candidateHash": "a6215ea20c46f80d21418a7c0607598dbde0d0b350f25b87965f7f7195843d7b",
+  "fillPlanPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_huaneng_revenue_profit_20260718T165251Z_f9f42e\\feishu\\feishu_fill_plan.json",
+  "fillPlanHash": "4302c6919d1c65cc9ec4caa14c236564cb3427b058ff3051a5ca93ce5494e70a",
+  "rowCount": 1,
+  "attachmentRoot": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_huaneng_revenue_profit_20260718T165251Z_f9f42e\\attachments",
+  "attachmentBindings": [
+    {
+      "uid": "沈礼_20260719_l1_huaneng_segment_profit_06",
+      "name": "华能国际电力股份有限公司2026年第一季度报告.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_huaneng_revenue_profit_20260718T165251Z_f9f42e\\attachments\\华能国际电力股份有限公司2026年第一季度报告.pdf",
+      "sha256": "2d403df5eaf375d7866867f3abae6119ea8fa381064de9d5e5cfb4b67dcbc135",
+      "bytes": 151655
+    }
+  ],
+  "productFormatDiversity": {
+    "policyId": "not-required-for-l1",
+    "status": "SKIPPED",
+    "rowCount": 1,
+    "findings": []
+  },
+  "findings": []
+}

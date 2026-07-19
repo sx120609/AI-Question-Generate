@@ -1,0 +1,14 @@
+{
+  "kind": "l1-stage3-gate-summary",
+  "generatedAt": "2026-07-18T09:23:01.211Z",
+  "workflowState": "COMPLETE",
+  "finalRecordUid": "裴硬_20260718_desktop_batch_review_01",
+  "roleConsistency": "PASS",
+  "productionTrace": "PASS",
+  "release": {
+    "ok": true,
+    "phase": "release",
+    "status": "PASS"
+  },
+  "feishuWriteAttempted": false
+}

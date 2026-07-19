@@ -8,6 +8,7 @@ import test from "node:test";
 import {
   readBackCellText,
   submitFeishuSheetPlan,
+  validateDropdownValueRanges,
   verifyQuestionPresentationForSubmission,
   verifyReleaseGateForSubmission,
   verifyStructureGateForSubmission,
@@ -283,4 +284,50 @@ test("rejects blank lines in attachment content and accepts single line breaks",
   });
   assert.equal(result.mode, "narrative-no-blank-lines-v5");
   assert.equal(result.attachmentContentLineCounts.L141, 2);
+});
+
+test("accepts values that are real options in Feishu dropdown cells", () => {
+  const result = validateDropdownValueRanges({
+    sheetId: "sheet-id",
+    valueRanges: [
+      { address: "C15", range: "sheet-id!C15:C15", values: [["L1 探索型"]] },
+      { address: "D15", range: "sheet-id!D15:D15", values: [["法律、政务与公共服务"]] },
+    ],
+    dataValidations: [
+      {
+        dataValidationType: "list",
+        conditionValues: ["L1 探索型", "L2 流程型", "L3 系统型"],
+        options: { multipleValues: false },
+        ranges: ["sheet-id!C2:C20"],
+      },
+      {
+        dataValidationType: "list",
+        conditionValues: ["法律、政务与公共服务", "投资战略、专业服务与企业经营"],
+        options: { multipleValues: false },
+        ranges: ["sheet-id!D2:D20"],
+      },
+    ],
+  });
+  assert.equal(result.verified, true);
+  assert.equal(result.checkedCells, 2);
+});
+
+test("rejects plain text that is not a configured Feishu dropdown option", () => {
+  assert.throws(
+    () => validateDropdownValueRanges({
+      sheetId: "sheet-id",
+      valueRanges: [
+        { address: "D15", range: "sheet-id!D15:D15", values: [["汽车销售与售后服务"]] },
+      ],
+      dataValidations: [
+        {
+          dataValidationType: "list",
+          conditionValues: ["法律、政务与公共服务", "投资战略、专业服务与企业经营"],
+          options: { multipleValues: false },
+          ranges: ["sheet-id!D2:D20"],
+        },
+      ],
+    }),
+    /D15 contains values outside the configured dropdown/i,
+  );
 });

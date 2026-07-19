@@ -1,0 +1,98 @@
+{
+  "configHash": "7d3e4e4a5510ba16880d65fd2bc8e38ef50162a7610fa95ca9a07653cc652bec",
+  "conversationId": "",
+  "jobId": "l1-cqrcb-growth-capital-20260719-03",
+  "minimumRounds": 6,
+  "maxRounds": 10,
+  "mode": "openai-compatible",
+  "contentScopePolicyVersion": "domestic-work-scope-v1",
+  "executionSlot": {
+    "browserContextId": "1084C633D11647B8992D48E50C635F55",
+    "endpoint": "http://127.0.0.1:9229",
+    "targetId": "2312292BC690B375D99E7174326C30CA",
+    "workerId": "slot-3-2312292BC690B375D99E7174326C30CA"
+  },
+  "finalProductAcceptance": null,
+  "productRequirement": {
+    "allowEquivalentOnline": false,
+    "allowUnavailableBestEffort": false,
+    "required": true,
+    "requestedFormats": [
+      "word"
+    ]
+  },
+  "rounds": [],
+  "runId": "73e19b1f-1987-40fc-bf2b-d5abad10a41d",
+  "schemaVersion": 7,
+  "successCriteria": [
+    "指标和单位准确",
+    "变化百分点复算正确",
+    "增长与资本约束同时呈现",
+    "不推断条线资本消耗",
+    "交付可下载docx"
+  ],
+  "taskGoal": "银行经营复核人员需要判断资产扩张和收入增长是否伴随资本与回报指标承压。。形成一份增长与资本约束复核简报，把收入利润、资产负债增速、资本比率、杠杆和资产质量放在同一页级证据链中，并列出需要补充的条线资本数据。，最终一份可下载的渝农商行2026年一季度增长与资本约束Word简报，含指标对照表、改善与承压判断、来源页码、证据边界和补数清单。",
+  "startedAt": "2026-07-18T18:15:35.213Z",
+  "status": "failed",
+  "uploadedAttachmentNames": [],
+  "workerPid": null,
+  "workerStartedAt": "2026-07-18T18:15:35.213Z",
+  "initialContentScope": {
+    "calculationComplexityCount": 4,
+    "issues": [],
+    "pass": true,
+    "policyVersion": "domestic-work-scope-v1"
+  },
+  "attachmentManifest": {
+    "attachmentCount": 1,
+    "attachments": [
+      {
+        "classification": "specific-business",
+        "introductionHint": "把正式报告名称直接嵌入任务句，后续核对继续引用同一份已验证原件。",
+        "name": "重庆农村商业银行股份有限公司2026年第一季度报告.pdf",
+        "relativePath": "重庆农村商业银行股份有限公司2026年第一季度报告.pdf",
+        "sha256": "261e993750d5c1f5b6b430c583d1a24cff13e43ae1aa7206bb78e102b5b6666f",
+        "sizeBytes": 391082,
+        "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-29/1225237379.PDF",
+        "summary": "披露渝农商行一季度收入利润、资产负债增长、资本充足率、杠杆率、流动性和资产质量指标。"
+      }
+    ],
+    "initialAttachmentNames": [
+      "重庆农村商业银行股份有限公司2026年第一季度报告.pdf"
+    ],
+    "minimumSpecificBusinessShare": 0.8,
+    "pass": true,
+    "policyId": "doubao-l1-l2-attachment-policy-v1",
+    "productionEvidence": {
+      "attachmentCount": 1,
+      "downloadManifestHash": "ca8dadd15e93f11684acaf60f338a6c7935b9658f5a22483e53bd478fac6ef43",
+      "downloadManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-cqrcb-growth-capital-20260719-03\\evidence\\download_manifest.json",
+      "mode": "production-path",
+      "pass": true,
+      "policyId": "reuse-l2-source-acquisition-path-v1",
+      "productionRunId": "l1_six_cqrcb_growth_capital_20260718T165249Z_d98e15",
+      "productionTraceGateReceiptHash": "e91f2eb46744b03261d6a9ded64226d2b8072fd475f9af9c47d3fb39e3f15f18",
+      "productionTraceGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-cqrcb-growth-capital-20260719-03\\evidence\\production_trace_gate_receipt.json",
+      "productionTraceHash": "a545deaa90323289babe771821da0797cef368921f689d5c56c79415e14667c0",
+      "productionTracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-cqrcb-growth-capital-20260719-03\\evidence\\production_trace.json",
+      "recordUid": "沈礼_20260719_l1_cqrcb_growth_capital_03",
+      "releaseGateReceiptHash": "51c3326cb2ff3014da4d5ed48fd8bf2e0266cdc232993cd458a2b15bc64afd45",
+      "releaseGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-cqrcb-growth-capital-20260719-03\\evidence\\release_gate_receipt.json",
+      "verifiedAt": "2026-07-18T18:15:35.240Z"
+    },
+    "specificBusinessShare": 1,
+    "verifiedAt": "2026-07-18T18:15:35.240Z"
+  },
+  "error": {
+    "code": "",
+    "message": "Local Computer state could not be verified before disabling it.",
+    "stack": "Error: Local Computer state could not be verified before disabling it.\n    at ensureLocalComputerDisabled (file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/doubao-automation/src/doubao-client.mjs:96:11)\n    at async openNewOfficeTask (file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/doubao-automation/src/doubao-client.mjs:338:3)\n    at async runDoubaoJob (file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/doubao-automation/src/job-runner.mjs:662:39)\n    at async runInteractionQueueWorker (file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/doubao-automation/src/queue-worker.mjs:73:22)\n    at async Promise.all (index 2)\n    at async runInteractionQueuePool (file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/doubao-automation/src/queue-worker.mjs:141:19)\n    at async runQueuePool (file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/doubao-automation/src/cli.mjs:349:11)\n    at async file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/doubao-automation/src/cli.mjs:435:38",
+    "attempts": [],
+    "issues": [],
+    "productAssessment": null
+  },
+  "failedAt": "2026-07-18T18:15:36.980Z",
+  "stoppedWorkerPid": 3128,
+  "workerStoppedAt": "2026-07-18T18:15:36.980Z",
+  "updatedAt": "2026-07-18T18:15:36.981Z"
+}

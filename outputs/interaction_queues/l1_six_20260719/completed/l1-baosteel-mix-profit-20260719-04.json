@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "kind": "doubao-interaction-queue-item",
+  "state": "completed",
+  "jobId": "l1-baosteel-mix-profit-20260719-04",
+  "enqueuedAt": "2026-07-18T17:41:18.788Z",
+  "attempt": 2,
+  "configPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-baosteel-mix-profit-20260719-04\\job.json",
+  "configSha256": "27ec38f758dd891cb92103b9cd204a3ca915d7d1b9dacf367841bdb58e27d123",
+  "packageManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-baosteel-mix-profit-20260719-04\\manifest.json",
+  "packageManifestSha256": "70fd898b94c7f2508790d1a904e91afb6484a90baba6d79191a01291a682dad5",
+  "retryHistory": [
+    {
+      "archivedResultPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\results\\history\\l1-baosteel-mix-profit-20260719-04-attempt-1-15e8d0db-272b-43a2-8ec2-60514084fd6d.json",
+      "attempt": 1,
+      "failedAt": "2026-07-18T18:15:45.478Z",
+      "lastError": {
+        "code": "",
+        "message": "locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"create_office_task_button\"]')\u001b[22m\n\u001b[2m    - locator resolved to <div aria-hidden=\"true\" data-aria-hidden=\"true\" data-testid=\"create_office_task_button\">…</div>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div data-state=\"open\" aria-hidden=\"true\" data-aria-hidden=\"true\" data-slot=\"dialog-overlay\" data-setting-modal-layer=\"\" class=\"fixed inset-0 bg-dbx-bg-mask data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:animate-in data-[state=open]:fade-in-0 z-[100]\"></div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div data-state=\"open\" aria-hidden=\"true\" data-aria-hidden=\"true\" data-slot=\"dialog-overlay\" data-setting-modal-layer=\"\" class=\"fixed inset-0 bg-dbx-bg-mask data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:animate-in data-[state=open]:fade-in-0 z-[100]\"></div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    16 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div data-state=\"open\" aria-hidden=\"true\" data-aria-hidden=\"true\" data-slot=\"dialog-overlay\" data-setting-modal-layer=\"\" class=\"fixed inset-0 bg-dbx-bg-mask data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:animate-in data-[state=open]:fade-in-0 z-[100]\"></div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n"
+      },
+      "retriedAt": "2026-07-18T18:19:50.216Z"
+    }
+  ],
+  "retriedAt": "2026-07-18T18:19:50.217Z",
+  "finishedAt": "2026-07-18T19:16:56.407Z",
+  "resultPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\results\\l1-baosteel-mix-profit-20260719-04.json",
+  "lastError": null
+}

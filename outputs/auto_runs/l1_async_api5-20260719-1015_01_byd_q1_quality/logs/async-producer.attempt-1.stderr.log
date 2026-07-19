@@ -1,0 +1,14 @@
+file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/doubao-automation/src/responses-api.mjs:244
+        const error = new Error(`Responses API returned non-JSON content with HTTP ${response.status}.`);
+                      ^
+
+Error: Responses API returned non-JSON content with HTTP 502.
+    at completeWithResponsesApi (file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/doubao-automation/src/responses-api.mjs:244:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async localJson (file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/build/automation/produce_l1_single_task.mjs:202:7)
+    at async generateDraft (file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/build/automation/produce_l1_single_task.mjs:497:17)
+    at async file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/build/automation/produce_l1_single_task.mjs:595:17 {
+  status: 502
+}
+
+Node.js v26.5.0

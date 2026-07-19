@@ -1,0 +1,34 @@
+{
+  "kind": "local-codex-stage-response",
+  "stage": "02_question_draft",
+  "model": "gpt-5.6-sol",
+  "provider": "local-codex-cli",
+  "completedAt": "2026-07-18T17:42:19.213Z",
+  "promptHash": "9e5cbe6bf63b3a03d78a18d555286ee8a909dabbfa14b9588f45abb66285cfa6",
+  "parsed": {
+    "question": "请依据《浪潮电子信息产业股份有限公司2026年第一季度报告.pdf》核对2026年一季度收入下降、利润增长而经营现金转负的差异，重点确认第2至3页能够支持的回款、预收和融资节奏线索，区分报告原文、派生计算、合理推断与待确认项，不把应收账款、合同负债和短期借款的同步变动写成完整因果归因。整理一份可下载的浪潮信息2026年一季度利润现金与营运节奏Excel，包含收入利润现金对照、应收与合同负债线索、融资变化、来源页码、未经审计状态、计算口径、证据边界及客户、项目、账龄等待补明细，供后续取得回款和项目数据后继续复核。",
+    "mainTask": "核对季度报告可支持的回款、预收和融资节奏线索，并形成可追溯、可继续回填的利润现金与营运节奏Excel。",
+    "usedFactIds": [
+      "inspur-core-performance",
+      "inspur-operating-cash",
+      "inspur-receivables",
+      "inspur-contract-liability",
+      "inspur-financing",
+      "inspur-boundary"
+    ],
+    "usedAttachmentNames": [
+      "浪潮电子信息产业股份有限公司2026年第一季度报告.pdf"
+    ],
+    "productFormats": "xlsx",
+    "deliverableRationale": [
+      {
+        "format": "xlsx",
+        "user": "经营质量复核专员及下游经营分析同事",
+        "purpose": "用于复算核心指标、对照利润现金变化，并在取得回款和项目明细后继续补充判断",
+        "whyThisFormat": "多期间、多指标及证据字段需要结构化对照、计算和持续回填，Excel比文字或演示文件更适合复核与更新"
+      }
+    ],
+    "structureMapping": "沿用真实经营卡点引出单一判断、核验附件证据、标注冲突与缺口、为下游继续复核留接口的推进结构，改为浪潮信息季度经营质量复核，不复用投资持仓领域及其对象、约束和产物。",
+    "productParagraphMapping": "后半段先限定本轮只确认公开报告能够支持的节奏线索并禁止越界归因，再以来源页码、审计状态、派生计算和待核边界收束，最终自然落到供后续补充回款及项目明细使用的xlsx核对表。"
+  }
+}

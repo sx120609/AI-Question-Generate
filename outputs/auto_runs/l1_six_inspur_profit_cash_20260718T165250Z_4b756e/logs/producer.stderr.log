@@ -1,0 +1,20 @@
+file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/doubao-automation/src/domestic-work-scope.mjs:107
+    throw new DomesticWorkScopeError(`Content failed the domestic work-scope gate: ${audit.issues.join(", ")}.`, { audit });
+          ^
+
+DomesticWorkScopeError: Content failed the domestic work-scope gate: calculation-too-simple.
+    at assertDomesticWorkScope (file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/doubao-automation/src/domestic-work-scope.mjs:107:11)
+    at rewriteMuguaDeAiText (file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/build/automation/mugua_de_ai_rewrite_client.mjs:92:22)
+    at rewriteQuestionWithDeAiApi (file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/build/automation/claude_question_rewriter.mjs:531:28)
+    at async file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/build/automation/produce_l1_single_task.mjs:683:26 {
+  code: 'CONTENT_SCOPE_BLOCKED',
+  audit: {
+    calculationComplexityCount: 1,
+    issues: [ 'calculation-too-simple' ],
+    pass: false,
+    policyVersion: 'domestic-work-scope-v1'
+  },
+  issues: [ 'calculation-too-simple' ]
+}
+
+Node.js v26.5.0

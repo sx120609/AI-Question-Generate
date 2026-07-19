@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "kind": "source-card-bundle",
+  "runId": "l1_catl_cash_profit_quality_20260718T154210Z_899453",
+  "recordUid": "沈礼_20260718_catl_cash_profit_quality_01",
+  "sources": [
+    {
+      "materialId": "material-annual-2025",
+      "title": "宁德时代2025年年度报告",
+      "publisher": "巨潮资讯网",
+      "publishedAt": "2026-03-10",
+      "accessedAt": "2026-07-18",
+      "path": "attachments/宁德时代2025年年度报告.pdf",
+      "supports": "经审计的2025年度主要财务指标、季度分项数据和年末应收账款、存货、应付账款等余额",
+      "boundary": "年度财务报表经审计并取得标准无保留意见，可用于核对一季报期初数"
+    },
+    {
+      "materialId": "material-q1-2026",
+      "title": "宁德时代2026年第一季度报告",
+      "publisher": "巨潮资讯网",
+      "publishedAt": "2026-04-16",
+      "accessedAt": "2026-07-18",
+      "path": "attachments/宁德时代2026年第一季度报告.pdf",
+      "supports": "未经审计的2026年第一季度收入、利润、经营现金流和期末营运资本项目，并列示上年同期或年初比较数",
+      "boundary": "第一季度财务会计报告未经审计，期末余额与现金流结论保留该边界"
+    }
+  ]
+}

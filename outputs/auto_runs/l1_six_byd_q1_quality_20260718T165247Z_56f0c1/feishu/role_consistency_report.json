@@ -1,0 +1,90 @@
+{
+  "kind": "scene-card-gate-report",
+  "gateId": "scene-card-role-consistency-v1",
+  "protocolId": "situated-requester-v1",
+  "schemaVersion": 1,
+  "status": "PASS",
+  "ok": true,
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_byd_q1_quality_20260718T165247Z_56f0c1\\drafts\\l1_questions.tsv",
+  "candidateHash": "97264c5daa2aa6d3afbf7d6d1e2b622f3e1f01b5686536f416161db0e3885873",
+  "sceneCardPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_byd_q1_quality_20260718T165247Z_56f0c1\\sources\\scene_cards.json",
+  "sceneCardFileHash": "8fc0b7b96c82b9209ae6e297846ecbd7f871073c156daf343f4b3c999aed8418",
+  "sceneCardBundleHash": "d1a4d41c5b1f4157fe10ee208f940be26361b1e739a45266e657403c6b9c2a9a",
+  "sceneCardSetHash": "cf83888b5632e814aef9c907e4c0698cca09fdfd61a58d5a56307efb07a05b30",
+  "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_byd_q1_quality_20260718T165247Z_56f0c1\\sources\\fact_ledger.json",
+  "factLedgerHash": "e52b9df0685cc1e3843660b22f050042d0fffc0a5947af62909e33eb919c83d4",
+  "summary": {
+    "candidateRowCount": 1,
+    "sceneCardCount": 1,
+    "passedRowCount": 1,
+    "failedRowCount": 0,
+    "globalErrorCount": 0,
+    "batchCollisionCount": 0
+  },
+  "rows": [
+    {
+      "uid": "沈礼_20260719_l1_byd_q1_quality_01",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "c636ceac7c1bda04e5e7b8c638fdf8ed9fef6db25558357f5d68a4fdaecd4ef1",
+      "cardHash": "b7ef7ccfbe51346b918eaf02fda4063901c7b8a5773da559b497db9892fb44d0",
+      "roleConsistencyHash": "bb7d61e92c628a6666731dab6fceeeee874c309654cb505167b03fe14f935141",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "polite-request",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "xlsx"
+        ],
+        "mFormats": [
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "在整理过程中，必须严格区分哪些是报告里直接写明的原因，哪些是通过披露数据算出来的变化，还有哪些是目前无法确定、必须等业务分部资料补充后才能判断的。",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "",
+            "occurrences": 0
+          },
+          "downstreamUseSpan": {
+            "span": "请基于前述核对结果整理一份可下载的Excel核对表（xlsx格式）。",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [
+            "2026年"
+          ],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "7744ba388d28fe3285a2fcc584273ff9cc936ad6decb77583a994ad6ae64952d"
+      }
+    }
+  ],
+  "batch": {
+    "ok": true,
+    "status": "PASS",
+    "thresholds": {
+      "highMaskedTrigramSimilarity": 0.72,
+      "sharedMaskedFragmentLength": 18
+    },
+    "comparisons": [],
+    "errors": []
+  },
+  "errors": [],
+  "evaluationHash": "947a19494a0cae6429233d480b6447eb0e2836d052aff006063b9f100d8f3641"
+}

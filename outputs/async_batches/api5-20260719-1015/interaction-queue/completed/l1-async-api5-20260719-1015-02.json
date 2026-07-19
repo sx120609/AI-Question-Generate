@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "kind": "doubao-interaction-queue-item",
+  "state": "completed",
+  "jobId": "l1-async-api5-20260719-1015-02",
+  "enqueuedAt": "2026-07-19T02:09:50.463Z",
+  "attempt": 5,
+  "configPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\packages\\l1-async-api5-20260719-1015-02\\job.json",
+  "configSha256": "24c02e9bd0429caf34af1625222dc024e240e5f24a34aa7d740cec57fbdbd25e",
+  "packageManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\packages\\l1-async-api5-20260719-1015-02\\manifest.json",
+  "packageManifestSha256": "2a8b95bfa464404e3f82844e0917265e7b664a04fcf2d2032cdcd7585067b653",
+  "recoveryCount": 2,
+  "recoveredAt": "2026-07-19T02:46:18.614Z",
+  "retryHistory": [
+    {
+      "archivedResultPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\results\\history\\l1-async-api5-20260719-1015-02-attempt-2-84ab4012-fcc5-467c-9ebb-7b7f336b18da.json",
+      "attempt": 2,
+      "failedAt": "2026-07-19T02:16:38.400Z",
+      "lastError": {
+        "code": "",
+        "message": "Resume must use the same Doubao window target as the saved job state."
+      },
+      "retriedAt": "2026-07-19T02:40:25.762Z"
+    },
+    {
+      "archivedResultPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\results\\history\\l1-async-api5-20260719-1015-02-attempt-4-bb0e1dd1-6d71-479c-8ccc-9651152454f7.json",
+      "attempt": 4,
+      "failedAt": "2026-07-19T02:46:21.553Z",
+      "lastError": {
+        "code": "RECOVERY_PROMPT_MISMATCH",
+        "message": "The latest visible Doubao prompt does not match the resumable round."
+      },
+      "retriedAt": "2026-07-19T02:47:49.078Z"
+    }
+  ],
+  "retriedAt": "2026-07-19T02:47:49.079Z",
+  "finishedAt": "2026-07-19T04:03:48.389Z",
+  "resultPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\results\\l1-async-api5-20260719-1015-02.json",
+  "lastError": null
+}

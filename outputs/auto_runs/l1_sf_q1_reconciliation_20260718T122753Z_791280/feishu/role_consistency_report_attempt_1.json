@@ -1,0 +1,98 @@
+{
+  "kind": "scene-card-gate-report",
+  "gateId": "scene-card-role-consistency-v1",
+  "protocolId": "situated-requester-v1",
+  "schemaVersion": 1,
+  "status": "FAIL",
+  "ok": false,
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\drafts\\l1_questions.tsv",
+  "candidateHash": "f413b028ddc2a71a3d7639d42f2dcad92e7ebf666e4cb7adeed5f0e08a0e8078",
+  "sceneCardPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\sources\\scene_cards.json",
+  "sceneCardFileHash": "1171cc12e036dbf7dd8f01ff640710e7e2183cf9a31840dd445b74a0f09842da",
+  "sceneCardBundleHash": "f44ac4f472a1195c23f4a7a9b7e787fe236694497f5674d94f13a62429cb1b97",
+  "sceneCardSetHash": "4bd86e3324a90bfc6bc8dddd677a0b3c47251692332d5fa2c16c064aeb42ef5a",
+  "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\sources\\fact_ledger.json",
+  "factLedgerHash": "d28ee959af335305fc5267449b4322dc828b3225d60a641e7e00db1aa25ff769",
+  "summary": {
+    "candidateRowCount": 1,
+    "sceneCardCount": 1,
+    "passedRowCount": 0,
+    "failedRowCount": 1,
+    "globalErrorCount": 0,
+    "batchCollisionCount": 0
+  },
+  "rows": [
+    {
+      "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+      "status": "FAIL",
+      "ok": false,
+      "sceneCardHash": "e3e40dad8ab2a5399d8bf6a5e247ef7e69c1e18b9743c36ca7998bc9a101278b",
+      "cardHash": "68a58163cea16b50cdf481baf2a6e535ff11451afa5ebe835280845abb729ef1",
+      "roleConsistencyHash": "f46ba03afb391d22d7a3d90ca56f15660e83177782762dc2e4db104647f43f2b",
+      "errors": [
+        {
+          "code": "request_span_not_direct_request",
+          "path": "requestContract.requestSpan",
+          "message": "requestSpan must contain a recognizable requester, action, and concrete deliverable."
+        }
+      ],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "xlsx"
+        ],
+        "mFormats": [
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "无法直接对应的内容在状态栏记录为待核。",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "",
+            "occurrences": 0
+          },
+          "downstreamUseSpan": {
+            "span": "基于前述核对结果整理一份可下载的Excel口径核对表。",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [
+            "2026年",
+            "2月",
+            "3月"
+          ],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "f76a4513aea15a196787959afe3cb67fb59b03b375a7a2aef75719af0d9107e7"
+      }
+    }
+  ],
+  "batch": {
+    "ok": true,
+    "status": "PASS",
+    "thresholds": {
+      "highMaskedTrigramSimilarity": 0.72,
+      "sharedMaskedFragmentLength": 18
+    },
+    "comparisons": [],
+    "errors": []
+  },
+  "errors": [],
+  "evaluationHash": "833e38f98e2a02edf103116ba1d831e383e98a9746bf6373c92a7f1db0769cce"
+}

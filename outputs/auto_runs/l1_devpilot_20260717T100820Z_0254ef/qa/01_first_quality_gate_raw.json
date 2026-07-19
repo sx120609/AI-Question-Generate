@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "kind": "l1-first-quality-gate-raw-response",
+  "runnerId": "exact-two-quality-gates-v2-codex-session",
+  "sourcePromptHash": "1ee557af341883f2c337ea1bb6ee079dcd092a16af11a088dc68939c64501174",
+  "renderedPromptHash": "69b6318207ff82d0fbd597495aff1cff9338a08686b3316445998a59438cee94",
+  "response": {
+    "provider": "codex-session",
+    "model": "gpt-5.6-sol",
+    "finishReason": "completed"
+  },
+  "parsed": {
+    "pass": true,
+    "issues": []
+  }
+}

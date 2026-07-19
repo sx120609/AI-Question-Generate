@@ -1,0 +1,8 @@
+{
+  "name": "DomesticWorkScopeError",
+  "code": "CONTENT_SCOPE_BLOCKED",
+  "message": "Content failed the domestic work-scope gate: calculation-too-simple.",
+  "issues": [
+    "calculation-too-simple"
+  ]
+}

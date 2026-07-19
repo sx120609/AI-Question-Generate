@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "l1-production-trace-gate-report",
+  "productionProfile": "l1",
+  "gateId": "production-trace-gate-v6-profiled",
+  "status": "PASS",
+  "generatedAt": "2026-07-19T02:11:26.966Z",
+  "packetPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_04_baosteel_mix_profit\\sources\\production_input_packet.json",
+  "packetHash": "2868c5c75cd929a601902aceade93b1d257a8643a7b0ce1338f0dac382c2c7a8",
+  "tracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_04_baosteel_mix_profit\\qa\\production_trace.json",
+  "traceHash": "67cd7cc5e1a7c8769ab828c299b8620da2db8a28de8a46834be338dc6f604211",
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_04_baosteel_mix_profit\\drafts\\l1_questions.tsv",
+  "candidateHash": "426e6980f14508b3074f0517fc9c212d67924ec7a65207a272ed5e0bcf25e64f",
+  "fillPlanPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_04_baosteel_mix_profit\\feishu\\feishu_fill_plan.json",
+  "fillPlanHash": "262775e3567830887708bd6417df3e141612ca3f38716e09561adef313b216aa",
+  "rowCount": 1,
+  "attachmentRoot": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_04_baosteel_mix_profit\\attachments",
+  "attachmentBindings": [
+    {
+      "uid": "沈礼_api5-20260719-1015_04",
+      "name": "宝山钢铁股份有限公司2026年第一季度报告.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_04_baosteel_mix_profit\\attachments\\宝山钢铁股份有限公司2026年第一季度报告.pdf",
+      "sha256": "76b0d27c65fb55ba2cd3301f83e4448846de438d1575ea05e551fe0b829cb23d",
+      "bytes": 191834
+    }
+  ],
+  "productFormatDiversity": {
+    "policyId": "not-required-for-l1",
+    "status": "SKIPPED",
+    "rowCount": 1,
+    "findings": []
+  },
+  "findings": []
+}

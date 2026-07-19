@@ -1,0 +1,89 @@
+{
+  "jobId": "replace-with-unique-job-id",
+  "attachmentRoot": "C:\\DoubaoAutomation\\jobs\\replace-with-unique-job-id\\attachments",
+  "attachments": [
+    {
+      "name": "附件一_真实业务对象记录.xlsx",
+      "relativePath": "附件一_真实业务对象记录.xlsx",
+      "sha256": "replace-with-the-real-64-character-sha256",
+      "sourceUrl": "https://replace-with-the-verified-source.example/record",
+      "summary": "说明该真实业务对象、时间范围和文件独有记录，不写用途话术。",
+      "classification": "specific-business",
+      "objectLevel": true,
+      "timeAnchor": "替换为真实时间或事件",
+      "specificityEvidence": {
+        "object": "替换为真实机构、项目、资产、产品或其他对象",
+        "periodOrEvent": "替换为真实年份、月份、批次或事件",
+        "uniqueContent": "替换为只有这份文件提供的实际记录或结果"
+      }
+    }
+  ],
+  "maxRounds": 6,
+  "developmentOnlyScripted": true,
+  "mode": "scripted",
+  "responseTimeoutMs": 300000,
+  "interactionRewrite": {
+    "type": "openai-compatible",
+    "baseUrl": "https://api.mugua.link/v1",
+    "model": "gemini-3.1-pro-preview",
+    "apiKeyEnv": "DE_AI_REWRITE_API_KEY",
+    "temperature": 0.55,
+    "timeoutMs": 180000
+  },
+  "promptPreflight": {
+    "type": "local-codex",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "timeoutMs": 360000
+  },
+  "rounds": [
+    {
+      "prompt": "填写真实的首轮完整端到端任务。",
+      "evaluation": {
+        "vote": "like",
+        "labels": ["内容准确", "内容完善", "其他"],
+        "note": "填写针对本轮实际回复的具体满意或不满意细节，不能使用这段占位文字。"
+      }
+    },
+    {
+      "prompt": "填写与首轮直接相关、能够补足证据或交付物的第2轮追问。",
+      "evaluation": {
+        "vote": "like",
+        "labels": ["内容准确", "其他"],
+        "note": "填写针对第2轮实际回复的具体评价，说明哪些内容可用以及还缺少什么。"
+      }
+    },
+    {
+      "prompt": "填写第3轮相关追问。",
+      "evaluation": {
+        "vote": "like",
+        "labels": ["易于理解", "其他"],
+        "note": "填写针对第3轮实际回复的具体评价，不能复用上一轮的理由。"
+      }
+    },
+    {
+      "prompt": "填写第4轮相关追问。",
+      "evaluation": {
+        "vote": "like",
+        "labels": ["内容完善", "其他"],
+        "note": "填写针对第4轮实际回复的具体评价，并指出本轮对最终交付的增益。"
+      }
+    },
+    {
+      "prompt": "填写第5轮相关追问。",
+      "evaluation": {
+        "vote": "like",
+        "labels": ["内容准确", "其他"],
+        "note": "填写针对第5轮实际回复的具体评价，并说明是否仍有关键缺口。"
+      }
+    },
+    {
+      "prompt": "填写第6轮收敛追问，要求形成可使用的最终交付。",
+      "evaluation": {
+        "vote": "like",
+        "labels": ["内容准确", "易于理解", "内容完善", "其他"],
+        "note": "填写针对最终回复的具体评价，说明最终交付是否可以直接使用。"
+      }
+    }
+  ]
+}

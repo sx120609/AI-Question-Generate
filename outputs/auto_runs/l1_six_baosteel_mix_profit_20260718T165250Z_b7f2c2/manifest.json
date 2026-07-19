@@ -1,0 +1,119 @@
+{
+  "runId": "l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2",
+  "objective": "生产宝钢股份2026年一季度产品结构与经营表现L1任务",
+  "operator": "codex",
+  "productionProfile": "l1",
+  "taskType": "L1 探索型",
+  "generatedAnnotator": "沈礼",
+  "uidPrefix": "沈礼_",
+  "count": 1,
+  "status": "READY_FOR_DOUBAO_TEST_NO_FEISHU",
+  "createdAt": "2026-07-18T16:52:50.779Z",
+  "spreadsheetToken": "",
+  "sheetId": "",
+  "dirs": {
+    "root": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2",
+    "sources": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2\\sources",
+    "attachments": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2\\attachments",
+    "drafts": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2\\drafts",
+    "feishu": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2\\feishu",
+    "qa": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2\\qa",
+    "logs": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2\\logs",
+    "tmp": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2\\tmp"
+  },
+  "diversityPlanPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2\\sources\\diversity_plan.json",
+  "naturalnessBaselinePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2\\sources\\naturalness_baseline.json",
+  "diversityPolicyId": "l1-phase3-source-driven-v1",
+  "diversityPolicyVersion": 1,
+  "structuralDiversityPolicyPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\config\\structural_diversity_l1.json",
+  "structureRegistryPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\_structure_registry_l1.json",
+  "modelRouting": {
+    "generation": {
+      "provider": "codex-model",
+      "model": "gpt-5.6-sol",
+      "runnerId": "production-generation-v1-model-router"
+    },
+    "qualityGates": {
+      "provider": "codex-model",
+      "model": "gpt-5.6-sol",
+      "runnerId": "exact-two-quality-gates-v3-model-router"
+    },
+    "deAiRewrite": {
+      "provider": "mugua-openai-compatible",
+      "baseUrl": "https://api.mugua.link/v1",
+      "model": "gemini-3.1-pro-preview",
+      "promptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\inputs\\production\\L1题面去AI改写提示词.txt",
+      "promptHash": "99e5675e4d14dcdefbcf22d9abc225e648e0ba064f52fd661515aa4cfb9ae359"
+    },
+    "policy": "Generation and quality gates use the Codex model by default. Third-party model APIs require explicit provider selection. Only de-AI rewriting uses Mugua Gemini through its OpenAI-compatible API."
+  },
+  "productionProtocol": {
+    "profileId": "l1",
+    "taskType": "L1 探索型",
+    "protocolId": "l1-phase3-codex-model-two-gates-trace-v6",
+    "inputPacketPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2\\sources\\production_input_packet.json",
+    "workflowStatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2\\sources\\production_workflow_state.json",
+    "productionTracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2\\qa\\production_trace.json",
+    "inputStatus": "READY",
+    "sampledReferences": [
+      {
+        "questionIndex": 1,
+        "sheet": "三期示例数据",
+        "row": 7,
+        "questionHash": "2873653da868d34534541fc9f7348f48eb4837eec95ac9c3f6caa6da4791b1f5",
+        "attachmentSummaryHash": "484d55613910eb8c0917fe308b499d474115ced993cd002a17d7cc75254330a4"
+      }
+    ],
+    "promptVersion": "profiled-sampled-two-gate-prompts-v2-domestic-work-scope",
+    "stages": [
+      "reference-sample",
+      "reference-breakdown",
+      "attachment-plan",
+      "question-draft",
+      "first-quality-gate",
+      "second-language-gate",
+      "final-compiler"
+    ]
+  },
+  "situatedGeneration": {
+    "policyId": "situated-requester-v1",
+    "promptVersion": "situated-requester-prompts-v1",
+    "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2\\sources\\fact_ledger.json",
+    "sceneCardPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2\\sources\\scene_cards.json",
+    "roleConsistencyReportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2\\feishu\\role_consistency_report.json",
+    "stages": [
+      "scene-card",
+      "requester",
+      "field-compiler",
+      "audit"
+    ],
+    "candidateCountPerScene": 3,
+    "note": "The scene card is a hidden generation artifact. It must never be copied into the Feishu question cell."
+  },
+  "boundaries": {
+    "writableRoots": [
+      "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2"
+    ],
+    "sharedWritesRequireLocks": [
+      "outputs/l1_questions.tsv",
+      "outputs/feishu_fill_plan_*.json",
+      "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\_structure_registry_l1.json",
+      "Feishu sheet rows"
+    ],
+    "noTouch": [
+      "Rows not reserved by this run",
+      "Other runs under outputs/auto_runs",
+      "Existing attachments outside this run unless explicitly imported"
+    ]
+  },
+  "recordUid": "沈礼_20260719_l1_baosteel_mix_profit_04",
+  "jobPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2\\doubao\\job.json",
+  "localGates": {
+    "roleConsistency": "PASS",
+    "productionTrace": "PASS",
+    "release": "PASS"
+  },
+  "feishuWriteAttempted": false,
+  "feishuWriteApplied": false,
+  "updatedAt": "2026-07-18T17:40:34.529Z"
+}

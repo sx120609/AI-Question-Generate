@@ -11,8 +11,8 @@ import {
 } from "./language_style.mjs";
 import { REPO_ROOT, writeJsonAtomic } from "./run_context.mjs";
 
-export const NATURALNESS_METRICS_VERSION = "naturalness-metrics-v5";
-export const NATURALNESS_GATE_ID = "naturalness-gate-v5";
+export const NATURALNESS_METRICS_VERSION = "naturalness-metrics-v6";
+export const NATURALNESS_GATE_ID = "naturalness-gate-v6";
 export const QUESTION_LANGUAGE_POLICY_ID = "corpus-calibrated-intent-punctuation-v4";
 
 // These are calibration instructions, not hidden pass/fail thresholds. A generated
@@ -164,6 +164,20 @@ function collectMatches(text, regex, kind, output) {
   }
 }
 
+const GENERIC_ASCII_TERMS = new Set([
+  "ai", "api", "docx", "excel", "faq", "html", "pdf", "poc", "ppt", "pptx",
+  "saas", "word", "xlsx",
+]);
+
+function collectNamedProductAnchors(text, output) {
+  for (const match of String(text).matchAll(/[A-Z][A-Za-z0-9.+-]{2,}(?:\s+[A-Z][A-Za-z0-9.+-]{2,}){0,2}/gu)) {
+    const value = String(match[0] ?? "").trim();
+    const normalized = value.toLowerCase();
+    if (!value || GENERIC_ASCII_TERMS.has(normalized)) continue;
+    output.set(`named-product:${normalized}`, { kind: "named-product", value });
+  }
+}
+
 function concreteFactAnchors(question, paragraphs) {
   const finalParagraph = paragraphs.at(-1) ?? "";
   const sceneText = paragraphs.length > 1 && hasFixedWordExcelTail(finalParagraph)
@@ -175,6 +189,7 @@ function concreteFactAnchors(question, paragraphs) {
   collectMatches(sceneText, /(?:v(?:ersion)?\s*)?\d+(?:\.\d+){1,3}|[A-Z]{1,10}[-_]?[A-Z0-9]*\d+[A-Z0-9_-]*/giu, "identifier", anchors);
   collectMatches(sceneText, /[“「『][^”」』\n]{2,48}[”」』]/gu, "quoted-detail", anchors);
   collectMatches(sceneText, /《[^》\n]{2,48}》/gu, "named-source", anchors);
+  collectNamedProductAnchors(sceneText, anchors);
   return { sceneText, anchors: [...anchors.values()] };
 }
 

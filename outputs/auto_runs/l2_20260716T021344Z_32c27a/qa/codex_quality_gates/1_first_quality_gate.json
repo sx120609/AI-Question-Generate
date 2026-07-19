@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "l2-first-quality-gate-raw-response",
+  "runnerId": "exact-two-quality-gates-v2-codex-session",
+  "provider": "codex-session",
+  "model": "current-codex-session",
+  "requestedModel": "5.6sol",
+  "questionIndex": 1,
+  "sourcePromptHash": "087cc4ad0246d5108b267961190eb8d619206a673b3536092b90cf4a6124622e",
+  "renderedPromptHash": "1d252667f6000da6bd2829c081f84a79173cb291bea53bca5483a63ac88d65fc",
+  "response": {
+    "content": "{\"pass\":true,\"issues\":[]}",
+    "model": "current-codex-session"
+  },
+  "parsed": {
+    "pass": true,
+    "issues": []
+  },
+  "completedAt": "2026-07-16T08:04:39.571Z"
+}

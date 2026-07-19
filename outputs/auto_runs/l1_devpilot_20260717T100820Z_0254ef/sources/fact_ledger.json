@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "runId": "l1_devpilot_20260717T100820Z_0254ef",
+  "capturedAt": "2026-07-17T10:30:00.000Z",
+  "facts": [
+    {
+      "id": "fact-trigger",
+      "text": "公司准备把跨地区员工培训固定成常态化直播。"
+    },
+    {
+      "id": "fact-access-needs",
+      "text": "参训者中有依赖实时字幕、键盘操作或屏幕阅读器的同事。"
+    },
+    {
+      "id": "fact-candidates",
+      "text": "候选平台是 Zoom、Microsoft Teams 和 Google Meet。"
+    },
+    {
+      "id": "fact-blockage",
+      "text": "不同厂商的无障碍说明分散在产品页和帮助中心。"
+    },
+    {
+      "id": "fact-decision",
+      "text": "本轮需要判断三个候选平台中哪一个优先进入 POC。"
+    },
+    {
+      "id": "fact-boundary",
+      "text": "本轮结论只用于安排下一轮实测，不作为最终采购或合规判断。"
+    },
+    {
+      "id": "fact-source-check",
+      "text": "截至2026年7月17日，研究清单中的官方产品文档和帮助页均已完成可访问性核验。"
+    }
+  ],
+  "materials": [
+    {
+      "id": "material-zoom-accessibility",
+      "title": "Accessibility | Zoom",
+      "url": "https://www.zoom.com/en/accessibility/",
+      "publisher": "Zoom",
+      "status": 200,
+      "accessedAt": "2026-07-17"
+    },
+    {
+      "id": "material-zoom-captions",
+      "title": "Viewing captions in a meeting or webinar",
+      "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0059762",
+      "publisher": "Zoom Support",
+      "status": 200,
+      "accessedAt": "2026-07-17"
+    },
+    {
+      "id": "material-teams-captions",
+      "title": "Use live captions in Microsoft Teams meetings",
+      "url": "https://support.microsoft.com/en-US/teams/meetings/use-live-captions-in-microsoft-teams-meetings",
+      "publisher": "Microsoft Support",
+      "status": 200,
+      "accessedAt": "2026-07-17"
+    },
+    {
+      "id": "material-teams-screenreader",
+      "title": "Screen reader support for Microsoft Teams",
+      "url": "https://support.microsoft.com/en-US/accessibility/teams/screen-reader-support-for-microsoft-teams",
+      "publisher": "Microsoft Support",
+      "status": 200,
+      "accessedAt": "2026-07-17"
+    },
+    {
+      "id": "material-meet-accessibility",
+      "title": "Accessibility in Google Meet",
+      "url": "https://support.google.com/meet/answer/16175468?hl=en",
+      "publisher": "Google Meet Help",
+      "status": 200,
+      "accessedAt": "2026-07-17"
+    },
+    {
+      "id": "material-meet-translated",
+      "title": "Use translated captions in Google Meet",
+      "url": "https://support.google.com/meet/answer/10964115?hl=en",
+      "publisher": "Google Meet Help",
+      "status": 200,
+      "accessedAt": "2026-07-17"
+    },
+    {
+      "id": "material-w3c-live-captions",
+      "title": "Understanding Success Criterion 1.2.4: Captions (Live)",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/captions-live.html",
+      "publisher": "W3C WAI",
+      "status": 200,
+      "accessedAt": "2026-07-17"
+    },
+    {
+      "id": "material-w3c-keyboard",
+      "title": "Understanding Success Criterion 2.1.1: Keyboard",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html",
+      "publisher": "W3C WAI",
+      "status": 200,
+      "accessedAt": "2026-07-17"
+    },
+    {
+      "id": "material-w3c-focus",
+      "title": "Understanding Success Criterion 2.4.7: Focus Visible",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html",
+      "publisher": "W3C WAI",
+      "status": 200,
+      "accessedAt": "2026-07-17"
+    }
+  ],
+  "unknowns": [
+    {
+      "id": "unknown-license",
+      "text": "三个平台在目标企业许可证下的字幕、翻译字幕和转录权限"
+    },
+    {
+      "id": "unknown-language",
+      "text": "目标参训语言是否全部落在各平台当前支持范围内"
+    },
+    {
+      "id": "unknown-admin",
+      "text": "企业管理员策略是否会关闭公开文档中描述的能力"
+    },
+    {
+      "id": "unknown-retention",
+      "text": "录制、字幕和转录数据在目标租户中的保存期限与导出权限"
+    },
+    {
+      "id": "unknown-scale",
+      "text": "目标直播规模和会议类型下的实际可用性"
+    }
+  ]
+}

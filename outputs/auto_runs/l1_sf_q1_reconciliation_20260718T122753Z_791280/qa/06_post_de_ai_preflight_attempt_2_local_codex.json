@@ -1,0 +1,21 @@
+{
+  "kind": "local-codex-stage-response",
+  "stage": "06_post_de_ai_preflight",
+  "model": "gpt-5.6-sol",
+  "provider": "local-codex-cli",
+  "completedAt": "2026-07-18T12:51:23.227Z",
+  "promptHash": "98ca38dc4d3b7a163b2acdc08bcb19aba9c013eabb94b777cca562733670a865",
+  "parsed": {
+    "pass": false,
+    "issues": [
+      {
+        "rule": "披露单位和精度差异不得写成记账习惯",
+        "evidence": "“评估亿元保留两位小数及以千元披露这两种记账方式对精度与指标可比性的影响。”将披露单位与精度差异称为“记账方式”。",
+        "repair": "将“两种记账方式”改为“两种披露单位和精度差异”。"
+      }
+    ],
+    "factsPreserved": false,
+    "attachmentsPreserved": true,
+    "visibleTextClean": false
+  }
+}

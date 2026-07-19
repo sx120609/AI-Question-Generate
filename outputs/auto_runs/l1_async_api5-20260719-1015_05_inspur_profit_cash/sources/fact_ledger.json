@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "kind": "evidence-bound-fact-ledger",
+  "runId": "l1_async_api5-20260719-1015_05_inspur_profit_cash",
+  "recordUid": "沈礼_api5-20260719-1015_05",
+  "generatedAt": "2026-07-19T02:10:26.211Z",
+  "facts": [
+    {
+      "id": "inspur-core-performance",
+      "claimType": "source-fact",
+      "text": "2026年一季度营业收入35470325836.04元，同比下降24.30%；归母净利润604873166.81元，同比增长30.74%；扣非归母净利润590262897.06元，同比增长38.22%。",
+      "locator": "PDF第2页主要会计数据表",
+      "uid": "沈礼_api5-20260719-1015_05",
+      "sourceRefs": [
+        "inspur-2026q1-report"
+      ]
+    },
+    {
+      "id": "inspur-operating-cash",
+      "claimType": "source-fact",
+      "text": "经营活动现金流量净额为-7771612162.74元，上年同期为5803063897.76元，同比减少233.92%。",
+      "locator": "PDF第2页主要会计数据表",
+      "uid": "沈礼_api5-20260719-1015_05",
+      "sourceRefs": [
+        "inspur-2026q1-report"
+      ]
+    },
+    {
+      "id": "inspur-receivables",
+      "claimType": "source-fact",
+      "text": "应收账款较期初增加32.55%，报告解释为受发货节奏影响，应收账款尚未到期回款。",
+      "locator": "PDF第3页重大变动原因",
+      "uid": "沈礼_api5-20260719-1015_05",
+      "sourceRefs": [
+        "inspur-2026q1-report"
+      ]
+    },
+    {
+      "id": "inspur-contract-liability",
+      "claimType": "source-fact",
+      "text": "合同负债较期初减少37.19%，报告解释为预收客户货款本期发货。",
+      "locator": "PDF第3页重大变动原因",
+      "uid": "沈礼_api5-20260719-1015_05",
+      "sourceRefs": [
+        "inspur-2026q1-report"
+      ]
+    },
+    {
+      "id": "inspur-financing",
+      "claimType": "source-fact",
+      "text": "短期借款较期初增加522.47%，主要因资金需求增加而扩大融资规模；筹资活动现金流量净额同比增加67.27%。",
+      "locator": "PDF第3页重大变动原因",
+      "uid": "沈礼_api5-20260719-1015_05",
+      "sourceRefs": [
+        "inspur-2026q1-report"
+      ]
+    },
+    {
+      "id": "inspur-boundary",
+      "claimType": "evidence-boundary",
+      "text": "报告把经营现金流下降主要解释为预收客户货款节奏变化，但没有披露客户、项目或账龄明细，季度财务会计报告未经审计。",
+      "locator": "PDF第1页重要提示及第3页变动原因",
+      "uid": "沈礼_api5-20260719-1015_05",
+      "sourceRefs": [
+        "inspur-2026q1-report"
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "id": "inspur-2026q1-report",
+      "uid": "沈礼_api5-20260719-1015_05",
+      "name": "浪潮电子信息产业股份有限公司2026年第一季度报告.pdf",
+      "text": "披露浪潮信息一季度收入利润现金流分化、应收账款和合同负债变化以及融资节奏原因。",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-30/1225257759.PDF",
+      "sha256": "1d9075ccddc8da08907e3486f9aaddfb81cb19ea5881a50e096cac6c3ad5fcd6"
+    }
+  ],
+  "unknowns": [
+    {
+      "id": "inspur_profit_cash_api5-20260719-1015-unknown-1",
+      "uid": "沈礼_api5-20260719-1015_05",
+      "text": "附件没有给出应收账款新增额按客户、项目和账龄的分布。"
+    },
+    {
+      "id": "inspur_profit_cash_api5-20260719-1015-unknown-2",
+      "uid": "沈礼_api5-20260719-1015_05",
+      "text": "收入下降与利润增长的完整驱动不能仅用单季公开报表分解。"
+    }
+  ],
+  "decision": {
+    "id": "inspur_profit_cash_api5-20260719-1015-decision",
+    "text": "建立利润现金与营运节奏核对表，复算核心指标方向，整理应收、预收和融资变化的披露线索，并保留客户与项目明细待补栏。"
+  },
+  "deliveryUse": {
+    "recipient": "经营质量复核专员及下游同事",
+    "purpose": "供经营分析同事继续取得回款和项目明细后补充判断。"
+  }
+}

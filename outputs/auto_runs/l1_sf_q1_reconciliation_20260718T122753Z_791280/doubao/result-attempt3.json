@@ -1,0 +1,472 @@
+{
+  "configHash": "e8c382a02e955e1b4ac4c11ef8c73bfc1ba5193a666e4ddac220ea8a93caeb59",
+  "conversationId": "38434896931806466",
+  "jobId": "l1-sf-q1-reconciliation-20260718-01",
+  "minimumRounds": 6,
+  "maxRounds": 10,
+  "mode": "openai-compatible",
+  "contentScopePolicyVersion": "domestic-work-scope-v1",
+  "finalProductAcceptance": null,
+  "productRequirement": {
+    "allowEquivalentOnline": false,
+    "allowUnavailableBestEffort": false,
+    "required": true,
+    "requestedFormats": [
+      "excel"
+    ]
+  },
+  "rounds": [
+    {
+      "contentScopeBeforeModel": {
+        "calculationComplexityCount": 1,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "contentScopeAfterModel": {
+        "calculationComplexityCount": 1,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "evaluation": null,
+      "feedbackPreflight": null,
+      "feedbackRewrite": null,
+      "attachmentNames": [
+        "顺丰控股2026年2月快递物流业务经营简报.pdf",
+        "顺丰控股2026年3月快递物流业务经营简报.pdf",
+        "顺丰控股2026年第一季度报告.pdf"
+      ],
+      "index": 1,
+      "plannedPrompt": "刚传了顺丰控股2026年第一季度报告以及同年2月与3月的快递物流业务经营简报。需要看看这三份材料能否拼出完整的一季度数据来源链。请理清1至2月累计数据和3月单月数据之间的衔接关系。同时核验经营简报里的物流相关收入与一季报总营业收入在披露范围上的差异。无法直接对应的差额留待后续通过公司分部或科目资料确认，归因栏保持留空。针对以千元披露与以亿元保留两位小数造成的单位及精度差异进行处理，并评估各项指标的可比性。各项指标需标注具体来源页码以及未经审计的财务状态。无法直接对应的项目在表内保持待核状态。请再基于前述核对结果整理一份可下载的Excel口径核对表，按xlsx格式交付并作为结论底表。",
+      "preflight": {
+        "issues": [],
+        "pass": true,
+        "prompt": "随本消息上传了顺丰控股2026年第一季度报告以及同年2月与3月的快递物流业务经营简报。请核验这三份材料能否拼出完整的一季度数据来源链，理清1至2月累计数据和3月单月数据之间的衔接关系，并核验经营简报物流相关收入与一季报总营业收入在披露范围上的差异。核对时需处理以千元披露与以亿元保留两位小数造成的单位及精度差异，评估各项指标的可比性，并标注具体来源页码及未经审计的财务状态。无法直接对应的差额留待后续通过公司分部或科目资料确认，归因栏留空且相关项目保持待核状态。请基于上述结果整理一份可下载的Excel口径核对表，按xlsx格式交付并作为结论底表。",
+        "changed": false,
+        "model": "gpt-5.6-sol",
+        "provider": "local-codex-cli",
+        "retryTrace": [
+          {
+            "attempt": 1,
+            "phase": "initial",
+            "retry": 0,
+            "status": "success"
+          }
+        ],
+        "textPurpose": "chat-prompt",
+        "usage": {}
+      },
+      "prompt": "随本消息上传了顺丰控股2026年第一季度报告以及同年2月与3月的快递物流业务经营简报。请核验这三份材料能否拼出完整的一季度数据来源链，理清1至2月累计数据和3月单月数据之间的衔接关系，并核验经营简报物流相关收入与一季报总营业收入在披露范围上的差异。核对时需处理以千元披露与以亿元保留两位小数造成的单位及精度差异，评估各项指标的可比性，并标注具体来源页码及未经审计的财务状态。无法直接对应的差额留待后续通过公司分部或科目资料确认，归因栏留空且相关项目保持待核状态。请基于上述结果整理一份可下载的Excel口径核对表，按xlsx格式交付并作为结论底表。",
+      "response": {
+        "attachmentUpload": {
+          "completedAt": "2026-07-18T14:12:36.362Z",
+          "expectedCount": 3,
+          "expectedNames": [
+            "顺丰控股2026年2月快递物流业务经营简报.pdf",
+            "顺丰控股2026年3月快递物流业务经营简报.pdf",
+            "顺丰控股2026年第一季度报告.pdf"
+          ],
+          "fileInputMultiple": true,
+          "pass": true,
+          "selectedNames": [
+            "顺丰控股2026年2月快递物流业务经营简报.pdf",
+            "顺丰控股2026年3月快递物流业务经营简报.pdf",
+            "顺丰控股2026年第一季度报告.pdf"
+          ],
+          "startedAt": "2026-07-18T14:12:31.184Z",
+          "visibleCount": 3,
+          "visibleNames": [
+            "顺丰控股2026年2月快递物流业务经营简报.pdf",
+            "顺丰控股2026年3月快递物流业务经营简报.pdf",
+            "顺丰控股2026年第一季度报告.pdf"
+          ]
+        },
+        "artifacts": [
+          {
+            "accessState": "opened-in-doubao-sheet-canvas",
+            "cardStatus": "2",
+            "cardUnsupported": "false",
+            "dataTestId": "sheet-product-card",
+            "href": "chrome://doubao-chat/chat/38434896931806466?layout=zen_split&pluginId=ai-sheet-canvas&canvas_impayload=%7B%22artifactMetaId%22%3A%2250355036486443010%22%2C%22artifactVersionId%22%3A%2250355036486443266%22%2C%22blockStatus%22%3A2%2C%22blockType%22%3A10030%2C%22conversationId%22%3A%2238434896931806466%22%2C%22docTitle%22%3A%22%E9%A1%BA%E4%B8%B0%E6%8E%A7%E8%82%A12026Q1%E6%95%B0%E6%8D%AE%E5%8F%A3%E5%BE%84%E6%A0%B8%E5%AF%B9%E8%A1%A8%22%2C%22docToken%22%3A%22Ku2BsfppvhibydtI6A1czKz4nSf%22%2C%22isAutoOpen%22%3Atrue%2C%22messageId%22%3A%2250328906145243906%22%2C%22resourceType%22%3A12%2C%22resourceVersion%22%3A-1%2C%22scene%22%3A%22unknown%22%7D",
+            "label": "",
+            "text": "顺丰控股2026Q1数据口径核对表\n创建时间：22:12"
+          },
+          {
+            "accessState": "opened-in-doubao-sheet-canvas",
+            "cardStatus": "2",
+            "cardUnsupported": "false",
+            "dataTestId": "sheet-product-card",
+            "href": "chrome://doubao-chat/chat/38434896931806466?layout=zen_split&pluginId=ai-sheet-canvas&canvas_impayload=%7B%22artifactMetaId%22%3A%2250355036486443010%22%2C%22artifactVersionId%22%3A%2250355036486443266%22%2C%22blockStatus%22%3A2%2C%22blockType%22%3A10030%2C%22conversationId%22%3A%2238434896931806466%22%2C%22docTitle%22%3A%22%E9%A1%BA%E4%B8%B0%E6%8E%A7%E8%82%A12026Q1%E6%95%B0%E6%8D%AE%E5%8F%A3%E5%BE%84%E6%A0%B8%E5%AF%B9%E8%A1%A8%22%2C%22docToken%22%3A%22Ku2BsfppvhibydtI6A1czKz4nSf%22%2C%22isAutoOpen%22%3Atrue%2C%22messageId%22%3A%2250328906145243906%22%2C%22resourceType%22%3A12%2C%22resourceVersion%22%3A-1%2C%22scene%22%3A%22unknown%22%7D",
+            "label": "Asset cover",
+            "text": "顺丰控股2026Q1数据口径核对表\n创建时间：22:12"
+          }
+        ],
+        "completedAt": "2026-07-18T14:16:13.218Z",
+        "conversationId": "38434896931806466",
+        "durationMs": 222148,
+        "prompt": "随本消息上传了顺丰控股2026年第一季度报告以及同年2月与3月的快递物流业务经营简报。请核验这三份材料能否拼出完整的一季度数据来源链，理清1至2月累计数据和3月单月数据之间的衔接关系，并核验经营简报物流相关收入与一季报总营业收入在披露范围上的差异。核对时需处理以千元披露与以亿元保留两位小数造成的单位及精度差异，评估各项指标的可比性，并标注具体来源页码及未经审计的财务状态。无法直接对应的差额留待后续通过公司分部或科目资料确认，归因栏留空且相关项目保持待核状态。请基于上述结果整理一份可下载的Excel口径核对表，按xlsx格式交付并作为结论底表。",
+        "response": "核心核对结论\n一、数据来源链完整性\n三份材料可拼出完整一季度数据来源链：\n2 月经营简报（公告 2026-012）：提供 2 月单月 + 1-2 月累计数据\n3 月经营简报（公告 2026-030）：提供 3 月单月数据\n一季度报告（公告 2026-032）：提供 Q1 合并财务数据\n二、1-2 月累计与 3 月单月衔接关系\n表格\n指标\t1-2 月累计\t3 月单月\t推算 Q1 合计\n速运物流收入\t368.17 亿元\t180.19 亿元\t548.36 亿元\n供应链及国际收入\t116.47 亿元\t62.83 亿元\t179.30 亿元\n经营简报合计\t484.64 亿元\t243.02 亿元\t727.66 亿元\n速运业务量\t24.58 亿票\t12.51 亿票\t37.09 亿票\n三、披露范围差异（核心差额）\n一季报营业总收入：741.42 亿元（74,142,121 千元，P2）\n经营简报合计收入：727.66 亿元\n差额约 13.76 亿元：经营简报注释 3 明确 \"不含公司其他非物流业务收入\"，该部分构成需后续通过分部资料确认\n四、单位与精度差异\n表格\n来源\t披露单位\t精度级别\n经营简报\t亿元（保留 2 位小数）\t百万元级（±0.005 亿元）\n一季报财务表\t千元\t千元级（精度更高）\n一季报文字描述\t亿票（1 位小数）\t粗略表述\n五、审计状态\n三份材料全部未经审计：\n经营简报：明确标注 \"上述数据未经审计，与定期报告数据可能存在差异\"\n一季报：P17 明确 \"第一季度报告未经审计\"\n六、待核项目（5 项，归因留空）\n速运 / 供应链分部收入与一季报分部数据的精确对应\n其他非物流业务收入的具体构成（约 13.76 亿）\n业务量口径差异（速运业务量 37.09 亿票 vs 总件量 37.3 亿票）\n单月加总与累计数的四舍五入尾差\n单票收入为均值指标，不可直接跨月加总",
+        "responseIdentity": "block_ba374550-82b2-11f1-a40a-b735be607447",
+        "responseCount": 1,
+        "sendReceipt": {
+          "countAfter": 2,
+          "countBefore": 0,
+          "identity": "block_431afae8-9989-487b-8d52-d50f70be6a3f",
+          "pass": true,
+          "prompt": "随本消息上传了顺丰控股 2026 年第一季度报告以及同年 2 月与 3 月的快递物流业务经营简报。请核验这三份材料能否拼出完整的一季度数据来源链，理清 1 至 2 月累计数据和 3 月单月数据之间的衔接关系，并核验经营简报物流相关收入与一季报总营业收入在披露范围上的差异。核对时需处理以千元披露与以亿元保留两位小数造成的单位及精度差异，评估各项指标的可比性，并标注具体来源页码及未经审计的财务状态。无法直接对应的差额留待后续通过公司分部或科目资料确认，归因栏留空且相关项目保持待核状态。请基于上述结果整理一份可下载的 Excel 口径核对表，按 xlsx 格式交付并作为结论底表。",
+          "verifiedAt": "2026-07-18T14:12:37.102Z"
+        },
+        "startedAt": "2026-07-18T14:12:31.070Z",
+        "url": "chrome://doubao-chat/chat/38434896931806466?layout=zen_split&pluginId=ai-sheet-canvas&canvas_impayload=%7B%22artifactMetaId%22%3A%2250355036486443010%22%2C%22artifactVersionId%22%3A%2250355036486443266%22%2C%22blockStatus%22%3A2%2C%22blockType%22%3A10030%2C%22conversationId%22%3A%2238434896931806466%22%2C%22docTitle%22%3A%22%E9%A1%BA%E4%B8%B0%E6%8E%A7%E8%82%A12026Q1%E6%95%B0%E6%8D%AE%E5%8F%A3%E5%BE%84%E6%A0%B8%E5%AF%B9%E8%A1%A8%22%2C%22docToken%22%3A%22Ku2BsfppvhibydtI6A1czKz4nSf%22%2C%22isAutoOpen%22%3Atrue%2C%22messageId%22%3A%2250328906145243906%22%2C%22resourceType%22%3A12%2C%22resourceVersion%22%3A-1%2C%22scene%22%3A%22unknown%22%7D"
+      },
+      "rewrite": {
+        "changed": true,
+        "contentValidationTrace": [
+          {
+            "attempt": 1,
+            "issue": "fact anchors changed: numbers-changed; added numbers=3",
+            "status": "rejected"
+          },
+          {
+            "attempt": 2,
+            "status": "accepted"
+          }
+        ],
+        "model": "gemini-3.1-pro-preview",
+        "pass": true,
+        "preservation": {
+          "issues": [],
+          "anchorDiff": {
+            "numbers": {
+              "added": [],
+              "missing": []
+            },
+            "urls": {
+              "added": [],
+              "missing": []
+            },
+            "latin": {
+              "added": [],
+              "missing": []
+            }
+          },
+          "pass": true,
+          "rewrittenLength": 274,
+          "sourceLength": 294
+        },
+        "prompt": "随本消息上传了顺丰控股2026年第一季度报告以及同年2月与3月的快递物流业务经营简报。请核验这三份材料能否拼出完整的一季度数据来源链，理清1至2月累计数据和3月单月数据之间的衔接关系，并核验经营简报物流相关收入与一季报总营业收入在披露范围上的差异。核对时需处理以千元披露与以亿元保留两位小数造成的单位及精度差异，评估各项指标的可比性，并标注具体来源页码及未经审计的财务状态。无法直接对应的差额留待后续通过公司分部或科目资料确认，归因栏留空且相关项目保持待核状态。请基于上述结果整理一份可下载的Excel口径核对表，按xlsx格式交付并作为结论底表。",
+        "retryTrace": [
+          {
+            "attempt": 1,
+            "phase": "initial",
+            "retry": 0,
+            "status": "success",
+            "contentAttempt": 1
+          },
+          {
+            "attempt": 1,
+            "phase": "initial",
+            "retry": 0,
+            "status": "success",
+            "contentAttempt": 2
+          }
+        ],
+        "textPurpose": "chat-prompt",
+        "usage": {
+          "prompt_tokens": 1988,
+          "completion_tokens": 1753,
+          "total_tokens": 3741,
+          "billing_usage": {
+            "source": "gemini_chat",
+            "semantic": "gemini",
+            "gemini_usage_metadata": {
+              "promptTokenCount": 1988,
+              "toolUsePromptTokenCount": 0,
+              "candidatesTokenCount": 194,
+              "totalTokenCount": 3741,
+              "thoughtsTokenCount": 1559,
+              "cachedContentTokenCount": 0,
+              "promptTokensDetails": [],
+              "toolUsePromptTokensDetails": [],
+              "candidatesTokensDetails": []
+            }
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 1988,
+            "audio_tokens": 0,
+            "image_tokens": 0
+          },
+          "completion_tokens_details": {
+            "text_tokens": 0,
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 1559
+          },
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "input_tokens_details": null,
+          "claude_cache_creation_5_m_tokens": 0,
+          "claude_cache_creation_1_h_tokens": 0
+        }
+      },
+      "status": "feedback_rewriting",
+      "promptQualityRetryTrace": [
+        {
+          "attempt": 1,
+          "issue": "Codex prompt quality gate returned an unusable decision: Prompt quality gate rejected the de-AI text: candidatePrompt将数据来源链、累计与单月衔接、收入披露范围差异、单位精度、指标可比性、页码与财务状态标注、待核状态及Excel交付并列为多个任务，超过“一个主诉求、最多一个直接子诉求”的限制。, 遗漏了差额后续需通过公司分部或科目资料确认的处理路径。, 交付要求中遗漏了Excel文件“可下载”的明确验收状态。",
+          "status": "rejected"
+        },
+        {
+          "attempt": 2,
+          "status": "accepted"
+        }
+      ],
+      "modelRetries": {
+        "prompt_de_ai_rewrite": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success"
+            }
+          ],
+          "status": "complete"
+        },
+        "prompt_preflight": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success"
+            }
+          ],
+          "status": "complete"
+        },
+        "evaluation_planner": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success"
+            }
+          ],
+          "status": "complete"
+        },
+        "feedback_de_ai_rewrite": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "message": "The job was paused by an operator request.",
+              "phase": "initial",
+              "retry": 0,
+              "status": "failed"
+            }
+          ],
+          "status": "non_retryable_failure"
+        }
+      },
+      "contentScopeAfterRewrite": {
+        "calculationComplexityCount": 1,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "attachmentVerification": {
+        "attachmentCount": 3,
+        "attachments": [
+          {
+            "classification": "specific-business",
+            "introductionHint": "首轮随任务一次上传，后续所有核对继续引用同一批已验证原件。",
+            "name": "顺丰控股2026年2月快递物流业务经营简报.pdf",
+            "relativePath": "顺丰控股2026年2月快递物流业务经营简报.pdf",
+            "sha256": "b6d498ec52aea25bf45329c3890bdc26270e498eaf5a4d8088c7d63dc7756fff",
+            "sizeBytes": 98758,
+            "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-03-20/1225018701.PDF",
+            "summary": "2026年2月单月与1至2月累计的速运物流、供应链及国际业务收入和业务量，以及数据未经审计且不含其他非物流业务收入的边界"
+          },
+          {
+            "classification": "specific-business",
+            "introductionHint": "首轮随任务一次上传，后续所有核对继续引用同一批已验证原件。",
+            "name": "顺丰控股2026年3月快递物流业务经营简报.pdf",
+            "relativePath": "顺丰控股2026年3月快递物流业务经营简报.pdf",
+            "sha256": "aa21dd7d0f298800d5962078776289649f2992be6458c06a632d498624279260",
+            "sizeBytes": 96891,
+            "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-18/1225117549.PDF",
+            "summary": "2026年3月单月的速运物流、供应链及国际业务收入、业务量和单票收入，以及数据未经审计且不含其他非物流业务收入的边界"
+          },
+          {
+            "classification": "specific-business",
+            "introductionHint": "首轮随任务一次上传，后续所有核对继续引用同一批已验证原件。",
+            "name": "顺丰控股2026年第一季度报告.pdf",
+            "relativePath": "顺丰控股2026年第一季度报告.pdf",
+            "sha256": "72a07309388abcdce1aad7f33307c1693446a04cd435fbb2e656ba582f8ef5e2",
+            "sizeBytes": 319909,
+            "sourceUrl": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-04-29/7883bdc1-3a59-4fd9-8e05-707bf938cc0f.PDF",
+            "summary": "2026年第一季度和上年同期营业收入、净利润、经营现金流等主要会计数据，并明确季度报告未经审计"
+          }
+        ],
+        "pass": true,
+        "verifiedAt": "2026-07-18T14:12:30.959Z"
+      },
+      "responseVisibility": {
+        "issues": [],
+        "observations": [],
+        "pass": true
+      },
+      "nextPromptContentScope": {
+        "calculationComplexityCount": 2,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "decision": {
+        "evaluation": {
+          "evidenceQuote": "一季报营业总收入：741.42 亿元（74,142,121 千元，P2）\n经营简报合计收入：727.66 亿元\n差额约 13.76 亿元",
+          "labels": [
+            "其他"
+          ],
+          "note": "回复已给出一季度营业总收入741.42亿元、经营简报合计727.66亿元及约13.76亿元差额，方向上覆盖了核心桥接关系，也创建了在线表格产物。但当前仅一季报营业总收入标注了P2，其余核心数字未逐项对应官方PDF文件名及页码，也未展示上年同期可比数据、原披露单位和底表公式，暂时无法验证“三份材料可拼出完整来源链”的结论。产物卡片还是豆包在线表格，尚非要求的可下载xlsx。",
+          "score": 2,
+          "vote": "dislike"
+        },
+        "nextAttachmentNames": [],
+        "nextPrompt": "你已算出本期经营简报合计727.66亿元与一季报营业总收入741.42亿元相差约13.76亿元。请先逐项核验并补齐来源底表，覆盖2026年1至2月累计、3月单月、一季度报告总营业收入及各自上年同期可比数，为每个数字记录官方PDF文件名、公告编号、页码、原披露数值与单位、审计状态，并保留从原值换算到统一单位的公式。",
+        "productAssessment": null,
+        "taskOutcome": "continue",
+        "unresolvedIssues": [
+          "核心数字未全部追溯到具体官方PDF文件名和页码",
+          "缺少上年同期可比数据及其原披露单位",
+          "尚未验证在线工作簿内是否保留换算与复算公式",
+          "尚未交付可下载且可正常打开的xlsx文件"
+        ],
+        "evaluator": {
+          "id": "local-codex-1784384204576",
+          "model": "gpt-5.6-sol",
+          "provider": "local-codex-cli",
+          "retryTrace": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success",
+              "validationAttempt": 1
+            }
+          ],
+          "usage": {},
+          "validationFailures": []
+        }
+      },
+      "feedbackSourceNote": "回复已给出一季度营业总收入741.42亿元、经营简报合计727.66亿元及约13.76亿元差额，方向上覆盖了核心桥接关系，也创建了在线表格产物。但当前仅一季报营业总收入标注了P2，其余核心数字未逐项对应官方PDF文件名及页码，也未展示上年同期可比数据、原披露单位和底表公式，暂时无法验证“三份材料可拼出完整来源链”的结论。产物卡片还是豆包在线表格，尚非要求的可下载xlsx。",
+      "feedbackQualityRetryTrace": []
+    }
+  ],
+  "runId": "9d74aec9-4fab-4a6f-b736-27704c8801cc",
+  "schemaVersion": 7,
+  "successCriteria": [
+    "准确识别并读取三份官方PDF，所有核心数字、审计状态和口径说明都能追溯到文件名及页码。",
+    "来源底表同时覆盖2026年1至2月累计、3月单月和一季报总营业收入，并保留上年同期可比数据及原披露单位。",
+    "统一单位后复核经营简报分项合计、季度累计和单票收入，工作簿中保留公式、原披露精度与复算精度。",
+    "分别桥接本期和上年同期经营简报物流相关收入与一季报总营业收入；无法直接对应的差额保持待公司分部或科目资料确认，归因栏留空。",
+    "Excel至少包含来源底表、口径桥接、复算检查、证据边界或待核清单、来源索引，关键数值带来源页码且表格可继续回填。",
+    "最终提供真实可下载且能正常打开的xlsx文件；仅有文字说明、缺页数据或不完整在线预览均不算完成。"
+  ],
+  "taskGoal": "基于顺丰控股2026年2月、3月快递物流业务经营简报和2026年第一季度报告，逐轮核验季度数据来源链、分项与单位精度、经营简报物流相关收入与季报总营业收入的披露范围差异，最终形成可下载且公式和来源完整的Excel口径核对表。",
+  "startedAt": "2026-07-18T14:09:41.837Z",
+  "status": "paused_by_operator",
+  "uploadedAttachmentNames": [
+    "顺丰控股2026年2月快递物流业务经营简报.pdf",
+    "顺丰控股2026年3月快递物流业务经营简报.pdf",
+    "顺丰控股2026年第一季度报告.pdf"
+  ],
+  "workerPid": null,
+  "workerStartedAt": "2026-07-18T14:09:41.838Z",
+  "initialContentScope": {
+    "calculationComplexityCount": 1,
+    "issues": [],
+    "pass": true,
+    "policyVersion": "domestic-work-scope-v1"
+  },
+  "attachmentManifest": {
+    "attachmentCount": 3,
+    "attachments": [
+      {
+        "classification": "specific-business",
+        "introductionHint": "首轮随任务一次上传，后续所有核对继续引用同一批已验证原件。",
+        "name": "顺丰控股2026年2月快递物流业务经营简报.pdf",
+        "relativePath": "顺丰控股2026年2月快递物流业务经营简报.pdf",
+        "sha256": "b6d498ec52aea25bf45329c3890bdc26270e498eaf5a4d8088c7d63dc7756fff",
+        "sizeBytes": 98758,
+        "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-03-20/1225018701.PDF",
+        "summary": "2026年2月单月与1至2月累计的速运物流、供应链及国际业务收入和业务量，以及数据未经审计且不含其他非物流业务收入的边界"
+      },
+      {
+        "classification": "specific-business",
+        "introductionHint": "首轮随任务一次上传，后续所有核对继续引用同一批已验证原件。",
+        "name": "顺丰控股2026年3月快递物流业务经营简报.pdf",
+        "relativePath": "顺丰控股2026年3月快递物流业务经营简报.pdf",
+        "sha256": "aa21dd7d0f298800d5962078776289649f2992be6458c06a632d498624279260",
+        "sizeBytes": 96891,
+        "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-18/1225117549.PDF",
+        "summary": "2026年3月单月的速运物流、供应链及国际业务收入、业务量和单票收入，以及数据未经审计且不含其他非物流业务收入的边界"
+      },
+      {
+        "classification": "specific-business",
+        "introductionHint": "首轮随任务一次上传，后续所有核对继续引用同一批已验证原件。",
+        "name": "顺丰控股2026年第一季度报告.pdf",
+        "relativePath": "顺丰控股2026年第一季度报告.pdf",
+        "sha256": "72a07309388abcdce1aad7f33307c1693446a04cd435fbb2e656ba582f8ef5e2",
+        "sizeBytes": 319909,
+        "sourceUrl": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-04-29/7883bdc1-3a59-4fd9-8e05-707bf938cc0f.PDF",
+        "summary": "2026年第一季度和上年同期营业收入、净利润、经营现金流等主要会计数据，并明确季度报告未经审计"
+      }
+    ],
+    "initialAttachmentNames": [
+      "顺丰控股2026年2月快递物流业务经营简报.pdf",
+      "顺丰控股2026年3月快递物流业务经营简报.pdf",
+      "顺丰控股2026年第一季度报告.pdf"
+    ],
+    "minimumSpecificBusinessShare": 0.8,
+    "pass": true,
+    "policyId": "doubao-l1-l2-attachment-policy-v1",
+    "productionEvidence": {
+      "attachmentCount": 3,
+      "downloadManifestHash": "27d66bfe845466a63e97eccd8170c01d01af30dccb872b1529567dfa39e6321a",
+      "downloadManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\sources\\download_manifest.json",
+      "mode": "production-path",
+      "pass": true,
+      "policyId": "reuse-l2-source-acquisition-path-v1",
+      "productionRunId": "l1_sf_q1_reconciliation_20260718T122753Z_791280",
+      "productionTraceGateReceiptHash": "802556ddd439ee5f3f081c69c1234730cce30d29ace9b37b7349d5a0136dd35a",
+      "productionTraceGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\feishu\\production_trace_gate_receipt.json",
+      "productionTraceHash": "677fc8a832dfcdea98a5ff5e76a1449bf6bd0d9d6769416978251c6ac556dbf9",
+      "productionTracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\qa\\production_trace.json",
+      "recordUid": "沈礼_20260718_sf_q1_reconciliation_01",
+      "releaseGateReceiptHash": "9ee7375e192104cd5ac91071d1ac841cc304346b495c06e20c20e5376d683f18",
+      "releaseGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\feishu\\release_gate_receipt.json",
+      "verifiedAt": "2026-07-18T14:09:41.863Z"
+    },
+    "specificBusinessShare": 1,
+    "verifiedAt": "2026-07-18T14:09:41.863Z"
+  },
+  "error": {
+    "code": "JOB_PAUSE_REQUESTED",
+    "message": "The job was paused by an operator request.",
+    "stack": "JobPauseRequestedError: The job was paused by an operator request.",
+    "attempts": [],
+    "issues": [],
+    "productAssessment": null
+  },
+  "failedAt": "2026-07-18T14:16:55.233Z",
+  "pause": {
+    "reason": "operator-request",
+    "resumePolicy": "manual-resume-only-no-fallback"
+  },
+  "stoppedWorkerPid": 40944,
+  "workerStoppedAt": "2026-07-18T14:16:55.233Z",
+  "updatedAt": "2026-07-18T14:16:55.234Z"
+}

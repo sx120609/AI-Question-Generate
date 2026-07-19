@@ -1,0 +1,90 @@
+{
+  "kind": "scene-card-gate-report",
+  "gateId": "scene-card-role-consistency-v1",
+  "protocolId": "situated-requester-v1",
+  "schemaVersion": 1,
+  "status": "PASS",
+  "ok": true,
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_inspur_profit_cash_20260718T165250Z_4b756e\\drafts\\l1_questions.tsv",
+  "candidateHash": "2de8e0ffd419ed232f747c012566757c10065e7dd018359002b7aa1eea50371b",
+  "sceneCardPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_inspur_profit_cash_20260718T165250Z_4b756e\\sources\\scene_cards.json",
+  "sceneCardFileHash": "db37e13dc4c88989d4df9dd0ec22c0b7aa06c5f716f25e4496f8181db277aa32",
+  "sceneCardBundleHash": "dde3c267535c053899e5b3ae164c6c8f8019ba0d2f5efa8d31909d6a9a886fe2",
+  "sceneCardSetHash": "6cd90aad4dba79b1f1e3fb6fea7bf0ff632bd2836fd83ca5e9377212f35fcf1b",
+  "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_inspur_profit_cash_20260718T165250Z_4b756e\\sources\\fact_ledger.json",
+  "factLedgerHash": "538424c6a0012b05cc49e265b80a4da3c1583816dcf034d678524e4e464b66ef",
+  "summary": {
+    "candidateRowCount": 1,
+    "sceneCardCount": 1,
+    "passedRowCount": 1,
+    "failedRowCount": 0,
+    "globalErrorCount": 0,
+    "batchCollisionCount": 0
+  },
+  "rows": [
+    {
+      "uid": "沈礼_20260719_l1_inspur_profit_cash_05",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "2daf2a07e33dfea8ee76a0a2028638e566661eed9f8796c5b3e7fdc24106cb32",
+      "cardHash": "0bc9dcfc96589d515fd6fef2cc52cea2490ce8191359345826044f27873b7354",
+      "roleConsistencyHash": "49aa46633627e58277d90621ee3c5ccbcaa277d94ece1ee2af3ff95d36ffbffd",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "help-me",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "xlsx"
+        ],
+        "mFormats": [
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "我正在做浪潮信息2026年一季度利润现金与营运节奏复核，这份结果供经营分析同事继续取得回款和项目明细后补充判断。",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "另外，请在表格中预留出客户、项目、账龄等需要后续补充的明细位置，方便经营分析同事拿到回款和项目明细后继续做判断。",
+            "occurrences": 1
+          },
+          "downstreamUseSpan": {
+            "span": "另外，请在表格中预留出客户、项目、账龄等需要后续补充的明细位置，方便经营分析同事拿到回款和项目明细后继续做判断。",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [
+            "2026年"
+          ],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "c431635ab71f03625c0f418be85edb6912c43f9cdae49422d0ebfeaa6e9301ac"
+      }
+    }
+  ],
+  "batch": {
+    "ok": true,
+    "status": "PASS",
+    "thresholds": {
+      "highMaskedTrigramSimilarity": 0.72,
+      "sharedMaskedFragmentLength": 18
+    },
+    "comparisons": [],
+    "errors": []
+  },
+  "errors": [],
+  "evaluationHash": "b40871e2bfa9c28b0013842bd965e5745dea729d37e1c0a0e7ca71c7ac149f46"
+}

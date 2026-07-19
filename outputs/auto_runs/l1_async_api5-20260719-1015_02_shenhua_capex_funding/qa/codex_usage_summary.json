@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "kind": "codex-token-usage-summary",
+  "completeMetering": true,
+  "recordCount": 7,
+  "meteredRecordCount": 7,
+  "unmeteredRecordCount": 0,
+  "totals": {
+    "metered": true,
+    "source": "responses-api-aggregate",
+    "requestCount": 7,
+    "inputTokens": 15210,
+    "cachedInputTokens": 0,
+    "uncachedInputTokens": 15210,
+    "outputTokens": 8394,
+    "reasoningTokens": 5174,
+    "visibleOutputTokens": 3220,
+    "totalTokens": 23604
+  },
+  "entries": [
+    {
+      "stage": "01_reference_breakdown",
+      "provider": "openai-compatible-responses-api",
+      "model": "gpt-5.6-sol",
+      "usage": {
+        "metered": true,
+        "source": "responses-api",
+        "requestCount": 1,
+        "inputTokens": 691,
+        "cachedInputTokens": 0,
+        "uncachedInputTokens": 691,
+        "outputTokens": 1298,
+        "reasoningTokens": 516,
+        "visibleOutputTokens": 782,
+        "totalTokens": 1989
+      }
+    },
+    {
+      "stage": "02_question_draft",
+      "provider": "openai-compatible-responses-api",
+      "model": "gpt-5.6-sol",
+      "usage": {
+        "metered": true,
+        "source": "responses-api",
+        "requestCount": 1,
+        "inputTokens": 6054,
+        "cachedInputTokens": 0,
+        "uncachedInputTokens": 6054,
+        "outputTokens": 2093,
+        "reasoningTokens": 1552,
+        "visibleOutputTokens": 541,
+        "totalTokens": 8147
+      }
+    },
+    {
+      "stage": "03_pre_qa_structure_audit_attempt_1",
+      "provider": "openai-compatible-responses-api",
+      "model": "gpt-5.6-sol",
+      "usage": {
+        "metered": true,
+        "source": "responses-api",
+        "requestCount": 1,
+        "inputTokens": 2621,
+        "cachedInputTokens": 0,
+        "uncachedInputTokens": 2621,
+        "outputTokens": 1290,
+        "reasoningTokens": 516,
+        "visibleOutputTokens": 774,
+        "totalTokens": 3911
+      }
+    },
+    {
+      "stage": "04_first_quality_gate_attempt_1",
+      "provider": "openai-compatible-responses-api",
+      "model": "gpt-5.6-sol",
+      "usage": {
+        "metered": true,
+        "source": "responses-api",
+        "requestCount": 1,
+        "inputTokens": 2395,
+        "cachedInputTokens": 0,
+        "uncachedInputTokens": 2395,
+        "outputTokens": 536,
+        "reasoningTokens": 513,
+        "visibleOutputTokens": 23,
+        "totalTokens": 2931
+      }
+    },
+    {
+      "stage": "05_requester_decision_coverage_repair_v3",
+      "provider": "openai-compatible-responses-api",
+      "model": "gpt-5.6-sol",
+      "usage": {
+        "metered": true,
+        "source": "responses-api",
+        "requestCount": 1,
+        "inputTokens": 808,
+        "cachedInputTokens": 0,
+        "uncachedInputTokens": 808,
+        "outputTokens": 1690,
+        "reasoningTokens": 1034,
+        "visibleOutputTokens": 656,
+        "totalTokens": 2498
+      }
+    },
+    {
+      "stage": "05_second_language_gate",
+      "provider": "openai-compatible-responses-api",
+      "model": "gpt-5.6-sol",
+      "usage": {
+        "metered": true,
+        "source": "responses-api",
+        "requestCount": 1,
+        "inputTokens": 1468,
+        "cachedInputTokens": 0,
+        "uncachedInputTokens": 1468,
+        "outputTokens": 1106,
+        "reasoningTokens": 704,
+        "visibleOutputTokens": 402,
+        "totalTokens": 2574
+      }
+    },
+    {
+      "stage": "06_post_de_ai_preflight_1",
+      "provider": "openai-compatible-responses-api",
+      "model": "gpt-5.6-sol",
+      "usage": {
+        "metered": true,
+        "source": "responses-api",
+        "requestCount": 1,
+        "inputTokens": 1173,
+        "cachedInputTokens": 0,
+        "uncachedInputTokens": 1173,
+        "outputTokens": 381,
+        "reasoningTokens": 339,
+        "visibleOutputTokens": 42,
+        "totalTokens": 1554
+      }
+    }
+  ],
+  "backend": "responses-api",
+  "model": "gpt-5.6-sol",
+  "generatedAt": "2026-07-19T02:09:50.370Z"
+}

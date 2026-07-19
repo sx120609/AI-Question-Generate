@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "policyId": "l1-phase3-source-driven-v1",
+  "policyVersion": 1,
+  "runId": "l1_six_cqrcb_growth_capital_20260718T165249Z_d98e15",
+  "generatedAt": "2026-07-18T16:52:50.069Z",
+  "expiresAt": "2026-07-19T16:52:50.069Z",
+  "profiles": [
+    {
+      "slot": 1,
+      "index": 0,
+      "profileId": "l1_six_cqrcb_growth_capital_20260718T165249Z_d98e15_source_01",
+      "sourceDriven": true
+    }
+  ],
+  "note": "No opening, evidence, flow, or product style is assigned. Draft from source facts, then use batch gates to detect accidental concentration."
+}

@@ -1,0 +1,141 @@
+{
+  "kind": "de-ai-question-rewrite",
+  "policyId": "mugua-gemini-de-ai-rewrite-v2",
+  "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+  "generatedAt": "2026-07-18T12:47:09.435Z",
+  "provider": "mugua-openai-compatible",
+  "endpoint": "https://api.mugua.link/v1/chat/completions",
+  "model": "gemini-3.1-pro-preview",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 2061,
+    "outputTokens": 2307,
+    "totalTokens": 4368
+  },
+  "promptHash": "2273d8bdac09311a0805e34b1fa9b4c941dce6f22d4819b3bac46248b16858af",
+  "sourceQuestionHash": "e31d4f025e032c8eed3487365f85454716970bdd7dac6a50c7d9360eae521c80",
+  "rewrittenQuestionHash": "267b3a2d5466c6a51189e87abb1e8135b9f42b07a337785d9b8330ac2d0bfe5b",
+  "selectedAttempt": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "pass": false,
+      "visibleLength": 268,
+      "findingRules": [
+        "mechanical-sequence-shell"
+      ]
+    },
+    {
+      "attempt": 2,
+      "pass": true,
+      "visibleLength": 319,
+      "findingRules": []
+    }
+  ],
+  "rewrite": {
+    "question": "这里有顺丰控股的几份附件材料，准备用来整理2026年第一季度的经营情况。随附的文件包含2月与3月的《快递物流业务经营简报》以及一份《2026年第一季度报告》。你需要看下1至2月的累计数和3月份的单月数可不可以拼成完整的单季数据链条。同时核对一季报与经营简报在总营业收入上的范围差异，把非物流业务产生的收入剔除出去。另外这几份文件里存在以千元为单位披露和以亿元为单位且保留两位小数的两种记账习惯，你需要分析这种差异对指标可比性及数据精度造成的影响。这三份文档均视作未经审计状态并需要附上来源页码。对于没法直接匹配的项目，把状态栏写成待核，业务归因栏保持留空。整理好的口径核对结果做成一份可下载的Excel表格，后续复核同事会直接在上面回填。",
+    "requestContract": {
+      "requestSpan": "整理好的口径核对结果做成一份可下载的Excel表格，后续复核同事会直接在上面回填。",
+      "action": "整理",
+      "outputs": [
+        {
+          "format": "xlsx",
+          "humanName": "Excel",
+          "purpose": "供后续执行和留痕使用"
+        }
+      ]
+    },
+    "roleTrace": {
+      "blockageSpan": "这里有顺丰控股的几份附件材料，准备用来整理2026年第一季度的经营情况。",
+      "motivationSpan": "这里有顺丰控股的几份附件材料，准备用来整理2026年第一季度的经营情况。",
+      "downstreamUseSpan": "整理好的口径核对结果做成一份可下载的Excel表格，后续复核同事会直接在上面回填。"
+    },
+    "usedFactIds": [
+      "fact-feb-month",
+      "fact-jan-feb-cumulative",
+      "fact-feb-boundary",
+      "fact-march-month",
+      "fact-march-boundary",
+      "fact-q1-revenue",
+      "fact-q1-boundary",
+      "fact-quarter-bridge",
+      "fact-subtotal-checks",
+      "fact-unit-price-checks"
+    ],
+    "deliberatelyOmitted": [],
+    "flowStages": [
+      {
+        "stage": "证据归位",
+        "evidence": "事实包中的公开材料与待补信息",
+        "decision": "区分可确认规则和未知现场状态",
+        "next": "证据足够则形成执行对象，不足则进入补证"
+      },
+      {
+        "stage": "执行对象核对",
+        "evidence": "已归位的对象关系与状态记录",
+        "decision": "建立带公式和来源页码的季度收入口径核对表，确认经营简报分项与累计值能够回算，并把与一季报总营业收入的差额保持为口径桥接项而非直接归因。",
+        "next": "符合条件则进入小范围验证，否则停止推进"
+      },
+      {
+        "stage": "小范围验证",
+        "evidence": "试点输入与实际返回记录",
+        "decision": "判断结果是否满足扩大范围的条件",
+        "next": "通过则推进，失败则退回原状态并留痕"
+      },
+      {
+        "stage": "交接收束",
+        "evidence": "判断依据、验证结果与回退记录",
+        "decision": "确认下游拿到一致结论",
+        "next": "复核季度数据口径并为后续取得分部或科目明细后继续回填。"
+      }
+    ],
+    "selfAudit": {
+      "factsPreserved": true,
+      "formatsPreserved": true,
+      "processChainExplicit": true,
+      "failureOrRollbackExplicit": true,
+      "noInventedFacts": true,
+      "noAiShell": true
+    }
+  },
+  "validation": {
+    "pass": true,
+    "visibleLength": 319,
+    "similarity": [
+      {
+        "referenceIndex": 1,
+        "editSimilarity": 0.3278688524590164,
+        "trigramJaccard": 0.1334841628959276,
+        "longestExactCopyRun": 12,
+        "longestExactCopySpan": "2026年第一季度报告》"
+      },
+      {
+        "referenceIndex": 2,
+        "editSimilarity": 0.03508771929824561,
+        "trigramJaccard": 0,
+        "longestExactCopyRun": 2,
+        "longestExactCopySpan": "附件"
+      }
+    ],
+    "findings": [],
+    "factGuard": {
+      "ok": true,
+      "candidateAnchors": {
+        "numbers": [
+          "2026年",
+          "2月",
+          "3月",
+          "1"
+        ],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "unsupported": {
+        "numbers": [],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "errors": []
+    }
+  }
+}

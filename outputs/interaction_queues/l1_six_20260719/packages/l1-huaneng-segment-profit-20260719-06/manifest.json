@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "kind": "immutable-doubao-interaction-package",
+  "jobId": "l1-huaneng-segment-profit-20260719-06",
+  "createdAt": "2026-07-18T18:13:58.093Z",
+  "sourceConfigPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_huaneng_revenue_profit_20260718T165251Z_f9f42e\\doubao\\job.json",
+  "sourceConfigSha256": "5f65041448a101c22c92ff40000b34ea1f2c7cfae8f1dee6c195aea7d60d6291",
+  "configSha256": "2fd10973016ab91b92368518744c72362e311150558064c1ef71bd76ab1ef682",
+  "attachmentReceipt": {
+    "attachmentCount": 1,
+    "attachments": [
+      {
+        "classification": "specific-business",
+        "introductionHint": "把正式报告名称直接嵌入任务句，后续核对继续引用同一份已验证原件。",
+        "name": "华能国际电力股份有限公司2026年第一季度报告.pdf",
+        "relativePath": "华能国际电力股份有限公司2026年第一季度报告.pdf",
+        "sha256": "2d403df5eaf375d7866867f3abae6119ea8fa381064de9d5e5cfb4b67dcbc135",
+        "sizeBytes": 151655,
+        "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-29/1225237875.PDF",
+        "summary": "披露华能国际一季度收入利润现金流、发电与电价原因、燃料成本变化以及境内电力板块利润分化。"
+      }
+    ],
+    "initialAttachmentNames": [
+      "华能国际电力股份有限公司2026年第一季度报告.pdf"
+    ],
+    "minimumSpecificBusinessShare": 0.8,
+    "pass": true,
+    "policyId": "doubao-l1-l2-attachment-policy-v1",
+    "productionEvidence": {
+      "attachmentCount": 1,
+      "downloadManifestHash": "52e686c3c47d3096ab0a4dfccc71cd20123ae3b5b52da483a19ad6502c25edee",
+      "downloadManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_huaneng_revenue_profit_20260718T165251Z_f9f42e\\sources\\download_manifest.json",
+      "mode": "production-path",
+      "pass": true,
+      "policyId": "reuse-l2-source-acquisition-path-v1",
+      "productionRunId": "l1_six_huaneng_revenue_profit_20260718T165251Z_f9f42e",
+      "productionTraceGateReceiptHash": "81a76b06cab6e0349c4142737ce7590306c65fd087396b2cb5f6125d45f96be1",
+      "productionTraceGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_huaneng_revenue_profit_20260718T165251Z_f9f42e\\feishu\\production_trace_gate_receipt.json",
+      "productionTraceHash": "139f0f7eec091f8a6f945e53eb897ee24516145bf01e6e13fa7dc294379c2176",
+      "productionTracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_huaneng_revenue_profit_20260718T165251Z_f9f42e\\qa\\production_trace.json",
+      "recordUid": "沈礼_20260719_l1_huaneng_segment_profit_06",
+      "releaseGateReceiptHash": "93d3ab9167e1eef1160c18b4328b26da8a64f63065d0f1620ac85fe1cb79c392",
+      "releaseGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_huaneng_revenue_profit_20260718T165251Z_f9f42e\\feishu\\release_gate_receipt.json",
+      "verifiedAt": "2026-07-18T18:13:58.079Z"
+    },
+    "specificBusinessShare": 1,
+    "verifiedAt": "2026-07-18T18:13:58.081Z"
+  }
+}

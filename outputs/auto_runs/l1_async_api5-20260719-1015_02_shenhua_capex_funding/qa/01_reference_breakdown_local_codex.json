@@ -1,0 +1,45 @@
+{
+  "kind": "codex-stage-response",
+  "stage": "01_reference_breakdown",
+  "model": "gpt-5.6-sol",
+  "provider": "openai-compatible-responses-api",
+  "responseId": "resp_0127556ad7542b7e016a5c2f76fe60819b85ad3ca1a05b9224",
+  "requestId": "7f6f47f2-aefd-434d-845e-c79b8067e9b4",
+  "completedAt": "2026-07-19T01:59:56.734Z",
+  "promptHash": "3bd94a58dbca3c8f28d377661dc88bcdcf5445aec63d57bd80d8fd4077a29a60",
+  "usage": {
+    "metered": true,
+    "source": "responses-api",
+    "requestCount": 1,
+    "inputTokens": 691,
+    "cachedInputTokens": 0,
+    "uncachedInputTokens": 691,
+    "outputTokens": 1298,
+    "reasoningTokens": 516,
+    "visibleOutputTokens": 782,
+    "totalTokens": 1989,
+    "providerUsage": {
+      "input_tokens": 691,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 1298,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 1989
+    }
+  },
+  "parsed": {
+    "attachmentSupport": "附件提供两类判据：一类用于确定项目取舍原则，另一类用于规定成效主张需要哪些可核验材料。它不替代方案数据或直接给出结论，而是帮助审查候选项是否符合轻量实施、效益导向和证据可追溯等要求，并约束对供应方预测的采信程度。",
+    "businessScene": "资源受限的组织需要在多个改进项目之间完成近期立项优先级决策，供内部管理者决定先投入哪一个项目。",
+    "coreBlockage": "各候选项在投入、工期、人员占用、基础条件和预期收益上并不一致，部分项目存在隐性配套成本或实施依赖，收益预测又主要来自供方陈述，因此不能只按名义收益排序，必须同时处理硬约束淘汰、统一口径测算和证据可信度审查。",
+    "deliverableOrigin": "该产物自然产生于立项评审或投资审批节点：决策者需要一份可快速审阅的压缩版建议，将候选项比较、明确推荐、推荐依据、启动门槛与信息缺口放在同一交付物中，以便作出是否启动及附条件批准的决定。",
+    "forbiddenReuse": "不得沿用样例中的制造细分领域、具体业务损失对象、各类应用系统、设备改造情境、供方预测内容、人工工时设定、预算与周期数值、人员配置、附件名称及来源，也不得复刻限定页数的可编辑文档与对比表、固定数量理由、固定数量前置条件和验证项这一整套产物组合；不得照搬题面句式、指标数值或候选方案之间的对应关系。",
+    "imitableStructure": "可以模仿“交代决策背景与资源边界—并列给出若干候选项及其投入、周期、收益和依赖—用附件原则建立评价框架—先核验不可突破的条件—再按统一口径量化收益与回收效率—识别未报价事项和预测假设的可信边界—作出单一优先选择—补充启动条件与后续取证事项”的推进链条。",
+    "mainTask": "在统一约束、财务口径和证据标准下评估多个候选项目，排除不可执行或依据不足的选项，并形成一个有条件、可核验的唯一优先立项建议。",
+    "referenceAttachmentStructure": "附件采用“方向性原则文件加评测取证规范”的双层结构：前者回答应按什么价值观和实施策略筛选项目，后者回答结论与成效应由什么数据、记录或验证过程支撑。",
+    "referenceProductParagraphLogic": "题面后半段先要求引用附件建立判断标准，随后依次布置约束核验、量化测算、假设审查和唯一选择，使分析自然收束为供内部立项决策者使用的建议材料；接着限定交付载体应便于快速审阅，并规定必须呈现候选比较与明确结论，同时要求给出支撑结论的依据、启动前必须满足的条件以及尚待核实的信息。验收重点因此落在口径是否一致、推荐是否唯一、理由能否追溯到约束与证据、风险是否被转化为可执行的前置动作，而非仅看版式完成度。"
+  }
+}

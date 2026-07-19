@@ -1,0 +1,144 @@
+{
+  "kind": "de-ai-question-rewrite",
+  "policyId": "mugua-gemini-de-ai-rewrite-v2",
+  "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+  "generatedAt": "2026-07-18T13:16:09.564Z",
+  "provider": "mugua-openai-compatible",
+  "endpoint": "https://api.mugua.link/v1/chat/completions",
+  "model": "gemini-3.1-pro-preview",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 2053,
+    "outputTokens": 2087,
+    "totalTokens": 4140
+  },
+  "promptHash": "3390787bd75057f6ffb5cce6e17442aa6dbcdeb98a0e823eb4b0f0e5dc681443",
+  "sourceQuestionHash": "debd0596becda26e38bd799747e7114fd43f565bc7b459853fa8d19a36e2bf4e",
+  "rewrittenQuestionHash": "d32d7e5f6eb33d0fee7539767711324ed4bb915050c2b8809e81ab364fafaff7",
+  "selectedAttempt": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "pass": true,
+      "visibleLength": 275,
+      "findingRules": []
+    }
+  ],
+  "rewrite": {
+    "question": "这里上传了顺丰控股2026年第一季度报告以及同年2月和3月的快递物流业务经营简报。核实这三份材料能否拼成一季度完整的数据来源链，把1至2月累计数据和3月单月数据的衔接关系理清楚。核验经营简报物流相关收入与一季报总营业收入的披露范围差异，无法直接对应的差额待公司分部或科目资料确认，不做归因。处理以千元披露与以亿元保留两位小数形成的披露单位和精度差异，评估各项指标的可比性。整理一份来源底表呈现手头材料的数据，各项指标标注具体来源页码和未经审计的财务状态，无法直接对应的项目在表内保持待核状态。生成一份可下载的Excel口径核对表，文件格式为xlsx。",
+    "requestContract": {
+      "requestSpan": "生成一份可下载的Excel口径核对表，文件格式为xlsx。",
+      "action": "生成",
+      "outputs": [
+        {
+          "format": "xlsx",
+          "humanName": "Excel",
+          "purpose": "供后续执行和留痕使用"
+        }
+      ]
+    },
+    "roleTrace": {
+      "blockageSpan": "核验经营简报物流相关收入与一季报总营业收入的披露范围差异，无法直接对应的差额待公司分部或科目资料确认，不做归因。",
+      "motivationSpan": "",
+      "downstreamUseSpan": "生成一份可下载的Excel口径核对表，文件格式为xlsx。"
+    },
+    "usedFactIds": [
+      "fact-feb-month",
+      "fact-jan-feb-cumulative",
+      "fact-feb-boundary",
+      "fact-march-month",
+      "fact-march-boundary",
+      "fact-q1-revenue",
+      "fact-q1-boundary",
+      "fact-quarter-bridge",
+      "fact-subtotal-checks",
+      "fact-unit-price-checks"
+    ],
+    "deliberatelyOmitted": [],
+    "flowStages": [
+      {
+        "stage": "证据归位",
+        "evidence": "事实包中的公开材料与待补信息",
+        "decision": "区分可确认规则和未知现场状态",
+        "next": "证据足够则形成执行对象，不足则进入补证"
+      },
+      {
+        "stage": "执行对象核对",
+        "evidence": "已归位的对象关系与状态记录",
+        "decision": "建立带公式和来源页码的季度收入口径核对表，确认经营简报分项与累计值能够回算，并把与一季报总营业收入的差额保持为口径桥接项而非直接归因。",
+        "next": "符合条件则进入小范围验证，否则停止推进"
+      },
+      {
+        "stage": "小范围验证",
+        "evidence": "试点输入与实际返回记录",
+        "decision": "判断结果是否满足扩大范围的条件",
+        "next": "通过则推进，失败则退回原状态并留痕"
+      },
+      {
+        "stage": "交接收束",
+        "evidence": "判断依据、验证结果与回退记录",
+        "decision": "确认下游拿到一致结论",
+        "next": "复核季度数据口径并为后续取得分部或科目明细后继续回填。"
+      }
+    ],
+    "selfAudit": {
+      "factsPreserved": true,
+      "formatsPreserved": true,
+      "processChainExplicit": true,
+      "failureOrRollbackExplicit": true,
+      "noInventedFacts": true,
+      "noAiShell": true
+    }
+  },
+  "validation": {
+    "pass": true,
+    "visibleLength": 275,
+    "similarity": [
+      {
+        "referenceIndex": 1,
+        "editSimilarity": 0.2862595419847328,
+        "trigramJaccard": 0.18469656992084432,
+        "longestExactCopyRun": 15,
+        "longestExactCopySpan": "顺丰控股2026年第一季度报告"
+      },
+      {
+        "referenceIndex": 2,
+        "editSimilarity": 0.05555555555555558,
+        "trigramJaccard": 0,
+        "longestExactCopyRun": 2,
+        "longestExactCopySpan": "20"
+      }
+    ],
+    "findings": [],
+    "factGuard": {
+      "ok": true,
+      "candidateAnchors": {
+        "numbers": [
+          "2026年",
+          "2月",
+          "3月",
+          "1"
+        ],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "unsupported": {
+        "numbers": [],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "errors": []
+    }
+  },
+  "targetedRepair": {
+    "reason": [
+      {
+        "rule": "不得把季报与经营简报差额直接认定为非物流业务收入",
+        "evidence": "“经营简报去除了其他非物流业务收入，一季报采用总营业收入”将两类披露的边界差异直接归因为其他非物流业务收入。",
+        "repair": "改为要求依据三份附件核验两类文件的统计范围和边界差异，不预先认定差额性质，也不要求从季报营业收入中直接剔除。"
+      }
+    ],
+    "provider": "mugua-openai-compatible",
+    "promptHash": "3390787bd75057f6ffb5cce6e17442aa6dbcdeb98a0e823eb4b0f0e5dc681443"
+  }
+}

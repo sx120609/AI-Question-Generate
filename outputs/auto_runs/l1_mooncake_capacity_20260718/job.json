@@ -1,0 +1,115 @@
+{
+  "jobId": "l1-mooncake-capacity-20260718",
+  "attachmentRoot": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_mooncake_capacity_20260718\\attachments",
+  "attachments": [
+    {
+      "name": "附件一_月饼预售与渠道滚动预测_20260718.csv",
+      "relativePath": "附件一_月饼预售与渠道滚动预测_20260718.csv",
+      "sha256": "a88f7bf0b74df4b965437eadc24d7ee7b709800d487e212af8cb72dcbdeb02c0",
+      "sizeBytes": 7391,
+      "sourceUrl": "https://ops.example.cn/planning/exports/FV0718",
+      "summary": "2026年7月18日导出的W1至W4月饼滚动预测表，包含四个SKU在直营网点、电商预售和企业团购的预测量、确认量、待定金量、单位折算、历史误差、取消率、现货与积压。",
+      "classification": "specific-business",
+      "objectLevel": true,
+      "timeAnchor": "2026年7月18日华东中央厨房旺季排产准备",
+      "specificityEvidence": {
+        "object": "华东中央厨房四款月饼的W1至W4渠道需求",
+        "periodOrEvent": "2026年7月18日旺季滚动预测冻结前复核",
+        "uniqueContent": "48条波次与SKU渠道记录保留原始数量单位、折算系数、预测误差、取消率、现货、积压和责任人"
+      },
+      "introductionHint": "首轮用于统一渠道数量口径并识别需求波动和数据缺口。"
+    },
+    {
+      "name": "附件二_月饼产线换型与班组能力_20260718.csv",
+      "relativePath": "附件二_月饼产线换型与班组能力_20260718.csv",
+      "sha256": "4e8176c31244f41b6fca1eb993f2a6d8fb9278d6706e49e0323e84b50d82252f",
+      "sizeBytes": 1999,
+      "sourceUrl": "https://mes.example.cn/capacity/snapshot/20260718",
+      "summary": "2026年7月18日形成的产线能力快照，包含三条生产线和两条包装线的标准产能、近四周实绩、合格率、最小批量、换型清洗、熟练工、加班上限、维护窗口与停机率。",
+      "classification": "specific-business",
+      "objectLevel": true,
+      "timeAnchor": "2026年7月18日华东中央厨房排产能力复核",
+      "specificityEvidence": {
+        "object": "L1至L3生产线与包装A和包装B的SKU适配能力",
+        "periodOrEvent": "2026年旺季W1至W4试排前能力快照",
+        "uniqueContent": "14条产线与SKU组合记录给出实绩节拍、合格率、批量、换型清洗、班组缺口和维护停机约束"
+      },
+      "introductionHint": "需求折算完成后追加，用于定位产能瓶颈并测算换型和班组约束。"
+    },
+    {
+      "name": "附件三_冷库包材与履约约束快照_20260718.html",
+      "relativePath": "附件三_冷库包材与履约约束快照_20260718.html",
+      "sha256": "0ba84e61d7afee016dee62c16ef1f3127206a2fd3b60bf0f26e28ee740c6d00a",
+      "sizeBytes": 4139,
+      "sourceUrl": "https://wms.example.cn/peak-season/snapshot/SC0718",
+      "summary": "2026年7月18日仓储采购履约联合快照，包含四个仓区的托位与占用、六类关键包材的库存和到货、三个渠道的截单与日处理上限，以及当前尚待协调的容量事项。",
+      "classification": "specific-business",
+      "objectLevel": true,
+      "timeAnchor": "2026年7月18日华东中央厨房仓储与履约联查",
+      "specificityEvidence": {
+        "object": "月饼成品暂存、关键包材与三类渠道出库窗口",
+        "periodOrEvent": "2026年旺季W1至W4排产约束确认",
+        "uniqueContent": "仓区托位、包材可承诺量、质检周期、渠道截单、日处理上限与组合购附加工时形成可计算约束"
+      },
+      "introductionHint": "形成候选排产策略时追加，用于校验冷库、包材和履约窗口的可执行性。"
+    },
+    {
+      "name": "附件四_预测口径与7月18日排产会纪要.txt",
+      "relativePath": "附件四_预测口径与7月18日排产会纪要.txt",
+      "sha256": "e99c32ea64e6706c3533140a00972325bff7a093273460cd4cf8ee55bf7e811d",
+      "sizeBytes": 1914,
+      "sourceUrl": "https://oa.example.cn/meetings/20260718-mooncake-plan",
+      "summary": "2026年7月18日排产会纪要，记录三类渠道数量口径、预测版本、现货与积压处理、产能计算方式、五项部门争议，以及管理层对策略对比和改排触发指标的要求。",
+      "classification": "specific-business",
+      "objectLevel": true,
+      "timeAnchor": "2026年7月18日10:30至11:25排产协调会",
+      "specificityEvidence": {
+        "object": "华东中央厨房月饼旺季排产口径和跨部门争议",
+        "periodOrEvent": "2026年7月18日排产协调会",
+        "uniqueContent": "明确团购套盒折算、预测版本差异、待定金订单权重争议、包装附加工时缺口和管理层交付要求"
+      },
+      "introductionHint": "首轮与需求表一起上传，用于解释单位折算和预测口径争议。"
+    }
+  ],
+  "initialAttachmentNames": [
+    "附件一_月饼预售与渠道滚动预测_20260718.csv",
+    "附件四_预测口径与7月18日排产会纪要.txt"
+  ],
+  "maxRounds": 6,
+  "mode": "openai-compatible",
+  "taskGoal": "分析华东中央厨房四款月饼在W1至W4的需求可靠性与生产履约约束，形成可执行的旺季排产策略和唯一优先方案，并交付可下载的Excel排产决策工作簿。",
+  "successCriteria": [
+    "三类渠道数量统一折算为盒，并保留原始单位、折算系数、确认量、待定金量、历史误差、取消率、现货和积压口径",
+    "需求情景同时反映订单确定性与预测波动，四个SKU和W1至W4均有可复核的计算过程",
+    "候选排产策略覆盖实绩产能、一次合格率、最小批量、换型清洗、班组技能、维护、冷库、包材和履约窗口",
+    "最终Excel包含口径清洗、需求情景、能力约束、排产方案、压力测试和触发指标，并给出一个优先方案及资源调整顺序"
+  ],
+  "initialPrompt": "我负责华东中央厨房今年的月饼旺季排产，管理层希望在7月31日前确定W1到W4的生产策略。四款产品要同时覆盖直营网点、电商预售和企业团购。现在各渠道的数量单位并不一致，确认程度也有差别，生产端还要考虑换型、班组和仓储约束。\n\n我先给你附件一和附件四。附件一保留了各系统导出的原始数量、折算系数和历史波动。附件四记录了7月18日排产会上对口径和订单权重的争议。\n\n这次先把需求侧算清。你把三类渠道统一折成盒，按W1到W4分别汇总四个SKU的预测量和已确认量。待定金订单单列。结合历史误差和取消率修正需求，再把现货与积压计入基准需求区间。结果里保留每一步计算口径，并指出对排产影响最大的三个不确定因素。\n\n我会根据这份结果继续补充产线和履约约束，最后需要一份可下载的Excel排产决策工作簿。",
+  "productRequirement": {
+    "required": true,
+    "requestedFormats": ["excel"],
+    "allowEquivalentOnline": true,
+    "allowUnavailableBestEffort": true
+  },
+  "responseTimeoutMs": 300000,
+  "interactionRewrite": {
+    "type": "openai-compatible",
+    "baseUrl": "https://api.mugua.link/v1",
+    "model": "gemini-3.1-pro-preview",
+    "apiKeyEnv": "DE_AI_REWRITE_API_KEY",
+    "temperature": 0.55,
+    "timeoutMs": 180000
+  },
+  "promptPreflight": {
+    "type": "local-codex",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "timeoutMs": 360000
+  },
+  "policy": {
+    "type": "local-codex",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "timeoutMs": 360000
+  }
+}

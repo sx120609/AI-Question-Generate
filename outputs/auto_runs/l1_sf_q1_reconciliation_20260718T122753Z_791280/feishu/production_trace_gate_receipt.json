@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "kind": "l1-production-trace-gate-receipt",
+  "productionProfile": "l1",
+  "gateId": "production-trace-gate-v6-profiled",
+  "status": "PASS",
+  "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\feishu\\production_trace_gate_report.json",
+  "reportHash": "868ce84b53fa474a8930f282a1fb230b04806cd305fc4687339bcaaa03d259fb",
+  "packetHash": "3bce477029c2158fe8fc44f1136e25d6a690e54da421fe3c8a68aa2eab88658f",
+  "traceHash": "677fc8a832dfcdea98a5ff5e76a1449bf6bd0d9d6769416978251c6ac556dbf9",
+  "candidateHash": "5d5a13a33aa550b455990807aaa65d74ce4b536e605990105c2dca5957fdb6a1",
+  "fillPlanHash": "b67689088fdc1375a219a23709887e7f82be86168262939567456f34e27f8cb6"
+}

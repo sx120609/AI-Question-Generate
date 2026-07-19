@@ -1,0 +1,41 @@
+{
+  "kind": "codex-stage-response",
+  "stage": "06_post_de_ai_preflight_1",
+  "model": "gpt-5.6-sol",
+  "provider": "openai-compatible-responses-api",
+  "responseId": "resp_0259fa93343aec57016a5c31e9c3bc8199a178873339e83653",
+  "requestId": "2c9f3967-50b6-4599-9a0b-4bf8c56514dc",
+  "completedAt": "2026-07-19T02:10:01.584Z",
+  "promptHash": "8a4542654583191e529009ab9e6bfc0d960dd4b96f1595005e9a8ed36e754924",
+  "usage": {
+    "metered": true,
+    "source": "responses-api",
+    "requestCount": 1,
+    "inputTokens": 1331,
+    "cachedInputTokens": 0,
+    "uncachedInputTokens": 1331,
+    "outputTokens": 458,
+    "reasoningTokens": 416,
+    "visibleOutputTokens": 42,
+    "totalTokens": 1789,
+    "providerUsage": {
+      "input_tokens": 1331,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 458,
+      "output_tokens_details": {
+        "reasoning_tokens": 416
+      },
+      "total_tokens": 1789
+    }
+  },
+  "parsed": {
+    "attachmentsPreserved": true,
+    "factsPreserved": true,
+    "issues": [],
+    "pass": true,
+    "visibleTextClean": true
+  }
+}

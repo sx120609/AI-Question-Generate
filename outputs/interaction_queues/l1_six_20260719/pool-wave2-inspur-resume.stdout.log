@@ -1,0 +1,16 @@
+{
+  "handled": 1,
+  "jobs": [
+    {
+      "error": {
+        "code": "",
+        "message": "The resumable Office Task is not active."
+      },
+      "jobId": "l1-inspur-profit-cash-20260719-05",
+      "resultPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\results\\l1-inspur-profit-cash-20260719-05.json",
+      "status": "failed"
+    }
+  ],
+  "targetId": "2312292BC690B375D99E7174326C30CA",
+  "workerId": "worker-13392-6bd4b08b-1d2d-4811-993b-972cf23f5b98"
+}

@@ -1,0 +1,14 @@
+{
+  "kind": "post-de-ai-independent-preflight",
+  "provider": "local-codex-cli",
+  "model": "gpt-5.6-sol",
+  "completedAt": "2026-07-18T06:52:09.778Z",
+  "outboundQuestionHash": "21e63854bf17bcea2696632373ebdbda0843b5fd30280df975a7a95baac5e212",
+  "parsed": {
+    "pass": true,
+    "issues": [],
+    "factsPreserved": true,
+    "attachmentsPreserved": true,
+    "visibleTextClean": true
+  }
+}

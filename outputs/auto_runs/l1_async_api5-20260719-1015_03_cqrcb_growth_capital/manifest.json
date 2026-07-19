@@ -1,0 +1,119 @@
+{
+  "runId": "l1_async_api5-20260719-1015_03_cqrcb_growth_capital",
+  "objective": "异步 Responses API 测试：渝农商行2026年一季度增长与资本约束复核",
+  "operator": "codex",
+  "productionProfile": "l1",
+  "taskType": "L1 探索型",
+  "generatedAnnotator": "沈礼",
+  "uidPrefix": "沈礼_",
+  "count": 1,
+  "status": "READY_FOR_DOUBAO_TEST_NO_FEISHU",
+  "createdAt": "2026-07-19T01:59:16.267Z",
+  "spreadsheetToken": "",
+  "sheetId": "",
+  "dirs": {
+    "root": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital",
+    "sources": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\sources",
+    "attachments": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\attachments",
+    "drafts": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\drafts",
+    "feishu": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\feishu",
+    "qa": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\qa",
+    "logs": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\logs",
+    "tmp": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\tmp"
+  },
+  "diversityPlanPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\sources\\diversity_plan.json",
+  "naturalnessBaselinePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\sources\\naturalness_baseline.json",
+  "diversityPolicyId": "l1-phase3-source-driven-v1",
+  "diversityPolicyVersion": 1,
+  "structuralDiversityPolicyPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\config\\structural_diversity_l1.json",
+  "structureRegistryPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\structure_registry.json",
+  "modelRouting": {
+    "generation": {
+      "provider": "codex-model",
+      "model": "gpt-5.6-sol",
+      "runnerId": "production-generation-v1-model-router"
+    },
+    "qualityGates": {
+      "provider": "codex-model",
+      "model": "gpt-5.6-sol",
+      "runnerId": "exact-two-quality-gates-v3-model-router"
+    },
+    "deAiRewrite": {
+      "provider": "mugua-openai-compatible",
+      "baseUrl": "https://api.mugua.link/v1",
+      "model": "gemini-3.1-pro-preview",
+      "promptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\inputs\\production\\L1题面去AI改写提示词.txt",
+      "promptHash": "99e5675e4d14dcdefbcf22d9abc225e648e0ba064f52fd661515aa4cfb9ae359"
+    },
+    "policy": "Generation and quality gates use the Codex model by default. Third-party model APIs require explicit provider selection. Only de-AI rewriting uses Mugua Gemini through its OpenAI-compatible API."
+  },
+  "productionProtocol": {
+    "profileId": "l1",
+    "taskType": "L1 探索型",
+    "protocolId": "l1-phase3-codex-model-two-gates-trace-v6",
+    "inputPacketPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\sources\\production_input_packet.json",
+    "workflowStatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\sources\\production_workflow_state.json",
+    "productionTracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\qa\\production_trace.json",
+    "inputStatus": "READY",
+    "sampledReferences": [
+      {
+        "questionIndex": 1,
+        "sheet": "三期示例数据",
+        "row": 3,
+        "questionHash": "418574532f8ee79e831615134242df51341398b1834ada3bd1d0916b80e39437",
+        "attachmentSummaryHash": "04485f7aa8b30d5e19d84d49aa2db6db184ad0adb45430fc8da02e9b35a96cb5"
+      }
+    ],
+    "promptVersion": "profiled-sampled-two-gate-prompts-v2-domestic-work-scope",
+    "stages": [
+      "reference-sample",
+      "reference-breakdown",
+      "attachment-plan",
+      "question-draft",
+      "first-quality-gate",
+      "second-language-gate",
+      "final-compiler"
+    ]
+  },
+  "situatedGeneration": {
+    "policyId": "situated-requester-v1",
+    "promptVersion": "situated-requester-prompts-v1",
+    "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\sources\\fact_ledger.json",
+    "sceneCardPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\sources\\scene_cards.json",
+    "roleConsistencyReportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\feishu\\role_consistency_report.json",
+    "stages": [
+      "scene-card",
+      "requester",
+      "field-compiler",
+      "audit"
+    ],
+    "candidateCountPerScene": 3,
+    "note": "The scene card is a hidden generation artifact. It must never be copied into the Feishu question cell."
+  },
+  "boundaries": {
+    "writableRoots": [
+      "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital"
+    ],
+    "sharedWritesRequireLocks": [
+      "outputs/l1_questions.tsv",
+      "outputs/feishu_fill_plan_*.json",
+      "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\structure_registry.json",
+      "Feishu sheet rows"
+    ],
+    "noTouch": [
+      "Rows not reserved by this run",
+      "Other runs under outputs/auto_runs",
+      "Existing attachments outside this run unless explicitly imported"
+    ]
+  },
+  "recordUid": "沈礼_api5-20260719-1015_03",
+  "jobPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\doubao\\job.json",
+  "localGates": {
+    "roleConsistency": "PASS",
+    "productionTrace": "PASS",
+    "release": "PASS"
+  },
+  "feishuWriteAttempted": false,
+  "feishuWriteApplied": false,
+  "updatedAt": "2026-07-19T02:10:26.000Z"
+}

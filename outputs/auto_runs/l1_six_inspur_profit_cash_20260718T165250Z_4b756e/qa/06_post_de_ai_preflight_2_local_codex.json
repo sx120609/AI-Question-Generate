@@ -1,0 +1,21 @@
+{
+  "kind": "local-codex-stage-response",
+  "stage": "06_post_de_ai_preflight_2",
+  "model": "gpt-5.6-sol",
+  "provider": "local-codex-cli",
+  "completedAt": "2026-07-18T18:02:20.012Z",
+  "promptHash": "be4d98efa92f02f209f7e047dcacf6d3e1ecec9c29104f11746e005d245f3f49",
+  "parsed": {
+    "pass": false,
+    "issues": [
+      {
+        "rule": "必须保留“请给出明确结论”或等价的清晰决策请求",
+        "evidence": "outboundQuestion仅写“在梳理结论的时候”，未明确要求给出结论或作出清晰判断。",
+        "repair": "恢复“请给出明确结论”或加入等价的明确决策请求。"
+      }
+    ],
+    "factsPreserved": true,
+    "attachmentsPreserved": true,
+    "visibleTextClean": true
+  }
+}

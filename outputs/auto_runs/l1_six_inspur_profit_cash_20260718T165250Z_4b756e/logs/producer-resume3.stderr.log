@@ -1,0 +1,8 @@
+file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/build/automation/produce_l1_single_task.mjs:949
+  throw new Error(JSON.stringify({
+        ^
+
+Error: {"roleConsistency":"FAIL","roleErrors":[],"productionTrace":"PASS","processFindings":[],"release":{"ok":false,"phase":"role-consistency","status":"FAIL"},"naturalnessFindings":[],"structureFindings":[]}
+    at file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/build/automation/produce_l1_single_task.mjs:949:9
+
+Node.js v26.5.0

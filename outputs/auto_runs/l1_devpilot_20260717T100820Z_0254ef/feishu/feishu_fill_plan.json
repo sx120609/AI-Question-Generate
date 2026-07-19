@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "status": "DRY_RUN_ONLY_NO_RESERVED_FEISHU_ROW",
+  "questionPresentation": "natural-paragraphs-no-blank-lines-v4",
+  "generatedAt": "2026-07-17T10:40:44.761Z",
+  "sourcePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_devpilot_20260717T100820Z_0254ef\\drafts\\l1_questions.tsv",
+  "startRow": 999999,
+  "sheetRows": [
+    999999
+  ],
+  "count": 1,
+  "note": "No Feishu row is reserved. Row 999999 is a non-production dry-run placeholder. Formal submission must reserve a real row and regenerate this plan plus all receipts.",
+  "columnMap": [
+    {
+      "field": "UID",
+      "column": "A"
+    },
+    {
+      "field": "题目",
+      "column": "B"
+    },
+    {
+      "field": "任务类型",
+      "column": "C"
+    },
+    {
+      "field": "一级目录",
+      "column": "D"
+    },
+    {
+      "field": "二级目录",
+      "column": "E"
+    },
+    {
+      "field": "三级目录",
+      "column": "F"
+    },
+    {
+      "field": "任务概括",
+      "column": "G"
+    },
+    {
+      "field": "标注专家工作年限",
+      "column": "H"
+    },
+    {
+      "field": "人类完成时间",
+      "column": "I"
+    },
+    {
+      "field": "相关附件",
+      "column": "J"
+    },
+    {
+      "field": "附件格式",
+      "column": "K"
+    },
+    {
+      "field": "附件内容",
+      "column": "L"
+    },
+    {
+      "field": "产物格式",
+      "column": "M"
+    },
+    {
+      "field": "产物内容",
+      "column": "N"
+    },
+    {
+      "field": "做题关键步骤",
+      "column": "O"
+    }
+  ],
+  "rows": [
+    {
+      "dataRow": 2,
+      "sheetRow": 999999,
+      "title": "核验三款培训直播平台的公开无障碍证据并选择一个优先进入 POC",
+      "updates": [
+        {
+          "address": "A999999",
+          "column": "A",
+          "field": "UID",
+          "value": "沈礼_7.17_L1_01",
+          "chars": 13,
+          "hasNewlines": false,
+          "preview": "沈礼_7.17_L1_01"
+        },
+        {
+          "address": "B999999",
+          "column": "B",
+          "field": "题目",
+          "value": "我们计划将跨地区员工培训转为常态化直播，由于部分参训员工需要依赖实时字幕、屏幕阅读器或键盘操作，我们需要评估 Zoom、Microsoft Teams 和 Google Meet 这三个候选平台的无障碍支持情况。请根据截至2026年7月17日可访问的官方产品文档与帮助页面，制作一份 Excel 对比表。表内需要核对各平台的实时字幕、翻译字幕、屏幕阅读器支持，以及键盘与焦点操作的兼容性，并单独说明录制与转录的留存机制，同时理清主持人和管理员的具体控制权限。请为表中的每项判断附上来源链接和访问日期。如果官方公开页面没有明确说明套餐限制、字幕支持的语言范围或导出权限，请保持空白不要自行推测。对于保存期限和直播规模限制，请统一列为待确认事项，并注明后续需要通过哪些实测或询价手段来补充证据。在表格末尾，请推荐一个最适合优先进入 POC 阶段的平台并说明理由，同时指出另外两个平台暂缓推进的证据缺口。请注意，此结论仅用于指导下一阶段的实测安排，不作为最终的采购与合规决策。",
+          "chars": 435,
+          "hasNewlines": false,
+          "preview": "我们计划将跨地区员工培训转为常态化直播，由于部分参训员工需要依赖实时字幕、屏幕阅读器或键盘操作，我们需要评估 Zoom、Microsoft Teams 和 Go"
+        },
+        {
+          "address": "C999999",
+          "column": "C",
+          "field": "任务类型",
+          "value": "L1 探索型",
+          "chars": 6,
+          "hasNewlines": false,
+          "preview": "L1 探索型"
+        },
+        {
+          "address": "D999999",
+          "column": "D",
+          "field": "一级目录",
+          "value": "科技软件与 AI 工作流",
+          "chars": 12,
+          "hasNewlines": false,
+          "preview": "科技软件与 AI 工作流"
+        },
+        {
+          "address": "E999999",
+          "column": "E",
+          "field": "二级目录",
+          "value": "企业软件与技术方案",
+          "chars": 9,
+          "hasNewlines": false,
+          "preview": "企业软件与技术方案"
+        },
+        {
+          "address": "F999999",
+          "column": "F",
+          "field": "三级目录",
+          "value": "在线培训直播平台无障碍能力初筛",
+          "chars": 15,
+          "hasNewlines": false,
+          "preview": "在线培训直播平台无障碍能力初筛"
+        },
+        {
+          "address": "G999999",
+          "column": "G",
+          "field": "任务概括",
+          "value": "核验三款培训直播平台的公开无障碍证据并选择一个优先进入 POC",
+          "chars": 31,
+          "hasNewlines": false,
+          "preview": "核验三款培训直播平台的公开无障碍证据并选择一个优先进入 POC"
+        },
+        {
+          "address": "H999999",
+          "column": "H",
+          "field": "标注专家工作年限",
+          "value": "3年",
+          "chars": 2,
+          "hasNewlines": false,
+          "preview": "3年"
+        },
+        {
+          "address": "I999999",
+          "column": "I",
+          "field": "人类完成时间",
+          "value": "5H",
+          "chars": 2,
+          "hasNewlines": false,
+          "preview": "5H"
+        },
+        {
+          "address": "J999999",
+          "column": "J",
+          "field": "相关附件",
+          "value": "无",
+          "chars": 1,
+          "hasNewlines": false,
+          "preview": "无"
+        },
+        {
+          "address": "K999999",
+          "column": "K",
+          "field": "附件格式",
+          "value": "无",
+          "chars": 1,
+          "hasNewlines": false,
+          "preview": "无"
+        },
+        {
+          "address": "L999999",
+          "column": "L",
+          "field": "附件内容",
+          "value": "无文件附件，使用已核验可访问的厂商官方产品文档、帮助中心与 W3C 无障碍解释页。",
+          "chars": 41,
+          "hasNewlines": false,
+          "preview": "无文件附件，使用已核验可访问的厂商官方产品文档、帮助中心与 W3C 无障碍解释页。"
+        },
+        {
+          "address": "M999999",
+          "column": "M",
+          "field": "产物格式",
+          "value": "xlsx",
+          "chars": 4,
+          "hasNewlines": false,
+          "preview": "xlsx"
+        },
+        {
+          "address": "N999999",
+          "column": "N",
+          "field": "产物内容",
+          "value": "一份逐条绑定官方来源和访问日期的候选平台无障碍证据对比表，包含能力边界、待确认项、补证方法和一个 POC 优先建议。",
+          "chars": 58,
+          "hasNewlines": false,
+          "preview": "一份逐条绑定官方来源和访问日期的候选平台无障碍证据对比表，包含能力边界、待确认项、补证方法和一个 POC 优先建议。"
+        },
+        {
+          "address": "O999999",
+          "column": "O",
+          "field": "做题关键步骤",
+          "value": "1. 明确本轮只做公开证据初筛及 POC 排序。\n2. 检索并核验三家厂商官方产品文档与帮助页。\n3. 按统一维度摘录功能证据、适用条件和来源日期。\n4. 区分已证实事实、合理推断与公开资料未说明事项。\n5. 将许可证、语言、管理员策略、导出留存和规模边界转成实测或询价问题。\n6. 比较证据完整度并推荐一个优先进入 POC 的平台。",
+          "chars": 167,
+          "hasNewlines": true,
+          "preview": "1. 明确本轮只做公开证据初筛及 POC 排序。\n2. 检索并核验三家厂商官方产品文档与帮助页。\n3. 按统一维度摘录功能证据、适用条件和来源日期。\n4. 区分"
+        }
+      ]
+    }
+  ]
+}

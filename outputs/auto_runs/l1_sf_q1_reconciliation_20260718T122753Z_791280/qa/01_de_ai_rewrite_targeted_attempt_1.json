@@ -1,0 +1,144 @@
+{
+  "kind": "de-ai-question-rewrite",
+  "policyId": "mugua-gemini-de-ai-rewrite-v2",
+  "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+  "generatedAt": "2026-07-18T13:02:51.695Z",
+  "provider": "mugua-openai-compatible",
+  "endpoint": "https://api.mugua.link/v1/chat/completions",
+  "model": "gemini-3.1-pro-preview",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 2064,
+    "outputTokens": 1407,
+    "totalTokens": 3471
+  },
+  "promptHash": "2f5eccb4e741156595939eac8af67c024908d3576d603142883b4d4108f7fc75",
+  "sourceQuestionHash": "09e486fb902aad3e7995ae11d7e906f2161a365afd222f3903835bfbf77c81ec",
+  "rewrittenQuestionHash": "cf6b1a5fd9d78b37f3b0195ad493211938908d0fcf462868d0d8a2e7fe4bca85",
+  "selectedAttempt": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "pass": true,
+      "visibleLength": 293,
+      "findingRules": []
+    }
+  ],
+  "rewrite": {
+    "question": "我上传了顺丰控股2026年第一季度报告以及同年2月和3月的快递物流业务经营简报。核验这三份材料能否构成一季度完整的数据来源链，重点核对1至2月累计数据与3月单月数据能否顺利衔接。比对数据时留意以千元披露与以亿元保留两位小数形成的披露单位和精度差异，春节错期等因素对指标可比性的影响需在说明里体现。核对经营简报不含其他非物流业务收入的边界，无法直接对应的差额列为待确认，不做归因。整理一份Excel口径核对表，以这三份附件为来源底表并标清页码，将材料直接证明的内容与合理推导得出的结论分列展示。三份文件统一标注成未经审计状态，遇到无法直接对应的差额，对应字段标为待公司分部或科目资料确认。",
+    "requestContract": {
+      "requestSpan": "整理一份Excel口径核对表，以这三份附件为来源底表并标清页码，将材料直接证明的内容与合理推导得出的结论分列展示。",
+      "action": "整理",
+      "outputs": [
+        {
+          "format": "xlsx",
+          "humanName": "Excel",
+          "purpose": "供后续执行和留痕使用"
+        }
+      ]
+    },
+    "roleTrace": {
+      "blockageSpan": "核对经营简报不含其他非物流业务收入的边界，无法直接对应的差额列为待确认，不做归因。",
+      "motivationSpan": "",
+      "downstreamUseSpan": "整理一份Excel口径核对表，以这三份附件为来源底表并标清页码，将材料直接证明的内容与合理推导得出的结论分列展示。"
+    },
+    "usedFactIds": [
+      "fact-feb-month",
+      "fact-jan-feb-cumulative",
+      "fact-feb-boundary",
+      "fact-march-month",
+      "fact-march-boundary",
+      "fact-q1-revenue",
+      "fact-q1-boundary",
+      "fact-quarter-bridge",
+      "fact-subtotal-checks",
+      "fact-unit-price-checks"
+    ],
+    "deliberatelyOmitted": [],
+    "flowStages": [
+      {
+        "stage": "证据归位",
+        "evidence": "事实包中的公开材料与待补信息",
+        "decision": "区分可确认规则和未知现场状态",
+        "next": "证据足够则形成执行对象，不足则进入补证"
+      },
+      {
+        "stage": "执行对象核对",
+        "evidence": "已归位的对象关系与状态记录",
+        "decision": "建立带公式和来源页码的季度收入口径核对表，确认经营简报分项与累计值能够回算，并把与一季报总营业收入的差额保持为口径桥接项而非直接归因。",
+        "next": "符合条件则进入小范围验证，否则停止推进"
+      },
+      {
+        "stage": "小范围验证",
+        "evidence": "试点输入与实际返回记录",
+        "decision": "判断结果是否满足扩大范围的条件",
+        "next": "通过则推进，失败则退回原状态并留痕"
+      },
+      {
+        "stage": "交接收束",
+        "evidence": "判断依据、验证结果与回退记录",
+        "decision": "确认下游拿到一致结论",
+        "next": "复核季度数据口径并为后续取得分部或科目明细后继续回填。"
+      }
+    ],
+    "selfAudit": {
+      "factsPreserved": true,
+      "formatsPreserved": true,
+      "processChainExplicit": true,
+      "failureOrRollbackExplicit": true,
+      "noInventedFacts": true,
+      "noAiShell": true
+    }
+  },
+  "validation": {
+    "pass": true,
+    "visibleLength": 293,
+    "similarity": [
+      {
+        "referenceIndex": 1,
+        "editSimilarity": 0.2593856655290102,
+        "trigramJaccard": 0.25060240963855424,
+        "longestExactCopyRun": 17,
+        "longestExactCopySpan": "1至2月累计数据与3月单月数据能否"
+      },
+      {
+        "referenceIndex": 2,
+        "editSimilarity": 0.04678362573099415,
+        "trigramJaccard": 0,
+        "longestExactCopyRun": 2,
+        "longestExactCopySpan": "20"
+      }
+    ],
+    "findings": [],
+    "factGuard": {
+      "ok": true,
+      "candidateAnchors": {
+        "numbers": [
+          "2026年",
+          "2月",
+          "3月",
+          "1"
+        ],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "unsupported": {
+        "numbers": [],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "errors": []
+    }
+  },
+  "targetedRepair": {
+    "reason": [
+      {
+        "rule": "最终Excel交付要求必须完整保持",
+        "evidence": "sourceQuestion明确要求“可下载的最终Excel口径核对表，文件格式为xlsx”，outboundQuestion仅写“请整理一份 Excel 口径核对表”，遗漏“可下载”“最终”和“xlsx格式”。",
+        "repair": "明确要求交付可下载的最终Excel口径核对表，并指定文件格式为xlsx。"
+      }
+    ],
+    "provider": "mugua-openai-compatible",
+    "promptHash": "2f5eccb4e741156595939eac8af67c024908d3576d603142883b4d4108f7fc75"
+  }
+}

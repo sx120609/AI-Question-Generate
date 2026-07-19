@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "status": "DRY_RUN_ONLY_NO_RESERVED_FEISHU_ROW",
+  "questionPresentation": "natural-paragraphs-no-blank-lines-v4",
+  "generatedAt": "2026-07-18T17:36:10.805Z",
+  "sourcePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_cqrcb_growth_capital_20260718T165249Z_d98e15\\drafts\\l1_questions.tsv",
+  "startRow": 999903,
+  "sheetRows": [
+    999903
+  ],
+  "count": 1,
+  "note": "No Feishu row is reserved. This is a non-production dry-run placeholder. No external write is authorized.",
+  "columnMap": [
+    {
+      "field": "UID",
+      "column": "A"
+    },
+    {
+      "field": "题目",
+      "column": "B"
+    },
+    {
+      "field": "任务类型",
+      "column": "C"
+    },
+    {
+      "field": "一级目录",
+      "column": "D"
+    },
+    {
+      "field": "二级目录",
+      "column": "E"
+    },
+    {
+      "field": "三级目录",
+      "column": "F"
+    },
+    {
+      "field": "任务概括",
+      "column": "G"
+    },
+    {
+      "field": "标注专家工作年限",
+      "column": "H"
+    },
+    {
+      "field": "人类完成时间",
+      "column": "I"
+    },
+    {
+      "field": "相关附件",
+      "column": "J"
+    },
+    {
+      "field": "附件格式",
+      "column": "K"
+    },
+    {
+      "field": "附件内容",
+      "column": "L"
+    },
+    {
+      "field": "产物格式",
+      "column": "M"
+    },
+    {
+      "field": "产物内容",
+      "column": "N"
+    },
+    {
+      "field": "做题关键步骤",
+      "column": "O"
+    }
+  ],
+  "rows": [
+    {
+      "dataRow": 2,
+      "sheetRow": 999903,
+      "title": "渝农商行2026年一季度增长与资本约束复核",
+      "updates": [
+        {
+          "address": "A999903",
+          "column": "A",
+          "field": "UID",
+          "value": "沈礼_20260719_l1_cqrcb_growth_capital_03",
+          "chars": 38,
+          "hasNewlines": false,
+          "preview": "沈礼_20260719_l1_cqrcb_growth_capital_03"
+        },
+        {
+          "address": "B999903",
+          "column": "B",
+          "field": "题目",
+          "value": "请根据《重庆农村商业银行股份有限公司2026年第一季度报告.pdf》帮我做个经营复核。我需要把2026年一季度的资产负债增长、收入利润、杠杆率、资本充足率还有资产质量整合到一个证据框架下，梳理清楚各项指标的变动情况和比较口径。请根据复核结果给出明确结论，把报告能证实的约束项和改善项区分开，并指出里面存在的疑点或差异。这个结果后续会给分析同事看，用来评估下一步要补充哪些业务条线和资本资料。\n\n最后请整理成一份可下载的Word简报，命名为渝农商行2026年一季度增长与资本约束。简报里面要有具体的指标对照表，并附上来源页码和派生计算说明。同时，请明确标注出这份报告的未经审计状态，列出证据边界以及后续的补数清单，还要包含你对承压与改善情况的判断。\n\n另外注意一下，对于报告里没披露的业务条线资本消耗情况，不要自行做确定的归因，也不要把单季度的变化直接外推当成全年的趋势。",
+          "chars": 385,
+          "hasNewlines": true,
+          "preview": "请根据《重庆农村商业银行股份有限公司2026年第一季度报告.pdf》帮我做个经营复核。我需要把2026年一季度的资产负债增长、收入利润、杠杆率、资本充足率还有资"
+        },
+        {
+          "address": "C999903",
+          "column": "C",
+          "field": "任务类型",
+          "value": "L1 探索型",
+          "chars": 6,
+          "hasNewlines": false,
+          "preview": "L1 探索型"
+        },
+        {
+          "address": "D999903",
+          "column": "D",
+          "field": "一级目录",
+          "value": "金融服务与财富投研",
+          "chars": 9,
+          "hasNewlines": false,
+          "preview": "金融服务与财富投研"
+        },
+        {
+          "address": "E999903",
+          "column": "E",
+          "field": "二级目录",
+          "value": "银行经营复核",
+          "chars": 6,
+          "hasNewlines": false,
+          "preview": "银行经营复核"
+        },
+        {
+          "address": "F999903",
+          "column": "F",
+          "field": "三级目录",
+          "value": "增长资本与资产质量",
+          "chars": 9,
+          "hasNewlines": false,
+          "preview": "增长资本与资产质量"
+        },
+        {
+          "address": "G999903",
+          "column": "G",
+          "field": "任务概括",
+          "value": "渝农商行2026年一季度增长与资本约束复核",
+          "chars": 21,
+          "hasNewlines": false,
+          "preview": "渝农商行2026年一季度增长与资本约束复核"
+        },
+        {
+          "address": "H999903",
+          "column": "H",
+          "field": "标注专家工作年限",
+          "value": "5年",
+          "chars": 2,
+          "hasNewlines": false,
+          "preview": "5年"
+        },
+        {
+          "address": "I999903",
+          "column": "I",
+          "field": "人类完成时间",
+          "value": "4H",
+          "chars": 2,
+          "hasNewlines": false,
+          "preview": "4H"
+        },
+        {
+          "address": "J999903",
+          "column": "J",
+          "field": "相关附件",
+          "value": "重庆农村商业银行股份有限公司2026年第一季度报告.pdf",
+          "chars": 29,
+          "hasNewlines": false,
+          "preview": "重庆农村商业银行股份有限公司2026年第一季度报告.pdf"
+        },
+        {
+          "address": "K999903",
+          "column": "K",
+          "field": "附件格式",
+          "value": "pdf",
+          "chars": 3,
+          "hasNewlines": false,
+          "preview": "pdf"
+        },
+        {
+          "address": "L999903",
+          "column": "L",
+          "field": "附件内容",
+          "value": "重庆农村商业银行股份有限公司2026年第一季度报告.pdf：披露渝农商行一季度收入利润、资产负债增长、资本充足率、杠杆率、流动性和资产质量指标。 来源：https://static.cninfo.com.cn/finalpage/2026-04-29/1225237379.PDF",
+          "chars": 140,
+          "hasNewlines": false,
+          "preview": "重庆农村商业银行股份有限公司2026年第一季度报告.pdf：披露渝农商行一季度收入利润、资产负债增长、资本充足率、杠杆率、流动性和资产质量指标。 来源：http"
+        },
+        {
+          "address": "M999903",
+          "column": "M",
+          "field": "产物格式",
+          "value": "docx",
+          "chars": 4,
+          "hasNewlines": false,
+          "preview": "docx"
+        },
+        {
+          "address": "N999903",
+          "column": "N",
+          "field": "产物内容",
+          "value": "一份可下载的渝农商行2026年一季度增长与资本约束Word简报，含指标对照表、改善与承压判断、来源页码、证据边界和补数清单。",
+          "chars": 62,
+          "hasNewlines": false,
+          "preview": "一份可下载的渝农商行2026年一季度增长与资本约束Word简报，含指标对照表、改善与承压判断、来源页码、证据边界和补数清单。"
+        },
+        {
+          "address": "O999903",
+          "column": "O",
+          "field": "做题关键步骤",
+          "value": "1. 核验报告期、单位与审计状态\n2. 对齐收入利润与回报指标\n3. 比较资产、贷款和存款增速\n4. 计算资本充足率和杠杆率变化百分点\n5. 核对不良率与拨备覆盖率方向\n6. 在Word简报中分开事实、判断和待补资料",
+          "chars": 108,
+          "hasNewlines": true,
+          "preview": "1. 核验报告期、单位与审计状态\n2. 对齐收入利润与回报指标\n3. 比较资产、贷款和存款增速\n4. 计算资本充足率和杠杆率变化百分点\n5. 核对不良率与拨备覆"
+        }
+      ]
+    }
+  ]
+}

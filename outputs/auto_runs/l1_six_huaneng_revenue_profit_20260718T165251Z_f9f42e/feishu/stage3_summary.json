@@ -1,0 +1,15 @@
+{
+  "kind": "l1-stage3-gate-summary",
+  "generatedAt": "2026-07-18T18:13:35.620Z",
+  "workflowState": "COMPLETE",
+  "finalRecordUid": "沈礼_20260719_l1_huaneng_segment_profit_06",
+  "roleConsistency": "PASS",
+  "productionTrace": "PASS",
+  "release": {
+    "ok": true,
+    "phase": "release",
+    "status": "PASS"
+  },
+  "feishuWriteAttempted": false,
+  "feishuWriteApplied": false
+}

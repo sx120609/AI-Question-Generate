@@ -1,0 +1,98 @@
+{
+  "configHash": "1e28cf52610d2f23c63f4398164a62b8dc22bdf6b8ef209cb1428856622999f3",
+  "conversationId": "",
+  "jobId": "l1-byd-q1-quality-20260719-01",
+  "minimumRounds": 6,
+  "maxRounds": 10,
+  "mode": "openai-compatible",
+  "contentScopePolicyVersion": "domestic-work-scope-v1",
+  "executionSlot": {
+    "browserContextId": "1084C633D11647B8992D48E50C635F55",
+    "endpoint": "http://127.0.0.1:9229",
+    "targetId": "EA29CEDF91A95DC7FAA5494ACA9CC873",
+    "workerId": "slot-2-EA29CEDF91A95DC7FAA5494ACA9CC873"
+  },
+  "finalProductAcceptance": null,
+  "productRequirement": {
+    "allowEquivalentOnline": false,
+    "allowUnavailableBestEffort": false,
+    "required": true,
+    "requestedFormats": [
+      "excel"
+    ]
+  },
+  "rounds": [],
+  "runId": "e4728236-d7c3-4c5d-8108-b336bad828f6",
+  "schemaVersion": 7,
+  "successCriteria": [
+    "核心数值与页码可回到官方PDF",
+    "同比和覆盖关系使用可执行公式",
+    "披露原因与推断分栏",
+    "不把融资变化直接写成现金流下降原因",
+    "交付真实可下载且可打开的xlsx文件"
+  ],
+  "taskGoal": "经营数据复核人员需要判断收入、利润和经营现金流同步下滑时，研发投入与融资项目变化能解释到什么程度。。建立一份季度经营质量核对表，复算收入、利润和经营现金流变化，整理研发与融资项目的披露解释，并把无法由附件直接归因的部分保留为待补证事项。，最终一份可下载的比亚迪2026年一季度经营质量Excel核对表，包含来源索引、核心指标同比、现金利润覆盖关系、研发与融资变动、披露原因、证据边界和待补材料。",
+  "startedAt": "2026-07-18T18:15:35.210Z",
+  "status": "failed",
+  "uploadedAttachmentNames": [],
+  "workerPid": null,
+  "workerStartedAt": "2026-07-18T18:15:35.210Z",
+  "initialContentScope": {
+    "calculationComplexityCount": 3,
+    "issues": [],
+    "pass": true,
+    "policyVersion": "domestic-work-scope-v1"
+  },
+  "attachmentManifest": {
+    "attachmentCount": 1,
+    "attachments": [
+      {
+        "classification": "specific-business",
+        "introductionHint": "把正式报告名称直接嵌入任务句，后续核对继续引用同一份已验证原件。",
+        "name": "比亚迪股份有限公司2026年第一季度报告.pdf",
+        "relativePath": "比亚迪股份有限公司2026年第一季度报告.pdf",
+        "sha256": "8e07bf9481c450daa0184c8bab218eb5b29f5587fc406116a911903852c0c907",
+        "sizeBytes": 306755,
+        "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-29/1225233071.PDF",
+        "summary": "披露比亚迪2026年一季度损益、现金流、资产负债项目变动和对应原因，财务会计报告未经审计。"
+      }
+    ],
+    "initialAttachmentNames": [
+      "比亚迪股份有限公司2026年第一季度报告.pdf"
+    ],
+    "minimumSpecificBusinessShare": 0.8,
+    "pass": true,
+    "policyId": "doubao-l1-l2-attachment-policy-v1",
+    "productionEvidence": {
+      "attachmentCount": 1,
+      "downloadManifestHash": "46a0dc86e535a57c0acab10190c2a5f462a69c74153ab30f67ae8b52eb4f56b5",
+      "downloadManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-byd-q1-quality-20260719-01\\evidence\\download_manifest.json",
+      "mode": "production-path",
+      "pass": true,
+      "policyId": "reuse-l2-source-acquisition-path-v1",
+      "productionRunId": "l1_six_byd_q1_quality_20260718T165247Z_56f0c1",
+      "productionTraceGateReceiptHash": "2e4b3a47371b6106501a93add569f8208e6a44bef91d60663cc0199eece41aac",
+      "productionTraceGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-byd-q1-quality-20260719-01\\evidence\\production_trace_gate_receipt.json",
+      "productionTraceHash": "4b782aea0f2d0d320adf97eec884e529425e8e998e80fcbe4e69269d09032557",
+      "productionTracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-byd-q1-quality-20260719-01\\evidence\\production_trace.json",
+      "recordUid": "沈礼_20260719_l1_byd_q1_quality_01",
+      "releaseGateReceiptHash": "62caf3217f62ca9b8745f134af8b3c18fe3aba7625f9d84e63d60549a276b1f2",
+      "releaseGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-byd-q1-quality-20260719-01\\evidence\\release_gate_receipt.json",
+      "verifiedAt": "2026-07-18T18:15:35.241Z"
+    },
+    "specificBusinessShare": 1,
+    "verifiedAt": "2026-07-18T18:15:35.241Z"
+  },
+  "error": {
+    "code": "",
+    "message": "Local Computer state could not be verified before disabling it.",
+    "stack": "Error: Local Computer state could not be verified before disabling it.\n    at ensureLocalComputerDisabled (file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/doubao-automation/src/doubao-client.mjs:96:11)\n    at async openNewOfficeTask (file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/doubao-automation/src/doubao-client.mjs:338:3)\n    at async runDoubaoJob (file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/doubao-automation/src/job-runner.mjs:662:39)\n    at async runInteractionQueueWorker (file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/doubao-automation/src/queue-worker.mjs:73:22)\n    at async Promise.all (index 1)\n    at async runInteractionQueuePool (file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/doubao-automation/src/queue-worker.mjs:141:19)\n    at async runQueuePool (file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/doubao-automation/src/cli.mjs:349:11)\n    at async file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/doubao-automation/src/cli.mjs:435:38",
+    "attempts": [],
+    "issues": [],
+    "productAssessment": null
+  },
+  "failedAt": "2026-07-18T18:15:37.003Z",
+  "stoppedWorkerPid": 3128,
+  "workerStoppedAt": "2026-07-18T18:15:37.003Z",
+  "updatedAt": "2026-07-18T18:15:37.003Z"
+}

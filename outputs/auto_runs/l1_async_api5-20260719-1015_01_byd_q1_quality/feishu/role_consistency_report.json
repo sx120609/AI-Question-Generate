@@ -1,0 +1,93 @@
+{
+  "kind": "scene-card-gate-report",
+  "gateId": "scene-card-role-consistency-v1",
+  "protocolId": "situated-requester-v1",
+  "schemaVersion": 1,
+  "status": "PASS",
+  "ok": true,
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_01_byd_q1_quality\\drafts\\l1_questions.tsv",
+  "candidateHash": "bf55c1a04a8c5df1e9266baf999abf998618b6d70c0e130714cdce9b3fce92ad",
+  "sceneCardPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_01_byd_q1_quality\\sources\\scene_cards.json",
+  "sceneCardFileHash": "ad76fe5e6fa82e7022b6848dc554a598727c9bb40be701f701e817758149bd1c",
+  "sceneCardBundleHash": "4c064088a2ad66bb132db51d47ec7a231821361e30f969d5111ad4178356c97c",
+  "sceneCardSetHash": "cb5fa6eda2e10bf710b03ac4f66f9e7f3f9466092724883823682fa6011a53b9",
+  "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_01_byd_q1_quality\\sources\\fact_ledger.json",
+  "factLedgerHash": "c3b87e2f0878249c1ae6dc8ea4c02fcae8831fb7ff9ffd653e9992a1a7a27987",
+  "summary": {
+    "candidateRowCount": 1,
+    "sceneCardCount": 1,
+    "passedRowCount": 1,
+    "failedRowCount": 0,
+    "globalErrorCount": 0,
+    "batchCollisionCount": 0
+  },
+  "rows": [
+    {
+      "uid": "沈礼_api5-20260719-1015_01",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "cf260090c9c309a7028dbc5fdc9e7f67bec6d4effd0a79541af56aed0353713a",
+      "cardHash": "0952acbebc58cbc8a97b65e378086af3097e1d887589c35c521475c9e51c71de",
+      "roleConsistencyHash": "365a71c25bba0e9ce9983b190489f596c22e8b2506c12112a5083d84418c2691",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "polite-request",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "xlsx"
+        ],
+        "mFormats": [
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "我正在做比亚迪2026年一季度利润现金与融资变化复核，这份结果供经营分析同事继续取得分部和销量资料后补充归因。",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "",
+            "occurrences": 0
+          },
+          "downstreamUseSpan": {
+            "span": "这份表主要是给经管同事后续结合分部和销量资料做归因分析用的。",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [
+            "2026年",
+            "11.82%",
+            "55.38%",
+            "67.48%"
+          ],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "f33ec9e377bde2cb768381f3aac475fd1c89054637f95885c6fb02cefc2cb42e"
+      }
+    }
+  ],
+  "batch": {
+    "ok": true,
+    "status": "PASS",
+    "thresholds": {
+      "highMaskedTrigramSimilarity": 0.72,
+      "sharedMaskedFragmentLength": 18
+    },
+    "comparisons": [],
+    "errors": []
+  },
+  "errors": [],
+  "evaluationHash": "b3e615ca5d7df3e174559413195f6f444aefd12daab2f03e736723e555d16c0c"
+}

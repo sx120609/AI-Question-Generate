@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "kind": "immutable-doubao-interaction-package",
+  "jobId": "l1-shenhua-capex-funding-20260719-02",
+  "createdAt": "2026-07-18T17:32:59.193Z",
+  "sourceConfigPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_shenhua_capex_funding_20260718T165248Z_e74a5d\\doubao\\job.json",
+  "sourceConfigSha256": "af1066b90afa975cbd4e25dbd9184bbe4f03abbba2b1d6954a7665a308afe00a",
+  "configSha256": "5fa92c4daf916010717b450082655ce07060333f70a22dfe2bd5e948764062d0",
+  "attachmentReceipt": {
+    "attachmentCount": 1,
+    "attachments": [
+      {
+        "classification": "specific-business",
+        "introductionHint": "把正式报告名称直接嵌入任务句，后续核对继续引用同一份已验证原件。",
+        "name": "中国神华能源股份有限公司2026年第一季度报告.pdf",
+        "relativePath": "中国神华能源股份有限公司2026年第一季度报告.pdf",
+        "sha256": "eafdac378c6aece9511c0e3c501ed99312a47addd138a5562d9710e66caf5959",
+        "sizeBytes": 282693,
+        "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-25/1225185746.PDF",
+        "summary": "披露中国神华一季度经营财务数据、重大资产交易后经营目标调整、分业务资本开支计划和资金来源边界。"
+      }
+    ],
+    "initialAttachmentNames": [
+      "中国神华能源股份有限公司2026年第一季度报告.pdf"
+    ],
+    "minimumSpecificBusinessShare": 0.8,
+    "pass": true,
+    "policyId": "doubao-l1-l2-attachment-policy-v1",
+    "productionEvidence": {
+      "attachmentCount": 1,
+      "downloadManifestHash": "8d66962d3849ef393ca2771d7046a8d9aeac7217584995b5c2e77cff877aadef",
+      "downloadManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_shenhua_capex_funding_20260718T165248Z_e74a5d\\sources\\download_manifest.json",
+      "mode": "production-path",
+      "pass": true,
+      "policyId": "reuse-l2-source-acquisition-path-v1",
+      "productionRunId": "l1_six_shenhua_capex_funding_20260718T165248Z_e74a5d",
+      "productionTraceGateReceiptHash": "33e4de3201603efee3054c0bcb4f540906cbecc9e9ddadd650236e694243fac9",
+      "productionTraceGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_shenhua_capex_funding_20260718T165248Z_e74a5d\\feishu\\production_trace_gate_receipt.json",
+      "productionTraceHash": "7da3eec508e75d6581256911a79f7689304023d08d0804a42de179db5306dc8b",
+      "productionTracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_shenhua_capex_funding_20260718T165248Z_e74a5d\\qa\\production_trace.json",
+      "recordUid": "沈礼_20260719_l1_shenhua_capex_funding_02",
+      "releaseGateReceiptHash": "3fcfa42a87c3fdcc7e7aae826b8a549630297e57818a283064371f97036d9c18",
+      "releaseGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_shenhua_capex_funding_20260718T165248Z_e74a5d\\feishu\\release_gate_receipt.json",
+      "verifiedAt": "2026-07-18T17:32:59.177Z"
+    },
+    "specificBusinessShare": 1,
+    "verifiedAt": "2026-07-18T17:32:59.178Z"
+  }
+}

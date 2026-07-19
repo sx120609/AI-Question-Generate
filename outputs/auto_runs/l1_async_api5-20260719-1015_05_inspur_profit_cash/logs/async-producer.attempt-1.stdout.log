@@ -1,0 +1,35 @@
+{
+  "ok": true,
+  "slug": "inspur_profit_cash_api5-20260719-1015",
+  "runId": "l1_async_api5-20260719-1015_05_inspur_profit_cash",
+  "recordUid": "沈礼_api5-20260719-1015_05",
+  "jobId": "l1-async-api5-20260719-1015-05",
+  "finalQuestion": "我正在做浪潮信息2026年一季度利润现金与营运节奏复核。这次主要是想弄清楚收入下降、利润增长但经营现金转负这三者之间的差异。请根据《浪潮电子信息产业股份有限公司2026年第一季度报告.pdf》，核对本期、上年同期和期初数据的统计口径，复算本期与上年同期的核心指标以及同比变动方向，同时对收入、利润、现金流相关分项、比率和占比进行口径复核，看看报表数据和变动原因能不能对得上。如果发现有冲突或者解释不充分的地方，请单列出来说明。\n\n请在核对后给出一个明确结论，确认这份报告能支持的回款、预收和融资节奏线索，但注意别把这些线索直接写成完整的因果归因。表格内容需要包含收入、利润与现金的对照，应收与合同负债线索，融资变化，证据边界以及待补明细。请逐项标明来源页码、未经审计状态、派生计算过程和待核边界，严格区分可证事实、合理推断和待确认项。对于目前缺失的客户、项目和账龄明细，请在表里留出回填栏，方便经营分析同事后续拿到回款和项目明细后继续补充判断，不要自行把相关变动推断为完整的因果关系。\n\n请基于前述核对结果整理一份可下载的Excel营运节奏核对表，按xlsx格式交付。",
+  "attachmentSha256": "1d9075ccddc8da08907e3486f9aaddfb81cb19ea5881a50e096cac6c3ad5fcd6",
+  "firstQa": {
+    "issues": [],
+    "pass": true
+  },
+  "secondQa": "需语言小修",
+  "deAiPass": true,
+  "roleConsistency": "PASS",
+  "productionTrace": "PASS",
+  "release": "PASS",
+  "jobPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_05_inspur_profit_cash\\doubao\\job.json",
+  "codexBackend": "responses-api",
+  "codexModel": "gpt-5.6-sol",
+  "codexUsageSummaryPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_05_inspur_profit_cash\\qa\\codex_usage_summary.json",
+  "codexUsage": {
+    "metered": true,
+    "source": "responses-api-aggregate",
+    "requestCount": 9,
+    "inputTokens": 19300,
+    "cachedInputTokens": 0,
+    "uncachedInputTokens": 19300,
+    "outputTokens": 10565,
+    "reasoningTokens": 6846,
+    "visibleOutputTokens": 3719,
+    "totalTokens": 29865
+  },
+  "feishuWriteApplied": false
+}

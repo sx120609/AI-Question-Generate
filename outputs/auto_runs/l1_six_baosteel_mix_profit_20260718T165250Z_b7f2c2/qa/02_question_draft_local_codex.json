@@ -1,0 +1,34 @@
+{
+  "kind": "local-codex-stage-response",
+  "stage": "02_question_draft",
+  "model": "gpt-5.6-sol",
+  "provider": "local-codex-cli",
+  "completedAt": "2026-07-18T17:38:12.147Z",
+  "promptHash": "f5740e3be2e315a3c2c06664171eeeeee8aba70cdc7e4722f6b7fce95fca17c6",
+  "parsed": {
+    "question": "请依据《宝山钢铁股份有限公司2026年第一季度报告.pdf》制作可下载的宝钢股份2026年一季度产品结构与利润表现PPT，判断“2+2+N”产品销量和出口接单改善能否直接支持整体盈利改善，并结合营业收入、归母净利润、经营现金流及钢铁制造、加工配送和合计毛利率的同比变化，定位分部毛利率中的限制。演示稿需包含产品和出口亮点、核心财务对比、分部毛利率、证据边界、待补数据和结论页，逐项保留报告页码、未经审计状态及派生计算口径，区分可证事实、合理推断和待确认项，不把未披露的产品或出口利润贡献写成确定归因，也不要将存在内部抵消的分部收入简单相加。",
+    "mainTask": "制作宝钢股份2026年一季度产品结构与利润表现复核演示稿，判断产品与出口指标改善能否直接支持整体盈利改善并定位分部毛利率限制。",
+    "usedFactIds": [
+      "baosteel-product-export",
+      "baosteel-core-performance",
+      "baosteel-steel-segment",
+      "baosteel-processing-segment",
+      "baosteel-total-margin",
+      "baosteel-boundary"
+    ],
+    "usedAttachmentNames": [
+      "宝山钢铁股份有限公司2026年第一季度报告.pdf"
+    ],
+    "productFormats": "pptx",
+    "deliverableRationale": [
+      {
+        "format": "pptx",
+        "user": "产品经营复核专员及下游同事",
+        "purpose": "用于产品经营会议复核产品结构、出口表现与盈利变化，并讨论后续需补取的产品盈利和订单兑现资料",
+        "whyThisFormat": "本任务需要把产品亮点、财务对比、分部毛利率和证据边界按判断链集中呈现，PPT比Word或Excel更适合会议汇报和逐页讨论"
+      }
+    ],
+    "structureMapping": "沿用“真实经营卡点—限定当前判断—核对多维证据—识别冲突与缺口—形成阶段交付”的递进结构，改为围绕宝钢股份产品和出口指标与整体盈利表现的关系展开，不复用抽样题的领域、对象或句法。",
+    "productParagraphMapping": "后半段以PPT交付收束，先规定亮点、财务对比和分部毛利率页面，再要求标注页码、审计状态、派生口径和证据边界，最后用待补数据与结论页明确本轮可证判断及不能归因的部分。"
+  }
+}

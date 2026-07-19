@@ -1,0 +1,70 @@
+{
+  "jobId": "replace-with-unique-job-id",
+  "attachmentRoot": "C:\\DoubaoAutomation\\jobs\\replace-with-unique-job-id\\attachments",
+  "attachments": [
+    {
+      "name": "附件一_真实业务对象记录.xlsx",
+      "relativePath": "附件一_真实业务对象记录.xlsx",
+      "sha256": "replace-with-the-real-64-character-sha256",
+      "sourceUrl": "https://replace-with-the-verified-source.example/record",
+      "summary": "说明该真实业务对象、时间范围和文件独有记录，不写用途话术。",
+      "classification": "specific-business",
+      "objectLevel": true,
+      "timeAnchor": "替换为真实时间或事件",
+      "specificityEvidence": {
+        "object": "替换为真实机构、项目、资产、产品或其他对象",
+        "periodOrEvent": "替换为真实年份、月份、批次或事件",
+        "uniqueContent": "替换为只有这份文件提供的实际记录或结果"
+      },
+      "introductionHint": "首轮用于说明任务背景和真实业务对象。"
+    },
+    {
+      "name": "附件二_补充核对截图.png",
+      "relativePath": "附件二_补充核对截图.png",
+      "sha256": "replace-with-the-real-64-character-sha256",
+      "sourceUrl": "https://replace-with-the-verified-source.example/screenshot",
+      "summary": "说明截图对应的真实字段、日期和与上一轮结论的核对关系。",
+      "classification": "specific-business",
+      "objectLevel": true,
+      "timeAnchor": "替换为真实截图时间或事件",
+      "specificityEvidence": {
+        "object": "替换为截图对应的真实业务对象",
+        "periodOrEvent": "替换为截图中的真实日期或批次",
+        "uniqueContent": "替换为截图独有的字段、数字或状态"
+      },
+      "introductionHint": "当豆包给出需要用原始页面核对的口径时，再在后续追问中自然追加。"
+    }
+  ],
+  "initialAttachmentNames": [
+    "附件一_真实业务对象记录.xlsx"
+  ],
+  "maxRounds": 6,
+  "mode": "openai-compatible",
+  "taskGoal": "说明这道完整端到端任务最终需要得到什么可使用的交付物。",
+  "successCriteria": [
+    "列出可核验的成功条件",
+    "说明哪些缺失会导致回复不可用"
+  ],
+  "initialPrompt": "填写首轮完整端到端任务。",
+  "responseTimeoutMs": 300000,
+  "interactionRewrite": {
+    "type": "openai-compatible",
+    "baseUrl": "https://api.mugua.link/v1",
+    "model": "gemini-3.1-pro-preview",
+    "apiKeyEnv": "DE_AI_REWRITE_API_KEY",
+    "temperature": 0.55,
+    "timeoutMs": 180000
+  },
+  "promptPreflight": {
+    "type": "local-codex",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "timeoutMs": 360000
+  },
+  "policy": {
+    "type": "local-codex",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "timeoutMs": 360000
+  }
+}

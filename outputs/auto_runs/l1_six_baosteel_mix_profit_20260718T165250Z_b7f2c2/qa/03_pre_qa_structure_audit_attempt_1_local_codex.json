@@ -1,0 +1,19 @@
+{
+  "kind": "local-codex-stage-response",
+  "stage": "03_pre_qa_structure_audit_attempt_1",
+  "model": "gpt-5.6-sol",
+  "provider": "local-codex-cli",
+  "completedAt": "2026-07-18T17:38:41.876Z",
+  "promptHash": "5a8acaec2ea30a4723589f89de6605e0c72c3a4781d917501e462819f36dd716",
+  "parsed": {
+    "oneSentenceMainTask": "依据宝钢股份2026年第一季度报告制作产品结构与利润表现复核PPT，判断产品销量和出口接单改善能否直接支持整体盈利改善，并定位分部毛利率限制。",
+    "uniqueMainTask": true,
+    "specificObjectDecision": true,
+    "specificFilesDominant": true,
+    "evidenceChain": "单一真实核心附件明确绑定宝山钢铁股份有限公司及2026年第一季度；从报告抽取“2+2+N”产品销量、出口接单、营业收入、归母净利润、经营现金流及钢铁制造、加工配送和合计毛利率，进行同比与分部对照，再据此判断经营亮点是否足以支持整体盈利改善、识别限制所在；同时保留页码、未经审计状态和派生口径，并以未披露产品或出口利润贡献及分部内部抵消作为归因边界。",
+    "l2ReasoningChain": "候选任务标注为L1探索型，首轮已围绕一个主要判断推进来源核对、指标差异、潜在冲突、计算口径和归因边界，没有要求预先完成后续产品利润拆解或订单兑现核验；若进入L2，应补取产品级盈利、出口利润贡献、订单兑现和分部抵消明细，建立产品与出口变化到整体利润及现金流的可验证归因链。",
+    "variableDrift": [
+      "referenceBreakdown仍保留“资产配置、外部资金安排、公开资料筛选、暂不下结论”等投资证据摸排变量，与候选题的钢铁产品结构、出口接单、分部毛利率和PPT交付对象不一致；该漂移存在于参考拆解层，但候选题、附件计划和主任务内部对象一致。"
+    ]
+  }
+}

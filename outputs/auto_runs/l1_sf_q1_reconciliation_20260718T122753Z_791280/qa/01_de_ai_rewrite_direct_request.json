@@ -1,0 +1,137 @@
+{
+  "kind": "de-ai-question-rewrite",
+  "policyId": "mugua-gemini-de-ai-rewrite-v2",
+  "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+  "generatedAt": "2026-07-18T13:20:09.852Z",
+  "provider": "mugua-openai-compatible",
+  "endpoint": "https://api.mugua.link/v1/chat/completions",
+  "model": "gemini-3.1-pro-preview",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 2066,
+    "outputTokens": 2002,
+    "totalTokens": 4068
+  },
+  "promptHash": "e23be7daacbe627947dd1c7d1d19e0ad742ded600b62adfac5528f6792d62751",
+  "sourceQuestionHash": "debd0596becda26e38bd799747e7114fd43f565bc7b459853fa8d19a36e2bf4e",
+  "rewrittenQuestionHash": "a3b65b1ebdd503d567013ca1fc84baa361e945bad3d230d21edb4bc680a0ae3e",
+  "selectedAttempt": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "pass": true,
+      "findingRules": []
+    }
+  ],
+  "rewrite": {
+    "question": "刚传了顺丰控股2026年第一季度报告以及同年2月与3月的快递物流业务经营简报。需要看看这三份材料能否拼出完整的一季度数据来源链。请理清1至2月累计数据和3月单月数据之间的衔接关系。同时核验经营简报里的物流相关收入与一季报总营业收入在披露范围上的差异。无法直接对应的差额留待后续通过公司分部或科目资料确认，归因栏保持留空。针对以千元披露与以亿元保留两位小数造成的单位及精度差异进行处理，并评估各项指标的可比性。各项指标需标注具体来源页码以及未经审计的财务状态。无法直接对应的项目在表内保持待核状态。请再基于前述核对结果整理一份可下载的Excel口径核对表，按xlsx格式交付并作为结论底表。",
+    "requestContract": {
+      "requestSpan": "请再基于前述核对结果整理一份可下载的Excel口径核对表，按xlsx格式交付并作为结论底表。",
+      "action": "整理",
+      "outputs": [
+        {
+          "format": "xlsx",
+          "humanName": "Excel",
+          "purpose": "供后续执行和留痕使用"
+        }
+      ]
+    },
+    "roleTrace": {
+      "blockageSpan": "无法直接对应的差额留待后续通过公司分部或科目资料确认，归因栏保持留空。",
+      "motivationSpan": "",
+      "downstreamUseSpan": "请再基于前述核对结果整理一份可下载的Excel口径核对表，按xlsx格式交付并作为结论底表。"
+    },
+    "usedFactIds": [
+      "fact-feb-month",
+      "fact-jan-feb-cumulative",
+      "fact-feb-boundary",
+      "fact-march-month",
+      "fact-march-boundary",
+      "fact-q1-revenue",
+      "fact-q1-boundary",
+      "fact-quarter-bridge",
+      "fact-subtotal-checks",
+      "fact-unit-price-checks"
+    ],
+    "deliberatelyOmitted": [],
+    "flowStages": [
+      {
+        "stage": "证据归位",
+        "evidence": "事实包中的公开材料与待补信息",
+        "decision": "区分可确认规则和未知现场状态",
+        "next": "证据足够则形成执行对象，不足则进入补证"
+      },
+      {
+        "stage": "执行对象核对",
+        "evidence": "已归位的对象关系与状态记录",
+        "decision": "建立带公式和来源页码的季度收入口径核对表，确认经营简报分项与累计值能够回算，并把与一季报总营业收入的差额保持为口径桥接项而非直接归因。",
+        "next": "符合条件则进入小范围验证，否则停止推进"
+      },
+      {
+        "stage": "小范围验证",
+        "evidence": "试点输入与实际返回记录",
+        "decision": "判断结果是否满足扩大范围的条件",
+        "next": "通过则推进，失败则退回原状态并留痕"
+      },
+      {
+        "stage": "交接收束",
+        "evidence": "判断依据、验证结果与回退记录",
+        "decision": "确认下游拿到一致结论",
+        "next": "复核季度数据口径并为后续取得分部或科目明细后继续回填。"
+      }
+    ],
+    "selfAudit": {
+      "factsPreserved": true,
+      "formatsPreserved": true,
+      "processChainExplicit": true,
+      "failureOrRollbackExplicit": true,
+      "noInventedFacts": true,
+      "noAiShell": true
+    }
+  },
+  "validation": {
+    "pass": true,
+    "visibleLength": 294,
+    "similarity": [
+      {
+        "referenceIndex": 1,
+        "editSimilarity": 0.26241134751773054,
+        "trigramJaccard": 0.16831683168316833,
+        "longestExactCopyRun": 15,
+        "longestExactCopySpan": "顺丰控股2026年第一季度报告"
+      },
+      {
+        "referenceIndex": 2,
+        "editSimilarity": 0.04385964912280704,
+        "trigramJaccard": 0,
+        "longestExactCopyRun": 2,
+        "longestExactCopySpan": "20"
+      }
+    ],
+    "findings": [],
+    "factGuard": {
+      "ok": true,
+      "candidateAnchors": {
+        "numbers": [
+          "2026年",
+          "2月",
+          "3月",
+          "1"
+        ],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "unsupported": {
+        "numbers": [],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "errors": []
+    }
+  },
+  "targetedRepair": {
+    "reason": "request_span_not_direct_request",
+    "provider": "mugua-openai-compatible",
+    "promptHash": "e23be7daacbe627947dd1c7d1d19e0ad742ded600b62adfac5528f6792d62751"
+  }
+}

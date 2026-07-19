@@ -1,0 +1,8 @@
+file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/build/automation/produce_l1_single_task.mjs:637
+    lastDeAiError = new Error(`Post de-AI audit rejected attempt ${attempt}: ${JSON.stringify(audit)}`);
+                    ^
+
+Error: Post de-AI audit rejected attempt 3: {"pass":false,"issues":[{"rule":"拦截不当请求措辞","evidence":"outboundQuestion使用了“麻烦帮我”，而系统要求拦截“麻烦”。","repair":"删除“麻烦”，保留正常工作请求措辞，例如直接使用“请”。"}],"factsPreserved":true,"attachmentsPreserved":true,"visibleTextClean":false}
+    at file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/build/automation/produce_l1_single_task.mjs:637:21
+
+Node.js v26.5.0

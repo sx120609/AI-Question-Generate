@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "kind": "naturalness-review-signoff",
+  "requestId": "naturalness_a8adb4a4ffbe72a5748b946e",
+  "bindingHash": "a8adb4a4ffbe72a5748b946e418e46e4c4f96f8cb8d9e4a3747617fd85f5cd26",
+  "requestHash": "dbc89d48a551d46d72dc4560c3131908f1c115e132f9da0b03a44bd25db511c1",
+  "decision": "APPROVE",
+  "reviewer": "responses-api-independent-naturalness-reviewer-gpt-5.6-sol",
+  "rationale": "请求具有明确的业务场景、使用对象、指定材料、分析切入点、核验口径和Word交付物，整体像经营分析同事发出的实际工作委托。固定Word交付尾句与末段集中说明交付要求虽触发模板标记，但均服务于具体产出，并非上传元话语或空泛材料介绍。待核边界仅占一小部分，且直接说明业务条线资本消耗未披露及单季数据的证据局限，没有挤占收入利润、资本、杠杆和资产质量等业务事实。首段与次段的目的表述略有重复，但不影响自然度和执行。",
+  "reviewedAt": "2026-07-19T02:10:25.939Z",
+  "evidence": {
+    "reviewReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\qa\\07_naturalness_independent_review_local_codex.json",
+    "disclaimerDisplacesFacts": false,
+    "taskExecutable": true,
+    "naturalWorkRequest": true
+  }
+}

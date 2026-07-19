@@ -1,0 +1,22 @@
+﻿{
+    "schemaVersion":  1,
+    "kind":  "ai-question-generate-development-package-manifest",
+    "version":  "20260719-architecture-upgrade",
+    "generatedAt":  "2026-07-19T05:45:15.4064683Z",
+    "zipPath":  "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\dist\\AI-Question-Generate-dev-20260719-architecture-upgrade.zip",
+    "sha256":  "3f3064f1868b667dc6e7ee57596dba4ffc43be8e5a48e6f579e934b42d1cf780",
+    "sha256Path":  "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\dist\\AI-Question-Generate-dev-20260719-architecture-upgrade.zip.sha256.txt",
+    "sizeBytes":  5582587,
+    "fileCount":  219,
+    "apiConfigurationIncluded":  false,
+    "credentialsIncluded":  false,
+    "excludedRoots":  [
+                          ".git",
+                          ".codex",
+                          ".agents",
+                          "outputs",
+                          "dist",
+                          "build/tmp",
+                          "node_modules"
+                      ]
+}

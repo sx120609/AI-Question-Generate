@@ -1,0 +1,41 @@
+{
+  "kind": "codex-stage-response",
+  "stage": "07_naturalness_independent_review",
+  "model": "gpt-5.6-sol",
+  "provider": "openai-compatible-responses-api",
+  "responseId": "resp_0a5075a9da018ca5016a5c31fa8988819895e4a611c53f556b",
+  "requestId": "ac48e1fa-f53f-4b37-841f-1c6bee072aea",
+  "completedAt": "2026-07-19T02:10:25.930Z",
+  "promptHash": "ec989203c8ad541d3ca6d8cab6ba1654e861cfecb2430375b67aed9aaa94c5ca",
+  "usage": {
+    "metered": true,
+    "source": "responses-api",
+    "requestCount": 1,
+    "inputTokens": 3004,
+    "cachedInputTokens": 0,
+    "uncachedInputTokens": 3004,
+    "outputTokens": 542,
+    "reasoningTokens": 346,
+    "visibleOutputTokens": 196,
+    "totalTokens": 3546,
+    "providerUsage": {
+      "input_tokens": 3004,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 542,
+      "output_tokens_details": {
+        "reasoning_tokens": 346
+      },
+      "total_tokens": 3546
+    }
+  },
+  "parsed": {
+    "decision": "APPROVE",
+    "disclaimerDisplacesFacts": false,
+    "naturalWorkRequest": true,
+    "rationale": "请求具有明确的业务场景、使用对象、指定材料、分析切入点、核验口径和Word交付物，整体像经营分析同事发出的实际工作委托。固定Word交付尾句与末段集中说明交付要求虽触发模板标记，但均服务于具体产出，并非上传元话语或空泛材料介绍。待核边界仅占一小部分，且直接说明业务条线资本消耗未披露及单季数据的证据局限，没有挤占收入利润、资本、杠杆和资产质量等业务事实。首段与次段的目的表述略有重复，但不影响自然度和执行。",
+    "taskExecutable": true
+  }
+}

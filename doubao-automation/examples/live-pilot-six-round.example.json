@@ -1,0 +1,96 @@
+{
+  "jobId": "live-pilot-six-round",
+  "attachmentRoot": "C:\\DoubaoAutomation\\jobs\\live-pilot-six-round\\attachments",
+  "attachments": [
+    {
+      "name": "附件一_真实业务对象记录.xlsx",
+      "relativePath": "附件一_真实业务对象记录.xlsx",
+      "sha256": "replace-with-the-real-64-character-sha256",
+      "sourceUrl": "https://replace-with-the-verified-source.example/record",
+      "summary": "说明该真实业务对象、时间范围和文件独有记录，不写用途话术。",
+      "classification": "specific-business",
+      "objectLevel": true,
+      "timeAnchor": "替换为真实时间或事件",
+      "specificityEvidence": {
+        "object": "替换为真实机构、项目、资产、产品或其他对象",
+        "periodOrEvent": "替换为真实年份、月份、批次或事件",
+        "uniqueContent": "替换为只有这份文件提供的实际记录或结果"
+      }
+    }
+  ],
+  "maxRounds": 6,
+  "developmentOnlyScripted": true,
+  "mode": "scripted",
+  "taskGoal": "完成内部运维自动化链路的六轮连通性核对并保留逐轮验收结果。",
+  "responseTimeoutMs": 120000,
+  "interactionRewrite": {
+    "type": "openai-compatible",
+    "baseUrl": "https://api.mugua.link/v1",
+    "model": "gemini-3.1-pro-preview",
+    "apiKeyEnv": "DE_AI_REWRITE_API_KEY",
+    "temperature": 0.55,
+    "timeoutMs": 180000
+  },
+  "promptPreflight": {
+    "type": "local-codex",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "timeoutMs": 360000
+  },
+  "rounds": [
+    {
+      "prompt": "这是内部运维自动化回归测试第1轮。请核对本轮连通状态，不要调用工具或创建文件，只回复：AUTO_ROUND_1_OK",
+      "expectedResponse": "AUTO_ROUND_1_OK",
+      "evaluation": {
+        "vote": "like",
+        "labels": ["内容准确", "易于理解", "其他"],
+        "note": "第1轮回复严格匹配预期字符串，没有多余内容，符合连通性测试要求。"
+      }
+    },
+    {
+      "prompt": "继续同一项内部运维自动化回归测试第2轮，请核对本轮连通状态，只回复：AUTO_ROUND_2_OK",
+      "expectedResponse": "AUTO_ROUND_2_OK",
+      "evaluation": {
+        "vote": "like",
+        "labels": ["内容准确", "易于理解", "其他"],
+        "note": "第2轮回复严格匹配预期字符串，延续了同一测试任务且结果可直接核验。"
+      }
+    },
+    {
+      "prompt": "继续同一项内部运维自动化回归测试第3轮，请核对本轮连通状态，只回复：AUTO_ROUND_3_OK",
+      "expectedResponse": "AUTO_ROUND_3_OK",
+      "evaluation": {
+        "vote": "like",
+        "labels": ["内容准确", "易于理解", "其他"],
+        "note": "第3轮回复严格匹配预期字符串，未偏离既定任务，自动读回结果一致。"
+      }
+    },
+    {
+      "prompt": "继续同一项内部运维自动化回归测试第4轮，请核对本轮连通状态，只回复：AUTO_ROUND_4_OK",
+      "expectedResponse": "AUTO_ROUND_4_OK",
+      "evaluation": {
+        "vote": "like",
+        "labels": ["内容准确", "易于理解", "其他"],
+        "note": "第4轮回复严格匹配预期字符串，内容简洁清晰，符合本轮验收条件。"
+      }
+    },
+    {
+      "prompt": "继续同一项内部运维自动化回归测试第5轮，请核对本轮连通状态，只回复：AUTO_ROUND_5_OK",
+      "expectedResponse": "AUTO_ROUND_5_OK",
+      "evaluation": {
+        "vote": "like",
+        "labels": ["内容准确", "易于理解", "其他"],
+        "note": "第5轮回复严格匹配预期字符串，连续交互状态稳定，没有出现额外文本。"
+      }
+    },
+    {
+      "prompt": "完成同一项内部运维自动化回归测试第6轮，请核对最终连通状态，只回复：AUTO_ROUND_6_OK",
+      "expectedResponse": "AUTO_ROUND_6_OK",
+      "evaluation": {
+        "vote": "like",
+        "labels": ["内容准确", "易于理解", "内容完善", "其他"],
+        "note": "第6轮回复严格匹配预期字符串，六轮闭环完整，最终结果可以直接验收。"
+      }
+    }
+  ]
+}

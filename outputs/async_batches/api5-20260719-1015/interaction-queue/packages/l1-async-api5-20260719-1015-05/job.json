@@ -1,0 +1,63 @@
+{
+  "jobId": "l1-async-api5-20260719-1015-05",
+  "attachmentRoot": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\packages\\l1-async-api5-20260719-1015-05\\attachments",
+  "initialAttachmentNames": [
+    "浪潮电子信息产业股份有限公司2026年第一季度报告.pdf"
+  ],
+  "productionEvidence": {
+    "recordUid": "沈礼_api5-20260719-1015_05",
+    "productionTracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\packages\\l1-async-api5-20260719-1015-05\\evidence\\production_trace.json",
+    "productionTraceGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\packages\\l1-async-api5-20260719-1015-05\\evidence\\production_trace_gate_receipt.json",
+    "releaseGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\packages\\l1-async-api5-20260719-1015-05\\evidence\\release_gate_receipt.json",
+    "downloadManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\packages\\l1-async-api5-20260719-1015-05\\evidence\\download_manifest.json"
+  },
+  "maxRounds": 6,
+  "maximumRounds": 10,
+  "mode": "openai-compatible",
+  "taskGoal": "科技企业经营复核人员需要解释收入下降、利润增长而经营现金转负的差异。。建立利润现金与营运节奏核对表，复算核心指标方向，整理应收、预收和融资变化的披露线索，并保留客户与项目明细待补栏。，最终一份可下载的浪潮信息2026年一季度利润现金与营运节奏Excel，含收入利润现金对照、应收与合同负债线索、融资变化、证据边界和待补明细。",
+  "successCriteria": [
+    "收入利润现金数值准确",
+    "变化方向和差额可复算",
+    "节奏线索与因果结论分开",
+    "客户项目明细保持待补",
+    "交付可下载xlsx"
+  ],
+  "initialPrompt": "我正在做浪潮信息2026年一季度利润现金与营运节奏复核。这次主要是想弄清楚收入下降、利润增长但经营现金转负这三者之间的差异。请根据《浪潮电子信息产业股份有限公司2026年第一季度报告.pdf》，核对本期、上年同期和期初数据的统计口径，复算本期与上年同期的核心指标以及同比变动方向，同时对收入、利润、现金流相关分项、比率和占比进行口径复核，看看报表数据和变动原因能不能对得上。如果发现有冲突或者解释不充分的地方，请单列出来说明。\n\n请在核对后给出一个明确结论，确认这份报告能支持的回款、预收和融资节奏线索，但注意别把这些线索直接写成完整的因果归因。表格内容需要包含收入、利润与现金的对照，应收与合同负债线索，融资变化，证据边界以及待补明细。请逐项标明来源页码、未经审计状态、派生计算过程和待核边界，严格区分可证事实、合理推断和待确认项。对于目前缺失的客户、项目和账龄明细，请在表里留出回填栏，方便经营分析同事后续拿到回款和项目明细后继续补充判断，不要自行把相关变动推断为完整的因果关系。\n\n请基于前述核对结果整理一份可下载的Excel营运节奏核对表，按xlsx格式交付。",
+  "responseTimeoutMs": 600000,
+  "interactionRewrite": {
+    "type": "openai-compatible",
+    "baseUrl": "https://api.mugua.link/v1",
+    "model": "gemini-3.1-pro-preview",
+    "apiKeyEnv": "DE_AI_REWRITE_API_KEY",
+    "temperature": 0.55,
+    "timeoutMs": 180000
+  },
+  "promptPreflight": {
+    "type": "responses-api",
+    "baseUrl": "https://myapi.lowiq.net",
+    "model": "gpt-5.6-sol",
+    "apiKeyEnv": "CODEX_RESPONSES_API_KEY",
+    "reasoningEffort": "high",
+    "requireUsage": true,
+    "retries": 1,
+    "timeoutMs": 360000
+  },
+  "policy": {
+    "type": "responses-api",
+    "baseUrl": "https://myapi.lowiq.net",
+    "model": "gpt-5.6-sol",
+    "apiKeyEnv": "CODEX_RESPONSES_API_KEY",
+    "reasoningEffort": "high",
+    "requireUsage": true,
+    "retries": 1,
+    "timeoutMs": 360000
+  },
+  "productRequirement": {
+    "required": true,
+    "requestedFormats": [
+      "excel"
+    ],
+    "allowEquivalentOnline": false,
+    "allowUnavailableBestEffort": false
+  }
+}

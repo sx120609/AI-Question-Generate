@@ -1,0 +1,404 @@
+{
+  "schemaVersion": 3,
+  "kind": "l1-production-trace",
+  "productionProfile": "l1",
+  "protocolId": "l1-phase3-codex-model-two-gates-trace-v3",
+  "runId": "workstation_acceptance_20260718T054801Z_df4628",
+  "generatedAt": "2026-07-18T06:52:09.792Z",
+  "questions": [
+    {
+      "recordUid": "沈礼_20260718_workstation_preacceptance_01",
+      "referenceLocation": {
+        "sheet": "三期示例数据",
+        "row": 7
+      },
+      "referenceQuestionStructure": {
+        "businessScene": "机构资产管理团队因决策会议提前且面临客户资金赎回压力，需要在有限时间内为单一持仓的仓位调整准备可核验依据；投资、风险等角色关注的经营与外部变量不同。",
+        "coreBlockage": "决策所需证据分散、口径与时点不一，部分公开信息可能矛盾或缺失，同时资金约束尚未与经营质量、估值及风险情景完成联合核对，因此暂不能形成仓位结论。",
+        "mainTask": "在指定信息截止时点内开展公开资料的探索性盘点，筛出高价值来源，说明每项资料可支持的判断及其数据时效，并标记关键冲突和信息缺口，不作最终投资判断。",
+        "attachmentSupport": "本例没有附件，判断完全依赖题面界定的业务背景、关注维度、信息来源优先级、时间边界与阶段性禁区；可迁移设计中，附件若存在，应仅承担提供既有持仓、约束或内部口径等证据底座的作用。",
+        "deliverableOrigin": "该产物是完整决策工作流的前置证据层：先建立来源清单和缺口地图，随后再核对经营、定价、风险与流动性约束，最终材料才会自然沉淀为供内部决策机构使用的正式文档。",
+        "imitableStructure": "可模仿“突发时间压力与资金约束交代背景—给出待决策的二选一或有限选项—并列不同岗位的关注点—限定资料时点与权威来源—要求先做证据盘点、用途映射和冲突识别—明确暂缓结论及最终成稿—预告后续核验环节”的递进方式。",
+        "forbiddenReuse": "不得复用样例中的具体企业、证券市场、机构类型、投资委员会安排、持仓比例、成本价格、赎回幅度、日期、行业风险变量、来源平台表述、公司文件名称及“证据摸排后形成持仓决策文档”这一整套领域与产物组合；也不得照搬任何句式。"
+      },
+      "referenceAttachmentStructure": "原题无附件结构可供复用。若迁移到新任务，可采用“内部现状摘要—硬性约束—已知口径—待验证事项”的最小附件结构，但须更换领域、对象、数据形态和承载形式。",
+      "newQuestionStructureMapping": "沿用样例的真实工作卡点、证据核验、阶段性判断和下游交付逻辑，切换到采购到货预验收场景并以真实附件替代联网摸排。",
+      "newAttachmentSupport": "中标公告确认中标口径，招标文件确认预计数量与履约条件，三份型号手册建立现场接口核对项。五份材料首轮一次上传。",
+      "attachmentBuild": {
+        "mainDecision": "建立公开规则与现场回填分层的到货预验收工作簿",
+        "attachments": [
+          {
+            "name": "01_ccgp_award_result.html",
+            "sourceUrl": "https://www.ccgp.gov.cn/cggg/zygg/zbgg/202606/t20260604_26685746.htm",
+            "format": "html",
+            "classification": "specific-business",
+            "objectLevel": true,
+            "timeAnchor": "2026年6月4日中标结果公告",
+            "specificityEvidence": {
+              "object": "中山大学肿瘤防治中心图形工作站采购项目0724-2611Z1612177",
+              "periodOrEvent": "2026年6月4日中标结果公告",
+              "uniqueContent": "中标供应商、两个包组金额、工作站型号、总数量和工作站单价"
+            },
+            "summary": "中国政府采购网中标结果公告，包含项目编号、采购人、中标供应商、包金额、工作站型号、总数量和工作站单价。",
+            "localPath": "01/01_ccgp_award_result.html",
+            "sha256": "aa92f568f0ba16a715fe70de17bdeb649194e4127c05f1e22d5046bbf0d9711b",
+            "bytes": 16648,
+            "sizeBytes": 16648,
+            "introductionHint": "首轮随任务整包上传，只有文件上传校验失败时才重新核对该原件。"
+          },
+          {
+            "name": "02_ccgp_tender_document.pdf",
+            "sourceUrl": "https://download.ccgp.gov.cn/oss/download?uuid=B5D63E6DFCF7514E1B5784173A2375",
+            "format": "pdf",
+            "classification": "specific-business",
+            "objectLevel": true,
+            "timeAnchor": "2026年项目招标与中标事件",
+            "specificityEvidence": {
+              "object": "中山大学肿瘤防治中心图形工作站采购项目0724-2611Z1612177",
+              "periodOrEvent": "2026年项目招标与中标事件",
+              "uniqueContent": "包组预计数量组合、技术要求、交货期限、30天运行验收、付款与保修条件"
+            },
+            "summary": "中国政府采购网中标结果公告所附招标文件，包含包组数量组合、技术要求、交货、验收、付款和保修条件。",
+            "localPath": "01/02_ccgp_tender_document.pdf",
+            "sha256": "90cc672177a57325983a2231a96097dbf34233eeba33a05d346ac71c3211bc08",
+            "bytes": 1472948,
+            "sizeBytes": 1472948,
+            "introductionHint": "首轮随任务整包上传，只有文件上传校验失败时才重新核对该原件。"
+          },
+          {
+            "name": "03_lenovo_thinkstation_p3_tiny_gen2_user_guide.pdf",
+            "sourceUrl": "https://chinakb.lenovo.com.cn/chinakb/prod-api/file/downloadFile?key=uniko/FILE/b6fc317ace0ccc48ede32aa2e4f97956-1772157485340.pdf&name=ThinkStation%20P3%20Tiny%20Gen%202%20%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97-20260227.pdf",
+            "format": "pdf",
+            "classification": "specific-business",
+            "objectLevel": true,
+            "timeAnchor": "2026年2月27日版产品资料",
+            "specificityEvidence": {
+              "object": "中标公告列明的ThinkStation P3 Tiny Gen 2型号系列",
+              "periodOrEvent": "2026年2月27日版产品资料",
+              "uniqueContent": "该型号系列后视图、接口位置、键盘开机接口和选配接口边界"
+            },
+            "summary": "具体中标型号产品资料。联想官方ThinkStation P3 Tiny Gen 2用户指南，适用于该系列，提供后视图、接口和功能说明。",
+            "localPath": "01/03_lenovo_thinkstation_p3_tiny_gen2_user_guide.pdf",
+            "sha256": "9a7bb2dfb6d5dae13fca49c7f9a66f43dd81ea98c2cfe4bad00f2e43daaa2422",
+            "bytes": 19900157,
+            "sizeBytes": 19900157,
+            "introductionHint": "首轮随任务整包上传，只有文件上传校验失败时才重新核对该原件。"
+          },
+          {
+            "name": "04_lenovo_thinkstation_p368_c4_user_guide.pdf",
+            "sourceUrl": "https://chinakb.lenovo.com.cn/chinakb/prod-api/file/downloadFile?key=uniko/FILE/c243bfe5ae9f4755c5d06a7e33982f61-1757922846732.pdf&name=ThinkStation%20P368-C4%20%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97-20250915.pdf",
+            "format": "pdf",
+            "classification": "specific-business",
+            "objectLevel": true,
+            "timeAnchor": "2025年9月15日版产品资料",
+            "specificityEvidence": {
+              "object": "中标公告列明的ThinkStation P368-C4型号系列",
+              "periodOrEvent": "2025年9月15日版产品资料",
+              "uniqueContent": "该型号系列后部接口、可选接口和特定型号限制"
+            },
+            "summary": "具体中标型号产品资料。联想官方ThinkStation P368-C4用户指南，提供后部接口、可选接口和机型限定说明。",
+            "localPath": "01/04_lenovo_thinkstation_p368_c4_user_guide.pdf",
+            "sha256": "421d617cf2e0830e83af4ba46d8c91ea1ad18b8e2feb47c40173b68efec8d9a8",
+            "bytes": 27105707,
+            "sizeBytes": 27105707,
+            "introductionHint": "首轮随任务整包上传，只有文件上传校验失败时才重新核对该原件。"
+          },
+          {
+            "name": "05_lenovo_thinkstation_p2_tower_user_guide.pdf",
+            "sourceUrl": "https://chinakb.lenovo.com.cn/chinakb/prod-api/file/downloadFile?key=uniko/FILE/eef1841e3330662d70e6a000027631cb-1760063572795.pdf&name=ThinkStation%20P2%20Tower%20%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97-20251009.pdf",
+            "format": "pdf",
+            "classification": "specific-business",
+            "objectLevel": true,
+            "timeAnchor": "2025年10月9日版产品资料",
+            "specificityEvidence": {
+              "object": "中标公告列明的ThinkStation P2 Tower型号系列",
+              "periodOrEvent": "2025年10月9日版产品资料",
+              "uniqueContent": "该型号系列后视图、USB与显示接口、网络接口和选配接口边界"
+            },
+            "summary": "具体中标型号产品资料。联想官方ThinkStation P2 Tower用户指南，提供后视图、接口和机型限定说明。",
+            "localPath": "01/05_lenovo_thinkstation_p2_tower_user_guide.pdf",
+            "sha256": "c7aed55aee835c4d1ed23ef9b936476ecf14b88ba4b581d9f4ef67f3d73c1234",
+            "bytes": 39993174,
+            "sizeBytes": 39993174,
+            "introductionHint": "首轮随任务整包上传，只有文件上传校验失败时才重新核对该原件。"
+          }
+        ],
+        "specificBusinessShareRationale": "五份材料都绑定项目编号或中标型号，具体业务材料占比为100%。",
+        "timeSeriesRationale": "本题核对一个采购项目的到货预验收口径，关键维度是包组、型号、数量、金额、证据层级和30天运行节点，无需连续时间序列。",
+        "objectSupportInQuestion": "题面明确项目编号、采购单位、包组、型号和现场台账缺口。",
+        "newAttachmentSupport": "中标公告确认中标口径，招标文件确认预计数量与履约条件，三份型号手册建立现场接口核对项。五份材料首轮一次上传。",
+        "newQuestionStructureMapping": "沿用样例的真实工作卡点、证据核验、阶段性判断和下游交付逻辑，切换到采购到货预验收场景并以真实附件替代联网摸排。"
+      },
+      "formatRequirement": null,
+      "draftedProductFormats": "xlsx",
+      "deliverableRationale": [
+        {
+          "format": "xlsx",
+          "user": "设备运维与项目交付同事",
+          "purpose": "到货前建立核对口径，并在现场逐台回填设备证据和差异处置状态",
+          "whyThisFormat": "逐台记录涉及多包组、多型号及多类配置字段，电子表格便于结构化录入、金额复核和差异筛选。"
+        }
+      ],
+      "preQaStructureAudit": {
+        "oneSentenceMainTask": "依据五份项目附件，为中山大学肿瘤防治中心项目0724-2611Z1612177建立公开规则与现场回填分层的到货预验收核对表，并复核包组金额及履约约束。",
+        "uniqueMainTask": true,
+        "specificObjectDecision": true,
+        "specificFilesDominant": true,
+        "evidenceChain": "证据链完整且边界清楚：中标公告确认项目、包组、型号、数量、单价及中标金额；招标文件确认数量组合、交付验收、付款和保修条件；三份联想用户指南分别支撑对应型号系列的接口位置、功能及选配边界；现场数量、序列号、配置读数、照片、装箱清单、台账与签章记录明确留作待核。五份附件均具对象、时间锚点、本地路径、哈希和用途说明，具体业务材料占比100%。金额差额计算可由公告与招标口径交叉复核，但820元/台仅作为显示器报价明细线索，不被提升为已证事实。",
+        "l2ReasoningChain": "推理链为：建立五份附件的来源索引和证据层级→交叉核对公告与招标文件中的包组数量、工作站单价和包组金额→计算差额并识别两包均对应820元/台的线索→依据三份型号指南生成型号级接口与功能检查项，同时保留选配限制→将附件可证规则与现场待回填证据分层→纳入30天运行、分批验收、付款及保修约束→按差异等级、证据来源和下一步动作形成逐台预验收工作簿。L1与L2均实际引用公告、招标文件及型号指南中的对象级材料，且未以指南替代具体到货配置或正式验收证据。",
+        "variableDrift": []
+      },
+      "firstQaFullResult": {
+        "pass": true,
+        "issues": [],
+        "execution": {
+          "runnerId": "exact-two-quality-gates-v2-codex-session",
+          "provider": "codex-session",
+          "model": "gpt-5.6-sol",
+          "sourcePromptHash": "ec1b7fcda1848ae11cd779dc16070e0ed493b6417099c4d1618924930c88b5ce",
+          "renderedPromptHash": "82aef4a4b765e04bf173999f2e22259c06190ea9dd4436c4c07cc6694180e493",
+          "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\workstation_acceptance_20260718T054801Z_df4628\\qa\\01_first_quality_gate_raw.json",
+          "rawResponseHash": "91d8a52caaeeb85bde3c6d30835ded967e170ecd3c21f44d79c852e7b26cfe9b",
+          "completedAt": "2026-07-18T06:45:11.734Z"
+        }
+      },
+      "firstQaRepairs": [],
+      "secondQaFullResult": {
+        "conclusion": "需语言小修",
+        "coreJudgment": "题面信息完整且阶段边界清楚，仅开头措辞略显生硬，长段落也影响阅读节奏。",
+        "modifications": "将“首轮一次附上”调整为“首轮一次性附上”，并按任务模块自然分段，其余事实和数字均保持不变。",
+        "modifiedQuestion": "我已在首轮一次性附上中标公告、招标文件和三份联想型号用户指南，请你依据这五份材料，为中山大学肿瘤防治中心项目0724-2611Z1612177建立到货预验收核对表。\n\n先建立来源索引，标明各项规则的出处和证据层级。对照公告与招标文件，复核两个包组的工作站单价、数量口径与包组金额。包1按150台6750元和50台6850元核算为1355000元，与1519000元相差164000元。包2按39台16800元核算为655200元，与687180元相差31980元。两项差额折算均为每台显示器820元，只登记为报价明细核对线索。\n\n公开材料页只写项目规则和型号级核对项，三份指南仅支撑对应系列的接口位置与功能检查。依据P3 Tiny Gen 2和P368-C4指南整理后部接口及选配提示，再依据P2 Tower指南整理显示接口与网络接口核对项。\n\n按包组预留实际到货数量字段。逐台页预留设备与显示器序列号字段，并设置CPU、内存与硬盘等配置读数栏。现场证据页另设铭牌照片和装箱清单索引，发货通知与资产台账状态也由现场回填。\n\n流程页写明安装调试正常后的30天运行节点，并保留包1分批验收合格及收到等额发票后支付100%的约束。包2正式验收后支付95%，满一年且具备申请函和每年两次维护保养报告后支付5%。厂家保修期按最终验收合格起不少于3年记录。\n\n将可证事实与合理推断分栏，缺少现场资料的项目统一标为待核。实际到货数量和序列号保留现场回填，配置读数与验收结果也保留现场回填。最后汇总差异等级、证据来源与下一步动作，生成可下载的到货预验收核对表，供设备运维与项目交付同事逐台使用并形成差异处置清单。\n\n本轮交付用于预验收准备，正式验收结论以实际台账与签章记录为准。",
+        "punctuationAudit": "标点自然，括号成对，未使用分号，也未为指标强行添加内容。",
+        "remainingNote": "本轮交付限于预验收准备，正式验收结论仍以实际台账与签章记录为准。",
+        "execution": {
+          "runnerId": "exact-two-quality-gates-v2-codex-session",
+          "provider": "codex-session",
+          "model": "gpt-5.6-sol",
+          "sourcePromptHash": "d694502b7d4043c89b9dc5937a40684c36c6d1dcff7ccb726dc2a520de5bc693",
+          "renderedPromptHash": "f598f93f4de11cc1d72f8bbf9219857a2f86fd60117ed8d3b2ef10a98602bea7",
+          "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\workstation_acceptance_20260718T054801Z_df4628\\qa\\01_second_language_gate_raw.json",
+          "rawResponseHash": "ad19bfbc98848e8016b4b3d74e450965318943fd58fa92cf2082fead53e5f9f2",
+          "completedAt": "2026-07-18T06:45:57.597Z"
+        }
+      },
+      "deAiRewrite": {
+        "kind": "de-ai-question-rewrite",
+        "policyId": "mugua-gemini-de-ai-rewrite-v2",
+        "uid": "沈礼_20260718_workstation_preacceptance_01",
+        "generatedAt": "2026-07-18T06:51:48.217Z",
+        "provider": "mugua-openai-compatible",
+        "endpoint": "https://api.mugua.link/v1/chat/completions",
+        "model": "gemini-3.1-pro-preview",
+        "finishReason": "stop",
+        "usage": {
+          "inputTokens": 1729,
+          "outputTokens": 3064,
+          "totalTokens": 4793
+        },
+        "promptHash": "c30b9a31c752241182938379157bb6fa732787684fb28a8e17d099ec35460c86",
+        "sourceQuestionHash": "444ca9823b412979f85afdf17f8df9ad8a2b6a63c63157b82f4506bf8112669b",
+        "rewrittenQuestionHash": "21e63854bf17bcea2696632373ebdbda0843b5fd30280df975a7a95baac5e212",
+        "selectedAttempt": 1,
+        "attempts": [
+          {
+            "attempt": 1,
+            "pass": true,
+            "visibleLength": 769,
+            "findingRules": []
+          }
+        ],
+        "rewrite": {
+          "question": "设备运维和项目交付同事需要逐台核验新到设备并形成差异处置清单，请为中山大学肿瘤防治中心项目0724-2611Z1612177制作一份Excel形式的到货预验收核对表。我已经把中标公告、招标文件以及三份联想型号用户指南在首轮一次性传上去了。\n\n建表时建立来源索引来标明规则出处与证据层级。我们对照公告和招标文件复核两个包组的工作站单价和数量口径。包1的1519000元总价与150台6750元加50台6850元的核算值相差164000元。包2的687180元总价与39台16800元的核算值存在31980元差额。这两处差额刚好都能解释为每台显示器820元，把这个折算结果登记为报价明细核对线索。公开材料页专门记录项目规则和型号级核对项。那三份指南用来支撑对应系列的接口位置和功能检查。依据P3 Tiny Gen 2和P368-C4指南整理后部接口以及选配提示。结合P2 Tower指南梳理显示接口和网络接口的核对项。\n\n表格要按包组预留实际到货数量字段。逐台页需要预留设备与显示器序列号字段。CPU、内存与硬盘等配置读数栏也设在这一页。现场证据页另外设置铭牌照片和装箱清单索引。发货通知与资产台账状态保持空白留给现场回填。实际到货数量和序列号也由现场回填。配置读数与验收结果同样交由现场回填处理。\n\n流程页记录安装调试正常后的30天运行节点。包1的付款条件是每批设备通过验收并取得等额发票，随后支付该批结算额的100%。包2正式验收通过后先付95%。满一年且具备申请函和每年两次维护保养报告后支付5%余款。厂家保修期从最终验收合格起算记录为不少于3年。\n\n表内要把可证事实与合理推断分栏展示。缺少现场资料的项目统一标注为待核。表尾汇总差异等级、证据来源与下一步动作，生成这份可下载的Excel核对表。本轮交付只用于预验收准备，正式验收结论以实际台账与签章记录为准。",
+          "requestContract": {
+            "requestSpan": "设备运维和项目交付同事需要逐台核验新到设备并形成差异处置清单，请为中山大学肿瘤防治中心项目0724-2611Z1612177制作一份Excel形式的到货预验收核对表。",
+            "action": "制作",
+            "outputs": [
+              {
+                "format": "xlsx",
+                "humanName": "Excel",
+                "purpose": "供后续执行和留痕使用"
+              }
+            ]
+          },
+          "roleTrace": {
+            "blockageSpan": "缺少现场资料的项目统一标注为待核。",
+            "motivationSpan": "那三份指南用来支撑对应系列的接口位置和功能检查。",
+            "downstreamUseSpan": "设备运维和项目交付同事需要逐台核验新到设备并形成差异处置清单，请为中山大学肿瘤防治中心项目0724-2611Z1612177制作一份Excel形式的到货预验收核对表。"
+          },
+          "usedFactIds": [
+            "fact-project-identity",
+            "fact-award-summary",
+            "fact-package-one-award-lines",
+            "fact-package-two-award-line",
+            "fact-tender-quantity-mix",
+            "fact-arithmetic-residuals",
+            "fact-delivery-acceptance",
+            "fact-payment-warranty",
+            "fact-p3-tiny-guide",
+            "fact-p368-guide",
+            "fact-p2-tower-guide",
+            "fact-guide-evidence-boundary"
+          ],
+          "deliberatelyOmitted": [],
+          "flowStages": [
+            {
+              "stage": "证据归位",
+              "evidence": "事实包中的公开材料与待补信息",
+              "decision": "区分可确认规则和未知现场状态",
+              "next": "证据足够则形成执行对象，不足则进入补证"
+            },
+            {
+              "stage": "执行对象核对",
+              "evidence": "已归位的对象关系与状态记录",
+              "decision": "依据公开项目材料建立可执行的到货预验收工作簿，现场台账缺位时保持待核状态",
+              "next": "符合条件则进入小范围验证，否则停止推进"
+            },
+            {
+              "stage": "小范围验证",
+              "evidence": "试点输入与实际返回记录",
+              "decision": "判断结果是否满足扩大范围的条件",
+              "next": "通过则推进，失败则退回原状态并留痕"
+            },
+            {
+              "stage": "交接收束",
+              "evidence": "判断依据、验证结果与回退记录",
+              "decision": "确认下游拿到一致结论",
+              "next": "供设备运维与项目交付同事逐台回填并形成差异处置清单"
+            }
+          ],
+          "selfAudit": {
+            "factsPreserved": true,
+            "formatsPreserved": true,
+            "processChainExplicit": true,
+            "failureOrRollbackExplicit": true,
+            "noInventedFacts": true,
+            "noAiShell": true
+          }
+        },
+        "validation": {
+          "pass": true,
+          "visibleLength": 769,
+          "similarity": [
+            {
+              "referenceIndex": 1,
+              "editSimilarity": 0.5204359673024523,
+              "trigramJaccard": 0.44713656387665196,
+              "longestExactCopyRun": 32
+            },
+            {
+              "referenceIndex": 2,
+              "editSimilarity": 0.05040871934604907,
+              "trigramJaccard": 0,
+              "longestExactCopyRun": 2
+            }
+          ],
+          "findings": [],
+          "factGuard": {
+            "ok": true,
+            "candidateAnchors": {
+              "numbers": [
+                "0724",
+                "-2611",
+                "1612177",
+                "1",
+                "1519000元",
+                "150台",
+                "6750元",
+                "50台",
+                "6850元",
+                "164000元",
+                "2",
+                "687180元",
+                "39台",
+                "16800元",
+                "31980元",
+                "820元",
+                "3",
+                "368",
+                "4",
+                "30天",
+                "100%",
+                "95%",
+                "5%",
+                "3年"
+              ],
+              "quotedClaims": [],
+              "timeMarkers": []
+            },
+            "unsupported": {
+              "numbers": [],
+              "quotedClaims": [],
+              "timeMarkers": []
+            },
+            "errors": []
+          }
+        }
+      },
+      "revisionLog": [
+        {
+          "at": "2026-07-18T06:45:57.600Z",
+          "stage": "second-language-gate",
+          "conclusion": "需语言小修"
+        }
+      ],
+      "finalRecord": {
+        "UID": "沈礼_20260718_workstation_preacceptance_01",
+        "题目": "设备运维和项目交付同事需要逐台核验新到设备并形成差异处置清单，请为中山大学肿瘤防治中心项目0724-2611Z1612177制作一份Excel形式的到货预验收核对表。我已经把中标公告、招标文件以及三份联想型号用户指南在首轮一次性传上去了。\n\n建表时建立来源索引来标明规则出处与证据层级。我们对照公告和招标文件复核两个包组的工作站单价和数量口径。包1的1519000元总价与150台6750元加50台6850元的核算值相差164000元。包2的687180元总价与39台16800元的核算值存在31980元差额。这两处差额刚好都能解释为每台显示器820元，把这个折算结果登记为报价明细核对线索。公开材料页专门记录项目规则和型号级核对项。那三份指南用来支撑对应系列的接口位置和功能检查。依据P3 Tiny Gen 2和P368-C4指南整理后部接口以及选配提示。结合P2 Tower指南梳理显示接口和网络接口的核对项。\n\n表格要按包组预留实际到货数量字段。逐台页需要预留设备与显示器序列号字段。CPU、内存与硬盘等配置读数栏也设在这一页。现场证据页另外设置铭牌照片和装箱清单索引。发货通知与资产台账状态保持空白留给现场回填。实际到货数量和序列号也由现场回填。配置读数与验收结果同样交由现场回填处理。\n\n流程页记录安装调试正常后的30天运行节点。包1的付款条件是每批设备通过验收并取得等额发票，随后支付该批结算额的100%。包2正式验收通过后先付95%。满一年且具备申请函和每年两次维护保养报告后支付5%余款。厂家保修期从最终验收合格起算记录为不少于3年。\n\n表内要把可证事实与合理推断分栏展示。缺少现场资料的项目统一标注为待核。表尾汇总差异等级、证据来源与下一步动作，生成这份可下载的Excel核对表。本轮交付只用于预验收准备，正式验收结论以实际台账与签章记录为准。",
+        "任务类型": "L1 探索型",
+        "一级目录": "科技软件与 AI 工作流",
+        "二级目录": "企业软件与技术方案",
+        "三级目录": "设备采购到货预验收",
+        "任务概括": "依据真实采购材料建立图形工作站到货预验收核对表",
+        "标注专家工作年限": "5年",
+        "人类完成时间": "6H",
+        "相关附件": "01_ccgp_award_result.html、02_ccgp_tender_document.pdf、03_lenovo_thinkstation_p3_tiny_gen2_user_guide.pdf、04_lenovo_thinkstation_p368_c4_user_guide.pdf、05_lenovo_thinkstation_p2_tower_user_guide.pdf",
+        "附件格式": "html, pdf",
+        "附件内容": "01_ccgp_award_result.html：中国政府采购网中标结果公告，包含项目编号、采购人、中标供应商、包金额、工作站型号、总数量和工作站单价。\n02_ccgp_tender_document.pdf：中国政府采购网中标结果公告所附招标文件，包含包组数量组合、技术要求、交货、验收、付款和保修条件。\n03_lenovo_thinkstation_p3_tiny_gen2_user_guide.pdf：具体中标型号产品资料。联想官方ThinkStation P3 Tiny Gen 2用户指南，适用于该系列，提供后视图、接口和功能说明。\n04_lenovo_thinkstation_p368_c4_user_guide.pdf：具体中标型号产品资料。联想官方ThinkStation P368-C4用户指南，提供后部接口、可选接口和机型限定说明。\n05_lenovo_thinkstation_p2_tower_user_guide.pdf：具体中标型号产品资料。联想官方ThinkStation P2 Tower用户指南，提供后视图、接口和机型限定说明。",
+        "产物格式": "xlsx",
+        "产物内容": "一份可下载的图形工作站到货预验收 Excel 核对表，包含项目口径、预计数量与金额复核、空白到货台账、型号级配置核对、差异清单、30天运行记录、付款与保修条件和来源索引。",
+        "做题关键步骤": "1. 核验五份附件的项目编号、包组、型号和来源边界。\n2. 对照招标预计数量与中标公告总量及单价，复核两个包组金额差额。\n3. 把820元差额标成报价明细待核线索，并设置正式报价回填字段。\n4. 依据三份型号手册建立接口与功能核对项，保留实际配置读数空白。\n5. 建立逐台到货台账、差异分级和30天运行记录，缺少证据时自动显示待核。\n6. 汇总付款与保修触发条件，生成启动拦截结论和来源索引。",
+        "标注专家姓名": "沈礼"
+      },
+      "workflowEvents": [
+        {
+          "at": "2026-07-18T06:42:03.593Z",
+          "type": "reference.sampled",
+          "sheet": "三期示例数据",
+          "row": 7
+        },
+        {
+          "at": "2026-07-18T06:42:36.116Z",
+          "type": "reference.breakdown.recorded"
+        },
+        {
+          "at": "2026-07-18T06:42:36.118Z",
+          "type": "attachments.recorded",
+          "count": 5
+        },
+        {
+          "at": "2026-07-18T06:44:24.271Z",
+          "type": "draft.recorded",
+          "reason": "initial"
+        },
+        {
+          "at": "2026-07-18T06:45:11.736Z",
+          "type": "first-qa.passed"
+        },
+        {
+          "at": "2026-07-18T06:45:57.600Z",
+          "type": "second-qa.second-qa-pass"
+        },
+        {
+          "at": "2026-07-18T06:52:09.783Z",
+          "type": "de-ai-rewrite.passed",
+          "policyId": "mugua-gemini-de-ai-rewrite-v2",
+          "selectedAttempt": 1
+        },
+        {
+          "at": "2026-07-18T06:52:09.785Z",
+          "type": "final.completed"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-16T02:43:07.942Z",
+  "spreadsheetToken": "QOgrs2gCShzw5MtHNi3cSg9rnB7",
+  "sheetId": "ff061b",
+  "requestedRange": "ff061b!Y430:AF434",
+  "targetRows": [],
+  "returnedRange": "ff061b!Y430:AF434",
+  "revision": 22162,
+  "values": [
+    [
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=QOgrs2gCShzw5MtHNi3cSg9rnB7&sheet_id=ff061b&row=430&qa_result_col=AC&qa_note_col=AD&action=recheck_row&qa_row_id=ff061b_430_313990a4&row_fingerprint=313990a41671",
+          "text": "点我质检",
+          "type": "url"
+        }
+      ],
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=QOgrs2gCShzw5MtHNi3cSg9rnB7&sheet_id=ff061b&student_row=430&student_field=Q&async=1&qa_result_col=AC&qa_note_col=AD&action=enqueue_batch&qa_row_id=ff061b_430_313990a4&row_fingerprint=313990a41671",
+          "text": "点我批量质检",
+          "type": "url"
+        }
+      ],
+      "",
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=QOgrs2gCShzw5MtHNi3cSg9rnB7&sheet_id=ff061b&selected_col=AA&async=1&qa_result_col=AC&qa_note_col=AD&action=enqueue_selected",
+          "text": "执行选择质检",
+          "type": "url"
+        }
+      ],
+      "❌不通过",
+      "场景表达不自然：题目将卖点整理和文案撰写包装成“建立传播证据库”，更像正式报告而非真实业务需求。建议改为更自然的表达，如“基于产品资料和法规，整理华为儿童手表5 Pro开学季卖点，并输出详情页、短视频和达人合作文案”。 产物要求生硬：题目要求“建立传播证据库”和“多渠道文案定稿”，但缺少真实任务需求，产物显得僵硬。建议直接说明需要输出可用的卖点清单和文案，而非抽象的证据库。",
+      null,
+      "ff061b_430_313990a4"
+    ],
+    [
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=QOgrs2gCShzw5MtHNi3cSg9rnB7&sheet_id=ff061b&row=431&qa_result_col=AC&qa_note_col=AD&action=recheck_row&qa_row_id=ff061b_431_acc467e1&row_fingerprint=acc467e1634a",
+          "text": "点我质检",
+          "type": "url"
+        }
+      ],
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=QOgrs2gCShzw5MtHNi3cSg9rnB7&sheet_id=ff061b&student_row=431&student_field=Q&async=1&qa_result_col=AC&qa_note_col=AD&action=enqueue_batch&qa_row_id=ff061b_431_acc467e1&row_fingerprint=acc467e1634a",
+          "text": "点我批量质检",
+          "type": "url"
+        }
+      ],
+      "",
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=QOgrs2gCShzw5MtHNi3cSg9rnB7&sheet_id=ff061b&selected_col=AA&async=1&qa_result_col=AC&qa_note_col=AD&action=enqueue_selected",
+          "text": "执行选择质检",
+          "type": "url"
+        }
+      ],
+      null,
+      null,
+      null,
+      "ff061b_431_acc467e1"
+    ],
+    [
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=QOgrs2gCShzw5MtHNi3cSg9rnB7&sheet_id=ff061b&row=432&qa_result_col=AC&qa_note_col=AD&action=recheck_row&qa_row_id=ff061b_432_4dfc84fe&row_fingerprint=4dfc84fe9c4f",
+          "text": "点我质检",
+          "type": "url"
+        }
+      ],
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=QOgrs2gCShzw5MtHNi3cSg9rnB7&sheet_id=ff061b&student_row=432&student_field=Q&async=1&qa_result_col=AC&qa_note_col=AD&action=enqueue_batch&qa_row_id=ff061b_432_4dfc84fe&row_fingerprint=4dfc84fe9c4f",
+          "text": "点我批量质检",
+          "type": "url"
+        }
+      ],
+      "",
+      [
+        {
+          "cellPosition": null,
+          "link": "https://qa.251104.xyz/check/sheet?spreadsheet_token=QOgrs2gCShzw5MtHNi3cSg9rnB7&sheet_id=ff061b&selected_col=AA&async=1&qa_result_col=AC&qa_note_col=AD&action=enqueue_selected",
+          "text": "执行选择质检",
+          "type": "url"
+        }
+      ],
+      "❌不通过",
+      "产物格式不明确：L2/L3 需要在产物内容/产物格式中写清具体可编辑或结构化格式，如 Word、Excel、PPT、HTML、workflow、trace 或 runbook；普通报告/复盘/方案类产物请使用常规办公格式，不推荐 Markdown。请在产物内容/产物格式中写明具体可编辑或结构化格式，并让题目自然保留核心交付物，例如 Word、Excel、PPT、HTML、workflow、tra。",
+      null,
+      "ff061b_432_4dfc84fe"
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      null,
+      null,
+      null,
+      ""
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      null,
+      null,
+      null,
+      ""
+    ]
+  ]
+}

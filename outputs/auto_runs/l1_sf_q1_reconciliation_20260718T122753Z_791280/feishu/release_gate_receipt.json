@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "ok": true,
+  "status": "PASS",
+  "generatedAt": "2026-07-18T13:22:13.492Z",
+  "policyId": "l1-phase3-source-driven-v1",
+  "policyVersion": 1,
+  "gateStatus": "PASS",
+  "authorizationMode": "DIRECT_PASS",
+  "reviewAuthorization": null,
+  "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\feishu\\structure_gate_report.json",
+  "reportHash": "465cd47840cdab213c6876651d71be22c7ba27e7eab98ef569ba337aa07c53ef",
+  "batchHash": "04462a1db7d6fabb2149ebd109c33ef7c3581a414cb6d08b2d0b1e82902da389",
+  "rowHashes": [
+    {
+      "index": 0,
+      "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+      "sheetRow": 999998,
+      "hash": "c081b80edbe3eb6a514d758a0b99a7cc3839c1187fc7da614d99dc90c6d429a0"
+    }
+  ],
+  "kind": "release-gate-receipt",
+  "releaseSchemaVersion": 2,
+  "releaseGateId": "combined-release-gate-v2",
+  "structure": {
+    "receiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\feishu\\structure_gate_receipt.json",
+    "receiptHash": "19ab0713bb0594b1aa1fb206c1d3651f23ca8273c19827edeac8eb98401f150e",
+    "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\feishu\\structure_gate_report.json",
+    "reportHash": "465cd47840cdab213c6876651d71be22c7ba27e7eab98ef569ba337aa07c53ef",
+    "gateStatus": "PASS",
+    "authorizationMode": "DIRECT_PASS"
+  },
+  "naturalness": {
+    "gateId": "naturalness-gate-v6",
+    "metricsVersion": "naturalness-metrics-v6",
+    "questionLanguagePolicyId": "corpus-calibrated-intent-punctuation-v4",
+    "status": "REVIEW",
+    "authorizationMode": "INDEPENDENT_REVIEW",
+    "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\feishu\\naturalness_gate_report.json",
+    "reportHash": "2a652af1fe0867e09b46ea4164584218c83e3d074be0431712c155adc8233d0e",
+    "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\drafts\\l1_questions.tsv",
+    "candidateHash": "5d5a13a33aa550b455990807aaa65d74ce4b536e605990105c2dca5957fdb6a1",
+    "baselinePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\sources\\naturalness_baseline.json",
+    "baselineHash": "0ec3102d5fa14b1b0aa65dcbd3744583646a65adf1b5772598438d80fc79812a",
+    "reviewAuthorization": {
+      "status": "APPROVED",
+      "decision": "APPROVE",
+      "verified": true,
+      "requestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\feishu\\naturalness_gate_report.json.review-request.json",
+      "requestHash": "7c28ee78501a6551f2b8276d93b5ca400b5a0c0fe58bf1f18060de35eff34688",
+      "signoffPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\feishu\\naturalness_gate_report.json.review-signoff.json",
+      "signoffHash": "f620eef45c4e25bc188551166a69f8a53056b84b73d9bf1e43ac2909d40b2f14",
+      "requestId": "naturalness_bb4617c9d3956cbce5af98ba",
+      "bindingHash": "bb4617c9d3956cbce5af98ba1e270ccdfda2c8f8e093c6f8047fa32ebf4388eb",
+      "requestedBy": "release-gate-naturalness-requester",
+      "reviewer": "local-codex-independent-naturalness-reviewer-gpt-5.6-sol",
+      "reviewedAt": "2026-07-18T13:22:13.459Z",
+      "rationaleHash": "db2bbea3202450a6b56cce0ca1dafb571b2749415a2dac222a0ce40fc6dc0746"
+    }
+  },
+  "roleConsistency": {
+    "gateId": "scene-card-role-consistency-v1",
+    "protocolId": "situated-requester-v1",
+    "status": "PASS",
+    "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\feishu\\role_consistency_report.json",
+    "reportHash": "1a4ef37aa5cfc668591b4df1110d9e36768a8e5e31b2c79c7ed15da048e50943",
+    "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\drafts\\l1_questions.tsv",
+    "candidateHash": "5d5a13a33aa550b455990807aaa65d74ce4b536e605990105c2dca5957fdb6a1",
+    "sceneCardPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\sources\\scene_cards.json",
+    "sceneCardFileHash": "c627bbf48c34a69c9b5651bd95b72952dad09c89701c363963139cb8bc18a4e6",
+    "sceneCardSetHash": "73bdfde860e1579bf16fd9cc6f9924cf7c013f9b270ee5f2db161de6de5c2a79",
+    "sceneCardBundleHash": "721dd09e2a54d78c3be8e6feed300ac3a25fa6986c24b847f0255fdc0a5233ae",
+    "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\sources\\fact_ledger.json",
+    "factLedgerHash": "ba7775febd7705593e791bf21bffc89a768dce49499a1f20ef38f7f04f23339d",
+    "evaluationHash": "1673d047cb2100cb2f5995917589a3209e170f333c86139786f0c588df9f1501",
+    "rowBindingsHash": "cd48103c6a850f6c55f7c440432b59fe785ff57a972838a21c073a2cdfcd5505"
+  }
+}

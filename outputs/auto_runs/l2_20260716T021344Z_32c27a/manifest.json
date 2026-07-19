@@ -1,0 +1,153 @@
+{
+  "runId": "l2_20260716T021344Z_32c27a",
+  "objective": "在用户指定测试表生产2条L2并完成全链条提交",
+  "operator": "codex",
+  "generatedAnnotator": "周宇新",
+  "uidPrefix": "numeric-test-sequence",
+  "count": 2,
+  "status": "submitted-local-pass-external-qa-unavailable",
+  "createdAt": "2026-07-16T02:13:45.658Z",
+  "spreadsheetToken": "QOgrs2gCShzw5MtHNi3cSg9rnB7",
+  "sheetId": "ff061b",
+  "dirs": {
+    "root": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a",
+    "sources": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\sources",
+    "attachments": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\attachments",
+    "drafts": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\drafts",
+    "feishu": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\feishu",
+    "qa": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\qa",
+    "logs": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\logs",
+    "tmp": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\tmp"
+  },
+  "diversityPlanPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\sources\\diversity_plan.json",
+  "diversityPolicyId": "l2-corpus-calibrated-source-driven-v5",
+  "diversityPolicyVersion": 5,
+  "productionProtocol": {
+    "protocolId": "l2-sample-attachments-two-gates-trace-v1",
+    "inputPacketPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\sources\\production_input_packet.json",
+    "workflowStatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\sources\\production_workflow_state.json",
+    "productionTracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\qa\\production_trace.json",
+    "inputStatus": "READY",
+    "sampledReferences": [
+      {
+        "questionIndex": 1,
+        "sheet": "Sheet1",
+        "row": 496,
+        "questionHash": "4d4047227e54e15f579115430c370992ca3585b6bfdf57467a55563796cbf9b3",
+        "attachmentSummaryHash": "33c74c5ba47d6bdbe0aa57ed0bcf8924233c0f0d096c8389a91374f41d90e755"
+      },
+      {
+        "questionIndex": 2,
+        "sheet": "Sheet1",
+        "row": 1093,
+        "questionHash": "1b6aadffacd5ab1fe3f23546e6d8ba600e9c3eb275ad4fb661adc0a13555fd28",
+        "attachmentSummaryHash": "ab6dd724af60103aa33fcc6c2a94e7b6dbef8d2647c0c554f091e36a4e8c48e0"
+      }
+    ],
+    "promptVersion": "sampled-two-gate-prompts-v1",
+    "stages": [
+      "reference-sample",
+      "reference-breakdown",
+      "attachment-plan",
+      "question-draft",
+      "first-quality-gate",
+      "second-language-gate",
+      "final-compiler"
+    ]
+  },
+  "situatedGeneration": {
+    "policyId": "situated-requester-v1",
+    "promptVersion": "situated-requester-prompts-v1",
+    "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\sources\\fact_ledger.json",
+    "sceneCardPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\sources\\scene_cards.json",
+    "roleConsistencyReportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\feishu\\role_consistency_report.json",
+    "stages": [
+      "scene-card",
+      "requester",
+      "field-compiler",
+      "audit"
+    ],
+    "candidateCountPerScene": 3,
+    "note": "The scene card is a hidden generation artifact. It must never be copied into the Feishu question cell."
+  },
+  "submission": {
+    "submittedAt": "2026-07-16T02:39:58.474Z",
+    "rewrittenAt": "2026-07-16T06:23:50.323Z",
+    "sheetRows": [
+      433,
+      434
+    ],
+    "recordUids": [
+      "434",
+      "435"
+    ],
+    "annotator": "周宇新",
+    "textFieldsVerified": 26,
+    "attachmentObjectsVerified": 12,
+    "finalReadbackPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\feishu\\final_readback_after_claude_redraft_v3_A433_Q434.json",
+    "aiRewrite": {
+      "provider": "OpenAI-compatible endpoint",
+      "model": "claude-opus-4-8",
+      "policyId": "claude-plain-professional-redraft-v3",
+      "acceptedResultPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\qa\\claude_opus_4_8_redraft_v3_accepted.json",
+      "successfulUsage": {
+        "inputTokens": 29317,
+        "outputTokens": 4342,
+        "totalTokens": 33659
+      },
+      "reportedRejectedDraftUsage": {
+        "inputTokens": 12231,
+        "outputTokens": 1602,
+        "totalTokens": 13833
+      },
+      "stylePolicy": {
+        "target": "plain professional internal task prose",
+        "performativeColloquialismsForbidden": true,
+        "firstPersonMaximum": 5,
+        "enumerationDengMinimum": 0,
+        "politeImperativeAllowed": true
+      },
+      "similarityPolicy": {
+        "maximumEditSimilarity": 0.72,
+        "maximumTrigramJaccard": 0.55,
+        "maximumExactCopyRun": 36
+      },
+      "writtenColumns": [
+        "B433",
+        "B434"
+      ],
+      "readbackVerified": true
+    },
+    "localGates": {
+      "aiStyleLint": "PASS",
+      "roleConsistency": "PASS",
+      "naturalness": "PASS",
+      "structure": "PASS",
+      "release": "PASS",
+      "productionTrace": "PASS"
+    },
+    "externalQa": {
+      "status": "UNAVAILABLE",
+      "qaResultColumns": "AC:AD",
+      "attempts": 4,
+      "reason": "qa.251104.xyz closed the connection before a result was returned",
+      "readbackPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\qa\\external_qa_readback.json"
+    }
+  },
+  "boundaries": {
+    "writableRoots": [
+      "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a"
+    ],
+    "sharedWritesRequireLocks": [
+      "outputs/l2_questions.tsv",
+      "outputs/feishu_fill_plan_*.json",
+      "outputs/auto_runs/_structure_registry.json",
+      "Feishu sheet rows"
+    ],
+    "noTouch": [
+      "Rows not reserved by this run",
+      "Other runs under outputs/auto_runs",
+      "Existing attachments outside this run unless explicitly imported"
+    ]
+  }
+}

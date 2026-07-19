@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 2,
+  "ok": true,
+  "status": "PASS",
+  "generatedAt": "2026-07-16T08:05:48.981Z",
+  "policyId": "l2-corpus-calibrated-source-driven-v5",
+  "policyVersion": 5,
+  "gateStatus": "PASS",
+  "authorizationMode": "DIRECT_PASS",
+  "reviewAuthorization": null,
+  "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\feishu\\structure_gate_report.json",
+  "reportHash": "25556ff76c91c79b2d5130e4495f7259b69309c6056726db6064e7c5b0c52e45",
+  "batchHash": "e190a45fd57cd2478aa3342e58c712ab7a88155c0a7d3b87165a857f9f3d7131",
+  "rowHashes": [
+    {
+      "index": 0,
+      "uid": "434",
+      "sheetRow": 433,
+      "hash": "953c008788cf15dec531b4ba40e124c6fa2358ef0cbafa2ae4433d5f97361491"
+    },
+    {
+      "index": 1,
+      "uid": "435",
+      "sheetRow": 434,
+      "hash": "582fa9e5192a9e3861b83f4bee92693e34f8590863b72a1062ce3147cb77c568"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "kind": "l1-production-trace-gate-receipt",
+  "productionProfile": "l1",
+  "gateId": "production-trace-gate-v6-profiled",
+  "status": "PASS",
+  "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_shenhua_capex_funding_20260718T165248Z_e74a5d\\feishu\\production_trace_gate_report.json",
+  "reportHash": "558ae1b99dab9486916e9172d946d623a8af226e0d04fa3662beeda4798033c4",
+  "packetHash": "7eb37442788646890d63a04f708f72ec8bb9d0168ddbb93163d9c6823fc66ba9",
+  "traceHash": "7da3eec508e75d6581256911a79f7689304023d08d0804a42de179db5306dc8b",
+  "candidateHash": "d1dabb0f022df68e2e3568e4efde01d41c416c1a3e5075ae8778ae5edda620ca",
+  "fillPlanHash": "db800b11be1364e6293241d269c01ab05c8f70095a83a5e674ef8b0dc24e3b74"
+}

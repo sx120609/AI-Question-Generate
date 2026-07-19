@@ -1,0 +1,376 @@
+{
+  "configHash": "8e48ae1999f36b495b6d3911834937c6566a86a56afdc4cce455406dcc96148f",
+  "conversationId": "",
+  "jobId": "l1-async-api5-20260719-1015-02",
+  "minimumRounds": 6,
+  "maxRounds": 10,
+  "mode": "openai-compatible",
+  "contentScopePolicyVersion": "domestic-work-scope-v1",
+  "executionSlot": {
+    "browserContextId": "1084C633D11647B8992D48E50C635F55",
+    "endpoint": "http://127.0.0.1:9229",
+    "targetId": "D7F9BF5AF432877197B0C1AA9F2D24BB",
+    "workerId": "slot-3-D7F9BF5AF432877197B0C1AA9F2D24BB"
+  },
+  "finalProductAcceptance": null,
+  "productRequirement": {
+    "allowEquivalentOnline": false,
+    "allowUnavailableBestEffort": false,
+    "required": true,
+    "requestedFormats": [
+      "excel"
+    ]
+  },
+  "rounds": [
+    {
+      "contentScopeBeforeModel": {
+        "calculationComplexityCount": 3,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "contentScopeAfterModel": {
+        "calculationComplexityCount": 3,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "evaluation": null,
+      "feedbackPreflight": null,
+      "feedbackRewrite": null,
+      "attachmentNames": [
+        "中国神华能源股份有限公司2026年第一季度报告.pdf"
+      ],
+      "index": 1,
+      "plannedPrompt": "我正在做中国神华交易并表后的资本开支调整与资金承接复核，这份结果供资本计划同事跟踪项目预算和后续融资披露。\n\n为了给资本计划同事跟踪项目预算和后续融资披露提供参考，请根据《中国神华能源股份有限公司2026年第一季度报告.pdf》帮我做个数据复核。请先核对纳入重大资产交易后的2026年经营目标，以及调整前后的分业务资本开支。你需要复核各分项合计与披露总额是否一致并解释差异，同时计算各业务的增量，以及它们在179.64亿元总增量里的占比。\n\n另外，请核对2026年第一季度经营现金流与上年同期的数据，复算同比变化，并复核相关现金流口径作为资金参照的适用范围。基于这些数据，请给出一个明确结论，说明资本开支增量主要集中在哪些业务，并评估这份报告现有的披露内容最多能支持到哪种程度的资金承接结论。\n\n最后请整理一份可下载的《中国神华2026年调整后资本开支》Excel文件。表格里要列示经营目标变化、分业务资本开支、增量占比、2026年第一季度经营现金流参照及同比复算、报告披露的资金来源渠道，并留出待补分配栏。请在表里保留来源页码、未经审计状态、计算公式和派生计算过程。注意严格区分可证事实、合理推断和待确认项，不要把未披露的资金分配或业务归因写成已经证实的事项。",
+      "preflight": {
+        "issues": [],
+        "pass": true,
+        "prompt": "这份中国神华交易并表后的资本开支调整与资金承接复核结果，后续供资本计划同事跟踪项目预算和融资披露。请根据《中国神华能源股份有限公司2026年第一季度报告.pdf》核对纳入重大资产交易后的2026年经营目标，以及调整前后的分业务资本开支。复核各分项合计与披露总额是否一致，如有差异请解释。同时计算各业务增量及其在179.64亿元总增量中的占比。\n\n接着，核对2026年第一季度经营现金流与上年同期数据，复算同比变化，并复核该现金流口径作为资金参照的适用范围。基于这些数据，请明确资本开支增量主要集中的业务，并评估当前报告披露内容最多能支持到何种程度的资金承接结论。\n\n最后整理一份可下载的《中国神华2026年调整后资本开支》Excel 表格。表内需列示经营目标变化、分业务资本开支、增量占比、2026年第一季度经营现金流参照及同比复算、报告披露的资金来源渠道，并预留待补分配栏。请在表中保留来源页码、未经审计状态、计算公式和派生计算过程，严格区分可证事实、合理推断和待确认项，不要将未披露的资金分配或业务归因写成已证实事项。",
+        "changed": false,
+        "model": "gpt-5.6-sol",
+        "provider": "openai-compatible-responses-api",
+        "retryTrace": [
+          {
+            "attempt": 1,
+            "phase": "initial",
+            "retry": 0,
+            "status": "success"
+          }
+        ],
+        "textPurpose": "chat-prompt",
+        "usage": {
+          "metered": true,
+          "source": "responses-api",
+          "requestCount": 1,
+          "inputTokens": 1662,
+          "cachedInputTokens": 0,
+          "uncachedInputTokens": 1662,
+          "outputTokens": 225,
+          "reasoningTokens": 204,
+          "visibleOutputTokens": 21,
+          "totalTokens": 1887,
+          "providerUsage": {
+            "input_tokens": 1662,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 225,
+            "output_tokens_details": {
+              "reasoning_tokens": 204
+            },
+            "total_tokens": 1887
+          }
+        }
+      },
+      "prompt": "这份中国神华交易并表后的资本开支调整与资金承接复核结果，后续供资本计划同事跟踪项目预算和融资披露。请根据《中国神华能源股份有限公司2026年第一季度报告.pdf》核对纳入重大资产交易后的2026年经营目标，以及调整前后的分业务资本开支。复核各分项合计与披露总额是否一致，如有差异请解释。同时计算各业务增量及其在179.64亿元总增量中的占比。\n\n接着，核对2026年第一季度经营现金流与上年同期数据，复算同比变化，并复核该现金流口径作为资金参照的适用范围。基于这些数据，请明确资本开支增量主要集中的业务，并评估当前报告披露内容最多能支持到何种程度的资金承接结论。\n\n最后整理一份可下载的《中国神华2026年调整后资本开支》Excel 表格。表内需列示经营目标变化、分业务资本开支、增量占比、2026年第一季度经营现金流参照及同比复算、报告披露的资金来源渠道，并预留待补分配栏。请在表中保留来源页码、未经审计状态、计算公式和派生计算过程，严格区分可证事实、合理推断和待确认项，不要将未披露的资金分配或业务归因写成已证实事项。",
+      "response": null,
+      "rewrite": {
+        "changed": true,
+        "contentValidationTrace": [
+          {
+            "attempt": 1,
+            "status": "accepted"
+          }
+        ],
+        "model": "gemini-3.1-pro-preview",
+        "pass": true,
+        "preservation": {
+          "issues": [],
+          "anchorDiff": {
+            "numbers": {
+              "added": [],
+              "missing": []
+            },
+            "urls": {
+              "added": [],
+              "missing": []
+            },
+            "latin": {
+              "added": [],
+              "missing": []
+            }
+          },
+          "pass": true,
+          "rewrittenLength": 461,
+          "sourceLength": 531
+        },
+        "prompt": "这份中国神华交易并表后的资本开支调整与资金承接复核结果，后续供资本计划同事跟踪项目预算和融资披露。请根据《中国神华能源股份有限公司2026年第一季度报告.pdf》核对纳入重大资产交易后的2026年经营目标，以及调整前后的分业务资本开支。复核各分项合计与披露总额是否一致，如有差异请解释。同时计算各业务增量及其在179.64亿元总增量中的占比。\n\n接着，核对2026年第一季度经营现金流与上年同期数据，复算同比变化，并复核该现金流口径作为资金参照的适用范围。基于这些数据，请明确资本开支增量主要集中的业务，并评估当前报告披露内容最多能支持到何种程度的资金承接结论。\n\n最后整理一份可下载的《中国神华2026年调整后资本开支》Excel 表格。表内需列示经营目标变化、分业务资本开支、增量占比、2026年第一季度经营现金流参照及同比复算、报告披露的资金来源渠道，并预留待补分配栏。请在表中保留来源页码、未经审计状态、计算公式和派生计算过程，严格区分可证事实、合理推断和待确认项，不要将未披露的资金分配或业务归因写成已证实事项。",
+        "retryTrace": [
+          {
+            "attempt": 1,
+            "phase": "initial",
+            "retry": 0,
+            "status": "success",
+            "contentAttempt": 1
+          }
+        ],
+        "textPurpose": "chat-prompt",
+        "usage": {
+          "prompt_tokens": 3048,
+          "completion_tokens": 1206,
+          "total_tokens": 4254,
+          "billing_usage": {
+            "source": "gemini_chat",
+            "semantic": "gemini",
+            "gemini_usage_metadata": {
+              "promptTokenCount": 3048,
+              "toolUsePromptTokenCount": 0,
+              "candidatesTokenCount": 331,
+              "totalTokenCount": 4254,
+              "thoughtsTokenCount": 875,
+              "cachedContentTokenCount": 0,
+              "promptTokensDetails": [],
+              "toolUsePromptTokensDetails": [],
+              "candidatesTokensDetails": []
+            }
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 3048,
+            "audio_tokens": 0,
+            "image_tokens": 0
+          },
+          "completion_tokens_details": {
+            "text_tokens": 0,
+            "audio_tokens": 0,
+            "image_tokens": 0,
+            "reasoning_tokens": 875
+          },
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "input_tokens_details": null,
+          "claude_cache_creation_5_m_tokens": 0,
+          "claude_cache_creation_1_h_tokens": 0
+        }
+      },
+      "status": "sending",
+      "promptQualityRetryTrace": [
+        {
+          "attempt": 1,
+          "issue": "Codex prompt quality gate returned an unusable decision: Prompt quality gate rejected the de-AI text: 交付物要求不完整：sourcePrompt 明确要求整理一份“可下载的《中国神华2026年调整后资本开支》Excel文件”，candidatePrompt 仅要求整理 Excel 表格，遗漏了“可下载”这一验收要求。",
+          "model": "gpt-5.6-sol",
+          "provider": "openai-compatible-responses-api",
+          "status": "rejected",
+          "usage": {
+            "metered": true,
+            "source": "responses-api",
+            "requestCount": 1,
+            "inputTokens": 1658,
+            "cachedInputTokens": 0,
+            "uncachedInputTokens": 1658,
+            "outputTokens": 202,
+            "reasoningTokens": 125,
+            "visibleOutputTokens": 77,
+            "totalTokens": 1860,
+            "providerUsage": {
+              "input_tokens": 1658,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0
+              },
+              "output_tokens": 202,
+              "output_tokens_details": {
+                "reasoning_tokens": 125
+              },
+              "total_tokens": 1860
+            }
+          }
+        },
+        {
+          "attempt": 2,
+          "status": "accepted"
+        }
+      ],
+      "modelRetries": {
+        "prompt_de_ai_rewrite": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success"
+            }
+          ],
+          "status": "complete"
+        },
+        "prompt_preflight": {
+          "attempts": [
+            {
+              "attempt": 1,
+              "phase": "initial",
+              "retry": 0,
+              "status": "success"
+            }
+          ],
+          "status": "complete"
+        }
+      },
+      "contentScopeAfterRewrite": {
+        "calculationComplexityCount": 3,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "attachmentVerification": {
+        "attachmentCount": 1,
+        "attachments": [
+          {
+            "classification": "specific-business",
+            "introductionHint": "把正式报告名称直接嵌入任务句，后续核对继续引用同一份已验证原件。",
+            "name": "中国神华能源股份有限公司2026年第一季度报告.pdf",
+            "relativePath": "中国神华能源股份有限公司2026年第一季度报告.pdf",
+            "sha256": "eafdac378c6aece9511c0e3c501ed99312a47addd138a5562d9710e66caf5959",
+            "sizeBytes": 282693,
+            "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-25/1225185746.PDF",
+            "summary": "披露中国神华一季度经营财务数据、重大资产交易后经营目标调整、分业务资本开支计划和资金来源边界。"
+          }
+        ],
+        "pass": true,
+        "verifiedAt": "2026-07-19T02:10:36.315Z"
+      }
+    }
+  ],
+  "runId": "cc8b8259-42ff-4992-b562-3c8ca1b234b7",
+  "schemaVersion": 7,
+  "successCriteria": [
+    "调整前后计划和页码准确",
+    "分业务增量及占比可复算",
+    "计划值与一季度实际值明确区分",
+    "不虚构融资来源分配",
+    "交付可下载xlsx"
+  ],
+  "taskGoal": "计划复核人员需要把重大资产交易带来的经营目标变化与分业务资本开支增量对齐。。制作调整前后资本开支核对表，识别增量集中度并把经营现金流与计划资金需求并列展示，资金来源只保留报告披露的渠道和待补分配栏。，最终一份可下载的中国神华2026年调整后资本开支Excel，包含经营目标变化、分业务资本开支、增量占比、经营现金流参照、资金来源边界和待补分配栏。",
+  "startedAt": "2026-07-19T02:09:50.874Z",
+  "status": "running",
+  "codexUsageHistory": [],
+  "uploadedAttachmentNames": [],
+  "workerPid": 36416,
+  "workerStartedAt": "2026-07-19T02:09:50.874Z",
+  "codexUsageSummary": {
+    "schemaVersion": 1,
+    "kind": "codex-token-usage-summary",
+    "completeMetering": true,
+    "recordCount": 2,
+    "meteredRecordCount": 2,
+    "unmeteredRecordCount": 0,
+    "totals": {
+      "metered": true,
+      "source": "responses-api-aggregate",
+      "requestCount": 2,
+      "inputTokens": 3320,
+      "cachedInputTokens": 0,
+      "uncachedInputTokens": 3320,
+      "outputTokens": 427,
+      "reasoningTokens": 329,
+      "visibleOutputTokens": 98,
+      "totalTokens": 3747
+    },
+    "entries": [
+      {
+        "round": 1,
+        "stage": "prompt-preflight",
+        "provider": "openai-compatible-responses-api",
+        "model": "gpt-5.6-sol",
+        "usage": {
+          "metered": true,
+          "source": "responses-api",
+          "requestCount": 1,
+          "inputTokens": 1662,
+          "cachedInputTokens": 0,
+          "uncachedInputTokens": 1662,
+          "outputTokens": 225,
+          "reasoningTokens": 204,
+          "visibleOutputTokens": 21,
+          "totalTokens": 1887
+        }
+      },
+      {
+        "round": 1,
+        "stage": "prompt-preflight-rejected",
+        "provider": "openai-compatible-responses-api",
+        "model": "gpt-5.6-sol",
+        "usage": {
+          "metered": true,
+          "source": "responses-api",
+          "requestCount": 1,
+          "inputTokens": 1658,
+          "cachedInputTokens": 0,
+          "uncachedInputTokens": 1658,
+          "outputTokens": 202,
+          "reasoningTokens": 125,
+          "visibleOutputTokens": 77,
+          "totalTokens": 1860
+        }
+      }
+    ]
+  },
+  "initialContentScope": {
+    "calculationComplexityCount": 3,
+    "issues": [],
+    "pass": true,
+    "policyVersion": "domestic-work-scope-v1"
+  },
+  "attachmentManifest": {
+    "attachmentCount": 1,
+    "attachments": [
+      {
+        "classification": "specific-business",
+        "introductionHint": "把正式报告名称直接嵌入任务句，后续核对继续引用同一份已验证原件。",
+        "name": "中国神华能源股份有限公司2026年第一季度报告.pdf",
+        "relativePath": "中国神华能源股份有限公司2026年第一季度报告.pdf",
+        "sha256": "eafdac378c6aece9511c0e3c501ed99312a47addd138a5562d9710e66caf5959",
+        "sizeBytes": 282693,
+        "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-25/1225185746.PDF",
+        "summary": "披露中国神华一季度经营财务数据、重大资产交易后经营目标调整、分业务资本开支计划和资金来源边界。"
+      }
+    ],
+    "initialAttachmentNames": [
+      "中国神华能源股份有限公司2026年第一季度报告.pdf"
+    ],
+    "minimumSpecificBusinessShare": 0.8,
+    "pass": true,
+    "policyId": "doubao-l1-l2-attachment-policy-v1",
+    "productionEvidence": {
+      "attachmentCount": 1,
+      "downloadManifestHash": "00db6e7379e44bba79f50e8ee8e16678395e76673676d5621a297da484d8d759",
+      "downloadManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\packages\\l1-async-api5-20260719-1015-02\\evidence\\download_manifest.json",
+      "mode": "production-path",
+      "pass": true,
+      "policyId": "reuse-l2-source-acquisition-path-v1",
+      "productionRunId": "l1_async_api5-20260719-1015_02_shenhua_capex_funding",
+      "productionTraceGateReceiptHash": "4f998aa737b09d91acd584c8b916b3f7437b9ec0f717c790dc4489e3acaa62ec",
+      "productionTraceGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\packages\\l1-async-api5-20260719-1015-02\\evidence\\production_trace_gate_receipt.json",
+      "productionTraceHash": "bf9ec2335d227b0594e38cf0542e3dca6f1cbf7fdc749e7b4e5dbe660ed5f36d",
+      "productionTracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\packages\\l1-async-api5-20260719-1015-02\\evidence\\production_trace.json",
+      "recordUid": "沈礼_api5-20260719-1015_02",
+      "releaseGateReceiptHash": "ab2686d01cbf0a186f93690a04dbf77454daf6673e1335d83aa73c6b13681f7c",
+      "releaseGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\async_batches\\api5-20260719-1015\\interaction-queue\\packages\\l1-async-api5-20260719-1015-02\\evidence\\release_gate_receipt.json",
+      "verifiedAt": "2026-07-19T02:09:50.885Z"
+    },
+    "specificBusinessShare": 1,
+    "verifiedAt": "2026-07-19T02:09:50.885Z"
+  },
+  "updatedAt": "2026-07-19T02:10:36.316Z"
+}

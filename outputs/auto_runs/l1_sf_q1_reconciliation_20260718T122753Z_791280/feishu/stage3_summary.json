@@ -1,0 +1,15 @@
+{
+  "kind": "l1-stage3-gate-summary",
+  "generatedAt": "2026-07-18T13:22:13.506Z",
+  "workflowState": "COMPLETE",
+  "finalRecordUid": "沈礼_20260718_sf_q1_reconciliation_01",
+  "roleConsistency": "PASS",
+  "productionTrace": "PASS",
+  "release": {
+    "ok": true,
+    "phase": "release",
+    "status": "PASS"
+  },
+  "feishuWriteAttempted": false,
+  "feishuWriteApplied": false
+}

@@ -1,0 +1,168 @@
+{
+  "kind": "de-ai-question-rewrite",
+  "policyId": "mugua-gemini-de-ai-rewrite-v2",
+  "uid": "沈礼_20260719_l1_inspur_profit_cash_05",
+  "generatedAt": "2026-07-18T18:02:07.258Z",
+  "provider": "mugua-openai-compatible",
+  "endpoint": "https://api.mugua.link/v1/chat/completions",
+  "model": "gemini-3.1-pro-preview",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 1461,
+    "outputTokens": 1123,
+    "totalTokens": 2584
+  },
+  "promptHash": "055cdc1f6ccdb80b8423a509d2465c296347965fb54b765c122bb0f16d8d70e3",
+  "sourceQuestionHash": "8aa917bc202fb80f0eb6574b95ab052ffe06abb821c08810da13207841a3f02f",
+  "rewrittenQuestionHash": "6ac450ea6e9b77b6a8610ba5f5ff6784da3b166069a1b46c1bfadb1e8376c1dc",
+  "selectedAttempt": 3,
+  "attempts": [
+    {
+      "attempt": 1,
+      "pass": false,
+      "visibleLength": 387,
+      "findingRules": [
+        "rewrite-edit-similarity-too-high",
+        "rewrite-trigram-overlap-too-high",
+        "rewrite-exact-copy-run-too-long"
+      ]
+    },
+    {
+      "attempt": 2,
+      "pass": false,
+      "visibleLength": 363,
+      "findingRules": [
+        "rewrite-exact-copy-run-too-long"
+      ]
+    },
+    {
+      "attempt": 3,
+      "pass": true,
+      "visibleLength": 422,
+      "findingRules": []
+    }
+  ],
+  "rewrite": {
+    "question": "我作为经营质量复核专员，正在做浪潮信息2026年一季度利润现金与营运节奏复核，这份结果供经营分析同事继续取得回款和项目明细后补充判断。\n\n请看一下浪潮电子信息产业股份有限公司2026年第一季度报告，重点分析一下为什么会出现收入下降、利润却在增长，但同时经营现金流转负的情况。请根据报告第二和第三页的数据，把当期和去年同期的同比变动重新算一遍，顺便对收入、利润以及经营现金流涉及的各个分项、占比、相关比率和计算口径做个交叉复核。\n\n在梳理结论的时候，需要把报告原文、派生计算、合理推断以及待确认的事项区分清楚。你可以找找能支持预收、回款还有融资节奏的线索，不过要注意证据边界，别直接把应收账款、合同负债和短期借款的同步变动当成绝对的因果关系来归因。\n\n最后请输出一份名为浪潮信息2026年一季度利润现金与营运节奏的Excel文件供下载。表格里要体现出计算口径和证据边界，并且把融资变化情况、应收与合同负债相关的线索，以及收入利润现金的对照情况都整理进去，记得标明来源页码和未经审计状态。另外，为了方便经营分析的同事后续做补充判断，请在表里预留好账龄、客户、项目这些待补充的明细项。",
+    "requestContract": {
+      "requestSpan": "最后请输出一份名为浪潮信息2026年一季度利润现金与营运节奏的Excel文件供下载。",
+      "action": "最后",
+      "outputs": [
+        {
+          "format": "xlsx",
+          "humanName": "Excel",
+          "purpose": "供后续执行和留痕使用"
+        }
+      ]
+    },
+    "roleTrace": {
+      "blockageSpan": "我作为经营质量复核专员，正在做浪潮信息2026年一季度利润现金与营运节奏复核，这份结果供经营分析同事继续取得回款和项目明细后补充判断。",
+      "motivationSpan": "另外，为了方便经营分析的同事后续做补充判断，请在表里预留好账龄、客户、项目这些待补充的明细项。",
+      "downstreamUseSpan": "另外，为了方便经营分析的同事后续做补充判断，请在表里预留好账龄、客户、项目这些待补充的明细项。"
+    },
+    "usedFactIds": [
+      "inspur-core-performance",
+      "inspur-operating-cash",
+      "inspur-receivables",
+      "inspur-contract-liability",
+      "inspur-financing",
+      "inspur-boundary"
+    ],
+    "deliberatelyOmitted": [],
+    "flowStages": [
+      {
+        "stage": "证据归位",
+        "evidence": "事实包中的公开材料与待补信息",
+        "decision": "区分可确认规则和未知现场状态",
+        "next": "证据足够则形成执行对象，不足则进入补证"
+      },
+      {
+        "stage": "执行对象核对",
+        "evidence": "已归位的对象关系与状态记录",
+        "decision": "建立利润现金与营运节奏核对表，复算核心指标方向，整理应收、预收和融资变化的披露线索，并保留客户与项目明细待补栏。",
+        "next": "符合条件则进入小范围验证，否则停止推进"
+      },
+      {
+        "stage": "小范围验证",
+        "evidence": "试点输入与实际返回记录",
+        "decision": "判断结果是否满足扩大范围的条件",
+        "next": "通过则推进，失败则退回原状态并留痕"
+      },
+      {
+        "stage": "交接收束",
+        "evidence": "判断依据、验证结果与回退记录",
+        "decision": "确认下游拿到一致结论",
+        "next": "供经营分析同事继续取得回款和项目明细后补充判断。"
+      }
+    ],
+    "selfAudit": {
+      "factsPreserved": true,
+      "formatsPreserved": true,
+      "processChainExplicit": true,
+      "failureOrRollbackExplicit": true,
+      "noInventedFacts": true,
+      "noAiShell": true
+    }
+  },
+  "validation": {
+    "pass": true,
+    "visibleLength": 483,
+    "similarity": [
+      {
+        "referenceIndex": 1,
+        "editSimilarity": 0.33111111111111113,
+        "trigramJaccard": 0.2452504317789292,
+        "longestExactCopyRun": 25,
+        "longestExactCopySpan": "浪潮电子信息产业股份有限公司2026年第一季度报告"
+      },
+      {
+        "referenceIndex": 2,
+        "editSimilarity": 0.04888888888888887,
+        "trigramJaccard": 0.008141112618724558,
+        "longestExactCopyRun": 5,
+        "longestExactCopySpan": "2026年"
+      }
+    ],
+    "findings": [],
+    "factGuard": {
+      "ok": true,
+      "candidateAnchors": {
+        "numbers": [
+          "2026年"
+        ],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "unsupported": {
+        "numbers": [],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "errors": []
+    }
+  },
+  "deterministicStyleCleanup": {
+    "applied": true,
+    "rules": [
+      "remove-unbound-inline-page-range",
+      "remove-unbound-title-quotes",
+      "remove-banned-politeness",
+      "remove-upload-meta-language",
+      "restore-known-requester-context"
+    ],
+    "sourceApiQuestionHash": "40653631d719078fb5a5f23b01e5af267054ffffb39ca9517e08683c15230dc1"
+  },
+  "postDeAiAudit": {
+    "pass": false,
+    "issues": [
+      {
+        "rule": "必须保留“请给出明确结论”或等价的清晰决策请求",
+        "evidence": "outboundQuestion仅写“在梳理结论的时候”，未明确要求给出结论或作出清晰判断。",
+        "repair": "恢复“请给出明确结论”或加入等价的明确决策请求。"
+      }
+    ],
+    "factsPreserved": true,
+    "attachmentsPreserved": true,
+    "visibleTextClean": true
+  }
+}

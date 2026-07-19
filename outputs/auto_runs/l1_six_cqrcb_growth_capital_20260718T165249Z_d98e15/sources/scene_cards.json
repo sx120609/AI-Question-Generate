@@ -1,0 +1,133 @@
+{
+  "kind": "scene-card-bundle",
+  "protocolId": "situated-requester-v1",
+  "schemaVersion": 1,
+  "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_cqrcb_growth_capital_20260718T165249Z_d98e15\\sources\\fact_ledger.json",
+  "factLedgerHash": "2a45c7a93fc9071a137445154a50bd45a5fa34f7928e20821d9a751be1847ccf",
+  "cards": [
+    {
+      "recordUid": "沈礼_20260719_l1_cqrcb_growth_capital_03",
+      "sceneCard": {
+        "schemaVersion": 1,
+        "policyId": "situated-requester-v1",
+        "topicId": "cqrcb-2026q1-growth-capital-constraint",
+        "personaId": "cqrcb_growth_capital-requester-01",
+        "requester": {
+          "functionalRole": "银行经营复核专员",
+          "organizationType": "企业经营与研究团队",
+          "department": "",
+          "responsibility": "把重庆农村商业银行股份有限公司公开季度报告整理成可追溯的增长与资本约束复核简报",
+          "authorityBoundary": "只负责复核公开披露、派生计算和证据边界，无权把未披露的业务明细写成确定归因。",
+          "recipientRelation": "银行经营复核专员及下游同事"
+        },
+        "scene": {
+          "workflowStage": "银行经营复核人员需要判断资产扩张和收入增长是否伴随资本与回报指标承压。",
+          "trigger": "2026年一季度营业收入78.301亿元，同比增长8.39%；归母净利润39.346亿元，同比增长5.07%；年化ROA为0.95%，同比下降0.04个百分点；年化加权ROE为11.95%，同比下降0.05个百分点。",
+          "currentBlockage": "附件没有披露资本充足率与杠杆率下降对应的具体业务条线资本消耗。",
+          "mainDecision": "形成一份增长与资本约束复核简报，把收入利润、资产负债增速、资本比率、杠杆和资产质量放在同一页级证据链中，并列出需要补充的条线资本数据。",
+          "downstreamUse": "供银行经营分析同事决定下一步需要补取哪些资本和业务条线资料。"
+        },
+        "informationBoundary": {
+          "knownFactIds": [
+            "cqrcb-profit-return",
+            "cqrcb-balance-growth",
+            "cqrcb-capital-ratios",
+            "cqrcb-leverage",
+            "cqrcb-asset-quality",
+            "cqrcb-audit-boundary"
+          ],
+          "availableMaterialIds": [
+            "cqrcb-2026q1-report"
+          ],
+          "unknowns": [
+            "附件没有披露资本充足率与杠杆率下降对应的具体业务条线资本消耗。",
+            "单季数据不能单独证明全年资产扩张速度和回报水平的持续性。"
+          ],
+          "forbiddenInferences": [
+            "未由季度报告披露的业务明细不得写成确定事实",
+            "派生计算只能使用事实账本中的数值和口径",
+            "未经审计的季度数据不得描述为审计确认值",
+            "相关性和变动线索不得直接表述为因果归因"
+          ]
+        },
+        "voice": {
+          "channel": "内部业务复核消息",
+          "formality": "直接、克制、以证据和可继续回填为导向",
+          "domainVocabulary": [
+            "渝农商行",
+            "资本充足率",
+            "杠杆率",
+            "资产质量",
+            "贷款增长"
+          ],
+          "avoidVocabulary": [
+            "全链路",
+            "闭环",
+            "赋能",
+            "深度洞察",
+            "麻烦",
+            "劳烦",
+            "烦请",
+            "辛苦",
+            "刚传了"
+          ]
+        },
+        "maskTerms": [
+          "重庆农村商业银行股份有限公司",
+          "601077",
+          "渝农商行",
+          "资本充足率",
+          "杠杆率",
+          "资产质量"
+        ],
+        "evidenceBindings": [
+          {
+            "claim": "2026年一季度营业收入78.301亿元，同比增长8.39%；归母净利润39.346亿元，同比增长5.07%；年化ROA为0.95%，同比下降0.04个百分点；年化加权ROE为11.95%，同比下降0.05个百分点。",
+            "factIds": [
+              "cqrcb-profit-return"
+            ]
+          },
+          {
+            "claim": "附件没有披露资本充足率与杠杆率下降对应的具体业务条线资本消耗。",
+            "factIds": [
+              "cqrcb-audit-boundary",
+              "cqrcb-profit-return"
+            ]
+          },
+          {
+            "claim": "形成一份增长与资本约束复核简报，把收入利润、资产负债增速、资本比率、杠杆和资产质量放在同一页级证据链中，并列出需要补充的条线资本数据。",
+            "factIds": [
+              "cqrcb-profit-return",
+              "cqrcb-audit-boundary"
+            ]
+          }
+        ]
+      },
+      "requestContract": {
+        "requestSpan": "最后请整理成一份可下载的Word简报，命名为渝农商行2026年一季度增长与资本约束。",
+        "action": "整理",
+        "outputs": [
+          {
+            "format": "docx",
+            "humanName": "Word",
+            "purpose": "供后续执行和留痕使用"
+          }
+        ]
+      },
+      "roleTrace": {
+        "blockageSpan": "请根据《重庆农村商业银行股份有限公司2026年第一季度报告.pdf》帮我做个经营复核。",
+        "motivationSpan": "这个结果后续会给分析同事看，用来评估下一步要补充哪些业务条线和资本资料。",
+        "downstreamUseSpan": "这个结果后续会给分析同事看，用来评估下一步要补充哪些业务条线和资本资料。"
+      },
+      "usedFactIds": [
+        "cqrcb-profit-return",
+        "cqrcb-balance-growth",
+        "cqrcb-capital-ratios",
+        "cqrcb-leverage",
+        "cqrcb-asset-quality",
+        "cqrcb-audit-boundary"
+      ],
+      "deliberatelyOmitted": []
+    }
+  ]
+}

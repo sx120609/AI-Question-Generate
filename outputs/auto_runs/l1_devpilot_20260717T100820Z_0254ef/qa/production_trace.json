@@ -1,0 +1,269 @@
+{
+  "schemaVersion": 3,
+  "kind": "l1-production-trace",
+  "productionProfile": "l1",
+  "protocolId": "l1-phase3-codex-model-two-gates-trace-v2",
+  "runId": "l1_devpilot_20260717T100820Z_0254ef",
+  "generatedAt": "2026-07-17T10:40:44.758Z",
+  "questions": [
+    {
+      "recordUid": "沈礼_7.17_L1_01",
+      "referenceLocation": {
+        "sheet": "三期示例数据",
+        "row": 2
+      },
+      "referenceQuestionStructure": {
+        "businessScene": "企业培训 SaaS 团队在资料分散、接口和权限受限的条件下初筛一个 AI 客服试点入口",
+        "coreBlockage": "现有材料质量不一，候选工具公开能力边界也不完整",
+        "mainTask": "比较三个入口并只选择一个进入第一期试点",
+        "attachmentSupport": "无文件附件，依靠截至指定日期可访问的官方公开文档核验",
+        "deliverableOrigin": "团队需要一份可筛选的 XLSX 对比表支持第一期入口决策",
+        "imitableStructure": "保留真实团队约束、三方案比较、公开证据边界、唯一阶段性判断和待确认项",
+        "forbiddenReuse": "不复用客服 AI 入口、企业微信、Dify、飞书多维表格及原题措辞"
+      },
+      "referenceAttachmentStructure": "示例无文件附件，依靠官方产品与开发文档作为可核验材料",
+      "newQuestionStructureMapping": "沿用三方案证据比较和唯一阶段性判断的推进方式，改为培训直播平台无障碍 POC 初筛",
+      "newAttachmentSupport": "本题不设置文件附件，使用九个已核验可访问的官方产品、帮助中心与 W3C 公开页面作为研究来源",
+      "attachmentBuild": {
+        "attachments": [],
+        "newAttachmentSupport": "本题不设置文件附件，使用九个已核验可访问的官方产品、帮助中心与 W3C 公开页面作为研究来源",
+        "newQuestionStructureMapping": "沿用三方案证据比较和唯一阶段性判断的推进方式，改为培训直播平台无障碍 POC 初筛"
+      },
+      "formatRequirement": null,
+      "draftedProductFormats": "xlsx",
+      "deliverableRationale": [
+        {
+          "format": "xlsx",
+          "user": "企业学习与发展数字化项目经理和培训项目组",
+          "purpose": "按统一维度筛选证据、记录待确认项并安排下一轮实测",
+          "whyThisFormat": "表格便于并列比较三个平台、逐行绑定来源并持续补充 POC 结果"
+        }
+      ],
+      "preQaStructureAudit": {
+        "uniqueMainTask": true,
+        "expectedHumanHours": 5,
+        "expectedKeySteps": 6,
+        "attachmentCount": 0,
+        "evidenceBoundaryExplicit": true,
+        "assessment": "任务需要多源检索、统一口径核验、边界识别与阶段性取舍，不是单一查询。"
+      },
+      "firstQaFullResult": {
+        "pass": true,
+        "issues": [],
+        "execution": {
+          "runnerId": "exact-two-quality-gates-v2-codex-session",
+          "provider": "codex-session",
+          "model": "gpt-5.6-sol",
+          "sourcePromptHash": "1ee557af341883f2c337ea1bb6ee079dcd092a16af11a088dc68939c64501174",
+          "renderedPromptHash": "69b6318207ff82d0fbd597495aff1cff9338a08686b3316445998a59438cee94",
+          "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_devpilot_20260717T100820Z_0254ef\\qa\\01_first_quality_gate_raw.json",
+          "rawResponseHash": "89b151d056f2b66015028e3ebdbc0509d3e6b3c46742b0b30f0749a2cfaa583a",
+          "completedAt": "2026-07-17T10:21:12.644Z"
+        }
+      },
+      "firstQaRepairs": [],
+      "secondQaFullResult": {
+        "conclusion": "通过",
+        "coreJudgement": "题面表达自然，主任务、证据边界和下一轮实测边界均清楚。",
+        "majorChanges": "无",
+        "modifiedQuestion": "公司准备把跨地区员工培训固定成常态化直播，参训者中有依赖实时字幕、键盘操作或屏幕阅读器的同事。现在候选平台是 Zoom、Microsoft Teams 和 Google Meet，但相关说明分散在厂商的无障碍页面和帮助中心，字幕能力还可能受会议类型、许可证和管理员设置影响。请以截至2026年7月17日仍可访问的官方产品文档和帮助页为准，整理一份 Excel 对比表。表中先核对实时字幕、翻译字幕和屏幕阅读器支持，再记录键盘与焦点操作。录制与转录留存也要单独说明，同时检查主持人和管理员能控制什么，并为每条判断附上来源链接和访问日期。公开页面没有说清的套餐限制、字幕语言范围和导出权限不要自行补齐，保存期限与直播规模也统一列成待确认项，并说明需要通过什么实测或询价补证。表尾只推荐一个优先进入 POC 的平台，写明选择依据以及另外两个暂缓的证据缺口。这个结论只用于安排下一轮实测，不作为最终采购或合规判断。",
+        "punctuationCheck": "标点自然，括号成对，没有为指标添加内容。",
+        "remainingAttention": "执行时不能把厂商公开说明等同于目标租户已开通能力。",
+        "execution": {
+          "runnerId": "exact-two-quality-gates-v2-codex-session",
+          "provider": "codex-session",
+          "model": "gpt-5.6-sol",
+          "sourcePromptHash": "edef2687bba5f4be5df531e8102585f5c6eab1318ca849c8482dd2c5e581407a",
+          "renderedPromptHash": "40a9f1d971798ffb4ee5c1ca1eaaf0fe46be0f0f7e5022bfd820e4a49fb0f037",
+          "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_devpilot_20260717T100820Z_0254ef\\qa\\01_second_language_gate_raw.json",
+          "rawResponseHash": "368e5958dc18019c25f07ccc7ced48a5a6977b6534a2c2627f99c5538fc35977",
+          "completedAt": "2026-07-17T10:21:12.646Z"
+        }
+      },
+      "deAiRewrite": {
+        "kind": "de-ai-question-rewrite",
+        "policyId": "mugua-gemini-de-ai-rewrite-v2",
+        "uid": "沈礼_7.17_L1_01",
+        "generatedAt": "2026-07-17T10:38:53.366Z",
+        "provider": "mugua-openai-compatible",
+        "endpoint": "https://api.mugua.link/v1/chat/completions",
+        "model": "gemini-3.5-flash",
+        "finishReason": "stop",
+        "usage": {
+          "inputTokens": 851,
+          "outputTokens": 1080,
+          "totalTokens": 1931
+        },
+        "promptHash": "c8167cb76d054211f2c97539619a524e1dd5ad5829b69a2ea0216d309ed26d4d",
+        "sourceQuestionHash": "4e2c262fa618e16fe161ef94e4899784a28afdbaf6746135bd6dbd85281f766a",
+        "rewrittenQuestionHash": "71b3ab715aefee43aa3aa98df05f758e926ffb144f9e76382e16a61969d760fd",
+        "selectedAttempt": 1,
+        "attempts": [
+          {
+            "attempt": 1,
+            "pass": true,
+            "visibleLength": 425,
+            "findingRules": []
+          }
+        ],
+        "rewrite": {
+          "question": "我们计划将跨地区员工培训转为常态化直播，由于部分参训员工需要依赖实时字幕、屏幕阅读器或键盘操作，我们需要评估 Zoom、Microsoft Teams 和 Google Meet 这三个候选平台的无障碍支持情况。请根据截至2026年7月17日可访问的官方产品文档与帮助页面，制作一份 Excel 对比表。表内需要核对各平台的实时字幕、翻译字幕、屏幕阅读器支持，以及键盘与焦点操作的兼容性，并单独说明录制与转录的留存机制，同时理清主持人和管理员的具体控制权限。请为表中的每项判断附上来源链接和访问日期。如果官方公开页面没有明确说明套餐限制、字幕支持的语言范围或导出权限，请保持空白不要自行推测。对于保存期限和直播规模限制，请统一列为待确认事项，并注明后续需要通过哪些实测或询价手段来补充证据。在表格末尾，请推荐一个最适合优先进入 POC 阶段的平台并说明理由，同时指出另外两个平台暂缓推进的证据缺口。请注意，此结论仅用于指导下一阶段的实测安排，不作为最终的采购与合规决策。",
+          "requestContract": {
+            "requestSpan": "请根据截至2026年7月17日可访问的官方产品文档与帮助页面，制作一份 Excel 对比表。",
+            "action": "制作",
+            "outputs": [
+              {
+                "format": "xlsx",
+                "humanName": "Excel",
+                "purpose": "供后续执行和留痕使用"
+              }
+            ]
+          },
+          "roleTrace": {
+            "blockageSpan": "我们计划将跨地区员工培训转为常态化直播，由于部分参训员工需要依赖实时字幕、屏幕阅读器或键盘操作，我们需要评估 Zoom、Microsoft Teams 和 Google Meet 这三个候选平台的无障碍支持情况。",
+            "motivationSpan": "",
+            "downstreamUseSpan": "请根据截至2026年7月17日可访问的官方产品文档与帮助页面，制作一份 Excel 对比表。"
+          },
+          "usedFactIds": [
+            "fact-trigger",
+            "fact-access-needs",
+            "fact-candidates",
+            "fact-blockage",
+            "fact-decision",
+            "fact-boundary",
+            "fact-source-check"
+          ],
+          "deliberatelyOmitted": [],
+          "flowStages": [
+            {
+              "stage": "证据归位",
+              "evidence": "事实包中的公开材料与待补信息",
+              "decision": "区分可确认规则和未知现场状态",
+              "next": "证据足够则形成执行对象，不足则进入补证"
+            },
+            {
+              "stage": "执行对象核对",
+              "evidence": "已归位的对象关系与状态记录",
+              "decision": "三个候选平台中哪一个优先进入 POC",
+              "next": "符合条件则进入小范围验证，否则停止推进"
+            },
+            {
+              "stage": "小范围验证",
+              "evidence": "试点输入与实际返回记录",
+              "decision": "判断结果是否满足扩大范围的条件",
+              "next": "通过则推进，失败则退回原状态并留痕"
+            },
+            {
+              "stage": "交接收束",
+              "evidence": "判断依据、验证结果与回退记录",
+              "decision": "确认下游拿到一致结论",
+              "next": "供培训团队安排下一轮实测"
+            }
+          ],
+          "selfAudit": {
+            "factsPreserved": true,
+            "formatsPreserved": true,
+            "processChainExplicit": true,
+            "failureOrRollbackExplicit": true,
+            "noInventedFacts": true,
+            "noAiShell": true
+          }
+        },
+        "validation": {
+          "pass": true,
+          "visibleLength": 425,
+          "similarity": [
+            {
+              "referenceIndex": 1,
+              "editSimilarity": 0.5162907268170427,
+              "trigramJaccard": 0.25125628140703515,
+              "longestExactCopyRun": 29
+            },
+            {
+              "referenceIndex": 2,
+              "editSimilarity": 0.05813953488372092,
+              "trigramJaccard": 0.023231256599788808,
+              "longestExactCopyRun": 9
+            }
+          ],
+          "findings": [],
+          "factGuard": {
+            "ok": true,
+            "candidateAnchors": {
+              "numbers": [
+                "2026年7月17日"
+              ],
+              "quotedClaims": [],
+              "timeMarkers": []
+            },
+            "unsupported": {
+              "numbers": [],
+              "quotedClaims": [],
+              "timeMarkers": []
+            },
+            "errors": []
+          }
+        }
+      },
+      "revisionLog": [],
+      "finalRecord": {
+        "UID": "沈礼_7.17_L1_01",
+        "题目": "我们计划将跨地区员工培训转为常态化直播，由于部分参训员工需要依赖实时字幕、屏幕阅读器或键盘操作，我们需要评估 Zoom、Microsoft Teams 和 Google Meet 这三个候选平台的无障碍支持情况。请根据截至2026年7月17日可访问的官方产品文档与帮助页面，制作一份 Excel 对比表。表内需要核对各平台的实时字幕、翻译字幕、屏幕阅读器支持，以及键盘与焦点操作的兼容性，并单独说明录制与转录的留存机制，同时理清主持人和管理员的具体控制权限。请为表中的每项判断附上来源链接和访问日期。如果官方公开页面没有明确说明套餐限制、字幕支持的语言范围或导出权限，请保持空白不要自行推测。对于保存期限和直播规模限制，请统一列为待确认事项，并注明后续需要通过哪些实测或询价手段来补充证据。在表格末尾，请推荐一个最适合优先进入 POC 阶段的平台并说明理由，同时指出另外两个平台暂缓推进的证据缺口。请注意，此结论仅用于指导下一阶段的实测安排，不作为最终的采购与合规决策。",
+        "任务类型": "L1 探索型",
+        "一级目录": "科技软件与 AI 工作流",
+        "二级目录": "企业软件与技术方案",
+        "三级目录": "在线培训直播平台无障碍能力初筛",
+        "任务概括": "核验三款培训直播平台的公开无障碍证据并选择一个优先进入 POC",
+        "标注专家工作年限": "3年",
+        "人类完成时间": "5H",
+        "相关附件": "无",
+        "附件格式": "无",
+        "附件内容": "无文件附件，使用已核验可访问的厂商官方产品文档、帮助中心与 W3C 无障碍解释页。",
+        "产物格式": "xlsx",
+        "产物内容": "一份逐条绑定官方来源和访问日期的候选平台无障碍证据对比表，包含能力边界、待确认项、补证方法和一个 POC 优先建议。",
+        "做题关键步骤": "1. 明确本轮只做公开证据初筛及 POC 排序。\n2. 检索并核验三家厂商官方产品文档与帮助页。\n3. 按统一维度摘录功能证据、适用条件和来源日期。\n4. 区分已证实事实、合理推断与公开资料未说明事项。\n5. 将许可证、语言、管理员策略、导出留存和规模边界转成实测或询价问题。\n6. 比较证据完整度并推荐一个优先进入 POC 的平台。",
+        "标注专家姓名": "沈礼"
+      },
+      "workflowEvents": [
+        {
+          "at": "2026-07-17T10:21:12.638Z",
+          "type": "reference.sampled",
+          "sheet": "三期示例数据",
+          "row": 2
+        },
+        {
+          "at": "2026-07-17T10:21:12.640Z",
+          "type": "reference.breakdown.recorded"
+        },
+        {
+          "at": "2026-07-17T10:21:12.640Z",
+          "type": "attachments.recorded",
+          "count": 0
+        },
+        {
+          "at": "2026-07-17T10:21:12.642Z",
+          "type": "draft.recorded",
+          "reason": "initial"
+        },
+        {
+          "at": "2026-07-17T10:21:12.644Z",
+          "type": "first-qa.passed"
+        },
+        {
+          "at": "2026-07-17T10:21:12.648Z",
+          "type": "second-qa.second-qa-pass"
+        },
+        {
+          "at": "2026-07-17T10:40:44.752Z",
+          "type": "de-ai-rewrite.passed",
+          "policyId": "mugua-gemini-de-ai-rewrite-v2",
+          "selectedAttempt": 1
+        },
+        {
+          "at": "2026-07-17T10:40:44.755Z",
+          "type": "final.completed"
+        }
+      ]
+    }
+  ]
+}

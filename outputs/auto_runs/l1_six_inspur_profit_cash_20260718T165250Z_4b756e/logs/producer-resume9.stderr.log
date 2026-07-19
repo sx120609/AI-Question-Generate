@@ -1,0 +1,8 @@
+file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/build/automation/produce_l1_single_task.mjs:769
+        repairFailure = new Error(`Direct-request repair validation failed: ${JSON.stringify(validation.findings)}`);
+                        ^
+
+Error: Direct-request repair validation failed: [{"rule":"rewrite-exact-copy-run-too-long","maximum":36,"referenceIndex":1,"editSimilarity":0.4141630901287554,"trigramJaccard":0.2904929577464789,"longestExactCopyRun":41,"longestExactCopySpan":"《浪潮电子信息产业股份有限公司2026年第一季度报告.pdf》复核2026年一季度"}]
+    at file:///C:/Users/Carbene/Documents/GitHub/AI-Question-Generate/build/automation/produce_l1_single_task.mjs:769:25
+
+Node.js v26.5.0

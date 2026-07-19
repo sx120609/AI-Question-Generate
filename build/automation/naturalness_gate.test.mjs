@@ -199,6 +199,19 @@ test("diagnoses first person without requiring it and reviews low concrete-fact 
   assert.equal(result.rows[0].findings.some((item) => item.rule.includes("first_person")), false);
 });
 
+test("counts explicitly named products as concrete scene anchors", () => {
+  const measured = measureNaturalnessRow({
+    UID: "产品对象",
+    题目: "团队需要比较 Zoom、Microsoft Teams 和 Google Meet 的无障碍支持。请整理一份 Excel 对比表，供下一轮实测使用。",
+    产物格式: "xlsx",
+    做题关键步骤: "1. 核验来源。\n2. 比较产品。\n3. 安排实测。",
+  });
+  assert.deepEqual(
+    measured.evidence.concreteFactAnchors.filter((item) => item.kind === "named-product").map((item) => item.value),
+    ["Zoom", "Microsoft Teams", "Google Meet"],
+  );
+});
+
 test("hard-fails a detached Word and Excel specification with no user request", () => {
   const baseline = calibrateNaturalnessBaseline(referenceRows(), { baselineId: "approved-human-sample" });
   const row = referenceRows(1)[0];

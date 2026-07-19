@@ -1,0 +1,93 @@
+{
+  "kind": "scene-card-gate-report",
+  "gateId": "scene-card-role-consistency-v1",
+  "protocolId": "situated-requester-v1",
+  "schemaVersion": 1,
+  "status": "PASS",
+  "ok": true,
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_04_baosteel_mix_profit\\drafts\\l1_questions.tsv",
+  "candidateHash": "426e6980f14508b3074f0517fc9c212d67924ec7a65207a272ed5e0bcf25e64f",
+  "sceneCardPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_04_baosteel_mix_profit\\sources\\scene_cards.json",
+  "sceneCardFileHash": "44fbf2b88cf7031d3caeda83fd34a0c3c810b9213da6f8f5760b8dff7b1db1a0",
+  "sceneCardBundleHash": "ec81f196aa794be4523ea21d6a0f2e86fd7f234c04386d63ec501f61783000f7",
+  "sceneCardSetHash": "6cd440de903c9ad35c066b0541fbf6da470199b6f927a04f21bda49a8d71af9a",
+  "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_04_baosteel_mix_profit\\sources\\fact_ledger.json",
+  "factLedgerHash": "e2b1313c91bd64a41544ec60fad3552f95705b446917ca5373a7795953ba9366",
+  "summary": {
+    "candidateRowCount": 1,
+    "sceneCardCount": 1,
+    "passedRowCount": 1,
+    "failedRowCount": 0,
+    "globalErrorCount": 0,
+    "batchCollisionCount": 0
+  },
+  "rows": [
+    {
+      "uid": "沈礼_api5-20260719-1015_04",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "ba9953250ec217159ea667d753a8a3aa087a285666bceba6750b3f58b3a3e3a6",
+      "cardHash": "b36a45f994c61351d28e28eba2b8829787d39c244ab105a53f876ff9fc90715f",
+      "roleConsistencyHash": "da29432778df950235050d22d3f075189b534936782e62954af3ad5cc925a7ec",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "help-me",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "pptx"
+        ],
+        "mFormats": [
+          "pptx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "你需要给出一个明确的结论，判断“2+2+N”产品销量和出口接单等指标的改善，能不能直接支持整体盈利的改善，并说明分部毛利率对这个判断构成了什么限制。",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "最后请帮我生成一份可下载的PPT，方便我们在会上直接使用。",
+            "occurrences": 1
+          },
+          "downstreamUseSpan": {
+            "span": "最后请帮我生成一份可下载的PPT，方便我们在会上直接使用。",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [
+            "2026年",
+            "2"
+          ],
+          "quotedClaims": [
+            "2+2+N"
+          ],
+          "timeMarkers": []
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "b40a5c1b1e5684106a72134aabe2aacee21917656a75ee4eff887ffd089b15c8"
+      }
+    }
+  ],
+  "batch": {
+    "ok": true,
+    "status": "PASS",
+    "thresholds": {
+      "highMaskedTrigramSimilarity": 0.72,
+      "sharedMaskedFragmentLength": 18
+    },
+    "comparisons": [],
+    "errors": []
+  },
+  "errors": [],
+  "evaluationHash": "d76cd6da0119ce35f48b5ed3c74ebc7bbe7b7922aaa1deb3b1771ab4d131841f"
+}

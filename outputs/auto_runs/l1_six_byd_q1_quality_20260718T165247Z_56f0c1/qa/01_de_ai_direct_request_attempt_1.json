@@ -1,0 +1,130 @@
+{
+  "response": {
+    "text": "我们需要梳理《比亚迪股份有限公司2026年第一季度报告.pdf》中关于2026年一季度经营质量的情况。重点关注经营现金流、归母净利润以及营业收入这几个核心财务指标的同比变动情况，并结合这些数据重新测算现金利润的覆盖关系。另外，应付票据、开发支出、短期借款还有现金流的具体变动明细也需要一并梳理。\n\n在整理过程中，必须严格区分哪些是报告里直接写明的原因，哪些是通过披露数据算出来的变化，还有哪些是目前无法确定、必须等业务分部资料补充后才能判断的。各项数据都要附带来源页码、计算公式、统计口径，并注明未经审计状态。要是复算的结果跟报告披露的数值对不上，记得明确标注差异，顺便列出后续为了查明原因还需要哪些关于区域、价格、销量或者业务分部的补充材料。千万别主观地将经营现金流下降跟融资变化硬扯上因果关系。\n\n请基于前述核对结果整理一份可下载的Excel核对表（xlsx格式）。",
+    "endpoint": "https://api.mugua.link/v1/chat/completions",
+    "baseUrl": "https://api.mugua.link/v1",
+    "model": "gemini-3.1-pro-preview",
+    "promptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\inputs\\production\\L1题面去AI改写提示词.txt",
+    "promptHash": "2106951c7d25fb39e896b28a151bcd9fe186aebcf531108c7396fa44f8f25e71",
+    "finishReason": "stop",
+    "usage": {
+      "inputTokens": 1320,
+      "outputTokens": 1462,
+      "totalTokens": 2782
+    },
+    "contentScope": {
+      "policyVersion": "domestic-work-scope-v1",
+      "input": {
+        "calculationComplexityCount": 3,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      },
+      "output": {
+        "calculationComplexityCount": 3,
+        "issues": [],
+        "pass": true,
+        "policyVersion": "domestic-work-scope-v1"
+      }
+    }
+  },
+  "rewrite": {
+    "question": "我们需要梳理《比亚迪股份有限公司2026年第一季度报告.pdf》中关于2026年一季度经营质量的情况。重点关注经营现金流、归母净利润以及营业收入这几个核心财务指标的同比变动情况，并结合这些数据重新测算现金利润的覆盖关系。另外，应付票据、开发支出、短期借款还有现金流的具体变动明细也需要一并梳理。\n\n在整理过程中，必须严格区分哪些是报告里直接写明的原因，哪些是通过披露数据算出来的变化，还有哪些是目前无法确定、必须等业务分部资料补充后才能判断的。各项数据都要附带来源页码、计算公式、统计口径，并注明未经审计状态。要是复算的结果跟报告披露的数值对不上，记得明确标注差异，顺便列出后续为了查明原因还需要哪些关于区域、价格、销量或者业务分部的补充材料。千万别主观地将经营现金流下降跟融资变化硬扯上因果关系。\n\n请基于前述核对结果整理一份可下载的Excel核对表（xlsx格式）。",
+    "requestContract": {
+      "requestSpan": "请基于前述核对结果整理一份可下载的Excel核对表（xlsx格式）。",
+      "action": "整理",
+      "outputs": [
+        {
+          "format": "xlsx",
+          "humanName": "Excel",
+          "purpose": "供后续执行和留痕使用"
+        }
+      ]
+    },
+    "roleTrace": {
+      "blockageSpan": "在整理过程中，必须严格区分哪些是报告里直接写明的原因，哪些是通过披露数据算出来的变化，还有哪些是目前无法确定、必须等业务分部资料补充后才能判断的。",
+      "motivationSpan": "",
+      "downstreamUseSpan": "请基于前述核对结果整理一份可下载的Excel核对表（xlsx格式）。"
+    },
+    "usedFactIds": [
+      "byd-core-performance",
+      "byd-profit-quality",
+      "byd-development-spend",
+      "byd-financing-shift",
+      "byd-cashflow-explanation",
+      "byd-audit-boundary"
+    ],
+    "deliberatelyOmitted": [],
+    "flowStages": [
+      {
+        "stage": "证据归位",
+        "evidence": "事实包中的公开材料与待补信息",
+        "decision": "区分可确认规则和未知现场状态",
+        "next": "证据足够则形成执行对象，不足则进入补证"
+      },
+      {
+        "stage": "执行对象核对",
+        "evidence": "已归位的对象关系与状态记录",
+        "decision": "建立一份季度经营质量核对表，复算收入、利润和经营现金流变化，整理研发与融资项目的披露解释，并把无法由附件直接归因的部分保留为待补证事项。",
+        "next": "符合条件则进入小范围验证，否则停止推进"
+      },
+      {
+        "stage": "小范围验证",
+        "evidence": "试点输入与实际返回记录",
+        "decision": "判断结果是否满足扩大范围的条件",
+        "next": "通过则推进，失败则退回原状态并留痕"
+      },
+      {
+        "stage": "交接收束",
+        "evidence": "判断依据、验证结果与回退记录",
+        "decision": "确认下游拿到一致结论",
+        "next": "供经营分析同事继续取得分部和销量资料后补充归因。"
+      }
+    ],
+    "selfAudit": {
+      "factsPreserved": true,
+      "formatsPreserved": true,
+      "processChainExplicit": true,
+      "failureOrRollbackExplicit": true,
+      "noInventedFacts": true,
+      "noAiShell": true
+    }
+  },
+  "validation": {
+    "pass": true,
+    "visibleLength": 381,
+    "similarity": [
+      {
+        "referenceIndex": 1,
+        "editSimilarity": 0.3436619718309859,
+        "trigramJaccard": 0.17782426778242677,
+        "longestExactCopyRun": 26,
+        "longestExactCopySpan": "《比亚迪股份有限公司2026年第一季度报告.pdf》"
+      },
+      {
+        "referenceIndex": 2,
+        "editSimilarity": 0.05534351145038163,
+        "trigramJaccard": 0.0011904761904761906,
+        "longestExactCopyRun": 3,
+        "longestExactCopySpan": "202"
+      }
+    ],
+    "findings": [],
+    "factGuard": {
+      "ok": true,
+      "candidateAnchors": {
+        "numbers": [
+          "2026年"
+        ],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "unsupported": {
+        "numbers": [],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "errors": []
+    }
+  }
+}

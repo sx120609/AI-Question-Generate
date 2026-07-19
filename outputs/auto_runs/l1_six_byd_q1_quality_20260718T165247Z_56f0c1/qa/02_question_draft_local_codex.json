@@ -1,0 +1,34 @@
+{
+  "kind": "local-codex-stage-response",
+  "stage": "02_question_draft",
+  "model": "gpt-5.6-sol",
+  "provider": "local-codex-cli",
+  "completedAt": "2026-07-18T17:11:58.338Z",
+  "promptHash": "ae248540ffef1ad32084fe40cb658400bbbfb40f120ce2ca876fa0ff185a9668",
+  "parsed": {
+    "question": "请依据《比亚迪股份有限公司2026年第一季度报告.pdf》整理比亚迪2026年一季度经营质量核对表，核对营业收入、归母净利润和经营现金流同比变化，复算现金利润覆盖关系，并梳理开发支出、短期借款、应付票据及现金流变动。请在同一份xlsx中区分报告明确披露的原因、可由披露数据复算的结果和现有证据无法确认的归因，逐项保留来源页码、未经审计状态、计算公式与口径，发现披露值和复算值不一致时标明差异，列出需补充的业务分部、销量、价格或区域资料，不把融资变化与经营现金流下降直接写成因果关系。",
+    "mainTask": "建立可追溯的比亚迪2026年一季度经营质量Excel核对表，区分披露原因、派生结果和待补证归因。",
+    "usedFactIds": [
+      "byd-core-performance",
+      "byd-profit-quality",
+      "byd-development-spend",
+      "byd-financing-shift",
+      "byd-cashflow-explanation",
+      "byd-audit-boundary"
+    ],
+    "usedAttachmentNames": [
+      "比亚迪股份有限公司2026年第一季度报告.pdf"
+    ],
+    "productFormats": "xlsx",
+    "deliverableRationale": [
+      {
+        "format": "xlsx",
+        "user": "经营数据复核专员及下游经营分析同事",
+        "purpose": "复核季度经营质量并在取得分部和销量资料后继续回填归因",
+        "whyThisFormat": "Excel适合保存来源索引、同比复算公式、证据分层和待补材料字段，也便于后续追加业务明细并复核口径。"
+      }
+    ],
+    "structureMapping": "沿用真实复核卡点、限定正式报告、分层核验证据、复算关键关系、识别待确认事项并形成下游可续填产物的推进结构，业务对象改为比亚迪季度经营质量。",
+    "productParagraphMapping": "后半段先收束到单一xlsx核对表，再规定披露原因、派生计算和证据边界的分层方式，同时保留页码、审计状态、差异处理及待补资料，使交付物直接服务后续经营归因。"
+  }
+}

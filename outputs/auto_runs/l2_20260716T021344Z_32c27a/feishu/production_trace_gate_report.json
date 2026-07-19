@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "kind": "l2-production-trace-gate-report",
+  "gateId": "l2-production-trace-gate-v5-real-quality-gates",
+  "status": "PASS",
+  "generatedAt": "2026-07-16T08:05:04.061Z",
+  "packetPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\sources\\production_input_packet.json",
+  "packetHash": "292a45bda08a110757da25f00b49aa6e5fe29bd83929c72692ad285c79554532",
+  "tracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\qa\\production_trace.json",
+  "traceHash": "d702c9cd5ff720d088c2196dfe7571fb6379a561757061a3e2b1b22c705fbe8e",
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\drafts\\l2_questions.tsv",
+  "candidateHash": "43927f360da2458de9e890f2b058d71aafbf8d822c6ece5a6489a03acb71d5f9",
+  "fillPlanPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\feishu\\feishu_fill_plan.json",
+  "fillPlanHash": "234da20ad887f4d251c408fb19434f060b736c586faaeb03c2116996e22f9552",
+  "rowCount": 2,
+  "attachmentRoot": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\attachments",
+  "attachmentBindings": [
+    {
+      "uid": "434",
+      "name": "附件一_华为云_注册X509证书认证设备.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\attachments\\01\\附件一_华为云_注册X509证书认证设备.html",
+      "sha256": "31987b3f6cdd5e9d1da69351f72201ea1932e33e8cc2e7789e433cb0c48c709d",
+      "bytes": 105500
+    },
+    {
+      "uid": "434",
+      "name": "附件二_华为云_设备证书管理与状态限制.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\attachments\\01\\附件二_华为云_设备证书管理与状态限制.html",
+      "sha256": "d6b54cae1c7b25d777762d02f19fb03981ab5750b52c2504c3e3238db4bde38e",
+      "bytes": 83027
+    },
+    {
+      "uid": "434",
+      "name": "附件三_华为云_更新设备证书API.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\attachments\\01\\附件三_华为云_更新设备证书API.html",
+      "sha256": "e86149563acab3ef00142d7bc2599baf9afa52a6b5a9b039d482384e90976c0a",
+      "bytes": 122528
+    },
+    {
+      "uid": "434",
+      "name": "附件四_华为云_查询设备证书列表API.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\attachments\\01\\附件四_华为云_查询设备证书列表API.html",
+      "sha256": "9b2cc436a7ad303335caae2405f193cca4abcf7ddbe6b9ec8e7216e63fbcadf8",
+      "bytes": 125185
+    },
+    {
+      "uid": "434",
+      "name": "附件五_华为云_MQTTfx证书接入实践.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\attachments\\01\\附件五_华为云_MQTTfx证书接入实践.html",
+      "sha256": "ebbbdcf6007e7db69c9d3cd6f1c3cd78b47705122f2e85f7f38dfdc105f8044b",
+      "bytes": 146132
+    },
+    {
+      "uid": "434",
+      "name": "附件六_华为云_IoTDA证书资源与到期替换.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\attachments\\01\\附件六_华为云_IoTDA证书资源与到期替换.html",
+      "sha256": "0fb0809783361fb3c182c832cf7196c8897d3b39f1ceb4d01aaf88bd666d41cb",
+      "bytes": 114056
+    },
+    {
+      "uid": "435",
+      "name": "附件一_钉钉_配置事件推送方式.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\attachments\\02\\附件一_钉钉_配置事件推送方式.html",
+      "sha256": "895a74692d4def5ec72cece09f9187af42d1a557c6408eab2e20a94123df1dbd",
+      "bytes": 303283
+    },
+    {
+      "uid": "435",
+      "name": "附件二_钉钉_事件订阅与回调加解密.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\attachments\\02\\附件二_钉钉_事件订阅与回调加解密.html",
+      "sha256": "9e2690d87c0e903d2d51d9d8d872b9961dda51a82134290232503c0a8c72f68f",
+      "bytes": 13481
+    },
+    {
+      "uid": "435",
+      "name": "附件三_钉钉_开放平台全局错误码.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\attachments\\02\\附件三_钉钉_开放平台全局错误码.html",
+      "sha256": "bf21b33fab88425cd41cf7f258e2d5838e55ff3c59dbe7a8cef53742659986e2",
+      "bytes": 303365
+    },
+    {
+      "uid": "435",
+      "name": "附件四_钉钉_人员变更Stream事件.html",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\attachments\\02\\附件四_钉钉_人员变更Stream事件.html",
+      "sha256": "1870738908f44513b6c13f0e565aed78536f4a039f0ca2a3786bdbcde24bc23b",
+      "bytes": 361278
+    },
+    {
+      "uid": "435",
+      "name": "附件五_钉钉Stream模式Java官方SDK说明.txt",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\attachments\\02\\附件五_钉钉Stream模式Java官方SDK说明.txt",
+      "sha256": "bcba3541e1ee736fa527662a0e18eb4e16b297e01b05cc32e0b6e03fbf8977e0",
+      "bytes": 1456
+    },
+    {
+      "uid": "435",
+      "name": "附件六_钉钉Stream模式Node官方SDK说明.txt",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\attachments\\02\\附件六_钉钉Stream模式Node官方SDK说明.txt",
+      "sha256": "3c1b2551b21e658d09ae516a26e37e0481570028a09c2c5be2b4bfb999940ee1",
+      "bytes": 2029
+    }
+  ],
+  "productFormatDiversity": {
+    "policyId": "office-deliverable-diversity-v1",
+    "status": "PASS",
+    "rowCount": 2,
+    "combinations": {
+      "xlsx, html": 1,
+      "docx, xlsx": 1
+    },
+    "prevalence": {
+      "xlsx": 2,
+      "html": 1,
+      "docx": 1
+    },
+    "rowResults": [
+      {
+        "uid": "434",
+        "analysis": {
+          "source": "xlsx, html",
+          "rawTags": [
+            "xlsx",
+            "html"
+          ],
+          "formats": [
+            "xlsx",
+            "html"
+          ],
+          "unknown": [],
+          "canonical": "xlsx, html",
+          "isCanonical": true
+        },
+        "findings": []
+      },
+      {
+        "uid": "435",
+        "analysis": {
+          "source": "docx, xlsx",
+          "rawTags": [
+            "docx",
+            "xlsx"
+          ],
+          "formats": [
+            "docx",
+            "xlsx"
+          ],
+          "unknown": [],
+          "canonical": "docx, xlsx",
+          "isCanonical": true
+        },
+        "findings": []
+      }
+    ],
+    "findings": []
+  },
+  "findings": []
+}

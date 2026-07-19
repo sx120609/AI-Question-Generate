@@ -1,0 +1,63 @@
+{
+  "jobId": "l1-procurement-intake-20260718-01",
+  "attachmentRoot": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\attachments",
+  "initialAttachmentNames": [
+    "成交结果公告.html",
+    "台式机202606计划公示.xls",
+    "中央国家机关2026年台式计算机批量集中采购项目-6月采购文件.pdf",
+    "投标人得分排序表_官方导出.html",
+    "技术规范偏离表-1-软通.pdf",
+    "技术规范偏离表-2-软通.pdf",
+    "技术规范偏离表-3-联想.pdf",
+    "技术规范偏离表-4-华为.pdf",
+    "技术规范偏离表-5-安领信.pdf",
+    "技术规范偏离表-6-天津光电.pdf"
+  ],
+  "productionEvidence": {
+    "recordUid": "裴硬_20260718_desktop_batch_review_01",
+    "productionTracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\qa\\production_trace.json",
+    "productionTraceGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\feishu\\production_trace_gate_receipt.json",
+    "releaseGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\feishu\\release_gate_receipt.json",
+    "downloadManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\sources\\download_manifest.json"
+  },
+  "maxRounds": 6,
+  "mode": "openai-compatible",
+  "taskGoal": "基于十份官方采购材料，逐轮完成材料接收确认、配送计划核对、成交金额复核、规格证据整理和抽检准备，最终形成一份可下载的 Excel 核对表供现场继续回填。",
+  "successCriteria": [
+    "第一轮逐字列出十份附件名称并确认每份材料的读取状态。",
+    "后续轮次依据已读取原件逐步核对配送计划、成交结果和技术响应，每轮只推进一个当前诉求及一个直接子诉求。",
+    "数值和判断能够回到具体文件、页码、网页区段或表格行号，证据缺口统一标为待核。",
+    "订单、到货、验收、付款和售后记录保持待补状态，公开材料不代替现场记录。",
+    "最终提供真实可访问的 Excel 文件或等价在线表格，并保留来源索引和待核清单。"
+  ],
+  "initialPrompt": "采购结算和设备抽检同事准备做一份可下载的 Excel 核对表，现场后续还要继续补录订单和到货信息。验收记录目前也在整理。我会在这条消息里一次性上传十份材料。里面有成交公告和配送计划，也有采购文件和得分排序表。另附六份技术规范偏离表。这些文件来自同一个台式计算机批量采购项目，后续核对都要从原件取证。\n\n你先整理一份材料清单，逐字列出十个文件名并标明每份是否完整读取。缺失或损坏的项目统一记为待核。无法对应到本项目的材料同样记为待核。表格以后会交给采购结算和设备抽检同事继续回填，来源名称保持与原件一致，方便接着定位页码和表格行号。",
+  "responseTimeoutMs": 600000,
+  "interactionRewrite": {
+    "type": "openai-compatible",
+    "baseUrl": "https://api.mugua.link/v1",
+    "model": "gemini-3.1-pro-preview",
+    "apiKeyEnv": "DE_AI_REWRITE_API_KEY",
+    "temperature": 0.55,
+    "timeoutMs": 180000
+  },
+  "promptPreflight": {
+    "type": "local-codex",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "timeoutMs": 360000
+  },
+  "policy": {
+    "type": "local-codex",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "timeoutMs": 360000
+  },
+  "productRequirement": {
+    "required": true,
+    "requestedFormats": [
+      "excel"
+    ],
+    "allowEquivalentOnline": true,
+    "allowUnavailableBestEffort": true
+  }
+}

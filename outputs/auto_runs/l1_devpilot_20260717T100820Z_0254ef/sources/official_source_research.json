@@ -1,0 +1,79 @@
+{
+  "kind": "official-source-research-index",
+  "runId": "l1_devpilot_20260717T100820Z_0254ef",
+  "checkedAt": "2026-07-17T10:30:00.000Z",
+  "sources": [
+    {
+      "id": "material-zoom-accessibility",
+      "title": "Accessibility | Zoom",
+      "url": "https://www.zoom.com/en/accessibility/",
+      "publisher": "Zoom",
+      "status": 200,
+      "accessedAt": "2026-07-17"
+    },
+    {
+      "id": "material-zoom-captions",
+      "title": "Viewing captions in a meeting or webinar",
+      "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0059762",
+      "publisher": "Zoom Support",
+      "status": 200,
+      "accessedAt": "2026-07-17"
+    },
+    {
+      "id": "material-teams-captions",
+      "title": "Use live captions in Microsoft Teams meetings",
+      "url": "https://support.microsoft.com/en-US/teams/meetings/use-live-captions-in-microsoft-teams-meetings",
+      "publisher": "Microsoft Support",
+      "status": 200,
+      "accessedAt": "2026-07-17"
+    },
+    {
+      "id": "material-teams-screenreader",
+      "title": "Screen reader support for Microsoft Teams",
+      "url": "https://support.microsoft.com/en-US/accessibility/teams/screen-reader-support-for-microsoft-teams",
+      "publisher": "Microsoft Support",
+      "status": 200,
+      "accessedAt": "2026-07-17"
+    },
+    {
+      "id": "material-meet-accessibility",
+      "title": "Accessibility in Google Meet",
+      "url": "https://support.google.com/meet/answer/16175468?hl=en",
+      "publisher": "Google Meet Help",
+      "status": 200,
+      "accessedAt": "2026-07-17"
+    },
+    {
+      "id": "material-meet-translated",
+      "title": "Use translated captions in Google Meet",
+      "url": "https://support.google.com/meet/answer/10964115?hl=en",
+      "publisher": "Google Meet Help",
+      "status": 200,
+      "accessedAt": "2026-07-17"
+    },
+    {
+      "id": "material-w3c-live-captions",
+      "title": "Understanding Success Criterion 1.2.4: Captions (Live)",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/captions-live.html",
+      "publisher": "W3C WAI",
+      "status": 200,
+      "accessedAt": "2026-07-17"
+    },
+    {
+      "id": "material-w3c-keyboard",
+      "title": "Understanding Success Criterion 2.1.1: Keyboard",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html",
+      "publisher": "W3C WAI",
+      "status": 200,
+      "accessedAt": "2026-07-17"
+    },
+    {
+      "id": "material-w3c-focus",
+      "title": "Understanding Success Criterion 2.4.7: Focus Visible",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html",
+      "publisher": "W3C WAI",
+      "status": 200,
+      "accessedAt": "2026-07-17"
+    }
+  ]
+}

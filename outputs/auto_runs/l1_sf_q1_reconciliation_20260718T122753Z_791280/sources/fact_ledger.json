@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "kind": "evidence-bound-fact-ledger",
+  "runId": "l1_sf_q1_reconciliation_20260718T122753Z_791280",
+  "recordUid": "沈礼_20260718_sf_q1_reconciliation_01",
+  "generatedAt": "2026-07-18T13:21:48.202Z",
+  "facts": [
+    {
+      "id": "fact-feb-month",
+      "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+      "claimType": "source-fact",
+      "text": "2026年2月简报披露速运物流收入164.21亿元、业务量10.72亿票、单票收入15.32元，供应链及国际业务收入51.83亿元，合计216.04亿元。上年同期合计为183.71亿元。",
+      "sourceRefs": [
+        "material-feb-brief"
+      ],
+      "locator": "2026年2月经营简报PDF第1页第一张表"
+    },
+    {
+      "id": "fact-jan-feb-cumulative",
+      "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+      "claimType": "source-fact",
+      "text": "2026年1至2月累计速运物流收入368.17亿元、业务量24.58亿票、单票收入14.98元，供应链及国际业务收入116.47亿元，合计484.64亿元。上年同期合计为446.48亿元。",
+      "sourceRefs": [
+        "material-feb-brief"
+      ],
+      "locator": "2026年2月经营简报PDF第1页第二张表"
+    },
+    {
+      "id": "fact-feb-boundary",
+      "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+      "claimType": "evidence-boundary",
+      "text": "2026年2月简报明确以上收入不含公司其他非物流业务收入，数据未经审计，与定期报告数据可能存在差异，相关数据以定期报告为准。简报还提示春节错期使2月数据与上年同期不完全可比。",
+      "sourceRefs": [
+        "material-feb-brief"
+      ],
+      "locator": "2026年2月经营简报PDF第2页注释和正文"
+    },
+    {
+      "id": "fact-march-month",
+      "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+      "claimType": "source-fact",
+      "text": "2026年3月简报披露速运物流收入180.19亿元、业务量12.51亿票、单票收入14.40元，供应链及国际业务收入62.83亿元，合计243.02亿元。上年同期合计为236.61亿元。",
+      "sourceRefs": [
+        "material-mar-brief"
+      ],
+      "locator": "2026年3月经营简报PDF第1页表格"
+    },
+    {
+      "id": "fact-march-boundary",
+      "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+      "claimType": "evidence-boundary",
+      "text": "2026年3月简报明确以上收入不含公司其他非物流业务收入，数据未经审计，与定期报告数据可能存在差异，相关数据以定期报告为准。",
+      "sourceRefs": [
+        "material-mar-brief"
+      ],
+      "locator": "2026年3月经营简报PDF第1至2页注释和结尾"
+    },
+    {
+      "id": "fact-q1-revenue",
+      "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+      "claimType": "source-fact",
+      "text": "2026年第一季度报告把报告期定义为2026年1月1日至3月31日，披露营业收入74142121千元，上年同期69849924千元，同比增长6.14%。",
+      "sourceRefs": [
+        "material-q1-report"
+      ],
+      "locator": "2026年第一季度报告PDF第2页主要会计数据和财务指标表"
+    },
+    {
+      "id": "fact-q1-boundary",
+      "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+      "claimType": "evidence-boundary",
+      "text": "2026年第一季度报告明确本季度报告未经审计，除特别说明外以人民币为货币单位，营业收入属于公司总营业收入，未使用经营简报中排除其他非物流业务收入的限定。",
+      "sourceRefs": [
+        "material-q1-report"
+      ],
+      "locator": "2026年第一季度报告PDF第2页重要内容提示和主要财务数据"
+    },
+    {
+      "id": "fact-quarter-bridge",
+      "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+      "claimType": "derived-check",
+      "text": "按经营简报口径，2026年1至2月累计484.64亿元加3月243.02亿元得到一季度物流相关收入727.66亿元，换算为72766000千元。与一季报营业收入74142121千元相差1376121千元，即13.76121亿元。上年同期经营简报口径为446.48加236.61等于683.09亿元，与一季报上年同期69849924千元相差1540924千元，即15.40924亿元。",
+      "sourceRefs": [
+        "material-feb-brief",
+        "material-mar-brief",
+        "material-q1-report"
+      ],
+      "locator": "2月简报第1页累计表、3月简报第1页表格和一季报第2页营业收入行"
+    },
+    {
+      "id": "fact-subtotal-checks",
+      "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+      "claimType": "derived-check",
+      "text": "经营简报分项可回算合计：2026年1至2月368.17加116.47等于484.64亿元，3月180.19加62.83等于243.02亿元。2026年一季度速运物流累计548.36亿元，供应链及国际业务累计179.30亿元，两项合计727.66亿元。",
+      "sourceRefs": [
+        "material-feb-brief",
+        "material-mar-brief"
+      ],
+      "locator": "2月简报第1页两张表和3月简报第1页表格"
+    },
+    {
+      "id": "fact-unit-price-checks",
+      "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+      "claimType": "derived-check",
+      "text": "单票收入可由速运物流收入除以业务量回算并按两位小数核对：2026年2月164.21除以10.72约为15.32元，2026年1至2月368.17除以24.58约为14.98元，2026年3月180.19除以12.51约为14.40元。",
+      "sourceRefs": [
+        "material-feb-brief",
+        "material-mar-brief"
+      ],
+      "locator": "2月简报第1页和3月简报第1页对应收入、业务量、单票收入行"
+    }
+  ],
+  "materials": [
+    {
+      "id": "material-feb-brief",
+      "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+      "name": "顺丰控股2026年2月快递物流业务经营简报.pdf",
+      "text": "2026年2月单月与1至2月累计的速运物流、供应链及国际业务收入和业务量，以及数据未经审计且不含其他非物流业务收入的边界",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-03-20/1225018701.PDF",
+      "sha256": "b6d498ec52aea25bf45329c3890bdc26270e498eaf5a4d8088c7d63dc7756fff"
+    },
+    {
+      "id": "material-mar-brief",
+      "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+      "name": "顺丰控股2026年3月快递物流业务经营简报.pdf",
+      "text": "2026年3月单月的速运物流、供应链及国际业务收入、业务量和单票收入，以及数据未经审计且不含其他非物流业务收入的边界",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-18/1225117549.PDF",
+      "sha256": "aa21dd7d0f298800d5962078776289649f2992be6458c06a632d498624279260"
+    },
+    {
+      "id": "material-q1-report",
+      "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+      "name": "顺丰控股2026年第一季度报告.pdf",
+      "text": "2026年第一季度和上年同期营业收入、净利润、经营现金流等主要会计数据，并明确季度报告未经审计",
+      "sourceUrl": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-04-29/7883bdc1-3a59-4fd9-8e05-707bf938cc0f.PDF",
+      "sha256": "72a07309388abcdce1aad7f33307c1693446a04cd435fbb2e656ba582f8ef5e2"
+    }
+  ],
+  "unknowns": [
+    {
+      "id": "unknown-other-non-logistics-breakdown",
+      "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+      "text": "三份附件没有披露一季报营业收入与经营简报物流相关收入差额对应的其他非物流业务明细，差额只能登记为待公司分部或科目资料确认。"
+    },
+    {
+      "id": "unknown-rounding-precision",
+      "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+      "text": "经营简报以亿元保留两位小数，一季报以千元披露，跨表差额同时包含业务口径差异和月报四舍五入影响，附件无法拆分两者的精确贡献。"
+    },
+    {
+      "id": "unknown-audit-status",
+      "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+      "text": "三份附件均为未经审计披露，后续审计报告或年度报告可能提供不同精度或进一步分类。"
+    }
+  ],
+  "decision": {
+    "id": "decision-q1-reconciliation-workbook",
+    "text": "建立带公式和来源页码的季度收入口径核对表，确认经营简报分项与累计值能够回算，并把与一季报总营业收入的差额保持为口径桥接项而非直接归因。"
+  },
+  "deliveryUse": {
+    "recipient": "经营数据复核同事",
+    "purpose": "复核季度数据口径并为后续取得分部或科目明细后继续回填。"
+  }
+}

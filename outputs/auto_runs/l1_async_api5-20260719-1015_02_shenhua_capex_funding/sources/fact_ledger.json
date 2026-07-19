@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "kind": "evidence-bound-fact-ledger",
+  "runId": "l1_async_api5-20260719-1015_02_shenhua_capex_funding",
+  "recordUid": "沈礼_api5-20260719-1015_02",
+  "generatedAt": "2026-07-19T02:07:59.892Z",
+  "facts": [
+    {
+      "id": "shenhua-q1-core",
+      "claimType": "source-fact",
+      "text": "2026年一季度营业收入70397百万元，同比增长1.2%；利润总额16594百万元，同比下降7.8%；归母净利润10667百万元，同比下降10.7%；经营现金流量净额17363百万元，同比下降15.5%。",
+      "locator": "PDF第1页主要财务数据表",
+      "uid": "沈礼_api5-20260719-1015_02",
+      "sourceRefs": [
+        "shenhua-2026q1-report"
+      ]
+    },
+    {
+      "id": "shenhua-transaction-scope",
+      "claimType": "source-fact",
+      "text": "公司通过发行股份及支付现金购买控股股东所持11家公司股权，并以现金购买另1家公司股权，相关资产已完成交割，经营目标和资本开支计划因此纳入新并入资产。",
+      "locator": "PDF第10页经调整计划说明",
+      "uid": "沈礼_api5-20260719-1015_02",
+      "sourceRefs": [
+        "shenhua-2026q1-report"
+      ]
+    },
+    {
+      "id": "shenhua-target-adjustment",
+      "claimType": "source-fact",
+      "text": "调整后2026年营业收入目标由2800亿元增至3600亿元，增长28.6%；营业成本目标由1875亿元增至2400亿元，增长28.0%；商品煤产量和发电量目标分别上调55.5%和28.8%。",
+      "locator": "PDF第10页调整前后经营目标表",
+      "uid": "沈礼_api5-20260719-1015_02",
+      "sourceRefs": [
+        "shenhua-2026q1-report"
+      ]
+    },
+    {
+      "id": "shenhua-capex-total",
+      "claimType": "source-fact",
+      "text": "2026年资本开支计划由380.23亿元调增至559.87亿元，增加179.64亿元，增幅47.2%。",
+      "locator": "PDF第11页资本开支计划表",
+      "uid": "沈礼_api5-20260719-1015_02",
+      "sourceRefs": [
+        "shenhua-2026q1-report"
+      ]
+    },
+    {
+      "id": "shenhua-capex-mix",
+      "claimType": "derived-check",
+      "text": "资本开支增量中发电业务增加89.74亿元、煤化工业务增加50亿元、煤炭业务增加34.86亿元，三项合计174.60亿元，占总增量约97.2%。",
+      "locator": "PDF第11页分业务资本开支表复算",
+      "uid": "沈礼_api5-20260719-1015_02",
+      "sourceRefs": [
+        "shenhua-2026q1-report"
+      ]
+    },
+    {
+      "id": "shenhua-funding-boundary",
+      "claimType": "evidence-boundary",
+      "text": "报告称计划通过经营活动所得现金、短期及长期贷款以及其他债务和权益融资满足资本开支需求，但没有披露各来源对559.87亿元计划的具体分配。",
+      "locator": "PDF第11页资本开支计划说明",
+      "uid": "沈礼_api5-20260719-1015_02",
+      "sourceRefs": [
+        "shenhua-2026q1-report"
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "id": "shenhua-2026q1-report",
+      "uid": "沈礼_api5-20260719-1015_02",
+      "name": "中国神华能源股份有限公司2026年第一季度报告.pdf",
+      "text": "披露中国神华一季度经营财务数据、重大资产交易后经营目标调整、分业务资本开支计划和资金来源边界。",
+      "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-25/1225185746.PDF",
+      "sha256": "eafdac378c6aece9511c0e3c501ed99312a47addd138a5562d9710e66caf5959"
+    }
+  ],
+  "unknowns": [
+    {
+      "id": "shenhua_capex_funding_api5-20260719-1015-unknown-1",
+      "uid": "沈礼_api5-20260719-1015_02",
+      "text": "附件没有给出资本开支计划按经营现金、贷款、债务和权益融资的金额拆分。"
+    },
+    {
+      "id": "shenhua_capex_funding_api5-20260719-1015-unknown-2",
+      "uid": "沈礼_api5-20260719-1015_02",
+      "text": "调整后的经营目标与资本开支均是计划值，实际结果可能受项目进度、市场和审批影响。"
+    }
+  ],
+  "decision": {
+    "id": "shenhua_capex_funding_api5-20260719-1015-decision",
+    "text": "制作调整前后资本开支核对表，识别增量集中度并把经营现金流与计划资金需求并列展示，资金来源只保留报告披露的渠道和待补分配栏。"
+  },
+  "deliveryUse": {
+    "recipient": "资本计划复核专员及下游同事",
+    "purpose": "供资本计划同事跟踪项目预算和后续融资披露。"
+  }
+}

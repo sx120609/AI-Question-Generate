@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "naturalness-review-request",
+  "status": "PENDING_REVIEW",
+  "requestId": "naturalness_a8adb4a4ffbe72a5748b946e",
+  "generatedAt": "2026-07-19T02:10:01.665Z",
+  "gateId": "naturalness-gate-v6",
+  "metricsVersion": "naturalness-metrics-v6",
+  "questionLanguagePolicyId": "corpus-calibrated-intent-punctuation-v4",
+  "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\feishu\\naturalness_gate_report.json",
+  "reportHash": "225b253501b16eff62f7cf264585b6b34200de70425258588acf87e1af506d76",
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\drafts\\l1_questions.tsv",
+  "candidateHash": "c70f0c5adcf64ea23a96d7ca7ed1b817911f11196507c7dbd52f3a1177e836d9",
+  "baselinePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_03_cqrcb_growth_capital\\sources\\naturalness_baseline.json",
+  "baselineHash": "0ec3102d5fa14b1b0aa65dcbd3744583646a65adf1b5772598438d80fc79812a",
+  "requestedBy": "release-gate-naturalness-requester",
+  "bindingHash": "a8adb4a4ffbe72a5748b946e418e46e4c4f96f8cb8d9e4a3747617fd85f5cd26",
+  "reviewFindings": [
+    {
+      "uid": "沈礼_api5-20260719-1015_03",
+      "rule": "row_template_marker_stack"
+    }
+  ],
+  "signoff": null,
+  "note": "This is a hash-bound review request, not an approval. A separate explicit signoff is required before downstream receipt generation."
+}

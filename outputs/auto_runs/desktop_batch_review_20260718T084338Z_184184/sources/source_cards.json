@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "kind": "source-card-bundle",
+  "runId": "desktop_batch_review_20260718T084338Z_184184",
+  "recordUid": "裴硬_20260718_desktop_batch_review_01",
+  "sources": [
+    {
+      "materialId": "material-award-announcement",
+      "title": "中央国家机关2026年台式计算机批量集中采购项目-6月中标公告",
+      "publisher": "中国政府采购网",
+      "publishedAt": "2026-06-10",
+      "accessedAt": "2026-07-18",
+      "path": "attachments/成交结果公告.html",
+      "supports": "项目身份、预算、六包成交供应商、成交单价、数量、质保比例、初审结果和公告页总金额字段",
+      "boundary": "公告页总金额字段与六包逐项金额合计不一致，实际合同与履约结果未提供"
+    },
+    {
+      "materialId": "material-delivery-plan",
+      "title": "中央国家机关批量集中采购实施计划配送信息表",
+      "publisher": "中央国家机关政府采购中心公告附件",
+      "publishedAt": "2026-06-10",
+      "accessedAt": "2026-07-18",
+      "path": "attachments/台式机202606计划公示.xls",
+      "supports": "535条配送明细、六种配置数量、操作系统口径和配送地址字段",
+      "boundary": "计划数据不等于实际送达记录，部分PR单号和地址字段缺失或异常"
+    },
+    {
+      "materialId": "material-procurement-file",
+      "title": "中央国家机关2026年台式计算机批量集中采购项目-6月竞争性磋商文件",
+      "publisher": "中央国家机关政府采购中心公告附件",
+      "publishedAt": "2026-05",
+      "accessedAt": "2026-07-18",
+      "path": "attachments/中央国家机关2026年台式计算机批量集中采购项目-6月采购文件.pdf",
+      "supports": "六包预算、交付期限、技术要求、质保价格填报与响应总价公式",
+      "boundary": "采购要求和参考合同不证明最终交付已经完成"
+    },
+    {
+      "materialId": "material-score-ranking",
+      "title": "投标人得分排序表",
+      "publisher": "中央国家机关政府采购中心公告附件",
+      "publishedAt": "2026-06-10",
+      "accessedAt": "2026-07-18",
+      "path": "attachments/投标人得分排序表_官方导出.html",
+      "supports": "六包投标人编号、得分和名次",
+      "boundary": "只给出匿名投标人编号，未提供各评分项分解"
+    },
+    {
+      "materialId": "material-deviation-1",
+      "title": "配置1响应产品技术规范偏离表",
+      "publisher": "软通计算机有限公司电子签章响应文件（公告附件）",
+      "publishedAt": "2026-06",
+      "accessedAt": "2026-07-18",
+      "path": "attachments/技术规范偏离表-1-软通.pdf",
+      "supports": "配置1响应价格、龙芯3A6000、显示屏、内存、存储与显卡响应",
+      "boundary": "响应表不等于最终成交报价或实物验收结果"
+    },
+    {
+      "materialId": "material-deviation-2",
+      "title": "配置2响应产品技术规范偏离表",
+      "publisher": "软通计算机有限公司电子签章响应文件（公告附件）",
+      "publishedAt": "2026-06",
+      "accessedAt": "2026-07-18",
+      "path": "attachments/技术规范偏离表-2-软通.pdf",
+      "supports": "配置2响应价格、飞腾腾锐D3000、显示屏、内存、存储与显卡响应",
+      "boundary": "响应表不等于最终成交报价或实物验收结果"
+    },
+    {
+      "materialId": "material-deviation-3",
+      "title": "配置3响应产品技术规范偏离表",
+      "publisher": "联想开天科技有限公司电子签章响应文件（公告附件）",
+      "publishedAt": "2026-06",
+      "accessedAt": "2026-07-18",
+      "path": "attachments/技术规范偏离表-3-联想.pdf",
+      "supports": "配置3响应价格、兆芯KX-7000、四个内存接口和2TB机械硬盘响应",
+      "boundary": "响应表不等于最终成交报价或实物验收结果"
+    },
+    {
+      "materialId": "material-deviation-4",
+      "title": "配置4响应产品技术规范偏离表",
+      "publisher": "华为终端有限公司电子签章响应文件（公告附件）",
+      "publishedAt": "2026-06",
+      "accessedAt": "2026-07-18",
+      "path": "attachments/技术规范偏离表-4-华为.pdf",
+      "supports": "配置4响应价格、麒麟9000X、6400MT/s板载内存和集成显卡响应",
+      "boundary": "响应表不等于最终成交报价或实物验收结果"
+    },
+    {
+      "materialId": "material-deviation-5",
+      "title": "配置5响应产品技术规范偏离表",
+      "publisher": "安领信（北京）科技有限公司电子签章响应文件（公告附件）",
+      "publishedAt": "2026-06",
+      "accessedAt": "2026-07-18",
+      "path": "attachments/技术规范偏离表-5-安领信.pdf",
+      "supports": "配置5响应价格、海光C86-3G和4GB独立显卡响应",
+      "boundary": "响应表不等于最终成交报价或实物验收结果"
+    },
+    {
+      "materialId": "material-deviation-6",
+      "title": "配置6响应产品技术规范偏离表",
+      "publisher": "天津光电集团信安先进技术（江苏）有限公司电子签章响应文件（公告附件）",
+      "publishedAt": "2026-06",
+      "accessedAt": "2026-07-18",
+      "path": "attachments/技术规范偏离表-6-天津光电.pdf",
+      "supports": "配置6响应价格、申威SW-WY831和GDDR6独立显卡响应",
+      "boundary": "响应表不等于最终成交报价或实物验收结果"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "kind": "scene-card-bundle",
+  "protocolId": "situated-requester-v1",
+  "schemaVersion": 1,
+  "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_04_baosteel_mix_profit\\sources\\fact_ledger.json",
+  "factLedgerHash": "e2b1313c91bd64a41544ec60fad3552f95705b446917ca5373a7795953ba9366",
+  "cards": [
+    {
+      "recordUid": "沈礼_api5-20260719-1015_04",
+      "sceneCard": {
+        "schemaVersion": 1,
+        "policyId": "situated-requester-v1",
+        "topicId": "baosteel-2026q1-product-mix-profit",
+        "personaId": "baosteel_mix_profit_api5-20260719-1015-requester-01",
+        "requester": {
+          "functionalRole": "产品经营复核专员",
+          "organizationType": "企业经营与研究团队",
+          "department": "",
+          "responsibility": "把宝山钢铁股份有限公司公开季度报告整理成可追溯的产品结构与利润表现复核演示稿",
+          "authorityBoundary": "只负责复核公开披露、派生计算和证据边界，无权把未披露的业务明细写成确定归因。",
+          "recipientRelation": "产品经营复核专员及下游同事"
+        },
+        "scene": {
+          "workflowStage": "产品经营复核人员需要解释结构指标向好但归母净利润下降的证据组合。",
+          "trigger": "2026年一季度“2+2+N”产品销量861.9万吨，同比增加37.7万吨；出口接单量196.1万吨，同比增加41.6万吨。",
+          "currentBlockage": "附件不能把高附加值产品销量和出口接单变化直接换算为当季利润贡献。",
+          "mainDecision": "制作产品结构与利润表现复核演示稿，把产品销量和出口接单亮点与分部毛利率、整体利润和现金流并列，明确可证改善与不能归因的部分。",
+          "downstreamUse": "供产品经营会议讨论下一步需要补取的产品盈利和订单兑现资料。"
+        },
+        "informationBoundary": {
+          "knownFactIds": [
+            "baosteel-product-export",
+            "baosteel-core-performance",
+            "baosteel-steel-segment",
+            "baosteel-processing-segment",
+            "baosteel-total-margin",
+            "baosteel-boundary"
+          ],
+          "availableMaterialIds": [
+            "baosteel-2026q1-report"
+          ],
+          "unknowns": [
+            "附件不能把高附加值产品销量和出口接单变化直接换算为当季利润贡献。",
+            "分部收入存在内部抵消，不能把各分部收入简单相加解释为外部营业收入。"
+          ],
+          "forbiddenInferences": [
+            "未由季度报告披露的业务明细不得写成确定事实",
+            "派生计算只能使用事实账本中的数值和口径",
+            "未经审计的季度数据不得描述为审计确认值",
+            "相关性和变动线索不得直接表述为因果归因"
+          ]
+        },
+        "voice": {
+          "channel": "内部业务复核消息",
+          "formality": "直接、克制、以证据和可继续回填为导向",
+          "domainVocabulary": [
+            "宝钢股份",
+            "产品结构",
+            "出口接单",
+            "分部毛利率",
+            "归母净利润"
+          ],
+          "avoidVocabulary": [
+            "全链路",
+            "闭环",
+            "赋能",
+            "深度洞察",
+            "麻烦",
+            "劳烦",
+            "烦请",
+            "辛苦",
+            "刚传了"
+          ]
+        },
+        "maskTerms": [
+          "宝山钢铁股份有限公司",
+          "600019",
+          "宝钢股份",
+          "产品结构",
+          "出口接单",
+          "分部毛利率"
+        ],
+        "evidenceBindings": [
+          {
+            "claim": "2026年一季度“2+2+N”产品销量861.9万吨，同比增加37.7万吨；出口接单量196.1万吨，同比增加41.6万吨。",
+            "factIds": [
+              "baosteel-product-export"
+            ]
+          },
+          {
+            "claim": "附件不能把高附加值产品销量和出口接单变化直接换算为当季利润贡献。",
+            "factIds": [
+              "baosteel-boundary",
+              "baosteel-product-export"
+            ]
+          },
+          {
+            "claim": "制作产品结构与利润表现复核演示稿，把产品销量和出口接单亮点与分部毛利率、整体利润和现金流并列，明确可证改善与不能归因的部分。",
+            "factIds": [
+              "baosteel-product-export",
+              "baosteel-boundary"
+            ]
+          }
+        ]
+      },
+      "requestContract": {
+        "requestSpan": "最后请帮我生成一份可下载的PPT，方便我们在会上直接使用。",
+        "action": "帮我",
+        "outputs": [
+          {
+            "format": "pptx",
+            "humanName": "PPT",
+            "purpose": "供后续执行和留痕使用"
+          }
+        ]
+      },
+      "roleTrace": {
+        "blockageSpan": "你需要给出一个明确的结论，判断“2+2+N”产品销量和出口接单等指标的改善，能不能直接支持整体盈利的改善，并说明分部毛利率对这个判断构成了什么限制。",
+        "motivationSpan": "最后请帮我生成一份可下载的PPT，方便我们在会上直接使用。",
+        "downstreamUseSpan": "最后请帮我生成一份可下载的PPT，方便我们在会上直接使用。"
+      },
+      "usedFactIds": [
+        "baosteel-product-export",
+        "baosteel-core-performance",
+        "baosteel-steel-segment",
+        "baosteel-processing-segment",
+        "baosteel-total-margin",
+        "baosteel-boundary"
+      ],
+      "deliberatelyOmitted": []
+    }
+  ]
+}

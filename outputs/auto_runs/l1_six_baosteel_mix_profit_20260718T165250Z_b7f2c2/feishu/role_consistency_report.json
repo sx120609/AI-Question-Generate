@@ -1,0 +1,93 @@
+{
+  "kind": "scene-card-gate-report",
+  "gateId": "scene-card-role-consistency-v1",
+  "protocolId": "situated-requester-v1",
+  "schemaVersion": 1,
+  "status": "PASS",
+  "ok": true,
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2\\drafts\\l1_questions.tsv",
+  "candidateHash": "cb2201b5b39e0fc0f24013738238cf7d24796ec1430726aa2696f4eb1fe58110",
+  "sceneCardPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2\\sources\\scene_cards.json",
+  "sceneCardFileHash": "83c8c61e1b908df57eabdbe07f707a954ed452e5cd441d6925e55c7c5e3b757e",
+  "sceneCardBundleHash": "8fb9080082dcf6e560bf1dde42c8291493618170a855512fba0304758f513b44",
+  "sceneCardSetHash": "5c8e64c543e80b0fbbff2c1dbccabd3eee811809c66e9a3888e8f9b56db3894d",
+  "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_baosteel_mix_profit_20260718T165250Z_b7f2c2\\sources\\fact_ledger.json",
+  "factLedgerHash": "4ba53c407084232b5c7d68ed9bff94c8e1f76b8fb0fef86ebf1a5afdc67f3c29",
+  "summary": {
+    "candidateRowCount": 1,
+    "sceneCardCount": 1,
+    "passedRowCount": 1,
+    "failedRowCount": 0,
+    "globalErrorCount": 0,
+    "batchCollisionCount": 0
+  },
+  "rows": [
+    {
+      "uid": "沈礼_20260719_l1_baosteel_mix_profit_04",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "dbc1c8d9e3b124338fd212a76a49802440bf929a7a79f48e94ad09689dfd3905",
+      "cardHash": "d7bf59f727fea9ea28d4d572606c908eb12199013bf132c2365f92d755d995ed",
+      "roleConsistencyHash": "c76cc975ee2d7c4bd1b04fb7abd5ca4005581689e96b5069d695356f8e07dcfa",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "help-me",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "pptx"
+        ],
+        "mFormats": [
+          "pptx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "PPT里需要给出一个明确的判断：“2+2+N”产品销量的提升以及出口接单的改善，到底能不能直接支撑整体盈利的好转。",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "请根据《宝山钢铁股份有限公司2026年第一季度报告.pdf》，帮我做一份关于宝钢股份2026年一季度产品结构与利润表现的PPT，准备在接下来的产品经营会议上用，用来讨论后续要补充哪些产品盈利和订单兑现的资料。",
+            "occurrences": 1
+          },
+          "downstreamUseSpan": {
+            "span": "请根据《宝山钢铁股份有限公司2026年第一季度报告.pdf》，帮我做一份关于宝钢股份2026年一季度产品结构与利润表现的PPT，准备在接下来的产品经营会议上用，用来讨论后续要补充哪些产品盈利和订单兑现的资料。",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [
+            "2026年",
+            "2"
+          ],
+          "quotedClaims": [
+            "2+2+N"
+          ],
+          "timeMarkers": []
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "6b700e5599e4dc232219df694b533a14da456de4417b6a475f8db6f5d7750d06"
+      }
+    }
+  ],
+  "batch": {
+    "ok": true,
+    "status": "PASS",
+    "thresholds": {
+      "highMaskedTrigramSimilarity": 0.72,
+      "sharedMaskedFragmentLength": 18
+    },
+    "comparisons": [],
+    "errors": []
+  },
+  "errors": [],
+  "evaluationHash": "8184df927a130baaa32b7324651d441f717424d356916fbd0f5db1b824ed2029"
+}

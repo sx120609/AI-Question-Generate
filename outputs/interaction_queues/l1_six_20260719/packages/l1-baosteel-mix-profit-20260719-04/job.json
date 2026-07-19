@@ -1,0 +1,55 @@
+{
+  "jobId": "l1-baosteel-mix-profit-20260719-04",
+  "attachmentRoot": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-baosteel-mix-profit-20260719-04\\attachments",
+  "initialAttachmentNames": [
+    "宝山钢铁股份有限公司2026年第一季度报告.pdf"
+  ],
+  "productionEvidence": {
+    "recordUid": "沈礼_20260719_l1_baosteel_mix_profit_04",
+    "productionTracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-baosteel-mix-profit-20260719-04\\evidence\\production_trace.json",
+    "productionTraceGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-baosteel-mix-profit-20260719-04\\evidence\\production_trace_gate_receipt.json",
+    "releaseGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-baosteel-mix-profit-20260719-04\\evidence\\release_gate_receipt.json",
+    "downloadManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-baosteel-mix-profit-20260719-04\\evidence\\download_manifest.json"
+  },
+  "maxRounds": 6,
+  "maximumRounds": 10,
+  "mode": "openai-compatible",
+  "taskGoal": "产品经营复核人员需要解释结构指标向好但归母净利润下降的证据组合。。制作产品结构与利润表现复核演示稿，把产品销量和出口接单亮点与分部毛利率、整体利润和现金流并列，明确可证改善与不能归因的部分。，最终一份可下载的宝钢股份2026年一季度产品结构与利润表现PPT，包含产品和出口亮点、核心财务对比、分部毛利率、证据边界、待补数据和结论页。",
+  "successCriteria": [
+    "产品与财务指标来源清楚",
+    "分部毛利率变化准确",
+    "不把订单量直接等同利润贡献",
+    "内部抵消边界明确",
+    "交付可下载pptx"
+  ],
+  "initialPrompt": "请根据《宝山钢铁股份有限公司2026年第一季度报告.pdf》，帮我做一份关于宝钢股份2026年一季度产品结构与利润表现的PPT，准备在接下来的产品经营会议上用，用来讨论后续要补充哪些产品盈利和订单兑现的资料。\n\nPPT里需要给出一个明确的判断：“2+2+N”产品销量的提升以及出口接单的改善，到底能不能直接支撑整体盈利的好转。为了论证这一点，你需要对比一下营业收入、归母净利润和经营现金流的同比变动情况。同时，还要分别看看钢铁制造、加工配送这两个分部的毛利率，以及合计毛利率的同比增减，借此来分析分部毛利率对整体盈利改善构成了怎样的制约。在处理数据时，千万别把有内部抵消的分部收入直接加总，也别把报告里没明确披露的产品或出口利润贡献当成确定的归因。\n\n最后请交付一份可下载的演示稿，内容得涵盖产品和出口亮点、核心财务对比、分部毛利率、证据边界、待补数据和最终结论页。所有用到的数据都要标明报告页码、未经审计的状态和派生计算的口径，并且要严格区分哪些是已证实的事实、哪些是合理推断，还有哪些是需要进一步确认的事项。",
+  "responseTimeoutMs": 600000,
+  "interactionRewrite": {
+    "type": "openai-compatible",
+    "baseUrl": "https://api.mugua.link/v1",
+    "model": "gemini-3.1-pro-preview",
+    "apiKeyEnv": "DE_AI_REWRITE_API_KEY",
+    "temperature": 0.55,
+    "timeoutMs": 180000
+  },
+  "promptPreflight": {
+    "type": "local-codex",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "timeoutMs": 360000
+  },
+  "policy": {
+    "type": "local-codex",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "timeoutMs": 360000
+  },
+  "productRequirement": {
+    "required": true,
+    "requestedFormats": [
+      "ppt"
+    ],
+    "allowEquivalentOnline": false,
+    "allowUnavailableBestEffort": false
+  }
+}

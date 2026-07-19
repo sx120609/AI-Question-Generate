@@ -1,0 +1,49 @@
+{
+  "kind": "codex-stage-response",
+  "stage": "03_pre_qa_structure_audit_attempt_1",
+  "model": "gpt-5.6-sol",
+  "provider": "openai-compatible-responses-api",
+  "responseId": "resp_0e50d05fcc3cbdf1016a5c30667990819ba4ca0cda5470b169",
+  "requestId": "924e2bb4-cd6e-49ee-8c25-cb1ff07e124a",
+  "completedAt": "2026-07-19T02:04:06.001Z",
+  "promptHash": "d2eef6fa9a7756472c540d383558eb9d4b092fb4fc33b2b40cc80aa51a64e166",
+  "usage": {
+    "metered": true,
+    "source": "responses-api",
+    "requestCount": 1,
+    "inputTokens": 2598,
+    "cachedInputTokens": 0,
+    "uncachedInputTokens": 2598,
+    "outputTokens": 1736,
+    "reasoningTokens": 968,
+    "visibleOutputTokens": 768,
+    "totalTokens": 4334,
+    "providerUsage": {
+      "input_tokens": 2598,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 1736,
+      "output_tokens_details": {
+        "reasoning_tokens": 968
+      },
+      "total_tokens": 4334
+    }
+  },
+  "parsed": {
+    "evidenceChain": "拟定证据链为：从《宝山钢铁股份有限公司2026年第一季度报告》抽取产品销量、出口接单、归母净利润等核心财务数据及主营分部收入和成本→核对本期与上年同期口径、内部抵消及毛利率派生计算→识别“结构和接单指标改善”与“归母净利润下降”的并存差异→区分经营指标事实、盈利贡献推断和仍待订单兑现或产品盈利资料验证的事项→判断现有证据能否直接支持整体盈利改善。链条方向完整，但输入未提供附件正文、页内摘录、原始数值或可核验附件实体，仅有文件元数据、URL和事实标签，因此无法确认第1至3页是否确实覆盖全部分部数据、内部抵消及计算基础，对象级证据尚不完整。",
+    "l2ReasoningChain": "该题标为L1探索型，主体围绕一个主要判断推进，产品结构、出口接单、核心财务、分部毛利率和证据边界均服务于解释同一经营差异；合理推理顺序应为原文抽取、口径校验、派生计算、差异定位、因果边界判断和待补证据识别，而不是直接把销量或接单改善归因为利润贡献。附件数量为1且属于具体公司季度材料，形式上符合优先使用1—2个核心文件和具体业务材料占比要求；题面没有倾倒数字清单或未来流程，但一次性指定了多项核验动作和完整PPT页面构成，首轮密度偏高。由于附件正文不可见，尚不能完成真实附件检查，也不能验证分部毛利率、内部抵消和第1至3页范围之间是否匹配。",
+    "oneSentenceMainTask": "依据宝钢股份2026年第一季度报告，判断产品结构与出口接单改善能否直接支持整体盈利改善，并以分部毛利率和证据边界解释其限制。",
+    "specificFilesDominant": true,
+    "specificObjectDecision": true,
+    "uniqueMainTask": true,
+    "variableDrift": [
+      "一级目录存在直接冲突：候选字段填写“商业与市场分析”，structureMapping却称选择“企业经营与战略决策”；输入也未提供飞书一级目录配置，无法验证哪一项为原样合法配置。",
+      "referenceBreakdown描述的是“无附件参与判断”的轻量试点路径选型任务，与候选中的宝钢季度经营分析在对象、事件、证据来源和交付物上均不一致，无法作为本题从真实附件正文抽取任务的来源链。",
+      "输入只提供附件计划、URL、哈希和摘要，没有提供可读取的PDF正文或页内证据，因而“真实附件已检查”和usedFactIds对应事实均无法独立验证。",
+      "题面将PDF第1至3页设为证据主线，同时要求核对主营分部收入、成本、毛利率和内部抵消；在正文缺失时无法确认这些信息是否位于限定页码内，存在证据范围与分析要求漂移风险。",
+      "deliverableRationale中的“产品经营会议”“产品经营复核专员及下游同事”等使用场景未显示为附件正文事实，可能属于先补工作场景再匹配附件。"
+    ]
+  }
+}

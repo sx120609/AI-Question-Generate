@@ -1,0 +1,150 @@
+{
+  "kind": "de-ai-question-rewrite",
+  "policyId": "mugua-gemini-de-ai-rewrite-v2",
+  "uid": "沈礼_20260719_l1_huaneng_segment_profit_06",
+  "generatedAt": "2026-07-18T18:13:19.834Z",
+  "provider": "mugua-openai-compatible",
+  "endpoint": "https://api.mugua.link/v1/chat/completions",
+  "model": "gemini-3.1-pro-preview",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 1335,
+    "outputTokens": 969,
+    "totalTokens": 2304
+  },
+  "promptHash": "d7c46eb7d5f2c2a2574e0e84823515995c68dbb116936d738ee1b3453b0d4fdd",
+  "sourceQuestionHash": "bd001a427ed475abe944dc4aa971218fb6ac4e91c0acb3da76b57f15aef2956f",
+  "rewrittenQuestionHash": "73eefc81f2a80accfe78aaf24865d76c29779d768050c16f97c16f19b9bea289",
+  "selectedAttempt": "direct-request-1",
+  "attempts": [
+    {
+      "attempt": 1,
+      "pass": true,
+      "visibleLength": 353,
+      "findingRules": []
+    }
+  ],
+  "rewrite": {
+    "question": "我正在做华能国际2026年一季度板块利润与经营驱动复核，这份结果供电力经营复盘时筛选需要进一步补取的板块经营数据。请根据《华能国际电力股份有限公司2026年第一季度报告.pdf》，把发电量、上网电价、燃料成本和境内各电力板块利润放在同一个证据框架里，核对本期与上年同期数据并复算同比变动，同时复核相关分项、比率、占比以及披露口径。\n\n你需要结合报告里披露的变动原因，判断哪些利润方向是有报告明确支持的，并给出明确结论。在这个过程中务必区分清楚可证事实、合理推断和待确认项，不要把相关线索直接写成完整的因果归因。\n\n请基于前述核对结果整理一个可下载、能在本地打开的2026年第一季度HTML分析页（html格式），页面里要呈现总量指标、原因证据、板块利润对比、证据边界、筛选说明和待补数据，里面的每一项数据都要标注PDF来源页码和未经审计状态，并且保留派生计算的过程。",
+    "requestContract": {
+      "requestSpan": "请基于前述核对结果整理一个可下载、能在本地打开的2026年第一季度HTML分析页（html格式），页面里要呈现总量指标、原因证据、板块利润对比、证据边界、筛选说明和待补数据，里面的每一项数据都要标注PDF来源页码和未经审计状态，并且保留派生计算的过程。",
+      "action": "整理",
+      "outputs": [
+        {
+          "format": "html",
+          "humanName": "HTML",
+          "purpose": "供后续执行和留痕使用"
+        }
+      ]
+    },
+    "roleTrace": {
+      "blockageSpan": "我正在做华能国际2026年一季度板块利润与经营驱动复核，这份结果供电力经营复盘时筛选需要进一步补取的板块经营数据。",
+      "motivationSpan": "",
+      "downstreamUseSpan": "请基于前述核对结果整理一个可下载、能在本地打开的2026年第一季度HTML分析页（html格式），页面里要呈现总量指标、原因证据、板块利润对比、证据边界、筛选说明和待补数据，里面的每一项数据都要标注PDF来源页码和未经审计状态，并且保留派生计算的过程。"
+    },
+    "usedFactIds": [
+      "huaneng-core-performance",
+      "huaneng-operating-cash",
+      "huaneng-income-profit-reason",
+      "huaneng-cost-inventory",
+      "huaneng-segment-profit",
+      "huaneng-boundary"
+    ],
+    "deliberatelyOmitted": [],
+    "flowStages": [
+      {
+        "stage": "证据归位",
+        "evidence": "事实包中的公开材料与待补信息",
+        "decision": "区分可确认规则和未知现场状态",
+        "next": "证据足够则形成执行对象，不足则进入补证"
+      },
+      {
+        "stage": "执行对象核对",
+        "evidence": "已归位的对象关系与状态记录",
+        "decision": "制作板块利润驱动交互页面，把总量指标、报告披露的原因、燃料成本线索和板块利润方向并列，缺少的量价成本贡献保持待补。",
+        "next": "符合条件则进入小范围验证，否则停止推进"
+      },
+      {
+        "stage": "小范围验证",
+        "evidence": "试点输入与实际返回记录",
+        "decision": "判断结果是否满足扩大范围的条件",
+        "next": "通过则推进，失败则退回原状态并留痕"
+      },
+      {
+        "stage": "交接收束",
+        "evidence": "判断依据、验证结果与回退记录",
+        "decision": "确认下游拿到一致结论",
+        "next": "供电力经营复盘时筛选需要进一步补取的板块经营数据。"
+      }
+    ],
+    "selfAudit": {
+      "factsPreserved": true,
+      "formatsPreserved": true,
+      "processChainExplicit": true,
+      "failureOrRollbackExplicit": true,
+      "noInventedFacts": true,
+      "noAiShell": true
+    }
+  },
+  "validation": {
+    "pass": true,
+    "visibleLength": 379,
+    "similarity": [
+      {
+        "referenceIndex": 1,
+        "editSimilarity": 0.5142045454545454,
+        "trigramJaccard": 0.49507389162561577,
+        "longestExactCopyRun": 30,
+        "longestExactCopySpan": "据《华能国际电力股份有限公司2026年第一季度报告.pdf》"
+      },
+      {
+        "referenceIndex": 2,
+        "editSimilarity": 0.06488549618320616,
+        "trigramJaccard": 0.00850546780072904,
+        "longestExactCopyRun": 4,
+        "longestExactCopySpan": "明确结论"
+      }
+    ],
+    "findings": [],
+    "factGuard": {
+      "ok": true,
+      "candidateAnchors": {
+        "numbers": [
+          "2026年"
+        ],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "unsupported": {
+        "numbers": [],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "errors": []
+    }
+  },
+  "deterministicStyleCleanup": {
+    "applied": true,
+    "rules": [
+      "remove-unbound-inline-page-range",
+      "remove-unbound-title-quotes",
+      "remove-banned-politeness",
+      "remove-upload-meta-language",
+      "restore-known-requester-context",
+      "restore-explicit-decision-request",
+      "restore-downloadable-format-requirement"
+    ],
+    "sourceApiQuestionHash": "204484613ff222c99b4509c5272c33cd912795b0d3da36473ed8cbeb63b2f22f"
+  },
+  "targetedRepair": {
+    "reason": "request_span_not_direct_request",
+    "promptHash": "d7c46eb7d5f2c2a2574e0e84823515995c68dbb116936d738ee1b3453b0d4fdd"
+  },
+  "postDeAiAudit": {
+    "pass": true,
+    "issues": [],
+    "factsPreserved": true,
+    "attachmentsPreserved": true,
+    "visibleTextClean": true
+  }
+}

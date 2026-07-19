@@ -1,0 +1,20 @@
+{
+  "kind": "local-codex-stage-response",
+  "stage": "03_pre_qa_structure_audit_attempt_1",
+  "model": "gpt-5.6-sol",
+  "provider": "local-codex-cli",
+  "completedAt": "2026-07-18T18:10:05.987Z",
+  "promptHash": "6ff2c93313963ff07ceab7789feda36658543df182721334752ffee623a0ab4d",
+  "parsed": {
+    "oneSentenceMainTask": "基于《华能国际电力股份有限公司2026年第一季度报告》建立可追溯证据框架，判断发电量、上网电价、燃料成本与境内电力板块利润的哪些变动方向获得报告明确支持，并以HTML分析页呈现。",
+    "uniqueMainTask": true,
+    "specificObjectDecision": true,
+    "specificFilesDominant": true,
+    "evidenceChain": "证据对象、期间和来源明确：唯一附件绑定华能国际电力股份有限公司及2026年第一季度，具体业务材料占比100%；任务要求从报告抽取量、电价、燃料成本和板块利润数据，核对披露口径与变动原因，保留页码、未经审计状态及派生计算过程，再将结论分为可证事实、合理推断和待确认项，形成对象级可追溯链。",
+    "l2ReasoningChain": "单一核心判断由多个共同服务的核验维度推进：总量与同比数据核对→发电量和上网电价披露原因核查→燃料成本线索核查→境内各电力板块利润方向对比→口径、期间及审计状态复核→区分明示事实、推断和未知→收束支持方向与待补数据；HTML制作及本地打开仅为承载判断的交付动作，题面未倾倒未来流程或数字清单。",
+    "variableDrift": [
+      "referenceBreakdown要求在互斥流程定位方案中作出唯一选择，而候选任务改为识别多个获明确支持的利润方向，保留了单一主要判断但不再是互斥方案定案。",
+      "attachmentPlan将产物称为“交互页面”并使用“利润驱动”，candidate仅明确HTML分析页且禁止将线索写成完整因果归因，交互性和驱动归因均不应被扩大。"
+    ]
+  }
+}

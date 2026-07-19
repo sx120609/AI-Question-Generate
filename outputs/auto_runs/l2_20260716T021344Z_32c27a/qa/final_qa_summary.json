@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "runId": "l2_20260716T021344Z_32c27a",
+  "generatedAt": "2026-07-16T02:44:00.000Z",
+  "sheet": {
+    "spreadsheetToken": "QOgrs2gCShzw5MtHNi3cSg9rnB7",
+    "sheetId": "ff061b",
+    "rows": [433, 434]
+  },
+  "status": "LOCAL_PASS_EXTERNAL_QA_UNAVAILABLE",
+  "localChecks": {
+    "aiStyleLint": "PASS",
+    "roleConsistencyGate": "PASS",
+    "naturalnessGate": "PASS",
+    "structureGate": "PASS",
+    "combinedReleaseGate": "PASS",
+    "productionTraceGate": "PASS",
+    "textCellReadback": "PASS",
+    "annotatorReadback": "PASS",
+    "attachmentObjectReadback": "PASS"
+  },
+  "rows": [
+    {
+      "sheetRow": 433,
+      "uid": "434",
+      "annotator": "周宇新",
+      "title": "华为云 IoTDA 存量 X.509 设备证书轮换前验证",
+      "productFormats": "xlsx, html",
+      "attachmentCount": 6,
+      "allAttachmentsHaveFileToken": true
+    },
+    {
+      "sheetRow": 434,
+      "uid": "435",
+      "annotator": "周宇新",
+      "title": "钉钉事件订阅从 HTTP 回调迁移到 Stream 模式切换评审",
+      "productFormats": "docx, xlsx",
+      "attachmentCount": 6,
+      "allAttachmentsHaveFileToken": true
+    }
+  ],
+  "externalQa": {
+    "columns": "AC:AD",
+    "status": "UNAVAILABLE",
+    "attempts": [
+      {
+        "transport": "node-fetch",
+        "result": "TLS connection reset before response"
+      },
+      {
+        "transport": "node-fetch-retry",
+        "result": "TLS connection reset before response"
+      },
+      {
+        "transport": "in-app-browser",
+        "result": "connection closed before page load"
+      },
+      {
+        "transport": "node-fetch-final-retry",
+        "result": "TLS connection reset before response"
+      }
+    ],
+    "readback": {
+      "AC433": null,
+      "AD433": null,
+      "AC434": null,
+      "AD434": null
+    }
+  },
+  "evidence": {
+    "candidate": "../drafts/l2_questions.tsv",
+    "finalReadback": "../feishu/final_readback_A433_Q434.json",
+    "externalQaReadback": "external_qa_readback.json",
+    "releaseReceipt": "../feishu/release_gate_receipt.json",
+    "productionTraceReceipt": "../feishu/production_trace_gate_receipt.json"
+  }
+}

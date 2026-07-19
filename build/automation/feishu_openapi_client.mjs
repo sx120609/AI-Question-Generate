@@ -80,7 +80,7 @@ function columnLabel(number) {
   return label;
 }
 
-function parseA1Span(range) {
+export function parseA1Span(range) {
   const address = String(range ?? "").split("!").at(-1)?.trim() ?? "";
   const match = address.match(/^\$?([A-Z]+)(?:\$?([1-9]\d*))?(?::\$?([A-Z]+)(?:\$?([1-9]\d*))?)?$/iu);
   if (!match) return null;
@@ -335,6 +335,16 @@ export async function createFeishuClient(options = {}) {
       const encodedRange = encodeURIComponent(range);
       const json = await requestJson("GET", `/sheets/v2/spreadsheets/${spreadsheetToken}/values/${encodedRange}`);
       return json.data?.valueRange;
+    },
+    async getDataValidations({ spreadsheetToken, range = "" }) {
+      const json = await requestJson("GET", `/sheets/v2/spreadsheets/${spreadsheetToken}/dataValidation`, {
+        params: { range },
+      });
+      return {
+        dataValidations: json.data?.dataValidations || [],
+        revision: json.data?.revision,
+        sheetId: json.data?.sheetId || "",
+      };
     },
   };
 }

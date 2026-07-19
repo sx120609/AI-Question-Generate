@@ -1,6 +1,9 @@
-export const NARRATIVE_LANGUAGE_POLICY_ID = "connected-plain-narrative-v1";
-export const MIN_ENUMERATION_DENG = 3;
+export const NARRATIVE_LANGUAGE_POLICY_ID = "enhanced-second-qa-language-v2";
+// A fixed minimum made writers insert “等” mechanically. Natural prose may
+// use it when a list genuinely needs an open-ended tail, but never by quota.
+export const MIN_ENUMERATION_DENG = 0;
 export const MAX_ENUMERATION_COMMAS_PER_SENTENCE = 1;
+export const MIN_EXPLANATORY_PARENTHESES = 3;
 
 const ALLOWED_RELATIONS = new Set([
   "因果", "解释", "递进", "转折", "条件", "时间推进", "对象延续", "任务收束",
@@ -60,31 +63,61 @@ export function findDisguisedCommaLists(value = "") {
   return findings;
 }
 
-export function evaluateNarrativeHardRules(value = "") {
+export function evaluateNarrativeHardRules(value = "", {
+  minimumExplanatoryParentheses = MIN_EXPLANATORY_PARENTHESES,
+  maximumEnumerationCommasPerSentence = MAX_ENUMERATION_COMMAS_PER_SENTENCE,
+  enforceEnumerationCommaLimit = false,
+  forbidSemicolon = true,
+} = {}) {
   const question = String(value);
   const findings = [];
-  if (/[；;]/u.test(question)) findings.push({ rule: "semicolon-forbidden" });
-  if (/\n\s*\n/u.test(question)) findings.push({ rule: "blank-line-forbidden" });
-  const dengCount = countEnumerationDeng(question);
-  if (dengCount < MIN_ENUMERATION_DENG) {
-    findings.push({ rule: "enumeration-deng-below-minimum", expected: MIN_ENUMERATION_DENG, actual: dengCount });
+  if (forbidSemicolon && /[；;]/u.test(question)) findings.push({ rule: "semicolon-forbidden" });
+  const openParentheses = (question.match(/（/gu) ?? []).length;
+  const closeParentheses = (question.match(/）/gu) ?? []).length;
+  const parenthesisPairs = Math.min(openParentheses, closeParentheses);
+  if (openParentheses !== closeParentheses) {
+    findings.push({ rule: "parentheses-unbalanced", open: openParentheses, close: closeParentheses });
   }
-  for (const [sentenceIndex, sentence] of splitNarrativeSentences(question).entries()) {
-    const count = (sentence.match(/、/gu) ?? []).length;
-    if (count > MAX_ENUMERATION_COMMAS_PER_SENTENCE) {
-      findings.push({
-        rule: "enumeration-comma-over-limit",
-        sentenceIndex: sentenceIndex + 1,
-        expectedMaximum: MAX_ENUMERATION_COMMAS_PER_SENTENCE,
-        actual: count,
-        sentence,
-      });
+  if (parenthesisPairs < minimumExplanatoryParentheses) {
+    findings.push({
+      rule: "explanatory-parentheses-below-minimum",
+      expectedMinimum: minimumExplanatoryParentheses,
+      actual: parenthesisPairs,
+    });
+  }
+  if (enforceEnumerationCommaLimit) {
+    for (const [sentenceIndex, sentence] of splitNarrativeSentences(question).entries()) {
+      const count = (sentence.match(/、/gu) ?? []).length;
+      if (count > maximumEnumerationCommasPerSentence) {
+        findings.push({
+          rule: "enumeration-comma-over-limit",
+          sentenceIndex: sentenceIndex + 1,
+          expectedMaximum: maximumEnumerationCommasPerSentence,
+          actual: count,
+          sentence,
+        });
+      }
     }
   }
   for (const disguised of findDisguisedCommaLists(question)) {
     findings.push({ rule: "comma-disguised-list", ...disguised });
   }
   return findings;
+}
+
+export function collectNarrativeLanguageAdvisories(value = "", {
+  recommendedEnumerationCommasPerSentence = MAX_ENUMERATION_COMMAS_PER_SENTENCE,
+} = {}) {
+  return splitNarrativeSentences(value).flatMap((sentence, sentenceIndex) => {
+    const count = (sentence.match(/、/gu) ?? []).length;
+    return count > recommendedEnumerationCommasPerSentence ? [{
+      rule: "enumeration-comma-density-advisory",
+      sentenceIndex: sentenceIndex + 1,
+      recommendedMaximum: recommendedEnumerationCommasPerSentence,
+      actual: count,
+      sentence,
+    }] : [];
+  });
 }
 
 function validateLinkSequence(links, expectedCount, label, findings) {

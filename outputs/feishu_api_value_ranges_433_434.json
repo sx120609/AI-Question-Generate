@@ -1,0 +1,201 @@
+{
+  "generatedAt": "2026-07-16T06:23:34.831Z",
+  "apply": true,
+  "transport": "auto",
+  "target": {
+    "spreadsheetToken": "QOgrs2gCShzw5MtHNi3cSg9rnB7",
+    "sheetId": "ff061b",
+    "wikiNode": {
+      "creator": "ou_a940eadbf20d7c592f3ea6c727c252f1",
+      "has_child": false,
+      "node_create_time": "1780231834",
+      "node_creator": "ou_a940eadbf20d7c592f3ea6c727c252f1",
+      "node_token": "JJ9Mw5Hxsit09ekv1pPc33RvnXd",
+      "node_type": "origin",
+      "obj_create_time": "1780231834",
+      "obj_edit_time": "1784182795",
+      "obj_token": "QOgrs2gCShzw5MtHNi3cSg9rnB7",
+      "obj_type": "sheet",
+      "origin_node_token": "JJ9Mw5Hxsit09ekv1pPc33RvnXd",
+      "origin_space_id": "7569089364395999235",
+      "owner": "ou_a940eadbf20d7c592f3ea6c727c252f1",
+      "parent_node_token": "",
+      "space_id": "7569089364395999235",
+      "title": "叶老师对接群新人测试表"
+    },
+    "meta": null
+  },
+  "planPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\feishu\\feishu_fill_plan.json",
+  "rows": [
+    433,
+    434
+  ],
+  "questionPresentation": {
+    "required": true,
+    "verified": true,
+    "mode": "narrative-no-blank-lines-v5",
+    "paragraphCounts": {
+      "B433": 6,
+      "B434": 5
+    },
+    "attachmentContentLineCounts": {}
+  },
+  "releaseGate": {
+    "required": true,
+    "verified": true,
+    "receiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\feishu\\release_gate_receipt.json",
+    "releaseGateId": "combined-release-gate-v2",
+    "policyId": "l2-corpus-calibrated-source-driven-v5",
+    "policyVersion": 5,
+    "naturalnessStatus": "PASS",
+    "roleConsistencyStatus": "PASS",
+    "sceneCardGateId": "scene-card-role-consistency-v1",
+    "structureStatus": "PASS"
+  },
+  "productionProcess": {
+    "required": true,
+    "verified": true,
+    "receiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\feishu\\production_trace_gate_receipt.json",
+    "gateId": "l2-production-trace-gate-v4",
+    "status": "PASS"
+  },
+  "valueRangeCount": 2,
+  "skipped": [
+    {
+      "address": "A433",
+      "reason": "not-included"
+    },
+    {
+      "address": "C433",
+      "reason": "not-included"
+    },
+    {
+      "address": "D433",
+      "reason": "not-included"
+    },
+    {
+      "address": "E433",
+      "reason": "not-included"
+    },
+    {
+      "address": "F433",
+      "reason": "not-included"
+    },
+    {
+      "address": "G433",
+      "reason": "not-included"
+    },
+    {
+      "address": "H433",
+      "reason": "not-included"
+    },
+    {
+      "address": "I433",
+      "reason": "not-included"
+    },
+    {
+      "address": "J433",
+      "reason": "not-included"
+    },
+    {
+      "address": "K433",
+      "reason": "not-included"
+    },
+    {
+      "address": "L433",
+      "reason": "not-included"
+    },
+    {
+      "address": "M433",
+      "reason": "not-included"
+    },
+    {
+      "address": "N433",
+      "reason": "not-included"
+    },
+    {
+      "address": "O433",
+      "reason": "not-included"
+    },
+    {
+      "address": "A434",
+      "reason": "not-included"
+    },
+    {
+      "address": "C434",
+      "reason": "not-included"
+    },
+    {
+      "address": "D434",
+      "reason": "not-included"
+    },
+    {
+      "address": "E434",
+      "reason": "not-included"
+    },
+    {
+      "address": "F434",
+      "reason": "not-included"
+    },
+    {
+      "address": "G434",
+      "reason": "not-included"
+    },
+    {
+      "address": "H434",
+      "reason": "not-included"
+    },
+    {
+      "address": "I434",
+      "reason": "not-included"
+    },
+    {
+      "address": "J434",
+      "reason": "not-included"
+    },
+    {
+      "address": "K434",
+      "reason": "not-included"
+    },
+    {
+      "address": "L434",
+      "reason": "not-included"
+    },
+    {
+      "address": "M434",
+      "reason": "not-included"
+    },
+    {
+      "address": "N434",
+      "reason": "not-included"
+    },
+    {
+      "address": "O434",
+      "reason": "not-included"
+    }
+  ],
+  "valueRanges": [
+    {
+      "range": "ff061b!B433:B433",
+      "values": [
+        [
+          "存量X.509设备已经到了需要轮换证书的阶段，同时要保留可验证的停用与回滚路径。内部设备清单和当前证书关联信息还没有交到我手上，能拿到的公开材料只能确认华为云平台的通用规则，无法确认本租户里每台设备与证书的实际对应。\n从公开文档能读到的事实分成几类。注册X.509证书认证设备的入口给出了接入参数与 MQTT 的接入范围，设备证书管理侧说明了配额限制以及到期告警与停用后对连接的影响。状态更新接口列出了更新证书时的请求字段和响应字段，证书列表查询接口给出了查询路径与返回结构。这些内容界定了平台允许做什么，但接口文档本身不代表任何生产状态已经变更，示例调测里的回连结果也不能当作本批设备的回连证据。\n需要做出的判断是本批设备现在是否具备进入证书轮换的条件。这个判断的前提是华为云生产租户的设备证书映射原始台账原件，只有拿到台账才能把设备与证书指纹对应起来并核对状态。台账缺位时不能用公开文档、SDK 示例或模拟记录补写成已经发生的验证结果，此时结论只能停在条件不足并说明缺哪一项。\n进入判断的证据分成两层。平台规则一层来自公开文档，用来确认配额和到期告警这些边界条件是否满足。设备事实一层来自台账与查询接口在获授权环境里的实际返回，用来确认每台设备的证书指纹与当前状态。证书指纹核对是进入轮换的第一道条件，指纹与台账对不上的设备直接排除在本批之外。到期时间用于排序，临近到期的设备优先进入试点批次而不是一次全部替换。设备回连是替换后的验证动作，一台设备完成状态更新后要在获授权环境里用新证书重新接入并确认连接稳定，这台设备的轮换才算有效。两层证据缺失或对不上的设备都保持在待核状态而不写入可轮换名单。\n请把上述规则和字段整理成一份工作簿，用 Excel 呈现，让每台设备的证书指纹、当前状态和到期时间能逐行核对，轮换批次与验证结果也各留一列。另做一份操作页用 HTML 呈现，把分批轮换、设备回连验证以及状态更新与回滚的动作按可执行顺序排开，每一步标明前置条件和退回位置。设备回连验证不通过的设备退回上一批而不进入状态更新，已经更新但回连失败的设备按操作页上的回滚路径恢复到轮换前的证书状态。\n启动条件是否成立不由单份材料决定，而要看工作簿里的可轮换名单是否非空以及操作页上的回滚路径对每个批次是否都可用。可轮换名单为空或回滚路径缺失时，交付要写明当前不具备启动条件以及后续需要补齐的输入。工作簿由设备运维同事用来筛查哪些设备可以进入试点，操作页由值班同事在获授权环境里按步骤执行试点与回滚，两份产物一起作为启动条件判断记录一并移交。"
+        ]
+      ],
+      "address": "B433",
+      "field": "题目",
+      "chars": 1067
+    },
+    {
+      "range": "ff061b!B434:B434",
+      "values": [
+        [
+          "现有钉钉事件订阅准备从 HTTP 回调迁移到 Stream 模式，当前需要在切换演练前完成迁移评审和验证矩阵。现在生产订阅清单和运行配置尚未拿到手，能确认的只有两条接入路径的存在，还不足以判断本应用当前实际选用哪种方式，也不清楚是否具备并行保留能力。请依据下面六份材料，把切换条件、验证证据和最小回退步骤整理成可供放行使用的说明。\n《钉钉配置事件推送方式》给出 Stream、SyncHTTP 和 HTTP 三类配置入口，本应用的实际选择与并行能力需要结合生产配置核对。《钉钉事件订阅与回调加解密》说明 HTTP 方式下 JSON 回调的安全校验流程，其中生产 token 与回调地址都不在材料范围内。《钉钉开放平台全局错误码》提供接口失败时的错误码检索入口，具体故障原因仍要结合运行日志才能定位。《钉钉人员变更 Stream 事件》给出人员异动 v2 的事件页面与字段入口，页面存在并不代表本应用已经订阅该事件。两份 SDK 说明分别覆盖 Java 与 Node 客户端的初始化和事件处理入口，其中示例凭证不能复制到生产，实际运行语言与部署配置还需项目组补充。\n判断的第一步是把两种接入路径的差异落到具体条目上，既包括鉴权方式和回调地址是否必需，也包括事件推送的触发形态以及各自依赖的配置项。每一条差异都要指向材料里的具体页面。钉钉应用生产配置导出文件等材料状态单独登记，公开文档和 SDK 示例负责说明规则，生产验证结果由演练记录提供。只有当生产订阅清单和运行配置齐备，导出原件也到位，且每个在订阅事件都能在两种路径下对上鉴权与幂等键处理，材料才算够进入切换演练，否则评审说明只能给出待补结论。\n验证矩阵按事件逐条展开，每一行记录事件名称和迁移前后的推送方式，同时留下鉴权校验结果与幂等键是否稳定，再补上失败时对应的错误码及其证据来源。出现鉴权失败或配置类错误码时，该行记录为不通过并返回补料，修正后重新验证。最小回退步骤要写清从 Stream 切回 HTTP 回调所需的动作和先决条件，保证演练受阻时能回到迁移前的可用状态，也让退回的事件有明确的重新验证路径。\n请把评审说明写成一份 Word 文档，把验证矩阵做成一份 Excel 表格。企业应用集成团队会拿评审说明作为切换演练的放行依据，用验证矩阵逐条保留每个事件的证据，供后续复核与问题追溯时对照使用。"
+        ]
+      ],
+      "address": "B434",
+      "field": "题目",
+      "chars": 981
+    }
+  ]
+}

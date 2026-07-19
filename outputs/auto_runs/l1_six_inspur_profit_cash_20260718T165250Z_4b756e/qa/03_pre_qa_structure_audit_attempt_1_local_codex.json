@@ -1,0 +1,20 @@
+{
+  "kind": "local-codex-stage-response",
+  "stage": "03_pre_qa_structure_audit_attempt_1",
+  "model": "gpt-5.6-sol",
+  "provider": "local-codex-cli",
+  "completedAt": "2026-07-18T17:42:43.908Z",
+  "promptHash": "df96a4894a92a2c2f1d592c97442d4352dc05f03b6e9a9ea303c6ddc4aa4cc85",
+  "parsed": {
+    "oneSentenceMainTask": "依据浪潮信息2026年第一季度报告，核对收入、利润与经营现金流分化及应收、预收和融资节奏线索，区分原文、计算、推断和待确认项并形成可追溯Excel底稿。",
+    "uniqueMainTask": true,
+    "specificObjectDecision": true,
+    "specificFilesDominant": true,
+    "evidenceChain": "证据链以唯一真实附件《浪潮电子信息产业股份有限公司2026年第一季度报告.pdf》为起点，锁定000977及2026年一季度，引用第2至3页披露数据，复算收入、利润、经营现金流及相关科目变化，再将应收账款、合同负债和短期借款变化作为节奏线索进行有限推断，同时标注未经审计状态、页码、计算口径、证据边界及客户、项目、账龄等缺口；附件数为1且具体业务材料占比100%，对象级链路完整，但输入未展示附件正文摘录，真实性核验目前依赖附件元数据和事实标识。",
+    "l2ReasoningChain": "该题标注为L1探索型，首轮围绕一个主要判断推进：先确认报告原文能够支持的业绩与现金流差异，再做派生计算和科目联动核验，随后识别可能的回款、预收与融资节奏，最后明确不能据此形成完整因果归因及仍需补充的对象级明细；题面没有要求首轮倾倒后续完整计算或未来流程，Excel属于承载复算、溯源和后续回填的附带交付。",
+    "variableDrift": [
+      "一级目录“科技与产品研发”与附件正文及任务核心的财务经营复核对象不一致，存在目录变量漂移，应改选飞书配置项中与科技企业经营分析、财务经营复核或经营质量核验相符的一级目录。",
+      "candidate.mainTask把“形成Excel”并入主任务表述，attachmentPlan.mainDecision又以“建立核对表”开头，产物动作相对题面中的核心业务判断有所前移，但尚未形成第二个独立主任务。"
+    ]
+  }
+}

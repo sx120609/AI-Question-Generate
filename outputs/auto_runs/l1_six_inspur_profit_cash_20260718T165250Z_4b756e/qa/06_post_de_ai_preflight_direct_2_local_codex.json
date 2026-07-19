@@ -1,0 +1,21 @@
+{
+  "kind": "local-codex-stage-response",
+  "stage": "06_post_de_ai_preflight_direct_2",
+  "model": "gpt-5.6-sol",
+  "provider": "local-codex-cli",
+  "completedAt": "2026-07-18T18:04:13.663Z",
+  "promptHash": "2c6d21ce345946a4ec9394e6df1dd295d9f248cf559594f0b081817e67be8d5a",
+  "parsed": {
+    "pass": false,
+    "issues": [
+      {
+        "rule": "拦截“麻烦”等禁用措辞",
+        "evidence": "outboundQuestion中使用了“麻烦从《浪潮电子信息产业股份有限公司2026年第一季度报告.pdf》中复核……”",
+        "repair": "删除“麻烦”，改为直接、自然的工作请求表达。"
+      }
+    ],
+    "factsPreserved": true,
+    "attachmentsPreserved": true,
+    "visibleTextClean": false
+  }
+}

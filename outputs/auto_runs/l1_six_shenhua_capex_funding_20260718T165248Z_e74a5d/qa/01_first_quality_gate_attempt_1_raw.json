@@ -1,0 +1,12 @@
+{
+  "runnerId": "exact-two-quality-gates-v2-codex-session",
+  "provider": "codex-session",
+  "model": "gpt-5.6-sol",
+  "sourcePromptHash": "454723865e5ba3279da5aeb39347e8df97fb6c5df35f505e350cc9b64a5fa5a5",
+  "renderedPromptHash": "2ffe682f7e3f1d47e5a7cdb33d0c7f0f284a1c70649a21fb52b85ab6dbc22512",
+  "completedAt": "2026-07-18T17:31:15.513Z",
+  "parsed": {
+    "pass": true,
+    "issues": []
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "generatedAt": "2026-07-16T02:33:36.241Z",
+  "sourcePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\drafts\\l2_questions.tsv",
+  "sheetRows": [
+    433,
+    434
+  ],
+  "count": 2,
+  "note": "Test-sheet override requested by the user. Write annotator name separately from managed generated identities.",
+  "columnMap": [
+    {
+      "field": "标注专家姓名",
+      "column": "Q"
+    }
+  ],
+  "rows": [
+    {
+      "sheetRow": 433,
+      "updates": [
+        {
+          "address": "Q433",
+          "column": "Q",
+          "field": "标注专家姓名",
+          "value": "周宇新",
+          "chars": 3,
+          "hasNewlines": false,
+          "preview": "周宇新"
+        }
+      ]
+    },
+    {
+      "sheetRow": 434,
+      "updates": [
+        {
+          "address": "Q434",
+          "column": "Q",
+          "field": "标注专家姓名",
+          "value": "周宇新",
+          "chars": 3,
+          "hasNewlines": false,
+          "preview": "周宇新"
+        }
+      ]
+    }
+  ]
+}

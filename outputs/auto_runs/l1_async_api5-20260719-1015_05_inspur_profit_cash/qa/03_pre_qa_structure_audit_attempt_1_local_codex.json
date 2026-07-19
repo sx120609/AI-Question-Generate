@@ -1,0 +1,48 @@
+{
+  "kind": "codex-stage-response",
+  "stage": "03_pre_qa_structure_audit_attempt_1",
+  "model": "gpt-5.6-sol",
+  "provider": "openai-compatible-responses-api",
+  "responseId": "resp_0adf397927f09279016a5c307afae48198bf086a350c312440",
+  "requestId": "e7b4e05d-92e3-4b62-8096-4f41658034b3",
+  "completedAt": "2026-07-19T02:04:42.433Z",
+  "promptHash": "35d275d6fef1bd76099ca044af37c9bb1c6a236277b4cead99497d31ea162804",
+  "usage": {
+    "metered": true,
+    "source": "responses-api",
+    "requestCount": 1,
+    "inputTokens": 2786,
+    "cachedInputTokens": 0,
+    "uncachedInputTokens": 2786,
+    "outputTokens": 1996,
+    "reasoningTokens": 1317,
+    "visibleOutputTokens": 679,
+    "totalTokens": 4782,
+    "providerUsage": {
+      "input_tokens": 2786,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 1996,
+      "output_tokens_details": {
+        "reasoning_tokens": 1317
+      },
+      "total_tokens": 4782
+    }
+  },
+  "parsed": {
+    "evidenceChain": "计划中的证据链为：指定季度报告原件（浪潮电子信息产业股份有限公司、2026年第一季度）→核对本期、上年同期及期初口径→复算收入、利润与经营现金流方向→结合应收账款、合同负债和融资变化检查披露解释及冲突→区分可证事实、合理推断与待确认项→形成带来源页码、计算过程和待补栏的Excel。该链条在结构上闭合，且唯一附件为对象级具体业务材料；但输入未提供附件正文摘录、实际页码、核心数值、变动原因原文或usedFactIds对应证据，因此无法独立确认已检查真实附件正文及对象级证据完整性，目前只能确认计划级链条，不能确认事实级链条。",
+    "l2ReasoningChain": "候选明确标注为L1探索型，未设置独立L2任务。其L1主体确实推进了期间口径、利润现金差异、披露冲突、派生计算口径及证据边界等探索环节；应收、合同负债和融资三个维度共同服务于“公开披露能支持何种程度的营运节奏判断”这一主要判断。附件数量为1个，具体业务材料占比按计划为100%，未在题面倾倒具体数字清单或完整未来流程，导出Excel也不是孤立的格式操作。不过，缺少可供审计的附件正文证据，故不能验证复算路径、原因一致性检查和证据分层是否真正建立在报告原文上。",
+    "oneSentenceMainTask": "基于季度报告制作可追溯的利润现金与营运节奏Excel，判断公开披露能够支持的回款、预收和融资节奏线索及其证据边界。",
+    "specificFilesDominant": true,
+    "specificObjectDecision": true,
+    "uniqueMainTask": true,
+    "variableDrift": [
+      "一级目录存在直接冲突：candidate字段填写“科技与产品研发”，structureMapping却称选择“企业经营与战略决策”；二者不能同时成立，且输入未附飞书配置项，无法验证哪一项是可原样选择的有效一级目录。",
+      "当前业务对象是上市公司季度经营与财务复核，与“科技与产品研发”的目录语义匹配度不足，二级目录“科技企业经营复核”也可能把企业行业属性误当成任务业务类别。",
+      "referenceBreakdown中的行业材料、候选能力引入和内部方案评审场景与当前浪潮信息季度报告复核并非同一对象或证据链，只能作为结构参考，不能充当当前任务的附件证据。",
+      "usedFactIds仅列出标识符，未给出对应正文、数值、页码和引用关系；附件计划中的summary与uniqueContent属于概括性声明，尚不能替代从真实附件正文抽取的对象级证据。"
+    ]
+  }
+}

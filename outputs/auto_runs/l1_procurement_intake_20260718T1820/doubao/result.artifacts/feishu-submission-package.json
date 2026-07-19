@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 2,
+  "kind": "doubao-feishu-submission-package",
+  "status": "READY_NOT_SUBMITTED",
+  "generatedAt": "2026-07-18T10:56:09.729Z",
+  "jobId": "l1-procurement-intake-20260718-01",
+  "configHash": "c3a1090bdb6d9e44310565b2566f85648d7e3d39b1aa98e48e5bf6c26b9dcd02",
+  "roundCount": 6,
+  "productAcceptance": {
+    "accepted": true,
+    "items": [
+      {
+        "accepted": true,
+        "artifactBacked": true,
+        "deliveredFormat": "excel",
+        "evidenceQuote": "台式机批量采购项目核对材料_完整版.xlsx",
+        "requestedFormat": "excel",
+        "status": "exact"
+      }
+    ],
+    "overall": "accepted",
+    "requirement": {
+      "allowEquivalentOnline": true,
+      "allowUnavailableBestEffort": true,
+      "required": true,
+      "requestedFormats": [
+        "excel"
+      ]
+    }
+  },
+  "conversation": {
+    "conversationId": "38435295487181826",
+    "feedbackUrl": "https://www.doubao.com/thread/xf11f4ddd052887c58e95c27aa70498ed",
+    "logId": "20260718185317631ACC4405B2D2B7B8F7",
+    "shareLink": "https://www.doubao.com/thread/x691f6fc5094c873aa147e6fc1004c229",
+    "allMessagesSelected": true,
+    "selectedMessageCount": 5
+  },
+  "rows": [
+    {
+      "roundNumber": 1,
+      "prompt": "我在这条消息里一次性上传十份材料。这些文件来自同一个台式计算机批量采购项目。里面有成交公告和配送计划，也有采购文件和得分排序表。另附六份技术规范偏离表。采购结算和设备抽检同事准备做一份可下载的 Excel 核对表。现场后续还要继续补录订单和到货信息。验收记录目前也在整理。后续核对都要从原件取证。你先整理一份材料清单。逐字列出十个文件名并标明每份是否完整读取。缺失或损坏的项目统一记为待核。无法对应到本项目的材料同样记为待核。表格以后会交给采购结算和设备抽检同事继续回填。来源名称保持与原件一致，方便接着定位页码和表格行号。",
+      "responseIdentity": "block_686eeee0-8293-11f1-a40a-b735be607447",
+      "humanEvaluation": {
+        "labels": [
+          "其他"
+        ],
+        "note": "本轮回复给出了7份完整读取和3份部分读取的汇总。也说明了部分读取的原因。但没有逐字列出十个附件文件名。尤其是将六份技术规范偏离表概括为供应商和配置名称。成交公告、配送计划及采购文件也只写了材料类型。这导致无法逐份核对原始文件名与读取状态。本轮材料接收确认只能部分使用。",
+        "vote": "dislike"
+      }
+    },
+    {
+      "roundNumber": 2,
+      "prompt": "你重新核对一下已接收的材料，逐字列出十个原始文件名。在每个文件名后标注完整读取、部分读取或待核。部分读取的项补充说明未读取的具体范围，方便我逐份确认材料接收状态。",
+      "responseIdentity": "block_c12dbe80-8293-11f1-a40a-b735be607447",
+      "humanEvaluation": {
+        "labels": [
+          "其他",
+          "内容准确",
+          "易于理解",
+          "内容完善"
+        ],
+        "note": "本轮回复列出了十个原始文件名和每份材料的读取状态。三份部分读取的材料给出了已读比例与未读范围。特别是明确了配送计划从第139条起尚未读取。这些细节很方便后续按原表继续核对。",
+        "vote": "like"
+      }
+    },
+    {
+      "roundNumber": 3,
+      "prompt": "你补读一下“台式机 202606 计划公示.xls”第139条及以后的全部配送行。按原表行号汇总配送地点和数量，附上配送时间。字段缺失项标为待核。",
+      "responseIdentity": "block_0ee845f0-8294-11f1-a40a-b735be607447",
+      "humanEvaluation": {
+        "labels": [
+          "内容完善",
+          "易于理解",
+          "其他"
+        ],
+        "note": "本轮给出了第139至535行共397条记录的校验结果。这部分包含4744台设备。全表5889台的校验结果也很明确。原表缺少的配送时间已统一标为待核。配送计划核对基本可用。该结果的正文仅展示大单量单位。这里缺少逐行呈现的配送地点和原表行号。产物卡片目前只显示总表标题。这导致无法直接核验新建明细页是否完整包含了397条记录。",
+        "vote": "like"
+      }
+    },
+    {
+      "roundNumber": 4,
+      "prompt": "你以全表535条和5889台的配送口径为基准，核对成交结果公告中的各配置成交供应商和单价。接着计算各配置金额和成交总金额。把每个数字对应到公告区段或配送表行号，差异项统一标为待核。",
+      "responseIdentity": "block_2e5e5c70-8295-11f1-a40a-b735be607447",
+      "humanEvaluation": {
+        "labels": [
+          "其他",
+          "内容准确",
+          "易于理解"
+        ],
+        "note": "这轮回复列出了六个配置的供应商与数量。单价和金额也都有体现。合计5889台以及2894.5596万元的计算结果能相互核验。引用部分目前只写到“六包成交区段”和两段配送行汇总。每个配置的数量与成交信息还处于未定位到具体公告区段或配送表行号的状态。",
+        "vote": "like"
+      }
+    },
+    {
+      "roundNumber": 5,
+      "prompt": "你已经核准六个配置共5889台，成交总额为2894.5596万元。接下来依据六份技术规范偏离表按配置整理关键规格。同时提取对应的偏离结论以及原件页码。无法定位或存在冲突的项目标为待核。最后把这些内容写入现有核对表。",
+      "responseIdentity": "block_b69c7180-8295-11f1-a40a-b735be607447",
+      "humanEvaluation": {
+        "labels": [
+          "内容完善",
+          "易于理解",
+          "其他"
+        ],
+        "note": "本轮回复已经把六个配置的关键规格和偏离结论写入现有核对表。该结果明确了配置1与配置2需要回到原件第1页复核。这处汇总遗漏了逐项展示的规格原文定位。配置2的4950元与上一轮成交单价4585元存在口径差异。",
+        "vote": "like"
+      }
+    },
+    {
+      "roundNumber": 6,
+      "prompt": "你把现有核对表导出为可下载的 Excel 文件。导出时完整保留现有工作表以及来源索引和待核清单。确保文件能正常打开。现场回填列保持可编辑状态。另外在规格证据中标明配置2两个单价的来源口径。",
+      "responseIdentity": "block_e138d720-8296-11f1-a40a-b735be607447",
+      "humanEvaluation": {
+        "labels": [
+          "其他"
+        ],
+        "note": "本轮提供了可下载的 Excel 产物。说明了回填列可编辑。不过配送工作表只包含第139至535行的397条记录。这里没有纳入此前核准口径中的第1至138行。最终现场核对表因此未覆盖全表535条配送记录。这与完整交付目标存在关键缺口。",
+        "vote": "dislike"
+      }
+    }
+  ],
+  "target": null,
+  "writeback": {
+    "applied": false,
+    "policy": "prepare-only-until-an-exact-feishu-target-row-and-field-map-are-authorized",
+    "readbackVerified": false
+  }
+}

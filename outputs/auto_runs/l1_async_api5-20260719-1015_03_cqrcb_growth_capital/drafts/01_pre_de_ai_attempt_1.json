@@ -1,0 +1,173 @@
+{
+  "topic": {
+    "topicId": "cqrcb-2026q1-growth-capital-constraint",
+    "title": "渝农商行2026年一季度增长与资本约束复核",
+    "primaryCategory": "金融服务与财富投研",
+    "secondaryCategory": "银行经营复核",
+    "tertiaryCategory": "增长资本与资产质量",
+    "businessScenario": "银行经营复核人员需要判断资产扩张和收入增长是否伴随资本与回报指标承压。",
+    "mainDecision": "把增长、资本充足、杠杆和资产质量放到同一证据框架中，区分改善项与约束项。",
+    "role": "银行经营复核专员",
+    "artifactSummary": "增长与资本约束复核简报",
+    "artifactFormats": "docx",
+    "keywords": [
+      "渝农商行",
+      "资本充足率",
+      "杠杆率",
+      "资产质量",
+      "贷款增长"
+    ],
+    "attachmentSummary": "披露渝农商行一季度收入利润、资产负债增长、资本充足率、杠杆率、流动性和资产质量指标。"
+  },
+  "sceneCard": {
+    "schemaVersion": 1,
+    "policyId": "situated-requester-v1",
+    "topicId": "cqrcb-2026q1-growth-capital-constraint",
+    "personaId": "cqrcb_growth_capital_api5-20260719-1015-requester-01",
+    "requester": {
+      "functionalRole": "银行经营复核专员",
+      "organizationType": "企业经营与研究团队",
+      "department": "",
+      "responsibility": "把重庆农村商业银行股份有限公司公开季度报告整理成可追溯的增长与资本约束复核简报",
+      "authorityBoundary": "只负责复核公开披露、派生计算和证据边界，无权把未披露的业务明细写成确定归因。",
+      "recipientRelation": "银行经营复核专员及下游同事"
+    },
+    "scene": {
+      "workflowStage": "银行经营复核人员需要判断资产扩张和收入增长是否伴随资本与回报指标承压。",
+      "trigger": "2026年一季度营业收入78.301亿元，同比增长8.39%；归母净利润39.346亿元，同比增长5.07%；年化ROA为0.95%，同比下降0.04个百分点；年化加权ROE为11.95%，同比下降0.05个百分点。",
+      "currentBlockage": "附件没有披露资本充足率与杠杆率下降对应的具体业务条线资本消耗。",
+      "mainDecision": "形成一份增长与资本约束复核简报，把收入利润、资产负债增速、资本比率、杠杆和资产质量放在同一页级证据链中，并列出需要补充的条线资本数据。",
+      "downstreamUse": "供银行经营分析同事决定下一步需要补取哪些资本和业务条线资料。"
+    },
+    "informationBoundary": {
+      "knownFactIds": [
+        "cqrcb-profit-return",
+        "cqrcb-balance-growth",
+        "cqrcb-capital-ratios",
+        "cqrcb-leverage",
+        "cqrcb-asset-quality",
+        "cqrcb-audit-boundary"
+      ],
+      "availableMaterialIds": [
+        "cqrcb-2026q1-report"
+      ],
+      "unknowns": [
+        "附件没有披露资本充足率与杠杆率下降对应的具体业务条线资本消耗。",
+        "单季数据不能单独证明全年资产扩张速度和回报水平的持续性。"
+      ],
+      "forbiddenInferences": [
+        "未由季度报告披露的业务明细不得写成确定事实",
+        "派生计算只能使用事实账本中的数值和口径",
+        "未经审计的季度数据不得描述为审计确认值",
+        "相关性和变动线索不得直接表述为因果归因"
+      ]
+    },
+    "voice": {
+      "channel": "内部业务复核消息",
+      "formality": "直接、克制、以证据和可继续回填为导向",
+      "domainVocabulary": [
+        "渝农商行",
+        "资本充足率",
+        "杠杆率",
+        "资产质量",
+        "贷款增长"
+      ],
+      "avoidVocabulary": [
+        "全链路",
+        "闭环",
+        "赋能",
+        "深度洞察",
+        "麻烦",
+        "劳烦",
+        "烦请",
+        "辛苦",
+        "刚传了"
+      ]
+    },
+    "maskTerms": [
+      "重庆农村商业银行股份有限公司",
+      "601077",
+      "渝农商行",
+      "资本充足率",
+      "杠杆率",
+      "资产质量"
+    ],
+    "evidenceBindings": [
+      {
+        "claim": "2026年一季度营业收入78.301亿元，同比增长8.39%；归母净利润39.346亿元，同比增长5.07%；年化ROA为0.95%，同比下降0.04个百分点；年化加权ROE为11.95%，同比下降0.05个百分点。",
+        "factIds": [
+          "cqrcb-profit-return"
+        ]
+      },
+      {
+        "claim": "附件没有披露资本充足率与杠杆率下降对应的具体业务条线资本消耗。",
+        "factIds": [
+          "cqrcb-audit-boundary",
+          "cqrcb-profit-return"
+        ]
+      },
+      {
+        "claim": "形成一份增长与资本约束复核简报，把收入利润、资产负债增速、资本比率、杠杆和资产质量放在同一页级证据链中，并列出需要补充的条线资本数据。",
+        "factIds": [
+          "cqrcb-profit-return",
+          "cqrcb-audit-boundary"
+        ]
+      }
+    ]
+  },
+  "attachmentPlan": {
+    "mainDecision": "形成一份增长与资本约束复核简报，把收入利润、资产负债增速、资本比率、杠杆和资产质量放在同一页级证据链中，并列出需要补充的条线资本数据。",
+    "attachments": [
+      {
+        "name": "重庆农村商业银行股份有限公司2026年第一季度报告.pdf",
+        "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-29/1225237379.PDF",
+        "format": "pdf",
+        "classification": "specific-business",
+        "objectLevel": true,
+        "timeAnchor": "2026年1月1日至3月31日及2026年3月31日",
+        "specificityEvidence": {
+          "object": "重庆农村商业银行股份有限公司证券代码601077",
+          "periodOrEvent": "2026年1月1日至3月31日及2026年3月31日",
+          "uniqueContent": "披露渝农商行一季度收入利润、资产负债增长、资本充足率、杠杆率、流动性和资产质量指标。"
+        },
+        "summary": "披露渝农商行一季度收入利润、资产负债增长、资本充足率、杠杆率、流动性和资产质量指标。",
+        "localPath": "重庆农村商业银行股份有限公司2026年第一季度报告.pdf",
+        "sha256": "261e993750d5c1f5b6b430c583d1a24cff13e43ae1aa7206bb78e102b5b6666f",
+        "bytes": 391082,
+        "sizeBytes": 391082,
+        "introductionHint": "把正式报告名称直接嵌入任务句，后续核对继续引用同一份已验证原件。"
+      }
+    ],
+    "specificBusinessShareRationale": "附件绑定重庆农村商业银行股份有限公司证券代码601077和2026年1月1日至3月31日及2026年3月31日，具体业务材料占比为100%。",
+    "timeSeriesRationale": "季度报告同时提供本期、上年同期或期初比较数，可形成同一对象的期间核对链。",
+    "objectSupportInQuestion": "题面明确重庆农村商业银行股份有限公司、正式报告名称、报告期和银行经营复核人员需要判断资产扩张和收入增长是否伴随资本与回报指标承压。。",
+    "newAttachmentSupport": "披露渝农商行一季度收入利润、资产负债增长、资本充足率、杠杆率、流动性和资产质量指标。",
+    "newQuestionStructureMapping": "沿用样例的真实工作卡点、证据核验和下游交付逻辑，改为围绕把增长、资本充足、杠杆和资产质量放到同一证据框架中，区分改善项与约束项。逐轮推进。"
+  },
+  "draft": {
+    "deliverableRationale": [
+      {
+        "format": "docx",
+        "purpose": "进入经营复核和后续资本及业务条线资料补取环节",
+        "user": "银行经营复核专员及下游经营分析同事",
+        "whyThisFormat": "简报需要同时承载指标对照表、证据页码、判断说明和可继续回填的补数清单，docx便于内部审阅、修订与流转。"
+      }
+    ],
+    "mainTask": "依据渝农商行2026年第一季度报告，判断资产与收入增长是否伴随资本、杠杆、回报和资产质量约束，并形成可追溯的经营复核简报。",
+    "productFormats": "docx",
+    "productParagraphMapping": "前半段以增长与回报变化建立当前判断，要求统一核对期间、主体、单位和比较基准。后半段收束到docx简报，明确指标对照、改善与承压判断、来源页码、审计状态、派生计算、证据分层和补数清单，不延伸为未披露业务条线的确定归因。",
+    "question": "请依据重庆农村商业银行股份有限公司2026年第一季度报告.pdf，复核渝农商行资产扩张和收入增长是否伴随资本与回报约束。以营业收入和归母净利润分别同比增长8.39%和5.07%，而年化ROA、ROE分别同比下降0.04和0.05个百分点为切入点，把收入利润、资产负债增速、资本充足率、杠杆率和资产质量放入同一页级证据框架，核对期间、集团口径、单位、来源页码及同比、较年末和年化口径差异，正文、表格或派生结果有冲突时保留原披露并标注差异。\n\n形成可下载的《渝农商行2026年一季度增长与资本约束简报》docx，含指标对照表、改善与承压判断、来源页码、未经审计状态、派生计算过程、证据边界和补数清单。可证事实、合理推断和待确认项分开呈现，不把指标联动写成因果，单列业务条线资本消耗未披露及单季数据不能证明全年持续性的待核边界。",
+    "structureMapping": "一级目录选择“金融服务与财富投研”。题面沿用真实经营卡点、有限证据核验、口径冲突处理、证据分层、业务判断和下游交付的推进结构，将对象改为银行季度经营与资本约束复核，不复用抽样内容及固定产物组合。",
+    "usedAttachmentNames": [
+      "重庆农村商业银行股份有限公司2026年第一季度报告.pdf"
+    ],
+    "usedFactIds": [
+      "cqrcb-profit-return",
+      "cqrcb-balance-growth",
+      "cqrcb-capital-ratios",
+      "cqrcb-leverage",
+      "cqrcb-asset-quality",
+      "cqrcb-audit-boundary"
+    ]
+  }
+}

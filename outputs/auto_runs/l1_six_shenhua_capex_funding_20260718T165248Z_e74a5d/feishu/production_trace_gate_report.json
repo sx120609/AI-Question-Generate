@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "l1-production-trace-gate-report",
+  "productionProfile": "l1",
+  "gateId": "production-trace-gate-v6-profiled",
+  "status": "PASS",
+  "generatedAt": "2026-07-18T17:32:08.625Z",
+  "packetPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_shenhua_capex_funding_20260718T165248Z_e74a5d\\sources\\production_input_packet.json",
+  "packetHash": "7eb37442788646890d63a04f708f72ec8bb9d0168ddbb93163d9c6823fc66ba9",
+  "tracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_shenhua_capex_funding_20260718T165248Z_e74a5d\\qa\\production_trace.json",
+  "traceHash": "7da3eec508e75d6581256911a79f7689304023d08d0804a42de179db5306dc8b",
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_shenhua_capex_funding_20260718T165248Z_e74a5d\\drafts\\l1_questions.tsv",
+  "candidateHash": "d1dabb0f022df68e2e3568e4efde01d41c416c1a3e5075ae8778ae5edda620ca",
+  "fillPlanPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_shenhua_capex_funding_20260718T165248Z_e74a5d\\feishu\\feishu_fill_plan.json",
+  "fillPlanHash": "db800b11be1364e6293241d269c01ab05c8f70095a83a5e674ef8b0dc24e3b74",
+  "rowCount": 1,
+  "attachmentRoot": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_shenhua_capex_funding_20260718T165248Z_e74a5d\\attachments",
+  "attachmentBindings": [
+    {
+      "uid": "沈礼_20260719_l1_shenhua_capex_funding_02",
+      "name": "中国神华能源股份有限公司2026年第一季度报告.pdf",
+      "path": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_shenhua_capex_funding_20260718T165248Z_e74a5d\\attachments\\中国神华能源股份有限公司2026年第一季度报告.pdf",
+      "sha256": "eafdac378c6aece9511c0e3c501ed99312a47addd138a5562d9710e66caf5959",
+      "bytes": 282693
+    }
+  ],
+  "productFormatDiversity": {
+    "policyId": "not-required-for-l1",
+    "status": "SKIPPED",
+    "rowCount": 1,
+    "findings": []
+  },
+  "findings": []
+}

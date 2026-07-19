@@ -1,0 +1,90 @@
+{
+  "kind": "scene-card-gate-report",
+  "gateId": "scene-card-role-consistency-v1",
+  "protocolId": "situated-requester-v1",
+  "schemaVersion": 1,
+  "status": "PASS",
+  "ok": true,
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_shenhua_capex_funding_20260718T165248Z_e74a5d\\drafts\\l1_questions.tsv",
+  "candidateHash": "d1dabb0f022df68e2e3568e4efde01d41c416c1a3e5075ae8778ae5edda620ca",
+  "sceneCardPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_shenhua_capex_funding_20260718T165248Z_e74a5d\\sources\\scene_cards.json",
+  "sceneCardFileHash": "f9a4112e4260a3780d344f2d08e304c2800ecfb0b2db43b72af0c89bc067630b",
+  "sceneCardBundleHash": "ef283a25408f5d58be3cd16bc3ecfdaafafe39e1b270926cf2988a4fb6b27f59",
+  "sceneCardSetHash": "0a542027fba30e85983bb51e9acf2a806769818c02bc9f89c8a97b56bdc3c7af",
+  "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_shenhua_capex_funding_20260718T165248Z_e74a5d\\sources\\fact_ledger.json",
+  "factLedgerHash": "4380ac883df69ceaa84bb1681d880c57d8b36d2c190add6a3723aaadd99eff2e",
+  "summary": {
+    "candidateRowCount": 1,
+    "sceneCardCount": 1,
+    "passedRowCount": 1,
+    "failedRowCount": 0,
+    "globalErrorCount": 0,
+    "batchCollisionCount": 0
+  },
+  "rows": [
+    {
+      "uid": "沈礼_20260719_l1_shenhua_capex_funding_02",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "1005f54f4f328baa229d7639332c833c16e34f772eb71d8fb55f153233357fcf",
+      "cardHash": "dddfcd842c01ede19a8d204320e7fd0261de5b34e3deebfc3fee3ab64c3ac14b",
+      "roleConsistencyHash": "2f31f2f062b8547cfa6c45938bfdb4ef7c79b648686faccecd6b4c94f577e0a3",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "polite-request",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "xlsx"
+        ],
+        "mFormats": [
+          "xlsx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "为了方便同事后续跟踪项目预算和融资披露，我需要复核重大资产交易纳入新资产后的资本开支变化情况。",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "为了方便同事后续跟踪项目预算和融资披露，我需要复核重大资产交易纳入新资产后的资本开支变化情况。",
+            "occurrences": 1
+          },
+          "downstreamUseSpan": {
+            "span": "为了方便同事后续跟踪项目预算和融资披露，我需要复核重大资产交易纳入新资产后的资本开支变化情况。",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [
+            "2026年"
+          ],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "9366bdcd1c12ef16f312b104274d83ff35fd7f5ef3096aca287bb87d80401d20"
+      }
+    }
+  ],
+  "batch": {
+    "ok": true,
+    "status": "PASS",
+    "thresholds": {
+      "highMaskedTrigramSimilarity": 0.72,
+      "sharedMaskedFragmentLength": 18
+    },
+    "comparisons": [],
+    "errors": []
+  },
+  "errors": [],
+  "evaluationHash": "b436af38a3283adacc08fc36a2c3a7dc5f13d93680f67e47cde7d05b7ddf680d"
+}

@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "kind": "immutable-doubao-interaction-package",
+  "jobId": "l1-async-api5-20260719-1015-04",
+  "createdAt": "2026-07-19T02:11:46.077Z",
+  "sourceConfigPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_04_baosteel_mix_profit\\doubao\\job.json",
+  "sourceConfigSha256": "6ceabb196934302ad74691141f547ba0f7cff440d4b696a4ecbba295fd51b9b1",
+  "configSha256": "b633d9bc2d94fde38188ad214685932573b75198f3231e0c28e9795589bc85aa",
+  "attachmentReceipt": {
+    "attachmentCount": 1,
+    "attachments": [
+      {
+        "classification": "specific-business",
+        "introductionHint": "把正式报告名称直接嵌入任务句，后续核对继续引用同一份已验证原件。",
+        "name": "宝山钢铁股份有限公司2026年第一季度报告.pdf",
+        "relativePath": "宝山钢铁股份有限公司2026年第一季度报告.pdf",
+        "sha256": "76b0d27c65fb55ba2cd3301f83e4448846de438d1575ea05e551fe0b829cb23d",
+        "sizeBytes": 191834,
+        "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-30/1225257456.PDF",
+        "summary": "披露宝钢股份一季度产品销量、出口接单、经营分部收入成本毛利率和核心财务指标。"
+      }
+    ],
+    "initialAttachmentNames": [
+      "宝山钢铁股份有限公司2026年第一季度报告.pdf"
+    ],
+    "minimumSpecificBusinessShare": 0.8,
+    "pass": true,
+    "policyId": "doubao-l1-l2-attachment-policy-v1",
+    "productionEvidence": {
+      "attachmentCount": 1,
+      "downloadManifestHash": "0f94806cec17dcaceeaa4ddbc66b50749c08144149c2ddf3b3b51042b834bcd1",
+      "downloadManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_04_baosteel_mix_profit\\sources\\download_manifest.json",
+      "mode": "production-path",
+      "pass": true,
+      "policyId": "reuse-l2-source-acquisition-path-v1",
+      "productionRunId": "l1_async_api5-20260719-1015_04_baosteel_mix_profit",
+      "productionTraceGateReceiptHash": "fbcd82659b9b3917ca859a65aa753464485153672df34cdf87dc1bf3edd3b3a0",
+      "productionTraceGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_04_baosteel_mix_profit\\feishu\\production_trace_gate_receipt.json",
+      "productionTraceHash": "67cd7cc5e1a7c8769ab828c299b8620da2db8a28de8a46834be338dc6f604211",
+      "productionTracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_04_baosteel_mix_profit\\qa\\production_trace.json",
+      "recordUid": "沈礼_api5-20260719-1015_04",
+      "releaseGateReceiptHash": "bdfd06ae529ce570f342d5aeb30eceedccc760fb9b5cbbe3adc2746d9f64c372",
+      "releaseGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_04_baosteel_mix_profit\\feishu\\release_gate_receipt.json",
+      "verifiedAt": "2026-07-19T02:11:46.062Z"
+    },
+    "specificBusinessShare": 1,
+    "verifiedAt": "2026-07-19T02:11:46.063Z"
+  }
+}

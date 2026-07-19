@@ -1,0 +1,66 @@
+{
+  "jobId": "desktop-batch-award-review-20260718-01",
+  "attachmentRoot": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\attachments",
+  "initialAttachmentNames": [
+    "成交结果公告.html",
+    "台式机202606计划公示.xls",
+    "中央国家机关2026年台式计算机批量集中采购项目-6月采购文件.pdf",
+    "投标人得分排序表_官方导出.html",
+    "技术规范偏离表-1-软通.pdf",
+    "技术规范偏离表-2-软通.pdf",
+    "技术规范偏离表-3-联想.pdf",
+    "技术规范偏离表-4-华为.pdf",
+    "技术规范偏离表-5-安领信.pdf",
+    "技术规范偏离表-6-天津光电.pdf"
+  ],
+  "productionEvidence": {
+    "recordUid": "裴硬_20260718_desktop_batch_review_01",
+    "productionTracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\qa\\production_trace.json",
+    "productionTraceGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\feishu\\production_trace_gate_receipt.json",
+    "releaseGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\feishu\\release_gate_receipt.json",
+    "downloadManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\desktop_batch_review_20260718T084338Z_184184\\sources\\download_manifest.json"
+  },
+  "maxRounds": 6,
+  "mode": "openai-compatible",
+  "taskGoal": "完成一份可下载的台式计算机成交复核Excel核对表，复核GC-HCD260444六包数量、金额、价格版本和质保情景，并从六包中挑选两包进入首轮人工抽检准备。",
+  "successCriteria": [
+    "十份真实官方附件在首轮一次上传，并由豆包端精确读回全部文件名和数量。",
+    "清洗535条配送明细，复核5889台总量，并把506条PR空值、5条纯数字地址和1台截断系统文本列入待核清单。",
+    "逐包复核六个成交单价、六个成交金额、28945596元合计、29445000元预算和公告概要212.2855万元冲突。",
+    "对齐六份偏离表响应值与最终成交价，复核六包总差额并按采购文件测算三年、五年和六年质保情景。",
+    "整理六种配置的处理器、内存、硬盘和显卡证据，匿名编号保持原样且不映射供应商。",
+    "结合金额规模、价格版本差异、规格特征和证据缺口挑选两包进入首轮人工抽检，结论只安排补证顺序。",
+    "最终提供真实可访问的Excel文件或等价在线表格节点，包含原始明细、清洗映射、六包复核、规格对照、待核清单、抽检建议和来源索引七个分页。",
+    "每个数值和判断注明文件名及页码、行号或网页区段，实际订单、到货、兼容性、验收、付款和售后记录保持待补。"
+  ],
+  "initialPrompt": "采购结算与设备抽检同事需要一份可下载的Excel成交复核表来推进后续工作。目前实际订单和到货记录处于缺口状态。兼容性及验收记录连同付款与售后记录均保持待补。我将在首轮一次性接收并核验十份附件。这些材料包括一份成交结果公告和一份配送计划。另有一份采购文件以及一份得分排序表与六份技术规范偏离表。我们需要整理配送计划原始明细并建立清洗映射。核对535条有效明细与5889台合计。配置1的数量为195台。配置2有463台。配置3确认是899台。配置4与配置5分别为1663台和2638台。配置6单独汇总31台。操作系统方面麒麟汇总3072台且统信UOS汇总2620台。中科方德汇总9台及其他口径汇总188台。把其中1台截断文本单独标记。把506条PR单号空值连同5条纯数字地址列入待核清单。这些异常保持原始状态。对六包成交金额逐项重算。第一包的成交单价为4900元。第二包与第三包依次是4585元和4939元。第四包至第六包的成交单价为4940元和4950元以及4960元。反向核对第一包955500元和第二包2122855元。第三包4440161元与第四包8215220元也需确认。第五包13058100元及第六包153760元同步复核。解释六包合计28945596元与预算29445000元之间499404元的差额。约1.696%的预算偏差也需说明。公告概要显示的212.2855万元恰与第二包一致。把该数额与六包合计相差2682.2741万元的冲突原因列为待确认。将六份偏离表中的响应值与成交版本对齐。前五包响应值均为4950元且第六包响应值为4978元。计算各包单台差额及按计划数量形成的总差额。核对第五包复核值0元和第六包558元。第二包168995元与第一包9750元一并核对。第四包16630元及第三包9889元也需确认。依据采购文件公式测算原厂质保情景。配置6在各情景下均按0%计算。配置1至配置5的三年情景同样按0%计算。五年情景按1%计算且六年情景按2%计算。注明情景金额仅供测算以区分实际合同结算额。规格对照需纳入处理器信息。内存形式连同硬盘组合也由你录入该表。显卡口径同样补充完整。得分表中的匿名编号保持原样且不映射到供应商。首轮人工抽检准备需要从六包中挑选两包进入。金额规模差异会影响抽检排序。价格版本变动同样是排序依据。规格特征连同公开证据缺口也会纳入考量。第四包和第六包仅列一名投标人的状态仅供排序参考。写明选择理由及另一种合理解释。这项建议只安排补证顺序且不形成验收或履约结论。表内设置七个分页。分页包括原始明细和清洗映射。另设六包复核和规格对照。待核清单和抽检建议以及来源索引单独设页。根据文件名和内容建立来源索引。保留公告页码或网页区段以及表格行号与PDF页码。每个数值和判断均注明出处并可回到原件。区分可证事实和合理推断以及待确认项。这份表格随后交给现场同事继续回填。",
+  "responseTimeoutMs": 600000,
+  "interactionRewrite": {
+    "type": "openai-compatible",
+    "baseUrl": "https://api.mugua.link/v1",
+    "model": "gemini-3.1-pro-preview",
+    "apiKeyEnv": "DE_AI_REWRITE_API_KEY",
+    "temperature": 0.55,
+    "timeoutMs": 180000
+  },
+  "promptPreflight": {
+    "type": "local-codex",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "timeoutMs": 360000
+  },
+  "policy": {
+    "type": "local-codex",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "timeoutMs": 360000
+  },
+  "productRequirement": {
+    "requestedFormats": [
+      "excel"
+    ],
+    "required": true,
+    "allowEquivalentOnline": true,
+    "allowUnavailableBestEffort": true
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "kind": "claude-question-rewrite-batch",
+  "policyId": "claude-plain-professional-redraft-v3",
+  "generatedAt": "2026-07-16T06:18:40.754Z",
+  "runDir": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a",
+  "results": [
+    {
+      "kind": "claude-question-only-redraft",
+      "policyId": "claude-plain-professional-redraft-v3",
+      "uid": "435",
+      "generatedAt": "2026-07-16T06:18:40.753Z",
+      "provider": "openai-compatible",
+      "model": "claude-opus-4-8",
+      "finishReason": "stop",
+      "usage": {
+        "inputTokens": 14306,
+        "outputTokens": 2201,
+        "totalTokens": 16507
+      },
+      "rewrite": {
+        "question": "现有钉钉事件订阅正准备从 HTTP 回调迁移到 Stream 模式，我负责在切换演练前形成迁移评审与验证矩阵，权限止于评审与验证本身，不能替代应用管理员改动生产环境的事件推送配置。现在生产订阅清单和运行配置尚未拿到手，能确认的只有两条接入路径的存在，还不足以判断本应用当前实际选用哪种方式，也不清楚是否具备并行保留能力。请你依据下面六份材料，帮我把切换条件、验证证据和最小回退步骤整理成可供放行使用的说明。\n《钉钉配置事件推送方式》给出 Stream、SyncHTTP 和 HTTP 三类配置入口，但不能据此确认本应用的选择与并行能力。《钉钉事件订阅与回调加解密》说明 HTTP 方式下 JSON 回调的安全校验流程，其中生产 token 与回调地址都不在材料范围内。《钉钉开放平台全局错误码》提供接口失败时的错误码检索入口，具体故障原因仍要结合运行日志才能定位。《钉钉人员变更 Stream 事件》给出人员异动 v2 的事件页面与字段入口，页面存在并不代表本应用已经订阅该事件。两份 SDK 说明分别覆盖 Java 与 Node 客户端的初始化和事件处理入口，其中示例凭证不能复制到生产，实际运行语言与部署配置还需项目组补充。\n判断的第一步是把两种接入路径的差异落到具体条目上，既包括鉴权方式和回调地址是否必需，也包括事件推送的触发形态以及各自依赖的配置项。每一条差异都要指向材料里的具体页面作为依据，凡是材料无法确认的地方，例如钉钉应用生产配置导出文件的原件缺失，都要如实标为待补，不能用公开文档或 SDK 示例把没有发生的生产验证结果写成已经完成。只有当生产订阅清单和运行配置齐备，导出原件也到位，且每个在订阅事件都能在两种路径下对上鉴权与幂等键处理，材料才算够进入切换演练，否则评审说明只能给出待补结论。\n验证矩阵按事件逐条展开，每一行记录事件名称和迁移前后的推送方式，同时留下鉴权校验结果与幂等键是否稳定，再补上失败时对应的错误码及其证据来源。如果某个事件在验证中对不上，例如鉴权不通过或错误码指向配置缺失，就把该行标记为不通过并退回补料，不把它放进放行范围。最小回退步骤要写清从 Stream 切回 HTTP 回调所需的动作和先决条件，保证演练受阻时能回到迁移前的可用状态，也让退回的事件有明确的重新验证路径。\n请把评审说明写成一份 Word 文档，把验证矩阵做成一份 Excel 表格。企业应用集成团队会拿评审说明作为切换演练的放行依据，用验证矩阵逐条保留每个事件的证据，供后续复核与问题追溯时对照使用。",
+        "requestContract": {
+          "requestSpan": "请把评审说明写成一份 Word 文档，把验证矩阵做成一份 Excel 表格。",
+          "action": "做成",
+          "outputs": [
+            {
+              "format": "docx",
+              "humanName": "Word",
+              "purpose": "供后续执行和留痕使用"
+            },
+            {
+              "format": "xlsx",
+              "humanName": "Excel",
+              "purpose": "供后续执行和留痕使用"
+            }
+          ]
+        },
+        "roleTrace": {
+          "blockageSpan": "现有钉钉事件订阅正准备从 HTTP 回调迁移到 Stream 模式，我负责在切换演练前形成迁移评审与验证矩阵，权限止于评审与验证本身，不能替代应用管理员改动生产环境的事件推送配置。",
+          "motivationSpan": "请你依据下面六份材料，帮我把切换条件、验证证据和最小回退步骤整理成可供放行使用的说明。",
+          "downstreamUseSpan": "企业应用集成团队会拿评审说明作为切换演练的放行依据，用验证矩阵逐条保留每个事件的证据，供后续复核与问题追溯时对照使用。"
+        },
+        "usedFactIds": [
+          "fact-row-435"
+        ],
+        "deliberatelyOmitted": [],
+        "flowStages": [
+          {
+            "stage": "证据归位",
+            "evidence": "事实包中的公开材料与待补信息",
+            "decision": "区分可确认规则和未知现场状态",
+            "next": "证据足够则形成执行对象，不足则进入补证"
+          },
+          {
+            "stage": "执行对象核对",
+            "evidence": "已归位的对象关系与状态记录",
+            "decision": "判断当前材料是否足以进入切换演练",
+            "next": "符合条件则进入小范围验证，否则停止推进"
+          },
+          {
+            "stage": "小范围验证",
+            "evidence": "试点输入与实际返回记录",
+            "decision": "判断结果是否满足扩大范围的条件",
+            "next": "通过则推进，失败则退回原状态并留痕"
+          },
+          {
+            "stage": "交接收束",
+            "evidence": "判断依据、验证结果与回退记录",
+            "decision": "确认下游拿到一致结论",
+            "next": "企业应用集成团队用评审说明放行，并在验证矩阵保留逐事件证据"
+          }
+        ],
+        "selfAudit": {
+          "factsPreserved": true,
+          "formatsPreserved": true,
+          "processChainExplicit": true,
+          "failureOrRollbackExplicit": true,
+          "noInventedFacts": true,
+          "noAiShell": true
+        }
+      },
+      "validation": {
+        "pass": true,
+        "visibleLength": 1021,
+        "similarity": [
+          {
+            "referenceIndex": 1,
+            "editSimilarity": 0.13622291021671828,
+            "trigramJaccard": 0.08668076109936575,
+            "longestExactCopyRun": 13
+          },
+          {
+            "referenceIndex": 2,
+            "editSimilarity": 0.0722394220846233,
+            "trigramJaccard": 0.06245847176079734,
+            "longestExactCopyRun": 19
+          }
+        ],
+        "findings": [],
+        "factGuard": {
+          "ok": true,
+          "candidateAnchors": {
+            "numbers": [
+              "2"
+            ],
+            "quotedClaims": [],
+            "timeMarkers": []
+          },
+          "unsupported": {
+            "numbers": [],
+            "quotedClaims": [],
+            "timeMarkers": []
+          },
+          "errors": []
+        }
+      }
+    }
+  ],
+  "usage": {
+    "inputTokens": 14306,
+    "outputTokens": 2201,
+    "totalTokens": 16507
+  }
+}

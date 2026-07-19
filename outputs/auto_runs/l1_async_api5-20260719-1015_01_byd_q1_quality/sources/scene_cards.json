@@ -1,0 +1,133 @@
+{
+  "kind": "scene-card-bundle",
+  "protocolId": "situated-requester-v1",
+  "schemaVersion": 1,
+  "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_async_api5-20260719-1015_01_byd_q1_quality\\sources\\fact_ledger.json",
+  "factLedgerHash": "c3b87e2f0878249c1ae6dc8ea4c02fcae8831fb7ff9ffd653e9992a1a7a27987",
+  "cards": [
+    {
+      "recordUid": "沈礼_api5-20260719-1015_01",
+      "sceneCard": {
+        "schemaVersion": 1,
+        "policyId": "situated-requester-v1",
+        "topicId": "byd-2026q1-profit-cash-financing-quality",
+        "personaId": "byd_q1_quality_api5-20260719-1015-requester-01",
+        "requester": {
+          "functionalRole": "经营数据复核专员",
+          "organizationType": "企业经营与研究团队",
+          "department": "",
+          "responsibility": "把比亚迪股份有限公司公开季度报告整理成可追溯的带公式和证据边界的季度经营质量核对表",
+          "authorityBoundary": "只负责复核公开披露、派生计算和证据边界，无权把未披露的业务明细写成确定归因。",
+          "recipientRelation": "经营数据复核专员及下游同事"
+        },
+        "scene": {
+          "workflowStage": "经营数据复核人员需要判断收入、利润和经营现金流同步下滑时，研发投入与融资项目变化能解释到什么程度。",
+          "trigger": "2026年一季度营业收入150225314000元，同比下降11.82%；归母净利润4084551000元，同比下降55.38%；经营活动现金流量净额2790305000元，同比下降67.48%。",
+          "currentBlockage": "附件没有给出收入和利润降幅按业务板块、销量、价格或区域拆分后的完整贡献。",
+          "mainDecision": "建立一份季度经营质量核对表，复算收入、利润和经营现金流变化，整理研发与融资项目的披露解释，并把无法由附件直接归因的部分保留为待补证事项。",
+          "downstreamUse": "供经营分析同事继续取得分部和销量资料后补充归因。"
+        },
+        "informationBoundary": {
+          "knownFactIds": [
+            "byd-core-performance",
+            "byd-profit-quality",
+            "byd-development-spend",
+            "byd-financing-shift",
+            "byd-cashflow-explanation",
+            "byd-audit-boundary"
+          ],
+          "availableMaterialIds": [
+            "byd-2026q1-report"
+          ],
+          "unknowns": [
+            "附件没有给出收入和利润降幅按业务板块、销量、价格或区域拆分后的完整贡献。",
+            "短期借款和应付票据增加与经营现金流下降之间不能仅凭季度报告确定直接因果关系。"
+          ],
+          "forbiddenInferences": [
+            "未由季度报告披露的业务明细不得写成确定事实",
+            "派生计算只能使用事实账本中的数值和口径",
+            "未经审计的季度数据不得描述为审计确认值",
+            "相关性和变动线索不得直接表述为因果归因"
+          ]
+        },
+        "voice": {
+          "channel": "内部业务复核消息",
+          "formality": "直接、克制、以证据和可继续回填为导向",
+          "domainVocabulary": [
+            "比亚迪",
+            "一季报",
+            "经营现金流",
+            "开发支出",
+            "短期借款"
+          ],
+          "avoidVocabulary": [
+            "全链路",
+            "闭环",
+            "赋能",
+            "深度洞察",
+            "麻烦",
+            "劳烦",
+            "烦请",
+            "辛苦",
+            "刚传了"
+          ]
+        },
+        "maskTerms": [
+          "比亚迪股份有限公司",
+          "002594",
+          "比亚迪",
+          "一季报",
+          "经营现金流",
+          "开发支出"
+        ],
+        "evidenceBindings": [
+          {
+            "claim": "2026年一季度营业收入150225314000元，同比下降11.82%；归母净利润4084551000元，同比下降55.38%；经营活动现金流量净额2790305000元，同比下降67.48%。",
+            "factIds": [
+              "byd-core-performance"
+            ]
+          },
+          {
+            "claim": "附件没有给出收入和利润降幅按业务板块、销量、价格或区域拆分后的完整贡献。",
+            "factIds": [
+              "byd-audit-boundary",
+              "byd-core-performance"
+            ]
+          },
+          {
+            "claim": "建立一份季度经营质量核对表，复算收入、利润和经营现金流变化，整理研发与融资项目的披露解释，并把无法由附件直接归因的部分保留为待补证事项。",
+            "factIds": [
+              "byd-core-performance",
+              "byd-audit-boundary"
+            ]
+          }
+        ]
+      },
+      "requestContract": {
+        "requestSpan": "请梳理一下《比亚迪股份有限公司2026年第一季度报告.pdf》里的相关数据，并输出一份Excel格式的经营质量核对表（需要提供下载链接）。",
+        "action": "请梳",
+        "outputs": [
+          {
+            "format": "xlsx",
+            "humanName": "Excel",
+            "purpose": "供后续执行和留痕使用"
+          }
+        ]
+      },
+      "roleTrace": {
+        "blockageSpan": "我正在做比亚迪2026年一季度利润现金与融资变化复核，这份结果供经营分析同事继续取得分部和销量资料后补充归因。",
+        "motivationSpan": "",
+        "downstreamUseSpan": "这份表主要是给经管同事后续结合分部和销量资料做归因分析用的。"
+      },
+      "usedFactIds": [
+        "byd-core-performance",
+        "byd-profit-quality",
+        "byd-development-spend",
+        "byd-financing-shift",
+        "byd-cashflow-explanation",
+        "byd-audit-boundary"
+      ],
+      "deliberatelyOmitted": []
+    }
+  ]
+}

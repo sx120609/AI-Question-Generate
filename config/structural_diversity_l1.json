@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "policyId": "l1-phase3-source-driven-v1",
+  "questionLength": {
+    "hardMinimumVisibleCharacters": 120,
+    "minimumCoreSceneCharacters": 40,
+    "recommendedMinimumVisibleCharacters": 220,
+    "recommendedMaximumVisibleCharacters": 520,
+    "warningMaximumVisibleCharacters": 600,
+    "hardMaximumVisibleCharacters": 700,
+    "planningBands": []
+  },
+  "informationCoverage": {
+    "minimumDetectedUnits": 3,
+    "requiredGroups": [
+      ["actor", "audience"],
+      ["facts", "evidence"],
+      ["decision"]
+    ]
+  },
+  "similarity": {
+    "batchThreshold": 0.72,
+    "historyThreshold": 0.82,
+    "highDimensionThreshold": 0.72,
+    "minimumHighDimensions": 3,
+    "minimumCoreHighDimensions": 2,
+    "coreDimensions": [
+      "informationOrder",
+      "evidenceTopology",
+      "artifactTopology",
+      "stepActions",
+      "flowTopology"
+    ],
+    "weights": {
+      "openingMode": 0.04,
+      "informationOrder": 0.08,
+      "decisionForm": 0.06,
+      "evidenceTopology": 0.06,
+      "artifactTopology": 0.1,
+      "stepActions": 0.12,
+      "flowTopology": 0.08,
+      "sentenceRhythm": 0.05,
+      "lexicalSkeleton": 0.25,
+      "narrativeLexical": 0.16
+    }
+  },
+  "lexicalDuplication": {
+    "questionHardThreshold": 0.68,
+    "narrativeHardThreshold": 0.76,
+    "stepContextQuestionThreshold": 0.42,
+    "stepContextNarrativeThreshold": 0.55,
+    "sharedPhraseReviewMinimumCharacters": 16,
+    "sharedPhraseHardMinimumCharacters": 24
+  },
+  "passport": {
+    "assignmentMode": "disabled-source-derived",
+    "openingModes": [
+      "clock-pressure",
+      "incident-led",
+      "conflict-first",
+      "decision-fork",
+      "evidence-discovery",
+      "handoff-led",
+      "user-impact",
+      "metric-anomaly"
+    ],
+    "decisionForms": [
+      "binary-gate",
+      "multi-option",
+      "threshold-gate",
+      "ranked-priority",
+      "exception-routing",
+      "conditional-recommendation",
+      "scenario-choice"
+    ],
+    "evidenceTopologies": [
+      "public-source-research",
+      "rules-plus-case-data",
+      "incomplete-evidence-pack",
+      "conflicting-versions",
+      "single-report-boundary",
+      "no-attachment-public-sources"
+    ],
+    "flowTopologies": [
+      "evidence-trace",
+      "option-comparison",
+      "boundary-first",
+      "staged-exploration",
+      "source-verification",
+      "conditional-recommendation"
+    ],
+    "productTopologies": []
+  },
+  "receipt": {
+    "algorithm": "sha256",
+    "schemaVersion": 2
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 2,
+  "ok": true,
+  "status": "PASS",
+  "generatedAt": "2026-07-18T13:22:13.489Z",
+  "policyId": "l1-phase3-source-driven-v1",
+  "policyVersion": 1,
+  "gateStatus": "PASS",
+  "authorizationMode": "DIRECT_PASS",
+  "reviewAuthorization": null,
+  "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_sf_q1_reconciliation_20260718T122753Z_791280\\feishu\\structure_gate_report.json",
+  "reportHash": "465cd47840cdab213c6876651d71be22c7ba27e7eab98ef569ba337aa07c53ef",
+  "batchHash": "04462a1db7d6fabb2149ebd109c33ef7c3581a414cb6d08b2d0b1e82902da389",
+  "rowHashes": [
+    {
+      "index": 0,
+      "uid": "沈礼_20260718_sf_q1_reconciliation_01",
+      "sheetRow": 999998,
+      "hash": "c081b80edbe3eb6a514d758a0b99a7cc3839c1187fc7da614d99dc90c6d429a0"
+    }
+  ]
+}

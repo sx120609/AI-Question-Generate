@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 2,
+  "ok": true,
+  "status": "PASS",
+  "generatedAt": "2026-07-18T17:32:22.639Z",
+  "policyId": "l1-phase3-source-driven-v1",
+  "policyVersion": 1,
+  "gateStatus": "PASS",
+  "authorizationMode": "DIRECT_PASS",
+  "reviewAuthorization": null,
+  "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_shenhua_capex_funding_20260718T165248Z_e74a5d\\feishu\\structure_gate_report.json",
+  "reportHash": "de10e2dce9d2affdca015e00e938ba74a78babf0c2e5decf6079a89669be3848",
+  "batchHash": "232400fb34e4bfecfebdb9a3fb233b920a7bb836b49fb55939695f8b6f022c10",
+  "rowHashes": [
+    {
+      "index": 0,
+      "uid": "沈礼_20260719_l1_shenhua_capex_funding_02",
+      "sheetRow": 999902,
+      "hash": "e72f012faa6426be943a86409305df95017ce7fb083515a1d70d8f5d83a79ff7"
+    }
+  ]
+}

@@ -1,0 +1,1072 @@
+{
+  "schemaVersion": 3,
+  "kind": "l2-production-trace",
+  "protocolId": "l2-sample-attachments-two-gates-trace-v1",
+  "runId": "l2_20260716T021344Z_32c27a",
+  "generatedAt": "2026-07-16T08:04:39.585Z",
+  "questions": [
+    {
+      "recordUid": "434",
+      "referenceLocation": {
+        "sheet": "Sheet1",
+        "row": 496
+      },
+      "referenceQuestionStructure": {
+        "businessScene": "设备平台运维人员准备轮换存量证书",
+        "coreBlockage": "必须先核对证书状态、设备关系和回滚条件",
+        "mainTask": "判断本批设备是否具备进入证书轮换的条件",
+        "attachmentSupport": "对象级产品文档、接口页面和调测实践支撑规则核对",
+        "deliverableOrigin": "工作簿用于批量筛查，操作页用于值班执行",
+        "imitableStructure": "先核对状态关系，再设计试点与放量，最后回到准入结论",
+        "forbiddenReuse": "不复用抽样题的行业对象、附件名称、措辞和产物段落"
+      },
+      "referenceAttachmentStructure": "以对象记录和操作说明组合形成可执行资料包",
+      "newQuestionStructureMapping": "从停用影响推进到关系映射、单台试点、批次放量和准入结论",
+      "newAttachmentSupport": "六份对象级资料分别覆盖认证注册、证书状态、查询更新和客户端回连验证",
+      "attachmentBuild": {
+        "attachments": [
+          {
+            "name": "附件一_华为云_注册X509证书认证设备.html",
+            "sourceUrl": "https://support.huaweicloud.com/usermanual-iothub/iot_01_0055.html",
+            "localPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\attachments\\01\\附件一_华为云_注册X509证书认证设备.html",
+            "sha256": "31987b3f6cdd5e9d1da69351f72201ea1932e33e8cc2e7789e433cb0c48c709d",
+            "bytes": 105500,
+            "classification": "specific-business",
+            "objectLevel": true,
+            "timeAnchor": "2026-07-16官方页面下载快照",
+            "summary": "华为云 IoTDA 的对象级技术页面，包含注册X509证书认证设备相关字段、状态或操作路径",
+            "specificityEvidence": {
+              "object": "华为云 IoTDA 设备证书",
+              "periodOrEvent": "2026-07-16迁移资料核验",
+              "uniqueContent": "保留官方来源地址、文件哈希和附件一_华为云_注册X509证书认证设备.html对应的产品级字段或操作说明"
+            }
+          },
+          {
+            "name": "附件二_华为云_设备证书管理与状态限制.html",
+            "sourceUrl": "https://support.huaweicloud.com/usermanual-iothub/iot_01_0116.html",
+            "localPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\attachments\\01\\附件二_华为云_设备证书管理与状态限制.html",
+            "sha256": "d6b54cae1c7b25d777762d02f19fb03981ab5750b52c2504c3e3238db4bde38e",
+            "bytes": 83027,
+            "classification": "specific-business",
+            "objectLevel": true,
+            "timeAnchor": "2026-07-16官方页面下载快照",
+            "summary": "华为云 IoTDA 的对象级技术页面，包含设备证书管理与状态限制相关字段、状态或操作路径",
+            "specificityEvidence": {
+              "object": "华为云 IoTDA 设备证书",
+              "periodOrEvent": "2026-07-16迁移资料核验",
+              "uniqueContent": "保留官方来源地址、文件哈希和附件二_华为云_设备证书管理与状态限制.html对应的产品级字段或操作说明"
+            }
+          },
+          {
+            "name": "附件三_华为云_更新设备证书API.html",
+            "sourceUrl": "https://support.huaweicloud.com/api-iothub/UpdateDeviceCertificate.html",
+            "localPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\attachments\\01\\附件三_华为云_更新设备证书API.html",
+            "sha256": "e86149563acab3ef00142d7bc2599baf9afa52a6b5a9b039d482384e90976c0a",
+            "bytes": 122528,
+            "classification": "specific-business",
+            "objectLevel": true,
+            "timeAnchor": "2026-07-16官方页面下载快照",
+            "summary": "华为云 IoTDA 的对象级技术页面，包含更新设备证书API相关字段、状态或操作路径",
+            "specificityEvidence": {
+              "object": "华为云 IoTDA 设备证书",
+              "periodOrEvent": "2026-07-16迁移资料核验",
+              "uniqueContent": "保留官方来源地址、文件哈希和附件三_华为云_更新设备证书API.html对应的产品级字段或操作说明"
+            }
+          },
+          {
+            "name": "附件四_华为云_查询设备证书列表API.html",
+            "sourceUrl": "https://support.huaweicloud.com/api-iothub/ListDeviceCertificate.html",
+            "localPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\attachments\\01\\附件四_华为云_查询设备证书列表API.html",
+            "sha256": "9b2cc436a7ad303335caae2405f193cca4abcf7ddbe6b9ec8e7216e63fbcadf8",
+            "bytes": 125185,
+            "classification": "specific-business",
+            "objectLevel": true,
+            "timeAnchor": "2026-07-16官方页面下载快照",
+            "summary": "华为云 IoTDA 的对象级技术页面，包含查询设备证书列表API相关字段、状态或操作路径",
+            "specificityEvidence": {
+              "object": "华为云 IoTDA 设备证书",
+              "periodOrEvent": "2026-07-16迁移资料核验",
+              "uniqueContent": "保留官方来源地址、文件哈希和附件四_华为云_查询设备证书列表API.html对应的产品级字段或操作说明"
+            }
+          },
+          {
+            "name": "附件五_华为云_MQTTfx证书接入实践.html",
+            "sourceUrl": "https://support.huaweicloud.com/bestpractice-iothub/iot_bp_0077.html",
+            "localPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\attachments\\01\\附件五_华为云_MQTTfx证书接入实践.html",
+            "sha256": "ebbbdcf6007e7db69c9d3cd6f1c3cd78b47705122f2e85f7f38dfdc105f8044b",
+            "bytes": 146132,
+            "classification": "specific-business",
+            "objectLevel": true,
+            "timeAnchor": "2026-07-16官方页面下载快照",
+            "summary": "华为云 IoTDA 的对象级技术页面，包含MQTTfx证书接入实践相关字段、状态或操作路径",
+            "specificityEvidence": {
+              "object": "华为云 IoTDA 设备证书",
+              "periodOrEvent": "2026-07-16迁移资料核验",
+              "uniqueContent": "保留官方来源地址、文件哈希和附件五_华为云_MQTTfx证书接入实践.html对应的产品级字段或操作说明"
+            }
+          },
+          {
+            "name": "附件六_华为云_IoTDA证书资源与到期替换.html",
+            "sourceUrl": "https://support.huaweicloud.com/devg-iothub/iot_02_1004.html",
+            "localPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\attachments\\01\\附件六_华为云_IoTDA证书资源与到期替换.html",
+            "sha256": "0fb0809783361fb3c182c832cf7196c8897d3b39f1ceb4d01aaf88bd666d41cb",
+            "bytes": 114056,
+            "classification": "specific-business",
+            "objectLevel": true,
+            "timeAnchor": "2026-07-16官方页面下载快照",
+            "summary": "华为云 IoTDA 的对象级技术页面，包含IoTDA证书资源与到期替换相关字段、状态或操作路径",
+            "specificityEvidence": {
+              "object": "华为云 IoTDA 设备证书",
+              "periodOrEvent": "2026-07-16迁移资料核验",
+              "uniqueContent": "保留官方来源地址、文件哈希和附件六_华为云_IoTDA证书资源与到期替换.html对应的产品级字段或操作说明"
+            }
+          }
+        ],
+        "newAttachmentSupport": "六份对象级资料分别覆盖认证注册、证书状态、查询更新和客户端回连验证",
+        "newQuestionStructureMapping": "从停用影响推进到关系映射、单台试点、批次放量和准入结论"
+      },
+      "formatRequirement": null,
+      "draftedProductFormats": "xlsx, html",
+      "deliverableRationale": [
+        {
+          "format": "xlsx",
+          "user": "设备平台运维人员",
+          "purpose": "筛查证书关系和批次条件",
+          "whyThisFormat": "适合记录对象映射、筛选状态与持续更新验证结果"
+        },
+        {
+          "format": "html",
+          "user": "值班同事",
+          "purpose": "按阶段执行试点与回滚",
+          "whyThisFormat": "适合在浏览器查看动作、证据和失败分支"
+        }
+      ],
+      "preQaStructureAudit": {
+        "source": "existing-structure-audit",
+        "informationalOnly": true,
+        "note": "The exact first quality prompt alone determined pass or fail."
+      },
+      "firstQaFullResult": {
+        "pass": true,
+        "issues": [],
+        "execution": {
+          "runnerId": "exact-two-quality-gates-v2-codex-session",
+          "provider": "codex-session",
+          "model": "current-codex-session",
+          "requestedModel": "5.6sol",
+          "sourcePromptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\inputs\\production\\L2题面第一道质检提示词_增强覆盖版.txt",
+          "sourcePromptHash": "087cc4ad0246d5108b267961190eb8d619206a673b3536092b90cf4a6124622e",
+          "renderedPromptHash": "1d252667f6000da6bd2829c081f84a79173cb291bea53bca5483a63ac88d65fc",
+          "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\qa\\codex_quality_gates\\1_first_quality_gate.json",
+          "rawResponseHash": "74478ab54109eb279c32ca143825dfb3d7b97763e6802d670af2d71dabaa6d3c",
+          "completedAt": "2026-07-16T08:04:39.571Z",
+          "sessionProof": {
+            "kind": "active-codex-task",
+            "note": "Executed in the current Codex session at the user's request."
+          }
+        }
+      },
+      "firstQaRepairs": [],
+      "secondQaFullResult": {
+        "conclusion": "需语言小修",
+        "coreJudgment": "原题的信息边界是清楚的，但规则、操作步骤和交付要求连续堆在一起，读起来更像生产规范的拼接。修改稿没有改变轮换准备这一主任务，而是按当前状态、附件能说明的范围、实际核对流程和交付用途逐层推进，让每一段接住前一段留下的问题。",
+        "modifications": "1. 原题把多项约束集中写在背景段中。改写后先交代证书轮换的现实起点，再自然收束到本次只做准备方案，使任务边界更像真实委托。\n2. 原题对六份材料的作用逐项说明，容易形成附件清单。改写后用平台规则和现场状态两层概括，既保留证据边界，也减少机械并列。\n3. 原题的执行要求散在多个句子里。改写后按映射、核对、试点和失败退回的业务顺序组织，步骤之间有明确承接。\n4. 原题的产物段偏向字段说明。改写后先写使用者和使用场景，再说明工作簿与操作页如何贯通，沿用了目标题面的交付收束逻辑。\n5. 原题连续使用禁止性表达。改写后把限制改为待补输入和放行依据，让验收边界保留在真实工作流中。",
+        "modifiedQuestion": "华为云 IoTDA 上有一批通过 X.509 证书（用于确认设备身份的数字证书）接入的存量设备，现有证书陆续接近轮换窗口。轮换前需要先弄清设备与证书的对应关系，因为停用设备证书会使关联设备无法接入，删除 CA 证书也会影响使用它完成认证的设备。目前内部设备清单、证书指纹台账和可接受的离线窗口还没有提供，因此本次工作的结果应是一套公开规则下的轮换准备方案，生产验证留待内部材料补齐后完成。\n六份附件覆盖了 X.509 设备注册、证书状态管理和相关接口，也包括 MQTT（设备与云平台之间常用的轻量通信协议）接入调测与证书到期替换说明。材料可以确认平台支持的认证范围、证书配额和到期告警，也能看到证书列表查询与状态更新所需的字段。它们负责说明平台规则，真实租户中的设备关系和当前状态仍要以台账及获授权查询结果为准。\n轮换准备从建立设备证书映射开始。每台设备先对应到证书指纹（根据证书内容生成的唯一标识），再核对证书状态和到期时间。对应关系不清或状态无法确认的设备留在待核区，不进入试点名单。通过核对的设备按到期时间安排批次，新旧证书先并存验证，再用单台设备回连（换证后重新接入平台并确认连接稳定）决定是否扩大范围。验证失败时停止扩大批次，已经更新的设备按原证书和原状态恢复，并把失败原因留在交接记录里。\n请把这套准备流程整理成一份 Excel 工作簿和一个 HTML 操作页。工作簿供设备运维同事逐台筛查，记录设备标识、证书指纹和当前状态，并承接到期时间、试点批次及验证结果。操作页给值班同事使用，把查询、核对、试点和回滚按实际顺序排开，每一步说明前置证据以及失败后退回的位置。同一台设备在工作簿中的记录要能对应到操作页中的执行阶段，避免两份材料出现不同结论。\n最终结论只判断现有材料是否足以启动轮换准备，以及哪些条件满足后才能进入试点。生产租户的设备证书映射台账、实际接口返回和离线窗口都列为待补输入。可轮换名单为空或回滚条件不完整时，结论保持为暂不进入试点，放行结果以真实核对记录为准。",
+        "punctuationAudit": "1. 是否使用分号：否。\n2. 是否存在单句超过两个顿号：否。\n3. 是否存在用逗号替代顿号堆并列：否。\n4. 是否至少使用三处有解释价值的括号：是。\n5. 是否存在标签式括号：否。\n6. 是否存在一句话塞入过多并列信息：否。\n7. 是否出现禁用句式“问题不在于……而是……”：否。\n8. 是否出现禁用句式“有的……有的……”：否。\n9. 是否出现机械部门对立句式：否。\n10. 产物要求是否已模仿题库目标题的后半段或最后一段写法：是。",
+        "remainingNote": "可进入最终出题表",
+        "raw": "【第二道质检结论】\n需语言小修\n\n【核心判断】\n原题的信息边界是清楚的，但规则、操作步骤和交付要求连续堆在一起，读起来更像生产规范的拼接。修改稿没有改变轮换准备这一主任务，而是按当前状态、附件能说明的范围、实际核对流程和交付用途逐层推进，让每一段接住前一段留下的问题。\n\n【主要修改点】\n1. 原题把多项约束集中写在背景段中。改写后先交代证书轮换的现实起点，再自然收束到本次只做准备方案，使任务边界更像真实委托。\n2. 原题对六份材料的作用逐项说明，容易形成附件清单。改写后用平台规则和现场状态两层概括，既保留证据边界，也减少机械并列。\n3. 原题的执行要求散在多个句子里。改写后按映射、核对、试点和失败退回的业务顺序组织，步骤之间有明确承接。\n4. 原题的产物段偏向字段说明。改写后先写使用者和使用场景，再说明工作簿与操作页如何贯通，沿用了目标题面的交付收束逻辑。\n5. 原题连续使用禁止性表达。改写后把限制改为待补输入和放行依据，让验收边界保留在真实工作流中。\n\n【修改后题面】\n华为云 IoTDA 上有一批通过 X.509 证书（用于确认设备身份的数字证书）接入的存量设备，现有证书陆续接近轮换窗口。轮换前需要先弄清设备与证书的对应关系，因为停用设备证书会使关联设备无法接入，删除 CA 证书也会影响使用它完成认证的设备。目前内部设备清单、证书指纹台账和可接受的离线窗口还没有提供，因此本次工作的结果应是一套公开规则下的轮换准备方案，生产验证留待内部材料补齐后完成。\n六份附件覆盖了 X.509 设备注册、证书状态管理和相关接口，也包括 MQTT（设备与云平台之间常用的轻量通信协议）接入调测与证书到期替换说明。材料可以确认平台支持的认证范围、证书配额和到期告警，也能看到证书列表查询与状态更新所需的字段。它们负责说明平台规则，真实租户中的设备关系和当前状态仍要以台账及获授权查询结果为准。\n轮换准备从建立设备证书映射开始。每台设备先对应到证书指纹（根据证书内容生成的唯一标识），再核对证书状态和到期时间。对应关系不清或状态无法确认的设备留在待核区，不进入试点名单。通过核对的设备按到期时间安排批次，新旧证书先并存验证，再用单台设备回连（换证后重新接入平台并确认连接稳定）决定是否扩大范围。验证失败时停止扩大批次，已经更新的设备按原证书和原状态恢复，并把失败原因留在交接记录里。\n请把这套准备流程整理成一份 Excel 工作簿和一个 HTML 操作页。工作簿供设备运维同事逐台筛查，记录设备标识、证书指纹和当前状态，并承接到期时间、试点批次及验证结果。操作页给值班同事使用，把查询、核对、试点和回滚按实际顺序排开，每一步说明前置证据以及失败后退回的位置。同一台设备在工作簿中的记录要能对应到操作页中的执行阶段，避免两份材料出现不同结论。\n最终结论只判断现有材料是否足以启动轮换准备，以及哪些条件满足后才能进入试点。生产租户的设备证书映射台账、实际接口返回和离线窗口都列为待补输入。可轮换名单为空或回滚条件不完整时，结论保持为暂不进入试点，放行结果以真实核对记录为准。\n\n【标点与括号自检】\n1. 是否使用分号：否。\n2. 是否存在单句超过两个顿号：否。\n3. 是否存在用逗号替代顿号堆并列：否。\n4. 是否至少使用三处有解释价值的括号：是。\n5. 是否存在标签式括号：否。\n6. 是否存在一句话塞入过多并列信息：否。\n7. 是否出现禁用句式“问题不在于……而是……”：否。\n8. 是否出现禁用句式“有的……有的……”：否。\n9. 是否出现机械部门对立句式：否。\n10. 产物要求是否已模仿题库目标题的后半段或最后一段写法：是。\n\n【仍需注意】\n可进入最终出题表",
+        "secondPromptSelfCheck": {
+          "semicolonUsed": false,
+          "overTwoEnumerationCommas": false,
+          "commaDisguisedList": false,
+          "atLeastThreeMeaningfulParentheses": true,
+          "labelParentheses": false,
+          "overloadedParallelSentence": false,
+          "bannedProblemRatherThan": false,
+          "bannedSomeSome": false,
+          "mechanicalDepartmentOpposition": false,
+          "productParagraphReferenceLogic": true,
+          "narrativeFlowReviewed": true
+        },
+        "execution": {
+          "runnerId": "exact-two-quality-gates-v2-codex-session",
+          "provider": "codex-session",
+          "model": "current-codex-session",
+          "requestedModel": "5.6sol",
+          "sourcePromptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\inputs\\production\\第二道质检_增强覆盖版.txt",
+          "sourcePromptHash": "ee8b575fe2f65d1f3a50a6375bfa0f81ac1aaf5aea2912df2941d687e6aa8313",
+          "renderedPromptHash": "ce01a72dbadc405e8c5e5e54476aa6c609d908e6d4706a6850b2c71f1d829396",
+          "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\qa\\codex_quality_gates\\1_second_language_gate.json",
+          "rawResponseHash": "b0d8cdd851a906fde4a867943a614dd66a3cbc46cc94c756b80f4c94ae0ba9e1",
+          "completedAt": "2026-07-16T08:04:39.575Z",
+          "sessionProof": {
+            "kind": "active-codex-task",
+            "note": "Executed in the current Codex session at the user's request."
+          },
+          "languageAttempts": 1
+        }
+      },
+      "revisionLog": [
+        {
+          "at": "2026-07-16T05:19:39.271Z",
+          "stage": "claude-question-rewrite",
+          "model": "claude-opus-4-8",
+          "policyId": "claude-situated-process-rewrite-v1",
+          "localRepairs": [
+            {
+              "type": "mechanical-sequence-shell",
+              "from": "最后只回答",
+              "to": "结论只回答"
+            },
+            {
+              "type": "sidecar-fact-id-scope",
+              "from": {
+                "used": [
+                  "fact-row-434",
+                  "material-row-434"
+                ],
+                "omitted": [
+                  "华为云生产租户的设备证书映射原始台账原件"
+                ]
+              },
+              "to": {
+                "used": [
+                  "fact-row-434"
+                ],
+                "omitted": []
+              }
+            }
+          ]
+        },
+        {
+          "at": "2026-07-16T05:20:26.564Z",
+          "stage": "claude-question-rewrite",
+          "model": "claude-opus-4-8",
+          "policyId": "claude-situated-process-rewrite-v1",
+          "localRepairs": [
+            {
+              "type": "mechanical-sequence-shell",
+              "from": "最后只回答",
+              "to": "结论只回答"
+            },
+            {
+              "type": "cjk-number-spacing",
+              "value": "X.509"
+            },
+            {
+              "type": "sidecar-fact-id-scope",
+              "from": {
+                "used": [
+                  "fact-row-434",
+                  "material-row-434"
+                ],
+                "omitted": [
+                  "华为云生产租户的设备证书映射原始台账原件"
+                ]
+              },
+              "to": {
+                "used": [
+                  "fact-row-434"
+                ],
+                "omitted": []
+              }
+            }
+          ]
+        },
+        {
+          "at": "2026-07-16T05:21:07.425Z",
+          "stage": "claude-question-rewrite",
+          "model": "claude-opus-4-8",
+          "policyId": "claude-situated-process-rewrite-v1",
+          "localRepairs": [
+            {
+              "type": "mechanical-sequence-shell",
+              "from": "最后只回答",
+              "to": "结论只回答"
+            },
+            {
+              "type": "cjk-number-spacing",
+              "value": "X.509"
+            },
+            {
+              "type": "sidecar-fact-id-scope",
+              "from": {
+                "used": [
+                  "fact-row-434",
+                  "material-row-434"
+                ],
+                "omitted": [
+                  "华为云生产租户的设备证书映射原始台账原件"
+                ]
+              },
+              "to": {
+                "used": [
+                  "fact-row-434"
+                ],
+                "omitted": []
+              }
+            }
+          ]
+        },
+        {
+          "at": "2026-07-16T05:59:47.928Z",
+          "stage": "claude-question-redraft-v2",
+          "model": "claude-opus-4-8",
+          "policyId": "claude-from-scratch-human-request-v2",
+          "localRepairs": [
+            {
+              "type": "human-format-name",
+              "from": "xlsx",
+              "to": "Excel"
+            },
+            {
+              "type": "human-format-name",
+              "from": "html",
+              "to": "HTML"
+            },
+            {
+              "type": "clear-request-frame",
+              "from": "麻烦你据此做",
+              "to": "你帮我做"
+            },
+            {
+              "type": "latin-cjk-spacing",
+              "from": "SDK示例",
+              "to": "SDK 示例"
+            },
+            {
+              "type": "latin-cjk-spacing",
+              "from": "MQTT.fx那类",
+              "to": "MQTT.fx 那类"
+            }
+          ]
+        },
+        {
+          "at": "2026-07-16T06:01:06.466Z",
+          "stage": "claude-question-redraft-v2",
+          "model": "claude-opus-4-8",
+          "policyId": "claude-from-scratch-human-request-v2",
+          "localRepairs": [
+            {
+              "type": "human-format-name",
+              "from": "xlsx",
+              "to": "Excel"
+            },
+            {
+              "type": "human-format-name",
+              "from": "html",
+              "to": "HTML"
+            },
+            {
+              "type": "clear-request-frame",
+              "from": "麻烦你据此做",
+              "to": "你帮我做"
+            },
+            {
+              "type": "mechanical-order-shell",
+              "from": "所以我想的做法是先把",
+              "to": "所以我想把"
+            },
+            {
+              "type": "latin-cjk-spacing",
+              "from": "SDK示例",
+              "to": "SDK 示例"
+            },
+            {
+              "type": "latin-cjk-spacing",
+              "from": "MQTT.fx那类",
+              "to": "MQTT.fx 那类"
+            }
+          ]
+        },
+        {
+          "at": "2026-07-16T06:01:37.198Z",
+          "stage": "claude-question-redraft-v2",
+          "model": "claude-opus-4-8",
+          "policyId": "claude-from-scratch-human-request-v2",
+          "localRepairs": [
+            {
+              "type": "human-format-name",
+              "from": "xlsx",
+              "to": "Excel"
+            },
+            {
+              "type": "human-format-name",
+              "from": "html",
+              "to": "HTML"
+            },
+            {
+              "type": "clear-request-frame",
+              "from": "麻烦你据此做",
+              "to": "你帮我做"
+            },
+            {
+              "type": "mechanical-order-shell",
+              "from": "所以我想的做法是先把",
+              "to": "所以我想把"
+            },
+            {
+              "type": "latin-cjk-spacing",
+              "from": "SDK示例",
+              "to": "SDK 示例"
+            },
+            {
+              "type": "latin-cjk-spacing",
+              "from": "MQTT.fx那类",
+              "to": "MQTT.fx 那类"
+            }
+          ]
+        },
+        {
+          "at": "2026-07-16T06:19:30.027Z",
+          "stage": "claude-question-redraft-v3",
+          "model": "claude-opus-4-8",
+          "policyId": "claude-plain-professional-redraft-v3",
+          "localRepairs": []
+        },
+        {
+          "at": "2026-07-16T06:20:32.425Z",
+          "stage": "claude-question-redraft-v3",
+          "model": "claude-opus-4-8",
+          "policyId": "claude-plain-professional-redraft-v3",
+          "localRepairs": [
+            {
+              "type": "remove-hidden-role-boundary",
+              "from": "设备平台运维由我负责，这批工作里只能依据公开规则整理方案，不能替代有权限的人员执行生产证书状态变更。",
+              "to": ""
+            },
+            {
+              "type": "plain-professional-request",
+              "from": "我请你把",
+              "to": "请把"
+            }
+          ]
+        },
+        {
+          "at": "2026-07-16T06:21:53.761Z",
+          "stage": "claude-question-redraft-v3",
+          "model": "claude-opus-4-8",
+          "policyId": "claude-plain-professional-redraft-v3",
+          "localRepairs": [
+            {
+              "type": "remove-hidden-role-boundary",
+              "from": "设备平台运维由我负责，这批工作里只能依据公开规则整理方案，不能替代有权限的人员执行生产证书状态变更。",
+              "to": ""
+            },
+            {
+              "type": "plain-professional-request",
+              "from": "我请你把",
+              "to": "请把"
+            }
+          ]
+        },
+        {
+          "at": "2026-07-16T08:04:39.575Z",
+          "stage": "exact-two-quality-gates-codex-session",
+          "runnerId": "exact-two-quality-gates-v2-codex-session",
+          "provider": "codex-session",
+          "model": "current-codex-session",
+          "requestedModel": "5.6sol",
+          "firstPromptHash": "087cc4ad0246d5108b267961190eb8d619206a673b3536092b90cf4a6124622e",
+          "secondPromptHash": "ee8b575fe2f65d1f3a50a6375bfa0f81ac1aaf5aea2912df2941d687e6aa8313",
+          "firstConclusion": "pass",
+          "secondConclusion": "需语言小修"
+        }
+      ],
+      "finalRecord": {
+        "UID": "434",
+        "题目": "华为云 IoTDA 上有一批通过 X.509 证书（用于确认设备身份的数字证书）接入的存量设备，现有证书陆续接近轮换窗口。轮换前需要先弄清设备与证书的对应关系，因为停用设备证书会使关联设备无法接入，删除 CA 证书也会影响使用它完成认证的设备。目前内部设备清单、证书指纹台账和可接受的离线窗口还没有提供，因此本次工作的结果应是一套公开规则下的轮换准备方案，生产验证留待内部材料补齐后完成。\n六份附件覆盖了 X.509 设备注册、证书状态管理和相关接口，也包括 MQTT（设备与云平台之间常用的轻量通信协议）接入调测与证书到期替换说明。材料可以确认平台支持的认证范围、证书配额和到期告警，也能看到证书列表查询与状态更新所需的字段。它们负责说明平台规则，真实租户中的设备关系和当前状态仍要以台账及获授权查询结果为准。\n轮换准备从建立设备证书映射开始。每台设备先对应到证书指纹（根据证书内容生成的唯一标识），再核对证书状态和到期时间。对应关系不清或状态无法确认的设备留在待核区，不进入试点名单。通过核对的设备按到期时间安排批次，新旧证书先并存验证，再用单台设备回连（换证后重新接入平台并确认连接稳定）决定是否扩大范围。验证失败时停止扩大批次，已经更新的设备按原证书和原状态恢复，并把失败原因留在交接记录里。\n请把这套准备流程整理成一份 Excel 工作簿和一个 HTML 操作页。工作簿供设备运维同事逐台筛查，记录设备标识、证书指纹和当前状态，并承接到期时间、试点批次及验证结果。操作页给值班同事使用，把查询、核对、试点和回滚按实际顺序排开，每一步说明前置证据以及失败后退回的位置。同一台设备在工作簿中的记录要能对应到操作页中的执行阶段，避免两份材料出现不同结论。\n最终结论只判断现有材料是否足以启动轮换准备，以及哪些条件满足后才能进入试点。生产租户的设备证书映射台账、实际接口返回和离线窗口都列为待补输入。可轮换名单为空或回滚条件不完整时，结论保持为暂不进入试点，放行结果以真实核对记录为准。",
+        "任务类型": "L2 流程型",
+        "一级目录": "科技软件与 AI 工作流",
+        "二级目录": "物联网平台运维与安全",
+        "三级目录": "华为云 IoTDA 设备证书轮换与停用窗口设计",
+        "任务概括": "核对华为云 IoTDA存量X.509设备证书关系，设计分批轮换、验证与回滚路径并判断是否具备启动条件。",
+        "标注专家工作年限": "6年",
+        "人类完成时间": "14h",
+        "相关附件": "附件一_华为云_注册X509证书认证设备.html；附件二_华为云_设备证书管理与状态限制.html；附件三_华为云_更新设备证书API.html；附件四_华为云_查询设备证书列表API.html；附件五_华为云_MQTTfx证书接入实践.html；附件六_华为云_IoTDA证书资源与到期替换.html",
+        "附件格式": "html",
+        "附件内容": "附件一：《华为云注册X.509证书认证设备》。来源：https://support.huaweicloud.com/usermanual-iothub/iot_01_0055.html。内容摘要：说明注册证书认证设备的入口、参数和 MQTT 接入范围。资料边界：不能替代本项目设备台账与证书指纹核验。\n附件二：《华为云设备证书管理与状态限制》。来源：https://support.huaweicloud.com/usermanual-iothub/iot_01_0116.html。内容摘要：说明设备证书配额、到期告警与停用影响。资料边界：没有本租户证书状态和设备关联结果。\n附件三：《华为云更新设备证书 API》。来源：https://support.huaweicloud.com/api-iothub/UpdateDeviceCertificate.html。内容摘要：列出状态更新接口及请求响应字段。资料边界：接口文档不代表任何生产状态已经变更。\n附件四：《华为云查询设备证书列表 API》。来源：https://support.huaweicloud.com/api-iothub/ListDeviceCertificate.html。内容摘要：列出证书列表查询路径与返回字段。资料边界：真实返回值需在获授权环境中获取。\n附件五：《华为云 MQTT.fx 证书接入实践》。来源：https://support.huaweicloud.com/bestpractice-iothub/iot_bp_0077.html。内容摘要：展示证书接入与客户端调测路径。资料边界：示例结果不能当作本批设备的回连证据。\n附件六：《华为云 IoTDA 证书资源与到期替换》。来源：https://support.huaweicloud.com/devg-iothub/iot_02_1004.html。内容摘要：说明平台证书资源和到期替换相关操作。资料边界：具体窗口与批次仍由内部运行信息决定。",
+        "产物格式": "xlsx, html",
+        "产物内容": "Excel《IoTDA 设备证书轮换检查表》供设备平台运维人员筛查设备、证书和 CA 的关联状态，并保留到期告警、验证结果、批次结论与回滚记录。HTML《IoTDA 证书轮换值班操作页》供值班同事按准备到收尾的阶段执行，展示接口调用口径、证据入口、失败分支和回退位置。两份产物只基于公开规则与明确标注的模拟记录形成条件判断，真实环境结果继续显示为待执行。",
+        "做题关键步骤": "1. 逐份核对六个华为云页面的标题、来源地址与可用范围，记录认证方式和证书状态等可确认规则。\n2. 把设备清单、证书指纹和业务分组等内部缺口整理为待补字段，不从公开示例补造生产值。\n3. 在工作簿建立设备、设备证书、CA 与接入域名之间的映射关系，并设置关联关系完整性检查。\n4. 把到期前30天告警和证书配额1.5倍等公开约束转成可筛选的检查规则。\n5. 按证书状态识别即将过期、已停用和关系缺失等异常，分别给出下一步核验动作。\n6. 设计新旧证书并存的单台试点，记录下发结果、设备回连证据与失败判定。\n7. 根据试点结果划分后续批次，给每批写明进入条件、观察窗口和停止扩批条件。\n8. 对状态更新和列表查询接口编写请求口径，说明输入字段、返回值核对与错误留痕。\n9. 在 HTML 操作页串联准备、试点、扩批和收尾阶段，让每一步都能回到工作簿证据。\n10. 用即将过期、关系缺失和回连失败三个样例走通筛查、验证与回滚路径。\n11. 对照两份产物中同一设备的状态、下一步和回滚动作，确认条件结论完全一致。"
+      },
+      "workflowEvents": [
+        {
+          "at": "2026-07-16T02:33:36.224Z",
+          "type": "reference.sampled",
+          "sheet": "Sheet1",
+          "row": 496
+        },
+        {
+          "at": "2026-07-16T02:33:36.231Z",
+          "type": "reference.breakdown.recorded"
+        },
+        {
+          "at": "2026-07-16T02:33:36.231Z",
+          "type": "attachments.recorded",
+          "count": 6
+        },
+        {
+          "at": "2026-07-16T02:33:36.231Z",
+          "type": "draft.recorded",
+          "reason": "initial"
+        },
+        {
+          "at": "2026-07-16T02:33:36.232Z",
+          "type": "first-qa.passed"
+        },
+        {
+          "at": "2026-07-16T02:33:36.233Z",
+          "type": "second-qa.second-qa-pass"
+        },
+        {
+          "at": "2026-07-16T02:33:36.233Z",
+          "type": "final.completed"
+        },
+        {
+          "at": "2026-07-16T05:19:39.272Z",
+          "type": "claude.rewrite.accepted",
+          "model": "claude-opus-4-8",
+          "localRepairCount": 2
+        },
+        {
+          "at": "2026-07-16T05:20:26.565Z",
+          "type": "claude.rewrite.accepted",
+          "model": "claude-opus-4-8",
+          "localRepairCount": 3
+        },
+        {
+          "at": "2026-07-16T05:21:07.426Z",
+          "type": "claude.rewrite.accepted",
+          "model": "claude-opus-4-8",
+          "localRepairCount": 3
+        },
+        {
+          "at": "2026-07-16T05:59:47.928Z",
+          "type": "claude.redraft.v2.accepted",
+          "model": "claude-opus-4-8",
+          "localRepairCount": 5
+        },
+        {
+          "at": "2026-07-16T06:01:06.466Z",
+          "type": "claude.redraft.v2.accepted",
+          "model": "claude-opus-4-8",
+          "localRepairCount": 6
+        },
+        {
+          "at": "2026-07-16T06:01:37.198Z",
+          "type": "claude.redraft.v2.accepted",
+          "model": "claude-opus-4-8",
+          "localRepairCount": 6
+        },
+        {
+          "at": "2026-07-16T06:19:30.028Z",
+          "type": "claude.redraft.v3.accepted",
+          "model": "claude-opus-4-8",
+          "localRepairCount": 0
+        },
+        {
+          "at": "2026-07-16T06:20:32.425Z",
+          "type": "claude.redraft.v3.accepted",
+          "model": "claude-opus-4-8",
+          "localRepairCount": 2
+        },
+        {
+          "at": "2026-07-16T06:21:53.762Z",
+          "type": "claude.redraft.v3.accepted",
+          "model": "claude-opus-4-8",
+          "localRepairCount": 2
+        },
+        {
+          "at": "2026-07-16T08:04:39.575Z",
+          "type": "two-quality-gates.codex-session-pass",
+          "runnerId": "exact-two-quality-gates-v2-codex-session"
+        }
+      ]
+    },
+    {
+      "recordUid": "435",
+      "referenceLocation": {
+        "sheet": "Sheet1",
+        "row": 1093
+      },
+      "referenceQuestionStructure": {
+        "businessScene": "企业应用集成团队迁移钉钉事件订阅模式",
+        "coreBlockage": "旧回调、新连接和回退条件尚未放到同一验证框架",
+        "mainTask": "判断当前材料是否足以进入 Stream 切换演练",
+        "attachmentSupport": "配置页面、事件文档、错误码和两种 SDK 支撑迁移评审",
+        "deliverableOrigin": "评审说明承载决策过程，验证矩阵承载逐事件证据",
+        "imitableStructure": "先盘点现状，再设计验证和失败场景，最后形成演练准入结论",
+        "forbiddenReuse": "不复用抽样题的角色、业务压力、附件组合和产物固定壳"
+      },
+      "referenceAttachmentStructure": "平台配置、具体事件、错误排查和客户端实现四类资料配合",
+      "newQuestionStructureMapping": "从旧回调现状推进到 Stream 验证、重复与失败场景、回退和演练准入结论",
+      "newAttachmentSupport": "六份对象级资料分别覆盖推送配置、旧回调、错误码、具体事件和两种 SDK",
+      "attachmentBuild": {
+        "attachments": [
+          {
+            "name": "附件一_钉钉_配置事件推送方式.html",
+            "sourceUrl": "https://open.dingtalk.com/document/development/configure-stream-push",
+            "localPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\attachments\\02\\附件一_钉钉_配置事件推送方式.html",
+            "sha256": "895a74692d4def5ec72cece09f9187af42d1a557c6408eab2e20a94123df1dbd",
+            "bytes": 303283,
+            "classification": "specific-business",
+            "objectLevel": true,
+            "timeAnchor": "2026-07-16官方页面下载快照",
+            "summary": "钉钉开放平台的对象级技术页面，包含配置事件推送方式相关配置、事件或客户端入口",
+            "specificityEvidence": {
+              "object": "钉钉开放平台事件订阅",
+              "periodOrEvent": "2026-07-16迁移资料核验",
+              "uniqueContent": "保留官方来源地址、文件哈希和附件一_钉钉_配置事件推送方式.html对应的产品级字段或操作说明"
+            }
+          },
+          {
+            "name": "附件二_钉钉_事件订阅与回调加解密.html",
+            "sourceUrl": "https://open.dingtalk.com/document/org/push-events",
+            "localPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\attachments\\02\\附件二_钉钉_事件订阅与回调加解密.html",
+            "sha256": "9e2690d87c0e903d2d51d9d8d872b9961dda51a82134290232503c0a8c72f68f",
+            "bytes": 13481,
+            "classification": "specific-business",
+            "objectLevel": true,
+            "timeAnchor": "2026-07-16官方页面下载快照",
+            "summary": "钉钉开放平台的对象级技术页面，包含事件订阅与回调加解密相关配置、事件或客户端入口",
+            "specificityEvidence": {
+              "object": "钉钉开放平台事件订阅",
+              "periodOrEvent": "2026-07-16迁移资料核验",
+              "uniqueContent": "保留官方来源地址、文件哈希和附件二_钉钉_事件订阅与回调加解密.html对应的产品级字段或操作说明"
+            }
+          },
+          {
+            "name": "附件三_钉钉_开放平台全局错误码.html",
+            "sourceUrl": "https://open.dingtalk.com/document/development/server-api-error-codes-1",
+            "localPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\attachments\\02\\附件三_钉钉_开放平台全局错误码.html",
+            "sha256": "bf21b33fab88425cd41cf7f258e2d5838e55ff3c59dbe7a8cef53742659986e2",
+            "bytes": 303365,
+            "classification": "specific-business",
+            "objectLevel": true,
+            "timeAnchor": "2026-07-16官方页面下载快照",
+            "summary": "钉钉开放平台的对象级技术页面，包含开放平台全局错误码相关配置、事件或客户端入口",
+            "specificityEvidence": {
+              "object": "钉钉开放平台事件订阅",
+              "periodOrEvent": "2026-07-16迁移资料核验",
+              "uniqueContent": "保留官方来源地址、文件哈希和附件三_钉钉_开放平台全局错误码.html对应的产品级字段或操作说明"
+            }
+          },
+          {
+            "name": "附件四_钉钉_人员变更Stream事件.html",
+            "sourceUrl": "https://open.dingtalk.com/document/orgapp/personnel-platform-employee-change-event-stream",
+            "localPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\attachments\\02\\附件四_钉钉_人员变更Stream事件.html",
+            "sha256": "1870738908f44513b6c13f0e565aed78536f4a039f0ca2a3786bdbcde24bc23b",
+            "bytes": 361278,
+            "classification": "specific-business",
+            "objectLevel": true,
+            "timeAnchor": "2026-07-16官方页面下载快照",
+            "summary": "钉钉开放平台的对象级技术页面，包含人员变更Stream事件相关配置、事件或客户端入口",
+            "specificityEvidence": {
+              "object": "钉钉开放平台事件订阅",
+              "periodOrEvent": "2026-07-16迁移资料核验",
+              "uniqueContent": "保留官方来源地址、文件哈希和附件四_钉钉_人员变更Stream事件.html对应的产品级字段或操作说明"
+            }
+          },
+          {
+            "name": "附件五_钉钉Stream模式Java官方SDK说明.txt",
+            "sourceUrl": "https://raw.githubusercontent.com/open-dingtalk/dingtalk-stream-sdk-java/main/README.md",
+            "localPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\attachments\\02\\附件五_钉钉Stream模式Java官方SDK说明.txt",
+            "sha256": "bcba3541e1ee736fa527662a0e18eb4e16b297e01b05cc32e0b6e03fbf8977e0",
+            "bytes": 1456,
+            "classification": "specific-business",
+            "objectLevel": true,
+            "timeAnchor": "2026-07-16官方页面下载快照",
+            "summary": "钉钉开放平台的对象级技术页面，包含Stream模式Java官方SDK说明相关配置、事件或客户端入口",
+            "specificityEvidence": {
+              "object": "钉钉开放平台事件订阅",
+              "periodOrEvent": "2026-07-16迁移资料核验",
+              "uniqueContent": "保留官方来源地址、文件哈希和附件五_钉钉Stream模式Java官方SDK说明.txt对应的产品级字段或操作说明"
+            }
+          },
+          {
+            "name": "附件六_钉钉Stream模式Node官方SDK说明.txt",
+            "sourceUrl": "https://raw.githubusercontent.com/open-dingtalk/dingtalk-stream-sdk-nodejs/main/README.md",
+            "localPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\attachments\\02\\附件六_钉钉Stream模式Node官方SDK说明.txt",
+            "sha256": "3c1b2551b21e658d09ae516a26e37e0481570028a09c2c5be2b4bfb999940ee1",
+            "bytes": 2029,
+            "classification": "specific-business",
+            "objectLevel": true,
+            "timeAnchor": "2026-07-16官方页面下载快照",
+            "summary": "钉钉开放平台的对象级技术页面，包含Stream模式Node官方SDK说明相关配置、事件或客户端入口",
+            "specificityEvidence": {
+              "object": "钉钉开放平台事件订阅",
+              "periodOrEvent": "2026-07-16迁移资料核验",
+              "uniqueContent": "保留官方来源地址、文件哈希和附件六_钉钉Stream模式Node官方SDK说明.txt对应的产品级字段或操作说明"
+            }
+          }
+        ],
+        "newAttachmentSupport": "六份对象级资料分别覆盖推送配置、旧回调、错误码、具体事件和两种 SDK",
+        "newQuestionStructureMapping": "从旧回调现状推进到 Stream 验证、重复与失败场景、回退和演练准入结论"
+      },
+      "formatRequirement": null,
+      "draftedProductFormats": "docx, xlsx",
+      "deliverableRationale": [
+        {
+          "format": "docx",
+          "user": "企业应用集成评审人员",
+          "purpose": "解释迁移条件与回滚路径",
+          "whyThisFormat": "适合承载连续评审说明和可编辑意见"
+        },
+        {
+          "format": "xlsx",
+          "user": "迁移演练执行人员",
+          "purpose": "逐事件记录验证证据",
+          "whyThisFormat": "适合筛查状态并对照放行条件"
+        }
+      ],
+      "preQaStructureAudit": {
+        "source": "existing-structure-audit",
+        "informationalOnly": true,
+        "note": "The exact first quality prompt alone determined pass or fail."
+      },
+      "firstQaFullResult": {
+        "pass": true,
+        "issues": [],
+        "execution": {
+          "runnerId": "exact-two-quality-gates-v2-codex-session",
+          "provider": "codex-session",
+          "model": "current-codex-session",
+          "requestedModel": "5.6sol",
+          "sourcePromptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\inputs\\production\\L2题面第一道质检提示词_增强覆盖版.txt",
+          "sourcePromptHash": "087cc4ad0246d5108b267961190eb8d619206a673b3536092b90cf4a6124622e",
+          "renderedPromptHash": "57c7a24a3ffb139b5f67fcf2e2c0c2f5b7bb8ada6b404b30bdc86950347ce4ef",
+          "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\qa\\codex_quality_gates\\2_first_quality_gate.json",
+          "rawResponseHash": "952f31494f92bdb358b2eba4e40bdb89810649f3cc0804d047cfe95d4e7fe189",
+          "completedAt": "2026-07-16T08:04:39.577Z",
+          "sessionProof": {
+            "kind": "active-codex-task",
+            "note": "Executed in the current Codex session at the user's request."
+          }
+        }
+      },
+      "firstQaRepairs": [],
+      "secondQaFullResult": {
+        "conclusion": "需语言小修",
+        "coreJudgment": "原题的业务对象和迁移边界成立，但材料说明、验证动作和产物要求写得过密，部分句子接近检查清单。修改稿保留 HTTP 回调迁移到 Stream 的评审主线，并按现状、公开材料边界、演练证据和交付用途展开，读者能顺着实际迁移流程理解任务。",
+        "modifications": "1. 原题开头同时交代现状、缺口和结论限制。改写后先写迁移缘由，再落到缺少统一记录这一卡点，委托起点更自然。\n2. 原题逐份展开官方材料，形成文档目录感。改写后按配置规则、事件处理和异常排查概括材料作用，同时保留无法确认的生产信息。\n3. 原题把多项验证要求压在一处。改写后以单个事件为对象，按接收、重复投递和故障验证推进，失败后回到对应环节重测。\n4. 原题的产物段主要列字段。改写后先写 Word 和 Excel 各自的使用者，再说明两份材料如何以同一事件互相校验，沿用目标题面的收束方式。\n5. 原题包含较多提示词式否定句。改写后把未知项放回生产配置和演练证据，保留边界但不刻意强调禁止行为。",
+        "modifiedQuestion": "现有钉钉企业内部应用通过 HTTP 回调接收人员变更事件，团队准备评估是否迁移到 Stream 模式（由客户端与平台保持连接并持续接收事件）。现在缺少一份能把旧回调配置、新接入方式和演练证据放在一起的迁移记录。生产订阅清单、当前回调成功率和实际部署语言也没有提供，因此本次工作先形成迁移评审与待验证框架，生产切换结论留给后续演练。\n六份附件包括事件推送方式配置、HTTP 回调的加解密规则和全局错误码，也提供了人员变更 Stream 事件以及 Java、Node 两套官方 SDK 说明。公开材料可以说明两种接入路径如何配置，事件负载怎样进入处理程序，以及鉴权或连接异常从哪里排查。它们还不能说明本应用当前订阅了哪些事件，也无法确认控制台是否允许两种方式同时保留，这些内容需要从生产配置导出和演练记录中补齐。\n评审先还原现状，再逐项建立切换证据。现有 HTTP 入口需要保留回调地址、鉴权方式和事件清单，Stream 侧则记录客户端配置与实际运行语言。每个事件先验证一次正常接收，再检查重复投递时的幂等处理（同一事件重复到达时只产生一次有效处理），随后模拟鉴权失败和连接中断。人员变更 v2（钉钉人员异动事件的新版结构）作为完整样例贯穿这些步骤，处理结果和告警记录都回到同一条验证记录。任一环节未通过时，该事件保持待补状态。修正对应配置或代码后，再从失败环节重新测试。\n请把评审结果整理成一份 Word 迁移说明和一张 Excel 验证矩阵。Word 供项目负责人判断是否进入切换演练，说明模式差异、改造顺序和回退条件。Excel 给开发与值班同事逐事件记录证据，保留旧入口和 Stream 配置，并写明正常接收、重复投递及故障验证的结果。同一事件在 Word 中提出的放行条件，要能在 Excel 中找到对应记录，避免说明已经放行而矩阵仍缺证据。\n结论只回答现有材料是否足以开展演练准备，以及还要补哪些对象级信息。生产配置导出、订阅事件清单和运行日志列为待补输入。两种推送方式能否并行保留也在演练前确认。如果实际不能并行，迁移说明需要写清恢复旧回调与核对补发记录的最小步骤，生产切换结论由后续演练证据确认。",
+        "punctuationAudit": "1. 是否使用分号：否。\n2. 是否存在单句超过两个顿号：否。\n3. 是否存在用逗号替代顿号堆并列：否。\n4. 是否至少使用三处有解释价值的括号：是。\n5. 是否存在标签式括号：否。\n6. 是否存在一句话塞入过多并列信息：否。\n7. 是否出现禁用句式“问题不在于……而是……”：否。\n8. 是否出现禁用句式“有的……有的……”：否。\n9. 是否出现机械部门对立句式：否。\n10. 产物要求是否已模仿题库目标题的后半段或最后一段写法：是。",
+        "remainingNote": "可进入最终出题表",
+        "raw": "【第二道质检结论】\n需语言小修\n\n【核心判断】\n原题的业务对象和迁移边界成立，但材料说明、验证动作和产物要求写得过密，部分句子接近检查清单。修改稿保留 HTTP 回调迁移到 Stream 的评审主线，并按现状、公开材料边界、演练证据和交付用途展开，读者能顺着实际迁移流程理解任务。\n\n【主要修改点】\n1. 原题开头同时交代现状、缺口和结论限制。改写后先写迁移缘由，再落到缺少统一记录这一卡点，委托起点更自然。\n2. 原题逐份展开官方材料，形成文档目录感。改写后按配置规则、事件处理和异常排查概括材料作用，同时保留无法确认的生产信息。\n3. 原题把多项验证要求压在一处。改写后以单个事件为对象，按接收、重复投递和故障验证推进，失败后回到对应环节重测。\n4. 原题的产物段主要列字段。改写后先写 Word 和 Excel 各自的使用者，再说明两份材料如何以同一事件互相校验，沿用目标题面的收束方式。\n5. 原题包含较多提示词式否定句。改写后把未知项放回生产配置和演练证据，保留边界但不刻意强调禁止行为。\n\n【修改后题面】\n现有钉钉企业内部应用通过 HTTP 回调接收人员变更事件，团队准备评估是否迁移到 Stream 模式（由客户端与平台保持连接并持续接收事件）。现在缺少一份能把旧回调配置、新接入方式和演练证据放在一起的迁移记录。生产订阅清单、当前回调成功率和实际部署语言也没有提供，因此本次工作先形成迁移评审与待验证框架，生产切换结论留给后续演练。\n六份附件包括事件推送方式配置、HTTP 回调的加解密规则和全局错误码，也提供了人员变更 Stream 事件以及 Java、Node 两套官方 SDK 说明。公开材料可以说明两种接入路径如何配置，事件负载怎样进入处理程序，以及鉴权或连接异常从哪里排查。它们还不能说明本应用当前订阅了哪些事件，也无法确认控制台是否允许两种方式同时保留，这些内容需要从生产配置导出和演练记录中补齐。\n评审先还原现状，再逐项建立切换证据。现有 HTTP 入口需要保留回调地址、鉴权方式和事件清单，Stream 侧则记录客户端配置与实际运行语言。每个事件先验证一次正常接收，再检查重复投递时的幂等处理（同一事件重复到达时只产生一次有效处理），随后模拟鉴权失败和连接中断。人员变更 v2（钉钉人员异动事件的新版结构）作为完整样例贯穿这些步骤，处理结果和告警记录都回到同一条验证记录。任一环节未通过时，该事件保持待补状态。修正对应配置或代码后，再从失败环节重新测试。\n请把评审结果整理成一份 Word 迁移说明和一张 Excel 验证矩阵。Word 供项目负责人判断是否进入切换演练，说明模式差异、改造顺序和回退条件。Excel 给开发与值班同事逐事件记录证据，保留旧入口和 Stream 配置，并写明正常接收、重复投递及故障验证的结果。同一事件在 Word 中提出的放行条件，要能在 Excel 中找到对应记录，避免说明已经放行而矩阵仍缺证据。\n结论只回答现有材料是否足以开展演练准备，以及还要补哪些对象级信息。生产配置导出、订阅事件清单和运行日志列为待补输入。两种推送方式能否并行保留也在演练前确认。如果实际不能并行，迁移说明需要写清恢复旧回调与核对补发记录的最小步骤，生产切换结论由后续演练证据确认。\n\n【标点与括号自检】\n1. 是否使用分号：否。\n2. 是否存在单句超过两个顿号：否。\n3. 是否存在用逗号替代顿号堆并列：否。\n4. 是否至少使用三处有解释价值的括号：是。\n5. 是否存在标签式括号：否。\n6. 是否存在一句话塞入过多并列信息：否。\n7. 是否出现禁用句式“问题不在于……而是……”：否。\n8. 是否出现禁用句式“有的……有的……”：否。\n9. 是否出现机械部门对立句式：否。\n10. 产物要求是否已模仿题库目标题的后半段或最后一段写法：是。\n\n【仍需注意】\n可进入最终出题表",
+        "secondPromptSelfCheck": {
+          "semicolonUsed": false,
+          "overTwoEnumerationCommas": false,
+          "commaDisguisedList": false,
+          "atLeastThreeMeaningfulParentheses": true,
+          "labelParentheses": false,
+          "overloadedParallelSentence": false,
+          "bannedProblemRatherThan": false,
+          "bannedSomeSome": false,
+          "mechanicalDepartmentOpposition": false,
+          "productParagraphReferenceLogic": true,
+          "narrativeFlowReviewed": true
+        },
+        "execution": {
+          "runnerId": "exact-two-quality-gates-v2-codex-session",
+          "provider": "codex-session",
+          "model": "current-codex-session",
+          "requestedModel": "5.6sol",
+          "sourcePromptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\inputs\\production\\第二道质检_增强覆盖版.txt",
+          "sourcePromptHash": "ee8b575fe2f65d1f3a50a6375bfa0f81ac1aaf5aea2912df2941d687e6aa8313",
+          "renderedPromptHash": "14f0f6d216185a11ac40cbe612f5a2deb05d0755706cbd11d7fb7a6fc79fbdf3",
+          "rawResponsePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l2_20260716T021344Z_32c27a\\qa\\codex_quality_gates\\2_second_language_gate.json",
+          "rawResponseHash": "7586cad5c25e51cc906c0dcff6179430a87361c5c639343fb434929b30fd5584",
+          "completedAt": "2026-07-16T08:04:39.578Z",
+          "sessionProof": {
+            "kind": "active-codex-task",
+            "note": "Executed in the current Codex session at the user's request."
+          },
+          "languageAttempts": 1
+        }
+      },
+      "revisionLog": [
+        {
+          "at": "2026-07-16T05:19:39.273Z",
+          "stage": "claude-question-rewrite",
+          "model": "claude-opus-4-8",
+          "policyId": "claude-situated-process-rewrite-v1",
+          "localRepairs": []
+        },
+        {
+          "at": "2026-07-16T05:20:26.565Z",
+          "stage": "claude-question-rewrite",
+          "model": "claude-opus-4-8",
+          "policyId": "claude-situated-process-rewrite-v1",
+          "localRepairs": []
+        },
+        {
+          "at": "2026-07-16T05:21:07.426Z",
+          "stage": "claude-question-rewrite",
+          "model": "claude-opus-4-8",
+          "policyId": "claude-situated-process-rewrite-v1",
+          "localRepairs": []
+        },
+        {
+          "at": "2026-07-16T05:59:47.949Z",
+          "stage": "claude-question-redraft-v2",
+          "model": "claude-opus-4-8",
+          "policyId": "claude-from-scratch-human-request-v2",
+          "localRepairs": [
+            {
+              "type": "human-format-name",
+              "from": "docx",
+              "to": "Word"
+            },
+            {
+              "type": "human-format-name",
+              "from": "xlsx",
+              "to": "Excel"
+            },
+            {
+              "type": "clear-request-frame",
+              "from": "所以想请你",
+              "to": "所以我想让你"
+            }
+          ]
+        },
+        {
+          "at": "2026-07-16T06:01:06.489Z",
+          "stage": "claude-question-redraft-v2",
+          "model": "claude-opus-4-8",
+          "policyId": "claude-from-scratch-human-request-v2",
+          "localRepairs": [
+            {
+              "type": "human-format-name",
+              "from": "docx",
+              "to": "Word"
+            },
+            {
+              "type": "human-format-name",
+              "from": "xlsx",
+              "to": "Excel"
+            },
+            {
+              "type": "clear-request-frame",
+              "from": "所以想请你",
+              "to": "所以我想让你"
+            }
+          ]
+        },
+        {
+          "at": "2026-07-16T06:01:37.218Z",
+          "stage": "claude-question-redraft-v2",
+          "model": "claude-opus-4-8",
+          "policyId": "claude-from-scratch-human-request-v2",
+          "localRepairs": [
+            {
+              "type": "human-format-name",
+              "from": "docx",
+              "to": "Word"
+            },
+            {
+              "type": "human-format-name",
+              "from": "xlsx",
+              "to": "Excel"
+            },
+            {
+              "type": "clear-request-frame",
+              "from": "麻烦你评审说明出成 Word",
+              "to": "麻烦你把评审说明做成 Word"
+            },
+            {
+              "type": "clear-request-frame",
+              "from": "验证矩阵出成 Excel",
+              "to": "验证矩阵做成 Excel"
+            },
+            {
+              "type": "clear-request-frame",
+              "from": "所以想请你",
+              "to": "所以我想让你"
+            }
+          ]
+        },
+        {
+          "at": "2026-07-16T06:19:30.068Z",
+          "stage": "claude-question-redraft-v3",
+          "model": "claude-opus-4-8",
+          "policyId": "claude-plain-professional-redraft-v3",
+          "localRepairs": []
+        },
+        {
+          "at": "2026-07-16T06:20:32.461Z",
+          "stage": "claude-question-redraft-v3",
+          "model": "claude-opus-4-8",
+          "policyId": "claude-plain-professional-redraft-v3",
+          "localRepairs": [
+            {
+              "type": "remove-hidden-role-boundary",
+              "from": "现有钉钉事件订阅正准备从 HTTP 回调迁移到 Stream 模式，我负责在切换演练前形成迁移评审与验证矩阵，权限止于评审与验证本身，不能替代应用管理员改动生产环境的事件推送配置。",
+              "to": "现有钉钉事件订阅准备从 HTTP 回调迁移到 Stream 模式，当前需要在切换演练前完成迁移评审和验证矩阵。"
+            },
+            {
+              "type": "plain-professional-request",
+              "from": "请你依据下面六份材料，帮我把",
+              "to": "请依据下面六份材料，把"
+            }
+          ]
+        },
+        {
+          "at": "2026-07-16T06:21:53.797Z",
+          "stage": "claude-question-redraft-v3",
+          "model": "claude-opus-4-8",
+          "policyId": "claude-plain-professional-redraft-v3",
+          "localRepairs": [
+            {
+              "type": "remove-hidden-role-boundary",
+              "from": "现有钉钉事件订阅正准备从 HTTP 回调迁移到 Stream 模式，我负责在切换演练前形成迁移评审与验证矩阵，权限止于评审与验证本身，不能替代应用管理员改动生产环境的事件推送配置。",
+              "to": "现有钉钉事件订阅准备从 HTTP 回调迁移到 Stream 模式，当前需要在切换演练前完成迁移评审和验证矩阵。"
+            },
+            {
+              "type": "plain-professional-request",
+              "from": "请你依据下面六份材料，帮我把",
+              "to": "请依据下面六份材料，把"
+            },
+            {
+              "type": "compress-evidence-boundary",
+              "from": "《钉钉配置事件推送方式》给出 Stream、SyncHTTP 和 HTTP 三类配置入口，但不能据此确认本应用的选择与并行能力。",
+              "to": "《钉钉配置事件推送方式》给出 Stream、SyncHTTP 和 HTTP 三类配置入口，本应用的实际选择与并行能力需要结合生产配置核对。"
+            },
+            {
+              "type": "compress-evidence-boundary",
+              "from": "每一条差异都要指向材料里的具体页面作为依据，凡是材料无法确认的地方，例如钉钉应用生产配置导出文件的原件缺失，都要如实标为待补，不能用公开文档或 SDK 示例把没有发生的生产验证结果写成已经完成。",
+              "to": "每一条差异都要指向材料里的具体页面。钉钉应用生产配置导出文件等材料状态单独登记，公开文档和 SDK 示例负责说明规则，生产验证结果由演练记录提供。"
+            },
+            {
+              "type": "direct-failure-branch",
+              "from": "如果某个事件在验证中对不上，例如鉴权不通过或错误码指向配置缺失，就把该行标记为不通过并退回补料，不把它放进放行范围。",
+              "to": "出现鉴权失败或配置类错误码时，该行记录为不通过并返回补料，修正后重新验证。"
+            }
+          ]
+        },
+        {
+          "at": "2026-07-16T08:04:39.578Z",
+          "stage": "exact-two-quality-gates-codex-session",
+          "runnerId": "exact-two-quality-gates-v2-codex-session",
+          "provider": "codex-session",
+          "model": "current-codex-session",
+          "requestedModel": "5.6sol",
+          "firstPromptHash": "087cc4ad0246d5108b267961190eb8d619206a673b3536092b90cf4a6124622e",
+          "secondPromptHash": "ee8b575fe2f65d1f3a50a6375bfa0f81ac1aaf5aea2912df2941d687e6aa8313",
+          "firstConclusion": "pass",
+          "secondConclusion": "需语言小修"
+        }
+      ],
+      "finalRecord": {
+        "UID": "435",
+        "题目": "现有钉钉企业内部应用通过 HTTP 回调接收人员变更事件，团队准备评估是否迁移到 Stream 模式（由客户端与平台保持连接并持续接收事件）。现在缺少一份能把旧回调配置、新接入方式和演练证据放在一起的迁移记录。生产订阅清单、当前回调成功率和实际部署语言也没有提供，因此本次工作先形成迁移评审与待验证框架，生产切换结论留给后续演练。\n六份附件包括事件推送方式配置、HTTP 回调的加解密规则和全局错误码，也提供了人员变更 Stream 事件以及 Java、Node 两套官方 SDK 说明。公开材料可以说明两种接入路径如何配置，事件负载怎样进入处理程序，以及鉴权或连接异常从哪里排查。它们还不能说明本应用当前订阅了哪些事件，也无法确认控制台是否允许两种方式同时保留，这些内容需要从生产配置导出和演练记录中补齐。\n评审先还原现状，再逐项建立切换证据。现有 HTTP 入口需要保留回调地址、鉴权方式和事件清单，Stream 侧则记录客户端配置与实际运行语言。每个事件先验证一次正常接收，再检查重复投递时的幂等处理（同一事件重复到达时只产生一次有效处理），随后模拟鉴权失败和连接中断。人员变更 v2（钉钉人员异动事件的新版结构）作为完整样例贯穿这些步骤，处理结果和告警记录都回到同一条验证记录。任一环节未通过时，该事件保持待补状态。修正对应配置或代码后，再从失败环节重新测试。\n请把评审结果整理成一份 Word 迁移说明和一张 Excel 验证矩阵。Word 供项目负责人判断是否进入切换演练，说明模式差异、改造顺序和回退条件。Excel 给开发与值班同事逐事件记录证据，保留旧入口和 Stream 配置，并写明正常接收、重复投递及故障验证的结果。同一事件在 Word 中提出的放行条件，要能在 Excel 中找到对应记录，避免说明已经放行而矩阵仍缺证据。\n结论只回答现有材料是否足以开展演练准备，以及还要补哪些对象级信息。生产配置导出、订阅事件清单和运行日志列为待补输入。两种推送方式能否并行保留也在演练前确认。如果实际不能并行，迁移说明需要写清恢复旧回调与核对补发记录的最小步骤，生产切换结论由后续演练证据确认。",
+        "任务类型": "L2 流程型",
+        "一级目录": "科技软件与 AI 工作流",
+        "二级目录": "企业软件与技术方案",
+        "三级目录": "钉钉事件订阅推送模式迁移与回滚验证",
+        "任务概括": "梳理钉钉事件订阅从 HTTP 回调迁移到 Stream 模式的切换条件、验证证据和最小回退步骤。",
+        "标注专家工作年限": "5年",
+        "人类完成时间": "12h",
+        "相关附件": "附件一_钉钉_配置事件推送方式.html；附件二_钉钉_事件订阅与回调加解密.html；附件三_钉钉_开放平台全局错误码.html；附件四_钉钉_人员变更Stream事件.html；附件五_钉钉Stream模式Java官方SDK说明.txt；附件六_钉钉Stream模式Node官方SDK说明.txt",
+        "附件格式": "html, txt",
+        "附件内容": "附件一：《钉钉配置事件推送方式》。来源：https://open.dingtalk.com/document/development/configure-stream-push。内容摘要：说明 Stream、SyncHTTP 和 HTTP 等配置入口。资料边界：不能确认本应用当前选择和并行保留能力。\n附件二：《钉钉事件订阅与回调加解密》。来源：https://open.dingtalk.com/document/org/push-events。内容摘要：说明 HTTP 事件推送的 JSON 回调和安全校验。资料边界：生产 token 与回调地址不在材料中。\n附件三：《钉钉开放平台全局错误码》。来源：https://open.dingtalk.com/document/development/server-api-error-codes-1。内容摘要：提供接口失败时的错误码检索入口。资料边界：具体故障原因仍需结合运行日志判断。\n附件四：《钉钉人员变更 Stream 事件》。来源：https://open.dingtalk.com/document/orgapp/personnel-platform-employee-change-event-stream。内容摘要：说明人员异动 v2的事件页面和字段入口。资料边界：页面不代表本应用已经订阅。\n附件五：《钉钉 Stream 模式 Java 官方 SDK 说明》。来源：https://github.com/open-dingtalk/dingtalk-stream-sdk-java。内容摘要：说明 Java 客户端初始化和事件处理入口。资料边界：示例凭证不可复制到生产环境。\n附件六：《钉钉 Stream 模式 Node 官方 SDK 说明》。来源：https://github.com/open-dingtalk/dingtalk-stream-sdk-nodejs。内容摘要：说明 Node 客户端初始化和回调处理入口。资料边界：实际运行语言与部署配置需由项目组补充。",
+        "产物格式": "docx, xlsx",
+        "产物内容": "Word《钉钉事件推送迁移评审说明》供企业应用集成团队评审现状、模式差异、改造步骤、放行条件与回滚路径。Excel《事件订阅切换验证矩阵》按事件保留旧回调、Stream 订阅、幂等判断、处理结果、告警证据和回滚状态，并用人员异动 v2 走完正常、重复与失败场景。结论只判断是否可进入演练，生产配置和真实密钥等缺口继续列为演练前核验项。",
+        "做题关键步骤": "1. 核对六个钉钉官方材料的页面范围，区分推送方式、HTTP 回调、Stream 事件和 SDK 接入信息。\n2. 盘点现有 HTTP 事件链需要补齐的订阅清单、成功率、幂等键和告警记录等内部材料。\n3. 在 Word 中比较 HTTP 与 Stream 的配置位置、连接方式、事件处理和故障定位路径。\n4. 选择人员异动 v2作为首个样例，明确事件字段、接收入口和可核验处理结果。\n5. 在 Excel 建立逐事件验证矩阵，关联旧回调、Stream 订阅、样例负载和幂等判断。\n6. 设计正常接收场景并记录事件到达、业务处理、响应结果与告警状态。\n7. 设计重复投递场景并检查幂等键是否阻止重复业务动作，同时保留原始事件证据。\n8. 模拟鉴权或连接失败，借助全局错误码与运行日志定位问题并触发回退判断。\n9. 核验控制台能否并行保留两种推送方式，无法确认时把它列为演练前阻断项。\n10. 在 Word 写明不能并行时的最小回退动作，包括恢复旧回调和核对补发记录。\n11. 将 Word 的每个放行条件映射到 Excel 证据列，缺少证据的条件不得判为通过。\n12. 汇总演练准入结论和未决事项，确认没有把 SDK 示例结果写成生产切换事实。"
+      },
+      "workflowEvents": [
+        {
+          "at": "2026-07-16T02:33:36.224Z",
+          "type": "reference.sampled",
+          "sheet": "Sheet1",
+          "row": 1093
+        },
+        {
+          "at": "2026-07-16T02:33:36.233Z",
+          "type": "reference.breakdown.recorded"
+        },
+        {
+          "at": "2026-07-16T02:33:36.233Z",
+          "type": "attachments.recorded",
+          "count": 6
+        },
+        {
+          "at": "2026-07-16T02:33:36.233Z",
+          "type": "draft.recorded",
+          "reason": "initial"
+        },
+        {
+          "at": "2026-07-16T02:33:36.233Z",
+          "type": "first-qa.passed"
+        },
+        {
+          "at": "2026-07-16T02:33:36.233Z",
+          "type": "second-qa.second-qa-pass"
+        },
+        {
+          "at": "2026-07-16T02:33:36.233Z",
+          "type": "final.completed"
+        },
+        {
+          "at": "2026-07-16T05:19:39.273Z",
+          "type": "claude.rewrite.accepted",
+          "model": "claude-opus-4-8",
+          "localRepairCount": 0
+        },
+        {
+          "at": "2026-07-16T05:20:26.565Z",
+          "type": "claude.rewrite.accepted",
+          "model": "claude-opus-4-8",
+          "localRepairCount": 0
+        },
+        {
+          "at": "2026-07-16T05:21:07.426Z",
+          "type": "claude.rewrite.accepted",
+          "model": "claude-opus-4-8",
+          "localRepairCount": 0
+        },
+        {
+          "at": "2026-07-16T05:59:47.949Z",
+          "type": "claude.redraft.v2.accepted",
+          "model": "claude-opus-4-8",
+          "localRepairCount": 3
+        },
+        {
+          "at": "2026-07-16T06:01:06.489Z",
+          "type": "claude.redraft.v2.accepted",
+          "model": "claude-opus-4-8",
+          "localRepairCount": 3
+        },
+        {
+          "at": "2026-07-16T06:01:37.218Z",
+          "type": "claude.redraft.v2.accepted",
+          "model": "claude-opus-4-8",
+          "localRepairCount": 5
+        },
+        {
+          "at": "2026-07-16T06:19:30.068Z",
+          "type": "claude.redraft.v3.accepted",
+          "model": "claude-opus-4-8",
+          "localRepairCount": 0
+        },
+        {
+          "at": "2026-07-16T06:20:32.461Z",
+          "type": "claude.redraft.v3.accepted",
+          "model": "claude-opus-4-8",
+          "localRepairCount": 2
+        },
+        {
+          "at": "2026-07-16T06:21:53.797Z",
+          "type": "claude.redraft.v3.accepted",
+          "model": "claude-opus-4-8",
+          "localRepairCount": 5
+        },
+        {
+          "at": "2026-07-16T08:04:39.578Z",
+          "type": "two-quality-gates.codex-session-pass",
+          "runnerId": "exact-two-quality-gates-v2-codex-session"
+        }
+      ]
+    }
+  ]
+}

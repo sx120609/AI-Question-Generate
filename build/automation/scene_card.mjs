@@ -8,6 +8,7 @@ import {
   missingQuestionDeliverableFormats,
 } from "./language_style.mjs";
 import { analyzeProductFormat } from "./product_format.mjs";
+import { resolveProductionProfile } from "./production_profile.mjs";
 import { parseTsvRows } from "./structure_fingerprint.mjs";
 
 export const SCENE_CARD_PROTOCOL_ID = "situated-requester-v1";
@@ -560,7 +561,7 @@ export function assertValidSceneCard(sceneCard, options = {}) {
   return report;
 }
 
-function validateRequestContract(requestContract, errors) {
+function validateRequestContract(requestContract, errors, { allowEmptyOutputs = false } = {}) {
   const outputs = [];
   if (!checkExactObject(requestContract, "requestContract", ["requestSpan", "action", "outputs"], errors)) {
     return outputs;
@@ -571,7 +572,7 @@ function validateRequestContract(requestContract, errors) {
     errors.push(issue("invalid_array", "requestContract.outputs", "requestContract.outputs must be an array."));
     return outputs;
   }
-  if (!requestContract.outputs.length) {
+  if (!requestContract.outputs.length && !allowEmptyOutputs) {
     errors.push(issue("invalid_array_length", "requestContract.outputs", "requestContract.outputs cannot be empty."));
   }
   requestContract.outputs.forEach((output, index) => {
@@ -617,7 +618,7 @@ function validateRoleTrace(roleTrace, errors) {
   checkString(roleTrace.downstreamUseSpan, "roleTrace.downstreamUseSpan", errors, { maxLength: 400 });
 }
 
-function validateCardEnvelope(envelope, { factLedger = null } = {}) {
+function validateCardEnvelope(envelope, { factLedger = null, allowEmptyOutputs = false } = {}) {
   const errors = [];
   const warnings = [];
   if (!checkExactObject(envelope, "card", CARD_ENVELOPE_FIELDS, errors)) {
@@ -627,7 +628,7 @@ function validateCardEnvelope(envelope, { factLedger = null } = {}) {
   const sceneValidation = validateSceneCard(envelope.sceneCard, { factLedger });
   errors.push(...sceneValidation.errors);
   warnings.push(...sceneValidation.warnings);
-  const outputs = validateRequestContract(envelope.requestContract, errors);
+  const outputs = validateRequestContract(envelope.requestContract, errors, { allowEmptyOutputs });
   validateRoleTrace(envelope.roleTrace, errors);
   const usedFactIds = checkStringArray(envelope.usedFactIds, "card.usedFactIds", errors, {
     min: 1,
@@ -762,7 +763,14 @@ export function auditRoleConsistency({
   productFormats,
   record = null,
   factLedger = null,
+  productionProfile = "",
 } = {}) {
+  let profile;
+  try {
+    profile = resolveProductionProfile(productionProfile || record || "l2");
+  } catch {
+    profile = resolveProductionProfile("l2");
+  }
   const effectiveQuestion = String(question ?? record?.题目 ?? record?.question ?? "");
   const effectiveFormats = String(productFormats ?? record?.产物格式 ?? record?.productFormats ?? "");
   const effectiveEnvelope = envelope ?? {
@@ -775,7 +783,10 @@ export function auditRoleConsistency({
   };
   const errors = [];
   const warnings = [];
-  const envelopeValidation = validateCardEnvelope(effectiveEnvelope, { factLedger });
+  const envelopeValidation = validateCardEnvelope(effectiveEnvelope, {
+    factLedger,
+    allowEmptyOutputs: profile.productFormat.optional,
+  });
   errors.push(...envelopeValidation.errors);
   warnings.push(...envelopeValidation.warnings);
 
@@ -819,11 +830,14 @@ export function auditRoleConsistency({
   }
 
   const mFormats = formatSetFromM(effectiveFormats);
-  if (!mFormats.analysis.canonical || mFormats.analysis.unknown.length) {
+  const emptyMFormatsAllowed = profile.productFormat.optional && !mFormats.analysis.source;
+  if (!emptyMFormatsAllowed && (!mFormats.analysis.canonical || mFormats.analysis.unknown.length)) {
     errors.push(issue(
       "invalid_m_product_formats",
       "productFormats",
-      "The M-column product formats must be nonblank canonical extensions.",
+      profile.productFormat.optional
+        ? "When present, the M-column product formats must use canonical extensions."
+        : "The M-column product formats must be nonblank canonical extensions.",
       mFormats.analysis,
     ));
   }

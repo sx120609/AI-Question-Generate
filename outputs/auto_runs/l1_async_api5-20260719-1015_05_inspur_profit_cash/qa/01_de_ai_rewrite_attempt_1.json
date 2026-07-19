@@ -1,0 +1,146 @@
+{
+  "kind": "de-ai-question-rewrite",
+  "policyId": "mugua-gemini-de-ai-rewrite-v2",
+  "uid": "沈礼_api5-20260719-1015_05",
+  "generatedAt": "2026-07-19T02:12:33.991Z",
+  "provider": "mugua-openai-compatible",
+  "endpoint": "https://api.mugua.link/v1/chat/completions",
+  "model": "gemini-3.1-pro-preview",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 1372,
+    "outputTokens": 1231,
+    "totalTokens": 2603
+  },
+  "promptHash": "91b25182ffb2bfd6f892eb62849d31f0e31036cb825137dd43b5462c38ae85c7",
+  "sourceQuestionHash": "d8578c1d9678e36a2358619292bbe5e13d90d7e8ea10c71a325c3038bb7236fc",
+  "rewrittenQuestionHash": "71dd01c54943aeb7de0c2b8233e7fb157c4ad1dde63bb0f664808399708fb2ce",
+  "selectedAttempt": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "pass": true,
+      "visibleLength": 455,
+      "findingRules": []
+    }
+  ],
+  "rewrite": {
+    "question": "我正在做浪潮信息2026年一季度利润现金与营运节奏复核，这份结果供经营分析同事继续取得回款和项目明细后补充判断。\n\n请根据浪潮电子信息产业股份有限公司2026年第一季度报告.pdf，制作一份可下载的浪潮信息2026年一季度利润现金与营运节奏Excel文件，方便经营分析的同事后续拿到回款和项目明细后继续补充判断。\n\n这次主要是想弄清楚收入下降、利润增长但经营现金转负这三者之间的差异。请核对本期、上年同期和期初数据的统计口径，复算本期与上年同期的核心指标以及同比变动方向，同时对收入、利润、现金流相关分项、比率和占比做一下口径复核，看看报表数据和变动原因能不能对得上。如果发现有冲突或者解释不充分的地方，请单列出来说明。请最后给个明确结论，确认这份报告能支持的回款、预收和融资节奏线索，但注意别把这些线索直接写成完整的因果归因。\n\nExcel表里需要包含收入、利润与现金的对照，应收与合同负债线索，融资变化，证据边界以及待补明细。请逐项标明来源页码、未经审计状态、派生计算过程和待核边界，严格区分可证事实、合理推断和待确认项。对于目前缺失的客户、项目和账龄明细，请在表里留出回填栏，不要自行把相关变动推断为完整的因果关系。\n\n请基于上述核对结果给出明确结论，并整理一份可下载的Excel营运节奏核对表，按xlsx格式交付。",
+    "requestContract": {
+      "requestSpan": "请根据浪潮电子信息产业股份有限公司2026年第一季度报告.pdf，制作一份可下载的浪潮信息2026年一季度利润现金与营运节奏Excel文件，方便经营分析的同事后续拿到回款和项目明细后继续补充判断。",
+      "action": "制作",
+      "outputs": [
+        {
+          "format": "xlsx",
+          "humanName": "Excel",
+          "purpose": "供后续执行和留痕使用"
+        }
+      ]
+    },
+    "roleTrace": {
+      "blockageSpan": "请核对本期、上年同期和期初数据的统计口径，复算本期与上年同期的核心指标以及同比变动方向，同时对收入、利润、现金流相关分项、比率和占比做一下口径复核，看看报表数据和变动原因能不能对得上。",
+      "motivationSpan": "请根据浪潮电子信息产业股份有限公司2026年第一季度报告.pdf，制作一份可下载的浪潮信息2026年一季度利润现金与营运节奏Excel文件，方便经营分析的同事后续拿到回款和项目明细后继续补充判断。",
+      "downstreamUseSpan": "请根据浪潮电子信息产业股份有限公司2026年第一季度报告.pdf，制作一份可下载的浪潮信息2026年一季度利润现金与营运节奏Excel文件，方便经营分析的同事后续拿到回款和项目明细后继续补充判断。"
+    },
+    "usedFactIds": [
+      "inspur-core-performance",
+      "inspur-operating-cash",
+      "inspur-receivables",
+      "inspur-contract-liability",
+      "inspur-financing",
+      "inspur-boundary"
+    ],
+    "deliberatelyOmitted": [],
+    "flowStages": [
+      {
+        "stage": "证据归位",
+        "evidence": "事实包中的公开材料与待补信息",
+        "decision": "区分可确认规则和未知现场状态",
+        "next": "证据足够则形成执行对象，不足则进入补证"
+      },
+      {
+        "stage": "执行对象核对",
+        "evidence": "已归位的对象关系与状态记录",
+        "decision": "建立利润现金与营运节奏核对表，复算核心指标方向，整理应收、预收和融资变化的披露线索，并保留客户与项目明细待补栏。",
+        "next": "符合条件则进入小范围验证，否则停止推进"
+      },
+      {
+        "stage": "小范围验证",
+        "evidence": "试点输入与实际返回记录",
+        "decision": "判断结果是否满足扩大范围的条件",
+        "next": "通过则推进，失败则退回原状态并留痕"
+      },
+      {
+        "stage": "交接收束",
+        "evidence": "判断依据、验证结果与回退记录",
+        "decision": "确认下游拿到一致结论",
+        "next": "供经营分析同事继续取得回款和项目明细后补充判断。"
+      }
+    ],
+    "selfAudit": {
+      "factsPreserved": true,
+      "formatsPreserved": true,
+      "processChainExplicit": true,
+      "failureOrRollbackExplicit": true,
+      "noInventedFacts": true,
+      "noAiShell": true
+    }
+  },
+  "validation": {
+    "pass": true,
+    "visibleLength": 553,
+    "similarity": [
+      {
+        "referenceIndex": 1,
+        "editSimilarity": 0.6174757281553398,
+        "trigramJaccard": 0.4131944444444444,
+        "longestExactCopyRun": 32,
+        "longestExactCopySpan": "可下载的浪潮信息2026年一季度利润现金与营运节奏excel文件"
+      },
+      {
+        "referenceIndex": 2,
+        "editSimilarity": 0.020992366412213692,
+        "trigramJaccard": 0.010582010582010581,
+        "longestExactCopyRun": 5,
+        "longestExactCopySpan": "个明确结论"
+      }
+    ],
+    "findings": [],
+    "factGuard": {
+      "ok": true,
+      "candidateAnchors": {
+        "numbers": [
+          "2026年"
+        ],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "unsupported": {
+        "numbers": [],
+        "quotedClaims": [],
+        "timeMarkers": []
+      },
+      "errors": []
+    }
+  },
+  "deterministicStyleCleanup": {
+    "applied": true,
+    "rules": [
+      "remove-unbound-inline-page-range",
+      "remove-unbound-title-quotes",
+      "remove-banned-politeness",
+      "remove-upload-meta-language",
+      "restore-known-requester-context",
+      "restore-explicit-decision-request",
+      "restore-downloadable-format-requirement"
+    ],
+    "sourceApiQuestionHash": "62b0a00c126a9fb49cc10afdff3828264a109e4c792dd59cedad436936bcfb6e"
+  },
+  "postDeAiAudit": {
+    "attachmentsPreserved": true,
+    "factsPreserved": true,
+    "issues": [],
+    "pass": true,
+    "visibleTextClean": true
+  }
+}

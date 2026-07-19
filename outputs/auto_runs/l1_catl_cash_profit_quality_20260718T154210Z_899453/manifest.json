@@ -1,0 +1,48 @@
+{
+  "runId": "l1_catl_cash_profit_quality_20260718T154210Z_899453",
+  "objective": "完成宁德时代2026年一季度利润与经营现金流质量复核的L1端到端测试",
+  "operator": "codex",
+  "productionProfile": "l1",
+  "taskType": "L1 探索型",
+  "generatedAnnotator": "沈礼",
+  "uidPrefix": "沈礼_",
+  "count": 1,
+  "status": "DRAFT",
+  "createdAt": "2026-07-18T15:42:10.000Z",
+  "spreadsheetToken": "",
+  "sheetId": "",
+  "dirs": {
+    "root": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_catl_cash_profit_quality_20260718T154210Z_899453",
+    "sources": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_catl_cash_profit_quality_20260718T154210Z_899453\\sources",
+    "attachments": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_catl_cash_profit_quality_20260718T154210Z_899453\\attachments",
+    "drafts": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_catl_cash_profit_quality_20260718T154210Z_899453\\drafts",
+    "feishu": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_catl_cash_profit_quality_20260718T154210Z_899453\\feishu",
+    "qa": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_catl_cash_profit_quality_20260718T154210Z_899453\\qa",
+    "logs": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_catl_cash_profit_quality_20260718T154210Z_899453\\logs",
+    "tmp": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_catl_cash_profit_quality_20260718T154210Z_899453\\tmp"
+  },
+  "diversityPlanPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_catl_cash_profit_quality_20260718T154210Z_899453\\sources\\diversity_plan.json",
+  "naturalnessBaselinePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_catl_cash_profit_quality_20260718T154210Z_899453\\sources\\naturalness_baseline.json",
+  "diversityPolicyId": "l1-phase3-source-driven-v1",
+  "diversityPolicyVersion": 1,
+  "structuralDiversityPolicyPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\config\\structural_diversity_l1.json",
+  "structureRegistryPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\_structure_registry_l1.json",
+  "productionProtocol": {
+    "profileId": "l1",
+    "taskType": "L1 探索型",
+    "protocolId": "l1-phase3-codex-model-two-gates-trace-v6",
+    "inputPacketPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_catl_cash_profit_quality_20260718T154210Z_899453\\sources\\production_input_packet.json",
+    "workflowStatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_catl_cash_profit_quality_20260718T154210Z_899453\\sources\\production_workflow_state.json",
+    "productionTracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_catl_cash_profit_quality_20260718T154210Z_899453\\qa\\production_trace.json",
+    "inputStatus": "READY"
+  },
+  "situatedGeneration": {
+    "policyId": "situated-requester-v1",
+    "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_catl_cash_profit_quality_20260718T154210Z_899453\\sources\\fact_ledger.json",
+    "sceneCardPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_catl_cash_profit_quality_20260718T154210Z_899453\\sources\\scene_cards.json",
+    "roleConsistencyReportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_catl_cash_profit_quality_20260718T154210Z_899453\\feishu\\role_consistency_report.json"
+  },
+  "recordUid": "沈礼_20260718_catl_cash_profit_quality_01",
+  "feishuWriteAttempted": false,
+  "feishuWriteApplied": false
+}

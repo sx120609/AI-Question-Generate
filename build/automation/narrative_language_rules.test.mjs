@@ -2,20 +2,23 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import {
+  collectNarrativeLanguageAdvisories,
   countEnumerationDeng,
   evaluateNarrativeHardRules,
   findDisguisedCommaLists,
   validateContinuityAudit,
 } from "./narrative_language_rules.mjs";
 
-const flowingQuestion = "先把合同、发票等材料放在一起。这样才能核对金额、日期等信息。最后把缺件等情况写进交接表。";
+const flowingQuestion = "先把合同、发票等材料放在一起（包括补充协议）。这样才能核对金额、日期等信息（以原始回单为准）。最后把缺件等情况写进交接表（注明责任人与节点）。";
 
-test("hard punctuation policy allows one enumeration comma per sentence and requires three enumeration deng", () => {
+test("hard punctuation policy allows natural enumeration deng without imposing a quota", () => {
   assert.equal(countEnumerationDeng(flowingQuestion), 3);
   assert.deepEqual(evaluateNarrativeHardRules(flowingQuestion), []);
-  const failed = evaluateNarrativeHardRules("核对合同、发票、回单。再看金额，日期，主体，状态。");
-  assert.ok(failed.some((item) => item.rule === "enumeration-comma-over-limit"));
-  assert.ok(failed.some((item) => item.rule === "enumeration-deng-below-minimum"));
+  const failed = evaluateNarrativeHardRules("核对合同、发票、回单、流水（包括补充协议）。再看金额，日期，主体，状态（以原始回单为准）。结果写入交接表（注明责任人与节点）。");
+  assert.ok(!failed.some((item) => item.rule === "enumeration-comma-over-limit"));
+  assert.ok(collectNarrativeLanguageAdvisories("核对合同、发票、回单、流水（包括补充协议）。")
+    .some((item) => item.rule === "enumeration-comma-density-advisory"));
+  assert.ok(!failed.some((item) => item.rule === "enumeration-deng-below-minimum"));
   assert.ok(failed.some((item) => item.rule === "comma-disguised-list"));
 });
 

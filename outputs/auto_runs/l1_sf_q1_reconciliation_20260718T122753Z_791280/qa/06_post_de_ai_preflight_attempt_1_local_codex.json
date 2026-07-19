@@ -1,0 +1,21 @@
+{
+  "kind": "local-codex-stage-response",
+  "stage": "06_post_de_ai_preflight",
+  "model": "gpt-5.6-sol",
+  "provider": "local-codex-cli",
+  "completedAt": "2026-07-18T12:47:31.193Z",
+  "promptHash": "cc8c27816c3fb0a5104197fa789838352a979d457d3b946c154f4d99323ed71b",
+  "parsed": {
+    "pass": false,
+    "issues": [
+      {
+        "rule": "核对事实与机器式说明",
+        "evidence": "“两种记账习惯”把材料中的披露单位和精度差异改写成了记账习惯，属于未经依据的事实性定性。",
+        "repair": "改为“以千元披露与以亿元为单位保留两位小数的两种披露口径”。"
+      }
+    ],
+    "factsPreserved": false,
+    "attachmentsPreserved": true,
+    "visibleTextClean": false
+  }
+}

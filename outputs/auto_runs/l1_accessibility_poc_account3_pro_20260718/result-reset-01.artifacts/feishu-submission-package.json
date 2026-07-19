@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "kind": "doubao-feishu-submission-package",
+  "status": "READY_NOT_SUBMITTED",
+  "generatedAt": "2026-07-18T03:25:39.897Z",
+  "jobId": "l1-account3-pro-accessibility-poc-20260718",
+  "configHash": "89650bf4bb005e8f84246d7d048e6c24eaa2dd19d1e52b4c79ae2cc49d14123e",
+  "roundCount": 6,
+  "productAcceptance": {
+    "accepted": true,
+    "items": [
+      {
+        "accepted": true,
+        "artifactBacked": true,
+        "deliveredFormat": "online-spreadsheet",
+        "evidenceQuote": "会议平台无障碍能力证据清单（含钉钉实测矩阵）",
+        "requestedFormat": "excel",
+        "status": "equivalent"
+      }
+    ],
+    "overall": "accepted",
+    "requirement": {
+      "allowEquivalentOnline": true,
+      "allowUnavailableBestEffort": true,
+      "required": true,
+      "requestedFormats": [
+        "excel"
+      ]
+    }
+  },
+  "conversation": {
+    "conversationId": "38435190306832386",
+    "feedbackUrl": "https://www.doubao.com/thread/x4659426960388d4a9e7f969b35696674",
+    "logId": "2026071811182670B5D537746D41A68265",
+    "shareLink": "https://www.doubao.com/thread/xa1a98557328487f4aa51bcc160599053",
+    "allMessagesSelected": true,
+    "selectedMessageCount": 5
+  },
+  "rows": [
+    {
+      "roundNumber": 1,
+      "prompt": "公司准备把跨地区员工培训改成常态化直播，考虑到部分同事需要实时字幕、屏幕阅读器或全键盘操作，目前候选平台定在腾讯会议、钉钉和飞书。附件一是2026年7月18日下载的腾讯会议官方会议字幕说明，这只是个起点，不代表它的整体无障碍能力已经确认。\n\n这轮先不用推荐平台，也不做最终表格。麻烦你结合附件，并查找截至2026年7月18日还能访问的这三家官方产品文档和帮助页面，先整理一份证据清单：逐个平台列出在实时字幕、翻译字幕、屏幕阅读器、键盘与焦点操作、录制和转录留存、主持人及管理员控制这几个方面能核实到的情况。记录时需包含页面标题、链接、访问日期、适用端、版本和套餐。官方没写清楚的直接留空并标为待确认，不要用媒体测评或自己推断。\n\n最后，请指出现有证据冲突最大的地方，以及最需要安排实测的3个缺口。后续我们再收窄试点验证脚本和优先平台，等全部核实清楚后再做可下载电子表格。",
+      "responseIdentity": "block_d5d6bd80-8254-11f1-a40a-b735be607447",
+      "productScreenshot": {
+        "artifactPath": "result-reset-01.artifacts/round-01-response.png",
+        "sha256": "7538db1044380bf7cbc15c064f075c681ea1de25f22270b6fa34c0fafb97fff1",
+        "sizeBytes": 227960
+      },
+      "humanEvaluation": {
+        "labels": [
+          "其他"
+        ],
+        "note": "这份证据清单确实覆盖了要求的六类能力，待确认项也列得很清楚。不过有个大问题，你用了任务里明确排除的非官方材料来构造关键冲突。回复里一边说“以下全部来自各平台官方帮助中心 / 产品文档”，另一边又拿“服务商转载”的21种语言说法当成最大的冲突依据，口径前后矛盾了。而且大部分能力判断都没有摘录官方页面的原文，光看表里的概括，根本没法核对套餐、语言和适用端这些细节。所以这版只能当个初步线索，还不能作为可靠的官方证据底稿。",
+        "vote": "dislike"
+      }
+    },
+    {
+      "roundNumber": 2,
+      "prompt": "你刚才列的钉钉“3种与21种语言冲突”里包含了服务商转载的内容，这不符合我们只用官方页面作为证据的要求。麻烦重新只核验一下钉钉实时字幕和翻译字幕：逐个打开现在还能访问的钉钉官方页面，整理出准确的页面标题、链接、访问日期，以及关于支持语言、适用端、版本和套餐的官方原文短摘录。如果官方没有明确写出的信息，统一标成“待确认”。另外，把21种语言这个非官方的冲突结论删掉。",
+      "responseIdentity": "block_7c48e8a0-8255-11f1-a40a-b735be607447",
+      "productScreenshot": {
+        "artifactPath": "result-reset-01.artifacts/round-02-response.png",
+        "sha256": "dd746eae97fa4be16f874e3190861ade33205d73fcd86b5b8bfc6e1c5796cfc2",
+        "sizeBytes": 173346
+      },
+      "humanEvaluation": {
+        "labels": [
+          "易于理解",
+          "内容完善",
+          "其他"
+        ],
+        "note": "这次回复确实把上一轮引用非官方材料的问题改过来了，“21 种语言互译”的结论也明确删掉了。不过，它还是把“中英文不翻译”和“翻译成中文、英文、日文”直接概括成了“中文、英文、日文（共 3 种）”，没把源语言和翻译目标语言严格区分开。另外还把直播字幕和钉钉闪记这两条不同的功能线混在一起了，所以整体只能算基本可用吧。",
+        "vote": "like"
+      }
+    },
+    {
+      "roundNumber": 3,
+      "prompt": "非官方的“21 种语言互译”结论删掉没问题，接下来需要把视频会议字幕的语言口径拆清楚。请只针对视频会议字幕，把官方原文整理成“可识别或原文显示的源语言”和“可选翻译目标语言”两栏。逐项说明原文能直接证明什么，不能直接证明的标为“待确认”。注意不要混入直播智能翻译或钉钉闪记的内容。",
+      "responseIdentity": "block_671f7830-8256-11f1-a40a-b735be607447",
+      "productScreenshot": {
+        "artifactPath": "result-reset-01.artifacts/round-03-response.png",
+        "sha256": "ad5eb0fdd837ef6b9661ede710e652adc41c588e601e592c4122ab1d30e9541b",
+        "sizeBytes": 177390
+      },
+      "humanEvaluation": {
+        "labels": [
+          "其他",
+          "内容准确",
+          "易于理解",
+          "内容完善"
+        ],
+        "note": "这次回复做得不错，严格限定在了钉钉视频会议会中字幕的范围内。按照原文把源语言和翻译目标语言分得很清楚：明确了中文、英文可以作为原文显示语言，中文、英文、日文可以作为翻译目标。另外把日文能不能作为源语言、是否支持双向互译以及套餐差异都列为了待确认项，也没有混入直播或闪记的口径，完全满足这轮的要求。",
+        "vote": "like"
+      }
+    },
+    {
+      "roundNumber": 4,
+      "prompt": "既然官方证据只能确认中文、英文可原文显示，日文目前只能确认是翻译目标，麻烦基于这个前提，给钉钉视频会议字幕设计一份最小实测矩阵。矩阵需要覆盖中文、英文、日文三种输入语音，以及不翻译、译成中文、译成英文、译成日文四种模式。另外要区分电脑端和手机端，并标清楚哪些测试组合是验证官方已确认能力，哪些是探索“待确认”能力。每个用例请补充操作步骤、预期结果、实际结果记录栏和通过标准。注意测试范围仅限视频会议，不要扩展到直播或闪记。",
+      "responseIdentity": "block_98fd4710-8256-11f1-a40a-b735be607447",
+      "productScreenshot": {
+        "artifactPath": "result-reset-01.artifacts/round-04-response.png",
+        "sha256": "d2c91f360e5242991ba8a259668fb6adef1d0d55bdf0707d2b1e89b923ff470b",
+        "sizeBytes": 248710
+      },
+      "humanEvaluation": {
+        "labels": [
+          "其他"
+        ],
+        "note": "矩阵确实覆盖了三种输入、四种模式和两类终端，步骤与记录栏也有了，但里面有个问题：把官方原文没直接证明的源语言—目标语言组合错误地标成了“已确认”。比如官方只说了中文、英文可不翻译显示，还有中文、英文、日文能作为翻译目标，这不能直接推导出中文或英文到这三个目标语言的所有组合都可用。另外，准确率和延迟阈值其实是自行设定的试点标准，回复里没标明这不是官方能力口径，这样会影响后续的证据分级。",
+        "vote": "dislike"
+      }
+    },
+    {
+      "roundNumber": 5,
+      "prompt": "这份矩阵的组合覆盖已经够了，不过“中文/英文输入→各翻译目标”不能仅凭现有官方原文就归为已确认。\n\n麻烦保留这24条用例，重新把它们分成“验证官方直接确认”、“验证界面是否提供该选项”、“探索端到端翻译能力”这三类，并且逐条写明分类依据。\n\n另外，关于90%、85%、80%准确率和3秒、5秒延迟，请明确标注为内部试点通过标准，注意不要写成官方承诺。",
+      "responseIdentity": "block_f19099e0-8256-11f1-a40a-b735be607447",
+      "productScreenshot": {
+        "artifactPath": "result-reset-01.artifacts/round-05-response.png",
+        "sha256": "871801f8d85589ac59f745826c8466eead7c6c6dd4a6a0f21de3c1416a89ad3e",
+        "sizeBytes": 259944
+      },
+      "humanEvaluation": {
+        "labels": [
+          "其他",
+          "内容准确",
+          "易于理解"
+        ],
+        "note": "这次回复把官方原文的证据强度抓得很准，特别是明确标注了“90% / 85% / 80% 识别准确率及 3 秒 / 5 秒延迟均为内部试点验收阈值”，没把咱们内部的标准当成官方承诺，这点很好。24条用例也都留着了，按4、12、8条分了三类。不过有个小瑕疵，像C04这些用例被放到了“验证界面是否提供该选项”下面，但看它的通过标准，又要求翻译输出、准确率和延迟，这就导致界面选项验证和端到端能力验证混在一起了。另外，手机端的12条用例只是用了“同C01”这种方式引用，没有一条条把分类依据写清楚。",
+        "vote": "like"
+      }
+    },
+    {
+      "roundNumber": 6,
+      "prompt": "麻烦把这24条用例里的“界面是否有选项”和“端到端翻译是否通过”拆成两个独立的结果字段，别把两种结论混在一个分类下。接着结合前面核验过的三家官方证据，出一份最终可下载的 Excel。表里需要保留来源标题、链接、访问日期、适用端、版本、套餐以及待确认项，把这份钉钉实测矩阵单列出来。最后推荐一家优先进入试点的平台就行，剩下两家根据证据缺口写一下暂缓原因，顺便备注一下这个结论不作为最终采购或合规决策。",
+      "responseIdentity": "block_56e52720-8257-11f1-a40a-b735be607447",
+      "productScreenshot": {
+        "artifactPath": "result-reset-01.artifacts/round-06-response.png",
+        "sha256": "04816b684e74cd1941634e008b25dc3774f53aa7c95d277b96e313320d61a50a",
+        "sizeBytes": 229005
+      },
+      "humanEvaluation": {
+        "labels": [
+          "其他",
+          "内容完善",
+          "易于理解"
+        ],
+        "note": "这次回复明确给出了唯一优先试点平台“腾讯会议”，也分别说明了飞书和钉钉的暂缓原因，并且加上了“不作为最终采购决策或合规评估依据”的限定说明。产物卡片看得到已经创建了在线表格。但是，回复里只是笼统地说包含了“钉钉实测矩阵”，并没有展示或者明确确认矩阵里已经把“界面是否有选项”和“端到端翻译是否通过”拆成了两个独立的结果字段，所以这个关键修改还是看不到具体的交付证据。",
+        "vote": "like"
+      }
+    }
+  ],
+  "target": null,
+  "writeback": {
+    "applied": false,
+    "policy": "prepare-only-until-an-exact-feishu-target-row-and-field-map-are-authorized",
+    "readbackVerified": false
+  }
+}

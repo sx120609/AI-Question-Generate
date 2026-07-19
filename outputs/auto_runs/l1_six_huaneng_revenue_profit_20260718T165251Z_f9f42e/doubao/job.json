@@ -1,0 +1,55 @@
+{
+  "jobId": "l1-huaneng-segment-profit-20260719-06",
+  "attachmentRoot": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_huaneng_revenue_profit_20260718T165251Z_f9f42e\\attachments",
+  "initialAttachmentNames": [
+    "华能国际电力股份有限公司2026年第一季度报告.pdf"
+  ],
+  "productionEvidence": {
+    "recordUid": "沈礼_20260719_l1_huaneng_segment_profit_06",
+    "productionTracePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_huaneng_revenue_profit_20260718T165251Z_f9f42e\\qa\\production_trace.json",
+    "productionTraceGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_huaneng_revenue_profit_20260718T165251Z_f9f42e\\feishu\\production_trace_gate_receipt.json",
+    "releaseGateReceiptPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_huaneng_revenue_profit_20260718T165251Z_f9f42e\\feishu\\release_gate_receipt.json",
+    "downloadManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_huaneng_revenue_profit_20260718T165251Z_f9f42e\\sources\\download_manifest.json"
+  },
+  "maxRounds": 6,
+  "maximumRounds": 10,
+  "mode": "openai-compatible",
+  "taskGoal": "电力经营分析人员需要解释总收入利润下滑与不同电力板块利润分化。。制作板块利润驱动交互页面，把总量指标、报告披露的原因、燃料成本线索和板块利润方向并列，缺少的量价成本贡献保持待补。，最终一份可下载并可本地打开的华能国际2026年一季度HTML分析页，含总量指标、原因证据、板块利润对比、证据边界、筛选说明和待补数据。",
+  "successCriteria": [
+    "总量和板块指标准确",
+    "报告原因与推断边界清楚",
+    "不伪造量价成本贡献",
+    "页面包含来源页码和待补项",
+    "交付可下载可打开html"
+  ],
+  "initialPrompt": "我正在做华能国际2026年一季度板块利润与经营驱动复核，这份结果供电力经营复盘时筛选需要进一步补取的板块经营数据。请根据《华能国际电力股份有限公司2026年第一季度报告.pdf》，把发电量、上网电价、燃料成本和境内各电力板块利润放在同一个证据框架里，核对本期与上年同期数据并复算同比变动，同时复核相关分项、比率、占比以及披露口径。\n\n你需要结合报告里披露的变动原因，判断哪些利润方向是有报告明确支持的，并给出明确结论。在这个过程中务必区分清楚可证事实、合理推断和待确认项，不要把相关线索直接写成完整的因果归因。\n\n请基于前述核对结果整理一个可下载、能在本地打开的2026年第一季度HTML分析页（html格式），页面里要呈现总量指标、原因证据、板块利润对比、证据边界、筛选说明和待补数据，里面的每一项数据都要标注PDF来源页码和未经审计状态，并且保留派生计算的过程。",
+  "responseTimeoutMs": 600000,
+  "interactionRewrite": {
+    "type": "openai-compatible",
+    "baseUrl": "https://api.mugua.link/v1",
+    "model": "gemini-3.1-pro-preview",
+    "apiKeyEnv": "DE_AI_REWRITE_API_KEY",
+    "temperature": 0.55,
+    "timeoutMs": 180000
+  },
+  "promptPreflight": {
+    "type": "local-codex",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "timeoutMs": 360000
+  },
+  "policy": {
+    "type": "local-codex",
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "high",
+    "timeoutMs": 360000
+  },
+  "productRequirement": {
+    "required": true,
+    "requestedFormats": [
+      "html"
+    ],
+    "allowEquivalentOnline": false,
+    "allowUnavailableBestEffort": false
+  }
+}

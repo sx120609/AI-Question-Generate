@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "kind": "doubao-postrun-quality-gate",
+  "status": "INCOMPLETE_NOT_SUBMITTED",
+  "pass": false,
+  "finalScore": 2,
+  "finalVote": "dislike",
+  "formatDelivery": {
+    "deliveredFormat": "excel",
+    "status": "exact",
+    "evidenceQuote": "台式机批量采购项目核对材料_完整版.xlsx"
+  },
+  "coreGap": "配送工作表只包含第139至535行的397条记录，没有覆盖全表535条配送记录。",
+  "invalidatedPackage": "feishu-submission-package.json",
+  "writeApplied": false,
+  "generatedAt": "2026-07-18T10:56:09.744Z"
+}

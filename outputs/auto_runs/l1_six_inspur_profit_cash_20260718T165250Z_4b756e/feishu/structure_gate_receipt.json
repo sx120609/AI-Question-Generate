@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 2,
+  "ok": true,
+  "status": "PASS",
+  "generatedAt": "2026-07-18T18:08:04.590Z",
+  "policyId": "l1-phase3-source-driven-v1",
+  "policyVersion": 1,
+  "gateStatus": "PASS",
+  "authorizationMode": "DIRECT_PASS",
+  "reviewAuthorization": null,
+  "reportPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_inspur_profit_cash_20260718T165250Z_4b756e\\feishu\\structure_gate_report.json",
+  "reportHash": "f0d3cf43de9b22cfbd9cbdc1b7a6ff6d7ec972fd7e141e64660ba5740ff95455",
+  "batchHash": "2fd57a21a58b43ebefe1c4a3942f783d71d01ade66fd6f14cc2a5f141b7045ea",
+  "rowHashes": [
+    {
+      "index": 0,
+      "uid": "沈礼_20260719_l1_inspur_profit_cash_05",
+      "sheetRow": 999905,
+      "hash": "1212c17149ead1d6c01934dbb5f3d292e045027baa005b6c008486ed965c308c"
+    }
+  ]
+}

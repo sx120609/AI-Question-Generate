@@ -1,0 +1,54 @@
+{
+  "browserContextId": "1084C633D11647B8992D48E50C635F55",
+  "handled": 3,
+  "workers": [
+    {
+      "handled": 1,
+      "jobs": [
+        {
+          "error": {
+            "code": "",
+            "message": "locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"create_office_task_button\"]')\u001b[22m\n\u001b[2m    - locator resolved to <div aria-hidden=\"true\" data-aria-hidden=\"true\" data-testid=\"create_office_task_button\">…</div>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div data-state=\"open\" aria-hidden=\"true\" data-aria-hidden=\"true\" data-slot=\"dialog-overlay\" data-setting-modal-layer=\"\" class=\"fixed inset-0 bg-dbx-bg-mask data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:animate-in data-[state=open]:fade-in-0 z-[100]\"></div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div data-state=\"open\" aria-hidden=\"true\" data-aria-hidden=\"true\" data-slot=\"dialog-overlay\" data-setting-modal-layer=\"\" class=\"fixed inset-0 bg-dbx-bg-mask data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:animate-in data-[state=open]:fade-in-0 z-[100]\"></div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    16 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div data-state=\"open\" aria-hidden=\"true\" data-aria-hidden=\"true\" data-slot=\"dialog-overlay\" data-setting-modal-layer=\"\" class=\"fixed inset-0 bg-dbx-bg-mask data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:animate-in data-[state=open]:fade-in-0 z-[100]\"></div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n"
+          },
+          "jobId": "l1-baosteel-mix-profit-20260719-04",
+          "resultPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\results\\l1-baosteel-mix-profit-20260719-04.json",
+          "status": "failed"
+        }
+      ],
+      "targetId": "D7F9BF5AF432877197B0C1AA9F2D24BB",
+      "workerId": "slot-1-D7F9BF5AF432877197B0C1AA9F2D24BB"
+    },
+    {
+      "handled": 1,
+      "jobs": [
+        {
+          "error": {
+            "code": "",
+            "message": "Local Computer state could not be verified before disabling it."
+          },
+          "jobId": "l1-byd-q1-quality-20260719-01",
+          "resultPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\results\\l1-byd-q1-quality-20260719-01.json",
+          "status": "failed"
+        }
+      ],
+      "targetId": "EA29CEDF91A95DC7FAA5494ACA9CC873",
+      "workerId": "slot-2-EA29CEDF91A95DC7FAA5494ACA9CC873"
+    },
+    {
+      "handled": 1,
+      "jobs": [
+        {
+          "error": {
+            "code": "",
+            "message": "Local Computer state could not be verified before disabling it."
+          },
+          "jobId": "l1-cqrcb-growth-capital-20260719-03",
+          "resultPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\results\\l1-cqrcb-growth-capital-20260719-03.json",
+          "status": "failed"
+        }
+      ],
+      "targetId": "2312292BC690B375D99E7174326C30CA",
+      "workerId": "slot-3-2312292BC690B375D99E7174326C30CA"
+    }
+  ]
+}

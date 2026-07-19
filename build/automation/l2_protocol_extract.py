@@ -38,7 +38,7 @@ def resolve_input(root: Path, preferred: str, fallback: str | None = None):
     return preferred_path, False
 
 
-def load_reference_rows(path: Path, question_prefix: str, attachment_header: str):
+def load_reference_rows(path: Path, question_prefix: str, attachment_header: str, allow_empty_attachment: bool = False):
     workbook = load_workbook(path, read_only=True, data_only=True)
     rows = []
     sheet_reports = []
@@ -60,7 +60,7 @@ def load_reference_rows(path: Path, question_prefix: str, attachment_header: str
         for row_number, values in enumerate(iterator, 2):
             question = str(values[question_index]).strip() if question_index < len(values) and values[question_index] is not None else ""
             attachment_summary = str(values[attachment_index]).strip() if attachment_index < len(values) and values[attachment_index] is not None else ""
-            if question and attachment_summary:
+            if question and (attachment_summary or allow_empty_attachment):
                 valid += 1
                 rows.append({
                     "sheet": sheet.title,
@@ -83,6 +83,34 @@ def load_reference_rows(path: Path, question_prefix: str, attachment_header: str
     return rows, sheet_reports
 
 
+def load_reference_dataset(path: Path):
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    rows = []
+    for index, sample in enumerate(payload.get("samples", []), 1):
+        question = str(sample.get("question", "")).strip()
+        attachment_summary = str(sample.get("attachmentSummary", "")).strip()
+        if not question:
+            continue
+        rows.append({
+            "sheet": str(sample.get("sheet", payload.get("source", {}).get("sheet", "reference"))),
+            "row": int(sample.get("row", index + 1)),
+            "question": question,
+            "attachmentSummary": attachment_summary,
+            "questionHash": hashlib.sha256(question.encode("utf-8")).hexdigest(),
+            "attachmentSummaryHash": hashlib.sha256(attachment_summary.encode("utf-8")).hexdigest(),
+            "taskType": str(sample.get("taskType", "")),
+            "humanTime": str(sample.get("humanTime", "")),
+            "qualityStatus": str(sample.get("qualityStatus", "")),
+        })
+    return rows, [{
+        "sheet": str(payload.get("source", {}).get("sheet", "reference")),
+        "status": "READY",
+        "sourceType": "json",
+        "validRows": len(rows),
+        "incompleteRows": 0,
+    }]
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", required=True)
@@ -90,11 +118,12 @@ def main() -> int:
     parser.add_argument("--count", type=int, required=True)
     parser.add_argument("--out", required=True)
     parser.add_argument("--seed", default="")
+    parser.add_argument("--profile", choices=("l1", "l2"), default="l1")
     args = parser.parse_args()
 
     root = Path(args.root).resolve()
     out_path = Path(args.out).resolve()
-    config_path = root / "config" / "l2_production_protocol.json"
+    config_path = root / "config" / f"{args.profile}_production_protocol.json"
     config = json.loads(config_path.read_text(encoding="utf-8"))
     configured = config["inputs"]
     requirements_path, requirements_fallback = resolve_input(
@@ -102,17 +131,28 @@ def main() -> int:
         configured["requirementsPreferred"],
         configured.get("requirementsNormalizedFallback"),
     )
+    reference_key = "referenceDataset" if configured.get("referenceDataset") else "referenceWorkbook"
     paths = {
         "requirements": requirements_path,
-        "referenceWorkbook": root / configured["referenceWorkbook"],
+        "referenceWorkbook": root / configured[reference_key],
         "firstQaPrompt": root / configured["firstQaPrompt"],
         "secondQaPrompt": root / configured["secondQaPrompt"],
+        **({"deAiPrompt": root / configured["deAiPrompt"]} if configured.get("deAiPrompt") else {}),
     }
     missing = [str(path) for path in paths.values() if not path.is_file()]
     packet = {
         "schemaVersion": 1,
-        "kind": "l2-production-input-packet",
+        "kind": f"{args.profile}-production-input-packet",
+        "productionProfile": args.profile,
+        "profileId": args.profile,
         "protocolId": config["protocolId"],
+        "protocolVersion": config.get("version", 1),
+        "protocolConfig": {
+            "path": str(config_path),
+            "sha256": sha256_file(config_path),
+        },
+        "modelRouting": config.get("modelRouting", {}),
+        "qualityOrder": config.get("qualityOrder", []),
         "runId": args.run_id,
         "questionCount": args.count,
         "status": "BLOCKED" if missing else "READY",
@@ -129,11 +169,20 @@ def main() -> int:
         print(json.dumps(packet, ensure_ascii=False))
         return 2
 
-    reference_rows, sheet_reports = load_reference_rows(
-        paths["referenceWorkbook"],
-        config["referenceColumns"]["questionHeaderPrefix"],
-        config["referenceColumns"]["attachmentSummaryHeader"],
-    )
+    if reference_key == "referenceDataset":
+        reference_rows, sheet_reports = load_reference_dataset(paths["referenceWorkbook"])
+        selected_fields = ["question", "attachmentSummary"]
+    else:
+        reference_rows, sheet_reports = load_reference_rows(
+            paths["referenceWorkbook"],
+            config["referenceColumns"]["questionHeaderPrefix"],
+            config["referenceColumns"]["attachmentSummaryHeader"],
+            allow_empty_attachment=args.profile == "l1",
+        )
+        selected_fields = [
+            config["referenceColumns"]["questionAlias"],
+            config["referenceColumns"]["attachmentSummaryHeader"],
+        ]
     if len(reference_rows) < args.count:
         packet["status"] = "BLOCKED"
         packet["blockers"].append({
@@ -155,10 +204,9 @@ def main() -> int:
         "referenceWorkbook": {
             "path": str(paths["referenceWorkbook"]),
             "sha256": sha256_file(paths["referenceWorkbook"]),
-            "selectedColumnsOnly": [
-                config["referenceColumns"]["questionAlias"],
-                config["referenceColumns"]["attachmentSummaryHeader"],
-            ],
+            "sourceType": "json" if reference_key == "referenceDataset" else "xlsx",
+            "sourceUrl": configured.get("referenceRemoteSource", ""),
+            "selectedColumnsOnly": selected_fields,
             "eligibleRows": len(reference_rows),
             "sheets": sheet_reports,
             "samples": [
@@ -176,6 +224,13 @@ def main() -> int:
             "sha256": sha256_file(paths["secondQaPrompt"]),
             "text": read_text(paths["secondQaPrompt"]),
         },
+        **({
+            "deAiRewritePrompt": {
+                "path": str(paths["deAiPrompt"]),
+                "sha256": sha256_file(paths["deAiPrompt"]),
+                "text": read_text(paths["deAiPrompt"]),
+            },
+        } if "deAiPrompt" in paths else {}),
     }
     packet["requiredTraceSections"] = [
         "referenceLocation",

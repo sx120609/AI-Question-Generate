@@ -1,0 +1,90 @@
+{
+  "kind": "scene-card-gate-report",
+  "gateId": "scene-card-role-consistency-v1",
+  "protocolId": "situated-requester-v1",
+  "schemaVersion": 1,
+  "status": "PASS",
+  "ok": true,
+  "candidatePath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_cqrcb_growth_capital_20260718T165249Z_d98e15\\drafts\\l1_questions.tsv",
+  "candidateHash": "8ca65fb47a5415c98f29f07e02dabe5e784a1a13e7ba9764cd73d2d8cd3e1897",
+  "sceneCardPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_cqrcb_growth_capital_20260718T165249Z_d98e15\\sources\\scene_cards.json",
+  "sceneCardFileHash": "9b812552bac5cfa40192024e9e34bb75210b289752bacfea2b9431ea636279b6",
+  "sceneCardBundleHash": "adfcac90456ac29f8e8fe218109d60aead5defb92385890062169d21e29204ac",
+  "sceneCardSetHash": "8afde00008dc55653cd53e8cfa26a2f286b69e7b3c6421e5975d2c7780dc7709",
+  "factLedgerPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\auto_runs\\l1_six_cqrcb_growth_capital_20260718T165249Z_d98e15\\sources\\fact_ledger.json",
+  "factLedgerHash": "2a45c7a93fc9071a137445154a50bd45a5fa34f7928e20821d9a751be1847ccf",
+  "summary": {
+    "candidateRowCount": 1,
+    "sceneCardCount": 1,
+    "passedRowCount": 1,
+    "failedRowCount": 0,
+    "globalErrorCount": 0,
+    "batchCollisionCount": 0
+  },
+  "rows": [
+    {
+      "uid": "沈礼_20260719_l1_cqrcb_growth_capital_03",
+      "status": "PASS",
+      "ok": true,
+      "sceneCardHash": "b187fd7355c3809c7e7eb9eb94ef19a8ee8b531fbb79f00865042b27976006bb",
+      "cardHash": "fde5d942923c897850d7013d33d82f6a4f1b61b3a208869ff4b7a5a2e870f4f4",
+      "roleConsistencyHash": "8ae4603687b96c507c11a7c1bbb2df5659ae92dc995dff0ccec885b93e28d39f",
+      "errors": [],
+      "warnings": [],
+      "checks": {
+        "requestSpanOccurrences": 1,
+        "requestFrame": "polite-request",
+        "requestActionInSpan": true,
+        "requestOutputFormats": [
+          "docx"
+        ],
+        "mFormats": [
+          "docx"
+        ],
+        "missingQuestionFormats": [],
+        "roleTrace": {
+          "blockageSpan": {
+            "span": "请根据《重庆农村商业银行股份有限公司2026年第一季度报告.pdf》帮我做个经营复核。",
+            "occurrences": 1
+          },
+          "motivationSpan": {
+            "span": "这个结果后续会给分析同事看，用来评估下一步要补充哪些业务条线和资本资料。",
+            "occurrences": 1
+          },
+          "downstreamUseSpan": {
+            "span": "这个结果后续会给分析同事看，用来评估下一步要补充哪些业务条线和资本资料。",
+            "occurrences": 1
+          }
+        },
+        "selfIdentification": "",
+        "roleLeaks": [],
+        "factAnchors": {
+          "numbers": [
+            "2026年"
+          ],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "unboundFactAnchors": {
+          "numbers": [],
+          "quotedClaims": [],
+          "timeMarkers": []
+        },
+        "dramaticClaims": [],
+        "envelopeValidationHash": "187e2463d58bbd42860ce6b9cad2d29f741b09793dee057fc0979d161fa8dda5"
+      }
+    }
+  ],
+  "batch": {
+    "ok": true,
+    "status": "PASS",
+    "thresholds": {
+      "highMaskedTrigramSimilarity": 0.72,
+      "sharedMaskedFragmentLength": 18
+    },
+    "comparisons": [],
+    "errors": []
+  },
+  "errors": [],
+  "evaluationHash": "b5a6e744e006e9a4e47fa93de1cd58dd007f8519753f46259ec58c8cfc843f3f"
+}

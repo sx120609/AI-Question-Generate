@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "kind": "doubao-interaction-queue-item",
+  "state": "completed",
+  "jobId": "l1-byd-q1-quality-20260719-01",
+  "enqueuedAt": "2026-07-18T17:25:31.280Z",
+  "attempt": 3,
+  "configPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-byd-q1-quality-20260719-01\\job.json",
+  "configSha256": "14e424a93ad126a1274c7923c94e68d9b7bc9941b00efc9d4e81a0279f07caf3",
+  "packageManifestPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\packages\\l1-byd-q1-quality-20260719-01\\manifest.json",
+  "packageManifestSha256": "4a4770c35aadd6ee3ba4305ef877f2f308a4a92e4a17c0cbc6cd0371ac6a0284",
+  "retryHistory": [
+    {
+      "archivedResultPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\results\\history\\l1-byd-q1-quality-20260719-01-attempt-1-b82b3da0-6ba6-4015-96fd-3ffaab3ae76f.json",
+      "attempt": 1,
+      "failedAt": "2026-07-18T18:15:37.007Z",
+      "lastError": {
+        "code": "",
+        "message": "Local Computer state could not be verified before disabling it."
+      },
+      "retriedAt": "2026-07-18T18:19:51.147Z"
+    }
+  ],
+  "retriedAt": "2026-07-18T18:19:51.149Z",
+  "resultPath": "C:\\Users\\Carbene\\Documents\\GitHub\\AI-Question-Generate\\outputs\\interaction_queues\\l1_six_20260719\\results\\l1-byd-q1-quality-20260719-01.json",
+  "queueResumeHistory": [
+    {
+      "attempt": 2,
+      "failedAt": "2026-07-18T18:58:03.027Z",
+      "lastError": {
+        "code": "",
+        "message": "A unique share selection panel is not open."
+      },
+      "resumedAt": "2026-07-18T19:04:08.044Z"
+    }
+  ],
+  "resume": true,
+  "resumedAt": "2026-07-18T19:04:08.045Z",
+  "finishedAt": "2026-07-18T19:04:14.099Z",
+  "lastError": null
+}
